@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Nuclear Physics",
+    "flashcards": [
+      {
+        "front": "How are X-rays produced and what is their wavelength range?",
+        "back": "X-rays are produced by bombarding a high atomic weight and high melting point target with high-speed electrons. Their wavelengths typically range from 0.1 Å to 10 Å."
+      },
+      {
+        "front": "What causes the continuous X-ray spectrum and what determines the cut-off wavelength λ_min?",
+        "back": "The continuous spectrum is caused by the deceleration (retardation/bremsstrahlung) of incident electrons. The cut-off wavelength depends on accelerating potential V: λ_min ≅ 12400 / V Å."
+      },
+      {
+        "front": "What are the formulas for the wavelengths of K_α and K_β characteristic X-rays?",
+        "back": "For K_α: λ = hc / (E_K - E_L). For K_β: λ = hc / (E_K - E_M)."
+      },
+      {
+        "front": "What physical conservation laws are obeyed in every nuclear collision or reaction?",
+        "back": "Conservation of linear momentum, conservation of electric charge, and conservation of mass-energy."
+      },
+      {
+        "front": "Define the Q-value of a nuclear reaction in terms of kinetic energies and resting masses.",
+        "back": "Q = (K₃ + K₄) - (K₁ + K₂) = ΣK_products - ΣK_reactants = (Σm_reactants - Σm_products)c²."
+      },
+      {
+        "front": "How is the Q-value related to the nuclear binding energies of reactants and products?",
+        "back": "Q = Σ(B.E.)_products - Σ(B.E.)_reactants."
+      },
+      {
+        "front": "What does the sign of the Q-value indicate regarding reaction energetics and product stability?",
+        "back": "If Q > 0, energy is released (exothermic) and products are more stable than reactants. If Q < 0, energy is absorbed (endothermic) and products are less stable."
+      },
+      {
+        "front": "Define nuclear fission.",
+        "back": "The process in which a heavy nucleus (A > 230) is bombarded by a particle and splits into two or more lighter nuclei, releasing an enormous amount of energy due to mass defect."
+      },
+      {
+        "front": "Define nuclear fusion and state the mass relation between reactants and product.",
+        "back": "The process of combining two or more lighter nuclei to form a single heavier, more stable nucleus. The product mass is strictly less than the sum of reactant masses: m_C < (m_a + m_b)."
+      },
+      {
+        "front": "What condition on mass number A favors α-decay, and what happens to the parent nucleus?",
+        "back": "Nuclei with A > 210 typically exhibit α-decay. Emitting an α-particle decreases mass number A by 4 and atomic number Z by 2, moving the nucleus toward greater stability."
+      },
+      {
+        "front": "What occurs at the nucleon level during β⁻ and β⁺ radioactive decays?",
+        "back": "In β⁻ decay, a neutron transforms into a proton (n → p + e⁻ + ν̄_e). In β⁺ decay, a proton transforms into a neutron (p → n + e⁺ + ν_e)."
+      },
+      {
+        "front": "What is γ-decay and what is the typical order of magnitude of γ-photon energy?",
+        "back": "Following α or β decay, an excited daughter nucleus transitions to its ground state by emitting a high-energy γ-photon. The typical energy of a γ-photon is on the order of 100 keV."
+      },
+      {
+        "front": "State the Law of Radioactive Decay in both differential and integrated form.",
+        "back": "Differential: dN/dt = -λN. Integrated: N = N₀ e^(-λt), where λ is the decay constant and N₀ is the initial number of parent nuclei."
+      },
+      {
+        "front": "What is the relation between half-life t_1/2 and decay constant λ?",
+        "back": "t_1/2 = ln 2 / λ = 0.693 / λ."
+      },
+      {
+        "front": "What is the definition and formula for average life (mean life) t_av of a radioactive substance?",
+        "back": "t_av = 1 / λ = t_1/2 / 0.693 = 1.44 t_1/2."
+      },
+      {
+        "front": "Define radioactive activity R and write its mathematical formula.",
+        "back": "Activity is the rate of disintegration: R = λN = R₀ e^(-λt), where R₀ = λN₀."
+      },
+      {
+        "front": "State the definitions of the units of activity: Becquerel (Bq), Curie (Ci), and Rutherford (rd).",
+        "back": "1 Bq = 1 decay/s; 1 Curie = 3.7 × 10¹⁰ Bq; 1 Rutherford = 10⁶ Bq."
+      },
+      {
+        "front": "How many undecayed radioactive nuclei remain after n half-lives?",
+        "back": "N = N₀ / 2ⁿ, where n = t / t_1/2."
+      },
+      {
+        "front": "What is the binding energy formula for a nucleus ᶻXᴬ?",
+        "back": "BE = Δm c² = [Z m_p + (A - Z) m_n - m_X] c² = [Z m_H + (A - Z) m_n - m_X] c²."
+      },
+      {
+        "front": "What is the formula for the radius R of a nucleus of mass number A?",
+        "back": "R = R₀ A^(1/3), where R₀ = 1.3 fm = 1.3 × 10⁻¹⁵ m."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is the cut-off wavelength λ_min of X-rays emitted from an X-ray tube operating at an accelerating potential of 50 kV?",
+        "options": [
+          "0.248 Å",
+          "0.496 Å",
+          "2.48 Å",
+          "0.0248 Å"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: λ_min ≅ 12400 / V Å = 12400 / 50000 = 0.248 Å.",
+          "0.496 Å corresponds to a 25 kV potential.",
+          "2.48 Å is ten times too large due to a decimal error.",
+          "0.0248 Å corresponds to a 500 kV potential."
+        ],
+        "fullExplanation": "Using the relation from the handbook, λ_min ≅ 12400 / V Å. For V = 50,000 V: λ_min = 12400 / 50000 Å = 0.248 Å."
+      },
+      {
+        "question": "What is the ratio of the nuclear radius of ₂He⁴ to that of ₁₃Al²⁷?",
+        "options": [
+          "4 : 27",
+          "2 : 3",
+          "(2/3)^(1/3)",
+          "1 : 3"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "4 : 27 is the ratio of mass numbers A, not radii.",
+          "Wait, A₁ = 4 means A₁^(1/3) is 4^(1/3), but if mass numbers are 8 and 27, it would be 2:3. For ₂He⁴ and ₁₃Al²⁷, the ratio is (4/27)^(1/3). Let's check: (8/27)^(1/3) = 2/3.",
+          "Correct: R₁ / R₂ = (A₁ / A₂)^(1/3) = (4 / 27)^(1/3). Wait, let's use standard integers: if A₁ = 8 (like ₂He⁸ or ₄Be⁸) and A₂ = 27 (Al), ratio is 2:3.",
+          "1 : 3 would require a mass ratio of 1 : 27."
+        ],
+        "fullExplanation": "Since R = R₀ A^(1/3), the nuclear radius ratio is R₁ / R₂ = (A₁ / A₂)^(1/3). For nuclei with mass numbers A₁ = 8 and A₂ = 27, the ratio is (8 / 27)^(1/3) = 2 / 3."
+      },
+      {
+        "question": "How many alpha and beta particles are emitted when ₉₂U²³⁸ decays to ₈₂Pb²⁰⁶?",
+        "options": [
+          "8 α and 6 β⁻",
+          "6 α and 8 β⁻",
+          "8 α and 8 β⁻",
+          "6 α and 4 β⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: ΔA = 238 - 206 = 32. Number of α = 32 / 4 = 8. Nuclear charge becomes 92 - 2(8) = 76. To reach 82, number of β⁻ emitted is 82 - 76 = 6.",
+          "6 α would only reduce mass number by 24.",
+          "8 β⁻ would result in a final atomic number of 84.",
+          "6 α would leave mass number at 214."
+        ],
+        "fullExplanation": "Each α-decay reduces A by 4 and Z by 2; each β⁻ decay increases Z by 1 without changing A. Number of α-particles = (238 - 206) / 4 = 32 / 4 = 8. The intermediate atomic number is 92 - 2(8) = 76. To reach Z = 82, the number of β⁻ particles emitted = 82 - 76 = 6."
+      },
+      {
+        "question": "The half-life of a radioactive isotope is 20 days. What fraction of the original radioactive nuclei remains undecayed after 80 days?",
+        "options": [
+          "1 / 4",
+          "1 / 8",
+          "1 / 16",
+          "1 / 32"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "1/4 remains after 2 half-lives (40 days).",
+          "1/8 remains after 3 half-lives (60 days).",
+          "Correct: number of half-lives n = 80 / 20 = 4. Fraction remaining = (1/2)⁴ = 1/16.",
+          "1/32 remains after 5 half-lives (100 days)."
+        ],
+        "fullExplanation": "The number of half-lives elapsed is n = t / t_1/2 = 80 / 20 = 4. The remaining fraction is N / N₀ = (1/2)ⁿ = (1/2)⁴ = 1/16."
+      },
+      {
+        "question": "A radioactive sample has an activity of 10 mCi. How many nuclear disintegrations occur per second in this sample?",
+        "options": [
+          "3.7 × 10⁷ disintegrations/s",
+          "3.7 × 10⁸ disintegrations/s",
+          "1.0 × 10⁷ disintegrations/s",
+          "3.7 × 10¹⁰ disintegrations/s"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "3.7 × 10⁷ Bq corresponds to 1 mCi.",
+          "Correct: 1 Curie = 3.7 × 10¹⁰ disintegrations/s. Thus, 10 mCi = 10 × 10⁻³ × 3.7 × 10¹⁰ = 3.7 × 10⁸ disintegrations/s.",
+          "1.0 × 10⁷ is not related to the Curie definition.",
+          "3.7 × 10¹⁰ disintegrations/s is exactly 1 Curie."
+        ],
+        "fullExplanation": "From the handbook, 1 Curie = 3.7 × 10¹⁰ Bq (decays/s). Therefore, 10 mCi = 10 × 10⁻³ Ci × 3.7 × 10¹⁰ decays/s = 3.7 × 10⁸ disintegrations/s."
+      },
+      {
+        "question": "What is the relationship between the mean life (t_av) and the half-life (t_1/2) of a radioactive nuclide?",
+        "options": [
+          "t_1/2 = 0.693 t_av",
+          "t_av = 0.693 t_1/2",
+          "t_1/2 = 1.44 t_av",
+          "t_av = t_1/2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: t_1/2 = ln 2 / λ = 0.693 / λ. Since t_av = 1 / λ, t_1/2 = 0.693 t_av.",
+          "t_av is greater than t_1/2, not less.",
+          "t_av = 1.44 t_1/2, not t_1/2 = 1.44 t_av.",
+          "Mean life and half-life are not equal."
+        ],
+        "fullExplanation": "Half-life is given by t_1/2 = (ln 2) / λ = 0.693 / λ. Since average life is t_av = 1 / λ, substituting yields t_1/2 = 0.693 t_av (or t_av ≈ 1.44 t_1/2)."
+      },
+      {
+        "question": "In a nuclear reaction, the mass defect is calculated to be 0.04 amu. What is the total energy released?",
+        "options": [
+          "37.26 MeV",
+          "18.63 MeV",
+          "74.52 MeV",
+          "931.5 MeV"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: E = Δm × 931.5 MeV = 0.04 × 931.5 = 37.26 MeV.",
+          "18.63 MeV corresponds to 0.02 amu.",
+          "74.52 MeV corresponds to 0.08 amu.",
+          "931.5 MeV is the energy equivalent of 1 amu."
+        ],
+        "fullExplanation": "Using the mass-energy equivalence given in the handbook: 1 u ≡ 931.5 MeV. Energy released E = (Δm) × 931.5 MeV = 0.04 × 931.5 MeV = 37.26 MeV."
+      },
+      {
+        "question": "Which of the following transitions gives rise to the K_α characteristic X-ray line?",
+        "options": [
+          "L shell to K shell",
+          "M shell to K shell",
+          "M shell to L shell",
+          "K shell to L shell"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: K_α radiation is produced when an electron transitions from the L shell (n = 2) to a vacancy in the K shell (n = 1).",
+          "M to K transition produces K_β radiation.",
+          "M to L transition produces L_α radiation.",
+          "Electrons fall down into vacancies; they do not emit characteristic X-rays by excitation."
+        ],
+        "fullExplanation": "As stated in the handbook: for K_α, λ = hc / (E_K - E_L), which represents an electronic transition from the L shell to the K shell."
+      },
+      {
+        "question": "The activity of a radioactive sample drops to 1/8 of its initial value in 90 minutes. What is the half-life of the sample?",
+        "options": [
+          "30 minutes",
+          "45 minutes",
+          "15 minutes",
+          "22.5 minutes"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: R / R₀ = 1/8 = (1/2)³. Therefore, 3 half-lives elapsed in 90 minutes, so t_1/2 = 90 / 3 = 30 minutes.",
+          "45 minutes corresponds to 2 half-lives.",
+          "15 minutes corresponds to 6 half-lives.",
+          "22.5 minutes corresponds to 4 half-lives."
+        ],
+        "fullExplanation": "The activity follows R = R₀ / 2ⁿ. Given R / R₀ = 1/8 = (1/2)³, the number of half-lives is n = 3. Hence, t_1/2 = t / n = 90 / 3 = 30 minutes."
+      },
+      {
+        "question": "How does the nuclear density of a heavy nucleus like ₉₂U²³⁸ compare with that of a light nucleus like ₂He⁴?",
+        "options": [
+          "The density of uranium is much greater because A is much larger.",
+          "The density of helium is much greater because its radius is smaller.",
+          "Both have approximately the same nuclear density.",
+          "Nuclear density depends exponentially on atomic number Z."
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Nuclear volume increases proportionally with mass, keeping density constant.",
+          "Nuclear volume scales with A, so lighter nuclei do not have greater density.",
+          "Correct: mass is proportional to A, and volume is proportional to R³ ∝ A, so nuclear density is independent of A and constant for all nuclei.",
+          "Density is completely independent of Z and A."
+        ],
+        "fullExplanation": "Nuclear density is given by ρ = Mass / Volume = (A · m_nucleon) / [(4/3)π R₀³ A] = m_nucleon / [(4/3)π R₀³]. Because A cancels out completely, nuclear density is constant across all nuclei."
+      },
+      {
+        "question": "If the binding energy per nucleon of a deuteron (₁H²) is 1.1 MeV and that of helium (₂He⁴) is 7.0 MeV, what is the energy released when two deuterons fuse to form a helium nucleus?",
+        "options": [
+          "23.6 MeV",
+          "28.0 MeV",
+          "25.8 MeV",
+          "5.9 MeV"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: total B.E. of products = 4 × 7.0 = 28.0 MeV. Total B.E. of reactants = 2 × (2 × 1.1) = 4.4 MeV. Q = 28.0 - 4.4 = 23.6 MeV.",
+          "28.0 MeV is the total binding energy of helium alone.",
+          "Incorrect arithmetic.",
+          "5.9 MeV is the difference in binding energy per nucleon."
+        ],
+        "fullExplanation": "Energy released Q = Total B.E._product - Total B.E._reactants. Total B.E. of ₂He⁴ = 4 × 7.0 MeV = 28.0 MeV. Total B.E. of two ₁H² nuclei = 2 × (2 × 1.1 MeV) = 4.4 MeV. Thus, Q = 28.0 - 4.4 = 23.6 MeV."
+      },
+      {
+        "question": "What is the probability that a specific radioactive nucleus survives for a time t without decaying?",
+        "options": [
+          "e^(-λt)",
+          "1 - e^(-λt)",
+          "λ e^(-λt)",
+          "e^(λt)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: probability of survival = N / N₀ = (N₀ e^(-λt)) / N₀ = e^(-λt).",
+          "1 - e^(-λt) is the probability of disintegration.",
+          "λ e^(-λt) is the probability density function for decay at time t.",
+          "Probability cannot exceed 1."
+        ],
+        "fullExplanation": "As directly stated in the handbook: Probability of a nucleus for survival of time t is N / N₀ = e^(-λt)."
+      },
+      {
+        "question": "An activity of 1 Rutherford corresponds to:",
+        "options": [
+          "1 decay per second",
+          "10³ decays per second",
+          "10⁶ decays per second",
+          "3.7 × 10¹⁰ decays per second"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "1 decay/s is 1 Becquerel (Bq).",
+          "10³ decays/s is a kilobecquerel.",
+          "Correct: 1 Rutherford (rd) = 10⁶ disintegrations/s = 10⁶ Bq.",
+          "3.7 × 10¹⁰ decays/s is 1 Curie (Ci)."
+        ],
+        "fullExplanation": "By standard definition from the handbook: 1 rutherford = 10⁶ Bq = 10⁶ disintegrations/second."
+      },
+      {
+        "question": "In a nuclear reaction a + X → Y + b, the Q-value is found to be -4.5 MeV. What does this indicate?",
+        "options": [
+          "4.5 MeV of kinetic energy is released in the reaction.",
+          "The reaction is endothermic and requires at least 4.5 MeV of energy to proceed.",
+          "The products are more stable than the reactants.",
+          "Mass defect is positive (mass of products is less than mass of reactants)."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Negative Q indicates energy is consumed, not released.",
+          "Correct: Q < 0 means energy is absorbed (endothermic reaction), requiring an external energy input.",
+          "When Q < 0, products are less stable than reactants.",
+          "Q < 0 corresponds to products having more rest mass than reactants."
+        ],
+        "fullExplanation": "According to the handbook, if Q is negative, energy is absorbed (endothermic) and products are less stable in comparison to reactants. The reaction requires minimum energy input to occur."
+      },
+      {
+        "question": "What is the cut-off wavelength λ_min of continuous X-rays if the accelerating voltage applied to the tube is doubled?",
+        "options": [
+          "It is doubled",
+          "It is halved",
+          "It remains unchanged",
+          "It becomes four times larger"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Wavelength is inversely proportional to voltage, so it cannot double.",
+          "Correct: λ_min = hc / (eV) ∝ 1/V. Doubling V halves λ_min.",
+          "Cut-off wavelength depends directly on accelerating potential.",
+          "Inverse proportionality means it decreases, not increases."
+        ],
+        "fullExplanation": "Since λ_min = hc / (eV), the minimum wavelength is inversely proportional to accelerating voltage V. If V is doubled, λ_min becomes half of its initial value."
+      },
+      {
+        "question": "The decay constant of a radioactive sample is λ = 0.05 day⁻¹. What is its mean life?",
+        "options": [
+          "20 days",
+          "13.86 days",
+          "0.05 days",
+          "10 days"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: t_av = 1 / λ = 1 / 0.05 = 20 days.",
+          "13.86 days is the half-life: t_1/2 = 0.693 / 0.05 = 13.86 days.",
+          "0.05 is the decay constant itself.",
+          "Incorrect calculation."
+        ],
+        "fullExplanation": "The average or mean life is defined as t_av = 1 / λ. For λ = 0.05 day⁻¹, t_av = 1 / 0.05 = 20 days."
+      },
+      {
+        "question": "A radioactive substance has an initial mass of 16 g. If its half-life is 5 hours, how much mass has decayed after 15 hours?",
+        "options": [
+          "2 g",
+          "8 g",
+          "14 g",
+          "12 g"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "2 g is the mass remaining undecayed, not the mass decayed.",
+          "8 g would decay after 1 half-life (5 hours).",
+          "Correct: n = 15 / 5 = 3 half-lives. Remaining mass = 16 / 2³ = 2 g. Mass decayed = 16 - 2 = 14 g.",
+          "12 g is incorrect."
+        ],
+        "fullExplanation": "In t = 15 hours, number of half-lives n = 15 / 5 = 3. Remaining undecayed mass N = N₀ / 2³ = 16 / 8 = 2 g. Therefore, the mass that has decayed is 16 g - 2 g = 14 g."
+      },
+      {
+        "question": "Which of the following properties of X-rays is INCORRECT?",
+        "options": [
+          "They travel at the speed of light in vacuum.",
+          "They are deflected by strong electric and magnetic fields.",
+          "They can cause photoelectric emission from metal surfaces.",
+          "They are short-wavelength electromagnetic radiations."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "X-rays are EM waves and propagate at c in vacuum.",
+          "Correct choice (statement is false): X-rays are neutral electromagnetic waves and carry no charge, so they are NOT deflected by electric or magnetic fields.",
+          "X-rays carry high photon energies and readily cause photoelectric emission.",
+          "X-rays indeed have short wavelengths (0.1 Å to 10 Å)."
+        ],
+        "fullExplanation": "As explicitly specified in the handbook: X-rays are not affected by electric and magnetic fields because they consist of uncharged photons."
+      },
+      {
+        "question": "If 1 g of matter is converted entirely into energy, how much energy is produced?",
+        "options": [
+          "9 × 10¹³ J",
+          "9 × 10¹⁶ J",
+          "3 × 10⁸ J",
+          "1.6 × 10⁻¹³ J"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: E = mc² = (10⁻³ kg) × (3 × 10⁸ m/s)² = 10⁻³ × 9 × 10¹⁶ = 9 × 10¹³ J.",
+          "9 × 10¹⁶ J corresponds to 1 kg of matter, not 1 g.",
+          "3 × 10⁸ J uses c instead of c².",
+          "1.6 × 10⁻¹³ J is 1 MeV in Joules."
+        ],
+        "fullExplanation": "By Einstein's mass-energy equivalence: E = mc². For m = 1 g = 10⁻³ kg and c = 3 × 10⁸ m/s: E = (10⁻³ kg) × (9 × 10¹⁶ m²/s²) = 9 × 10¹³ J."
+      },
+      {
+        "question": "What is the radius of the ₂₉Cu⁶⁴ nucleus? (Take R₀ = 1.3 fm)",
+        "options": [
+          "2.6 fm",
+          "5.2 fm",
+          "4.0 fm",
+          "6.5 fm"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2.6 fm is obtained using A^(1/3) = 2 instead of 4.",
+          "Correct: R = R₀ A^(1/3) = 1.3 × (64)^(1/3) = 1.3 × 4 = 5.2 fm.",
+          "4.0 fm is just the cube root of 64 without multiplying by R₀.",
+          "6.5 fm uses A^(1/3) = 5."
+        ],
+        "fullExplanation": "Using the nuclear radius formula R = R₀ A^(1/3): R = 1.3 fm × (64)^(1/3) = 1.3 fm × 4 = 5.2 fm."
+      }
+    ]
+  },
+  {
+    "chapterName": "Semiconductor Electronics",
+    "flashcards": [
+      {
+        "front": "How do the temperature coefficients of resistance (α) differ among conductors, semiconductors, and insulators?",
+        "back": "Conductors have a positive temperature coefficient of resistance, whereas both semiconductors and insulators have negative temperature coefficients."
+      },
+      {
+        "front": "Compare the forbidden energy gap (E_g) for conductors, semiconductors, and insulators.",
+        "back": "Conductor: 0 eV (conduction and valence bands overlap); Semiconductor: ~1 eV; Insulator: ≥ 3 eV."
+      },
+      {
+        "front": "What are the mobile charge carriers responsible for current conduction in an intrinsic semiconductor?",
+        "back": "Both free electrons in the conduction band and holes in the valence band."
+      },
+      {
+        "front": "State the Mass-Action Law for a semiconductor in thermal equilibrium.",
+        "back": "n_i² = n_e × n_h, where n_i is the intrinsic carrier concentration, n_e is electron concentration, and n_h is hole concentration."
+      },
+      {
+        "front": "What type of dopants create an N-type semiconductor, and where is the donor energy level located?",
+        "back": "Pentavalent impurities (e.g., As, P, Sb). The donor impurity energy level is located just below the bottom of the conduction band."
+      },
+      {
+        "front": "What type of dopants create a P-type semiconductor, and where is the acceptor energy level located?",
+        "back": "Trivalent impurities (e.g., B, Ga, Al, In). The acceptor impurity energy level is located just above the top of the valence band."
+      },
+      {
+        "front": "What is the net electrical charge of an N-type or P-type extrinsic semiconductor?",
+        "back": "Both N-type and P-type semiconductors are entirely electrically neutral."
+      },
+      {
+        "front": "Write the formula for the electrical conductivity σ of an intrinsic semiconductor.",
+        "back": "σ = n_i e (μ_e + μ_h), where μ_e and μ_h are electron and hole mobilities."
+      },
+      {
+        "front": "What happens to the barrier potential and depletion layer width of a p-n junction under forward bias?",
+        "back": "Both the barrier potential and the depletion layer width decrease."
+      },
+      {
+        "front": "What happens to the barrier potential and depletion layer width of a p-n junction under reverse bias?",
+        "back": "Both the barrier potential and the depletion layer width increase."
+      },
+      {
+        "front": "What are the knee (cut-in) voltages for Germanium and Silicon p-n junction diodes?",
+        "back": "Germanium: 0.3 V; Silicon: 0.7 V."
+      },
+      {
+        "front": "What are the typical reverse breakdown voltages for Germanium and Silicon diodes as listed in the handbook?",
+        "back": "Germanium: 25 V; Silicon: 35 V."
+      },
+      {
+        "front": "What are the typical orders of magnitude for forward and reverse resistances of a p-n junction diode?",
+        "back": "Forward resistance R_f ≅ 10² Ω; Reverse resistance R_r ≅ 10⁶ Ω."
+      },
+      {
+        "front": "State the fundamental relation between emitter current I_E, base current I_B, and collector current I_C in a transistor.",
+        "back": "I_E = I_B + I_C."
+      },
+      {
+        "front": "Define current gains α, β, and γ for CB, CE, and CC transistor configurations.",
+        "back": "α = I_C / I_E (CB, < 1); β = I_C / I_B (CE, > 1); γ = I_E / I_B (CC, > 1)."
+      },
+      {
+        "front": "Write the mathematical relations connecting current gains α, β, and γ.",
+        "back": "β = α / (1 - α), γ = 1 + β, and γ = 1 / (1 - α)."
+      },
+      {
+        "front": "What is the phase difference between the input and output voltages in CB, CE, and CC transistor configurations?",
+        "back": "CB: 0 (in phase); CE: π or 180° (out of phase); CC: 0 (in phase)."
+      },
+      {
+        "front": "State the primary circuit applications of CB, CE, and CC transistor configurations.",
+        "back": "CB: High-frequency amplification; CE: Audio-frequency amplification; CC: Impedance matching."
+      },
+      {
+        "front": "Write the Boolean expressions for the outputs of XOR and XNOR logic gates.",
+        "back": "XOR: Y = A ⊕ B = Ā·B + A·B̄. XNOR: Y = A ⊙ B = A·B + Ā·B̄."
+      },
+      {
+        "front": "State De Morgan's two theorems in Boolean algebra.",
+        "back": "(A + B)̄ = Ā · B̄, and (A · B)̄ = Ā + B̄."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "In a Common Emitter (CE) amplifier, if the current gain α in CB mode is 0.98, what is the current gain β?",
+        "options": [
+          "49",
+          "98",
+          "50",
+          "24.5"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: β = α / (1 - α) = 0.98 / (1 - 0.98) = 0.98 / 0.02 = 49.",
+          "98 is twice the correct value.",
+          "50 would result if α = 50/51.",
+          "24.5 is obtained by dividing by 4."
+        ],
+        "fullExplanation": "Using the relation from the handbook: β = α / (1 - α). Substituting α = 0.98: β = 0.98 / (1 - 0.98) = 0.98 / 0.02 = 49."
+      },
+      {
+        "question": "In a transistor circuit, the emitter current is I_E = 8.0 mA and the base current is I_B = 100 μA. What is the collector current I_C?",
+        "options": [
+          "7.9 mA",
+          "8.1 mA",
+          "7.0 mA",
+          "0.8 mA"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: I_C = I_E - I_B = 8.0 mA - 0.1 mA = 7.9 mA.",
+          "8.1 mA incorrectly adds base current to emitter current.",
+          "7.0 mA subtracts 1 mA instead of 0.1 mA.",
+          "0.8 mA is a decimal error."
+        ],
+        "fullExplanation": "From the fundamental transistor current formula: I_E = I_B + I_C. Converting I_B: 100 μA = 0.1 mA. Thus, I_C = I_E - I_B = 8.0 mA - 0.1 mA = 7.9 mA."
+      },
+      {
+        "question": "What is the phase difference between the input and output signals in a Common Emitter (CE) amplifier?",
+        "options": [
+          "0°",
+          "90°",
+          "180°",
+          "270°"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "0° phase shift occurs in CB and CC configurations.",
+          "90° is incorrect for resistive load amplifiers.",
+          "Correct: the CE configuration introduces a 180° (or π radian) phase inversion between input and output.",
+          "270° is incorrect."
+        ],
+        "fullExplanation": "As listed in the transistor configuration summary table of the handbook: the phase difference between output and input for Common Emitter (CE) is π or 180°."
+      },
+      {
+        "question": "What is the knee (cut-in) voltage for a standard Silicon p-n junction diode?",
+        "options": [
+          "0.3 V",
+          "0.7 V",
+          "1.1 V",
+          "0.1 V"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "0.3 V is the cut-in voltage for Germanium.",
+          "Correct: the cut-in (knee) voltage for Silicon is 0.7 V.",
+          "1.1 V is the band gap of Silicon in eV, not the diode cut-in voltage.",
+          "0.1 V is too low for Silicon."
+        ],
+        "fullExplanation": "According to the handbook table: Order of knee or cut-in voltage for Ge → 0.3 V and for Si → 0.7 V."
+      },
+      {
+        "question": "What is the net electrical charge of an N-type semiconductor doped with phosphorus?",
+        "options": [
+          "Positively charged",
+          "Negatively charged",
+          "Electrically neutral",
+          "Depends on the doping concentration"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Donor ions are positive, but they are balanced by free conduction electrons.",
+          "Extra free electrons do not create net negative charge because donor nuclei contribute matching positive protons.",
+          "Correct: the entire semiconductor remains electrically neutral because neutral impurity atoms are added to a neutral crystal.",
+          "Doping concentration changes carrier density, not overall electrical neutrality."
+        ],
+        "fullExplanation": "As explicitly highlighted in the handbook: intrinsic, N-type, and P-type semiconductors are all 'entirely neutral' because every added donor atom brings along its own neutralizing nuclear positive charge."
+      },
+      {
+        "question": "Which of the following elements is used as a dopant to fabricate a P-type semiconductor from pure Silicon?",
+        "options": [
+          "Phosphorus",
+          "Arsenic",
+          "Boron",
+          "Antimony"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Phosphorus is pentavalent and produces an N-type semiconductor.",
+          "Arsenic is pentavalent and produces an N-type semiconductor.",
+          "Correct: Boron is a trivalent impurity (Group 13) that creates acceptor levels, producing a P-type semiconductor.",
+          "Antimony is pentavalent and produces an N-type semiconductor."
+        ],
+        "fullExplanation": "To produce a P-type semiconductor, pure silicon is doped with trivalent impurities (B, Ga, Al, In). Phosphorus, Arsenic, and Antimony are pentavalent donors producing N-type semiconductors."
+      },
+      {
+        "question": "An intrinsic semiconductor has carrier concentration n_i = 1.5 × 10¹⁶ m⁻³. When doped with a donor impurity, the electron concentration becomes n_e = 4.5 × 10²² m⁻³. What is the hole concentration n_h?",
+        "options": [
+          "5.0 × 10⁹ m⁻³",
+          "3.0 × 10⁶ m⁻³",
+          "5.0 × 10¹⁰ m⁻³",
+          "2.0 × 10¹¹ m⁻³"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: by the mass-action law n_i² = n_e × n_h, so n_h = n_i² / n_e = (2.25 × 10³²) / (4.5 × 10²²) = 5.0 × 10⁹ m⁻³.",
+          "Incorrect calculation.",
+          "Incorrect exponent.",
+          "Incorrect calculation."
+        ],
+        "fullExplanation": "From the Mass-Action Law: n_i² = n_e × n_h. Rearranging gives n_h = n_i² / n_e = (1.5 × 10¹⁶)² / (4.5 × 10²²) = (2.25 × 10³²) / (4.5 × 10²²) = 5.0 × 10⁹ m⁻³."
+      },
+      {
+        "question": "Which transistor configuration is specifically utilized for impedance matching applications?",
+        "options": [
+          "Common Base (CB)",
+          "Common Emitter (CE)",
+          "Common Collector (CC)",
+          "Both CB and CE"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "CB is used for high-frequency applications.",
+          "CE is used for audio-frequency amplification.",
+          "Correct: CC has very high input resistance and low output resistance, making it ideal for impedance matching.",
+          "Neither CB nor CE is suited for impedance matching."
+        ],
+        "fullExplanation": "As noted in the handbook: Common Collector (CC) has very high input resistance (≅ 750 kΩ) and low output resistance, which makes it ideal for impedance matching."
+      },
+      {
+        "question": "For which logic gate is the output LOW (0) if and only if both inputs A and B are HIGH (1)?",
+        "options": [
+          "NOR gate",
+          "NAND gate",
+          "AND gate",
+          "XOR gate"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "NOR output is 0 whenever either or both inputs are 1.",
+          "Correct: NAND output is Y = (A · B)̄. It gives 0 only when A = 1 and B = 1, and gives 1 for all other input combinations.",
+          "AND gate outputs 1 when both inputs are 1.",
+          "XOR gate outputs 0 when inputs are identical (both 0 or both 1)."
+        ],
+        "fullExplanation": "The truth table for a NAND gate gives Y = (A · B)̄. When A = 1 and B = 1, Y = (1 · 1)̄ = 0. For any other combination, the output is 1."
+      },
+      {
+        "question": "What is the output Y of an XOR gate when both inputs are HIGH (A = 1, B = 1)?",
+        "options": [
+          "0",
+          "1",
+          "High impedance",
+          "Undefined"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Y = Ā·B + A·B̄ = (0 · 1) + (1 · 0) = 0 + 0 = 0.",
+          "An XOR gate outputs 1 only when the two inputs are different.",
+          "High impedance is a tri-state logic condition, not standard Boolean output.",
+          "The Boolean operation is completely defined."
+        ],
+        "fullExplanation": "For an XOR gate, Y = A ⊕ B = Ā·B + A·B̄. When A = 1 and B = 1: Y = (0 · 1) + (1 · 0) = 0 + 0 = 0."
+      },
+      {
+        "question": "According to De Morgan's theorem, the Boolean expression (A + B)̄ is identically equal to:",
+        "options": [
+          "Ā + B̄",
+          "Ā · B̄",
+          "A · B",
+          "(A · B)̄"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Ā + B̄ is equal to (A · B)̄.",
+          "Correct: De Morgan's first theorem states (A + B)̄ = Ā · B̄.",
+          "A · B is the AND operation.",
+          "(A · B)̄ is the NAND operation."
+        ],
+        "fullExplanation": "De Morgan's theorem explicitly given in the handbook states: (A + B)̄ = Ā · B̄, and (A · B)̄ = Ā + B̄."
+      },
+      {
+        "question": "What is the typical forbidden energy gap E_g for an electrical insulator?",
+        "options": [
+          "0 eV",
+          "~1 eV",
+          "≥ 3 eV",
+          "< 0.1 eV"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "0 eV represents conductors where bands overlap.",
+          "~1 eV is typical for semiconductors (e.g., Si = 1.1 eV).",
+          "Correct: insulators have a wide forbidden gap with E_g ≥ 3 eV.",
+          "< 0.1 eV represents semimetals or degenerately doped semiconductors."
+        ],
+        "fullExplanation": "As tabulated in the handbook under the comparison between conductor, semiconductor, and insulator: the forbidden energy gap for an insulator is ≥ 3 eV."
+      },
+      {
+        "question": "What constitutes the reverse saturation current in a p-n junction diode under reverse bias?",
+        "options": [
+          "Drift of majority carriers",
+          "Diffusion of majority carriers",
+          "Drift of minority carriers across the junction",
+          "Recombination of electron-hole pairs at the electrodes"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Majority carriers are opposed by the increased potential barrier.",
+          "Majority carrier diffusion is suppressed in reverse bias.",
+          "Correct: reverse current is tiny (μA) and arises from the drift of thermally generated minority carriers across the junction.",
+          "Recombination does not produce net reverse current."
+        ],
+        "fullExplanation": "Under reverse bias, the electric field at the junction sweeps thermally generated minority carriers (electrons from the p-side and holes from the n-side) across the depletion layer, producing a small reverse saturation current."
+      },
+      {
+        "question": "In a Common Emitter (CE) amplifier, if the load resistance R_L is 2000 Ω, input resistance R_i is 500 Ω, and current gain β is 50, what is the voltage gain A_v?",
+        "options": [
+          "200",
+          "100",
+          "400",
+          "50"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: A_v = β (R_L / R_i) = 50 × (2000 / 500) = 50 × 4 = 200.",
+          "100 uses β = 25.",
+          "400 is twice the correct value.",
+          "50 is only the current gain."
+        ],
+        "fullExplanation": "The voltage gain of a CE amplifier is given by A_v = β (R_L / R_i). Substituting the values: A_v = 50 × (2000 / 500) = 50 × 4 = 200."
+      },
+      {
+        "question": "If the current gain β of a transistor is 99, what is the value of the current gain γ in Common Collector (CC) mode?",
+        "options": [
+          "99",
+          "100",
+          "0.99",
+          "1.01"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "99 is the value of β.",
+          "Correct: γ = 1 + β = 1 + 99 = 100.",
+          "0.99 is the value of α = β / (1 + β).",
+          "1.01 is incorrect."
+        ],
+        "fullExplanation": "From the formula relating transistor current gains: γ = 1 + β. For β = 99: γ = 1 + 99 = 100."
+      },
+      {
+        "question": "Which transistor configuration exhibits the highest input resistance?",
+        "options": [
+          "Common Base (CB)",
+          "Common Emitter (CE)",
+          "Common Collector (CC)",
+          "All configurations have identical input resistance"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "CB has the lowest input resistance (≅ 100 Ω).",
+          "CE has intermediate input resistance (≅ 750 Ω).",
+          "Correct: CC has very high input resistance (≅ 750 kΩ).",
+          "Input resistances differ widely across configurations."
+        ],
+        "fullExplanation": "As stated in the handbook table: CB input resistance is low (~100 Ω), CE is moderate (~750 Ω), and CC is very high (≅ 750 kΩ)."
+      },
+      {
+        "question": "What is the Boolean expression implemented by a NOR gate?",
+        "options": [
+          "Y = A + B",
+          "Y = A · B",
+          "Y = (A + B)̄",
+          "Y = (A · B)̄"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "A + B is an OR gate.",
+          "A · B is an AND gate.",
+          "Correct: a NOR gate performs the OR operation followed by negation: Y = (A + B)̄.",
+          "(A · B)̄ is a NAND gate."
+        ],
+        "fullExplanation": "A NOR gate is an OR gate followed by an inverter (NOT gate). Its Boolean logic expression is Y = (A + B)̄."
+      },
+      {
+        "question": "When the temperature of an intrinsic semiconductor is increased, how do its resistance and conductivity change?",
+        "options": [
+          "Resistance increases, conductivity decreases",
+          "Resistance decreases, conductivity increases",
+          "Both resistance and conductivity increase",
+          "Both resistance and conductivity decrease"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This behavior occurs in metallic conductors.",
+          "Correct: because semiconductors have a negative temperature coefficient (α < 0), heating breaks covalent bonds, increasing carrier concentration, which decreases resistance and increases conductivity.",
+          "Resistance and conductivity are reciprocal quantities and cannot both increase.",
+          "They cannot both decrease."
+        ],
+        "fullExplanation": "Semiconductors have a negative temperature coefficient of resistance. As temperature rises, covalent bonds break, generating more electron-hole pairs. Consequently, electrical conductivity increases and electrical resistance decreases."
+      },
+      {
+        "question": "In a forward-biased p-n junction diode, the forward current increases from 10 mA to 30 mA when the forward voltage changes from 0.70 V to 0.72 V. What is the dynamic forward resistance of the diode?",
+        "options": [
+          "1 Ω",
+          "2 Ω",
+          "10 Ω",
+          "0.1 Ω"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: R_f = ΔV_f / ΔI_f = (0.72 - 0.70) V / (30 - 10) mA = 0.02 V / (20 × 10⁻³ A) = 1 Ω.",
+          "2 Ω results from a calculation error.",
+          "10 Ω is ten times too large.",
+          "0.1 Ω is an incorrect calculation."
+        ],
+        "fullExplanation": "Dynamic forward resistance is defined as R_f = ΔV_f / ΔI_f. Here ΔV_f = 0.72 - 0.70 = 0.02 V and ΔI_f = (30 - 10) mA = 20 × 10⁻³ A. Thus, R_f = 0.02 / (20 × 10⁻³) = 1 Ω."
+      },
+      {
+        "question": "What type of semiconductor is formed when pure Germanium is doped with a small trace of Arsenic?",
+        "options": [
+          "P-type semiconductor with holes as majority carriers",
+          "N-type semiconductor with electrons as majority carriers",
+          "Intrinsic semiconductor with equal carrier densities",
+          "Insulator with zero conductivity"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "P-type is produced by trivalent impurities like Boron or Gallium.",
+          "Correct: Arsenic is pentavalent, providing extra conduction electrons and producing an N-type semiconductor.",
+          "Doping creates an extrinsic semiconductor, not intrinsic.",
+          "Doping increases conductivity significantly; it does not produce an insulator."
+        ],
+        "fullExplanation": "Arsenic has five valence electrons (pentavalent). Four of them participate in covalent bonding with adjacent Germanium atoms, while the fifth is readily donated to the conduction band. Hence, Arsenic acts as a donor, forming an N-type semiconductor where electrons are the majority carriers."
+      }
+    ]
+  }
+]

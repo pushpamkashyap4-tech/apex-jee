@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Applications of Derivatives",
+    "flashcards": [
+      {
+        "front": "What are the equations of the tangent and normal to the curve $y = f(x)$ at the point $(x_1, y_1)$?",
+        "back": "If $m = \\\\left. \\\\frac{dy}{dx} \\\\right|_{(x_1, y_1)}$ is finite:\\n- **Tangent:** $y - y_1 = m(x - x_1)$\\n- **Normal:** $y - y_1 = -\\\\frac{1}{m}(x - x_1) \\\\quad (m \\\\neq 0)$\\nIf $m = 0$, tangent is $y = y_1$ and normal is $x = x_1$.\\nIf $m \\\\to \\\\infty$, tangent is $x = x_1$ and normal is $y = y_1$."
+      },
+      {
+        "front": "How do you find the equation of a tangent drawn from an external point $(a, b)$ to the curve $y = f(x)$?",
+        "back": "1. Let $Q(h, f(h))$ be the unknown point of contact.\\n2. The slope of the tangent is $m = f'(h) = \\\\frac{f(h) - b}{h - a}$.\\n3. Solve this equation for $h$ to determine the coordinates of the point(s) of contact.\\n4. Use the point-slope form to write the tangent equation: $y - b = f'(h)(x - a)$."
+      },
+      {
+        "front": "State the formulas for the lengths of Tangent, Normal, Subtangent, and Subnormal at $(x_1, y_1)$ where $m = \\\\left. \\\\frac{dy}{dx} \\\\right|_{(x_1, y_1)}$.",
+        "back": "- **Length of Tangent ($PT$):** $|y_1| \\\\sqrt{1 + \\\\frac{1}{m^2}}$\\n- **Length of Normal ($PN$):** $|y_1| \\\\sqrt{1 + m^2}$\\n- **Length of Subtangent ($TM$):** $\\\\left| \\\\frac{y_1}{m} \\\\right|$\\n- **Length of Subnormal ($MN$):** $|y_1 m|$"
+      },
+      {
+        "front": "What is the formula for the acute angle of intersection $\\\\theta$ between two curves $y = f(x)$ and $y = g(x)$?",
+        "back": "If $m_1$ and $m_2$ are the slopes of the tangents to the curves at their point of intersection:\\n$$\\\\tan\\\\theta = \\\\left| \\\\frac{m_1 - m_2}{1 + m_1 m_2} \\\\right|$$\\n- The curves are **orthogonal** if $m_1 m_2 = -1$.\\n- The curves touch each other (**tangential**) if $m_1 = m_2$."
+      },
+      {
+        "front": "How is the derivative used as a Rate Measure?",
+        "back": "If a quantity $y$ depends on time $t$ via $y = f(x)$ where $x = g(t)$, the instantaneous rate of change of $y$ with respect to $t$ is:\\n$$\\\\frac{dy}{dt} = \\\\frac{dy}{dx} \\\\cdot \\\\frac{dx}{dt}$$\\n- $\\\\frac{dy}{dt} > 0$ indicates that $y$ is increasing with time.\\n- $\\\\frac{dy}{dt} < 0$ indicates that $y$ is decreasing with time."
+      },
+      {
+        "front": "State the conditions for a differentiable function $f(x)$ to be strictly increasing or strictly decreasing on an open interval $(a, b)$.",
+        "back": "- **Strictly Increasing:** $f'(x) > 0$ for all $x \\\\in (a, b)$, or $f'(x) \\\\ge 0$ with $f'(x) = 0$ only at isolated discrete points (not on any sub-interval).\\n- **Strictly Decreasing:** $f'(x) < 0$ for all $x \\\\in (a, b)$, or $f'(x) \\\\le 0$ with $f'(x) = 0$ only at isolated discrete points."
+      },
+      {
+        "front": "How is monotonicity tested at a single point $x = a$ when $f'(a) = 0$?",
+        "back": "Examine the signs of the one-sided derivatives in immediate left and right neighborhoods:\\n- If $f'(a^-) > 0$ and $f'(a^+) > 0$, $f(x)$ is increasing at $x = a$.\\n- If $f'(a^-) < 0$ and $f'(a^+) < 0$, $f(x)$ is decreasing at $x = a$.\\n- If $f'(x)$ changes sign across $a$, $f(x)$ is neither increasing nor decreasing at $x = a$ (it is an extremum)."
+      },
+      {
+        "front": "What is the difference between a Critical Point and a Stationary Point?",
+        "back": "- **Critical Point:** A point $c$ in the domain of $f$ where either $f'(c) = 0$ OR $f'(c)$ does not exist.\\n- **Stationary Point:** A point $c$ in the domain of $f$ where specifically $f'(c) = 0$.\\n*Note:* Every stationary point is a critical point, but not every critical point is a stationary point."
+      },
+      {
+        "front": "State the First Derivative Test for local extrema at an interior critical point $x = c$.",
+        "back": "- **Local Maximum:** $f'(x)$ changes sign from positive to negative as $x$ increases through $c$ ($f'(c^-) > 0$ and $f'(c^+) < 0$).\\n- **Local Minimum:** $f'(x)$ changes sign from negative to positive as $x$ increases through $c$ ($f'(c^-) < 0$ and $f'(c^+) > 0$).\\n- **Point of Inflection / Neither:** $f'(x)$ does not change sign as $x$ passes through $c$."
+      },
+      {
+        "front": "State the Second Derivative Test for local extrema at a stationary point $x = c$ where $f'(c) = 0$.",
+        "back": "- If $f''(c) < 0$, then $f(x)$ has a **local maximum** at $x = c$.\\n- If $f''(c) > 0$, then $f(x)$ has a **local minimum** at $x = c$.\\n- If $f''(c) = 0$, the test is **inconclusive** (higher-order derivative test or first derivative test must be used)."
+      },
+      {
+        "front": "What is the Higher-Order Derivative Test for extrema at $x = c$ where $f'(c) = f''(c) = \\\\dots = f^{(n-1)}(c) = 0$ and $f^{(n)}(c) \\\\neq 0$?",
+        "back": "- If $n$ is **even**:\\n  - $f^{(n)}(c) < 0 \\\\implies$ Local Maximum.\\n  - $f^{(n)}(c) > 0 \\\\implies$ Local Minimum.\\n- If $n$ is **odd**:\\n  - $x = c$ is neither a local maximum nor a local minimum (it is a point of inflection)."
+      },
+      {
+        "front": "How do you find the absolute (global) maximum and minimum of a continuous function on a closed interval $[a, b]$?",
+        "back": "1. Find all critical points $c_1, c_2, \\\\dots \\\\in (a, b)$ where $f'(x) = 0$ or $f'(x)$ does not exist.\\n2. Calculate the function values at these critical points: $f(c_1), f(c_2), \\\\dots$\\n3. Calculate the function values at the boundary endpoints: $f(a)$ and $f(b)$.\\n4. $\\\\text{Absolute Max} = \\\\max\\\\{f(a), f(b), f(c_i)\\\\}$, $\\\\text{Absolute Min} = \\\\min\\\\{f(a), f(b), f(c_i)\\\\}$."
+      },
+      {
+        "front": "What is a Point of Inflection and what are its mathematical conditions?",
+        "back": "A point where the graph changes concavity (from concave up to concave down, or vice versa):\\n- **Necessary condition:** $f''(x) = 0$ or $f''(x)$ does not exist.\\n- **Sufficient condition:** $f''(x)$ must change sign across that point (i.e., $f'''(x) \\\\neq 0$ if third derivative exists)."
+      },
+      {
+        "front": "How does the second derivative determine the concavity of a curve on $(a, b)$?",
+        "back": "- If $f''(x) > 0$ for all $x \\\\in (a, b)$, the graph is **concave upward** (or convex downward; tangents lie below the curve).\\n- If $f''(x) < 0$ for all $x \\\\in (a, b)$, the graph is **concave downward** (or convex upward; tangents lie above the curve)."
+      },
+      {
+        "front": "State Rolle's Theorem and its three hypotheses.",
+        "back": "If a real-valued function $f(x)$ is:\\n1. Continuous on the closed interval $[a, b]$\\n2. Differentiable on the open interval $(a, b)$\\n3. $f(a) = f(b)$\\nThen there exists at least one number $c \\\\in (a, b)$ such that $f'(c) = 0$."
+      },
+      {
+        "front": "State Lagrange's Mean Value Theorem (LMVT) and its hypotheses.",
+        "back": "If a function $f(x)$ is:\\n1. Continuous on $[a, b]$\\n2. Differentiable on $(a, b)$\\nThen there exists at least one $c \\\\in (a, b)$ such that:\\n$$f'(c) = \\\\frac{f(b) - f(a)}{b - a}$$"
+      },
+      {
+        "front": "What is the geometrical interpretation of Lagrange's Mean Value Theorem (LMVT)?",
+        "back": "There exists at least one point $c \\\\in (a, b)$ on the curve $y = f(x)$ where the tangent line is parallel to the secant line (chord) connecting the endpoints $(a, f(a))$ and $(b, f(b))$."
+      },
+      {
+        "front": "State Cauchy's Generalized Mean Value Theorem.",
+        "back": "If $f(x)$ and $g(x)$ are continuous on $[a, b]$, differentiable on $(a, b)$, and $g'(x) \\\\neq 0$ for all $x \\\\in (a, b)$, then there exists at least one $c \\\\in (a, b)$ such that:\\n$$\\\\frac{f'(c)}{g'(c)} = \\\\frac{f(b) - f(a)}{g(b) - g(a)}$$"
+      },
+      {
+        "front": "What is the fundamental principle for finding the shortest distance between two non-intersecting differentiable curves?",
+        "back": "The shortest distance between two non-intersecting smooth curves always lies along their **common normal**.\\n- At the points of shortest distance, the tangent lines to both curves are parallel to each other."
+      },
+      {
+        "front": "What is the maximum volume of a right circular cylinder that can be inscribed in a sphere of radius $R$?",
+        "back": "For a cylinder of radius $r$ and height $h$ inscribed in a sphere of radius $R$:\\n- Height for maximum volume: $h = \\\\frac{2R}{\\\\sqrt{3}}$\\n- Radius: $r = R \\\\sqrt{\\\\frac{2}{3}}$\\n- Maximum Volume: $V_{\\\\max} = \\\\frac{4\\\\pi R^3}{3\\\\sqrt{3}} = \\\\frac{1}{\\\\sqrt{3}} V_{\\\\text{sphere}}$"
+      },
+      {
+        "front": "What is the maximum volume of a right circular cone that can be inscribed in a sphere of radius $R$?",
+        "back": "For a cone of height $h$ inscribed in a sphere of radius $R$:\\n- Height for maximum volume: $h = \\\\frac{4R}{3}$\\n- Base radius: $r = \\\\frac{2\\\\sqrt{2}}{3}R$\\n- Maximum Volume: $V_{\\\\max} = \\\\frac{8}{27} V_{\\\\text{sphere}} = \\\\frac{32}{81}\\\\pi R^3$"
+      },
+      {
+        "front": "Among all rectangles inscribed in a given circle of radius $R$, which shape has the maximum area and perimeter?",
+        "back": "A **square** of side length $s = R\\\\sqrt{2}$:\\n- Maximum Area: $A_{\\\\max} = 2R^2$\\n- Maximum Perimeter: $P_{\\\\max} = 4R\\\\sqrt{2}$"
+      },
+      {
+        "front": "What is the relationship between the roots of a polynomial $P(x) = 0$ and the roots of its derivative $P'(x) = 0$?",
+        "back": "By Rolle's Theorem, between any two consecutive real roots of $P(x) = 0$, there lies at least one real root of $P'(x) = 0$.\\nConsequently, if $P(x) = 0$ has $n$ distinct real roots, then $P'(x) = 0$ has at least $n - 1$ distinct real roots."
+      },
+      {
+        "front": "What is the rate of change of the volume of a sphere with respect to its surface area?",
+        "back": "Since $V = \\\\frac{4}{3}\\\\pi r^3$ and $S = 4\\\\pi r^2$:\\n$$\\\\frac{dV}{dr} = 4\\\\pi r^2, \\\\quad \\\\frac{dS}{dr} = 8\\\\pi r$$\\n$$\\\\frac{dV}{dS} = \\\\frac{dV/dr}{dS/dr} = \\\\frac{4\\\\pi r^2}{8\\\\pi r} = \\\\frac{r}{2}$$"
+      },
+      {
+        "front": "How do you find the maximum volume of an open box formed by cutting equal squares of side $x$ from the four corners of a rectangular sheet of dimensions $a \\\\times b$?",
+        "back": "Volume $V(x) = x(a - 2x)(b - 2x)$.\\nSet $\\\\frac{dV}{dx} = 0$:\\n$$12x^2 - 4(a + b)x + ab = 0$$\\nChoose the smaller root $x = \\\\frac{(a + b) - \\\\sqrt{a^2 - ab + b^2}}{6}$ to ensure $x < \\\\min(a, b)/2$."
+      },
+      {
+        "front": "If $f'(x) = g'(x)$ for all $x$ in an open interval $(a, b)$, what does LMVT imply about $f$ and $g$?",
+        "back": "Consider $h(x) = f(x) - g(x)$. Then $h'(x) = 0$ for all $x \\\\in (a, b)$.\\nBy LMVT, for any two points $x_1, x_2$, $h(x_2) - h(x_1) = h'(c)(x_2 - x_1) = 0$, so $h(x) = C$ (constant).\\nHence, $f(x) = g(x) + C$ on $(a, b)$."
+      },
+      {
+        "front": "What is the geometric meaning of the subnormal being of constant length $k$?",
+        "back": "Length of subnormal is $\\\\left| y \\\\frac{dy}{dx} \\\\right| = k$.\\n$$\\\\implies y \\\\, dy = \\\\pm k \\\\, dx \\\\implies \\\\frac{y^2}{2} = \\\\pm kx + C \\\\implies y^2 = \\\\pm 2kx + C'$$\\nThis differential relation characterizes a family of **parabolas**."
+      },
+      {
+        "front": "What is Darboux's Theorem (Intermediate Value Theorem for Derivatives)?",
+        "back": "If $f(x)$ is differentiable on $[a, b]$, then $f'(x)$ attains every intermediate value between $f'(a)$ and $f'(b)$, even if $f'(x)$ is not continuous on $[a, b]$."
+      },
+      {
+        "front": "What is the condition for a cubic polynomial $f(x) = ax^3 + bx^2 + cx + d$ ($a > 0$) to be strictly increasing on $\\\\mathbb{R}$?",
+        "back": "$$f'(x) = 3ax^2 + 2bx + c \\\\ge 0 \\\\quad \\\\forall x \\\\in \\\\mathbb{R}$$\\nSince $3a > 0$, the quadratic must have a non-positive discriminant:\\n$$D = (2b)^2 - 4(3a)(c) \\\\le 0 \\\\implies 4b^2 - 12ac \\\\le 0 \\\\implies b^2 \\\\le 3ac$$"
+      },
+      {
+        "front": "What is the maximum area of a rectangle that can be inscribed in an ellipse $\\\\frac{x^2}{a^2} + \\\\frac{y^2}{b^2} = 1$ with sides parallel to the coordinate axes?",
+        "back": "Let vertex in first quadrant be $(a\\\\cos\\\\theta, b\\\\sin\\\\theta)$.\\nArea $A(\\\\theta) = (2a\\\\cos\\\\theta)(2b\\\\sin\\\\theta) = 2ab\\\\sin(2\\\\theta)$.\\nMaximum occurs when $\\\\sin(2\\\\theta) = 1$ ($\\\\theta = \\\\pi/4$):\\n$$A_{\\\\max} = 2ab$$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Find the shortest distance between the line $y = x - 2$ and the parabola $y = x^2$.",
+        "options": [
+          "$$\\\\frac{7\\\\sqrt{2}}{8}$$",
+          "$$\\\\frac{7}{8}$$",
+          "$$\\\\frac{7\\\\sqrt{2}}{4}$$",
+          "$$\\\\frac{3\\\\sqrt{2}}{4}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The tangent to the parabola parallel to the line $y = x - 2$ (slope 1) occurs at $2x = 1 \\\\implies x = 1/2, y = 1/4$. The perpendicular distance from $(1/2, 1/4)$ to $x - y - 2 = 0$ is $\\\\frac{|1/2 - 1/4 - 2|}{\\\\sqrt{1^2 + (-1)^2}} = \\\\frac{7/4}{\\\\sqrt{2}} = \\\\frac{7\\\\sqrt{2}}{8}$.",
+          "Incorrect. Forgot to divide by $\\\\sqrt{1^2 + (-1)^2} = \\\\sqrt{2}$ in the point-to-line distance formula.",
+          "Incorrect. Failed to multiply numerator and denominator by $\\\\sqrt{2}$ correctly, resulting in an extra factor of 2.",
+          "Incorrect. Used the wrong point of tangency on the parabola."
+        ],
+        "fullExplanation": "The shortest distance between a line and a smooth curve occurs along their common normal, which means at the point on the curve where the tangent line is parallel to the given line.\\n1. The given line is $x - y - 2 = 0$, which has slope $m = 1$.\\n2. For the parabola $y = x^2$, the slope of the tangent is:\\n$$\\\\frac{dy}{dx} = 2x$$\\nEquating to the line's slope:\\n$$2x = 1 \\\\implies x = \\\\frac{1}{2}$$\\n3. Find the corresponding $y$-coordinate:\\n$$y = \\\\left(\\\\frac{1}{2}\\\\right)^2 = \\\\frac{1}{4}$$\\nSo the point on the parabola nearest to the line is $P\\\\left(\\\\frac{1}{2}, \\\\frac{1}{4}\\\\right)$.\\n4. The shortest distance is the perpendicular distance from $P$ to the line $x - y - 2 = 0$:\\n$$d = \\\\frac{\\\\left| \\\\frac{1}{2} - \\\\frac{1}{4} - 2 \\\\right|}{\\\\sqrt{1^2 + (-1)^2}} = \\\\frac{\\\\left| \\\\frac{1}{4} - 2 \\\\right|}{\\\\sqrt{2}} = \\\\frac{7/4}{\\\\sqrt{2}} = \\\\frac{7}{4\\\\sqrt{2}} = \\\\frac{7\\\\sqrt{2}}{8}$$"
+      },
+      {
+        "question": "What is the maximum volume of a right circular cylinder that can be inscribed in a sphere of radius $R$?",
+        "options": [
+          "$$\\\\frac{4\\\\pi R^3}{3\\\\sqrt{3}}$$",
+          "$$\\\\frac{2\\\\pi R^3}{3\\\\sqrt{3}}$$",
+          "$$\\\\frac{4\\\\pi R^3}{9}$$",
+          "$$\\\\frac{\\\\pi R^3}{\\\\sqrt{3}}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Writing $V = \\\\pi r^2 h = \\\\pi (R^2 - h^2/4)h$ and differentiating w.r.t $h$ gives $h = \\\\frac{2R}{\\\\sqrt{3}}$. Substituting yields $V_{\\\\max} = \\\\frac{4\\\\pi R^3}{3\\\\sqrt{3}}$.",
+          "Incorrect. Missed a factor of 2 in the cylinder's height calculation.",
+          "Incorrect. Replaced $\\\\sqrt{3}$ with 3 in the denominator.",
+          "Incorrect. Arithmetic error in evaluating the radius squared."
+        ],
+        "fullExplanation": "Let the cylinder have radius $r$ and height $h$. By Pythagoras' theorem applied to the cross-section passing through the sphere's center:\\n$$r^2 + \\\\left(\\\\frac{h}{2}\\\\right)^2 = R^2 \\\\implies r^2 = R^2 - \\\\frac{h^2}{4}$$\\nThe volume of the cylinder is:\\n$$V = \\\\pi r^2 h = \\\\pi \\\\left( R^2 - \\\\frac{h^2}{4} \\\\right) h = \\\\pi \\\\left( R^2 h - \\\\frac{h^3}{4} \\\\right)$$\\nTo find the maximum volume, differentiate $V$ with respect to $h$:\\n$$\\\\frac{dV}{dh} = \\\\pi \\\\left( R^2 - \\\\frac{3h^2}{4} \\\\right) = 0$$\\n$$3h^2 = 4R^2 \\\\implies h = \\\\frac{2R}{\\\\sqrt{3}}$$\\nVerify with the second derivative:\\n$$\\\\frac{d^2V}{dh^2} = -\\\\frac{3\\\\pi h}{2} < 0 \\\\quad (\\\\text{confirming a maximum})$$\\nNow calculate the maximum volume:\\n$$V_{\\\\max} = \\\\pi \\\\left( R^2 \\\\cdot \\\\frac{2R}{\\\\sqrt{3}} - \\\\frac{1}{4}\\\\left(\\\\frac{2R}{\\\\sqrt{3}}\\\\right)^3 \\\\right) = \\\\pi \\\\left( \\\\frac{2R^3}{\\\\sqrt{3}} - \\\\frac{2R^3}{3\\\\sqrt{3}} \\\\right) = \\\\frac{4\\\\pi R^3}{3\\\\sqrt{3}}$$"
+      },
+      {
+        "question": "Find the interval in which the function $f(x) = 2x^3 - 9x^2 + 12x + 5$ is strictly decreasing.",
+        "options": [
+          "$$(1, 2)$$",
+          "$$(-\\\\infty, 1)$$",
+          "$$(2, \\\\infty)$$",
+          "$$(-\\\\infty, 1) \\\\cup (2, \\\\infty)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $f'(x) = 6(x-1)(x-2) < 0$ strictly on the interval $(1, 2)$.",
+          "Incorrect. On $(-\\\\infty, 1)$, $f'(x) > 0$, so the function is strictly increasing.",
+          "Incorrect. On $(2, \\\\infty)$, $f'(x) > 0$, so the function is strictly increasing.",
+          "Incorrect. This is the interval where the function is strictly increasing."
+        ],
+        "fullExplanation": "1. Differentiate $f(x)$ with respect to $x$:\\n$$f'(x) = 6x^2 - 18x + 12 = 6(x^2 - 3x + 2)$$\\n$$f'(x) = 6(x - 1)(x - 2)$$\\n2. For $f(x)$ to be strictly decreasing, we require $f'(x) < 0$:\\n$$6(x - 1)(x - 2) < 0$$\\nUsing the sign chart (wavy-curve method):\\n- For $x < 1$: $(x-1) < 0$ and $(x-2) < 0 \\\\implies f'(x) > 0$\\n- For $1 < x < 2$: $(x-1) > 0$ and $(x-2) < 0 \\\\implies f'(x) < 0$\\n- For $x > 2$: $(x-1) > 0$ and $(x-2) > 0 \\\\implies f'(x) > 0$\\nTherefore, $f(x)$ is strictly decreasing in the open interval $(1, 2)$."
+      },
+      {
+        "question": "A spherical balloon is being inflated such that its volume increases at the constant rate of $35\\\\text{ cm}^3/\\\\text{s}$. At the instant when the radius of the balloon is $7\\\\text{ cm}$, find the rate of increase of its surface area.",
+        "options": [
+          "$$10\\\\text{ cm}^2/\\\\text{s}$$",
+          "$$5\\\\text{ cm}^2/\\\\text{s}$$",
+          "$$20\\\\text{ cm}^2/\\\\text{s}$$",
+          "$$\\\\frac{35}{2}\\\\text{ cm}^2/\\\\text{s}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{dV}{dt} = 4\\\\pi r^2 \\\\frac{dr}{dt} = 35$, so $\\\\frac{dS}{dt} = 8\\\\pi r \\\\frac{dr}{dt} = \\\\frac{2}{r}\\\\frac{dV}{dt} = \\\\frac{2 \\\\times 35}{7} = 10\\\\text{ cm}^2/\\\\text{s}$.",
+          "Incorrect. Forgot the factor of 2 in $\\\\frac{dS}{dt} = \\\\frac{2}{r}\\\\frac{dV}{dt}$.",
+          "Incorrect. Multiplied by 2 instead of dividing appropriately.",
+          "Incorrect. Failed to eliminate the radius correctly."
+        ],
+        "fullExplanation": "The volume of a sphere of radius $r$ is:\\n$$V = \\\\frac{4}{3}\\\\pi r^3$$\\nDifferentiating with respect to time $t$:\\n$$\\\\frac{dV}{dt} = 4\\\\pi r^2 \\\\frac{dr}{dt}$$\\nWe are given $\\\\frac{dV}{dt} = 35\\\\text{ cm}^3/\\\\text{s}$.\\nThe surface area of the sphere is:\\n$$S = 4\\\\pi r^2$$\\nDifferentiating with respect to time $t$:\\n$$\\\\frac{dS}{dt} = 8\\\\pi r \\\\frac{dr}{dt}$$\\nNotice the direct ratio between the two rates:\\n$$\\\\frac{dS}{dt} = \\\\frac{8\\\\pi r \\\\frac{dr}{dt}}{4\\\\pi r^2 \\\\frac{dr}{dt}} \\\\cdot \\\\frac{dV}{dt} = \\\\frac{2}{r} \\\\frac{dV}{dt}$$\\nSubstitute $r = 7\\\\text{ cm}$ and $\\\\frac{dV}{dt} = 35\\\\text{ cm}^3/\\\\text{s}$:\\n$$\\\\frac{dS}{dt} = \\\\frac{2}{7} \\\\times 35 = 10\\\\text{ cm}^2/\\\\text{s}$$"
+      },
+      {
+        "question": "Find the value of $c$ satisfying Lagrange's Mean Value Theorem for $f(x) = \\\\sqrt{x - 2}$ on the interval $[2, 6]$.",
+        "options": [
+          "$$3$$",
+          "$$4$$",
+          "$$\\\\frac{7}{2}$$",
+          "$$\\\\frac{5}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{f(6) - f(2)}{6 - 2} = \\\\frac{2 - 0}{4} = \\\\frac{1}{2}$. Then $f'(c) = \\\\frac{1}{2\\\\sqrt{c-2}} = \\\\frac{1}{2} \\\\implies \\\\sqrt{c-2} = 1 \\\\implies c = 3 \\\\in (2, 6)$.",
+          "Incorrect. Substituted into the derivative incorrectly.",
+          "Incorrect. Arithmetic error in solving $\\\\sqrt{c-2} = 1$.",
+          "Incorrect. Miscalculated the average rate of change."
+        ],
+        "fullExplanation": "1. Verify the hypotheses of LMVT:\\n- $f(x) = \\\\sqrt{x - 2}$ is continuous on $[2, 6]$.\\n- $f'(x) = \\\\frac{1}{2\\\\sqrt{x - 2}}$ exists on $(2, 6)$, so $f$ is differentiable on $(2, 6)$.\\n2. Calculate the average rate of change on $[2, 6]$:\\n$$f(2) = \\\\sqrt{2 - 2} = 0$$\\n$$f(6) = \\\\sqrt{6 - 2} = \\\\sqrt{4} = 2$$\\n$$\\\\frac{f(6) - f(2)}{6 - 2} = \\\\frac{2 - 0}{4} = \\\\frac{1}{2}$$\\n3. Equate $f'(c)$ to this value:\\n$$f'(c) = \\\\frac{1}{2\\\\sqrt{c - 2}} = \\\\frac{1}{2}$$\\n$$\\\\sqrt{c - 2} = 1 \\\\implies c - 2 = 1 \\\\implies c = 3$$\\nSince $3 \\\\in (2, 6)$, $c = 3$ satisfies the theorem."
+      },
+      {
+        "question": "Find the value of $c$ that satisfies Rolle's Theorem for the function $f(x) = x(x - 1)^2$ on $[0, 1]$.",
+        "options": [
+          "$$\\\\frac{1}{3}$$",
+          "$$\\\\frac{2}{3}$$",
+          "$$\\\\frac{1}{2}$$",
+          "$$\\\\frac{1}{4}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $f(0) = f(1) = 0$. $f'(x) = (x-1)(3x-1) = 0$. The root strictly inside $(0, 1)$ is $c = 1/3$.",
+          "Incorrect. Miscalculated the factor $(3x - 1)$ as $(3x - 2)$.",
+          "Incorrect. Assumed the midpoint by symmetry, which does not hold for asymmetric polynomials.",
+          "Incorrect. Sign error during factorization."
+        ],
+        "fullExplanation": "1. Check the hypotheses of Rolle's Theorem:\\n- $f(x) = x(x-1)^2$ is a polynomial, hence continuous on $[0, 1]$ and differentiable on $(0, 1)$.\\n- $f(0) = 0$ and $f(1) = 0(0)^2 = 0$, so $f(0) = f(1)$.\\n2. Differentiate $f(x)$ with respect to $x$ using the product rule:\\n$$f'(x) = 1 \\\\cdot (x - 1)^2 + x \\\\cdot 2(x - 1) = (x - 1)[(x - 1) + 2x] = (x - 1)(3x - 1)$$\\n3. Set $f'(c) = 0$:\\n$$(c - 1)(3c - 1) = 0 \\\\implies c = 1 \\\\quad \\\\text{or} \\\\quad c = \\\\frac{1}{3}$$\\nSince Rolle's theorem requires $c \\\\in (0, 1)$, we exclude $c = 1$.\\nTherefore, $c = \\\\frac{1}{3}$."
+      },
+      {
+        "question": "A wire of length $20\\\\text{ m}$ is cut into two pieces. One piece is bent into a square and the other into a circle. What should be the length of the side of the square so that the combined area of the two shapes is minimum?",
+        "options": [
+          "$$\\\\frac{20}{\\\\pi + 4}\\\\text{ m}$$",
+          "$$\\\\frac{10}{\\\\pi + 4}\\\\text{ m}$$",
+          "$$\\\\frac{40}{\\\\pi + 4}\\\\text{ m}$$",
+          "$$\\\\frac{5}{\\\\pi + 4}\\\\text{ m}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let square perimeter be $x$, side $s = x/4$. Circle circumference is $20 - x$, radius $r = (20-x)/(2\\\\pi)$. Total area $A(x) = \\\\frac{x^2}{16} + \\\\frac{(20-x)^2}{4\\\\pi}$. Setting $A'(x) = 0$ gives $x = \\\\frac{80}{\\\\pi + 4}$, so side $s = x/4 = \\\\frac{20}{\\\\pi + 4}$.",
+          "Incorrect. Failed to divide the perimeter by 4 correctly.",
+          "Incorrect. Multiplied by 2 instead of dividing.",
+          "Incorrect. Arithmetic error in solving the linear equation for $x$."
+        ],
+        "fullExplanation": "Let the wire of length $20\\\\text{ m}$ be divided into two parts: length $x$ for the square and length $20 - x$ for the circle ($0 \\\\le x \\\\le 20$).\\n1. **Square:**\\n- Perimeter $= 4s = x \\\\implies s = \\\\frac{x}{4}$\\n- Area $A_1 = s^2 = \\\\frac{x^2}{16}$\\n2. **Circle:**\\n- Circumference $= 2\\\\pi r = 20 - x \\\\implies r = \\\\frac{20 - x}{2\\\\pi}$\\n- Area $A_2 = \\\\pi r^2 = \\\\pi \\\\left( \\\\frac{20 - x}{2\\\\pi} \\\\right)^2 = \\\\frac{(20 - x)^2}{4\\\\pi}$\\n3. **Total Area:**\\n$$A(x) = \\\\frac{x^2}{16} + \\\\frac{(20 - x)^2}{4\\\\pi}$$\\nDifferentiate with respect to $x$:\\n$$A'(x) = \\\\frac{2x}{16} + \\\\frac{2(20 - x)(-1)}{4\\\\pi} = \\\\frac{x}{8} - \\\\frac{20 - x}{2\\\\pi}$$\\nSet $A'(x) = 0$ for a minimum:\\n$$\\\\frac{x}{8} = \\\\frac{20 - x}{2\\\\pi} \\\\implies \\\\frac{x}{4} = \\\\frac{20 - x}{\\\\pi}$$\\n$$\\\\pi x = 4(20 - x) = 80 - 4x$$\\n$$(\\\\pi + 4)x = 80 \\\\implies x = \\\\frac{80}{\\\\pi + 4}$$\\n4. The side of the square is:\\n$$s = \\\\frac{x}{4} = \\\\frac{80}{4(\\\\pi + 4)} = \\\\frac{20}{\\\\pi + 4}\\\\text{ m}$$"
+      },
+      {
+        "question": "Find the shortest distance between the parabola $y^2 = 4x$ and the circle $(x - 6)^2 + y^2 = 2$.",
+        "options": [
+          "$$2\\\\sqrt{5} - \\\\sqrt{2}$$",
+          "$$\\\\sqrt{5} - \\\\sqrt{2}$$",
+          "$$2\\\\sqrt{5}$$",
+          "$$3\\\\sqrt{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The normal to $y^2 = 4x$ passing through the circle's center $(6, 0)$ has slope $m = \\\\pm 2$, intersecting the parabola at $(4, \\\\pm 4)$. The distance from $(6, 0)$ to $(4, 4)$ is $\\\\sqrt{(6-4)^2 + 4^2} = \\\\sqrt{20} = 2\\\\sqrt{5}$. Subtracting the radius $\\\\sqrt{2}$ gives $2\\\\sqrt{5} - \\\\sqrt{2}$.",
+          "Incorrect. Miscalculated the distance from the center to the parabola.",
+          "Incorrect. Forgot to subtract the radius of the circle.",
+          "Incorrect. Evaluated distance along the axis of symmetry, which gives a larger distance."
+        ],
+        "fullExplanation": "The shortest distance between a circle and a curve lies along the normal to the curve that passes through the center of the circle.\\n1. The circle is $(x - 6)^2 + y^2 = 2$, with center $C(6, 0)$ and radius $R = \\\\sqrt{2}$.\\n2. The equation of the normal to the parabola $y^2 = 4ax$ (with $a = 1$) in slope form is:\\n$$y = mx - 2m - m^3$$\\nSince this normal passes through $C(6, 0)$:\\n$$0 = 6m - 2m - m^3 = 4m - m^3 = m(4 - m^2)$$\\nThis yields $m = 0$ or $m^2 = 4 \\\\implies m = \\\\pm 2$.\\n- For $m = 0$: the foot of the normal is $(0, 0)$. Distance to $C(6, 0)$ is $6$.\\n- For $m = \\\\pm 2$: the foot of the normal on the parabola is $(am^2, -2am) = (4, \\\\mp 4)$.\\n3. Distance from $C(6, 0)$ to $(4, 4)$ is:\\n$$d = \\\\sqrt{(6 - 4)^2 + (0 - 4)^2} = \\\\sqrt{2^2 + (-4)^2} = \\\\sqrt{4 + 16} = \\\\sqrt{20} = 2\\\\sqrt{5}$$\\nSince $2\\\\sqrt{5} = \\\\sqrt{20} \\\\approx 4.47 < 6$, this gives the minimum distance to the center.\\n4. Subtract the circle's radius $R = \\\\sqrt{2}$ to find the distance between the two curves:\\n$$\\\\text{Shortest distance} = 2\\\\sqrt{5} - \\\\sqrt{2}$$"
+      },
+      {
+        "question": "Find the interval in which the function $f(x) = x e^{x(1 - x)}$ is strictly increasing.",
+        "options": [
+          "$$\\\\left(-\\\\frac{1}{2}, 1\\\\right)$$",
+          "$$\\\\left(-1, \\\\frac{1}{2}\\\\right)$$",
+          "$$(1, \\\\infty)$$",
+          "$$\\\\left(-\\\\infty, -\\\\frac{1}{2}\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $f'(x) = e^{x(1-x)}(1 + x - 2x^2) = -e^{x(1-x)}(2x+1)(x-1)$. Thus $f'(x) > 0 \\\\iff (2x+1)(x-1) < 0 \\\\iff x \\\\in (-1/2, 1)$.",
+          "Incorrect. Sign inversion in roots of the quadratic factor.",
+          "Incorrect. $f'(x) < 0$ on $(1, \\\\infty)$, so the function is strictly decreasing there.",
+          "Incorrect. $f'(x) < 0$ on $(-\\\\infty, -1/2)$."
+        ],
+        "fullExplanation": "1. Differentiate $f(x) = x e^{x - x^2}$ using the product rule:\\n$$f'(x) = 1 \\\\cdot e^{x - x^2} + x \\\\cdot e^{x - x^2} \\\\cdot \\\\frac{d}{dx}(x - x^2)$$\\n$$f'(x) = e^{x(1-x)} [1 + x(1 - 2x)] = e^{x(1-x)} (1 + x - 2x^2)$$\\n2. Since $e^{x(1-x)} > 0$ for all $x \\\\in \\\\mathbb{R}$, the sign of $f'(x)$ is determined solely by the quadratic term:\\n$$P(x) = 1 + x - 2x^2 = -(2x^2 - x - 1) = -(2x + 1)(x - 1)$$\\n3. For $f(x)$ to be strictly increasing, we need $f'(x) > 0$:\\n$$-(2x + 1)(x - 1) > 0 \\\\implies (2x + 1)(x - 1) < 0$$\\nThis quadratic inequality holds when $x$ lies strictly between the two roots:\\n$$-\\\\frac{1}{2} < x < 1$$\\nThus, $f(x)$ is strictly increasing on $\\\\left(-\\\\frac{1}{2}, 1\\\\right)$."
+      },
+      {
+        "question": "At what point on the curve $y = x^2 - 4x + 5$ is the tangent line parallel to the chord joining $A(1, 2)$ and $B(4, 5)$?",
+        "options": [
+          "$$\\\\left(\\\\frac{5}{2}, \\\\frac{5}{4}\\\\right)$$",
+          "$$\\\\left(2, 1\\\\right)$$",
+          "$$\\\\left(3, 2\\\\right)$$",
+          "$$\\\\left(\\\\frac{3}{2}, \\\\frac{5}{4}\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Slope of chord is $\\\\frac{5 - 2}{4 - 1} = 1$. Tangent slope is $2x - 4 = 1 \\\\implies x = 5/2$. Corresponding $y = (5/2)^2 - 4(5/2) + 5 = 25/4 - 10 + 5 = 5/4$.",
+          "Incorrect. That is the vertex of the parabola where the slope is $0$.",
+          "Incorrect. At $(3, 2)$, the slope is $2(3) - 4 = 2 \\\\neq 1$.",
+          "Incorrect. Arithmetic error in solving $2x - 4 = 1$."
+        ],
+        "fullExplanation": "1. Find the slope of the chord connecting $A(1, 2)$ and $B(4, 5)$:\\n$$m_{\\\\text{chord}} = \\\\frac{y_2 - y_1}{x_2 - x_1} = \\\\frac{5 - 2}{4 - 1} = \\\\frac{3}{3} = 1$$\\n2. Find the slope of the tangent to $y = x^2 - 4x + 5$:\\n$$\\\\frac{dy}{dx} = 2x - 4$$\\n3. Equate the tangent slope to the chord slope:\\n$$2x - 4 = 1 \\\\implies 2x = 5 \\\\implies x = \\\\frac{5}{2}$$\\n4. Find the corresponding $y$-coordinate on the curve:\\n$$y = \\\\left(\\\\frac{5}{2}\\\\right)^2 - 4\\\\left(\\\\frac{5}{2}\\\\right) + 5 = \\\\frac{25}{4} - 10 + 5 = \\\\frac{25}{4} - 5 = \\\\frac{5}{4}$$\\nThus, the required point is $\\\\left(\\\\frac{5}{2}, \\\\frac{5}{4}\\\\right)$."
+      },
+      {
+        "question": "Find the acute angle of intersection between the parabolas $y^2 = 4x$ and $x^2 = 4y$ at their non-origin point of intersection.",
+        "options": [
+          "$$\\\\tan^{-1}\\\\left(\\\\frac{3}{4}\\\\right)$$",
+          "$$\\\\tan^{-1}\\\\left(\\\\frac{4}{3}\\\\right)$$",
+          "$$\\\\frac{\\\\pi}{4}$$",
+          "$$\\\\tan^{-1}\\\\left(\\\\frac{1}{2}\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Non-origin intersection point is $(4, 4)$. $m_1 = 2/y = 1/2$ and $m_2 = x/2 = 2$. Then $\\\\tan\\\\theta = \\\\left|\\\\frac{2 - 1/2}{1 + 2(1/2)}\\\\right| = \\\\frac{3/2}{2} = \\\\frac{3}{4}$.",
+          "Incorrect. Inverted the numerator and denominator.",
+          "Incorrect. Occurs when $\\\\tan\\\\theta = 1$, which is not the case here.",
+          "Incorrect. Arithmetic error in evaluating the tangent formula."
+        ],
+        "fullExplanation": "1. Find the points of intersection by substituting $y = \\\\frac{x^2}{4}$ into $y^2 = 4x$:\\n$$\\\\left(\\\\frac{x^2}{4}\\\\right)^2 = 4x \\\\implies \\\\frac{x^4}{16} = 4x \\\\implies x(x^3 - 64) = 0$$\\nExcluding the origin $(0, 0)$, we get $x = 4$, which gives $y = \\\\frac{4^2}{4} = 4$. So the point is $(4, 4)$.\\n2. Differentiate $y^2 = 4x$:\\n$$2y \\\\frac{dy}{dx} = 4 \\\\implies m_1 = \\\\frac{2}{y} = \\\\frac{2}{4} = \\\\frac{1}{2}$$\\n3. Differentiate $x^2 = 4y$:\\n$$2x = 4 \\\\frac{dy}{dx} \\\\implies m_2 = \\\\frac{x}{2} = \\\\frac{4}{2} = 2$$\\n4. Use the angle between curves formula:\\n$$\\\\tan\\\\theta = \\\\left| \\\\frac{m_2 - m_1}{1 + m_1 m_2} \\\\right| = \\\\left| \\\\frac{2 - \\\\frac{1}{2}}{1 + 2 \\\\cdot \\\\frac{1}{2}} \\\\right| = \\\\frac{3/2}{1 + 1} = \\\\frac{3/2}{2} = \\\\frac{3}{4}$$\\n$$\\\\theta = \\\\tan^{-1}\\\\left(\\\\frac{3}{4}\\\\right)$$"
+      },
+      {
+        "question": "Find the coordinates of the point of inflection for the curve $y = x^3 - 6x^2 + 9x + 2$.",
+        "options": [
+          "$$(2, 4)$$",
+          "$$(1, 6)$$",
+          "$$(3, 2)$$",
+          "$$(2, 0)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $y'' = 6x - 12 = 0 \\\\implies x = 2$. At $x = 2$, $y = 8 - 24 + 18 + 2 = 4$. $y'''(2) = 6 \\\\neq 0$, confirming $(2, 4)$ is the point of inflection.",
+          "Incorrect. $(1, 6)$ is the local maximum point.",
+          "Incorrect. $(3, 2)$ is the local minimum point.",
+          "Incorrect. Evaluated the $y$-coordinate incorrectly."
+        ],
+        "fullExplanation": "1. Compute the first and second derivatives:\\n$$y' = 3x^2 - 12x + 9$$\\n$$y'' = 6x - 12$$\\n2. Set $y'' = 0$ to find potential inflection points:\\n$$6x - 12 = 0 \\\\implies x = 2$$\\n3. Verify sign change of $y''$ around $x = 2$:\\n- For $x < 2$, $y'' < 0$ (concave downward).\\n- For $x > 2$, $y'' > 0$ (concave upward).\\nSince $y''$ changes sign, $x = 2$ is indeed an inflection point.\\n4. Calculate the corresponding $y$-value:\\n$$y(2) = 2^3 - 6(2)^2 + 9(2) + 2 = 8 - 24 + 18 + 2 = 4$$\\nTherefore, the point of inflection is $(2, 4)$."
+      },
+      {
+        "question": "A 5-meter-long ladder leans against a vertical wall. If the bottom of the ladder is pulled away from the wall horizontally at a rate of $2\\\\text{ m/s}$, how fast is the top of the ladder sliding down the wall when the foot of the ladder is $4\\\\text{ m}$ away from the wall?",
+        "options": [
+          "$$\\\\frac{8}{3}\\\\text{ m/s}$$",
+          "$$\\\\frac{4}{3}\\\\text{ m/s}$$",
+          "$$2\\\\text{ m/s}$$",
+          "$$\\\\frac{5}{3}\\\\text{ m/s}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By Pythagoras, $x^2 + y^2 = 25$. Differentiating gives $2x x' + 2y y' = 0 \\\\implies y' = -\\\\frac{x}{y}x'$. At $x = 4$, $y = 3$, so $y' = -\\\\frac{4}{3}(2) = -\\\\frac{8}{3}\\\\text{ m/s}$, meaning it slides down at $\\\\frac{8}{3}\\\\text{ m/s}$.",
+          "Incorrect. Missed a factor of 2 from the pulling velocity.",
+          "Incorrect. Assumed the vertical rate equals the horizontal rate.",
+          "Incorrect. Used the length of the ladder in the denominator instead of $y$."
+        ],
+        "fullExplanation": "Let $x$ be the distance from the foot of the ladder to the wall, and $y$ be the height of the top of the ladder on the wall.\\n1. By Pythagoras' theorem:\\n$$x^2 + y^2 = 5^2 = 25$$\\n2. Differentiating with respect to time $t$:\\n$$2x \\\\frac{dx}{dt} + 2y \\\\frac{dy}{dt} = 0 \\\\implies \\\\frac{dy}{dt} = -\\\\frac{x}{y} \\\\frac{dx}{dt}$$\\n3. When $x = 4\\\\text{ m}$:\\n$$y = \\\\sqrt{25 - 4^2} = \\\\sqrt{9} = 3\\\\text{ m}$$\\n4. We are given $\\\\frac{dx}{dt} = 2\\\\text{ m/s}$. Therefore:\\n$$\\\\frac{dy}{dt} = -\\\\frac{4}{3} \\\\times 2 = -\\\\frac{8}{3}\\\\text{ m/s}$$\\nThe negative sign indicates that the height is decreasing. Thus, the top is sliding down at a rate of $\\\\frac{8}{3}\\\\text{ m/s}$."
+      },
+      {
+        "question": "For what values of the parameter $a$ is the function $f(x) = \\\\sin x - ax + b$ strictly decreasing for all $x \\\\in \\\\mathbb{R}$?",
+        "options": [
+          "$$a \\\\ge 1$$",
+          "$$a > 1$$",
+          "$$a \\\\le -1$$",
+          "$$-1 \\\\le a \\\\le 1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $f'(x) = \\\\cos x - a \\\\le 0 \\\\iff a \\\\ge \\\\cos x$ for all $x$. Since the maximum of $\\\\cos x$ is $1$, this requires $a \\\\ge 1$.",
+          "Incorrect. $a = 1$ is also valid because $f'(x) = 0$ only at isolated points $x = 2n\\\\pi$, which preserves strict decrease.",
+          "Incorrect. This makes $f'(x) > 0$, rendering the function strictly increasing.",
+          "Incorrect. For $-1 < a < 1$, $\\\\cos x - a$ changes sign, so the function is non-monotonic."
+        ],
+        "fullExplanation": "1. Differentiate $f(x)$ with respect to $x$:\\n$$f'(x) = \\\\cos x - a$$\\n2. For $f(x)$ to be strictly decreasing on $\\\\mathbb{R}$, we require $f'(x) \\\\le 0$ for all $x \\\\in \\\\mathbb{R}$, with $f'(x) = 0$ occurring at most at isolated points.\\n$$\\\\cos x - a \\\\le 0 \\\\implies a \\\\ge \\\\cos x \\\\quad \\\\forall x \\\\in \\\\mathbb{R}$$\\n3. Since $\\\\max_{x \\\\in \\\\mathbb{R}}(\\\\cos x) = 1$:\\n$$a \\\\ge 1$$\\nWhen $a = 1$, $f'(x) = \\\\cos x - 1 \\\\le 0$, and $f'(x) = 0$ only at discrete points $x = 2n\\\\pi$ ($n \\\\in \\\\mathbb{Z}$). By the monotonicity theorem, this still guarantees that $f(x)$ is strictly decreasing.\\nTherefore, $a \\\\ge 1$."
+      },
+      {
+        "question": "What is the height of a right circular cylinder of maximum volume that can be inscribed in a right circular cone of height $h$ and base radius $R$?",
+        "options": [
+          "$$\\\\frac{h}{3}$$",
+          "$$\\\\frac{h}{2}$$",
+          "$$\\\\frac{2h}{3}$$",
+          "$$\\\\frac{h}{4}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cylinder radius is $r = R(1 - y/h)$. Volume is $V = \\\\pi R^2 y(1 - y/h)^2$. Setting $V'(y) = 0$ yields $y = h/3$.",
+          "Incorrect. $h/2$ gives the maximum curved surface area, not maximum volume.",
+          "Incorrect. $2h/3$ is the remaining height of the cone above the cylinder.",
+          "Incorrect. Arithmetic error in solving the quadratic derivative."
+        ],
+        "fullExplanation": "Let the inscribed cylinder have radius $r$ and height $y$ ($0 < y < h$).\\n1. By similar triangles in the vertical cross-section of the cone:\\n$$\\\\frac{h - y}{h} = \\\\frac{r}{R} \\\\implies r = R\\\\left(1 - \\\\frac{y}{h}\\\\right)$$\\n2. The volume of the cylinder is:\\n$$V(y) = \\\\pi r^2 y = \\\\pi R^2 \\\\left(1 - \\\\frac{y}{h}\\\\right)^2 y = \\\\frac{\\\\pi R^2}{h^2} y (h - y)^2$$\\n3. Differentiate $V(y)$ with respect to $y$ using the product rule:\\n$$\\\\frac{dV}{dy} = \\\\frac{\\\\pi R^2}{h^2} \\\\left[ 1 \\\\cdot (h - y)^2 + y \\\\cdot 2(h - y)(-1) \\\\right]$$\\n$$= \\\\frac{\\\\pi R^2}{h^2} (h - y)[(h - y) - 2y] = \\\\frac{\\\\pi R^2}{h^2} (h - y)(h - 3y)$$\\n4. Set $\\\\frac{dV}{dy} = 0$:\\nSince $y \\\\neq h$ (otherwise volume is zero), we must have:\\n$$h - 3y = 0 \\\\implies y = \\\\frac{h}{3}$$\\nThus, the height of the cylinder of maximum volume is $\\\\frac{h}{3}$."
+      },
+      {
+        "question": "Find the length of the subtangent to the exponential curve $y = b e^{x/a}$ at any arbitrary point $(x_1, y_1)$.",
+        "options": [
+          "$$a$$",
+          "$$b$$",
+          "$$\\\\frac{a}{b}$$",
+          "$$a y_1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $y' = \\\\frac{b}{a} e^{x/a} = \\\\frac{y}{a}$. The length of the subtangent is $\\\\left| \\\\frac{y_1}{y'} \\\\right| = \\\\left| \\\\frac{y_1}{y_1 / a} \\\\right| = a$, which is constant.",
+          "Incorrect. $b$ is the scale factor of the curve.",
+          "Incorrect. Failed to cancel $y_1$.",
+          "Incorrect. The subtangent is entirely independent of $y_1$."
+        ],
+        "fullExplanation": "1. Differentiate the curve $y = b e^{x/a}$ with respect to $x$:\\n$$\\\\frac{dy}{dx} = b \\\\cdot \\\\frac{1}{a} e^{x/a} = \\\\frac{1}{a} \\\\left( b e^{x/a} \\\\right) = \\\\frac{y}{a}$$\\n2. At any point $(x_1, y_1)$ on the curve, the slope of the tangent is:\\n$$m = \\\\left. \\\\frac{dy}{dx} \\\\right|_{(x_1, y_1)} = \\\\frac{y_1}{a}$$\\n3. The formula for the length of the subtangent is:\\n$$\\\\text{Length of Subtangent} = \\\\left| \\\\frac{y_1}{m} \\\\right| = \\\\left| \\\\frac{y_1}{\\\\frac{y_1}{a}} \\\\right| = |a| = a \\\\quad (\\\\text{assuming } a > 0)$$\\nThus, the subtangent has constant length $a$."
+      },
+      {
+        "question": "Find the absolute maximum and absolute minimum values of $f(x) = 2x^3 - 15x^2 + 36x + 1$ on the closed interval $[1, 5]$.",
+        "options": [
+          "$$\\\\text{Max} = 56, \\\\; \\\\text{Min} = 24$$",
+          "$$\\\\text{Max} = 29, \\\\; \\\\text{Min} = 28$$",
+          "$$\\\\text{Max} = 56, \\\\; \\\\text{Min} = 1$$",
+          "$$\\\\text{Max} = 29, \\\\; \\\\text{Min} = 24$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Critical points are $x = 2, 3$. Values: $f(1) = 24, f(2) = 29, f(3) = 28, f(5) = 56$. Hence absolute maximum is 56 and absolute minimum is 24.",
+          "Incorrect. Considered only local extrema at critical points, neglecting boundary points.",
+          "Incorrect. $f(0) = 1$, but $0$ is outside the domain $[1, 5]$.",
+          "Incorrect. Failed to test the upper boundary point $x = 5$."
+        ],
+        "fullExplanation": "1. Find critical points in $(1, 5)$:\\n$$f'(x) = 6x^2 - 30x + 36 = 6(x^2 - 5x + 6) = 6(x - 2)(x - 3)$$\\nSetting $f'(x) = 0$ gives $x = 2$ and $x = 3$. Both lie in $(1, 5)$.\\n2. Evaluate $f(x)$ at critical points and boundary points:\\n- At $x = 1$:\\n$$f(1) = 2(1)^3 - 15(1)^2 + 36(1) + 1 = 2 - 15 + 36 + 1 = 24$$\\n- At $x = 2$:\\n$$f(2) = 2(8) - 15(4) + 36(2) + 1 = 16 - 60 + 72 + 1 = 29$$\\n- At $x = 3$:\\n$$f(3) = 2(27) - 15(9) + 36(3) + 1 = 54 - 135 + 108 + 1 = 28$$\\n- At $x = 5$:\\n$$f(5) = 2(125) - 15(25) + 36(5) + 1 = 250 - 375 + 180 + 1 = 56$$\\n3. Determine absolute extrema:\\n$$\\\\text{Absolute Maximum} = \\\\max\\\\{24, 29, 28, 56\\\\} = 56$$\\n$$\\\\text{Absolute Minimum} = \\\\min\\\\{24, 29, 28, 56\\\\} = 24$$"
+      },
+      {
+        "question": "If $P(x) = (x - 1)(x - 2)(x - 3)(x - 4)$, how many real roots does the derivative equation $P'(x) = 0$ have?",
+        "options": [
+          "$$3$$",
+          "$$4$$",
+          "$$2$$",
+          "$$1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $P(x)$ has 4 distinct real roots: $1, 2, 3, 4$. By Rolle's theorem, $P'(x) = 0$ has at least one root in each of $(1, 2), (2, 3), (3, 4)$. Since $P'(x)$ has degree 3, it has exactly 3 real roots.",
+          "Incorrect. The degree of $P'(x)$ is 3, so it can have at most 3 roots.",
+          "Incorrect. Each interval between consecutive roots contributes a distinct real root.",
+          "Incorrect. Underestimated the number of roots guaranteed by Rolle's Theorem."
+        ],
+        "fullExplanation": "1. The polynomial $P(x)$ has 4 distinct real roots: $x_1 = 1, x_2 = 2, x_3 = 3, x_4 = 4$.\\n2. $P(x)$ is continuous and differentiable everywhere on $\\\\mathbb{R}$.\\n3. Apply Rolle's Theorem on each consecutive pair of roots:\\n- On $[1, 2]$: $P(1) = P(2) = 0 \\\\implies \\\\exists c_1 \\\\in (1, 2)$ such that $P'(c_1) = 0$.\\n- On $[2, 3]$: $P(2) = P(3) = 0 \\\\implies \\\\exists c_2 \\\\in (2, 3)$ such that $P'(c_2) = 0$.\\n- On $[3, 4]$: $P(3) = P(4) = 0 \\\\implies \\\\exists c_3 \\\\in (3, 4)$ such that $P'(c_3) = 0$.\\n4. Since $c_1 < c_2 < c_3$, these are three distinct real roots.\\n5. Since $P(x)$ is a polynomial of degree 4, its derivative $P'(x)$ is of degree 3, which means it can have at most 3 roots.\\nTherefore, $P'(x) = 0$ has exactly 3 real roots."
+      },
+      {
+        "question": "Water is poured into an inverted right circular conical tank of height $8\\\\text{ m}$ and top radius $4\\\\text{ m}$ at a constant rate of $2\\\\text{ m}^3/\\\\text{min}$. At what rate is the water level rising when the depth of water is $4\\\\text{ m}$?",
+        "options": [
+          "$$\\\\frac{1}{2\\\\pi}\\\\text{ m/min}$$",
+          "$$\\\\frac{1}{\\\\pi}\\\\text{ m/min}$$",
+          "$$\\\\frac{2}{\\\\pi}\\\\text{ m/min}$$",
+          "$$\\\\frac{1}{4\\\\pi}\\\\text{ m/min}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $r = h/2$, so $V = \\\\frac{\\\\pi}{12}h^3$. Differentiating gives $\\\\frac{dV}{dt} = \\\\frac{\\\\pi h^2}{4}\\\\frac{dh}{dt}$. Substituting $h = 4$ and $V' = 2$ yields $2 = 4\\\\pi h' \\\\implies h' = \\\\frac{1}{2\\\\pi}\\\\text{ m/min}$.",
+          "Incorrect. Missed a factor of 2 in the denominator.",
+          "Incorrect. Multiplied by 2 instead of dividing.",
+          "Incorrect. Extra factor of 2 in the denominator."
+        ],
+        "fullExplanation": "1. Let $h$ and $r$ be the water depth and water surface radius at time $t$, respectively.\\nBy similar triangles:\\n$$\\\\frac{r}{h} = \\\\frac{4}{8} = \\\\frac{1}{2} \\\\implies r = \\\\frac{h}{2}$$\\n2. The volume of water in the cone is:\\n$$V = \\\\frac{1}{3}\\\\pi r^2 h = \\\\frac{1}{3}\\\\pi \\\\left(\\\\frac{h}{2}\\\\right)^2 h = \\\\frac{\\\\pi h^3}{12}$$\\n3. Differentiate with respect to time $t$:\\n$$\\\\frac{dV}{dt} = \\\\frac{\\\\pi}{12} \\\\cdot 3h^2 \\\\frac{dh}{dt} = \\\\frac{\\\\pi h^2}{4} \\\\frac{dh}{dt}$$\\n4. Substitute $\\\\frac{dV}{dt} = 2\\\\text{ m}^3/\\\\text{min}$ and $h = 4\\\\text{ m}$:\\n$$2 = \\\\frac{\\\\pi (4)^2}{4} \\\\frac{dh}{dt} = 4\\\\pi \\\\frac{dh}{dt}$$\\n$$\\\\frac{dh}{dt} = \\\\frac{2}{4\\\\pi} = \\\\frac{1}{2\\\\pi}\\\\text{ m/min}$$"
+      },
+      {
+        "question": "Find the value of $c$ guaranteed by Lagrange's Mean Value Theorem for $f(x) = x^3 - 5x^2 - 3x$ on the interval $[1, 3]$.",
+        "options": [
+          "$$\\\\frac{7}{3}$$",
+          "$$2$$",
+          "$$\\\\frac{5}{3}$$",
+          "$$\\\\frac{8}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Average rate of change is $\\\\frac{f(3)-f(1)}{3-1} = \\\\frac{-27 - (-7)}{2} = -10$. $f'(c) = 3c^2 - 10c - 3 = -10 \\\\implies 3c^2 - 10c + 7 = 0 \\\\implies c = 7/3$ (since $c \\\\in (1, 3)$).",
+          "Incorrect. Did not satisfy the quadratic equation $3c^2 - 10c + 7 = 0$.",
+          "Incorrect. Arithmetic error in solving the quadratic equation.",
+          "Incorrect. Sign error in applying the quadratic formula."
+        ],
+        "fullExplanation": "1. Evaluate $f(x)$ at the interval endpoints:\\n$$f(1) = 1^3 - 5(1)^2 - 3(1) = 1 - 5 - 3 = -7$$\\n$$f(3) = 3^3 - 5(3)^2 - 3(3) = 27 - 45 - 9 = -27$$\\n2. Compute the secant slope:\\n$$\\\\frac{f(3) - f(1)}{3 - 1} = \\\\frac{-27 - (-7)}{2} = \\\\frac{-20}{2} = -10$$\\n3. Compute $f'(x)$ and equate to $-10$:\\n$$f'(x) = 3x^2 - 10x - 3$$\\n$$3c^2 - 10c - 3 = -10$$\\n$$3c^2 - 10c + 7 = 0$$\\n4. Factor the quadratic equation:\\n$$(3c - 7)(c - 1) = 0 \\\\implies c = 1 \\\\quad \\\\text{or} \\\\quad c = \\\\frac{7}{3}$$\\nSince LMVT requires $c$ to be strictly within the open interval $(1, 3)$, we discard $c = 1$.\\nTherefore, $c = \\\\frac{7}{3}$."
+      },
+      {
+        "question": "A sector of fixed perimeter $P$ is formed from a circle of radius $r$. For what value of $r$ is the area of the sector maximized?",
+        "options": [
+          "$$\\\\frac{P}{4}$$",
+          "$$\\\\frac{P}{2}$$",
+          "$$\\\\frac{P}{6}$$",
+          "$$\\\\frac{P}{\\\\pi}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Perimeter is $P = 2r + l$. Area is $A = \\\\frac{1}{2}r l = \\\\frac{1}{2}r(P - 2r) = \\\\frac{1}{2}Pr - r^2$. Setting $A'(r) = 0$ gives $\\\\frac{P}{2} - 2r = 0 \\\\implies r = P/4$.",
+          "Incorrect. That would leave zero length for the arc.",
+          "Incorrect. Arithmetic error in maximizing the quadratic function.",
+          "Incorrect. Circular arc parameter was not expressed in terms of radius properly."
+        ],
+        "fullExplanation": "1. Let $r$ be the radius and $l$ be the arc length of the sector.\\nPerimeter $P = 2r + l \\\\implies l = P - 2r$.\\n2. The area of the circular sector is:\\n$$A = \\\\frac{1}{2} r l = \\\\frac{1}{2} r (P - 2r) = \\\\frac{1}{2} P r - r^2$$\\n3. Differentiate $A$ with respect to $r$:\\n$$\\\\frac{dA}{dr} = \\\\frac{P}{2} - 2r$$\\n4. Set $\\\\frac{dA}{dr} = 0$ for a maximum:\\n$$\\\\frac{P}{2} - 2r = 0 \\\\implies 2r = \\\\frac{P}{2} \\\\implies r = \\\\frac{P}{4}$$\\nVerify with the second derivative:\\n$$\\\\frac{d^2A}{dr^2} = -2 < 0 \\\\quad (\\\\text{confirming maximum})$$\\nThus, the area is maximum when $r = \\\\frac{P}{4}$."
+      },
+      {
+        "question": "Find the equation of the normal to the curve $y(x - 2)(x - 3) = x + 6$ at the point where it crosses the $y$-axis.",
+        "options": [
+          "$$x + y = 1$$",
+          "$$x - y = 1$$",
+          "$$x + y = -1$$",
+          "$$2x + y = 1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Setting $x = 0$ gives $y(-2)(-3) = 6 \\\\implies y = 1$, so the point is $(0, 1)$. Taking $\\\\ln y$ or differentiating explicitly yields $y'(0) = 1$. The normal slope is $-1$, giving $y - 1 = -1(x - 0) \\\\implies x + y = 1$.",
+          "Incorrect. Used the slope of the tangent instead of the normal.",
+          "Incorrect. Sign error in the point coordinates.",
+          "Incorrect. Miscalculated the derivative value at $x = 0$."
+        ],
+        "fullExplanation": "1. Find the point where the curve intersects the $y$-axis ($x = 0$):\\n$$y(0 - 2)(0 - 3) = 0 + 6 \\\\implies 6y = 6 \\\\implies y = 1$$\\nSo the point of interest is $P(0, 1)$.\\n2. Rewrite the curve explicitly:\\n$$y = \\\\frac{x + 6}{(x - 2)(x - 3)} = \\\\frac{x + 6}{x^2 - 5x + 6}$$\\n3. Differentiate using logarithmic differentiation or the quotient rule:\\nTaking natural logarithm of both sides:\\n$$\\\\ln y = \\\\ln(x + 6) - \\\\ln(x - 2) - \\\\ln(x - 3)$$\\n$$\\\\frac{y'}{y} = \\\\frac{1}{x + 6} - \\\\frac{1}{x - 2} - \\\\frac{1}{x - 3}$$\\nAt $(0, 1)$:\\n$$\\\\frac{y'}{1} = \\\\frac{1}{6} - \\\\left(-\\\\frac{1}{2}\\\\right) - \\\\left(-\\\\frac{1}{3}\\\\right) = \\\\frac{1}{6} + \\\\frac{1}{2} + \\\\frac{1}{3} = \\\\frac{1 + 3 + 2}{6} = \\\\frac{6}{6} = 1$$\\nThus, the slope of the tangent is $m_{\\\\text{tangent}} = 1$.\\n4. The slope of the normal is:\\n$$m_{\\\\text{normal}} = -\\\\frac{1}{m_{\\\\text{tangent}}} = -1$$\\n5. Equation of the normal at $(0, 1)$:\\n$$y - 1 = -1(x - 0) \\\\implies y - 1 = -x \\\\implies x + y = 1$$"
+      },
+      {
+        "question": "For what values of $k$ is the polynomial function $f(x) = x^3 - 3kx^2 + 3x + 1$ strictly increasing on all of $\\\\mathbb{R}$?",
+        "options": [
+          "$$[-1, 1]$$",
+          "$$(-\\\\infty, -1] \\\\cup [1, \\\\infty)$$",
+          "$$(0, 1)$$",
+          "$$[-2, 2]$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $f'(x) = 3(x^2 - 2kx + 1) \\\\ge 0$ for all $x \\\\iff D = 4k^2 - 4 \\\\le 0 \\\\iff k^2 \\\\le 1 \\\\iff k \\\\in [-1, 1]$.",
+          "Incorrect. This is the condition for $D \\\\ge 0$, which would make $f'(x)$ change signs.",
+          "Incorrect. Negative values of $k$ are equally valid due to the $k^2$ symmetry.",
+          "Incorrect. Failed to cancel the common factors in the discriminant."
+        ],
+        "fullExplanation": "1. Differentiate $f(x)$ with respect to $x$:\\n$$f'(x) = 3x^2 - 6kx + 3 = 3(x^2 - 2kx + 1)$$\\n2. For $f(x)$ to be strictly increasing on $\\\\mathbb{R}$, we must have $f'(x) \\\\ge 0$ for all $x \\\\in \\\\mathbb{R}$ with roots occurring only at discrete points.\\n3. A quadratic $ax^2 + bx + c$ with $a = 1 > 0$ is non-negative for all real $x$ if and only if its discriminant $D \\\\le 0$:\\n$$D = (-2k)^2 - 4(1)(1) \\\\le 0$$\\n$$4k^2 - 4 \\\\le 0$$\\n$$k^2 - 1 \\\\le 0 \\\\implies k^2 \\\\le 1$$\\n$$-1 \\\\le k \\\\le 1$$\\nThus, $k \\\\in [-1, 1]$."
+      },
+      {
+        "question": "Find the point on the parabola $y = x^2$ that is closest to the line $y = 2x - 4$.",
+        "options": [
+          "$$(1, 1)$$",
+          "$$(2, 4)$$",
+          "$$\\\\left(\\\\frac{1}{2}, \\\\frac{1}{4}\\\\right)$$",
+          "$$(0, 0)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Slope of the line is $2$. Tangent slope of parabola is $2x = 2 \\\\implies x = 1, y = 1^2 = 1$.",
+          "Incorrect. At $(2, 4)$, the tangent slope is $4 \\\\neq 2$.",
+          "Incorrect. Arithmetic error in solving $2x = 2$.",
+          "Incorrect. $(0, 0)$ has slope $0$."
+        ],
+        "fullExplanation": "1. The line is $y = 2x - 4$, so its slope is $m = 2$.\\n2. The point on the parabola $y = x^2$ closest to the line has its tangent parallel to the line:\\n$$\\\\frac{dy}{dx} = 2x = 2 \\\\implies x = 1$$\\n3. The corresponding $y$-coordinate on the parabola is:\\n$$y = 1^2 = 1$$\\nThus, the nearest point is $(1, 1)$."
+      },
+      {
+        "question": "If the subnormal at every point of a curve has a constant length $k$, what family of curves does it represent?",
+        "options": [
+          "A family of parabolas",
+          "A family of circles",
+          "A family of ellipses",
+          "A family of straight lines"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Length of subnormal is $\\\\left| y \\\\frac{dy}{dx} \\\\right| = k \\\\implies y \\\\, dy = \\\\pm k \\\\, dx \\\\implies y^2 = \\\\pm 2kx + C$, which is a parabola.",
+          "Incorrect. Circles have constant normal length, not constant subnormal.",
+          "Incorrect. Subnormal of an ellipse varies with coordinates.",
+          "Incorrect. Straight lines have subnormal proportional to $y$."
+        ],
+        "fullExplanation": "1. By definition, the length of the subnormal to a curve $y = f(x)$ at any point is:\\n$$\\\\text{Subnormal} = \\\\left| y \\\\frac{dy}{dx} \\\\right|$$\\n2. We are given that this is a constant $k$:\\n$$y \\\\frac{dy}{dx} = \\\\pm k$$\\n3. Separate variables and integrate:\\n$$\\\\int y \\\\, dy = \\\\pm \\\\int k \\\\, dx$$\\n$$\\\\frac{y^2}{2} = \\\\pm kx + c$$\\n$$y^2 = \\\\pm 2kx + 2c$$\\nThis is the standard equation of a parabola opening along the $x$-axis. Therefore, it represents a family of parabolas."
+      },
+      {
+        "question": "Find the acute angle of intersection between the curves $y = \\\\sin x$ and $y = \\\\cos x$ at their first point of intersection in the positive quadrant ($x > 0$).",
+        "options": [
+          "$$\\\\tan^{-1}(2\\\\sqrt{2})$$",
+          "$$\\\\tan^{-1}(\\\\sqrt{2})$$",
+          "$$\\\\frac{\\\\pi}{4}$$",
+          "$$\\\\tan^{-1}(3\\\\sqrt{2})$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Intersection point is $x = \\\\pi/4$. $m_1 = \\\\cos(\\\\pi/4) = 1/\\\\sqrt{2}$ and $m_2 = -\\\\sin(\\\\pi/4) = -1/\\\\sqrt{2}$. Then $\\\\tan\\\\theta = \\\\left| \\\\frac{1/\\\\sqrt{2} - (-1/\\\\sqrt{2})}{1 - 1/2} \\\\right| = \\\\frac{\\\\sqrt{2}}{1/2} = 2\\\\sqrt{2}$.",
+          "Incorrect. Missed a factor of 2 in the numerator.",
+          "Incorrect. Confused the angle with the coordinate of the point of intersection.",
+          "Incorrect. Arithmetic error in combining fractions."
+        ],
+        "fullExplanation": "1. Find the first positive intersection point of $y = \\\\sin x$ and $y = \\\\cos x$:\\n$$\\\\sin x = \\\\cos x \\\\implies \\\\tan x = 1 \\\\implies x = \\\\frac{\\\\pi}{4}$$\\n2. Find the slopes of the tangents at $x = \\\\frac{\\\\pi}{4}$:\\n- For $y_1 = \\\\sin x$:\\n$$m_1 = y_1'\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = \\\\cos\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = \\\\frac{1}{\\\\sqrt{2}}$$\\n- For $y_2 = \\\\cos x$:\\n$$m_2 = y_2'\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = -\\\\sin\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = -\\\\frac{1}{\\\\sqrt{2}}$$\\n3. Calculate the angle $\\\\theta$ between them:\\n$$\\\\tan\\\\theta = \\\\left| \\\\frac{m_1 - m_2}{1 + m_1 m_2} \\\\right| = \\\\left| \\\\frac{\\\\frac{1}{\\\\sqrt{2}} - \\\\left(-\\\\frac{1}{\\\\sqrt{2}}\\\\right)}{1 + \\\\left(\\\\frac{1}{\\\\sqrt{2}}\\\\right)\\\\left(-\\\\frac{1}{\\\\sqrt{2}}\\\\right)} \\\\right|$$\\n$$= \\\\left| \\\\frac{\\\\frac{2}{\\\\sqrt{2}}}{1 - \\\\frac{1}{2}} \\\\right| = \\\\frac{\\\\sqrt{2}}{1/2} = 2\\\\sqrt{2}$$\\n$$\\\\theta = \\\\tan^{-1}(2\\\\sqrt{2})$$"
+      },
+      {
+        "question": "What is the maximum area of a rectangle that can be inscribed in a circle of radius $R$?",
+        "options": [
+          "$$2R^2$$",
+          "$$R^2$$",
+          "$$4R^2$$",
+          "$$\\\\pi R^2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A rectangle inscribed in a circle has maximum area when it is a square of side $s = R\\\\sqrt{2}$, giving area $s^2 = 2R^2$.",
+          "Incorrect. Failed to account for both dimensions.",
+          "Incorrect. This is the area of the circumscribed square.",
+          "Incorrect. This is the area of the circle itself."
+        ],
+        "fullExplanation": "1. Let the rectangle have width $x$ and height $y$. By Pythagoras' theorem:\\n$$x^2 + y^2 = (2R)^2 = 4R^2 \\\\implies y = \\\\sqrt{4R^2 - x^2}$$\\n2. The area is:\\n$$A(x) = x y = x \\\\sqrt{4R^2 - x^2}$$\\nMaximize $A^2 = f(x) = x^2(4R^2 - x^2) = 4R^2 x^2 - x^4$:\\n$$f'(x) = 8R^2 x - 4x^3 = 4x(2R^2 - x^2) = 0$$\\nSince $x > 0$:\\n$$x^2 = 2R^2 \\\\implies x = R\\\\sqrt{2}$$\\n3. The corresponding height is:\\n$$y = \\\\sqrt{4R^2 - 2R^2} = R\\\\sqrt{2}$$\\nSince $x = y = R\\\\sqrt{2}$, the rectangle is a square.\\n4. Maximum Area:\\n$$A_{\\\\max} = x y = (R\\\\sqrt{2})(R\\\\sqrt{2}) = 2R^2$$"
+      },
+      {
+        "question": "At how many points in the interval $(0, 2\\\\pi)$ does the function $f(x) = \\\\cos x + \\\\cos(\\\\sqrt{2}x)$ attain a local maximum?",
+        "options": [
+          "At least 2 points",
+          "Zero points",
+          "Infinitely many points",
+          "Exactly 10 points"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $f'(x) = -\\\\sin x - \\\\sqrt{2}\\\\sin(\\\\sqrt{2}x)$. Within the interval $(0, 2\\\\pi)$, $\\\\sin x$ and $\\\\sin(\\\\sqrt{2}x)$ undergo multiple sign oscillations, producing at least two local maxima.",
+          "Incorrect. The continuous bounded function oscillates, producing local maxima.",
+          "Incorrect. On a bounded interval, smooth trigonometric functions have only finitely many critical points.",
+          "Incorrect. Number of oscillations is far smaller than 10."
+        ],
+        "fullExplanation": "1. The function $f(x) = \\\\cos x + \\\\cos(\\\\sqrt{2}x)$ is infinitely differentiable on $[0, 2\\\\pi]$.\\n2. $f'(x) = -\\\\sin x - \\\\sqrt{2}\\\\sin(\\\\sqrt{2}x)$.\\n3. As $x$ increases from $0$ to $2\\\\pi$, the argument $\\\\sqrt{2}x$ increases from $0$ to $2\\\\sqrt{2}\\\\pi \\\\approx 2.828\\\\pi$ (nearly $3\\\\pi$).\\n4. The derivative changes sign multiple times across $(0, 2\\\\pi)$ from positive to negative, confirming that there are at least two local maxima in $(0, 2\\\\pi)$."
+      },
+      {
+        "question": "If the line $x + y = k$ is a normal to the parabola $y^2 = 12x$, find the value of $k$.",
+        "options": [
+          "$$9$$",
+          "$$3$$",
+          "$$6$$",
+          "$$12$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $y^2 = 12x$, $a = 3$. The line $y = -x + k$ has slope $m = -1$. The normal equation is $y = mx - 2am - am^3$. Here $y = -x - 2(3)(-1) - 3(-1)^3 = -x + 6 + 3 = -x + 9$. Thus $k = 9$.",
+          "Incorrect. Arithmetic error in signs of the cubic normal term.",
+          "Incorrect. Missed the $-am^3$ contribution.",
+          "Incorrect. Evaluated using $a = 12$ instead of $a = 3$."
+        ],
+        "fullExplanation": "1. Compare $y^2 = 12x$ with $y^2 = 4ax$:\\n$$4a = 12 \\\\implies a = 3$$\\n2. The given line is $x + y = k \\\\implies y = -x + k$, so its slope is $m = -1$.\\n3. The standard equation of the normal to the parabola $y^2 = 4ax$ with slope $m$ is:\\n$$y = mx - 2am - am^3$$\\n4. Substitute $a = 3$ and $m = -1$:\\n$$y = (-1)x - 2(3)(-1) - 3(-1)^3$$\\n$$y = -x + 6 + 3 = -x + 9$$\\n$$x + y = 9$$\\nComparing with $x + y = k$ gives $k = 9$."
+      },
+      {
+        "question": "Find the maximum slope of the curve $y = -x^3 + 3x^2 + 9x - 27$.",
+        "options": [
+          "$$12$$",
+          "$$9$$",
+          "$$15$$",
+          "$$6$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Slope is $m(x) = y' = -3x^2 + 6x + 9$. This is a downward-opening parabola with maximum at $x = -6/(2(-3)) = 1$. Maximum slope is $m(1) = -3 + 6 + 9 = 12$.",
+          "Incorrect. This is the $y$-intercept of the derivative.",
+          "Incorrect. Arithmetic error in evaluating $m(1)$.",
+          "Incorrect. Evaluated at $x = 0$."
+        ],
+        "fullExplanation": "1. The slope of the curve at any point $x$ is given by the derivative:\\n$$m(x) = \\\\frac{dy}{dx} = -3x^2 + 6x + 9$$\\n2. To find where the slope is maximized, differentiate $m(x)$ with respect to $x$:\\n$$\\\\frac{dm}{dx} = -6x + 6 = 0 \\\\implies x = 1$$\\n3. Verify that it is a maximum:\\n$$\\\\frac{d^2m}{dx^2} = -6 < 0 \\\\quad (\\\\text{confirming maximum})$$\\n4. Calculate the maximum slope value:\\n$$m(1) = -3(1)^2 + 6(1) + 9 = -3 + 6 + 9 = 12$$"
+      }
+    ]
+  }
+]

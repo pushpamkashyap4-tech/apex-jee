@@ -1,0 +1,746 @@
+[
+  {
+    "chapterName": "p-Block Elements (Class 11: Groups 13 & 14)",
+    "flashcards": [
+      {
+        "front": "What is the true structural formula and constitution of Borax?",
+        "back": "Na₂[B₄O₅(OH)₄]·8H₂O. It contains the tetranuclear polyborate anion [B₄O₅(OH)₄]²⁻ having two tetrahedral sp³-hybridised boron atoms and two planar sp²-hybridised boron atoms."
+      },
+      {
+        "front": "Why is an aqueous solution of borax alkaline in nature?",
+        "back": "Borax hydrolyses in water to form a strong base (NaOH) and a weak monobasic acid (orthoboric acid, H₃BO₃): Na₂B₄O₇ + 7H₂O → 2NaOH + 4H₃BO₃."
+      },
+      {
+        "front": "What chemical changes occur during the Borax Bead Test?",
+        "back": "On heating, borax loses water, swells up, and fuses into a transparent glassy bead consisting of sodium metaborate and boric anhydride: Na₂B₄O₇ → 2NaBO₂ + B₂O₃. With transition metal oxides (e.g., CoO), it forms coloured metaborate beads such as Co(BO₂)₂ (blue)."
+      },
+      {
+        "front": "Describe the unique multicentre bonding in Diborane (B₂H₆).",
+        "back": "B₂H₆ has four terminal two-centre two-electron (2c-2e) B–H bonds lying in one plane, and two bridging three-centre two-electron (3c-2e) B–H–B 'banana' bonds above and below the plane. Both boron atoms are sp³ hybridised."
+      },
+      {
+        "front": "What products are obtained when diborane reacts with ammonia under different conditions?",
+        "back": "With excess NH₃ at low temperature, it forms an ionic diammoniate adduct: [BH₂(NH₃)₂]⁺[BH₄]⁻. Heating at 450 K converts this into borazine ('inorganic benzene'), B₃N₃H₆: 3B₂H₆ + 6NH₃ → 2B₃N₃H₆ + 12H₂."
+      },
+      {
+        "front": "Why is Orthoboric acid (H₃BO₃) considered a monobasic Lewis acid rather than a protonic acid?",
+        "back": "It does not donate a proton directly. Instead, electron-deficient boron acts as a Lewis acid, accepting OH⁻ from H₂O and releasing H⁺: B(OH)₃ + 2H₂O ⇌ [B(OH)₄]⁻ + H₃O⁺ (pKa = 9.25)."
+      },
+      {
+        "front": "Why can boric acid be titrated against standard NaOH only in the presence of polyhydroxy compounds (e.g., glycerol, mannitol)?",
+        "back": "Polyhydroxy compounds form stable cyclic chelate complexes with [B(OH)₄]⁻. This sequesters [B(OH)₄]⁻, shifts the dissociation equilibrium far to the right, and converts boric acid into a strong monobasic acid with a sharp phenolphthalein end point."
+      },
+      {
+        "front": "What is the Green-Edged Flame Test for borate ions?",
+        "back": "Heating a borate salt with concentrated H₂SO₄ and ethanol produces volatile triethyl borate, B(OC₂H₅)₃, which burns with a characteristic green-edged flame: H₃BO₃ + 3C₂H₅OH → B(OC₂H₅)₃ + 3H₂O."
+      },
+      {
+        "front": "Why is the atomic radius of Gallium (135 pm) slightly smaller than that of Aluminium (143 pm)?",
+        "back": "Due to the ineffective shielding of the nucleus by the ten intervening 3d-electrons in Ga (transition contraction). Consequently, the effective nuclear charge (Zeff) increases significantly, drawing the valence shell closer."
+      },
+      {
+        "front": "What is the relative Lewis acidity order of Boron trihalides (BX₃)?",
+        "back": "BF₃ < BCl₃ < BBr₃ < BI₃. The efficiency of pπ–pπ back-bonding from filled halogen p-orbitals into the vacant 2p orbital of boron decreases down the group due to increasing orbital size mismatch, making BI₃ the most electron-deficient."
+      },
+      {
+        "front": "What is the inert pair effect and how does it manifest in Groups 13 and 14?",
+        "back": "It is the reluctance of the valence s-electrons (ns²) to participate in bond formation due to poor shielding by inner d and f subshells. Hence, the +1 state is most stable for Tl in Group 13, and the +2 state is most stable for Pb in Group 14 (making Pb⁴⁺ compounds strong oxidizing agents)."
+      },
+      {
+        "front": "What is Thermite welding (Goldschmidt aluminothermic process)?",
+        "back": "Aluminium reduces heavy metal oxides exothermically due to its high affinity for oxygen: Fe₂O₃ + 2Al → Al₂O₃ + 2Fe (thermite mixture ratio Fe₂O₃ : Al = 3 : 1). The generated molten iron is used for on-site welding of heavy rails."
+      },
+      {
+        "front": "Describe the structural state of Aluminium chloride (AlCl₃) in solid, vapour, and high-temperature states.",
+        "back": "Solid state: Closely packed 6-coordinated layer lattice. Vapour state (200–400 °C) / non-polar solvent: Dimer Al₂Cl₆ with sp³-hybridised Al. Above 800 °C: Planar monomer AlCl₃ with sp²-hybridised Al."
+      },
+      {
+        "front": "What is the catenation order in Group 14 elements and what determines it?",
+        "back": "C >> Si > Ge ≈ Sn. Lead (Pb) shows no catenation. Catenation tendency depends directly on bond dissociation energy: C–C (348 kJ/mol) > Si–Si (222 kJ/mol) > Ge–Ge (167 kJ/mol) > Sn–Sn (155 kJ/mol)."
+      },
+      {
+        "front": "Classify the acidic and basic nature of Group 14 monoxides and dioxides.",
+        "back": "Monoxides: CO (neutral), GeO (distinctly acidic), SnO (amphoteric), PbO (amphoteric).\nDioxides: CO₂, SiO₂, GeO₂ (acidic); SnO₂, PbO₂ (amphoteric)."
+      },
+      {
+        "front": "What are Silicones and how are cross-linked silicones synthesized?",
+        "back": "Silicones are organosilicon polymers containing repeating (R₂SiO)ₙ units with Si–O–Si chains. Cross-linked silicones are synthesized by the complete hydrolysis and subsequent condensation of alkyltrichlorosilanes (RSiCl₃)."
+      },
+      {
+        "front": "What is the specific function of R₃SiCl in silicone polymer manufacturing?",
+        "back": "Hydrolysis of R₃SiCl yields R₃SiOH, which has only one condensable –OH group. It caps growing siloxane chains, acting as a chain terminator to control molecular weight."
+      },
+      {
+        "front": "What is Carbon Suboxide (C₃O₂), and how is it prepared?",
+        "back": "C₃O₂ is a foul-smelling gas prepared by dehydrating malonic acid with P₄O₁₀ at high temperature: 3CH₂(COOH)₂ + P₄O₁₀ → 3C₃O₂ + 4H₃PO₄. It has a linear cumulene structure: O=C=C=C=O."
+      },
+      {
+        "front": "What is Red Lead (Pb₃O₄) and how does it react with concentrated HNO₃?",
+        "back": "Red lead is a mixed oxide: 2PbO·PbO₂ (dilead(II) lead(IV) oxide). With conc. HNO₃, basic PbO dissolves while PbO₂ remains unaffected: Pb₃O₄ + 4HNO₃ → 2Pb(NO₃)₂ + PbO₂↓ (brown residue) + 2H₂O."
+      },
+      {
+        "front": "What is 'Mosaic Gold' and how is it synthesized?",
+        "back": "Mosaic gold is stannic sulfide (SnS₂), a golden-yellow crystalline solid used for decorative gilding. It is prepared by heating a mixture of tin filings, sulfur, and NH₄Cl in a retort: 2(NH₄)₂SnCl₄ + 2S → SnS₂ + (NH₄)₂SnCl₆ + 2NH₄Cl."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "In the tetranuclear unit of borax, [B₄O₅(OH)₄]²⁻, the number of sp² and sp³ hybridised boron atoms are respectively:",
+        "options": ["2 and 2", "1 and 3", "3 and 1", "4 and 0"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Two boron atoms are bonded to three oxygen atoms (sp², planar) and two are bonded to four oxygen atoms (sp³, tetrahedral).",
+          "Incorrect. Borax has an equal number of trigonal planar and tetrahedral boron atoms.",
+          "Incorrect. The ratio of sp² to sp³ centres is 1:1, not 3:1.",
+          "Incorrect. Borax contains both 3-coordinate and 4-coordinate boron atoms."
+        ],
+        "fullExplanation": "The polyborate anion in borax is [B₄O₅(OH)₄]²⁻. Two boron atoms form three B–O bonds each and are sp² hybridised with trigonal planar geometry, while the other two boron atoms form four B–O bonds each (bearing negative formal charges) and are sp³ hybridised with tetrahedral geometry."
+      },
+      {
+        "question": "Which of the following boron trihalides exhibits the GREATEST Lewis acidity towards electron pair donors?",
+        "options": ["BF₃", "BCl₃", "BBr₃", "BI₃"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "BF₃ exhibits strong 2pπ–2pπ back-bonding, significantly reducing its electron deficiency and making it the weakest Lewis acid.",
+          "BCl₃ has weaker back-bonding than BF₃ due to 2pπ–3pπ overlap, but stronger than BBr₃ and BI₃.",
+          "BBr₃ is stronger than BF₃ and BCl₃, but weaker than BI₃.",
+          "Correct. Due to large orbital size mismatch (2p of B and 5p of I), back-bonding in BI₃ is negligible, leaving boron highly electron-deficient."
+        ],
+        "fullExplanation": "The Lewis acidity of boron halides is governed by pπ–pπ back-bonding from filled halogen p orbitals into boron's vacant 2p orbital. The overlap efficiency decreases in the order 2p–2p (BF₃) > 2p–3p (BCl₃) > 2p–4p (BBr₃) > 2p–5p (BI₃). As back-bonding decreases, the Lewis acidity increases: BF₃ < BCl₃ < BBr₃ < BI₃."
+      },
+      {
+        "question": "Why is Gallium smaller in atomic radius than Aluminium, despite being below it in Group 13?",
+        "options": [
+          "Lanthanide contraction",
+          "Ineffective shielding by 3d electrons (transition contraction)",
+          "Inert pair effect",
+          "Loss of outermost valence s electrons"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Lanthanide contraction affects 4d/5d transition elements and heavier p-block elements like Tl and Pb.",
+          "Correct. Ten intervening 3d electrons in Ga have poor shielding power, resulting in a higher Zeff that pulls the 4s and 4p valence electrons closer to the nucleus.",
+          "Inert pair effect describes the reluctance of ns² electrons to bond, not atomic radius contraction.",
+          "Gallium does not lose valence electrons in its elemental state."
+        ],
+        "fullExplanation": "Between Al (Z=13) and Ga (Z=31), the 3d subshell is filled with 10 electrons. Since d-orbitals have poor shielding power, the nuclear charge increases by 18 units while shielding does not increase commensurately. This high effective nuclear charge pulls the electron cloud inward, making Ga (135 pm) slightly smaller than Al (143 pm)."
+      },
+      {
+        "question": "How many bridge B–H–B bonds and terminal B–H bonds are present in one molecule of diborane (B₂H₆)?",
+        "options": [
+          "Two 3c-2e bridge bonds and four 2c-2e terminal bonds",
+          "Four 3c-2e bridge bonds and two 2c-2e terminal bonds",
+          "Two 2c-2e bridge bonds and four 3c-2e terminal bonds",
+          "Six standard 2c-2e covalent bonds"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. There are four coplanar terminal 2c-2e B–H bonds and two bridging 3c-2e B–H–B bonds ('banana' bonds) above and below the plane.",
+          "Incorrect. Bridging hydrogen atoms number two, not four.",
+          "Incorrect. Bridging bonds are electron-deficient (3c-2e), whereas terminal bonds are standard (2c-2e).",
+          "Incorrect. Diborane is an electron-deficient molecule and cannot accommodate six conventional 2c-2e bonds."
+        ],
+        "fullExplanation": "In B₂H₆, each B atom uses sp³ hybridisation. Four terminal H atoms form normal 2c-2e B–H bonds in one plane. Two bridging H atoms share their 1s electrons across two boron atoms simultaneously, creating two 3-centre 2-electron (3c-2e) banana bonds lying in a plane perpendicular to the terminal bonds."
+      },
+      {
+        "question": "Orthoboric acid (H₃BO₃) behaves as a weak monobasic acid in aqueous solution because:",
+        "options": [
+          "It releases one proton directly from its B–OH bonds",
+          "It acts as a Lewis acid by accepting OH⁻ from water and releasing H⁺",
+          "It self-ionizes into H⁺ and H₂BO₃⁻",
+          "It hydrolyses to yield diborane and hydronium ions"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "B–OH bonds are strong covalent bonds and do not ionize directly in water.",
+          "Correct. Boron has an incomplete octet and acts as an OH⁻ acceptor from H₂O: B(OH)₃ + 2H₂O ⇌ [B(OH)₄]⁻ + H₃O⁺.",
+          "Boric acid does not undergo symmetrical self-ionization.",
+          "Hydrolysis does not yield diborane."
+        ],
+        "fullExplanation": "B(OH)₃ is not a protonic Brønsted acid. It acts as a Lewis acid by accepting an electron pair from the oxygen atom of water: B(OH)₃ + 2H₂O ⇌ [B(OH)₄]⁻ + H₃O⁺. Because it accepts one OH⁻ and thereby releases one H⁺, it behaves as a weak monobasic acid (pKa = 9.25)."
+      },
+      {
+        "question": "What is the function of adding polyhydroxy compounds such as glycerol or mannitol during the quantitative titration of boric acid with NaOH?",
+        "options": [
+          "They act as primary redox indicators",
+          "They complex with [B(OH)₄]⁻, shifting the equilibrium forward to convert boric acid into a strong acid",
+          "They prevent the oxidation of sodium hydroxide",
+          "They increase the pH of the initial solution to 12"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "They do not serve as redox indicators; phenolphthalein is the indicator.",
+          "Correct. Polyols form stable, unreactive bicyclic chelate complexes with the borate ion, removing it from equilibrium and allowing sharp neutralization titration.",
+          "Sodium hydroxide is not oxidized during acid-base titration.",
+          "Polyols do not act as alkaline buffers."
+        ],
+        "fullExplanation": "Boric acid cannot be directly titrated with NaOH because it is too weak (pKa = 9.25), yielding no sharp end-point. Polyhydroxy compounds (glycerol, catechol, mannitol) chelate with [B(OH)₄]⁻ to form stable cyclic diester complexes, shifting the equilibrium completely to the product side and enabling sharp visual end-point detection using phenolphthalein."
+      },
+      {
+        "question": "Which of the following compounds burns with a characteristic green-edged flame during the borate qualitative test?",
+        "options": ["B₂O₃", "B(OC₂H₅)₃", "BF₃", "NaBO₂"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "B₂O₃ is non-volatile at the flame temperatures of this test.",
+          "Correct. Triethyl borate, B(OC₂H₅)₃, is volatile and burns with a distinctive green-edged flame.",
+          "BF₃ is an inorganic gas, not formed in this ethanol-H₂SO₄ test.",
+          "NaBO₂ gives a yellow flame due to sodium, masking other colours."
+        ],
+        "fullExplanation": "When a borate salt or boric acid is warmed with concentrated H₂SO₄ and ethanol, volatile ethyl borate is formed: H₃BO₃ + 3C₂H₅OH → B(OC₂H₅)₃ + 3H₂O. The escaping vapors burn with a characteristic green-edged flame."
+      },
+      {
+        "question": "What is the product formed when diborane reacts with ammonia at approximately 450 K?",
+        "options": ["Boron nitride, BN", "Borazine, B₃N₃H₆", "Boron triamide, B(NH₂)₃", "Ammonium borate"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Boron nitride is formed at very high temperatures (>1000 K).",
+          "Correct. At 450 K, a 1:2 molar mixture of B₂H₆ and NH₃ pyrolyzes to yield borazine (inorganic benzene), B₃N₃H₆.",
+          "B(NH₂)₃ is unstable and not isolated in this reaction.",
+          "Ammonium borate is an aqueous salt."
+        ],
+        "fullExplanation": "Reaction of diborane with ammonia at 450 K gives borazine, B₃N₃H₆: 3B₂H₆ + 6NH₃ → 2B₃N₃H₆ + 12H₂. Borazine is isoelectronic and isostructural with benzene, earning the name 'inorganic benzene'."
+      },
+      {
+        "question": "Which Group 14 element has the highest tendency to show catenation?",
+        "options": ["Lead (Pb)", "Silicon (Si)", "Carbon (C)", "Germanium (Ge)"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Lead has the weakest element-element bond and does not show catenation.",
+          "Silicon shows moderate catenation up to 7–8 atoms, but far less than carbon.",
+          "Correct. Carbon has exceptionally strong C–C single bonds (348 kJ/mol) and small atomic size, resulting in maximum catenation.",
+          "Germanium shows very limited catenation."
+        ],
+        "fullExplanation": "Catenation depends primarily on the strength of the element–element single bond. The bond enthalpy decreases drastically down the group: C–C (348 kJ/mol) >> Si–Si (222 kJ/mol) > Ge–Ge (167 kJ/mol) > Sn–Sn (155 kJ/mol). Thus, carbon exhibits the highest catenation property."
+      },
+      {
+        "question": "Which of the following Group 14 tetrahalides is IONIC in nature?",
+        "options": ["CCl₄", "SiCl₄", "SnF₄", "PbCl₄"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "CCl₄ is purely covalent.",
+          "SiCl₄ is a covalent tetrahedral liquid.",
+          "Correct. SnF₄ and PbF₄ are ionic in nature due to high electronegativity of fluorine and large size of tin/lead.",
+          "PbCl₄ is covalent and thermally unstable, decomposing into PbCl₂ and Cl₂."
+        ],
+        "fullExplanation": "Almost all tetrahalides of Group 14 are covalent tetrahedral compounds with sp³ hybridisation. The only notable exceptions are SnF₄ and PbF₄, which are ionic solids with high melting points."
+      },
+      {
+        "question": "Why does PbI₄ NOT exist?",
+        "options": [
+          "Steric crowding of four iodide ions around small lead",
+          "Pb⁴⁺ is a powerful oxidant that oxidizes I⁻ to I₂ spontaneously",
+          "Iodine cannot form single covalent bonds",
+          "Pb⁴⁺ does not form any halides"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Steric crowding is secondary; the primary factor is a redox incompatibility.",
+          "Correct. Pb⁴⁺ is a strong oxidizing agent (due to inert pair effect) and I⁻ is a strong reducing agent. They spontaneously react to give PbI₂ and I₂.",
+          "Iodine readily forms single covalent bonds with other elements.",
+          "Pb⁴⁺ forms stable PbF₄."
+        ],
+        "fullExplanation": "Due to the inert pair effect, Pb⁴⁺ has a high reduction potential and acts as a strong oxidant, while iodide (I⁻) is a strong reducing agent. The Pb–I bond initially formed decomposes via internal redox: Pb⁴⁺ + 2I⁻ → Pb²⁺ + I₂. Hence, PbI₄ does not exist."
+      },
+      {
+        "question": "Hydrolysis of dimethyldichlorosilane, (CH₃)₂SiCl₂, followed by condensation polymerisation produces:",
+        "options": [
+          "A three-dimensional cross-linked silicone",
+          "A straight-chain linear silicone or cyclic silicone",
+          "A monomeric silanol",
+          "Silica gel (SiO₂)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Three-dimensional cross-linked silicones are formed from RSiCl₃.",
+          "Correct. (CH₃)₂SiCl₂ has two chlorine atoms; hydrolysis produces (CH₃)₂Si(OH)₂, which polymerises into linear chain or cyclic silicones.",
+          "Monomeric silanols are fleeting intermediates that spontaneously condense.",
+          "Silica gel is obtained by the acidification of sodium silicate."
+        ],
+        "fullExplanation": "Hydrolysis of dialkyldichlorosilanes, R₂SiCl₂, replaces the two chlorine atoms with hydroxyl groups to form dialkylsilanediols, R₂Si(OH)₂. Condensation polymerisation of these bifunctional units yields linear straight-chain silicones or cyclic silicones with repeating (–Si(R₂)–O–) units."
+      },
+      {
+        "question": "Which of the following compounds is prepared by dehydrating malonic acid with phosphorus pentoxide (P₄O₁₀)?",
+        "options": ["CO", "CO₂", "C₃O₂ (Carbon suboxide)", "CH₃COOH"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "CO is prepared by dehydrating formic acid.",
+          "CO₂ is an oxidation product of carbon or carbonates.",
+          "Correct. Malonic acid, CH₂(COOH)₂, is dehydrated by P₄O₁₀ at ~150 °C to yield carbon suboxide, C₃O₂.",
+          "CH₃COOH is ethanoic acid."
+        ],
+        "fullExplanation": "Heating malonic acid with excess P₄O₁₀ removes two molecules of water per molecule of acid, producing carbon suboxide: 3CH₂(COOH)₂ + P₄O₁₀ → 3C₃O₂ + 4H₃PO₄. C₃O₂ has a linear structure: O=C=C=C=O."
+      },
+      {
+        "question": "When red lead (Pb₃O₄) is treated with concentrated nitric acid (HNO₃), the products formed are:",
+        "options": [
+          "Pb(NO₃)₂ and H₂O only",
+          "PbO, Pb(NO₃)₂, and NO₂",
+          "Pb(NO₃)₂, PbO₂ (brown solid), and H₂O",
+          "Pb(NO₃)₄ and H₂O"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect because PbO₂ does not dissolve in nitric acid.",
+          "Incorrect products; PbO reacts with HNO₃ to form nitrate.",
+          "Correct. Pb₃O₄ behaves as 2PbO·PbO₂. Basic PbO dissolves to give Pb(NO₃)₂, while PbO₂ remains as a brown insoluble precipitate: Pb₃O₄ + 4HNO₃ → 2Pb(NO₃)₂ + PbO₂↓ + 2H₂O.",
+          "Pb(NO₃)₄ does not exist under these conditions."
+        ],
+        "fullExplanation": "Red lead is a stoichiometric mixed oxide composed of lead(II) oxide and lead(IV) oxide (2PbO·PbO₂). When treated with dilute or conc. HNO₃, the basic oxide PbO undergoes acid-base reaction forming soluble Pb(NO₃)₂, whereas PbO₂ is insoluble and acidic/oxidizing, separating out as a brown precipitate."
+      },
+      {
+        "question": "Which of the following oxides of Group 14 elements is NEUTRAL?",
+        "options": ["CO", "GeO", "SnO", "SiO₂"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Carbon monoxide (CO) is neutral towards litmus and does not form salts with acids or bases.",
+          "GeO is distinctly acidic.",
+          "SnO is amphoteric.",
+          "SiO₂ is acidic."
+        ],
+        "fullExplanation": "Among Group 14 monoxides, CO is neutral; GeO is distinctly acidic; SnO and PbO are amphoteric. Among dioxides, CO₂, SiO₂, and GeO₂ are acidic, while SnO₂ and PbO₂ are amphoteric."
+      },
+      {
+        "question": "What is the hybridisation of aluminium in the dimeric molecule Al₂Cl₆ in the vapour phase?",
+        "options": ["sp", "sp²", "sp³", "sp³d"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "sp hybridisation corresponds to linear geometry.",
+          "sp² hybridisation occurs in the monomeric AlCl₃ at temperatures > 800 °C.",
+          "Correct. In the dimer Al₂Cl₆, each Al forms two terminal covalent bonds and two 3-centre coordinate/bridge bonds, adopting tetrahedral geometry with sp³ hybridisation.",
+          "sp³d is not involved in Al₂Cl₆ dimer."
+        ],
+        "fullExplanation": "In vapour phase up to 400 °C, AlCl₃ exists as a chloro-bridged dimer Al₂Cl₆. Each aluminium atom accepts a lone pair of electrons from a chlorine atom belonging to the adjacent monomer, completing its octet with four coordinate/covalent bonds in a tetrahedral arrangement with sp³ hybridisation."
+      },
+      {
+        "question": "Trisilylamine, (SiH₃)₃N, is planar and almost non-basic, whereas trimethylamine, (CH₃)₃N, is pyramidal and strongly basic. This difference is due to:",
+        "options": [
+          "Inductive effect of silicon",
+          "pπ–dπ back-bonding between nitrogen and silicon",
+          "Hydrogen bonding in trisilylamine",
+          "Steric crowding around nitrogen"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Inductive effect alone cannot account for planar geometry.",
+          "Correct. The lone pair on nitrogen is delocalized into the vacant 3d-orbitals of adjacent silicon atoms via pπ–dπ back-bonding, rendering nitrogen sp² hybridised (planar) and making the lone pair unavailable for protonation.",
+          "No hydrogen bonding exists in (SiH₃)₃N.",
+          "Steric crowding would promote pyramidal geometry rather than planar."
+        ],
+        "fullExplanation": "In (SiH₃)₃N, silicon has accessible empty 3d orbitals. The lone pair of electrons on the central nitrogen atom is donated into the vacant 3d orbitals of silicon via pπ–dπ back-bonding. Consequently, the nitrogen atom adopts sp² hybridisation (trigonal planar) and its Lewis basicity is dramatically reduced compared to pyramidal (CH₃)₃N."
+      },
+      {
+        "question": "What is formed when tin metal is dissolved in hot concentrated sodium hydroxide?",
+        "options": ["Sodium stannite (Na₂SnO₂)", "Sodium stannate (Na₂SnO₃) and H₂", "Sn(OH)₂ precipitate", "Sodium stanate (Na₄SnO₄)"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Sodium stannite is formed by Sn²⁺ with cold alkali, but hot conc. alkali oxidizes it to stannate.",
+          "Correct. Sn dissolves in hot concentrated NaOH to form soluble sodium stannate and hydrogen gas: Sn + 2NaOH + H₂O → Na₂SnO₃ + 2H₂↑.",
+          "Sn(OH)₂ dissolves in excess alkali.",
+          "Na₄SnO₄ is an incorrect stoichiometry."
+        ],
+        "fullExplanation": "Tin is an amphoteric metal that reacts with boiling concentrated caustic soda to liberate dihydrogen and form the soluble complex salt sodium stannate: Sn + 2NaOH + H₂O → Na₂SnO₃ + 2H₂↑."
+      },
+      {
+        "question": "In the contact extraction of aluminium, anhydrous AlCl₃ cannot be prepared by heating AlCl₃·6H₂O because:",
+        "options": [
+          "AlCl₃ sublimates immediately upon warming",
+          "It undergoes hydrolytic decomposition into Al₂O₃, HCl, and H₂O",
+          "Water forms an explosive gas mixture with AlCl₃",
+          "The hexahydrate forms insoluble Al(OH)₃ that cannot be separated"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Sublimation occurs with anhydrous AlCl₃, but hydrated AlCl₃ hydrolyses instead.",
+          "Correct. Due to high hydration enthalpy and the strong Al–O bond, heating drives off HCl rather than H₂O: 2[Al(H₂O)₆]Cl₃ → Al₂O₃ + 6HCl + 9H₂O.",
+          "No explosive mixture is formed.",
+          "Al(OH)₃ decomposes further to alumina (Al₂O₃)."
+        ],
+        "fullExplanation": "Hydrated aluminium chloride, [Al(H₂O)₆]Cl₃, contains strong coordinate covalent bonds between aluminium and oxygen. Upon heating, the coordinate Al–O bonds persist while the weaker Cl–H interactions lead to the release of HCl gas: 2[Al(H₂O)₆]Cl₃ → Al₂O₃ + 6HCl↑ + 9H₂O↑. Anhydrous AlCl₃ must instead be prepared by passing dry Cl₂ over heated aluminium."
+      },
+      {
+        "question": "What is the crystalline structure and coordination number of aluminium in anhydrous AlCl₃ in the solid state?",
+        "options": [
+          "Linear polymer with coordination number 2",
+          "Layered lattice structure with octahedral coordination (coordination number 6)",
+          "Discrete tetrahedral dimers with coordination number 4",
+          "Square planar sheet with coordination number 4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Aluminium does not form linear 2-coordinate structures.",
+          "Correct. In the solid state, anhydrous AlCl₃ crystallizes in a closely packed layer lattice where each Al is surrounded octahedrally by 6 chlorine atoms.",
+          "Discrete tetrahedral dimers (Al₂Cl₆) exist only in the vapour phase (200–400 °C) and non-polar liquid phase.",
+          "Aluminium does not adopt square planar coordination."
+        ],
+        "fullExplanation": "In the crystalline solid state, anhydrous AlCl₃ forms a monoclinic layer lattice in which each aluminium atom is surrounded octahedrally by six chloride ions (coordination number = 6). Only upon melting or vaporizing (at ~180 °C) does it convert into discrete tetrahedral dimers, Al₂Cl₆ (coordination number = 4)."
+      }
+    ]
+  },
+  {
+    "chapterName": "General Organic Chemistry",
+    "flashcards": [
+      {
+        "front": "What is the relative electron-withdrawing order (-I effect) of common functional groups?",
+        "back": "–NF₃⁺ > –NR₃⁺ > –NH₃⁺ > –NO₂ > –CN > –COOH > –F > –Cl > –Br > –I > –OR > –OH > –C≡CH > –NH₂ > –C₆H₅ > –CH=CH₂ > –H."
+      },
+      {
+        "front": "What is the relative electron-releasing order (+I effect) of common groups?",
+        "back": "–O⁻ > –COO⁻ > –C(CH₃)₃ (3° alkyl) > –CH(CH₃)₂ (2° alkyl) > –CH₂CH₃ (1° alkyl) > –CH₃ > –T > –D > –H."
+      },
+      {
+        "front": "What is the general hierarchy of electronic displacement effects in governing organic stability and reactivity?",
+        "back": "Mesomeric/Resonance effect (M) > Hyperconjugation effect (H) > Inductive effect (I). Aromaticity precedes all other stabilizations."
+      },
+      {
+        "front": "What is the stability order of simple aliphatic carbocations?",
+        "back": "Tropylium⁺ > Cyclopropylmethyl⁺ > Triphenylmethyl⁺ > Diphenylmethyl⁺ > Benzyl⁺ ≈ Allyl⁺ > 3° (tert-butyl) > 2° (isopropyl) > 1° (ethyl) > Methyl⁺ > Vinyl⁺ > Phenyl⁺ > Ethynyl⁺."
+      },
+      {
+        "front": "What is the stability order of simple aliphatic carbanions?",
+        "back": "CH≡C⁻ (sp) > CH₂=CH⁻ (sp²) > CH₃⁻ (1° / unhindered) > CH₃CH₂⁻ (1°) > (CH₃)₂CH⁻ (2°) > (CH₃)₃C⁻ (3°). Higher s-character and lower +I group count increase stability."
+      },
+      {
+        "front": "What governs the stability of an alkene and its relationship to the Heat of Hydrogenation (ΔH_hydrog)?",
+        "back": "Alkene stability increases with the number of α-hydrogens (hyperconjugation). Heat of Hydrogenation is inversely proportional to alkene stability: ΔH_hydrog ∝ 1 / (Stability of alkene)."
+      },
+      {
+        "front": "State the basic strength order of aliphatic amines in aqueous medium.",
+        "back": "For methyl substitution: (CH₃)₂NH (2°) > CH₃NH₂ (1°) > (CH₃)₃N (3°) > NH₃ (2° > 1° > 3° > NH₃).\nFor ethyl substitution: (C₂H₅)₂NH (2°) > (C₂H₅)₃N (3°) > C₂H₅NH₂ (1°) > NH₃ (2° > 3° > 1° > NH₃)."
+      },
+      {
+        "front": "State the basic strength order of aliphatic amines in non-polar solvents or gaseous phase.",
+        "back": "3° > 2° > 1° > NH₃ for both methyl and ethyl groups, governed solely by the +I effect of alkyl substituents in the absence of hydration."
+      },
+      {
+        "front": "Why is ortho-substituted benzoic acid stronger than meta- and para-substituted isomers, regardless of the nature of the substituent (ortho effect)?",
+        "back": "Due to steric inhibition of resonance (SIR). Bulky ortho substituents force the –COOH group out of coplanarity with the benzene ring, preventing destabilizing cross-conjugation and favoring resonance delocalization of the carboxylate anion."
+      },
+      {
+        "front": "When is Simple Distillation used as a purification technique?",
+        "back": "When separating liquids that boil without decomposition and have a boiling point difference of at least 30 K (30 °C), or a volatile liquid from non-volatile impurities (e.g., chloroform b.p. 334 K and aniline b.p. 475 K)."
+      },
+      {
+        "front": "When is Fractional Distillation applied, and give two common examples.",
+        "back": "When the boiling points of two miscible liquids are close (difference < 25–30 K). Examples: fractionation of crude oil in petroleum refining, and separation of acetone (329 K) from methanol (338 K)."
+      },
+      {
+        "front": "What is Vacuum Distillation (Distillation under Reduced Pressure) and what are its major applications?",
+        "back": "Used for purifying liquids with very high boiling points that decompose at or below their normal boiling temperatures. Under reduced pressure, the liquid boils at a lower temperature. Examples: recovery of glycerol from spent lye in soap manufacturing, and concentration of sugar juice."
+      },
+      {
+        "front": "Explain the principle of Steam Distillation and name three compounds purified by it.",
+        "back": "Used for substances that are steam-volatile and completely immiscible with water. The mixture boils when P_total = P_water + P_substance = 1 atm, boiling at a temperature lower than 100 °C. Examples: aniline, o-nitrophenol, nitrobenzene, turpentine oil."
+      },
+      {
+        "front": "What is the chemical reaction for the detection of Nitrogen in Lassaigne's Test?",
+        "back": "Na + C + N → NaCN. The extract is boiled with FeSO₄ and acidified with conc. HCl / FeCl₃: 6NaCN + FeSO₄ → Na₄[Fe(CN)₆] + Na₂SO₄; then 3Na₄[Fe(CN)₆] + 4FeCl₃ → Fe₄[Fe(CN)₆]₃↓ (Prussian blue) + 12NaCl."
+      },
+      {
+        "front": "How is Sulfur detected in Lassaigne's extract?",
+        "back": "1. With sodium nitroprusside: Na₂S + Na₂[Fe(CN)₅NO] → Na₄[Fe(CN)₅NOS] (sodium thionitroprusside, deep violet/purple colour).\n2. With lead acetate: Na₂S + (CH₃COO)₂Pb → PbS↓ (black precipitate) + 2CH₃COONa."
+      },
+      {
+        "front": "What happens in Lassaigne's test if both Nitrogen and Sulfur are present in the compound?",
+        "back": "Na + C + N + S → NaSCN (sodium thiocyanate). On adding FeCl₃ in acidic medium, it forms a blood-red coloured complex, [Fe(SCN)]²⁺ or Fe(SCN)₃, instead of Prussian blue."
+      },
+      {
+        "front": "Why is Lassaigne's extract boiled with concentrated HNO₃ before testing for halogens?",
+        "back": "To decompose any NaCN or Na₂S present into volatile HCN and H₂S gases: NaCN + HNO₃ → NaNO₃ + HCN↑; Na₂S + 2HNO₃ → 2NaNO₃ + H₂S↑. Otherwise, CN⁻ and S²⁻ would precipitate with AgNO₃ as white AgCN and black Ag₂S, interfering with the halogen test."
+      },
+      {
+        "front": "Give the mathematical formula for percentage of Nitrogen by Dumas Method.",
+        "back": "% N = [28 / 22400] × [Volume of N₂ at STP (in mL) / Mass of organic compound (in g)] × 100."
+      },
+      {
+        "front": "Give the mathematical formula for percentage of Nitrogen by Kjeldahl's Method.",
+        "back": "% N = [1.4 × Normality of acid × Volume of acid consumed by NH₃ (in mL)] / [Mass of organic compound (in g)]."
+      },
+      {
+        "front": "Which classes of nitrogenous organic compounds CANNOT be estimated by Kjeldahl's Method?",
+        "back": "Compounds containing nitro groups (–NO₂), azo groups (–N=N–), and nitrogen present in aromatic rings (e.g., pyridine, quinoline), because their nitrogen is not quantitatively converted into ammonium sulfate ((NH₄)₂SO₄)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following carbocations is the MOST stable?",
+        "options": ["(C₆H₅)₃C⁺", "(CH₃)₃C⁺", "CH₂=CH–CH₂⁺", "(C₆H₅)₂CH⁺"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The triphenylmethyl cation, (C₆H₅)₃C⁺, has extensive resonance delocalization of positive charge across three benzene rings (9 canonical forms).",
+          "(CH₃)₃C⁺ is stabilized only by 9 hyperconjugative α-hydrogens, which is weaker than resonance across three phenyl rings.",
+          "The allyl cation has only two resonating structures.",
+          "The diphenylmethyl cation is less stable than the triphenylmethyl cation due to fewer phenyl rings."
+        ],
+        "fullExplanation": "The triphenylmethyl (trityl) carbocation, (C₆H₅)₃C⁺, is exceptionally stabilized by resonance delocalization of the vacant p-orbital across three benzene rings, giving multiple equivalent canonical contributors. Its stability far exceeds that of tertiary alkyl carbocations or allyl cations."
+      },
+      {
+        "question": "What is the correct order of basic strength of methyl-substituted amines in aqueous solution?",
+        "options": [
+          "(CH₃)₂NH > CH₃NH₂ > (CH₃)₃N > NH₃",
+          "(CH₃)₃N > (CH₃)₂NH > CH₃NH₂ > NH₃",
+          "CH₃NH₂ > (CH₃)₂NH > (CH₃)₃N > NH₃",
+          "(CH₃)₂NH > (CH₃)₃N > CH₃NH₂ > NH₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For methyl amines in water, the order is 2° > 1° > 3° > NH₃ due to a combined balance of inductive effect, steric hindrance, and hydration of the conjugate cation.",
+          "This is the gaseous phase order governed purely by the inductive (+I) effect.",
+          "1° is not stronger than 2° amine.",
+          "This corresponds to the ethyl-substituted order (2° > 3° > 1°), not methyl."
+        ],
+        "fullExplanation": "In aqueous medium, basicity is governed by three factors: +I inductive effect, steric hindrance to the lone pair, and stabilization of the conjugate ammonium cation by hydration. In methyl substitution, the hydration of the 1° cation is strong while the 2° amine has an optimal balance, yielding: (CH₃)₂NH (2°) > CH₃NH₂ (1°) > (CH₃)₃N (3°) > NH₃."
+      },
+      {
+        "question": "Which of the following substituted phenols is the MOST acidic?",
+        "options": ["Phenol", "o-Nitrophenol", "m-Nitrophenol", "p-Nitrophenol"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Phenol lacks electron-withdrawing nitro groups, making it the least acidic among these.",
+          "o-Nitrophenol is strongly acidic due to -M and -I effects, but intramolecular hydrogen bonding stabilizes the undissociated molecule and slightly reduces acidity relative to the para isomer.",
+          "m-Nitrophenol experiences only the inductive (-I) effect of the NO₂ group, as the mesomeric (-M) effect does not operate at the meta position.",
+          "Correct. In p-nitrophenol, the –NO₂ group exerts powerful -M and -I effects to stabilize the phenoxide anion without any intramolecular hydrogen bonding."
+        ],
+        "fullExplanation": "In para-nitrophenol, the –NO₂ group stabilizes the phenoxide ion through both strong -M resonance and -I inductive effects. Although o-nitrophenol has similar electronic effects, intramolecular hydrogen bonding between the phenolic –OH and ortho –NO₂ group inhibits proton loss, making p-nitrophenol (pKa ≈ 7.15) slightly more acidic than o-nitrophenol (pKa ≈ 7.23)."
+      },
+      {
+        "question": "Which method is best suited for separating a mixture of aniline (b.p. 457 K) and chloroform (b.p. 334 K)?",
+        "options": ["Fractional crystallization", "Simple distillation", "Steam distillation", "Differential extraction"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Fractional crystallization is used for purifying solid mixtures based on differences in solubility.",
+          "Correct. Chloroform and aniline are completely miscible liquids with a large boiling point difference (457 K - 334 K = 123 K, well above 30 K).",
+          "Steam distillation is used for steam-volatile, water-immiscible compounds; both components are not water.",
+          "Differential extraction is used when an organic compound distributes between two immiscible solvents."
+        ],
+        "fullExplanation": "Simple distillation is employed when two liquids have a boiling point difference greater than 30–50 K and do not decompose upon boiling. Since the difference between chloroform (334 K) and aniline (457 K) is 123 K, simple distillation cleanly separates the volatile chloroform from aniline."
+      },
+      {
+        "question": "Glycerol (b.p. 563 K) decomposes at or near its normal boiling point. Which method is used industrially to purify glycerol from spent lye?",
+        "options": ["Simple distillation", "Distillation under reduced pressure (vacuum distillation)", "Steam distillation", "Sublimation"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "At atmospheric pressure, glycerol decomposes before reaching its normal boiling point (563 K).",
+          "Correct. Lowering the external pressure reduces the boiling point below the decomposition temperature, allowing safe distillation.",
+          "Steam distillation is inefficient for highly water-soluble polyols like glycerol.",
+          "Glycerol is a liquid and does not sublime."
+        ],
+        "fullExplanation": "Glycerol boils at 563 K at atmospheric pressure with chemical decomposition. Under reduced pressure (vacuum distillation at ~12 mm Hg), its boiling point drops to ~453 K, well below its decomposition threshold, allowing smooth distillation and purification."
+      },
+      {
+        "question": "In the detection of nitrogen by Lassaigne's test, what is the chemical formula of Prussian blue?",
+        "options": ["Fe₄[Fe(CN)₆]₃", "Fe₃[Fe(CN)₆]₂", "Na₄[Fe(CN)₅NOS]", "Fe(SCN)₃"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Prussian blue is iron(III) hexacyanoferrate(II), Fe₄[Fe(CN)₆]₃·xH₂O.",
+          "Fe₃[Fe(CN)₆]₂ is Turnbull's blue (formed from Fe²⁺ and ferricyanide).",
+          "Na₄[Fe(CN)₅NOS] is the purple sodium thionitroprusside complex for sulfur detection.",
+          "Fe(SCN)₃ is the blood-red thiocyanate complex formed when both N and S are present."
+        ],
+        "fullExplanation": "During Lassaigne's test for nitrogen, sodium cyanide reacts with ferrous sulfate to yield sodium ferrocyanide, Na₄[Fe(CN)₆]. Subsequent addition of FeCl₃ in acidic medium oxidizes/reacts to precipitate ferric ferrocyanide (Prussian blue): 3Na₄[Fe(CN)₆] + 4FeCl₃ → Fe₄[Fe(CN)₆]₃↓ + 12NaCl."
+      },
+      {
+        "question": "A violet colouration is obtained when sodium nitroprusside solution is added to Lassaigne's extract. This confirms the presence of:",
+        "options": ["Nitrogen", "Halogen", "Sulfur", "Phosphorus"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Nitrogen gives a Prussian blue colour with FeSO₄ and FeCl₃.",
+          "Halogens yield silver halide precipitates with AgNO₃.",
+          "Correct. Sodium sulfide reacts with sodium nitroprusside to form purple/violet sodium thionitroprusside: Na₂S + Na₂[Fe(CN)₅NO] → Na₄[Fe(CN)₅NOS].",
+          "Phosphorus forms canary-yellow ammonium phosphomolybdate."
+        ],
+        "fullExplanation": "The reaction of sulfide ions (S²⁻) from sodium fusion extract with nitroprusside ions produces the characteristic purple-violet complex anion [Fe(CN)₅NOS]⁴⁻: Na₂S + Na₂[Fe(CN)₅NO] → Na₄[Fe(CN)₅NOS]."
+      },
+      {
+        "question": "During Lassaigne's test, if the organic compound contains BOTH nitrogen and sulfur, the addition of FeCl₃ produces:",
+        "options": ["Prussian blue colour", "Blood-red colour", "Black precipitate", "Canary-yellow precipitate"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Prussian blue is formed only when nitrogen is present without sufficient sulfur to convert all cyanide to thiocyanate.",
+          "Correct. Sodium reacts with C, N, and S together to form sodium thiocyanate (NaSCN), which reacts with Fe³⁺ to form blood-red [Fe(SCN)]²⁺ / Fe(SCN)₃.",
+          "Black precipitate is PbS formed with lead acetate.",
+          "Canary-yellow precipitate is ammonium phosphomolybdate for phosphorus."
+        ],
+        "fullExplanation": "When both nitrogen and sulfur are present, fusion with sodium yields sodium thiocyanate instead of separate NaCN and Na₂S: Na + C + N + S → NaSCN. When acidified and treated with FeCl₃, it forms blood-red iron(III) thiocyanate: Fe³⁺ + 3SCN⁻ → Fe(SCN)₃ (blood-red)."
+      },
+      {
+        "question": "Before testing for halogens with AgNO₃ solution, why must Lassaigne's extract be boiled with concentrated HNO₃?",
+        "options": [
+          "To convert silver halides into soluble complexes",
+          "To oxidize and expel CN⁻ as HCN gas and S²⁻ as H₂S gas",
+          "To reduce halogen atoms into free halide ions",
+          "To neutralize excess sodium hydroxide"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Nitric acid does not complex silver halides.",
+          "Correct. If cyanide or sulfide ions remain, they react with AgNO₃ to give white AgCN or black Ag₂S precipitates that interfere with AgX identification.",
+          "Halogens are already present as halide ions (X⁻) in the extract.",
+          "Simple neutralization is done, but the primary purpose of conc. HNO₃ is the chemical expulsion of interfering CN⁻ and S²⁻."
+        ],
+        "fullExplanation": "Cyanide (CN⁻) and sulfide (S²⁻) ions interfere with the test for halogens because they form white AgCN and black Ag₂S precipitates with AgNO₃. Boiling with concentrated HNO₃ decomposes these ions: NaCN + HNO₃ → NaNO₃ + HCN↑ and Na₂S + 2HNO₃ → 2NaNO₃ + H₂S↑."
+      },
+      {
+        "question": "Which of the following organic compounds CANNOT have its nitrogen content estimated by Kjeldahl's method?",
+        "options": ["CH₃CH₂NH₂", "CH₃CONH₂", "Nitrobenzene (C₆H₅NO₂)", "Aniline (C₆H₅NH₂)"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Ethylamine quantitatively converts to (NH₄)₂SO₄.",
+          "Acetamide readily hydrolyses and digests to (NH₄)₂SO₄.",
+          "Correct. Nitro compounds (–NO₂), azo compounds (–N=N–), and ring nitrogen compounds (pyridine, quinoline) do not yield ammonium sulfate on heating with conc. H₂SO₄.",
+          "Aniline can be analyzed by Kjeldahl's method."
+        ],
+        "fullExplanation": "Kjeldahl's method relies on the quantitative conversion of organic nitrogen into ammonium sulfate, (NH₄)₂SO₄, by digestion with concentrated H₂SO₄. Compounds with nitrogen in nitro (–NO₂) groups, azo (–N=N–) groups, or within heterocyclic rings (e.g., pyridine, quinoline) do not yield ammonium sulfate under these conditions."
+      },
+      {
+        "question": "In Dumas method for nitrogen estimation, 0.3 g of an organic compound yielded 56 mL of N₂ gas at STP. The percentage of nitrogen in the compound is:",
+        "options": ["23.33%", "16.67%", "46.67%", "11.67%"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. % N = (28 / 22400) × (56 / 0.3) × 100 = 0.00125 × 186.67 × 100 = 23.33%.",
+          "Incorrect calculation using incorrect molar volume.",
+          "Incorrect calculation corresponding to double the mass.",
+          "Incorrect arithmetic factor."
+        ],
+        "fullExplanation": "By Dumas method: % N = (28 / 22400) × (Volume of N₂ at STP in mL / Mass of compound in g) × 100 = (28 / 22400) × (56 / 0.3) × 100 = 0.07 / 0.3 = 23.33%."
+      },
+      {
+        "question": "In Liebig's combustion method, 0.44 g of CO₂ and 0.18 g of H₂O were obtained from 0.30 g of an organic compound. The percentages of Carbon and Hydrogen are respectively:",
+        "options": [
+          "40.0% C and 6.67% H",
+          "50.0% C and 5.00% H",
+          "80.0% C and 13.3% H",
+          "27.27% C and 11.11% H"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. % C = (12/44) × (0.44/0.30) × 100 = 40.0%; % H = (2/18) × (0.18/0.30) × 100 = 6.67%.",
+          "Incorrect carbon and hydrogen stoichiometry.",
+          "Incorrect values resulting from doubling the fractions.",
+          "These are percentage compositions of elements in CO₂ and H₂O itself."
+        ],
+        "fullExplanation": "Percentage of Carbon = (12 / 44) × (Mass of CO₂ / Mass of compound) × 100 = (12 / 44) × (0.44 / 0.30) × 100 = 40.0%. Percentage of Hydrogen = (2 / 18) × (Mass of H₂O / Mass of compound) × 100 = (2 / 18) × (0.18 / 0.30) × 100 = 6.67%."
+      },
+      {
+        "question": "Which of the following alkenes has the LOWEST heat of hydrogenation (ΔH_hydrog)?",
+        "options": [
+          "Ethene (CH₂=CH₂)",
+          "Propene (CH₃–CH=CH₂)",
+          "trans-But-2-ene",
+          "2,3-Dimethylbut-2-ene ((CH₃)₂C=C(CH₃)₂)"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Ethene has 0 α-hydrogens and is the least stable alkene, thus possessing the highest heat of hydrogenation.",
+          "Propene has 3 α-hydrogens, making it more stable than ethene but less stable than tetrasubstituted alkenes.",
+          "trans-But-2-ene has 6 α-hydrogens, giving high stability, but less than tetrasubstituted alkenes.",
+          "Correct. 2,3-Dimethylbut-2-ene has 12 α-hydrogens, making it the most stable alkene with the lowest heat of hydrogenation (ΔH_hydrog ∝ 1 / stability)."
+        ],
+        "fullExplanation": "Heat of hydrogenation is inversely proportional to the thermodynamic stability of the alkene. Stability increases with the number of hyperconjugative α-hydrogens. 2,3-Dimethylbut-2-ene has 12 α-hydrogens (most stable), and consequently releases the least heat upon catalytic hydrogenation."
+      },
+      {
+        "question": "Which of the following carbanions is the MOST stable?",
+        "options": ["(CH₃)₃C⁻", "(CH₃)₂CH⁻", "CH₃CH₂⁻", "HC≡C⁻"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "(CH₃)₃C⁻ is 3° and highly destabilized by +I inductive effects of three methyl groups.",
+          "(CH₃)₂CH⁻ is 2° and less stable than 1° and sp carbanions.",
+          "CH₃CH₂⁻ is 1° (sp³ carbon), far less stable than an sp carbanion.",
+          "Correct. In the acetylide anion HC≡C⁻, the negative charge resides on an sp hybridised carbon with 50% s-character (highest electronegativity)."
+        ],
+        "fullExplanation": "The electronegativity of carbon increases with increasing s-character: sp (50% s) > sp² (33.3% s) > sp³ (25% s). High s-character brings the negative charge closer to the carbon nucleus, providing strong electrostatic stabilization. Hence, HC≡C⁻ is significantly more stable than alkyl carbanions."
+      },
+      {
+        "question": "The relative order of stability of free radicals is:",
+        "options": [
+          "3° > 2° > 1° > •CH₃",
+          "•CH₃ > 1° > 2° > 3°",
+          "1° > 2° > 3° > •CH₃",
+          "2° > 3° > 1° > •CH₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. 3° alkyl radicals have the maximum number of hyperconjugative α-hydrogens (e.g., 9 in tert-butyl), making them more stable than 2° (6 α-H), 1° (3 α-H), and methyl (0 α-H).",
+          "This is the reverse of the true stability order.",
+          "Incorrect sequence.",
+          "Incorrect sequence; 3° is more stable than 2°."
+        ],
+        "fullExplanation": "Alkyl free radicals are electron-deficient species (7 valence electrons) stabilized by hyperconjugation and +I effects of attached alkyl groups. The number of hyperconjugative canonical structures is directly related to the number of α-hydrogens: (CH₃)₃C• (9 α-H) > (CH₃)₂CH• (6 α-H) > CH₃CH₂• (3 α-H) > •CH₃ (0 α-H)."
+      },
+      {
+        "question": "Which of the following carboxylic acids has the HIGHEST acidic strength?",
+        "options": ["CH₃COOH", "CH₂ClCOOH", "CHCl₂COOH", "CCl₃COOH"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Acetic acid has no electron-withdrawing chloro substituents.",
+          "Monochloroacetic acid has only one chlorine atom (-I).",
+          "Dichloroacetic acid has two chlorine atoms, but weaker than trichloroacetic acid.",
+          "Correct. Three strongly electronegative chlorine atoms on the α-carbon exert a powerful additive -I effect, strongly stabilizing the carboxylate anion."
+        ],
+        "fullExplanation": "The -I inductive effect stabilizes the conjugate carboxylate anion (RCOO⁻) by dispersing the negative charge. Because the inductive effect is additive, having three chlorine atoms at the α-position produces an exceptionally strong electron-withdrawing effect: CCl₃COOH (pKa ≈ 0.65) >> CHCl₂COOH (pKa ≈ 1.29) > CH₂ClCOOH (pKa ≈ 2.86) > CH₃COOH (pKa ≈ 4.76)."
+      },
+      {
+        "question": "Steam distillation is specifically applicable for purifying liquids which are:",
+        "options": [
+          "Miscible with water and have high boiling points",
+          "Immiscible with water and steam-volatile",
+          "Non-volatile and decompose at room temperature",
+          "Soluble in ether and possess low vapour pressures"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "If the substance is miscible with water, it cannot be separated by steam distillation.",
+          "Correct. The substance must be immiscible with water and exert significant partial vapour pressure near 100 °C (steam-volatile).",
+          "Non-volatile substances cannot distill with steam.",
+          "Ether solubility does not govern the steam distillation principle."
+        ],
+        "fullExplanation": "Steam distillation operates on the principle that a mixture of two mutually immiscible liquids boils when the sum of their individual vapour pressures equals atmospheric pressure: P_total = P_water + P_organic = 1 atm. Thus, the organic compound distills at a temperature lower than both its own normal boiling point and that of water (below 373 K)."
+      },
+      {
+        "question": "Which of the following pairs of liquids can be separated efficiently using Fractional Distillation?",
+        "options": [
+          "Chloroform (b.p. 334 K) and Aniline (b.p. 457 K)",
+          "Acetone (b.p. 329 K) and Methyl alcohol (b.p. 338 K)",
+          "Aniline and Water",
+          "Glycerol and Spent lye"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Large boiling point difference (123 K) makes simple distillation sufficient.",
+          "Correct. Acetone (329 K) and methanol (338 K) have boiling points differing by only 9 K, requiring a fractionating column for separation.",
+          "Aniline and water are immiscible and separated by steam distillation.",
+          "Glycerol decomposes and is purified by vacuum distillation."
+        ],
+        "fullExplanation": "When two miscible liquids have boiling points that are very close (difference < 25 K), simple distillation cannot achieve clean separation because both vapours distill simultaneously. A fractionating column provides repeated vaporization-condensation cycles, successfully separating acetone (329 K) from methanol (338 K)."
+      },
+      {
+        "question": "In paper chromatography or thin-layer chromatography (TLC), the retardation factor (Rf) is defined as:",
+        "options": [
+          "Distance moved by solvent front / Distance moved by substance",
+          "Distance moved by substance from baseline / Distance moved by solvent front from baseline",
+          "Total length of plate / Distance moved by substance",
+          "Time taken by solvent / Time taken by solute"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This is the reciprocal of the Rf value.",
+          "Correct. Rf = (Distance travelled by substance from origin) / (Distance travelled by solvent front from origin).",
+          "Total plate length is not part of the standard Rf formulation.",
+          "Rf is based on linear displacement distances, not retention times."
+        ],
+        "fullExplanation": "The retardation factor (Rf) is a dimensionless ratio used in chromatography: Rf = (Distance moved by the substance from reference baseline) / (Distance moved by the solvent front from reference baseline). Since the substance cannot travel farther than the solvent front, Rf values range between 0 and 1."
+      },
+      {
+        "question": "Which of the following groups exhibits an electron-releasing (+I) inductive effect?",
+        "options": ["–NO₂", "–COOH", "–O⁻", "–F"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "–NO₂ is a powerful electron-withdrawing (-I and -M) group.",
+          "–COOH is an electron-withdrawing (-I) group.",
+          "Correct. Negatively charged groups like –O⁻ and –COO⁻ have excess electron density and exert strong +I electron-releasing effects.",
+          "–F is the most electronegative element and exerts a strong -I effect."
+        ],
+        "fullExplanation": "Groups carrying a formal negative charge possess an abundance of electron density and repel electrons into attached carbon chains. The relative +I releasing order is: –O⁻ > –COO⁻ > –C(CH₃)₃ > –CH(CH₃)₂ > –CH₂CH₃ > –CH₃. Groups with high electronegativity or formal positive charges (–NO₂, –COOH, –F) exert -I effects."
+      }
+    ]
+  }
+]

@@ -1,0 +1,641 @@
+[
+  {
+    "chapterName": "Straight Lines",
+    "flashcards": [
+      {
+        "front": "What is the relation between the Orthocentre $(H)$, Centroid $(G)$, and Circumcentre $(O)$ in any triangle?",
+        "back": "The orthocentre $H$, centroid $G$, and circumcentre $O$ are collinear (lying on the Euler line), and the centroid divides the segment joining the orthocentre and circumcentre in the ratio $H G : G O = 2 : 1$."
+      },
+      {
+        "front": "What are the coordinates of the Incentre $I$ of a triangle with vertices $A(x_1, y_1)$, $B(x_2, y_2)$, and $C(x_3, y_3)$ and opposite side lengths $a, b, c$?",
+        "back": "The coordinates are:\\n$$I = \\\\left(\\\\frac{a x_1 + b x_2 + c x_3}{a + b + c}, \\\\frac{a y_1 + b y_2 + c y_3}{a + b + c}\\\\right)$$"
+      },
+      {
+        "front": "What is the formula for the excentre $I_1$ opposite to vertex $A(x_1, y_1)$?",
+        "back": "The coordinates of $I_1$ are:\\n$$I_1 = \\\\left(\\\\frac{-a x_1 + b x_2 + c x_3}{-a + b + c}, \\\\frac{-a y_1 + b y_2 + c y_3}{-a + b + c}\\\\right)$$"
+      },
+      {
+        "front": "What is the determinant formula for the area of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$?",
+        "back": "$$\\\\text{Area} = \\\\frac{1}{2} \\\\left| \\\\begin{vmatrix} x_1 & y_1 & 1 \\\\\\\\ x_2 & y_2 & 1 \\\\\\\\ x_3 & y_3 & 1 \\\\end{vmatrix} \\\\right| = \\\\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$"
+      },
+      {
+        "front": "What is the normal (perpendicular) form of a straight line equation?",
+        "back": "$$x \\\\cos \\\\alpha + y \\\\sin \\\\alpha = p$$\\nwhere $p \\\\ge 0$ is the perpendicular distance from the origin to the line, and $\\\\alpha \\\\in [0, 2\\\\pi)$ is the angle made by the normal with the positive $x$-axis."
+      },
+      {
+        "front": "What is the parametric (symmetric) form of a straight line?",
+        "back": "$$\\\\frac{x - x_1}{\\\\cos \\\\theta} = \\\\frac{y - y_1}{\\\\sin \\\\theta} = r$$\\nAny point on the line at an algebraic distance $r$ from $(x_1, y_1)$ has coordinates $(x_1 + r\\\\cos \\\\theta, y_1 + r\\\\sin \\\\theta)$."
+      },
+      {
+        "front": "What is the formula for the acute angle $\\\\theta$ between two lines with slopes $m_1$ and $m_2$?",
+        "back": "$$\\\\tan \\\\theta = \\\\left| \\\\frac{m_1 - m_2}{1 + m_1 m_2} \\\\right|$$\\nLines are parallel if $m_1 = m_2$, and perpendicular if $m_1 m_2 = -1$."
+      },
+      {
+        "front": "What is the perpendicular distance of a point $(x_1, y_1)$ from the line $ax + by + c = 0$?",
+        "back": "$$d = \\\\frac{|a x_1 + b y_1 + c|}{\\\\sqrt{a^2 + b^2}}$$"
+      },
+      {
+        "front": "What is the distance between two parallel lines $ax + by + c_1 = 0$ and $ax + by + c_2 = 0$?",
+        "back": "$$d = \\\\frac{|c_1 - c_2|}{\\\\sqrt{a^2 + b^2}}$$\\n(Note: The coefficients of $x$ and $y$ must be made identical first)."
+      },
+      {
+        "front": "What is the area of the parallelogram bounded by the lines $y = m_1 x + c_1$, $y = m_1 x + c_2$, $y = m_2 x + d_1$, and $y = m_2 x + d_2$?",
+        "back": "$$\\\\text{Area} = \\\\left| \\\\frac{(c_1 - c_2)(d_1 - d_2)}{m_1 - m_2} \\\\right|$$"
+      },
+      {
+        "front": "How do you determine the relative position of two points $(x_1, y_1)$ and $(x_2, y_2)$ with respect to the line $L \\\\equiv ax + by + c = 0$?",
+        "back": "The points lie on the same side of the line if $(ax_1 + by_1 + c)$ and $(ax_2 + by_2 + c)$ have the same sign. They lie on opposite sides if the values have opposite signs."
+      },
+      {
+        "front": "What is the condition for three lines $a_i x + b_i y + c_i = 0$ ($i = 1, 2, 3$) to be concurrent?",
+        "back": "The lines are concurrent if and only if:\\n$$\\\\begin{vmatrix} a_1 & b_1 & c_1 \\\\\\\\ a_2 & b_2 & c_2 \\\\\\\\ a_3 & b_3 & c_3 \\\\end{vmatrix} = 0$$"
+      },
+      {
+        "front": "What is the reflection (image) of the point $(x, y)$ in the line $y = x$?",
+        "back": "The image of $(x, y)$ in the line $y = x$ is $(y, x)$."
+      },
+      {
+        "front": "If the origin is shifted to $(\\\\alpha, \\\\beta)$ without rotating axes, how do coordinates transform?",
+        "back": "Old coordinates in terms of new coordinates: $x = x' + \\\\alpha$, $y = y' + \\\\beta$.\\nNew coordinates in terms of old: $x' = x - \\\\alpha$, $y' = y - \\\\beta$."
+      },
+      {
+        "front": "What is the transformation relation when axes are rotated by an angle $\\\\theta$ anticlockwise without shifting origin?",
+        "back": "$$x = x' \\\\cos \\\\theta - y' \\\\sin \\\\theta, \\\\quad y = x' \\\\sin \\\\theta + y' \\\\cos \\\\theta$$\\nIn reverse:\\n$$x' = x \\\\cos \\\\theta + y \\\\sin \\\\theta, \\\\quad y' = -x \\\\sin \\\\theta + y \\\\cos \\\\theta$$"
+      },
+      {
+        "front": "What is the formula for the equations of the angle bisectors between two intersecting lines $a_1 x + b_1 y + c_1 = 0$ and $a_2 x + b_2 y + c_2 = 0$?",
+        "back": "$$\\\\frac{a_1 x + b_1 y + c_1}{\\\\sqrt{a_1^2 + b_1^2}} = \\\\pm \\\\frac{a_2 x + b_2 y + c_2}{\\\\sqrt{a_2^2 + b_2^2}}$$"
+      },
+      {
+        "front": "How do you find the angle bisector containing the origin between two lines?",
+        "back": "First make constant terms $c_1 > 0$ and $c_2 > 0$. Then the bisector with the positive sign ($+$) corresponds to the bisector of the angle containing the origin."
+      },
+      {
+        "front": "How do you distinguish between acute and obtuse angle bisectors?",
+        "back": "Make $c_1, c_2 > 0$:\\n1. If $a_1 a_2 + b_1 b_2 > 0$, then the '$+$' sign gives the obtuse angle bisector and '$-$' gives the acute angle bisector.\\n2. If $a_1 a_2 + b_1 b_2 < 0$, then the '$+$' sign gives the acute angle bisector and '$-$' gives the obtuse angle bisector."
+      },
+      {
+        "front": "What is the equation of the family of lines passing through the intersection of $L_1 \\\\equiv a_1 x + b_1 y + c_1 = 0$ and $L_2 \\\\equiv a_2 x + b_2 y + c_2 = 0$?",
+        "back": "$$L_1 + \\\\lambda L_2 = 0 \\\\implies (a_1 x + b_1 y + c_1) + \\\\lambda (a_2 x + b_2 y + c_2) = 0$$\\nwhere $\\\\lambda$ is an arbitrary parameter."
+      },
+      {
+        "front": "What is the condition for the general equation of second degree $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$ to represent a pair of straight lines?",
+        "back": "$$\\\\Delta = abc + 2fgh - af^2 - bg^2 - ch^2 = 0$$\\nor equivalently:\\n$$\\\\begin{vmatrix} a & h & g \\\\\\\\ h & b & f \\\\\\\\ g & f & c \\\\end{vmatrix} = 0$$"
+      },
+      {
+        "front": "What is the angle $\\\\theta$ between the pair of straight lines represented by $ax^2 + 2hxy + by^2 = 0$?",
+        "back": "$$\\\\tan \\\\theta = \\\\frac{2\\\\sqrt{h^2 - ab}}{|a + b|}$$\\nThe lines are real and distinct if $h^2 > ab$, coincident if $h^2 = ab$, and perpendicular if $a + b = 0$."
+      },
+      {
+        "front": "What is the combined equation of the angle bisectors of the pair of lines $ax^2 + 2hxy + by^2 = 0$?",
+        "back": "$$\\\\frac{x^2 - y^2}{a - b} = \\\\frac{xy}{h}$$"
+      },
+      {
+        "front": "What is the equation of a pair of lines passing through the origin and perpendicular to $ax^2 + 2hxy + by^2 = 0$?",
+        "back": "$$bx^2 - 2hxy + ay^2 = 0$$"
+      },
+      {
+        "front": "What is the distance between the parallel lines given by $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$?",
+        "back": "$$d = 2 \\\\sqrt{\\\\frac{g^2 - ac}{a(a + b)}} = 2 \\\\sqrt{\\\\frac{f^2 - bc}{b(a + b)}}$$"
+      },
+      {
+        "front": "What is the method of homogenization?",
+        "back": "To find the combined equation of the lines joining the origin to the intersection points of a curve $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$ and a line $lx + my + n = 0$, make the curve's equation homogeneous of degree 2 using $\\\\left(\\\\frac{lx + my}{-n}\\\\right) = 1$."
+      },
+      {
+        "front": "What is the area of the rhombus bounded by $a|x| + b|y| + c = 0$?",
+        "back": "$$\\\\text{Area} = \\\\frac{2c^2}{|ab|}$$"
+      },
+      {
+        "front": "What is the area of the triangle formed by the coordinate axes and the line $ax + by + c = 0$?",
+        "back": "$$\\\\text{Area} = \\\\frac{c^2}{2|ab|}$$"
+      },
+      {
+        "front": "What is the formula for the foot of the perpendicular $(h, k)$ from $(x_1, y_1)$ to $ax + by + c = 0$?",
+        "back": "$$\\\\frac{h - x_1}{a} = \\\\frac{k - y_1}{b} = -\\\\frac{ax_1 + by_1 + c}{a^2 + b^2}$$"
+      },
+      {
+        "front": "What is the formula for the image $(\\\\alpha, \\\\beta)$ of a point $(x_1, y_1)$ with respect to the line $ax + by + c = 0$?",
+        "back": "$$\\\\frac{\\\\alpha - x_1}{a} = \\\\frac{\\\\beta - y_1}{b} = -2\\\\frac{ax_1 + by_1 + c}{a^2 + b^2}$$"
+      },
+      {
+        "front": "What is the equation of lines passing through $(x_1, y_1)$ and making an angle $\\\\alpha$ with the line $y = mx + c$?",
+        "back": "$$y - y_1 = \\\\left(\\\\frac{m \\\\pm \\\\tan \\\\alpha}{1 \\\\mp m \\\\tan \\\\alpha}\\\\right)(x - x_1)$$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "If the orthocentre and centroid of a triangle are $(-3, 5)$ and $(3, 3)$ respectively, then the circumcentre of the triangle is:",
+        "options": [
+          "$(6, 2)$",
+          "$(0, 4)$",
+          "$(6, 4)$",
+          "$(9, 2)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Centroid $G$ divides orthocentre $H$ and circumcentre $O$ in the ratio $2 : 1$, giving $O = (6, 2)$.",
+          "Incorrect. $(0, 4)$ is the midpoint of $H$ and $G$, not the circumcentre.",
+          "Incorrect. The $y$-coordinate is evaluated incorrectly.",
+          "Incorrect. Calculation error in using the section formula."
+        ],
+        "fullExplanation": "Let the circumcentre be $O(x, y)$, orthocentre $H(-3, 5)$, and centroid $G(3, 3)$.\\nSince $G$ divides $HO$ in the ratio $2 : 1$:\\n$$x_G = \\\\frac{2x + 1(-3)}{2 + 1} \\\\implies 3 = \\\\frac{2x - 3}{3} \\\\implies 2x - 3 = 9 \\\\implies x = 6$$\\n$$y_G = \\\\frac{2y + 1(5)}{2 + 1} \\\\implies 3 = \\\\frac{2y + 5}{3} \\\\implies 2y + 5 = 9 \\\\implies y = 2$$\\nThus, $O = (6, 2)$."
+      },
+      {
+        "question": "The perpendicular distance from the origin to a line is $5$ units and the line makes an angle of $120^\\\\circ$ with the positive direction of the $x$-axis. The equation of the line is:",
+        "options": [
+          "$\\\\sqrt{3}x - y + 10 = 0$",
+          "$\\\\sqrt{3}x + y - 10 = 0$",
+          "$x + \\\\sqrt{3}y \\\\pm 10 = 0$",
+          "$\\\\sqrt{3}x - y \\\\pm 10 = 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A line with inclination $120^\\\\circ$ has normal angle $\\\\alpha = 30^\\\\circ$ or $210^\\\\circ$. With $p=5$, it yields $\\\\sqrt{3}x - y + 10 = 0$ or $\\\\sqrt{3}x - y - 10 = 0$.",
+          "Incorrect. The slope of $\\\\sqrt{3}x + y - 10 = 0$ is $-\\\\sqrt{3}$ (inclination $120^\\\\circ$), but its perpendicular distance from origin is $10/2 = 5$. However, the normal angle must satisfy the conditions properly.",
+          "Incorrect. This line has slope $-1/\\\\sqrt{3}$, inclination $150^\\\\circ$.",
+          "Incorrect. Only one specific line or sign choice depends on the given inclination, but check the slope: inclination $120^\\\\circ \\\\implies m = \\\\tan 120^\\\\circ = -\\\\sqrt{3}$."
+        ],
+        "fullExplanation": "The slope of the line is $m = \\\\tan 120^\\\\circ = -\\\\sqrt{3}$.\\nSo the line can be written as $\\\\sqrt{3}x + y + c = 0$.\\nThe distance from the origin to the line is:\\n$$d = \\\\frac{|c|}{\\\\sqrt{(\\\\sqrt{3})^2 + 1^2}} = \\\\frac{|c|}{2} = 5 \\\\implies |c| = 10$$\\nThus $\\\\sqrt{3}x + y \\\\pm 10 = 0$. In normal form, $x \\\\cos \\\\alpha + y \\\\sin \\\\alpha = 5$, where $\\\\alpha = 120^\\\\circ - 90^\\\\circ = 30^\\\\circ$ (or $210^\\\\circ$). If $\\\\alpha = 30^\\\\circ$, $x \\\\frac{\\\\sqrt{3}}{2} + y \\\\frac{1}{2} = 5 \\\\implies \\\\sqrt{3}x + y - 10 = 0$."
+      },
+      {
+        "question": "A line passes through $P(2, 3)$ and makes an angle of $30^\\\\circ$ with the positive direction of the $x$-axis. If this line intersects the line $x + y = 7$ at point $Q$, the length $PQ$ is:",
+        "options": [
+          "$\\\\frac{4}{\\\\sqrt{3} + 1}$",
+          "$\\\\frac{2}{\\\\sqrt{3} + 1}$",
+          "$\\\\frac{4\\\\sqrt{3}}{\\\\sqrt{3} + 1}$",
+          "$4(\\\\sqrt{3} - 1)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using parametric coordinates $(2 + r \\\\cos 30^\\\\circ, 3 + r \\\\sin 30^\\\\circ)$ in $x+y=7$, we find $r = \\\\frac{4}{\\\\sqrt{3}+1}$.",
+          "Incorrect. Forgot that $7 - 5 = 2$, but divided by wrong factor.",
+          "Incorrect. Miscalculated the trigonometric values.",
+          "Incorrect. While $\\\\frac{4}{\\\\sqrt{3}+1} = 2(\\\\sqrt{3}-1)$, this option has a factor of $4$."
+        ],
+        "fullExplanation": "Using parametric form, any point on the line at distance $r$ from $P(2, 3)$ is:\\n$$x = 2 + r \\\\cos 30^\\\\circ = 2 + r \\\\frac{\\\\sqrt{3}}{2}, \\\\quad y = 3 + r \\\\sin 30^\\\\circ = 3 + \\\\frac{r}{2}$$\\nSubstitute into $x + y = 7$:\\n$$\\\\left(2 + \\\\frac{\\\\sqrt{3}r}{2}\\\\right) + \\\\left(3 + \\\\frac{r}{2}\\\\right) = 7 \\\\implies 5 + r\\\\left(\\\\frac{\\\\sqrt{3} + 1}{2}\\\\right) = 7$$\\n$$r\\\\left(\\\\frac{\\\\sqrt{3} + 1}{2}\\\\right) = 2 \\\\implies r = \\\\frac{4}{\\\\sqrt{3} + 1}$$\\nThus, $PQ = \\\\frac{4}{\\\\sqrt{3} + 1} = 2(\\\\sqrt{3} - 1)$."
+      },
+      {
+        "question": "The distance between the parallel lines $3x - 4y + 7 = 0$ and $6x - 8y - 6 = 0$ is:",
+        "options": [
+          "$2$",
+          "$\\\\frac{13}{5}$",
+          "$1$",
+          "$\\\\frac{1}{2}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Divide the second equation by 2 to get $3x - 4y - 3 = 0$. Then $d = \\\\frac{|7 - (-3)|}{\\\\sqrt{3^2 + (-4)^2}} = \\\\frac{10}{5} = 2$.",
+          "Incorrect. Failed to make the coefficients of $x$ and $y$ identical before applying the formula.",
+          "Incorrect. Calculation error in the numerator.",
+          "Incorrect. Divided incorrectly by 10 instead of 5."
+        ],
+        "fullExplanation": "Write the two equations with identical coefficients:\\n$$L_1: 3x - 4y + 7 = 0$$\\n$$L_2: 3x - 4y - 3 = 0$$\\nThe distance between them is:\\n$$d = \\\\frac{|c_1 - c_2|}{\\\\sqrt{a^2 + b^2}} = \\\\frac{|7 - (-3)|}{\\\\sqrt{3^2 + (-4)^2}} = \\\\frac{10}{5} = 2$$"
+      },
+      {
+        "question": "The foot of the perpendicular from the point $(2, 3)$ on the line $x + y - 1 = 0$ is:",
+        "options": [
+          "$(0, 1)$",
+          "$(1, 0)$",
+          "$(-1, 2)$",
+          "$(1, 2)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{h-2}{1} = \\\\frac{k-3}{1} = -\\\\frac{2+3-1}{1^2+1^2} = -2 \\\\implies h = 0, k = 1$.",
+          "Incorrect. $(1, 0)$ is on the line, but not the perpendicular foot from $(2, 3)$.",
+          "Incorrect. Does not satisfy the perpendicularity condition.",
+          "Incorrect. $(1, 2)$ does not even lie on $x + y - 1 = 0$."
+        ],
+        "fullExplanation": "Using the foot of perpendicular formula:\\n$$\\\\frac{h - x_1}{a} = \\\\frac{k - y_1}{b} = -\\\\frac{ax_1 + by_1 + c}{a^2 + b^2}$$\\n$$\\\\frac{h - 2}{1} = \\\\frac{k - 3}{1} = -\\\\frac{2 + 3 - 1}{1^2 + 1^2} = -\\\\frac{4}{2} = -2$$\\n$$h - 2 = -2 \\\\implies h = 0$$\\n$$k - 3 = -2 \\\\implies k = 1$$\\nThus, the foot of the perpendicular is $(0, 1)$."
+      },
+      {
+        "question": "The image of the point $(1, 2)$ with respect to the line $x + y + 1 = 0$ is:",
+        "options": [
+          "$(-3, -2)$",
+          "$(-2, -3)$",
+          "$(-3, -4)$",
+          "$(-1, 0)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{\\\\alpha-1}{1} = \\\\frac{\\\\beta-2}{1} = -2\\\\frac{1+2+1}{2} = -4 \\\\implies \\\\alpha = -3, \\\\beta = -2$.",
+          "Incorrect. Inverted the coordinates.",
+          "Incorrect. Arithmetic error in finding the $y$-coordinate.",
+          "Incorrect. This is the midpoint/foot, not the image."
+        ],
+        "fullExplanation": "Using the image formula:\\n$$\\\\frac{\\\\alpha - x_1}{a} = \\\\frac{\\\\beta - y_1}{b} = -2\\\\frac{a x_1 + b y_1 + c}{a^2 + b^2}$$\\n$$\\\\frac{\\\\alpha - 1}{1} = \\\\frac{\\\\beta - 2}{1} = -2\\\\frac{1 + 2 + 1}{1^2 + 1^2} = -2\\\\frac{4}{2} = -4$$\\n$$\\\\alpha - 1 = -4 \\\\implies \\\\alpha = -3$$\\n$$\\\\beta - 2 = -4 \\\\implies \\\\beta = -2$$\\nSo the image is $(-3, -2)$."
+      },
+      {
+        "question": "If the lines $2x + y - 3 = 0$, $5x + ky - 3 = 0$, and $3x - y - 2 = 0$ are concurrent, then the value of $k$ is:",
+        "options": [
+          "$-2$",
+          "$2$",
+          "$3$",
+          "$-3$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Evaluating the determinant of coefficients gives $k = -2$.",
+          "Incorrect. Sign mistake during determinant expansion.",
+          "Incorrect. Miscalculated the intersection point of the first and third lines.",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "Find the intersection of $2x + y - 3 = 0$ and $3x - y - 2 = 0$:\\nAdding them: $5x - 5 = 0 \\\\implies x = 1$.\\nSubstitute $x = 1$ into $2(1) + y - 3 = 0 \\\\implies y = 1$.\\nSince the three lines are concurrent, $(1, 1)$ must satisfy $5x + ky - 3 = 0$:\\n$$5(1) + k(1) - 3 = 0 \\\\implies k + 2 = 0 \\\\implies k = -2$$"
+      },
+      {
+        "question": "The area of the rhombus formed by the lines $3|x| + 4|y| = 12$ is:",
+        "options": [
+          "$24$",
+          "$48$",
+          "$12$",
+          "$96$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The area of rhombus $a|x| + b|y| + c = 0$ is $\\\\frac{2c^2}{|ab|} = \\\\frac{2 \\\\times 144}{12} = 24$.",
+          "Incorrect. Forgot the factor of $2$ or computed diagonals incorrectly.",
+          "Incorrect. Computed only one triangle in the first quadrant.",
+          "Incorrect. Doubled the correct area."
+        ],
+        "fullExplanation": "The intercepts of the rhombus on the axes are:\\nWhen $y = 0$, $3|x| = 12 \\\\implies x = \\\\pm 4$ (length of horizontal diagonal $d_1 = 8$).\\nWhen $x = 0$, $4|y| = 12 \\\\implies y = \\\\pm 3$ (length of vertical diagonal $d_2 = 6$).\\n$$\\\\text{Area} = \\\\frac{1}{2} d_1 d_2 = \\\\frac{1}{2} \\\\times 8 \\\\times 6 = 24$$\\nAlternatively, using standard formula: $\\\\text{Area} = \\\\frac{2c^2}{|ab|} = \\\\frac{2(12^2)}{3 \\\\times 4} = \\\\frac{288}{12} = 24$."
+      },
+      {
+        "question": "The equation of the straight line belonging to the family $(x + y - 2) + \\\\lambda(2x - y + 1) = 0$ that passes through the point $(1, 2)$ is:",
+        "options": [
+          "$3x + 3y - 9 = 0$",
+          "$x + 7y - 15 = 0$",
+          "$2x + y - 4 = 0$",
+          "$x - 2y + 3 = 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Incorrect. Check value of $\\\\lambda$.",
+          "Correct. Substituting $(1, 2)$ gives $(1+2-2) + \\\\lambda(2-2+1) = 0 \\\\implies 1 + \\\\lambda(1) = 0 \\\\implies \\\\lambda = -1$. Then $(x+y-2) - (2x-y+1) = -x + 2y - 3 = 0$, wait.",
+          "Incorrect.",
+          "Correct. Let us recalculate: $(1+2-2) + \\\\lambda(2(1)-2+1) = 0 \\\\implies 1 + \\\\lambda(1) = 0 \\\\implies \\\\lambda = -1$. The line is $(x+y-2) - (2x-y+1) = -x + 2y - 3 = 0 \\\\implies x - 2y + 3 = 0$."
+        ],
+        "correctAnswer": 3,
+        "fullExplanation": "Substitute the point $(1, 2)$ into the family equation:\\n$$(1 + 2 - 2) + \\\\lambda(2(1) - 2 + 1) = 0$$\\n$$1 + \\\\lambda(1) = 0 \\\\implies \\\\lambda = -1$$\\nNow substitute $\\\\lambda = -1$ back into the equation:\\n$$(x + y - 2) - 1(2x - y + 1) = 0$$\\n$$-x + 2y - 3 = 0 \\\\implies x - 2y + 3 = 0$$"
+      },
+      {
+        "question": "The angle between the pair of straight lines given by $x^2 - 7xy + 12y^2 = 0$ is:",
+        "options": [
+          "$\\\\tan^{-1}\\\\left(\\\\frac{1}{13}\\\\right)$",
+          "$\\\\tan^{-1}\\\\left(\\\\frac{1}{7}\\\\right)$",
+          "$\\\\tan^{-1}(1)$",
+          "$\\\\tan^{-1}\\\\left(\\\\frac{2}{13}\\\\right)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\tan \\\\theta = \\\\frac{2\\\\sqrt{h^2 - ab}}{|a+b|} = \\\\frac{2\\\\sqrt{(-7/2)^2 - 12}}{|1+12|} = \\\\frac{2 \\\\times (1/2)}{13} = \\\\frac{1}{13}$.",
+          "Incorrect. Substituted $h$ directly without dividing by 2.",
+          "Incorrect. Calculation error in the square root.",
+          "Incorrect. Failed to cancel the 2 in the numerator."
+        ],
+        "fullExplanation": "Comparing with $ax^2 + 2hxy + by^2 = 0$:\\n$$a = 1, \\\\quad 2h = -7 \\\\implies h = -\\\\frac{7}{2}, \\\\quad b = 12$$\\n$$\\\\tan \\\\theta = \\\\frac{2\\\\sqrt{h^2 - ab}}{|a + b|} = \\\\frac{2\\\\sqrt{\\\\frac{49}{4} - 12}}{|1 + 12|} = \\\\frac{2\\\\sqrt{\\\\frac{1}{4}}}{13} = \\\\frac{2 \\\\times \\\\frac{1}{2}}{13} = \\\\frac{1}{13}$$\\nThus, $\\\\theta = \\\\tan^{-1}\\\\left(\\\\frac{1}{13}\\\\right)$."
+      },
+      {
+        "question": "If the pair of straight lines given by $2x^2 + 2hxy + 3y^2 = 0$ are perpendicular to each other, what must be true about the coefficients?",
+        "options": [
+          "$a + b = 0$, which is impossible here since $2 + 3 \\\\neq 0$, so no such real $h$ makes them perpendicular.",
+          "$h = 0$",
+          "$h = \\\\pm \\\\sqrt{6}$",
+          "$h = 5$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The condition for perpendicularity is $a + b = 0$. Here $a+b = 2+3 = 5 \\\\neq 0$, so the lines can never be perpendicular for any $h$.",
+          "Incorrect. $h=0$ gives $2x^2+3y^2=0$, which represents only the origin.",
+          "Incorrect. $h = \\\\pm \\\\sqrt{6}$ makes $h^2 - ab = 0$, which means coincident lines.",
+          "Incorrect. Irrelevant condition."
+        ],
+        "fullExplanation": "The angle between lines represented by $ax^2 + 2hxy + by^2 = 0$ satisfies $\\\\tan \\\\theta = \\\\frac{2\\\\sqrt{h^2 - ab}}{|a + b|}$.\\nFor the lines to be perpendicular, $\\\\theta = 90^\\\\circ$, which requires the denominator $a + b = 0$.\\nHere, $a = 2$ and $b = 3$, so $a + b = 5 \\\\ne 0$.\\nTherefore, no value of $h$ can make these lines perpendicular."
+      },
+      {
+        "question": "The combined equation of the angle bisectors of the lines represented by $x^2 - 4xy + y^2 = 0$ is:",
+        "options": [
+          "$x^2 - y^2 = 0$",
+          "$xy = 0$",
+          "$x + y = 0$",
+          "$x^2 + y^2 = 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using $\\\\frac{x^2 - y^2}{a - b} = \\\\frac{xy}{h}$, since $a = 1$ and $b = 1$, $a - b = 0$, so $x^2 - y^2 = 0$.",
+          "Incorrect. Result of incorrect cross-multiplication.",
+          "Incorrect. Only one line of the pair.",
+          "Incorrect. Not an equation of straight lines."
+        ],
+        "fullExplanation": "The equation of the bisectors of the angles between the lines $ax^2 + 2hxy + by^2 = 0$ is:\\n$$\\\\frac{x^2 - y^2}{a - b} = \\\\frac{xy}{h}$$\\nHere, $a = 1, b = 1, h = -2$.\\nSince $a - b = 1 - 1 = 0$, we have:\\n$$h(x^2 - y^2) = (a - b)xy \\\\implies -2(x^2 - y^2) = 0 \\\\implies x^2 - y^2 = 0$$"
+      },
+      {
+        "question": "The area of the triangle formed by the line $3x + 4y - 24 = 0$ with the coordinate axes is:",
+        "options": [
+          "$24$",
+          "$48$",
+          "$12$",
+          "$36$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The intercepts are $x = 8$ and $y = 6$. Area $= \\\\frac{1}{2} \\\\times 8 \\\\times 6 = 24$.",
+          "Incorrect. Forgot the $1/2$ factor.",
+          "Incorrect. Divided by 2 twice.",
+          "Incorrect. Miscalculated the intercepts."
+        ],
+        "fullExplanation": "The intercepts of the line $3x + 4y = 24$ are:\\nFor $y = 0 \\\\implies x = 8$\\nFor $x = 0 \\\\implies y = 6$\\n$$\\\\text{Area} = \\\\frac{c^2}{2|ab|} = \\\\frac{24^2}{2 \\\\times 3 \\\\times 4} = \\\\frac{576}{24} = 24$$"
+      },
+      {
+        "question": "If the origin is shifted to $(2, -3)$ without rotation of axes, the coordinates of the point $(5, 2)$ in the new system will be:",
+        "options": [
+          "$(3, 5)$",
+          "$(7, -1)$",
+          "$(3, -1)$",
+          "$(7, 5)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $x' = x - \\\\alpha = 5 - 2 = 3$, $y' = y - \\\\beta = 2 - (-3) = 5$.",
+          "Incorrect. Added the coordinates instead of subtracting.",
+          "Incorrect. Sign mistake in $y'$.",
+          "Incorrect. Added $\\\\alpha$ and $\\\\beta$."
+        ],
+        "fullExplanation": "The transformation formulas for shifting the origin to $(\\\\alpha, \\\\beta) = (2, -3)$ are:\\n$$x' = x - \\\\alpha = 5 - 2 = 3$$\\n$$y' = y - \\\\beta = 2 - (-3) = 5$$\\nThus, the new coordinates are $(3, 5)$."
+      },
+      {
+        "question": "A line has intercepts $a$ and $b$ on the coordinate axes. If the perpendicular from the origin to this line has length $p$, then:",
+        "options": [
+          "$\\\\frac{1}{a^2} + \\\\frac{1}{b^2} = \\\\frac{1}{p^2}$",
+          "$\\\\frac{1}{a^2} - \\\\frac{1}{b^2} = \\\\frac{1}{p^2}$",
+          "$a^2 + b^2 = p^2$",
+          "$\\\\frac{1}{a} + \\\\frac{1}{b} = \\\\frac{1}{p}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $p = \\\\frac{|-1|}{\\\\sqrt{1/a^2 + 1/b^2}} \\\\implies \\\\frac{1}{p^2} = \\\\frac{1}{a^2} + \\\\frac{1}{b^2}$.",
+          "Incorrect. Sign must be positive.",
+          "Incorrect. Dimensions do not match.",
+          "Incorrect. The relation involves squares of the reciprocal values."
+        ],
+        "fullExplanation": "The equation of the line in intercept form is:\\n$$\\\\frac{x}{a} + \\\\frac{y}{b} = 1 \\\\implies \\\\frac{1}{a}x + \\\\frac{1}{b}y - 1 = 0$$\\nThe distance $p$ from the origin $(0, 0)$ is:\\n$$p = \\\\frac{|-1|}{\\\\sqrt{\\\\frac{1}{a^2} + \\\\frac{1}{b^2}}} \\\\implies p^2 = \\\\frac{1}{\\\\frac{1}{a^2} + \\\\frac{1}{b^2}} \\\\implies \\\\frac{1}{a^2} + \\\\frac{1}{b^2} = \\\\frac{1}{p^2}$$"
+      },
+      {
+        "question": "For what value of $\\\\lambda$ does the equation $2x^2 + 7xy + 3y^2 + 4x + 7y + \\\\lambda = 0$ represent a pair of straight lines?",
+        "options": [
+          "$2$",
+          "$4$",
+          "$-2$",
+          "$0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Evaluating $\\\\Delta = abc + 2fgh - af^2 - bg^2 - ch^2 = 0$ yields $\\\\lambda = 2$.",
+          "Incorrect. Computation error in the determinant.",
+          "Incorrect. Sign mistake in solving for $\\\\lambda$.",
+          "Incorrect. Does not make $\\\\Delta = 0$."
+        ],
+        "fullExplanation": "Comparing with $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$:\\n$$a = 2, \\\\quad b = 3, \\\\quad c = \\\\lambda, \\\\quad h = \\\\frac{7}{2}, \\\\quad g = 2, \\\\quad f = \\\\frac{7}{2}$$\\nFor this to represent a pair of lines, $\\\\Delta = 0$:\\n$$\\\\begin{vmatrix} 2 & 7/2 & 2 \\\\\\\\ 7/2 & 3 & 7/2 \\\\\\\\ 2 & 7/2 & \\\\lambda \\\\end{vmatrix} = 0$$\\nExpand along $R_1$:\\n$$2\\\\left(3\\\\lambda - \\\\frac{49}{4}\\\\right) - \\\\frac{7}{2}\\\\left(\\\\frac{7\\\\lambda}{2} - 7\\\\right) + 2\\\\left(\\\\frac{49}{4} - 6\\\\right) = 0$$\\n$$6\\\\lambda - \\\\frac{49}{2} - \\\\frac{49\\\\lambda}{4} + \\\\frac{49}{2} + \\\\frac{49}{2} - 12 = 0$$\\n$$\\\\left(6 - \\\\frac{49}{4}\\\\right)\\\\lambda + \\\\frac{25}{2} = 0 \\\\implies -\\\\frac{25}{4}\\\\lambda + \\\\frac{25}{2} = 0 \\\\implies \\\\lambda = 2$$"
+      },
+      {
+        "question": "The lines joining the origin to the points of intersection of the line $2x + y = 1$ and the curve $3x^2 + 4xy - 4x + 1 = 0$ are:",
+        "options": [
+          "At right angles",
+          "Parallel",
+          "Coincident",
+          "Inclined at an angle of $45^\\\\circ$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Homogenizing gives $3x^2 + 4xy - 4x(2x + y) + (2x + y)^2 = 0 \\\\implies -x^2 + 2xy + y^2 = 0$. Here coefficient of $x^2$ + coefficient of $y^2 = -1 + 1 = 0$, so the lines are perpendicular.",
+          "Incorrect. $h^2 - ab \\\\ne 0$.",
+          "Incorrect. Lines are distinct.",
+          "Incorrect. $a + b = 0$ means angle is $90^\\\\circ$."
+        ],
+        "fullExplanation": "Homogenize the curve using $2x + y = 1$:\\n$$3x^2 + 4xy - 4x(2x + y) + 1(2x + y)^2 = 0$$\\n$$3x^2 + 4xy - 8x^2 - 4xy + (4x^2 + 4xy + y^2) = 0$$\\n$$(3 - 8 + 4)x^2 + 4xy + y^2 = 0 \\\\implies -x^2 + 4xy + y^2 = 0$$\\nIn this equation, coefficient of $x^2$ is $A = -1$ and coefficient of $y^2$ is $B = 1$.\\nSince $A + B = -1 + 1 = 0$, the two lines are mutually perpendicular (at right angles)."
+      },
+      {
+        "question": "The bisector of the acute angle between the lines $3x - 4y + 7 = 0$ and $12x + 5y - 2 = 0$ is:",
+        "options": [
+          "$21x + 77y - 101 = 0$",
+          "$11x - 3y + 9 = 0$",
+          "$99x - 27y + 81 = 0$",
+          "$33x + 11y - 9 = 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Make $c_1 > 0, c_2 > 0$: $3x - 4y + 7 = 0$ and $-12x - 5y + 2 = 0$. $a_1 a_2 + b_1 b_2 = 3(-12) + (-4)(-5) = -36 + 20 = -16 < 0$. Since $a_1 a_2 + b_1 b_2 < 0$, the acute bisector is obtained using the '$+$' sign: $\\\\frac{3x-4y+7}{5} = +\\\\frac{-12x-5y+2}{13} \\\\implies 39x - 52y + 91 = -60x - 25y + 10 \\\\implies 99x - 27y + 81 = 0$, wait!",
+          "Incorrect.",
+          "Correct. Let us simplify: $99x - 27y + 81 = 0 \\\\implies 11x - 3y + 9 = 0$.",
+          "Incorrect."
+        ],
+        "correctAnswer": 1,
+        "fullExplanation": "First, make constant terms positive:\\n$$L_1: 3x - 4y + 7 = 0 \\\\quad (c_1 = 7 > 0)$$\\n$$L_2: -12x - 5y + 2 = 0 \\\\quad (c_2 = 2 > 0)$$\\nNow compute $a_1 a_2 + b_1 b_2$:\\n$$a_1 a_2 + b_1 b_2 = (3)(-12) + (-4)(-5) = -36 + 20 = -16 < 0$$\\nSince $a_1 a_2 + b_1 b_2 < 0$, the '$+$' sign gives the acute angle bisector:\\n$$\\\\frac{3x - 4y + 7}{\\\\sqrt{3^2 + (-4)^2}} = +\\\\frac{-12x - 5y + 2}{\\\\sqrt{(-12)^2 + (-5)^2}}$$\\n$$\\\\frac{3x - 4y + 7}{5} = \\\\frac{-12x - 5y + 2}{13}$$\\n$$13(3x - 4y + 7) = 5(-12x - 5y + 2)$$\\n$$39x - 52y + 91 = -60x - 25y + 10$$\\n$$99x - 27y + 81 = 0 \\\\implies 11x - 3y + 9 = 0$$"
+      },
+      {
+        "question": "The points $(1, 3)$ and $(5, 1)$ lie on:",
+        "options": [
+          "Opposite sides of the line $2x - 3y + 4 = 0$",
+          "The same side of the line $2x - 3y + 4 = 0$",
+          "The line $2x - 3y + 4 = 0$",
+          "None of these"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $(1, 3)$: $2(1) - 3(3) + 4 = -3 < 0$. For $(5, 1)$: $2(5) - 3(1) + 4 = 11 > 0$. Opposite signs mean opposite sides.",
+          "Incorrect. The expressions have opposite signs, not the same.",
+          "Incorrect. Neither point satisfies the equation.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let $L(x, y) = 2x - 3y + 4$.\\nFor $P(1, 3)$:\\n$$L(1, 3) = 2(1) - 3(3) + 4 = 2 - 9 + 4 = -3 < 0$$\\nFor $Q(5, 1)$:\\n$$L(5, 1) = 2(5) - 3(1) + 4 = 10 - 3 + 4 = 11 > 0$$\\nSince $L(1, 3)$ and $L(5, 1)$ have opposite signs, the points lie on opposite sides of the line."
+      },
+      {
+        "question": "The distance between the parallel lines represented by $x^2 + 4xy + 4y^2 + 3x + 6y - 4 = 0$ is:",
+        "options": [
+          "$\\\\sqrt{5}$",
+          "$\\\\frac{5}{\\\\sqrt{5}}$",
+          "$\\\\frac{4}{\\\\sqrt{5}}$",
+          "$2\\\\sqrt{5}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $d = 2\\\\sqrt{\\\\frac{g^2 - ac}{a(a+b)}} = 2\\\\sqrt{\\\\frac{(3/2)^2 - 1(-4)}{1(1+4)}} = 2\\\\sqrt{\\\\frac{9/4 + 4}{5}} = 2\\\\sqrt{\\\\frac{25/4}{5}} = 2 \\\\times \\\\frac{5}{2\\\\sqrt{5}} = \\\\sqrt{5}$.",
+          "Incorrect. $\\\\frac{5}{\\\\sqrt{5}} = \\\\sqrt{5}$, which is the same numeric value, but option A directly matches standard representation.",
+          "Incorrect. Arithmetic error under the root.",
+          "Incorrect. Failed to divide properly by 2."
+        ],
+        "fullExplanation": "The equation factors as:\\n$$(x + 2y)^2 + 3(x + 2y) - 4 = 0$$\\n$$(x + 2y + 4)(x + 2y - 1) = 0$$\\nSo the two parallel lines are $x + 2y + 4 = 0$ and $x + 2y - 1 = 0$.\\nThe distance between them is:\\n$$d = \\\\frac{|4 - (-1)|}{\\\\sqrt{1^2 + 2^2}} = \\\\frac{5}{\\\\sqrt{5}} = \\\\sqrt{5}$$"
+      },
+      {
+        "question": "If the line $y = mx + c$ passes through the points $(2, 4)$ and $(3, 7)$, then the values of $m$ and $c$ are:",
+        "options": [
+          "$m = 3, c = -2$",
+          "$m = 3, c = 2$",
+          "$m = -3, c = 10$",
+          "$m = 1, c = 2$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $m = \\\\frac{7 - 4}{3 - 2} = 3$, and $c = 4 - 3(2) = -2$.",
+          "Incorrect. Sign mistake in finding $c$.",
+          "Incorrect. Wrong slope calculation.",
+          "Incorrect. Incompatible with both points."
+        ],
+        "fullExplanation": "The slope is:\\n$$m = \\\\frac{y_2 - y_1}{x_2 - x_1} = \\\\frac{7 - 4}{3 - 2} = 3$$\\nUsing point-slope form with $(2, 4)$:\\n$$y - 4 = 3(x - 2) \\\\implies y = 3x - 2$$\\nTherefore, $m = 3$ and $c = -2$."
+      },
+      {
+        "question": "A ray of light coming along the line $x - 2y + 5 = 0$ strikes the line $3x - 2y + 7 = 0$. If the point of incidence is $(-1, 2)$, what is the slope of the normal to the reflecting line?",
+        "options": [
+          "$-2/3$",
+          "$3/2$",
+          "$-3/2$",
+          "$2/3$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The reflecting line is $3x - 2y + 7 = 0$, slope $m = 3/2$. The slope of the normal is $-1/m = -2/3$.",
+          "Incorrect. This is the slope of the reflecting line itself.",
+          "Incorrect. Inverted sign.",
+          "Incorrect. Forgot the negative reciprocal."
+        ],
+        "fullExplanation": "The reflecting surface is the line $3x - 2y + 7 = 0$.\\nIts slope is $m_{\\\\text{line}} = -\\\\frac{3}{-2} = \\\\frac{3}{2}$.\\nThe normal is perpendicular to this reflecting surface, so:\\n$$m_{\\\\text{normal}} = -\\\\frac{1}{m_{\\\\text{line}}} = -\\\\frac{2}{3}$$"
+      },
+      {
+        "question": "The area of the parallelogram formed by the lines $y = 2x + 1$, $y = 2x + 5$, $y = -x + 2$, and $y = -x - 4$ is:",
+        "options": [
+          "$8$",
+          "$6$",
+          "$12$",
+          "$4$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\text{Area} = \\\\left|\\\\frac{(c_1 - c_2)(d_1 - d_2)}{m_1 - m_2}\\\\right| = \\\\frac{|(1 - 5)(2 - (-4))|}{|2 - (-1)|} = \\\\frac{|-4 \\\\times 6|}{3} = \\\\frac{24}{3} = 8$.",
+          "Incorrect. Arithmetic error in evaluating the numerator.",
+          "Incorrect. Failed to divide by the denominator.",
+          "Incorrect. Divided by 6 instead of 3."
+        ],
+        "fullExplanation": "Given:\\n$$m_1 = 2, \\\\quad c_1 = 1, \\\\quad c_2 = 5$$\\n$$m_2 = -1, \\\\quad d_1 = 2, \\\\quad d_2 = -4$$\\nUsing the formula for area of a parallelogram:\\n$$\\\\text{Area} = \\\\left| \\\\frac{(c_1 - c_2)(d_1 - d_2)}{m_1 - m_2} \\\\right| = \\\\left| \\\\frac{(1 - 5)(2 - (-4))}{2 - (-1)} \\\\right| = \\\\left| \\\\frac{(-4)(6)}{3} \\\\right| = \\\\frac{24}{3} = 8$$"
+      },
+      {
+        "question": "If the axes are rotated through an angle of $45^\\\\circ$ in the anticlockwise direction, the transformed equation of $x^2 - y^2 = 2a^2$ is:",
+        "options": [
+          "$-2x'y' = a^2$",
+          "$x'y' = -a^2$",
+          "$x'^2 + y'^2 = 2a^2$",
+          "$x'y' = a^2$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Factor of 2 is redundant.",
+          "Correct. $x = \\\\frac{x'-y'}{\\\\sqrt{2}}, y = \\\\frac{x'+y'}{\\\\sqrt{2}}$. Then $x^2 - y^2 = \\\\frac{(x'-y')^2 - (x'+y')^2}{2} = \\\\frac{-4x'y'}{2} = -2x'y' = 2a^2 \\\\implies x'y' = -a^2$.",
+          "Incorrect. The terms don't add to form a circle.",
+          "Incorrect. Sign mistake in expansion."
+        ],
+        "fullExplanation": "Substitute $x = x' \\\\cos 45^\\\\circ - y' \\\\sin 45^\\\\circ = \\\\frac{x' - y'}{\\\\sqrt{2}}$ and $y = x' \\\\sin 45^\\\\circ + y' \\\\cos 45^\\\\circ = \\\\frac{x' + y'}{\\\\sqrt{2}}$ into $x^2 - y^2 = 2a^2$:\\n$$\\\\left(\\\\frac{x' - y'}{\\\\sqrt{2}}\\\\right)^2 - \\\\left(\\\\frac{x' + y'}{\\\\sqrt{2}}\\\\right)^2 = 2a^2$$\\n$$\\\\frac{(x'^2 - 2x'y' + y'^2) - (x'^2 + 2x'y' + y'^2)}{2} = 2a^2$$\\n$$\\\\frac{-4x'y'}{2} = 2a^2 \\\\implies -2x'y' = 2a^2 \\\\implies x'y' = -a^2$$"
+      },
+      {
+        "question": "A line passing through the point $P(1, 2)$ makes an angle of $60^\\\\circ$ with the line $\\\\sqrt{3}x + y = 1$. The equation of one such line is:",
+        "options": [
+          "$x = 1$",
+          "$y = 2$",
+          "$\\\\sqrt{3}x - y = 0$",
+          "$x - \\\\sqrt{3}y + 5 = 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The slope of the given line is $m = -\\\\sqrt{3}$ (angle $120^\\\\circ$). Making an angle of $60^\\\\circ$ gives inclination $120^\\\\circ - 60^\\\\circ = 60^\\\\circ$ or $120^\\\\circ + 60^\\\\circ = 180^\\\\circ$ (or $90^\\\\circ$ since lines can be vertical). Slope $\\\\tan(120^\\\\circ - 30^\\\\circ) = \\\\dots$ wait, $120^\\\\circ - 60^\\\\circ = 60^\\\\circ$ and $120^\\\\circ + 60^\\\\circ = 180^\\\\circ$ or $\\\\theta = 90^\\\\circ$. Let's check slope formula: $m' = \\\\frac{-\\\\sqrt{3} \\\\pm \\\\sqrt{3}}{1 \\\\mp (-\\sqrt{3})(\\\\sqrt{3})} = \\\\frac{-\\\\sqrt{3} \\\\pm \\\\sqrt{3}}{1 \\\\pm 3}$. If minus sign in denominator: $1 - 3 = -2$, numerator $-2\\\\sqrt{3} \\\\implies m' = \\\\sqrt{3}$. If plus sign: numerator $0$, so $m'=0$. But if vertical, $x = 1$.",
+          "Incorrect.",
+          "Incorrect. Does not pass through $(1, 2)$.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The slope of $\\\\sqrt{3}x + y = 1$ is $m = -\\\\sqrt{3}$.\\nUsing the formula for lines making an angle $\\\\alpha = 60^\\\\circ$ with a line of slope $m$:\\n$$m' = \\\\frac{m \\\\pm \\\\tan 60^\\\\circ}{1 \\\\mp m \\\\tan 60^\\\\circ} = \\\\frac{-\\\\sqrt{3} \\\\pm \\\\sqrt{3}}{1 \\\\mp (-\\sqrt{3})(\\\\sqrt{3})} = \\\\frac{-\\\\sqrt{3} \\\\pm \\\\sqrt{3}}{1 \\\\pm 3}$$\\nCase 1: Using $+$ in numerator and $-$ in denominator:\\n$$m_1' = \\\\frac{0}{1 - 3} = 0 \\\\implies y - 2 = 0(x - 1) \\\\implies y = 2$$\\nCase 2: Using $-$ in numerator and $+$ in denominator:\\n$$m_2' = \\\\frac{-2\\\\sqrt{3}}{1 + 3} = -\\\\frac{\\\\sqrt{3}}{2}$$\\nWait! The formula gives $y - 2 = 0 \\\\implies y = 2$. Let's check the angle between $y = 2$ ($m=0$) and $y = -\\\\sqrt{3}x + 1$ ($m = -\\\\sqrt{3}$): $\\\\tan \\\\theta = |\\\\frac{0 - (-\\sqrt{3})}{1 + 0}| = \\\\sqrt{3} \\\\implies \\\\theta = 60^\\\\circ$. So $y = 2$ is indeed an exact solution!"
+      },
+      {
+        "question": "The coordinates of the incentre of the triangle with vertices $(0, 0)$, $(4, 0)$, and $(0, 3)$ are:",
+        "options": [
+          "$(1, 1)$",
+          "$(4/3, 1)$",
+          "$(1, 4/3)$",
+          "$(2, 2)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The sides are $a = 5$ (hypotenuse opposite to $(0,0)$), $b = 3$ (opposite to $(4,0)$), $c = 4$ (opposite to $(0,3)$). $x = \\\\frac{5(0) + 3(4) + 4(0)}{5+3+4} = \\\\frac{12}{12} = 1$, $y = \\\\frac{5(0) + 3(0) + 4(3)}{12} = 1$.",
+          "Incorrect. This is the centroid $(4/3, 1)$, not the incentre.",
+          "Incorrect. Reversed coordinates.",
+          "Incorrect. Midpoint error."
+        ],
+        "fullExplanation": "Let $A = (0, 3)$, $B = (4, 0)$, and $C = (0, 0)$.\\nSide lengths:\\n$$a = BC = \\\\sqrt{4^2 + 0^2} = 4$$\\n$$b = AC = \\\\sqrt{0^2 + 3^2} = 3$$\\n$$c = AB = \\\\sqrt{4^2 + 3^2} = 5$$\\nTotal perimeter $a + b + c = 4 + 3 + 5 = 12$.\\nCoordinates of the incentre:\\n$$x_I = \\\\frac{a x_A + b x_B + c x_C}{a + b + c} = \\\\frac{4(0) + 3(4) + 5(0)}{12} = \\\\frac{12}{12} = 1$$\\n$$y_I = \\\\frac{a y_A + b y_B + c y_C}{a + b + c} = \\\\frac{4(3) + 3(0) + 5(0)}{12} = \\\\frac{12}{12} = 1$$\\nThus, $I = (1, 1)$."
+      },
+      {
+        "question": "If the slope of one of the lines represented by $ax^2 + 2hxy + by^2 = 0$ is twice that of the other, then:",
+        "options": [
+          "$8h^2 = 9ab$",
+          "$9h^2 = 8ab$",
+          "$8h = 9ab$",
+          "$h^2 = ab$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let slopes be $m$ and $2m$. $m + 2m = -2h/b \\\\implies 3m = -2h/b$. $m(2m) = a/b \\\\implies 2m^2 = a/b$. Eliminating $m$ gives $8h^2 = 9ab$.",
+          "Incorrect. Inverted the ratio constants.",
+          "Incorrect. The term $h$ must be squared.",
+          "Incorrect. This is the condition for coincident lines ($m_1 = m_2$)."
+        ],
+        "fullExplanation": "Let the two slopes be $m_1 = m$ and $m_2 = 2m$.\\nSum of slopes:\\n$$m_1 + m_2 = 3m = -\\\\frac{2h}{b} \\\\implies m = -\\\\frac{2h}{3b}$$\\nProduct of slopes:\\n$$m_1 m_2 = 2m^2 = \\\\frac{a}{b}$$\\nSubstitute $m$ into the product equation:\\n$$2\\\\left(-\\\\frac{2h}{3b}\\\\right)^2 = \\\\frac{a}{b} \\\\implies 2\\\\left(\\\\frac{4h^2}{9b^2}\\\\right) = \\\\frac{a}{b}$$\\n$$\\\\frac{8h^2}{9b} = a \\\\implies 8h^2 = 9ab$$"
+      },
+      {
+        "question": "The reflection of the line $2x - 3y + 4 = 0$ in the line $y = x$ is:",
+        "options": [
+          "$-3x + 2y + 4 = 0$",
+          "$2x + 3y + 4 = 0$",
+          "$3x - 2y + 4 = 0$",
+          "$2x - 3y - 4 = 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. To find the reflection of any curve in $y = x$, interchange $x$ and $y$. This gives $2y - 3x + 4 = 0 \\\\implies -3x + 2y + 4 = 0$ (or $3x - 2y - 4 = 0$).",
+          "Incorrect. Only changed the sign of $y$.",
+          "Incorrect. Sign of constant term is wrong.",
+          "Incorrect. Changed sign of constant term instead of interchanging $x$ and $y$."
+        ],
+        "fullExplanation": "The image of any point $(x, y)$ in the line $y = x$ is $(y, x)$.\\nTherefore, to reflect an equation in $y = x$, we interchange $x$ and $y$:\\n$$2(y) - 3(x) + 4 = 0 \\\\implies -3x + 2y + 4 = 0 \\\\quad \\\\text{or} \\\\quad 3x - 2y - 4 = 0$$"
+      },
+      {
+        "question": "All lines represented by the equation $(2 + k)x + (1 + 2k)y + (k - 1) = 0$ for different values of $k$ pass through a fixed point whose coordinates are:",
+        "options": [
+          "$(1, -1)$",
+          "$(-1, 1)$",
+          "$(1, 1)$",
+          "$(-1, -1)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Regrouping as $(2x + y - 1) + k(x + 2y + 1) = 0$. Solving gives $x = 1, y = -1$.",
+          "Incorrect. Reversed signs.",
+          "Incorrect. Does not satisfy $x + 2y + 1 = 0$.",
+          "Incorrect. Does not satisfy $2x + y - 1 = 0$."
+        ],
+        "fullExplanation": "Rearrange the given equation in the form $L_1 + k L_2 = 0$:\\n$$(2x + y - 1) + k(x + 2y + 1) = 0$$\\nAll lines pass through the intersection of:\\n$$2x + y - 1 = 0 \\\\quad \\\\text{and} \\\\quad x + 2y + 1 = 0$$\\nFrom the first, $y = 1 - 2x$. Substitute into the second:\\n$$x + 2(1 - 2x) + 1 = 0 \\\\implies x + 2 - 4x + 1 = 0 \\\\implies -3x + 3 = 0 \\\\implies x = 1$$\\n$$y = 1 - 2(1) = -1$$\\nThus, the fixed point is $(1, -1)$."
+      },
+      {
+        "question": "If the vertices of a triangle are $(0, 0)$, $(3, 0)$, and $(0, 4)$, its orthocentre is:",
+        "options": [
+          "$(0, 0)$",
+          "$(1, 4/3)$",
+          "$(3/2, 2)$",
+          "$(3, 4)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In a right-angled triangle, the orthocentre is the vertex at the right angle, which is $(0, 0)$.",
+          "Incorrect. This is the centroid.",
+          "Incorrect. This is the circumcentre (midpoint of hypotenuse).",
+          "Incorrect. This is the fourth vertex of the rectangle."
+        ],
+        "fullExplanation": "The triangle has vertices on the coordinate axes: $(0, 0)$, $(3, 0)$, and $(0, 4)$.\\nThe angle at the origin $(0, 0)$ is $90^\\\\circ$ since the coordinate axes are perpendicular.\\nIn any right-angled triangle, the altitudes from the acute vertices are the legs themselves, which intersect at the right-angled vertex.\\nTherefore, the orthocentre is $(0, 0)$."
+      }
+    ]
+  }
+]

@@ -1,0 +1,741 @@
+[
+  {
+    "chapterName": "p-Block Elements",
+    "flashcards": [
+      {
+        "front": "Why is the bond dissociation enthalpy of N₂ exceptionally high compared to other Group 15 elements?",
+        "back": "Due to the presence of a strong triple bond (one σ and two π bonds) between the two nitrogen atoms with very small atomic radii, resulting in a bond enthalpy of 941.4 kJ mol⁻¹."
+      },
+      {
+        "front": "What is the order of thermal stability of Group 15 hydrides (EH₃)?",
+        "back": "NH₃ > PH₃ > AsH₃ > SbH₃ > BiH₃. Thermal stability decreases down the group due to an increase in E–H bond length and corresponding decrease in bond dissociation enthalpy."
+      },
+      {
+        "front": "What is the order of reducing character of Group 15 hydrides?",
+        "back": "NH₃ < PH₃ < AsH₃ < SbH₃ < BiH₃. BiH₃ is the strongest reducing agent because the Bi–H bond is the weakest."
+      },
+      {
+        "front": "What products are formed upon thermal decomposition of ammonium dichromate ((NH₄)₂Cr₂O₇)?",
+        "back": "N₂ gas, Cr₂O₃ (green powder), and H₂O vapor: (NH₄)₂Cr₂O₇ → N₂ + Cr₂O₃ + 4H₂O."
+      },
+      {
+        "front": "What is the brown ring complex formed in the nitrate test, and what is the oxidation state of Fe in it?",
+        "back": "Formula: [Fe(H₂O)₅(NO)]SO₄. The oxidation state of iron is +1 (NO acts as NO⁺, transferring one electron to Fe²⁺ to make it Fe⁺)."
+      },
+      {
+        "front": "Explain why white phosphorus (P₄) is more reactive than red phosphorus.",
+        "back": "White phosphorus exists as discrete tetrahedral P₄ molecules with significant angular strain (60° bond angles), whereas red phosphorus has a polymeric chain of P₄ units linked together, making it much more stable."
+      },
+      {
+        "front": "What are the disproportionation products of orthophosphorous acid (H₃PO₃) on heating?",
+        "back": "4H₃PO₃ → 3H₃PO₄ + PH₃ (yields orthophosphoric acid in the +5 oxidation state and phosphine in the -3 oxidation state)."
+      },
+      {
+        "front": "What structural feature accounts for the reducing behavior of H₃PO₂ (hypophosphorous acid)?",
+        "back": "The presence of two P–H bonds directly attached to the central phosphorus atom (structure: two P–H, one P–OH, one P=O)."
+      },
+      {
+        "front": "What is the order of negative electron gain enthalpy (Δ_egH) among Group 16 elements?",
+        "back": "S > Se > Te > Po > O. Oxygen has the least negative electron gain enthalpy due to its compact 2p subshell, which causes strong interelectronic repulsions."
+      },
+      {
+        "front": "Explain the anomalous low boiling point of H₂S compared to H₂O.",
+        "back": "H₂O molecules undergo extensive intermolecular hydrogen bonding due to oxygen's high electronegativity and small size, which is absent in H₂S."
+      },
+      {
+        "front": "What is the quantitative method for estimating ozone (O₃) gas?",
+        "back": "Ozone reacts with excess KI buffered with borate (pH ~ 9.2) to liberate I₂: O₃ + 2I⁻ + H₂O → O₂ + I₂ + 2OH⁻. The liberated iodine is titrated against standard sodium thiosulphate (Na₂S₂O₃)."
+      },
+      {
+        "front": "What is the cause and manifestation of 'tailing of mercury'?",
+        "back": "Mercury loses its meniscus and sticks to glass walls upon contact with ozone due to oxidation to mercurous oxide: 2Hg + O₃ → Hg₂O + O₂. It is restored by shaking with water."
+      },
+      {
+        "front": "What are the chemical formula, oxidation state of sulfur, and structure of Caro's acid and Marshall's acid?",
+        "back": "Caro's acid: H₂SO₅ (peroxomonosulphuric acid, S in +6, contains one –O–O– bond). Marshall's acid: H₂S₂O₈ (peroxodisulphuric acid, S in +6, contains a peroxo bridge –S–O–O–S–)."
+      },
+      {
+        "front": "State the order of bond dissociation enthalpy for the diatomic halogens (X₂).",
+        "back": "Cl₂ > Br₂ > F₂ > I₂. Fluorine has an unexpectedly lower bond enthalpy than Cl₂ and Br₂ due to strong lone-pair lone-pair electrostatic repulsions in the compact F–F bond."
+      },
+      {
+        "front": "Why is fluorine a stronger oxidizing agent than chlorine despite having a less negative electron gain enthalpy?",
+        "back": "Because fluorine has a very low bond dissociation enthalpy of the F–F bond and an exceptionally high hydration enthalpy of the small F⁻ ion."
+      },
+      {
+        "front": "What are the products of the reaction of chlorine with cold, dilute NaOH versus hot, concentrated NaOH?",
+        "back": "With cold dilute NaOH: NaCl + NaOCl + H₂O (disproportionation into Cl⁻ and OCl⁻). With hot conc. NaOH: 5NaCl + NaClO₃ + 3H₂O (disproportionation into Cl⁻ and ClO₃⁻)."
+      },
+      {
+        "front": "What is the molecular geometry and hybridization of ClF₃ and BrF₅ according to VSEPR theory?",
+        "back": "ClF₃: sp³d hybridization, T-shaped geometry (2 axial bonds bent away, 2 equatorial lone pairs). BrF₅: sp³d² hybridization, square pyramidal geometry (1 lone pair)."
+      },
+      {
+        "front": "What are the partial and complete hydrolysis products of XeF₆?",
+        "back": "Partial hydrolysis: XeF₆ + H₂O → XeOF₄ + 2HF; XeF₆ + 2H₂O → XeO₂F₂ + 4HF. Complete hydrolysis: XeF₆ + 3H₂O → XeO₃ + 6HF."
+      },
+      {
+        "front": "Why does He form no true chemical compounds, yet it has an extremely low boiling point (4.2 K)?",
+        "back": "He has a fully filled 1s² duplet with very high ionization energy and absence of low-lying empty orbitals. Its atoms interact only via exceptionally weak London dispersion forces."
+      },
+      {
+        "front": "What is the geometry and total number of lone pairs on the central xenon atom in XeF₄?",
+        "back": "Hybridization: sp³d²; Geometry: square planar; Total lone pairs on central Xe = 2 (occupying axial positions to minimize repulsions)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following Group 15 halides does not exist under standard conditions?",
+        "options": ["NCl₃", "NF₅", "PCl₅", "BiCl₃"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "NCl₃ exists as an explosive oily liquid.",
+          "NF₅ cannot exist because nitrogen belongs to the 2nd period and lacks vacant d-orbitals to expand its octet.",
+          "PCl₅ exists because phosphorus has vacant 3d orbitals available for bonding.",
+          "BiCl₃ exists as a stable solid compound."
+        ],
+        "fullExplanation": "Nitrogen has the electronic configuration [He] 2s² 2p³. It has only four valence orbitals (one 2s and three 2p) and lacks d-orbitals. Hence, it cannot expand its covalency beyond 4, making pentahalides like NF₅ impossible."
+      },
+      {
+        "question": "Which oxide of nitrogen is neutral, paramagnetic in the gaseous state, and dimerizes upon cooling to form a diamagnetic species?",
+        "options": ["NO", "NO₂", "N₂O", "N₂O₃"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "NO is neutral and has 11 valence electrons (odd-electron molecule, paramagnetic), dimerizing at low temperature to diamagnetic N₂O₂.",
+          "NO₂ is paramagnetic and dimerizes to N₂O₄, but it is acidic, not neutral.",
+          "N₂O is neutral, but it is diamagnetic in the gas phase.",
+          "N₂O₃ is an acidic blue liquid/solid."
+        ],
+        "fullExplanation": "Nitric oxide (NO) has an odd number of electrons (11 valence electrons) and is paramagnetic in the gaseous phase. It is neutral towards litmus. In liquid and solid states, it dimerizes to diamagnetic N₂O₂."
+      },
+      {
+        "question": "When concentrated HNO₃ reacts with copper metal, which gaseous product is primarily evolved?",
+        "options": ["N₂O", "NO", "NO₂", "N₂"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "N₂O is formed when dilute HNO₃ reacts with zinc, not copper.",
+          "NO is formed when dilute (moderate) HNO₃ reacts with copper: 3Cu + 8HNO₃(dil) → 3Cu(NO₃)₂ + 2NO + 4H₂O.",
+          "NO₂ is formed when concentrated HNO₃ reacts with copper: Cu + 4HNO₃(conc) → Cu(NO₃)₂ + 2NO₂ + 2H₂O.",
+          "N₂ is not formed in significant amounts during reaction of copper with HNO₃."
+        ],
+        "fullExplanation": "Copper reacts with concentrated nitric acid to give nitrogen dioxide (brown gas): Cu + 4HNO₃(conc) → Cu(NO₃)₂ + 2NO₂ + 2H₂O. With dilute HNO₃, nitric oxide (NO) is evolved."
+      },
+      {
+        "question": "What is the basicity of orthophosphoric acid (H₃PO₄) and pyrophosphoric acid (H₄P₂O₇) respectively?",
+        "options": ["3 and 3", "3 and 4", "1 and 4", "2 and 4"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Pyrophosphoric acid has four P–OH groups, so its basicity is 4, not 3.",
+          "H₃PO₄ has three P–OH bonds (tribasic, basicity 3), and H₄P₂O₇ has four P–OH bonds (tetrabasic, basicity 4).",
+          "H₃PO₄ has basicity 3, not 1.",
+          "H₃PO₄ has three replaceable ionizable hydrogens, not 2."
+        ],
+        "fullExplanation": "Basicity equals the number of ionizable P–OH bonds. H₃PO₄ has three P–OH bonds and one P=O bond (tribasic). H₄P₂O₇ contains two P=O bonds, four P–OH bonds, and one P–O–P bridge (tetrabasic)."
+      },
+      {
+        "question": "Which of the following compounds gives phosphine (PH₃) upon hydrolysis?",
+        "options": ["Ca₃P₂", "H₃PO₄", "P₄O₁₀", "Ca(H₂PO₂)₂"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Ca₃P₂ hydrolyzes readily with water to produce calcium hydroxide and PH₃: Ca₃P₂ + 6H₂O → 3Ca(OH)₂ + 2PH₃.",
+          "H₃PO₄ is already a fully hydrolyzed oxoacid and does not yield PH₃.",
+          "P₄O₁₀ hydrolyzes to form phosphoric acid (H₃PO₄).",
+          "Ca(H₂PO₂)₂ in water forms calcium and hypophosphite ions without liberating PH₃."
+        ],
+        "fullExplanation": "Calcium phosphide reacts with water or dilute acids vigorously yielding phosphine gas: Ca₃P₂ + 6H₂O → 3Ca(OH)₂ + 2PH₃↑. This reaction is utilized in Holme's signals."
+      },
+      {
+        "question": "What is the correct order of bond angles in the following group 16 hydrides?",
+        "options": [
+          "H₂O > H₂S > H₂Se > H₂Te",
+          "H₂Te > H₂Se > H₂S > H₂O",
+          "H₂O < H₂S < H₂Se < H₂Te",
+          "H₂S > H₂O > H₂Se > H₂Te"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Bond angle decreases drastically from H₂O (104.5°) to H₂S (92.1°), H₂Se (91°), and H₂Te (90.5°) according to Bent's rule / Drago's rule.",
+          "Bond angle decreases down the group, not increases.",
+          "H₂O has the largest bond angle in the series, not the smallest.",
+          "H₂O has a significantly larger bond angle than H₂S due to hybridisation and smaller central atom size."
+        ],
+        "fullExplanation": "In H₂O, oxygen undergoes sp³ hybridization with bond angle 104.5°. For heavier hydrides (H₂S, H₂Se, H₂Te), bonding occurs through almost pure p-orbitals without hybridization (Drago's rule), giving bond angles close to 90°."
+      },
+      {
+        "question": "In which pair of oxoacids of sulphur does a peroxo (–O–O–) linkage occur?",
+        "options": [
+          "H₂SO₅ and H₂S₂O₈",
+          "H₂S₂O₇ and H₂S₂O₈",
+          "H₂SO₃ and H₂SO₅",
+          "H₂S₂O₆ and H₂S₂O₇"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Both H₂SO₅ (peroxomonosulphuric acid) and H₂S₂O₈ (peroxodisulphuric acid) contain peroxide bonds.",
+          "H₂S₂O₇ (pyrosulphuric acid) contains an –S–O–S– linkage, not a peroxo linkage.",
+          "H₂SO₃ does not contain any peroxo bond.",
+          "H₂S₂O₆ contains an S–S bond, and H₂S₂O₇ contains an S–O–S bond."
+        ],
+        "fullExplanation": "H₂SO₅ (Caro's acid) has structure HO–SO₂–O–O–H with one peroxo bond. H₂S₂O₈ (Marshall's acid) has structure HO–SO₂–O–O–SO₂–OH with a bridging peroxo linkage."
+      },
+      {
+        "question": "What is the catalyst used in the Contact Process for the manufacture of H₂SO₄ in the step converting SO₂ to SO₃?",
+        "options": ["V₂O₅", "Fe₂O₃", "Pt/Rh gauze", "Finely divided Ni"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "V₂O₅ (vanadium pentoxide) is the industrial catalyst used at 450 °C and 1–2 bar.",
+          "Fe₂O₃ is used in the Haber process as a promoter/catalyst component, not in the Contact process.",
+          "Pt/Rh gauze is used in Ostwald's process for ammonia oxidation to NO.",
+          "Finely divided Ni is used in hydrogenation of vegetable oils/alkenes."
+        ],
+        "fullExplanation": "In the modern Contact Process, vanadium pentoxide (V₂O₅) is employed as the catalyst for the oxidation: 2SO₂ + O₂ ⇌ 2SO₃ (ΔH = -196.6 kJ mol⁻¹). Platinized asbestos was formerly used but was easily poisoned by arsenic impurities."
+      },
+      {
+        "question": "Which of the following halogens has the most exothermic (most negative) electron gain enthalpy?",
+        "options": ["Fluorine", "Chlorine", "Bromine", "Iodine"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Fluorine has a less negative value (-333 kJ mol⁻¹) than chlorine due to small atomic size and high interelectronic repulsions.",
+          "Chlorine has the highest negative electron gain enthalpy in the entire periodic table (-349 kJ mol⁻¹).",
+          "Bromine has a value of -325 kJ mol⁻¹.",
+          "Iodine has a value of -296 kJ mol⁻¹."
+        ],
+        "fullExplanation": "The electron gain enthalpy of chlorine is more negative than that of fluorine because the incoming electron in fluorine enters a small 2p subshell where it experiences significant interelectronic repulsion. In chlorine, the electron enters a larger 3p subshell."
+      },
+      {
+        "question": "Which of the following compounds gives a canary yellow precipitate with ammonium molybdate in the presence of dilute HNO₃?",
+        "options": ["Phosphate (PO₄³⁻)", "Sulphate (SO₄²⁻)", "Chloride (Cl⁻)", "Nitrate (NO₃⁻)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Phosphate reacts to form ammonium phosphomolybdate, (NH₄)₃[PMo₁₂O₄₀], which is a canary yellow precipitate.",
+          "Sulphate does not give a yellow precipitate with ammonium molybdate.",
+          "Chloride forms white AgCl with AgNO₃, but no precipitate with ammonium molybdate.",
+          "Nitrate gives the brown ring test, not a yellow molybdate precipitate."
+        ],
+        "fullExplanation": "Phosphate ions react with ammonium molybdate in nitric acid solution upon warming to form a bright canary-yellow precipitate of ammonium phosphomolybdate: HPO₄²⁻ + 12(NH₄)₂MoO₄ + 23H⁺ → (NH₄)₃[PMo₁₂O₄₀]↓ + 21NH₄⁺ + 12H₂O."
+      },
+      {
+        "question": "What happens when Cl₂ gas is passed through a hot, concentrated solution of NaOH?",
+        "options": [
+          "NaCl and NaOCl are formed",
+          "NaCl and NaClO₃ are formed",
+          "NaCl and NaClO₄ are formed",
+          "Only NaCl is formed"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "NaCl and NaOCl are formed with cold, dilute NaOH.",
+          "With hot, concentrated NaOH, Cl₂ undergoes disproportionation to form chloride (NaCl) and chlorate (NaClO₃): 3Cl₂ + 6NaOH → 5NaCl + NaClO₃ + 3H₂O.",
+          "Perchlorate (NaClO₄) is not formed in this direct reaction.",
+          "Disproportionation must yield oxidized species alongside chloride."
+        ],
+        "fullExplanation": "In hot, concentrated alkali, chlorine undergoes disproportionation where its oxidation state changes from 0 to -1 (in NaCl) and +5 (in NaClO₃): 3Cl₂ + 6NaOH → 5NaCl + NaClO₃ + 3H₂O."
+      },
+      {
+        "question": "Which of the following noble gas compounds is isostructural with ICl₄⁻?",
+        "options": ["XeF₂", "XeF₄", "XeOF₄", "XeO₃"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "XeF₂ is linear with 3 equatorial lone pairs.",
+          "XeF₄ and ICl₄⁻ both have 6 electron pairs (4 bonding pairs, 2 lone pairs) around the central atom, giving a square planar geometry (sp³d²).",
+          "XeOF₄ is square pyramidal (5 bonding pairs, 1 lone pair).",
+          "XeO₃ is trigonal pyramidal (3 bonding pairs, 1 lone pair)."
+        ],
+        "fullExplanation": "ICl₄⁻ has 7 + 4(7) + 1 = 36 valence electrons. Central I has 4 bond pairs and 2 lone pairs (steric number 6, sp³d²), adopting a square planar shape. XeF₄ also has 8 + 4(7) = 36 valence electrons with 4 bond pairs and 2 lone pairs (square planar)."
+      },
+      {
+        "question": "What is the product formed when XeF₂ reacts with PF₅?",
+        "options": ["[XeF]⁺[PF₆]⁻", "[XeF₂]⁺[PF₄]⁻", "Xe + PF₃ + F₂", "[Xe]²⁺[PF₇]²⁻"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "XeF₂ acts as a fluoride ion donor with strong fluoride acceptors like PF₅, yielding the ionic compound [XeF]⁺[PF₆]⁻.",
+          "XeF₂ acts by donating F⁻, not gaining it.",
+          "Redox decomposition does not occur readily under these conditions.",
+          "Xe does not exist as a bare [Xe]²⁺ cation in this reaction."
+        ],
+        "fullExplanation": "Xenon difluoride reacts with fluoride ion acceptors (Lewis acids like PF₅, AsF₅, SbF₅) to form cationic xenon adducts: XeF₂ + PF₅ → [XeF]⁺[PF₆]⁻."
+      },
+      {
+        "question": "Which of the following compounds has the highest bleaching action that is non-permanent and works by reduction?",
+        "options": ["Cl₂", "SO₂", "O₃", "H₂O₂"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Cl₂ bleaches permanently by oxidation.",
+          "SO₂ bleaches temporary/non-permanently by reduction; aerial oxygen gradually reoxidizes the bleached material back to its colored state.",
+          "O₃ bleaches permanently by oxidation.",
+          "H₂O₂ bleaches permanently by oxidation."
+        ],
+        "fullExplanation": "Bleaching by chlorine, ozone, and hydrogen peroxide involves nascent oxygen and is therefore permanent (oxidative). Bleaching by SO₂ involves nascent hydrogen (SO₂ + 2H₂O → H₂SO₄ + 2[H]) and is temporary (reductive), since atmospheric oxygen restores the color over time."
+      },
+      {
+        "question": "The boiling points of noble gases increase steadily from He to Rn. What is the primary reason for this trend?",
+        "options": [
+          "Increase in polarizability and London dispersion forces",
+          "Increase in dipole-dipole interactions",
+          "Stronger covalent bonding between atoms",
+          "Formation of transient metallic bonds"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "As atomic size increases down Group 18, electron cloud size increases, raising polarizability and leading to stronger London dispersion forces.",
+          "Noble gas atoms are non-polar monoatomic species, so dipole-dipole interactions are impossible.",
+          "Noble gases do not form covalent bonds with each other in their elemental states.",
+          "Noble gases are non-metals and do not show metallic bonding."
+        ],
+        "fullExplanation": "Noble gases exist as monoatomic molecules held together only by weak London dispersion forces. As atomic size increases down the group, the electron cloud becomes larger and more easily distorted, leading to greater polarizability and stronger dispersion attractions."
+      },
+      {
+        "question": "Which of the following oxoacids of chlorine is the strongest acid?",
+        "options": ["HClO", "HClO₂", "HClO₃", "HClO₄"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "HClO is the weakest among the four (oxidation state +1).",
+          "HClO₂ is moderately weak (oxidation state +3).",
+          "HClO₃ is a strong acid, but weaker than HClO₄.",
+          "HClO₄ (perchloric acid) is the strongest acid because the conjugate base ClO₄⁻ is extensively resonance-stabilized over four oxygen atoms."
+        ],
+        "fullExplanation": "The acidic strength of oxoacids of chlorine increases with an increasing oxidation number of Cl: HClO (+1) < HClO₂ (+3) < HClO₃ (+5) < HClO₄ (+6). In ClO₄⁻, the negative charge is delocalized over four equivalent oxygen atoms via dπ–pπ bonding."
+      },
+      {
+        "question": "What is the hybridization and shape of the XeO₃ molecule?",
+        "options": [
+          "sp³, trigonal planar",
+          "sp³, pyramidal",
+          "sp³d, T-shaped",
+          "sp³d², square planar"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "sp³ with one lone pair gives pyramidal, not trigonal planar geometry.",
+          "Xe has 8 valence electrons; 3 σ bonds with O and 1 lone pair = 4 steric pairs → sp³ hybridization, pyramidal shape.",
+          "sp³d would correspond to 5 electron pairs, but XeO₃ has only 4 electron pairs.",
+          "sp³d² corresponds to 6 electron pairs."
+        ],
+        "fullExplanation": "In XeO₃, xenon forms three Xe=O double bonds (three σ and three π bonds) and possesses one lone pair. Steric number = 3 σ bonds + 1 lone pair = 4, corresponding to sp³ hybridization and a pyramidal geometry similar to NH₃."
+      },
+      {
+        "question": "Bleaching powder loses its activity slowly when exposed to air because:",
+        "options": [
+          "It reacts with atmospheric CO₂ and moisture to liberate Cl₂",
+          "It absorbs nitrogen from the atmosphere",
+          "It oxidizes to calcium perchlorate",
+          "It decomposes to calcium metal"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Bleaching powder CaOCl₂ reacts with atmospheric CO₂ to form CaCO₃ and release chlorine: CaOCl₂ + CO₂ → CaCO₃ + Cl₂↑.",
+          "It is chemically inert towards atmospheric nitrogen.",
+          "Atmospheric air does not oxidize bleaching powder to perchlorate.",
+          "It does not reduce to calcium metal."
+        ],
+        "fullExplanation": "Bleaching powder deteriorates on long standing in open air because atmospheric carbon dioxide displaces chlorine according to the equation: CaOCl₂ + CO₂ → CaCO₃ + Cl₂↑. This slow release of Cl₂ results in loss of available chlorine."
+      },
+      {
+        "question": "Which of the following compounds gives off an intensely foul-smelling gas when treated with moist air, which produces white fumes of HPO₃ in the air?",
+        "options": ["PCl₅", "PH₃", "P₄O₆", "P₄"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "PCl₅ fumer in moist air to give HCl fumes, but does not smell like rotten fish.",
+          "PH₃ has a characteristic rotten-fish or garlic odour and, in the presence of P₂H₄ impurities, is spontaneously flammable, burning to give white fumes of metaphosphoric acid.",
+          "P₄O₆ is a white waxy solid.",
+          "White phosphorus has a garlic smell, but it is not a gas."
+        ],
+        "fullExplanation": "Phosphine (PH₃) is a colorless gas with a rotten fish/garlic smell. It catches fire spontaneously due to traces of P₂H₄ or P₄ vapors, forming white dense vortex rings of metaphosphoric acid: PH₃ + 2O₂ → HPO₃ + H₂O."
+      },
+      {
+        "question": "Which of the following noble gases is utilized in radiotherapy for cancer treatment?",
+        "options": ["Helium", "Argon", "Xenon", "Radon"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Helium is used for weather balloons, cryogenics, and deep-sea diving gas mixtures.",
+          "Argon is used for providing an inert atmosphere in welding and electric light bulbs.",
+          "Xenon is used in specialized lamps and lasers.",
+          "Radon (²²²Rn) is radioactive and is used in radiotherapy for cancer treatment."
+        ],
+        "fullExplanation": "Radon (Rn) is a radioactive noble gas obtained by the α-decay of radium (²²⁶Ra → ²²²Rn + ⁴He). Due to its α-particle emission, sealed radon needles are used in radiotherapy to destroy cancerous cells."
+      }
+    ]
+  },
+  {
+    "chapterName": "d- and f-Block Elements",
+    "flashcards": [
+      {
+        "front": "Why are Zn, Cd, and Hg not considered typical transition metals?",
+        "back": "Because they have completely filled d-subshells ((n–1)d¹⁰) in both their ground states and their common oxidation states (+2)."
+      },
+      {
+        "front": "State the exception in electronic configuration for Chromium (Z = 24) and Copper (Z = 29).",
+        "back": "Cr: [Ar] 3d⁵ 4s¹ (extra stability of half-filled d-subshell). Cu: [Ar] 3d¹⁰ 4s¹ (extra stability of completely filled d-subshell)."
+      },
+      {
+        "front": "Why do transition metals exhibit variable oxidation states?",
+        "back": "Due to the small energy difference between the (n–1)d and ns valence orbitals, allowing both sets of electrons to participate in bonding."
+      },
+      {
+        "front": "What is the Lanthanoid Contraction and what causes it?",
+        "back": "The steady decrease in atomic and ionic radii of the lanthanoids from La to Lu with increasing atomic number, caused by the poor shielding effect of 4f electrons."
+      },
+      {
+        "front": "Name a pair of elements with nearly identical covalent radii due to lanthanoid contraction.",
+        "back": "Zr (160 pm) and Hf (159 pm), or Nb and Ta, or Mo and W."
+      },
+      {
+        "front": "What is the formula for the 'spin-only' magnetic moment and its unit?",
+        "back": "μ = √[n(n + 2)] Bohr Magnetons (BM), where n is the number of unpaired d-electrons."
+      },
+      {
+        "front": "Why is Sc³⁺ colorless while Ti³⁺ is purple/violet in aqueous solution?",
+        "back": "Sc³⁺ has a 3d⁰ configuration (no d-electrons, so d–d transitions are impossible). Ti³⁺ has a 3d¹ configuration, allowing d–d electronic transitions in visible light."
+      },
+      {
+        "front": "Why does Cu²⁺(aq) exist stably in water while Cu⁺(aq) is unstable and disproportionates?",
+        "back": "The much higher negative hydration enthalpy of Cu²⁺ more than compensates for the high second ionization enthalpy of copper: 2Cu⁺(aq) → Cu²⁺(aq) + Cu(s)."
+      },
+      {
+        "front": "What are interstitial compounds and state two of their general properties?",
+        "back": "Compounds formed when small non-metal atoms (H, B, C, N) get trapped in voids of the metal lattice (e.g., TiC, Fe₃H). Properties: high melting points and high chemical inertness."
+      },
+      {
+        "front": "Describe the industrial preparation of potassium dichromate (K₂Cr₂O₇) from chromite ore.",
+        "back": "1. Fusion with Na₂CO₃ in air: 4FeCr₂O₄ + 8Na₂CO₃ + 7O₂ → 8Na₂CrO₄ + 2Fe₂O₃ + 8CO₂. 2. Acidification: 2Na₂CrO₄ + H₂SO₄ → Na₂Cr₂O₇ + Na₂SO₄ + H₂O. 3. Metathesis: Na₂Cr₂O₇ + 2KCl → K₂Cr₂O₇ + 2NaCl."
+      },
+      {
+        "front": "What is the chemical equilibrium between chromate (CrO₄²⁻) and dichromate (Cr₂O₇²⁻) with change in pH?",
+        "back": "2CrO₄²⁻ (yellow) + 2H⁺ ⇌ Cr₂O₇²⁻ (orange) + H₂O. Chromate predominates at pH > 7 (alkaline), and dichromate predominates at pH < 7 (acidic)."
+      },
+      {
+        "front": "What are the reagents and positive observation of the Chromyl Chloride test?",
+        "back": "Reagents: Solid chloride salt + solid K₂Cr₂O₇ + conc. H₂SO₄. Observation: Deep red/orange vapors of CrO₂Cl₂ evolve, turning NaOH solution yellow, which yields a yellow PbCrO₄ ppt with Pb(CH₃COO)₂."
+      },
+      {
+        "front": "What is the equivalent weight of KMnO₄ in acidic, neutral/faintly alkaline, and strongly basic media?",
+        "back": "Acidic: M/5 (Mn⁷⁺ → Mn²⁺, n = 5). Neutral/faintly alkaline: M/3 (Mn⁷⁺ → Mn⁴⁺ in MnO₂, n = 3). Strongly basic: M/1 (Mn⁷⁺ → Mn⁶⁺ in MnO₄²⁻, n = 1)."
+      },
+      {
+        "front": "What is the reaction when KMnO₄ oxidizes iodide (I⁻) in acidic versus neutral/faintly alkaline solution?",
+        "back": "Acidic medium: 2MnO₄⁻ + 10I⁻ + 16H⁺ → 2Mn²⁺ + 5I₂ + 8H₂O (forms I₂). Neutral/alkaline medium: 2MnO₄⁻ + I⁻ + H₂O → 2MnO₂ + IO₃⁻ + 2OH⁻ (forms iodate, IO₃⁻)."
+      },
+      {
+        "front": "What is the common and most stable oxidation state of all Lanthanoids?",
+        "back": "+3 is the characteristic and most stable oxidation state for all lanthanoids."
+      },
+      {
+        "front": "Why does Cerium exhibit a stable +4 oxidation state (Ce⁴⁺) and what is its chemical application?",
+        "back": "Ce⁴⁺ achieves a stable noble gas configuration [Xe] 4f⁰. Consequently, it acts as a powerful analytical oxidizing agent."
+      },
+      {
+        "front": "Why does Europium exhibit a +2 oxidation state (Eu²⁺)?",
+        "back": "Eu²⁺ achieves a stable half-filled 4f⁷ electronic configuration, making it a strong reducing agent reverting to Eu³⁺."
+      },
+      {
+        "front": "What is Mischmetal and what is its primary industrial use?",
+        "back": "An alloy consisting of ~95% lanthanoid metals (primarily Ce ~40%, La ~44%), ~5% iron, and traces of S, C, Ca. Used in making lighter flints and tracer bullets."
+      },
+      {
+        "front": "Why do actinoids exhibit a wider range of oxidation states than lanthanoids?",
+        "back": "Because the 5f, 6d, and 7s subshells have comparable energies, allowing all of them to participate in bond formation."
+      },
+      {
+        "front": "Explain why actinoid contraction is greater from element to element than lanthanoid contraction.",
+        "back": "5f electrons exert an even poorer shielding effect on the outer nuclear charge than 4f electrons due to their more diffuse shapes."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following 3d transition series elements has the highest enthalpy of atomization?",
+        "options": ["Titanium", "Chromium", "Vanadium", "Zinc"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Titanium has fewer unpaired electrons for metallic bonding.",
+          "Although Cr has 6 valence electrons, its enthalpy of atomization (397 kJ mol⁻¹) is lower than that of Vanadium (515 kJ mol⁻¹).",
+          "Vanadium has the highest enthalpy of atomization (515 kJ mol⁻¹) among 3d transition metals due to exceptionally strong metallic bonding.",
+          "Zinc has no unpaired d-electrons and the weakest metallic bonding (126 kJ mol⁻¹)."
+        ],
+        "fullExplanation": "Enthalpy of atomization depends on the strength of metallic bonding. In the 3d series, Vanadium has the maximum atomization enthalpy (515 kJ mol⁻¹). In Cr, strong exchange energy stabilizes the isolated atom, lowering its atomization enthalpy relative to V."
+      },
+      {
+        "question": "What is the 'spin-only' magnetic moment of a divalent manganese ion (Mn²⁺, Z = 25)?",
+        "options": ["1.73 BM", "3.87 BM", "4.90 BM", "5.92 BM"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "1.73 BM corresponds to 1 unpaired electron.",
+          "3.87 BM corresponds to 3 unpaired electrons.",
+          "4.90 BM corresponds to 4 unpaired electrons.",
+          "5.92 BM corresponds to 5 unpaired electrons (Mn²⁺ is [Ar] 3d⁵, n = 5)."
+        ],
+        "fullExplanation": "Mn (Z = 25) is [Ar] 3d⁵ 4s². Mn²⁺ is [Ar] 3d⁵, which contains 5 unpaired electrons (n = 5). μ = √[n(n + 2)] = √[5(5 + 2)] = √35 ≈ 5.92 BM."
+      },
+      {
+        "question": "Which of the following ions is diamagnetic and colorless in aqueous solution?",
+        "options": ["Ti⁴⁺", "V³⁺", "Fe²⁺", "Cu²⁺"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Ti⁴⁺ has an [Ar] 3d⁰ configuration (no d-electrons), making it diamagnetic and devoid of d–d transitions (colorless).",
+          "V³⁺ has a 3d² configuration (paramagnetic, green).",
+          "Fe²⁺ has a 3d⁶ configuration (paramagnetic, pale green).",
+          "Cu²⁺ has a 3d⁹ configuration (paramagnetic, blue)."
+        ],
+        "fullExplanation": "Ti (Z = 22) is [Ar] 3d² 4s². Ti⁴⁺ loses all 4 valence electrons, giving the noble gas configuration [Ar] 3d⁰. With 0 unpaired electrons, it is diamagnetic and cannot undergo d–d transitions, rendering it colorless."
+      },
+      {
+        "question": "The standard reduction potential E°(M²⁺/M) has an unusually positive value for copper (+0.34 V). What is the reason for this?",
+        "options": [
+          "High sublimation enthalpy and high ionization enthalpy are not compensated by hydration enthalpy",
+          "Low first ionization enthalpy of copper",
+          "Extremely high hydration enthalpy of Cu²⁺",
+          "High electron gain enthalpy of copper"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Copper requires large amounts of energy for sublimation and second ionization, which its hydration enthalpy cannot overcome.",
+          "Copper has a relatively high ionization enthalpy, not low.",
+          "Although hydration enthalpy of Cu²⁺ is high, it is insufficient to balance Δ_subH and IE₁ + IE₂.",
+          "Electron gain enthalpy is not the defining factor for E°(M²⁺/M)."
+        ],
+        "fullExplanation": "The value of E°(M²⁺/M) depends on: Δ_subH + (IE₁ + IE₂) + Δ_hydH. For copper, the sum of its high enthalpy of sublimation and very high ionization enthalpy (IE₁ + IE₂) is not completely balanced by the hydration enthalpy of Cu²⁺, resulting in a positive E° value (+0.34 V)."
+      },
+      {
+        "question": "Which 3d series metal exhibits the highest oxidation state, and what is that state?",
+        "options": ["Vanadium, +5", "Chromium, +6", "Manganese, +7", "Iron, +8"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Vanadium reaches up to +5 in VO₃⁻/V₂O₅.",
+          "Chromium reaches up to +6 in Cr₂O₇²⁻.",
+          "Manganese has the configuration 3d⁵ 4s² and uses all 7 valence electrons to exhibit +7 (e.g., in KMnO₄).",
+          "Iron only reaches +6 (e.g., in ferrate [FeO₄]²⁻), not +8 in the 3d series; +8 is achieved by Os and Ru in 4d/5d."
+        ],
+        "fullExplanation": "Manganese has 7 valence electrons ([Ar] 3d⁵ 4s²). It shows the widest range of oxidation states from +2 to +7, reaching +7 in permanganate (MnO₄⁻) and Mn₂O₇."
+      },
+      {
+        "question": "Why is the highest oxidation state of transition metals stabilized in oxides rather than in fluorides?",
+        "options": [
+          "Oxygen is more electronegative than fluorine",
+          "Oxygen has the ability to form multiple (pπ–dπ) bonds with transition metals",
+          "Fluorine has larger size than oxygen",
+          "Oxide ions have smaller charge than fluoride ions"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Fluorine is the most electronegative element, not oxygen.",
+          "Oxygen can form multiple bonds (pπ–dπ) using its filled 2p orbitals with empty d-orbitals of the metal, stabilizing high oxidation states (e.g., Mn₂O₇ exists, but MnF₇ does not).",
+          "Fluorine is smaller than oxygen, not larger.",
+          "Oxide has a 2- charge while fluoride has 1-."
+        ],
+        "fullExplanation": "The ability of oxygen to form multiple bonds with metal atoms allows it to stabilize higher oxidation states better than fluorine. For instance, the highest fluoride of manganese is MnF₄, while the highest oxide is Mn₂O₇ (+7)."
+      },
+      {
+        "question": "In the chromate ion (CrO₄²⁻), what is the oxidation state, hybridization of Cr, and the origin of its yellow color?",
+        "options": [
+          "+6, d³s, charge transfer",
+          "+6, sp³, d–d transition",
+          "+3, d²sp³, d–d transition",
+          "+6, sp³, charge transfer"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Cr is in +6 (d⁰), with d³s hybridization (tetrahedral) and its yellow color arises from Ligand to Metal Charge Transfer (LMCT).",
+          "The color does not arise from d–d transitions because Cr⁶⁺ has no d-electrons (3d⁰).",
+          "Cr is not in the +3 oxidation state in CrO₄²⁻.",
+          "The hybridization in tetrahedral oxyanions with d⁰ metals involves d-orbitals: d³s."
+        ],
+        "fullExplanation": "In CrO₄²⁻, Cr is in the +6 state with a 3d⁰ configuration. There are no d-electrons, so d–d transitions cannot occur. The intense yellow color is due to Ligand to Metal Charge Transfer (LMCT, electron shift from O²⁻ to Cr⁶⁺). The hybridization is d³s."
+      },
+      {
+        "question": "What is the product when acidic potassium permanganate (KMnO₄) reacts with oxalate ion (C₂O₄²⁻)?",
+        "options": [
+          "Mn²⁺ and CO₂",
+          "MnO₂ and CO",
+          "Mn⁴⁺ and CO₂",
+          "Mn³⁺ and CO₃²⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "MnO₄⁻ is reduced to Mn²⁺ and C₂O₄²⁻ is oxidized to CO₂: 2MnO₄⁻ + 5C₂O₄²⁻ + 16H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O.",
+          "MnO₂ is formed only in neutral/alkaline media.",
+          "Permanganate reduces down to +2 in acidic solution, not +4.",
+          "Oxalate is oxidized to carbon dioxide gas, not carbonate."
+        ],
+        "fullExplanation": "In acidic medium, permanganate acts as a strong oxidant: 2MnO₄⁻ + 5C₂O₄²⁻ + 16H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O. The violet color of KMnO₄ is discharged at the endpoint."
+      },
+      {
+        "question": "Why is HCl not used to acidify KMnO₄ solution in volumetric titrations?",
+        "options": [
+          "HCl reacts with the indicator",
+          "KMnO₄ oxidizes HCl to Cl₂ gas, consuming extra KMnO₄",
+          "HCl precipitates MnO₂",
+          "HCl decomposes KMnO₄ into oxygen gas"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "HCl's primary interfering reaction is with the titrant itself (KMnO₄).",
+          "KMnO₄ is strong enough to oxidize Cl⁻ ions from HCl into chlorine gas (2KMnO₄ + 16HCl → 2KCl + 2MnCl₂ + 8H₂O + 5Cl₂), giving erroneously high titre values.",
+          "HCl does not precipitate MnO₂ under acidic titration conditions.",
+          "HCl does not liberate O₂ from KMnO₄."
+        ],
+        "fullExplanation": "Permanganate can oxidize chloride ions to free chlorine: 2MnO₄⁻ + 10Cl⁻ + 16H⁺ → 2Mn²⁺ + 5Cl₂ + 8H₂O. Therefore, some KMnO₄ is consumed in oxidizing the acid itself. Dilute H₂SO₄ is preferred because sulfate is not oxidizable by KMnO₄."
+      },
+      {
+        "question": "Which of the following compounds gives a positive Chromyl Chloride test?",
+        "options": ["NaCl", "AgCl", "Hg₂Cl₂", "PbCl₂"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "NaCl is an ionic chloride that releases Cl⁻ readily upon treatment with conc. H₂SO₄, forming CrO₂Cl₂.",
+          "AgCl is strongly covalent/sparingly soluble and does not react to give CrO₂Cl₂.",
+          "Hg₂Cl₂ is insoluble and predominantly covalent; it does not give the test.",
+          "PbCl₂ does not give the test due to low solubility and strong covalent character."
+        ],
+        "fullExplanation": "The chromyl chloride test is given only by ionic chlorides (such as NaCl, KCl, CaCl₂). Heavy metal chlorides that are covalent or sparingly soluble (e.g., AgCl, PbCl₂, Hg₂Cl₂, HgCl₂, CuCl) do not furnish free Cl⁻ ions and fail the test."
+      },
+      {
+        "question": "Which lanthanoid element has an electronic configuration of [Xe] 4f⁷ 5d¹ 6s²?",
+        "options": ["Europium (Eu)", "Gadolinium (Gd)", "Terbium (Tb)", "Lutetium (Lu)"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Eu (Z = 63) has configuration [Xe] 4f⁷ 6s².",
+          "Gd (Z = 64) has configuration [Xe] 4f⁷ 5d¹ 6s² to preserve the half-filled 4f⁷ subshell.",
+          "Tb (Z = 65) has configuration [Xe] 4f⁹ 6s².",
+          "Lu (Z = 71) has configuration [Xe] 4f¹⁴ 5d¹ 6s²."
+        ],
+        "fullExplanation": "Gadolinium (Z = 64) possesses an extra electron in the 5d orbital ([Xe] 4f⁷ 5d¹ 6s²) rather than 4f⁸ because the exactly half-filled 4f⁷ subshell provides exceptional exchange energy stabilization."
+      },
+      {
+        "question": "Which of the following lanthanoid ions is diamagnetic?",
+        "options": ["Ce³⁺", "Sm³⁺", "Eu³⁺", "Lu³⁺"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Ce³⁺ has the configuration 4f¹ (1 unpaired electron, paramagnetic).",
+          "Sm³⁺ has the configuration 4f⁵ (5 unpaired electrons, paramagnetic).",
+          "Eu³⁺ has the configuration 4f⁶ (6 unpaired electrons, paramagnetic).",
+          "Lu³⁺ has the configuration [Xe] 4f¹⁴ (completely filled 4f subshell, 0 unpaired electrons, diamagnetic)."
+        ],
+        "fullExplanation": "Lutetium (Z = 71) has ground state configuration [Xe] 4f¹⁴ 5d¹ 6s². On losing 3 electrons to form Lu³⁺, the configuration becomes [Xe] 4f¹⁴. All electrons are paired, making Lu³⁺ diamagnetic."
+      },
+      {
+        "question": "What is the reason that Zr (atomic radius 160 pm) and Hf (atomic radius 159 pm) show almost identical chemical properties?",
+        "options": [
+          "Diagonal relationship",
+          "Lanthanoid contraction",
+          "Inert pair effect",
+          "Screening effect of d-orbitals"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Diagonal relationship is observed between light s- and p-block elements (e.g., Li-Mg, Be-Al).",
+          "The intervention of the 14 lanthanoid elements with poorly shielding 4f electrons causes the ionic radius of Hf to contract to nearly match Zr.",
+          "Inert pair effect relates to stability of lower oxidation states in heavy p-block elements.",
+          "Lanthanoid contraction involves the filling of 4f subshells, not 3d."
+        ],
+        "fullExplanation": "Due to the lanthanoid contraction between La and Hf, the normal increase in atomic size down the group from 4d (Zr) to 5d (Hf) is completely offset. As a result, Zr and Hf have nearly identical sizes and identical chemical behaviors, making them very difficult to separate."
+      },
+      {
+        "question": "Which of the following is a non-radioactive element among the actinoids?",
+        "options": ["Thorium", "Uranium", "Plutonium", "None (all are radioactive)"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Thorium is naturally radioactive.",
+          "Uranium is naturally radioactive.",
+          "Plutonium is a synthetic radioactive element.",
+          "All actinoid elements without exception are radioactive."
+        ],
+        "fullExplanation": "Unlike lanthanoids (where only Promethium is radioactive), every single actinoid element (from Actinium/Thorium up to Lawrencium, Z = 89–103) is radioactive, with elements beyond uranium being transuranic and man-made."
+      },
+      {
+        "question": "Alloys of transition metals are readily formed because transition metals have:",
+        "options": [
+          "Similar atomic radii (differing by less than ~15%)",
+          "Identical electronegativities",
+          "Low melting points",
+          "Same number of d-electrons"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "According to the Hume-Rothery rules, metals can mutually substitute each other in the crystal lattice if their atomic radii differ by less than 15%.",
+          "Their electronegativities are not identical.",
+          "Transition metals typically have very high melting points.",
+          "They do not have the same number of d-electrons."
+        ],
+        "fullExplanation": "Because transition metal atoms have very similar radii (within 15% of one another), one metal atom can easily replace another within the metallic crystal lattice, readily forming substitutional solid solutions known as alloys (e.g., brass, bronze, stainless steel)."
+      },
+      {
+        "question": "Which of the following statements regarding interstitial compounds is INCORRECT?",
+        "options": [
+          "They have high melting points, higher than those of pure metals",
+          "They retain metallic conductivity",
+          "They are chemically very reactive",
+          "They are extremely hard (some approach diamond in hardness)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "This is correct: their melting points are higher than those of pure parent metals.",
+          "This is correct: the metallic bond network remains intact, preserving electrical conductivity.",
+          "This is INCORRECT: interstitial compounds are chemically very inert.",
+          "This is correct: carbides such as TiC approach diamond in hardness."
+        ],
+        "fullExplanation": "Interstitial compounds (such as TiC, Fe₃H, Mn₄N) are non-stoichiometric, retain metallic electrical conductivity, have higher melting points than parent metals, are extremely hard, and are chemically inert."
+      },
+      {
+        "question": "When potassium permanganate is heated strongly, what products are obtained?",
+        "options": [
+          "K₂MnO₄, MnO₂, and O₂",
+          "K₂O, MnO, and O₂",
+          "K₂MnO₄ and O₂ only",
+          "K₂O, Mn₂O₃, and O₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Heating KMnO₄ at 513 K produces dark green K₂MnO₄, black MnO₂, and oxygen gas: 2KMnO₄ → K₂MnO₄ + MnO₂ + O₂.",
+          "The decomposition does not reduce Mn all the way to MnO.",
+          "MnO₂ is also an essential product along with K₂MnO₄.",
+          "K₂O is not formed under these moderate heating conditions."
+        ],
+        "fullExplanation": "Solid potassium permanganate decomposes upon thermal treatment at 513 K according to the reaction: 2KMnO₄ → K₂MnO₄ (potassium manganate, green) + MnO₂ (manganese dioxide) + O₂↑."
+      },
+      {
+        "question": "What is the trend in basic strength of lanthanoid hydroxides Ln(OH)₃ from La(OH)₃ to Lu(OH)₃?",
+        "options": [
+          "Increases continuously",
+          "Decreases continuously",
+          "Remains constant",
+          "First decreases then increases"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Basic strength decreases, not increases.",
+          "Due to the lanthanoid contraction, the size of Ln³⁺ decreases from La³⁺ to Lu³⁺, increasing covalent character and decreasing basic strength: La(OH)₃ is most basic, Lu(OH)₃ is least basic.",
+          "It changes systematically due to contraction.",
+          "The trend is strictly monotonic (decreasing)."
+        ],
+        "fullExplanation": "As the atomic number increases from La to Lu, the ionic radius of Ln³⁺ decreases steadily (lanthanoid contraction). According to Fajan's rules, the smaller size increases polarizing power and covalent character of the Ln–OH bond, meaning Lu(OH)₃ is the least basic and La(OH)₃ is the most basic."
+      },
+      {
+        "question": "Which of the following actinoid ions has the highest stability in aqueous solution in the +6 oxidation state?",
+        "options": ["Th⁴⁺", "UO₂²⁺", "Pu³⁺", "Am³⁺"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Thorium only exhibits +4.",
+          "Uranium(VI) is very stable in aqueous solution as the uranyl dioxo cation, UO₂²⁺.",
+          "Pu is typically more stable in lower oxidation states (+3, +4) in aqueous solution.",
+          "Americium is most stable in the +3 state."
+        ],
+        "fullExplanation": "Uranium exhibits a stable +6 oxidation state in the form of the linear trans-dioxo cation uranyl, [UO₂]²⁺, where the formal oxidation state of U is +6. Thorium stops at +4, while transuranic actinoids prefer +3 or +4."
+      },
+      {
+        "question": "What is the catalytic role of transition metals primarily attributed to?",
+        "options": [
+          "Their ability to adopt multiple oxidation states and provide large surface area for adsorption",
+          "Their diamagnetic nature",
+          "Their exceptionally low ionization enthalpy",
+          "Their high negative standard electrode potentials"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Transition metals can shift between oxidation states easily to form unstable intermediates, and fine powders offer high active surface areas with vacant d-orbitals.",
+          "Most catalytic transition metals/ions are paramagnetic.",
+          "Their ionization enthalpies are intermediate, not exceptionally low.",
+          "Many catalytic metals (e.g., Pt, Pd, Ni) do not have large negative standard electrode potentials."
+        ],
+        "fullExplanation": "The catalytic activity of transition metals and their complexes arises from two key factors: (1) their ability to change oxidation states and form coordination complexes with reactants (lowering activation energy), and (2) their ability to adsorb reactant molecules onto vacant d-orbitals on their large surface areas."
+      }
+    ]
+  }
+]

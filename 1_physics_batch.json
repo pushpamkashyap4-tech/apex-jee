@@ -1,0 +1,429 @@
+[
+  {
+    "chapterName": "Kinematics",
+    "flashcards": [
+      {
+        "front": "What is the relationship between distance and the magnitude of displacement?",
+        "back": "Distance is always greater than or equal to the magnitude of displacement (Distance ≥ |Displacement|)."
+      },
+      {
+        "front": "How is the average velocity of a particle defined in terms of its position vector?",
+        "back": "Average velocity = Δr / Δt = (r₂ - r₁) / Δt"
+      },
+      {
+        "front": "What is the relation between average speed and the magnitude of average velocity?",
+        "back": "Average speed is always greater than or equal to the magnitude of average velocity."
+      },
+      {
+        "front": "What is the condition for a body to be in uniform motion?",
+        "back": "The body must move along a straight line and cover equal distances in equal intervals of time (constant velocity)."
+      },
+      {
+        "front": "State the vector equation for displacement under constant acceleration.",
+        "back": "s = ut + (1/2)at²"
+      },
+      {
+        "front": "What is the formula for the displacement of a particle in the n-th second?",
+        "back": "Sₙ = u + (a/2)(2n - 1)"
+      },
+      {
+        "front": "What does the slope of a velocity-time graph represent?",
+        "back": "The slope of a velocity-time graph represents the acceleration of the body."
+      },
+      {
+        "front": "What is the magnitude of relative velocity of rain with respect to a moving man (v(rm)) when rain falls vertically and the man moves horizontally?",
+        "back": "v(rm) = √(v(r)² + v(m)²)"
+      },
+      {
+        "front": "For a swimmer crossing a river, what is the condition to cross along the shortest path (minimum displacement)?",
+        "back": "The swimmer must angle upstream such that sin θ = v(R) / v, where v(R) is river flow speed and v is swimmer's speed in still water."
+      },
+      {
+        "front": "What is the formula for the minimum time to cross a river of width d?",
+        "back": "t(min) = d / v, which occurs when the swimmer aims perpendicular to the river flow (θ = 0°)."
+      },
+      {
+        "front": "What is Galileo's law of odd numbers for a freely falling body?",
+        "back": "The ratio of successive distances covered in equal time intervals is S₁ : S₂ : S₃ : ... = 1 : 3 : 5 : ... : (2n - 1)."
+      },
+      {
+        "front": "What is the formula for the maximum height (H) reached by a projectile thrown at an angle θ?",
+        "back": "H = (u² sin² θ) / (2g)"
+      },
+      {
+        "front": "What is the formula for the total time of flight (T) of a projectile on a horizontal plane?",
+        "back": "T = (2u sin θ) / g"
+      },
+      {
+        "front": "What is the formula for the horizontal range (R) of a projectile?",
+        "back": "R = (u² sin 2θ) / g"
+      },
+      {
+        "front": "What is the relation between Maximum Height (H) and Horizontal Range (R) of a projectile?",
+        "back": "H / R = (tan θ) / 4"
+      },
+      {
+        "front": "State the equation of trajectory for a projectile in terms of x and θ.",
+        "back": "y = x tan θ - (gx²) / (2u² cos² θ)"
+      },
+      {
+        "front": "State the alternate equation of trajectory for a projectile involving the Horizontal Range (R).",
+        "back": "y = x tan θ (1 - x/R)"
+      },
+      {
+        "front": "If a person can throw a ball to a maximum horizontal distance x, what is the maximum height to which he can throw it?",
+        "back": "The maximum vertical height he can throw the ball is x/2."
+      },
+      {
+        "front": "What is the time of flight for a projectile launched horizontally with velocity u from a height h?",
+        "back": "T = √(2h / g)"
+      },
+      {
+        "front": "If a body thrown vertically upwards crosses a specific height h at times t₁ and t₂, what is the formula for h?",
+        "back": "h = (1/2)g t₁ t₂"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A particle moves with constant acceleration. If its velocity changes from 10 m/s to 20 m/s while covering 135 m, find the time taken t.",
+        "options": [
+          "9 s",
+          "10 s",
+          "1.5 s",
+          "12 s"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Using average velocity, t = Distance / v(avg) = 135 / 15 = 9 s.",
+          "Incorrect. This would be true if the average velocity was 13.5 m/s.",
+          "Incorrect. This is the calculated acceleration (a = 10/1.5), not the time.",
+          "Incorrect. This would be the time if initial velocity was lower."
+        ],
+        "fullExplanation": "Since acceleration is constant, the average velocity v(avg) = (u + v) / 2 = (10 + 20) / 2 = 15 m/s. The distance covered is given by Distance = v(avg) × t. Therefore, 135 = 15 × t, which gives t = 9 s."
+      },
+      {
+        "question": "A man walking west with velocity 3 m/s observes rain falling vertically downwards at 4 m/s. What is the actual speed of the rain with respect to the ground?",
+        "options": [
+          "5 m/s",
+          "1 m/s",
+          "7 m/s",
+          "4 m/s"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. The relative velocity forms a right triangle: v(r)² = v(rm)² + v(m)². Oh wait, the man observes it falling vertically, so v(rm) is vertical.",
+          "Incorrect. This is the difference of their magnitudes, which applies to 1D motion.",
+          "Incorrect. This is the algebraic sum of their magnitudes.",
+          "Incorrect. This is the magnitude of the relative velocity observed by the man."
+        ],
+        "fullExplanation": "The velocity of rain w.r.t the man is v(rm) = v(r) - v(m). Vectorially, v(r) = v(rm) + v(m). Since the man moves horizontally (west) and observes the rain falling vertically downwards, the two vectors v(rm) and v(m) are perpendicular. Thus, |v(r)| = √(3² + 4²) = 5 m/s."
+      },
+      {
+        "question": "A swimmer can swim at 5 m/s in still water. The river flows at 3 m/s. To cross the river in the shortest path, what angle should his velocity make with the upstream direction?",
+        "options": [
+          "37°",
+          "53°",
+          "127°",
+          "143°"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the angle made with the perpendicular to the river flow (sin θ = 3/5).",
+          "Correct. The angle with the perpendicular is 37°. The angle with upstream is 90° - 37° = 53°.",
+          "Incorrect. This is the angle made with the downstream direction.",
+          "Incorrect. This angle does not match the geometry of the velocities."
+        ],
+        "fullExplanation": "For the shortest path, the net velocity must be perpendicular to the river flow. Thus, the horizontal component of the swimmer's velocity must cancel the river's velocity: v sin θ = v(R), where θ is the angle with the perpendicular. sin θ = 3/5, so θ = 37°. The upstream direction is 90° from the perpendicular. The angle with upstream is 90° - 37° = 53°."
+      },
+      {
+        "question": "Two bodies are thrown vertically upwards with initial velocities u and 2u. What is the ratio of their maximum heights reached?",
+        "options": [
+          "1 : 2",
+          "1 : 4",
+          "1 : √2",
+          "1 : 8"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would be the ratio of their times of flight, not heights.",
+          "Correct. Maximum height is proportional to the square of initial velocity.",
+          "Incorrect. This inverses the correct quadratic relationship.",
+          "Incorrect. Height depends on u², not u³."
+        ],
+        "fullExplanation": "The formula for maximum height attained by a body thrown vertically upwards is H = u² / (2g). Therefore, H is directly proportional to u². If the velocities are in the ratio 1 : 2, their squares are in the ratio 1² : 2² = 1 : 4. Hence, the ratio of their maximum heights is 1 : 4."
+      },
+      {
+        "question": "For a projectile launched from the ground, the maximum height H is equal to its horizontal range R. What is the angle of projection θ?",
+        "options": [
+          "tan⁻¹(1)",
+          "tan⁻¹(2)",
+          "tan⁻¹(4)",
+          "tan⁻¹(1/4)"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This corresponds to an angle of 45°, where R is maximum but H = R/4.",
+          "Incorrect. This gives H = R/2.",
+          "Correct. Using the relation H/R = (tan θ)/4, setting H=R gives tan θ = 4.",
+          "Incorrect. This would mean H = R/16."
+        ],
+        "fullExplanation": "The relationship between maximum height H and horizontal range R is given by H / R = (tan θ) / 4. Given that H = R, we substitute this into the equation to get 1 = (tan θ) / 4. Multiplying both sides by 4 gives tan θ = 4. Therefore, the angle of projection is θ = tan⁻¹(4)."
+      },
+      {
+        "question": "The equation of trajectory of a projectile is given by y = √3 x - 5x². Assuming g = 10 m/s², what is the initial velocity of projection?",
+        "options": [
+          "2 m/s",
+          "4 m/s",
+          "1 m/s",
+          "10 m/s"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Comparing with y = x tan θ - gx² / (2u² cos² θ) yields u = 2 m/s.",
+          "Incorrect. This would be the velocity if the coefficient of x² was 1.25.",
+          "Incorrect. A velocity of 1 m/s would result in a much steeper x² coefficient.",
+          "Incorrect. This assumes a completely different trajectory equation."
+        ],
+        "fullExplanation": "The standard equation of trajectory is y = x tan θ - gx² / (2u² cos² θ). Comparing this with the given equation y = √3 x - 5x²: tan θ = √3, which means θ = 60°. The coefficient of x² is g / (2u² cos² θ) = 5. Substituting g = 10 and cos 60° = 1/2: 10 / (2u²(1/4)) = 5 => 10 / (u²/2) = 5 => 20 / u² = 5 => u² = 4 => u = 2 m/s."
+      },
+      {
+        "question": "A particle moves along a semicircular path of radius R. What is the ratio of the distance covered to the magnitude of its displacement?",
+        "options": [
+          "π : 2",
+          "2 : π",
+          "π : 1",
+          "1 : 1"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Distance is πR and displacement is 2R, giving a ratio of π/2.",
+          "Incorrect. This is the ratio of displacement to distance.",
+          "Incorrect. This implies displacement is only R.",
+          "Incorrect. Distance and displacement are only equal for straight, unidirectional motion."
+        ],
+        "fullExplanation": "For a particle moving along a semicircular path of radius R, the total path length (distance) covered is half the circumference, which is πR. The displacement is the straight-line distance between the initial and final points, which is the diameter of the circle, 2R. The ratio of distance to displacement is πR / 2R = π / 2."
+      },
+      {
+        "question": "A person can throw a ball to a maximum horizontal distance of 100 m. What is the maximum height to which he can throw the ball?",
+        "options": [
+          "100 m",
+          "50 m",
+          "200 m",
+          "25 m"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. He cannot throw it as high as his maximum horizontal range.",
+          "Correct. R(max) = u²/g. The max vertical height is H(max) = u²/(2g) = R(max)/2 = 50 m.",
+          "Incorrect. This is double the range, not half.",
+          "Incorrect. This is H(max) at an angle of 45°, not when thrown straight up."
+        ],
+        "fullExplanation": "The maximum horizontal distance (Range) is achieved at θ = 45°, and is given by R(max) = u² / g. The problem states R(max) = 100 m, so u² / g = 100. To achieve maximum height, the person must throw the ball vertically upwards (θ = 90°). The formula for maximum height is H(max) = u² / (2g). Substituting u² / g = 100, we get H(max) = 100 / 2 = 50 m."
+      },
+      {
+        "question": "A body starting from rest moves with a constant acceleration of 2 m/s². What is the displacement of the body in the 3rd second of its motion?",
+        "options": [
+          "5 m",
+          "9 m",
+          "3 m",
+          "6 m"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Using Sₙ = u + (a/2)(2n - 1) gives 0 + (2/2)(2(3)-1) = 5 m.",
+          "Incorrect. 9 m is the total displacement from t=0 to t=3 s.",
+          "Incorrect. 3 m is the displacement in the 2nd second.",
+          "Incorrect. This is a miscalculation of the formula."
+        ],
+        "fullExplanation": "The displacement in the n-th second is given by the formula Sₙ = u + (a/2)(2n - 1). Here, initial velocity u = 0, acceleration a = 2 m/s², and n = 3. Plugging in the values: S₃ = 0 + (2/2)(2(3) - 1) = 1 × (6 - 1) = 5 m."
+      },
+      {
+        "question": "A projectile is fired with initial velocity u at an angle θ. What is the magnitude of the change in its velocity between the point of projection and the point where it strikes the ground?",
+        "options": [
+          "0",
+          "2u sin θ",
+          "2u cos θ",
+          "u sin θ"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The vertical velocity changes direction, so the vector change is not zero.",
+          "Correct. Only the vertical component changes from +u sin θ to -u sin θ. The change is 2u sin θ.",
+          "Incorrect. The horizontal component u cos θ remains constant.",
+          "Incorrect. This is just the initial vertical velocity magnitude."
+        ],
+        "fullExplanation": "At the point of projection, the velocity vector is v₁ = (u cos θ)i + (u sin θ)j. At the point of striking the ground, the horizontal velocity remains unchanged, but the vertical velocity reverses direction. So, the final velocity vector is v₂ = (u cos θ)i - (u sin θ)j. The change in velocity Δv = v₂ - v₁ = -2u sin θ j. The magnitude of this change is 2u sin θ."
+      },
+      {
+        "question": "A projectile is launched horizontally from a height of 20 m with a speed of 10 m/s. Assuming g = 10 m/s², what is the horizontal range of the projectile?",
+        "options": [
+          "10 m",
+          "20 m",
+          "40 m",
+          "14.14 m"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would be the range if the height was 5 m.",
+          "Correct. T = √(2h/g) = 2 s. Range = u × T = 10 × 2 = 20 m.",
+          "Incorrect. This would be the range for a height of 80 m.",
+          "Incorrect. This is 10√2, resulting from a calculation error."
+        ],
+        "fullExplanation": "For horizontal projection from a height h, the time of flight T is given by T = √(2h / g). Substituting h = 20 m and g = 10 m/s², T = √(2 × 20 / 10) = √4 = 2 s. The horizontal range R is the horizontal velocity multiplied by the time of flight: R = u × T = 10 × 2 = 20 m."
+      },
+      {
+        "question": "A freely falling body covers a distance x in the 1st second. What distance does it cover in the 3rd second?",
+        "options": [
+          "3x",
+          "4x",
+          "5x",
+          "9x"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. 3x is the distance covered in the 2nd second.",
+          "Incorrect. 4x is the total distance covered in 2 seconds.",
+          "Correct. According to Galileo's law of odd numbers, the distances are in the ratio 1:3:5. So the 3rd second distance is 5x.",
+          "Incorrect. 9x is the total distance covered in 3 seconds."
+        ],
+        "fullExplanation": "According to Galileo's law of odd numbers for a freely falling body (u = 0), the ratio of distances covered in successive equal time intervals is S₁ : S₂ : S₃ : ... = 1 : 3 : 5 : ... . If the distance in the 1st second is x, the distance in the 3rd second will be 5x."
+      },
+      {
+        "question": "A body is thrown vertically upwards and crosses a point at height h in time t₁ on its upward journey and in time t₂ on its downward journey. What is the relation for h?",
+        "options": [
+          "h = (1/2)g(t₁ + t₂)²",
+          "h = g t₁ t₂",
+          "h = (1/2)g t₁ t₂",
+          "h = (1/8)g(t₁ + t₂)²"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This does not correspond to a valid kinematic derivation for h.",
+          "Incorrect. This formula is missing the 1/2 factor.",
+          "Correct. Using kinematics, h = (1/2)g t₁ t₂.",
+          "Incorrect. This is the formula for the maximum height H, not the intermediate height h."
+        ],
+        "fullExplanation": "From the kinematic equation for vertical motion, h = ut - (1/2)gt². Rearranging this gives a quadratic equation in t: (1/2)gt² - ut + h = 0. The roots of this equation are t₁ and t₂. The product of the roots of a quadratic equation at² + bt + c = 0 is c/a. Here, t₁t₂ = h / (g/2) = 2h / g. Rearranging for h gives h = (1/2)g t₁ t₂."
+      },
+      {
+        "question": "What is the maximum height H reached by the body described in the previous question, given the crossing times t₁ and t₂ at height h?",
+        "options": [
+          "H = (1/2)g(t₁ + t₂)²",
+          "H = (1/4)g(t₁ + t₂)²",
+          "H = (1/8)g(t₁ + t₂)²",
+          "H = (1/2)g t₁ t₂"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This overestimates the maximum height.",
+          "Incorrect. This misses a factor of 1/2 from the correct derivation.",
+          "Correct. The total time of flight is t₁ + t₂, so H = (1/8)g(t₁ + t₂)².",
+          "Incorrect. This is the formula for the crossing height h, not the maximum height H."
+        ],
+        "fullExplanation": "The total time of flight for a body returning to the ground is T = t₁ + t₂. We also know that T = 2u / g, so u = g(t₁ + t₂) / 2. The maximum height is given by H = u² / (2g). Substituting the expression for u: H = (g(t₁ + t₂) / 2)² / (2g) = g²(t₁ + t₂)² / (8g) = (1/8)g(t₁ + t₂)²."
+      },
+      {
+        "question": "A particle moves with uniform speed in a circle. Is its motion considered uniform motion?",
+        "options": [
+          "Yes, because speed is constant.",
+          "No, because its direction is constantly changing.",
+          "Yes, because the radius is constant.",
+          "No, because the speed is zero."
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Constant speed is not sufficient; velocity must be constant.",
+          "Correct. Uniform motion requires constant velocity, meaning both speed and direction must be constant.",
+          "Incorrect. Constant radius does not imply uniform motion.",
+          "Incorrect. The speed is stated to be uniform (non-zero)."
+        ],
+        "fullExplanation": "Uniform motion is strictly defined as motion in which a body covers equal distances in equal intervals of time along a straight line. This means the velocity vector (both magnitude and direction) must be constant. In circular motion, even if the speed (magnitude) is constant, the direction of motion is continuously changing, causing an acceleration. Thus, it is not uniform motion."
+      },
+      {
+        "question": "At the highest point of a projectile's trajectory, what is the angle between its velocity and acceleration vectors?",
+        "options": [
+          "0°",
+          "45°",
+          "90°",
+          "180°"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This would mean it is speeding up in a straight line downwards.",
+          "Incorrect. The vectors are purely horizontal and vertical.",
+          "Correct. Velocity is purely horizontal (u cos θ) and acceleration is purely vertical (g).",
+          "Incorrect. This would mean it is moving vertically upwards and slowing down."
+        ],
+        "fullExplanation": "At the highest point of a projectile's trajectory, the vertical component of velocity becomes zero. The only remaining velocity is the horizontal component, v = u cos θ. The acceleration acting on the projectile is gravity (g), which acts vertically downwards. Since the velocity is horizontal and acceleration is vertical, the angle between them is exactly 90°."
+      },
+      {
+        "question": "Two projectiles are fired with the same initial speed at angles θ and (90° - θ) with the horizontal. What is the ratio of their horizontal ranges?",
+        "options": [
+          "1 : 1",
+          "1 : 2",
+          "tan² θ : 1",
+          "sin θ : cos θ"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Complementary angles yield the same horizontal range.",
+          "Incorrect. The ranges are exactly equal.",
+          "Incorrect. This is the ratio of their maximum heights.",
+          "Incorrect. This is the ratio of their times of flight."
+        ],
+        "fullExplanation": "The horizontal range of a projectile is R = (u² sin 2θ) / g. For the first projectile at angle θ, R₁ = (u² sin 2θ) / g. For the second projectile at angle (90° - θ), R₂ = (u² sin 2(90° - θ)) / g = (u² sin(180° - 2θ)) / g = (u² sin 2θ) / g. Since R₁ = R₂, the ratio is 1 : 1."
+      },
+      {
+        "question": "A car is moving with velocity u. When the brakes are applied, it stops after covering a distance s. If its initial velocity is doubled, what will be its stopping distance under the same constant braking acceleration?",
+        "options": [
+          "s",
+          "2s",
+          "4s",
+          "s / 2"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The distance will definitely increase.",
+          "Incorrect. Stopping distance is proportional to the square of velocity.",
+          "Correct. Using v² = u² + 2as, s is proportional to u². Doubling u makes s 4 times larger.",
+          "Incorrect. This implies distance decreases when speed increases."
+        ],
+        "fullExplanation": "Using the third equation of motion, v² = u² + 2as. Since the car comes to a stop, v = 0, and acceleration a is negative (braking). So, 0 = u² - 2|a|s, which yields s = u² / (2|a|). This shows that stopping distance s is directly proportional to the square of the initial velocity (s ∝ u²). If u is doubled to 2u, the new stopping distance becomes (2u)² / (2|a|) = 4u² / (2|a|) = 4s."
+      },
+      {
+        "question": "A ball is projected horizontally from a cliff with velocity u. At time t, what is the angle α that its velocity vector makes with the horizontal?",
+        "options": [
+          "α = tan⁻¹(u / gt)",
+          "α = tan⁻¹(gt / u)",
+          "α = tan⁻¹(1)",
+          "α = sin⁻¹(gt / u)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the angle made with the vertical.",
+          "Correct. The horizontal velocity is u, vertical is gt. tan α = v(y) / v(x) = gt / u.",
+          "Incorrect. This is only true when horizontal and vertical velocities are equal.",
+          "Incorrect. Sin involves the resultant velocity in the denominator."
+        ],
+        "fullExplanation": "In horizontal projection, the initial horizontal velocity is v(x) = u and it remains constant. The initial vertical velocity is 0, so after time t, the vertical velocity is v(y) = gt. The angle α that the net velocity vector makes with the horizontal is given by tan α = v(y) / v(x) = gt / u. Therefore, α = tan⁻¹(gt / u)."
+      },
+      {
+        "question": "A particle moves such that its position vector is r = (3t²)i + (4t)j. What is the magnitude of its acceleration at t = 2s?",
+        "options": [
+          "3 m/s²",
+          "4 m/s²",
+          "6 m/s²",
+          "12 m/s²"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is half of the actual acceleration.",
+          "Incorrect. This is the constant velocity component in the y-direction.",
+          "Correct. Differentiating twice gives a = 6i m/s², which has a magnitude of 6 m/s².",
+          "Incorrect. This is the velocity in the x-direction at t=2s."
+        ],
+        "fullExplanation": "The position vector is r = 3t² i + 4t j. Velocity is the first derivative of position: v = dr/dt = 6t i + 4 j. Acceleration is the derivative of velocity: a = dv/dt = 6 i + 0 j. The acceleration vector is constant at 6 i m/s² regardless of time. Therefore, the magnitude of acceleration is 6 m/s²."
+      }
+    ]
+  }
+]

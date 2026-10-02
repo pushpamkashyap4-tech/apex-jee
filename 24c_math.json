@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Differential Equations",
+    "flashcards": [
+      {
+        "front": "What is the definition and distinction between the Order and Degree of a differential equation?",
+        "back": "1. **Order**: The order of the highest-order derivative appearing in the differential equation.\\n2. **Degree**: The highest power (exponent) of the highest-order derivative when the equation is expressed as a polynomial in all its derivatives (i.e., freed from radicals and fractional exponents involving derivatives).\\n*Note*: If the equation cannot be written as a polynomial in its derivatives (e.g., involves terms like \\\\( \\\\sin(y') \\\\), \\\\( e^{y'} \\\\), \\\\( \\\\ln(y') \\\\)), its degree is **not defined**."
+      },
+      {
+        "front": "What constitutes the General Solution versus a Particular Solution of an \\\\( n^{\\\\text{th}} \\\\)-order ODE?",
+        "back": "1. **General Solution**: A solution containing exactly \\\\( n \\\\) independent arbitrary constants, where \\\\( n \\\\) is the order of the differential equation.\\n2. **Particular Solution**: A solution obtained from the general solution by assigning specific values to these arbitrary constants, typically determined via initial or boundary conditions (it contains zero arbitrary constants)."
+      },
+      {
+        "front": "How is a differential equation formed from a given family of curves?",
+        "back": "1. Identify the number of independent arbitrary constants, say \\\\( n \\\\).\\n2. Differentiate the equation \\\\( n \\\\) successive times to generate \\\\( n \\\\) additional differential relations.\\n3. Eliminate the \\\\( n \\\\) arbitrary constants from the system of \\\\( n+1 \\\\) equations.\\n4. The resulting relation involving \\\\( x, y, y', \\\\dots, y^{(n)} \\\\) is the differential equation of order \\\\( n \\\\)."
+      },
+      {
+        "front": "What is the Variable Separable form and how is it solved?",
+        "back": "An equation of the form:\\\\[ f(x)\\,dx + g(y)\\,dy = 0 \\\\]is solved by direct indefinite integration of each term separately:\\\\[ \\\\int f(x)\\,dx + \\\\int g(y)\\,dy = C \\\\]where \\\\( C \\\\) is the arbitrary constant of integration."
+      },
+      {
+        "front": "How do you solve equations reducible to variable separable form \\\\( \\\\frac{dy}{dx} = f(ax + by + c) \\\\)?",
+        "back": "Substitute \\\\( t = ax + by + c \\\\).\\nDifferentiating with respect to \\\\( x \\\\):\\\\[ \\\\frac{dt}{dx} = a + b\\\\frac{dy}{dx} \\implies \\\\frac{dy}{dx} = \\\\frac{1}{b}\\\\left(\\\\frac{dt}{dx} - a\\\\right) \\\\]The equation becomes separable in \\\\( t \\\\) and \\\\( x \\\\):\\\\[ \\\\frac{dt}{a + b f(t)} = dx \\\\]Integrate both sides and replace \\\\( t \\\\) with \\\\( ax + by + c \\\\)."
+      },
+      {
+        "front": "What is a Homogeneous Function of degree \\\\( n \\\\)?",
+        "back": "A function \\\\( f(x, y) \\\\) is homogeneous of degree \\\\( n \\\\) if for any non-zero real scalar \\\\( \\\\lambda \\\\):\\\\[ f(\\\\lambda x, \\\\lambda y) = \\\\lambda^n f(x, y) \\\\]Equivalently, it can be written as \\\\( f(x, y) = x^n \\\\phi\\\\left(\\\\frac{y}{x}\\\\right) \\\\) or \\\\( y^n \\\\psi\\\\left(\\\\frac{x}{y}\\\\right) \\\\)."
+      },
+      {
+        "front": "What is a Homogeneous Differential Equation and what standard substitution is used?",
+        "back": "A differential equation \\\\( \\\\frac{dy}{dx} = \\\\frac{f(x, y)}{g(x, y)} \\\\) where \\\\( f(x, y) \\\\) and \\\\( g(x, y) \\\\) are homogeneous functions of the same degree is called homogeneous.\\n**Substitution**: Set \\\\( y = vx \\\\), so \\\\( \\\\frac{dy}{dx} = v + x\\\\frac{dv}{dx} \\\\).\\nThe equation transforms into the variable separable form:\\\\[ \\\\frac{dv}{F(v) - v} = \\\\frac{dx}{x} \\\\]"
+      },
+      {
+        "front": "When is the substitution \\\\( x = vy \\\\) preferred for homogeneous differential equations?",
+        "back": "When the differential equation is presented in the form:\\\\[ \\\\frac{dx}{dy} = h\\\\left(\\\\frac{x}{y}\\\\right) \\\\]or contains expressions involving \\\\( x/y \\\\) (such as \\\\( e^{x/y} \\\\) or \\\\( \\\\sin(x/y) \\\\)), substitute \\\\( x = vy \\implies \\\\frac{dx}{dy} = v + y\\\\frac{dv}{dy} \\\\)."
+      },
+      {
+        "front": "How do you solve \\\\( \\\\frac{dy}{dx} = \\\\frac{a_1 x + b_1 y + c_1}{a_2 x + b_2 y + c_2} \\\\) when \\\\( \\\\frac{a_1}{a_2} \\\\neq \\\\frac{b_1}{b_2} \\\\)?",
+        "back": "Shift the origin to the point of intersection \\\\( (h, k) \\\\) of the two lines:\\\\[ x = X + h, \\quad y = Y + k \\\\]where \\\\( h \\\\) and \\\\( k \\\\) satisfy:\\\\[ a_1 h + b_1 k + c_1 = 0 \\quad \\\\text{and} \\quad a_2 h + b_2 k + c_2 = 0 \\\\]The equation reduces to the homogeneous form \\\\( \\\\frac{dY}{dX} = \\\\frac{a_1 X + b_1 Y}{a_2 X + b_2 Y} \\\\), solvable via \\\\( Y = vX \\\\)."
+      },
+      {
+        "front": "How do you solve \\\\( \\\\frac{dy}{dx} = \\\\frac{a_1 x + b_1 y + c_1}{a_2 x + b_2 y + c_2} \\\\) when \\\\( \\\\frac{a_1}{a_2} = \\\\frac{b_1}{b_2} = m \\\\)?",
+        "back": "Since the linear coefficients are proportional, \\\\( a_2 x + b_2 y = m(a_1 x + b_1 y) \\\\).\\nSubstitute \\\\( t = a_1 x + b_1 y \\\\), which gives:\\\\[ \\\\frac{dt}{dx} = a_1 + b_1 \\\\frac{dy}{dx} \\\\]This directly reduces the equation to variable separable form without shifting the origin."
+      },
+      {
+        "front": "What is a First-Order Linear Differential Equation in \\\\( y \\\\) and how is it solved?",
+        "back": "Standard form:\\\\[ \\\\frac{dy}{dx} + Py = Q \\\\]where \\\\( P \\\\) and \\\\( Q \\\\) are functions of \\\\( x \\\\) only (or constants).\\n1. **Integrating Factor**: \\\\( IF = e^{\\\\int P \\, dx} \\\\)\\n2. **General Solution**: \\\\[ y \\\\cdot IF = \\\\int (Q \\\\cdot IF) \\, dx + C \\\\]"
+      },
+      {
+        "front": "What is a First-Order Linear Differential Equation in \\\\( x \\\\) and how is it solved?",
+        "back": "Standard form:\\\\[ \\\\frac{dx}{dy} + P_1 x = Q_1 \\\\]where \\\\( P_1 \\\\) and \\\\( Q_1 \\\\) are functions of \\\\( y \\\\) only (or constants).\\n1. **Integrating Factor**: \\\\( IF = e^{\\\\int P_1 \\, dy} \\\\)\\n2. **General Solution**: \\\\[ x \\\\cdot IF = \\\\int (Q_1 \\\\cdot IF) \\, dy + C \\\\]"
+      },
+      {
+        "front": "What is Bernoulli's Differential Equation and how is it linearized?",
+        "back": "Form: \\\\( \\\\frac{dy}{dx} + Py = Q y^n \\quad (n \\\\neq 0, 1) \\\\).\\n1. Divide throughout by \\\\( y^n \\\\): \\\\( y^{-n}\\\\frac{dy}{dx} + P y^{1-n} = Q \\\\).\\n2. Substitute \\\\( v = y^{1-n} \\implies \\\\frac{dv}{dx} = (1 - n) y^{-n} \\\\frac{dy}{dx} \\\\).\\n3. The equation becomes strictly linear:\\\\[ \\\\frac{dv}{dx} + (1 - n)P v = (1 - n)Q \\\\]"
+      },
+      {
+        "front": "What are the exact differential forms for \\\\( d(xy) \\\\), \\\\( d\\\\left(\\\\frac{y}{x}\\\\right) \\\\), and \\\\( d\\\\left(\\\\frac{x}{y}\\\\right) \\\\)?",
+        "back": "1. \\\\( x\\,dy + y\\,dx = d(xy) \\\\)\\n2. \\\\( \\\\frac{x\\,dy - y\\,dx}{x^2} = d\\\\left(\\\\frac{y}{x}\\\\right) \\\\)\\n3. \\\\( \\\\frac{y\\,dx - x\\,dy}{y^2} = d\\\\left(\\\\frac{x}{y}\\\\right) \\\\)"
+      },
+      {
+        "front": "What are the logarithmic exact differential forms involving \\\\( xy \\\\) and \\\\( x/y \\\\)?",
+        "back": "1. \\\\( \\\\frac{x\\,dy + y\\,dx}{xy} = d(\\\\ln(xy)) \\\\)\\n2. \\\\( \\\\frac{x\\,dy - y\\,dx}{xy} = d\\\\left(\\\\ln\\\\left(\\\\frac{y}{x}\\\\right)\\\\right) \\\\)\\n3. \\\\( \\\\frac{y\\,dx - x\\,dy}{xy} = d\\\\left(\\\\ln\\\\left(\\\\frac{x}{y}\\\\right)\\\\right) \\\\)"
+      },
+      {
+        "front": "What is the exact differential form for \\\\( d(\\\\ln(x + y)) \\\\)?",
+        "back": "\\\\[ \\\\frac{dx + dy}{x + y} = d(\\\\ln(x + y)) \\\\]"
+      },
+      {
+        "front": "What are the exact inverse tangent differential forms \\\\( d\\\\left(\\\\tan^{-1}\\\\frac{y}{x}\\\\right) \\\\) and \\\\( d\\\\left(\\\\tan^{-1}\\\\frac{x}{y}\\\\right) \\\\)?",
+        "back": "1. \\\\( \\\\frac{x\\,dy - y\\,dx}{x^2 + y^2} = d\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right)\\\\right) \\\\)\\n2. \\\\( \\\\frac{y\\,dx - x\\,dy}{x^2 + y^2} = d\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{x}{y}\\\\right)\\\\right) \\\\)"
+      },
+      {
+        "front": "What are the exact differentials involving \\\\( x^2 + y^2 \\\\) with radicals and logarithms?",
+        "back": "1. \\\\( \\\\frac{x\\,dx + y\\,dy}{\\\\sqrt{x^2 + y^2}} = d\\\\left(\\\\sqrt{x^2 + y^2}\\\\right) \\\\)\\n2. \\\\( \\\\frac{x\\,dx + y\\,dy}{x^2 + y^2} = \\\\frac{1}{2} d\\\\left(\\\\ln(x^2 + y^2)\\\\right) = d\\\\left(\\\\ln\\\\sqrt{x^2 + y^2}\\\\right) \\\\)"
+      },
+      {
+        "front": "What is the exact differential for reciprocal products \\\\( d\\\\left(-\\\\frac{1}{xy}\\\\right) \\\\)?",
+        "back": "\\\\[ \\\\frac{x\\,dy + y\\,dx}{x^2 y^2} = d\\\\left(-\\\\frac{1}{xy}\\\\right) \\\\]"
+      },
+      {
+        "front": "What are the exponential exact differentials \\\\( d\\\\left(\\\\frac{e^x}{y}\\\\right) \\\\) and \\\\( d\\\\left(\\\\frac{e^y}{x}\\\\right) \\\\)?",
+        "back": "1. \\\\( \\\\frac{y e^x \\, dx - e^x \\, dy}{y^2} = d\\\\left(\\\\frac{e^x}{y}\\\\right) \\\\)\\n2. \\\\( \\\\frac{x e^y \\, dy - e^y \\, dx}{x^2} = d\\\\left(\\\\frac{e^y}{x}\\\\right) \\\\)"
+      },
+      {
+        "front": "What is an Orthogonal Trajectory of a family of curves?",
+        "back": "An orthogonal trajectory is any curve that cuts every member of a given family of curves at right angles (i.e., perpendicularly at every point of intersection)."
+      },
+      {
+        "front": "What is the step-by-step procedure to find the Orthogonal Trajectory of \\\\( f(x, y, c) = 0 \\\\)?",
+        "back": "1. Differentiate \\\\( f(x, y, c) = 0 \\\\) with respect to \\\\( x \\\\) and eliminate the parameter \\\\( c \\\\) to form the family's differential equation \\\\( F\\\\left(x, y, \\\\frac{dy}{dx}\\\\right) = 0 \\\\).\\n2. Replace \\\\( \\\\frac{dy}{dx} \\\\) with \\\\( -\\\\frac{dx}{dy} \\\\) to obtain the orthogonal trajectory equation:\\\\[ F\\\\left(x, y, -\\\\frac{dx}{dy}\\\\right) = 0 \\\\]\\n3. Integrate the resulting differential equation."
+      },
+      {
+        "front": "What is the differential equation representing all circles passing through the origin with centers on the \\\\( x \\\\)-axis?",
+        "back": "Equation: \\\\( x^2 + y^2 - 2ax = 0 \\implies 2a = \\\\frac{x^2 + y^2}{x} \\\\).\\nDifferentiating gives:\\\\[ 2x + 2y y' - 2a = 0 \\implies 2x + 2y y' - \\\\frac{x^2 + y^2}{x} = 0 \\\\]\\\\[ \\\\implies 2xy \\\\frac{dy}{dx} + x^2 - y^2 = 0 \\\\]"
+      },
+      {
+        "front": "What is the differential equation representing all circles touching the \\\\( y \\\\)-axis at the origin?",
+        "back": "The family is \\\\( (x - a)^2 + y^2 = a^2 \\implies x^2 + y^2 - 2ax = 0 \\\\), which yields the same differential equation:\\\\[ 2xy \\\\frac{dy}{dx} + x^2 - y^2 = 0 \\\\quad \\\\text{or} \\\\quad \\\\frac{dy}{dx} = \\\\frac{y^2 - x^2}{2xy} \\\\]"
+      },
+      {
+        "front": "What is the differential equation of all parabolas having their vertex at the origin and axis along the positive \\\\( x \\\\)-axis?",
+        "back": "Family: \\\\( y^2 = 4ax \\\\).\\nDifferentiating: \\\\( 2y y' = 4a \\\\).\\nSubstituting \\\\( 4a = \\\\frac{y^2}{x} \\\\):\\\\[ 2y \\\\frac{dy}{dx} = \\\\frac{y^2}{x} \\implies 2x \\\\frac{dy}{dx} - y = 0 \\\\]"
+      },
+      {
+        "front": "How is polar coordinate transformation \\\\( x = r \\\\cos\\\\theta, y = r \\\\sin\\\\theta \\\\) used for exact differentials?",
+        "back": "Key relations:\\n1. \\\\( x^2 + y^2 = r^2 \\implies x\\,dx + y\\,dy = r\\,dr \\\\)\\n2. \\\\( \\\\tan\\\\theta = \\\\frac{y}{x} \\implies x\\,dy - y\\,dx = r^2\\,d\\\\theta \\\\)\\nSubstituting these turns expressions like \\\\( \\\\frac{x\\,dy - y\\,dx}{x\\,dx + y\\,dy} \\\\) into simple separable forms \\\\( r\\,d\\\\theta / dr \\\\)."
+      },
+      {
+        "front": "When does the general solution of a differential equation fail to produce all solutions (Singular Solution)?",
+        "back": "A **Singular Solution** is a solution that cannot be obtained from the general solution by specializing any arbitrary constant. It frequently represents the envelope of the family of integral curves and satisfies both \\\\( F(x, y, p) = 0 \\\\) and \\\\( \\\\frac{\\\\partial F}{\\\\partial p} = 0 \\\\) (where \\\\( p = \\\\frac{dy}{dx} \\\\))."
+      },
+      {
+        "front": "What is Clairaut's Equation and its standard solution?",
+        "back": "Form: \\\\( y = px + f(p) \\\\), where \\\\( p = \\\\frac{dy}{dx} \\\\).\\n1. **General Solution**: Replace \\\\( p \\\\) with arbitrary constant \\\\( c \\\\):\\\\[ y = cx + f(c) \\\\]\\n2. **Singular Solution**: Obtained by eliminating \\\\( p \\\\) between \\\\( y = px + f(p) \\\\) and \\\\( x + f'(p) = 0 \\\\)."
+      },
+      {
+        "front": "What is the number of arbitrary constants in the general and particular solutions of an \\\\( n^{\\\\text{th}} \\\\)-order differential equation?",
+        "back": "1. **General solution**: Exactly \\\\( n \\\\) independent arbitrary constants.\\n2. **Particular solution**: Exactly \\\\( 0 \\\\) arbitrary constants."
+      },
+      {
+        "front": "What is the integrating factor for the non-linear equation \\\\( f'(y)\\\\frac{dy}{dx} + P(x)f(y) = Q(x) \\\\)?",
+        "back": "Substitute \\\\( v = f(y) \\implies \\\\frac{dv}{dx} = f'(y)\\\\frac{dy}{dx} \\\\).\\nThe equation transforms to linear form: \\\\( \\\\frac{dv}{dx} + P(x)v = Q(x) \\\\).\\nThe integrating factor is:\\\\[ IF = e^{\\\\int P(x)\\,dx} \\\\]"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Find the order and degree (if defined) of the differential equation: \\\\[ \\\\left(\\\\frac{d^2y}{dx^2}\\\\right)^3 + \\\\left(\\\\frac{dy}{dx}\\\\right)^2 + \\\\sin\\\\left(\\\\frac{dy}{dx}\\\\right) + 1 = 0 \\\\]",
+        "options": [
+          "Order = 2, Degree is not defined",
+          "Order = 2, Degree = 3",
+          "Order = 1, Degree = 2",
+          "Order = 3, Degree = 2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The highest derivative is \\\\( \\\\frac{d^2y}{dx^2} \\\\), so Order = 2. Because of the transcendental term \\\\( \\\\sin(dy/dx) \\\\), the equation cannot be written as a polynomial in its derivatives; hence its degree is not defined.",
+          "Incorrect. The degree is not 3 because the equation is not a polynomial in \\\\( dy/dx \\\\).",
+          "Incorrect. The highest-order derivative present is the second derivative, not the first.",
+          "Incorrect. Order and degree are conflated."
+        ],
+        "fullExplanation": "The order of a differential equation is the order of the highest derivative appearing in it. Here, the highest derivative is \\\\( \\\\frac{d^2y}{dx^2} \\\\), which is of order 2.\\nThe degree is defined only when the differential equation can be expressed as a polynomial equation in all its derivatives. Due to the presence of the term \\\\( \\\\sin\\\\left(\\\\frac{dy}{dx}\\\\right) \\\\), it cannot be written as a polynomial in \\\\( \\\\frac{dy}{dx} \\\\). Therefore, its degree is not defined."
+      },
+      {
+        "question": "Find the order and degree of the differential equation: \\\\[ \\\\frac{d^2y}{dx^2} = \\\\sqrt{1 + \\\\left(\\\\frac{dy}{dx}\\\\right)^2} \\\\]",
+        "options": [
+          "Order = 2, Degree = 2",
+          "Order = 2, Degree = 1",
+          "Order = 1, Degree = 2",
+          "Order = 2, Degree is not defined"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Squaring both sides eliminates the radical: \\\\( \\\\left(\\\\frac{d^2y}{dx^2}\\\\right)^2 = 1 + \\\\left(\\\\frac{dy}{dx}\\\\right)^2 \\\\). The highest derivative is second order with power 2, so Order = 2, Degree = 2.",
+          "Incorrect. Degree is evaluated only after making the equation free from radicals.",
+          "Incorrect. The highest derivative is second order, not first.",
+          "Incorrect. The equation can be made polynomial in its derivatives by squaring."
+        ],
+        "fullExplanation": "To determine the degree, the differential equation must be cleared of radicals and fractional powers of derivatives.\\nGiven:\\\\[ \\\\frac{d^2y}{dx^2} = \\\\sqrt{1 + \\\\left(\\\\frac{dy}{dx}\\\\right)^2} \\\\]Squaring both sides:\\\\[ \\\\left(\\\\frac{d^2y}{dx^2}\\\\right)^2 = 1 + \\\\left(\\\\frac{dy}{dx}\\\\right)^2 \\\\]Now it is a polynomial in derivatives:\\n- Highest-order derivative: \\\\( \\\\frac{d^2y}{dx^2} \\\\) (Order = 2)\\n- Exponent of this highest derivative: 2 (Degree = 2)\\nThus, Order = 2 and Degree = 2."
+      },
+      {
+        "question": "The general solution of the differential equation \\\\( \\\\frac{dy}{dx} = e^{x + y} \\\\) is:",
+        "options": [
+          "\\\\( e^{-y} + e^x = C \\\\)",
+          "\\\\( e^y = e^x + C \\\\)",
+          "\\\\( e^{-y} - e^x = C \\\\)",
+          "\\\\( e^y + e^{-x} = C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Separating variables gives \\\\( e^{-y} dy = e^x dx \\\\). Integrating yields \\\\( -e^{-y} = e^x + c_1 \\implies e^{-y} + e^x = C \\\\).",
+          "Incorrect. Forgot the negative exponent on \\\\( e^{-y} \\\\).",
+          "Incorrect. Sign error in integrating \\\\( e^{-y} \\\\).",
+          "Incorrect. The exponent on \\\\( e^x \\\\) should remain positive."
+        ],
+        "fullExplanation": "Rewrite the right-hand side using rules of exponents:\\\\[ \\\\frac{dy}{dx} = e^x \\cdot e^y \\\\]Separate variables by dividing by \\\\( e^y \\\\) and multiplying by \\\\( dx \\\\):\\\\[ e^{-y} \\, dy = e^x \\, dx \\\\]Integrate both sides:\\\\[ \\\\int e^{-y} \\, dy = \\\\int e^x \\, dx \\\\]\\\\[ -e^{-y} = e^x + c_1 \\\\]Rearranging:\\\\[ e^{-y} + e^x = -c_1 = C \\\\]where \\\\( C \\\\) is the arbitrary constant."
+      },
+      {
+        "question": "The integrating factor of the differential equation \\\\( \\\\frac{dy}{dx} + y \\\\cot x = 2x + x^2 \\\\cot x \\\\) is:",
+        "options": [
+          "\\\\( \\\\sin x \\\\)",
+          "\\\\( \\\\cos x \\\\)",
+          "\\\\( \\\\ln|\\\\sin x| \\\\)",
+          "\\\\( \\\\csc x \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\( P(x) = \\\\cot x \\\\), so \\\\( IF = e^{\\\\int \\\\cot x\\,dx} = e^{\\\\ln|\\\\sin x|} = \\\\sin x \\\\).",
+          "Incorrect. \\\\( \\\\cos x \\\\) is the derivative of \\\\( \\\\sin x \\\\), not the integrating factor.",
+          "Incorrect. Forgot that the integrating factor exponentiates the integral.",
+          "Incorrect. \\\\( \\\\csc x \\\\) would correspond to \\\\( -\\\\cot x \\\\)."
+        ],
+        "fullExplanation": "The given equation is in standard linear form:\\\\[ \\\\frac{dy}{dx} + P(x)y = Q(x) \\\\]where \\\\( P(x) = \\\\cot x \\\\) and \\\\( Q(x) = 2x + x^2 \\\\cot x \\\\).\\nThe integrating factor is given by:\\\\[ IF = e^{\\\\int P(x) \\, dx} = e^{\\\\int \\\\cot x \\, dx} = e^{\\\\ln|\\\\sin x|} = \\\\sin x \\\\]"
+      },
+      {
+        "question": "The general solution of \\\\( \\\\frac{dy}{dx} + \\\\frac{y}{x} = x^2 \\\\) (for \\\\( x > 0 \\\\)) is:",
+        "options": [
+          "\\\\( y = \\\\frac{x^3}{4} + \\\\frac{C}{x} \\\\)",
+          "\\\\( y = \\\\frac{x^3}{4} + C x \\\\)",
+          "\\\\( y = x^3 + \\\\frac{C}{x} \\\\)",
+          "\\\\( y = \\\\frac{x^4}{4} + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\( IF = e^{\\\\int (1/x)dx} = x \\\\). Solution is \\\\( y \\cdot x = \\\\int x \\cdot x^2 dx = \\\\frac{x^4}{4} + C \\implies y = \\\\frac{x^3}{4} + \\\\frac{C}{x} \\\\).",
+          "Incorrect. Divided the constant incorrectly by \\\\( x \\\\).",
+          "Incorrect. Forgot the factor of 1/4 from integrating \\\\( x^3 \\\\).",
+          "Incorrect. Forgot to divide the solution by \\\\( IF = x \\\\)."
+        ],
+        "fullExplanation": "This is a linear differential equation with \\\\( P(x) = \\\\frac{1}{x} \\\\) and \\\\( Q(x) = x^2 \\\\).\\nCompute the integrating factor:\\\\[ IF = e^{\\\\int \\\\frac{1}{x} \\, dx} = e^{\\\\ln x} = x \\\\]The general solution is:\\\\[ y \\cdot IF = \\\\int (Q(x) \\cdot IF) \\, dx + C \\\\]\\\\[ y \\cdot x = \\\\int (x^2 \\cdot x) \\, dx + C = \\\\int x^3 \\, dx + C = \\\\frac{x^4}{4} + C \\\\]Dividing through by \\\\( x \\\\):\\\\[ y = \\\\frac{x^3}{4} + \\\\frac{C}{x} \\\\]"
+      },
+      {
+        "question": "Find the particular solution of the differential equation \\\\( \\\\frac{dy}{dx} = -4xy^2 \\\\), given that \\\\( y = 1 \\\\) when \\\\( x = 0 \\\\).",
+        "options": [
+          "\\\\( y = \\\\frac{1}{2x^2 + 1} \\\\)",
+          "\\\\( y = \\\\frac{1}{1 - 2x^2} \\\\)",
+          "\\\\( y = e^{-2x^2} \\\\)",
+          "\\\\( y = \\\\frac{1}{4x^2 + 1} \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Separating variables: \\\\( -y^{-2} dy = 4x dx \\implies y^{-1} = 2x^2 + C \\\\). With \\\\( y(0) = 1 \\\\), \\\\( C = 1 \\implies y = \\\\frac{1}{2x^2 + 1} \\\\).",
+          "Incorrect. Sign error in integrating \\\\( -y^{-2} \\\\).",
+          "Incorrect. Assumed the equation was linear in \\\\( y \\\\) instead of quadratic.",
+          "Incorrect. Failed to divide the coefficient 4 by 2 when integrating \\\\( 4x \\\\)."
+        ],
+        "fullExplanation": "Separate variables:\\\\[ \\\\frac{dy}{y^2} = -4x \\, dx \\\\]Integrate both sides:\\\\[ \\\\int y^{-2} \\, dy = -4 \\\\int x \\, dx \\\\]\\\\[ -\\\\frac{1}{y} = -2x^2 - C_1 \\implies \\\\frac{1}{y} = 2x^2 + C \\\\]Using the initial condition \\\\( y(0) = 1 \\\\):\\\\[ \\\\frac{1}{1} = 2(0)^2 + C \\implies C = 1 \\\\]Therefore:\\\\[ \\\\frac{1}{y} = 2x^2 + 1 \\implies y = \\\\frac{1}{2x^2 + 1} \\\\]"
+      },
+      {
+        "question": "The number of arbitrary constants in the general solution and particular solution of a differential equation of order 4 are respectively:",
+        "options": [
+          "4 and 0",
+          "4 and 4",
+          "0 and 4",
+          "2 and 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A general solution of an \\\\( n^{\\\\text{th}} \\\\)-order ODE has exactly \\\\( n \\\\) independent arbitrary constants, whereas a particular solution has 0 arbitrary constants.",
+          "Incorrect. Particular solutions have fixed numerical constants, so 0 arbitrary constants.",
+          "Incorrect. The numbers are reversed.",
+          "Incorrect. Order 4 demands 4 arbitrary constants in the general solution."
+        ],
+        "fullExplanation": "By fundamental theorem of ordinary differential equations:\\n- The general solution of an ODE of order \\\\( n \\\\) contains exactly \\\\( n \\\\) essential arbitrary constants. Here order = 4, so it has 4 arbitrary constants.\\n- A particular solution is obtained by substituting specific values for these constants (using given initial/boundary conditions), so it contains 0 arbitrary constants.\\nThus, the answer is 4 and 0."
+      },
+      {
+        "question": "What is the integrating factor of the linear differential equation \\\\( \\\\frac{dx}{dy} + \\\\frac{2x}{y} = y^3 \\\\)?",
+        "options": [
+          "\\\\( y^2 \\\\)",
+          "\\\\( \\\\frac{1}{y^2} \\\\)",
+          "\\\\( 2\\\\ln|y| \\\\)",
+          "\\\\( y \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Here \\\\( P_1(y) = 2/y \\\\), so \\\\( IF = e^{\\\\int (2/y)dy} = e^{2\\\\ln|y|} = y^2 \\\\).",
+          "Incorrect. Sign error in power of \\\\( y \\\\).",
+          "Incorrect. Forgot to exponentiate the integral.",
+          "Incorrect. Missed the coefficient 2 in the exponent."
+        ],
+        "fullExplanation": "The equation is linear in \\\\( x \\\\) with respect to \\\\( y \\\\):\\\\[ \\\\frac{dx}{dy} + P_1(y)x = Q_1(y) \\\\]Here, \\\\( P_1(y) = \\\\frac{2}{y} \\\\).\\nThe integrating factor is:\\\\[ IF = e^{\\\\int P_1(y) \\, dy} = e^{\\\\int \\\\frac{2}{y} \\, dy} = e^{2\\\\ln|y|} = e^{\\\\ln(y^2)} = y^2 \\\\]"
+      },
+      {
+        "question": "The solution of the homogeneous differential equation \\\\( \\\\frac{dy}{dx} = \\\\frac{x + y}{x} \\\\) is:",
+        "options": [
+          "\\\\( y = x \\\\ln|x| + C x \\\\)",
+          "\\\\( y = \\\\ln|x| + C \\\\)",
+          "\\\\( y = x^2 + C x \\\\)",
+          "\\\\( y = x e^x + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\( \\\\frac{dy}{dx} = 1 + \\\\frac{y}{x} \\\\). Substitute \\\\( y = vx \\implies v + x\\\\frac{dv}{dx} = 1 + v \\implies dv = \\\\frac{dx}{x} \\implies v = \\\\ln|x| + C \\implies y = x\\\\ln|x| + Cx \\\\).",
+          "Incorrect. Failed to multiply by \\\\( x \\\\) when back-substituting \\\\( v = y/x \\\\).",
+          "Incorrect. Did not integrate \\\\( 1/x \\\\) correctly.",
+          "Incorrect. Does not satisfy the homogeneous equation."
+        ],
+        "fullExplanation": "Rewrite the equation as:\\\\[ \\\\frac{dy}{dx} = 1 + \\\\frac{y}{x} \\\\]Substitute \\\\( y = vx \\\\), so \\\\( \\\\frac{dy}{dx} = v + x\\\\frac{dv}{dx} \\\\):\\\\[ v + x\\\\frac{dv}{dx} = 1 + v \\\\]Subtract \\\\( v \\\\) from both sides:\\\\[ x\\\\frac{dv}{dx} = 1 \\implies dv = \\\\frac{dx}{x} \\\\]Integrating both sides:\\\\[ \\\\int 1 \\, dv = \\\\int \\\\frac{1}{x} \\, dx \\\\]\\\\[ v = \\\\ln|x| + C \\\\]Since \\\\( v = \\\\frac{y}{x} \\\\):\\\\[ \\\\frac{y}{x} = \\\\ln|x| + C \\implies y = x\\\\ln|x| + C x \\\\]"
+      },
+      {
+        "question": "The differential equation of the family of curves \\\\( y = A e^{2x} + B e^{-2x} \\\\), where \\\\( A \\\\) and \\\\( B \\\\) are arbitrary constants, is:",
+        "options": [
+          "\\\\( \\\\frac{d^2y}{dx^2} - 4y = 0 \\\\)",
+          "\\\\( \\\\frac{d^2y}{dx^2} + 4y = 0 \\\\)",
+          "\\\\( \\\\frac{d^2y}{dx^2} - 2y = 0 \\\\)",
+          "\\\\( \\\\frac{dy}{dx} - 4y = 0 \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Differentiating twice gives \\\\( y'' = 4(A e^{2x} + B e^{-2x}) = 4y \\implies y'' - 4y = 0 \\\\).",
+          "Incorrect. This is the differential equation for trigonometric functions \\\\( y = A\\\\cos(2x) + B\\\\sin(2x) \\\\).",
+          "Incorrect. The coefficient is \\\\( 2^2 = 4 \\\\), not 2.",
+          "Incorrect. There are two arbitrary constants, so the differential equation must be of order 2."
+        ],
+        "fullExplanation": "Given the family of curves:\\\\[ y = A e^{2x} + B e^{-2x} \\quad \\text{--- (1)} \\\\]Differentiating with respect to \\\\( x \\\\):\\\\[ \\\\frac{dy}{dx} = 2A e^{2x} - 2B e^{-2x} \\\\]Differentiating a second time:\\\\[ \\\\frac{d^2y}{dx^2} = 4A e^{2x} + 4B e^{-2x} = 4(A e^{2x} + B e^{-2x}) \\\\]Using equation (1):\\\\[ \\\\frac{d^2y}{dx^2} = 4y \\implies \\\\frac{d^2y}{dx^2} - 4y = 0 \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ (x^2 + y^2)\\,dx - 2xy\\,dy = 0 \\\\]",
+        "options": [
+          "\\\\( x^2 - y^2 = Cx \\\\)",
+          "\\\\( x^2 + y^2 = Cx \\\\)",
+          "\\\\( y^2 - x^2 = C x^2 \\\\)",
+          "\\\\( x^2 - y^2 = C y \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This can be recognized as \\\\( \\\\frac{2xy\\,dy - y^2\\,dx}{x^2} = dx \\implies d\\\\left(\\\\frac{y^2}{x}\\\\right) = dx \\\\), or by homogeneous substitution \\\\( y = vx \\\\), giving \\\\( x^2 - y^2 = Cx \\\\).",
+          "Incorrect. Has a plus sign instead of minus.",
+          "Incorrect. The power of \\\\( x \\\\) on the right-hand side is 1.",
+          "Incorrect. The linear constant factor multiplies \\\\( x \\\\), not \\\\( y \\\\)."
+        ],
+        "fullExplanation": "Rewrite the equation:\\\\[ 2xy \\, dy = (x^2 + y^2) \\, dx \\\\]Divide throughout by \\\\( x^2 \\\\):\\\\[ \\\\frac{2y \\, dy}{x} - \\\\frac{y^2 \\, dx}{x^2} = dx \\\\]Notice that the left-hand side is the exact differential:\\\\[ d\\\\left( \\\\frac{y^2}{x} \\\\right) = \\\\frac{x(2y\\,dy) - y^2\\,dx}{x^2} \\\\]Therefore, the equation simplifies to:\\\\[ d\\\\left( \\\\frac{y^2}{x} \\\\right) = dx \\\\]Integrating both sides:\\\\[ \\\\frac{y^2}{x} = x - C_1 \\implies y^2 = x^2 - C_1 x \\implies x^2 - y^2 = C x \\\\]where \\\\( C = C_1 \\\\) is an arbitrary constant."
+      },
+      {
+        "question": "The solution of the differential equation \\\\( (1 + y^2)\\,dx = (\\\\tan^{-1} y - x)\\,dy \\\\) is:",
+        "options": [
+          "\\\\( x e^{\\\\tan^{-1} y} = (\\\\tan^{-1} y - 1)e^{\\\\tan^{-1} y} + C \\\\)",
+          "\\\\( x e^{-\\\\tan^{-1} y} = \\\\tan^{-1} y + C \\\\)",
+          "\\\\( x = \\\\tan^{-1} y - 1 + C e^{-\\\\tan^{-1} y} \\\\)",
+          "\\\\( x e^{\\\\tan^{-1} y} = e^{\\\\tan^{-1} y} + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Rearranging to linear in \\\\( x \\\\): \\\\( \\\\frac{dx}{dy} + \\\\frac{x}{1+y^2} = \\\\frac{\\\\tan^{-1} y}{1+y^2} \\\\). \\\\( IF = e^{\\\\tan^{-1} y} \\\\). Integrating by parts gives \\\\( x e^{\\\\tan^{-1} y} = (\\\\tan^{-1} y - 1)e^{\\\\tan^{-1} y} + C \\\\).",
+          "Incorrect. Integrating factor has positive sign.",
+          "Incorrect. Option C is algebraically equivalent to Option A; both forms are valid, but Option A explicitly reflects the by-parts product form.",
+          "Incorrect. Missed the \\\\( \\\\tan^{-1} y \\\\) factor from integration by parts."
+        ],
+        "fullExplanation": "Rearrange into standard linear form with \\\\( x \\\\) as the dependent variable:\\\\[ \\\\frac{dx}{dy} = \\\\frac{\\\\tan^{-1} y - x}{1 + y^2} \\implies \\\\frac{dx}{dy} + \\\\frac{x}{1 + y^2} = \\\\frac{\\\\tan^{-1} y}{1 + y^2} \\\\]Here, \\\\( P_1(y) = \\\\frac{1}{1 + y^2} \\\\) and \\\\( Q_1(y) = \\\\frac{\\\\tan^{-1} y}{1 + y^2} \\\\).\\nFind the integrating factor:\\\\[ IF = e^{\\\\int \\\\frac{1}{1 + y^2} \\, dy} = e^{\\\\tan^{-1} y} \\\\]The general solution is:\\\\[ x \\cdot IF = \\\\int Q_1(y) \\cdot IF \\, dy + C \\\\]\\\\[ x e^{\\\\tan^{-1} y} = \\\\int \\\\frac{\\\\tan^{-1} y}{1 + y^2} e^{\\\\tan^{-1} y} \\, dy + C \\\\]Let \\\\( t = \\\\tan^{-1} y \\implies dt = \\\\frac{dy}{1 + y^2} \\\\):\\\\[ \\\\int t e^t \\, dt = t e^t - e^t = (t - 1)e^t \\\\]Therefore:\\\\[ x e^{\\\\tan^{-1} y} = (\\\\tan^{-1} y - 1)e^{\\\\tan^{-1} y} + C \\\\]"
+      },
+      {
+        "question": "The orthogonal trajectories of the family of parabolas \\\\( y^2 = 4ax \\\\) (where \\\\( a \\\\) is a parameter) are given by:",
+        "options": [
+          "\\\\( 2x^2 + y^2 = C \\\\)",
+          "\\\\( x^2 + 2y^2 = C \\\\)",
+          "\\\\( x^2 - y^2 = C \\\\)",
+          "\\\\( 2x^2 - y^2 = C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Differentiating \\\\( y^2 = 4ax \\\\) gives \\\\( 2yy' = 4a = y^2/x \\implies y' = y/(2x) \\\\). Replace \\\\( y' \\\\to -1/y' \\\\): \\\\( -dx/dy = y/(2x) \\implies 2x dx + y dy = 0 \\implies 2x^2 + y^2 = C \\\\).",
+          "Incorrect. The coefficient 2 belongs to \\\\( x^2 \\\\), not \\\\( y^2 \\\\).",
+          "Incorrect. The family represents ellipses, not hyperbolas.",
+          "Incorrect. Sign error when integrating."
+        ],
+        "fullExplanation": "Given family of curves:\\\\[ y^2 = 4ax \\implies 4a = \\\\frac{y^2}{x} \\\\]Differentiating with respect to \\\\( x \\\\):\\\\[ 2y \\\\frac{dy}{dx} = 4a = \\\\frac{y^2}{x} \\implies \\\\frac{dy}{dx} = \\\\frac{y}{2x} \\\\]To find the orthogonal trajectory, replace \\\\( \\\\frac{dy}{dx} \\\\) with \\\\( -\\\\frac{dx}{dy} \\\\):\\\\[ -\\\\frac{dx}{dy} = \\\\frac{y}{2x} \\\\]Separating the variables:\\\\[ 2x \\, dx = -y \\, dy \\implies 2x \\, dx + y \\, dy = 0 \\\\]Integrating both sides:\\\\[ 2\\\\left(\\\\frac{x^2}{2}\\\\right) + \\\\frac{y^2}{2} = c_1 \\implies x^2 + \\\\frac{y^2}{2} = c_1 \\implies 2x^2 + y^2 = C \\\\]This is a family of ellipses."
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ \\\\frac{dy}{dx} = \\\\frac{y}{x + \\\\sqrt{xy}} \\\\]",
+        "options": [
+          "\\\\( 2\\\\sqrt{\\\\frac{x}{y}} - \\\\ln|y| = C \\\\)",
+          "\\\\( 2\\\\sqrt{\\\\frac{y}{x}} + \\\\ln|x| = C \\\\)",
+          "\\\\( \\\\sqrt{\\\\frac{x}{y}} + \\\\ln|y| = C \\\\)",
+          "\\\\( 2\\\\sqrt{xy} - \\\\ln|x| = C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Taking the reciprocal: \\\\( \\\\frac{dx}{dy} = \\\\frac{x}{y} + \\\\sqrt{\\\\frac{x}{y}} \\\\). Substituting \\\\( x = vy \\\\) leads to \\\\( \\\\frac{dv}{\\\\sqrt{v}} = \\\\frac{dy}{y} \\implies 2\\\\sqrt{v} = \\\\ln|y| + C \\implies 2\\\\sqrt{x/y} - \\\\ln|y| = C \\\\).",
+          "Incorrect. Inverted the ratio under the radical.",
+          "Incorrect. Missed the factor of 2 from integrating \\\\( v^{-1/2} \\\\).",
+          "Incorrect. The variable under the radical is \\\\( x/y \\\\), not \\\\( xy \\\\)."
+        ],
+        "fullExplanation": "Invert the equation to work with \\\\( \\\\frac{dx}{dy} \\\\):\\\\[ \\\\frac{dx}{dy} = \\\\frac{x + \\\\sqrt{xy}}{y} = \\\\frac{x}{y} + \\\\sqrt{\\\\frac{x}{y}} \\\\]Let \\\\( x = vy \\implies \\\\frac{dx}{dy} = v + y\\\\frac{dv}{dy} \\\\):\\\\[ v + y\\\\frac{dv}{dy} = v + \\\\sqrt{v} \\\\]Subtract \\\\( v \\\\) from both sides:\\\\[ y\\\\frac{dv}{dy} = \\\\sqrt{v} \\\\]Separate variables:\\\\[ \\\\frac{dv}{\\\\sqrt{v}} = \\\\frac{dy}{y} \\\\]Integrating both sides:\\\\[ 2\\\\sqrt{v} = \\\\ln|y| + C \\\\]Substitute back \\\\( v = \\\\frac{x}{y} \\\\):\\\\[ 2\\\\sqrt{\\\\frac{x}{y}} - \\\\ln|y| = C \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ x\\,dy + y\\,dx + \\\\frac{x\\,dy - y\\,dx}{x^2 + y^2} = 0 \\\\]",
+        "options": [
+          "\\\\( xy + \\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right) = C \\\\)",
+          "\\\\( xy - \\\\tan^{-1}\\\\left(\\\\frac{x}{y}\\\\right) = C \\\\)",
+          "\\\\( x^2 y^2 + \\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right) = C \\\\)",
+          "\\\\( xy + \\\\ln(x^2 + y^2) = C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Direct inspection reveals \\\\( d(xy) + d\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right)\\\\right) = 0 \\\\), so integrating yields \\\\( xy + \\\\tan^{-1}(y/x) = C \\\\).",
+          "Incorrect. Sign and argument mismatch.",
+          "Incorrect. The first term is \\\\( xy \\\\), not \\\\( x^2y^2 \\\\).",
+          "Incorrect. \\\\( \\\\frac{x dy - y dx}{x^2+y^2} \\\\) integrates to \\\\( \\\\tan^{-1} \\\\), not \\\\( \\\\ln \\\\)."
+        ],
+        "fullExplanation": "Recall standard exact differentials:\\\\[ d(xy) = x\\,dy + y\\,dx \\\\]\\\\[ d\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right)\\\\right) = \\\\frac{1}{1 + (y/x)^2} \\cdot \\\\frac{x\\,dy - y\\,dx}{x^2} = \\\\frac{x\\,dy - y\\,dx}{x^2 + y^2} \\\\]The given differential equation can be written as:\\\\[ d(xy) + d\\\\left( \\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right) \\\\right) = 0 \\\\]Integrating directly:\\\\[ xy + \\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right) = C \\\\]"
+      },
+      {
+        "question": "A curve passes through the point \\\\( (1, 1) \\\\) and its slope at any point \\\\( (x, y) \\\\) is given by \\\\( \\\\frac{dy}{dx} = \\\\frac{y}{x} - \\\\cos^2\\\\left(\\\\frac{y}{x}\\\\right) \\\\). The equation of the curve is:",
+        "options": [
+          "\\\\( \\\\tan\\\\left(\\\\frac{y}{x}\\\\right) + \\\\ln|x| = \\\\tan(1) \\\\)",
+          "\\\\( \\\\tan\\\\left(\\\\frac{y}{x}\\\\right) = \\\\ln|x| + 1 \\\\)",
+          "\\\\( \\\\cot\\\\left(\\\\frac{y}{x}\\\\right) + \\\\ln|x| = \\\\cot(1) \\\\)",
+          "\\\\( \\\\sin\\\\left(\\\\frac{y}{x}\\\\right) + \\\\ln|x| = \\\\sin(1) \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Homogeneous equation: let \\\\( y = vx \\implies v + x v' = v - \\\\cos^2 v \\implies \\\\sec^2 v dv = -dx/x \\implies \\\\tan v = -\\\\ln|x| + C \\\\). With \\\\( (1, 1) \\\\), \\\\( C = \\\\tan 1 \\\\).",
+          "Incorrect. Sign of the logarithm should be positive on the left side: \\\\( \\\\tan(y/x) + \\\\ln|x| = \\\\tan(1) \\\\).",
+          "Incorrect. \\\\( \\\\int \\\\sec^2 v dv = \\\\tan v \\\\), not \\\\( \\\\cot v \\\\).",
+          "Incorrect. Differentiating does not produce cosine squared."
+        ],
+        "fullExplanation": "Substitute \\\\( y = vx \\implies \\\\frac{dy}{dx} = v + x\\\\frac{dv}{dx} \\\\):\\\\[ v + x\\\\frac{dv}{dx} = v - \\\\cos^2 v \\\\]\\\\[ x\\\\frac{dv}{dx} = -\\\\cos^2 v \\\\]Separating variables:\\\\[ \\\\frac{dv}{\\\\cos^2 v} = -\\\\frac{dx}{x} \\implies \\\\sec^2 v \\, dv = -\\\\frac{dx}{x} \\\\]Integrating both sides:\\\\[ \\\\tan v = -\\\\ln|x| + C \\\\]Substitute back \\\\( v = \\\\frac{y}{x} \\\\):\\\\[ \\\\tan\\\\left(\\\\frac{y}{x}\\\\right) + \\\\ln|x| = C \\\\]Using the initial condition \\\\( (x, y) = (1, 1) \\\\):\\\\[ \\\\tan(1) + \\\\ln(1) = C \\implies C = \\\\tan(1) \\\\]Thus, the equation of the curve is:\\\\[ \\\\tan\\\\left(\\\\frac{y}{x}\\\\right) + \\\\ln|x| = \\\\tan(1) \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ (x + 1)\\\\frac{dy}{dx} - y = e^{3x}(x + 1)^2 \\\\]",
+        "options": [
+          "\\\\( \\\\frac{y}{x + 1} = \\\\frac{e^{3x}}{3} + C \\\\)",
+          "\\\\( y(x + 1) = \\\\frac{e^{3x}}{3} + C \\\\)",
+          "\\\\( \\\\frac{y}{x + 1} = e^{3x} + C \\\\)",
+          "\\\\( y = \\\\frac{e^{3x}}{3}(x + 1) + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Dividing by \\\\( x+1 \\\\): \\\\( y' - \\\\frac{1}{x+1}y = e^{3x}(x+1) \\\\). \\\\( IF = \\\\frac{1}{x+1} \\\\). Solution: \\\\( \\\\frac{y}{x+1} = \\\\int e^{3x} dx = \\\\frac{e^{3x}}{3} + C \\\\).",
+          "Incorrect. Multiplied by \\\\( x+1 \\\\) instead of dividing.",
+          "Incorrect. Missed the integration factor of 1/3 from \\\\( \\\\int e^{3x} dx \\\\).",
+          "Incorrect. Dropped \\\\( (x+1) \\\\) from the constant term \\\\( C(x+1) \\\\)."
+        ],
+        "fullExplanation": "Divide the equation by \\\\( (x + 1) \\\\):\\\\[ \\\\frac{dy}{dx} - \\\\frac{1}{x + 1}y = e^{3x}(x + 1) \\\\]This is a linear differential equation in \\\\( y \\\\):\\\\[ P(x) = -\\\\frac{1}{x + 1}, \\quad Q(x) = e^{3x}(x + 1) \\\\]Compute the integrating factor:\\\\[ IF = e^{\\\\int -\\\\frac{1}{x + 1} \\, dx} = e^{-\\\\ln(x + 1)} = \\\\frac{1}{x + 1} \\\\]General solution:\\\\[ y \\cdot \\\\frac{1}{x + 1} = \\\\int e^{3x}(x + 1) \\cdot \\\\frac{1}{x + 1} \\, dx + C \\\\]\\\\[ \\\\frac{y}{x + 1} = \\\\int e^{3x} \\, dx + C = \\\\frac{e^{3x}}{3} + C \\\\]"
+      },
+      {
+        "question": "The orthogonal trajectories of the family of curves \\\\( y = C x^2 \\\\) are given by:",
+        "options": [
+          "\\\\( x^2 + 2y^2 = k \\\\)",
+          "\\\\( 2x^2 + y^2 = k \\\\)",
+          "\\\\( x^2 - 2y^2 = k \\\\)",
+          "\\\\( y^2 - 2x^2 = k \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. From \\\\( C = y/x^2 \\\\), \\\\( y' = 2Cx = 2y/x \\\\). Replace \\\\( y' \\to -1/y' \\\\): \\\\( -dx/dy = 2y/x \\implies x dx + 2y dy = 0 \\implies x^2 + 2y^2 = k \\\\).",
+          "Incorrect. The factor 2 multiplies \\\\( y^2 \\\\), not \\\\( x^2 \\\\).",
+          "Incorrect. Sign error leads to a hyperbola instead of an ellipse.",
+          "Incorrect. Inverted and wrong sign."
+        ],
+        "fullExplanation": "Given family of curves:\\\\[ y = C x^2 \\implies C = \\\\frac{y}{x^2} \\\\]Differentiating with respect to \\\\( x \\\\):\\\\[ \\\\frac{dy}{dx} = 2Cx = 2\\\\left(\\\\frac{y}{x^2}\\\\right)x = \\\\frac{2y}{x} \\\\]Replace \\\\( \\\\frac{dy}{dx} \\\\) with \\\\( -\\\\frac{dx}{dy} \\\\) for orthogonal trajectories:\\\\[ -\\\\frac{dx}{dy} = \\\\frac{2y}{x} \\\\]Separate variables:\\\\[ x \\, dx = -2y \\, dy \\implies x \\, dx + 2y \\, dy = 0 \\\\]Integrate both sides:\\\\[ \\\\frac{x^2}{2} + y^2 = c_1 \\implies x^2 + 2y^2 = k \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ \\\\frac{dy}{dx} + \\\\frac{y}{x \\\\ln x} = \\\\frac{\\\\sin 2x}{\\\\ln x} \\\\] (for \\\\( x > 1 \\\\))",
+        "options": [
+          "\\\\( y \\\\ln x = -\\\\frac{\\\\cos 2x}{2} + C \\\\)",
+          "\\\\( \\\\frac{y}{\\\\ln x} = -\\\\frac{\\\\cos 2x}{2} + C \\\\)",
+          "\\\\( y \\\\ln x = \\\\cos 2x + C \\\\)",
+          "\\\\( y = -\\\\frac{\\\\cos 2x}{2\\\\ln x} + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\( IF = e^{\\\\int \\\\frac{dx}{x\\\\ln x}} = e^{\\\\ln(\\\\ln x)} = \\\\ln x \\\\). Multiplying gives \\\\( y \\\\ln x = \\\\int \\\\sin 2x dx = -\\\\frac{\\\\cos 2x}{2} + C \\\\).",
+          "Incorrect. \\\\( IF = \\\\ln x \\\\), so it multiplies \\\\( y \\\\), not divides.",
+          "Incorrect. Forgot the factor of -1/2 from integrating \\\\( \\\\sin 2x \\\\).",
+          "Incorrect. \\\\( C \\\\) must also be divided by \\\\( \\\\ln x \\\\) if solved explicitly for \\\\( y \\\\)."
+        ],
+        "fullExplanation": "The equation is linear in \\\\( y \\\\) with:\\\\[ P(x) = \\\\frac{1}{x \\\\ln x}, \\quad Q(x) = \\\\frac{\\\\sin 2x}{\\\\ln x} \\\\]Find the integrating factor:\\\\[ \\\\int P(x) \\, dx = \\\\int \\\\frac{1}{x \\\\ln x} \\, dx = \\\\ln(\\\\ln x) \\\\]\\\\[ IF = e^{\\\\ln(\\\\ln x)} = \\\\ln x \\\\]The solution is given by:\\\\[ y \\cdot IF = \\\\int Q(x) \\cdot IF \\, dx + C \\\\]\\\\[ y \\\\ln x = \\\\int \\\\left(\\\\frac{\\\\sin 2x}{\\\\ln x}\\\\right) \\\\cdot \\\\ln x \\, dx + C \\\\]\\\\[ y \\\\ln x = \\\\int \\\\sin 2x \\, dx + C = -\\\\frac{\\\\cos 2x}{2} + C \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ \\\\frac{dy}{dx} = \\\\frac{1}{x + y + 1} \\\\]",
+        "options": [
+          "\\\\( x + y + 2 = C e^y \\\\)",
+          "\\\\( x + y + 1 = C e^y \\\\)",
+          "\\\\( x + y + 2 = C e^{-y} \\\\)",
+          "\\\\( x + y + 1 = C e^{-y} \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Invert to \\\\( \\\\frac{dx}{dy} - x = y + 1 \\\\). \\\\( IF = e^{-y} \\\\). Solution: \\\\( x e^{-y} = \\\\int (y+1)e^{-y}dy = -(y+2)e^{-y} + C \\implies x+y+2 = Ce^y \\\\).",
+          "Incorrect. Integrating by parts produces \\\\( -(y+2)e^{-y} \\\\), not \\\\( -(y+1)e^{-y} \\\\).",
+          "Incorrect. Sign error in the exponential power upon clearing denominators.",
+          "Incorrect. Combination of integration and sign errors."
+        ],
+        "fullExplanation": "Invert the derivative to treat \\\\( x \\\\) as the dependent variable:\\\\[ \\\\frac{dx}{dy} = x + y + 1 \\implies \\\\frac{dx}{dy} - x = y + 1 \\\\]This is linear in \\\\( x \\\\) with \\\\( P_1(y) = -1 \\\\) and \\\\( Q_1(y) = y + 1 \\\\):\\\\[ IF = e^{\\\\int -1 \\, dy} = e^{-y} \\\\]The general solution is:\\\\[ x \\cdot e^{-y} = \\\\int (y + 1) e^{-y} \\, dy + C \\\\]Integrate by parts with \\\\( u = y + 1 \\\\) and \\\\( v' = e^{-y} \\\\):\\\\[ \\\\int (y + 1) e^{-y} \\, dy = -(y + 1)e^{-y} - \\\\int -(e^{-y}) \\, dy = -(y + 1)e^{-y} - e^{-y} = -(y + 2)e^{-y} \\\\]Thus:\\\\[ x e^{-y} = -(y + 2)e^{-y} + C \\\\]Multiply both sides by \\\\( e^y \\\\):\\\\[ x = -(y + 2) + C e^y \\implies x + y + 2 = C e^y \\\\]"
+      },
+      {
+        "question": "Solve the Bernoulli differential equation: \\\\[ \\\\frac{dy}{dx} + \\\\frac{y}{x} = y^2 \\\\]",
+        "options": [
+          "\\\\( \\\\frac{1}{y} = -x \\\\ln|x| + C x \\\\)",
+          "\\\\( \\\\frac{1}{xy} = -\\\\ln|x| + C \\\\)",
+          "\\\\( y = \\\\frac{1}{x(\\\\ln|x| + C)} \\\\)",
+          "\\\\( \\\\frac{1}{y} = x \\\\ln|x| + C x \\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Algebraically related to Option B via multiplication by \\\\( x \\\\), but Option B cleanly isolates the integrating factor product.",
+          "Correct. Divide by \\\\( y^2 \\\\) and let \\\\( v = y^{-1} \\\\); \\\\( v' - \\\\frac{v}{x} = -1 \\\\). \\\\( IF = 1/x \\\\). Thus \\\\( \\\\frac{v}{x} = -\\\\int \\\\frac{1}{x} dx = -\\\\ln|x| + C \\implies \\\\frac{1}{xy} = -\\\\ln|x| + C \\\\).",
+          "Incorrect. Sign on the logarithm is inverted.",
+          "Incorrect. Failed to carry the minus sign from dividing by \\\\( 1-n = -1 \\\\)."
+        ],
+        "fullExplanation": "Divide the entire equation by \\\\( y^2 \\\\):\\\\[ y^{-2} \\\\frac{dy}{dx} + \\\\frac{1}{x} y^{-1} = 1 \\\\]Substitute \\\\( v = y^{-1} \\implies \\\\frac{dv}{dx} = -y^{-2} \\\\frac{dy}{dx} \\\\):\\\\[ -\\\\frac{dv}{dx} + \\\\frac{1}{x} v = 1 \\implies \\\\frac{dv}{dx} - \\\\frac{1}{x} v = -1 \\\\]This is a linear equation in \\\\( v \\\\):\\\\[ IF = e^{\\\\int -\\\\frac{1}{x} \\, dx} = e^{-\\\\ln x} = \\\\frac{1}{x} \\\\]The solution is:\\\\[ v \\cdot \\\\frac{1}{x} = \\\\int (-1) \\cdot \\\\frac{1}{x} \\, dx + C \\\\]\\\\[ \\\\frac{v}{x} = -\\\\ln|x| + C \\\\]Since \\\\( v = \\\\frac{1}{y} \\\\):\\\\[ \\\\frac{1}{xy} = -\\\\ln|x| + C \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ (2x - 10y^3)\\,dy + y\\,dx = 0 \\\\]",
+        "options": [
+          "\\\\( x y^2 = 2y^5 + C \\\\)",
+          "\\\\( x y^2 = 5y^4 + C \\\\)",
+          "\\\\( x y = 2y^4 + C \\\\)",
+          "\\\\( x = 2y^3 + C y^{-2} \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Rewrite as \\\\( y\\\\frac{dx}{dy} + 2x = 10y^3 \\implies \\\\frac{dx}{dy} + \\\\frac{2}{y}x = 10y^2 \\\\). \\\\( IF = y^2 \\\\). Solution: \\\\( x y^2 = \\\\int 10y^4 dy = 2y^5 + C \\\\).",
+          "Incorrect. Failed to integrate \\\\( 10y^4 \\\\) properly (got \\\\( 5y^4 \\\\)).",
+          "Incorrect. Integrating factor power is 2, not 1.",
+          "Incorrect. Option D is algebraically equivalent when divided by \\\\( y^2 \\\\), but Option A is the standard polynomial integral form."
+        ],
+        "fullExplanation": "Rearrange the equation to express \\\\( \\\\frac{dx}{dy} \\\\):\\\\[ y \\, dx + (2x - 10y^3) \\, dy = 0 \\\\]Divide by \\\\( dy \\\\):\\\\[ y \\\\frac{dx}{dy} + 2x = 10y^3 \\\\]Divide by \\\\( y \\\\) (for \\\\( y \\neq 0 \\\\)):\\\\[ \\\\frac{dx}{dy} + \\\\frac{2}{y}x = 10y^2 \\\\]This is a linear equation in \\\\( x \\\\):\\\\[ IF = e^{\\\\int \\\\frac{2}{y} \\, dy} = e^{2\\\\ln|y|} = y^2 \\\\]The general solution is:\\\\[ x \\cdot y^2 = \\\\int (10y^2 \\cdot y^2) \\, dy + C = \\\\int 10y^4 \\, dy + C \\\\]\\\\[ x y^2 = 10\\\\left(\\\\frac{y^5}{5}\\\\right) + C = 2y^5 + C \\\\]"
+      },
+      {
+        "question": "Find the general solution of the differential equation: \\\\[ y\\,dx - (x + 2y^2)\\,dy = 0 \\\\]",
+        "options": [
+          "\\\\( x = 2y^2 + Cy \\\\)",
+          "\\\\( x = y^2 + Cy \\\\)",
+          "\\\\( y = 2x^2 + Cx \\\\)",
+          "\\\\( x = 2y + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Divide by \\\\( y^2 \\\\): \\\\( \\\\frac{y dx - x dy}{y^2} - 2 dy = 0 \\implies d\\\\left(\\\\frac{x}{y}\\\\right) = 2 dy \\implies \\\\frac{x}{y} = 2y + C \\implies x = 2y^2 + Cy \\\\).",
+          "Incorrect. Coefficient 2 was lost.",
+          "Incorrect. Swapped roles of \\\\( x \\\\) and \\\\( y \\\\).",
+          "Incorrect. Missed the quadratic power."
+        ],
+        "fullExplanation": "Rearrange the given differential equation:\\\\[ y \\, dx - x \\, dy = 2y^2 \\, dy \\\\]Divide throughout by \\\\( y^2 \\\\):\\\\[ \\\\frac{y \\, dx - x \\, dy}{y^2} = 2 \\, dy \\\\]Recognizing the left side as an exact differential:\\\\[ d\\\\left( \\\\frac{x}{y} \\\\right) = 2 \\, dy \\\\]Integrating both sides directly:\\\\[ \\\\frac{x}{y} = 2y + C \\\\]Multiply through by \\\\( y \\\\):\\\\[ x = 2y^2 + C y \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ \\\\frac{dy}{dx} = \\\\cos(x + y) \\\\]",
+        "options": [
+          "\\\\( \\\\tan\\\\left(\\\\frac{x + y}{2}\\\\right) = x + C \\\\)",
+          "\\\\( \\\\tan\\\\left(\\\\frac{x + y}{2}\\\\right) = y + C \\\\)",
+          "\\\\( \\\\cot\\\\left(\\\\frac{x + y}{2}\\\\right) = x + C \\\\)",
+          "\\\\( \\\\cos(x + y) = x + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\\\( t = x+y \\implies t' = 1 + \\\\cos t = 2\\\\cos^2(t/2) \\\\). Separating variables gives \\\\( \\\\frac{1}{2}\\\\sec^2(t/2) dt = dx \\implies \\\\tan(t/2) = x + C \\\\).",
+          "Incorrect. The right side integrates to \\\\( x + C \\\\), not \\\\( y + C \\\\).",
+          "Incorrect. \\\\( \\\\int \\\\sec^2(t/2) dt \\\\) yields \\\\( \\\\tan \\\\), not \\\\( \\\\cot \\\\).",
+          "Incorrect. Incomplete integration."
+        ],
+        "fullExplanation": "Substitute \\\\( t = x + y \\\\).\\nDifferentiating with respect to \\\\( x \\\\):\\\\[ \\\\frac{dt}{dx} = 1 + \\\\frac{dy}{dx} \\implies \\\\frac{dy}{dx} = \\\\frac{dt}{dx} - 1 \\\\]Substitute into the differential equation:\\\\[ \\\\frac{dt}{dx} - 1 = \\\\cos t \\implies \\\\frac{dt}{dx} = 1 + \\\\cos t \\\\]Use the half-angle identity \\\\( 1 + \\\\cos t = 2\\\\cos^2\\\\left(\\\\frac{t}{2}\\\\right) \\\\):\\\\[ \\\\frac{dt}{2\\\\cos^2(t/2)} = dx \\implies \\\\frac{1}{2}\\\\sec^2\\\\left(\\\\frac{t}{2}\\\\right) dt = dx \\\\]Integrating both sides:\\\\[ \\\\tan\\\\left(\\\\frac{t}{2}\\\\right) = x + C \\\\]Substitute back \\\\( t = x + y \\\\):\\\\[ \\\\tan\\\\left(\\\\frac{x + y}{2}\\\\right) = x + C \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ (x^2 + 1)^2 \\\\frac{dy}{dx} + 2x(x^2 + 1)y = 1 \\\\]",
+        "options": [
+          "\\\\( y(x^2 + 1) = \\\\tan^{-1} x + C \\\\)",
+          "\\\\( y(x^2 + 1)^2 = x + C \\\\)",
+          "\\\\( y(x^2 + 1) = x + C \\\\)",
+          "\\\\( y = (x^2 + 1)\\\\tan^{-1} x + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Divide by \\\\( x^2+1 \\\\): \\\\( (x^2+1)y' + 2xy = \\\\frac{1}{x^2+1} \\implies \\\\frac{d}{dx}[(x^2+1)y] = \\\\frac{1}{x^2+1} \\\\). Integrating yields \\\\( y(x^2+1) = \\\\tan^{-1} x + C \\\\).",
+          "Incorrect. The left side is not \\\\( d[(x^2+1)^2 y] \\\\).",
+          "Incorrect. \\\\( \\\\int \\\\frac{dx}{x^2+1} = \\\\tan^{-1} x \\\\), not \\\\( x \\\\).",
+          "Incorrect. Inverted factor on \\\\( y \\\\)."
+        ],
+        "fullExplanation": "Divide the entire differential equation by \\\\( (x^2 + 1) \\\\):\\\\[ (x^2 + 1)\\\\frac{dy}{dx} + 2xy = \\\\frac{1}{x^2 + 1} \\\\]Observe that the left-hand side is the exact derivative of a product via the product rule:\\\\[ \\\\frac{d}{dx}\\\\left[ (x^2 + 1)y \\\\right] = (x^2 + 1)\\\\frac{dy}{dx} + 2xy \\\\]Thus, the equation becomes:\\\\[ \\\\frac{d}{dx}\\\\left[ (x^2 + 1)y \\\\right] = \\\\frac{1}{x^2 + 1} \\\\]Integrating both sides with respect to \\\\( x \\\\):\\\\[ (x^2 + 1)y = \\\\int \\\\frac{1}{x^2 + 1} \\, dx + C \\\\]\\\\[ y(x^2 + 1) = \\\\tan^{-1} x + C \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ x\\,dx + y\\,dy = x(x\\,dy - y\\,dx) \\\\]",
+        "options": [
+          "\\\\( \\\\frac{1}{2}\\\\ln(x^2 + y^2) = \\\\frac{y}{x} + C \\\\)",
+          "\\\\( \\\\sqrt{x^2 + y^2} = \\\\frac{y}{x} + C \\\\)",
+          "\\\\( x^2 + y^2 = 2\\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right) + C \\\\)",
+          "\\\\( \\\\ln(x^2 + y^2) = 2xy + C \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Divide by \\\\( x^2 \\\\): \\\\( \\\\frac{x dx + y dy}{x^2} = \\\\frac{x dy - y dx}{x} \\\\) -- or divide by \\\\( x^2+y^2 \\\\): in polar coordinates \\\\( r dr = r \\\\cos\\\\theta (r^2 d\\\\theta) \\implies \\\\frac{dr}{r^2} = \\\\cos\\\\theta d\\\\theta \\\\)... Alternatively, divide by \\\\( x^2 \\\\): \\\\( \\\\frac{x dx + y dy}{x^2} \\\\). Let us verify: dividing by \\\\( x^2 \\\\) gives \\\\( \\\\frac{1}{2}d(x^2+y^2)/x^2 = d(y/x) \\\\). If \\\\( u = x^2+y^2 \\\\) and \\\\( v = y/x \\\\), \\\\( u/x^2 = 1+v^2 \\\\), so \\\\( \\\\frac{du}{2u} = \\\\frac{dv}{1+v^2} \\\\).",
+          "Incorrect. Radical form does not match the logarithmic integral.",
+          "Incorrect. Mismatched functions.",
+          "Incorrect. Algebraically inconsistent."
+        ],
+        "fullExplanation": "Divide both sides of the equation by \\\\( x^2 + y^2 \\\\):\\\\[ \\\\frac{x\\,dx + y\\,dy}{x^2 + y^2} = \\\\frac{x(x\\,dy - y\\,dx)}{x^2 + y^2} \\\\]Recall the standard forms:\\\\[ \\\\frac{x\\,dx + y\\,dy}{x^2 + y^2} = d(\\\\ln\\\\sqrt{x^2 + y^2}) = \\\\frac{1}{2} d(\\\\ln(x^2 + y^2)) \\\\]and\\\\[ \\\\frac{x\\,dy - y\\,dx}{x^2 + y^2} = d\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right)\\\\right) \\\\]Converting to polar coordinates \\\\( x = r\\\\cos\\\\theta, y = r\\\\sin\\\\theta \\\\):\\n- \\\\( x\\,dx + y\\,dy = r\\,dr \\\\)\\n- \\\\( x\\,dy - y\\,dx = r^2\\,d\\\\theta \\\\)\\n- \\\\( x = r\\\\cos\\\\theta \\\\)\\nSubstituting into \\\\( x\\,dx + y\\,dy = x(x\\,dy - y\\,dx) \\\\):\\\\[ r\\,dr = (r\\\\cos\\\\theta)(r^2\\,d\\\\theta) = r^3 \\\\cos\\\\theta \\, d\\\\theta \\\\]Divide by \\\\( r^3 \\\\):\\\\[ \\\\frac{dr}{r^2} = \\\\cos\\\\theta \\, d\\\\theta \\\\]Integrating both sides:\\\\[ -\\\\frac{1}{r} = \\\\sin\\\\theta + C \\\\]Since \\\\( r = \\\\sqrt{x^2 + y^2} \\\\) and \\\\( \\\\sin\\\\theta = \\\\frac{y}{\\\\sqrt{x^2 + y^2}} \\\\):\\\\[ -\\\\frac{1}{\\\\sqrt{x^2 + y^2}} = \\\\frac{y}{\\\\sqrt{x^2 + y^2}} + C \\implies -(1 + y) = C \\\\sqrt{x^2 + y^2} \\\\]Alternatively, if the equation is \\\\( x\\,dx + y\\,dy = x^2 \\\\left(\\\\frac{x\\,dy - y\\,dx}{x^2}\\\\right) = x^2 d(y/x) \\\\), dividing by \\\\( x^2 \\\\) gives \\\\( \\\\frac{d(x^2+y^2)}{2x^2} = d\\\\left(\\\\frac{y}{x}\\\\right) \\\\). Note that \\\\( \\\\frac{x^2+y^2}{x^2} = 1 + \\\\left(\\\\frac{y}{x}\\\\right)^2 \\\\). Letting \\\\( v = y/x \\\\) and \\\\( R = x^2+y^2 \\\\):\\\\[ \\\\frac{dR}{2R} = \\\\frac{dv}{1 + v^2} \\implies \\\\frac{1}{2}\\\\ln(x^2 + y^2) = \\\\tan^{-1}\\\\left(\\\\frac{y}{x}\\\\right) + C \\\\]Notice this matches Option C with \\\\( \\\\ln(x^2+y^2) = 2\\\\tan^{-1}(y/x) + C \\\\)!"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ \\\\sin x \\\\frac{dy}{dx} + 3y = \\\\cos x \\\\]",
+        "options": [
+          "\\\\( y \\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right) = \\\\int \\\\frac{\\\\cos x}{\\\\sin x} \\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right) dx + C \\\\)",
+          "\\\\( y \\\\sin^3 x = -\\\\cos x + C \\\\)",
+          "\\\\( y \\\\csc^3 x = \\\\cot x + C \\\\)",
+          "\\\\( y = \\\\cot x + C \\\\sin^3 x \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Divide by \\\\( \\\\sin x \\\\): \\\\( y' + 3\\\\csc x \\cdot y = \\\\cot x \\\\). \\\\( IF = e^{3 \\\\ln|\\\\tan(x/2)|} = \\\\tan^3(x/2) \\\\).",
+          "Incorrect. \\\\( P(x) = 3\\\\csc x \\\\), which does not integrate to \\\\( \\\\sin^3 x \\\\).",
+          "Incorrect. Integrating factor formula misapplied.",
+          "Incorrect. Linear solution form incorrect."
+        ],
+        "fullExplanation": "Divide the equation by \\\\( \\\\sin x \\\\):\\\\[ \\\\frac{dy}{dx} + (3\\\\csc x)y = \\\\cot x \\\\]This is in standard linear form \\\\( \\\\frac{dy}{dx} + P(x)y = Q(x) \\\\):\\\\[ P(x) = 3\\\\csc x, \\quad Q(x) = \\\\cot x \\\\]Compute the integrating factor:\\\\[ \\\\int P(x) \\, dx = 3 \\\\int \\\\csc x \\, dx = 3\\\\ln\\\\left|\\\\tan\\\\left(\\\\frac{x}{2}\\\\right)\\\\right| = \\\\ln\\\\left|\\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right)\\\\right| \\\\]\\\\[ IF = e^{\\\\ln|\\\\tan^3(x/2)|} = \\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right) \\\\]The general solution is:\\\\[ y \\cdot \\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right) = \\\\int \\\\cot x \\\\cdot \\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right) dx + C = \\\\int \\\\frac{\\\\cos x}{\\\\sin x} \\\\tan^3\\\\left(\\\\frac{x}{2}\\\\right) dx + C \\\\]"
+      },
+      {
+        "question": "A curve passing through \\\\( (2, 1) \\\\) satisfies \\\\( x \\\\frac{dy}{dx} + 2y = x^2 \\\\). Its equation is:",
+        "options": [
+          "\\\\( y = \\\\frac{x^2}{4} \\\\)",
+          "\\\\( y = \\\\frac{x^2}{4} + \\\\frac{1}{x^2} \\\\)",
+          "\\\\( y = \\\\frac{x^2}{2} - 1 \\\\)",
+          "\\\\( x^2 y = \\\\frac{x^4}{4} + 1 \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\( y' + \\\\frac{2}{x}y = x \\implies IF = x^2 \\implies y x^2 = \\\\frac{x^4}{4} + C \\\\). At \\\\( (2, 1) \\\\): \\\\( 1(4) = 4 + C \\implies C = 0 \\\\). Thus \\\\( y = \\\\frac{x^2}{4} \\\\).",
+          "Incorrect. \\\\( C = 0 \\\\), so the \\\\( 1/x^2 \\\\) term vanishes.",
+          "Incorrect. Does not satisfy the initial differential equation.",
+          "Incorrect. At \\\\( (2, 1) \\\\), \\\\( 4 \\neq 4 + 1 \\\\)."
+        ],
+        "fullExplanation": "Write the equation in standard linear form by dividing by \\\\( x \\\\):\\\\[ \\\\frac{dy}{dx} + \\\\frac{2}{x}y = x \\\\]Integrating factor:\\\\[ IF = e^{\\\\int \\\\frac{2}{x} \\, dx} = e^{2\\\\ln x} = x^2 \\\\]The solution is:\\\\[ y \\cdot x^2 = \\\\int x \\cdot x^2 \\, dx + C = \\\\int x^3 \\, dx + C = \\\\frac{x^4}{4} + C \\\\]Since the curve passes through \\\\( (2, 1) \\\\):\\\\[ 1 \\cdot (2)^2 = \\\\frac{2^4}{4} + C \\implies 4 = 4 + C \\implies C = 0 \\\\]Hence:\\\\[ y x^2 = \\\\frac{x^4}{4} \\implies y = \\\\frac{x^2}{4} \\\\]"
+      },
+      {
+        "question": "Solve the differential equation: \\\\[ \\\\frac{dy}{dx} = \\\\frac{y}{x} + \\\\frac{\\\\phi(y/x)}{\\\\phi'(y/x)} \\\\]",
+        "options": [
+          "\\\\( \\\\phi\\\\left(\\\\frac{y}{x}\\\\right) = C x \\\\)",
+          "\\\\( \\\\phi\\\\left(\\\\frac{y}{x}\\\\right) = \\\\frac{C}{x} \\\\)",
+          "\\\\( \\\\phi'\\\\left(\\\\frac{y}{x}\\\\right) = C x \\\\)",
+          "\\\\( \\\\ln\\\\left|\\\\phi\\\\left(\\\\frac{y}{x}\\\\right)\\\\right| = C x \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\\\( y = vx \\implies v + x v' = v + \\\\frac{\\\\phi(v)}{\\\\phi'(v)} \\implies \\\\frac{\\\\phi'(v)}{\\\\phi(v)} dv = \\\\frac{dx}{x} \\implies \\\\ln|\\\\phi(v)| = \\\\ln|x| + \\\\ln C \\implies \\\\phi(y/x) = Cx \\\\).",
+          "Incorrect. The power of \\\\( x \\\\) is positive 1, not -1.",
+          "Incorrect. The result involves \\\\( \\\\phi \\\\), not \\\\( \\\\phi' \\\\).",
+          "Incorrect. Exponentiating both sides removes the logarithm on the left."
+        ],
+        "fullExplanation": "Substitute \\\\( y = vx \\\\), so \\\\( \\\\frac{dy}{dx} = v + x\\\\frac{dv}{dx} \\\\):\\\\[ v + x\\\\frac{dv}{dx} = v + \\\\frac{\\\\phi(v)}{\\\\phi'(v)} \\\\]Subtract \\\\( v \\\\) from both sides:\\\\[ x\\\\frac{dv}{dx} = \\\\frac{\\\\phi(v)}{\\\\phi'(v)} \\\\]Separate variables:\\\\[ \\\\frac{\\\\phi'(v)}{\\\\phi(v)} \\, dv = \\\\frac{dx}{x} \\\\]Integrate both sides:\\\\[ \\\\int \\\\frac{\\\\phi'(v)}{\\\\phi(v)} \\, dv = \\\\int \\\\frac{dx}{x} \\\\]\\\\[ \\\\ln|\\\\phi(v)| = \\\\ln|x| + \\\\ln|C| = \\\\ln|C x| \\\\]Exponentiating both sides:\\\\[ \\\\phi(v) = C x \\\\]Substitute back \\\\( v = \\\\frac{y}{x} \\\\):\\\\[ \\\\phi\\\\left(\\\\frac{y}{x}\\\\right) = C x \\\\]"
+      },
+      {
+        "question": "The differential equation of all circles passing through the origin and having their centres on the \\\\( x \\\\)-axis is:",
+        "options": [
+          "\\\\( 2xy \\\\frac{dy}{dx} + x^2 - y^2 = 0 \\\\)",
+          "\\\\( 2xy \\\\frac{dy}{dx} + y^2 - x^2 = 0 \\\\)",
+          "\\\\( x^2 + y^2 - 2xy \\\\frac{dy}{dx} = 0 \\\\)",
+          "\\\\( 2xy \\\\frac{dy}{dx} + x^2 + y^2 = 0 \\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Equation is \\\\( x^2+y^2-2ax = 0 \\implies 2a = (x^2+y^2)/x \\\\). Differentiating gives \\\\( 2x+2yy' - (x^2+y^2)/x = 0 \\implies 2xy y' + x^2 - y^2 = 0 \\\\).",
+          "Incorrect. Sign of \\\\( x^2 - y^2 \\\\) is inverted.",
+          "Incorrect. Sign error on the derivative term.",
+          "Incorrect. Has \\\\( x^2+y^2 \\\\) instead of \\\\( x^2-y^2 \\\\)."
+        ],
+        "fullExplanation": "The general equation of a circle passing through the origin with center on the \\\\( x \\\\)-axis \\\\( (a, 0) \\\\) and radius \\\\( a \\\\) is:\\\\[ (x - a)^2 + y^2 = a^2 \\\\]Expanding:\\\\[ x^2 - 2ax + a^2 + y^2 = a^2 \\implies x^2 + y^2 - 2ax = 0 \\\\]Isolate the parameter \\\\( 2a \\\\):\\\\[ 2a = \\\\frac{x^2 + y^2}{x} \\\\]Differentiate both sides with respect to \\\\( x \\\\):\\\\[ 2x + 2y\\\\frac{dy}{dx} - 2a = 0 \\\\]Substitute \\\\( 2a = \\\\frac{x^2 + y^2}{x} \\\\):\\\\[ 2x + 2y\\\\frac{dy}{dx} - \\\\frac{x^2 + y^2}{x} = 0 \\\\]Multiply through by \\\\( x \\\\):\\\\[ 2x^2 + 2xy\\\\frac{dy}{dx} - x^2 - y^2 = 0 \\\\]\\\\[ 2xy\\\\frac{dy}{dx} + x^2 - y^2 = 0 \\\\]"
+      }
+    ]
+  }
+]

@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Probability",
+    "flashcards": [
+      {
+        "front": "What are the three fundamental Axioms of Probability for any event $E$ in a sample space $S$?",
+        "back": "1. Non-negativity and boundedness: $0 \\\\le P(E) \\\\le 1$.\\n2. Certainty of sample space: $P(S) = 1$.\\n3. Impossibility of empty event: $P(\\\\phi) = 0$."
+      },
+      {
+        "front": "Define Mutually Exclusive Events and state their mathematical condition.",
+        "back": "Two events $A$ and $B$ are mutually exclusive (disjoint) if the occurrence of one prevents the simultaneous occurrence of the other.\\nMathematically:\\n$$A \\\\cap B = \\\\phi \\\\implies P(A \\\\cap B) = 0$$\\nFor $n$ mutually exclusive events: $E_i \\\\cap E_j = \\\\phi$ for all $i \\\\neq j$."
+      },
+      {
+        "front": "Define Independent Events and state their mathematical condition.",
+        "back": "Two events $A$ and $B$ are independent if the occurrence or non-occurrence of one does not affect the probability of occurrence of the other.\\nMathematically:\\n$$P(A \\\\cap B) = P(A) \\\\cdot P(B)$$\\nEquivalently: $P(A|B) = P(A)$ (given $P(B) > 0$) and $P(B|A) = P(B)$ (given $P(A) > 0$)."
+      },
+      {
+        "front": "Can two events with non-zero probabilities be simultaneously Mutually Exclusive and Independent?",
+        "back": "NO.\\n- If $A$ and $B$ are mutually exclusive, then $P(A \\\\cap B) = 0$.\\n- If $A$ and $B$ are independent, then $P(A \\\\cap B) = P(A) \\\\cdot P(B)$.\\nSince $P(A) > 0$ and $P(B) > 0$, their product $P(A)P(B) > 0 \\\\neq 0$.\\nHence, two non-impossible events can never be both mutually exclusive and independent at the same time."
+      },
+      {
+        "front": "Define a Mutually Exclusive and Exhaustive system of events.",
+        "back": "A set of events $E_1, E_2, \\\\dots, E_n$ forms a mutually exclusive and exhaustive system if:\\n1. Pairwise disjoint: $E_i \\\\cap E_j = \\\\phi$ for all $i \\\\neq j$.\\n2. Partition of sample space: $\\\\bigcup_{i=1}^n E_i = S$.\\nConsequently:\\n$$\\\\sum_{i=1}^n P(E_i) = P(S) = 1$$"
+      },
+      {
+        "front": "State the Complement Rule and the properties of an event's complement $\\\\bar{E}$ (or $E'$).",
+        "back": "The complement $\\\\bar{E}$ contains all sample points in $S$ that are not in $E$:\\n1. $E \\\\cup \\\\bar{E} = S$ and $E \\\\cap \\\\bar{E} = \\\\phi$\\n2. $P(\\\\bar{E}) = 1 - P(E)$"
+      },
+      {
+        "front": "Define 'Odds in Favour' and 'Odds Against' an event.",
+        "back": "If an event can occur in $m$ favorable ways and fail in $n$ unfavorable ways (all equally likely):\\n1. Odds in favour of the event = $\\\\frac{m}{n} = \\\\frac{P(E)}{P(\\\\bar{E})}$\\n2. Odds against the event = \\\\frac{n}{m} = \\\\frac{P(\\\\bar{E})}{P(E)}\\n3. Probability of occurrence = $P(E) = \\\\frac{m}{m + n}$"
+      },
+      {
+        "front": "State the Addition Theorem of Probability for two events.",
+        "back": "For any two arbitrary events $A$ and $B$:\\n$$P(A \\\\cup B) = P(A) + P(B) - P(A \\\\cap B)$$\\nIf $A$ and $B$ are mutually exclusive ($P(A \\\\cap B) = 0$):\\n$$P(A \\\\cup B) = P(A) + P(B)$$"
+      },
+      {
+        "front": "State the Addition Theorem of Probability for three events.",
+        "back": "$$P(A \\\\cup B \\\\cup C) = P(A) + P(B) + P(C) - P(A \\\\cap B) - P(B \\\\cap C) - P(C \\\\cap A) + P(A \\\\cap B \\\\cap C)$$\\nIf $A, B, C$ are mutually exclusive:\\n$$P(A \\\\cup B \\\\cup C) = P(A) + P(B) + P(C)$$"
+      },
+      {
+        "front": "State De Morgan's Laws in Probability.",
+        "back": "1. Neither $A$ nor $B$ occurs:\\n$$P(\\\\bar{A} \\\\cap \\\\bar{B}) = P(\\\\overline{A \\\\cup B}) = 1 - P(A \\\\cup B)$$\\n2. At least one of $A$ or $B$ does not occur:\\n$$P(\\\\bar{A} \\\\cup \\\\bar{B}) = P(\\\\overline{A \\\\cap B}) = 1 - P(A \\\\cap B)$$"
+      },
+      {
+        "front": "What is the formula for the probability that EXACTLY ONE of two events $A$ or $B$ occurs?",
+        "back": "$$P(\\\\text{exactly one of } A, B) = P(A \\\\cap \\\\bar{B}) + P(\\\\bar{A} \\\\cap B)$$\\n$$= P(A) + P(B) - 2P(A \\\\cap B) = P(A \\\\cup B) - P(A \\\\cap B)$$"
+      },
+      {
+        "front": "What is the formula for the probability that EXACTLY ONE of three events $A, B, C$ occurs?",
+        "back": "$$P(\\\\text{exactly one}) = P(A) + P(B) + P(C) - 2P(A \\\\cap B) - 2P(B \\\\cap C) - 2P(C \\\\cap A) + 3P(A \\\\cap B \\\\cap C)$$"
+      },
+      {
+        "front": "What is the formula for the probability that EXACTLY TWO of three events $A, B, C$ occur?",
+        "back": "$$P(\\\\text{exactly two}) = P(A \\\\cap B) + P(B \\\\cap C) + P(C \\\\cap A) - 3P(A \\\\cap B \\\\cap C)$$"
+      },
+      {
+        "front": "Define Conditional Probability $P(A|B)$ and state its formula.",
+        "back": "Conditional probability $P(A|B)$ is the probability of occurrence of event $A$ given that event $B$ has already occurred:\\n$$P(A|B) = \\\\frac{P(A \\\\cap B)}{P(B)} = \\\\frac{n(A \\\\cap B)}{n(B)} \\\\quad (P(B) \\\\neq 0)$$"
+      },
+      {
+        "front": "State the key properties of Conditional Probability.",
+        "back": "1. $0 \\\\le P(A|B) \\\\le 1$\\n2. $P(S|B) = 1$ and $P(B|B) = 1$\\n3. $P(\\\\bar{A}|B) = 1 - P(A|B)$\\n4. $P((A_1 \\\\cup A_2)|B) = P(A_1|B) + P(A_2|B) - P((A_1 \\\\cap A_2)|B)$"
+      },
+      {
+        "front": "State the Multiplication Theorem of Probability.",
+        "back": "For any two events $A$ and $B$:\\n$$P(A \\\\cap B) = P(A) \\\\cdot P(B|A) = P(B) \\\\cdot P(A|B)$$\\nFor three events:\\n$$P(A \\\\cap B \\\\cap C) = P(A) \\\\cdot P(B|A) \\\\cdot P(C | A \\\\cap B)$$"
+      },
+      {
+        "front": "Contrast Pairwise Independence and Mutual Independence for three events $A, B, C$.",
+        "back": "1. Pairwise Independent: $P(A \\\\cap B) = P(A)P(B)$, $P(B \\\\cap C) = P(B)P(C)$, and $P(C \\\\cap A) = P(C)P(A)$.\\n2. Mutually Independent: Pairwise independent AND additionally:\\n$$P(A \\\\cap B \\\\cap C) = P(A) \\\\cdot P(B) \\\\cdot P(C)$$\\nMutual independence implies pairwise independence, but pairwise independence does NOT imply mutual independence."
+      },
+      {
+        "front": "If $A$ and $B$ are independent events, what can be said about their complements?",
+        "back": "If $A$ and $B$ are independent, then:\\n1. $A$ and $\\\\bar{B}$ are independent: $P(A \\\\cap \\\\bar{B}) = P(A)P(\\\\bar{B})$.\\n2. $\\\\bar{A}$ and $B$ are independent: $P(\\\\bar{A} \\\\cap B) = P(\\\\bar{A})P(B)$.\\n3. $\\\\bar{A}$ and $\\\\bar{B}$ are independent: $P(\\\\bar{A} \\\\cap \\\\bar{B}) = P(\\\\bar{A})P(\\\\bar{B})$."
+      },
+      {
+        "front": "What is the probability of occurrence of at least one of $n$ independent events with probabilities $p_1, p_2, \\\\dots, p_n$?",
+        "back": "$$P(\\\\text{at least one}) = 1 - P(\\\\text{none}) = 1 - (1 - p_1)(1 - p_2)\\\\dots(1 - p_n)$$."
+      },
+      {
+        "front": "State Boole's and Bonferroni's Inequalities.",
+        "back": "1. Boole's Inequality (Union Bound):\\n$$P\\\\left(\\\\bigcup_{i=1}^n A_i\\\\right) \\\\le \\\\sum_{i=1}^n P(A_i)$$\\n2. Bonferroni's Inequality:\\n$$P\\\\left(\\\\bigcap_{i=1}^n A_i\\\\right) \\\\ge 1 - \\\\sum_{i=1}^n P(\\\\bar{A}_i) = \\\\sum_{i=1}^n P(A_i) - (n - 1)$$"
+      },
+      {
+        "front": "State the Law of Total Probability.",
+        "back": "Let $E_1, E_2, \\\\dots, E_n$ be a partition of sample space $S$ ($E_i \\\\cap E_j = \\\\phi$, $\\\\bigcup E_i = S$, $P(E_i) > 0$). For any event $A$:\\n$$P(A) = \\\\sum_{i=1}^n P(E_i) \\\\cdot P(A|E_i)$$"
+      },
+      {
+        "front": "State Bayes' Theorem for posterior probability.",
+        "back": "Let $E_1, E_2, \\\\dots, E_n$ form a partition of $S$ and $A$ be an observed event with $P(A) > 0$. Then:\\n$$P(E_k|A) = \\\\frac{P(E_k) \\\\cdot P(A|E_k)}{\\\\sum_{i=1}^n P(E_i) \\\\cdot P(A|E_i)}$$"
+      },
+      {
+        "front": "What is the distinction between Prior and Posterior Probabilities in Bayes' Theorem?",
+        "back": "1. Prior Probability $P(E_k)$: The probability of hypothesis/cause $E_k$ before observing the experimental evidence $A$.\\n2. Posterior Probability $P(E_k|A)$: The revised or conditional probability of $E_k$ after the occurrence of event $A$ is observed."
+      },
+      {
+        "front": "Define a Discrete Random Variable and its Probability Mass Function (PMF).",
+        "back": "A random variable $X$ is a real-valued function whose domain is the sample space $S$.\\nIts probability distribution $\{ (x_i, p_i) \}$ satisfies:\\n1. $p_i = P(X = x_i) \\\\ge 0$ for all $i$\\n2. $\\\\sum_i p_i = 1$"
+      },
+      {
+        "front": "State the formula for the Mathematical Expectation (Mean) of a discrete random variable $X$.",
+        "back": "$$E(X) = \\\\mu = \\\\sum_{i=1}^n x_i P(X = x_i) = \\\\sum_{i=1}^n x_i p_i$$\\nIt represents the long-run weighted average of the values taken by $X$."
+      },
+      {
+        "front": "State the formula for the Variance and Standard Deviation of a discrete random variable $X$.",
+        "back": "$$\\\\text{Var}(X) = \\\\sigma^2 = E[(X - \\\\mu)^2] = E(X^2) - [E(X)]^2$$\\nwhere $E(X^2) = \\\\sum x_i^2 p_i$.\\nStandard Deviation: $\\\\sigma = \\\\sqrt{\\\\text{Var}(X)}$."
+      },
+      {
+        "front": "State the algebraic properties of Expectation and Variance for linear transformations $aX + b$.",
+        "back": "1. $E(aX + b) = a E(X) + b$\\n2. $\\\\text{Var}(aX + b) = a^2 \\\\text{Var}(X)$\\n3. $\\\\sigma(aX + b) = |a| \\\\sigma(X)$\\n(Note: Adding a constant shifts the mean but does not change variance)."
+      },
+      {
+        "front": "What are the four essential conditions for Bernoulli Trials?",
+        "back": "1. The number of trials $n$ is finite and fixed.\\n2. Each trial has only two mutually exclusive outcomes: 'Success' ($S$) or 'Failure' ($F$).\\n3. The trials are independent of each other.\\n4. The probability of success $p$ (and failure $q = 1 - p$) remains constant in each trial."
+      },
+      {
+        "front": "State the Binomial Distribution PMF formula for $r$ successes in $n$ trials.",
+        "back": "If random variable $X \\\\sim B(n, p)$:\\n$$P(X = r) = {}^nC_r \\\\, p^r \\\\, q^{n-r} \\\\quad \\\\text{for } r = 0, 1, 2, \\\\dots, n$$\\nwhere $q = 1 - p$, and $\\\\sum_{r=0}^n {}^nC_r p^r q^{n-r} = (q + p)^n = 1^n = 1$."
+      },
+      {
+        "front": "What are the formulas for the Mean, Variance, and Mode of a Binomial Distribution $B(n, p)$?",
+        "back": "1. $\\\\text{Mean } \\\\mu = np$\\n2. $\\\\text{Variance } \\\\sigma^2 = npq = np(1 - p)$\\n3. Note: Since $0 < q < 1$, $\\\\text{Variance} < \\\\text{Mean}$ always.\\n4. Mode: If $(n+1)p$ is not an integer, the mode is $m = \\\\lfloor (n+1)p \\\\rfloor$. If $(n+1)p$ is an integer $k$, it has two modes: $k-1$ and $k$."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Two unbiased dice are rolled simultaneously. What is the probability that the sum of the numbers obtained is either a multiple of 3 or greater than 9?",
+        "options": [
+          "$\\\\frac{17}{36}$",
+          "$\\\\frac{5}{12}$",
+          "$\\\\frac{19}{36}$",
+          "$\\\\frac{4}{9}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Multiples of 3 yield 12 pairs, sum > 9 yields 6 pairs, and their intersection (sum = 12) has 1 pair: $12 + 6 - 1 = 17$, so $P = 17/36$.",
+          "Incorrect: $5/12 = 15/36$, which overlooks several valid outcomes.",
+          "Incorrect: $19/36$ double-counts common outcomes.",
+          "Incorrect: $4/9 = 16/36$, which misses one favorable pair."
+        ],
+        "fullExplanation": "Let $S$ be the sample space of rolling two dice; $n(S) = 6 \\\\times 6 = 36$.\\nLet $A$ be the event that the sum is a multiple of 3: possible sums are 3, 6, 9, 12.\\n- Sum 3: $(1,2), (2,1) \\\\implies 2$ pairs\\n- Sum 6: $(1,5), (2,4), (3,3), (4,2), (5,1) \\\\implies 5$ pairs\\n- Sum 9: $(3,6), (4,5), (5,4), (6,3) \\\\implies 4$ pairs\\n- Sum 12: $(6,6) \\\\implies 1$ pair\\n$$n(A) = 2 + 5 + 4 + 1 = 12$$\\n\\nLet $B$ be the event that the sum is greater than 9: possible sums are 10, 11, 12.\\n- Sum 10: $(4,6), (5,5), (6,4) \\\\implies 3$ pairs\\n- Sum 11: $(5,6), (6,5) \\\\implies 2$ pairs\\n- Sum 12: $(6,6) \\\\implies 1$ pair\\n$$n(B) = 3 + 2 + 1 = 6$$\\n\\nThe intersection $A \\\\cap B$ consists of sums that are both a multiple of 3 and greater than 9, which is only sum = 12: $(6,6) \\\\implies n(A \\\\cap B) = 1$.\\nBy the principle of inclusion-exclusion:\\n$$n(A \\\\cup B) = n(A) + n(B) - n(A \\\\cap B) = 12 + 6 - 1 = 17$$\\n$$P(A \\\\cup B) = \\\\frac{17}{36}$$"
+      },
+      {
+        "question": "Three unbiased six-faced dice are thrown together. The probability of obtaining a total sum of 15 is:",
+        "options": [
+          "$\\\\frac{5}{108}$",
+          "$\\\\frac{5}{72}$",
+          "$\\\\frac{7}{108}$",
+          "$\\\\frac{1}{18}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Number of favorable partitions of 15 into 3 integers in $[1, 6]$ is 10, so $P = 10/216 = 5/108$.",
+          "Incorrect: $5/72 = 15/216$, which overcounts permutations.",
+          "Incorrect: $7/108 = 14/216$, an overcount.",
+          "Incorrect: $1/18 = 12/216$."
+        ],
+        "fullExplanation": "Total number of elementary outcomes in rolling three dice is:\\n$$n(S) = 6^3 = 216$$\\nWe seek the number of solutions to $x_1 + x_2 + x_3 = 15$ with $1 \\\\le x_i \\\\le 6$.\\nWe partition 15 into three integers between 1 and 6:\\n1. $\{6, 6, 3\}$: Permutations = $\\\\frac{3!}{2!} = 3$\\n2. $\{6, 5, 4\}$: Permutations = $3! = 6$\\n3. $\{5, 5, 5\}$: Permutations = $\\\\frac{3!}{3!} = 1$\\n\\nTotal favorable ways = $3 + 6 + 1 = 10$.\\nTherefore:\\n$$P(\\\\text{Sum} = 15) = \\\\frac{10}{216} = \\\\frac{5}{108}$$"
+      },
+      {
+        "question": "An urn contains 5 red, 4 blue, and 3 green marbles. If 3 marbles are drawn at random without replacement, what is the probability that all 3 marbles are of different colors?",
+        "options": [
+          "$\\\\frac{3}{11}$",
+          "$\\\\frac{4}{11}$",
+          "$\\\\frac{6}{55}$",
+          "$\\\\frac{1}{6}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Number of favorable draws is $\\\\binom{5}{1}\\\\binom{4}{1}\\\\binom{3}{1} = 60$, total draws is $\\\\binom{12}{3} = 220$; $60/220 = 3/11$.",
+          "Incorrect: Arithmetic error in numerator/denominator reduction.",
+          "Incorrect: Corresponds to drawing all 3 of the same color.",
+          "Incorrect: Corresponds to using permutation order improperly."
+        ],
+        "fullExplanation": "Total number of marbles in the urn = $5 + 4 + 3 = 12$.\\nTotal ways to choose 3 marbles out of 12 without replacement:\\n$$n(S) = \\\\binom{12}{3} = \\\\frac{12 \\\\times 11 \\\\times 10}{3 \\\\times 2 \\\\times 1} = 220$$\\nTo have all three marbles of different colors, we must select exactly 1 red, 1 blue, and 1 green marble:\\n$$n(E) = \\\\binom{5}{1} \\\\times \\\\binom{4}{1} \\\\times \\\\binom{3}{1} = 5 \\\\times 4 \\\\times 3 = 60$$\\nTherefore:\\n$$P(E) = \\\\frac{n(E)}{n(S)} = \\\\frac{60}{220} = \\\\frac{3}{11}$$"
+      },
+      {
+        "question": "Urn A contains 4 red and 6 black balls. Urn B contains 7 red and 3 black balls. An urn is chosen at random with equal probability and a ball is drawn. What is the probability that the ball drawn is red?",
+        "options": [
+          "$\\\\frac{11}{20}$",
+          "$\\\\frac{1}{2}$",
+          "$\\\\frac{2}{5}$",
+          "$\\\\frac{7}{10}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: By total probability, $P(R) = \\\\frac{1}{2}\\\\left(\\\\frac{4}{10}\\\\right) + \\\\frac{1}{2}\\\\left(\\\\frac{7}{10}\\\\right) = \\\\frac{11}{20}$.",
+          "Incorrect: Simple average of 1/2 is not the red probability.",
+          "Incorrect: This is only the probability from Urn A.",
+          "Incorrect: This is only the probability from Urn B."
+        ],
+        "fullExplanation": "Let $E_1$ be the event of choosing Urn A, and $E_2$ be the event of choosing Urn B.\\n$$P(E_1) = \\\\frac{1}{2}, \\\\quad P(E_2) = \\\\frac{1}{2}$$\\nLet $R$ be the event that the ball drawn is red.\\nFrom Urn A: $P(R|E_1) = \\\\frac{4}{4+6} = \\\\frac{4}{10}$\\nFrom Urn B: $P(R|E_2) = \\\\frac{7}{7+3} = \\\\frac{7}{10}$\\n\\nBy the Law of Total Probability:\\n$$P(R) = P(E_1)P(R|E_1) + P(E_2)P(R|E_2)$$\\n$$= \\\\frac{1}{2} \\\\times \\\\frac{4}{10} + \\\\frac{1}{2} \\\\times \\\\frac{7}{10} = \\\\frac{4 + 7}{20} = \\\\frac{11}{20}$$"
+      },
+      {
+        "question": "Bag I contains 3 white and 2 black balls, and Bag II contains 2 white and 4 black balls. One ball is transferred at random from Bag I to Bag II, and then a ball is drawn from Bag II. If the ball drawn from Bag II is found to be white, what is the probability that the transferred ball was black?",
+        "options": [
+          "$\\\\frac{4}{13}$",
+          "$\\\\frac{9}{13}$",
+          "$\\\\frac{2}{5}$",
+          "$\\\\frac{5}{13}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: By Bayes' Theorem: $P(T_B|W) = \\\\frac{\\\\frac{2}{5} \\\\times \\\\frac{2}{7}}{\\\\frac{3}{5}\\\\times\\\\frac{3}{7} + \\\\frac{2}{5}\\\\times\\\\frac{2}{7}} = \\\\frac{4}{13}$.",
+          "Incorrect: $9/13$ is the probability that the transferred ball was white.",
+          "Incorrect: $2/5$ is the prior probability $P(T_B)$, unconditioned on the observed draw.",
+          "Incorrect: Calculation error in numerator."
+        ],
+        "fullExplanation": "Let $T_W$ be the event that the transferred ball from Bag I is white:\\n$$P(T_W) = \\\\frac{3}{5}$$\\nLet $T_B$ be the event that the transferred ball from Bag I is black:\\n$$P(T_B) = \\\\frac{2}{5}$$\\n\\nLet $W$ be the event that a white ball is drawn from Bag II.\\n- If a white ball was transferred, Bag II now has $2 + 1 = 3$ white and 4 black balls (total 7):\\n$$P(W|T_W) = \\\\frac{3}{7}$$\\n- If a black ball was transferred, Bag II now has 2 white and $4 + 1 = 5$ black balls (total 7):\\n$$P(W|T_B) = \\\\frac{2}{7}$$\\n\\nWe want $P(T_B|W)$. Applying Bayes' Theorem:\\n$$P(T_B|W) = \\\\frac{P(T_B)P(W|T_B)}{P(T_W)P(W|T_W) + P(T_B)P(W|T_B)}$$\\n$$= \\\\frac{\\\\frac{2}{5} \\\\times \\\\frac{2}{7}}{\\\\frac{3}{5} \\\\times \\\\frac{3}{7} + \\\\frac{2}{5} \\\\times \\\\frac{2}{7}} = \\\\frac{\\\\frac{4}{35}}{\\\\frac{9}{35} + \\\\frac{4}{35}} = \\\\frac{4}{13}$$"
+      },
+      {
+        "question": "A rare disease is present in $0.1\\\\%$ of a population. A diagnostic blood test is $99\\\\%$ accurate in detecting the disease when it is present, but produces a false-positive result in $0.5\\\\%$ of healthy individuals. If a randomly selected person tests positive, the probability that the person actually has the disease is:",
+        "options": [
+          "$\\\\frac{22}{133}$",
+          "$\\\\frac{99}{100}$",
+          "$\\\\frac{1}{2}$",
+          "$\\\\frac{11}{133}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Posterior probability = $\\\\frac{0.001 \\\\times 0.99}{0.001 \\\\times 0.99 + 0.999 \\\\times 0.005} = \\\\frac{0.00099}{0.005985} = \\\\frac{22}{133} \\\\approx 16.5\\\\%$.",
+          "Incorrect: $99/100$ is the sensitivity, committing the base-rate fallacy.",
+          "Incorrect: Guess without considering the base rate.",
+          "Incorrect: Missing a factor of 2 in numerator reduction."
+        ],
+        "fullExplanation": "Let $D$ be the event that the person has the disease, and $D'$ be the event that the person does not have the disease.\\n$$P(D) = 0.001, \\\\quad P(D') = 1 - 0.001 = 0.999$$\\nLet $+$ be the event that the test result is positive.\\n- Given sensitivity: $P(+|D) = 0.99$\\n- Given false positive rate: $P(+|D') = 0.005$\\n\\nBy Bayes' Theorem, the probability that a person has the disease given a positive test is:\\n$$P(D|+) = \\\\frac{P(D)P(+|D)}{P(D)P(+|D) + P(D')P(+|D')}$$\\n$$= \\\\frac{0.001 \\\\times 0.99}{(0.001 \\\\times 0.99) + (0.999 \\\\times 0.005)}$$\\n$$= \\\\frac{0.00099}{0.00099 + 0.004995} = \\\\frac{0.00099}{0.005985}$$\\nMultiply numerator and denominator by $10^6$:\\n$$= \\\\frac{990}{5985}$$\\nDividing both by 45:\\n$$990 \\\\div 45 = 22, \\\\quad 5985 \\\\div 45 = 133$$\\n$$P(D|+) = \\\\frac{22}{133}$$"
+      },
+      {
+        "question": "If $A$ and $B$ are two independent events such that $P(A) = 0.4$ and $P(A \\\\cup B) = 0.7$, what is the value of $P(B)$?",
+        "options": [
+          "0.5",
+          "0.3",
+          "0.4",
+          "0.6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Using $P(A \\\\cup B) = P(A) + P(B) - P(A)P(B)$, we get $0.7 = 0.4 + 0.6 P(B) \\\\implies P(B) = 0.5$.",
+          "Incorrect: $0.3 = 0.7 - 0.4$, which erroneously assumes mutually exclusive events.",
+          "Incorrect: Assumed $P(B) = P(A)$.",
+          "Incorrect: Inverted the coefficient calculation."
+        ],
+        "fullExplanation": "For any two events:\\n$$P(A \\\\cup B) = P(A) + P(B) - P(A \\\\cap B)$$\\nSince $A$ and $B$ are independent:\\n$$P(A \\\\cap B) = P(A) \\\\cdot P(B)$$\\nSubstitute the known values:\\n$$0.7 = 0.4 + P(B) - (0.4)P(B)$$\\n$$0.7 - 0.4 = P(B)(1 - 0.4)$$\\n$$0.3 = 0.6 \\\\cdot P(B)$$\\n$$P(B) = \\\\frac{0.3}{0.6} = 0.5$$"
+      },
+      {
+        "question": "Let $P(A) = \\\\frac{1}{3}$ and $P(B) = \\\\frac{1}{4}$. What is the absolute difference between $P(A \\\\cup B)$ when $A$ and $B$ are mutually exclusive versus when $A$ and $B$ are independent?",
+        "options": [
+          "$\\\\frac{1}{12}$",
+          "$\\\\frac{1}{6}$",
+          "$\\\\frac{7}{12}$",
+          "$\\\\frac{1}{2}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Difference $= [P(A) + P(B)] - [P(A) + P(B) - P(A)P(B)] = P(A)P(B) = \\\\frac{1}{3} \\\\times \\\\frac{1}{4} = \\\\frac{1}{12}$.",
+          "Incorrect: Overestimated by a factor of 2.",
+          "Incorrect: This is $P(A \\\\cup B)$ for mutually exclusive events.",
+          "Incorrect: This is $P(A \\\\cup B)$ for independent events."
+        ],
+        "fullExplanation": "Case 1: $A$ and $B$ are mutually exclusive.\\n$$P_{\\\\text{ME}}(A \\\\cup B) = P(A) + P(B) = \\\\frac{1}{3} + \\\\frac{1}{4} = \\\\frac{7}{12}$$\\n\\nCase 2: $A$ and $B$ are independent.\\n$$P_{\\\\text{Ind}}(A \\\\cup B) = P(A) + P(B) - P(A)P(B) = \\\\frac{7}{12} - \\\\left(\\\\frac{1}{3} \\\\times \\\\frac{1}{4}\\\\right) = \\\\frac{7}{12} - \\\\frac{1}{12} = \\\\frac{6}{12} = \\\\frac{1}{2}$$\\n\\nDifference:\\n$$P_{\\\\text{ME}}(A \\\\cup B) - P_{\\\\text{Ind}}(A \\\\cup B) = P(A)P(B) = \\\\frac{1}{12}$$"
+      },
+      {
+        "question": "If $P(A) = 0.4$, $P(B) = 0.8$, and $P(B|A) = 0.6$, then $P(A|B)$ is equal to:",
+        "options": [
+          "0.30",
+          "0.24",
+          "0.48",
+          "0.15"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(A \\\\cap B) = P(A)P(B|A) = 0.4 \\\\times 0.6 = 0.24$, then $P(A|B) = \\\\frac{0.24}{0.8} = 0.30$.",
+          "Incorrect: 0.24 is $P(A \\\\cap B)$, not $P(A|B)$.",
+          "Incorrect: Multiplied instead of dividing by $P(B)$.",
+          "Incorrect: Calculation error."
+        ],
+        "fullExplanation": "From the definition of conditional probability:\\n$$P(B|A) = \\\\frac{P(A \\\\cap B)}{P(A)} \\\\implies P(A \\\\cap B) = P(A) \\\\cdot P(B|A)$$\\n$$P(A \\\\cap B) = 0.4 \\\\times 0.6 = 0.24$$\\nNow compute $P(A|B)$:\\n$$P(A|B) = \\\\frac{P(A \\\\cap B)}{P(B)} = \\\\frac{0.24}{0.8} = 0.30$$"
+      },
+      {
+        "question": "A fair coin is tossed 6 times. What is the probability of obtaining at least 4 heads?",
+        "options": [
+          "$\\\\frac{11}{32}$",
+          "$\\\\frac{15}{64}$",
+          "$\\\\frac{21}{64}$",
+          "$\\\\frac{7}{16}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(X \\\\ge 4) = \\\\frac{\\\\binom{6}{4} + \\\\binom{6}{5} + \\\\binom{6}{6}}{64} = \\\\frac{15 + 6 + 1}{64} = \\\\frac{22}{64} = \\\\frac{11}{32}$.",
+          "Incorrect: $\\\\frac{15}{64}$ is only $P(X = 4)$.",
+          "Incorrect: Calculation omitted the outcome of 6 heads.",
+          "Incorrect: Equivalent to $14/32$."
+        ],
+        "fullExplanation": "This is a binomial experiment with $n = 6$ trials and $p = q = \\\\frac{1}{2}$.\\nWe need $P(X \\\\ge 4) = P(X = 4) + P(X = 5) + P(X = 6)$:\\n$$P(X = r) = {}^6C_r \\\\left(\\\\frac{1}{2}\\\\right)^6 = \\\\frac{{}^6C_r}{64}$$\\n- ${}^6C_4 = \\\\frac{6 \\\\times 5}{2 \\\\times 1} = 15$\\n- ${}^6C_5 = 6$\\n- ${}^6C_6 = 1$\\n\\nSumming the favorable terms:\\n$$P(X \\\\ge 4) = \\\\frac{15 + 6 + 1}{64} = \\\\frac{22}{64} = \\\\frac{11}{32}$$"
+      },
+      {
+        "question": "For a random variable $X$ following a binomial distribution $B(n, p)$, the mean is 4 and the variance is 2. What is the probability $P(X = 1)$?",
+        "options": [
+          "$\\\\frac{1}{32}$",
+          "$\\\\frac{1}{64}$",
+          "$\\\\frac{1}{16}$",
+          "$\\\\frac{1}{128}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Mean $np = 4$, variance $npq = 2 \\\\implies q = 1/2, p = 1/2, n = 8$. Then $P(X = 1) = \\\\binom{8}{1}(1/2)^8 = 8/256 = 1/32$.",
+          "Incorrect: Equivalent to $4/256$.",
+          "Incorrect: Equivalent to $16/256$.",
+          "Incorrect: Equivalent to $2/256$."
+        ],
+        "fullExplanation": "Given:\\n$$\\\\text{Mean } = np = 4$$\\n$$\\\\text{Variance } = npq = 2$$\\nDividing variance by mean:\\n$$q = \\\\frac{npq}{np} = \\\\frac{2}{4} = \\\\frac{1}{2}$$\\nSince $p + q = 1$:\\n$$p = 1 - \\\\frac{1}{2} = \\\\frac{1}{2}$$\\nNow find $n$:\\n$$n \\\\left(\\\\frac{1}{2}\\\\right) = 4 \\\\implies n = 8$$\\nThus $X \\\\sim B(8, 1/2)$. The probability of $X = 1$ is:\\n$$P(X = 1) = {}^8C_1 \\\\left(\\\\frac{1}{2}\\\\right)^1 \\\\left(\\\\frac{1}{2}\\\\right)^7 = 8 \\\\times \\\\frac{1}{2^8} = \\\\frac{8}{256} = \\\\frac{1}{32}$$"
+      },
+      {
+        "question": "The probability of a shooter hitting a target is $\\\\frac{1}{4}$. What is the minimum number of independent shots he must fire so that the probability of hitting the target at least once is strictly greater than $\\\\frac{2}{3}$?",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $1 - (3/4)^n > 2/3 \\\\implies (3/4)^n < 1/3$. For $n = 3$, $(3/4)^3 = 27/64 \\\\approx 0.42 > 1/3$; for $n = 4$, $(3/4)^4 = 81/256 \\\\approx 0.316 < 1/3$. Thus minimum $n = 4$.",
+          "Incorrect: For $n = 3$, $1 - 27/64 = 37/64 \\\\approx 0.578 < 2/3$.",
+          "Incorrect: $n = 5$ satisfies the inequality, but 4 is the minimum.",
+          "Incorrect: For $n = 2$, $1 - 9/16 = 7/16 < 2/3$."
+        ],
+        "fullExplanation": "Let $n$ be the number of shots.\\nProbability of hitting in a single shot: $p = \\\\frac{1}{4}$.\\nProbability of missing in a single shot: $q = 1 - \\\\frac{1}{4} = \\\\frac{3}{4}$.\\n\\nThe probability of hitting at least once in $n$ independent shots is:\\n$$P(\\\\text{at least one hit}) = 1 - q^n = 1 - \\\\left(\\\\frac{3}{4}\\\\right)^n$$\\nWe require:\\n$$1 - \\\\left(\\\\frac{3}{4}\\\\right)^n > \\\\frac{2}{3} \\\\implies \\\\left(\\\\frac{3}{4}\\\\right)^n < 1 - \\\\frac{2}{3} = \\\\frac{1}{3}$$\\nTesting integer values of $n$:\\n- $n = 1$: $\\\\frac{3}{4} = 0.75 > \\\\frac{1}{3}$\\n- $n = 2$: $\\\\frac{9}{16} = 0.5625 > \\\\frac{1}{3}$\\n- $n = 3$: $\\\\frac{27}{64} \\\\approx 0.4219 > \\\\frac{1}{3}$\\n- $n = 4$: $\\\\frac{81}{256} \\\\approx 0.3164 < \\\\frac{1}{3} \\\\approx 0.3333$\\nTherefore, the minimum number of shots required is 4."
+      },
+      {
+        "question": "A discrete random variable $X$ takes values $1, 2, 3, 4$ with probabilities given by $P(X = x) = c x^2$. What is the mathematical expectation $E(X)$?",
+        "options": [
+          "$\\\\frac{10}{3}$",
+          "3",
+          "$\\\\frac{7}{2}$",
+          "$\\\\frac{11}{3}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\sum c x^2 = 30c = 1 \\\\implies c = 1/30$. Then $E(X) = \\\\sum c x^3 = \\\\frac{1+8+27+64}{30} = \\\\frac{100}{30} = \\\\frac{10}{3}$.",
+          "Incorrect: Misses weighted probability mass.",
+          "Incorrect: Calculation error in summing cubes.",
+          "Incorrect: Used linear probability model."
+        ],
+        "fullExplanation": "Step 1: Determine the normalizing constant $c$ using $\\\\sum_{x=1}^4 P(X = x) = 1$:\\n$$c(1^2 + 2^2 + 3^2 + 4^2) = 1$$\\n$$c(1 + 4 + 9 + 16) = 1 \\\\implies 30c = 1 \\\\implies c = \\\\frac{1}{30}$$\\n\\nStep 2: Compute expectation $E(X) = \\\\sum_{x=1}^4 x \\\\cdot P(X = x)$:\\n$$E(X) = \\\\sum_{x=1}^4 x \\\\cdot (c x^2) = c \\\\sum_{x=1}^4 x^3$$\\n$$E(X) = \\\\frac{1}{30} (1^3 + 2^3 + 3^3 + 4^3)$$\\n$$= \\\\frac{1}{30} (1 + 8 + 27 + 64) = \\\\frac{100}{30} = \\\\frac{10}{3}$$"
+      },
+      {
+        "question": "A system consists of three independent components $C_1, C_2, C_3$ whose probabilities of working properly are $0.7, 0.8,$ and $0.9$ respectively. The system functions successfully if at least two components function properly. What is the probability of the system functioning successfully?",
+        "options": [
+          "0.902",
+          "0.896",
+          "0.924",
+          "0.878"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Summing probabilities of all 3 working (0.504) and exactly 2 working ($0.056 + 0.126 + 0.216 = 0.398$) gives $0.504 + 0.398 = 0.902$.",
+          "Incorrect: Calculation error in one of the pairs.",
+          "Incorrect: Overcounting outcomes.",
+          "Incorrect: Missed one combination where exactly 2 work."
+        ],
+        "fullExplanation": "Let $p_1 = 0.7, p_2 = 0.8, p_3 = 0.9$, so failure probabilities are $q_1 = 0.3, q_2 = 0.2, q_3 = 0.1$.\\nThe system functions if either all 3 work or exactly 2 work:\\n1. All 3 work:\\n$$P_3 = p_1 p_2 p_3 = 0.7 \\\\times 0.8 \\\\times 0.9 = 0.504$$\\n2. Exactly 2 work:\\n- $C_1, C_2$ work, $C_3$ fails: $0.7 \\\\times 0.8 \\\\times 0.1 = 0.056$\\n- $C_1, C_3$ work, $C_2$ fails: $0.7 \\\\times 0.2 \\\\times 0.9 = 0.126$\\n- $C_2, C_3$ work, $C_1$ fails: $0.3 \\\\times 0.8 \\\\times 0.9 = 0.216$\\n$$P_2 = 0.056 + 0.126 + 0.216 = 0.398$$\\n\\nTotal probability:\\n$$P = P_3 + P_2 = 0.504 + 0.398 = 0.902$$"
+      },
+      {
+        "question": "Two cards are drawn successively without replacement from a well-shuffled standard pack of 52 cards. What is the probability that the first card drawn is a King and the second card is a Queen?",
+        "options": [
+          "$\\\\frac{4}{663}$",
+          "$\\\\frac{1}{169}$",
+          "$\\\\frac{2}{663}$",
+          "$\\\\frac{8}{663}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(K_1 \\\\cap Q_2) = P(K_1) \\\\cdot P(Q_2 | K_1) = \\\\frac{4}{52} \\\\times \\\\frac{4}{51} = \\\\frac{1}{13} \\\\times \\\\frac{4}{51} = \\\\frac{4}{663}$.",
+          "Incorrect: $\\\\frac{1}{169} = \\\\frac{4}{52} \\\\times \\\\frac{4}{52}$, which assumes sampling with replacement.",
+          "Incorrect: Arithmetic error in numerator.",
+          "Incorrect: Double-counts order without necessity (question specifies 1st King and 2nd Queen)."
+        ],
+        "fullExplanation": "The experiment specifies an ordered sequence: first card is a King ($K_1$) and second is a Queen ($Q_2$).\\nBy the multiplication rule of probability:\\n$$P(K_1 \\\\cap Q_2) = P(K_1) \\\\cdot P(Q_2 | K_1)$$\\n- In a full pack of 52 cards, there are 4 Kings: $P(K_1) = \\\\frac{4}{52} = \\\\frac{1}{13}$.\\n- After one King is removed, 51 cards remain, containing all 4 Queens: $P(Q_2 | K_1) = \\\\frac{4}{51}$.\\n\\nMultiplying the conditional probabilities:\\n$$P(K_1 \\\\cap Q_2) = \\\\frac{1}{13} \\\\times \\\\frac{4}{51} = \\\\frac{4}{663}$$"
+      },
+      {
+        "question": "Person $A$ speaks truth in $75\\\\%$ of cases and person $B$ speaks truth in $80\\\\%$ of cases. In what percentage of cases are they likely to contradict each other in stating the same fact?",
+        "options": [
+          "$35\\\\%$",
+          "$40\\\\%$",
+          "$30\\\\%$",
+          "$45\\\\%$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Contradiction occurs when $(A \\\\cap \\\\bar{B}) \\\\cup (\\\\bar{A} \\\\cap B)$: $\\\\frac{3}{4}\\\\times\\\\frac{1}{5} + \\\\frac{1}{4}\\\\times\\\\frac{4}{5} = \\\\frac{7}{20} = 35\\\\%$.",
+          "Incorrect: Calculation error in fraction addition.",
+          "Incorrect: Missed the term $P(\\\\bar{A} \\\\cap B)$.",
+          "Incorrect: Overestimated contradiction frequency."
+        ],
+        "fullExplanation": "Let $T_A$ and $T_B$ be the events that $A$ and $B$ speak the truth respectively:\\n$$P(T_A) = \\\\frac{75}{100} = \\\\frac{3}{4}, \\\\quad P(\\\\bar{T}_A) = 1 - \\\\frac{3}{4} = \\\\frac{1}{4}$$\\n$$P(T_B) = \\\\frac{80}{100} = \\\\frac{4}{5}, \\\\quad P(\\\\bar{T}_B) = 1 - \\\\frac{4}{5} = \\\\frac{1}{5}$$\\n\\nThey contradict each other if either:\\n1. $A$ speaks truth and $B$ lies: $P(T_A \\\\cap \\\\bar{T}_B) = P(T_A)P(\\\\bar{T}_B) = \\\\frac{3}{4} \\\\times \\\\frac{1}{5} = \\\\frac{3}{20}$\\n2. $A$ lies and $B$ speaks truth: $P(\\\\bar{T}_A \\\\cap T_B) = P(\\\\bar{T}_A)P(T_B) = \\\\frac{1}{4} \\\\times \\\\frac{4}{5} = \\\\frac{4}{20}$\\n\\nSince these cases are mutually exclusive:\\n$$P(\\\\text{Contradiction}) = \\\\frac{3}{20} + \\\\frac{4}{20} = \\\\frac{7}{20}$$\\nIn percentage:\\n$$\\\\frac{7}{20} \\\\times 100\\\\% = 35\\\\%$$"
+      },
+      {
+        "question": "A biased coin with probability of showing heads $p = \\\\frac{2}{3}$ is tossed 10 times. What is the most probable number of heads (mode of the distribution)?",
+        "options": [
+          "7",
+          "6",
+          "8",
+          "Both 6 and 7"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $(n+1)p = (10+1) \\\\times \\\\frac{2}{3} = \\\\frac{22}{3} \\\\approx 7.33$. Since this is not an integer, the unique mode is $\\\\lfloor 7.33 \\\\rfloor = 7$.",
+          "Incorrect: $P(X=6) \\\\approx 0.227$, which is strictly less than $P(X=7) \\\\approx 0.260$.",
+          "Incorrect: $P(X=8) \\\\approx 0.195$, strictly less than $P(X=7)$.",
+          "Incorrect: Two modes occur only when $(n+1)p$ is an exact integer."
+        ],
+        "fullExplanation": "For a binomial distribution $B(n, p)$, the mode $m$ is determined by the value of $(n+1)p$:\\n$$(n + 1)p = (10 + 1) \\\\times \\\\frac{2}{3} = \\\\frac{22}{3} = 7.33$$\\n- When $(n+1)p$ is not an integer, there is a unique mode given by:\\n$$m = \\\\lfloor (n+1)p \\\\rfloor = \\\\lfloor 7.33 \\\\rfloor = 7$$\\n\\nWe can verify by computing the ratio:\\n$$\\\\frac{P(X = 7)}{P(X = 6)} = \\\\frac{10 - 6}{7} \\\\times \\\\frac{p}{q} = \\\\frac{4}{7} \\\\times \\\\frac{2/3}{1/3} = \\\\frac{8}{7} > 1 \\\\implies P(X=7) > P(X=6)$$\\n$$\\\\frac{P(X = 8)}{P(X = 7)} = \\\\frac{10 - 7}{8} \\\\times \\\\frac{p}{q} = \\\\frac{3}{8} \\\\times 2 = \\\\frac{6}{8} < 1 \\\\implies P(X=8) < P(X=7)$$\\nThus, $X = 7$ is the most probable value."
+      },
+      {
+        "question": "Two fair dice are thrown. Given that the numbers appearing on the two dice are distinct, what is the conditional probability that their sum is 6?",
+        "options": [
+          "$\\\\frac{2}{15}$",
+          "$\\\\frac{5}{36}$",
+          "$\\\\frac{1}{6}$",
+          "$\\\\frac{1}{10}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Distinct numbers give 30 outcomes. Sums of 6 with distinct numbers are $(1,5), (2,4), (4,2), (5,1)$ (4 pairs). Thus $4/30 = 2/15$.",
+          "Incorrect: $5/36$ is the unconditioned probability of sum = 6.",
+          "Incorrect: $1/6 = 5/30$, which erroneously includes the pair $(3,3)$.",
+          "Incorrect: $1/10 = 3/30$ misses one pair."
+        ],
+        "fullExplanation": "Let $B$ be the condition that the two dice show distinct numbers.\\nThe total possible outcomes is 36, and the outcomes with identical numbers (doublets) are $(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)$ (6 pairs).\\n$$n(B) = 36 - 6 = 30$$\\n\\nLet $A$ be the event that the sum is 6.\\nThe pairs that sum to 6 are:\\n$$(1,5), (2,4), (3,3), (4,2), (5,1) \\\\quad (5 \\\\text{ pairs})$$\\n\\nThe intersection $A \\\\cap B$ consists of pairs that sum to 6 AND have distinct numbers:\\n$$(1,5), (2,4), (4,2), (5,1) \\\\quad (\\\\text{excluding } (3,3))$$\\n$$n(A \\\\cap B) = 4$$\\n\\nTherefore, the conditional probability is:\\n$$P(A|B) = \\\\frac{n(A \\\\cap B)}{n(B)} = \\\\frac{4}{30} = \\\\frac{2}{15}$$"
+      },
+      {
+        "question": "Box A contains 5 red and 3 green balls. Box B contains 3 red and 5 green balls. A ball is drawn at random from Box A and transferred into Box B. Then a ball is drawn at random from Box B. What is the probability that the ball drawn from Box B is red?",
+        "options": [
+          "$\\\\frac{29}{72}$",
+          "$\\\\frac{31}{72}$",
+          "$\\\\frac{1}{2}$",
+          "$\\\\frac{3}{8}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(R_B) = P(R_A)P(R_B|R_A) + P(G_A)P(R_B|G_A) = \\\\frac{5}{8}\\\\left(\\\\frac{4}{9}\\\\right) + \\\\frac{3}{8}\\\\left(\\\\frac{3}{9}\\\\right) = \\\\frac{20 + 9}{72} = \\\\frac{29}{72}$.",
+          "Incorrect: Calculation error in numerator.",
+          "Incorrect: Simple average of both urns is inaccurate.",
+          "Incorrect: Prior red fraction of Box B."
+        ],
+        "fullExplanation": "Let $R_A$ and $G_A$ be the events of transferring a red ball or a green ball from Box A to Box B:\\n$$P(R_A) = \\\\frac{5}{8}, \\\\quad P(G_A) = \\\\frac{3}{8}$$\\n\\nLet $R_B$ be the event of drawing a red ball from Box B:\\n1. If a red ball is transferred, Box B contains $3 + 1 = 4$ red and 5 green balls (total 9):\\n$$P(R_B | R_A) = \\\\frac{4}{9}$$\\n2. If a green ball is transferred, Box B contains 3 red and $5 + 1 = 6$ green balls (total 9):\\n$$P(R_B | G_A) = \\\\frac{3}{9}$$\\n\\nBy the Law of Total Probability:\\n$$P(R_B) = P(R_A)P(R_B | R_A) + P(G_A)P(R_B | G_A)$$\\n$$= \\\\left(\\\\frac{5}{8} \\\\times \\\\frac{4}{9}\\\\right) + \\\\left(\\\\frac{3}{8} \\\\times \\\\frac{3}{9}\\\\right) = \\\\frac{20}{72} + \\\\frac{9}{72} = \\\\frac{29}{72}$$"
+      },
+      {
+        "question": "The odds in favour of an event $A$ are $3 : 4$ and the odds against an event $B$ are $5 : 3$. If $A$ and $B$ are independent events, what is the probability that at least one of the two events occurs?",
+        "options": [
+          "$\\\\frac{9}{14}$",
+          "$\\\\frac{5}{14}$",
+          "$\\\\frac{17}{28}$",
+          "$\\\\frac{3}{4}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(A) = 3/7 \\\\implies P(\\\\bar{A}) = 4/7$; Odds against $B$ are $5:3 \\\\implies P(\\\\bar{B}) = 5/8$. Then $P(A \\\\cup B) = 1 - P(\\\\bar{A})P(\\\\bar{B}) = 1 - (4/7)(5/8) = 1 - 5/14 = 9/14$.",
+          "Incorrect: $5/14$ is the probability that NEITHER occurs.",
+          "Incorrect: Arithmetic error in finding complement.",
+          "Incorrect: Assumed simple addition."
+        ],
+        "fullExplanation": "From odds in favour of $A$ being $3 : 4$:\\n$$P(A) = \\\\frac{3}{3 + 4} = \\\\frac{3}{7} \\\\implies P(\\\\bar{A}) = 1 - \\\\frac{3}{7} = \\\\frac{4}{7}$$\\nFrom odds against $B$ being $5 : 3$:\\n$$P(\\\\bar{B}) = \\\\frac{5}{5 + 3} = \\\\frac{5}{8} \\\\implies P(B) = \\\\frac{3}{8}$$\\n\\nSince $A$ and $B$ are independent, their complements $\\\\bar{A}$ and $\\\\bar{B}$ are also independent:\\n$$P(\\\\text{neither occurs}) = P(\\\\bar{A} \\\\cap \\\\bar{B}) = P(\\\\bar{A}) \\\\cdot P(\\\\bar{B}) = \\\\frac{4}{7} \\\\times \\\\frac{5}{8} = \\\\frac{5}{14}$$\\n\\nTherefore, the probability that at least one of them occurs is:\\n$$P(A \\\\cup B) = 1 - P(\\\\bar{A} \\\\cap \\\\bar{B}) = 1 - \\\\frac{5}{14} = \\\\frac{9}{14}$$"
+      },
+      {
+        "question": "A particle moves along a straight line starting from the origin $x = 0$. In each step, it moves 1 unit to the right ($+1$) with probability $0.6$ or 1 unit to the left ($-1$) with probability $0.4$. What is the probability that after 5 steps the particle is at position $x = 1$?",
+        "options": [
+          "$\\\\frac{216}{625}$",
+          "$\\\\frac{144}{625}$",
+          "$\\\\frac{288}{625}$",
+          "$\\\\frac{108}{625}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: For net displacement $+1$ in 5 steps, the particle must take 3 steps right and 2 steps left: $\\\\binom{5}{3}(0.6)^3(0.4)^2 = 10 \\\\times \\\\frac{27}{125} \\\\times \\\\frac{4}{25} = \\\\frac{216}{625}$.",
+          "Incorrect: Missed the binomial coefficient $\\\\binom{5}{3} = 10$.",
+          "Incorrect: Calculation error in exponent powers.",
+          "Incorrect: Halved the correct result."
+        ],
+        "fullExplanation": "Let $R$ be the number of steps taken to the right, and $L = 5 - R$ be the number of steps to the left.\\nThe position after 5 steps is:\\n$$x = R - L = R - (5 - R) = 2R - 5$$\\nSetting $x = 1$:\\n$$2R - 5 = 1 \\\\implies 2R = 6 \\\\implies R = 3$$\\nSo the particle must take exactly 3 steps to the right and 2 steps to the left in 5 trials.\\n\\nUsing the Binomial Distribution formula with $n = 5, p = 0.6 = \\\\frac{3}{5}, q = 0.4 = \\\\frac{2}{5}$:\\n$$P(R = 3) = {}^5C_3 \\\\, p^3 \\\\, q^2$$\\n$${}^5C_3 = \\\\frac{5 \\\\times 4}{2 \\\\times 1} = 10$$\\n$$P(R = 3) = 10 \\\\times \\\\left(\\\\frac{3}{5}\\\\right)^3 \\\\times \\\\left(\\\\frac{2}{5}\\\\right)^2 = 10 \\\\times \\\\frac{27}{125} \\\\times \\\\frac{4}{25} = \\\\frac{1080}{3125} = \\\\frac{216}{625}$$"
+      },
+      {
+        "question": "A bag contains 3 coins: Coin 1 is two-headed ($P(H) = 1$), Coin 2 is biased with $P(H) = \\\\frac{3}{4}$, and Coin 3 is a fair coin ($P(H) = \\\\frac{1}{2}$). A coin is chosen at random and tossed once. If it lands heads up, what is the probability that it was the two-headed coin?",
+        "options": [
+          "$\\\\frac{4}{9}$",
+          "$\\\\frac{1}{3}$",
+          "$\\\\frac{3}{8}$",
+          "$\\\\frac{2}{5}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Bayes' Theorem gives $\\\\frac{1/3 \\\\times 1}{1/3(1 + 3/4 + 1/2)} = \\\\frac{1}{9/4} = \\\\frac{4}{9}$.",
+          "Incorrect: $1/3$ is the unconditioned prior probability.",
+          "Incorrect: Calculation error in denominator sum.",
+          "Incorrect: Approximation without exact ratio."
+        ],
+        "fullExplanation": "Let $C_1, C_2, C_3$ be the events of choosing Coin 1, Coin 2, and Coin 3 respectively:\\n$$P(C_1) = P(C_2) = P(C_3) = \\\\frac{1}{3}$$\\nLet $H$ be the event that the tossed coin shows heads:\\n$$P(H|C_1) = 1, \\\\quad P(H|C_2) = \\\\frac{3}{4}, \\\\quad P(H|C_3) = \\\\frac{1}{2}$$\\n\\nBy the Law of Total Probability, the total probability of obtaining heads is:\\n$$P(H) = \\\\sum_{i=1}^3 P(C_i)P(H|C_i) = \\\\frac{1}{3} \\\\left(1 + \\\\frac{3}{4} + \\\\frac{1}{2}\\\\right) = \\\\frac{1}{3} \\\\left(\\\\frac{4 + 3 + 2}{4}\\\\right) = \\\\frac{9}{12} = \\\\frac{3}{4}$$\\n\\nBy Bayes' Theorem, the probability that Coin 1 was chosen given that heads appeared is:\\n$$P(C_1 | H) = \\\\frac{P(C_1)P(H|C_1)}{P(H)} = \\\\frac{\\\\frac{1}{3} \\\\times 1}{\\\\frac{3}{4}} = \\\\frac{1/3}{3/4} = \\\\frac{4}{9}$$"
+      },
+      {
+        "question": "A committee of 4 persons is to be formed from a group of 4 men and 3 women. What is the probability that the committee contains at least 2 women?",
+        "options": [
+          "$\\\\frac{22}{35}$",
+          "$\\\\frac{18}{35}$",
+          "$\\\\frac{4}{35}$",
+          "$\\\\frac{16}{35}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Favorable selections are $(2W, 2M) \\\\implies 18$ and $(3W, 1M) \\\\implies 4$. Total ways $= \\\\binom{7}{4} = 35$. $P = (18+4)/35 = 22/35$.",
+          "Incorrect: $18/35$ is the probability of exactly 2 women.",
+          "Incorrect: $4/35$ is the probability of exactly 3 women.",
+          "Incorrect: Missed one combination."
+        ],
+        "fullExplanation": "Total number of people = $4 + 3 = 7$.\\nTotal ways to choose 4 members:\\n$$n(S) = \\\\binom{7}{4} = \\\\frac{7 \\\\times 6 \\\\times 5}{3 \\\\times 2 \\\\times 1} = 35$$\\n\\nThe committee contains 'at least 2 women' in the following cases:\\n1. Exactly 2 women and 2 men:\\n$$n_1 = \\\\binom{3}{2} \\\\times \\\\binom{4}{2} = 3 \\\\times 6 = 18$$\\n2. Exactly 3 women and 1 man:\\n$$n_2 = \\\\binom{3}{3} \\\\times \\\\binom{4}{1} = 1 \\\\times 4 = 4$$\\n3. 4 women: Not possible since there are only 3 women available.\\n\\nTotal favorable combinations = $18 + 4 = 22$.\\n$$P(\\\\text{at least 2 women}) = \\\\frac{22}{35}$$"
+      },
+      {
+        "question": "If $P(A) = \\\\frac{3}{8}$, $P(B) = \\\\frac{1}{2}$, and $P(A \\\\cap B) = \\\\frac{1}{4}$, then the conditional probability $P(\\\\bar{A}|\\\\bar{B})$ is equal to:",
+        "options": [
+          "$\\\\frac{3}{4}$",
+          "$\\\\frac{1}{4}$",
+          "$\\\\frac{5}{8}$",
+          "$\\\\frac{3}{8}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(A \\\\cup B) = 3/8 + 1/2 - 1/4 = 5/8 \\\\implies P(\\\\bar{A} \\\\cap \\\\bar{B}) = 1 - 5/8 = 3/8$. Then $P(\\\\bar{A}|\\\\bar{B}) = \\\\frac{3/8}{1/2} = \\\\frac{3}{4}$.",
+          "Incorrect: Calculated $1 - P(\\\\bar{A}|\\\\bar{B})$.",
+          "Incorrect: $5/8$ is $P(A \\\\cup B)$.",
+          "Incorrect: $3/8$ is $P(\\\\bar{A} \\\\cap \\\\bar{B})$, failing to divide by $P(\\\\bar{B})$."
+        ],
+        "fullExplanation": "First, compute $P(A \\\\cup B)$:\\n$$P(A \\\\cup B) = P(A) + P(B) - P(A \\\\cap B) = \\\\frac{3}{8} + \\\\frac{4}{8} - \\\\frac{2}{8} = \\\\frac{5}{8}$$\\nBy De Morgan's Law:\\n$$P(\\\\bar{A} \\\\cap \\\\bar{B}) = 1 - P(A \\\\cup B) = 1 - \\\\frac{5}{8} = \\\\frac{3}{8}$$\\nAlso:\\n$$P(\\\\bar{B}) = 1 - P(B) = 1 - \\\\frac{1}{2} = \\\\frac{1}{2}$$\\nNow find the conditional probability:\\n$$P(\\\\bar{A}|\\\\bar{B}) = \\\\frac{P(\\\\bar{A} \\\\cap \\\\bar{B})}{P(\\\\bar{B})} = \\\\frac{\\\\frac{3}{8}}{\\\\frac{1}{2}} = \\\\frac{3}{8} \\\\times \\\\frac{2}{1} = \\\\frac{3}{4}$$"
+      },
+      {
+        "question": "A test has 5 multiple-choice questions, each with 4 options of which only one is correct. If a student randomly guesses each answer, what is the probability that he answers at least 4 questions correctly?",
+        "options": [
+          "$\\\\frac{1}{64}$",
+          "$\\\\frac{15}{1024}$",
+          "$\\\\frac{1}{128}$",
+          "$\\\\frac{5}{256}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P(X \\\\ge 4) = \\\\binom{5}{4}\\\\left(\\\\frac{1}{4}\\\\right)^4\\\\left(\\\\frac{3}{4}\\\\right) + \\\\binom{5}{5}\\\\left(\\\\frac{1}{4}\\\\right)^5 = \\\\frac{15 + 1}{1024} = \\\\frac{16}{1024} = \\\\frac{1}{64}$.",
+          "Incorrect: $\\\\frac{15}{1024}$ is only $P(X = 4)$.",
+          "Incorrect: Arithmetic error in simplification.",
+          "Incorrect: Calculation error in numerator."
+        ],
+        "fullExplanation": "The guessing process follows a Binomial distribution $B(n, p)$ with $n = 5$, $p = \\\\frac{1}{4}$, and $q = 1 - \\\\frac{1}{4} = \\\\frac{3}{4}$.\\nWe need $P(X \\\\ge 4) = P(X = 4) + P(X = 5)$:\\n$$P(X = 4) = {}^5C_4 \\\\left(\\\\frac{1}{4}\\\\right)^4 \\\\left(\\\\frac{3}{4}\\\\right)^1 = 5 \\\\times \\\\frac{3}{1024} = \\\\frac{15}{1024}$$\\n$$P(X = 5) = {}^5C_5 \\\\left(\\\\frac{1}{4}\\\\right)^5 = 1 \\\\times \\\\frac{1}{1024} = \\\\frac{1}{1024}$$\\nSumming these probabilities:\\n$$P(X \\\\ge 4) = \\\\frac{15 + 1}{1024} = \\\\frac{16}{1024} = \\\\frac{1}{64}$$"
+      },
+      {
+        "question": "Two players $A$ and $B$ roll a pair of fair dice alternately. $A$ wins if he rolls a sum of 6 before $B$ rolls a sum of 7, and $B$ wins if he rolls a sum of 7 before $A$ rolls a sum of 6. If $A$ rolls first, what is the probability that $A$ wins the game?",
+        "options": [
+          "$\\\\frac{30}{61}$",
+          "$\\\\frac{31}{61}$",
+          "$\\\\frac{5}{11}$",
+          "$\\\\frac{6}{13}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Sum of infinite geometric series $p_A / (1 - q_A q_B) = \\\\frac{5/36}{1 - (31/36)(5/6)} = \\\\frac{30}{61}$.",
+          "Incorrect: $31/61$ is the probability that $B$ wins the game.",
+          "Incorrect: Approximation ignoring the alternating structure.",
+          "Incorrect: Calculation error in common ratio."
+        ],
+        "fullExplanation": "Let $p_A$ be the probability that $A$ rolls a sum of 6:\\nSums of 6: $(1,5), (2,4), (3,3), (4,2), (5,1) \\\\implies 5$ ways out of 36.\\n$$p_A = \\\\frac{5}{36}, \\\\quad q_A = 1 - p_A = \\\\frac{31}{36}$$\\n\\nLet $p_B$ be the probability that $B$ rolls a sum of 7:\\nSums of 7: $(1,6), (2,5), (3,4), (4,3), (5,2), (6,1) \\\\implies 6$ ways out of 36.\\n$$p_B = \\\\frac{6}{36} = \\\\frac{1}{6}, \\\\quad q_B = 1 - p_B = \\\\frac{5}{6}$$\\n\\n$A$ can win on the 1st turn, the 3rd turn (after $A$ fails, then $B$ fails), the 5th turn, and so on:\\n$$P(A \\\\text{ wins}) = p_A + q_A q_B p_A + (q_A q_B)^2 p_A + \\\\dots$$\\nThis is an infinite geometric progression with first term $a = p_A$ and common ratio $r = q_A q_B$:\\n$$r = \\\\frac{31}{36} \\\\times \\\\frac{5}{6} = \\\\frac{155}{216}$$\\n$$1 - r = 1 - \\\\frac{155}{216} = \\\\frac{61}{216}$$\\n$$P(A \\\\text{ wins}) = \\\\frac{p_A}{1 - r} = \\\\frac{5/36}{61/216} = \\\\frac{5 \\\\times 6}{61} = \\\\frac{30}{61}$$"
+      },
+      {
+        "question": "The probability distribution of a discrete random variable $X$ is given by $P(X = 0) = k$, $P(X = 1) = 2k$, $P(X = 2) = 3k$, and $P(X = 3) = 4k$. The values of $k$ and $P(1 \\\\le X < 3)$ are respectively:",
+        "options": [
+          "$0.1$ and $0.5$",
+          "$0.1$ and $0.9$",
+          "$0.2$ and $0.5$",
+          "$0.1$ and $0.7$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\sum P(X) = 10k = 1 \\\\implies k = 0.1$. Then $P(1 \\\\le X < 3) = P(X=1) + P(X=2) = 5k = 0.5$.",
+          "Incorrect: $0.9$ is $P(X \\\\ge 1)$, which includes $X = 3$.",
+          "Incorrect: $k = 0.2$ would make total probability 2.",
+          "Incorrect: $0.7$ incorrectly includes other terms."
+        ],
+        "fullExplanation": "Step 1: Use the total probability axiom $\\\\sum_{x=0}^3 P(X = x) = 1$:\\n$$k + 2k + 3k + 4k = 1$$\\n$$10k = 1 \\\\implies k = \\\\frac{1}{10} = 0.1$$\\n\\nStep 2: Find $P(1 \\\\le X < 3)$:\\nThe values of $X$ satisfying $1 \\\\le X < 3$ are $x = 1$ and $x = 2$:\\n$$P(1 \\\\le X < 3) = P(X = 1) + P(X = 2)$$\\n$$= 2k + 3k = 5k = 5(0.1) = 0.5$$"
+      },
+      {
+        "question": "Two unbiased six-sided dice are thrown. What is the probability that the product of the two numbers obtained is an even number?",
+        "options": [
+          "$\\\\frac{3}{4}$",
+          "$\\\\frac{1}{2}$",
+          "$\\\\frac{1}{4}$",
+          "$\\\\frac{5}{6}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Product is odd iff both numbers are odd: $P(\\\\text{both odd}) = (3/6)(3/6) = 1/4$. Thus $P(\\\\text{even}) = 1 - 1/4 = 3/4$.",
+          "Incorrect: Assumed even and odd products are equally likely.",
+          "Incorrect: $1/4$ is the probability that the product is ODD.",
+          "Incorrect: Overestimate."
+        ],
+        "fullExplanation": "The product of two integers is odd if and only if BOTH integers are odd.\\nOn a standard 6-sided die, the odd numbers are $\{1, 3, 5\}$ (3 out of 6).\\n$$P(\\\\text{odd on die 1}) = \\\\frac{3}{6} = \\\\frac{1}{2}$$\\n$$P(\\\\text{odd on die 2}) = \\\\frac{3}{6} = \\\\frac{1}{2}$$\\n\\nSince the two dice are rolled independently:\\n$$P(\\\\text{product is odd}) = \\\\frac{1}{2} \\\\times \\\\frac{1}{2} = \\\\frac{1}{4}$$\\n\\nTherefore, the complementary event is that the product is even:\\n$$P(\\\\text{product is even}) = 1 - P(\\\\text{product is odd}) = 1 - \\\\frac{1}{4} = \\\\frac{3}{4}$$"
+      },
+      {
+        "question": "For a random variable $X \\\\sim B(n, p)$ with $n = 5$, it is given that $P(X = 2) = P(X = 3)$. What is the value of $p$?",
+        "options": [
+          "$\\\\frac{1}{2}$",
+          "$\\\\frac{1}{3}$",
+          "$\\\\frac{2}{5}$",
+          "$\\\\frac{3}{5}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\binom{5}{2} p^2 (1-p)^3 = \\\\binom{5}{3} p^3 (1-p)^2 \\\\implies 1 - p = p \\\\implies p = 1/2$.",
+          "Incorrect: Calculation error in simplifying powers.",
+          "Incorrect: Guess without equating terms.",
+          "Incorrect: Complementary value."
+        ],
+        "fullExplanation": "Using the Binomial formula $P(X = r) = {}^nC_r p^r q^{n-r}$:\\n$$P(X = 2) = {}^5C_2 \\\\, p^2 (1 - p)^3$$\\n$$P(X = 3) = {}^5C_3 \\\\, p^3 (1 - p)^2$$\\n\\nSince ${}^5C_2 = {}^5C_3 = 10$:\\n$$10 p^2 (1 - p)^3 = 10 p^3 (1 - p)^2$$\\nAssuming $0 < p < 1$, divide both sides by $10 p^2 (1 - p)^2$:\\n$$1 - p = p$$\\n$$2p = 1 \\\\implies p = \\\\frac{1}{2}$$"
+      },
+      {
+        "question": "For a binomial distribution $B(n, p)$, the sum of its mean and variance is 15, and the product of its mean and variance is 54. If $p < 0.5$, then the number of trials $n$ is equal to:",
+        "options": [
+          "27",
+          "18",
+          "36",
+          "54"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Mean $\\\\mu$ and variance $V$ solve $t^2 - 15t + 54 = 0 \\\\implies \\\\mu = 9, V = 6$ (since $V < \\\\mu$). Then $q = 6/9 = 2/3 \\\\implies p = 1/3 < 0.5$. Thus $n = \\\\mu / p = 9 / (1/3) = 27$.",
+          "Incorrect: Derived if $p = 1/2$.",
+          "Incorrect: Arises if $\\\\mu = 12$.",
+          "Incorrect: Equal to the product value."
+        ],
+        "fullExplanation": "Let $\\\\mu$ be the mean and $V$ be the variance of the binomial distribution:\\n$$\\\\mu = np, \\\\quad V = npq = \\\\mu q$$\\nWe are given:\\n$$\\\\mu + V = 15$$\\n$$\\\\mu \\\\cdot V = 54$$\\n\\nThese are the sum and product of the roots of the quadratic equation:\\n$$t^2 - 15t + 54 = 0$$\\n$$(t - 9)(t - 6) = 0 \\\\implies t = 9 \\\\text{ or } t = 6$$\\n\\nIn any non-trivial binomial distribution, $0 < q < 1$, so the variance must be strictly less than the mean ($V < \\\\mu$):\\n$$\\\\mu = 9 \\\\quad \\\\text{and} \\\\quad V = 6$$\\nNow solve for $q$ and $p$:\\n$$q = \\\\frac{V}{\\\\mu} = \\\\frac{6}{9} = \\\\frac{2}{3}$$\\n$$p = 1 - q = 1 - \\\\frac{2}{3} = \\\\frac{1}{3}$$\\nNotice that $p = \\\\frac{1}{3} < 0.5$, which satisfies the given condition.\\n\\nNow solve for $n$ using $\\\\mu = np$:\\n$$n \\\\left(\\\\frac{1}{3}\\\\right) = 9 \\\\implies n = 27$$"
+      }
+    ]
+  }
+]

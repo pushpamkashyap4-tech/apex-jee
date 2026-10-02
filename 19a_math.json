@@ -1,0 +1,514 @@
+[
+  {
+    "chapterName": "Mathematical Induction",
+    "flashcards": [
+      {
+        "front": "What is the Principle of Mathematical Induction (PMI)?",
+        "back": "A mathematical technique used to prove that a statement $P(n)$ is true for all natural numbers $n \\ge n_0$. It requires two main steps: the Base Step (proving $P(n_0)$ is true) and the Inductive Step (proving that if $P(k)$ is true, then $P(k+1)$ is also true)."
+      },
+      {
+        "front": "What is the Base Step (or Basis Step) in PMI?",
+        "back": "The verification that the given proposition $P(n)$ holds true for the initial value, usually the smallest natural number for which the statement is defined (commonly $n = 1$, or some specific $n = n_0$)."
+      },
+      {
+        "front": "What is the Inductive Hypothesis in a mathematical induction proof?",
+        "back": "The assumption that the proposition $P(n)$ is true for an arbitrary positive integer $k \\ge n_0$, which is then used to demonstrate the validity of $P(k+1)$."
+      },
+      {
+        "front": "What is the Inductive Step in PMI?",
+        "back": "The conditional proof showing that if the statement holds for $n = k$ (Inductive Hypothesis), it must logically follow that it holds for $n = k + 1$, i.e., $P(k) \\implies P(k+1)$."
+      },
+      {
+        "front": "What is the Principle of Strong Mathematical Induction (Complete Induction)?",
+        "back": "A variant where the inductive hypothesis assumes the proposition is true for all integers from the base case up to $k$, i.e., $P(n_0), P(n_0+1), \\dots, P(k)$ are all true, to prove that $P(k+1)$ is true."
+      },
+      {
+        "front": "What is the Well-Ordering Principle of natural numbers?",
+        "back": "Every non-empty subset of non-negative integers (or natural numbers $\\mathbb{N}$) contains a least (smallest) element. PMI is mathematically equivalent to the Well-Ordering Principle."
+      },
+      {
+        "front": "State the standard sum formula for the first $n$ natural numbers: $\\sum_{r=1}^n r$.",
+        "back": "$\\sum_{r=1}^n r = 1 + 2 + 3 + \\dots + n = \\frac{n(n+1)}{2}$."
+      },
+      {
+        "front": "State the sum formula for the squares of the first $n$ natural numbers: $\\sum_{r=1}^n r^2$.",
+        "back": "$\\sum_{r=1}^n r^2 = 1^2 + 2^2 + \\dots + n^2 = \\frac{n(n+1)(2n+1)}{6}$."
+      },
+      {
+        "front": "State the sum formula for the cubes of the first $n$ natural numbers: $\\sum_{r=1}^n r^3$.",
+        "back": "$\\sum_{r=1}^n r^3 = 1^3 + 2^3 + \\dots + n^3 = \\left(\\frac{n(n+1)}{2}\\right)^2 = \\left(\\sum_{r=1}^n r\\right)^2$."
+      },
+      {
+        "front": "What is the sum of the fourth powers of the first $n$ natural numbers: $\\sum_{r=1}^n r^4$?",
+        "back": "$\\sum_{r=1}^n r^4 = \\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30}$."
+      },
+      {
+        "front": "What is the sum of the first $n$ odd natural numbers?",
+        "back": "$1 + 3 + 5 + \\dots + (2n-1) = n^2$ for all $n \\in \\mathbb{N}$."
+      },
+      {
+        "front": "What is the sum of the first $n$ even natural numbers?",
+        "back": "$2 + 4 + 6 + \\dots + 2n = n(n+1)$ for all $n \\in \\mathbb{N}$."
+      },
+      {
+        "front": "How is divisibility typically verified in the inductive step for $f(n)$ being divisible by $d$?",
+        "back": "Express $f(k+1) - f(k)$ or $f(k+1) - c \\cdot f(k)$ (where $c$ is a suitably chosen constant) in terms of known multiples of $d$, using the hypothesis $f(k) = d \\cdot m$."
+      },
+      {
+        "front": "For any natural number $n$, what is the greatest integer that always divides the product of $r$ consecutive natural numbers?",
+        "back": "The product of $r$ consecutive integers is always divisible by $r!$. For example, $n(n+1)(n+2)$ is always divisible by $3! = 6$."
+      },
+      {
+        "front": "What algebraic divisibility property holds for $x^n - y^n$ for all $n \\in \\mathbb{N}$?",
+        "back": "$x^n - y^n$ is always divisible by $x - y$ for all $n \\in \\mathbb{N}$ (where $x \\ne y$)."
+      },
+      {
+        "front": "Under what condition is $x^n - y^n$ divisible by $x + y$?",
+        "back": "$x^n - y^n$ is divisible by $x + y$ for all even positive integers $n$."
+      },
+      {
+        "front": "Under what condition is $x^n + y^n$ divisible by $x + y$?",
+        "back": "$x^n + y^n$ is divisible by $x + y$ for all odd positive integers $n$."
+      },
+      {
+        "front": "What is Bernoulli's Inequality?",
+        "back": "For any real number $x > -1$ ($x \\ne 0$) and integer $n \\ge 2$, $(1 + x)^n > 1 + nx$."
+      },
+      {
+        "front": "For what natural numbers $n$ is $2^n > n$ valid?",
+        "back": "It holds for all natural numbers $n \\ge 1$. (Base case $n=1$: $2^1 > 1$ is true; $2^{k+1} = 2 \\cdot 2^k > 2k \\ge k+1$)."
+      },
+      {
+        "front": "For what natural numbers $n$ does the inequality $2^n > n^2$ hold?",
+        "back": "It holds for $n = 1$ and for all natural numbers $n \\ge 5$."
+      },
+      {
+        "front": "For what natural numbers $n$ does $n! > 2^n$ hold?",
+        "back": "It holds for all integers $n \\ge 4$ ($4! = 24 > 16 = 2^4$)."
+      },
+      {
+        "front": "What is the sum of a geometric progression of $n$ terms proven by induction?",
+        "back": "$a + ar + ar^2 + \\dots + ar^{n-1} = \\frac{a(r^n - 1)}{r - 1}$ for $r \\ne 1$."
+      },
+      {
+        "front": "What is the formula for the sum of products of consecutive integers: $\\sum_{r=1}^n r(r+1)$?",
+        "back": "$\\sum_{r=1}^n r(r+1) = \\frac{n(n+1)(n+2)}{3}$."
+      },
+      {
+        "front": "What is the formula for $\\sum_{r=1}^n \\frac{1}{r(r+1)}$?",
+        "back": "$\\sum_{r=1}^n \\frac{1}{r(r+1)} = \\frac{n}{n+1}$."
+      },
+      {
+        "front": "How is mathematical induction used to prove matrix power formulas $A^n$?",
+        "back": "Verify for base case $n = 1$ ($A^1 = A$). In inductive step, assume $A^k$ formula holds, then compute $A^{k+1} = A^k \\cdot A$ and verify it matches the formula evaluated at $k+1$."
+      },
+      {
+        "front": "State De Moivre's Theorem for positive integers proven via induction.",
+        "back": "$(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)$ for all $n \\in \\mathbb{N}$."
+      },
+      {
+        "front": "What is the sum of the series $\\sum_{r=1}^n r \\cdot r!$?",
+        "back": "$\\sum_{r=1}^n r \\cdot r! = (n+1)! - 1$."
+      },
+      {
+        "front": "Why is verifying the base case essential in PMI?",
+        "back": "Without a valid base case, an inductive step $P(k) \\implies P(k+1)$ can be logically valid for an entirely false statement (e.g., proving $n = n+1$ or $2^n$ is odd for all $n$)."
+      },
+      {
+        "front": "What is the inductive relationship for the sum of elements of a finite set's power set?",
+        "back": "A set with $n$ elements has $2^n$ subsets. If a set with $k$ elements has $2^k$ subsets, adding an element doubles the subsets (those without the new element and those with it): $2^k + 2^k = 2^{k+1}$."
+      },
+      {
+        "front": "Can PMI be used to prove a statement for all integers $n \\le m$?",
+        "back": "Yes, by backward induction or by substituting $n = -m$ or $m - k$ to transform it into standard forward induction over natural numbers."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the expression $n^3 - n$ is always divisible by which of the following?",
+        "options": ["6", "12", "18", "24"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $n^3 - n = (n-1)n(n+1)$, which is the product of three consecutive integers and is always divisible by $3! = 6$.",
+          "Incorrect. For $n = 2$, $2^3 - 2 = 6$, which is not divisible by 12.",
+          "Incorrect. For $n = 2$, 6 is not divisible by 18.",
+          "Incorrect. For $n = 2$, 6 is not divisible by 24."
+        ],
+        "fullExplanation": "Factoring gives $n^3 - n = n(n^2 - 1) = (n-1)n(n+1)$. Since this is the product of three consecutive integers, one of them must be a multiple of 3 and at least one must be even (a multiple of 2). Therefore, it is always divisible by $2 \\times 3 = 6$."
+      },
+      {
+        "question": "For all natural numbers $n$, the expression $7^n - 3^n$ is always divisible by:",
+        "options": ["3", "4", "5", "7"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For $n = 1$, $7^1 - 3^1 = 4$, which is not divisible by 3.",
+          "Correct. For any natural number $n$, $a^n - b^n$ is divisible by $a - b$. Here $7 - 3 = 4$.",
+          "Incorrect. 4 is not divisible by 5.",
+          "Incorrect. 4 is not divisible by 7."
+        ],
+        "fullExplanation": "Using the algebraic identity or PMI, $x^n - y^n = (x - y)(x^{n-1} + x^{n-2}y + \\dots + y^{n-1})$. Here, $x - y = 7 - 3 = 4$. By induction, if $P(k) = 7^k - 3^k = 4m$, then $7^{k+1} - 3^{k+1} = 7(7^k - 3^k) + 4 \\cdot 3^k = 7(4m) + 4 \\cdot 3^k = 4(7m + 3^k)$, which is divisible by 4."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the expression $3^{2n} - 1$ is always divisible by:",
+        "options": ["6", "8", "16", "24"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Although 8 is divisible by 2, the largest guaranteed divisor among standard options is 8 (6 does not divide $3^{2(1)}-1 = 8$).",
+          "Correct. $3^{2n} - 1 = 9^n - 1$, which is divisible by $9 - 1 = 8$ for all $n \\in \\mathbb{N}$.",
+          "Incorrect. For $n = 1$, $3^2 - 1 = 8$, which is not divisible by 16.",
+          "Incorrect. For $n = 1$, 8 is not divisible by 24."
+        ],
+        "fullExplanation": "$3^{2n} - 1 = (3^2)^n - 1 = 9^n - 1$. Since $x^n - y^n$ is always divisible by $x - y$, $9^n - 1^n$ is divisible by $9 - 1 = 8$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the expression $n(n+1)(2n+1)$ is always divisible by:",
+        "options": ["4", "6", "12", "24"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For $n = 1$, $1 \\times 2 \\times 3 = 6$, which is not divisible by 4.",
+          "Correct. $\\sum_{r=1}^n r^2 = \\frac{n(n+1)(2n+1)}{6}$ is an integer, so $n(n+1)(2n+1)$ is always a multiple of 6.",
+          "Incorrect. For $n = 1$, 6 is not divisible by 12.",
+          "Incorrect. For $n = 1$, 6 is not divisible by 24."
+        ],
+        "fullExplanation": "The expression $n(n+1)(2n+1)$ is equal to $6 \\sum_{r=1}^n r^2$. Since the sum of squares of integers is always an integer, $n(n+1)(2n+1)$ must be divisible by 6."
+      },
+      {
+        "question": "What is the smallest positive integer $n$ for which the inequality $2^n > n^3$ holds?",
+        "options": ["8", "9", "10", "11"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. For $n = 8$, $2^8 = 256$ and $8^3 = 512$, so $256 < 512$.",
+          "Incorrect. For $n = 9$, $2^9 = 512$ and $9^3 = 729$, so $512 < 729$.",
+          "Correct. For $n = 10$, $2^{10} = 1024$ and $10^3 = 1000$, so $1024 > 1000$.",
+          "Incorrect. $n=10$ is smaller than 11."
+        ],
+        "fullExplanation": "Checking integer values: for $n=9$, $2^9 = 512 < 729 = 9^3$. For $n=10$, $2^{10} = 1024 > 1000 = 10^3$. By induction, for all $k \\ge 10$, $(k+1)^3 = k^3(1 + 1/k)^3 \\le k^3(1.1)^3 = 1.331 k^3 < 2 k^3 < 2 \\cdot 2^k = 2^{k+1}$. Thus the smallest integer is 10."
+      },
+      {
+        "question": "The inequality $n! > 2^n$ is true for all natural numbers $n$ such that:",
+        "options": ["$n \\ge 2$", "$n \\ge 3$", "$n \\ge 4$", "$n \\ge 5$"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. For $n = 2$, $2! = 2$ and $2^2 = 4$, so $2 < 4$.",
+          "Incorrect. For $n = 3$, $3! = 6$ and $2^3 = 8$, so $6 < 8$.",
+          "Correct. For $n = 4$, $4! = 24$ and $2^4 = 16$, which satisfies $24 > 16$.",
+          "Incorrect. It is already true starting at $n = 4$, so $n \\ge 4$ is the tightest condition."
+        ],
+        "fullExplanation": "For $n = 1, 2, 3$, we have $1! < 2^1$, $2! < 2^2$, $3! < 2^3$. For $n = 4$, $4! = 24 > 16 = 2^4$. For $k \\ge 4$, $(k+1)! = (k+1)k! > (k+1)2^k > 2 \\cdot 2^k = 2^{k+1}$. Hence it holds for all $n \\ge 4$."
+      },
+      {
+        "question": "The sum $\\sum_{r=1}^n \\frac{1}{r(r+1)}$ is equal to:",
+        "options": ["$\\frac{n}{n+1}$", "$\\frac{1}{n(n+1)}$", "$\\frac{n+1}{n}$", "$\\frac{n-1}{n+1}$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By telescoping or induction: $\\frac{1}{r(r+1)} = \\frac{1}{r} - \\frac{1}{r+1}$, giving sum $1 - \\frac{1}{n+1} = \\frac{n}{n+1}$.",
+          "Incorrect. This is just the general term, not the sum.",
+          "Incorrect. The sum is strictly less than 1 for all finite $n$.",
+          "Incorrect. For $n = 1$, this gives $0$, but the first term is $1/2$."
+        ],
+        "fullExplanation": "Using induction: For $n = 1$, $S_1 = 1/(1 \\cdot 2) = 1/2$, and $1/(1+1) = 1/2$. Assuming $S_k = k/(k+1)$, $S_{k+1} = \\frac{k}{k+1} + \\frac{1}{(k+1)(k+2)} = \\frac{k(k+2)+1}{(k+1)(k+2)} = \\frac{(k+1)^2}{(k+1)(k+2)} = \\frac{k+1}{k+2}$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the sum $1 \\cdot 2 + 2 \\cdot 3 + 3 \\cdot 4 + \\dots + n(n+1)$ is equal to:",
+        "options": ["$\\frac{n(n+1)(n+2)}{3}$", "$\\frac{n(n+1)(2n+1)}{6}$", "$\\frac{n(n+1)(n+2)}{6}$", "$\\frac{n(n+1)(2n+1)}{3}$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\sum_{r=1}^n r(r+1) = \\sum (r^2 + r) = \\frac{n(n+1)(2n+1)}{6} + \\frac{n(n+1)}{2} = \\frac{n(n+1)(n+2)}{3}$.",
+          "Incorrect. This is the sum of squares $\\sum r^2$.",
+          "Incorrect. The denominator is 3, not 6.",
+          "Incorrect. Does not match the standard formula."
+        ],
+        "fullExplanation": "The $r$-th term is $T_r = r^2 + r$. Summing up: $S_n = \\frac{n(n+1)(2n+1)}{6} + \\frac{n(n+1)}{2} = \\frac{n(n+1)}{6} [2n + 1 + 3] = \\frac{n(n+1)(2n+4)}{6} = \\frac{n(n+1)(n+2)}{3}$."
+      },
+      {
+        "question": "For every natural number $n$, $49^n + 16n - 1$ is divisible by:",
+        "options": ["64", "49", "32", "128"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $49^n = (1 + 48)^n = 1 + 48n + \\binom{n}{2}48^2 + \\dots$, so $49^n + 16n - 1 = 64n + \\text{multiple of } 48^2$, which is divisible by 64.",
+          "Incorrect. For $n = 1$, $49 + 16 - 1 = 64$, which is not divisible by 49.",
+          "Incorrect. 64 is a larger guaranteed divisor.",
+          "Incorrect. For $n = 1$, 64 is not divisible by 128."
+        ],
+        "fullExplanation": "Using binomial expansion or PMI: For $n=1$, $49 + 16 - 1 = 64$, which is divisible by 64. Assume true for $n=k$: $49^k + 16k - 1 = 64m$. For $n=k+1$: $49^{k+1} + 16(k+1) - 1 = 49(49^k) + 16k + 15 = 49(64m - 16k + 1) + 16k + 15 = 49 \\cdot 64m - 784k + 49 + 16k + 15 = 49 \\cdot 64m - 768k + 64$. Since $768 = 64 \\times 12$, every term is divisible by 64."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, $2^{3n} - 1$ is divisible by:",
+        "options": ["5", "7", "9", "11"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For $n = 1$, $2^3 - 1 = 7$, which is not divisible by 5.",
+          "Correct. $2^{3n} - 1 = 8^n - 1$, which is always divisible by $8 - 1 = 7$.",
+          "Incorrect. 7 is not divisible by 9.",
+          "Incorrect. 7 is not divisible by 11."
+        ],
+        "fullExplanation": "$2^{3n} - 1 = (2^3)^n - 1 = 8^n - 1$. By induction or factor theorem, $8^n - 1$ is divisible by $8 - 1 = 7$ for all $n \\ge 1$."
+      },
+      {
+        "question": "If $A = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$, then for every $n \\in \\mathbb{N}$, $A^n$ equals:",
+        "options": [
+          "$\\begin{bmatrix} 1 & n \\\\ 0 & 1 \\end{bmatrix}$",
+          "$\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$",
+          "$\\begin{bmatrix} n & n \\\\ 0 & n \\end{bmatrix}$",
+          "$\\begin{bmatrix} 1 & n^2 \\\\ 0 & 1 \\end{bmatrix}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Proven easily by induction: $A^k \\cdot A = \\begin{bmatrix} 1 & k \\\\ 0 & 1 \\end{bmatrix}\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & k+1 \\\\ 0 & 1 \\end{bmatrix}$.",
+          "Incorrect. This is only true for $n=1$.",
+          "Incorrect. The diagonal entries remain 1.",
+          "Incorrect. The top-right entry grows linearly with $n$, not quadratically."
+        ],
+        "fullExplanation": "Base step: For $n = 1$, $A^1 = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$. Inductive step: Assume $A^k = \\begin{bmatrix} 1 & k \\\\ 0 & 1 \\end{bmatrix}$. Then $A^{k+1} = A^k A = \\begin{bmatrix} 1 & k \\\\ 0 & 1 \\end{bmatrix}\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 1 & k+1 \\\\ 0 & 1 \\end{bmatrix}$. Thus, by PMI, $A^n = \\begin{bmatrix} 1 & n \\\\ 0 & 1 \\end{bmatrix}$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, $n^3 + 2n$ is always divisible by:",
+        "options": ["2", "3", "5", "6"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For $n = 1$, $1^3 + 2(1) = 3$, which is not divisible by 2.",
+          "Correct. $n^3 + 2n = (n^3 - n) + 3n = (n-1)n(n+1) + 3n$, where both terms are multiples of 3.",
+          "Incorrect. 3 is not divisible by 5.",
+          "Incorrect. For $n = 1$, 3 is not divisible by 6."
+        ],
+        "fullExplanation": "Write $n^3 + 2n = n^3 - n + 3n = (n-1)n(n+1) + 3n$. The term $(n-1)n(n+1)$ is the product of three consecutive integers, hence divisible by 3. And $3n$ is clearly divisible by 3. Thus, their sum is divisible by 3."
+      },
+      {
+        "question": "The sum of the series $1 \\cdot 1! + 2 \\cdot 2! + 3 \\cdot 3! + \\dots + n \\cdot n!$ is:",
+        "options": ["$(n+1)! - 1$", "$(n+1)!$", "$(n+1)! + 1$", "$n \\cdot (n+1)!$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since $r \\cdot r! = (r+1 - 1)r! = (r+1)! - r!$, this is a telescoping sum giving $(n+1)! - 1$.",
+          "Incorrect. Missing the $-1$ term.",
+          "Incorrect. The $-1$ from the first term has opposite sign.",
+          "Incorrect. Incorrect degree in factorial."
+        ],
+        "fullExplanation": "Each term can be written as $T_r = r \\cdot r! = (r+1-1)r! = (r+1)! - r!$. Summing from $r = 1$ to $n$: $S_n = (2! - 1!) + (3! - 2!) + \\dots + ((n+1)! - n!) = (n+1)! - 1! = (n+1)! - 1$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, $10^{2n-1} + 1$ is always divisible by:",
+        "options": ["9", "11", "13", "17"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For $n = 1$, $10^1 + 1 = 11$, which is not divisible by 9.",
+          "Correct. $10^{2n-1} + 1 = 10^{2n-1} + 1^{2n-1}$. Since $2n-1$ is odd, $x^m + y^m$ is divisible by $x+y = 10 + 1 = 11$.",
+          "Incorrect. 11 is not divisible by 13.",
+          "Incorrect. 11 is not divisible by 17."
+        ],
+        "fullExplanation": "For any odd integer $m$, $a^m + b^m$ is divisible by $a + b$. Here $m = 2n - 1$ is odd, so $10^{2n-1} + 1^{2n-1}$ is divisible by $10 + 1 = 11$ for all natural numbers $n$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the sum of the first $n$ odd natural numbers $1 + 3 + 5 + \\dots + (2n-1)$ is:",
+        "options": ["$n(n+1)$", "$n^2$", "$(n-1)^2$", "$2n^2$"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. $n(n+1)$ is the sum of the first $n$ even natural numbers.",
+          "Correct. For $n = 1$, $1 = 1^2$. Inductive step: $k^2 + (2k+1) = (k+1)^2$.",
+          "Incorrect. For $n = 1$, this gives 0 instead of 1.",
+          "Incorrect. Does not match the sum."
+        ],
+        "fullExplanation": "By induction: Base case $n=1$: LHS $= 1$, RHS $= 1^2 = 1$. Assume true for $n=k$: $1 + 3 + \\dots + (2k-1) = k^2$. For $n=k+1$: $[1 + 3 + \\dots + (2k-1)] + (2k+1) = k^2 + 2k + 1 = (k+1)^2$. Hence, true for all $n$."
+      },
+      {
+        "question": "For all $n \\ge 1$, the expression $2^{3n} - 7n - 1$ is always divisible by:",
+        "options": ["49", "64", "28", "14"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $2^{3n} = 8^n = (1 + 7)^n = 1 + 7n + \\binom{n}{2}49 + \\dots$, so $2^{3n} - 7n - 1 = \\binom{n}{2}49 + \\dots$, which is divisible by 49.",
+          "Incorrect. For $n = 2$, $2^6 - 14 - 1 = 49$, which is not divisible by 64.",
+          "Incorrect. 49 is odd and not divisible by 28.",
+          "Incorrect. 49 is not divisible by 14."
+        ],
+        "fullExplanation": "Rewrite as $8^n - 7n - 1 = (1 + 7)^n - 7n - 1 = [1 + 7n + \\binom{n}{2}7^2 + \\binom{n}{3}7^3 + \\dots] - 7n - 1 = 49[\\binom{n}{2} + 7\\binom{n}{3} + \\dots]$, which is an integer multiple of 49 for all $n \\ge 1$."
+      },
+      {
+        "question": "If $P(n)$ is a statement such that $P(1)$ is true, and $P(k) \\implies P(k+2)$, then $P(n)$ is true for:",
+        "options": [
+          "All natural numbers $n$",
+          "All even natural numbers $n$",
+          "All odd natural numbers $n$",
+          "No other values of $n$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. We cannot reach even values from the base case $P(1)$ with step size 2.",
+          "Incorrect. Even numbers require $P(2)$ to be established.",
+          "Correct. Starting from 1, adding 2 successively gives $1, 3, 5, 7, \\dots$, so all odd natural numbers are proven.",
+          "Incorrect. It is true for infinitely many values (all odd numbers)."
+        ],
+        "fullExplanation": "Since the base step is $P(1)$, the implication $P(k) \\implies P(k+2)$ proves $P(3), P(5), P(7), \\dots$ successively. It does not establish truth for any even integer unless a second base case $P(2)$ is verified."
+      },
+      {
+        "question": "The sum $\\frac{1}{1 \\cdot 3} + \\frac{1}{3 \\cdot 5} + \\frac{1}{5 \\cdot 7} + \\dots + \\frac{1}{(2n-1)(2n+1)}$ equals:",
+        "options": ["$\\frac{n}{2n+1}$", "$\\frac{1}{2n+1}$", "$\\frac{n-1}{2n+1}$", "$\\frac{2n}{2n+1}$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $T_r = \\frac{1}{2}\\left(\\frac{1}{2r-1} - \\frac{1}{2r+1}\\right)$. The sum telescopes to $\\frac{1}{2}\\left(1 - \\frac{1}{2n+1}\\right) = \\frac{n}{2n+1}$.",
+          "Incorrect. For $n = 1$, this gives $1/3$, but correct is $1/3$ while for $n=2$, it gives $1/5 \\ne 2/5$.",
+          "Incorrect. For $n = 1$, this gives 0.",
+          "Incorrect. This is double the correct value."
+        ],
+        "fullExplanation": "The general term is $T_r = \\frac{1}{(2r-1)(2r+1)} = \\frac{1}{2}\\left[\\frac{1}{2r-1} - \\frac{1}{2r+1}\\right]$. Summing from $r = 1$ to $n$: $S_n = \\frac{1}{2}\\left[1 - \\frac{1}{2n+1}\\right] = \\frac{1}{2}\\left[\\frac{2n}{2n+1}\\right] = \\frac{n}{2n+1}$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, $11^{n+2} + 12^{2n+1}$ is divisible by:",
+        "options": ["113", "123", "133", "143"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. Does not divide the expression.",
+          "Incorrect. Does not divide the expression.",
+          "Correct. For $n = 1$, $11^3 + 12^3 = 1331 + 1728 = 3059 = 23 \\times 133$.",
+          "Incorrect. Does not divide the expression."
+        ],
+        "fullExplanation": "Base case $n=1$: $11^3 + 12^3 = (11+12)(11^2 - 11 \\times 12 + 12^2) = 23 \\times 133$, divisible by 133. Inductive step: $f(k+1) - f(k) = 11^{k+3} + 12^{2k+3} - (11^{k+2} + 12^{2k+1}) = 11^{k+2}(11 - 1) + 12^{2k+1}(144 - 1) = 10 \\cdot 11^{k+2} + 143 \\cdot 12^{2k+1} = 10(11^{k+2} + 12^{2k+1}) + 133 \\cdot 12^{2k+1}$. Since both terms are divisible by 133, $f(k+1)$ is divisible by 133."
+      },
+      {
+        "question": "If $x > -1$ and $x \\ne 0$, then for any integer $n \\ge 2$, $(1 + x)^n > 1 + nx$. This is known as:",
+        "options": ["Cauchy's Inequality", "Bernoulli's Inequality", "Chebyshev's Inequality", "Jensen's Inequality"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Cauchy's inequality concerns inner products or AM-GM.",
+          "Correct. This is Bernoulli's inequality, a standard result proven using PMI.",
+          "Incorrect. Chebyshev's inequality relates probabilities or sums of ordered sequences.",
+          "Incorrect. Jensen's inequality relates convex functions and expectations/means."
+        ],
+        "fullExplanation": "The inequality $(1+x)^n > 1 + nx$ for $x > -1, x \\ne 0$ and $n \\ge 2$ is known as Bernoulli's inequality. It is one of the classic examples of mathematical induction."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the product $n(n+1)(n+2)(n+3) + 1$ is always:",
+        "options": [
+          "A prime number",
+          "The square of an integer",
+          "A multiple of 5",
+          "The cube of an integer"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For $n = 1$, $1(2)(3)(4) + 1 = 25 = 5^2$, which is composite.",
+          "Correct. $n(n+3)(n+1)(n+2) + 1 = (n^2 + 3n)(n^2 + 3n + 2) + 1 = (n^2 + 3n + 1)^2$.",
+          "Incorrect. For $n = 2$, $2(3)(4)(5) + 1 = 121 = 11^2$, not a multiple of 5.",
+          "Incorrect. 25 and 121 are squares, not cubes."
+        ],
+        "fullExplanation": "Group the terms as: $[n(n+3)] \\cdot [(n+1)(n+2)] + 1 = (n^2 + 3n)(n^2 + 3n + 2) + 1$. Let $y = n^2 + 3n$. Then the expression is $y(y+2) + 1 = y^2 + 2y + 1 = (y+1)^2 = (n^2 + 3n + 1)^2$, which is the square of an integer."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, $5^{2n+2} - 24n - 25$ is always divisible by:",
+        "options": ["576", "288", "144", "72"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $5^{2(n+1)} = 25^{n+1} = (1 + 24)^{n+1} = 1 + 24(n+1) + \\binom{n+1}{2}24^2 + \\dots$. Subtracting $24n + 25$ leaves terms containing $24^2 = 576$.",
+          "Incorrect. 576 is larger and completely divides the expression.",
+          "Incorrect. 576 is the maximum guaranteed constant divisor.",
+          "Incorrect. Not the largest divisor."
+        ],
+        "fullExplanation": "$5^{2n+2} = 25^{n+1} = (1 + 24)^{n+1} = 1 + (n+1)24 + \\frac{(n+1)n}{2}(24^2) + \\dots = 1 + 24n + 24 + 576\\left[\\frac{n(n+1)}{2} + \\dots\\right] = 24n + 25 + 576K$. Thus $5^{2n+2} - 24n - 25 = 576K$, which is divisible by 576."
+      },
+      {
+        "question": "What is the sum $1^2 + 3^2 + 5^2 + \\dots + (2n-1)^2$ for all $n \\in \\mathbb{N}$?",
+        "options": ["$\\frac{n(4n^2-1)}{3}$", "$\\frac{n(2n-1)(2n+1)}{6}$", "$\\frac{n(4n^2+1)}{3}$", "$\\frac{(2n-1)(2n+1)}{3}$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $n = 1$, $1(4-1)/3 = 1$. For $n = 2$, $1 + 9 = 10$, and $2(16-1)/3 = 10$.",
+          "Incorrect. Denominator is 3, not 6 (notice $(4n^2-1) = (2n-1)(2n+1)$).",
+          "Incorrect. Sign inside the parenthesis is negative: $4n^2 - 1$.",
+          "Incorrect. Missing the factor of $n$ in the numerator."
+        ],
+        "fullExplanation": "Using induction or standard summation: $\\sum_{r=1}^n (2r-1)^2 = \\sum (4r^2 - 4r + 1) = 4\\frac{n(n+1)(2n+1)}{6} - 4\\frac{n(n+1)}{2} + n = \\frac{2n(n+1)(2n+1)}{3} - 2n(n+1) + n = \\frac{n}{3}[2(2n^2+3n+1) - 6(n+1) + 3] = \\frac{n}{3}[4n^2 + 6n + 2 - 6n - 6 + 3] = \\frac{n(4n^2-1)}{3}$."
+      },
+      {
+        "question": "If $A = \\begin{bmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{bmatrix}$, then for any $n \\in \\mathbb{N}$, $A^n$ is:",
+        "options": [
+          "$\\begin{bmatrix} \\cos(n\\theta) & \\sin(n\\theta) \\\\ -\\sin(n\\theta) & \\cos(n\\theta) \\end{bmatrix}$",
+          "$\\begin{bmatrix} \\cos^n\\theta & \\sin^n\\theta \\\\ -\\sin^n\\theta & \\cos^n\\theta \\end{bmatrix}$",
+          "$\\begin{bmatrix} n\\cos\\theta & n\\sin\\theta \\\\ -n\\sin\\theta & n\\cos\\theta \\end{bmatrix}$",
+          "$\\begin{bmatrix} \\cos(n\\theta) & -\\sin(n\\theta) \\\\ \\sin(n\\theta) & \\cos(n\\theta) \\end{bmatrix}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By PMI and angle addition formulas: $\\cos(k\\theta)\\cos\\theta - \\sin(k\\theta)\\sin\\theta = \\cos((k+1)\\theta)$.",
+          "Incorrect. Matrix powers do not simply raise individual elements to the power $n$.",
+          "Incorrect. Linear scaling is incorrect.",
+          "Incorrect. The signs on off-diagonal entries are swapped."
+        ],
+        "fullExplanation": "By induction: Base case $n=1$ is trivially true. Inductive step: Assume $A^k = \\begin{bmatrix} \\cos(k\\theta) & \\sin(k\\theta) \\\\ -\\sin(k\\theta) & \\cos(k\\theta) \\end{bmatrix}$. Then $A^{k+1} = A^k A = \\begin{bmatrix} \\cos(k\\theta)\\cos\\theta - \\sin(k\\theta)\\sin\\theta & \\cos(k\\theta)\\sin\\theta + \\sin(k\\theta)\\cos\\theta \\\\ -\\sin(k\\theta)\\cos\\theta - \\cos(k\\theta)\\sin\\theta & -\\sin(k\\theta)\\sin\\theta + \\cos(k\\theta)\\cos\\theta \\end{bmatrix} = \\begin{bmatrix} \\cos((k+1)\\theta) & \\sin((k+1)\\theta) \\\\ -\\sin((k+1)\\theta) & \\cos((k+1)\\theta) \\end{bmatrix}$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, $3^{4n+2} + 2 \\cdot 4^{3n+1}$ is divisible by:",
+        "options": ["17", "19", "23", "29"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $n = 1$: $3^6 + 2 \\cdot 4^4 = 729 + 2(256) = 729 + 512 = 1241 = 17 \\times 73$.",
+          "Incorrect. 1241 is not divisible by 19.",
+          "Incorrect. 1241 is not divisible by 23.",
+          "Incorrect. 1241 is not divisible by 29."
+        ],
+        "fullExplanation": "For $n = 1$: $3^6 + 2 \\cdot 4^4 = 729 + 512 = 1241$. Dividing $1241 / 17 = 73$. In general: $3^{4n+2} = 9 \\cdot 81^n \\equiv 9 \\cdot (13)^n \\pmod{17}$, and $2 \\cdot 4^{3n+1} = 8 \\cdot 64^n \\equiv 8 \\cdot (13)^n \\pmod{17}$. Thus $9(13)^n + 8(13)^n = 17(13)^n \\equiv 0 \\pmod{17}$."
+      },
+      {
+        "question": "If $P(n): 2^n < n!$, then the smallest positive integer $n$ for which $P(n)$ is true is:",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. For $n = 2$, $2^2 = 4 > 2! = 2$.",
+          "Incorrect. For $n = 3$, $2^3 = 8 > 3! = 6$.",
+          "Correct. For $n = 4$, $2^4 = 16 < 4! = 24$.",
+          "Incorrect. $n=4$ is smaller than 5 and already satisfies the inequality."
+        ],
+        "fullExplanation": "Checking values: $n=1: 2 > 1$; $n=2: 4 > 2$; $n=3: 8 > 6$; $n=4: 16 < 24$. Therefore, the smallest positive integer is $n = 4$."
+      },
+      {
+        "question": "For all $n \\in \\mathbb{N}$, the sum $\\sum_{r=1}^n r(r+1)(r+2)$ is equal to:",
+        "options": ["$\\frac{n(n+1)(n+2)(n+3)}{4}$", "$\\frac{n(n+1)(n+2)(n+3)}{3}$", "$\\frac{n(n+1)(n+2)}{6}$", "$\\frac{n(n+1)(2n+1)}{4}$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The sum of product of $k$ consecutive integers follows $\\frac{n(n+1)\\dots(n+k)}{k+1}$. Here $k=3$, so denominator is 4.",
+          "Incorrect. The denominator must be 4, not 3.",
+          "Incorrect. This is the sum of products of two consecutive integers.",
+          "Incorrect. Incorrect formula."
+        ],
+        "fullExplanation": "Using the identity $r(r+1)(r+2) = \\frac{r(r+1)(r+2)(r+3) - (r-1)r(r+1)(r+2)}{4}$, the series telescopes when summed from $r=1$ to $n$, yielding $\\frac{n(n+1)(n+2)(n+3)}{4}$."
+      },
+      {
+        "question": "For any positive integer $n$, $2 \\cdot 7^n + 3 \\cdot 5^n - 5$ is always divisible by:",
+        "options": ["12", "24", "36", "48"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 24 is a larger guaranteed divisor.",
+          "Correct. For $n = 1$: $2(7) + 3(5) - 5 = 14 + 15 - 5 = 24$. For $n = 2$: $2(49) + 3(25) - 5 = 98 + 75 - 5 = 168 = 7 \\times 24$.",
+          "Incorrect. For $n = 1$, 24 is not divisible by 36.",
+          "Incorrect. For $n = 1$, 24 is not divisible by 48."
+        ],
+        "fullExplanation": "For $n = 1$, $2(7) + 3(5) - 5 = 24$, which is divisible by 24. By induction, let $f(n) = 2 \\cdot 7^n + 3 \\cdot 5^n - 5$. Then $f(n+1) - 5f(n) = 2 \\cdot 7^n(7 - 5) + 3 \\cdot 5^n(5 - 5) - 5(1 - 5) = 4 \\cdot 7^n + 20 = 4(7^n + 5)$. Since $7^n$ is always odd, $7^n + 5$ is even, so $7^n + 5 = 6k$. For $n \\ge 1$, $7^n \\equiv 1 \\pmod 6$, so $7^n + 5 \\equiv 0 \\pmod 6$. Thus $4(7^n + 5)$ is divisible by $4 \\times 6 = 24$. Hence $f(n+1)$ is divisible by 24."
+      },
+      {
+        "question": "For $n \\in \\mathbb{N}$, $(1 + x)^n \\ge 1 + nx$ holds for all $x > -1$. If we replace $x$ by 1, this shows that for all $n \\ge 1$:",
+        "options": ["$2^n \\ge 1 + n$", "$2^n \\le 1 + n$", "$2^n \\ge 2n$", "$2^n \\ge n^2$"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Substituting $x = 1$ into $(1+x)^n \\ge 1 + nx$ gives $(1+1)^n = 2^n \\ge 1 + n$.",
+          "Incorrect. $2^n$ grows much faster than $1+n$.",
+          "Incorrect. For $n = 1$, $2^1 = 2 = 2(1)$, but for $n=3$, $2^3 = 8 \\ge 6$, but the direct substitution gives $1+n$.",
+          "Incorrect. For $n = 3$, $2^3 = 8 < 3^2 = 9$."
+        ],
+        "fullExplanation": "Substituting $x = 1$ into Bernoulli's inequality $(1+x)^n \\ge 1 + nx$ directly yields $(1+1)^n \\ge 1 + n(1) \\implies 2^n \\ge 1 + n$, which holds for all natural numbers $n \\ge 1$."
+      },
+      {
+        "question": "Let $S(n)$ be a statement. If $S(1)$ is true, and the truth of $S(k)$ implies the truth of $S(2k)$ for all $k \\ge 1$, then $S(n)$ is true for:",
+        "options": [
+          "All natural numbers $n$",
+          "All powers of 2, i.e., $n = 2^m$ ($m \\ge 0$)",
+          "All even numbers $n$",
+          "All prime numbers $n$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Statements like $S(3)$ cannot be reached by doubling 1.",
+          "Correct. $S(1) \\implies S(2) \\implies S(4) \\implies S(8) \\dots S(2^m)$.",
+          "Incorrect. Numbers like 6 cannot be reached from 1 by repeatedly multiplying by 2.",
+          "Incorrect. 2 is the only prime that is a power of 2."
+        ],
+        "fullExplanation": "Starting from $k = 1$, the implication generates the sequence $k = 1, 2, 4, 8, 16, \\dots, 2^m$. Thus $S(n)$ is guaranteed to be true for all numbers of the form $n = 2^m$ where $m \\in \\mathbb{N} \\cup \\{0\\}$."
+      }
+    ]
+  }
+]

@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "chapters": [
+    {
+      "id": "physics-mechanics-kinematics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-laws-of-motion",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-work-energy-power",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-rotational-motion",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-gravitation",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-mechanical-properties-of-solids",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-mechanical-properties-of-fluids",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-thermal-physics-thermal-properties-calorimetry",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-thermal-physics-kinetic-theory-of-gases",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-thermal-physics-thermodynamics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-oscillations-waves-oscillations-simple-harmonic-motion",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-oscillations-waves-wave-motion",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-units-measurements-vectors",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-mechanics-centre-of-mass-collisions",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-electrostatics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-capacitance",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-current-electricity",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-moving-charges-magnetism",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-magnetism-matter",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-electromagnetic-induction",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-electricity-magnetism-alternating-current",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-modern-physics-electromagnetic-waves",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-optics-ray-optics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-optics-wave-optics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-modern-physics-dual-nature-of-matter-radiation",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-modern-physics-atomic-physics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-modern-physics-nuclear-physics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-modern-physics-semiconductor-electronics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "physics-modern-physics-experimental-physics",
+      "file": "physics-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-some-basic-concepts-of-chemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-atomic-structure",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-states-of-matter",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-chemical-thermodynamics",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-chemical-ionic-equilibrium",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-redox-reactions",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-periodic-table-periodicity",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-chemical-bonding",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-hydrogen",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-s-block-elements",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-p-block-elements",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-general-organic-chemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-hydrocarbons",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-environmental-chemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-practical-chemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-solid-state-chemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-solutions",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-electrochemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-chemical-kinetics",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-physical-chemistry-surface-chemistry",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-metallurgy",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-p-block-elements-class-12-groups-15-18",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-d-and-f-block-elements",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-inorganic-chemistry-coordination-compounds",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-haloalkanes-haloarenes",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-alcohols-phenols-ethers",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-aldehydes-ketones-carboxylic-acids",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-organic-compounds-containing-nitrogen",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-biomolecules",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-polymers",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "chemistry-organic-chemistry-chemistry-in-everyday-life",
+      "file": "chemistry-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-sets",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-trigonometry-trigonometric-ratios-identities",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-quadratic-equations",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-complex-numbers",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-relations-functions",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-calculus-limits-continuity-differentiability",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-calculus-method-of-differentiation",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-calculus-applications-of-derivatives",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-calculus-indefinite-integration",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-calculus-definite-integration-area",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-calculus-differential-equations",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-permutations-combinations",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-binomial-theorem",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-sequences-series",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-mathematical-induction",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-trigonometry-trigonometric-equations",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-coordinate-geometry-straight-lines",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-coordinate-geometry-circle",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-coordinate-geometry-parabola",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-coordinate-geometry-ellipse",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-coordinate-geometry-hyperbola",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-vectors-3d-geometry-statistics",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-trigonometry-inverse-trigonometric-functions",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-matrices-determinants",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-algebra-probability",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-vectors-3d-geometry-vector-algebra",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-vectors-3d-geometry-three-dimensional-geometry",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-trigonometry-properties-of-triangles",
+      "file": "mathematics-memory-recall.json"
+    },
+    {
+      "id": "mathematics-linear-programming-linear-programming",
+      "file": "mathematics-memory-recall.json"
+    }
+  ]
+}

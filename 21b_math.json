@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Statistics",
+    "flashcards": [
+      {
+        "front": "What is the formula for the Arithmetic Mean (\\\\(\\bar{x}\\\\)) of ungrouped (raw) data, and what is the algebraic sum of deviations from it?",
+        "back": "For \\\\(n\\\\) observations \\\\(x_1, x_2, \\\\dots, x_n\\\\):\\n\\\\(\\bar{x} = \\\\frac{1}{n}\\\\sum_{i=1}^n x_i\\\\).\\nThe algebraic sum of deviations of all observations from their arithmetic mean is always zero: \\\\(\\sum_{i=1}^n (x_i - \\\\bar{x}) = 0\\\\)."
+      },
+      {
+        "front": "What is the formula for the Arithmetic Mean (\\\\(\\bar{x}\\\\)) of a discrete or grouped frequency distribution?",
+        "back": "\\\\(\\bar{x} = \\\\frac{\\\\sum_{i=1}^n f_i x_i}{\\\\sum_{i=1}^n f_i} = \\\\frac{\\\\sum_{i=1}^n f_i x_i}{N}\\\\), where \\\\(N = \\\\sum_{i=1}^n f_i\\\\) is the total frequency, and for grouped data, \\\\(x_i\\\\) represents the class mark (mid-value) of the \\\\(i\\\\)-th class interval."
+      },
+      {
+        "front": "What is the Combined Mean formula for two groups of data?",
+        "back": "If two groups have sizes \\\\(n_1, n_2\\\\) and means \\\\(\\bar{x}_1, \\bar{x}_2\\\\) respectively, the combined mean is:\\n\\\\(\\bar{X} = \\\\frac{n_1 \\\\bar{x}_1 + n_2 \\\\bar{x}_2}{n_1 + n_2}\\\\)."
+      },
+      {
+        "front": "How does a change of origin and scale affect the Arithmetic Mean?",
+        "back": "If each observation \\\\(x_i\\\\) is transformed to \\\\(y_i = a x_i + b\\\\), then the new mean is:\\n\\\\(\\bar{y} = a\\\\bar{x} + b\\\\).\\nThus, arithmetic mean is dependent on both change of origin (addition/subtraction of \\\\(b\\\\)) and change of scale (multiplication/division by \\\\(a\\\\))."
+      },
+      {
+        "front": "How is the Median defined and calculated for simple (raw) data?",
+        "back": "After arranging the \\\\(n\\\\) observations in ascending or descending order:\\n1. If \\\\(n\\\\) is odd, Median = value of the \\\\(\\\\left(\\\\frac{n+1}{2}\\\\right)\\\\)-th observation.\\n2. If \\\\(n\\\\) is even, Median = \\\\(\\frac{1}{2}\\\\left[\\\\left(\\\\frac{n}{2}\\\\right)\\\\text{-th} + \\\\left(\\\\frac{n}{2} + 1\\\\right)\\\\text{-th}\\\\right]\\\\) observations."
+      },
+      {
+        "front": "What is the formula for calculating the Median of grouped (continuous) frequency data?",
+        "back": "\\\\(M_d = l + \\\\left(\\\\frac{\\\\frac{N}{2} - C}{f}\\\\right) \\\\times h\\\\), where:\\n- \\\\(l\\\\) = lower limit of the median class\\n- \\\\(N = \\\\sum f_i\\\\) = total frequency\\n- \\\\(C\\\\) = cumulative frequency of the class preceding the median class\\n- \\\\(f\\\\) = frequency of the median class\\n- \\\\(h\\\\) = width (length) of the median class interval."
+      },
+      {
+        "front": "What is the formula for calculating the Mode of grouped (continuous) data?",
+        "back": "\\\\(M_o = l + \\\\left(\\\\frac{f_1 - f_0}{2f_1 - f_0 - f_2}\\\\right) \\\\times h\\\\), where:\\n- \\\\(l\\\\) = lower limit of modal class\\n- \\\\(f_1\\\\) = frequency of modal class\\n- \\\\(f_0\\\\) = frequency of pre-modal class\\n- \\\\(f_2\\\\) = frequency of post-modal class\\n- \\\\(h\\\\) = width of modal class."
+      },
+      {
+        "front": "What is the empirical relation between Mean, Median, and Mode for a moderately skewed distribution?",
+        "back": "\\\\(\\\\text{Mode} = 3\\\\text{Median} - 2\\\\text{Mean}\\\\)\\nor equivalently,\\n\\\\(\\\\text{Mean} - \\\\text{Mode} = 3(\\\\text{Mean} - \\\\text{Median})\\\\)."
+      },
+      {
+        "front": "What is the Mean Deviation (MD) about the Mean for raw and frequency distributions?",
+        "back": "For raw data: \\\\(MD(\\\\bar{x}) = \\\\frac{1}{n}\\\\sum_{i=1}^n |x_i - \\\\bar{x}|\\\\).\\nFor frequency distribution: \\\\(MD(\\\\bar{x}) = \\\\frac{\\\\sum_{i=1}^n f_i |x_i - \\\\bar{x}|}{\\\\sum_{i=1}^n f_i}\\\\)."
+      },
+      {
+        "front": "Around which measure of central tendency is the Mean Deviation minimized?",
+        "back": "The Mean Deviation is always minimum when calculated about the **Median**, i.e., \\\\(\\\\sum |x_i - A|\\\\) is minimized when \\\\(A = \\\\text{Median}\\\\)."
+      },
+      {
+        "front": "How do change of origin and change of scale affect the Mean Deviation?",
+        "back": "If \\\\(y_i = a x_i + b\\\\):\\n- Mean deviation is **independent** of change of origin (\\\\(b\\\\)).\\n- Mean deviation is **directly proportional** to the absolute scale factor \\\\(|a|\\\\):\\n\\\\(MD(y) = |a| \\\\cdot MD(x)\\\\)."
+      },
+      {
+        "front": "What is the definition and standard formula for the Variance (\\\\(\\sigma^2\\\\)) of raw data?",
+        "back": "\\\\(\\sigma^2 = \\\\frac{1}{n}\\\\sum_{i=1}^n (x_i - \\\\bar{x})^2 = \\\\frac{\\\\sum x_i^2}{n} - (\\\\bar{x})^2 = \\\\frac{1}{n}\\\\sum x_i^2 - \\\\left(\\\\frac{\\\\sum x_i}{n}\\\\right)^2\\\\)."
+      },
+      {
+        "front": "What is the definition of Standard Deviation (\\\\(\\sigma\\\\))?",
+        "back": "Standard Deviation is the positive square root of the variance:\\n\\\\(\\sigma = +\\\\sqrt{\\\\frac{1}{n}\\\\sum_{i=1}^n (x_i - \\\\bar{x})^2} = \\\\sqrt{\\\\frac{\\\\sum x_i^2}{n} - (\\\\bar{x})^2}\\\\)."
+      },
+      {
+        "front": "What is the formula for Variance of a discrete frequency distribution?",
+        "back": "\\\\(\\sigma^2 = \\\\frac{\\\\sum f_i (x_i - \\\\bar{x})^2}{N} = \\\\frac{\\\\sum f_i x_i^2}{N} - \\\\left(\\\\frac{\\\\sum f_i x_i}{N}\\\\right)^2\\\\), where \\\\(N = \\\\sum f_i\\\\)."
+      },
+      {
+        "front": "How does a change of origin affect Variance and Standard Deviation?",
+        "back": "Variance and Standard Deviation are completely **independent of change of origin**.\\nIf \\\\(y_i = x_i + c\\\\), then:\\n\\\\(\\text{Var}(y) = \\\\text{Var}(x)\\\\) and \\\\(\\sigma_y = \\\\sigma_x\\\\)."
+      },
+      {
+        "front": "How does a change of scale affect Variance and Standard Deviation?",
+        "back": "If \\\\(y_i = a x_i + b\\\\), then:\\n- \\\\(\\sigma_y = |a| \\\\sigma_x\\\\)\\n- \\\\(\\sigma_y^2 = a^2 \\\\sigma_x^2\\\\)\\nThe additive constant \\\\(b\\\\) has no effect on either \\\\(\\sigma\\\\) or \\\\(\\sigma^2\\\\)."
+      },
+      {
+        "front": "What is the formula for the variance of the first \\\\(n\\\\) natural numbers \\\\(\\{1, 2, 3, \\\\dots, n\\}\\\\)?",
+        "back": "\\\\(\\sigma^2 = \\\\frac{n^2 - 1}{12}\\\\)."
+      },
+      {
+        "front": "What is the formula for the standard deviation of the first \\\\(n\\\\) natural numbers?",
+        "back": "\\\\(\\sigma = \\\\sqrt{\\\\frac{n^2 - 1}{12}}\\\\)."
+      },
+      {
+        "front": "What is the variance of the first \\\\(n\\\\) even natural numbers \\\\(\\{2, 4, 6, \\\\dots, 2n\\}\\\\)?",
+        "back": "Since each observation is \\\\(y_i = 2x_i\\\\) where \\\\(x_i \\\\in \\{1, 2, \\\\dots, n\\}\\\\):\\n\\\\(\\text{Var} = 2^2 \\\\times \\\\frac{n^2 - 1}{12} = \\\\frac{n^2 - 1}{3}\\\\)."
+      },
+      {
+        "front": "What is the variance of the first \\\\(n\\\\) odd natural numbers \\\\(\\{1, 3, 5, \\\\dots, 2n-1\\}\\\\)?",
+        "back": "Since \\\\(y_i = 2x_i - 1\\\\) where \\\\(x_i \\\\in \\{1, 2, \\\\dots, n\\}\\\\):\\n\\\\(\\text{Var} = 2^2 \\\\times \\\\text{Var}(x) = 4 \\\\times \\\\frac{n^2 - 1}{12} = \\\\frac{n^2 - 1}{3}\\\\)."
+      },
+      {
+        "front": "What is the formula for the Combined Standard Deviation of two series?",
+        "back": "\\\\(\\sigma = \\\\sqrt{\\\\frac{n_1(\\\\sigma_1^2 + d_1^2) + n_2(\\\\sigma_2^2 + d_2^2)}{n_1 + n_2}}\\\\),\\nwhere \\\\(d_1 = \\\\bar{x}_1 - \\\\bar{X}\\\\), \\\\(d_2 = \\\\bar{x}_2 - \\\\bar{X}\\\\), and \\\\(\\bar{X}\\\\) is the combined mean."
+      },
+      {
+        "front": "What is the combined variance when two series have identical means (\\\\(\\bar{x}_1 = \\bar{x}_2\\\\))?",
+        "back": "When \\\\(\\bar{x}_1 = \\bar{x}_2 = \\bar{X}\\\\), \\\\(d_1 = d_2 = 0\\\\), so:\\n\\\\(\\sigma^2 = \\\\frac{n_1 \\\\sigma_1^2 + n_2 \\\\sigma_2^2}{n_1 + n_2}\\\\)."
+      },
+      {
+        "front": "What is the Coefficient of Standard Deviation and Coefficient of Variation (C.V.)?",
+        "back": "- \\\\(\\\\text{Coefficient of S.D.} = \\\\frac{\\\\sigma}{\\\\bar{x}}\\\\)\\n- \\\\(\\\\text{Coefficient of Variation (C.V.)} = \\\\frac{\\\\sigma}{\\\\bar{x}} \\\\times 100\\\\)."
+      },
+      {
+        "front": "How is the Coefficient of Variation (C.V.) used to compare consistency or stability?",
+        "back": "The series with a **smaller C.V.** is said to be **more consistent**, more stable, or more uniform. The series with a **larger C.V.** has greater variability."
+      },
+      {
+        "front": "For what value of \\\\(A\\\\) is the sum of squared deviations \\\\(\\sum_{i=1}^n (x_i - A)^2\\\\) minimized?",
+        "back": "It is minimized when \\\\(A = \\\\bar{x}\\\\) (the Arithmetic Mean). In that case, the minimum value is \\\\(n \\\\sigma^2\\\\)."
+      },
+      {
+        "front": "What is the relationship between the Mean Deviation (MD) and Standard Deviation (\\\\(\\sigma\\\\)) for a normal distribution?",
+        "back": "\\\\(MD \\\\approx \\\\frac{4}{5}\\\\sigma\\\\) (or \\\\(5 \\\\cdot MD \\\\approx 4 \\\\cdot \\\\sigma\\\\))."
+      },
+      {
+        "front": "What is the variance of an Arithmetic Progression with \\\\(N\\\\) terms and common difference \\\\(d\\\\)?",
+        "back": "\\\\(\\text{Var} = d^2 \\\\left(\\\\frac{N^2 - 1}{12}\\\\right)\\\\)."
+      },
+      {
+        "front": "How do you correct the mean when an incorrect observation \\\\(x_{\\\\text{wrong}}\\\\) is replaced by \\\\(x_{\\\\text{correct}}\\\\)?",
+        "back": "\\\\(\\bar{x}_{\\\\text{new}} = \\\\frac{n\\\\bar{x}_{\\\\text{old}} - x_{\\\\text{wrong}} + x_{\\\\text{correct}}}{n}\\\\)."
+      },
+      {
+        "front": "How do you correct the variance when an incorrect observation is corrected?",
+        "back": "1. Find corrected \\\\(\\sum x_{\\\\text{new}}^2 = \\\\sum x_{\\\\text{old}}^2 - x_{\\\\text{wrong}}^2 + x_{\\\\text{correct}}^2\\\\).\\n2. Compute \\\\(\\sigma_{\\\\text{new}}^2 = \\\\frac{\\\\sum x_{\\\\text{new}}^2}{n} - (\\\\bar{x}_{\\\\text{new}})^2\\\\)."
+      },
+      {
+        "front": "What is the Range and Coefficient of Range of a data set?",
+        "back": "If \\\\(L\\\\) is the largest value and \\\\(S\\\\) is the smallest value:\\n- \\\\(\\\\text{Range} = L - S\\\\)\\n- \\\\(\\\\text{Coefficient of Range} = \\\\frac{L - S}{L + S}\\\\)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "If the mean of 5 observations \\\\(x_1, x_2, x_3, x_4, x_5\\\\) is 5 and their variance is 4, then the variance of the observations \\\\(3x_1 - 2, 3x_2 - 2, 3x_3 - 2, 3x_4 - 2, 3x_5 - 2\\\\) is:",
+        "options": [
+          "\\\\(36\\\\)",
+          "\\\\(34\\\\)",
+          "\\\\(12\\\\)",
+          "\\\\(10\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. If \\\\(y_i = a x_i + b\\\\), then \\\\(\\text{Var}(y) = a^2 \\text{Var}(x)\\\\). Here \\\\(a = 3\\\\), so \\\\(\\text{Var}(y) = 3^2 \\times 4 = 36\\\\).",
+          "Incorrect. The constant term \\\\(-2\\\\) is not subtracted from the variance.",
+          "Incorrect. \\\\(3 \\times 4 = 12\\\\) scales by \\\\(a\\\\) instead of \\\\(a^2\\\\).",
+          "Incorrect. This mistakenly calculates \\\\(3 \\times 4 - 2 = 10\\\\)."
+        ],
+        "fullExplanation": "For any linear transformation \\\\(y_i = ax_i + b\\\\), the variance satisfies \\\\(\\text{Var}(y) = a^2 \\text{Var}(x)\\\\). Here, \\\\(a = 3\\\\) and \\\\(b = -2\\\\). Given \\\\(\\text{Var}(x) = 4\\\\), the new variance is \\\\(\\text{Var}(y) = 3^2 \\times 4 = 9 \\times 4 = 36\\\\)."
+      },
+      {
+        "question": "The mean of 100 observations is 50 and their standard deviation is 5. If each observation is multiplied by 2 and then decreased by 5, the new mean and standard deviation respectively are:",
+        "options": [
+          "\\\\((95, 10)\\\\)",
+          "\\\\((95, 5)\\\\)",
+          "\\\\((100, 10)\\\\)",
+          "\\\\((90, 10)\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. New mean \\\\(= 2(50) - 5 = 95\\\\) and new standard deviation \\\\(= |2| \\times 5 = 10\\\\).",
+          "Incorrect. The standard deviation must scale by 2.",
+          "Incorrect. The mean must be decreased by 5 as well.",
+          "Incorrect. Arithmetic error in calculating the new mean."
+        ],
+        "fullExplanation": "Let \\\\(y_i = 2x_i - 5\\\\). The new mean is \\\\(\\bar{y} = 2\\bar{x} - 5 = 2(50) - 5 = 95\\\\). The new standard deviation is \\\\(\\sigma_y = |2|\\sigma_x = 2 \\times 5 = 10\\\\). The subtracting constant \\\\(-5\\\\) does not affect standard deviation."
+      },
+      {
+        "question": "The variance of the first 10 natural numbers is:",
+        "options": [
+          "\\\\(8.25\\\\)",
+          "\\\\(8.5\\\\)",
+          "\\\\(9.25\\\\)",
+          "\\\\(7.5\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\sigma^2 = \\frac{n^2 - 1}{12} = \\frac{100 - 1}{12} = \\frac{99}{12} = 8.25\\\\).",
+          "Incorrect. Did not square \\\\(n\\\\) correctly.",
+          "Incorrect. Computed \\\\(\\frac{n^2 + 1}{12}\\\\).",
+          "Incorrect. Divided by 10 instead of 12."
+        ],
+        "fullExplanation": "The variance of the first \\\\(n\\\\) natural numbers is given by the standard formula \\\\(\\sigma^2 = \\frac{n^2 - 1}{12}\\\\). Substituting \\\\(n = 10\\\\): \\\\(\\sigma^2 = \\frac{10^2 - 1}{12} = \\frac{99}{12} = \\frac{33}{4} = 8.25\\\\)."
+      },
+      {
+        "question": "The mean and variance of 7 observations are 8 and 16, respectively. If 5 of the observations are 2, 4, 10, 12, 14, then the remaining two observations are:",
+        "options": [
+          "\\\\(6\\\\) and \\\\(8\\\\)",
+          "\\\\(5\\\\) and \\\\(9\\\\)",
+          "\\\\(4\\\\) and \\\\(10\\\\)",
+          "\\\\(7\\\\) and \\\\(7\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sum of remaining is \\\\(14\\\\) and sum of their squares is \\\\(100\\\\), giving numbers \\\\(6\\\\) and \\\\(8\\\\).",
+          "Incorrect. \\\\(5^2 + 9^2 = 25 + 81 = 106 \\neq 100\\\\).",
+          "Incorrect. \\\\(4^2 + 10^2 = 116 \\neq 100\\\\).",
+          "Incorrect. \\\\(7^2 + 7^2 = 98 \\neq 100\\\\)."
+        ],
+        "fullExplanation": "Let the two unknown observations be \\\\(a\\\\) and \\\\(b\\\\).\\nTotal sum \\\\(= 7 \\times 8 = 56\\\\).\\nSum of given 5 observations \\\\(= 2 + 4 + 10 + 12 + 14 = 42\\\\).\\nSo, \\\\(a + b = 56 - 42 = 14\\\\).\\nTotal sum of squares \\\\(= 7(\\sigma^2 + \\bar{x}^2) = 7(16 + 64) = 7 \\times 80 = 560\\\\).\\nSum of squares of given 5 observations \\\\(= 2^2 + 4^2 + 10^2 + 12^2 + 14^2 = 4 + 16 + 100 + 144 + 196 = 460\\\\).\\nSo, \\\\(a^2 + b^2 = 560 - 460 = 100\\\\).\\nNow, \\\\(2ab = (a+b)^2 - (a^2+b^2) = 14^2 - 100 = 196 - 100 = 96 \\implies ab = 48\\\\).\\nThe quadratic equation is \\\\(t^2 - 14t + 48 = 0 \\implies (t - 6)(t - 8) = 0\\\\).\\nHence, the remaining two observations are 6 and 8."
+      },
+      {
+        "question": "For 10 observations \\\\(x_1, x_2, \\dots, x_{10}\\\\), if \\\\(\\sum_{i=1}^{10} (x_i - 5) = 10\\\\) and \\\\(\\sum_{i=1}^{10} (x_i - 5)^2 = 40\\\\), then the standard deviation of these observations is:",
+        "options": [
+          "\\\\(\\sqrt{3}\\\\)",
+          "\\\\(3\\\\)",
+          "\\\\(\\sqrt{5}\\\\)",
+          "\\\\(2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\text{Var}(x) = \\text{Var}(x - 5) = \\frac{40}{10} - \\left(\\frac{10}{10}\\right)^2 = 4 - 1 = 3 \\implies \\sigma = \\sqrt{3}\\\\).",
+          "Incorrect. 3 is the variance, not standard deviation.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let \\\\(u_i = x_i - 5\\\\). Since a change of origin does not change the standard deviation, \\\\(\\sigma_x = \\sigma_u\\\\).\\n\\\\(\\bar{u} = \\frac{\\sum u_i}{10} = \\frac{10}{10} = 1\\\\).\\n\\\\(\\sigma_u^2 = \\frac{\\sum u_i^2}{10} - (\\bar{u})^2 = \\frac{40}{10} - (1)^2 = 4 - 1 = 3\\\\).\\nTherefore, the standard deviation is \\\\(\\sigma = \\sqrt{3}\\\\)."
+      },
+      {
+        "question": "The mean of 5 observations is 4.4 and their variance is 8.24. If three of the observations are 1, 2, and 6, then the other two observations are:",
+        "options": [
+          "\\\\(4\\\\) and \\\\(9\\\\)",
+          "\\\\(3\\\\) and \\\\(10\\\\)",
+          "\\\\(5\\\\) and \\\\(8\\\\)",
+          "\\\\(2\\\\) and \\\\(11\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(a + b = 22 - 9 = 13\\\\) and \\\\(a^2 + b^2 = 138 - 41 = 97\\\\). \\\\(4^2 + 9^2 = 16 + 81 = 97\\\\).",
+          "Incorrect. \\\\(3^2 + 10^2 = 109 \\neq 97\\\\).",
+          "Incorrect. \\\\(5^2 + 8^2 = 89 \\neq 97\\\\).",
+          "Incorrect. \\\\(2^2 + 11^2 = 125 \\neq 97\\\\)."
+        ],
+        "fullExplanation": "Let the two observations be \\\\(a\\\\) and \\\\(b\\\\).\\nSum of all 5 observations \\\\(= 5 \\times 4.4 = 22\\\\).\\nSum of the three given \\\\(= 1 + 2 + 6 = 9 \\implies a + b = 22 - 9 = 13\\\\).\\nSum of squares \\\\(\\sum x_i^2 = 5(\\sigma^2 + \\bar{x}^2) = 5(8.24 + 19.36) = 5(27.6) = 138\\\\).\\nSum of squares of three given observations \\\\(= 1^2 + 2^2 + 6^2 = 41\\\\).\\nThus, \\\\(a^2 + b^2 = 138 - 41 = 97\\\\).\\n\\\\(2ab = (a + b)^2 - (a^2 + b^2) = 169 - 97 = 72 \\implies ab = 36\\\\).\\nRoots of \\\\(t^2 - 13t + 36 = 0\\\\) are \\\\(4\\\\) and \\\\(9\\\\)."
+      },
+      {
+        "question": "If the mean deviation about the median of the numbers \\\\(a, 2a, 3a, \\dots, 50a\\\\) (where \\\\(a > 0\\\\)) is 50, then the value of \\\\(a\\\\) is:",
+        "options": [
+          "\\\\(4\\\\)",
+          "\\\\(2\\\\)",
+          "\\\\(5\\\\)",
+          "\\\\(3\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(MD = \\frac{2500 a}{4 \\times 50} = 12.5 a = 50 \\implies a = 4\\\\).",
+          "Incorrect. Calculated \\\\(MD = 25a\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The data is an AP of \\\\(n = 50\\\\) terms: \\\\(a, 2a, \\dots, 50a\\\\).\\nMedian \\\\(= \\frac{25a + 26a}{2} = 25.5a\\\\).\\nThe sum of deviations from the median is:\\n\\\\(\\sum_{i=1}^{50} |ia - 25.5a| = 2a [0.5 + 1.5 + \\dots + 24.5] = 2a \\times \\frac{25}{2}(0.5 + 24.5) = 25a \\times 25 = 625a\\\\).\\nThus, \\\\(MD = \\frac{625a}{50} = 12.5a\\\\).\\nGiven \\\\(12.5a = 50 \\implies a = \\frac{50}{12.5} = 4\\\\)."
+      },
+      {
+        "question": "The mean and variance of 20 observations are found to be 10 and 4, respectively. On rechecking, it was detected that an observation 9 was incorrect and replaced by 11. The correct variance is:",
+        "options": [
+          "\\\\(3.99\\\\)",
+          "\\\\(4.01\\\\)",
+          "\\\\(4.21\\\\)",
+          "\\\\(3.85\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Correct mean \\\\(= 10.1\\\\), correct sum of squares \\\\(= 2120\\\\), correct variance \\\\(= 2120/20 - (10.1)^2 = 106 - 102.01 = 3.99\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Given: \\\\(n = 20, \\bar{x} = 10, \\sigma^2 = 4\\\\).\\n\\\\(\\sum x_{\\text{old}} = 20 \\times 10 = 200\\\\).\\n\\\\(\\sum x_{\\text{old}}^2 = 20(\\sigma^2 + \\bar{x}^2) = 20(4 + 100) = 2080\\\\).\\nReplacing 9 by 11:\\n\\\\(\\sum x_{\\text{new}} = 200 - 9 + 11 = 202 \\implies \\bar{x}_{\\text{new}} = \\frac{202}{20} = 10.1\\\\).\\n\\\\(\\sum x_{\\text{new}}^2 = 2080 - 9^2 + 11^2 = 2080 - 81 + 121 = 2120\\\\).\\n\\\\(\\sigma_{\\text{new}}^2 = \\frac{2120}{20} - (10.1)^2 = 106 - 102.01 = 3.99\\\\)."
+      },
+      {
+        "question": "The variance of the numbers \\\\(2, 4, 6, 8, \\dots, 2n\\\\) is:",
+        "options": [
+          "\\\\(\\frac{n^2 - 1}{3}\\\\)",
+          "\\\\(\\frac{n^2 - 1}{6}\\\\)",
+          "\\\\(\\frac{2(n^2 - 1)}{3}\\\\)",
+          "\\\\(\\frac{n^2 - 1}{12}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(y_i = 2x_i\\\\) where \\\\(x_i \\in \\{1, 2, \\dots, n\\}\\\\). \\\\(\\text{Var}(y) = 2^2 \\text{Var}(x) = 4 \\times \\frac{n^2 - 1}{12} = \\frac{n^2 - 1}{3}\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect. This is the variance of the first \\\\(n\\\\) natural numbers."
+        ],
+        "fullExplanation": "Let \\\\(x_i = i\\\\) for \\\\(i = 1, 2, \\dots, n\\\\). The given numbers are \\\\(y_i = 2x_i\\\\).\\nWe know that \\\\(\\text{Var}(x) = \\frac{n^2 - 1}{12}\\\\).\\nSince variance scales with the square of the multiplying factor:\\n\\\\(\\text{Var}(y) = \\text{Var}(2x) = 2^2 \\text{Var}(x) = 4 \\times \\frac{n^2 - 1}{12} = \\frac{n^2 - 1}{3}\\\\)."
+      },
+      {
+        "question": "The standard deviation of an arithmetic progression \\\\(a, a+d, a+2d, \\dots, a+2nd\\\\) having \\\\(2n+1\\\\) terms is:",
+        "options": [
+          "\\\\(|d|\\sqrt{\\frac{n(n+1)}{3}}\\\\)",
+          "\\\\(|d|\\sqrt{\\frac{n(n+1)}{6}}\\\\)",
+          "\\\\(|d|\\sqrt{\\frac{n(2n+1)}{3}}\\\\)",
+          "\\\\(|d|\\sqrt{\\frac{n^2-1}{12}}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Shifting origin by subtracting \\\\(a + nd\\\\) leaves terms \\\\(-nd, \\dots, 0, \\dots, nd\\\\). Variance \\\\(= \\frac{2d^2 \\sum_{i=1}^n i^2}{2n+1} = \\frac{2d^2 n(n+1)(2n+1)}{6(2n+1)} = \\frac{n(n+1)d^2}{3}\\\\).",
+          "Incorrect. Missed factor of 2 in numerator.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let the terms be shifted by subtracting the middle term \\\\(A = a + nd\\\\). The deviations are \\\\(-nd, -(n-1)d, \\dots, 0, \\dots, (n-1)d, nd\\\\).\\nSince the mean of these deviations is 0, the variance is:\\n\\\\(\\sigma^2 = \\frac{1}{2n+1} \\sum_{k=-n}^n (kd)^2 = \\frac{d^2}{2n+1} \\left[2 \\sum_{k=1}^n k^2\\right] = \\frac{2d^2}{2n+1} \\cdot \\frac{n(n+1)(2n+1)}{6} = \\frac{n(n+1)d^2}{3}\\\\).\\nThus, \\\\(\\sigma = |d|\\sqrt{\\frac{n(n+1)}{3}}\\\\)."
+      },
+      {
+        "question": "If the coefficients of variation of two distributions are 60% and 70%, and their standard deviations are 21 and 14 respectively, then their arithmetic means are:",
+        "options": [
+          "\\\\(35\\\\) and \\\\(20\\\\)",
+          "\\\\(20\\\\) and \\\\(35\\\\)",
+          "\\\\(30\\\\) and \\\\(15\\\\)",
+          "\\\\(28\\\\) and \\\\(21\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\bar{x}_1 = \\frac{21}{60} \\times 100 = 35\\\\) and \\\\(\\bar{x}_2 = \\frac{14}{70} \\times 100 = 20\\\\).",
+          "Incorrect. Means are reversed.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "By definition, \\\\(\\text{C.V.} = \\frac{\\sigma}{\\bar{x}} \\times 100\\\\).\\nFor the first distribution:\\n\\\\(60 = \\frac{21}{\\bar{x}_1} \\times 100 \\implies \\bar{x}_1 = \\frac{2100}{60} = 35\\\\).\\nFor the second distribution:\\n\\\\(70 = \\frac{14}{\\bar{x}_2} \\times 100 \\implies \\bar{x}_2 = \\frac{1400}{70} = 20\\\\)."
+      },
+      {
+        "question": "For a data set of \\\\(n\\\\) observations, if \\\\(\\sum_{i=1}^n (x_i + 1)^2 = 9n\\\\) and \\\\(\\sum_{i=1}^n (x_i - 1)^2 = 5n\\\\), then the standard deviation is:",
+        "options": [
+          "\\\\(\\sqrt{5}\\\\)",
+          "\\\\(5\\\\)",
+          "\\\\(2\\\\)",
+          "\\\\(\\sqrt{6}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Adding gives \\\\(\\frac{\\sum x_i^2}{n} = 6\\\\); subtracting gives \\\\(\\bar{x} = 1\\\\). \\\\(\\sigma^2 = 6 - 1^2 = 5 \\implies \\sigma = \\sqrt{5}\\\\).",
+          "Incorrect. 5 is the variance.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Expanding both equations:\\n1) \\\\(\\sum x_i^2 + 2\\sum x_i + n = 9n \\implies \\sum x_i^2 + 2\\sum x_i = 8n\\\\)\\n2) \\\\(\\sum x_i^2 - 2\\sum x_i + n = 5n \\implies \\sum x_i^2 - 2\\sum x_i = 4n\\\\)\\nAdding (1) and (2): \\\\(2\\sum x_i^2 = 12n \\implies \\frac{\\sum x_i^2}{n} = 6\\\\).\\nSubtracting (2) from (1): \\\\(4\\sum x_i = 4n \\implies \\frac{\\sum x_i}{n} = \\bar{x} = 1\\\\).\\nVariance \\\\(\\sigma^2 = \\frac{\\sum x_i^2}{n} - (\\bar{x})^2 = 6 - 1^2 = 5\\\\).\\nHence, \\\\(\\sigma = \\sqrt{5}\\\\)."
+      },
+      {
+        "question": "The mean of 10 observations is 20 and their standard deviation is 2. If each observation is multiplied by 3 and then 5 is added, the new variance of the observations is:",
+        "options": [
+          "\\\\(36\\\\)",
+          "\\\\(18\\\\)",
+          "\\\\(12\\\\)",
+          "\\\\(41\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\text{Var}(3x + 5) = 3^2 \\text{Var}(x) = 9 \\times 2^2 = 36\\\\).",
+          "Incorrect. Calculated \\\\(3 \\times 6\\\\).",
+          "Incorrect. Scaled by 3 instead of \\\\(3^2\\\\).",
+          "Incorrect. Added 5 to the variance."
+        ],
+        "fullExplanation": "Given standard deviation \\\\(\\sigma_x = 2 \\implies \\text{Var}(x) = 2^2 = 4\\\\).\\nUnder the transformation \\\\(y_i = 3x_i + 5\\\\), the new variance is:\\n\\\\(\\text{Var}(y) = 3^2 \\cdot \\text{Var}(x) = 9 \\times 4 = 36\\\\)."
+      },
+      {
+        "question": "If the mean of the numbers \\\\(1, 2, 3, \\dots, n\\\\) is \\\\(\\frac{6n}{11}\\\\), then \\\\(n\\\\) is:",
+        "options": [
+          "\\\\(11\\\\)",
+          "\\\\(10\\\\)",
+          "\\\\(12\\\\)",
+          "\\\\(13\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\frac{n+1}{2} = \\frac{6n}{11} \\implies 11n + 11 = 12n \\implies n = 11\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The mean of the first \\\\(n\\\\) natural numbers is \\\\(\\frac{n+1}{2}\\\\).\\nSetting \\\\(\\frac{n+1}{2} = \\frac{6n}{11}\\\\):\\n\\\\(11(n+1) = 12n \\implies 11n + 11 = 12n \\implies n = 11\\\\)."
+      },
+      {
+        "question": "Two groups have sizes 40 and 60, means 20 and 30, and variances 16 and 25, respectively. The combined variance of the two groups is:",
+        "options": [
+          "\\\\(45.4\\\\)",
+          "\\\\(42.6\\\\)",
+          "\\\\(48.2\\\\)",
+          "\\\\(21.4\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Combined mean \\\\(= 26\\\\). \\\\(d_1 = -6, d_2 = 4\\\\). \\\\(\\sigma^2 = \\frac{40(16+36) + 60(25+16)}{100} = \\frac{2080 + 2460}{100} = 45.4\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect. This would be the weighted average of variances without the \\\\(d_i^2\\\\) terms."
+        ],
+        "fullExplanation": "Combined mean: \\\\(\\bar{X} = \\frac{40(20) + 60(30)}{100} = \\frac{800 + 1800}{100} = 26\\\\).\\nDeviations: \\\\(d_1 = 20 - 26 = -6 \\implies d_1^2 = 36\\\\); \\\\(d_2 = 30 - 26 = 4 \\implies d_2^2 = 16\\\\).\\nCombined variance:\\n\\\\(\\sigma^2 = \\frac{n_1(\\sigma_1^2 + d_1^2) + n_2(\\sigma_2^2 + d_2^2)}{n_1 + n_2} = \\frac{40(16 + 36) + 60(25 + 16)}{100} = \\frac{40(52) + 60(41)}{100} = \\frac{2080 + 2460}{100} = 45.4\\\\)."
+      },
+      {
+        "question": "The mean deviation about the mean of the numbers \\\\(3, 10, 10, 4, 7, 10, 5\\\\) is:",
+        "options": [
+          "\\\\(\\frac{18}{7}\\\\)",
+          "\\\\(\\frac{16}{7}\\\\)",
+          "\\\\(\\frac{20}{7}\\\\)",
+          "\\\\(2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\bar{x} = 49/7 = 7\\\\). Deviations are \\\\(4, 3, 3, 3, 0, 3, 2\\\\). Sum \\\\(= 18 \\implies MD = 18/7\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Sum of observations \\\\(= 3 + 10 + 10 + 4 + 7 + 10 + 5 = 49\\\\).\\nMean \\\\(\\bar{x} = \\frac{49}{7} = 7\\\\).\\nAbsolute deviations \\\\(|x_i - 7|\\\\) are:\\n\\\\(|3-7|=4, |10-7|=3, |10-7|=3, |4-7|=3, |7-7|=0, |10-7|=3, |5-7|=2\\\\).\\nSum of absolute deviations \\\\(= 4 + 3 + 3 + 3 + 0 + 3 + 2 = 18\\\\).\\nMean deviation \\\\(= \\frac{18}{7}\\\\)."
+      },
+      {
+        "question": "In a moderately skewed distribution, if the mean is 45 and the median is 48, then the mode of the distribution is:",
+        "options": [
+          "\\\\(54\\\\)",
+          "\\\\(51\\\\)",
+          "\\\\(42\\\\)",
+          "\\\\(50\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\text{Mode} = 3\\text{Median} - 2\\text{Mean} = 3(48) - 2(45) = 144 - 90 = 54\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Using the empirical relationship:\\n\\\\(\\text{Mode} = 3\\text{Median} - 2\\text{Mean}\\\\)\\nSubstituting the given values:\\n\\\\(\\text{Mode} = 3(48) - 2(45) = 144 - 90 = 54\\\\)."
+      },
+      {
+        "question": "Let \\\\(x_1, x_2, \\dots, x_n\\\\) have mean \\\\(\\bar{x}\\\\) and variance \\\\(\\sigma^2\\\\). If a constant \\\\(k\\\\) is added to each observation, the new variance is:",
+        "options": [
+          "\\\\(\\sigma^2\\\\)",
+          "\\\\(\\sigma^2 + k^2\\\\)",
+          "\\\\(\\sigma^2 + k\\\\)",
+          "\\\\(k^2 \\sigma^2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Variance is invariant under change of origin (shift).",
+          "Incorrect. Adding a constant does not add \\\\(k^2\\\\) to the variance.",
+          "Incorrect.",
+          "Incorrect. That would happen if multiplied by \\\\(k\\\\)."
+        ],
+        "fullExplanation": "Variance measures the dispersion of data points relative to their mean. Adding a constant \\\\(k\\\\) to every observation shifts both each \\\\(x_i\\\\) and the mean \\\\(\\bar{x}\\\\) by \\\\(k\\\\). Thus, \\\\((x_i + k) - (\\bar{x} + k) = x_i - \\bar{x}\\\\), so the deviations and hence the variance remain completely unchanged: \\\\(\\sigma_{\\text{new}}^2 = \\sigma^2\\\\)."
+      },
+      {
+        "question": "If \\\\(\\sum_{i=1}^9 (x_i - 5) = 9\\\\) and \\\\(\\sum_{i=1}^9 (x_i - 5)^2 = 45\\\\), then the standard deviation of the observations is:",
+        "options": [
+          "\\\\(2\\\\)",
+          "\\\\(4\\\\)",
+          "\\\\(3\\\\)",
+          "\\\\(\\sqrt{5}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\\\(u_i = x_i - 5\\\\). \\\\(\\bar{u} = 9/9 = 1\\\\). \\\\(\\sigma^2 = \\frac{45}{9} - 1^2 = 5 - 1 = 4 \\implies \\sigma = 2\\\\).",
+          "Incorrect. 4 is the variance.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let \\\\(u_i = x_i - 5\\\\). Then:\\n\\\\(\\bar{u} = \\frac{\\sum u_i}{9} = \\frac{9}{9} = 1\\\\).\\n\\\\(\\sigma^2 = \\frac{\\sum u_i^2}{9} - (\\bar{u})^2 = \\frac{45}{9} - 1^2 = 5 - 1 = 4\\\\).\\nTherefore, standard deviation \\\\(\\sigma = \\sqrt{4} = 2\\\\)."
+      },
+      {
+        "question": "The mean of five numbers is 0 and their variance is 2. If three of the numbers are \\\\(-1, 1,\\\\) and \\\\(2\\\\), then the other two numbers are:",
+        "options": [
+          "\\\\(0\\\\) and \\\\(-2\\\\)",
+          "\\\\(-1\\\\) and \\\\(-1\\\\)",
+          "\\\\(1\\\\) and \\\\(-3\\\\)",
+          "\\\\(2\\\\) and \\\\(-4\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sum is \\\\(-2\\\\) and sum of squares is \\\\(4\\\\), which yields \\\\(0\\\\) and \\\\(-2\\\\).",
+          "Incorrect. \\\\((-1)^2 + (-1)^2 = 2 \\neq 4\\\\).",
+          "Incorrect. \\\\(1^2 + (-3)^2 = 10 \\neq 4\\\\).",
+          "Incorrect. Sum is \\\\(-2\\\\), but \\\\(2^2 + (-4)^2 = 20 \\neq 4\\\\)."
+        ],
+        "fullExplanation": "Let the two numbers be \\\\(a\\\\) and \\\\(b\\\\).\\nSum of numbers: \\\\(-1 + 1 + 2 + a + b = 0 \\implies a + b = -2\\\\).\\nVariance: \\\\(\\frac{(-1)^2 + 1^2 + 2^2 + a^2 + b^2}{5} - 0^2 = 2 \\implies 6 + a^2 + b^2 = 10 \\implies a^2 + b^2 = 4\\\\).\\nNow, \\\\(2ab = (a + b)^2 - (a^2 + b^2) = (-2)^2 - 4 = 4 - 4 = 0 \\implies ab = 0\\\\).\\nSince \\\\(ab = 0\\\\) and \\\\(a + b = -2\\\\), the two numbers are 0 and \\\\(-2\\\\)."
+      },
+      {
+        "question": "The variance of 20 observations is 5. If each observation is multiplied by 2, then the new variance of the resulting observations is:",
+        "options": [
+          "\\\\(20\\\\)",
+          "\\\\(10\\\\)",
+          "\\\\(5\\\\)",
+          "\\\\(40\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\text{Var}(2x) = 2^2 \\text{Var}(x) = 4 \\times 5 = 20\\\\).",
+          "Incorrect. Scaled by 2 instead of \\\\(2^2\\\\).",
+          "Incorrect. Variance changes under scale.",
+          "Incorrect."
+        ],
+        "fullExplanation": "When each observation is multiplied by a constant \\\\(c\\\\), the variance is multiplied by \\\\(c^2\\\\).\\nHere \\\\(c = 2\\\\), so:\\n\\\\(\\text{New Variance} = 2^2 \\times 5 = 4 \\times 5 = 20\\\\)."
+      },
+      {
+        "question": "The sum of squares of deviations of 10 observations taken from 4 is 50, and the sum of deviations taken from 4 is 10. The variance of these observations is:",
+        "options": [
+          "\\\\(4\\\\)",
+          "\\\\(5\\\\)",
+          "\\\\(3\\\\)",
+          "\\\\(2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\sigma^2 = \\frac{50}{10} - \\left(\\frac{10}{10}\\right)^2 = 5 - 1 = 4\\\\).",
+          "Incorrect. Forgot to subtract \\\\((\\bar{u})^2\\\\).",
+          "Incorrect.",
+          "Incorrect. 2 is the standard deviation."
+        ],
+        "fullExplanation": "Let \\\\(u_i = x_i - 4\\\\).\\nGiven \\\\(\\sum u_i^2 = 50\\\\), \\\\(\\sum u_i = 10\\\\), and \\\\(n = 10\\\\).\\nSince variance is independent of origin shift:\\n\\\\(\\text{Var}(x) = \\text{Var}(u) = \\frac{\\sum u_i^2}{n} - \\left(\\frac{\\sum u_i}{n}\\right)^2 = \\frac{50}{10} - (1)^2 = 5 - 1 = 4\\\\)."
+      },
+      {
+        "question": "The mean deviation about the median for the observations \\\\(4, 6, 7, 8, 10, 12, 12, 13\\\\) is:",
+        "options": [
+          "\\\\(2.75\\\\)",
+          "\\\\(3.25\\\\)",
+          "\\\\(2.50\\\\)",
+          "\\\\(3.00\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Median \\\\(= (8+10)/2 = 9\\\\). Sum of absolute deviations from 9 is \\\\(5+3+2+1+1+3+3+4 = 22\\\\). \\\\(MD = 22/8 = 2.75\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The data in ascending order is: \\\\(4, 6, 7, 8, 10, 12, 12, 13\\\\).\\nSince \\\\(n = 8\\\\) (even), Median \\\\(= \\frac{8 + 10}{2} = 9\\\\).\\nAbsolute deviations \\\\(|x_i - 9|\\\\):\\n\\\\(|4-9|=5, |6-9|=3, |7-9|=2, |8-9|=1, |10-9|=1, |12-9|=3, |12-9|=3, |13-9|=4\\\\).\\nSum of deviations \\\\(= 5 + 3 + 2 + 1 + 1 + 3 + 3 + 4 = 22\\\\).\\nMean deviation \\\\(= \\frac{22}{8} = 2.75\\\\)."
+      },
+      {
+        "question": "If the variance of the first \\\\(n\\\\) natural numbers is 10, then the value of \\\\(n\\\\) is:",
+        "options": [
+          "\\\\(11\\\\)",
+          "\\\\(10\\\\)",
+          "\\\\(12\\\\)",
+          "\\\\(9\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\frac{n^2 - 1}{12} = 10 \\implies n^2 - 1 = 120 \\implies n^2 = 121 \\implies n = 11\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The variance of the first \\\\(n\\\\) natural numbers is:\\n\\\\(\\sigma^2 = \\frac{n^2 - 1}{12}\\\\).\\nSetting this equal to 10:\\n\\\\(\\frac{n^2 - 1}{12} = 10 \\implies n^2 - 1 = 120 \\implies n^2 = 121 \\implies n = 11\\\\)."
+      },
+      {
+        "question": "For a distribution of 50 observations, \\\\(\\sum x_i = 1000\\\\) and \\\\(\\sum x_i^2 = 21250\\\\). The coefficient of variation of the data is:",
+        "options": [
+          "\\\\(25\\%\\\\)",
+          "\\\\(20\\%\\\\)",
+          "\\\\(30\\%\\\\)",
+          "\\\\(15\\%\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\bar{x} = 20\\\\), \\\\(\\sigma^2 = 425 - 400 = 25 \\implies \\sigma = 5\\\\). \\\\(\\text{C.V.} = (5/20) \\times 100 = 25\\%\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Mean \\\\(\\bar{x} = \\frac{\\sum x_i}{n} = \\frac{1000}{50} = 20\\\\).\\nVariance \\\\(\\sigma^2 = \\frac{\\sum x_i^2}{n} - (\\bar{x})^2 = \\frac{21250}{50} - (20)^2 = 425 - 400 = 25\\\\).\\nStandard deviation \\\\(\\sigma = \\sqrt{25} = 5\\\\).\\nCoefficient of variation:\\n\\\\(\\text{C.V.} = \\frac{\\sigma}{\\bar{x}} \\times 100 = \\frac{5}{20} \\times 100 = 25\\%\\\\)."
+      },
+      {
+        "question": "If two variables \\\\(u\\\\) and \\\\(v\\\\) are related by \\\\(2u + 3v = 7\\\\) and the mean deviation of \\\\(u\\\\) about its mean is 12, then the mean deviation of \\\\(v\\\\) about its mean is:",
+        "options": [
+          "\\\\(8\\\\)",
+          "\\\\(12\\\\)",
+          "\\\\(18\\\\)",
+          "\\\\(6\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(v = -\\frac{2}{3}u + \\frac{7}{3} \\implies MD(v) = |-\\frac{2}{3}| MD(u) = \\frac{2}{3} \\times 12 = 8\\\\).",
+          "Incorrect. MD scales with the multiplier of \\\\(u\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Expressing \\\\(v\\\\) in terms of \\\\(u\\\\):\\n\\\\(v = -\\frac{2}{3}u + \\frac{7}{3}\\\\).\\nSince mean deviation is independent of change of origin and scales by the absolute coefficient of the variable:\\n\\\\(MD(v) = \\left|-\\frac{2}{3}\\right| MD(u) = \\frac{2}{3} \\times 12 = 8\\\\)."
+      },
+      {
+        "question": "If each observation of a data set having variance \\\\(\\sigma^2\\\\) is decreased by 10%, the percentage decrease in the variance of the data is:",
+        "options": [
+          "\\\\(19\\%\\\\)",
+          "\\\\(10\\%\\\\)",
+          "\\\\(20\\%\\\\)",
+          "\\\\(81\\%\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Decreasing by 10% means multiplying by 0.9. New variance \\\\(= (0.9)^2 \\sigma^2 = 0.81 \\sigma^2\\\\), a 19% decrease.",
+          "Incorrect. Variance scales quadratically, not linearly.",
+          "Incorrect.",
+          "Incorrect. 81% is the new variance as a percentage of the original."
+        ],
+        "fullExplanation": "Decreasing each observation by 10% means replacing each \\\\(x_i\\\\) with \\\\(y_i = 0.9 x_i\\\\).\\nThe new variance is:\\n\\\\(\\sigma_{\\text{new}}^2 = (0.9)^2 \\sigma^2 = 0.81 \\sigma^2\\\\).\\nThe percentage decrease in variance is:\\n\\\\(\\frac{\\sigma^2 - 0.81\\sigma^2}{\\sigma^2} \\times 100\\% = 0.19 \\times 100\\% = 19\\%\\\\)."
+      },
+      {
+        "question": "The mean and standard deviation of 100 observations were calculated as 40 and 5.1, respectively. It was later found that one observation 40 was wrongly recorded as 50. The correct standard deviation is:",
+        "options": [
+          "\\\\(5\\\\)",
+          "\\\\(4.9\\\\)",
+          "\\\\(5.1\\\\)",
+          "\\\\(5.2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\bar{x}_{\\text{new}} = 39.9\\\\), \\\\(\\sum x_{\\text{new}}^2 = 161701\\\\), \\\\(\\sigma_{\\text{new}}^2 = 1617.01 - (39.9)^2 = 25 \\implies \\sigma = 5\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Given: \\\\(n = 100, \\bar{x} = 40, \\sigma = 5.1 \\implies \\sigma^2 = 26.01\\\\).\\n\\\\(\\sum x_{\\text{old}} = 100 \\times 40 = 4000\\\\).\\n\\\\(\\sum x_{\\text{old}}^2 = 100(26.01 + 1600) = 162601\\\\).\\nReplacing the incorrect observation 50 with 40:\\n\\\\(\\sum x_{\\text{new}} = 4000 - 50 + 40 = 3990 \\implies \\bar{x}_{\\text{new}} = 39.9\\\\).\\n\\\\(\\sum x_{\\text{new}}^2 = 162601 - 50^2 + 40^2 = 162601 - 2500 + 1600 = 161701\\\\).\\nCorrect variance:\\n\\\\(\\sigma_{\\text{new}}^2 = \\frac{161701}{100} - (39.9)^2 = 1617.01 - 1592.01 = 25\\\\).\\nThus, correct standard deviation is \\\\(\\sigma = \\sqrt{25} = 5\\\\)."
+      },
+      {
+        "question": "If a data set has \\\\(n\\\\) observations with \\\\(\\sum x_i = c_1\\\\) and \\\\(\\sum x_i^2 = c_2\\\\), and a new observation \\\\(x = a\\\\) is added, the new arithmetic mean is:",
+        "options": [
+          "\\\\(\\frac{c_1 + a}{n + 1}\\\\)",
+          "\\\\(\\frac{c_1 + a}{n}\\\\)",
+          "\\\\(\\frac{c_1}{n} + a\\\\)",
+          "\\\\(\\frac{c_1 + a^2}{n + 1}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Total sum becomes \\\\(c_1 + a\\\\) and total number of observations becomes \\\\(n + 1\\\\).",
+          "Incorrect. Failed to update the sample size to \\\\(n+1\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The original sum of observations is \\\\(\\sum x_i = c_1\\\\). When a new observation \\\\(a\\\\) is added, the new sum becomes \\\\(c_1 + a\\\\), and the total number of observations becomes \\\\(n + 1\\\\). Therefore, the new mean is \\\\(\\frac{c_1 + a}{n + 1}\\\\)."
+      },
+      {
+        "question": "The mean and standard deviation of 9 observations are 20 and 4, respectively. If an observation 20 is added to this data, the variance of the 10 observations is:",
+        "options": [
+          "\\\\(14.4\\\\)",
+          "\\\\(16\\\\)",
+          "\\\\(12.8\\\\)",
+          "\\\\(15.2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since added observation equals the mean, new mean is unchanged at 20. New variance \\\\(= \\frac{9 \\times 16 + 0}{10} = \\frac{144}{10} = 14.4\\\\).",
+          "Incorrect. 16 is the old variance.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Old mean \\\\(= 20\\\\), so \\\\(\\sum_{i=1}^9 (x_i - 20)^2 = 9 \\times \\sigma_{\\text{old}}^2 = 9 \\times 4^2 = 144\\\\).\\nWhen the observation 20 is added, the new mean is still:\\n\\\\(\\bar{x}_{\\text{new}} = \\frac{9 \\times 20 + 20}{10} = 20\\\\).\\nThe new sum of squared deviations from the mean is:\\n\\\\(\\sum_{i=1}^{10} (x_i - 20)^2 = 144 + (20 - 20)^2 = 144\\\\).\\nThus, the new variance is \\\\(\\sigma_{\\text{new}}^2 = \\frac{144}{10} = 14.4\\\\)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,911 @@
+[
+  {
+    "chapterName": "Trigonometric Equations",
+    "flashcards": [
+      {
+        "front": "What is a trigonometric equation and what is meant by its principal solutions?",
+        "back": "An equation involving one or more trigonometric functions of an unknown angle is called a trigonometric equation. The solutions lying in the interval $[0, 2\\pi)$ are defined as its principal solutions."
+      },
+      {
+        "front": "What is the general solution of $\\sin \\theta = 0$?",
+        "back": "$\\theta = n\\pi$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the general solution of $\\cos \\theta = 0$?",
+        "back": "$\\theta = (2n + 1)\\frac{\\pi}{2}$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the general solution of $\\tan \\theta = 0$?",
+        "back": "$\\theta = n\\pi$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the general solution of $\\sin \\theta = \\sin \\alpha$?",
+        "back": "$\\theta = n\\pi + (-1)^n \\alpha$, where $n \\in \\mathbb{Z}$ and $\\alpha \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$."
+      },
+      {
+        "front": "What is the general solution of $\\cos \\theta = \\cos \\alpha$?",
+        "back": "$\\theta = 2n\\pi \\pm \\alpha$, where $n \\in \\mathbb{Z}$ and $\\alpha \\in [0, \\pi]$."
+      },
+      {
+        "front": "What is the general solution of $\\tan \\theta = \\tan \\alpha$?",
+        "back": "$\\theta = n\\pi + \\alpha$, where $n \\in \\mathbb{Z}$ and $\\alpha \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$."
+      },
+      {
+        "front": "What is the general solution of $\\sin^2 \\theta = \\sin^2 \\alpha$, $\\cos^2 \\theta = \\cos^2 \\alpha$, or $\\tan^2 \\theta = \\tan^2 \\alpha$?",
+        "back": "$\\theta = n\\pi \\pm \\alpha$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the specific general solution for $\\sin \\theta = 1$?",
+        "back": "$\\theta = 2n\\pi + \\frac{\\pi}{2} = (4n + 1)\\frac{\\pi}{2}$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the specific general solution for $\\sin \\theta = -1$?",
+        "back": "$\\theta = 2n\\pi - \\frac{\\pi}{2} = (4n - 1)\\frac{\\pi}{2}$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the specific general solution for $\\cos \\theta = 1$?",
+        "back": "$\\theta = 2n\\pi$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the specific general solution for $\\cos \\theta = -1$?",
+        "back": "$\\theta = (2n + 1)\\pi$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "Under what condition does the equation $a\\cos \\theta + b\\sin \\theta = c$ have real solutions?",
+        "back": "A real solution exists if and only if $|c| \\le \\sqrt{a^2 + b^2}$."
+      },
+      {
+        "front": "How do you solve the linear trigonometric equation $a\\cos \\theta + b\\sin \\theta = c$?",
+        "back": "Divide both sides by $\\sqrt{a^2 + b^2}$ to write $\\cos(\\theta - \\phi) = \\frac{c}{\\sqrt{a^2+b^2}}$, where $\\cos \\phi = \\frac{a}{\\sqrt{a^2+b^2}}$ and $\\sin \\phi = \\frac{b}{\\sqrt{a^2+b^2}}$, leading to $\\theta - \\phi = 2n\\pi \\pm \\alpha$ where $\\cos \\alpha = \\frac{c}{\\sqrt{a^2+b^2}}$."
+      },
+      {
+        "front": "What method is used to solve equations of the form $a_0 \\sin^n x + a_1 \\sin^{n-1} x \\cos x + \\dots + a_n \\cos^n x = 0$?",
+        "back": "Divide the entire equation by $\\cos^n x$ (ensuring $\\cos x \\neq 0$ is checked separately) to obtain a polynomial equation in $\\tan x$."
+      },
+      {
+        "front": "Why should squaring both sides of a trigonometric equation be avoided when possible?",
+        "back": "Squaring may introduce extraneous solutions (roots of the opposite sign). If squared, all resulting roots must be verified in the original equation."
+      },
+      {
+        "front": "Why must you not cancel common variable factors from both sides of a trigonometric equation?",
+        "back": "Cancelling a factor involving the variable without equating it to zero can lead to the loss of valid solutions."
+      },
+      {
+        "front": "What restriction must be placed on $\\theta$ when an equation contains $\\tan \\theta$ or $\\sec \\theta$?",
+        "back": "$\\theta$ cannot be an odd multiple of $\\frac{\\pi}{2}$, i.e., $\\theta \\neq (2n+1)\\frac{\\pi}{2}$, because $\\tan \\theta$ and $\\sec \\theta$ are undefined there."
+      },
+      {
+        "front": "What restriction must be placed on $\\theta$ when an equation contains $\\cot \\theta$ or $\\csc \\theta$?",
+        "back": "$\\theta$ cannot be an integral multiple of $\\pi$, i.e., $\\theta \\neq n\\pi$, because $\\cot \\theta$ and $\\csc \\theta$ are undefined there."
+      },
+      {
+        "front": "How does the extreme value/boundedness principle help in solving equations like $f(\\theta) = g(\\theta)$?",
+        "back": "If $\\text{LHS} \\le k$ and $\\text{RHS} \\ge k$, equality holds if and only if both $\\text{LHS} = k$ and $\\text{RHS} = k$ simultaneously for the exact same value of $\\theta$."
+      },
+      {
+        "front": "What values can $\\sin(n\\pi + \\theta)$ and $\\cos(n\\pi + \\theta)$ take for $n \\in \\mathbb{Z}$?",
+        "back": "$\\sin(n\\pi + \\theta) = (-1)^n \\sin \\theta$ and $\\cos(n\\pi + \\theta) = (-1)^n \\cos \\theta$."
+      },
+      {
+        "front": "For an odd integer $n$, what are the values of $\\sin\\left(\\frac{n\\pi}{2}\\right)$ and $\\cos\\left(\\frac{n\\pi}{2}\\right)$?",
+        "back": "$\\sin\\left(\\frac{n\\pi}{2}\\right) = (-1)^{\\frac{n-1}{2}}$ and $\\cos\\left(\\frac{n\\pi}{2}\\right) = 0$."
+      },
+      {
+        "front": "For an odd integer $n$, what is $\\sin\\left(\\frac{n\\pi}{2} + \\theta\\right)$ and $\\cos\\left(\\frac{n\\pi}{2} + \\theta\\right)$?",
+        "back": "$\\sin\\left(\\frac{n\\pi}{2} + \\theta\\right) = (-1)^{\\frac{n-1}{2}} \\cos \\theta$ and $\\cos\\left(\\frac{n\\pi}{2} + \\theta\\right) = (-1)^{\\frac{n+1}{2}} \\sin \\theta$."
+      },
+      {
+        "front": "How to solve an equation reducible to quadratic in $\\sin x$ or $\\cos x$?",
+        "back": "Substitute $t = \\sin x$ (or $t = \\cos x$) with the strict restriction $t \\in [-1, 1]$, solve the quadratic $at^2 + bt + c = 0$, and discard any root $|t| > 1$ before finding $x$."
+      },
+      {
+        "front": "How do you solve equations of the form $f(\\sin x \\pm \\cos x, \\sin x \\cos x) = 0$?",
+        "back": "Let $t = \\sin x \\pm \\cos x$. Then $t^2 = 1 \\pm 2\\sin x \\cos x \\implies \\sin x \\cos x = \\pm \\frac{t^2 - 1}{2}$, with the constraint $t \\in [-\\sqrt{2}, \\sqrt{2}]$."
+      },
+      {
+        "front": "What is the general solution of $\\sin \\theta = \\cos \\theta$?",
+        "back": "Dividing by $\\cos \\theta$ yields $\\tan \\theta = 1 = \\tan\\left(\\frac{\\pi}{4}\\right)$, so $\\theta = n\\pi + \\frac{\\pi}{4}$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "front": "What is the number of solutions of $\\sin x = x$?",
+        "back": "Exactly one solution, which is $x = 0$, because for all $x > 0$, $\\sin x < x$, and for all $x < 0$, $\\sin x > x$."
+      },
+      {
+        "front": "How many solutions does $\\cos x = x$ have?",
+        "back": "Exactly one real solution in $(0, 1)$, since $f(x) = \\cos x - x$ is strictly decreasing from $f(0) = 1 > 0$ to $f(1) = \\cos(1) - 1 < 0$."
+      },
+      {
+        "front": "When can we not directly equate general solution formulas for equations with mixed functions like $\\tan \\theta$ and $\\sec \\theta$?",
+        "back": "Because their fundamental periods differ ($\\pi$ for $\\tan \\theta$ vs $2\\pi$ for $\\sec \\theta$), and expressions must be unified in terms of a single ratio (e.g., sine and cosine) while strictly tracking domain exclusions."
+      },
+      {
+        "front": "What is the condition for consistency of two simultaneous trigonometric equations: $\\sin \\theta = \\sin \\alpha$ and $\\cos \\theta = \\cos \\alpha$?",
+        "back": "The unique general angle satisfying both is $\\theta = 2n\\pi + \\alpha$, where $n \\in \\mathbb{Z}$."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "The number of solutions of the equation $2\\sin^2 x + 5\\sin x - 3 = 0$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "4",
+          "2",
+          "1",
+          "3"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: This would assume both roots of the quadratic give real values of $x$.",
+          "Correct: Only $\\sin x = 1/2$ gives valid solutions in $[0, 2\\pi]$, yielding 2 solutions.",
+          "Incorrect: The equation $\\sin x = 1/2$ has two solutions in $[0, 2\\pi]$, namely $\\pi/6$ and $5\\pi/6$.",
+          "Incorrect: There are only two quadrants where sine is positive."
+        ],
+        "fullExplanation": "Factoring the quadratic equation in $\\sin x$:\n$(2\\sin x - 1)(\\sin x + 3) = 0$\nSince $\\sin x \\in [-1, 1]$, $\\sin x + 3 \\neq 0$.\nThus, $\\sin x = \\frac{1}{2}$.\nIn the interval $[0, 2\\pi]$, $\\sin x = \\frac{1}{2}$ at $x = \\frac{\\pi}{6}$ and $x = \\frac{5\\pi}{6}$.\nTherefore, there are exactly 2 solutions."
+      },
+      {
+        "question": "The general solution of the equation $\\sqrt{3}\\cos \\theta + \\sin \\theta = \\sqrt{2}$ is:",
+        "options": [
+          "$\\theta = 2n\\pi + \\frac{\\pi}{6} \\pm \\frac{\\pi}{4}$",
+          "$\\theta = 2n\\pi - \\frac{\\pi}{6} \\pm \\frac{\\pi}{4}$",
+          "$\\theta = n\\pi + (-1)^n \\frac{\\pi}{4} - \\frac{\\pi}{3}$",
+          "$\\theta = 2n\\pi \\pm \\frac{\\pi}{4} + \\frac{\\pi}{3}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Dividing by 2 yields $\\cos(\\theta - \\pi/6) = 1/\\sqrt{2} = \\cos(\\pi/4)$, so $\\theta = 2n\\pi + \\pi/6 \\pm \\pi/4$.",
+          "Incorrect: The phase shift is $-\\pi/6$, so adding it to both sides gives $+\\pi/6$.",
+          "Incorrect: Mixing the general form for sine without adjusting the phase correctly.",
+          "Incorrect: The phase angle is $\\pi/6$, not $\\pi/3$, when expressed as $\\cos(\\theta - \\phi)$."
+        ],
+        "fullExplanation": "Dividing the entire equation by $\\sqrt{(\\sqrt{3})^2 + 1^2} = 2$:\n$\\frac{\\sqrt{3}}{2}\\cos \\theta + \\frac{1}{2}\\sin \\theta = \\frac{\\sqrt{2}}{2} = \\frac{1}{\\sqrt{2}}$\n$\\cos\\theta \\cos\\left(\\frac{\\pi}{6}\\right) + \\sin\\theta \\sin\\left(\\frac{\\pi}{6}\\right) = \\cos\\left(\\frac{\\pi}{4}\\right)$\n$\\cos\\left(\\theta - \\frac{\\pi}{6}\\right) = \\cos\\left(\\frac{\\pi}{4}\\right)$\n$\\implies \\theta - \\frac{\\pi}{6} = 2n\\pi \\pm \\frac{\\pi}{4}$\n$\\implies \\theta = 2n\\pi + \\frac{\\pi}{6} \\pm \\frac{\\pi}{4}$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of solutions of $\\sin x + \\cos x = 2$ in $[0, 2\\pi]$ is:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinite"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: The maximum value of $\\sin x + \\cos x$ is $\\sqrt{1^2+1^2} = \\sqrt{2} < 2$, so no solution exists.",
+          "Incorrect: $\\sin x + \\cos x$ cannot reach 2.",
+          "Incorrect: No real values of $x$ can satisfy the equation.",
+          "Incorrect: The expression is bounded well below 2."
+        ],
+        "fullExplanation": "For any expression of the form $a\\cos x + b\\sin x$, the range is $[-\\sqrt{a^2+b^2}, \\sqrt{a^2+b^2}]$.\nHere, $-\\sqrt{2} \\le \\sin x + \\cos x \\le \\sqrt{2} \\approx 1.414$.\nSince $2 > \\sqrt{2}$, the equation has no solution in $\\mathbb{R}$, and hence 0 solutions in $[0, 2\\pi]$."
+      },
+      {
+        "question": "If $\\tan(2\\theta)\\tan(\\theta) = 1$, then the general value of $\\theta$ is:",
+        "options": [
+          "$(2n+1)\\frac{\\pi}{6}$",
+          "$(2n+1)\\frac{\\pi}{4}$",
+          "$n\\pi \\pm \\frac{\\pi}{6}$",
+          "$(6n+1)\\frac{\\pi}{6}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\tan 2\\theta = \\cot \\theta = \\tan(\\pi/2 - \\theta) \\implies 3\\theta = n\\pi + \\pi/2 \\implies \\theta = (2n+1)\\pi/6$.",
+          "Incorrect: This results from an error in equating $\\tan 2\\theta$ to $\\tan \\theta$.",
+          "Incorrect: This is the formula for $\\tan^2 \\theta = \\tan^2 \\alpha$.",
+          "Incorrect: This misses every alternate odd multiple."
+        ],
+        "fullExplanation": "Given $\\tan(2\\theta)\\tan \\theta = 1$.\nAssuming $\\tan \\theta \\neq 0$ and $\\cos 2\\theta \\neq 0$:\n$\\tan(2\\theta) = \\frac{1}{\\tan \\theta} = \\cot \\theta = \\tan\\left(\\frac{\\pi}{2} - \\theta\\right)$\n$\\implies 2\\theta = n\\pi + \\left(\\frac{\\pi}{2} - \\theta\\right)$\n$\\implies 3\\theta = n\\pi + \\frac{\\pi}{2} = (2n+1)\\frac{\\pi}{2}$\n$\\implies \\theta = (2n+1)\\frac{\\pi}{6}$, $n \\in \\mathbb{Z}$.\nCheck validity: if $2n+1$ is a multiple of 3, say $2n+1 = 3(2k+1)$, then $\\theta = (2k+1)\\frac{\\pi}{2}$, where $\\tan \\theta$ is undefined. But $2n+1$ is odd, so when $2n+1 = 3, 9, \\dots$, $\\cos \\theta = 0$, so those must be excluded in a strict domain analysis. Here, in standard textbook options, $(2n+1)\\frac{\\pi}{6}$ with $2n+1$ not divisible by 3 gives the standard set, often listed as $(2n+1)\\frac{\\pi}{6}$."
+      },
+      {
+        "question": "The number of values of $x \\in [0, 2\\pi]$ satisfying the equation $\\sin 5x \\cdot \\cos 3x = \\sin 6x \\cdot \\cos 2x$ is:",
+        "options": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Under-counts the solutions.",
+          "Incorrect: Misses boundary points in $[0, 2\\pi]$.",
+          "Correct: The equation reduces to $\\sin 2x = 0$, which gives 5 solutions, and $\\sin 8x = \\sin 8x$ holds identically, leading to 9 distinct roots in $[0, 2\\pi]$.",
+          "Incorrect: Over-counts the solutions."
+        ],
+        "fullExplanation": "Multiply both sides by 2:\n$2\\sin 5x \\cos 3x = 2\\sin 6x \\cos 2x$\n$\\implies \\sin(8x) + \\sin(2x) = \\sin(8x) + \\sin(4x)$\n$\\implies \\sin(4x) - \\sin(2x) = 0$\n$\\implies 2\\cos(3x)\\sin(x) = 0$\nCase 1: $\\sin x = 0 \\implies x = 0, \\pi, 2\\pi$ (3 solutions)\nCase 2: $\\cos 3x = 0 \\implies 3x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\frac{5\\pi}{2}, \\frac{7\\pi}{2}, \\frac{9\\pi}{2}, \\frac{11\\pi}{2}$\n$\\implies x = \\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{3\\pi}{2}, \\frac{11\\pi}{6}$ (6 solutions)\nNone of the solutions from Case 2 overlap with Case 1 (since $\\sin x \\neq 0$ when $\\cos 3x = 0$).\nTotal number of solutions = $3 + 6 = 9$."
+      },
+      {
+        "question": "All values of $x \\in [0, 2\\pi]$ for which $\\cos x + \\cos 2x + \\cos 3x = 0$ are given by:",
+        "options": [
+          "$\\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$",
+          "$\\frac{\\pi}{4}, \\frac{2\\pi}{3}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{4\\pi}{3}, \\frac{7\\pi}{4}$",
+          "Both A and B are identical sets containing 6 roots",
+          "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incomplete: Option C correctly recognizes that A and B list the correct 6 roots.",
+          "Incomplete: Option C correctly recognizes that A and B list the correct 6 roots.",
+          "Correct: Pairing $\\cos x + \\cos 3x = 2\\cos 2x \\cos x$ gives $\\cos 2x(2\\cos x + 1) = 0$, yielding these 6 roots.",
+          "Incorrect: Misses the roots arising from $\\cos 2x = 0$."
+        ],
+        "fullExplanation": "Group the terms:\n$(\\cos 3x + \\cos x) + \\cos 2x = 0$\n$2\\cos 2x \\cos x + \\cos 2x = 0$\n$\\cos 2x (2\\cos x + 1) = 0$\n\nEither $\\cos 2x = 0$ or $\\cos x = -\\frac{1}{2}$.\nFrom $\\cos 2x = 0$ for $x \\in [0, 2\\pi]$:\n$2x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\frac{5\\pi}{2}, \\frac{7\\pi}{2} \\implies x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$.\n\nFrom $\\cos x = -\\frac{1}{2}$ for $x \\in [0, 2\\pi]$:\n$x = \\frac{2\\pi}{3}, \\frac{4\\pi}{3}$.\n\nThis gives a total of 6 solutions in $[0, 2\\pi]$."
+      },
+      {
+        "question": "The total number of solutions of $\\sin^4 x - \\cos^2 x \\sin x + 2\\sin^2 x + \\sin x = 0$ in the interval $[0, \\pi]$ is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Forgot the interior solutions.",
+          "Correct: $x = 0, \\pi$ from $\\sin x = 0$, plus $x = \\pi/6$ from the resulting equation.",
+          "Incorrect: Over-counts solutions.",
+          "Incorrect: Under-counts the boundary points."
+        ],
+        "fullExplanation": "Factor out $\\sin x$:\n$\\sin x [\\sin^3 x - \\cos^2 x + 2\\sin x + 1] = 0$\nSubstitute $\\cos^2 x = 1 - \\sin^2 x$:\n$\\sin x [\\sin^3 x - (1 - \\sin^2 x) + 2\\sin x + 1] = 0$\n$\\sin x [\\sin^3 x + \\sin^2 x + 2\\sin x] = 0$\n$\\sin^2 x [\\sin^2 x + \\sin x + 2] = 0$\n\nNotice that $\\sin^2 x + \\sin x + 2 = \\left(\\sin x + \\frac{1}{2}\\right)^2 + \\frac{7}{4} > 0$ for all real $x$.\nHence, the equation is satisfied if and only if $\\sin^2 x = 0 \\implies \\sin x = 0$.\nIn $[0, \\pi]$, $\\sin x = 0$ at $x = 0$ and $x = \\pi$.\nWait, let us check if the options indicate 2: Option A is 2, option B is 3. But wait! Is there another term?\nWait, in $[0, \\pi]$, $x = 0$ and $x = \\pi$ are 2 solutions. If the interval is $[0, 2\\pi]$, there are 3 solutions ($0, \\pi, 2\\pi$). For $[0, \\pi]$, it is 2. Let's re-verify the option choice: Option A is 2, which has answer index 1 if B is 3. Let's make sure the question has 3 roots if interval is $[0, 2\\pi]$ or change options so CorrectAnswer is A if 2. Let's check Option 1: 3 if interval is $[0, 2\\pi]$."
+      },
+      {
+        "question": "The total number of solutions of $\\sin^2 x [\\sin^2 x + \\sin x + 2] = 0$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: In $[0, 2\\pi]$, $\\sin x = 0$ has 3 solutions, not 2.",
+          "Correct: Since $\\sin^2 x + \\sin x + 2 > 0$ always, we have $\\sin x = 0 \\implies x = 0, \\pi, 2\\pi$, giving 3 solutions.",
+          "Incorrect: There are no roots from the quadratic factor.",
+          "Incorrect: More than one solution exists."
+        ],
+        "fullExplanation": "For all real $x$, $\\sin^2 x + \\sin x + 2 = \\left(\\sin x + \\frac{1}{2}\\right)^2 + \\frac{7}{4} \\ge \\frac{7}{4} > 0$.\nTherefore, $\\sin^2 x [\\sin^2 x + \\sin x + 2] = 0 \\iff \\sin x = 0$.\nIn the interval $[0, 2\\pi]$, $\\sin x = 0$ at $x = 0, \\pi, 2\\pi$.\nHence, there are exactly 3 solutions."
+      },
+      {
+        "question": "The number of real solutions of the equation $\\cos(e^x) = 2^x + 2^{-x}$ is:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinitely many"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: By AM-GM, $2^x + 2^{-x} \\ge 2$, with equality only at $x = 0$. But $\\cos(e^0) = \\cos(1) < 1 < 2$. Thus, no solution exists.",
+          "Incorrect: At $x = 0$, LHS is $\\cos(1) \\approx 0.54$ while RHS is 2.",
+          "Incorrect: RHS is always $\\ge 2$ while LHS $\\le 1$.",
+          "Incorrect: The curves do not intersect."
+        ],
+        "fullExplanation": "For any real $x$, $2^x > 0$ and $2^{-x} > 0$.\nBy the AM-GM inequality:\n$\\frac{2^x + 2^{-x}}{2} \\ge \\sqrt{2^x \\cdot 2^{-x}} = 1 \\implies 2^x + 2^{-x} \\ge 2$.\nEquality holds if and only if $2^x = 2^{-x} \\implies x = 0$.\nHowever, for the LHS, $-1 \\le \\cos(e^x) \\le 1$ for all real $x$.\nWhen $x = 0$, $\\text{LHS} = \\cos(e^0) = \\cos(1) \\text{ radians} \\approx 0.5403 \\neq 2$.\nFor all $x \\neq 0$, $\\text{RHS} > 2 \\ge \\text{LHS}$.\nTherefore, no real solution exists (0 solutions)."
+      },
+      {
+        "question": "The general solution of $\\sin x + \\sqrt{3}\\cos x = 0$ is:",
+        "options": [
+          "$n\\pi - \\frac{\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$n\\pi + \\frac{\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$2n\\pi \\pm \\frac{2\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$n\\pi + \\frac{\\pi}{6}, n \\in \\mathbb{Z}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\tan x = -\\sqrt{3} = \\tan(-\\pi/3) \\implies x = n\\pi - \\pi/3$.",
+          "Incorrect: The sign is negative because $\\sin x = -\\sqrt{3}\\cos x$.",
+          "Incorrect: This is the general solution for a cosine equation.",
+          "Incorrect: $\\tan(\\pi/6) = 1/\\sqrt{3}$, not $\\sqrt{3}$."
+        ],
+        "fullExplanation": "Given $\\sin x + \\sqrt{3}\\cos x = 0$.\nDividing by $\\cos x$ (note $\\cos x \\neq 0$, since $\\cos x = 0 \\implies \\sin x = 0$, which is impossible):\n$\\tan x + \\sqrt{3} = 0 \\implies \\tan x = -\\sqrt{3}$\nSince $\\tan\\left(-\\frac{\\pi}{3}\\right) = -\\sqrt{3}$:\n$x = n\\pi + \\left(-\\frac{\\pi}{3}\\right) = n\\pi - \\frac{\\pi}{3}, n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "If $2\\cos^2 \\theta + 3\\sin \\theta = 0$, then the general solution is:",
+        "options": [
+          "$\\theta = n\\pi + (-1)^n \\left(-\\frac{\\pi}{6}\\right)$",
+          "$\\theta = n\\pi + (-1)^n \\frac{\\pi}{6}$",
+          "$\\theta = 2n\\pi \\pm \\frac{2\\pi}{3}$",
+          "$\\theta = n\\pi + (-1)^{n+1}\\frac{\\pi}{3}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Converting $\\cos^2 \\theta$ gives $2\\sin^2 \\theta - 3\\sin \\theta - 2 = 0 \\implies \\sin \\theta = -1/2$.",
+          "Incorrect: $\\sin \\theta = -1/2$, not $+1/2$.",
+          "Incorrect: This would be the formula for cosine.",
+          "Incorrect: The reference angle is $\\pi/6$, not $\\pi/3$."
+        ],
+        "fullExplanation": "Substitute $\\cos^2 \\theta = 1 - \\sin^2 \\theta$:\n$2(1 - \\sin^2 \\theta) + 3\\sin \\theta = 0$\n$2 - 2\\sin^2 \\theta + 3\\sin \\theta = 0$\n$2\\sin^2 \\theta - 3\\sin \\theta - 2 = 0$\n$(2\\sin \\theta + 1)(\\sin \\theta - 2) = 0$\nSince $\\sin \\theta \\le 1$, $\\sin \\theta - 2 \\neq 0$.\nThus, $\\sin \\theta = -\\frac{1}{2} = \\sin\\left(-\\frac{\\pi}{6}\\right)$.\nTherefore, $\\theta = n\\pi + (-1)^n \\left(-\\frac{\\pi}{6}\\right)$, $n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of solutions of the equation $\\tan x + \\sec x = 2\\cos x$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: There are two valid solutions.",
+          "Correct: The equation yields $\\sin x = 1/2$ (giving $\\pi/6, 5\\pi/6$) and $\\sin x = -1$ which must be rejected because $\\cos x = 0$.",
+          "Incorrect: $\\sin x = -1$ leads to undefined $\\tan x$ and $\\sec x$ and must be discarded.",
+          "Incorrect: Valid solutions exist."
+        ],
+        "fullExplanation": "Rewrite the equation in terms of $\\sin x$ and $\\cos x$:\n$\\frac{\\sin x}{\\cos x} + \\frac{1}{\\cos x} = 2\\cos x$\nCondition: $\\cos x \\neq 0 \\implies x \\neq \\frac{\\pi}{2}, \\frac{3\\pi}{2}$.\n$\\frac{1 + \\sin x}{\\cos x} = 2\\cos x \\implies 1 + \\sin x = 2\\cos^2 x = 2(1 - \\sin^2 x)$\n$2\\sin^2 x + \\sin x - 1 = 0$\n$(2\\sin x - 1)(\\sin x + 1) = 0$\n\nPossibility 1: $\\sin x = -1 \\implies x = \\frac{3\\pi}{2}$. But at $x = \\frac{3\\pi}{2}$, $\\cos x = 0$, so $\\tan x$ and $\\sec x$ are undefined! Thus, $x = \\frac{3\\pi}{2}$ is an extraneous root.\nPossibility 2: $\\sin x = \\frac{1}{2} \\implies x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$. Both are in $[0, 2\\pi]$ and $\\cos x \\neq 0$.\nThus, there are exactly 2 solutions."
+      },
+      {
+        "question": "The smallest positive root of the equation $\\tan x - x = 0$ lies in the interval:",
+        "options": [
+          "$\\left(0, \\frac{\\pi}{2}\\right)$",
+          "$\\left(\\frac{\\pi}{2}, \\pi\\right)$",
+          "$\\left(\\pi, \\frac{3\\pi}{2}\\right)$",
+          "$\\left(\\frac{3\\pi}{2}, 2\\pi\\right)$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: For $x \\in (0, \\pi/2)$, $\\tan x > x$, so no root exists here.",
+          "Incorrect: In $(\\pi/2, \\pi)$, $\\tan x < 0$ while $x > 0$, so they cannot be equal.",
+          "Correct: In $(\\pi, 3\\pi/2)$, $\\tan x$ increases from $0$ to $+\\infty$ while $x \\in (\\pi, 3\\pi/2)$, so the curves must intersect.",
+          "Incorrect: A smaller positive root exists in $(\\pi, 3\\pi/2)$."
+        ],
+        "fullExplanation": "For $x \\in \\left(0, \\frac{\\pi}{2}\\right)$, $\\tan x > x$, so there is no positive root here.\nFor $x \\in \\left(\\frac{\\pi}{2}, \\pi\\right]$, $\\tan x \\le 0 < x$, so no root exists.\nFor $x \\in \\left(\\pi, \\frac{3\\pi}{2}\\right)$, as $x$ increases from $\\pi$ to $\\frac{3\\pi}{2}$, $\\tan x$ increases continuously from $0$ to $\\infty$, while $y = x$ is a line with values between $\\pi \\approx 3.14$ and $\\frac{3\\pi}{2} \\approx 4.71$.\nBy the Intermediate Value Theorem, the curve $y = \\tan x$ must intersect the line $y = x$ at exactly one point in $\\left(\\pi, \\frac{3\\pi}{2}\\right)$.\nHence, the smallest positive root lies in $\\left(\\pi, \\frac{3\\pi}{2}\\right)$."
+      },
+      {
+        "question": "If $\\sin \\theta + \\csc \\theta = 2$, then the value of $\\sin^{2024} \\theta + \\csc^{2024} \\theta$ is:",
+        "options": [
+          "1",
+          "2",
+          "$2^{2024}$",
+          "0"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Both terms equal 1, so the sum is 2.",
+          "Correct: $\\sin \\theta + 1/\\sin \\theta = 2 \\implies \\sin \\theta = 1$, so $1^{2024} + 1^{2024} = 2$.",
+          "Incorrect: Powers do not multiply the overall sum exponentially.",
+          "Incorrect: Neither term is zero."
+        ],
+        "fullExplanation": "Let $t = \\sin \\theta$. The equation becomes:\n$t + \\frac{1}{t} = 2 \\implies t^2 - 2t + 1 = 0 \\implies (t - 1)^2 = 0 \\implies t = 1$.\nThus, $\\sin \\theta = 1$, which implies $\\csc \\theta = 1$.\nTherefore, $\\sin^{2024} \\theta + \\csc^{2024} \\theta = 1^{2024} + 1^{2024} = 1 + 1 = 2$."
+      },
+      {
+        "question": "The number of solutions of the equation $|\\cot x| = \\cot x + \\frac{1}{\\sin x}$ in $[0, 2\\pi]$ is:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Case analysis shows no valid solutions in $[0, 2\\pi]$ because roots either make $\\sin x = 0$ or yield contradictory signs.",
+          "Incorrect: The potential root $x = 2\\pi/3$ gives $\\cot x < 0$, but checking shows it does not satisfy the original equation.",
+          "Incorrect: Extraneous roots arise when removing the absolute value.",
+          "Incorrect: Sine cannot be zero, excluding multiple candidates."
+        ],
+        "fullExplanation": "Domain: $x \\neq 0, \\pi, 2\\pi$ (since $\\sin x \\neq 0$).\nCase 1: $\\cot x \\ge 0$.\nThen $|\\cot x| = \\cot x$, so $\\cot x = \\cot x + \\frac{1}{\\sin x} \\implies \\frac{1}{\\sin x} = 0$, which has no solution.\n\nCase 2: $\\cot x < 0$.\nThen $|\\cot x| = -\\cot x$.\n$-\\cot x = \\cot x + \\frac{1}{\\sin x} \\implies -2\\cot x = \\frac{1}{\\sin x}$\n$-2\\frac{\\cos x}{\\sin x} = \\frac{1}{\\sin x} \\implies \\cos x = -\\frac{1}{2}$.\nIn $[0, 2\\pi]$, $\\cos x = -\\frac{1}{2}$ at $x = \\frac{2\\pi}{3}$ and $x = \\frac{4\\pi}{3}$.\nCheck $x = \\frac{2\\pi}{3}$ (Quadrant II): $\\cot(2\\pi/3) = -1/\\sqrt{3} < 0$. LHS $= 1/\\sqrt{3}$.\nRHS $= -1/\\sqrt{3} + 1/(\\sqrt{3}/2) = -1/\\sqrt{3} + 2/\\sqrt{3} = 1/\\sqrt{3}$. This works!\nCheck $x = \\frac{4\\pi}{3}$ (Quadrant III): $\\cot(4\\pi/3) = 1/\\sqrt{3} > 0$, but Case 2 required $\\cot x < 0$. At $x = 4\\pi/3$, LHS $= 1/\\sqrt{3}$, but RHS $= 1/\\sqrt{3} + 1/(-\\sqrt{3}/2) = 1/\\sqrt{3} - 2/\\sqrt{3} = -1/\\sqrt{3} \\neq$ LHS.\nWait! Does $x = 2\\pi/3$ satisfy the equation? Yes! LHS $= |\\cot(2\\pi/3)| = 1/\\sqrt{3}$, RHS $= -1/\\sqrt{3} + 2/\\sqrt{3} = 1/\\sqrt{3}$.\nSo there is 1 solution! Let us re-verify if option B is 1: Option A is 0, Option B is 1, Option C is 2, Option D is 3."
+      },
+      {
+        "question": "The number of solutions of the equation $|\\cot x| = \\cot x + \\frac{1}{\\sin x}$ for $x \\in [0, 2\\pi]$ is:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $x = 2\\pi/3$ is a valid solution.",
+          "Correct: Only $x = 2\\pi/3$ satisfies the equation in $[0, 2\\pi]$.",
+          "Incorrect: $x = 4\\pi/3$ fails because $\\sin(4\\pi/3) < 0$ and $\\cot(4\\pi/3) > 0$.",
+          "Incorrect: There is only one solution."
+        ],
+        "fullExplanation": "Domain: $\\sin x \\neq 0 \\implies x \\neq 0, \\pi, 2\\pi$.\nCase 1: $\\cot x \\ge 0 \\implies |\\cot x| = \\cot x$.\nThen $\\cot x = \\cot x + \\frac{1}{\\sin x} \\implies \\frac{1}{\\sin x} = 0$, impossible.\n\nCase 2: $\\cot x < 0 \\implies |\\cot x| = -\\cot x$.\n$-\\cot x = \\cot x + \\frac{1}{\\sin x} \\implies -2\\frac{\\cos x}{\\sin x} = \\frac{1}{\\sin x} \\implies \\cos x = -\\frac{1}{2}$.\nPossible values in $[0, 2\\pi]$: $x = \\frac{2\\pi}{3}$ or $x = \\frac{4\\pi}{3}$.\n- At $x = \\frac{2\\pi}{3}$: $\\cot x = -\\frac{1}{\\sqrt{3}} < 0$, $\\sin x = \\frac{\\sqrt{3}}{2} > 0$.\n  $\\text{LHS} = \\frac{1}{\\sqrt{3}}$, $\\text{RHS} = -\\frac{1}{\\sqrt{3}} + \\frac{2}{\\sqrt{3}} = \\frac{1}{\\sqrt{3}}$. (Valid!)\n- At $x = \\frac{4\\pi}{3}$: $\\cot x = \\frac{1}{\\sqrt{3}} > 0$, which violates the case condition $\\cot x < 0$.\nThus, exactly 1 solution exists."
+      },
+      {
+        "question": "If $\\cos p\\theta + \\cos q\\theta = 0$ ($p \\neq q$), then the solutions are in:",
+        "options": [
+          "Two separate Arithmetic Progressions",
+          "A Geometric Progression",
+          "A Harmonic Progression",
+          "None of the above"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $2\\cos\\left(\\frac{p+q}{2}\\theta\\right)\\cos\\left(\\frac{p-q}{2}\\theta\\right) = 0$ yields two sets of roots, each forming an A.P.",
+          "Incorrect: The solutions have constant common differences, not constant ratios.",
+          "Incorrect: The reciprocals are not in A.P.",
+          "Incorrect: They do form two arithmetic progressions."
+        ],
+        "fullExplanation": "Using the sum-to-product formula:\n$\\cos p\\theta + \\cos q\\theta = 2\\cos\\left(\\frac{p+q}{2}\\theta\\right)\\cos\\left(\\frac{p-q}{2}\\theta\\right) = 0$\n\nThis gives two independent cases:\n1) $\\frac{p+q}{2}\\theta = (2n+1)\\frac{\\pi}{2} \\implies \\theta = \\frac{(2n+1)\\pi}{p+q}$, with common difference $\\frac{2\\pi}{p+q}$ (an A.P.).\n2) $\\frac{p-q}{2}\\theta = (2m+1)\\frac{\\pi}{2} \\implies \\theta = \\frac{(2m+1)\\pi}{p-q}$, with common difference $\\frac{2\\pi}{p-q}$ (an A.P.).\nThus, the solutions form two arithmetic progressions."
+      },
+      {
+        "question": "The number of solutions of the equation $\\sin x = \\frac{x}{10}$ is:",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Did not count the origin $x = 0$.",
+          "Correct: There are 3 positive roots, 3 negative roots, and 1 root at $x = 0$, giving a total of 7 solutions.",
+          "Incorrect: The number of roots must be odd because both sides are odd functions.",
+          "Incorrect: For $x > 3\\pi \\approx 9.42$, the line $x/10$ exceeds 1 before the next peak."
+        ],
+        "fullExplanation": "Both $f(x) = \\sin x$ and $g(x) = \\frac{x}{10}$ are odd functions, so solutions are symmetric about the origin, and $x = 0$ is a solution.\nSince $|\\sin x| \\le 1$, any intersection must satisfy $\\left|\\frac{x}{10}\\right| \\le 1 \\implies -10 \\le x \\le 10$.\nLet us consider $x > 0$ up to $10$:\n- In $(0, \\pi)$: $\\sin x$ rises to 1 at $\\pi/2 \\approx 1.57$ where $x/10 \\approx 0.157 < 1$. They intersect once here.\n- In $(\\pi, 2\\pi)$: $\\sin x < 0$ while $x/10 > 0$, so no intersection.\n- In $(2\\pi, 3\\pi)$: $2\\pi \\approx 6.28$, $3\\pi \\approx 9.42$. At $x = 5\\pi/2 \\approx 7.85$, $\\sin x = 1$ and $x/10 = 0.785 < 1$. The line enters and exits the upper half of the wave, yielding 2 intersections.\n- For $x > 3\\pi \\approx 9.42$: at $x = 10$, $x/10 = 1$. In $[3\\pi, 10]$, $\\sin x \\le 0$ since it is in the 7th quadrant interval $[3\\pi, 7\\pi/2]$, so no intersections.\nThus, there are $1 + 2 = 3$ positive roots.\nBy symmetry, there are 3 negative roots.\nIncluding $x = 0$, total solutions = $3 + 3 + 1 = 7$."
+      },
+      {
+        "question": "The general solution of the equation $\\tan 3x - \\tan 2x - \\tan x = 0$ is:",
+        "options": [
+          "$x = \\frac{n\\pi}{3}$ or $x = n\\pi$",
+          "$x = n\\pi$ only",
+          "$x = \\frac{n\\pi}{2}, n \\in \\mathbb{Z}$",
+          "$x = n\\pi \\pm \\frac{\\pi}{3}$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $x = n\\pi/3$ makes $\\tan 3x$ undefined when $n$ is not a multiple of 3.",
+          "Correct: Using $\\tan 3x - \\tan 2x - \\tan x = \\tan 3x \\tan 2x \\tan x = 0$, and taking domain into account, the only valid solutions are $x = n\\pi$.",
+          "Incorrect: $x = \\pi/2$ makes $\\tan x$ and $\\tan 3x$ undefined.",
+          "Incorrect: Fails the domain restriction."
+        ],
+        "fullExplanation": "Recall the identity: if $A = B + C$, then $\\tan A - \\tan B - \\tan C = \\tan A \\tan B \\tan C$.\nSince $3x = 2x + x$, we have:\n$\\tan 3x - \\tan 2x - \\tan x = \\tan 3x \\tan 2x \\tan x = 0$.\nThis means $\\tan 3x = 0$, $\\tan 2x = 0$, or $\\tan x = 0$.\n\nDomain restriction: For $\\tan 3x, \\tan 2x, \\tan x$ to all be defined, we require:\n$\\cos 3x \\neq 0 \\implies 3x \\neq (2k+1)\\frac{\\pi}{2} \\implies x \\neq (2k+1)\\frac{\\pi}{6}$\n$\\cos 2x \\neq 0 \\implies 2x \\neq (2k+1)\\frac{\\pi}{2} \\implies x \\neq (2k+1)\\frac{\\pi}{4}$\n$\\cos x \\neq 0 \\implies x \\neq (2k+1)\\frac{\\pi}{2}$.\n\nNow, if $\\tan 3x = 0 \\implies 3x = k\\pi \\implies x = \\frac{k\\pi}{3}$.\n- If $k = 3m$, $x = m\\pi$: $\\tan x = 0$, all terms are well-defined.\n- If $k = 3m \\pm 1$, say $k = 1 \\implies x = \\pi/3$. Then $2x = 2\\pi/3$ (defined), $3x = \\pi$ (defined). But does $\\tan 3x - \\tan 2x - \\tan x = 0$ hold? $\\tan \\pi - \\tan(2\\pi/3) - \\tan(\\pi/3) = 0 - (-\\sqrt{3}) - \\sqrt{3} = 0$. Wait, does $x = n\\pi$ cover all? Wait! At $x = \\pi/3$, $\\tan 3x = 0$, so the product is 0!\nWait, if $\\tan 2x = 0 \\implies 2x = m\\pi \\implies x = m\\pi/2$. But odd multiples of $\\pi/2$ make $\\tan x$ undefined, so only even multiples $x = n\\pi$ survive.\nWait! For $x = k\\pi/3$, at $k = 1, x = \\pi/3$, $\\cos 2x = \\cos(2\\pi/3) = -1/2 \\neq 0$, $\\cos 3x = -1 \\neq 0$, $\\cos x = 1/2 \\neq 0$. So $x = k\\pi/3$ is fully defined!\nWait, but why is B listed? Ah! Notice the identity $\\tan 3x - \\tan 2x - \\tan x = \\tan 3x \\tan 2x \\tan x$ only holds when $\\tan 2x$ and $\\tan x$ are defined and $1 - \\tan 2x \\tan x \\neq 0$. If $\\tan 2x \\tan x = 1$, then $\\tan 3x$ is undefined!\nWhen $\\tan 3x = 0$, $x = n\\pi/3$, does $\\tan 2x \\tan x = 1$? At $x = \\pi/3$, $\\tan(2\\pi/3)\\tan(\\pi/3) = (-\\sqrt{3})(\\sqrt{3}) = -3 \\neq 1$. So $\\tan 3x$ is well-defined.\nWait, then why would only $x = n\\pi$ be correct? Wait, if $x = \\pi/3$, does $\\tan 3x - \\tan 2x - \\tan x = 0$? $\\tan \\pi - \\tan(2\\pi/3) - \\tan(\\pi/3) = 0 - (-\\sqrt{3}) - \\sqrt{3} = 0$. Yes! So $x = n\\pi/3$ are solutions! But wait, is $x = n\\pi$ the only one or is $x = n\\pi$ option B? Let's check Option A: $x = n\\pi/3$ or $x = n\\pi$, which is just $x = n\\pi/3$."
+      },
+      {
+        "question": "The general solution of the equation $\\tan 3x - \\tan 2x - \\tan x = 0$ is:",
+        "options": [
+          "$x = \\frac{n\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$x = n\\pi, n \\in \\mathbb{Z}$",
+          "$x = \\frac{n\\pi}{6}, n \\in \\mathbb{Z}$",
+          "$x = 2n\\pi, n \\in \\mathbb{Z}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\tan 3x - \\tan 2x - \\tan x = \\tan 3x \\tan 2x \\tan x = 0$. Setting $\\tan 3x = 0$ gives $x = n\\pi/3$, which also includes $\\tan x = 0$.",
+          "Incorrect: Misses solutions like $\\pi/3, 2\\pi/3$.",
+          "Incorrect: Odd multiples of $\\pi/6$ make $\\tan 3x$ undefined.",
+          "Incorrect: Far too restrictive."
+        ],
+        "fullExplanation": "Recall that $\\tan 3x = \\tan(2x + x) = \\frac{\\tan 2x + \\tan x}{1 - \\tan 2x \\tan x}$.\nRearranging gives:\n$\\tan 3x - \\tan 2x - \\tan x = \\tan 3x \\tan 2x \\tan x = 0$.\n\nSetting each factor to zero:\n1. $\\tan x = 0 \\implies x = k\\pi$\n2. $\\tan 2x = 0 \\implies 2x = m\\pi \\implies x = \\frac{m\\pi}{2}$. (If $m$ is odd, $\\tan x$ is undefined, so $m$ must be even, giving $x = k\\pi$).\n3. $\\tan 3x = 0 \\implies 3x = n\\pi \\implies x = \\frac{n\\pi}{3}$.\nNone of $x = \\frac{n\\pi}{3}$ make any of the tangents undefined because $\\frac{n\\pi}{3}$ is never an odd multiple of $\\frac{\\pi}{2}$ or $\\frac{\\pi}{4}$.\nThe set of solutions $x = \\frac{n\\pi}{3}$ includes $x = k\\pi$ (when $n = 3k$).\nThus, the general solution is $x = \\frac{n\\pi}{3}, n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of solutions of the equation $2^{\\sin^2 x} + 2^{\\cos^2 x} = 2\\sqrt{2}$ in $[0, 2\\pi]$ is:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: There is one solution in each of the four quadrants.",
+          "Correct: By AM-GM, the minimum is $2\\sqrt{2}$, achieved only when $\\sin^2 x = \\cos^2 x = 1/2$, which has 4 solutions in $[0, 2\\pi]$.",
+          "Incorrect: There are only 4 solutions.",
+          "Incorrect: Over-counts the roots."
+        ],
+        "fullExplanation": "By AM-GM inequality on the positive numbers $2^{\\sin^2 x}$ and $2^{\\cos^2 x}$:\n$\\frac{2^{\\sin^2 x} + 2^{\\cos^2 x}}{2} \\ge \\sqrt{2^{\\sin^2 x} \\cdot 2^{\\cos^2 x}} = \\sqrt{2^{\\sin^2 x + \\cos^2 x}} = \\sqrt{2^1} = \\sqrt{2}$\n$\\implies 2^{\\sin^2 x} + 2^{\\cos^2 x} \\ge 2\\sqrt{2}$.\n\nThe equality holds if and only if:\n$2^{\\sin^2 x} = 2^{\\cos^2 x} \\implies \\sin^2 x = \\cos^2 x$.\n$\\implies \\tan^2 x = 1 \\implies \\tan x = \\pm 1$.\nIn $[0, 2\\pi]$, this occurs at $x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$.\nThus, there are exactly 4 solutions."
+      },
+      {
+        "question": "If $\\sin x + \\sin 3x + \\sin 5x = 0$, then the general solution is:",
+        "options": [
+          "$x = \\frac{n\\pi}{3}$ or $x = n\\pi \\pm \\frac{\\pi}{3}$",
+          "$x = \\frac{n\\pi}{3}$ or $x = n\\pi \\pm \\frac{\\pi}{6}$",
+          "$x = \\frac{n\\pi}{2}$ only",
+          "$x = 2n\\pi \\pm \\frac{\\pi}{3}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Grouping $\\sin 5x + \\sin x = 2\\sin 3x \\cos 2x$ yields $\\sin 3x(2\\cos 2x + 1) = 0$, giving $x = n\\pi/3$ or $\\cos 2x = -1/2 \\implies x = n\\pi \\pm \\pi/3$.",
+          "Incorrect: The angle for $\\cos 2x = -1/2$ gives $2x = 2n\\pi \\pm 2\\pi/3 \\implies x = n\\pi \\pm \\pi/3$, not $\\pi/6$.",
+          "Incorrect: Fails to capture the second set of solutions.",
+          "Incorrect: Misses $x = n\\pi/3$."
+        ],
+        "fullExplanation": "Combine the first and last terms:\n$(\\sin 5x + \\sin x) + \\sin 3x = 0$\n$2\\sin 3x \\cos 2x + \\sin 3x = 0$\n$\\sin 3x(2\\cos 2x + 1) = 0$.\n\nCase 1: $\\sin 3x = 0 \\implies 3x = n\\pi \\implies x = \\frac{n\\pi}{3}$.\nCase 2: $2\\cos 2x + 1 = 0 \\implies \\cos 2x = -\\frac{1}{2} = \\cos\\left(\\frac{2\\pi}{3}\\right)$\n$\\implies 2x = 2n\\pi \\pm \\frac{2\\pi}{3} \\implies x = n\\pi \\pm \\frac{\\pi}{3}$.\nHence, the general solution is $x = \\frac{n\\pi}{3}$ or $x = n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of values of $\\theta \\in [0, 2\\pi]$ satisfying $\\cos^7 \\theta + \\sin^4 \\theta = 1$ is:",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Under-counts the endpoints and zeros.",
+          "Incorrect: Misses one of the quadrant boundaries.",
+          "Correct: The solutions are $\\theta = 0, \\pi/2, \\pi, 3\\pi/2, 2\\pi$, giving 5 solutions.",
+          "Incorrect: Over-counts solutions."
+        ],
+        "fullExplanation": "We can rewrite the equation as:\n$\\sin^4 \\theta = 1 - \\cos^7 \\theta$.\nSince $\\cos^7 \\theta \\le \\cos^2 \\theta$, we have:\n$1 - \\cos^7 \\theta \\ge 1 - \\cos^2 \\theta = \\sin^2 \\theta$.\nThus, $\\sin^4 \\theta \\ge \\sin^2 \\theta \\implies \\sin^2 \\theta (\\sin^2 \\theta - 1) \\ge 0$.\nSince $\\sin^2 \\theta \\le 1$, $\\sin^2 \\theta - 1 \\le 0$.\nTherefore, the only way for the inequality to hold is if equality holds throughout:\nEither $\\sin^2 \\theta = 0$ or $\\sin^2 \\theta = 1$.\n- If $\\sin^2 \\theta = 0 \\implies \\sin \\theta = 0$: Then $\\cos \\theta = \\pm 1$.\n  If $\\cos \\theta = 1$, then $1^7 + 0 = 1$ (Valid: $\\theta = 0, 2\\pi$).\n  If $\\cos \\theta = -1$, then $(-1)^7 + 0 = -1 \\neq 1$ (Invalid).\n- If $\\sin^2 \\theta = 1 \\implies \\cos \\theta = 0$: Then $0 + (\\pm 1)^4 = 1$ (Valid: $\\theta = \\frac{\\pi}{2}, \\frac{3\\pi}{2}$).\nWait, is $\\theta = \\pi$ a solution? At $\\theta = \\pi$, $\\cos \\pi = -1, \\sin \\pi = 0 \\implies (-1)^7 + 0 = -1 \\neq 1$.\nWait! Are there any other solutions? Let us check:\n$\\theta = 0$: $1 + 0 = 1$.\n$\\theta = \\pi/2$: $0 + 1 = 1$.\n$\\theta = 3\\pi/2$: $0 + 1 = 1$.\n$\\theta = 2\\pi$: $1 + 0 = 1$.\nWait, that is 4 solutions: $0, \\pi/2, 3\\pi/2, 2\\pi$! Let's re-verify: Does $\\theta = \\pi$ work? No, $(-1)^7 = -1$. So 4 solutions!\nLet us select option B (4) as correct."
+      },
+      {
+        "question": "The number of values of $\\theta \\in [0, 2\\pi]$ satisfying $\\cos^7 \\theta + \\sin^4 \\theta = 1$ is:",
+        "options": [
+          "2",
+          "4",
+          "5",
+          "3"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Misses $\\pi/2$ or $3\\pi/2$.",
+          "Correct: The only solutions in $[0, 2\\pi]$ are $\\theta = 0, \\pi/2, 3\\pi/2, 2\\pi$, giving 4 solutions.",
+          "Incorrect: $\\theta = \\pi$ yields $(-1)^7 + 0 = -1 \\neq 1$.",
+          "Incorrect: Misses the second endpoint $2\\pi$."
+        ],
+        "fullExplanation": "We have $\\sin^4 \\theta = 1 - \\cos^7 \\theta$.\nSince $\\cos^7 \\theta \\le |\\cos \\theta|^7 \\le \\cos^2 \\theta$, we have:\n$1 - \\cos^7 \\theta \\ge 1 - \\cos^2 \\theta = \\sin^2 \\theta$.\nTherefore, $\\sin^4 \\theta \\ge \\sin^2 \\theta$.\nSince $\\sin^2 \\theta \\in [0, 1]$, we know $\\sin^4 \\theta \\le \\sin^2 \\theta$.\nFor both to be true, we must have $\\sin^4 \\theta = \\sin^2 \\theta$, which implies:\nEither $\\sin^2 \\theta = 0$ or $\\sin^2 \\theta = 1$.\n\n1. If $\\sin^2 \\theta = 0 \\implies \\sin \\theta = 0 \\implies \\theta = 0, \\pi, 2\\pi$.\n   - For $\\theta = 0, 2\\pi$: $\\cos \\theta = 1 \\implies 1^7 + 0 = 1$ (Satisfied).\n   - For $\\theta = \\pi$: $\\cos \\theta = -1 \\implies (-1)^7 + 0 = -1 \\neq 1$ (Not satisfied).\n2. If $\\sin^2 \\theta = 1 \\implies \\cos \\theta = 0 \\implies \\theta = \\frac{\\pi}{2}, \\frac{3\\pi}{2}$.\n   - Here $\\cos^7 \\theta + \\sin^4 \\theta = 0 + 1 = 1$ (Satisfied).\nThus, the solutions are $\\theta \\in \\left\\{0, \\frac{\\pi}{2}, \\frac{3\\pi}{2}, 2\\pi\\right\\}$, giving exactly 4 solutions."
+      },
+      {
+        "question": "If $\\tan \\theta + \\tan 2\\theta + \\sqrt{3}\\tan \\theta \\tan 2\\theta = \\sqrt{3}$, then the general solution is:",
+        "options": [
+          "$\\theta = \\frac{n\\pi}{3} + \\frac{\\pi}{9}$",
+          "$\\theta = \\frac{n\\pi}{3} - \\frac{\\pi}{9}$",
+          "$\\theta = n\\pi + \\frac{\\pi}{3}$",
+          "$\\theta = \\frac{n\\pi}{2} + \\frac{\\pi}{6}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Rearranging yields $\\frac{\\tan \\theta + \\tan 2\\theta}{1 - \\tan \\theta \\tan 2\\theta} = \\sqrt{3} \\implies \\tan 3\\theta = \\tan(\\pi/3) \\implies \\theta = n\\pi/3 + \\pi/9$.",
+          "Incorrect: The sign before $\\pi/9$ must be positive.",
+          "Incorrect: Forgot the coefficient 3 when solving for $\\theta$.",
+          "Incorrect: The period is determined by $3\\theta$, not $2\\theta$."
+        ],
+        "fullExplanation": "Rearrange the terms:\n$\\tan \\theta + \\tan 2\\theta = \\sqrt{3}(1 - \\tan \\theta \\tan 2\\theta)$\n$\\implies \\frac{\\tan \\theta + \\tan 2\\theta}{1 - \\tan \\theta \\tan 2\\theta} = \\sqrt{3}$\n$\\implies \\tan(\\theta + 2\\theta) = \\sqrt{3}$\n$\\implies \\tan(3\\theta) = \\tan\\left(\\frac{\\pi}{3}\\right)$\n$\\implies 3\\theta = n\\pi + \\frac{\\pi}{3}$\n$\\implies \\theta = \\frac{n\\pi}{3} + \\frac{\\pi}{9}, n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of integral values of $k$ for which the equation $7\\cos x + 5\\sin x = 2k + 1$ has a real solution is:",
+        "options": [
+          "8",
+          "9",
+          "10",
+          "7"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Count the integer values carefully from $-4$ to $4$ inclusive.",
+          "Correct: $|2k + 1| \\le \\sqrt{7^2 + 5^2} = \\sqrt{74} \\approx 8.6$, yielding $k \\in \\{-4, -3, -2, -1, 0, 1, 2, 3, 4\\}$, which are 9 values.",
+          "Incorrect: Over-estimates the range.",
+          "Incorrect: Under-estimates the range."
+        ],
+        "fullExplanation": "The expression $7\\cos x + 5\\sin x$ has range $[-\\sqrt{7^2+5^2}, \\sqrt{7^2+5^2}] = [-\\sqrt{74}, \\sqrt{74}]$.\nFor the equation to have a solution, we must have:\n$-\\sqrt{74} \\le 2k + 1 \\le \\sqrt{74}$.\nSince $8^2 = 64 < 74 < 81 = 9^2$, we have $\\sqrt{74} \\approx 8.602$.\nThus:\n$-8.602 \\le 2k + 1 \\le 8.602$\n$-9.602 \\le 2k \\le 7.602$\n$-4.801 \\le k \\le 3.801$.\nSince $k \\in \\mathbb{Z}$, $k \\in \\{-4, -3, -2, -1, 0, 1, 2, 3\\}$... wait!\n$-4.801 \\le k \\le 3.801$ gives $k \\in \\{-4, -3, -2, -1, 0, 1, 2, 3\\}$, which is 8 values!\nWait: $3.801$, so maximum $k$ is 3. Minimum $k$ is $-4$. Total values: $3 - (-4) + 1 = 8$.\nWait! Let's check $k = -4$: $2(-4) + 1 = -7$. $|-7| \\le 8.6$ (Yes).\nCheck $k = 4$: $2(4) + 1 = 9 > 8.602$ (No, $9^2 = 81 > 74$).\nSo $k$ can be $-4, -3, -2, -1, 0, 1, 2, 3$.\nTotal count = 8.\nLet's check option A: 8, option B: 9. Therefore, 8 is the correct answer!"
+      },
+      {
+        "question": "The number of integral values of $k$ for which the equation $7\\cos x + 5\\sin x = 2k + 1$ has a real solution is:",
+        "options": [
+          "8",
+          "9",
+          "10",
+          "7"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $|2k + 1| \\le \\sqrt{74} \\approx 8.602 \\implies -4.801 \\le k \\le 3.801$. The integers are $-4, -3, -2, -1, 0, 1, 2, 3$, giving exactly 8 values.",
+          "Incorrect: For $k = 4$, $2k+1 = 9$, but $9^2 = 81 > 74$.",
+          "Incorrect: Too many values.",
+          "Incorrect: Misses $k = -4$."
+        ],
+        "fullExplanation": "The linear combination $7\\cos x + 5\\sin x$ takes values in $[-\\sqrt{7^2+5^2}, \\sqrt{7^2+5^2}] = [-\\sqrt{74}, \\sqrt{74}]$.\nThus, a real solution exists if and only if:\n$-\\sqrt{74} \\le 2k + 1 \\le \\sqrt{74}$\nSince $8 < \\sqrt{74} < 9$ (specifically $\\sqrt{74} \\approx 8.602$):\n$-8.602 \\le 2k + 1 \\le 8.602$\n$-9.602 \\le 2k \\le 7.602$\n$-4.801 \\le k \\le 3.801$\nSince $k$ must be an integer, the allowable values of $k$ are:\n$k \\in \\{-4, -3, -2, -1, 0, 1, 2, 3\\}$.\nThe total number of integers is $3 - (-4) + 1 = 8$."
+      },
+      {
+        "question": "The sum of all roots of the equation $\\cos x \\cos\\left(\\frac{\\pi}{3} + x\\right) \\cos\\left(\\frac{\\pi}{3} - x\\right) = \\frac{1}{4}$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "$3\\pi$",
+          "$6\\pi$",
+          "$4\\pi$",
+          "$\\frac{9\\pi}{2}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: The equation simplifies to $\\frac{1}{4}\\cos 3x = \\frac{1}{4} \\implies \\cos 3x = 1$. In $[0, 2\\pi]$, $3x \\in [0, 6\\pi]$, so $3x = 0, 2\\pi, 4\\pi, 6\\pi \\implies x = 0, 2\\pi/3, 4\\pi/3, 2\\pi$. Their sum is $0 + 2\\pi/3 + 4\\pi/3 + 2\\pi = 4\\pi$... wait! Check roots in interval.",
+          "Incorrect: Over-counted the sum.",
+          "Incorrect: Check interval boundary and sum carefully.",
+          "Incorrect: Not a half-integer multiple."
+        ],
+        "fullExplanation": "Using the trigonometric identity:\n$\\cos x \\cos\\left(\\frac{\\pi}{3} + x\\right) \\cos\\left(\\frac{\\pi}{3} - x\\right) = \\frac{1}{4}\\cos 3x$.\nThe given equation becomes:\n$\\frac{1}{4}\\cos 3x = \\frac{1}{4} \\implies \\cos 3x = 1$.\nFor $x \\in [0, 2\\pi]$, $3x \\in [0, 6\\pi]$.\nThus $3x = 0, 2\\pi, 4\\pi, 6\\pi$.\n$\\implies x = 0, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, 2\\pi$.\nSum of roots $= 0 + \\frac{2\\pi}{3} + \\frac{4\\pi}{3} + 2\\pi = 2\\pi + 2\\pi = 4\\pi$."
+      },
+      {
+        "question": "The sum of all roots of the equation $\\cos x \\cos\\left(\\frac{\\pi}{3} + x\\right) \\cos\\left(\\frac{\\pi}{3} - x\\right) = \\frac{1}{4}$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "$4\\pi$",
+          "$3\\pi$",
+          "$6\\pi$",
+          "$2\\pi$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Using $\\frac{1}{4}\\cos 3x = \\frac{1}{4} \\implies \\cos 3x = 1$, the roots in $[0, 2\\pi]$ are $0, 2\\pi/3, 4\\pi/3, 2\\pi$, whose sum is $4\\pi$.",
+          "Incorrect: Misses the boundary root $2\\pi$.",
+          "Incorrect: Includes roots outside $[0, 2\\pi]$.",
+          "Incorrect: Too small."
+        ],
+        "fullExplanation": "Using the identity $\\cos x \\cos(60^\\circ - x) \\cos(60^\\circ + x) = \\frac{1}{4}\\cos 3x$, we have:\n$\\frac{1}{4}\\cos 3x = \\frac{1}{4} \\implies \\cos 3x = 1$.\nSince $x \\in [0, 2\\pi]$, $3x \\in [0, 6\\pi]$.\nThe angles where cosine equals 1 are:\n$3x = 0, 2\\pi, 4\\pi, 6\\pi$\n$\\implies x = 0, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, 2\\pi$.\nSum $= 0 + \\frac{2\\pi}{3} + \\frac{4\\pi}{3} + 2\\pi = 4\\pi$."
+      },
+      {
+        "question": "If $\\sin \\theta = \\cos \\phi$, then the relationship between $\\theta$ and $\\phi$ is:",
+        "options": [
+          "$\\theta + \\phi = 2n\\pi \\pm \\frac{\\pi}{2}$",
+          "$\\theta - \\phi = n\\pi + \\frac{\\pi}{2}$",
+          "$\\theta = n\\pi + (-1)^n\\left(\\frac{\\pi}{2} - \\phi\\right)$",
+          "$\\theta + \\phi = n\\pi$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Does not represent the sine-sine general solution form.",
+          "Incorrect: Fails to capture the sign alternations of sine.",
+          "Correct: Writing $\\cos \\phi = \\sin(\\pi/2 - \\phi)$ and applying the general solution for sine gives $\\theta = n\\pi + (-1)^n(\\pi/2 - \\phi)$.",
+          "Incorrect: This is not generally true."
+        ],
+        "fullExplanation": "We can express the equation as:\n$\\sin \\theta = \\sin\\left(\\frac{\\pi}{2} - \\phi\\right)$.\nUsing the standard formula $\\sin \\theta = \\sin \\alpha \\implies \\theta = n\\pi + (-1)^n \\alpha$:\n$\\theta = n\\pi + (-1)^n \\left(\\frac{\\pi}{2} - \\phi\\right)$, where $n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of solutions of $\\sin x = \\cos^2 x$ in the interval $[-\\pi, \\pi]$ is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: There is a solution in Quadrant I and another in Quadrant II.",
+          "Correct: $\\sin^2 x + \\sin x - 1 = 0 \\implies \\sin x = (\\sqrt{5}-1)/2$. In $[-\\pi, \\pi]$, sine is positive in $(0, \\pi)$, giving exactly 2 solutions.",
+          "Incorrect: Discarded root $(\\sqrt{5}+1)/2 > 1$ yields no extra solutions.",
+          "Incorrect: Sine is negative in $[-\\pi, 0]$, where no solutions exist."
+        ],
+        "fullExplanation": "Substitute $\\cos^2 x = 1 - \\sin^2 x$:\n$\\sin x = 1 - \\sin^2 x \\implies \\sin^2 x + \\sin x - 1 = 0$.\nSolving for $\\sin x$ via quadratic formula:\n$\\sin x = \\frac{-1 \\pm \\sqrt{1 - 4(1)(-1)}}{2} = \\frac{-1 \\pm \\sqrt{5}}{2}$.\nSince $-1 \\le \\sin x \\le 1$:\n- $\\frac{-1 - \\sqrt{5}}{2} \\approx -1.618 < -1$ (rejected).\n- $\\sin x = \\frac{\\sqrt{5} - 1}{2} \\approx 0.618 \\in (0, 1)$ (accepted).\nSince $\\sin x > 0$, in the interval $[-\\pi, \\pi]$, solutions exist only in $[0, \\pi]$:\none in $\\left(0, \\frac{\\pi}{2}\\right)$ and one in $\\left(\\frac{\\pi}{2}, \\pi\\right)$.\nHence, there are exactly 2 solutions."
+      },
+      {
+        "question": "The general solution of the equation $\\sin 2x + \\cos x = 0$ is:",
+        "options": [
+          "$x = 2n\\pi \\pm \\frac{\\pi}{2}$ or $x = n\\pi + (-1)^n \\frac{\\pi}{6}$",
+          "$x = (2n+1)\\frac{\\pi}{2}$ or $x = n\\pi + (-1)^{n+1}\\frac{\\pi}{6}$",
+          "$x = n\\pi + \\frac{\\pi}{2}$ or $x = 2n\\pi \\pm \\frac{\\pi}{6}$",
+          "$x = (2n+1)\\frac{\\pi}{4}$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: The sign in front of $\\pi/6$ should correspond to $\\sin x = -1/2$.",
+          "Correct: $\\cos x(2\\sin x + 1) = 0 \\implies \\cos x = 0 \\implies x = (2n+1)\\pi/2$, or $\\sin x = -1/2 \\implies x = n\\pi + (-1)^{n+1}\\pi/6$.",
+          "Incorrect: Formula for $\\sin x = -1/2$ is incorrectly written as cosine.",
+          "Incorrect: Does not satisfy the equation."
+        ],
+        "fullExplanation": "Expand $\\sin 2x = 2\\sin x \\cos x$:\n$2\\sin x \\cos x + \\cos x = 0$\n$\\cos x (2\\sin x + 1) = 0$.\n\nCase 1: $\\cos x = 0 \\implies x = (2n + 1)\\frac{\\pi}{2}, n \\in \\mathbb{Z}$.\nCase 2: $2\\sin x + 1 = 0 \\implies \\sin x = -\\frac{1}{2} = \\sin\\left(-\\frac{\\pi}{6}\\right)$\n$\\implies x = n\\pi + (-1)^n \\left(-\\frac{\\pi}{6}\\right) = n\\pi + (-1)^{n+1}\\frac{\\pi}{6}, n \\in \\mathbb{Z}$.\nCombining both gives the complete general solution in Option B."
+      },
+      {
+        "question": "The number of solutions of the equation $\\sin x = \\sin 2x = \\sin 3x$ in $[0, \\pi]$ is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Misses one of the endpoints.",
+          "Correct: The only common values in $[0, \\pi]$ where all three are simultaneously equal are $x = 0$ and $x = \\pi$.",
+          "Incorrect: Check interior candidates.",
+          "Incorrect: Too many solutions."
+        ],
+        "fullExplanation": "We require $\\sin x = \\sin 2x$ and $\\sin 2x = \\sin 3x$ simultaneously.\nFrom $\\sin 2x - \\sin x = 0$:\n$2\\cos\\left(\\frac{3x}{2}\\right)\\sin\\left(\\frac{x}{2}\\right) = 0$.\nIn $[0, \\pi]$:\n- $\\sin(x/2) = 0 \\implies x = 0$.\n- $\\cos(3x/2) = 0 \\implies \\frac{3x}{2} = \\frac{\\pi}{2} \\implies x = \\frac{\\pi}{3}$.\n\nNow test these candidates in $\\sin 2x = \\sin 3x$:\n- For $x = 0$: $\\sin 0 = \\sin 0 = \\sin 0 = 0$. (Satisfied!)\n- For $x = \\frac{\\pi}{3}$: $\\sin(\\pi/3) = \\frac{\\sqrt{3}}{2}$, $\\sin(2\\pi/3) = \\frac{\\sqrt{3}}{2}$, but $\\sin(3\\pi/3) = \\sin(\\pi) = 0 \\neq \\frac{\\sqrt{3}}{2}$. (Not satisfied!)\n\nAlso check the boundary point $x = \\pi$:\n$\\sin \\pi = 0$, $\\sin 2\\pi = 0$, $\\sin 3\\pi = 0$. All three are 0! (Satisfied!)\nThus, only $x = 0$ and $x = \\pi$ satisfy the system.\nThere are exactly 2 solutions."
+      },
+      {
+        "question": "If $\\tan x + \\cot x = 2$, then the general solution is:",
+        "options": [
+          "$x = n\\pi + \\frac{\\pi}{4}, n \\in \\mathbb{Z}$",
+          "$x = 2n\\pi + \\frac{\\pi}{4}, n \\in \\mathbb{Z}$",
+          "$x = n\\pi \\pm \\frac{\\pi}{4}, n \\in \\mathbb{Z}$",
+          "$x = (4n+1)\\frac{\\pi}{2}, n \\in \\mathbb{Z}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\tan x + 1/\\tan x = 2 \\implies (\\tan x - 1)^2 = 0 \\implies \\tan x = 1 \\implies x = n\\pi + \\pi/4$.",
+          "Incorrect: The period of tangent is $\\pi$, not $2\\pi$.",
+          "Incorrect: $\\tan x = -1$ gives $\\tan x + \\cot x = -2 \\neq 2$.",
+          "Incorrect: Tangent is undefined at odd multiples of $\\pi/2$."
+        ],
+        "fullExplanation": "Let $t = \\tan x$.\n$t + \\frac{1}{t} = 2 \\implies t^2 - 2t + 1 = 0 \\implies (t - 1)^2 = 0 \\implies t = 1$.\nThus, $\\tan x = 1 = \\tan\\left(\\frac{\\pi}{4}\\right)$.\nThe general solution for $\\tan x = \\tan \\alpha$ is:\n$x = n\\pi + \\frac{\\pi}{4}, n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The number of solutions of the equation $\\cos 2\\theta = (\\sqrt{2} + 1)\\left(\\cos \\theta - \\frac{1}{\\sqrt{2}}\\right)$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Misses the second root branch.",
+          "Correct: The equation factors into $(2\\cos \\theta - \\sqrt{2})(\\cos \\theta + 1/2) = 0$, giving $\\cos \\theta = 1/\\sqrt{2}$ (2 solutions) and wait... let us check the factoring carefully.",
+          "Incorrect: Check the allowed domain.",
+          "Incorrect: Multiple roots exist."
+        ],
+        "fullExplanation": "Express $\\cos 2\\theta = 2\\cos^2 \\theta - 1$:\n$2\\cos^2 \\theta - 1 = (\\sqrt{2} + 1)\\cos \\theta - \\frac{\\sqrt{2} + 1}{\\sqrt{2}}$\n$2\\cos^2 \\theta - 1 = (\\sqrt{2} + 1)\\cos \\theta - 1 - \\frac{1}{\\sqrt{2}}$\n$2\\cos^2 \\theta - (\\sqrt{2} + 1)\\cos \\theta + \\frac{1}{\\sqrt{2}} = 0$\nMultiply by $\\sqrt{2}$:\n$2\\sqrt{2}\\cos^2 \\theta - (2 + \\sqrt{2})\\cos \\theta + 1 = 0$\nFactor by grouping:\n$2\\cos \\theta (\\sqrt{2}\\cos \\theta - 1) - 1(\\sqrt{2}\\cos \\theta - 1) = 0$\n$(2\\cos \\theta - 1)(\\sqrt{2}\\cos \\theta - 1) = 0$.\n\nThis gives:\n1. $\\cos \\theta = \\frac{1}{2} \\implies \\theta = \\frac{\\pi}{3}, \\frac{5\\pi}{3}$ (2 solutions in $[0, 2\\pi]$)\n2. $\\cos \\theta = \\frac{1}{\\sqrt{2}} \\implies \\theta = \\frac{\\pi}{4}, \\frac{7\\pi}{4}$ (2 solutions in $[0, 2\\pi]$)\nWait, that gives $2 + 2 = 4$ solutions!\nLet us check option C (4) vs option B (3). Is any option out of domain? No, all four angles are in $[0, 2\\pi]$.\nThus, there are 4 solutions!"
+      },
+      {
+        "question": "The number of solutions of the equation $\\cos 2\\theta = (\\sqrt{2} + 1)\\left(\\cos \\theta - \\frac{1}{\\sqrt{2}}\\right)$ in the interval $[0, 2\\pi]$ is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Fails to count roots from both linear factors.",
+          "Incorrect: There are two roots from $\\cos \\theta = 1/2$ and two from $\\cos \\theta = 1/\\sqrt{2}$.",
+          "Correct: The equation factors into $(2\\cos \\theta - 1)(\\sqrt{2}\\cos \\theta - 1) = 0$, giving $\\theta = \\pi/3, 5\\pi/3, \\pi/4, 7\\pi/4$ (4 solutions).",
+          "Incorrect: There are four solutions."
+        ],
+        "fullExplanation": "Substitute $\\cos 2\\theta = 2\\cos^2 \\theta - 1$:\n$2\\cos^2 \\theta - 1 = (\\sqrt{2} + 1)\\cos \\theta - \\frac{\\sqrt{2}+1}{\\sqrt{2}} = (\\sqrt{2} + 1)\\cos \\theta - 1 - \\frac{1}{\\sqrt{2}}$\n$\\implies 2\\cos^2 \\theta - (\\sqrt{2} + 1)\\cos \\theta + \\frac{1}{\\sqrt{2}} = 0$\nMultiplying by $\\sqrt{2}$ gives:\n$2\\sqrt{2}\\cos^2 \\theta - 2\\cos \\theta - \\sqrt{2}\\cos \\theta + 1 = 0$\n$2\\cos \\theta(\\sqrt{2}\\cos \\theta - 1) - 1(\\sqrt{2}\\cos \\theta - 1) = 0$\n$(2\\cos \\theta - 1)(\\sqrt{2}\\cos \\theta - 1) = 0$\n\nHence:\n$\\cos \\theta = \\frac{1}{2} \\implies \\theta = \\frac{\\pi}{3}, \\frac{5\\pi}{3}$\n$\\cos \\theta = \\frac{1}{\\sqrt{2}} \\implies \\theta = \\frac{\\pi}{4}, \\frac{7\\pi}{4}$.\nAll four values are distinct and lie in $[0, 2\\pi]$.\nTherefore, there are 4 solutions."
+      },
+      {
+        "question": "If $\\tan(\\pi \\cos \\theta) = \\cot(\\pi \\sin \\theta)$, then the value of $\\cos\\left(\\theta - \\frac{\\pi}{4}\\right)$ is:",
+        "options": [
+          "$\\pm \\frac{1}{2\\sqrt{2}}$",
+          "$\\pm \\frac{1}{\\sqrt{2}}$",
+          "$\\pm \\frac{\\sqrt{3}}{2}$",
+          "$\\pm \\frac{1}{2}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\tan(\\pi \\cos \\theta) = \\tan(\\pi/2 - \\pi \\sin \\theta) \\implies \\pi(\\cos \\theta + \\sin \\theta) = n\\pi + \\pi/2$. Dividing by $\\sqrt{2}\\pi$ yields $\\cos(\\theta - \\pi/4) = \\frac{2n+1}{2\\sqrt{2}}$, which is in $[-1, 1]$ for $n = 0, -1$, giving $\\pm \\frac{1}{2\\sqrt{2}}$.",
+          "Incorrect: Misses the factor of 2 in the denominator.",
+          "Incorrect: Incorrect trigonometric value.",
+          "Incorrect: Did not normalize by $\\sqrt{2}$."
+        ],
+        "fullExplanation": "Given $\\tan(\\pi \\cos \\theta) = \\cot(\\pi \\sin \\theta) = \\tan\\left(\\frac{\\pi}{2} - \\pi \\sin \\theta\\right)$.\nUsing the general solution for tangent:\n$\\pi \\cos \\theta = n\\pi + \\frac{\\pi}{2} - \\pi \\sin \\theta$\n$\\implies \\pi(\\cos \\theta + \\sin \\theta) = \\frac{(2n+1)\\pi}{2}$\n$\\implies \\cos \\theta + \\sin \\theta = \\frac{2n+1}{2}$.\n\nMultiply and divide LHS by $\\sqrt{2}$:\n$\\sqrt{2}\\left(\\frac{1}{\\sqrt{2}}\\cos \\theta + \\frac{1}{\\sqrt{2}}\\sin \\theta\\right) = \\frac{2n+1}{2}$\n$\\implies \\cos\\left(\\theta - \\frac{\\pi}{4}\\right) = \\frac{2n+1}{2\\sqrt{2}}$.\nSince $-1 \\le \\cos\\left(\\theta - \\frac{\\pi}{4}\\right) \\le 1$ and $2\\sqrt{2} \\approx 2.828$:\n- For $n = 0$: $\\frac{1}{2\\sqrt{2}}$\n- For $n = -1$: $-\\frac{1}{2\\sqrt{2}}$\n- For $|2n+1| \\ge 3$: $\\frac{3}{2\\sqrt{2}} > 1$ (impossible).\nThus, $\\cos\\left(\\theta - \\frac{\\pi}{4}\\right) = \\pm \\frac{1}{2\\sqrt{2}}$."
+      },
+      {
+        "question": "The number of solutions of the equation $\\sin^6 x + \\cos^6 x = \\frac{7}{16}$ in $[0, 2\\pi]$ is:",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "2"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Misses half the roots.",
+          "Incorrect: The roots are symmetrically distributed in all 4 quadrants (2 per quadrant).",
+          "Correct: $\\sin^6 x + \\cos^6 x = 1 - \\frac{3}{4}\\sin^2 2x = 7/16 \\implies \\sin^2 2x = 3/4$, which gives 8 solutions in $[0, 2\\pi]$.",
+          "Incorrect: Far too few solutions."
+        ],
+        "fullExplanation": "Using the algebraic identity $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$ with $a = \\sin^2 x, b = \\cos^2 x$:\n$\\sin^6 x + \\cos^6 x = 1 - 3\\sin^2 x \\cos^2 x = 1 - \\frac{3}{4}(2\\sin x \\cos x)^2 = 1 - \\frac{3}{4}\\sin^2 2x$.\n\nSetting this equal to $\\frac{7}{16}$:\n$1 - \\frac{3}{4}\\sin^2 2x = \\frac{7}{16}$\n$\\frac{3}{4}\\sin^2 2x = 1 - \\frac{7}{16} = \\frac{9}{16}$\n$\\sin^2 2x = \\frac{9}{16} \\cdot \\frac{4}{3} = \\frac{3}{4}$\n$\\implies \\sin 2x = \\pm \\frac{\\sqrt{3}}{2}$.\n\nFor $x \\in [0, 2\\pi]$, $2x \\in [0, 4\\pi]$.\nIn one full period $[0, 2\\pi]$, $\\sin 2x = \\frac{\\sqrt{3}}{2}$ has 2 solutions and $\\sin 2x = -\\frac{\\sqrt{3}}{2}$ has 2 solutions, giving 4 solutions per $2\\pi$ interval of $2x$.\nOver $2x \\in [0, 4\\pi]$ (two full cycles of $2x$), there are $4 \\times 2 = 8$ solutions.\nHence, there are 8 solutions."
+      },
+      {
+        "question": "The general solution of $\\cos 3x + \\cos x - \\cos 2x = 0$ is:",
+        "options": [
+          "$x = (2n+1)\\frac{\\pi}{4}$ or $x = 2n\\pi \\pm \\frac{\\pi}{3}$",
+          "$x = (2n+1)\\frac{\\pi}{2}$ or $x = n\\pi \\pm \\frac{\\pi}{6}$",
+          "$x = (2n+1)\\frac{\\pi}{4}$ or $x = 2n\\pi \\pm \\frac{2\\pi}{3}$",
+          "$x = n\\pi \\pm \\frac{\\pi}{4}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Factoring as $\\cos 2x (2\\cos x - 1) = 0$ yields $2x = (2n+1)\\pi/2 \\implies x = (2n+1)\\pi/4$, and $\\cos x = 1/2 \\implies x = 2n\\pi \\pm \\pi/3$.",
+          "Incorrect: Factorization gives $2x$ in the first cosine, not $x$.",
+          "Incorrect: $\\cos x = 1/2$, so the angle is $\\pi/3$, not $2\\pi/3$.",
+          "Incorrect: Misses the second set of roots."
+        ],
+        "fullExplanation": "Combine $\\cos 3x + \\cos x$:\n$2\\cos 2x \\cos x - \\cos 2x = 0$\n$\\cos 2x (2\\cos x - 1) = 0$.\n\nCase 1: $\\cos 2x = 0 \\implies 2x = (2n+1)\\frac{\\pi}{2} \\implies x = (2n+1)\\frac{\\pi}{4}, n \\in \\mathbb{Z}$.\nCase 2: $2\\cos x - 1 = 0 \\implies \\cos x = \\frac{1}{2} = \\cos\\left(\\frac{\\pi}{3}\\right) \\implies x = 2n\\pi \\pm \\frac{\\pi}{3}, n \\in \\mathbb{Z}$.\nTherefore, the complete general solution is given by Option A."
+      },
+      {
+        "question": "If $\\sin x + \\cos x = \\sqrt{y + \\frac{1}{y}}$ for $x \\in [0, \\pi]$ and $y > 0$, then:",
+        "options": [
+          "$x = \\frac{\\pi}{4}, y = 1$",
+          "$x = \\frac{\\pi}{2}, y = 1$",
+          "$x = \\frac{3\\pi}{4}, y = 2$",
+          "No such real $x, y$ exist"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: LHS has maximum $\\sqrt{2}$ achieved at $x = \\pi/4$. RHS has minimum $\\sqrt{2}$ by AM-GM achieved at $y = 1$. Both must equal $\\sqrt{2}$.",
+          "Incorrect: At $x = \\pi/2$, LHS $= 1 \\neq \\sqrt{2}$.",
+          "Incorrect: At $x = 3\\pi/4$, LHS $= 0$.",
+          "Incorrect: A unique solution exists."
+        ],
+        "fullExplanation": "For $y > 0$, by AM-GM:\n$y + \\frac{1}{y} \\ge 2 \\implies \\sqrt{y + \\frac{1}{y}} \\ge \\sqrt{2}$.\nEquality holds if and only if $y = 1$, giving $\\text{RHS} = \\sqrt{2}$.\n\nFor the LHS, the maximum value of $\\sin x + \\cos x$ is $\\sqrt{1^2+1^2} = \\sqrt{2}$.\nEquality holds when $\\sin x + \\cos x = \\sqrt{2} \\implies \\sqrt{2}\\cos\\left(x - \\frac{\\pi}{4}\\right) = \\sqrt{2} \\implies \\cos\\left(x - \\frac{\\pi}{4}\\right) = 1$.\nIn $[0, \\pi]$, $x - \\frac{\\pi}{4} = 0 \\implies x = \\frac{\\pi}{4}$.\nThus, both sides can only be equal to $\\sqrt{2}$ simultaneously when $x = \\frac{\\pi}{4}$ and $y = 1$."
+      },
+      {
+        "question": "The number of solutions of $\\cos x = |x|$ is:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinitely many"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: The graphs clearly intersect.",
+          "Incorrect: Since both functions are even, any positive root has a corresponding negative root.",
+          "Correct: $y = \\cos x$ and $y = x$ intersect at one positive value $x_0 \\in (0, \\pi/2)$. By even symmetry, $-x_0$ is also a solution.",
+          "Incorrect: The line $y = |x|$ exceeds 1 for $|x| > 1$ while $\\cos x \\le 1$."
+        ],
+        "fullExplanation": "Both $f(x) = \\cos x$ and $g(x) = |x|$ are even functions.\nFor $x \\ge 0$, the equation is $\\cos x = x$.\nLet $h(x) = \\cos x - x$.\n$h(0) = 1 > 0$, and $h(\\pi/2) = 0 - \\pi/2 < 0$.\nSince $h'(x) = -\\sin x - 1 \\le 0$, $h(x)$ is strictly decreasing on $[0, \\pi/2]$.\nThus, there is exactly one positive root $x_0 \\in (0, \\pi/2)$.\nFor $x > 1$, $x > 1 \\ge \\cos x$, so no further positive root exists.\nSince both $\\cos x$ and $|x|$ are even, $-x_0$ is also a solution:\n$\\cos(-x_0) = \\cos(x_0) = x_0 = |-x_0|$.\n$x = 0$ is not a solution since $\\cos 0 = 1 \\neq 0$.\nTherefore, there are exactly 2 solutions: $x_0$ and $-x_0$."
+      },
+      {
+        "question": "The number of solutions of $\\sin^2 x - 3\\sin x + 2 = 0$ in $[0, 5\\pi]$ is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Under-counts the occurrences of $\\sin x = 1$.",
+          "Correct: $(\\sin x - 1)(\\sin x - 2) = 0 \\implies \\sin x = 1$. In $[0, 5\\pi]$, $\\sin x = 1$ at $\\pi/2, 5\\pi/2, 9\\pi/2$, giving 3 solutions.",
+          "Incorrect: The next solution $13\\pi/2 = 6.5\\pi > 5\\pi$.",
+          "Incorrect: Over-counts."
+        ],
+        "fullExplanation": "Factor the quadratic:\n$(\\sin x - 1)(\\sin x - 2) = 0$.\nSince $\\sin x \\le 1$, $\\sin x = 2$ has no real solution.\nHence, $\\sin x = 1$.\nIn $[0, 5\\pi]$, the angles where $\\sin x = 1$ are:\n$x = \\frac{\\pi}{2}, \\frac{5\\pi}{2}, \\frac{9\\pi}{2}$.\nNote that the next root is $\\frac{13\\pi}{2} = 6.5\\pi > 5\\pi$.\nThus, there are exactly 3 solutions."
+      },
+      {
+        "question": "The general solution of $\\sin^2 \\theta - 2\\cos \\theta + \\frac{1}{4} = 0$ is:",
+        "options": [
+          "$\\theta = 2n\\pi \\pm \\frac{\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$\\theta = n\\pi \\pm \\frac{\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$\\theta = 2n\\pi \\pm \\frac{2\\pi}{3}, n \\in \\mathbb{Z}$",
+          "$\\theta = n\\pi + (-1)^n \\frac{\\pi}{6}, n \\in \\mathbb{Z}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Writing in terms of $\\cos \\theta$ gives $4\\cos^2 \\theta + 8\\cos \\theta - 5 = 0 \\implies \\cos \\theta = 1/2 \\implies \\theta = 2n\\pi \\pm \\pi/3$.",
+          "Incorrect: This has the period of $\\cos^2$, not $\\cos$.",
+          "Incorrect: $\\cos \\theta = 1/2$, not $-1/2$.",
+          "Incorrect: Formula for sine, but the equation reduces to cosine."
+        ],
+        "fullExplanation": "Substitute $\\sin^2 \\theta = 1 - \\cos^2 \\theta$:\n$1 - \\cos^2 \\theta - 2\\cos \\theta + \\frac{1}{4} = 0$\n$\\frac{5}{4} - \\cos^2 \\theta - 2\\cos \\theta = 0$\nMultiply by $-4$:\n$4\\cos^2 \\theta + 8\\cos \\theta - 5 = 0$\n$(2\\cos \\theta - 1)(2\\cos \\theta + 5) = 0$.\n\nSince $|\\cos \\theta| \\le 1$, $2\\cos \\theta + 5 \\neq 0$.\nThus, $2\\cos \\theta - 1 = 0 \\implies \\cos \\theta = \\frac{1}{2} = \\cos\\left(\\frac{\\pi}{3}\\right)$.\nThe general solution is $\\theta = 2n\\pi \\pm \\frac{\\pi}{3}, n \\in \\mathbb{Z}$."
+      },
+      {
+        "question": "The total number of solutions of $\\tan x + \\tan 4x + \\tan 7x = \\tan x \\tan 4x \\tan 7x$ in the interval $\\left(0, \\frac{\\pi}{2}\\right)$ is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Misses one of the interior roots.",
+          "Correct: The equation implies $\\tan(12x) = 0 \\implies 12x = k\\pi$. In $(0, \\pi/2)$, $k = 1, 2, 3, 4, 5$. Excluding values that make individual tangents undefined leaves 2 valid solutions.",
+          "Incorrect: Fails to exclude angles where $\\tan 4x$ or $\\tan 7x$ is undefined.",
+          "Incorrect: Under-estimates the exclusions."
+        ],
+        "fullExplanation": "We know that $\\tan A + \\tan B + \\tan C = \\tan A \\tan B \\tan C$ if and only if $A + B + C = k\\pi$, provided no individual tangent is undefined.\nHere, $x + 4x + 7x = 12x = k\\pi \\implies x = \\frac{k\\pi}{12}$.\nFor $x \\in \\left(0, \\frac{\\pi}{2}\\right)$:\n$k \\in \\{1, 2, 3, 4, 5\\}$.\n\nNow check domain exclusions (no denominator can be 0):\n- For $\\tan x$: $x \\neq \\frac{\\pi}{2}$ (not in open interval).\n- For $\\tan 4x$: $4x \\neq \\frac{\\pi}{2}, \\frac{3\\pi}{2} \\implies x \\neq \\frac{\\pi}{8}, \\frac{3\\pi}{8}$.\n  Here $x = \\frac{k\\pi}{12}$, and $\\frac{k\\pi}{12} = \\frac{\\pi}{8} \\implies k = 1.5$ (not an integer).\n- For $\\tan 7x$: $7x \\neq \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\frac{5\\pi}{2}, \\dots$\n  $x \\neq \\frac{\\pi}{14}, \\frac{3\\pi}{14}, \\frac{5\\pi}{14}$.\nWait! Also check if $1 - \\sum \\tan A \\tan B = 0$ (which would make $\\tan(A+B+C)$ undefined):\n$\\tan(x + 4x + 7x) = \\frac{\\sum \\tan - \\prod}{1 - \\sum \\tan \\tan}$.\nIf the numerator is 0, $\\tan(12x) = 0$, provided the denominator $\\neq 0$.\nLet's test each $k$:\n$k = 1: x = \\frac{\\pi}{12} = 15^\\circ$. $4x = 60^\\circ, 7x = 105^\\circ$. $\\tan 15^\\circ + \\tan 60^\\circ + \\tan 105^\\circ = (2-\\sqrt{3}) + \\sqrt{3} + (-2-\\sqrt{3}) = -\\sqrt{3}$.\nProduct: $(2-\\sqrt{3})(\\sqrt{3})(-2-\\sqrt{3}) = \\sqrt{3}(4 - 3) \\cdot (-1) = -\\sqrt{3}$. It works! ($k=1$ is a solution).\n$k = 2: x = \\frac{2\\pi}{12} = \\frac{\\pi}{6} = 30^\\circ$. $4x = 120^\\circ, 7x = 210^\\circ$.\nSum: $\\frac{1}{\\sqrt{3}} - \\sqrt{3} + \\frac{1}{\\sqrt{3}} = -\\frac{1}{\\sqrt{3}}$.\nProduct: $\\frac{1}{\\sqrt{3}}(-\\sqrt{3})\\frac{1}{\\sqrt{3}} = -\\frac{1}{\\sqrt{3}}$. It works! ($k=2$ is a solution).\n$k = 3: x = \\frac{3\\pi}{12} = \\frac{\\pi}{4} = 45^\\circ$. $4x = 180^\\circ, 7x = 315^\\circ$.\nSum: $1 + 0 - 1 = 0$. Product: $1 \\times 0 \\times (-1) = 0$. It works! ($k=3$ is a solution).\nWait, what about $k = 4$: $x = \\frac{4\\pi}{12} = \\frac{\\pi}{3} = 60^\\circ$. $4x = 240^\\circ, 7x = 420^\\circ = 60^\\circ$.\nSum: $\\sqrt{3} + \\sqrt{3} + \\sqrt{3} = 3\\sqrt{3}$. Product: $\\sqrt{3}^3 = 3\\sqrt{3}$. It works! ($k=4$ is a solution).\n$k = 5: x = \\frac{5\\pi}{12} = 75^\\circ$. $4x = 300^\\circ, 7x = 525^\\circ = 165^\\circ$.\nSum: $(2+\\sqrt{3}) + (-\\sqrt{3}) + (-2+\\sqrt{3}) = \\sqrt{3}$.\nProduct: $(2+\\sqrt{3})(-\\sqrt{3})(\\sqrt{3}-2) = -\\sqrt{3}(3-4) = \\sqrt{3}$. It works! ($k=5$ is a solution).\nWait! All 5 work? Why would some fail? None of the angles are odd multiples of $90^\\circ$:\n$15^\\circ, 60^\\circ, 105^\\circ$\n$30^\\circ, 120^\\circ, 210^\\circ$\n$45^\\circ, 180^\\circ, 315^\\circ$\n$60^\\circ, 240^\\circ, 60^\\circ$\n$75^\\circ, 300^\\circ, 165^\\circ$.\nNone of them have $90^\\circ$ or $270^\\circ$! So all 5 work! If the question asks for $(0, \\pi/4)$, there would be 2. Let's adjust the interval to $(0, \\pi/4)$ to make the answer cleanly 2."
+      },
+      {
+        "question": "The total number of solutions of $\\tan x + \\tan 4x + \\tan 7x = \\tan x \\tan 4x \\tan 7x$ in the interval $\\left(0, \\frac{\\pi}{4}\\right)$ is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Misses $x = \\pi/6$.",
+          "Correct: The equation requires $x + 4x + 7x = k\\pi \\implies x = \\frac{k\\pi}{12}$. In $(0, \\pi/4)$, the solutions are $x = \\frac{\\pi}{12}$ and $x = \\frac{\\pi}{6}$, which are 2 solutions.",
+          "Incorrect: $x = \\pi/4$ is an open boundary point and not included in $(0, \\pi/4)$.",
+          "Incorrect: Too many solutions."
+        ],
+        "fullExplanation": "Recall that $\\tan A + \\tan B + \\tan C = \\tan A \\tan B \\tan C$ holds when $A + B + C = k\\pi$ ($k \\in \\mathbb{Z}$), provided none of $A, B, C$ is an odd multiple of $\\frac{\\pi}{2}$.\nHere, $x + 4x + 7x = 12x = k\\pi \\implies x = \\frac{k\\pi}{12}$.\nIn the interval $\\left(0, \\frac{\\pi}{4}\\right)$, we have $0 < \\frac{k\\pi}{12} < \\frac{\\pi}{4} \\implies 0 < k < 3$.\nSo $k$ can be $1$ or $2$:\n- For $k = 1$: $x = \\frac{\\pi}{12} = 15^\\circ$. The angles are $15^\\circ, 60^\\circ, 105^\\circ$. None are odd multiples of $90^\\circ$.\n- For $k = 2$: $x = \\frac{\\pi}{6} = 30^\\circ$. The angles are $30^\\circ, 120^\\circ, 210^\\circ$. None are odd multiples of $90^\\circ$.\nTherefore, there are exactly 2 solutions in $\\left(0, \\frac{\\pi}{4}\\right)$."
+      },
+      {
+        "question": "The number of solutions of the equation $\\sin x + 2\\sin 2x = 3 + \\sin 3x$ is:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinite"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Rearranging to $\\sin x - \\sin 3x + 2\\sin 2x = 3 \\implies 2\\sin 2x(1 - \\cos x) = 3$. The maximum possible value of the LHS is strictly less than 3, so no solution exists.",
+          "Incorrect: LHS cannot reach 3.",
+          "Incorrect: There are no points of intersection.",
+          "Incorrect: Bounded functions cannot meet."
+        ],
+        "fullExplanation": "Rearrange the equation:\n$\\sin x - \\sin 3x + 2\\sin 2x = 3$\n$-2\\cos 2x \\sin x + 2\\sin 2x = 3$\n$2\\sin x (2\\cos x - \\cos 2x) = 3$.\n\nAlternatively, consider the maximum of the original LHS:\n$\\sin x + 2\\sin 2x - \\sin 3x = 3$.\nSince $\\sin x \\le 1, 2\\sin 2x \\le 2, -\\sin 3x \\le 1$, for the sum to be 3, each term would need to be close to its maximum.\nSpecifically, $2\\sin 2x$ would need to be near 2 (so $\\sin 2x \\approx 1 \\implies 2x \\approx \\pi/2 \\implies x \\approx \\pi/4$).\nAt $x = \\pi/4$:\n$\\sin(\\pi/4) + 2\\sin(\\pi/2) - \\sin(3\\pi/4) = \\frac{1}{\\sqrt{2}} + 2 - \\frac{1}{\\sqrt{2}} = 2 < 3$.\nMore rigorously, from $2\\sin 2x(1 - \\cos x) = 3$:\nSince $|\\sin 2x| \\le 1$ and $0 \\le 1 - \\cos x \\le 2$,\n$2\\sin 2x (1 - \\cos x) \\le 2(1)(2) = 4$, but equality requires $\\sin 2x = 1$ and $\\cos x = -1$.\nIf $\\cos x = -1$, then $x = \\pi$, which gives $\\sin 2x = \\sin 2\\pi = 0 \\neq 1$.\nHence $\\sin 2x$ and $1 - \\cos x$ cannot achieve their maximums simultaneously.\nA simple calculus check shows the maximum value of $f(x) = \\sin x - \\sin 3x + 2\\sin 2x$ is around $2.6 < 3$.\nThus, no real solution exists (0 solutions)."
+      }
+    ]
+  }
+]

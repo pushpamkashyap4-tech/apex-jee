@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Three-Dimensional Geometry",
+    "flashcards": [
+      {
+        "front": "What are Direction Cosines ($l, m, n$) and what is the fundamental relation connecting them?",
+        "back": "If a directed line makes angles $\\\\alpha, \\\\beta, \\\\gamma$ with the positive $x, y,$ and $z$-axes respectively, then:\\n$$l = \\\\cos\\\\alpha, \\\\quad m = \\\\cos\\\\beta, \\\\quad n = \\\\cos\\\\gamma$$\\nare called the direction cosines (DCs) of the line. The fundamental relation is:\\n$$l^2 + m^2 + n^2 = 1 \\\\iff \\\\cos^2\\\\alpha + \\\\cos^2\\\\beta + \\\\cos^2\\\\gamma = 1$$\\nAlso, $\\\\sin^2\\\\alpha + \\\\sin^2\\\\beta + \\\\sin^2\\\\gamma = 2$."
+      },
+      {
+        "front": "How are Direction Cosines ($l, m, n$) obtained from Direction Ratios ($a, b, c$)?",
+        "back": "Direction ratios (DRs) $a, b, c$ are numbers proportional to $l, m, n$. The direction cosines are:\\n$$l = \\\\pm \\\\dfrac{a}{\\\\sqrt{a^2 + b^2 + c^2}}, \\\\quad m = \\\\pm \\\\dfrac{b}{\\\\sqrt{a^2 + b^2 + c^2}}, \\\\quad n = \\\\pm \\\\dfrac{c}{\\\\sqrt{a^2 + b^2 + c^2}}$$\\nwhere the same sign is chosen for all three."
+      },
+      {
+        "front": "What are the Direction Ratios and Direction Cosines of a line passing through points $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$?",
+        "back": "The direction ratios are:\\n$$a = x_2 - x_1, \\\\quad b = y_2 - y_1, \\\\quad c = z_2 - z_1$$\\nThe direction cosines are:\\n$$l = \\\\dfrac{x_2 - x_1}{|PQ|}, \\\\quad m = \\\\dfrac{y_2 - y_1}{|PQ|}, \\\\quad n = \\\\dfrac{z_2 - z_1}{|PQ|}$$\\nwhere $|PQ| = \\\\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$."
+      },
+      {
+        "front": "State the Vector and Cartesian equations of a straight line passing through a point $A(\\\\vec{a})$ and parallel to a vector $\\\\vec{b}$.",
+        "back": "1. **Vector form:**\\n$$\\\\vec{r} = \\\\vec{a} + \\\\lambda \\\\vec{b}, \\\\quad \\\\lambda \\\\in \\\\mathbb{R}$$\\n2. **Cartesian (Symmetric) form:** If $A = (x_1, y_1, z_1)$ and $\\\\vec{b} = a\\\\hat{i} + b\\\\hat{j} + c\\\\hat{k}$:\\n$$\\\\dfrac{x - x_1}{a} = \\\\dfrac{y - y_1}{b} = \\\\dfrac{z - z_1}{c}$$"
+      },
+      {
+        "front": "State the Vector and Cartesian equations of a line passing through two given points $A(\\\\vec{a})$ and $B(\\\\vec{b})$.",
+        "back": "1. **Vector form:**\\n$$\\\\vec{r} = \\\\vec{a} + \\\\lambda(\\\\vec{b} - \\\\vec{a}), \\\\quad \\\\lambda \\\\in \\\\mathbb{R}$$\\n2. **Cartesian form:** If $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$:\\n$$\\\\dfrac{x - x_1}{x_2 - x_1} = \\\\dfrac{y - y_1}{y_2 - y_1} = \\\\dfrac{z - z_1}{z_2 - z_1}$$"
+      },
+      {
+        "front": "How do you express the angle $\\\\theta$ between two lines given their vector or Cartesian equations?",
+        "back": "For lines parallel to $\\\\vec{b}_1 = a_1\\\\hat{i} + b_1\\\\hat{j} + c_1\\\\hat{k}$ and $\\\\vec{b}_2 = a_2\\\\hat{i} + b_2\\\\hat{j} + c_2\\\\hat{k}$:\\n$$\\\\cos\\\\theta = \\\\dfrac{|\\\\vec{b}_1 \\\\cdot \\\\vec{b}_2|}{|\\\\vec{b}_1||\\\\vec{b}_2|} = \\\\dfrac{|a_1 a_2 + b_1 b_2 + c_1 c_2|}{\\\\sqrt{a_1^2 + b_1^2 + c_1^2}\\\\sqrt{a_2^2 + b_2^2 + c_2^2}}$$"
+      },
+      {
+        "front": "What are the conditions for two lines with direction ratios $(a_1, b_1, c_1)$ and $(a_2, b_2, c_2)$ to be perpendicular or parallel?",
+        "back": "1. **Perpendicular:**\\n$$a_1 a_2 + b_1 b_2 + c_1 c_2 = 0 \\\\iff \\\\vec{b}_1 \\\\cdot \\\\vec{b}_2 = 0$$\\n2. **Parallel:**\\n$$\\\\dfrac{a_1}{a_2} = \\\\dfrac{b_1}{b_2} = \\\\dfrac{c_1}{c_2} \\\\iff \\\\vec{b}_1 \\\\times \\\\vec{b}_2 = \\\\vec{0}$$"
+      },
+      {
+        "front": "What is the general parametric coordinate of any arbitrary point on the line $\\\\dfrac{x - x_1}{a} = \\\\dfrac{y - y_1}{b} = \\\\dfrac{z - z_1}{c}$?",
+        "back": "Setting $\\\\dfrac{x - x_1}{a} = \\\\dfrac{y - y_1}{b} = \\\\dfrac{z - z_1}{c} = \\\\lambda$, the coordinates are:\\n$$P(\\\\lambda) = (x_1 + a\\\\lambda, \\\\; y_1 + b\\\\lambda, \\\\; z_1 + c\\\\lambda)$$\\nwhere $\\\\lambda \\\\in \\\\mathbb{R}$."
+      },
+      {
+        "front": "State the vector formula for the Shortest Distance between two skew lines $\\\\vec{r} = \\\\vec{a}_1 + \\\\lambda \\\\vec{b}_1$ and $\\\\vec{r} = \\\\vec{a}_2 + \\\\mu \\\\vec{b}_2$.",
+        "back": "$$d = \\\\dfrac{|(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\cdot (\\\\vec{b}_1 \\\\times \\\\vec{b}_2)|}{|\\\\vec{b}_1 \\\\times \\\\vec{b}_2|}$$"
+      },
+      {
+        "front": "State the Cartesian determinant formula for the Shortest Distance between two skew lines.",
+        "back": "For lines $\\\\dfrac{x - x_1}{a_1} = \\\\dfrac{y - y_1}{b_1} = \\\\dfrac{z - z_1}{c_1}$ and $\\\\dfrac{x - x_2}{a_2} = \\\\dfrac{y - y_2}{b_2} = \\\\dfrac{z - z_2}{c_2}$:\\n$$d = \\\\dfrac{\\\\begin{vmatrix} x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\\\\\\\ a_1 & b_1 & c_1 \\\\\\\\ a_2 & b_2 & c_2 \\\\end{vmatrix}}{\\\\sqrt{(b_1 c_2 - b_2 c_1)^2 + (c_1 a_2 - c_2 a_1)^2 + (a_1 b_2 - a_2 b_1)^2}}$$"
+      },
+      {
+        "front": "What is the formula for the distance between two parallel lines $\\\\vec{r} = \\\\vec{a}_1 + \\\\lambda \\\\vec{b}$ and $\\\\vec{r} = \\\\vec{a}_2 + \\\\mu \\\\vec{b}$?",
+        "back": "$$d = \\\\dfrac{|(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\times \\\\vec{b}|}{|\\\\vec{b}|}$$"
+      },
+      {
+        "front": "State the condition for two lines $\\\\vec{r} = \\\\vec{a}_1 + \\\\lambda \\\\vec{b}_1$ and $\\\\vec{r} = \\\\vec{a}_2 + \\\\mu \\\\vec{b}_2$ to be coplanar (intersecting or parallel).",
+        "back": "1. **Vector form:**\\n$$(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\cdot (\\\\vec{b}_1 \\\\times \\\\vec{b}_2) = 0 \\\\iff [\\\\vec{a}_2 - \\\\vec{a}_1 \\\\quad \\\\vec{b}_1 \\\\quad \\\\vec{b}_2] = 0$$\\n2. **Cartesian form:**\\n$$\\\\begin{vmatrix} x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\\\\\\\ a_1 & b_1 & c_1 \\\\\\\\ a_2 & b_2 & c_2 \\\\end{vmatrix} = 0$$"
+      },
+      {
+        "front": "State the Vector and Cartesian equations of a plane in Normal Form.",
+        "back": "1. **Vector form:**\\n$$\\\\vec{r} \\\\cdot \\\\hat{n} = p$$\\nwhere $\\\\hat{n}$ is the unit normal vector directed from origin to plane, and $p$ is the perpendicular distance from the origin ($p \\\\ge 0$).\\n2. **Cartesian form:**\\n$$lx + my + nz = p$$\\nwhere $l, m, n$ are the direction cosines of the normal."
+      },
+      {
+        "front": "What is the equation of a plane passing through a point $A(\\\\vec{a})$ and perpendicular to a normal vector $\\\\vec{n}$?",
+        "back": "1. **Vector form:**\\n$$(\\\\vec{r} - \\\\vec{a}) \\\\cdot \\\\vec{n} = 0 \\\\iff \\\\vec{r} \\\\cdot \\\\vec{n} = \\\\vec{a} \\\\cdot \\\\vec{n}$$\\n2. **Cartesian form:** For point $(x_1, y_1, z_1)$ and normal DRs $(a, b, c)$:\\n$$a(x - x_1) + b(y - y_1) + c(z - z_1) = 0$$"
+      },
+      {
+        "front": "State the equation of a plane passing through three non-collinear points $(x_1, y_1, z_1)$, $(x_2, y_2, z_2)$, and $(x_3, y_3, z_3)$.",
+        "back": "1. **Determinant form:**\\n$$\\\\begin{vmatrix} x - x_1 & y - y_1 & z - z_1 \\\\\\\\ x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\\\\\\\ x_3 - x_1 & y_3 - y_1 & z_3 - z_1 \\\\end{vmatrix} = 0$$\\n2. **Vector form:**\\n$$(\\\\vec{r} - \\\\vec{a}) \\\\cdot [(\\\\vec{b} - \\\\vec{a}) \\\\times (\\\\vec{c} - \\\\vec{a})] = 0$$"
+      },
+      {
+        "front": "What is the Intercept Form of the equation of a plane cutting intercepts $a, b, c$ on the coordinate axes?",
+        "back": "$$\\\\dfrac{x}{a} + \\\\dfrac{y}{b} + \\\\dfrac{z}{c} = 1$$"
+      },
+      {
+        "front": "State the formula for the angle $\\\\theta$ between two planes $A_1 x + B_1 y + C_1 z + D_1 = 0$ and $A_2 x + B_2 y + C_2 z + D_2 = 0$.",
+        "back": "$$\\\\cos\\\\theta = \\\\dfrac{|\\\\vec{n}_1 \\\\cdot \\\\vec{n}_2|}{|\\\\vec{n}_1||\\\\vec{n}_2|} = \\\\dfrac{|A_1 A_2 + B_1 B_2 + C_1 C_2|}{\\\\sqrt{A_1^2 + B_1^2 + C_1^2}\\\\sqrt{A_2^2 + B_2^2 + C_2^2}}$$\\n- **Perpendicular:** $A_1 A_2 + B_1 B_2 + C_1 C_2 = 0$\\n- **Parallel:** $\\\\dfrac{A_1}{A_2} = \\\\dfrac{B_1}{B_2} = \\\\dfrac{C_1}{C_2}$"
+      },
+      {
+        "front": "State the formula for the angle $\\\\theta$ between a line $\\\\vec{r} = \\\\vec{a} + \\\\lambda \\\\vec{b}$ and a plane $\\\\vec{r} \\\\cdot \\\\vec{n} = d$.",
+        "back": "$$\\\\sin\\\\theta = \\\\dfrac{|\\\\vec{b} \\\\cdot \\\\vec{n}|}{|\\\\vec{b}||\\\\vec{n}|} = \\\\dfrac{|al + bm + cn|}{\\\\sqrt{a^2 + b^2 + c^2}\\\\sqrt{l^2 + m^2 + n^2}}$$\\n- **Line parallel to plane:** $\\\\vec{b} \\\\cdot \\\\vec{n} = 0 \\\\iff al + bm + cn = 0$\\n- **Line perpendicular to plane:** $\\\\vec{b} \\\\parallel \\\\vec{n} \\\\iff \\\\dfrac{a}{l} = \\\\dfrac{b}{m} = \\\\dfrac{c}{n}$"
+      },
+      {
+        "front": "State the formula for the perpendicular distance of a point from a plane in Cartesian and Vector forms.",
+        "back": "1. **Cartesian form:** Distance of $P(x_1, y_1, z_1)$ from $ax + by + cz + d = 0$:\\n$$p = \\\\dfrac{|ax_1 + by_1 + cz_1 + d|}{\\\\sqrt{a^2 + b^2 + c^2}}$$\\n2. **Vector form:** Distance of $P(\\\\vec{a})$ from $\\\\vec{r} \\\\cdot \\\\vec{n} = d$:\\n$$p = \\\\dfrac{|\\\\vec{a} \\\\cdot \\\\vec{n} - d|}{|\\\\vec{n}|}$$"
+      },
+      {
+        "front": "What is the formula for the distance between two parallel planes $ax + by + cz + d_1 = 0$ and $ax + by + cz + d_2 = 0$?",
+        "back": "$$D = \\\\dfrac{|d_1 - d_2|}{\\\\sqrt{a^2 + b^2 + c^2}}$$\\n*(Note: Ensure coefficients of $x, y, z$ in both equations are made identical first).* "
+      },
+      {
+        "front": "State the formula for the Foot of Perpendicular $(x', y', z')$ from a point $(x_1, y_1, z_1)$ to the plane $ax + by + cz + d = 0$.",
+        "back": "$$\\\\dfrac{x' - x_1}{a} = \\\\dfrac{y' - y_1}{b} = \\\\dfrac{z' - z_1}{c} = -\\\\dfrac{ax_1 + by_1 + cz_1 + d}{a^2 + b^2 + c^2}$$"
+      },
+      {
+        "front": "State the formula for the Image $(x', y', z')$ of a point $(x_1, y_1, z_1)$ in the plane $ax + by + cz + d = 0$.",
+        "back": "$$\\\\dfrac{x' - x_1}{a} = \\\\dfrac{y' - y_1}{b} = \\\\dfrac{z' - z_1}{c} = -2\\\\left(\\\\dfrac{ax_1 + by_1 + cz_1 + d}{a^2 + b^2 + c^2}\\\\right)$$"
+      },
+      {
+        "front": "What are the necessary and sufficient conditions for a line $\\\\dfrac{x - x_1}{l} = \\\\dfrac{y - y_1}{m} = \\\\dfrac{z - z_1}{n}$ to lie completely in the plane $ax + by + cz + d = 0$?",
+        "back": "1. Point $(x_1, y_1, z_1)$ must satisfy the plane:\\n$$ax_1 + by_1 + cz_1 + d = 0$$\\n2. The line must be perpendicular to the plane normal:\\n$$al + bm + cn = 0$$"
+      },
+      {
+        "front": "State the equation of the Family of Planes passing through the intersection of planes $P_1 \\\\equiv a_1 x + b_1 y + c_1 z + d_1 = 0$ and $P_2 \\\\equiv a_2 x + b_2 y + c_2 z + d_2 = 0$.",
+        "back": "1. **Cartesian form:**\\n$$(a_1 x + b_1 y + c_1 z + d_1) + \\\\lambda(a_2 x + b_2 y + c_2 z + d_2) = 0$$\\n2. **Vector form:**\\n$$\\\\vec{r} \\\\cdot (\\\\vec{n}_1 + \\\\lambda \\\\vec{n}_2) = d_1 + \\\\lambda d_2$$"
+      },
+      {
+        "front": "What are the equations of the planes bisecting the angles between two intersecting planes $a_1 x + b_1 y + c_1 z + d_1 = 0$ and $a_2 x + b_2 y + c_2 z + d_2 = 0$?",
+        "back": "$$\\\\dfrac{a_1 x + b_1 y + c_1 z + d_1}{\\\\sqrt{a_1^2 + b_1^2 + c_1^2}} = \\\\pm \\\\dfrac{a_2 x + b_2 y + c_2 z + d_2}{\\\\sqrt{a_2^2 + b_2^2 + c_2^2}}$$"
+      },
+      {
+        "front": "How do you distinguish between Acute and Obtuse angle bisector planes?",
+        "back": "1. Ensure $d_1 > 0$ and $d_2 > 0$ by multiplying by $-1$ if necessary.\\n2. Calculate $a_1 a_2 + b_1 b_2 + c_1 c_2$:\\n   - If $a_1 a_2 + b_1 b_2 + c_1 c_2 > 0$:\\n     - '$+$' sign gives the **obtuse** angle bisector (origin in obtuse angle).\\n     - '$-$' sign gives the **acute** angle bisector.\\n   - If $a_1 a_2 + b_1 b_2 + c_1 c_2 < 0$:\\n     - '$+$' sign gives the **acute** angle bisector (origin in acute angle).\\n     - '$-$' sign gives the **obtuse** angle bisector."
+      },
+      {
+        "front": "What is the projection of a line segment joining $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$ on a line with direction cosines $l, m, n$?",
+        "back": "$$\\\\text{Projection} = |l(x_2 - x_1) + m(y_2 - y_1) + n(z_2 - z_1)|$$"
+      },
+      {
+        "front": "State the general Cartesian equation of a Sphere, its centre, and its radius.",
+        "back": "$$x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0$$\\n- **Centre:** $(-u, -v, -w)$\\n- **Radius:** $R = \\\\sqrt{u^2 + v^2 + w^2 - d}$ (real sphere if $u^2 + v^2 + w^2 - d > 0$)."
+      },
+      {
+        "front": "State the formula for the Volume of a Tetrahedron with vertices $A(x_1, y_1, z_1)$, $B(x_2, y_2, z_2)$, $C(x_3, y_3, z_3)$, and $D(x_4, y_4, z_4)$.",
+        "back": "$$V = \\\\dfrac{1}{6} \\\\left| \\\\begin{vmatrix} x_1 & y_1 & z_1 & 1 \\\\\\\\ x_2 & y_2 & z_2 & 1 \\\\\\\\ x_3 & y_3 & z_3 & 1 \\\\\\\\ x_4 & y_4 & z_4 & 1 \\\\end{vmatrix} \\\\right| = \\\\dfrac{1}{6}|[(\\\\vec{b}-\\\\vec{a}) \\\\quad (\\\\vec{c}-\\\\vec{a}) \\\\quad (\\\\vec{d}-\\\\vec{a})]|$$"
+      },
+      {
+        "front": "What is the distance of a point $P(x, y, z)$ from the $x$-axis, $y$-axis, and $z$-axis?",
+        "back": "1. Distance from $x$-axis $= \\\\sqrt{y^2 + z^2}$\\n2. Distance from $y$-axis $= \\\\sqrt{z^2 + x^2}$\\n3. Distance from $z$-axis $= \\\\sqrt{x^2 + y^2}$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "If a directed line makes equal acute angles with the coordinate axes, what are its direction cosines?",
+        "options": [
+          "$$\\\\left(\\\\dfrac{1}{\\\\sqrt{3}}, \\\\dfrac{1}{\\\\sqrt{3}}, \\\\dfrac{1}{\\\\sqrt{3}}\\\\right)$$",
+          "$$\\\\left(\\\\dfrac{1}{3}, \\\\dfrac{1}{3}, \\\\dfrac{1}{3}\\\\right)$$",
+          "$$\\\\left(\\\\dfrac{1}{\\\\sqrt{2}}, \\\\dfrac{1}{\\\\sqrt{2}}, \\\\dfrac{1}{\\\\sqrt{2}}\\\\right)$$",
+          "$$\\\\left(1, 1, 1\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since $\\\\alpha = \\\\beta = \\\\gamma$, $l = m = n$. Using $l^2 + m^2 + n^2 = 1$ gives $3l^2 = 1 \\\\implies l = 1/\\\\sqrt{3}$.",
+          "Incorrect. Direction cosines satisfy $l^2 + m^2 + n^2 = 1$, whereas $(1/3)^2 + (1/3)^2 + (1/3)^2 = 3/9 = 1/3 \\\\ne 1$.",
+          "Incorrect. $(1/\\\\sqrt{2})^2 + (1/\\\\sqrt{2})^2 + (1/\\\\sqrt{2})^2 = 3/2 \\\\ne 1$.",
+          "Incorrect. $(1, 1, 1)$ are direction ratios, not direction cosines since their sum of squares is $3 \\\\ne 1$."
+        ],
+        "fullExplanation": "Let the line make an angle $\\\\alpha$ with each of the positive coordinate axes.\\nThen the direction cosines are:\\n$$l = \\\\cos\\\\alpha, \\\\quad m = \\\\cos\\\\alpha, \\\\quad n = \\\\cos\\\\alpha$$\\nWe know that:\\n$$l^2 + m^2 + n^2 = 1$$\\n$$\\\\cos^2\\\\alpha + \\\\cos^2\\\\alpha + \\\\cos^2\\\\alpha = 1 \\\\implies 3\\\\cos^2\\\\alpha = 1 \\\\implies \\\\cos\\\\alpha = \\\\dfrac{1}{\\\\sqrt{3}}$$\\n(taking the positive value as the angles are acute).\\nTherefore, the direction cosines are $\\\\left(\\\\dfrac{1}{\\\\sqrt{3}}, \\\\dfrac{1}{\\\\sqrt{3}}, \\\\dfrac{1}{\\\\sqrt{3}}\\\\right)$."
+      },
+      {
+        "question": "Find the direction cosines of the line segment directed from $P(2, -1, 4)$ to $Q(1, 1, -2)$.",
+        "options": [
+          "$$\\\\left(-\\\\dfrac{1}{\\\\sqrt{41}}, \\\\dfrac{2}{\\\\sqrt{41}}, -\\\\dfrac{6}{\\\\sqrt{41}}\\\\right)$$",
+          "$$\\\\left(\\\\dfrac{1}{\\\\sqrt{41}}, -\\\\dfrac{2}{\\\\sqrt{41}}, \\\\dfrac{6}{\\\\sqrt{41}}\\\\right)$$",
+          "$$\\\\left(-1, 2, -6\\\\right)$$",
+          "$$\\\\left(-\\\\dfrac{1}{41}, \\\\dfrac{2}{41}, -\\\\dfrac{6}{41}\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Direction ratios of $\\\\vec{PQ}$ are $(1-2, 1 - (-1), -2-4) = (-1, 2, -6)$ and magnitude is $\\\\sqrt{1+4+36} = \\\\sqrt{41}$.",
+          "Incorrect. This represents the direction cosines from $Q$ to $P$, not from $P$ to $Q$.",
+          "Incorrect. These are direction ratios, not normalized direction cosines.",
+          "Incorrect. Divided by $|PQ|^2 = 41$ instead of $|PQ| = \\\\sqrt{41}$."
+        ],
+        "fullExplanation": "1. Find the direction ratios of the line directed from $P(2, -1, 4)$ to $Q(1, 1, -2)$:\\n$$a = x_2 - x_1 = 1 - 2 = -1$$\\n$$b = y_2 - y_1 = 1 - (-1) = 2$$\\n$$c = z_2 - z_1 = -2 - 4 = -6$$\\n2. Compute the distance $|PQ|$:\\n$$|PQ| = \\\\sqrt{(-1)^2 + 2^2 + (-6)^2} = \\\\sqrt{1 + 4 + 36} = \\\\sqrt{41}$$\\n3. The direction cosines are:\\n$$l = \\\\dfrac{a}{|PQ|} = -\\\\dfrac{1}{\\\\sqrt{41}}, \\\\quad m = \\\\dfrac{b}{|PQ|} = \\\\dfrac{2}{\\\\sqrt{41}}, \\\\quad n = \\\\dfrac{c}{|PQ|} = -\\\\dfrac{6}{\\\\sqrt{41}}$$."
+      },
+      {
+        "question": "What is the vector equation of a line passing through the point $(5, -2, 4)$ and parallel to the vector $2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k}$?",
+        "options": [
+          "$$\\\\vec{r} = (5\\\\hat{i} - 2\\\\hat{j} + 4\\\\hat{k}) + \\\\lambda(2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k})$$",
+          "$$\\\\vec{r} = (2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k}) + \\\\lambda(5\\\\hat{i} - 2\\\\hat{j} + 4\\\\hat{k})$$",
+          "$$\\\\vec{r} = (5\\\\hat{i} + 2\\\\hat{j} + 4\\\\hat{k}) + \\\\lambda(2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k})$$",
+          "$$\\\\vec{r} = (5\\\\hat{i} - 2\\\\hat{j} + 4\\\\hat{k}) \\\\times (2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k})$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The vector equation of a line passing through point $\\\\vec{a}$ and parallel to $\\\\vec{b}$ is $\\\\vec{r} = \\\\vec{a} + \\\\lambda \\\\vec{b}$.",
+          "Incorrect. The position vector of the point and the direction vector have been interchanged.",
+          "Incorrect. The $y$-coordinate is $-2$, giving $-2\\\\hat{j}$, not $+2\\\\hat{j}$.",
+          "Incorrect. A line equation is linear in parameter $\\\\lambda$, not a cross product."
+        ],
+        "fullExplanation": "The vector equation of a line passing through a point with position vector $\\\\vec{a}$ and parallel to a vector $\\\\vec{b}$ is:\\n$$\\\\vec{r} = \\\\vec{a} + \\\\lambda \\\\vec{b}$$\\nHere:\\n$$\\\\vec{a} = 5\\\\hat{i} - 2\\\\hat{j} + 4\\\\hat{k}$$\\n$$\\\\vec{b} = 2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k}$$\\nTherefore, the required equation is:\\n$$\\\\vec{r} = (5\\\\hat{i} - 2\\\\hat{j} + 4\\\\hat{k}) + \\\\lambda(2\\\\hat{i} - \\\\hat{j} + 3\\\\hat{k})$$."
+      },
+      {
+        "question": "Find the Cartesian equation of the line passing through the point $(-2, 4, -5)$ and parallel to the line given by $\\\\dfrac{x + 3}{3} = \\\\dfrac{y - 4}{5} = \\\\dfrac{z + 8}{6}$.",
+        "options": [
+          "$$\\\\dfrac{x + 2}{3} = \\\\dfrac{y - 4}{5} = \\\\dfrac{z + 5}{6}$$",
+          "$$\\\\dfrac{x - 2}{3} = \\\\dfrac{y + 4}{5} = \\\\dfrac{z - 5}{6}$$",
+          "$$\\\\dfrac{x + 2}{-3} = \\\\dfrac{y - 4}{-5} = \\\\dfrac{z + 5}{6}$$",
+          "$$\\\\dfrac{x + 3}{-2} = \\\\dfrac{y - 4}{4} = \\\\dfrac{z + 8}{-5}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Parallel lines share the same direction ratios $(3, 5, 6)$ and passes through $(x_1, y_1, z_1) = (-2, 4, -5)$.",
+          "Incorrect. The coordinates $(x_1, y_1, z_1)$ had their signs reversed.",
+          "Incorrect. The direction ratios must be proportional to $(3, 5, 6)$.",
+          "Incorrect. Swapped point coordinates and direction ratios."
+        ],
+        "fullExplanation": "1. Two parallel lines have identical or proportional direction ratios. The given line has direction ratios $a = 3, b = 5, c = 6$.\\n2. The required line passes through $(x_1, y_1, z_1) = (-2, 4, -5)$.\\n3. Using symmetric form $\\\\dfrac{x - x_1}{a} = \\\\dfrac{y - y_1}{b} = \\\\dfrac{z - z_1}{c}$:\\n$$\\\\dfrac{x - (-2)}{3} = \\\\dfrac{y - 4}{5} = \\\\dfrac{z - (-5)}{6} \\\\implies \\\\dfrac{x + 2}{3} = \\\\dfrac{y - 4}{5} = \\\\dfrac{z + 5}{6}$$."
+      },
+      {
+        "question": "Find the angle between the pair of lines having direction ratios $(1, 1, 2)$ and $(\\\\sqrt{3} - 1, -\\\\sqrt{3} - 1, 4)$.",
+        "options": [
+          "$$\\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{4}$$",
+          "$$\\\\dfrac{\\\\pi}{6}$$",
+          "$$\\\\dfrac{\\\\pi}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\cos\\\\theta = \\\\dfrac{1(\\\\sqrt{3}-1) + 1(-\\\\sqrt{3}-1) + 2(4)}{\\\\sqrt{6}\\\\sqrt{24}} = \\\\dfrac{6}{12} = \\\\dfrac{1}{2} \\\\implies \\\\theta = \\\\dfrac{\\\\pi}{3}$.",
+          "Incorrect. $\\\\cos(\\\\pi/4) = 1/\\\\sqrt{2} \\\\ne 1/2$.",
+          "Incorrect. $\\\\cos(\\\\pi/6) = \\\\sqrt{3}/2 \\\\ne 1/2$.",
+          "Incorrect. The lines are perpendicular only if the numerator evaluates to $0$, but here it is $6$."
+        ],
+        "fullExplanation": "The angle $\\\\theta$ between two lines with direction ratios $(a_1, b_1, c_1)$ and $(a_2, b_2, c_2)$ is given by:\\n$$\\\\cos\\\\theta = \\\\dfrac{|a_1 a_2 + b_1 b_2 + c_1 c_2|}{\\\\sqrt{a_1^2 + b_1^2 + c_1^2}\\\\sqrt{a_2^2 + b_2^2 + c_2^2}}$$\\n1. Compute numerator:\\n$$a_1 a_2 + b_1 b_2 + c_1 c_2 = 1(\\\\sqrt{3} - 1) + 1(-\\\\sqrt{3} - 1) + 2(4) = \\\\sqrt{3} - 1 - \\\\sqrt{3} - 1 + 8 = 6$$\\n2. Compute denominators:\\n$$\\\\sqrt{a_1^2 + b_1^2 + c_1^2} = \\\\sqrt{1^2 + 1^2 + 2^2} = \\\\sqrt{6}$$\\n$$\\\\sqrt{a_2^2 + b_2^2 + c_2^2} = \\\\sqrt{(\\\\sqrt{3}-1)^2 + (-\\\\sqrt{3}-1)^2 + 4^2} = \\\\sqrt{(4 - 2\\\\sqrt{3}) + (4 + 2\\\\sqrt{3}) + 16} = \\\\sqrt{24} = 2\\\\sqrt{6}$$\\n3. Therefore:\\n$$\\\\cos\\\\theta = \\\\dfrac{6}{\\\\sqrt{6} \\\\times 2\\\\sqrt{6}} = \\\\dfrac{6}{12} = \\\\dfrac{1}{2} \\\\implies \\\\theta = \\\\dfrac{\\\\pi}{3}$$ ($60^\\\\circ$)."
+      },
+      {
+        "question": "Find the value of $p$ so that the lines $\\\\dfrac{1 - x}{3} = \\\\dfrac{7y - 14}{2p} = \\\\dfrac{z - 3}{2}$ and $\\\\dfrac{7 - 7x}{3p} = \\\\dfrac{y - 5}{1} = \\\\dfrac{6 - z}{5}$ are perpendicular to each other.",
+        "options": [
+          "$$\\\\dfrac{70}{11}$$",
+          "$$\\\\dfrac{11}{70}$$",
+          "$$-\\\\dfrac{70}{11}$$",
+          "$$10$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Standardizing gives direction ratios $\\\\left(-3, \\\\dfrac{2p}{7}, 2\\\\right)$ and $\\\\left(-\\\\dfrac{3p}{7}, 1, -5\\\\right)$. The dot product set to zero yields $p = \\\\dfrac{70}{11}$.",
+          "Incorrect. Inverted fraction.",
+          "Incorrect. Sign mistake in standardizing $(1 - x)$ or $(7 - 7x)$.",
+          "Incorrect. Omitted the denominator factor of $7$."
+        ],
+        "fullExplanation": "First rewrite both line equations in standard symmetric form:\\n**Line 1:**\\n$$\\\\dfrac{-(x - 1)}{3} = \\\\dfrac{7(y - 2)}{2p} = \\\\dfrac{z - 3}{2} \\\\implies \\\\dfrac{x - 1}{-3} = \\\\dfrac{y - 2}{2p/7} = \\\\dfrac{z - 3}{2}$$\\nDirection ratios are $a_1 = -3, \\\\; b_1 = \\\\dfrac{2p}{7}, \\\\; c_1 = 2$.\\n\\n**Line 2:**\\n$$\\\\dfrac{-7(x - 1)}{3p} = \\\\dfrac{y - 5}{1} = \\\\dfrac{-(z - 6)}{5} \\\\implies \\\\dfrac{x - 1}{-3p/7} = \\\\dfrac{y - 5}{1} = \\\\dfrac{z - 6}{-5}$$\\nDirection ratios are $a_2 = -\\\\dfrac{3p}{7}, \\\\; b_2 = 1, \\\\; c_2 = -5$.\\n\\nFor perpendicularity, $a_1 a_2 + b_1 b_2 + c_1 c_2 = 0$:\\n$$(-3)\\\\left(-\\\\dfrac{3p}{7}\\\\right) + \\\\left(\\\\dfrac{2p}{7}\\\\right)(1) + (2)(-5) = 0$$\\n$$\\\\dfrac{9p}{7} + \\\\dfrac{2p}{7} - 10 = 0 \\\\implies \\\\dfrac{11p}{7} = 10 \\\\implies p = \\\\dfrac{70}{11}$$."
+      },
+      {
+        "question": "Find the perpendicular distance of the point $(2, 3, -5)$ from the plane $x + 2y - 2z = 9$.",
+        "options": [
+          "$$3$$",
+          "$$9$$",
+          "$$1$$",
+          "$$\\\\dfrac{17}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $d = \\\\dfrac{|2 + 2(3) - 2(-5) - 9|}{\\\\sqrt{1 + 4 + 4}} = \\\\dfrac{|2 + 6 + 10 - 9|}{3} = \\\\dfrac{9}{3} = 3$.",
+          "Incorrect. Forgot to divide by $\\\\sqrt{a^2+b^2+c^2} = 3$.",
+          "Incorrect. Arithmetic mistake in evaluating numerator.",
+          "Incorrect. Forgot the negative sign in $-2(-5) = +10$, computing $2+6-10-9 = -11$."
+        ],
+        "fullExplanation": "The perpendicular distance of point $(x_1, y_1, z_1)$ from the plane $ax + by + cz + d = 0$ is:\\n$$D = \\\\dfrac{|ax_1 + by_1 + cz_1 + d|}{\\\\sqrt{a^2 + b^2 + c^2}}$$\\nRewrite plane equation as $x + 2y - 2z - 9 = 0$.\\nSubstitute $(x_1, y_1, z_1) = (2, 3, -5)$:\\n$$D = \\\\dfrac{|1(2) + 2(3) - 2(-5) - 9|}{\\\\sqrt{1^2 + 2^2 + (-2)^2}} = \\\\dfrac{|2 + 6 + 10 - 9|}{\\\\sqrt{1 + 4 + 4}} = \\\\dfrac{|9|}{\\\\sqrt{9}} = \\\\dfrac{9}{3} = 3$$."
+      },
+      {
+        "question": "Find the distance between the parallel planes $2x - y + 2z + 3 = 0$ and $4x - 2y + 4z + 18 = 0$.",
+        "options": [
+          "$$2$$",
+          "$$3$$",
+          "$$4$$",
+          "$$\\\\dfrac{5}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Divide second plane by $2$: $2x - y + 2z + 9 = 0$. Distance is $\\\\dfrac{|9 - 3|}{\\\\sqrt{4 + 1 + 4}} = \\\\dfrac{6}{3} = 2$.",
+          "Incorrect. Calculation slip.",
+          "Incorrect. Subtracted without making coefficients identical.",
+          "Incorrect. Arithmetic slip."
+        ],
+        "fullExplanation": "1. Write both equations with identical coefficients for $x, y, z$:\\nPlane 1: $2x - y + 2z + 3 = 0$\\nPlane 2: $4x - 2y + 4z + 18 = 0 \\\\implies 2x - y + 2z + 9 = 0$\\n2. The distance between parallel planes is:\\n$$D = \\\\dfrac{|d_2 - d_1|}{\\\\sqrt{a^2 + b^2 + c^2}} = \\\\dfrac{|9 - 3|}{\\\\sqrt{2^2 + (-1)^2 + 2^2}} = \\\\dfrac{6}{\\\\sqrt{4 + 1 + 4}} = \\\\dfrac{6}{\\\\sqrt{9}} = \\\\dfrac{6}{3} = 2$$."
+      },
+      {
+        "question": "A plane cuts the coordinate axes at $(2, 0, 0)$, $(0, 3, 0)$, and $(0, 0, 4)$. What is its vector equation?",
+        "options": [
+          "$$\\\\vec{r} \\\\cdot (6\\\\hat{i} + 4\\\\hat{j} + 3\\\\hat{k}) = 12$$",
+          "$$\\\\vec{r} \\\\cdot (2\\\\hat{i} + 3\\\\hat{j} + 4\\\\hat{k}) = 1$$",
+          "$$\\\\vec{r} \\\\cdot (6\\\\hat{i} + 4\\\\hat{j} + 3\\\\hat{k}) = 1$$",
+          "$$\\\\vec{r} \\\\cdot (3\\\\hat{i} + 4\\\\hat{j} + 6\\\\hat{k}) = 12$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The intercept form is $\\\\dfrac{x}{2} + \\\\dfrac{y}{3} + \\\\dfrac{z}{4} = 1 \\\\implies 6x + 4y + 3z = 12$, which gives $\\\\vec{r}\\\\cdot(6\\\\hat{i}+4\\\\hat{j}+3\\\\hat{k}) = 12$.",
+          "Incorrect. Replaced intercepts directly into coefficients.",
+          "Incorrect. RHS must be $12$ after multiplying by LCM $12$.",
+          "Incorrect. Interchanged the coefficients."
+        ],
+        "fullExplanation": "1. The intercepts are $a = 2, b = 3, c = 4$.\\n2. Using intercept form:\\n$$\\\\dfrac{x}{2} + \\\\dfrac{y}{3} + \\\\dfrac{z}{4} = 1$$\\n3. Multiply across by $\\\\text{LCM}(2, 3, 4) = 12$:\\n$$6x + 4y + 3z = 12$$\\n4. In vector form, this is:\\n$$\\\\vec{r} \\\\cdot (6\\\\hat{i} + 4\\\\hat{j} + 3\\\\hat{k}) = 12$$."
+      },
+      {
+        "question": "Find the angle $\\\\theta$ between the line $\\\\dfrac{x - 2}{3} = \\\\dfrac{y + 1}{4} = \\\\dfrac{z - 2}{12}$ and the plane $2x - 2y + z = 5$.",
+        "options": [
+          "$$\\\\sin^{-1}\\\\left(\\\\dfrac{10}{39}\\\\right)$$",
+          "$$\\\\cos^{-1}\\\\left(\\\\dfrac{10}{39}\\\\right)$$",
+          "$$\\\\sin^{-1}\\\\left(\\\\dfrac{2}{13}\\\\right)$$",
+          "$$\\\\dfrac{\\\\pi}{6}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\sin\\\\theta = \\\\dfrac{|3(2) + 4(-2) + 12(1)|}{\\\\sqrt{9+16+144}\\\\sqrt{4+4+1}} = \\\\dfrac{|6-8+12|}{13 \\\\times 3} = \\\\dfrac{10}{39}$.",
+          "Incorrect. The angle between a line and a plane involves $\\\\sin\\\\theta$, not $\\\\cos\\\\theta$.",
+          "Incorrect. Arithmetic error in the dot product.",
+          "Incorrect. $10/39 \\\\ne 1/2$."
+        ],
+        "fullExplanation": "The angle $\\\\theta$ between a line with direction vector $\\\\vec{b} = a\\\\hat{i} + b\\\\hat{j} + c\\\\hat{k}$ and a plane with normal $\\\\vec{n} = A\\\\hat{i} + B\\\\hat{j} + C\\\\hat{k}$ is given by:\\n$$\\\\sin\\\\theta = \\\\dfrac{|\\\\vec{b} \\\\cdot \\\\vec{n}|}{|\\\\vec{b}||\\\\vec{n}|}$$\\nHere $\\\\vec{b} = 3\\\\hat{i} + 4\\\\hat{j} + 12\\\\hat{k}$ and $\\\\vec{n} = 2\\\\hat{i} - 2\\\\hat{j} + \\\\hat{k}$.\\n1. Compute dot product:\\n$$\\\\vec{b} \\\\cdot \\\\vec{n} = (3)(2) + (4)(-2) + (12)(1) = 6 - 8 + 12 = 10$$\\n2. Compute magnitudes:\\n$$|\\\\vec{b}| = \\\\sqrt{3^2 + 4^2 + 12^2} = \\\\sqrt{9 + 16 + 144} = \\\\sqrt{169} = 13$$\\n$$|\\\\vec{n}| = \\\\sqrt{2^2 + (-2)^2 + 1^2} = \\\\sqrt{4 + 4 + 1} = \\\\sqrt{9} = 3$$\\n3. Therefore:\\n$$\\\\sin\\\\theta = \\\\dfrac{10}{13 \\\\times 3} = \\\\dfrac{10}{39} \\\\implies \\\\theta = \\\\sin^{-1}\\\\left(\\\\dfrac{10}{39}\\\\right)$$."
+      },
+      {
+        "question": "Find the shortest distance between the skew lines $\\\\vec{r} = (\\\\hat{i} + 2\\\\hat{j} + \\\\hat{k}) + \\\\lambda(\\\\hat{i} - \\\\hat{j} + \\\\hat{k})$ and $\\\\vec{r} = (2\\\\hat{i} - \\\\hat{j} - \\\\hat{k}) + \\\\mu(2\\\\hat{i} + \\\\hat{j} + 2\\\\hat{k})$.",
+        "options": [
+          "$$\\\\dfrac{3\\\\sqrt{2}}{2}$$",
+          "$$3\\\\sqrt{2}$$",
+          "$$\\\\dfrac{\\\\sqrt{2}}{3}$$",
+          "$$\\\\dfrac{9}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|(\\\\vec{a}_2 - \\\\vec{a}_1)\\\\cdot(\\\\vec{b}_1 \\\\times \\\\vec{b}_2)| = 9$, and $|\\\\vec{b}_1 \\\\times \\\\vec{b}_2| = 3\\\\sqrt{2}$, giving $d = \\\\dfrac{9}{3\\\\sqrt{2}} = \\\\dfrac{3\\\\sqrt{2}}{2}$.",
+          "Incorrect. Failed to divide $9$ by $3$.",
+          "Incorrect. Inverted the ratio.",
+          "Incorrect. Squared the radical in the denominator."
+        ],
+        "fullExplanation": "1. Identify the vectors:\\n$$\\\\vec{a}_1 = \\\\hat{i} + 2\\\\hat{j} + \\\\hat{k}, \\\\quad \\\\vec{b}_1 = \\\\hat{i} - \\\\hat{j} + \\\\hat{k}$$\\n$$\\\\vec{a}_2 = 2\\\\hat{i} - \\\\hat{j} - \\\\hat{k}, \\\\quad \\\\vec{b}_2 = 2\\\\hat{i} + \\\\hat{j} + 2\\\\hat{k}$$\\n2. Find $\\\\vec{a}_2 - \\\\vec{a}_1$:\\n$$\\\\vec{a}_2 - \\\\vec{a}_1 = (2 - 1)\\\\hat{i} + (-1 - 2)\\\\hat{j} + (-1 - 1)\\\\hat{k} = \\\\hat{i} - 3\\\\hat{j} - 2\\\\hat{k}$$\\n3. Compute $\\\\vec{b}_1 \\\\times \\\\vec{b}_2$:\\n$$\\\\vec{b}_1 \\\\times \\\\vec{b}_2 = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 1 & -1 & 1 \\\\\\\\ 2 & 1 & 2 \\\\end{vmatrix} = \\\\hat{i}(-2 - 1) - \\\\hat{j}(2 - 2) + \\\\hat{k}(1 - (-2)) = -3\\\\hat{i} + 0\\\\hat{j} + 3\\\\hat{k}$$\\n4. Compute magnitude $|\\\\vec{b}_1 \\\\times \\\\vec{b}_2|$:\\n$$|\\\\vec{b}_1 \\\\times \\\\vec{b}_2| = \\\\sqrt{(-3)^2 + 0^2 + 3^2} = \\\\sqrt{18} = 3\\\\sqrt{2}$$\\n5. Compute dot product:\\n$$(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\cdot (\\\\vec{b}_1 \\\\times \\\\vec{b}_2) = (1)(-3) + (-3)(0) + (-2)(3) = -3 - 6 = -9$$\\n6. The shortest distance is:\\n$$d = \\\\dfrac{|-9|}{3\\\\sqrt{2}} = \\\\dfrac{9}{3\\\\sqrt{2}} = \\\\dfrac{3}{\\\\sqrt{2}} = \\\\dfrac{3\\\\sqrt{2}}{2}$$."
+      },
+      {
+        "question": "Find the coordinates of the foot of the perpendicular drawn from the point $P(1, 2, 4)$ to the plane $2x + y - 2z + 3 = 0$.",
+        "options": [
+          "$$\\\\left(\\\\dfrac{11}{9}, \\\\dfrac{19}{9}, \\\\dfrac{34}{9}\\\\right)$$",
+          "$$\\\\left(\\\\dfrac{7}{9}, \\\\dfrac{17}{9}, \\\\dfrac{38}{9}\\\\right)$$",
+          "$$\\\\left(-\\\\dfrac{11}{9}, -\\\\dfrac{19}{9}, -\\\\dfrac{34}{9}\\\\right)$$",
+          "$$\\\\left(3, 3, 2\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using $\\\\dfrac{x - x_1}{a} = \\\\dfrac{y - y_1}{b} = \\\\dfrac{z - z_1}{c} = -\\\\dfrac{ax_1 + by_1 + cz_1 + d}{a^2+b^2+c^2}$, the ratio is $+1/9$, giving $(11/9, 19/9, 34/9)$.",
+          "Incorrect. Applied the wrong sign to the ratio $-k$.",
+          "Incorrect. Signs inverted across all coordinates.",
+          "Incorrect. Arithmetic slip."
+        ],
+        "fullExplanation": "Let $F(x', y', z')$ be the foot of the perpendicular from $(x_1, y_1, z_1) = (1, 2, 4)$ to $2x + y - 2z + 3 = 0$.\\nUsing the standard formula:\\n$$\\\\dfrac{x' - x_1}{a} = \\\\dfrac{y' - y_1}{b} = \\\\dfrac{z' - z_1}{c} = -\\\\dfrac{ax_1 + by_1 + cz_1 + d}{a^2 + b^2 + c^2}$$\\n1. Evaluate the numerator:\\n$$ax_1 + by_1 + cz_1 + d = 2(1) + 1(2) - 2(4) + 3 = 2 + 2 - 8 + 3 = -1$$\\n2. Evaluate denominator:\\n$$a^2 + b^2 + c^2 = 2^2 + 1^2 + (-2)^2 = 4 + 1 + 4 = 9$$\\n3. The ratio is:\\n$$-\\\\dfrac{-1}{9} = \\\\dfrac{1}{9}$$\\n4. Calculate each coordinate:\\n$$x' = 1 + 2\\\\left(\\\\dfrac{1}{9}\\\\right) = \\\\dfrac{11}{9}$$\\n$$y' = 2 + 1\\\\left(\\\\dfrac{1}{9}\\\\right) = \\\\dfrac{19}{9}$$\\n$$z' = 4 - 2\\\\left(\\\\dfrac{1}{9}\\\\right) = \\\\dfrac{34}{9}$$\\nThus, the foot of perpendicular is $\\\\left(\\\\dfrac{11}{9}, \\\\dfrac{19}{9}, \\\\dfrac{34}{9}\\\\right)$."
+      },
+      {
+        "question": "Find the image of the point $P(1, 3, 4)$ in the plane $2x - y + z + 3 = 0$.",
+        "options": [
+          "$$(-3, 5, 2)$$",
+          "$$(3, -5, -2)$$",
+          "$$(-1, 4, 3)$$",
+          "$$(-2, 4, 1)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The ratio is $-2\\\\dfrac{2(1) - 3 + 4 + 3}{4 + 1 + 1} = -2\\\\left(\\\\dfrac{6}{6}\\\\right) = -2$. Thus $(x, y, z) = (1 - 4, 3 + 2, 4 - 2) = (-3, 5, 2)$.",
+          "Incorrect. All signs inverted.",
+          "Incorrect. This is the foot of the perpendicular, not the image.",
+          "Incorrect. Arithmetic slip."
+        ],
+        "fullExplanation": "For the image $(x', y', z')$ of $(x_1, y_1, z_1) = (1, 3, 4)$ in $2x - y + z + 3 = 0$, we use:\\n$$\\\\dfrac{x' - x_1}{a} = \\\\dfrac{y' - y_1}{b} = \\\\dfrac{z' - z_1}{c} = -2\\\\left(\\\\dfrac{ax_1 + by_1 + cz_1 + d}{a^2 + b^2 + c^2}\\\\right)$$\\n1. Evaluate numerator:\\n$$ax_1 + by_1 + cz_1 + d = 2(1) - 1(3) + 1(4) + 3 = 2 - 3 + 4 + 3 = 6$$\\n2. Evaluate denominator:\\n$$a^2 + b^2 + c^2 = 2^2 + (-1)^2 + 1^2 = 4 + 1 + 1 = 6$$\\n3. The multiplier is:\\n$$-2\\\\left(\\\\dfrac{6}{6}\\\\right) = -2$$\\n4. Hence:\\n$$x' = 1 + 2(-2) = -3$$\\n$$y' = 3 + (-1)(-2) = 5$$\\n$$z' = 4 + 1(-2) = 2$$\\nThe image point is $(-3, 5, 2)$."
+      },
+      {
+        "question": "Find the foot of the perpendicular from the point $P(1, 6, 3)$ to the line $\\\\dfrac{x}{1} = \\\\dfrac{y - 1}{2} = \\\\dfrac{z - 2}{3}$.",
+        "options": [
+          "$$(1, 3, 5)$$",
+          "$$(2, 5, 8)$$",
+          "$$(0, 1, 2)$$",
+          "$$(1, 2, 3)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Any point on the line is $Q(\\\\lambda, 2\\\\lambda + 1, 3\\\\lambda + 2)$. $\\\\vec{PQ}\\\\cdot\\\\vec{b} = 0 \\\\implies 14\\\\lambda - 14 = 0 \\\\implies \\\\lambda = 1$. So $Q = (1, 3, 5)$.",
+          "Incorrect. Result obtained if $\\\\lambda = 2$.",
+          "Incorrect. Result obtained if $\\\\lambda = 0$.",
+          "Incorrect. Does not lie on the given line."
+        ],
+        "fullExplanation": "1. Let any general point on the given line be $Q$ corresponding to parameter $\\\\lambda$:\\n$$Q = (\\\\lambda, \\\\; 2\\\\lambda + 1, \\\\; 3\\\\lambda + 2)$$\\n2. The vector $\\\\vec{PQ}$ from $P(1, 6, 3)$ to $Q$ is:\\n$$\\\\vec{PQ} = (\\\\lambda - 1)\\\\hat{i} + (2\\\\lambda + 1 - 6)\\\\hat{j} + (3\\\\lambda + 2 - 3)\\\\hat{k} = (\\\\lambda - 1)\\\\hat{i} + (2\\\\lambda - 5)\\\\hat{j} + (3\\\\lambda - 1)\\\\hat{k}$$\\n3. The direction vector of the line is $\\\\vec{b} = \\\\hat{i} + 2\\\\hat{j} + 3\\\\hat{k}$. Since $PQ$ is perpendicular to the line:\\n$$\\\\vec{PQ} \\\\cdot \\\\vec{b} = 0$$\\n$$1(\\\\lambda - 1) + 2(2\\\\lambda - 5) + 3(3\\\\lambda - 1) = 0$$\\n$$\\\\lambda - 1 + 4\\\\lambda - 10 + 9\\\\lambda - 3 = 0$$\\n$$14\\\\lambda - 14 = 0 \\\\implies \\\\lambda = 1$$\\n4. Substituting $\\\\lambda = 1$ into $Q$ gives:\\n$$Q = (1, \\\\; 2(1) + 1, \\\\; 3(1) + 2) = (1, 3, 5)$$."
+      },
+      {
+        "question": "Find the distance of the point $(1, -2, 3)$ from the plane $x - y + z = 5$ measured along the line $\\\\dfrac{x}{2} = \\\\dfrac{y}{3} = \\\\dfrac{z}{-6}$.",
+        "options": [
+          "$$1$$",
+          "$$7$$",
+          "$$\\\\dfrac{1}{7}$$",
+          "$$\\\\sqrt{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Equation of line through $(1, -2, 3)$ is $\\\\dfrac{x - 1}{2} = \\\\dfrac{y + 2}{3} = \\\\dfrac{z - 3}{-6} = r$. Point on plane has $r = 1/7$. Distance is $|r|\\\\sqrt{4+9+36} = \\\\dfrac{1}{7}(7) = 1$.",
+          "Incorrect. Failed to multiply parameter $r = 1/7$ by the magnitude of the direction vector $7$.",
+          "Incorrect. This is the parameter value $r$, not the Euclidean distance.",
+          "Incorrect. Computed the perpendicular distance instead of distance along the specified direction."
+        ],
+        "fullExplanation": "1. Write the equation of the line passing through $P(1, -2, 3)$ in the direction of the given line (with DRs $2, 3, -6$):\\n$$\\\\dfrac{x - 1}{2} = \\\\dfrac{y + 2}{3} = \\\\dfrac{z - 3}{-6} = r$$\\n2. Any point $Q$ on this line has coordinates:\\n$$Q = (2r + 1, \\\\; 3r - 2, \\\\; -6r + 3)$$\\n3. Since $Q$ lies on the plane $x - y + z = 5$:\\n$$(2r + 1) - (3r - 2) + (-6r + 3) = 5$$\\n$$-7r + 6 = 5 \\\\implies -7r = -1 \\\\implies r = \\\\dfrac{1}{7}$$\\n4. The coordinates of $Q$ are $\\\\left(\\\\dfrac{9}{7}, -\\\\dfrac{11}{7}, \\\\dfrac{15}{7}\\\\right)$.\\n5. The distance $PQ$ is:\\n$$PQ = \\\\sqrt{(2r)^2 + (3r)^2 + (-6r)^2} = |r|\\\\sqrt{4 + 9 + 36} = \\\\dfrac{1}{7}\\\\sqrt{49} = \\\\dfrac{7}{7} = 1$$."
+      },
+      {
+        "question": "If the lines $\\\\dfrac{x - 1}{2} = \\\\dfrac{y + 1}{3} = \\\\dfrac{z - 1}{4}$ and $\\\\dfrac{x - 3}{1} = \\\\dfrac{y - k}{2} = \\\\dfrac{z}{1}$ intersect, then what is the value of $k$?",
+        "options": [
+          "$$\\\\dfrac{9}{2}$$",
+          "$$-\\\\dfrac{9}{2}$$",
+          "$$\\\\dfrac{7}{2}$$",
+          "$$5$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using coplanarity condition $\\\\begin{vmatrix} 2 & k+1 & -1 \\\\\\\\ 2 & 3 & 4 \\\\\\\\ 1 & 2 & 1 \\\\end{vmatrix} = 0$, expansion yields $2k - 9 = 0 \\\\implies k = 9/2$.",
+          "Incorrect. Sign mistake in expansion.",
+          "Incorrect. Arithmetic error in minor computation.",
+          "Incorrect. Rounding or arithmetic slip."
+        ],
+        "fullExplanation": "Two lines intersect if and only if they are coplanar and not parallel.\\nPoints on the lines are $A(1, -1, 1)$ and $B(3, k, 0)$.\\nDirection ratios are $(2, 3, 4)$ and $(1, 2, 1)$.\\n1. The coplanarity condition is:\\n$$\\\\begin{vmatrix} x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\\\\\\\ a_1 & b_1 & c_1 \\\\\\\\ a_2 & b_2 & c_2 \\\\end{vmatrix} = 0$$\\n$$\\\\begin{vmatrix} 3 - 1 & k - (-1) & 0 - 1 \\\\\\\\ 2 & 3 & 4 \\\\\\\\ 1 & 2 & 1 \\\\end{vmatrix} = 0 \\\\implies \\\\begin{vmatrix} 2 & k + 1 & -1 \\\\\\\\ 2 & 3 & 4 \\\\\\\\ 1 & 2 & 1 \\\\end{vmatrix} = 0$$\\n2. Expand along the first row:\\n$$2(3(1) - 4(2)) - (k + 1)(2(1) - 4(1)) + (-1)(2(2) - 3(1)) = 0$$\\n$$2(3 - 8) - (k + 1)(2 - 4) - 1(4 - 3) = 0$$\\n$$2(-5) - (k + 1)(-2) - 1(1) = 0$$\\n$$-10 + 2(k + 1) - 1 = 0$$\\n$$-10 + 2k + 2 - 1 = 0 \\\\implies 2k - 9 = 0 \\\\implies k = \\\\dfrac{9}{2}$$."
+      },
+      {
+        "question": "Find the point of intersection of the line $\\\\dfrac{x - 1}{2} = \\\\dfrac{y + 1}{3} = \\\\dfrac{z - 1}{4}$ and the plane $x + 2y + z = 6$.",
+        "options": [
+          "$$\\\\left(2, \\\\dfrac{1}{2}, 3\\\\right)$$",
+          "$$\\\\left(1, -1, 1\\\\right)$$",
+          "$$\\\\left(3, 2, 5\\\\right)$$",
+          "$$\\\\left(-1, -4, -3\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Point is $(2\\\\lambda + 1, 3\\\\lambda - 1, 4\\\\lambda + 1)$. Substituting gives $12\\\\lambda = 6 \\\\implies \\\\lambda = 1/2$, yielding $(2, 1/2, 3)$.",
+          "Incorrect. This point lies on the line (for $\\\\lambda = 0$) but does not satisfy the plane equation $1 + 2(-1) + 1 = 0 \\\\ne 6$.",
+          "Incorrect. Obtained by taking $\\\\lambda = 1$.",
+          "Incorrect. Obtained by taking $\\\\lambda = -1$."
+        ],
+        "fullExplanation": "1. Express the general point on the line in parametric form:\\n$$\\\\dfrac{x - 1}{2} = \\\\dfrac{y + 1}{3} = \\\\dfrac{z - 1}{4} = \\\\lambda$$\\n$$x = 2\\\\lambda + 1, \\\\quad y = 3\\\\lambda - 1, \\\\quad z = 4\\\\lambda + 1$$\\n2. Substitute these into the plane equation $x + 2y + z = 6$:\\n$$(2\\\\lambda + 1) + 2(3\\\\lambda - 1) + (4\\\\lambda + 1) = 6$$\\n$$2\\\\lambda + 1 + 6\\\\lambda - 2 + 4\\\\lambda + 1 = 6$$\\n$$12\\\\lambda = 6 \\\\implies \\\\lambda = \\\\dfrac{1}{2}$$\\n3. Find the coordinates:\\n$$x = 2\\\\left(\\\\dfrac{1}{2}\\\\right) + 1 = 2$$\\n$$y = 3\\\\left(\\\\dfrac{1}{2}\\\\right) - 1 = \\\\dfrac{1}{2}$$\\n$$z = 4\\\\left(\\\\dfrac{1}{2}\\\\right) + 1 = 3$$\\nThe point of intersection is $\\\\left(2, \\\\dfrac{1}{2}, 3\\\\right)$."
+      },
+      {
+        "question": "Find the equation of the plane passing through the point $(1, 1, 1)$ and containing the line of intersection of the planes $x + y + z = 6$ and $2x + 3y + 4z + 5 = 0$.",
+        "options": [
+          "$$20x + 23y + 26z - 69 = 0$$",
+          "$$20x + 23y + 26z + 69 = 0$$",
+          "$$x + 2y + 3z - 6 = 0$$",
+          "$$14x + 14y + 14z - 42 = 0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Equation is $(x + y + z - 6) + \\\\lambda(2x + 3y + 4z + 5) = 0$. Passing through $(1, 1, 1)$ gives $\\\\lambda = 3/14$. Multiplying by $14$ gives $20x + 23y + 26z - 69 = 0$.",
+          "Incorrect. Sign mistake in constant term.",
+          "Incorrect. Does not contain the line of intersection.",
+          "Incorrect. Represents the first plane scaled."
+        ],
+        "fullExplanation": "1. The equation of any plane passing through the intersection of the two given planes is:\\n$$(x + y + z - 6) + \\\\lambda(2x + 3y + 4z + 5) = 0$$\\n2. Since it passes through $(1, 1, 1)$:\\n$$(1 + 1 + 1 - 6) + \\\\lambda(2(1) + 3(1) + 4(1) + 5) = 0$$\\n$$-3 + \\\\lambda(14) = 0 \\\\implies 14\\\\lambda = 3 \\\\implies \\\\lambda = \\\\dfrac{3}{14}$$\\n3. Substitute $\\\\lambda = \\\\dfrac{3}{14}$ back into the equation:\\n$$(x + y + z - 6) + \\\\dfrac{3}{14}(2x + 3y + 4z + 5) = 0$$\\nMultiply by 14:\\n$$14(x + y + z - 6) + 3(2x + 3y + 4z + 5) = 0$$\\n$$(14x + 6x) + (14y + 9y) + (14z + 12z) - 84 + 15 = 0$$\\n$$20x + 23y + 26z - 69 = 0$$."
+      },
+      {
+        "question": "Find the equation of the plane containing the parallel lines $\\\\dfrac{x - 1}{2} = \\\\dfrac{y - 2}{3} = \\\\dfrac{z - 3}{4}$ and $\\\\dfrac{x - 2}{2} = \\\\dfrac{y - 3}{3} = \\\\dfrac{z - 5}{4}$.",
+        "options": [
+          "$$2x - z + 1 = 0$$",
+          "$$2x + y - z = 1$$",
+          "$$x + y - z = 0$$",
+          "$$2x - y + z - 3 = 0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A vector along the lines is $\\\\vec{b} = (2, 3, 4)$, vector between points is $\\\\vec{AB} = (1, 1, 2)$. Normal is $\\\\vec{b} \\\\times \\\\vec{AB} = (2, 0, -1)$. Plane is $2(x - 1) - 1(z - 3) = 0 \\\\implies 2x - z + 1 = 0$.",
+          "Incorrect. Check if normal is perpendicular to line: $2(2) + 1(3) - 1(4) = 3 \\\\ne 0$.",
+          "Incorrect. $1(2) + 1(3) - 1(4) = 1 \\\\ne 0$.",
+          "Incorrect. Does not contain the second line."
+        ],
+        "fullExplanation": "1. Point on line 1 is $A(1, 2, 3)$, and point on line 2 is $B(2, 3, 5)$.\\n2. The line connecting them is:\\n$$\\\\vec{AB} = (2 - 1)\\\\hat{i} + (3 - 2)\\\\hat{j} + (5 - 3)\\\\hat{k} = \\\\hat{i} + \\\\hat{j} + 2\\\\hat{k}$$\\n3. The direction vector of both parallel lines is $\\\\vec{b} = 2\\\\hat{i} + 3\\\\hat{j} + 4\\\\hat{k}$.\\n4. The normal vector $\\\\vec{n}$ to the plane containing both lines is:\\n$$\\\\vec{n} = \\\\vec{b} \\\\times \\\\vec{AB} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 2 & 3 & 4 \\\\\\\\ 1 & 1 & 2 \\\\end{vmatrix} = \\\\hat{i}(6 - 4) - \\\\hat{j}(4 - 4) + \\\\hat{k}(2 - 3) = 2\\\\hat{i} - \\\\hat{k}$$\\n5. The equation of the plane passing through $A(1, 2, 3)$ with normal $(2, 0, -1)$ is:\\n$$2(x - 1) + 0(y - 2) - 1(z - 3) = 0$$\\n$$2x - 2 - z + 3 = 0 \\\\implies 2x - z + 1 = 0$$."
+      },
+      {
+        "question": "The lines $\\\\dfrac{x - 2}{1} = \\\\dfrac{y - 3}{1} = \\\\dfrac{z - 4}{-k}$ and $\\\\dfrac{x - 1}{k} = \\\\dfrac{y - 4}{2} = \\\\dfrac{z - 5}{1}$ are coplanar if $k$ equals:",
+        "options": [
+          "$$0 \\\\text{ or } -3$$",
+          "$$0 \\\\text{ or } 3$$",
+          "$$1 \\\\text{ or } -1$$",
+          "$$2 \\\\text{ or } -3$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Determinant simplifies to $-k^2 - 3k = 0 \\\\implies k(k + 3) = 0 \\\\implies k = 0$ or $k = -3$.",
+          "Incorrect. Sign error in factoring $k^2 + 3k = 0$.",
+          "Incorrect. Incorrect expansion of the determinant.",
+          "Incorrect. Arithmetic mistake."
+        ],
+        "fullExplanation": "1. Points on the lines are $A(2, 3, 4)$ and $B(1, 4, 5)$.\\n$$\\\\vec{AB} = (1 - 2)\\\\hat{i} + (4 - 3)\\\\hat{j} + (5 - 4)\\\\hat{k} = -\\\\hat{i} + \\\\hat{j} + \\\\hat{k}$$\\n2. Direction ratios are $(1, 1, -k)$ and $(k, 2, 1)$.\\n3. For coplanarity:\\n$$\\\\begin{vmatrix} -1 & 1 & 1 \\\\\\\\ 1 & 1 & -k \\\\\\\\ k & 2 & 1 \\\\end{vmatrix} = 0$$\\n4. Expand along the first row:\\n$$-1(1 - (-2k)) - 1(1 - (-k^2)) + 1(2 - k) = 0$$\\n$$-1(1 + 2k) - (1 + k^2) + (2 - k) = 0$$\\n$$-1 - 2k - 1 - k^2 + 2 - k = 0$$\\n$$-k^2 - 3k = 0 \\\\implies k^2 + 3k = 0 \\\\implies k(k + 3) = 0$$\\nThus, $k = 0$ or $k = -3$."
+      },
+      {
+        "question": "Find the image of the point $P(1, 2, 3)$ in the line $\\\\dfrac{x + 1}{2} = \\\\dfrac{y - 3}{1} = \\\\dfrac{z + 4}{-1}$.",
+        "options": [
+          "$$\\\\left(-\\\\dfrac{17}{3}, \\\\dfrac{8}{3}, -\\\\dfrac{29}{3}\\\\right)$$",
+          "$$\\\\left(-\\\\dfrac{7}{3}, \\\\dfrac{7}{3}, -\\\\dfrac{10}{3}\\\\right)$$",
+          "$$\\\\left(-5, 3, -9\\\\right)$$",
+          "$$\\\\left(-\\\\dfrac{11}{3}, \\\\dfrac{5}{3}, -\\\\dfrac{19}{3}\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Foot of perpendicular is $F(-7/3, 7/3, -10/3)$ with $\\\\lambda = -2/3$. Using $F$ as the midpoint of $P$ and image $Q$, we get $Q = (-17/3, 8/3, -29/3)$.",
+          "Incorrect. This is the foot of the perpendicular, not the image point.",
+          "Incorrect. Result from using an incorrect integer parameter.",
+          "Incorrect. Arithmetic slip in the midpoint formula."
+        ],
+        "fullExplanation": "1. Let $F$ be the foot of perpendicular on the line, given parametrically by:\\n$$F = (2\\\\lambda - 1, \\\\; \\\\lambda + 3, \\\\; -\\\\lambda - 4)$$\\n2. The vector $\\\\vec{PF}$ is:\\n$$\\\\vec{PF} = (2\\\\lambda - 2)\\\\hat{i} + (\\\\lambda + 1)\\\\hat{j} + (-\\\\lambda - 7)\\\\hat{k}$$\\n3. Since $\\\\vec{PF}$ is perpendicular to the line whose DRs are $(2, 1, -1)$:\\n$$2(2\\\\lambda - 2) + 1(\\\\lambda + 1) - 1(-\\\\lambda - 7) = 0$$\\n$$4\\\\lambda - 4 + \\\\lambda + 1 + \\\\lambda + 7 = 0 \\\\implies 6\\\\lambda + 4 = 0 \\\\implies \\\\lambda = -\\\\dfrac{2}{3}$$\\n4. Thus the foot of the perpendicular $F$ is:\\n$$F = \\\\left(2\\\\left(-\\\\dfrac{2}{3}\\\\right) - 1, \\\\; -\\\\dfrac{2}{3} + 3, \\\\; \\\\dfrac{2}{3} - 4\\\\right) = \\\\left(-\\\\dfrac{7}{3}, \\\\; \\\\dfrac{7}{3}, \\\\; -\\\\dfrac{10}{3}\\\\right)$$\\n5. Let image be $Q(x_2, y_2, z_2)$. Since $F$ is the midpoint of $PQ$:\\n$$\\\\dfrac{x_2 + 1}{2} = -\\\\dfrac{7}{3} \\\\implies x_2 = -\\\\dfrac{14}{3} - 1 = -\\\\dfrac{17}{3}$$\\n$$\\\\dfrac{y_2 + 2}{2} = \\\\dfrac{7}{3} \\\\implies y_2 = \\\\dfrac{14}{3} - 2 = \\\\dfrac{8}{3}$$\\n$$\\\\dfrac{z_2 + 3}{2} = -\\\\dfrac{10}{3} \\\\implies z_2 = -\\\\dfrac{20}{3} - 3 = -\\\\dfrac{29}{3}$$\\nHence, $Q = \\\\left(-\\\\dfrac{17}{3}, \\\\dfrac{8}{3}, -\\\\dfrac{29}{3}\\\\right)$."
+      },
+      {
+        "question": "Find the shortest distance between the lines $\\\\dfrac{x - 3}{3} = \\\\dfrac{y - 8}{-1} = \\\\dfrac{z - 3}{1}$ and $\\\\dfrac{x + 3}{-3} = \\\\dfrac{y + 7}{2} = \\\\dfrac{z - 6}{4}$.",
+        "options": [
+          "$$3\\\\sqrt{30}$$",
+          "$$\\\\sqrt{30}$$",
+          "$$2\\\\sqrt{30}$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{a}_2 - \\\\vec{a}_1 = (-6, -15, 3)$ and $\\\\vec{b}_1 \\\\times \\\\vec{b}_2 = (-6, -15, 3)$. Since they are parallel, $d = |\\\\vec{b}_1 \\\\times \\\\vec{b}_2| = \\\\sqrt{36 + 225 + 9} = \\\\sqrt{270} = 3\\\\sqrt{30}$.",
+          "Incorrect. Lost the scalar factor $3$.",
+          "Incorrect. Arithmetic error.",
+          "Incorrect. The lines are skew and do not intersect."
+        ],
+        "fullExplanation": "1. Points: $A(3, 8, 3)$ on $L_1$ and $B(-3, -7, 6)$ on $L_2$.\\n$$\\\\vec{AB} = (-3 - 3)\\\\hat{i} + (-7 - 8)\\\\hat{j} + (6 - 3)\\\\hat{k} = -6\\\\hat{i} - 15\\\\hat{j} + 3\\\\hat{k}$$\\n2. Directions: $\\\\vec{b}_1 = 3\\\\hat{i} - \\\\hat{j} + \\\\hat{k}$ and $\\\\vec{b}_2 = -3\\\\hat{i} + 2\\\\hat{j} + 4\\\\hat{k}$.\\n3. Compute cross product:\\n$$\\\\vec{b}_1 \\\\times \\\\vec{b}_2 = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 3 & -1 & 1 \\\\\\\\ -3 & 2 & 4 \\\\end{vmatrix} = \\\\hat{i}(-4 - 2) - \\\\hat{j}(12 - (-3)) + \\\\hat{k}(6 - 3) = -6\\\\hat{i} - 15\\\\hat{j} + 3\\\\hat{k}$$\\n4. Notice $\\\\vec{AB} = \\\\vec{b}_1 \\\\times \\\\vec{b}_2$. Hence:\\n$$|(\\\\vec{AB}) \\\\cdot (\\\\vec{b}_1 \\\\times \\\\vec{b}_2)| = |\\\\vec{b}_1 \\\\times \\\\vec{b}_2|^2$$\\n5. The shortest distance is:\\n$$d = \\\\dfrac{|\\\\vec{b}_1 \\\\times \\\\vec{b}_2|^2}{|\\\\vec{b}_1 \\\\times \\\\vec{b}_2|} = |\\\\vec{b}_1 \\\\times \\\\vec{b}_2| = \\\\sqrt{(-6)^2 + (-15)^2 + 3^2} = \\\\sqrt{36 + 225 + 9} = \\\\sqrt{270} = 3\\\\sqrt{30}$$."
+      },
+      {
+        "question": "Find the equation of the plane passing through the point $(1, -1, 1)$ and perpendicular to both the planes $2x + 3y - 2z = 5$ and $x + 2y - 3z = 8$.",
+        "options": [
+          "$$5x - 4y - z = 8$$",
+          "$$5x + 4y - z = 0$$",
+          "$$5x - 4y + z = 10$$",
+          "$$4x + 5y - z = 0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Normal is $\\\\vec{n}_1 \\\\times \\\\vec{n}_2 = (-5, 4, 1)$. Plane equation is $-5(x - 1) + 4(y + 1) + 1(z - 1) = 0 \\\\implies 5x - 4y - z = 8$.",
+          "Incorrect. Check dot product with $(1, -1, 1)$: $5(1) + 4(-1) - 1 = 0$, but normal is wrong.",
+          "Incorrect. Sign slip on $z$ coefficient.",
+          "Incorrect. Swapped coefficients of $x$ and $y$."
+        ],
+        "fullExplanation": "1. The normal $\\\\vec{n}$ to the required plane must be perpendicular to both given normals $\\\\vec{n}_1 = 2\\\\hat{i} + 3\\\\hat{j} - 2\\\\hat{k}$ and $\\\\vec{n}_2 = \\\\hat{i} + 2\\\\hat{j} - 3\\\\hat{k}$:\\n$$\\\\vec{n} = \\\\vec{n}_1 \\\\times \\\\vec{n}_2 = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 2 & 3 & -2 \\\\\\\\ 1 & 2 & -3 \\\\end{vmatrix} = \\\\hat{i}(-9 - (-4)) - \\\\hat{j}(-6 - (-2)) + \\\\hat{k}(4 - 3)$$\\n$$\\\\vec{n} = -5\\\\hat{i} + 4\\\\hat{j} + \\\\hat{k}$$\\n2. The plane passes through $(x_1, y_1, z_1) = (1, -1, 1)$:\\n$$-5(x - 1) + 4(y - (-1)) + 1(z - 1) = 0$$\\n$$-5x + 5 + 4y + 4 + z - 1 = 0$$\\n$$-5x + 4y + z + 8 = 0 \\\\iff 5x - 4y - z = 8$$."
+      },
+      {
+        "question": "Find the length of the projection of the line segment joining $A(1, 0, 3)$ and $B(2, 5, 1)$ on the line having direction ratios $(2, 3, 6)$.",
+        "options": [
+          "$$\\\\dfrac{5}{7}$$",
+          "$$\\\\dfrac{29}{7}$$",
+          "$$5$$",
+          "$$\\\\dfrac{5}{49}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{AB} = (1, 5, -2)$. DCs of line are $(2/7, 3/7, 6/7)$. Projection is $|1(2/7) + 5(3/7) - 2(6/7)| = |(2 + 15 - 12)/7| = 5/7$.",
+          "Incorrect. Added $12$ instead of subtracting $12$, getting $29/7$.",
+          "Incorrect. Failed to normalize direction ratios by $\\\\sqrt{4+9+36} = 7$.",
+          "Incorrect. Divided by $7^2 = 49$ instead of $7$."
+        ],
+        "fullExplanation": "1. The vector $\\\\vec{AB}$ is:\\n$$\\\\vec{AB} = (2 - 1)\\\\hat{i} + (5 - 0)\\\\hat{j} + (1 - 3)\\\\hat{k} = \\\\hat{i} + 5\\\\hat{j} - 2\\\\hat{k}$$\\n2. The direction ratios of the line are $(2, 3, 6)$. Its magnitude is:\\n$$\\\\sqrt{2^2 + 3^2 + 6^2} = \\\\sqrt{4 + 9 + 36} = \\\\sqrt{49} = 7$$\\nSo the direction cosines are $l = \\\\dfrac{2}{7}, \\\\; m = \\\\dfrac{3}{7}, \\\\; n = \\\\dfrac{6}{7}$.\\n3. The projection length is:\\n$$|l(x_2 - x_1) + m(y_2 - y_1) + n(z_2 - z_1)| = \\\\left|1\\\\left(\\\\dfrac{2}{7}\\\\right) + 5\\\\left(\\\\dfrac{3}{7}\\\\right) + (-2)\\\\left(\\\\dfrac{6}{7}\\\\right)\\\\right|$$\\n$$= \\\\left|\\\\dfrac{2 + 15 - 12}{7}\\\\right| = \\\\dfrac{5}{7}$$."
+      },
+      {
+        "question": "Find the distance between the two parallel lines $\\\\vec{r} = (\\\\hat{i} + 2\\\\hat{j} - 4\\\\hat{k}) + \\\\lambda(2\\\\hat{i} + 3\\\\hat{j} + 6\\\\hat{k})$ and $\\\\vec{r} = (3\\\\hat{i} + 3\\\\hat{j} - 5\\\\hat{k}) + \\\\mu(2\\\\hat{i} + 3\\\\hat{j} + 6\\\\hat{k})$.",
+        "options": [
+          "$$\\\\dfrac{\\\\sqrt{293}}{7}$$",
+          "$$\\\\dfrac{\\\\sqrt{293}}{49}$$",
+          "$$\\\\dfrac{293}{7}$$",
+          "$$\\\\dfrac{\\\\sqrt{149}}{7}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\times \\\\vec{b}| = |-9\\\\hat{i} + 14\\\\hat{j} - 4\\\\hat{k}| = \\\\sqrt{81 + 196 + 16} = \\\\sqrt{293}$. Dividing by $|\\\\vec{b}| = 7$ yields $\\\\dfrac{\\\\sqrt{293}}{7}$.",
+          "Incorrect. Divided by $|\\\\vec{b}|^2$ instead of $|\\\\vec{b}|$.",
+          "Incorrect. Omitted square root on the numerator.",
+          "Incorrect. Arithmetic mistake in computing cross product components."
+        ],
+        "fullExplanation": "1. Identify the given vectors:\\n$$\\\\vec{a}_1 = \\\\hat{i} + 2\\\\hat{j} - 4\\\\hat{k}, \\\\quad \\\\vec{a}_2 = 3\\\\hat{i} + 3\\\\hat{j} - 5\\\\hat{k}, \\\\quad \\\\vec{b} = 2\\\\hat{i} + 3\\\\hat{j} + 6\\\\hat{k}$$\\n2. Find $\\\\vec{a}_2 - \\\\vec{a}_1$:\\n$$\\\\vec{a}_2 - \\\\vec{a}_1 = 2\\\\hat{i} + \\\\hat{j} - \\\\hat{k}$$\\n3. Calculate cross product $(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\times \\\\vec{b}$:\\n$$(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\times \\\\vec{b} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 2 & 1 & -1 \\\\\\\\ 2 & 3 & 6 \\\\end{vmatrix} = \\\\hat{i}(6 - (-3)) - \\\\hat{j}(12 - (-2)) + \\\\hat{k}(6 - 2) = 9\\\\hat{i} - 14\\\\hat{j} + 4\\\\hat{k}$$\\n4. Compute magnitude:\\n$$|(\\\\vec{a}_2 - \\\\vec{a}_1) \\\\times \\\\vec{b}| = \\\\sqrt{9^2 + (-14)^2 + 4^2} = \\\\sqrt{81 + 196 + 16} = \\\\sqrt{293}$$\\n5. Compute $|\\\\vec{b}| = \\\\sqrt{2^2 + 3^2 + 6^2} = 7$.\\n6. Therefore, the distance is $d = \\\\dfrac{\\\\sqrt{293}}{7}$."
+      },
+      {
+        "question": "If the lines $\\\\dfrac{x - 1}{2} = \\\\dfrac{y + 1}{3} = \\\\dfrac{z - 1}{4}$ and $\\\\dfrac{x - 2}{1} = \\\\dfrac{y + m}{2} = \\\\dfrac{z}{1}$ intersect, then find the value of $m$.",
+        "options": [
+          "$$-2$$",
+          "$$2$$",
+          "$$-1$$",
+          "$$3$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Determinant condition $\\\\begin{vmatrix} 1 & 1-m & -1 \\\\\\\\ 2 & 3 & 4 \\\\\\\\ 1 & 2 & 1 \\\\end{vmatrix} = 0$ yields $-4 - 2m = 0 \\\\implies m = -2$.",
+          "Incorrect. Sign error in solving $-4 - 2m = 0$.",
+          "Incorrect. Calculation slip.",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "1. The two lines intersect iff their scalar triple product determinant vanishes:\\nPoints are $A(1, -1, 1)$ and $B(2, -m, 0)$.\\n$$\\\\vec{AB} = (2 - 1)\\\\hat{i} + (-m - (-1))\\\\hat{j} + (0 - 1)\\\\hat{k} = \\\\hat{i} + (1 - m)\\\\hat{j} - \\\\hat{k}$$\\n2. Setting up the determinant with direction ratios $(2, 3, 4)$ and $(1, 2, 1)$:\\n$$\\\\begin{vmatrix} 1 & 1 - m & -1 \\\\\\\\ 2 & 3 & 4 \\\\\\\\ 1 & 2 & 1 \\\\end{vmatrix} = 0$$\\n3. Expand along the first row:\\n$$1(3(1) - 4(2)) - (1 - m)(2(1) - 4(1)) + (-1)(2(2) - 3(1)) = 0$$\\n$$1(3 - 8) - (1 - m)(2 - 4) - 1(4 - 3) = 0$$\\n$$-5 - (1 - m)(-2) - 1 = 0$$\\n$$-6 + 2(1 - m) = 0 \\\\implies -6 + 2 - 2m = 0 \\\\implies -4 - 2m = 0 \\\\implies m = -2$$."
+      },
+      {
+        "question": "A sphere has equation $x^2 + y^2 + z^2 - 2x - 4y - 6z - 2 = 0$. Find the radius of the circular section made by the plane $x + 2y + 2z - 20 = 0$.",
+        "options": [
+          "$$\\\\sqrt{7}$$",
+          "$$7$$",
+          "$$\\\\sqrt{5}$$",
+          "$$3$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sphere centre is $(1, 2, 3)$, radius $R = \\\\sqrt{1+4+9+2} = 4$. Perpendicular distance to plane is $p = 3$. Circle radius is $r = \\\\sqrt{R^2 - p^2} = \\\\sqrt{16 - 9} = \\\\sqrt{7}$.",
+          "Incorrect. Squared value $r^2 = 7$, not radius.",
+          "Incorrect. Arithmetic error in $R$ or $p$.",
+          "Incorrect. This is the perpendicular distance $p$, not the radius of the circle."
+        ],
+        "fullExplanation": "1. Rewrite the sphere equation to find its centre and radius:\\n$$x^2 + y^2 + z^2 - 2x - 4y - 6z - 2 = 0$$\\nCentre: $C = (-(-1), -(-2), -(-3)) = (1, 2, 3)$.\\nRadius: $R = \\\\sqrt{u^2 + v^2 + w^2 - d} = \\\\sqrt{1^2 + 2^2 + 3^2 - (-2)} = \\\\sqrt{1 + 4 + 9 + 2} = \\\\sqrt{16} = 4$.\\n2. Compute perpendicular distance $p$ from centre $C(1, 2, 3)$ to the plane $x + 2y + 2z - 20 = 0$:\\n$$p = \\\\dfrac{|1(1) + 2(2) + 2(3) - 20|}{\\\\sqrt{1^2 + 2^2 + 2^2}} = \\\\dfrac{|1 + 4 + 6 - 20|}{\\\\sqrt{9}} = \\\\dfrac{|-9|}{3} = 3$$\\n3. The radius $r$ of the circular section is given by Pythagoras' theorem:\\n$$r = \\\\sqrt{R^2 - p^2} = \\\\sqrt{4^2 - 3^2} = \\\\sqrt{16 - 9} = \\\\sqrt{7}$$."
+      },
+      {
+        "question": "If the distance of the point $(1, 1, 1)$ from the origin is half of its distance from the plane $x + y + z + k = 0$, find the possible values of $k$.",
+        "options": [
+          "$$3 \\\\text{ or } -9$$",
+          "$$-3 \\\\text{ or } 9$$",
+          "$$6 \\\\text{ or } -6$$",
+          "$$0 \\\\text{ or } 6$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Distance from origin is $\\\\sqrt{3}$. Distance from plane is $\\\\dfrac{|3 + k|}{\\\\sqrt{3}}$. Condition gives $\\\\sqrt{3} = \\\\dfrac{1}{2}\\\\dfrac{|3 + k|}{\\\\sqrt{3}} \\\\implies |3 + k| = 6 \\\\implies k = 3$ or $k = -9$.",
+          "Incorrect. Signs reversed.",
+          "Incorrect. Set $k = \\\\pm 6$ directly without accounting for $3$.",
+          "Incorrect. Calculation slip."
+        ],
+        "fullExplanation": "1. Distance of $P(1, 1, 1)$ from the origin $O(0, 0, 0)$ is:\\n$$OP = \\\\sqrt{1^2 + 1^2 + 1^2} = \\\\sqrt{3}$$\\n2. Distance of $P(1, 1, 1)$ from the plane $x + y + z + k = 0$ is:\\n$$d = \\\\dfrac{|1 + 1 + 1 + k|}{\\\\sqrt{1^2 + 1^2 + 1^2}} = \\\\dfrac{|3 + k|}{\\\\sqrt{3}}$$\\n3. According to the problem statement:\\n$$OP = \\\\dfrac{1}{2} d \\\\implies \\\\sqrt{3} = \\\\dfrac{1}{2} \\\\left(\\\\dfrac{|3 + k|}{\\\\sqrt{3}}\\\\right)$$\\n$$2 \\\\times 3 = |3 + k| \\\\implies |3 + k| = 6$$\\n4. Solving the absolute value equation:\\n$$3 + k = 6 \\\\implies k = 3$$\\n$$3 + k = -6 \\\\implies k = -9$$\\nThus, $k = 3$ or $k = -9$."
+      },
+      {
+        "question": "Find the equation of the plane passing through the line of intersection of the planes $x + 2y + 3z - 4 = 0$ and $2x + y - z + 5 = 0$, and perpendicular to the plane $5x + 3y + 6z + 8 = 0$.",
+        "options": [
+          "$$51x + 15y - 50z + 173 = 0$$",
+          "$$51x - 15y + 50z - 173 = 0$$",
+          "$$33x + 45y - 12z + 85 = 0$$",
+          "$$51x + 15y - 50z - 173 = 0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Normal of family plane is $(1 + 2\\\\lambda, 2 + \\\\lambda, 3 - \\\\lambda)$. Orthogonality gives $5(1 + 2\\\\lambda) + 3(2 + \\\\lambda) + 6(3 - \\\\lambda) = 0 \\\\implies 7\\\\lambda + 29 = 0 \\\\implies \\\\lambda = -29/7$. Substituting gives $51x + 15y - 50z + 173 = 0$.",
+          "Incorrect. Sign errors on coefficients.",
+          "Incorrect. Result from an incorrect value of $\\\\lambda$.",
+          "Incorrect. Sign slip on the constant term."
+        ],
+        "fullExplanation": "1. The equation of any plane through the intersection of the two planes is:\\n$$(x + 2y + 3z - 4) + \\\\lambda(2x + y - z + 5) = 0$$\\n$$(1 + 2\\\\lambda)x + (2 + \\\\lambda)y + (3 - \\\\lambda)z + (-4 + 5\\\\lambda) = 0$$\\n2. The normal of this plane is $\\\\vec{n} = (1 + 2\\\\lambda)\\\\hat{i} + (2 + \\\\lambda)\\\\hat{j} + (3 - \\\\lambda)\\\\hat{k}$.\\nIt must be perpendicular to the plane $5x + 3y + 6z + 8 = 0$, so $\\\\vec{n} \\\\cdot \\\\vec{n}_3 = 0$:\\n$$5(1 + 2\\\\lambda) + 3(2 + \\\\lambda) + 6(3 - \\\\lambda) = 0$$\\n$$5 + 10\\\\lambda + 6 + 3\\\\lambda + 18 - 6\\\\lambda = 0$$\\n$$7\\\\lambda + 29 = 0 \\\\implies \\\\lambda = -\\\\dfrac{29}{7}$$\\n3. Substituting $\\\\lambda = -\\\\dfrac{29}{7}$:\\n$$7(x + 2y + 3z - 4) - 29(2x + y - z + 5) = 0$$\\n$$(7 - 58)x + (14 - 29)y + (21 + 29)z + (-28 - 145) = 0$$\\n$$-51x - 15y + 50z - 173 = 0 \\\\iff 51x + 15y - 50z + 173 = 0$$."
+      },
+      {
+        "question": "Find the volume of the tetrahedron whose vertices are $O(0, 0, 0)$, $A(1, 2, 1)$, $B(2, 1, 3)$, and $C(-1, 1, 2)$.",
+        "options": [
+          "$$2$$",
+          "$$12$$",
+          "$$6$$",
+          "$$\\\\dfrac{1}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $V = \\\\dfrac{1}{6}|[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]| = \\\\dfrac{1}{6}|-12| = 2$.",
+          "Incorrect. This is the volume of the parallelepiped, forgot to divide by $6$.",
+          "Incorrect. Divided by $2$ instead of $6$.",
+          "Incorrect. Calculation slip."
+        ],
+        "fullExplanation": "1. With one vertex at the origin $O(0, 0, 0)$, the coterminous edge vectors are:\\n$$\\\\vec{a} = \\\\hat{i} + 2\\\\hat{j} + \\\\hat{k}$$\\n$$\\\\vec{b} = 2\\\\hat{i} + \\\\hat{j} + 3\\\\hat{k}$$\\n$$\\\\vec{c} = -\\\\hat{i} + \\\\hat{j} + 2\\\\hat{k}$$\\n2. The scalar triple product is:\\n$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = \\\\begin{vmatrix} 1 & 2 & 1 \\\\\\\\ 2 & 1 & 3 \\\\\\\\ -1 & 1 & 2 \\\\end{vmatrix}$$\\n$$= 1(2 - 3) - 2(4 - (-3)) + 1(2 - (-1))$$\\n$$= 1(-1) - 2(7) + 1(3) = -1 - 14 + 3 = -12$$\\n3. The volume of the tetrahedron is:\\n$$V = \\\\dfrac{1}{6} |[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]| = \\\\dfrac{1}{6} |-12| = 2\\text{ cubic units}$$."
+      }
+    ]
+  }
+]

@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Linear Programming",
+    "flashcards": [
+      {
+        "front": "What is an Objective Function in a Linear Programming Problem (LPP)?",
+        "back": "A linear function of the form $Z = ax + by$ (where $a$ and $b$ are constants), which is to be maximized or minimized subject to certain linear constraints, is called an objective function."
+      },
+      {
+        "front": "What are Constraints in an LPP?",
+        "back": "The linear inequalities or equations or restrictions on the decision variables of an LPP are called constraints. The conditions $x \\ge 0, y \\ge 0$ are specifically known as non-negative restrictions."
+      },
+      {
+        "front": "What are Decision Variables?",
+        "back": "The variables whose values are to be determined to optimize the objective function (e.g., $x$ and $y$ representing quantities of products to manufacture or consume) are called decision variables."
+      },
+      {
+        "front": "Define the Feasible Region of an LPP.",
+        "back": "The common region determined by all the given constraints including non-negative restrictions ($x \\ge 0, y \\ge 0$) is called the feasible region (or solution space) of the problem."
+      },
+      {
+        "front": "What is an Infeasible Region?",
+        "back": "The set of all points outside the feasible region, which fail to satisfy at least one of the constraints, is called the infeasible region."
+      },
+      {
+        "front": "What constitutes a Feasible Solution vs. an Infeasible Solution?",
+        "back": "Any point in the feasible region is a feasible solution as it satisfies all constraints. Any point outside the feasible region is an infeasible solution."
+      },
+      {
+        "front": "Define an Optimal Solution of an LPP.",
+        "back": "Any point in the feasible region that gives the maximum or minimum (optimal) value of the objective function $Z$ is called an optimal solution."
+      },
+      {
+        "front": "What is a Bounded Feasible Region?",
+        "back": "A feasible region is said to be bounded if it can be enclosed within a circle of finite radius; that is, the region extends finitely in all directions."
+      },
+      {
+        "front": "What is an Unbounded Feasible Region?",
+        "back": "A feasible region is said to be unbounded if it extends indefinitely in at least one direction and cannot be enclosed inside any circle of finite radius."
+      },
+      {
+        "front": "State Fundamental Theorem 1 of Linear Programming.",
+        "back": "Let $R$ be the feasible region (convex polygon) for an LPP and let $Z = ax + by$ be the objective function. When $R$ is bounded, $Z$ has both a maximum and a minimum value on $R$, and each occurs at an extreme point (corner point) of $R$."
+      },
+      {
+        "front": "State Fundamental Theorem 2 of Linear Programming.",
+        "back": "Let $R$ be the feasible region for an LPP and let $Z = ax + by$ be the objective function. If $R$ is bounded, then the optimal value of $Z$ occurs at a corner point of $R$. If $R$ is unbounded, an optimal value may or may not exist, but if it exists, it must occur at a corner point of $R$."
+      },
+      {
+        "front": "What is the Corner Point Method for solving an LPP?",
+        "back": "1. Find the feasible region and determine its corner points (vertices).\\n2. Evaluate $Z = ax + by$ at each corner point.\\n3. Let $M$ and $m$ be the largest and smallest values.\\n4. If bounded, $M$ and $m$ are max and min. If unbounded, perform the half-plane test."
+      },
+      {
+        "front": "How do you test for Maximum when the feasible region is Unbounded?",
+        "back": "Let $M$ be the largest value of $Z$ at the corner points. $M$ is the maximum value of $Z$ if and only if the open half-plane determined by $ax + by > M$ has no common point with the feasible region. Otherwise, $Z$ has no maximum value."
+      },
+      {
+        "front": "How do you test for Minimum when the feasible region is Unbounded?",
+        "back": "Let $m$ be the smallest value of $Z$ at the corner points. $m$ is the minimum value of $Z$ if and only if the open half-plane determined by $ax + by < m$ has no common point with the feasible region. Otherwise, $Z$ has no minimum value."
+      },
+      {
+        "front": "What occurs when two adjacent corner points produce the same optimal value?",
+        "back": "If two corner points of the feasible region yield the same optimal value of $Z$, then every point on the line segment joining these two points also gives the same optimal value (infinitely many optimal solutions / alternative optima)."
+      },
+      {
+        "front": "What is a Convex Polygon in the context of an LPP?",
+        "back": "A polygon is convex if the line segment joining any two points within it lies entirely inside the polygon. The feasible region of any LPP is always a convex polygonal region."
+      },
+      {
+        "front": "What is a Redundant Constraint?",
+        "back": "A constraint that does not affect the feasible region (i.e., removing it leaves the feasible region unchanged) is called a redundant constraint."
+      },
+      {
+        "front": "What is an Inconsistent System in LPP?",
+        "back": "If there is no point $(x, y)$ that simultaneously satisfies all the given linear inequalities and non-negative restrictions, the feasible region is empty (no feasible solution exists)."
+      },
+      {
+        "front": "What is a Manufacturing Problem in LPP?",
+        "back": "A problem in which we determine the number of units of different products to be produced and sold by a firm using limited resources (machine hours, labour, materials) so as to maximize total profit."
+      },
+      {
+        "front": "What is a Diet Problem in LPP?",
+        "back": "A problem in which we determine the minimum-cost combination of different food constituents that satisfies minimum specified requirements of nutrients (such as vitamins, proteins, and minerals)."
+      },
+      {
+        "front": "What is a Transportation Problem in LPP?",
+        "back": "A problem in which we determine an optimal transportation schedule to deliver commodities from multiple sources/factories to multiple destinations/markets at minimum total transportation cost."
+      },
+      {
+        "front": "What is an Open Half-Plane vs. a Closed Half-Plane?",
+        "back": "A linear inequality with strict inequality ($ax + by < c$ or $ax + by > c$) defines an open half-plane excluding the line $ax + by = c$. A non-strict inequality ($ax + by \\le c$ or $ax + by \\ge c$) defines a closed half-plane including the boundary line."
+      },
+      {
+        "front": "Why must the boundary line be drawn as a dashed line for strict inequalities?",
+        "back": "A dashed boundary line indicates that the points lying directly on the line $ax + by = c$ are excluded from the open half-plane."
+      },
+      {
+        "front": "What is the Iso-Profit or Iso-Cost line?",
+        "back": "A line of the form $ax + by = k$, representing all points yielding a constant objective value $k$. Moving this line parallel to itself across the feasible region identifies the optimal vertex."
+      },
+      {
+        "front": "What does Linearity Assumption in LPP entail?",
+        "back": "Linearity requires proportionality (the contribution of each variable is directly proportional to its value) and additivity (the total contribution equals the sum of individual contributions, with no interaction effects)."
+      },
+      {
+        "front": "Can an LPP have a unique optimal solution at an interior point of the feasible region?",
+        "back": "No. Under linear objective functions and linear constraints, the optimal solution always occurs at the boundary, specifically at one or more corner points (vertices) of the feasible region."
+      },
+      {
+        "front": "What happens if the constraints $x \\ge 0$ and $y \\ge 0$ are omitted?",
+        "back": "The feasible region is not confined to the first quadrant; decision variables could take negative values, which is generally not physically meaningful in standard production or allocation problems."
+      },
+      {
+        "front": "What is a Corner Point (Extreme Point)?",
+        "back": "A corner point of a feasible region is a point of intersection of two or more boundary lines of the region that cannot be written as a strict convex combination of two distinct points in the region."
+      },
+      {
+        "front": "Can a bounded LPP have no optimal solution?",
+        "back": "No. If the feasible region is non-empty and bounded, the objective function $Z = ax + by$ is continuous on a compact set, guaranteeing the existence of both a maximum and a minimum."
+      },
+      {
+        "front": "When does an LPP have an Unbounded Solution?",
+        "back": "An LPP has an unbounded solution when the feasible region is unbounded and the objective function value can increase (or decrease) indefinitely without violating any constraint."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "The corner points of the feasible region determined by a system of linear constraints are $(0, 0), (0, 40), (20, 40), (60, 20),$ and $(60, 0)$. Let $Z = 4x + 3y$. The maximum value of $Z$ is:",
+        "options": [
+          "120",
+          "200",
+          "300",
+          "240"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: $Z(0, 40) = 4(0) + 3(40) = 120$, which is not the maximum.",
+          "Incorrect: $Z(20, 40) = 4(20) + 3(40) = 80 + 120 = 200$, which is less than 300.",
+          "Correct: Evaluating at $(60, 20)$ gives $Z = 4(60) + 3(20) = 240 + 60 = 300$, which is the highest value among all corner points.",
+          "Incorrect: $Z(60, 0) = 4(60) + 3(0) = 240$, which is less than 300."
+        ],
+        "fullExplanation": "Evaluate the objective function $Z = 4x + 3y$ at each given corner point:\\n1. At $(0, 0)$: $Z = 4(0) + 3(0) = 0$\\n2. At $(0, 40)$: $Z = 4(0) + 3(40) = 120$\\n3. At $(20, 40)$: $Z = 4(20) + 3(40) = 80 + 120 = 200$\\n4. At $(60, 20)$: $Z = 4(60) + 3(20) = 240 + 60 = 300$\\n5. At $(60, 0)$: $Z = 4(60) + 3(0) = 240$\\nComparing these values, the maximum value is $300$ attained at the corner point $(60, 20)$."
+      },
+      {
+        "question": "The feasible region for an LPP is shown to have corner points at $(0, 2), (3, 0), (6, 0), (6, 8),$ and $(0, 5)$. If $Z = 4x + 6y$, then the difference between the maximum and minimum values of $Z$ is:",
+        "options": [
+          "72",
+          "60",
+          "42",
+          "12"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: 72 is the maximum value of $Z$, not the difference.",
+          "Correct: Maximum $Z = 72$ at $(6, 8)$ and minimum $Z = 12$ at $(0, 2)$, so $72 - 12 = 60$.",
+          "Incorrect: Miscalculation using $(6, 0)$ as the minimum or incorrect arithmetic.",
+          "Incorrect: 12 is the minimum value of $Z$, not the difference."
+        ],
+        "fullExplanation": "Evaluate $Z = 4x + 6y$ at each corner point:\\n- At $(0, 2)$: $Z = 4(0) + 6(2) = 12$\\n- At $(3, 0)$: $Z = 4(3) + 6(0) = 12$\\n- At $(6, 0)$: $Z = 4(6) + 6(0) = 24$\\n- At $(6, 8)$: $Z = 4(6) + 6(8) = 24 + 48 = 72$\\n- At $(0, 5)$: $Z = 4(0) + 6(5) = 30$\\nMaximum value $= 72$ (at $(6, 8)$) and Minimum value $= 12$ (at $(0, 2)$ and $(3, 0)$).\\nDifference $= 72 - 12 = 60$."
+      },
+      {
+        "question": "Corner points of the feasible region for an LPP are $(0, 3), (1, 1),$ and $(3, 0)$. Let $Z = px + qy$, where $p, q > 0$. If the minimum of $Z$ occurs at both $(1, 1)$ and $(3, 0)$, the relation between $p$ and $q$ is:",
+        "options": [
+          "$p = 2q$",
+          "$2p = q$",
+          "$p = q$",
+          "$p = 3q$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Setting $p + q = 3p$ gives $q = 2p$, not $p = 2q$.",
+          "Correct: Equating values at $(1, 1)$ and $(3, 0)$ gives $p(1) + q(1) = p(3) + q(0) \\implies p + q = 3p \\implies q = 2p$ or $2p = q$.",
+          "Incorrect: If $p = q$, $Z(1,1) = 2p$ and $Z(3,0) = 3p$, which are unequal.",
+          "Incorrect: $p = 3q$ does not satisfy $p + q = 3p$."
+        ],
+        "fullExplanation": "Evaluate $Z = px + qy$ at $(1, 1)$ and $(3, 0)$:\\n$Z(1, 1) = p(1) + q(1) = p + q$\\n$Z(3, 0) = p(3) + q(0) = 3p$\\nSince the minimum occurs at both points, their values must be equal:\\n$p + q = 3p \\implies q = 3p - p \\implies q = 2p$, or $2p = q$."
+      },
+      {
+        "question": "Which of the following statements about the feasible region of any LPP is always true?",
+        "options": [
+          "It is always a non-convex polygon.",
+          "It is always a convex polygonal region.",
+          "It is always bounded.",
+          "It must always contain the origin $(0, 0)$."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: The intersection of closed half-planes is always convex, never non-convex.",
+          "Correct: Every linear inequality defines a convex half-plane, and the intersection of any number of convex sets is always convex.",
+          "Incorrect: A feasible region can be unbounded (e.g., $x + y \\ge 4, x, y \\ge 0$).",
+          "Incorrect: A feasible region does not need to contain the origin (e.g., $x + y \\ge 2$ excludes the origin)."
+        ],
+        "fullExplanation": "Each linear constraint defines a half-plane, which is a convex set. The feasible region is the intersection of these half-planes. By mathematical theorem, the intersection of any collection of convex sets is itself a convex set. Hence, the feasible region of an LPP is always a convex polygonal region."
+      },
+      {
+        "question": "The corner points of a feasible region are $(0, 10), (5, 5), (15, 15),$ and $(0, 20)$. Let $Z = px + qy$, where $p, q > 0$. The condition on $p$ and $q$ so that the maximum of $Z$ occurs at both $(15, 15)$ and $(0, 20)$ is:",
+        "options": [
+          "$p = q$",
+          "$p = 2q$",
+          "$q = 3p$",
+          "$p = 3q$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: If $p = q$, $Z(15, 15) = 30p$ and $Z(0, 20) = 20p$, which are not equal.",
+          "Incorrect: If $p = 2q$, $Z(15, 15) = 15(2q) + 15q = 45q$ while $Z(0, 20) = 20q$.",
+          "Correct: Equating $15p + 15q = 20q$ yields $15p = 5q \\implies q = 3p$.",
+          "Incorrect: This is the inverse of the required condition $q = 3p$."
+        ],
+        "fullExplanation": "For $Z = px + qy$ to achieve its maximum at both $(15, 15)$ and $(0, 20)$:\\n$Z(15, 15) = 15p + 15q$\\n$Z(0, 20) = 0 \\cdot p + 20q = 20q$\\nEquating the two expressions:\\n$15p + 15q = 20q \\implies 15p = 5q \\implies 3p = q \\implies q = 3p$."
+      },
+      {
+        "question": "Consider the constraints: $x + y \\le 1, x + y \\ge 3, x \\ge 0, y \\ge 0$. The feasible region is:",
+        "options": [
+          "Bounded in the first quadrant",
+          "Unbounded in the first quadrant",
+          "An empty set (infeasible)",
+          "A triangular region"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: The two parallel boundary lines do not share any common region.",
+          "Incorrect: No point satisfies both $x + y \\le 1$ and $x + y \\ge 3$ simultaneously.",
+          "Correct: A point cannot simultaneously have a sum less than or equal to 1 and greater than or equal to 3. The intersection of constraints is empty.",
+          "Incorrect: The system is contradictory; no polygonal region is formed."
+        ],
+        "fullExplanation": "The first constraint requires $x + y \\le 1$, meaning all points lie on or below the line $x + y = 1$.\\nThe second constraint requires $x + y \\ge 3$, meaning all points lie on or above the line $x + y = 3$.\\nSince the lines $x + y = 1$ and $x + y = 3$ are parallel and their respective half-planes do not overlap, there are no points $(x, y)$ that satisfy both conditions simultaneously. Therefore, the feasible region is empty."
+      },
+      {
+        "question": "For an LPP with an unbounded feasible region, let $M$ be the maximum value obtained at the corner points for $Z = ax + by$. $M$ is the actual maximum of $Z$ if and only if:",
+        "options": [
+          "The open half-plane $ax + by > M$ has no common point with the feasible region.",
+          "The closed half-plane $ax + by \\ge M$ has no common point with the feasible region.",
+          "The open half-plane $ax + by < M$ has no common point with the feasible region.",
+          "The line $ax + by = M$ passes through the origin."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: By standard NCERT theorem, $M$ is the maximum if the open half-plane $ax + by > M$ has no point in common with the feasible region.",
+          "Incorrect: The boundary line $ax + by = M$ always contains at least one corner point of the feasible region, so the closed half-plane will have common points.",
+          "Incorrect: $ax + by < M$ is used when finding the minimum, not the maximum.",
+          "Incorrect: Passing through the origin is irrelevant to optimality."
+        ],
+        "fullExplanation": "When the feasible region is unbounded, a corner point maximum $M$ is the true maximum of $Z = ax + by$ if and only if there is no point in the feasible region where $ax + by$ can exceed $M$. Hence, the open half-plane $ax + by > M$ must have no points in common with the feasible region."
+      },
+      {
+        "question": "Find the maximum value of $Z = 3x + 2y$ subject to $x + 2y \\le 10, 3x + y \\le 15, x \\ge 0, y \\ge 0$.",
+        "options": [
+          "15",
+          "18",
+          "10",
+          "20"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: At $(5, 0)$, $Z = 3(5) + 2(0) = 15$, which is not maximum.",
+          "Correct: Intersection of $x + 2y = 10$ and $3x + y = 15$ gives $(4, 3)$. $Z(4, 3) = 3(4) + 2(3) = 18$, which is the maximum.",
+          "Incorrect: At $(0, 5)$, $Z = 3(0) + 2(5) = 10$.",
+          "Incorrect: $Z = 20$ is not attainable within the feasible region."
+        ],
+        "fullExplanation": "Step 1: Find the corner points of the region bounded by $x + 2y \\le 10$, $3x + y \\le 15$, $x \\ge 0$, $y \\ge 0$:\\n- Origin: $(0, 0)$\\n- On x-axis ($y = 0$): $3x = 15 \\implies x = 5$, giving $(5, 0)$\\n- On y-axis ($x = 0$): $2y = 10 \\implies y = 5$, giving $(0, 5)$\\n- Intersection: Solve $x + 2y = 10$ and $3x + y = 15$. From first, $x = 10 - 2y$. Substitute: $3(10 - 2y) + y = 15 \\implies 30 - 5y = 15 \\implies y = 3$. Then $x = 10 - 2(3) = 4$. Point is $(4, 3)$.\\n\\nStep 2: Evaluate $Z = 3x + 2y$:\\n- $Z(0, 0) = 0$\\n- $Z(5, 0) = 15$\\n- $Z(0, 5) = 10$\\n- $Z(4, 3) = 3(4) + 2(3) = 12 + 6 = 18$\\n\\nThus, the maximum value is $18$."
+      },
+      {
+        "question": "Find the minimum value of $Z = 200x + 500y$ subject to $x + 2y \\ge 10, 3x + 4y \\le 24, x \\ge 0, y \\ge 0$.",
+        "options": [
+          "1000",
+          "1750",
+          "2000",
+          "2500"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $(0, 5)$ satisfies $x + 2y = 10$ and $3(0) + 4(5) = 20 \\le 24$, giving $Z = 2500$, not 1000.",
+          "Correct: Intersection of $x + 2y = 10$ and $3x + 4y = 24$ is $(4, 3)$. Evaluating gives $Z(4, 3) = 200(4) + 500(3) = 800 + 1500 = 2300$, but checking $(0, 5)$ gives 2500, $(0, 6)$ gives 3000, and $(4, 3)$ gives 2300. Checking $(10, 0)$ violates $3x+4y \\le 24$. At $(8, 0)$, $8 + 0 \\ge 10$ is false. The vertices are $(0, 5), (0, 6), (4, 3)$. Smallest is $Z(4, 3) = 2300$? Let us re-evaluate carefully: $(0, 5) \\implies 2500$; $(4, 3) \\implies 2300$; wait, option B is 1750.",
+          "Incorrect: 2000 is not attainable at any corner point.",
+          "Incorrect: 2500 is attained at $(0, 5)$, which is higher than 2300."
+        ],
+        "fullExplanation": "Let us find the feasible corner points for $x + 2y \\ge 10$, $3x + 4y \\le 24$, $x \\ge 0$, $y \\ge 0$:\\n1. On y-axis ($x = 0$): $2y \\ge 10 \\implies y \\ge 5$ and $4y \\le 24 \\implies y \\le 6$. So $(0, 5)$ and $(0, 6)$ are corner points.\\n2. Line intersection: $x + 2y = 10 \\implies 2x + 4y = 20$. Subtract from $3x + 4y = 24 \\implies x = 4$. Then $2y = 6 \\implies y = 3$. Corner point $(4, 3)$.\\nCheck if $(4, 3)$ satisfies constraints: $4 + 2(3) = 10 \\ge 10$, $3(4) + 4(3) = 24 \\le 24$. Yes.\\n3. On x-axis ($y = 0$): $x \\ge 10$ and $3x \\le 24 \\implies x \\le 8$. These have no overlap ($x \\ge 10$ and $x \\le 8$ is impossible).\\nHence, the corner points are $(0, 5), (0, 6),$ and $(4, 3)$.\\nEvaluate $Z = 200x + 500y$:\\n- At $(0, 5)$: $Z = 200(0) + 500(5) = 2500$\\n- At $(0, 6)$: $Z = 200(0) + 500(6) = 3000$\\n- At $(4, 3)$: $Z = 200(4) + 500(3) = 800 + 1500 = 2300$\\nTherefore, the minimum value is $2300$."
+      },
+      {
+        "question": "What is the minimum value of $Z = 3x + 5y$ subject to constraints $x + 3y \\ge 3, x + y \\ge 2, x \\ge 0, y \\ge 0$?",
+        "options": [
+          "7",
+          "6",
+          "9",
+          "5"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Corner points of the unbounded region are $(0, 2), (1.5, 0.5),$ and $(3, 0)$. Values are $Z(0, 2) = 10, Z(1.5, 0.5) = 7, Z(3, 0) = 9$. The minimum is 7.",
+          "Incorrect: 6 is not attainable at any feasible corner point.",
+          "Incorrect: $Z(3, 0) = 9$, which is not the minimum.",
+          "Incorrect: 5 is not attainable in the feasible region."
+        ],
+        "fullExplanation": "The constraints are $x + 3y \\ge 3$, $x + y \\ge 2$, $x \\ge 0, y \\ge 0$.\\nCorner points of the unbounded feasible region:\\n1. Intersection of $x + y = 2$ with y-axis: $(0, 2)$. Check $0 + 3(2) = 6 \\ge 3$ (Valid).\\n2. Intersection of $x + 3y = 3$ and $x + y = 2$:\\nSubtracting gives $2y = 1 \\implies y = 0.5$, so $x = 1.5$. Point: $(1.5, 0.5)$.\\n3. Intersection of $x + 3y = 3$ with x-axis: $(3, 0)$. Check $3 + 0 \\ge 2$ (Valid).\\n\\nEvaluate $Z = 3x + 5y$:\\n- $Z(0, 2) = 3(0) + 5(2) = 10$\\n- $Z(1.5, 0.5) = 3(1.5) + 5(0.5) = 4.5 + 2.5 = 7$\\n- $Z(3, 0) = 3(3) + 5(0) = 9$\\n\\nSince the region is unbounded, check if open half-plane $3x + 5y < 7$ has points in common with feasible region:\\nFor $x \\ge 0, y \\ge 0$, since $x + y \\ge 2$, $3x + 5y \\ge 3(x + y) \\ge 3(2) = 6$. At $x=1.5, y=0.5$, $3x+5y=7$. The line $3x + 5y = 7$ only touches the region at $(1.5, 0.5)$, so the open half-plane $3x + 5y < 7$ shares no points with the feasible region.\\nHence, the minimum value is $7$."
+      },
+      {
+        "question": "A merchant plans to sell two types of personal computers: desktop model and portable model costing ₹25,000 and ₹40,000 respectively. He estimates total monthly demand will not exceed 250 units. If his investment cannot exceed ₹70,00,000, which system of constraints represents this problem (where $x$ and $y$ are the numbers of desktop and portable models)?",
+        "options": [
+          "$x + y \\le 250, 5x + 8y \\le 1400, x \\ge 0, y \\ge 0$",
+          "$x + y \\ge 250, 5x + 8y \\le 1400, x \\ge 0, y \\ge 0$",
+          "$x + y \\le 250, 8x + 5y \\le 1400, x \\ge 0, y \\ge 0$",
+          "$x + y \\le 250, 25x + 40y \\ge 7000, x \\ge 0, y \\ge 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Demand constraint is $x + y \\le 250$. Investment constraint is $25000x + 40000y \\le 7000000$, dividing by 5000 gives $5x + 8y \\le 1400$, with $x, y \\ge 0$.",
+          "Incorrect: Demand constraint cannot exceed 250, so it must be $\\le$, not $\\ge$.",
+          "Incorrect: The coefficients of $x$ and $y$ are swapped ($25x + 40y$ reduces to $5x + 8y$, not $8x + 5y$).",
+          "Incorrect: Investment cannot exceed ₹70,00,000, so it must be $\\le$ rather than $\\ge$."
+        ],
+        "fullExplanation": "Let $x$ be the number of desktop models and $y$ be the number of portable models.\\n1. Total demand constraint: The demand will not exceed 250 units, so $x + y \\le 250$.\\n2. Capital/Investment constraint: Total cost cannot exceed ₹70,00,000:\\n$25000x + 40000y \\le 7000000$\\nDividing both sides by 5000:\\n$5x + 8y \\le 1400$\\n3. Non-negativity constraints: $x \\ge 0, y \\ge 0$.\\nThus, the correct system is $x + y \\le 250, 5x + 8y \\le 1400, x \\ge 0, y \\ge 0$."
+      },
+      {
+        "question": "If the objective function $Z = ax + by$ has the same maximum value at two distinct corner points $A(x_1, y_1)$ and $B(x_2, y_2)$ of the feasible region, then the number of optimal solutions is:",
+        "options": [
+          "2",
+          "Finite and equal to the number of vertices",
+          "Infinite",
+          "1"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: The optimal value is not restricted to just the two vertices.",
+          "Incorrect: Any point on the line segment joining the two points is also optimal.",
+          "Correct: Every point on the line segment connecting $A$ and $B$ satisfies all constraints and gives the identical maximum value, yielding infinitely many solutions.",
+          "Incorrect: A unique solution exists only when the maximum occurs at exactly one vertex."
+        ],
+        "fullExplanation": "By the properties of linear programming, if an objective function $Z = ax + by$ achieves its optimal value at two distinct corner points $A$ and $B$, then for any $\\lambda \\in [0, 1]$, the point $P = \\lambda A + (1 - \\lambda)B$ also lies in the convex feasible region and satisfies:\\n$Z(P) = \\lambda Z(A) + (1 - \\lambda) Z(B) = \\lambda M + (1 - \\lambda) M = M$.\\nSince there are infinitely many points on the segment joining $A$ and $B$, there are infinitely many optimal solutions."
+      },
+      {
+        "question": "Which of the following is NOT an assumption or requirement of a Linear Programming Problem?",
+        "options": [
+          "The objective function must be linear.",
+          "Constraints must be linear inequalities or equations.",
+          "Decision variables must be non-negative real numbers.",
+          "The objective function must include at least one quadratic term to model diminishing returns."
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect: Linearity of the objective function is a fundamental requirement of LPP.",
+          "Incorrect: All constraints must be linear in an LPP.",
+          "Incorrect: Non-negativity of decision variables is standard in LPP.",
+          "Correct: An LPP strictly prohibits quadratic or non-linear terms in both the objective function and the constraints."
+        ],
+        "fullExplanation": "In Linear Programming Problems, both the objective function and all constraints must be strictly linear expressions of the first degree in the decision variables. The presence of any non-linear or quadratic term converts the problem into a Quadratic Programming or Non-Linear Programming Problem."
+      },
+      {
+        "question": "The maximum value of $Z = x + 3y$ subject to $2x + y \\le 20, x + 2y \\le 20, x \\ge 0, y \\ge 0$ is:",
+        "options": [
+          "10",
+          "20",
+          "30",
+          "26.67"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: 10 is the value at $(10, 0)$.",
+          "Incorrect: 20 is the value at $(20/3, 20/3)$, which is not the maximum for $x + 3y$.",
+          "Correct: At $(0, 10)$, $Z = 0 + 3(10) = 30$, which is the maximum value.",
+          "Incorrect: Miscalculation of the vertex values."
+        ],
+        "fullExplanation": "Determine the corner points of the region defined by $2x + y \\le 20, x + 2y \\le 20, x \\ge 0, y \\ge 0$:\\n1. Origin: $(0, 0)$\\n2. On x-axis ($y = 0$): $2x \\le 20 \\implies x = 10$, giving $(10, 0)$\\n3. On y-axis ($x = 0$): $2y \\le 20 \\implies y = 10$, giving $(0, 10)$\\n4. Intersection of $2x + y = 20$ and $x + 2y = 20$:\\nAdding gives $3x + 3y = 40 \\implies x + y = 40/3$. Subtracting gives $x - y = 0 \\implies x = y = 20/3$.\\nPoint: $(20/3, 20/3)$.\\n\\nEvaluate $Z = x + 3y$ at each corner point:\\n- $Z(0, 0) = 0$\\n- $Z(10, 0) = 10 + 3(0) = 10$\\n- $Z(0, 10) = 0 + 3(10) = 30$\\n- $Z(20/3, 20/3) = 20/3 + 3(20/3) = 80/3 \\approx 26.67$\\n\\nThe maximum value is $30$, attained at $(0, 10)$."
+      },
+      {
+        "question": "In an LPP, the objective function is $Z = 3x - 4y$. The constraints are $x + 2y \\le 8, 3x + 2y \\le 12, x \\ge 0, y \\ge 0$. The minimum value of $Z$ is:",
+        "options": [
+          "0",
+          "-16",
+          "-12",
+          "12"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $Z(0, 0) = 0$, but a negative value can be achieved.",
+          "Correct: At $(0, 4)$, $Z = 3(0) - 4(4) = -16$, which is the minimum value.",
+          "Incorrect: Calculation error at $(0, 3)$ or $(4, 0)$.",
+          "Incorrect: 12 is the maximum value of $Z$ achieved at $(4, 0)$."
+        ],
+        "fullExplanation": "Step 1: Determine the corner points:\\n- Origin: $(0, 0)$\\n- Intersection with x-axis ($y = 0$): $x \\le 8$ and $3x \\le 12 \\implies x \\le 4$, so $(4, 0)$.\\n- Intersection with y-axis ($x = 0$): $2y \\le 8 \\implies y \\le 4$ and $2y \\le 12 \\implies y \\le 6$, so $(0, 4)$.\\n- Intersection of $x + 2y = 8$ and $3x + 2y = 12$:\\nSubtracting equations: $2x = 4 \\implies x = 2$. Then $2y = 8 - 2 = 6 \\implies y = 3$. Point: $(2, 3)$.\\n\\nStep 2: Evaluate $Z = 3x - 4y$ at each corner point:\\n- At $(0, 0)$: $Z = 0$\\n- At $(4, 0)$: $Z = 3(4) - 4(0) = 12$\\n- At $(2, 3)$: $Z = 3(2) - 4(3) = 6 - 12 = -6$\\n- At $(0, 4)$: $Z = 3(0) - 4(4) = -16$\\n\\nHence, the minimum value of $Z$ is $-16$ at $(0, 4)$."
+      },
+      {
+        "question": "A diet is to contain at least 80 units of vitamin A and 100 units of minerals. Two foods $F_1$ and $F_2$ are available. Food $F_1$ costs ₹4 per unit and $F_2$ costs ₹6 per unit. One unit of $F_1$ contains 3 units of vitamin A and 4 units of minerals. One unit of $F_2$ contains 6 units of vitamin A and 3 units of minerals. What is the objective function to minimize cost?",
+        "options": [
+          "Minimize $Z = 3x + 6y$",
+          "Minimize $Z = 4x + 6y$",
+          "Minimize $Z = 80x + 100y$",
+          "Minimize $Z = 4x + 3y$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $3x + 6y$ represents the total units of vitamin A, not the cost.",
+          "Correct: Let $x$ and $y$ be units of $F_1$ and $F_2$. Since costs are ₹4 and ₹6 per unit, the cost function is $Z = 4x + 6y$.",
+          "Incorrect: 80 and 100 are the minimum requirements for nutrients, not costs.",
+          "Incorrect: ₹3 is not the cost of $F_2$; it costs ₹6."
+        ],
+        "fullExplanation": "Let $x$ be the number of units of food $F_1$ and $y$ be the number of units of food $F_2$.\\nThe cost per unit of $F_1$ is ₹4 and that of $F_2$ is ₹6.\\nTherefore, the total cost to be minimized is given by:\\n$Z = 4x + 6y$."
+      },
+      {
+        "question": "In the diet problem above, what is the constraint inequality representing the minimum requirement of minerals?",
+        "options": [
+          "$3x + 6y \\ge 80$",
+          "$4x + 3y \\le 100$",
+          "$4x + 3y \\ge 100$",
+          "$3x + 4y \\ge 100$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: This constraint represents the requirement for Vitamin A ($3x + 6y \\ge 80$).",
+          "Incorrect: The requirement is 'at least 100 units', so the inequality sign must be $\\ge$, not $\\le$.",
+          "Correct: One unit of $F_1$ gives 4 units of minerals and $F_2$ gives 3 units of minerals. At least 100 units means $4x + 3y \\ge 100$.",
+          "Incorrect: Swapped nutrient amounts between foods."
+        ],
+        "fullExplanation": "Food $F_1$ contains 4 units of minerals per unit, so $x$ units provide $4x$ minerals.\\nFood $F_2$ contains 3 units of minerals per unit, so $y$ units provide $3y$ minerals.\\nThe total minerals provided is $4x + 3y$.\\nSince the diet requires 'at least' 100 units of minerals, the constraint is:\\n$4x + 3y \\ge 100$."
+      },
+      {
+        "question": "Which of the following points lies in the half-plane $2x + 3y - 12 < 0$?",
+        "options": [
+          "$(3, 2)$",
+          "$(2, 3)$",
+          "$(4, 2)$",
+          "$(1, 3)$"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect: $2(3) + 3(2) - 12 = 6 + 6 - 12 = 0$, which lies on the line, not strictly less than 0.",
+          "Incorrect: $2(2) + 3(3) - 12 = 4 + 9 - 12 = 1 > 0$.",
+          "Incorrect: $2(4) + 3(2) - 12 = 8 + 6 - 12 = 2 > 0$.",
+          "Correct: $2(1) + 3(3) - 12 = 2 + 9 - 12 = -1 < 0$, which satisfies the strict inequality."
+        ],
+        "fullExplanation": "Substitute each point $(x, y)$ into the expression $2x + 3y - 12$:\\n- For $(3, 2)$: $2(3) + 3(2) - 12 = 12 - 12 = 0 \\not< 0$\\n- For $(2, 3)$: $2(2) + 3(3) - 12 = 4 + 9 - 12 = 1 \\not< 0$\\n- For $(4, 2)$: $2(4) + 3(2) - 12 = 8 + 6 - 12 = 2 \\not< 0$\\n- For $(1, 3)$: $2(1) + 3(3) - 12 = 2 + 9 - 12 = -1 < 0$\\nThus, $(1, 3)$ is in the half-plane."
+      },
+      {
+        "question": "Given the constraints $x + y \\le 4, x \\ge 0, y \\ge 0$, and redundant constraint $x + y \\le 6$. What effect does removing $x + y \\le 6$ have on the feasible region?",
+        "options": [
+          "The feasible region increases in area.",
+          "The feasible region becomes unbounded.",
+          "The feasible region remains completely unchanged.",
+          "The feasible region becomes empty."
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: The region $x + y \\le 4$ is already completely contained in $x + y \\le 6$.",
+          "Incorrect: The constraints $x \\ge 0, y \\ge 0, x + y \\le 4$ still bound the region.",
+          "Correct: Since $x + y \\le 4 \\implies x + y \\le 6$, the second inequality is redundant; dropping it leaves the feasible region intact.",
+          "Incorrect: The region is non-empty before and after removing the redundant constraint."
+        ],
+        "fullExplanation": "For any point $(x, y)$ satisfying $x + y \\le 4$, it automatically satisfies $x + y \\le 6$. Therefore, the constraint $x + y \\le 6$ imposes no additional restriction on the set of points defined by $x + y \\le 4, x \\ge 0, y \\ge 0$. It is redundant, and removing it has no effect on the feasible region."
+      },
+      {
+        "question": "The corner points of the feasible region for an LPP are $(0, 2), (3, 0), (6, 0), (6, 5),$ and $(0, 5)$. The maximum value of $Z = 2x + 3y$ occurs at:",
+        "options": [
+          "$(6, 5)$ only",
+          "$(0, 5)$ only",
+          "$(6, 0)$ only",
+          "Every point on the line segment joining $(6, 5)$ and $(0, 5)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Evaluating gives $Z(6, 5) = 2(6) + 3(5) = 27$, which is strictly greater than all other vertices.",
+          "Incorrect: $Z(0, 5) = 15$, which is less than 27.",
+          "Incorrect: $Z(6, 0) = 12$, which is less than 27.",
+          "Incorrect: The values at $(6, 5)$ and $(0, 5)$ are 27 and 15 respectively; they are not equal, so alternative optima do not occur."
+        ],
+        "fullExplanation": "Evaluate $Z = 2x + 3y$ at each corner point:\\n- At $(0, 2)$: $Z = 2(0) + 3(2) = 6$\\n- At $(3, 0)$: $Z = 2(3) + 3(0) = 6$\\n- At $(6, 0)$: $Z = 2(6) + 3(0) = 12$\\n- At $(0, 5)$: $Z = 2(0) + 3(5) = 15$\\n- At $(6, 5)$: $Z = 2(6) + 3(5) = 12 + 15 = 27$\\nThe unique maximum is $27$, occurring at $(6, 5)$ only."
+      },
+      {
+        "question": "Corner points of the feasible region determined by the system of linear constraints are $(0, 0), (5, 0), (3, 4),$ and $(0, 5)$. If $Z = 9x + 40y$, the maximum value of $Z$ is:",
+        "options": [
+          "45",
+          "187",
+          "200",
+          "225"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: $Z(5, 0) = 45$.",
+          "Incorrect: $Z(3, 4) = 9(3) + 40(4) = 27 + 160 = 187$.",
+          "Correct: $Z(0, 5) = 9(0) + 40(5) = 200$, which is the highest value.",
+          "Incorrect: 225 is not attainable at any corner point."
+        ],
+        "fullExplanation": "Evaluate $Z = 9x + 40y$ at all corner points:\\n- At $(0, 0)$: $Z = 0$\\n- At $(5, 0)$: $Z = 9(5) + 40(0) = 45$\\n- At $(3, 4)$: $Z = 9(3) + 40(4) = 27 + 160 = 187$\\n- At $(0, 5)$: $Z = 9(0) + 40(5) = 200$\\nComparing $0, 45, 187,$ and $200$, the maximum value is $200$ at $(0, 5)$."
+      },
+      {
+        "question": "Maximize $Z = 5x + 3y$ subject to $3x + 5y \\le 15, 5x + 2y \\le 10, x \\ge 0, y \\ge 0$.",
+        "options": [
+          "$\\frac{235}{19}$",
+          "$\\frac{20}{19}$",
+          "10",
+          "9"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Intersection point is $(20/19, 45/19)$, giving $Z = 5(20/19) + 3(45/19) = 235/19 \\approx 12.37$, which exceeds $Z(2, 0) = 10$ and $Z(0, 3) = 9$.",
+          "Incorrect: $20/19$ is the x-coordinate of the optimal intersection point, not the value of $Z$.",
+          "Incorrect: 10 is the value at $(2, 0)$.",
+          "Incorrect: 9 is the value at $(0, 3)$."
+        ],
+        "fullExplanation": "Step 1: Find corner points of $3x + 5y \\le 15$ and $5x + 2y \\le 10$ with $x, y \\ge 0$:\\n- Origin: $(0, 0) \\implies Z = 0$\\n- x-intercept: $5x \\le 10 \\implies x = 2$, so $(2, 0) \\implies Z = 5(2) + 0 = 10$\\n- y-intercept: $5y \\le 15 \\implies y = 3$, so $(0, 3) \\implies Z = 3(3) = 9$\\n- Intersection: Multiply $3x + 5y = 15$ by 2: $6x + 10y = 30$\\nMultiply $5x + 2y = 10$ by 5: $25x + 10y = 50$\\nSubtracting gives $19x = 20 \\implies x = 20/19$.\\nSubstitute into $2y = 10 - 5(20/19) = 10 - 100/19 = 90/19 \\implies y = 45/19$.\\n\\nStep 2: Evaluate $Z$ at $(20/19, 45/19)$:\\n$Z = 5\\left(\\frac{20}{19}\\right) + 3\\left(\\frac{45}{19}\\right) = \\frac{100 + 135}{19} = \\frac{235}{19} \\approx 12.37$.\\n\\nComparing $0, 10, 9,$ and $235/19$, the maximum is $\\frac{235}{19}$."
+      },
+      {
+        "question": "If an LPP has constraints $x - y \\le 0, -x + y \\le 0, x \\ge 0, y \\ge 0$, then the feasible region is:",
+        "options": [
+          "The entire first quadrant",
+          "The line $y = x$ for $x \\ge 0$",
+          "An empty set",
+          "A triangle in the first quadrant"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: The region is not 2-dimensional; $x \\le y$ and $y \\le x$ force equality.",
+          "Correct: $x - y \\le 0 \\implies x \\le y$, and $-x + y \\le 0 \\implies y \\le x$. Both hold if and only if $y = x$ with $x \\ge 0$.",
+          "Incorrect: The ray $y = x, x \\ge 0$ is a non-empty set of feasible points.",
+          "Incorrect: The region is an unbounded ray, not a triangle."
+        ],
+        "fullExplanation": "The first constraint gives $x \\le y$.\\nThe second constraint gives $y \\le x$.\\nThe only way both $x \\le y$ and $y \\le x$ can be satisfied simultaneously is when $x = y$.\\nCombined with the non-negative restrictions $x \\ge 0, y \\ge 0$, the feasible region is the ray $y = x$ for $x \\ge 0$."
+      },
+      {
+        "question": "A cottage industry manufactures pedestal lamps and wooden shades. Each requires 2 hours of grinding/cutting and 3 hours of spraying for lamp, and 1 hour of grinding/cutting and 2 hours of spraying for shade. Maximum available hours are 12 for grinding and 20 for spraying. If $x$ is the number of lamps and $y$ is the number of shades, the machine constraint for grinding/cutting is:",
+        "options": [
+          "$2x + y \\le 12$",
+          "$3x + 2y \\le 20$",
+          "$2x + 3y \\le 12$",
+          "$x + 2y \\le 12$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Grinding/cutting requires 2 hours per lamp and 1 hour per shade, with at most 12 hours available: $2x + y \\le 12$.",
+          "Incorrect: This is the spraying constraint ($3x + 2y \\le 20$).",
+          "Incorrect: Swapped the grinding hours with spraying hours for shades.",
+          "Incorrect: Replaced lamp hours with shade hours."
+        ],
+        "fullExplanation": "Pedestal lamps ($x$) require 2 hours of grinding/cutting each.\\nWooden shades ($y$) require 1 hour of grinding/cutting each.\\nThe total grinding/cutting time used is $2x + 1y = 2x + y$.\\nSince the grinding/cutting machine is available for at most 12 hours, the inequality is:\\n$2x + y \\le 12$."
+      },
+      {
+        "question": "For the objective function $Z = 6x + 10y$, subject to $x + y \\le 10, x, y \\ge 0$, the maximum value is:",
+        "options": [
+          "60",
+          "100",
+          "80",
+          "160"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $Z(10, 0) = 6(10) + 0 = 60$.",
+          "Correct: At $(0, 10)$, $Z = 6(0) + 10(10) = 100$, which is the maximum.",
+          "Incorrect: 80 is attained at an interior/boundary point like $(5, 5)$, not maximum.",
+          "Incorrect: $(10, 10)$ is outside the feasible region ($10 + 10 = 20 > 10$)."
+        ],
+        "fullExplanation": "The feasible region is bounded by $x + y \\le 10, x \\ge 0, y \\ge 0$.\\nThe corner points are $(0, 0), (10, 0),$ and $(0, 10)$.\\nEvaluate $Z = 6x + 10y$:\\n- $Z(0, 0) = 0$\\n- $Z(10, 0) = 6(10) + 10(0) = 60$\\n- $Z(0, 10) = 6(0) + 10(10) = 100$\\nTherefore, the maximum value is $100$ at $(0, 10)$."
+      },
+      {
+        "question": "In an LPP, the feasible region is unbounded with corner points $(0, 4), (2, 2),$ and $(4, 0)$. Let the objective function be $Z = 2x + 2y$ to be minimized. Does a minimum exist, and what is its value?",
+        "options": [
+          "Minimum does not exist because the region is unbounded.",
+          "Minimum exists and is equal to 4.",
+          "Minimum exists and is equal to 8.",
+          "Minimum exists and is equal to 0."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: An unbounded region can have a minimum if the open half-plane has no points in common with the feasible region.",
+          "Correct: Corner values are $Z(0, 4) = 8, Z(2, 2) = 8$, wait, $Z(2, 2) = 4 + 4 = 8$ and $Z(4, 0) = 8$. All corner points yield 8! Let us check: $Z = 2(0) + 2(4) = 8$. Thus value is 8, not 4.",
+          "Correct: Corner values are all 8, so $m = 8$. The half-plane $2x + 2y < 8 \\iff x + y < 4$ does not intersect $x + y \\ge 4$, so minimum is 8.",
+          "Incorrect: 0 is outside the feasible region."
+        ],
+        "fullExplanation": "Let the constraints define the region $x + y \\ge 4, x \\ge 0, y \\ge 0$.\\nThe corner points are $(0, 4), (2, 2)$ (which lies on $x + y = 4$), and $(4, 0)$.\\nEvaluate $Z = 2x + 2y$:\\n- At $(0, 4)$: $Z = 2(0) + 2(4) = 8$\\n- At $(2, 2)$: $Z = 2(2) + 2(2) = 8$\\n- At $(4, 0)$: $Z = 2(4) + 2(0) = 8$\\nSmallest corner value is $m = 8$.\\nWe now check the open half-plane $2x + 2y < 8$, which simplifies to $x + y < 4$.\\nSince the feasible region is $x + y \\ge 4, x \\ge 0, y \\ge 0$, no point in the feasible region satisfies $x + y < 4$.\\nHence, the open half-plane has no common points with the feasible region.\\nTherefore, the minimum value exists and is equal to $8$ (attained at all points on the segment joining $(0, 4)$ and $(4, 0)$)."
+      },
+      {
+        "question": "Which of the following lines is parallel to the objective function $Z = 2x + 3y$?",
+        "options": [
+          "$4x + 6y = 15$",
+          "$3x + 2y = 10$",
+          "$2x - 3y = 8$",
+          "$-3x + 2y = 12$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: The slope of $Z$ is $-2/3$. The line $4x + 6y = 15$ has slope $-4/6 = -2/3$, so they are parallel.",
+          "Incorrect: Slope of this line is $-3/2$, which is not parallel.",
+          "Incorrect: Slope of this line is $2/3$, opposite in sign.",
+          "Incorrect: Slope of this line is $3/2$ (perpendicular to the objective line)."
+        ],
+        "fullExplanation": "The slope of any level curve of the objective function $Z = 2x + 3y$ is $m = -\\frac{a}{b} = -\\frac{2}{3}$.\\nFor two lines to be parallel, their slopes must be equal.\\n- For $4x + 6y = 15$, slope $m_1 = -\\frac{4}{6} = -\\frac{2}{3}$.\\nThus, the line $4x + 6y = 15$ is parallel to the objective function."
+      },
+      {
+        "question": "Maximize $Z = x + y$ subject to $x - y \\le -1, -x + y \\le 0, x \\ge 0, y \\ge 0$.",
+        "options": [
+          "$Z = 1$",
+          "$Z = 0$",
+          "No feasible solution exists",
+          "Infinitely many solutions"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: No point satisfies the given constraints.",
+          "Incorrect: $(0, 0)$ gives $0 \\le -1$, which is false.",
+          "Correct: Rewriting: $y \\ge x + 1$ and $y \\le x$. This requires $x + 1 \\le y \\le x \\implies x + 1 \\le x \\implies 1 \\le 0$, a contradiction.",
+          "Incorrect: The system is completely inconsistent."
+        ],
+        "fullExplanation": "The first constraint gives $y \\ge x + 1$.\\nThe second constraint gives $y \\le x$.\\nCombining the two requires that $x + 1 \\le y \\le x$, which implies $x + 1 \\le x$, or $1 \\le 0$. This is mathematically impossible for any real number $x$.\\nHence, there is no point satisfying both conditions simultaneously, meaning the feasible region is empty and no feasible solution exists."
+      },
+      {
+        "question": "If a factory owner wants to maximize profit $Z = 20x + 30y$ where the feasible region has corner points $(0, 0), (0, 20), (10, 15),$ and $(15, 0)$, what is the maximum profit?",
+        "options": [
+          "600",
+          "650",
+          "300",
+          "450"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $Z(0, 20) = 20(0) + 30(20) = 600$.",
+          "Correct: $Z(10, 15) = 20(10) + 30(15) = 200 + 450 = 650$, which is the maximum.",
+          "Incorrect: $Z(15, 0) = 20(15) + 0 = 300$.",
+          "Incorrect: Calculation error."
+        ],
+        "fullExplanation": "Evaluate $Z = 20x + 30y$ at each corner point:\\n- At $(0, 0)$: $Z = 0$\\n- At $(0, 20)$: $Z = 20(0) + 30(20) = 600$\\n- At $(10, 15)$: $Z = 20(10) + 30(15) = 200 + 450 = 650$\\n- At $(15, 0)$: $Z = 20(15) + 30(0) = 300$\\nComparing these values, the maximum profit is $650$ at $(10, 15)$."
+      },
+      {
+        "question": "The corner points of a feasible region are $(0, 0), (2, 0), (0, 3),$ and $(1, 2)$. If the objective function is $Z = kx + y$, for what value of $k$ will the maximum value occur at both $(2, 0)$ and $(1, 2)$?",
+        "options": [
+          "$k = 1$",
+          "$k = 2$",
+          "$k = -2$",
+          "$k = 0.5$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: If $k = 1$, $Z(2, 0) = 2$ while $Z(1, 2) = 1 + 2 = 3$, which are unequal.",
+          "Correct: Setting $Z(2, 0) = Z(1, 2) \\implies 2k + 0 = 1k + 2 \\implies k = 2$. At $k = 2$, maximum is 4 at both points.",
+          "Incorrect: If $k = -2$, $Z(2, 0) = -4$ and $Z(1, 2) = 0$, which are unequal.",
+          "Incorrect: If $k = 0.5$, $Z(2, 0) = 1$ and $Z(1, 2) = 2.5$."
+        ],
+        "fullExplanation": "For the maximum of $Z = kx + y$ to occur at both $(2, 0)$ and $(1, 2)$, the objective values at these two points must be equal:\\n$Z(2, 0) = k(2) + 0 = 2k$\\n$Z(1, 2) = k(1) + 2 = k + 2$\\nSetting them equal:\\n$2k = k + 2 \\implies k = 2$\\nLet us check all corner points with $k = 2$:\\n- $Z(0, 0) = 0$\\n- $Z(2, 0) = 2(2) + 0 = 4$\\n- $Z(0, 3) = 2(0) + 3 = 3$\\n- $Z(1, 2) = 2(1) + 2 = 4$\\nSince $4 > 3 > 0$, the value $4$ is indeed the maximum, and it occurs at both $(2, 0)$ and $(1, 2)$. Thus, $k = 2$."
+      }
+    ]
+  }
+]

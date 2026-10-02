@@ -1,0 +1,429 @@
+[
+  {
+    "chapterName": "Experimental Physics",
+    "flashcards": [
+      {
+        "front": "What is the formula for the Least Count (LC) of a Vernier Calipers?",
+        "back": "Least Count = 1 MSD - 1 VSD, where MSD is Main Scale Division and VSD is Vernier Scale Division. If n VSD = (n - 1) MSD, then LC = (1 / n) MSD."
+      },
+      {
+        "front": "How is zero error defined and corrected in a Vernier Calipers?",
+        "back": "When jaws are closed, if the vernier zero is to the right of the main scale zero, it is positive zero error; if to the left, it is negative zero error. Correct Reading = Observed Reading - (Zero Error with sign)."
+      },
+      {
+        "front": "What is the formula for the Least Count (LC) of a Screw Gauge (Micrometer)?",
+        "back": "Least Count = Pitch / Total number of divisions on circular scale, where Pitch is the linear distance advanced by the spindle in one complete rotation."
+      },
+      {
+        "front": "What is backlash error in a screw gauge and how can it be avoided?",
+        "back": "It is the mechanical play or looseness between the screw and the nut threads caused by wear and tear. It is avoided by turning the ratchet/thimble in only one direction while taking a reading."
+      },
+      {
+        "front": "How is zero error corrected in a Screw Gauge?",
+        "back": "When the studs are in contact, if the circular scale zero lies below the reference line, the error is positive; if above, it is negative. Correct Reading = Total Observed Reading - (Zero Error with sign)."
+      },
+      {
+        "front": "How is the acceleration due to gravity g determined using a Simple Pendulum, and what is its fractional error?",
+        "back": "T = 2π√(l / g) => g = 4π² l / T². Fractional error: Δg / g = Δl / l + 2(ΔT / T)."
+      },
+      {
+        "front": "What is the effective length l of a simple pendulum?",
+        "back": "l = L + e + r, where L is the length of the suspension thread, e is the length of the hook, and r is the radius of the spherical bob (distance from suspension point to the bob's center of gravity)."
+      },
+      {
+        "front": "State the working principle and balance equation of a Meter Bridge.",
+        "back": "It works on the principle of a balanced Wheatstone Bridge. At null deflection: P / Q = R / S => l / (100 - l) = R / S, where l is the balancing length in cm from the zero end."
+      },
+      {
+        "front": "Why are copper strips of large cross-sectional area used in a Meter Bridge?",
+        "back": "To minimize end resistances at the terminals and contact strips, ensuring that almost the entire resistance comes only from the bridge wire itself."
+      },
+      {
+        "front": "Why is the null point preferred near the middle (near 50 cm) in a Meter Bridge experiment?",
+        "back": "The Wheatstone bridge has maximum sensitivity and minimum percentage error when all four arm resistances are nearly equal, which occurs when l ≈ 50 cm."
+      },
+      {
+        "front": "What is the principle of a Potentiometer and what is potential gradient (λ)?",
+        "back": "When a steady current flows through a wire of uniform cross-section, potential drop across any length is directly proportional to that length (V ∝ l). Potential gradient λ = V_AB / L = I(R / L)."
+      },
+      {
+        "front": "What is the formula for comparing the EMFs of two primary cells using a Potentiometer?",
+        "back": "E₁ / E₂ = l₁ / l₂, where l₁ and l₂ are the balancing lengths obtained for cells E₁ and E₂ respectively under open circuit conditions."
+      },
+      {
+        "front": "What is the formula for the internal resistance r of a primary cell measured using a Potentiometer?",
+        "back": "r = R[(l₁ - l₂) / l₂], where l₁ is the balancing length on open circuit, l₂ is the balancing length when shunted with external resistance R."
+      },
+      {
+        "front": "Why is a potentiometer preferred over a conventional voltmeter for measuring EMF?",
+        "back": "At the balance (null) point, the potentiometer draws zero current from the test cell, measuring the true open-circuit EMF without any internal potential drop (Ir)."
+      },
+      {
+        "front": "What is the formula for the speed of sound v using a closed-end Resonance Tube?",
+        "back": "v = 2f(l₂ - l₁), where f is the tuning fork frequency, and l₁ and l₂ are the first and second resonating air column lengths."
+      },
+      {
+        "front": "What is end correction e in a resonance tube and how is it related to tube diameter d?",
+        "back": "e = (l₂ - 3l₁) / 2 ≅ 0.3 d = 0.6 r, where d is the internal diameter and r is the internal radius of the tube."
+      },
+      {
+        "front": "State the formula for the refractive index n of a glass prism at minimum deviation.",
+        "back": "n = sin[(A + δ_min) / 2] / sin(A / 2), where A is the angle of the prism and δ_min is the angle of minimum deviation."
+      },
+      {
+        "front": "What is the shape of the i-δ (angle of incidence vs deviation) curve for a prism, and what happens at δ_min?",
+        "back": "The curve is U-shaped. At minimum deviation δ_min, there is a unique angle of incidence such that i = i' (angle of emergence) and r = r' = A / 2 (ray travels symmetrically inside the prism)."
+      },
+      {
+        "front": "Define dynamic forward resistance r_d of a p-n junction diode.",
+        "back": "r_d = ΔV_f / ΔI_f, defined as the reciprocal of the slope of the forward V-I characteristic curve above the knee voltage."
+      },
+      {
+        "front": "How does a Zener diode function as a DC voltage regulator?",
+        "back": "It is connected in reverse bias across the load in its breakdown region. In this region, the voltage across the Zener diode remains essentially constant (V_Z) over wide fluctuations in load current and input voltage."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A vernier calipers has 1 mm main scale divisions (MSD). 20 divisions of the vernier scale coincide with 19 divisions of the main scale. What is the least count of this instrument?",
+        "options": [
+          "0.05 mm",
+          "0.01 mm",
+          "0.1 mm",
+          "0.005 mm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: 1 VSD = 19/20 MSD = 0.95 mm. Least Count = 1 MSD - 1 VSD = 1 mm - 0.95 mm = 0.05 mm.",
+          "0.01 mm is typical for a 100-division screw gauge, not this vernier.",
+          "0.1 mm corresponds to 10 VSD = 9 MSD.",
+          "0.005 mm is an arithmetic power error."
+        ],
+        "fullExplanation": "The least count is LC = 1 MSD - 1 VSD. Given 20 VSD = 19 MSD => 1 VSD = (19/20) × 1 mm = 0.95 mm. Thus, LC = 1 mm - 0.95 mm = 0.05 mm (or 0.005 cm)."
+      },
+      {
+        "question": "The jaws of a vernier calipers are brought together. The zero of the vernier scale lies to the right of the main scale zero, and the 6th vernier division coincides with a main scale division. If LC = 0.01 cm, and an observed reading of a cylinder diameter is 3.54 cm, what is the corrected diameter?",
+        "options": [
+          "3.60 cm",
+          "3.48 cm",
+          "3.54 cm",
+          "3.42 cm"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "3.60 cm adds the zero error instead of subtracting it.",
+          "Correct: Zero error is positive (+6 × 0.01 = +0.06 cm). Corrected reading = Observed - (+0.06) = 3.54 - 0.06 = 3.48 cm.",
+          "3.54 cm ignores the zero error.",
+          "3.42 cm subtracts twice the zero error."
+        ],
+        "fullExplanation": "Since the vernier zero lies to the right of the main scale zero, the zero error is positive: e = +6 × LC = +6 × 0.01 cm = +0.06 cm. Corrected Reading = Observed Reading - e = 3.54 cm - (+0.06 cm) = 3.48 cm."
+      },
+      {
+        "question": "A screw gauge advances by 1 mm on the main scale in 2 complete rotations of its circular head. The circular scale contains 50 divisions. What is the least count of the screw gauge?",
+        "options": [
+          "0.02 mm",
+          "0.01 mm",
+          "0.005 mm",
+          "0.05 mm"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "0.02 mm uses pitch = 1 mm without dividing by 2 rotations.",
+          "Correct: Pitch = (1 mm) / 2 = 0.5 mm. LC = Pitch / (Number of circular divisions) = 0.5 mm / 50 = 0.01 mm.",
+          "0.005 mm uses 100 circular divisions.",
+          "0.05 mm is an incorrect decimal shift."
+        ],
+        "fullExplanation": "Pitch is the distance advanced in one full turn: Pitch = 1 mm / 2 = 0.5 mm. Least Count = Pitch / Total circular divisions = 0.5 mm / 50 = 0.01 mm."
+      },
+      {
+        "question": "The diameter of a wire is measured using a screw gauge of pitch 0.5 mm and 50 circular divisions. When no object is placed, the 45th division of the circular scale coincides with the reference line (the circular zero lies below the reference line by 5 divisions, representing a negative error). During measurement, the main scale reads 2.5 mm and the 20th circular division coincides. What is the true diameter?",
+        "options": [
+          "2.65 mm",
+          "2.75 mm",
+          "2.70 mm",
+          "2.60 mm"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2.65 mm is the uncorrected observed reading without adjusting for negative zero error.",
+          "Correct: LC = 0.5 / 50 = 0.01 mm. Zero error = -(50 - 45) × 0.01 = -0.05 mm. Observed = 2.5 + 20 × 0.01 = 2.70 mm. True = 2.70 - (-0.05) = 2.75 mm.",
+          "2.70 mm is the raw observed reading if circular reading is 20.",
+          "2.60 mm incorrectly subtracts the magnitude of negative error."
+        ],
+        "fullExplanation": "LC = 0.5 mm / 50 = 0.01 mm. Negative zero error = -(50 - 45) × 0.01 mm = -0.05 mm. Observed Reading = 2.5 mm + (20 × 0.01 mm) = 2.70 mm. True Reading = Observed - (Zero Error) = 2.70 mm - (-0.05 mm) = 2.75 mm."
+      },
+      {
+        "question": "In a simple pendulum experiment to measure g, the length of the pendulum is measured as l = 100.0 cm with an accuracy of 0.1 cm. The time for 20 oscillations is measured as 40.0 s with a stopwatch of resolution 0.1 s. What is the maximum percentage error in the calculated value of g?",
+        "options": [
+          "0.35%",
+          "0.60%",
+          "0.50%",
+          "0.80%"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "0.35% forgets the factor of 2 on time error.",
+          "Correct: Δg / g = Δl / l + 2(Δt / t) = 0.1 / 100.0 + 2(0.1 / 40.0) = 0.001 + 0.005 = 0.006 = 0.60%.",
+          "0.50% includes only the time measurement error.",
+          "0.80% is an incorrect summation."
+        ],
+        "fullExplanation": "From g = 4π² l / T² = 4π² l / (t / N)² = 4π² N² (l / t²), fractional error is Δg / g = Δl / l + 2(Δt / t). Here Δl / l = 0.1 / 100.0 = 0.001, and 2(Δt / t) = 2(0.1 / 40.0) = 0.005. Total fractional error = 0.001 + 0.005 = 0.006, which equals 0.60%."
+      },
+      {
+        "question": "In a simple pendulum experiment, a student plots a graph of T² on the y-axis against length l on the x-axis. The slope of this straight line is equal to:",
+        "options": [
+          "4π² / g",
+          "g / (4π²)",
+          "2π / √g",
+          "4π² g"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: squaring T = 2π√(l / g) gives T² = (4π² / g) l, so the slope of T² versus l is 4π² / g.",
+          "g / (4π²) is the slope if l were plotted against T².",
+          "2π / √g is the slope of a T versus √l plot.",
+          "4π² g has incorrect dimensions."
+        ],
+        "fullExplanation": "Starting with the time period formula T = 2π√(l / g), squaring both sides gives T² = (4π² / g) · l. In a plot of T² versus l, the equation matches y = m · x where slope m = 4π² / g."
+      },
+      {
+        "question": "In a meter bridge experiment, an unknown resistance X is connected in the left gap and a standard resistance of 6.0 Ω is in the right gap. The null point is obtained at 40.0 cm from the left end. What is the value of X?",
+        "options": [
+          "4.0 Ω",
+          "9.0 Ω",
+          "6.0 Ω",
+          "2.4 Ω"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: X / R = l / (100 - l) => X / 6.0 = 40.0 / 60.0 = 2 / 3 => X = 6.0 × (2 / 3) = 4.0 Ω.",
+          "9.0 Ω would result if X were in the right gap.",
+          "6.0 Ω would require balance at 50 cm.",
+          "2.4 Ω is an incorrect multiplication."
+        ],
+        "fullExplanation": "For a balanced meter bridge: (Resistance in left gap) / (Resistance in right gap) = l / (100 - l). Thus, X / 6.0 = 40.0 / (100.0 - 40.0) = 40 / 60 = 2 / 3. Solving gives X = 6.0 × (2 / 3) = 4.0 Ω."
+      },
+      {
+        "question": "Why is the Wheatstone meter bridge considered most sensitive when the null point is near 50 cm?",
+        "options": [
+          "Because the resistance of the galvanometer becomes zero at 50 cm.",
+          "Because the four arms of the Wheatstone bridge have nearly equal resistances, minimizing fractional error in the unknown resistance.",
+          "Because the current through the bridge wire reaches its maximum at 50 cm.",
+          "Because end resistance errors only exist at the ends and vanish at 50 cm."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Galvanometer resistance is independent of jockey position.",
+          "Correct: bridge sensitivity is maximized when all four arms have comparable resistances (P ≈ Q ≈ R ≈ S), which minimizes ΔS / S for a given positional uncertainty Δl.",
+          "Current through the bridge wire is constant throughout its length.",
+          "End resistances still exist, though their relative impact is minimized near the center."
+        ],
+        "fullExplanation": "The condition for maximum sensitivity of a Wheatstone bridge is that all four arms have roughly equal resistance (P ≈ Q ≈ R ≈ S). When the balance point is at l ≈ 50 cm, the ratio l / (100 - l) ≈ 1, which ensures maximum galvanometer deflection for any slight unbalance and minimizes fractional error."
+      },
+      {
+        "question": "A meter bridge has end corrections of 1.0 cm at the zero end (left) and 1.0 cm at the 100 cm end (right). If an experiment yields an observed balance length of 39.0 cm from the left end, what is the corrected ratio of the two arm lengths (l₁ / l₂)?",
+        "options": [
+          "39.0 / 61.0",
+          "40.0 / 62.0",
+          "38.0 / 60.0",
+          "40.0 / 60.0"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "39.0 / 61.0 ignores the end corrections.",
+          "Correct: corrected left length l₁ = 39.0 + 1.0 = 40.0 cm; corrected right length l₂ = (100.0 - 39.0) + 1.0 = 61.0 + 1.0 = 62.0 cm.",
+          "38.0 / 60.0 incorrectly subtracts the end corrections.",
+          "40.0 / 60.0 fails to add the end correction to the right side."
+        ],
+        "fullExplanation": "End corrections account for the resistance of terminal strips and must be added to the measured lengths: l₁ = 39.0 cm + 1.0 cm = 40.0 cm. The remaining length from the right is 100.0 cm - 39.0 cm = 61.0 cm, so l₂ = 61.0 cm + 1.0 cm = 62.0 cm. The corrected ratio is 40.0 / 62.0."
+      },
+      {
+        "question": "A potentiometer wire of length 4 m has a resistance of 8 Ω. It is connected in series with a 2 V battery of internal resistance 2 Ω. What is the potential gradient along the potentiometer wire?",
+        "options": [
+          "0.4 V/m",
+          "0.5 V/m",
+          "0.2 V/m",
+          "1.6 V/m"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: total circuit resistance = 8 + 2 = 10 Ω. Circuit current I = 2 V / 10 Ω = 0.2 A. Voltage across wire V_AB = 0.2 A × 8 Ω = 1.6 V. Gradient λ = 1.6 V / 4 m = 0.4 V/m.",
+          "0.5 V/m assumes zero internal resistance (2 V / 4 m).",
+          "0.2 V/m is the current, not the potential gradient.",
+          "1.6 V/m is the total potential drop across the wire without dividing by length."
+        ],
+        "fullExplanation": "Total circuit resistance R_total = R_wire + r = 8 Ω + 2 Ω = 10 Ω. Current I = E / R_total = 2 V / 10 Ω = 0.2 A. Potential drop across the wire is V_AB = I · R_wire = 0.2 A × 8 Ω = 1.6 V. Potential gradient λ = V_AB / L = 1.6 V / 4 m = 0.4 V/m."
+      },
+      {
+        "question": "In a potentiometer experiment, a cell produces a balance length of 300 cm on open circuit. When a 10 Ω resistor is connected across the terminals of the cell, the balance length shifts to 250 cm. What is the internal resistance of the cell?",
+        "options": [
+          "1.5 Ω",
+          "2.0 Ω",
+          "2.5 Ω",
+          "5.0 Ω"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "1.5 Ω is an incorrect fraction calculation.",
+          "Correct: r = R[(l₁ - l₂) / l₂] = 10 × [(300 - 250) / 250] = 10 × (50 / 250) = 2.0 Ω.",
+          "2.5 Ω divides by l₁ instead of l₂.",
+          "5.0 Ω is incorrect."
+        ],
+        "fullExplanation": "Using the formula for internal resistance from the handbook: r = R[(l₁ - l₂) / l₂]. Here l₁ = 300 cm, l₂ = 250 cm, and R = 10 Ω. Thus, r = 10 × [(300 - 250) / 250] = 10 × (50 / 250) = 10 × 0.2 = 2.0 Ω."
+      },
+      {
+        "question": "Two primary cells of EMFs E₁ and E₂ are connected in series aiding (E₁ + E₂) to obtain a balance length of 350 cm on a potentiometer wire. When connected in series opposing (E₁ - E₂), the balance length is 50 cm. What is the ratio E₁ / E₂?",
+        "options": [
+          "7 : 1",
+          "4 : 3",
+          "3 : 2",
+          "5 : 4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "7 : 1 is the direct ratio of lengths (350 / 50), which equals (E₁ + E₂) / (E₁ - E₂).",
+          "Correct: using componendo and dividendo: E₁ / E₂ = (l₁ + l₂) / (l₁ - l₂) = (350 + 50) / (350 - 50) = 400 / 300 = 4 / 3.",
+          "3 : 2 is incorrect.",
+          "5 : 4 is incorrect."
+        ],
+        "fullExplanation": "(E₁ + E₂) / (E₁ - E₂) = 350 / 50 = 7 / 1. Applying componendo and dividendo: [(E₁ + E₂) + (E₁ - E₂)] / [(E₁ + E₂) - (E₁ - E₂)] = (7 + 1) / (7 - 1) => 2E₁ / 2E₂ = 8 / 6 = 4 / 3."
+      },
+      {
+        "question": "A tuning fork of frequency 512 Hz excites resonance in a closed resonance tube. The first and second resonant air column lengths are observed at l₁ = 15.0 cm and l₂ = 48.0 cm. What is the velocity of sound in air calculated from this data?",
+        "options": [
+          "337.9 m/s",
+          "345.6 m/s",
+          "330.0 m/s",
+          "352.0 m/s"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: v = 2f(l₂ - l₁) = 2 × 512 × (48.0 - 15.0) × 10⁻² m = 1024 × 0.33 m = 337.92 m/s.",
+          "345.6 m/s uses l₂ = 49 cm.",
+          "330.0 m/s is standard nominal sound speed, but not the result of this data.",
+          "352.0 m/s is an incorrect calculation."
+        ],
+        "fullExplanation": "The wavelength is related to the difference between successive resonant lengths: λ / 2 = l₂ - l₁ => λ = 2(l₂ - l₁) = 2(48.0 cm - 15.0 cm) = 66.0 cm = 0.66 m. Speed of sound v = f · λ = 512 Hz × 0.66 m = 337.92 m/s."
+      },
+      {
+        "question": "In a resonance tube experiment, the first two resonant air columns occur at l₁ = 16.0 cm and l₂ = 50.0 cm. What is the value of the end correction for this tube?",
+        "options": [
+          "1.0 cm",
+          "0.5 cm",
+          "2.0 cm",
+          "1.5 cm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: e = (l₂ - 3l₁) / 2 = [50.0 - 3(16.0)] / 2 = (50.0 - 48.0) / 2 = 1.0 cm.",
+          "0.5 cm is half the correct value.",
+          "2.0 cm forgets to divide by 2.",
+          "1.5 cm is an arithmetic error."
+        ],
+        "fullExplanation": "For a closed tube, l₁ + e = λ / 4 and l₂ + e = 3λ / 4. Multiplying the first equation by 3 and subtracting gives: 3(l₁ + e) - (l₂ + e) = 0 => 2e = l₂ - 3l₁ => e = (l₂ - 3l₁) / 2. Here e = [50.0 - 3(16.0)] / 2 = (50.0 - 48.0) / 2 = 1.0 cm."
+      },
+      {
+        "question": "An equilateral glass prism (A = 60°) produces an angle of minimum deviation δ_min = 30°. What is the refractive index of the prism material?",
+        "options": [
+          "1.50",
+          "1.414 (√2)",
+          "1.732 (√3)",
+          "1.33"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "1.50 is the typical refractive index of crown glass, but does not match δ_min = 30° for an equilateral prism.",
+          "Correct: n = sin[(60° + 30°) / 2] / sin(60° / 2) = sin 45° / sin 30° = (1 / √2) / (1 / 2) = √2 ≈ 1.414.",
+          "1.732 corresponds to δ_min = 60°.",
+          "1.33 is the refractive index of water."
+        ],
+        "fullExplanation": "Prism formula: n = sin[(A + δ_min) / 2] / sin(A / 2). Here A = 60° and δ_min = 30°. Therefore, n = sin(45°) / sin(30°) = (1 / √2) / (1 / 2) = 2 / √2 = √2 ≈ 1.414."
+      },
+      {
+        "question": "Why does a prism's angle of deviation δ show a unique minimum when plotted against the angle of incidence i?",
+        "options": [
+          "Because total internal reflection occurs at all other angles.",
+          "Because by the principle of reversibility of light, two different angles of incidence (i and i') give the same deviation δ, except at minimum deviation where i = i'.",
+          "Because the glass absorbs light at other angles of incidence.",
+          "Because the angle of the prism A varies with the angle of incidence."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Total internal reflection only occurs beyond the critical angle at the second face.",
+          "Correct: δ = i + i' - A. By optical reversibility, exchanging the incident and emergent ray preserves the deviation. Thus every δ corresponds to two angles (i and i'), which merge into a single symmetric path (i = i') at the minimum.",
+          "Absorption does not dictate the deviation curve shape.",
+          "The prism apex angle A is a fixed geometric constant."
+        ],
+        "fullExplanation": "The deviation produced by a prism is δ = i + i' - A. Because light rays are reversible, a ray entering at angle i emerges at i', and a ray entering at i' emerges at i with identical deviation. Hence, every value of deviation above the minimum corresponds to two angles of incidence. At minimum deviation, these two angles merge into one symmetric condition where i = i'."
+      },
+      {
+        "question": "In an experiment measuring the dynamic forward resistance of a Silicon diode, the forward current increases from 10 mA to 30 mA as the forward voltage rises from 0.70 V to 0.74 V. What is the dynamic resistance r_d?",
+        "options": [
+          "2.0 Ω",
+          "4.0 Ω",
+          "0.5 Ω",
+          "20 Ω"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: r_d = ΔV / ΔI = (0.74 - 0.70) V / (30 - 10) mA = 0.04 V / 0.02 A = 2.0 Ω.",
+          "4.0 Ω uses 10 mA change instead of 20 mA.",
+          "0.5 Ω inverts ΔV and ΔI.",
+          "20 Ω is ten times too large."
+        ],
+        "fullExplanation": "Dynamic forward resistance is r_d = ΔV_f / ΔI_f. Here ΔV_f = 0.74 V - 0.70 V = 0.04 V, and ΔI_f = (30 - 10) mA = 20 mA = 0.02 A. Therefore, r_d = 0.04 V / 0.02 A = 2.0 Ω."
+      },
+      {
+        "question": "A Zener diode with a breakdown voltage V_Z = 6.0 V is used in a voltage regulator circuit. The unregulated DC input voltage varies between 10 V and 14 V, and the series resistor is R_s = 200 Ω. What is the maximum current flowing through the Zener diode when no load resistor is connected?",
+        "options": [
+          "40 mA",
+          "20 mA",
+          "70 mA",
+          "30 mA"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: V_in(max) = 14 V. Voltage drop across R_s is V_in - V_Z = 14 - 6 = 8 V. I_Z(max) = 8 V / 200 Ω = 0.04 A = 40 mA.",
+          "20 mA corresponds to the minimum input voltage of 10 V.",
+          "70 mA divides 14 V directly by 200 Ω without subtracting V_Z.",
+          "30 mA is an arithmetic error."
+        ],
+        "fullExplanation": "With no load connected, all current through R_s passes through the Zener diode: I_Z = (V_in - V_Z) / R_s. The maximum current occurs at maximum input voltage (14 V): I_Z(max) = (14 V - 6 V) / 200 Ω = 8 V / 200 Ω = 0.04 A = 40 mA."
+      },
+      {
+        "question": "What happens to the balancing length in a meter bridge experiment if the positions of the battery and the galvanometer are interchanged at the balance point?",
+        "options": [
+          "The balance point shifts to the right.",
+          "The balance point shifts to the left.",
+          "The balance point remains completely unchanged.",
+          "The galvanometer gets damaged due to excessive current."
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "The balance point does not shift.",
+          "The balance point does not shift.",
+          "Correct: by the reciprocity theorem of Wheatstone bridges, interchanging the source (battery) and detector (galvanometer) leaves the balance condition (P / Q = R / S) unchanged.",
+          "Protective series resistance keeps the galvanometer safe."
+        ],
+        "fullExplanation": "As noted in the handbook under Wheatstone Bridge: 'The null point is not affected even if the positions of G and E are interchanged.' The bridge arm cross-product condition PS = QR remains identical."
+      },
+      {
+        "question": "In a potentiometer experiment, if the driver cell battery has an EMF smaller than the EMF of the cell being measured, what will happen during the experiment?",
+        "options": [
+          "The balance point will be obtained very close to the zero end.",
+          "No null point can be obtained on the potentiometer wire, and the galvanometer will deflect to one side only.",
+          "The potential gradient will become negative.",
+          "The cell being tested will be rapidly charged."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "A balance point requires the wire's potential to equal the test cell's EMF, which is impossible if the wire's total potential drop is smaller.",
+          "Correct: because the total potential drop across the wire is less than the test EMF, the net voltage can never drop to zero, leaving the galvanometer deflected in one direction throughout.",
+          "Potential gradient remains positive along the wire.",
+          "The circuit simply cannot achieve balance."
+        ],
+        "fullExplanation": "For a potentiometer to attain a null deflection, the potential drop across the wire must exceed the EMF of the secondary cell (V_wire > E_test). If the driver cell's EMF is smaller, the wire cannot produce a potential equal to E_test, so no balance point can be found on the wire."
+      }
+    ]
+  }
+]

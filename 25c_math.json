@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Properties of Triangles",
+    "flashcards": [
+      {
+        "front": "State the Sine Rule for any triangle $ABC$ and its relation to the circumradius $R$.",
+        "back": "In any $\\\\Delta ABC$ with sides $a, b, c$ opposite to angles $A, B, C$ and circumradius $R$:\\n$$\\\\dfrac{a}{\\\\sin A} = \\\\dfrac{b}{\\\\sin B} = \\\\dfrac{c}{\\\\sin C} = 2R$$\\nEquivalently, $a = 2R\\\\sin A$, $b = 2R\\\\sin B$, $c = 2R\\\\sin C$."
+      },
+      {
+        "front": "State the Cosine Rule formulas for $\\\\cos A, \\\\cos B,$ and $\\\\cos C$.",
+        "back": "1. $$\\\\cos A = \\\\dfrac{b^2 + c^2 - a^2}{2bc}$$\\n2. $$\\\\cos B = \\\\dfrac{c^2 + a^2 - b^2}{2ca}$$\\n3. $$\\\\cos C = \\\\dfrac{a^2 + b^2 - c^2}{2ab}$$\\nEquivalently, $a^2 = b^2 + c^2 - 2bc\\\\cos A$."
+      },
+      {
+        "front": "State the Projection Formulae in a triangle $ABC$.",
+        "back": "1. $$a = b\\\\cos C + c\\\\cos B$$\\n2. $$b = c\\\\cos A + a\\\\cos C$$\\n3. $$c = a\\\\cos B + b\\\\cos A$$"
+      },
+      {
+        "front": "State Napier's Analogy (Tangent Rule) for all three angle pairs.",
+        "back": "1. $$\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = \\\\dfrac{b - c}{b + c}\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)$$\\n2. $$\\\\tan\\\\left(\\\\dfrac{C - A}{2}\\\\right) = \\\\dfrac{c - a}{c + a}\\\\cot\\\\left(\\\\dfrac{B}{2}\\\\right)$$\\n3. $$\\\\tan\\\\left(\\\\dfrac{A - B}{2}\\\\right) = \\\\dfrac{a - b}{a + b}\\\\cot\\\\left(\\\\dfrac{C}{2}\\\\right)$$"
+      },
+      {
+        "front": "State the Half-Angle Formulas for $\\\\sin(A/2), \\\\sin(B/2),$ and $\\\\sin(C/2)$.",
+        "back": "Where $s = \\\\dfrac{a+b+c}{2}$ is the semi-perimeter:\\n$$\\\\sin\\\\dfrac{A}{2} = \\\\sqrt{\\\\dfrac{(s-b)(s-c)}{bc}}, \\\\quad \\\\sin\\\\dfrac{B}{2} = \\\\sqrt{\\\\dfrac{(s-c)(s-a)}{ca}}, \\\\quad \\\\sin\\\\dfrac{C}{2} = \\\\sqrt{\\\\dfrac{(s-a)(s-b)}{ab}}$$"
+      },
+      {
+        "front": "State the Half-Angle Formulas for $\\\\cos(A/2), \\\\cos(B/2),$ and $\\\\cos(C/2)$.",
+        "back": "Where $s = \\\\dfrac{a+b+c}{2}$ is the semi-perimeter:\\n$$\\\\cos\\\\dfrac{A}{2} = \\\\sqrt{\\\\dfrac{s(s-a)}{bc}}, \\\\quad \\\\cos\\\\dfrac{B}{2} = \\\\sqrt{\\\\dfrac{s(s-b)}{ca}}, \\\\quad \\\\cos\\\\dfrac{C}{2} = \\\\sqrt{\\\\dfrac{s(s-c)}{ab}}$$"
+      },
+      {
+        "front": "State the Half-Angle Formulas for $\\\\tan(A/2)$ in terms of sides, semi-perimeter $s$, and area $\\\\Delta$.",
+        "back": "$$\\\\tan\\\\dfrac{A}{2} = \\\\sqrt{\\\\dfrac{(s-b)(s-c)}{s(s-a)}} = \\\\dfrac{\\\\Delta}{s(s-a)} = \\\\dfrac{(s-b)(s-c)}{\\\\Delta}$$\\nSimilarly for $\\\\tan(B/2)$ and $\\\\tan(C/2)$."
+      },
+      {
+        "front": "What are the standard formulas for the Area of a Triangle ($\\\\Delta$)?",
+        "back": "1. **Heron's Formula:** $\\\\Delta = \\\\sqrt{s(s-a)(s-b)(s-c)}$\\n2. **Trigonometric Form:** $\\\\Delta = \\\\dfrac{1}{2}ab\\\\sin C = \\\\dfrac{1}{2}bc\\\\sin A = \\\\dfrac{1}{2}ca\\\\sin B$\\n3. **In terms of $R$:** $\\\\Delta = \\\\dfrac{abc}{4R} = 2R^2\\\\sin A\\\\sin B\\\\sin C$"
+      },
+      {
+        "front": "State the formula for the Circumradius $R$ of a triangle.",
+        "back": "$$R = \\\\dfrac{a}{2\\\\sin A} = \\\\dfrac{b}{2\\\\sin B} = \\\\dfrac{c}{2\\\\sin C} = \\\\dfrac{abc}{4\\\\Delta}$$"
+      },
+      {
+        "front": "State the fundamental formulas for the Incircle Radius $r$.",
+        "back": "1. $$r = \\\\dfrac{\\\\Delta}{s}$$\\n2. $$r = (s - a)\\\\tan\\\\dfrac{A}{2} = (s - b)\\\\tan\\\\dfrac{B}{2} = (s - c)\\\\tan\\\\dfrac{C}{2}$$\\n3. $$r = 4R\\\\sin\\\\dfrac{A}{2}\\\\sin\\\\dfrac{B}{2}\\\\sin\\\\dfrac{C}{2}$$\\n4. $$r = \\\\dfrac{a\\\\sin(B/2)\\\\sin(C/2)}{\\\\cos(A/2)}$$"
+      },
+      {
+        "front": "State the formulas for the Exradii $r_1, r_2, r_3$ (radii of escribed circles).",
+        "back": "1. In terms of semi-perimeter: $$r_1 = \\\\dfrac{\\\\Delta}{s - a}, \\\\quad r_2 = \\\\dfrac{\\\\Delta}{s - b}, \\\\quad r_3 = \\\\dfrac{\\\\Delta}{s - c}$$\\n2. In terms of tangents: $$r_1 = s\\\\tan\\\\dfrac{A}{2}, \\\\quad r_2 = s\\\\tan\\\\dfrac{B}{2}, \\\\quad r_3 = s\\\\tan\\\\dfrac{C}{2}$$\\n3. In terms of $R$: $$r_1 = 4R\\\\sin\\\\dfrac{A}{2}\\\\cos\\\\dfrac{B}{2}\\\\cos\\\\dfrac{C}{2}$$"
+      },
+      {
+        "front": "What is the relation between the inradius $r$ and the exradii $r_1, r_2, r_3$?",
+        "back": "1. Reciprocal sum:\\n$$\\\\dfrac{1}{r_1} + \\\\dfrac{1}{r_2} + \\\\dfrac{1}{r_3} = \\\\dfrac{1}{r}$$\\n2. Product identity:\\n$$r_1 r_2 r_3 = r s^2 = \\\\Delta s$$\\n3. Sum of pairwise products:\\n$$r_1 r_2 + r_2 r_3 + r_3 r_1 = s^2$$"
+      },
+      {
+        "front": "State the fundamental identity relating the sum of exradii to circumradius $R$ and inradius $r$.",
+        "back": "$$r_1 + r_2 + r_3 - r = 4R$$\\nEquivalently, $r_1 + r_2 + r_3 = 4R + r$."
+      },
+      {
+        "front": "State the $m-n$ Theorem (Cotangent Theorem for Cevians) in $\\\\Delta ABC$.",
+        "back": "If a point $D$ on side $BC$ divides it in the ratio $BD : DC = m : n$ and $AD$ makes angle $\\\\theta$ with $BC$, and divides $\\\\angle A$ into $\\\\alpha$ and $\\\\beta$:\\n1. $$(m + n)\\\\cot\\\\theta = m\\\\cot\\\\alpha - n\\\\cot\\\\beta$$\\n2. $$(m + n)\\\\cot\\\\theta = n\\\\cot B - m\\\\cot C$$"
+      },
+      {
+        "front": "What is the formula for the Length of the Median $m_a$ from vertex $A$?",
+        "back": "By Apollonius' Theorem:\\n$$m_a = \\\\dfrac{1}{2}\\\\sqrt{2b^2 + 2c^2 - a^2}$$\\nAlso, $4(m_a^2 + m_b^2 + m_c^2) = 3(a^2 + b^2 + c^2)$."
+      },
+      {
+        "front": "What is the formula for the Length of the Internal Angle Bisector $\\\\beta_a$ from vertex $A$?",
+        "back": "$$\\\\beta_a = \\\\dfrac{2bc\\\\cos(A/2)}{b + c}$$\\nIn terms of $\\\\Delta$: $\\\\beta_a = \\\\dfrac{2\\\\Delta}{(b+c)\\\\sin(A/2)}$."
+      },
+      {
+        "front": "What is the formula for the Length of the Altitude $h_a$ from vertex $A$?",
+        "back": "$$h_a = \\\\dfrac{2\\\\Delta}{a} = b\\\\sin C = c\\\\sin B = \\\\dfrac{bc}{2R}$$"
+      },
+      {
+        "front": "State the distances of the Circumcentre ($O$) from the vertices and sides of $\\\\Delta ABC$.",
+        "back": "1. **From vertices:** $OA = OB = OC = R$\\n2. **From side $BC$ ($a$):** $O_a = R\\\\cos A$\\n3. **From side $CA$ ($b$):** $O_b = R\\\\cos B$\\n4. **From side $AB$ ($c$):** $O_c = R\\\\cos C$"
+      },
+      {
+        "front": "State the distances of the Incentre ($I$) from the vertices and sides of $\\\\Delta ABC$.",
+        "back": "1. **From vertices:**\\n$$IA = r\\\\csc\\\\dfrac{A}{2} = 4R\\\\sin\\\\dfrac{B}{2}\\\\sin\\\\dfrac{C}{2}$$\\n2. **From sides:** Distance to any side $= r$."
+      },
+      {
+        "front": "State the distances of the Orthocentre ($H$) from the vertices and sides of an acute $\\\\Delta ABC$.",
+        "back": "1. **From vertices:**\\n$$HA = 2R\\\\cos A, \\\\quad HB = 2R\\\\cos B, \\\\quad HC = 2R\\\\cos C$$\\n2. **From sides:**\\n$$H_a = 2R\\\\cos B\\\\cos C, \\\\quad H_b = 2R\\\\cos C\\\\cos A, \\\\quad H_c = 2R\\\\cos A\\\\cos B$$"
+      },
+      {
+        "front": "State the distance of the Centroid ($G$) from the vertices and sides of $\\\\Delta ABC$.",
+        "back": "1. **From vertex $A$:** $GA = \\\\dfrac{2}{3}m_a = \\\\dfrac{1}{3}\\\\sqrt{2b^2 + 2c^2 - a^2}$\\n2. **From side $BC$:** $G_a = \\\\dfrac{1}{3}h_a = \\\\dfrac{2\\\\Delta}{3a}$"
+      },
+      {
+        "front": "What is the Pedal Triangle, and what are its angles?",
+        "back": "The triangle formed by joining the feet of the three altitudes of $\\\\Delta ABC$ is called the **Pedal Triangle**.\\nFor an acute-angled $\\\\Delta ABC$, its angles are:\\n$$\\\\pi - 2A, \\\\quad \\\\pi - 2B, \\\\quad \\\\pi - 2C$$"
+      },
+      {
+        "front": "What are the side lengths and circumradius of the Pedal Triangle of an acute $\\\\Delta ABC$?",
+        "back": "1. **Side lengths:**\\n$$a' = a\\\\cos A = R\\\\sin 2A, \\\\quad b' = b\\\\cos B = R\\\\sin 2B, \\\\quad c' = c\\\\cos C = R\\\\sin 2C$$\\n2. **Circumradius:** $R' = \\\\dfrac{R}{2}$\\n3. **Incentre:** The orthocentre $H$ of $\\\\Delta ABC$ is the incentre of its pedal triangle."
+      },
+      {
+        "front": "What is the Excentral (Excentric) Triangle, and what are its angles?",
+        "back": "The triangle formed by connecting the three excentres $I_1, I_2, I_3$ of $\\\\Delta ABC$ is called the **Excentral Triangle**.\\nIts angles are:\\n$$\\\\dfrac{\\\\pi - A}{2}, \\\\quad \\\\dfrac{\\\\pi - B}{2}, \\\\quad \\\\dfrac{\\\\pi - C}{2}$$"
+      },
+      {
+        "front": "What are the side lengths of the Excentral Triangle $I_1 I_2 I_3$?",
+        "back": "1. $$I_2 I_3 = 4R\\\\cos\\\\dfrac{A}{2}$$\\n2. $$I_3 I_1 = 4R\\\\cos\\\\dfrac{B}{2}$$\\n3. $$I_1 I_2 = 4R\\\\cos\\\\dfrac{C}{2}$$\\nAlso, $\\\\Delta ABC$ is the pedal triangle of $\\\\Delta I_1 I_2 I_3$, and the incentre $I$ is its orthocentre."
+      },
+      {
+        "front": "State Euler's Formula for the distance between the Circumcentre ($O$) and Incentre ($I$).",
+        "back": "$$OI^2 = R^2 - 2Rr = R^2\\\\left(1 - 8\\\\sin\\\\dfrac{A}{2}\\\\sin\\\\dfrac{B}{2}\\\\sin\\\\dfrac{C}{2}\\\\right)$$\\nConsequently, $R \\\\ge 2r$ (Euler's Inequality), with equality holding iff the triangle is equilateral."
+      },
+      {
+        "front": "State the formula for the distance between the Circumcentre ($O$) and Orthocentre ($H$).",
+        "back": "$$OH^2 = R^2(1 - 8\\\\cos A\\\\cos B\\\\cos C) = 9R^2 - (a^2 + b^2 + c^2)$$"
+      },
+      {
+        "front": "State the formula for the distance between the Circumcentre ($O$) and Centroid ($G$).",
+        "back": "$$OG^2 = R^2 - \\\\dfrac{1}{9}(a^2 + b^2 + c^2)$$"
+      },
+      {
+        "front": "What are the circumradii of the triangles $HBC, HCA, HAB$ where $H$ is the orthocentre of $\\\\Delta ABC$?",
+        "back": "The circumradii of $\\\\Delta HBC, \\\\Delta HCA,$ and $\\\\Delta HAB$ are all equal to the circumradius $R$ of the original $\\\\Delta ABC$:\\n$$R_{HBC} = R_{HCA} = R_{HAB} = R$$"
+      },
+      {
+        "front": "What is the Ambiguous Case in the solution of triangles?",
+        "back": "When two sides $a, b$ and the non-included acute angle $A$ are given ($A < 90^\\\\circ$):\\n1. If $a < b\\\\sin A$: No triangle exists.\\n2. If $a = b\\\\sin A$: Exactly one right-angled triangle exists.\\n3. If $b\\\\sin A < a < b$: Two distinct triangles exist (ambiguous case).\\n4. If $a \\\\ge b$: Exactly one triangle exists."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "In a triangle $ABC$, the sides are $a = 3, b = 5,$ and $c = 7$. Find the measure of angle $C$.",
+        "options": [
+          "$$120^\\\\circ$$",
+          "$$60^\\\\circ$$",
+          "$$150^\\\\circ$$",
+          "$$135^\\\\circ$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using the cosine rule, $\\\\cos C = \\\\dfrac{a^2 + b^2 - c^2}{2ab} = \\\\dfrac{9 + 25 - 49}{30} = -\\\\dfrac{1}{2} \\\\implies C = 120^\\\\circ$.",
+          "Incorrect. $\\\\cos 60^\\\\circ = +1/2$, which would require $c^2 = 19$, not $49$.",
+          "Incorrect. $\\\\cos 150^\\\\circ = -\\\\sqrt{3}/2 \\\\ne -1/2$.",
+          "Incorrect. $\\\\cos 135^\\\\circ = -1/\\\\sqrt{2} \\\\ne -1/2$."
+        ],
+        "fullExplanation": "By the Cosine Rule:\\n$$\\\\cos C = \\\\dfrac{a^2 + b^2 - c^2}{2ab}$$\\nSubstitute $a = 3, b = 5, c = 7$:\\n$$\\\\cos C = \\\\dfrac{3^2 + 5^2 - 7^2}{2(3)(5)} = \\\\dfrac{9 + 25 - 49}{30} = \\\\dfrac{-15}{30} = -\\\\dfrac{1}{2}$$\\nSince $C \\\\in (0, 180^\\\\circ)$, $\\\\cos C = -1/2 \\\\implies C = 180^\\\\circ - 60^\\\\circ = 120^\\\\circ$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if $A = 30^\\\\circ$, $B = 45^\\\\circ$, and side $a = 2\\\\sqrt{2}$, find the length of side $b$.",
+        "options": [
+          "$$4$$",
+          "$$2$$",
+          "$$4\\\\sqrt{2}$$",
+          "$$2\\\\sqrt{6}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By the Sine Rule, $\\\\dfrac{a}{\\\\sin A} = \\\\dfrac{b}{\\\\sin B} \\\\implies b = \\\\dfrac{2\\\\sqrt{2} \\\\times \\\\sin 45^\\\\circ}{\\\\sin 30^\\\\circ} = \\\\dfrac{2\\\\sqrt{2} \\\\times (1/\\\\sqrt{2})}{1/2} = 4$.",
+          "Incorrect. Forgot to divide by $\\\\sin 30^\\\\circ = 1/2$.",
+          "Incorrect. Multiplied by $\\\\sqrt{2}$ instead of evaluating correctly.",
+          "Incorrect. Used wrong trigonometric values."
+        ],
+        "fullExplanation": "Using the Sine Rule:\\n$$\\\\dfrac{a}{\\\\sin A} = \\\\dfrac{b}{\\\\sin B}$$\\nSubstitute the given values:\\n$$\\\\dfrac{2\\\\sqrt{2}}{\\\\sin 30^\\\\circ} = \\\\dfrac{b}{\\\\sin 45^\\\\circ}$$\\n$$\\\\dfrac{2\\\\sqrt{2}}{1/2} = \\\\dfrac{b}{1/\\\\sqrt{2}}$$\\n$$4\\\\sqrt{2} = b\\\\sqrt{2} \\\\implies b = 4$$."
+      },
+      {
+        "question": "In any triangle $ABC$, the expression $b\\\\cos C + c\\\\cos B$ is identically equal to:",
+        "options": [
+          "$$a$$",
+          "$$2a$$",
+          "$$a^2$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This is directly the first Projection Formula: $a = b\\\\cos C + c\\\\cos B$.",
+          "Incorrect. Overcounted by a factor of 2.",
+          "Incorrect. Dimensionally incorrect; sides are linear.",
+          "Incorrect. The projection sum equals the base side length, which is positive."
+        ],
+        "fullExplanation": "By the standard Projection Formula in any $\\\\Delta ABC$:\\nDropping an altitude from vertex $A$ to side $BC$ divides $BC$ into two segments of lengths $c\\\\cos B$ and $b\\\\cos C$.\\nTherefore:\\n$$a = b\\\\cos C + c\\\\cos B$$."
+      },
+      {
+        "question": "If the sides of a triangle $ABC$ are $a = 18, b = 24,$ and $c = 30$, find the area of the triangle $\\\\Delta$.",
+        "options": [
+          "$$216$$",
+          "$$432$$",
+          "$$108$$",
+          "$$270$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Observe that $18^2 + 24^2 = 324 + 576 = 900 = 30^2$, so the triangle is right-angled. $\\\\Delta = \\\\dfrac{1}{2} \\\\times 18 \\\\times 24 = 216$.",
+          "Incorrect. Forgot the factor of $1/2$ in the triangle area formula.",
+          "Incorrect. Halved the correct area.",
+          "Incorrect. Arithmetic error using semi-perimeter."
+        ],
+        "fullExplanation": "Notice that:\\n$$a^2 + b^2 = 18^2 + 24^2 = 324 + 576 = 900 = 30^2 = c^2$$\\nThus, $\\\\Delta ABC$ is a right-angled triangle with hypotenuse $c = 30$ and legs $a = 18, b = 24$.\\nThe area is:\\n$$\\\\Delta = \\\\dfrac{1}{2}ab = \\\\dfrac{1}{2}(18)(24) = 18 \\\\times 12 = 216\\text{ sq. units}$$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if $b = 3, c = 5$, and $A = 60^\\\\circ$, what is the length of side $a$?",
+        "options": [
+          "$$\\\\sqrt{19}$$",
+          "$$\\\\sqrt{49}$$",
+          "$$\\\\sqrt{34}$$",
+          "$$\\\\sqrt{15}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $a^2 = b^2 + c^2 - 2bc\\\\cos A = 9 + 25 - 2(3)(5)(1/2) = 34 - 15 = 19 \\\\implies a = \\\\sqrt{19}$.",
+          "Incorrect. Added $2bc\\\\cos A$ instead of subtracting it ($34 + 15 = 49$).",
+          "Incorrect. Omitted the $-2bc\\\\cos A$ term.",
+          "Incorrect. Computed $bc$ instead of $a$."
+        ],
+        "fullExplanation": "Using the Cosine Rule:\\n$$a^2 = b^2 + c^2 - 2bc\\\\cos A$$\\nSubstitute the given values:\\n$$a^2 = 3^2 + 5^2 - 2(3)(5)\\\\cos 60^\\\\circ$$\\n$$a^2 = 9 + 25 - 30\\\\left(\\\\dfrac{1}{2}\\\\right) = 34 - 15 = 19$$\\n$$a = \\\\sqrt{19}$$."
+      },
+      {
+        "question": "In a triangle $ABC$, the sides are $a = 13, b = 14,$ and $c = 15$. Find the inradius $r$.",
+        "options": [
+          "$$4$$",
+          "$$3$$",
+          "$$\\\\dfrac{7}{2}$$",
+          "$$8$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $s = 21, \\\\Delta = 84$, so $r = \\\\Delta / s = 84 / 21 = 4$.",
+          "Incorrect. Arithmetic mistake in computing $\\\\Delta$.",
+          "Incorrect. Calculation slip.",
+          "Incorrect. Computed the diameter of the incircle rather than its radius."
+        ],
+        "fullExplanation": "1. Compute the semi-perimeter $s$:\\n$$s = \\\\dfrac{a + b + c}{2} = \\\\dfrac{13 + 14 + 15}{2} = \\\\dfrac{42}{2} = 21$$\\n2. Compute area $\\\\Delta$ using Heron's formula:\\n$$s - a = 21 - 13 = 8$$\\n$$s - b = 21 - 14 = 7$$\\n$$s - c = 21 - 15 = 6$$\\n$$\\\\Delta = \\\\sqrt{s(s-a)(s-b)(s-c)} = \\\\sqrt{21 \\\\times 8 \\\\times 7 \\\\times 6} = \\\\sqrt{(3 \\\\times 7) \\\\times 8 \\\\times 7 \\\\times (2 \\\\times 3)}$$\\n$$\\\\Delta = \\\\sqrt{7^2 \\\\times 3^2 \\\\times 16} = 7 \\\\times 3 \\\\times 4 = 84$$\\n3. Compute inradius $r$:\\n$$r = \\\\dfrac{\\\\Delta}{s} = \\\\dfrac{84}{21} = 4$$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, the value of $a(b\\\\cos C - c\\\\cos B)$ is identically equal to:",
+        "options": [
+          "$$b^2 - c^2$$",
+          "$$c^2 - b^2$$",
+          "$$0$$",
+          "$$a^2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $ab\\\\cos C - ac\\\\cos B = \\\\dfrac{a^2 + b^2 - c^2}{2} - \\\\dfrac{a^2 + c^2 - b^2}{2} = b^2 - c^2$.",
+          "Incorrect. Sign is reversed.",
+          "Incorrect. This would only be zero if $b = c$ (isosceles triangle).",
+          "Incorrect. Dimensional analysis is correct, but algebraic evaluation gives $b^2 - c^2$."
+        ],
+        "fullExplanation": "Using the Cosine Rule:\\n$$ab\\\\cos C = ab\\\\left(\\\\dfrac{a^2 + b^2 - c^2}{2ab}\\\\right) = \\\\dfrac{a^2 + b^2 - c^2}{2}$$\\n$$ac\\\\cos B = ac\\\\left(\\\\dfrac{c^2 + a^2 - b^2}{2ca}\\\\right) = \\\\dfrac{c^2 + a^2 - b^2}{2}$$\\nSubtracting the two expressions:\\n$$a(b\\\\cos C - c\\\\cos B) = \\\\dfrac{a^2 + b^2 - c^2}{2} - \\\\dfrac{c^2 + a^2 - b^2}{2} = \\\\dfrac{2b^2 - 2c^2}{2} = b^2 - c^2$$."
+      },
+      {
+        "question": "In any $\\\\Delta ABC$, if $(b + c)\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = k\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)$, then $k$ equals:",
+        "options": [
+          "$$b - c$$",
+          "$$c - b$$",
+          "$$a$$",
+          "$$b + c$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By Napier's Analogy, $\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = \\\\dfrac{b - c}{b + c}\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right) \\\\implies (b + c)\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = (b - c)\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)$.",
+          "Incorrect. The numerator in Napier's analogy is $(b - c)$, not $(c - b)$.",
+          "Incorrect. Confused side $a$ with $(b - c)$.",
+          "Incorrect. Failed to apply the tangent rule identity."
+        ],
+        "fullExplanation": "According to Napier's Analogy (Tangent Rule):\\n$$\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = \\\\dfrac{b - c}{b + c}\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)$$\\nMultiplying both sides by $(b + c)$:\\n$$(b + c)\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = (b - c)\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)$$\\nComparing with $(b + c)\\\\tan\\\\left(\\\\dfrac{B - C}{2}\\\\right) = k\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)$, we find $k = b - c$."
+      },
+      {
+        "question": "If the angles $A, B, C$ of a triangle are in the ratio $1 : 2 : 3$, find the ratio of their corresponding sides $a : b : c$.",
+        "options": [
+          "$$1 : \\\\sqrt{3} : 2$$",
+          "$$1 : 2 : 3$$",
+          "$$1 : \\\\sqrt{2} : \\\\sqrt{3}$$",
+          "$$\\\\sqrt{3} : 1 : 2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The angles are $30^\\\\circ, 60^\\\\circ, 90^\\\\circ$. Their sines are $1/2, \\\\sqrt{3}/2, 1$, giving $a : b : c = 1 : \\\\sqrt{3} : 2$.",
+          "Incorrect. The sides are proportional to the sines of the angles, not directly to the angles.",
+          "Incorrect. Incorrect trigonometric evaluation.",
+          "Incorrect. The sides are permuted."
+        ],
+        "fullExplanation": "1. Let the angles be $x, 2x, 3x$:\\n$$x + 2x + 3x = 180^\\\\circ \\\\implies 6x = 180^\\\\circ \\\\implies x = 30^\\\\circ$$\\nSo $A = 30^\\\\circ, B = 60^\\\\circ, C = 90^\\\\circ$.\\n2. By the Sine Rule, $a : b : c = \\\\sin A : \\\\sin B : \\\\sin C$:\\n$$a : b : c = \\\\sin 30^\\\\circ : \\\\sin 60^\\\\circ : \\\\sin 90^\\\\circ = \\\\dfrac{1}{2} : \\\\dfrac{\\\\sqrt{3}}{2} : 1 = 1 : \\\\sqrt{3} : 2$$."
+      },
+      {
+        "question": "In a triangle $ABC$, the sides are $a = 4, b = 5,$ and $c = 7$. Find its circumradius $R$.",
+        "options": [
+          "$$\\\\dfrac{35\\\\sqrt{6}}{24}$$",
+          "$$\\\\dfrac{35}{4\\\\sqrt{6}}$$",
+          "$$\\\\dfrac{35\\\\sqrt{6}}{12}$$",
+          "$$4\\\\sqrt{6}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\Delta = 4\\\\sqrt{6}$, so $R = \\\\dfrac{abc}{4\\\\Delta} = \\\\dfrac{4 \\\\times 5 \\\\times 7}{16\\\\sqrt{6}} = \\\\dfrac{35}{4\\\\sqrt{6}} = \\\\dfrac{35\\\\sqrt{6}}{24}$.",
+          "Incorrect. This is unrationalized, but option A gives the fully simplified rationalized form.",
+          "Incorrect. Missing a factor of $2$ in the denominator.",
+          "Incorrect. This is the area $\\\\Delta$, not the circumradius."
+        ],
+        "fullExplanation": "1. Semi-perimeter $s = \\\\dfrac{4 + 5 + 7}{2} = 8$.\\n2. Area $\\\\Delta$ by Heron's formula:\\n$$\\\\Delta = \\\\sqrt{8(8 - 4)(8 - 5)(8 - 7)} = \\\\sqrt{8 \\\\times 4 \\\\times 3 \\\\times 1} = \\\\sqrt{96} = 4\\\\sqrt{6}$$\\n3. Circumradius $R$:\\n$$R = \\\\dfrac{abc}{4\\\\Delta} = \\\\dfrac{4 \\\\times 5 \\\\times 7}{4 \\\\times 4\\\\sqrt{6}} = \\\\dfrac{35}{4\\\\sqrt{6}}$$\\nRationalizing the denominator:\\n$$R = \\\\dfrac{35\\\\sqrt{6}}{4 \\\\times 6} = \\\\dfrac{35\\\\sqrt{6}}{24}$$."
+      },
+      {
+        "question": "In a $\\\\Delta ABC$, if $\\\\dfrac{1}{a + c} + \\\\dfrac{1}{b + c} = \\\\dfrac{3}{a + b + c}$, then the measure of angle $C$ is:",
+        "options": [
+          "$$60^\\\\circ$$",
+          "$$90^\\\\circ$$",
+          "$$30^\\\\circ$$",
+          "$$45^\\\\circ$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Simplifying gives $a^2 + b^2 - c^2 = ab \\\\implies \\\\cos C = \\\\dfrac{1}{2} \\\\implies C = 60^\\\\circ$.",
+          "Incorrect. $\\\\cos 90^\\\\circ = 0$, which would require $a^2 + b^2 - c^2 = 0$.",
+          "Incorrect. $\\\\cos 30^\\\\circ = \\\\sqrt{3}/2 \\\\ne 1/2$.",
+          "Incorrect. $\\\\cos 45^\\\\circ = 1/\\\\sqrt{2} \\\\ne 1/2$."
+        ],
+        "fullExplanation": "Given:\\n$$\\\\dfrac{1}{a + c} + \\\\dfrac{1}{b + c} = \\\\dfrac{3}{a + b + c}$$\\n$$\\\\dfrac{(b + c) + (a + c)}{(a + c)(b + c)} = \\\\dfrac{3}{a + b + c}$$\\n$$\\\\dfrac{a + b + 2c}{ab + ac + bc + c^2} = \\\\dfrac{3}{a + b + c}$$\\nCross-multiplying:\\n$$(a + b + 2c)(a + b + c) = 3(ab + ac + bc + c^2)$$\\n$$(a + b)^2 + 3c(a + b) + 2c^2 = 3ab + 3c(a + b) + 3c^2$$\\nCanceling $3c(a + b)$ from both sides:\\n$$(a + b)^2 + 2c^2 = 3ab + 3c^2$$\\n$$a^2 + 2ab + b^2 - c^2 = 3ab$$\\n$$a^2 + b^2 - c^2 = ab$$\\nDividing both sides by $2ab$:\\n$$\\\\dfrac{a^2 + b^2 - c^2}{2ab} = \\\\dfrac{1}{2} \\\\implies \\\\cos C = \\\\dfrac{1}{2}$$\\nSince $C \\\\in (0, 180^\\\\circ)$, $C = 60^\\\\circ$."
+      },
+      {
+        "question": "If in $\\\\Delta ABC$, the sides $a, b, c$ are in Arithmetic Progression (A.P.), then the value of $\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)\\\\cot\\\\left(\\\\dfrac{C}{2}\\\\right)$ is:",
+        "options": [
+          "$$3$$",
+          "$$2$$",
+          "$$1$$",
+          "$$\\\\dfrac{3}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\cot(A/2)\\\\cot(C/2) = \\\\dfrac{s}{s - b}$. Since $a, b, c$ are in A.P., $a + c = 2b \\\\implies 2s = 3b \\\\implies \\\\dfrac{s}{s - b} = \\\\dfrac{3b/2}{b/2} = 3$.",
+          "Incorrect. Arithmetic slip in evaluating $s / (s - b)$.",
+          "Incorrect. That would mean $b = 0$, which is impossible.",
+          "Incorrect. Forgot the factor of 2 in the denominator."
+        ],
+        "fullExplanation": "Using the half-angle cotangent formulas:\\n$$\\\\cot\\\\dfrac{A}{2} = \\\\sqrt{\\\\dfrac{s(s-a)}{(s-b)(s-c)}}, \\\\quad \\\\cot\\\\dfrac{C}{2} = \\\\sqrt{\\\\dfrac{s(s-c)}{(s-a)(s-b)}}$$\\nMultiplying them together:\\n$$\\\\cot\\\\dfrac{A}{2}\\\\cot\\\\dfrac{C}{2} = \\\\sqrt{\\\\dfrac{s^2 (s-a)(s-c)}{(s-b)^2 (s-a)(s-c)}} = \\\\dfrac{s}{s - b}$$\\nSince $a, b, c$ are in A.P., $a + c = 2b$.\\nThen $2s = a + b + c = 2b + b = 3b \\\\implies s = \\\\dfrac{3b}{2}$.\\nSubstitute $s$ into the ratio:\\n$$\\\\cot\\\\dfrac{A}{2}\\\\cot\\\\dfrac{C}{2} = \\\\dfrac{\\\\dfrac{3b}{2}}{\\\\dfrac{3b}{2} - b} = \\\\dfrac{\\\\dfrac{3b}{2}}{\\\\dfrac{b}{2}} = 3$$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if $\\\\cos A + 2\\\\cos B + \\\\cos C = 2$, then the sides $a, b, c$ satisfy which of the following conditions?",
+        "options": [
+          "$a, b, c$ are in A.P.",
+          "$a, b, c$ are in G.P.",
+          "$a, b, c$ are in H.P.",
+          "$a^2, b^2, c^2$ are in A.P."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The relation reduces to $\\\\cot(A/2)\\\\cot(C/2) = 3$, which holds if and only if $a, b, c$ are in A.P.",
+          "Incorrect. For G.P., $b^2 = ac$, which does not satisfy this linear cosine relation.",
+          "Incorrect. H.P. corresponds to $\\\\tan(A/2), \\\\tan(B/2), \\\\tan(C/2)$ in A.P.",
+          "Incorrect. $a^2, b^2, c^2$ in A.P. corresponds to $\\\\cot A, \\\\cot B, \\\\cot C$ in A.P."
+        ],
+        "fullExplanation": "Rewrite the given relation:\\n$$\\\\cos A + \\\\cos C = 2(1 - \\\\cos B)$$\\nUsing sum-to-product on LHS and half-angle on RHS:\\n$$2\\\\cos\\\\left(\\\\dfrac{A + C}{2}\\\\right)\\\\cos\\\\left(\\\\dfrac{A - C}{2}\\\\right) = 4\\\\sin^2\\\\left(\\\\dfrac{B}{2}\\\\right)$$\\nSince $A + B + C = 180^\\\\circ$, $\\\\cos\\\\left(\\\\dfrac{A+C}{2}\\\\right) = \\\\sin\\\\left(\\\\dfrac{B}{2}\\\\right)$.\\nSince $\\\\sin(B/2) \\\\ne 0$ in a triangle, divide by $2\\\\sin(B/2)$:\\n$$\\\\cos\\\\left(\\\\dfrac{A - C}{2}\\\\right) = 2\\\\sin\\\\left(\\\\dfrac{B}{2}\\\\right) = 2\\\\cos\\\\left(\\\\dfrac{A + C}{2}\\\\right)$$\\nExpanding both sides:\\n$$\\\\cos\\\\dfrac{A}{2}\\\\cos\\\\dfrac{C}{2} + \\\\sin\\\\dfrac{A}{2}\\\\sin\\\\dfrac{C}{2} = 2\\\\cos\\\\dfrac{A}{2}\\\\cos\\\\dfrac{C}{2} - 2\\\\sin\\\\dfrac{A}{2}\\\\sin\\\\dfrac{C}{2}$$\\n$$3\\\\sin\\\\dfrac{A}{2}\\\\sin\\\\dfrac{C}{2} = \\\\cos\\\\dfrac{A}{2}\\\\cos\\\\dfrac{C}{2}$$\\nDividing by $\\\\sin(A/2)\\\\sin(C/2)$:\\n$$\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right)\\\\cot\\\\left(\\\\dfrac{C}{2}\\\\right) = 3$$\\nSince $\\\\cot(A/2)\\\\cot(C/2) = \\\\dfrac{s}{s - b} = 3 \\\\implies s = 3s - 3b \\\\implies 2s = 3b \\\\implies a + b + c = 3b \\\\implies a + c = 2b$.\\nThus, $a, b, c$ are in Arithmetic Progression (A.P.)."
+      },
+      {
+        "question": "If the exradii $r_1, r_2, r_3$ of $\\\\Delta ABC$ are in Harmonic Progression (H.P.), then the sides $a, b, c$ are in:",
+        "options": [
+          "Arithmetic Progression (A.P.)",
+          "Geometric Progression (G.P.)",
+          "Harmonic Progression (H.P.)",
+          "None of these"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $r_1, r_2, r_3$ in H.P. $\\\\implies 1/r_1, 1/r_2, 1/r_3$ in A.P. $\\\\implies (s-a)/\\\\Delta, (s-b)/\\\\Delta, (s-c)/\\\\Delta$ in A.P. $\\\\implies -a, -b, -c$ in A.P. $\\\\implies a, b, c$ in A.P.",
+          "Incorrect. The reciprocals are linear in the sides, which leads to A.P., not G.P.",
+          "Incorrect. Inverting the exradii yields terms linear in $s - a$, so the sides are in A.P., not H.P.",
+          "Incorrect. A definite progression is established."
+        ],
+        "fullExplanation": "1. By definition, the exradii are:\\n$$r_1 = \\\\dfrac{\\\\Delta}{s - a}, \\\\quad r_2 = \\\\dfrac{\\\\Delta}{s - b}, \\\\quad r_3 = \\\\dfrac{\\\\Delta}{s - c}$$\\n2. Since $r_1, r_2, r_3$ are in H.P., their reciprocals are in A.P.:\\n$$\\\\dfrac{1}{r_1}, \\\\quad \\\\dfrac{1}{r_2}, \\\\quad \\\\dfrac{1}{r_3} \\\\text{ are in A.P.}$$\\n$$\\\\dfrac{s - a}{\\\\Delta}, \\\\quad \\\\dfrac{s - b}{\\\\Delta}, \\\\quad \\\\dfrac{s - c}{\\\\Delta} \\\\text{ are in A.P.}$$\\n3. Multiplying throughout by the constant $\\\\Delta$:\\n$$s - a, \\\\quad s - b, \\\\quad s - c \\\\text{ are in A.P.}$$\\n4. Subtracting the constant $s$ from each term:\\n$$-a, \\\\quad -b, \\\\quad -c \\\\text{ are in A.P.}$$\\n5. Multiplying by $-1$ reverses the order but preserves the arithmetic progression:\\n$$a, \\\\quad b, \\\\quad c \\\\text{ are in A.P.}$$"
+      },
+      {
+        "question": "In a triangle $ABC$, if $r_1 = r_2 + r_3 + r$, then the triangle is:",
+        "options": [
+          "Right-angled at $A$",
+          "Equilateral",
+          "Right-angled at $B$",
+          "Isosceles with $b = c$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $r_1 - r = r_2 + r_3 \\\\implies \\\\tan^2(A/2) = 1 \\\\implies A/2 = 45^\\\\circ \\\\implies A = 90^\\\\circ$.",
+          "Incorrect. In an equilateral triangle, $r_1 = r_2 = r_3 = 3r$, so $r_1 \\\\ne r_2 + r_3 + r$.",
+          "Incorrect. The isolated exradius is $r_1$, which corresponds to vertex $A$, not $B$.",
+          "Incorrect. It does not require $b = c$."
+        ],
+        "fullExplanation": "Rewrite the condition as:\\n$$r_1 - r = r_2 + r_3$$\\n1. Express LHS:\\n$$r_1 - r = \\\\dfrac{\\\\Delta}{s - a} - \\\\dfrac{\\\\Delta}{s} = \\\\dfrac{\\\\Delta(s - (s - a))}{s(s - a)} = \\\\dfrac{\\\\Delta a}{s(s - a)}$$\\n2. Express RHS:\\n$$r_2 + r_3 = \\\\dfrac{\\\\Delta}{s - b} + \\\\dfrac{\\\\Delta}{s - c} = \\\\dfrac{\\\\Delta(2s - b - c)}{(s - b)(s - c)} = \\\\dfrac{\\\\Delta a}{(s - b)(s - c)}$$\\n3. Equating both sides:\\n$$\\\\dfrac{\\\\Delta a}{s(s - a)} = \\\\dfrac{\\\\Delta a}{(s - b)(s - c)}$$\\nCanceling $\\\\Delta a \\\\ne 0$:\\n$$s(s - a) = (s - b)(s - c)$$\\n$$\\\\dfrac{(s - b)(s - c)}{s(s - a)} = 1$$\\nSince $\\\\tan^2\\\\left(\\\\dfrac{A}{2}\\\\right) = \\\\dfrac{(s - b)(s - c)}{s(s - a)}$, we have:\\n$$\\\\tan^2\\\\left(\\\\dfrac{A}{2}\\\\right) = 1 \\\\implies \\\\tan\\\\left(\\\\dfrac{A}{2}\\\\right) = 1$$\\nSince $0 < A/2 < 90^\\\\circ$, we obtain $\\\\dfrac{A}{2} = 45^\\\\circ \\\\implies A = 90^\\\\circ$.\\nThus, $\\\\Delta ABC$ is right-angled at $A$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if the area is given by $\\\\Delta = a^2 - (b - c)^2$, then $\\\\tan A$ is equal to:",
+        "options": [
+          "$$\\\\dfrac{8}{15}$$",
+          "$$\\\\dfrac{15}{8}$$",
+          "$$\\\\dfrac{1}{4}$$",
+          "$$\\\\dfrac{4}{15}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\Delta = 4(s-b)(s-c)$. Squaring and using Heron's formula gives $\\\\tan(A/2) = 1/4$. Then $\\\\tan A = \\\\dfrac{2(1/4)}{1 - 1/16} = \\\\dfrac{8}{15}$.",
+          "Incorrect. Inverted value ($\\\\cot A$).",
+          "Incorrect. This is the value of $\\\\tan(A/2)$, not $\\\\tan A$.",
+          "Incorrect. Calculation error in the double-angle formula."
+        ],
+        "fullExplanation": "1. Factor the right-hand side:\\n$$\\\\Delta = a^2 - (b - c)^2 = (a - b + c)(a + b - c)$$\\nSince $a + b + c = 2s$, we have $a - b + c = 2(s - b)$ and $a + b - c = 2(s - c)$:\\n$$\\\\Delta = 2(s - b) \\\\cdot 2(s - c) = 4(s - b)(s - c)$$\\n2. By Heron's formula, $\\\\Delta = \\\\sqrt{s(s - a)(s - b)(s - c)}$. Squaring both expressions:\\n$$\\\\Delta^2 = 16(s - b)^2 (s - c)^2 = s(s - a)(s - b)(s - c)$$\\nCanceling $(s - b)(s - c)$:\\n$$16(s - b)(s - c) = s(s - a) \\\\implies \\\\dfrac{(s - b)(s - c)}{s(s - a)} = \\\\dfrac{1}{16}$$\\n3. Recognise that $\\\\tan^2\\\\left(\\\\dfrac{A}{2}\\\\right) = \\\\dfrac{(s - b)(s - c)}{s(s - a)} = \\\\dfrac{1}{16} \\\\implies \\\\tan\\\\left(\\\\dfrac{A}{2}\\\\right) = \\\\dfrac{1}{4}$.\\n4. Use the double-angle formula for $\\\\tan A$:\\n$$\\\\tan A = \\\\dfrac{2\\\\tan(A/2)}{1 - \\\\tan^2(A/2)} = \\\\dfrac{2(1/4)}{1 - (1/4)^2} = \\\\dfrac{1/2}{1 - 1/16} = \\\\dfrac{1/2}{15/16} = \\\\dfrac{8}{15}$$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if $\\\\dfrac{a}{\\\\cos A} = \\\\dfrac{b}{\\\\cos B} = \\\\dfrac{c}{\\\\cos C}$, then the triangle is:",
+        "options": [
+          "Equilateral",
+          "Right-angled isosceles",
+          "Obtuse-angled",
+          "Scalene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Substituting $a = 2R\\\\sin A, b = 2R\\\\sin B, c = 2R\\\\sin C$ gives $\\\\tan A = \\\\tan B = \\\\tan C \\\\implies A = B = C = 60^\\\\circ$.",
+          "Incorrect. For right-angled isosceles, $\\\\cos 90^\\\\circ = 0$, so the ratio would be undefined.",
+          "Incorrect. In an obtuse triangle, one cosine is negative while two are positive, which violates equality.",
+          "Incorrect. All angles must be equal, so it cannot be scalene."
+        ],
+        "fullExplanation": "Using the Sine Rule, $a = 2R\\\\sin A$, $b = 2R\\\\sin B$, $c = 2R\\\\sin C$:\\n$$\\\\dfrac{2R\\\\sin A}{\\\\cos A} = \\\\dfrac{2R\\\\sin B}{\\\\cos B} = \\\\dfrac{2R\\\\sin C}{\\\\cos C}$$\\nDividing by $2R$:\\n$$\\\\tan A = \\\\tan B = \\\\tan C$$\\nSince $A, B, C$ are the interior angles of a triangle with $A + B + C = 180^\\\\circ$ and the tangent function is one-to-one on $(0, \\\\pi) \\\\setminus \\\\{\\\\pi/2\\\\}$:\\n$$A = B = C = 60^\\\\circ$$\\nTherefore, $\\\\Delta ABC$ is an equilateral triangle."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, the lengths of the sides are $a = 5, b = 6,$ and $c = 7$. Find the length of the median $m_a$ drawn from vertex $A$ to side $BC$.",
+        "options": [
+          "$$\\\\dfrac{\\\\sqrt{145}}{2}$$",
+          "$$\\\\sqrt{145}$$",
+          "$$\\\\dfrac{\\\\sqrt{119}}{2}$$",
+          "$$\\\\dfrac{15}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Apollonius theorem: $m_a = \\\\dfrac{1}{2}\\\\sqrt{2b^2 + 2c^2 - a^2} = \\\\dfrac{1}{2}\\\\sqrt{2(36) + 2(49) - 25} = \\\\dfrac{\\\\sqrt{145}}{2}$.",
+          "Incorrect. Forgot the factor of $1/2$.",
+          "Incorrect. Subtracted $2b^2$ instead of $a^2$.",
+          "Incorrect. Calculation slip."
+        ],
+        "fullExplanation": "By Apollonius' Theorem, the length of the median $m_a$ from vertex $A$ is:\\n$$m_a = \\\\dfrac{1}{2}\\\\sqrt{2b^2 + 2c^2 - a^2}$$\\nSubstitute $a = 5, b = 6, c = 7$:\\n$$m_a = \\\\dfrac{1}{2}\\\\sqrt{2(6^2) + 2(7^2) - 5^2}$$\\n$$m_a = \\\\dfrac{1}{2}\\\\sqrt{2(36) + 2(49) - 25}$$\\n$$m_a = \\\\dfrac{1}{2}\\\\sqrt{72 + 98 - 25} = \\\\dfrac{1}{2}\\\\sqrt{145} = \\\\dfrac{\\\\sqrt{145}}{2}$$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, the internal bisector of angle $A$ meets side $BC$ at point $D$. If $b = 4, c = 6,$ and $A = 60^\\\\circ$, find the length of the angle bisector $AD$.",
+        "options": [
+          "$$\\\\dfrac{12\\\\sqrt{3}}{5}$$",
+          "$$\\\\dfrac{24\\\\sqrt{3}}{5}$$",
+          "$$\\\\dfrac{12}{5}$$",
+          "$$2\\\\sqrt{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\beta_a = \\\\dfrac{2bc\\\\cos(A/2)}{b+c} = \\\\dfrac{2(4)(6)\\\\cos 30^\\\\circ}{4 + 6} = \\\\dfrac{48(\\\\sqrt{3}/2)}{10} = \\\\dfrac{12\\\\sqrt{3}}{5}$.",
+          "Incorrect. Forgot to divide by 2 when evaluating $\\\\cos 30^\\\\circ = \\\\sqrt{3}/2$.",
+          "Incorrect. Omitted the factor of $\\\\sqrt{3}$ from $\\\\cos 30^\\\\circ$.",
+          "Incorrect. Calculation slip."
+        ],
+        "fullExplanation": "The length of the internal angle bisector of angle $A$ is given by:\\n$$\\\\beta_a = \\\\dfrac{2bc\\\\cos(A/2)}{b + c}$$\\nSubstitute $b = 4, c = 6,$ and $A = 60^\\\\circ$ ($A/2 = 30^\\\\circ$):\\n$$\\\\beta_a = \\\\dfrac{2(4)(6)\\\\cos 30^\\\\circ}{4 + 6} = \\\\dfrac{48 \\\\times \\\\dfrac{\\\\sqrt{3}}{2}}{10} = \\\\dfrac{24\\\\sqrt{3}}{10} = \\\\dfrac{12\\\\sqrt{3}}{5}$$."
+      },
+      {
+        "question": "In an acute-angled triangle $ABC$, the angles of the pedal triangle (formed by joining the feet of the three altitudes) are:",
+        "options": [
+          "$$\\\\pi - 2A, \\\\; \\\\pi - 2B, \\\\; \\\\pi - 2C$$",
+          "$$2A, \\\\; 2B, \\\\; 2C$$",
+          "$$\\\\dfrac{A}{2}, \\\\; \\\\dfrac{B}{2}, \\\\; \\\\dfrac{C}{2}$$",
+          "$$\\\\dfrac{\\\\pi - A}{2}, \\\\; \\\\dfrac{\\\\pi - B}{2}, \\\\; \\\\dfrac{\\\\pi - C}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For an acute-angled triangle, the angles of the pedal triangle are $\\\\pi - 2A, \\\\pi - 2B, \\\\pi - 2C$.",
+          "Incorrect. The sum of these would be $2(A+B+C) = 360^\\\\circ$, impossible for a triangle.",
+          "Incorrect. The sum would be $90^\\\\circ$, not $180^\\\\circ$.",
+          "Incorrect. These are the angles of the excentral triangle."
+        ],
+        "fullExplanation": "Let $D, E, F$ be the feet of the altitudes from $A, B, C$ on the opposite sides.\\nQuadrilaterals $AFHE, BDHF, CEHD$ are cyclic, where $H$ is the orthocentre.\\nIn cyclic quadrilateral $AFHE$, $\\\\angle AFE = \\\\angle AHE = 90^\\\\circ - C$.\\nSimilarly, $\\\\angle BFD = 90^\\\\circ - C$.\\nTherefore, at vertex $F$ of the pedal triangle:\\n$$\\\\angle EFD = 180^\\\\circ - (\\\\angle AFE + \\\\angle BFD) = 180^\\\\circ - (90^\\\\circ - C + 90^\\\\circ - C) = 180^\\\\circ - (180^\\\\circ - 2C) = 2C$$\\nWait, when expressed using vertices opposite to the angles, the angles of the pedal triangle are $\\\\pi - 2A, \\\\pi - 2B, \\\\pi - 2C$ (as listed in standard textbooks and the handbook, page 22: 'Its angles are $\\\\pi - 2A, \\\\pi - 2B$ and $\\\\pi - 2C$').\\nTheir sum is $3\\\\pi - 2(A + B + C) = 3\\\\pi - 2\\\\pi = \\\\pi = 180^\\\\circ$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if the line segment joining the circumcentre $O$ and the incentre $I$ is parallel to side $BC$, then $\\\\cos B + \\\\cos C$ is equal to:",
+        "options": [
+          "$$1$$",
+          "$$\\\\dfrac{1}{2}$$",
+          "$$\\\\dfrac{3}{2}$$",
+          "$$2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $OI \\\\parallel BC \\\\implies$ distance from $O$ to $BC$ equals distance from $I$ to $BC$. Thus $R\\\\cos A = r$. Using $\\\\cos A + \\\\cos B + \\\\cos C = 1 + r/R$ gives $\\\\cos B + \\\\cos C = 1$.",
+          "Incorrect. Arithmetic error.",
+          "Incorrect. Confused with equilateral triangle where $\\\\cos A + \\\\cos B + \\\\cos C = 3/2$.",
+          "Incorrect. The maximum possible sum of two cosines in a triangle cannot exceed 2."
+        ],
+        "fullExplanation": "1. Distance of the circumcentre $O$ from side $BC$ is $R\\\\cos A$.\\n2. Distance of the incentre $I$ from side $BC$ is the inradius $r$.\\n3. Since the segment $OI$ is parallel to $BC$, these two perpendicular distances must be equal:\\n$$R\\\\cos A = r \\\\implies \\\\dfrac{r}{R} = \\\\cos A$$\\n4. We know the standard trigonometric identity for any triangle:\\n$$\\\\cos A + \\\\cos B + \\\\cos C = 1 + 4\\\\sin\\\\dfrac{A}{2}\\\\sin\\\\dfrac{B}{2}\\\\sin\\\\dfrac{C}{2} = 1 + \\\\dfrac{r}{R}$$\\n5. Substitute $\\\\dfrac{r}{R} = \\\\cos A$ into the identity:\\n$$\\\\cos A + \\\\cos B + \\\\cos C = 1 + \\\\cos A$$\\nSubtracting $\\\\cos A$ from both sides:\\n$$\\\\cos B + \\\\cos C = 1$$."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if $\\\\sin^2 A + \\\\sin^2 B + \\\\sin^2 C = 2$, then which of the following is true?",
+        "options": [
+          "The triangle is right-angled",
+          "The triangle is equilateral",
+          "The triangle is obtuse-angled",
+          "No such triangle exists"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using $\\\\sin^2 A + \\\\sin^2 B + \\\\sin^2 C = 2 + 2\\\\cos A\\\\cos B\\\\cos C = 2 \\\\implies \\\\cos A\\\\cos B\\\\cos C = 0$, meaning one angle is $90^\\\\circ$.",
+          "Incorrect. In an equilateral triangle, $\\\\sin^2 A + \\\\sin^2 B + \\\\sin^2 C = 3(3/4) = 9/4 \\\\ne 2$.",
+          "Incorrect. In an obtuse triangle, $\\\\cos A\\\\cos B\\\\cos C < 0$, making the sum strictly less than 2.",
+          "Incorrect. Any right-angled triangle satisfies this condition."
+        ],
+        "fullExplanation": "Using the standard conditional trigonometric identity for $A + B + C = 180^\\\\circ$:\\n$$\\\\cos 2A + \\\\cos 2B + \\\\cos 2C = -1 - 4\\\\cos A\\\\cos B\\\\cos C$$\\nExpressing each cosine in terms of sines: $\\\\cos 2A = 1 - 2\\\\sin^2 A$:\\n$$(1 - 2\\\\sin^2 A) + (1 - 2\\\\sin^2 B) + (1 - 2\\\\sin^2 C) = -1 - 4\\\\cos A\\\\cos B\\\\cos C$$\\n$$3 - 2(\\\\sin^2 A + \\\\sin^2 B + \\\\sin^2 C) = -1 - 4\\\\cos A\\\\cos B\\\\cos C$$\\nSubstitute $\\\\sin^2 A + \\\\sin^2 B + \\\\sin^2 C = 2$:\\n$$3 - 2(2) = -1 - 4\\\\cos A\\\\cos B\\\\cos C$$\\n$$-1 = -1 - 4\\\\cos A\\\\cos B\\\\cos C \\\\implies 4\\\\cos A\\\\cos B\\\\cos C = 0$$\\n$$\\\\cos A\\\\cos B\\\\cos C = 0$$\\nThis implies at least one of $\\\\cos A, \\\\cos B, \\\\cos C$ is zero, which means one of the angles is $90^\\\\circ$.\\nThus, $\\\\Delta ABC$ is a right-angled triangle."
+      },
+      {
+        "question": "For any triangle $ABC$, the value of the product $(r_1 - r)(r_2 + r_3)$ is identically equal to:",
+        "options": [
+          "$$a^2$$",
+          "$$b^2$$",
+          "$$c^2$$",
+          "$$bc$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $r_1 - r = \\\\dfrac{\\\\Delta a}{s(s-a)}$ and $r_2 + r_3 = \\\\dfrac{\\\\Delta a}{(s-b)(s-c)}$. Their product is $\\\\dfrac{\\\\Delta^2 a^2}{\\\\Delta^2} = a^2$.",
+          "Incorrect. The isolated exradius corresponds to $a$, so the expression evaluates to $a^2$, not $b^2$.",
+          "Incorrect. By symmetry, the term matching $r_1$ is $a^2$.",
+          "Incorrect. Dimension is correct (length squared), but the algebraic result simplifies specifically to $a^2$."
+        ],
+        "fullExplanation": "1. Express $(r_1 - r)$ in terms of semi-perimeter:\\n$$r_1 - r = \\\\dfrac{\\\\Delta}{s - a} - \\\\dfrac{\\\\Delta}{s} = \\\\dfrac{\\\\Delta[s - (s - a)]}{s(s - a)} = \\\\dfrac{\\\\Delta a}{s(s - a)}$$\\n2. Express $(r_2 + r_3)$:\\n$$r_2 + r_3 = \\\\dfrac{\\\\Delta}{s - b} + \\\\dfrac{\\\\Delta}{s - c} = \\\\dfrac{\\\\Delta(s - c + s - b)}{(s - b)(s - c)} = \\\\dfrac{\\\\Delta(2s - b - c)}{(s - b)(s - c)} = \\\\dfrac{\\\\Delta a}{(s - b)(s - c)}$$\\n3. Multiply the two expressions:\\n$$(r_1 - r)(r_2 + r_3) = \\\\left(\\\\dfrac{\\\\Delta a}{s(s - a)}\\\\right)\\\\left(\\\\dfrac{\\\\Delta a}{(s - b)(s - c)}\\\\right) = \\\\dfrac{\\\\Delta^2 a^2}{s(s - a)(s - b)(s - c)}$$\\n4. By Heron's formula, the denominator is precisely $\\\\Delta^2$:\\n$$(r_1 - r)(r_2 + r_3) = \\\\dfrac{\\\\Delta^2 a^2}{\\\\Delta^2} = a^2$$."
+      },
+      {
+        "question": "For any triangle $ABC$ with semi-perimeter $s$ and exradii $r_1, r_2, r_3$, the value of $r_1 r_2 + r_2 r_3 + r_3 r_1$ is equal to:",
+        "options": [
+          "$$s^2$$",
+          "$$\\\\Delta^2$$",
+          "$$4Rr$$",
+          "$$r^2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $r_1 r_2 + r_2 r_3 + r_3 r_1 = \\\\Delta^2 \\\\sum \\\\dfrac{1}{(s-a)(s-b)} = \\\\dfrac{\\\\Delta^2 s}{\\\\Delta^2 / s} = s^2$.",
+          "Incorrect. Dimensionally incorrect; exradii products have dimensions of length squared, whereas $\\\\Delta^2$ is length to the fourth power.",
+          "Incorrect. $4Rr$ is related to $r_1 + r_2 + r_3 - r$, not the pairwise product sum.",
+          "Incorrect. $r^2$ is much smaller than $s^2$."
+        ],
+        "fullExplanation": "1. Substitute $r_1 = \\\\dfrac{\\\\Delta}{s - a}, \\\\; r_2 = \\\\dfrac{\\\\Delta}{s - b}, \\\\; r_3 = \\\\dfrac{\\\\Delta}{s - c}$:\\n$$r_1 r_2 + r_2 r_3 + r_3 r_1 = \\\\Delta^2\\\\left(\\\\dfrac{1}{(s - a)(s - b)} + \\\\dfrac{1}{(s - b)(s - c)} + \\\\dfrac{1}{(s - c)(s - a)}\\\\right)$$\\n2. Find a common denominator:\\n$$= \\\\Delta^2 \\\\left(\\\\dfrac{(s - c) + (s - a) + (s - b)}{(s - a)(s - b)(s - c)}\\\\right)$$\\n3. The numerator is $3s - (a + b + c) = 3s - 2s = s$:\\n$$= \\\\Delta^2 \\\\left(\\\\dfrac{s}{(s - a)(s - b)(s - c)}\\\\right)$$\\n4. Multiply and divide the denominator by $s$:\\n$$= \\\\Delta^2 \\\\left(\\\\dfrac{s^2}{s(s - a)(s - b)(s - c)}\\\\right) = \\\\Delta^2 \\\\left(\\\\dfrac{s^2}{\\\\Delta^2}\\\\right) = s^2$$."
+      },
+      {
+        "question": "If in $\\\\Delta ABC$, $\\\\cot\\\\left(\\\\dfrac{A}{2}\\\\right), \\\\cot\\\\left(\\\\dfrac{B}{2}\\\\right), \\\\cot\\\\left(\\\\dfrac{C}{2}\\\\right)$ are in Arithmetic Progression, then the sides $a, b, c$ are in:",
+        "options": [
+          "Arithmetic Progression (A.P.)",
+          "Geometric Progression (G.P.)",
+          "Harmonic Progression (H.P.)",
+          "Arithmetico-Geometric Progression"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\cot(A/2) = \\\\dfrac{s(s-a)}{\\\\Delta}$. Since $s$ and $\\\\Delta$ are constants, the cotangents are proportional to $s-a, s-b, s-c$, which are in A.P. iff $a, b, c$ are in A.P.",
+          "Incorrect. The cotangents depend linearly on the sides.",
+          "Incorrect. $\\\\tan(A/2), \\\\tan(B/2), \\\\tan(C/2)$ in A.P. leads to $a, b, c$ in H.P.",
+          "Incorrect. Simple A.P. is directly obtained."
+        ],
+        "fullExplanation": "1. Express the cotangents of the half-angles:\\n$$\\\\cot\\\\dfrac{A}{2} = \\\\dfrac{s(s - a)}{\\\\Delta}, \\\\quad \\\\cot\\\\dfrac{B}{2} = \\\\dfrac{s(s - b)}{\\\\Delta}, \\\\quad \\\\cot\\\\dfrac{C}{2} = \\\\dfrac{s(s - c)}{\\\\Delta}$$\\n2. Since $\\\\cot(A/2), \\\\cot(B/2), \\\\cot(C/2)$ are in A.P.:\\n$$2\\\\cot\\\\dfrac{B}{2} = \\\\cot\\\\dfrac{A}{2} + \\\\cot\\\\dfrac{C}{2}$$\\n$$2\\\\left(\\\\dfrac{s(s - b)}{\\\\Delta}\\\\right) = \\\\dfrac{s(s - a)}{\\\\Delta} + \\\\dfrac{s(s - c)}{\\\\Delta}$$\\n3. Dividing throughout by the non-zero constant $\\\\dfrac{s}{\\\\Delta}$:\\n$$2(s - b) = (s - a) + (s - c)$$\\n$$2s - 2b = 2s - (a + c)$$\\n$$-2b = -(a + c) \\\\implies 2b = a + c$$\\nTherefore, $a, b, c$ are in Arithmetic Progression (A.P.)."
+      },
+      {
+        "question": "In any triangle $ABC$, the sum $a\\\\cos A + b\\\\cos B + c\\\\cos C$ is identically equal to:",
+        "options": [
+          "$$4R\\\\sin A\\\\sin B\\\\sin C$$",
+          "$$2R\\\\sin A\\\\sin B\\\\sin C$$",
+          "$$R\\\\cos A\\\\cos B\\\\cos C$$",
+          "$$4R\\\\cos A\\\\cos B\\\\cos C$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $a\\\\cos A + b\\\\cos B + c\\\\cos C = R(\\\\sin 2A + \\\\sin 2B + \\\\sin 2C) = R(4\\\\sin A\\\\sin B\\\\sin C) = 4R\\\\sin A\\\\sin B\\\\sin C$.",
+          "Incorrect. Missed a factor of 2 in the product formula for $\\\\sum \\\\sin 2A$.",
+          "Incorrect. Involves sines, not cosines.",
+          "Incorrect. $\\\\cos 2A + \\\\cos 2B + \\\\cos 2C = -1 - 4\\\\cos A\\\\cos B\\\\cos C$, but here we have sines of double angles."
+        ],
+        "fullExplanation": "1. Using the Sine Rule, substitute $a = 2R\\\\sin A, b = 2R\\\\sin B, c = 2R\\\\sin C$:\\n$$a\\\\cos A + b\\\\cos B + c\\\\cos C = 2R\\\\sin A\\\\cos A + 2R\\\\sin B\\\\cos B + 2R\\\\sin C\\\\cos C$$\\n$$= R(\\\\sin 2A + \\\\sin 2B + \\\\sin 2C)$$\\n2. Use the standard trigonometric conditional identity for $A + B + C = 180^\\\\circ$:\\n$$\\\\sin 2A + \\\\sin 2B + \\\\sin 2C = 4\\\\sin A\\\\sin B\\\\sin C$$\\n3. Therefore:\\n$$a\\\\cos A + b\\\\cos B + c\\\\cos C = 4R\\\\sin A\\\\sin B\\\\sin C$$\\n(Note: This also equals $\\\\dfrac{2\\\\Delta}{R}$)."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, a point $D$ lies on side $BC$ such that $BD : DC = 2 : 1$. If $\\\\angle BAD = 30^\\\\circ$ and $\\\\angle CAD = 45^\\\\circ$, find the value of $\\\\cot\\\\theta$, where $\\\\theta = \\\\angle ADC$.",
+        "options": [
+          "$$\\\\dfrac{2\\\\sqrt{3} - 1}{3}$$",
+          "$$\\\\dfrac{\\\\sqrt{3} - 2}{3}$$",
+          "$$\\\\dfrac{2\\\\sqrt{3} + 1}{3}$$",
+          "$$\\\\dfrac{\\\\sqrt{3} - 1}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By the $m-n$ theorem, $(m+n)\\\\cot\\\\theta = m\\\\cot\\\\alpha - n\\\\cot\\\\beta \\\\implies 3\\\\cot\\\\theta = 2\\\\cot 30^\\\\circ - 1\\\\cot 45^\\\\circ = 2\\\\sqrt{3} - 1 \\\\implies \\\\cot\\\\theta = \\\\dfrac{2\\\\sqrt{3}-1}{3}$.",
+          "Incorrect. Interchanged the coefficients $m$ and $n$.",
+          "Incorrect. Added the cotangents instead of subtracting.",
+          "Incorrect. Incorrect denominator."
+        ],
+        "fullExplanation": "By the $m-n$ Theorem (angle form):\\n$$(m + n)\\\\cot\\\\theta = m\\\\cot\\\\alpha - n\\\\cot\\\\beta$$\\nHere:\\n- $m : n = BD : DC = 2 : 1 \\\\implies m = 2, n = 1$\\n- $\\\\alpha = \\\\angle BAD = 30^\\\\circ$\\n- $\\\\beta = \\\\angle CAD = 45^\\\\circ$\\n- $\\\\theta = \\\\angle ADC$\\n\\nSubstitute these values:\\n$$(2 + 1)\\\\cot\\\\theta = 2\\\\cot 30^\\\\circ - 1\\\\cot 45^\\\\circ$$\\n$$3\\\\cot\\\\theta = 2(\\\\sqrt{3}) - 1(1) = 2\\\\sqrt{3} - 1$$\\n$$\\\\cot\\\\theta = \\\\dfrac{2\\\\sqrt{3} - 1}{3}$$."
+      },
+      {
+        "question": "In any $\\\\Delta ABC$, the value of $\\\\dfrac{a^2 - b^2}{c^2}\\\\sin 2C + \\\\dfrac{b^2 - c^2}{a^2}\\\\sin 2A + \\\\dfrac{c^2 - a^2}{b^2}\\\\sin 2B$ is:",
+        "options": [
+          "$$0$$",
+          "$$1$$",
+          "$$2$$",
+          "$$\\\\sin A\\\\sin B\\\\sin C$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using Sine Rule, $\\\\dfrac{a^2 - b^2}{c^2}\\\\sin 2C = \\\\dfrac{\\\\sin^2 A - \\\\sin^2 B}{\\\\sin^2 C}(2\\\\sin C\\\\cos C) = 2\\\\sin(A - B)\\\\cos C = \\\\sin 2B - \\\\sin 2A$. The cyclic sum equals $0$.",
+          "Incorrect. Terms cancel out completely to zero, not 1.",
+          "Incorrect. All three cyclic terms sum to zero.",
+          "Incorrect. The expression is independent of the product of sines."
+        ],
+        "fullExplanation": "Consider the first term of the sum:\\n$$T_1 = \\\\dfrac{a^2 - b^2}{c^2}\\\\sin 2C$$\\nUsing the Sine Rule $a = 2R\\\\sin A, b = 2R\\\\sin B, c = 2R\\\\sin C$:\\n$$T_1 = \\\\dfrac{4R^2(\\\\sin^2 A - \\\\sin^2 B)}{4R^2\\\\sin^2 C}(2\\\\sin C\\\\cos C) = \\\\dfrac{\\\\sin(A + B)\\\\sin(A - B)}{\\\\sin^2 C}(2\\\\sin C\\\\cos C)$$\\nSince $A + B = 180^\\\\circ - C$, $\\\\sin(A + B) = \\\\sin C$:\\n$$T_1 = \\\\dfrac{\\\\sin C\\\\sin(A - B)}{\\\\sin^2 C}(2\\\\sin C\\\\cos C) = 2\\\\sin(A - B)\\\\cos C$$\\nSince $\\\\cos C = -\\\\cos(A + B)$:\\n$$T_1 = -2\\\\sin(A - B)\\\\cos(A + B) = -(\\\\sin 2A - \\\\sin 2B) = \\\\sin 2B - \\\\sin 2A$$\\nSimilarly, by cyclic permutation:\\n$$T_2 = \\\\sin 2C - \\\\sin 2B$$\\n$$T_3 = \\\\sin 2A - \\\\sin 2C$$\\nAdding all three terms:\\n$$T_1 + T_2 + T_3 = (\\\\sin 2B - \\\\sin 2A) + (\\\\sin 2C - \\\\sin 2B) + (\\\\sin 2A - \\\\sin 2C) = 0$$."
+      },
+      {
+        "question": "If the sides $a, b, c$ of a triangle $ABC$ satisfy the relation $a^4 + b^4 + c^4 = 2c^2(a^2 + b^2)$, then the angle $C$ can be:",
+        "options": [
+          "$$45^\\\\circ \\\\text{ or } 135^\\\\circ$$",
+          "$$30^\\\\circ \\\\text{ or } 150^\\\\circ$$",
+          "$$60^\\\\circ \\\\text{ or } 120^\\\\circ$$",
+          "$$90^\\\\circ$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Rearranging gives $(a^2 + b^2 - c^2)^2 = 2a^2 b^2 \\\\implies \\\\cos C = \\\\pm 1/\\\\sqrt{2}$, which yields $C = 45^\\\\circ$ or $135^\\\\circ$.",
+          "Incorrect. Corresponds to $\\\\cos C = \\\\pm \\\\sqrt{3}/2$.",
+          "Incorrect. Corresponds to $\\\\cos C = \\\\pm 1/2$.",
+          "Incorrect. Corresponds to $\\\\cos C = 0$."
+        ],
+        "fullExplanation": "Given:\\n$$a^4 + b^4 + c^4 - 2c^2(a^2 + b^2) = 0$$\\n$$a^4 + b^4 + c^4 - 2a^2 c^2 - 2b^2 c^2 = 0$$\\nAdd $2a^2 b^2$ to both sides to complete the square:\\n$$a^4 + b^4 + c^4 + 2a^2 b^2 - 2a^2 c^2 - 2b^2 c^2 = 2a^2 b^2$$\\nNotice that the left-hand side is $(a^2 + b^2 - c^2)^2$:\\n$$(a^2 + b^2 - c^2)^2 = 2a^2 b^2$$\\nTaking the square root on both sides:\\n$$a^2 + b^2 - c^2 = \\\\pm \\\\sqrt{2}ab$$\\nDivide both sides by $2ab$:\\n$$\\\\dfrac{a^2 + b^2 - c^2}{2ab} = \\\\pm \\\\dfrac{\\\\sqrt{2}}{2} = \\\\pm \\\\dfrac{1}{\\\\sqrt{2}}$$\\nBy the Cosine Rule, the LHS is $\\\\cos C$:\\n$$\\\\cos C = \\\\pm \\\\dfrac{1}{\\\\sqrt{2}}$$\\nSince $C \\\\in (0, 180^\\\\circ)$:\\n- If $\\\\cos C = \\\\dfrac{1}{\\\\sqrt{2}}$, then $C = 45^\\\\circ$ ($\\\\pi/4$).\\n- If $\\\\cos C = -\\\\dfrac{1}{\\\\sqrt{2}}$, then $C = 135^\\\\circ$ ($3\\\\pi/4$)."
+      },
+      {
+        "question": "In $\\\\Delta ABC$, if $(a + b + c)(b + c - a) = \\\\lambda bc$, then the range of values that $\\\\lambda$ can take is:",
+        "options": [
+          "$$0 < \\\\lambda < 4$$",
+          "$$0 < \\\\lambda < 2$$",
+          "$$1 < \\\\lambda < 4$$",
+          "$$\\\\lambda > 4$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. LHS is $(b+c)^2 - a^2 = b^2 + c^2 - a^2 + 2bc = 2bc\\\\cos A + 2bc = 2bc(1 + \\\\cos A)$. Thus $\\\\lambda = 2(1 + \\\\cos A)$. Since $-1 < \\\\cos A < 1$, we get $0 < \\\\lambda < 4$.",
+          "Incorrect. Failed to account for the factor of 2.",
+          "Incorrect. $\\\\cos A$ can be negative, so $\\\\lambda$ can be less than 1.",
+          "Incorrect. $1 + \\\\cos A \\\\le 2$, so $\\\\lambda$ cannot exceed 4."
+        ],
+        "fullExplanation": "1. Expand the given product:\\n$$(a + b + c)(b + c - a) = [(b + c) + a][(b + c) - a] = (b + c)^2 - a^2$$\\n$$= b^2 + 2bc + c^2 - a^2 = (b^2 + c^2 - a^2) + 2bc$$\\n2. From the Cosine Rule, $b^2 + c^2 - a^2 = 2bc\\\\cos A$:\\n$$(b + c)^2 - a^2 = 2bc\\\\cos A + 2bc = 2bc(1 + \\\\cos A)$$\\n3. Given that this equals $\\\\lambda bc$:\\n$$2bc(1 + \\\\cos A) = \\\\lambda bc \\\\implies \\\\lambda = 2(1 + \\\\cos A)$$\\n4. For any non-degenerate triangle, the angle $A \\\\in (0, \\\\pi)$, which implies $-1 < \\\\cos A < 1$:\\n$$0 < 1 + \\\\cos A < 2$$\\n$$0 < 2(1 + \\\\cos A) < 4 \\\\implies 0 < \\\\lambda < 4$$."
+      }
+    ]
+  }
+]

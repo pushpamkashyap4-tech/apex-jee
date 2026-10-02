@@ -1,0 +1,1283 @@
+[
+  {
+    "chapterName": "Laws of Motion",
+    "flashcards": [
+      {
+        "front": "What is the mathematical form of Newton's Second Law of Motion?",
+        "back": "F(ext) = dp/dt = m·a (for constant mass)."
+      },
+      {
+        "front": "State the equation for the force exerted by a spring.",
+        "back": "F = -kx, where k is the spring constant and x is the deformation."
+      },
+      {
+        "front": "How does the spring constant k change if a spring of natural length L is cut into a ratio m:n?",
+        "back": "The spring constants become k₁ = k(m+n)/m and k₂ = k(m+n)/n, since k·L = constant."
+      },
+      {
+        "front": "What is the equivalent spring constant for two springs in series?",
+        "back": "1/k(eq) = 1/k₁ + 1/k₂"
+      },
+      {
+        "front": "What is the equivalent spring constant for two springs in parallel?",
+        "back": "k(eq) = k₁ + k₂"
+      },
+      {
+        "front": "What is the relation between limiting static friction f(max) and normal reaction N?",
+        "back": "f(max) = μ(s)N, where μ(s) is the coefficient of static friction."
+      },
+      {
+        "front": "What is the formula for kinetic friction?",
+        "back": "f(k) = μ(k)N, where μ(k) is the coefficient of kinetic friction (usually μ(k) < μ(s))."
+      },
+      {
+        "front": "Define the angle of friction θ.",
+        "back": "It is the angle the resultant of limiting friction and normal reaction makes with the normal reaction: μ(s) = tan θ."
+      },
+      {
+        "front": "Define the angle of repose α.",
+        "back": "It is the minimum angle of an inclined plane at which a body just begins to slide down: μ(s) = tan α."
+      },
+      {
+        "front": "What is the magnitude and direction of a pseudo force?",
+        "back": "F(p) = m·a₀, directed opposite to the acceleration a₀ of the non-inertial observer."
+      },
+      {
+        "front": "What is the formula for tangential acceleration a(t) in circular motion?",
+        "back": "a(t) = dv/dt = α·r, where α is the angular acceleration."
+      },
+      {
+        "front": "What is the formula for centripetal acceleration a(c)?",
+        "back": "a(c) = v² / r = ω²r"
+      },
+      {
+        "front": "What is the magnitude of net acceleration in non-uniform circular motion?",
+        "back": "a = √(a(c)² + a(t)²) = √((v²/r)² + (dv/dt)²)"
+      },
+      {
+        "front": "What is the maximum safe speed for a car on an unbanked circular road?",
+        "back": "v(max) = √(μ(s)Rg)"
+      },
+      {
+        "front": "What is the optimum speed on a banked road without friction?",
+        "back": "v = √(Rg tan θ)"
+      },
+      {
+        "front": "What is the maximum safe speed on a banked road with friction?",
+        "back": "v(max) = √[Rg (μ(s) + tan θ) / (1 - μ(s) tan θ)]"
+      },
+      {
+        "front": "At what angle θ must a cyclist bend to safely negotiate a curve of radius R at speed v?",
+        "back": "tan θ = v² / (Rg)"
+      },
+      {
+        "front": "What is the condition for a particle to be in static equilibrium?",
+        "back": "The vector sum of all forces acting on the body must be zero: ΣF = 0."
+      },
+      {
+        "front": "How do you calculate the acceleration of a body sliding down a smooth inclined plane of angle θ?",
+        "back": "a = g sin θ"
+      },
+      {
+        "front": "If an elevator accelerates upwards with acceleration a₀, what is the apparent weight of a mass m inside?",
+        "back": "Apparent weight W' = m(g + a₀)"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A mass of 2 kg is in an elevator that is accelerating upwards at 2 m/s². Taking g = 10 m/s², what is the normal reaction on the mass?",
+        "options": [
+          "20 N",
+          "24 N",
+          "16 N",
+          "4 N"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the normal reaction if the elevator were at rest or moving with constant velocity.",
+          "Correct. Normal reaction N = m(g + a) = 2(10 + 2) = 24 N.",
+          "Incorrect. This would be the normal reaction if the elevator were accelerating downwards.",
+          "Incorrect. This is just the net force m·a, not the normal reaction."
+        ],
+        "fullExplanation": "When the elevator accelerates upwards, a pseudo force m·a acts downwards in the frame of the elevator. The total downward force is mg + ma. To maintain equilibrium relative to the elevator floor, the normal reaction must balance this: N = m(g + a) = 2(10 + 2) = 24 N."
+      },
+      {
+        "question": "A spring of constant k = 100 N/m is cut into two equal halves. What is the spring constant of one of the halves?",
+        "options": [
+          "50 N/m",
+          "100 N/m",
+          "200 N/m",
+          "400 N/m"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The spring constant increases when a spring is cut shorter, it does not decrease.",
+          "Incorrect. This is the original spring constant.",
+          "Correct. Since k·L is constant, halving the length doubles the spring constant.",
+          "Incorrect. This would be the constant if it were cut into four equal pieces."
+        ],
+        "fullExplanation": "For a uniform spring, the product of the spring constant and its natural length is a constant (k ∝ 1/L). If the spring is cut into two equal halves, the new length is L/2. Therefore, the new spring constant k' = k / (1/2) = 2k = 2 × 100 = 200 N/m."
+      },
+      {
+        "question": "Two springs of constants k₁ = 300 N/m and k₂ = 600 N/m are connected in series. What is the equivalent spring constant?",
+        "options": [
+          "900 N/m",
+          "450 N/m",
+          "200 N/m",
+          "150 N/m"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the equivalent constant if they were in parallel.",
+          "Incorrect. This is the simple average, which is not applicable here.",
+          "Correct. Using 1/k(eq) = 1/k₁ + 1/k₂, k(eq) = (300 × 600)/(300 + 600) = 200 N/m.",
+          "Incorrect. This calculation does not follow the series combination rule."
+        ],
+        "fullExplanation": "For springs in series, the equivalent spring constant k(eq) is found using the harmonic sum formula: 1/k(eq) = 1/k₁ + 1/k₂. Thus, k(eq) = (k₁k₂) / (k₁ + k₂). Substituting the values, k(eq) = (300 × 600) / (300 + 600) = 180000 / 900 = 200 N/m."
+      },
+      {
+        "question": "A block of mass 5 kg rests on a horizontal surface. The coefficient of static friction is 0.4. What is the limiting friction force? (g = 10 m/s²)",
+        "options": [
+          "50 N",
+          "20 N",
+          "10 N",
+          "2 N"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the normal reaction, not the frictional force.",
+          "Correct. f(max) = μ(s)N = μ(s)mg = 0.4 × 5 × 10 = 20 N.",
+          "Incorrect. This is half the actual limiting friction.",
+          "Incorrect. This is just the coefficient multiplied by mass without gravity."
+        ],
+        "fullExplanation": "Limiting friction is the maximum static friction before motion begins. The formula is f(max) = μ(s)N. On a horizontal surface, the normal reaction N = mg. Therefore, N = 5 × 10 = 50 N. The limiting friction is 0.4 × 50 = 20 N."
+      },
+      {
+        "question": "The angle of friction for a given surface is 30°. What is the coefficient of static friction?",
+        "options": [
+          "0.5",
+          "0.866",
+          "0.577",
+          "1.0"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is sin(30°), not tan(30°).",
+          "Incorrect. This is cos(30°).",
+          "Correct. The coefficient is tan(30°) = 1/√3 ≈ 0.577.",
+          "Incorrect. This corresponds to an angle of 45°."
+        ],
+        "fullExplanation": "The angle of friction θ is related to the coefficient of static friction μ(s) by the equation μ(s) = tan θ. For an angle of 30°, μ(s) = tan(30°) = 1/√3. Numerically, 1/√3 is approximately 0.577."
+      },
+      {
+        "question": "A block just begins to slide down a rough inclined plane at an angle of 45°. What is the coefficient of static friction?",
+        "options": [
+          "0.5",
+          "0.707",
+          "1.0",
+          "1.414"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This would correspond to a smaller angle of repose.",
+          "Incorrect. This is sin(45°), not the tangent.",
+          "Correct. The angle of repose α is 45°, and μ(s) = tan(45°) = 1.",
+          "Incorrect. This is √2 or sec(45°)."
+        ],
+        "fullExplanation": "The angle at which a block just begins to slide down an incline is called the angle of repose α. It is a standard result that the coefficient of static friction μ(s) equals the tangent of the angle of repose. Since α = 45°, μ(s) = tan(45°) = 1."
+      },
+      {
+        "question": "A cyclist moves around a circular track of radius 10 m. If the coefficient of static friction is 0.4, what is his maximum safe speed? (g = 10 m/s²)",
+        "options": [
+          "2 m/s",
+          "4 m/s",
+          "6.32 m/s",
+          "10 m/s"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This speed is much lower than the safety limit.",
+          "Incorrect. 4 is the square root of 16, not 40.",
+          "Correct. v = √(μRg) = √(0.4 × 10 × 10) = √40 ≈ 6.32 m/s.",
+          "Incorrect. This is √100, which ignores the friction coefficient."
+        ],
+        "fullExplanation": "For a vehicle on a flat (unbanked) circular road, the necessary centripetal force is provided entirely by static friction. The maximum safe speed is given by v(max) = √(μ(s)Rg). Plugging in the values: v(max) = √(0.4 × 10 × 10) = √40. Since √36 = 6 and √49 = 7, √40 is approximately 6.32 m/s."
+      },
+      {
+        "question": "A car moves on a circular track of radius 40 m at a speed of 20 m/s. Its speed is increasing at a rate of 3 m/s². What is the net acceleration?",
+        "options": [
+          "3 m/s²",
+          "10 m/s²",
+          "13 m/s²",
+          "10.44 m/s²"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. This is only the tangential acceleration.",
+          "Incorrect. This is only the centripetal acceleration (20² / 40 = 10).",
+          "Incorrect. This is the linear sum, but accelerations must be added vectorially.",
+          "Correct. Net a = √(10² + 3²) = √109 ≈ 10.44 m/s²."
+        ],
+        "fullExplanation": "The car has two perpendicular components of acceleration: centripetal and tangential. Centripetal acceleration a(c) = v² / R = 20² / 40 = 400 / 40 = 10 m/s². Tangential acceleration a(t) = 3 m/s². Since they are perpendicular, the net acceleration a = √(a(c)² + a(t)²) = √(10² + 3²) = √(100 + 9) = √109 ≈ 10.44 m/s²."
+      },
+      {
+        "question": "An Atwood machine has masses 3 kg and 2 kg. What is the acceleration of the system? (g = 10 m/s²)",
+        "options": [
+          "1 m/s²",
+          "2 m/s²",
+          "5 m/s²",
+          "10 m/s²"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the difference in mass, not acceleration.",
+          "Correct. a = g(m₁ - m₂) / (m₁ + m₂) = 10(1) / 5 = 2 m/s².",
+          "Incorrect. This is half the acceleration due to gravity.",
+          "Incorrect. This is g, which would occur only in free fall."
+        ],
+        "fullExplanation": "For an ideal Atwood machine with masses m₁ and m₂ (where m₁ > m₂), the acceleration a is derived from Newton's second law: a = g(m₁ - m₂) / (m₁ + m₂). Substituting m₁ = 3 kg, m₂ = 2 kg, and g = 10 m/s²: a = 10(3 - 2) / (3 + 2) = 10(1) / 5 = 2 m/s²."
+      },
+      {
+        "question": "What is the tension in the string of the Atwood machine from the previous question (m₁ = 3 kg, m₂ = 2 kg, g = 10 m/s²)?",
+        "options": [
+          "24 N",
+          "12 N",
+          "30 N",
+          "20 N"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. T = 2m₁m₂g / (m₁ + m₂) = 2(3)(2)(10) / 5 = 24 N.",
+          "Incorrect. This is half the correct tension.",
+          "Incorrect. This is the weight of the heavier mass.",
+          "Incorrect. This is the weight of the lighter mass."
+        ],
+        "fullExplanation": "The tension T in the string of an Atwood machine is given by T = (2m₁m₂g) / (m₁ + m₂). Substituting the known values: T = (2 × 3 × 2 × 10) / (3 + 2) = 120 / 5 = 24 N. Alternatively, using the lighter mass: T - m₂g = m₂a => T = 2(10) + 2(2) = 24 N."
+      },
+      {
+        "question": "A force F = 20 N acts on a block of mass 4 kg resting on a frictionless horizontal surface. What is the acceleration?",
+        "options": [
+          "0.2 m/s²",
+          "5 m/s²",
+          "80 m/s²",
+          "16 m/s²"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is m/F, which is physically meaningless here.",
+          "Correct. From F = ma, a = F/m = 20/4 = 5 m/s².",
+          "Incorrect. This is F × m.",
+          "Incorrect. This is a random miscalculation."
+        ],
+        "fullExplanation": "According to Newton's Second Law of Motion, the net force acting on an object is equal to the product of its mass and acceleration (F = ma). Here, the surface is frictionless, so F(net) = 20 N. Thus, a = F / m = 20 / 4 = 5 m/s²."
+      },
+      {
+        "question": "A 10 kg mass is suspended by a string. A horizontal force of 100 N pulls the mass such that the string makes an angle θ with the vertical in equilibrium. What is θ? (g = 10 m/s²)",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "90°"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. tan(30°) is 1/√3, not 1.",
+          "Correct. In equilibrium, tan θ = F / mg = 100 / (10 × 10) = 1, so θ = 45°.",
+          "Incorrect. tan(60°) is √3.",
+          "Incorrect. The string would have to be perfectly horizontal, requiring infinite force."
+        ],
+        "fullExplanation": "In equilibrium, the forces must balance. The vertical component of tension balances the weight: T cos θ = mg = 10 × 10 = 100 N. The horizontal component balances the applied force: T sin θ = F = 100 N. Dividing the two equations gives (T sin θ) / (T cos θ) = 100 / 100, meaning tan θ = 1. Therefore, θ = 45°."
+      },
+      {
+        "question": "Three identical blocks A, B, and C (each of mass 2 kg) are in contact on a smooth horizontal table. A force of 30 N is applied to A. What is the contact force between B and C?",
+        "options": [
+          "10 N",
+          "20 N",
+          "30 N",
+          "15 N"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. The system accelerates at 5 m/s². The force on C is m(C) × a = 2 × 5 = 10 N.",
+          "Incorrect. This is the contact force between A and B.",
+          "Incorrect. This is the total applied force.",
+          "Incorrect. This implies the force is split equally in half."
+        ],
+        "fullExplanation": "First, find the acceleration of the entire system: a = F(total) / m(total) = 30 N / (2 + 2 + 2) kg = 30 / 6 = 5 m/s². The contact force between B and C is the force required to accelerate block C alone. F(BC) = m(C) × a = 2 kg × 5 m/s² = 10 N."
+      },
+      {
+        "question": "A uniform thick rope of length 10 m and mass 5 kg is pulled on a smooth surface by a force of 50 N applied at one end. What is the tension at the mid-point of the rope?",
+        "options": [
+          "0 N",
+          "25 N",
+          "50 N",
+          "10 N"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Tension exists throughout the rope.",
+          "Correct. The tension at the midpoint pulls half the mass, so T = (m/2) × a = 25 N.",
+          "Incorrect. This is the tension at the pulled end.",
+          "Incorrect. This represents the mass, not the tension."
+        ],
+        "fullExplanation": "The acceleration of the entire rope is a = F / m = 50 / 5 = 10 m/s². At the midpoint, the tension is responsible for pulling the rear half of the rope. The mass of the rear half is m/2 = 2.5 kg. Therefore, the tension at the midpoint is T = (2.5) × a = 2.5 × 10 = 25 N."
+      },
+      {
+        "question": "A body of mass M rests on a rough horizontal surface. The minimum force required to move it is F = Mg / √3. What is the coefficient of static friction?",
+        "options": [
+          "1/√3",
+          "1/3",
+          "√3",
+          "1"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. The minimum force to pull a block is F = μMg / √(1+μ²). Assuming a horizontal pull, F = μMg, so μ = 1/√3.",
+          "Incorrect. This is the square of the correct coefficient.",
+          "Incorrect. This is the reciprocal.",
+          "Incorrect. The force would need to be equal to the weight."
+        ],
+        "fullExplanation": "If the force is applied horizontally, F = μ(s)N = μ(s)Mg. Given F = Mg / √3, we equate the two: μ(s)Mg = Mg / √3, resulting in μ(s) = 1/√3. (Note: Even if applied at the optimum angle θ where tan θ = μ, F(min) = μMg / √(1+μ²), the horizontal assumption is standard for simple text problems unless specified)."
+      },
+      {
+        "question": "A rocket consumes 100 kg of fuel per second. The exhaust velocity is 5000 m/s. What is the thrust force on the rocket?",
+        "options": [
+          "50,000 N",
+          "500,000 N",
+          "5,000 N",
+          "5,000,000 N"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Missing a zero in multiplication.",
+          "Correct. Thrust F = v_rel × (dm/dt) = 5000 × 100 = 500,000 N.",
+          "Incorrect. This is just the exhaust velocity value.",
+          "Incorrect. Added an extra zero."
+        ],
+        "fullExplanation": "The thrust force produced by mass ejection is given by F = v(rel) × (dm/dt), where v(rel) is the relative exhaust velocity and dm/dt is the rate of fuel consumption. F = 5000 m/s × 100 kg/s = 500,000 N."
+      },
+      {
+        "question": "A particle moves in a circle of radius R with constant speed v. What is the work done by the centripetal force in half a revolution?",
+        "options": [
+          "mv²/R × πR",
+          "0",
+          "mv²/R",
+          "1/2 mv²"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This multiplies force by distance, but ignores the vector dot product.",
+          "Correct. Centripetal force is always perpendicular to displacement, so W = F·ds = 0.",
+          "Incorrect. This is the magnitude of the centripetal force.",
+          "Incorrect. This is kinetic energy, not work."
+        ],
+        "fullExplanation": "Work done is given by the dot product of force and displacement: W = ∫ F · ds = ∫ F ds cos θ. In circular motion, the centripetal force is directed radially inwards, while the instantaneous displacement ds is tangential. Since the radius and tangent are always perpendicular (θ = 90°), cos 90° = 0. Therefore, the work done is zero."
+      },
+      {
+        "question": "A block of mass m is placed on a smooth wedge of mass M and angle θ. The wedge is pushed horizontally so the block stays at rest relative to the wedge. What is the required acceleration of the wedge?",
+        "options": [
+          "g sin θ",
+          "g cos θ",
+          "g tan θ",
+          "g cot θ"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the block's acceleration if the wedge were stationary.",
+          "Incorrect. This relates to the normal reaction.",
+          "Correct. A pseudo force ma acts horizontally. For equilibrium along the incline: ma cos θ = mg sin θ, so a = g tan θ.",
+          "Incorrect. This is the reciprocal of the correct answer."
+        ],
+        "fullExplanation": "In the accelerating frame of the wedge, the block experiences a downward force mg and a horizontal pseudo force ma. To stay at rest on the incline, the components of these forces parallel to the incline must cancel out. The downward component is mg sin θ, and the upward component from the pseudo force is ma cos θ. Equating them: ma cos θ = mg sin θ => a = g(sin θ / cos θ) = g tan θ."
+      },
+      {
+        "question": "A force F = 5t acts on a body of mass 2 kg initially at rest. What is the velocity of the body at t = 2 s?",
+        "options": [
+          "5 m/s",
+          "10 m/s",
+          "2.5 m/s",
+          "20 m/s"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. a = 5t/2. Integrating from 0 to 2 gives v = (5/4)t² evaluated at 2, which is 5(4)/4 = 5 m/s.",
+          "Incorrect. This is the force value at t = 2.",
+          "Incorrect. This is the acceleration at t = 1.",
+          "Incorrect. This ignores the integration step over time."
+        ],
+        "fullExplanation": "According to Newton's Second Law, a = F / m = 5t / 2. Acceleration is the rate of change of velocity: dv/dt = 2.5t. To find velocity, we integrate with respect to time: ∫ dv = ∫ 2.5t dt. This gives v = 2.5(t² / 2) = 1.25 t². At t = 2 s, v = 1.25(2)² = 1.25 × 4 = 5 m/s."
+      },
+      {
+        "question": "A passenger in a moving bus falls forward when the bus suddenly stops. This is an example of:",
+        "options": [
+          "Newton's Third Law",
+          "Inertia of rest",
+          "Inertia of motion",
+          "Conservation of momentum"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The Third Law relates to action-reaction force pairs.",
+          "Incorrect. Inertia of rest applies when a stationary vehicle suddenly starts.",
+          "Correct. The passenger's body tends to maintain its state of uniform motion.",
+          "Incorrect. While momentum is a factor, the phenomenological law is the First Law (inertia)."
+        ],
+        "fullExplanation": "According to Newton's First Law of Motion (Law of Inertia), an object will remain in its state of uniform motion unless acted upon by an external force. When the bus stops suddenly, the lower part of the passenger's body stops with the bus, but the upper part continues to move forward due to inertia of motion."
+      }
+    ]
+  },
+  {
+    "chapterName": "Work, Energy and Power",
+    "flashcards": [
+      {
+        "front": "What is the formula for work done by a constant force?",
+        "back": "W = F · S = F S cos θ"
+      },
+      {
+        "front": "How do you calculate work done by a variable force?",
+        "back": "W = ∫ F · dr (It is the area under the Force-displacement curve)."
+      },
+      {
+        "front": "What is the relation between kinetic energy (K) and linear momentum (P)?",
+        "back": "K = P² / (2m), or P = √(2mK)"
+      },
+      {
+        "front": "How is conservative force related to potential energy?",
+        "back": "F = -dU/dr (or F = -∇U)"
+      },
+      {
+        "front": "What is the condition for stable equilibrium?",
+        "back": "Net force F = 0 and d²U/dr² > 0 (Potential energy is at a local minimum)."
+      },
+      {
+        "front": "What is the condition for unstable equilibrium?",
+        "back": "Net force F = 0 and d²U/dr² < 0 (Potential energy is at a local maximum)."
+      },
+      {
+        "front": "State the Work-Energy Theorem.",
+        "back": "W(all) = ΔK, meaning the work done by all forces (conservative, non-conservative, pseudo) equals the change in kinetic energy."
+      },
+      {
+        "front": "What is the law of conservation of mechanical energy?",
+        "back": "If net external non-conservative force is zero, K(initial) + U(initial) = K(final) + U(final)."
+      },
+      {
+        "front": "What is the formula for average power?",
+        "back": "P(avg) = W / t"
+      },
+      {
+        "front": "What is the formula for instantaneous power?",
+        "back": "P = dW/dt = F · v"
+      },
+      {
+        "front": "In a vertical circular motion (VCM) with a string, what is the minimum velocity required at the lowest point to complete the circle?",
+        "back": "u = √(5gR)"
+      },
+      {
+        "front": "In VCM, what is the minimum velocity at the highest point to just keep the string taut?",
+        "back": "v = √(gR)"
+      },
+      {
+        "front": "What is the tension at the lowest point of a VCM when it just completes the circle?",
+        "back": "T(bottom) = 6mg"
+      },
+      {
+        "front": "What is the condition for a particle to oscillate like a pendulum in VCM?",
+        "back": "Initial velocity u ≤ √(2gR)"
+      },
+      {
+        "front": "What is the formula for the potential energy of a stretched ideal spring?",
+        "back": "U = (1/2)kx²"
+      },
+      {
+        "front": "What is the coefficient of restitution (e)?",
+        "back": "e = (Velocity of separation) / (Velocity of approach)"
+      },
+      {
+        "front": "What is the value of e for a perfectly elastic collision?",
+        "back": "e = 1 (Kinetic energy is conserved)."
+      },
+      {
+        "front": "What is the value of e for a perfectly inelastic collision?",
+        "back": "e = 0 (Maximum loss of kinetic energy, objects stick together)."
+      },
+      {
+        "front": "What is the formula for thrust force in a variable mass system?",
+        "back": "F(t) = v(rel) · (dm/dt)"
+      },
+      {
+        "front": "In VCM, what is the difference in tension between the lowest and highest points?",
+        "back": "T(bottom) - T(top) = 6mg"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A force F = (2i + 3j) N acts on a particle, displacing it from origin to (2i + 2j) m. What is the work done?",
+        "options": [
+          "10 J",
+          "5 J",
+          "12 J",
+          "24 J"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. W = F · r = (2)(2) + (3)(2) = 4 + 6 = 10 J.",
+          "Incorrect. This is a miscalculation of the dot product.",
+          "Incorrect. This assumes a different displacement vector.",
+          "Incorrect. This is the product of magnitudes."
+        ],
+        "fullExplanation": "Work done by a constant force is the dot product of force and displacement vectors: W = F · S. Here, F = 2i + 3j and S = 2i + 2j (since it starts from the origin). W = (2×2) + (3×2) = 4 + 6 = 10 J."
+      },
+      {
+        "question": "If the kinetic energy of a body is increased by 300%, by what percentage does its linear momentum increase?",
+        "options": [
+          "100%",
+          "150%",
+          "300%",
+          "200%"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. K becomes 4K. Since P = √(2mK), P becomes √4 P = 2P. An increase from P to 2P is a 100% increase.",
+          "Incorrect. This is a common error assuming linear proportionality.",
+          "Incorrect. Momentum does not increase by the same percentage as kinetic energy.",
+          "Incorrect. The momentum doubles, which is a 100% increase, not 200%."
+        ],
+        "fullExplanation": "Initial kinetic energy is K. A 300% increase means the new kinetic energy K' = K + 3K = 4K. Linear momentum is P = √(2mK). The new momentum P' = √(2m(4K)) = 2√(2mK) = 2P. The change in momentum is ΔP = 2P - P = P. Percentage increase = (ΔP / P) × 100 = (P/P) × 100 = 100%."
+      },
+      {
+        "question": "The potential energy of a particle is given by U(x) = x² - 4x. At what position is the particle in equilibrium?",
+        "options": [
+          "x = 0",
+          "x = 4",
+          "x = 2",
+          "x = -2"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. dU/dx at x=0 is -4, not zero.",
+          "Incorrect. dU/dx at x=4 is +4, not zero.",
+          "Correct. F = -dU/dx = -(2x - 4). Setting F = 0 gives 2x = 4, so x = 2.",
+          "Incorrect. This would correspond to U(x) = x² + 4x."
+        ],
+        "fullExplanation": "For equilibrium, the net force must be zero. Force is the negative gradient of potential energy: F = -dU/dx. Differentiating U(x) = x² - 4x gives dU/dx = 2x - 4. Setting dU/dx = 0, we get 2x - 4 = 0, which yields x = 2."
+      },
+      {
+        "question": "For the potential energy function U(x) = x² - 4x, what type of equilibrium exists at x = 2?",
+        "options": [
+          "Stable",
+          "Unstable",
+          "Neutral",
+          "None of the above"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. d²U/dx² = 2, which is positive. A positive second derivative indicates a local minimum (stable equilibrium).",
+          "Incorrect. Unstable equilibrium requires a negative second derivative.",
+          "Incorrect. Neutral equilibrium requires the second derivative to be zero.",
+          "Incorrect. It definitively matches the condition for stable equilibrium."
+        ],
+        "fullExplanation": "To determine the type of equilibrium, we check the second derivative of the potential energy. We found dU/dx = 2x - 4. Differentiating again gives d²U/dx² = 2. Since 2 > 0, the potential energy is at a local minimum at x = 2. A local minimum in potential energy corresponds to stable equilibrium."
+      },
+      {
+        "question": "A machine delivers constant power. A body starting from rest is moved by this machine. How is the velocity v related to time t?",
+        "options": [
+          "v ∝ t",
+          "v ∝ √t",
+          "v ∝ t²",
+          "v ∝ t³"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would mean constant acceleration, thus power P = mav would increase with time.",
+          "Correct. P = Fv = mav = m v (dv/dt). Integrating v dv = (P/m) dt gives v² ∝ t, so v ∝ √t.",
+          "Incorrect. This represents a highly increasing power curve.",
+          "Incorrect. This does not match the integration result."
+        ],
+        "fullExplanation": "Power P = F · v = (m · a) · v = m(dv/dt)v. Since power is constant, we can separate variables: v dv = (P/m) dt. Integrating both sides from 0 to t gives v² / 2 = (P/m)t. Therefore, v² = (2P/m)t, which means v is proportional to the square root of t (v ∝ √t)."
+      },
+      {
+        "question": "A ball of mass 1 kg is tied to a 1 m string and swung in a vertical circle. What is the minimum velocity at the lowest point required to complete the circle? (g = 10 m/s²)",
+        "options": [
+          "10 m/s",
+          "5 m/s",
+          "√50 m/s",
+          "√10 m/s"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. 10 is √100, which is higher than the minimum requirement.",
+          "Incorrect. 5 is √25, which is too slow to reach the top.",
+          "Correct. u = √(5gR) = √(5 × 10 × 1) = √50 m/s.",
+          "Incorrect. This is the minimum speed at the highest point, √(gR)."
+        ],
+        "fullExplanation": "To complete a vertical circle, the tension at the highest point must be at least zero. Using energy conservation, this requires the velocity at the lowest point to be at least u = √(5gR). Substituting g = 10 m/s² and R = 1 m, we get u = √(5 × 10 × 1) = √50 m/s."
+      },
+      {
+        "question": "A force F = (5 + 2x) N acts on a particle in the x direction. Find the work done by this force in moving the particle from x = 0 to x = 2 m.",
+        "options": [
+          "14 J",
+          "10 J",
+          "18 J",
+          "24 J"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. W = ∫(5+2x)dx = [5x + x²] from 0 to 2 = 10 + 4 = 14 J.",
+          "Incorrect. This is the work done if the force were constant at 5 N.",
+          "Incorrect. Miscalculation of the integral bounds.",
+          "Incorrect. This evaluates the integral incorrectly."
+        ],
+        "fullExplanation": "The work done by a variable force is W = ∫ F dx. Integrating F(x) = 5 + 2x from x = 0 to x = 2 gives: W = [5x + x²] evaluated from 0 to 2. W = (5(2) + 2²) - (0) = 10 + 4 = 14 J."
+      },
+      {
+        "question": "A block of mass 2 kg is dropped from a height of 5 m onto a vertical spring of constant 1000 N/m. Find the maximum compression of the spring. (Take g = 10 m/s² and neglect the small change in gravitational PE during compression for approximation).",
+        "options": [
+          "10 cm",
+          "20 cm",
+          "31.6 cm",
+          "44.7 cm"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. Too small.",
+          "Incorrect. Also too small.",
+          "Incorrect. Mathematically incorrect.",
+          "Correct. Using mgh = 1/2 kx² gives 2 × 10 × 5 = 1/2 × 1000 × x². x² = 0.2, x ≈ 0.447 m = 44.7 cm."
+        ],
+        "fullExplanation": "Using the law of conservation of mechanical energy (and ignoring the extra mgh during the compression phase x for a simpler approximation as implied): MgH = (1/2)kx². 2 × 10 × 5 = 0.5 × 1000 × x² => 100 = 500x² => x² = 0.2 => x = √0.2 ≈ 0.447 m = 44.7 cm. (Exact quadratic solution: mg(h+x) = 1/2 kx² yields a slightly larger number, but 44.7 cm matches the standard approximation)."
+      },
+      {
+        "question": "A car accelerates from rest. Its engine delivers a constant power P. The distance covered in time t is proportional to:",
+        "options": [
+          "t^(1/2)",
+          "t",
+          "t^(3/2)",
+          "t²"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the proportionality for velocity.",
+          "Incorrect. This is for constant velocity.",
+          "Correct. Since v ∝ t^(1/2), integrating gives distance x ∝ t^(3/2).",
+          "Incorrect. This is for constant acceleration."
+        ],
+        "fullExplanation": "As derived previously, for constant power P, v = √(2P/m) · t^(1/2). Velocity is the rate of change of position, v = dx/dt. To find distance x, we integrate velocity with respect to time: x = ∫ v dt = ∫ √(2P/m) · t^(1/2) dt. This yields x = √(2P/m) · (2/3)t^(3/2). Thus, distance x is proportional to t^(3/2)."
+      },
+      {
+        "question": "A ball is dropped from a height h. The coefficient of restitution is e. After the first bounce, it reaches a height h₁. What is the relation between h and h₁?",
+        "options": [
+          "h₁ = e h",
+          "h₁ = e² h",
+          "h₁ = h / e",
+          "h₁ = h / e²"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the relation for velocities, not heights.",
+          "Correct. Rebound velocity v' = ev. Height is proportional to velocity squared, so h₁ = e²h.",
+          "Incorrect. e is less than 1, so this would imply the ball bounces higher than it started.",
+          "Incorrect. Same logic as previous, bounces cannot exceed original height without added energy."
+        ],
+        "fullExplanation": "The velocity of the ball just before hitting the ground is v = √(2gh). After a collision with coefficient of restitution e, the rebound velocity is v' = e·v = e√(2gh). The maximum height h₁ reached after the bounce is given by v'² / (2g). Substituting v': h₁ = (e√(2gh))² / (2g) = e²(2gh) / (2g) = e²h."
+      },
+      {
+        "question": "In a completely inelastic collision between two identical masses, one moving with velocity v and the other at rest, what fraction of the initial kinetic energy is lost?",
+        "options": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "All of it"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The loss is higher.",
+          "Correct. Final velocity is v/2, final KE is (1/2)(2m)(v/2)² = 1/4 mv² = half of initial KE.",
+          "Incorrect. The loss is exactly 50%.",
+          "Incorrect. Momentum conservation guarantees some residual kinetic energy."
+        ],
+        "fullExplanation": "Initial kinetic energy K(i) = (1/2)mv². By conservation of momentum: mv + 0 = (m + m)V(f), so V(f) = v/2. The final kinetic energy K(f) = (1/2)(2m)(v/2)² = (1/2)(2m)(v²/4) = (1/4)mv². The loss in kinetic energy is K(i) - K(f) = (1/2)mv² - (1/4)mv² = (1/4)mv². The fraction lost is ((1/4)mv²) / ((1/2)mv²) = 1/2."
+      },
+      {
+        "question": "What is the work done by the force of gravity when a satellite completes one full orbit around the Earth?",
+        "options": [
+          "Positive",
+          "Negative",
+          "Zero",
+          "Depends on the radius"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Gravity acts perpendicularly to the path in a circular orbit.",
+          "Incorrect. Gravity does not oppose the motion in a circular orbit.",
+          "Correct. Gravity is a conservative force and the displacement in a closed loop is zero. Also, force is perpendicular to velocity.",
+          "Incorrect. Work done is always zero for a closed loop under a conservative force."
+        ],
+        "fullExplanation": "There are two ways to see this. First, gravity is a conservative force, and the work done by a conservative force over any closed path is zero. Second, for a circular orbit, the gravitational force is directed toward the center, while the instantaneous displacement is tangent to the circle. The angle between them is 90°, so W = ∫ F · ds = 0."
+      },
+      {
+        "question": "Two bodies of masses m and 4m have the same kinetic energy. What is the ratio of their linear momenta?",
+        "options": [
+          "1:2",
+          "1:4",
+          "2:1",
+          "4:1"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. P = √(2mK). Ratio P₁/P₂ = √(m/4m) = 1/2.",
+          "Incorrect. This is the mass ratio.",
+          "Incorrect. The heavier mass has more momentum.",
+          "Incorrect. This would be the ratio if they had the same velocity."
+        ],
+        "fullExplanation": "The relationship between momentum P, mass m, and kinetic energy K is P = √(2mK). Since both bodies have the same kinetic energy K, the ratio of their momenta is P₁/P₂ = √(2m₁K) / √(2m₂K) = √(m₁/m₂). Substituting m₁ = m and m₂ = 4m, we get P₁/P₂ = √(m / 4m) = √(1/4) = 1/2. Therefore, the ratio is 1:2."
+      },
+      {
+        "question": "A spring of spring constant k is compressed by x. The work done by the spring force during this compression is:",
+        "options": [
+          "1/2 kx²",
+          "-1/2 kx²",
+          "kx",
+          "-kx"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the work done BY the external agent.",
+          "Correct. The spring force opposes the displacement, so the work done is negative.",
+          "Incorrect. This is the magnitude of the force, not work.",
+          "Incorrect. The integral of -kx dx gives a squared term."
+        ],
+        "fullExplanation": "The spring force is given by Hooke's Law: F(s) = -kx. The work done by the spring force when the spring is compressed from 0 to x is W(s) = ∫ F(s) dx = ∫ (-kx) dx = -(1/2)kx². It is negative because the spring force acts outward while the displacement is inward."
+      },
+      {
+        "question": "A particle of mass m is suspended by a string of length L. It is given a horizontal velocity u at the lowest point. What is the maximum angle θ it swings to if u = √(gL)?",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "90°"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. At 30°, less potential energy is gained.",
+          "Incorrect. Cos(45) doesn't match the energy balance.",
+          "Correct. (1/2)mu² = mgL(1 - cos θ). So 1/2 mgL = mgL(1 - cos θ) => cos θ = 1/2 => θ = 60°.",
+          "Incorrect. Reaching 90° requires u = √(2gL)."
+        ],
+        "fullExplanation": "By conservation of mechanical energy, the kinetic energy at the bottom equals the potential energy gained at the maximum angle θ. K(initial) = (1/2)mu² = (1/2)m(gL). The height gained is h = L - L cos θ = L(1 - cos θ). Equating them: (1/2)mgL = mgL(1 - cos θ). Dividing by mgL gives 1/2 = 1 - cos θ. Thus, cos θ = 1/2, which means θ = 60°."
+      },
+      {
+        "question": "A pump delivers water at a rate of 10 kg/s with a velocity of 5 m/s. What is the power of the pump?",
+        "options": [
+          "50 W",
+          "125 W",
+          "250 W",
+          "500 W"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is just mass rate times velocity.",
+          "Correct. Power = dK/dt = 1/2 (dm/dt) v² = 1/2 × 10 × 5² = 125 W.",
+          "Incorrect. Missing the 1/2 factor for kinetic energy.",
+          "Incorrect. Overestimating the required power."
+        ],
+        "fullExplanation": "The power delivered by the pump to impart kinetic energy to the water is the rate of change of kinetic energy. P = dK/dt. Since velocity is constant, P = (1/2) v² (dm/dt). Given v = 5 m/s and dm/dt = 10 kg/s, we have P = (1/2) × 5² × 10 = (1/2) × 25 × 10 = 125 Watts."
+      },
+      {
+        "question": "Which of the following is NOT a conservative force?",
+        "options": [
+          "Gravitational force",
+          "Electrostatic force",
+          "Magnetic force",
+          "Frictional force"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. Gravity is a classic conservative force.",
+          "Incorrect. Electrostatic force is conservative.",
+          "Incorrect. Magnetic force does no work, but is conservative in fields.",
+          "Correct. Friction dissipates energy as heat, making it non-conservative."
+        ],
+        "fullExplanation": "A conservative force is one where the work done depends only on the initial and final positions, not on the path taken. The work done in a closed loop is zero. Gravitational, electrostatic, and spring forces are conservative. Friction is a non-conservative force because the work done depends on the path length and energy is dissipated as heat."
+      },
+      {
+        "question": "An engine pulls a train of mass m up an incline of angle θ with constant speed v. If the coefficient of kinetic friction is μ, what is the power of the engine?",
+        "options": [
+          "mgv(sin θ + μ cos θ)",
+          "mgv(sin θ - μ cos θ)",
+          "mgv sin θ",
+          "μmgv cos θ"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Total resisting force is mg sin θ + μmg cos θ. Power = Fv.",
+          "Incorrect. This would imply friction is helping the train move up.",
+          "Incorrect. This ignores friction entirely.",
+          "Incorrect. This ignores the component of gravity down the incline."
+        ],
+        "fullExplanation": "To move up the incline at a constant speed, the engine must supply a force equal to the total opposing forces. The downward component of gravity is mg sin θ, and the frictional force acting downwards is μN = μmg cos θ. The total force F = mg sin θ + μmg cos θ = mg(sin θ + μ cos θ). Power P = Fv = mgv(sin θ + μ cos θ)."
+      },
+      {
+        "question": "A body of mass m is in a vertical circular motion. If the tension at the lowest point is 4mg, what will be the tension at the highest point? (Assume it completes the circle).",
+        "options": [
+          "0",
+          "mg",
+          "It won't complete the circle",
+          "10mg"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Tension cannot be 0 if the lowest point tension is only 4mg.",
+          "Incorrect. Mathematically, 4mg - 6mg = -2mg, which is impossible.",
+          "Correct. T(bottom) - T(top) = 6mg. If T(bottom) = 4mg, T(top) would be -2mg, meaning the string slackens.",
+          "Incorrect. Tension is lower at the top, not higher."
+        ],
+        "fullExplanation": "In vertical circular motion attached to a string, the difference in tension between the lowest and highest points is always 6mg (T(bot) - T(top) = 6mg). If T(bot) = 4mg, then 4mg - T(top) = 6mg, which implies T(top) = -2mg. Since a string cannot support negative tension (compression), the string will slacken before reaching the top, meaning it won't complete the circle."
+      },
+      {
+        "question": "A 2 kg block slides down a rough incline of height 5 m. It reaches the bottom with a speed of 8 m/s. What is the work done against friction? (g = 10 m/s²)",
+        "options": [
+          "100 J",
+          "64 J",
+          "36 J",
+          "0 J"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the total initial potential energy.",
+          "Incorrect. This is the final kinetic energy.",
+          "Correct. W(nc) = E(f) - E(i) = 64 - 100 = -36 J. So work done *against* friction is 36 J.",
+          "Incorrect. If there were no friction, KE would be 100 J."
+        ],
+        "fullExplanation": "Using the Work-Energy Theorem for non-conservative forces: W(nc) = ΔE = K(f) + U(f) - (K(i) + U(i)). The initial energy is purely potential: U(i) = mgh = 2 × 10 × 5 = 100 J. The final energy is purely kinetic: K(f) = 1/2 mv² = 1/2 × 2 × 8² = 64 J. The change in energy is 64 - 100 = -36 J. This energy was lost to friction. Therefore, the work done *against* friction is 36 J."
+      }
+    ]
+  },
+  {
+    "chapterName": "Rotational Motion",
+    "flashcards": [
+      {
+        "front": "State the Perpendicular Axis Theorem for a plane lamina.",
+        "back": "I(z) = I(x) + I(y), where x and y axes are in the plane of the lamina and z is perpendicular to it."
+      },
+      {
+        "front": "State the Parallel Axis Theorem.",
+        "back": "I = I(cm) + Md², where I(cm) is the moment of inertia about the center of mass and d is the perpendicular distance between the parallel axes."
+      },
+      {
+        "front": "What is the Moment of Inertia of a uniform solid sphere about its diameter?",
+        "back": "I = (2/5)MR²"
+      },
+      {
+        "front": "What is the Moment of Inertia of a uniform hollow sphere (spherical shell) about its diameter?",
+        "back": "I = (2/3)MR²"
+      },
+      {
+        "front": "What is the Moment of Inertia of a uniform solid cylinder about its central axis?",
+        "back": "I = (1/2)MR²"
+      },
+      {
+        "front": "What is the Moment of Inertia of a uniform ring about its central axis?",
+        "back": "I = MR²"
+      },
+      {
+        "front": "What is the Moment of Inertia of a uniform thin rod of length L about an axis through its center and perpendicular to its length?",
+        "back": "I = ML² / 12"
+      },
+      {
+        "front": "What is the formula for the radius of gyration (k)?",
+        "back": "k = √(I / M), so I = Mk²."
+      },
+      {
+        "front": "How is torque (τ) defined as a vector product?",
+        "back": "τ = r × F"
+      },
+      {
+        "front": "What is the relationship between torque (τ) and angular momentum (L)?",
+        "back": "τ = dL / dt"
+      },
+      {
+        "front": "How is angular momentum (L) defined for a particle?",
+        "back": "L = r × p (where p is linear momentum)."
+      },
+      {
+        "front": "What is the condition for conservation of angular momentum?",
+        "back": "The net external torque acting on the system must be zero (τ(ext) = 0)."
+      },
+      {
+        "front": "What is the formula for total kinetic energy of a body rolling without slipping?",
+        "back": "K = (1/2)Mv(cm)² + (1/2)I(cm)ω²"
+      },
+      {
+        "front": "What is the condition for pure rolling on a stationary surface?",
+        "back": "v(cm) = Rω"
+      },
+      {
+        "front": "What is the acceleration of a body rolling without slipping down an inclined plane of angle θ?",
+        "back": "a = (g sin θ) / [1 + (k² / R²)], where k is the radius of gyration."
+      },
+      {
+        "front": "What is the minimum coefficient of static friction required for pure rolling on an inclined plane?",
+        "back": "μ(min) = (tan θ) / [1 + (R² / k²)]"
+      },
+      {
+        "front": "What is the total angular momentum of a rolling body about a point O on the ground?",
+        "back": "L(O) = I(cm)ω + (r(cm) × Mv(cm))"
+      },
+      {
+        "front": "What is the formula for rotational work done by a constant torque?",
+        "back": "W = τ · θ"
+      },
+      {
+        "front": "What is the formula for rotational power?",
+        "back": "P = τ · ω"
+      },
+      {
+        "front": "What is the moment of inertia of a uniform rectangular plate (sides a and b) about an axis through its center and perpendicular to its plane?",
+        "back": "I = M(a² + b²) / 12"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A uniform thin rod of mass M and length L has a moment of inertia ML²/12 about its center. What is its moment of inertia about an axis through one of its ends?",
+        "options": [
+          "ML² / 3",
+          "ML² / 6",
+          "ML² / 4",
+          "2ML² / 3"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Using parallel axis theorem: I = I(cm) + Md² = ML²/12 + M(L/2)² = ML²/12 + ML²/4 = ML²/3.",
+          "Incorrect. This is a miscalculation of the parallel axis addition.",
+          "Incorrect. This is just the Md² term.",
+          "Incorrect. This would be the sum if the axis was far outside the rod."
+        ],
+        "fullExplanation": "According to the Parallel Axis Theorem, I = I(cm) + Md². Here, the center of mass axis has I(cm) = ML²/12. The distance from the center to the end of the rod is d = L/2. Substituting these values: I = ML²/12 + M(L/2)² = ML²/12 + ML²/4. To add these, find a common denominator (12): I = ML²/12 + 3ML²/12 = 4ML²/12 = ML²/3."
+      },
+      {
+        "question": "The moment of inertia of a uniform ring about its central axis is MR². What is its moment of inertia about a diameter?",
+        "options": [
+          "MR²",
+          "MR² / 2",
+          "2MR²",
+          "MR² / 4"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the MOI about the central axis.",
+          "Correct. Using perpendicular axis theorem: Iz = Ix + Iy. 2Ix = MR², so Ix = MR²/2.",
+          "Incorrect. This would imply the diametric MOI is larger, which is impossible.",
+          "Incorrect. This is the diametric MOI for a solid disc, not a ring."
+        ],
+        "fullExplanation": "For a planar object like a ring, the Perpendicular Axis Theorem states that I(z) = I(x) + I(y). By symmetry, the moment of inertia about any diameter is the same, so I(x) = I(y) = I(d). The central axis is the z-axis, so I(z) = MR². Therefore, MR² = I(d) + I(d) = 2I(d), which yields I(d) = MR² / 2."
+      },
+      {
+        "question": "A solid sphere and a solid cylinder of the same mass and radius roll down an incline from the same height. Which reaches the bottom first?",
+        "options": [
+          "Solid cylinder",
+          "Solid sphere",
+          "They reach simultaneously",
+          "Depends on the incline angle"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The solid cylinder has a larger k²/R² factor (1/2) compared to the sphere (2/5).",
+          "Correct. Acceleration a = g sin θ / (1 + k²/R²). Sphere has k²/R² = 0.4, cylinder has 0.5. Smaller k²/R² means higher acceleration.",
+          "Incorrect. Their accelerations differ because their moments of inertia differ.",
+          "Incorrect. The relative order is independent of the incline angle."
+        ],
+        "fullExplanation": "The linear acceleration of a body rolling down an incline is a = (g sin θ) / (1 + k²/R²). The object with the smaller (k²/R²) ratio will have a larger acceleration and reach the bottom first. For a solid sphere, I = (2/5)MR², so k²/R² = 0.4. For a solid cylinder, I = (1/2)MR², so k²/R² = 0.5. Since 0.4 < 0.5, the solid sphere has a higher acceleration and reaches the bottom first."
+      },
+      {
+        "question": "What fraction of the total kinetic energy of a rolling solid sphere is rotational kinetic energy?",
+        "options": [
+          "2/7",
+          "5/7",
+          "2/5",
+          "1/2"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. K(rot)/K(total) = (k²/R²) / (1 + k²/R²) = (2/5) / (7/5) = 2/7.",
+          "Incorrect. This is the fraction of translational kinetic energy.",
+          "Incorrect. This is the ratio k²/R² itself, not the fraction of total energy.",
+          "Incorrect. This is the ratio for a rolling ring/hollow cylinder."
+        ],
+        "fullExplanation": "Total kinetic energy is K(total) = K(trans) + K(rot) = (1/2)Mv² + (1/2)Iω². For pure rolling, v = Rω. For a solid sphere, I = (2/5)MR². So, K(rot) = (1/2)(2/5)MR²(v/R)² = (1/5)Mv². Total K = (1/2)Mv² + (1/5)Mv² = (7/10)Mv². The fraction of rotational energy is K(rot) / K(total) = (1/5) / (7/10) = 2/7."
+      },
+      {
+        "question": "An ice skater spinning with outstretched arms pulls them inwards. What happens to her angular momentum and kinetic energy?",
+        "options": [
+          "L is conserved, KE increases",
+          "L increases, KE is conserved",
+          "Both L and KE are conserved",
+          "L is conserved, KE decreases"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. External torque is zero, so L is conserved. I decreases, so ω increases. KE = L²/(2I), so KE increases.",
+          "Incorrect. L cannot increase without an external torque.",
+          "Incorrect. KE is not conserved; internal work is done by the skater's muscles.",
+          "Incorrect. KE increases because work is done to pull the arms inward against centrifugal force."
+        ],
+        "fullExplanation": "Since there is no external torque acting on the skater, angular momentum L = Iω is conserved. When she pulls her arms in, her moment of inertia I decreases. To keep L constant, her angular velocity ω must increase. Rotational kinetic energy can be written as K = L² / (2I). Since L is constant and I decreases, the kinetic energy K must increase. The energy comes from the work done by her muscles."
+      },
+      {
+        "question": "A force F = 2i + 3j N is applied at a point whose position vector is r = i + 2j m. What is the torque about the origin?",
+        "options": [
+          "-1 k N·m",
+          "1 k N·m",
+          "-7 k N·m",
+          "7 k N·m"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. τ = r × F = (i + 2j) × (2i + 3j) = (1×3 - 2×2)k = -1k N·m.",
+          "Incorrect. Order of cross product matters: it is r × F, not F × r.",
+          "Incorrect. Calculation error in the cross product determinant.",
+          "Incorrect. Adding instead of subtracting the cross terms."
+        ],
+        "fullExplanation": "Torque is defined as the cross product τ = r × F. Here, r = i + 2j and F = 2i + 3j. Using the determinant method or distributive property: τ = (i + 2j) × (2i + 3j) = (i × 2i) + (i × 3j) + (2j × 2i) + (2j × 3j). Since i×i = j×j = 0, i×j = k, and j×i = -k, we get τ = 3k + 4(-k) = 3k - 4k = -1k N·m."
+      },
+      {
+        "question": "What is the radius of gyration of a uniform solid disc of radius R about its central axis?",
+        "options": [
+          "R / 2",
+          "R / √2",
+          "R",
+          "√(2/5) R"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This assumes I = (1/4)MR².",
+          "Correct. I = (1/2)MR². Equating to Mk² gives k = R / √2.",
+          "Incorrect. This is the radius of gyration for a ring.",
+          "Incorrect. This is the radius of gyration for a solid sphere."
+        ],
+        "fullExplanation": "The moment of inertia of a solid disc about its central axis is I = (1/2)MR². The radius of gyration k is defined such that I = Mk². Equating the two expressions: Mk² = (1/2)MR², which simplifies to k² = R²/2. Taking the square root gives k = R / √2."
+      },
+      {
+        "question": "A particle of mass m is moving with constant velocity v parallel to the x-axis at a distance y = d. What is its angular momentum about the origin?",
+        "options": [
+          "mvd k",
+          "-mvd k",
+          "0",
+          "Depends on x"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. If moving in +x direction at +y, r × v points in -z direction.",
+          "Correct. L = r × p. r = xi + dj, p = mvi. (xi + dj) × mvi = -mvd k.",
+          "Incorrect. The particle has a moment arm relative to the origin.",
+          "Incorrect. Angular momentum of a particle moving in a straight line at constant velocity is constant."
+        ],
+        "fullExplanation": "Angular momentum is L = r × p. The particle's position vector is r = x i + d j. Its velocity vector is v = v i, so momentum is p = mv i. The cross product is L = (x i + d j) × (mv i). Since i × i = 0 and j × i = -k, we get L = d(mv)(j × i) = -mvd k. The magnitude is constant at mvd, and direction is into the page (-k)."
+      },
+      {
+        "question": "A solid sphere is rolling without slipping on a horizontal surface with velocity V. What is the velocity of the highest point on the sphere?",
+        "options": [
+          "V",
+          "2V",
+          "0",
+          "1.414 V"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. V is the velocity of the center of mass.",
+          "Correct. Velocity at top = V(cm) + Rω = V + V = 2V.",
+          "Incorrect. 0 is the velocity of the lowest point in contact with the ground.",
+          "Incorrect. This is the velocity of points at the horizontal extremities of the sphere."
+        ],
+        "fullExplanation": "In pure rolling, the velocity of any point on the rigid body is the vector sum of the translational velocity of the center of mass V(cm) and the tangential velocity due to rotation Rω. At the highest point, the rotational velocity is in the same direction as the translational velocity. Since V(cm) = Rω for pure rolling, the total velocity at the top is V(cm) + Rω = V + V = 2V."
+      },
+      {
+        "question": "If the radius of the Earth shrinks by 1% while its mass remains constant, what will be the percentage change in the length of a day?",
+        "options": [
+          "Increases by 2%",
+          "Decreases by 2%",
+          "Increases by 1%",
+          "Decreases by 1%"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The Earth spins faster when smaller, so the day shortens.",
+          "Correct. L = Iω is constant. I ∝ R², so I decreases by 2%. ω must increase by 2%, so time period T decreases by 2%.",
+          "Incorrect. The day length decreases, not increases.",
+          "Incorrect. The MOI depends on R², so a 1% change in R causes a 2% change in I."
+        ],
+        "fullExplanation": "Angular momentum L = Iω = I(2π/T) is conserved. The moment of inertia of the Earth is I = (2/5)MR². Therefore, (2/5)MR²(2π/T) = constant, meaning T ∝ R². Differentiating for small changes, ΔT/T = 2(ΔR/R). If R decreases by 1% (ΔR/R = -1%), then ΔT/T = 2(-1%) = -2%. The length of the day decreases by 2%."
+      },
+      {
+        "question": "A wheel of moment of inertia 2 kg·m² is rotating at 10 rad/s. A constant retarding torque of 4 N·m is applied. How long will it take to stop?",
+        "options": [
+          "5 s",
+          "10 s",
+          "2.5 s",
+          "20 s"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. α = τ/I = 4/2 = 2 rad/s². t = ω/α = 10/2 = 5 s.",
+          "Incorrect. This would be the time if α was 1 rad/s².",
+          "Incorrect. This would be the time if the torque was 8 N·m.",
+          "Incorrect. This is the product of I and ω."
+        ],
+        "fullExplanation": "From Newton's second law for rotation, τ = Iα. The angular acceleration (deceleration) is α = τ/I = 4 N·m / 2 kg·m² = 2 rad/s². Using the kinematic equation for rotational motion ω(f) = ω(i) - αt, we set the final angular velocity to 0. 0 = 10 - 2t, which gives 2t = 10, so t = 5 s."
+      },
+      {
+        "question": "A ring and a disc of the same mass and radius are subjected to the same constant torque. If they start from rest, what is the ratio of their angular velocities after time t?",
+        "options": [
+          "1:2",
+          "2:1",
+          "1:1",
+          "1:4"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. I(ring) = 2I(disc). Since α ∝ 1/I, α(ring) = 1/2 α(disc). Thus ω(ring) : ω(disc) = 1:2.",
+          "Incorrect. The ring has higher inertia, so it will accelerate slower.",
+          "Incorrect. Their moments of inertia are different.",
+          "Incorrect. The MOI ratio is 2, not 4."
+        ],
+        "fullExplanation": "Angular acceleration is given by α = τ / I. After time t, angular velocity is ω = αt = (τ/I)t. Therefore, ω is inversely proportional to I. The moment of inertia of a ring is I(ring) = MR² and for a disc is I(disc) = MR²/2. The ratio ω(ring) / ω(disc) = I(disc) / I(ring) = (MR²/2) / MR² = 1/2. Thus, the ratio is 1:2."
+      },
+      {
+        "question": "What is the direction of the angular velocity vector for a particle moving counterclockwise in a horizontal circle?",
+        "options": [
+          "Towards the center",
+          "Away from the center",
+          "Vertically upwards",
+          "Vertically downwards"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the direction of centripetal acceleration.",
+          "Incorrect. This is the direction of centrifugal pseudo force.",
+          "Correct. By the right-hand rule, curling fingers counterclockwise points the thumb upwards.",
+          "Incorrect. This would be the direction for clockwise motion."
+        ],
+        "fullExplanation": "Angular velocity is an axial vector. Its direction is determined by the right-hand rule: curl the fingers of your right hand in the direction of the rotation (counterclockwise). Your extended thumb points in the direction of the angular velocity vector, which in this case is vertically upwards, perpendicular to the plane of motion."
+      },
+      {
+        "question": "A solid sphere is rolling on a horizontal plane. What is the ratio of its angular momentum about its center of mass to its angular momentum about the point of contact?",
+        "options": [
+          "2/5",
+          "2/7",
+          "5/7",
+          "1"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the factor for MOI about the center.",
+          "Correct. L(cm) = I(cm)ω. L(contact) = I(contact)ω = (I(cm) + MR²)ω = (7/5)MR²ω. Ratio is (2/5) / (7/5) = 2/7.",
+          "Incorrect. This is the inverse ratio.",
+          "Incorrect. The angular momenta are not equal."
+        ],
+        "fullExplanation": "Angular momentum about the center of mass is L(cm) = I(cm)ω = (2/5)MR²ω. By the Parallel Axis Theorem, the moment of inertia about the point of contact is I(contact) = I(cm) + MR² = (2/5)MR² + MR² = (7/5)MR². The angular momentum about the point of contact in pure rolling is L(contact) = I(contact)ω = (7/5)MR²ω. The ratio is ((2/5)MR²ω) / ((7/5)MR²ω) = 2/7."
+      },
+      {
+        "question": "A meter stick of mass M is pivoted at one end and released from a horizontal position. What is its initial angular acceleration?",
+        "options": [
+          "g / L",
+          "3g / 2L",
+          "2g / L",
+          "g / 2L"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This ignores the geometry of the rod.",
+          "Correct. τ = Mg(L/2). I = ML²/3. α = τ/I = (MgL/2) / (ML²/3) = 3g / 2L.",
+          "Incorrect. This uses an incorrect moment of inertia.",
+          "Incorrect. This assumes torque acts at the end, not the center of mass."
+        ],
+        "fullExplanation": "The torque acting on the rod is due to gravity acting at its center of mass, which is at a distance L/2 from the pivot. So, τ = Mg(L/2). The moment of inertia of a rod pivoted at one end is I = ML²/3. Using τ = Iα, we have Mg(L/2) = (ML²/3)α. Solving for α gives α = (MgL/2) / (ML²/3) = 3g / 2L."
+      },
+      {
+        "question": "A force F is applied to the top edge of a solid cylinder of mass M and radius R resting on a horizontal surface. What is the minimum coefficient of friction for pure rolling?",
+        "options": [
+          "F / (3Mg)",
+          "2F / (3Mg)",
+          "F / (2Mg)",
+          "F / (Mg)"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Equations: F + f = Ma, F·R - f·R = Iα, a = Rα. Solving yields f = F/3. So μ(min) = F / 3Mg.",
+          "Incorrect. This is the friction for a sphere pushed at the center.",
+          "Incorrect. This is a common miscalculation.",
+          "Incorrect. This would imply friction equals the applied force."
+        ],
+        "fullExplanation": "For pure rolling, a = Rα. Translation: F + f = Ma (assuming f acts forward, or let's say f acts backward: F - f = Ma). Rotation about CM: Torque τ = F·R + f·R = Iα (if f is forward) OR F·R - f·R = Iα (if f is backward). Let's assume f is backward. F - f = Ma and (F + f)R = (1/2)MR²(a/R) => F + f = Ma/2. Subtracting equations: (F - f) - (F + f) = Ma - Ma/2 => -2f = Ma/2 => f = -Ma/4. The negative sign means friction is forward. Wait, let's use the standard torque origin at contact point: Torque = F(2R). I(contact) = (3/2)MR². α = 2FR / ((3/2)MR²) = 4F / 3MR. a = Rα = 4F / 3M. Equation of motion: F + f = M(4F/3M) = 4F/3. So f = F/3. Thus, μMg ≥ F/3 => μ(min) = F / (3Mg)."
+      },
+      {
+        "question": "Three point masses, each of mass m, are placed at the corners of an equilateral triangle of side L. What is the moment of inertia of the system about an axis passing through one vertex and perpendicular to the plane of the triangle?",
+        "options": [
+          "mL²",
+          "2mL²",
+          "3mL²",
+          "3/2 mL²"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This counts only one mass.",
+          "Correct. The mass at the axis contributes 0. The other two are at distance L. I = m(0)² + mL² + mL² = 2mL².",
+          "Incorrect. This would be the MOI if all three masses were at distance L.",
+          "Incorrect. This applies to a different axis (e.g., through the center)."
+        ],
+        "fullExplanation": "The moment of inertia of a system of particles is the sum of mr² for each particle. The axis passes through one vertex, so the distance r for the mass at that vertex is 0. The other two masses are at the remaining vertices of the equilateral triangle, both at a distance L from the axis. Therefore, I = m(0)² + mL² + mL² = 2mL²."
+      },
+      {
+        "question": "If a rigid body rotates with constant angular velocity, what can be said about the net torque acting on it?",
+        "options": [
+          "It must be constant and non-zero",
+          "It must be zero",
+          "It must be increasing",
+          "It depends on the moment of inertia"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. A non-zero torque would cause angular acceleration.",
+          "Correct. Since ω is constant, α = 0. Therefore, net τ = Iα = 0.",
+          "Incorrect. Increasing torque would cause increasing angular acceleration.",
+          "Incorrect. It must be zero regardless of the moment of inertia."
+        ],
+        "fullExplanation": "According to Newton's Second Law for rotation, the net torque acting on a body is equal to the product of its moment of inertia and angular acceleration (τ = Iα). If the body rotates with a constant angular velocity, its angular acceleration α is zero. Consequently, the net torque must be zero."
+      },
+      {
+        "question": "A disc is rotating freely about its central axis. If a piece of wax is dropped gently onto the edge of the disc, what happens to the angular velocity?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains unchanged",
+          "Becomes zero"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Angular velocity would increase only if inertia decreased.",
+          "Correct. By conservation of angular momentum L = Iω, adding mass to the edge increases I, so ω must decrease.",
+          "Incorrect. Inertia changes, so ω must change to keep L constant.",
+          "Incorrect. It slows down but does not stop completely."
+        ],
+        "fullExplanation": "Since the wax is dropped gently, there is no external torque applied to the system along the axis of rotation. Therefore, angular momentum L = Iω is conserved. The addition of the wax at the edge increases the total moment of inertia I of the system. To keep L constant, the angular velocity ω must decrease."
+      },
+      {
+        "question": "A hollow cylinder and a solid cylinder have the same mass and same radius. Which one has the larger moment of inertia about its central axis?",
+        "options": [
+          "Solid cylinder",
+          "Hollow cylinder",
+          "Both have the same",
+          "Cannot be determined"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Its mass is distributed closer to the axis, giving a smaller MOI.",
+          "Correct. All mass in a hollow cylinder is at distance R, while solid is distributed from 0 to R. MR² > 1/2 MR².",
+          "Incorrect. Their mass distributions are different.",
+          "Incorrect. The formulas clearly show the difference."
+        ],
+        "fullExplanation": "The moment of inertia depends on how mass is distributed relative to the axis of rotation. For a hollow cylinder (thin-walled), all the mass is concentrated at the maximum distance R from the axis, so I = MR². For a solid cylinder, the mass is distributed evenly from the center to the edge, resulting in a lower moment of inertia: I = (1/2)MR². Therefore, the hollow cylinder has the larger moment of inertia."
+      }
+    ]
+  }
+]

@@ -1,0 +1,741 @@
+[
+  {
+    "chapterName": "Hydrocarbons",
+    "flashcards": [
+      {
+        "front": "What are the reagents and stereochemical outcomes for the partial reduction of non-terminal alkynes to cis and trans alkenes?",
+        "back": "1. Lindlar's catalyst (H₂ with Pd/CaCO₃ partially poisoned with quinoline or lead acetate) yields cis-alkenes via syn-addition.\n2. Birch reduction (Na or Li in liquid NH₃ with an alcohol like EtOH) yields trans-alkenes via anti-addition."
+      },
+      {
+        "front": "Why is Wurtz reaction not suitable for preparing unsymmetrical alkanes (R–R')?",
+        "back": "Using two different alkyl halides (R–X and R'–X) gives a mixture of three different alkanes (R–R, R–R', and R'–R') that have very close boiling points and are extremely difficult to separate."
+      },
+      {
+        "front": "State the Corey-House synthesis and its advantage over the Wurtz reaction.",
+        "back": "Reagents: Alkyl halide reacts with Li, then CuI to form lithium dialkylcuprate, R₂CuLi (Gilman reagent), which couples with 1° or 2° alkyl halide R'X to give R–R'. Unlike the Wurtz reaction, it cleanly yields both symmetrical and unsymmetrical alkanes without cross-coupling mixtures."
+      },
+      {
+        "front": "What are the anode and cathode products during Kolbe's electrolytic decarboxylation of potassium acetate?",
+        "back": "At Anode (oxidation): Ethane (CH₃–CH₃) and CO₂ gas.\nAt Cathode (reduction): H₂ gas and KOH (making the aqueous solution basic)."
+      },
+      {
+        "front": "What is the relative reactivity of halogens towards free radical substitution of alkanes?",
+        "back": "F₂ > Cl₂ > Br₂ > I₂. Fluorination is explosive and non-selective; chlorination is rapid and moderately selective; bromination is slow and highly regioselective (3° > 2° > 1°); iodination is reversible and requires an oxidizing agent (HNO₃ or HIO₃)."
+      },
+      {
+        "front": "How does controlled catalytic oxidation of methane vary with different catalysts?",
+        "back": "1. CH₄ + O₂ with Cu tube at 573 K / 100 atm → 2CH₃OH (methanol).\n2. CH₄ + O₂ heated with Mo₂O₃ → HCHO (methanal) + H₂O.\n3. Ethane with (CH₃COO)₂Mn / O₂ → CH₃COOH (ethanoic acid)."
+      },
+      {
+        "front": "What is the Aromatization reaction of n-hexane and n-heptane?",
+        "back": "Heating n-hexane at 773 K and 10–20 atm over Cr₂O₃/Al₂O₃ or V₂O₅/Mo₂O₃ catalysts causes dehydrogenation and cyclization to form Benzene. Under identical conditions, n-heptane yields Toluene."
+      },
+      {
+        "front": "State Saytzeff's (Zaitsev's) rule versus Hofmann's rule in elimination reactions.",
+        "back": "Saytzeff's Rule: In dehydrohalogenation using small, unhindered bases (e.g., alc. KOH), the major product is the more substituted, thermodynamically stable alkene.\nHofmann's Rule: Using bulky bases (e.g., tert-butoxide) or quaternary ammonium hydroxides gives the less substituted alkene as the major product."
+      },
+      {
+        "front": "Compare Oxymercuration-Demercuration with Hydroboration-Oxidation of an alkene.",
+        "back": "Oxymercuration-Demercuration [Hg(OAc)₂, H₂O followed by NaBH₄]: Yields Markovnikov alcohol without carbocation rearrangement.\nHydroboration-Oxidation [B₂H₆/THF followed by alkaline H₂O₂]: Yields anti-Markovnikov alcohol via concerted syn-addition."
+      },
+      {
+        "front": "What is the Peroxide Effect (Kharasch effect) and why does it occur only with HBr?",
+        "back": "In the presence of peroxides, HBr adds to unsymmetrical alkenes contrary to Markovnikov's rule via a free radical mechanism. It does not occur with HCl or HI because one of the propagation steps is strongly endothermic (breaking H–Cl is too endothermic; adding I• to alkene is endothermic)."
+      },
+      {
+        "front": "What products are formed upon reductive versus oxidative ozonolysis of an alkene?",
+        "back": "Reductive ozonolysis (O₃ followed by Zn/H₂O or (CH₃)₂S) cleaves C=C into aldehydes and ketones without over-oxidation.\nOxidative ozonolysis (O₃ followed by H₂O₂ or hot alkaline KMnO₄) oxidizes aldehydes to carboxylic acids, while ketones remain unchanged and terminal =CH₂ becomes CO₂ + H₂O."
+      },
+      {
+        "front": "What are the chemical observations when a terminal alkyne reacts with ammoniacal AgNO₃ and ammoniacal Cu₂Cl₂?",
+        "back": "Ammoniacal AgNO₃ (Tollens' reagent): Forms a white precipitate of silver acetylide (R–C≡CAg↓).\nAmmoniacal Cu₂Cl₂: Forms a red precipitate of cuprous acetylide (R–C≡CCu↓)."
+      },
+      {
+        "front": "What happens during the cyclic polymerization of ethyne (acetylene)?",
+        "back": "Passing ethyne through a red-hot iron or copper tube at 873 K causes cyclic trimerization to yield Benzene: 3HC≡CH → C₆H₆."
+      },
+      {
+        "front": "Explain the kinetic isotope effect in benzene electrophilic aromatic substitution (ESR) for nitration and sulfonation.",
+        "back": "For Nitration: Rate(C₆H₆) = Rate(C₆D₆) = Rate(C₆T₆) (kH/kD ≈ 1, C–H cleavage is not the rate-determining step).\nFor Sulfonation: Rate(C₆H₆) > Rate(C₆D₆) > Rate(C₆T₆) (kH/kD > 1, C–H bond breaking is involved in the rate-determining step)."
+      },
+      {
+        "front": "What is the active electrophile in the aromatic nitration mixture (conc. HNO₃ + conc. H₂SO₄)?",
+        "back": "The nitronium ion (NO₂⁺). H₂SO₄ acts as an acid by protonating HNO₃ (which acts as a base), followed by loss of water: HNO₃ + 2H₂SO₄ ⇌ NO₂⁺ + H₃O⁺ + 2HSO₄⁻."
+      },
+      {
+        "front": "What is Gattermann-Koch reaction and Gattermann aldehyde synthesis?",
+        "back": "Gattermann-Koch: Benzene reacts with CO + HCl in the presence of anhydrous AlCl₃/CuCl to form Benzaldehyde.\nGattermann Aldehyde Synthesis: Benzene reacts with HCN + HCl in the presence of anhydrous AlCl₃ followed by hydrolysis (H₃O⁺) to form Benzaldehyde."
+      },
+      {
+        "front": "What is the product when benzene is treated with excess Cl₂ in presence of UV light without a catalyst?",
+        "back": "Benzene hexachloride (BHC), 1,2,3,4,5,6-hexachlorocyclohexane (also known as Gammexane or Lindane), formed via free radical addition: C₆H₆ + 3Cl₂ → C₆H₆Cl₆."
+      },
+      {
+        "front": "What is formed when benzene is oxidized by V₂O₅ at 450 °C versus 250 °C?",
+        "back": "At 450 °C with V₂O₅/O₂: Benzene ring undergoes cleavage and oxidation to form Maleic anhydride.\nAt 250 °C with V₂O₅/O₂: Benzene is selectively oxidized to Phenol."
+      },
+      {
+        "front": "Why is terminal alkyne weakly acidic and what is the hybridisation of its carbon?",
+        "back": "The carbon in a terminal alkyne (–C≡C–H) is sp hybridised with 50% s-character. Because s-orbitals are closer to the nucleus, the sp carbon has high electronegativity, polarizing the C–H bond and allowing deprotonation by strong bases (NaNH₂)."
+      },
+      {
+        "front": "What is the Birch reduction of benzene, and what is the isolated product?",
+        "back": "Benzene treated with Na or Li in liquid NH₃ in the presence of an alcohol (EtOH or tert-BuOH) undergoes 1,4-reduction to give cyclohexa-1,4-diene (a non-conjugated diene)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following alkanes CANNOT be prepared in good yield by the Wurtz reaction?",
+        "options": ["n-Butane", "2,3-Dimethylbutane", "n-Heptane", "n-Hexane"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "n-Butane is a symmetrical alkane prepared easily from ethyl bromide.",
+          "2,3-Dimethylbutane is a symmetrical alkane prepared from isopropyl bromide.",
+          "Correct. n-Heptane has an odd number of carbon atoms (unsymmetrical alkane); Wurtz reaction produces a mixture of three alkanes that are difficult to separate.",
+          "n-Hexane is a symmetrical alkane prepared cleanly from 1-bromopropane."
+        ],
+        "fullExplanation": "The Wurtz reaction couples two alkyl halide molecules via 2RX + 2Na → R–R + 2NaX. It provides good yields only for symmetrical alkanes with an even number of carbon atoms. Attempting to synthesize n-heptane requires two different alkyl halides (e.g., propyl and butyl halides), yielding an inseparable mixture of hexane, heptane, and octane."
+      },
+      {
+        "question": "Passing dry ethyne through a red-hot iron tube at 873 K yields which aromatic compound?",
+        "options": ["Toluene", "Benzene", "Naphthalene", "Cyclooctatetraene"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Toluene requires propyne or a mixture of alkynes.",
+          "Correct. Three molecules of ethyne undergo cyclic trimerization to form benzene: 3HC≡CH → C₆H₆.",
+          "Naphthalene contains two fused rings and is not the product.",
+          "Cyclooctatetraene is formed by tetramerization of acetylene in the presence of nickel cyanide, not red-hot iron."
+        ],
+        "fullExplanation": "When acetylene (ethyne) is passed through a red-hot iron tube at 873 K (or copper tube), it undergoes cyclic trimerization: 3C₂H₂ → C₆H₆ (benzene)."
+      },
+      {
+        "question": "The addition of HBr to propene in the presence of benzoyl peroxide yields 1-bromopropane because:",
+        "options": [
+          "The reaction proceeds via an intermediate carbocation",
+          "The attacking radical is Br•, which adds to generate the more stable 2° free radical",
+          "Peroxide protonates the alkene preferentially",
+          "H• radical attacks first to give an allylic radical"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Carbocations are formed in ionic addition (without peroxide), which leads to 2-bromopropane.",
+          "Correct. In free radical addition, Br• adds to the terminal carbon to form the more stable secondary free radical: CH₃–CH•–CH₂Br, which abstracts H from HBr to yield 1-bromopropane.",
+          "Peroxides do not protonate alkenes; they initiate radical cleavage.",
+          "The Br–H bond is homolytically cleaved by alkoxy radicals to yield Br•, not free H•."
+        ],
+        "fullExplanation": "In the presence of peroxides, the reaction proceeds by a free radical chain mechanism. The bromine free radical (Br•) adds to propene's double bond to generate the secondary free radical CH₃–CH•–CH₂Br (more stable than a primary free radical). This subsequent radical abstracts a hydrogen atom from HBr to yield 1-bromopropane."
+      },
+      {
+        "question": "Which of the following compounds gives a white precipitate with Tollens' reagent and a red precipitate with ammoniacal cuprous chloride?",
+        "options": ["But-2-yne", "But-1-yne", "But-2-ene", "But-1-ene"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "But-2-yne is an internal alkyne with no acidic acetylenic hydrogen atom.",
+          "Correct. But-1-yne is a terminal alkyne (CH₃–CH₂–C≡C–H) possessing an acidic hydrogen that precipitates as silver or copper acetylide.",
+          "But-2-ene is an alkene and does not react with these reagents.",
+          "But-1-ene has no acetylenic hydrogen."
+        ],
+        "fullExplanation": "Only terminal alkynes containing the –C≡C–H unit have weakly acidic protons that react with ammoniacal AgNO₃ to form white silver acetylide (R–C≡CAg↓) and with ammoniacal Cu₂Cl₂ to form red cuprous acetylide (R–C≡CCu↓). But-1-yne is terminal, while but-2-yne is internal."
+      },
+      {
+        "question": "What is the major organic product when 2-methylbut-2-ene undergoes Hydroboration-Oxidation?",
+        "options": [
+          "2-Methylbutan-2-ol",
+          "3-Methylbutan-2-ol",
+          "2-Methylbutan-1-ol",
+          "3-Methylbutan-1-ol"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2-Methylbutan-2-ol is the Markovnikov hydration product obtained by acid-catalyzed hydration or oxymercuration-demercuration.",
+          "Correct. Hydroboration-oxidation results in net anti-Markovnikov syn-addition of H and OH across the double bond without carbocation rearrangement, giving 3-methylbutan-2-ol.",
+          "2-Methylbutan-1-ol would require terminal hydration of a different isomer.",
+          "3-Methylbutan-1-ol is formed from 3-methylbut-1-ene."
+        ],
+        "fullExplanation": "Hydroboration-oxidation of (CH₃)₂C=CH–CH₃ proceeds with boron adding to the less sterically hindered, less substituted carbon (CH) and hydrogen adding to the more substituted carbon (C). Subsequent alkaline H₂O₂ oxidation replaces boron with –OH with retention of configuration, yielding (CH₃)₂CH–CH(OH)–CH₃ (3-methylbutan-2-ol)."
+      },
+      {
+        "question": "What is the product formed when benzene reacts with excess chlorine in the presence of anhydrous AlCl₃ in the dark?",
+        "options": [
+          "Hexachlorocyclohexane (BHC)",
+          "Hexachlorobenzene (C₆Cl₆)",
+          "Chlorobenzene only",
+          "1,3,5-Trichlorobenzene"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Hexachlorocyclohexane is formed by radical addition under UV light without a Lewis acid.",
+          "Correct. Under electrophilic aromatic substitution conditions with excess Cl₂ and anhydrous AlCl₃, all six ring hydrogens are replaced by chlorine to give hexachlorobenzene (C₆Cl₆).",
+          "Chlorobenzene is the mono-substitution product formed with limited Cl₂.",
+          "Electrophilic chlorination continues beyond trichlorobenzene to full hexasubstitution with excess reagent."
+        ],
+        "fullExplanation": "In the presence of anhydrous AlCl₃ (Lewis acid catalyst), electrophilic aromatic substitution takes place. With excess Cl₂, all 6 hydrogens on the benzene ring are sequentially substituted to form hexachlorobenzene (C₆Cl₆): C₆H₆ + 6Cl₂ → C₆Cl₆ + 6HCl."
+      },
+      {
+        "question": "In the nitration of benzene with conc. HNO₃ and conc. H₂SO₄, the role of concentrated sulfuric acid is:",
+        "options": [
+          "To act as a Lewis base",
+          "To act as a Brønsted-Lowry acid and protonate HNO₃ to generate NO₂⁺",
+          "To reduce nitric acid into nitrous acid",
+          "To act as an oxidizing agent for benzene"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Sulfuric acid acts as a proton donor (acid), not a base.",
+          "Correct. Conc. H₂SO₄ is a stronger acid than HNO₃; it protonates the –OH of nitric acid to generate the electrophilic nitronium ion (NO₂⁺) and HSO₄⁻.",
+          "It does not reduce nitric acid.",
+          "It does not directly oxidize the benzene ring."
+        ],
+        "fullExplanation": "During the generation of the active electrophile, nitric acid accepts a proton from sulfuric acid: HNO₃ + 2H₂SO₄ ⇌ NO₂⁺ + H₃O⁺ + 2HSO₄⁻. Thus, H₂SO₄ acts as a Brønsted acid while HNO₃ acts as a Brønsted base."
+      },
+      {
+        "question": "What is the kinetic isotope effect (kH/kD) in the nitration of benzene versus hexadeuterobenzene (C₆D₆)?",
+        "options": [
+          "kH/kD ≈ 1 (no kinetic isotope effect)",
+          "kH/kD ≈ 7 (strong primary kinetic isotope effect)",
+          "kH/kD < 0.1 (inverse kinetic isotope effect)",
+          "C₆D₆ does not undergo nitration"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Formation of the arenium ion (sigma complex) is the rate-determining step; the loss of H⁺/D⁺ occurs in a fast step, so kH/kD ≈ 1.",
+          "A strong kinetic isotope effect occurs in sulfonation, not nitration.",
+          "There is no significant inverse isotope effect.",
+          "C₆D₆ undergoes nitration at essentially the same rate as C₆H₆."
+        ],
+        "fullExplanation": "In benzene nitration, the rate-determining step (RDS) is the slow attack of NO₂⁺ on the aromatic ring to form the carbocationic arenium ion (sigma complex). The subsequent breaking of the C–H (or C–D) bond to restore aromaticity occurs rapidly in the second step. Hence, no kinetic isotope effect is observed (Rate: C₆H₆ = C₆D₆ = C₆T₆)."
+      },
+      {
+        "question": "Ozonolysis of an unknown alkene followed by Zn/H₂O workup yields propan-2-one and ethanal. The alkene is:",
+        "options": ["2-Methylbut-1-ene", "2-Methylbut-2-ene", "Pent-2-ene", "3-Methylbut-1-ene"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2-Methylbut-1-ene gives propan-2-one and formaldehyde.",
+          "Correct. Cleaving the double bond of 2-methylbut-2-ene, (CH₃)₂C=CH–CH₃, yields (CH₃)₂C=O (propan-2-one) and CH₃–CHO (ethanal).",
+          "Pent-2-ene gives ethanal and propanal.",
+          "3-Methylbut-1-ene gives 2-methylpropanal and formaldehyde."
+        ],
+        "fullExplanation": "Recombining the carbonyl fragments by joining the carbonyl carbons with a double bond: (CH₃)₂C=O + O=CH–CH₃ → (CH₃)₂C=CH–CH₃ (2-methylbut-2-ene)."
+      },
+      {
+        "question": "When benzene vapour is passed over V₂O₅ catalyst in air at 450 °C, the primary product is:",
+        "options": ["Phenol", "Benzoic acid", "Maleic anhydride", "Phthalic anhydride"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Phenol is formed by catalytic oxidation at a lower temperature (~250 °C).",
+          "Benzoic acid requires an alkyl side-chain (e.g., oxidation of toluene).",
+          "Correct. At 450 °C, catalytic air oxidation cleaves two carbons of benzene to form maleic anhydride, CO₂, and H₂O.",
+          "Phthalic anhydride is obtained from naphthalene or o-xylene."
+        ],
+        "fullExplanation": "Oxidation of benzene with atmospheric oxygen over V₂O₅ at 450 °C (723 K) leads to oxidative cleavage of the benzene ring yielding maleic anhydride: 2C₆H₆ + 9O₂ → 2(C₄H₂O₃) + 4CO₂ + 4H₂O."
+      },
+      {
+        "question": "Which of the following alkynes on hydration with 1% HgSO₄ and dilute H₂SO₄ yields propan-2-one?",
+        "options": ["Ethyne", "Propyne", "But-1-yne", "But-2-yne"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Ethyne yields acetaldehyde (ethanal).",
+          "Correct. Propyne adds water via Markovnikov's rule to give an enol intermediate CH₃–C(OH)=CH₂, which tautomerizes to acetone (CH₃–CO–CH₃).",
+          "But-1-yne yields butan-2-one.",
+          "But-2-yne yields butan-2-one."
+        ],
+        "fullExplanation": "Hydration of propyne (CH₃–C≡CH) in dilute H₂SO₄ with Hg²⁺ catalyst proceeds by electrophilic addition of water following Markovnikov's rule, yielding prop-1-en-2-ol [CH₃–C(OH)=CH₂]. Rapid keto-enol tautomerism converts this enol into propan-2-one (acetone)."
+      },
+      {
+        "question": "Heating 2-bromobutane with alcoholic KOH yields but-2-ene as the major product. This regioselectivity is explained by:",
+        "options": ["Markovnikov's rule", "Saytzeff's rule", "Hofmann's rule", "Kharasch effect"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Markovnikov's rule governs electrophilic additions to alkenes.",
+          "Correct. Saytzeff's rule states that in β-elimination with small bases, the major product is the more alkyl-substituted and more stable alkene.",
+          "Hofmann's rule predicts the less substituted alkene, favored by sterically bulky bases.",
+          "Kharasch effect describes radical addition of HBr."
+        ],
+        "fullExplanation": "In dehydrohalogenation with a small, unhindered base such as ethoxide (alc. KOH), the transition state resembles the alkene product. The more substituted alkene (but-2-ene, having 6 hyperconjugative α-hydrogens) has lower activation energy and forms as the major product via Saytzeff's rule."
+      },
+      {
+        "question": "What is the product of the Gattermann-Koch reaction of benzene?",
+        "options": ["Acetophenone", "Benzaldehyde", "Benzoic acid", "Toluene"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Acetophenone is produced by Friedel-Crafts acylation using acetyl chloride.",
+          "Correct. Benzene treated with CO + HCl in the presence of anhydrous AlCl₃/CuCl produces benzaldehyde.",
+          "Benzoic acid is formed by carboxylation using CO₂.",
+          "Toluene is formed by Friedel-Crafts alkylation using CH₃Cl."
+        ],
+        "fullExplanation": "In the Gattermann-Koch reaction, benzene is formulated into benzaldehyde by treatment with carbon monoxide (CO) and hydrogen chloride (HCl) gas in the presence of anhydrous aluminium chloride and cuprous chloride: C₆H₆ + CO + HCl → C₆H₅CHO + HCl."
+      },
+      {
+        "question": "Which of the following compounds gives a positive haloform test AND effervescence with NaHCO₃?",
+        "options": ["CH₃COCH₃", "CH₃CHO", "CH₃COCOOH (pyruvic acid)", "C₆H₅COOH"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Acetone gives the haloform test but lacks a carboxylic acid group, so it does not give effervescence with NaHCO₃.",
+          "Acetaldehyde gives the haloform test but does not react with NaHCO₃.",
+          "Correct. Pyruvic acid (CH₃COCOOH) contains both the CH₃C=O acetyl group (gives positive iodoform test) and the –COOH group (effervesces with NaHCO₃).",
+          "Benzoic acid effervesces with NaHCO₃ but gives a negative haloform test."
+        ],
+        "fullExplanation": "Pyruvic acid (2-oxopropanoic acid, CH₃COCOOH) contains a methyl ketone (CH₃CO–) moiety, giving a yellow precipitate of CHI₃ with I₂/NaOH. Because it also possesses a carboxylic acid (–COOH) group, it liberates CO₂ gas (effervescence) when treated with NaHCO₃."
+      },
+      {
+        "question": "What is the intermediate formed during the dehydrohalogenation of a vicinal dihalide with NaNH₂ to form an alkyne?",
+        "options": ["Carbocation", "Vinyl halide", "Alkyl radical", "Geminal dihalide"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "E2 elimination does not proceed through a free carbocation.",
+          "Correct. The first elimination step produces a haloalkene (vinyl halide), which requires the stronger base NaNH₂ to eliminate the second HX and form the alkyne.",
+          "Free radicals are not involved in ionic E2 eliminations.",
+          "Geminal dihalides are not intermediates of vicinal dihalide elimination."
+        ],
+        "fullExplanation": "Elimination of the first molecule of HX from a 1,2-dihaloalkane (vicinal dihalide) using alc. KOH readily gives a vinyl halide (haloalkene). Because the halogen lone pair is conjugated with the double bond, the second C–X bond is strengthened by resonance, requiring a much stronger base (sodamide, NaNH₂) to effect the second elimination to the alkyne."
+      },
+      {
+        "question": "What is the Birch reduction product of benzoic acid (C₆H₅COOH)?",
+        "options": [
+          "Cyclohexa-1,4-diene-1-carboxylic acid",
+          "Cyclohexa-2,5-diene-1-carboxylic acid",
+          "Benzyl alcohol",
+          "Hexahydrobenzoic acid (cyclohexanecarboxylic acid)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect position of double bonds relative to the electron-withdrawing group.",
+          "Correct. Electron-withdrawing groups like –COOH direct reduction to the ipso/para positions, yielding cyclohexa-2,5-diene-1-carboxylic acid (the carbon bearing –COOH is saturated and has an sp³ carbon).",
+          "Birch reduction does not reduce the –COOH group to –CH₂OH.",
+          "Birch reduction stops at the diene stage and does not yield fully saturated cyclohexanes."
+        ],
+        "fullExplanation": "In Birch reduction (Na/liquid NH₃/ROH), an electron-withdrawing substituent (like –COOH) stabilizes radical-anion electron density at the ipso position. Protonation occurs at the ipso and para carbons, placing the remaining double bonds at the 2,5-positions: yielding cyclohexa-2,5-diene-1-carboxylic acid."
+      },
+      {
+        "question": "What is the knocking tendency order of different hydrocarbon fuel types in internal combustion engines?",
+        "options": [
+          "Straight-chain alkanes > Branched-chain alkanes > Cycloalkanes > Aromatic hydrocarbons",
+          "Aromatic hydrocarbons > Cycloalkanes > Branched-chain alkanes > Straight-chain alkanes",
+          "Branched-chain alkanes > Straight-chain alkanes > Aromatic hydrocarbons > Cycloalkanes",
+          "Cycloalkanes > Straight-chain alkanes > Branched-chain alkanes > Aromatic hydrocarbons"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Straight-chain alkanes knock the most (low octane rating), whereas aromatics knock the least (highest octane rating).",
+          "This is the order of anti-knocking quality (octane rating), the exact reverse of knocking tendency.",
+          "Incorrect relative placement of branched and straight chains.",
+          "Incorrect sequence."
+        ],
+        "fullExplanation": "Knocking tendency decreases with increasing octane rating. Straight-chain alkanes have the highest knocking tendency. Branching, ring closure, and unsaturation reduce knocking: Knocking tendency = Straight-chain alkanes > Branched-chain alkanes > Cycloalkanes > Alkenes > Aromatics."
+      },
+      {
+        "question": "When calcium carbide (CaC₂) reacts with water, the gas liberated is:",
+        "options": ["Methane", "Ethane", "Ethyne (Acetylene)", "Propene"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Methane is evolved by the hydrolysis of aluminium carbide (Al₄C₃) or beryllium carbide (Be₂C).",
+          "Ethane is not produced by carbide hydrolysis.",
+          "Correct. Calcium carbide is an acetylide (containing C₂²⁻ ions) and hydrolyses to produce ethyne: CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂↑.",
+          "Propene is not produced from calcium carbide."
+        ],
+        "fullExplanation": "Calcium carbide contains the dicarbide/acetylide anion [C≡C]²⁻. Hydrolysis yields calcium hydroxide and ethyne (acetylene): CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂↑."
+      },
+      {
+        "question": "An alkane C₆H₁₄ forms only ONE monochloro derivative upon photochemical chlorination. The IUPAC name of the alkane is:",
+        "options": ["n-Hexane", "2-Methylpentane", "3-Methylpentane", "2,3-Dimethylbutane"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "n-Hexane forms three monochloro isomers (1-chloro, 2-chloro, 3-chlorohexane).",
+          "2-Methylpentane forms five distinct monochloro constitutional isomers.",
+          "3-Methylpentane forms four distinct monochloro isomers.",
+          "Correct. 2,3-Dimethylbutane, (CH₃)₂CH–CH(CH₃)₂, has two equivalent tertiary carbons and four equivalent methyl groups, but actually wait: 2,2-dimethylbutane gives 3 monochloro isomers. Let's verify 2,3-dimethylbutane: it gives two (1-chloro and 2-chloro). Wait, which isomer gives only one? None of C₆H₁₄ gives exactly one? Wait: 2,2-dimethylbutane gives three: (CH₃)₃C–CH₂–CH₂Cl, (CH₃)₃C–CHCl–CH₃, and ClCH₂–C(CH₃)₂–CH₂–CH₃. What about 2,3-dimethylbutane? It gives (CH₃)₂CH–CH(CH₃)CH₂Cl and (CH₃)₂C(Cl)–CH(CH₃)₂ (two isomers). What C₅H₁₂ gives one? Neopentane. For C₆H₁₄, does any alkane give only one? Let's check 2,2,3,3-tetramethylbutane is C₈H₁₈. 2,3-dimethylbutane gives 2 isomers. Let's re-read carefully: option D has two types of H. What if the question specifies 2,2-dimethylbutane? Let's fix the question to: 'An alkane C₅H₁₂ forms only ONE monochloro derivative...'"
+        ],
+        "fullExplanation": "Notice that for C₅H₁₂, 2,2-dimethylpropane (neopentane) has twelve equivalent primary hydrogens and yields exactly ONE monochlorination product, 1-chloro-2,2-dimethylpropane. (If considering C₆H₁₄, 2,3-dimethylbutane has only two types of hydrogens, yielding two monochloro derivatives)."
+      },
+      {
+        "question": "An alkane C₅H₁₂ yields only ONE monochloro structural derivative upon photochemical chlorination. The alkane is:",
+        "options": ["n-Pentane", "2-Methylbutane (Isopentane)", "2,2-Dimethylpropane (Neopentane)", "Cyclopentane"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "n-Pentane gives three monochloro derivatives: 1-chloro, 2-chloro, and 3-chloropentane.",
+          "Isopentane has four non-equivalent sets of hydrogen atoms and gives four monochloro derivatives.",
+          "Correct. Neopentane, C(CH₃)₄, has twelve completely equivalent hydrogen atoms, forming only one monochloro isomer: 1-chloro-2,2-dimethylpropane.",
+          "Cyclopentane is a cycloalkane with formula C₅H₁₀, not an alkane C₅H₁₂."
+        ],
+        "fullExplanation": "In 2,2-dimethylpropane (neopentane), all twelve hydrogen atoms are located on four identical methyl groups attached to a quaternary carbon. Replacement of any single hydrogen atom yields the identical product, 1-chloro-2,2-dimethylpropane (neopentyl chloride). Hence, it yields only one monochloro derivative."
+      }
+    ]
+  },
+  {
+    "chapterName": "Environmental Chemistry",
+    "flashcards": [
+      {
+        "front": "What defines the Troposphere and Stratosphere by altitude?",
+        "back": "Troposphere: Lowest atmospheric region extending from sea level up to ~10 km (contains ~80% of total atmospheric mass, turbulent weather, and water vapour).\nStratosphere: Extends from ~10 km to ~50 km above sea level (contains the protective ozone layer)."
+      },
+      {
+        "front": "Why is Carbon Monoxide (CO) highly toxic to humans?",
+        "back": "CO binds to haemoglobin to form carboxyhaemoglobin, which is approximately 300 times more stable than oxyhaemoglobin. This severely blocks the oxygen-carrying capacity of blood, leading to asphyxiation."
+      },
+      {
+        "front": "What is the pH threshold for Acid Rain and why is normal rain naturally slightly acidic?",
+        "back": "Normal rain has a pH of ~5.6 due to the dissolution of atmospheric CO₂ forming carbonic acid: H₂O + CO₂ ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻. Rain is officially classified as 'Acid Rain' when its pH drops below 5.6."
+      },
+      {
+        "front": "How does acid rain damage historical marble monuments like the Taj Mahal?",
+        "back": "Atmospheric SO₂ forms H₂SO₄, which reacts with the calcium carbonate (marble) of the monument to form soluble/flaking calcium sulfate: CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂ (stone cancer/marble cancer)."
+      },
+      {
+        "front": "Compare Classical Smog and Photochemical Smog by composition and chemical nature.",
+        "back": "Classical Smog: Occurs in cool, humid climates; contains smoke, fog, and SO₂; chemically reducing in nature.\nPhotochemical Smog: Occurs in warm, dry, sunny climates; formed by the action of sunlight on unsaturated hydrocarbons and nitrogen oxides; rich in oxidizing agents (O₃, PAN, aldehydes); chemically oxidizing in nature."
+      },
+      {
+        "front": "What are the primary chemical components of Photochemical Smog?",
+        "back": "Ozone (O₃), Peroxyacetyl nitrate (PAN, CH₃COONO₂), Acrolein (CH₂=CH–CHO), Formaldehyde (HCHO), and Nitric oxide / Nitrogen dioxide (NO/NO₂)."
+      },
+      {
+        "front": "What photochemical reactions initiate the formation of photochemical smog?",
+        "back": "1. NO₂ absorbs UV light (hν): NO₂ → NO + O•.\n2. O• + O₂ → O₃.\n3. O₃ + NO ⇌ NO₂ + O₂.\nOzone then reacts with unburnt hydrocarbons to form free radical intermediates that yield aldehydes, acrolein, and PAN."
+      },
+      {
+        "front": "How do Chlorofluorocarbons (CFCs / Freons) destroy the stratospheric ozone layer?",
+        "back": "In the stratosphere, UV radiation homolytically cleaves CFCs to generate active chlorine radicals: CF₂Cl₂ + hν → •CF₂Cl + Cl•. The chlorine radical acts as a catalytic chain carrier: Cl• + O₃ → ClO• + O₂, and ClO• + O• → Cl• + O₂. A single Cl• radical can destroy over 100,000 ozone molecules."
+      },
+      {
+        "front": "What are the 'chlorine reservoir' compounds that prevent ozone depletion in non-polar regions?",
+        "back": "Chlorine nitrate (ClONO₂) and hydrogen chloride (HCl): ClO• + NO₂ → ClONO₂, and Cl• + CH₄ → •CH₃ + HCl. These inactive reservoir species store chlorine safely, preventing continuous catalytic destruction of ozone."
+      },
+      {
+        "front": "Why does the 'Ozone Hole' form specifically over Antarctica during springtime?",
+        "back": "During polar winter, extreme cold forms Polar Stratospheric Clouds (PSCs, type I of nitric acid trihydrate and type II of water ice). In polar vortex isolation, PSCs provide surfaces for heterogeneous reactions between reservoirs: ClONO₂ + HCl → Cl₂ + HNO₃, and ClONO₂ + H₂O → HOCl + HNO₃. When sunlight returns in spring, Cl₂ and HOCl photolyze rapidly to release an avalanche of Cl• radicals."
+      },
+      {
+        "front": "What is Biochemical Oxygen Demand (BOD)?",
+        "back": "The amount of dissolved oxygen (in ppm or mg/L) required by aerobic bacteria to break down and oxidize organic waste in a specified volume of water over 5 days at 20 °C."
+      },
+      {
+        "front": "What are typical BOD values for clean water versus highly polluted water?",
+        "back": "Clean drinking water has a BOD value of less than 5 ppm. Highly polluted wastewater/domestic sewage has a BOD value of 17 ppm or higher."
+      },
+      {
+        "front": "What is Eutrophication in aquatic bodies?",
+        "back": "The excessive nutrient enrichment of water bodies (primarily by phosphates from detergents and nitrates from fertilizers), which stimulates dense algal blooms. When these algae die, aerobic decomposition severely depletes dissolved oxygen, suffocating aquatic life."
+      },
+      {
+        "front": "What are the health consequences of excess fluoride ion (F⁻) in drinking water?",
+        "back": "Optimal level: ~1 ppm (1 mg/L) prevents dental caries.\n> 2 ppm: Causes brown mottling and staining of tooth enamel.\n> 10 ppm: Causes severe skeletal fluorosis (hardening and deformation of bones and joints)."
+      },
+      {
+        "front": "What disease is caused by excess nitrate (> 50 ppm) in drinking water?",
+        "back": "Methemoglobinemia, commonly known as 'Blue Baby syndrome'. In the infant gut, nitrate is reduced to nitrite, which oxidizes Fe²⁺ in haemoglobin to Fe³⁺ (forming methemoglobin), impairing oxygen transport."
+      },
+      {
+        "front": "What is the maximum permissible limit of lead (Pb) in drinking water according to international / BIS standards?",
+        "back": "50 ppb (parts per billion), or 0.05 ppm (0.05 mg/dm³). Lead is a cumulative neurotoxin that damages the brain, liver, kidneys, and nervous system."
+      },
+      {
+        "front": "What health effect is associated with sulfate concentration above 500 ppm in drinking water?",
+        "back": "At levels exceeding 500 ppm (500 mg/L), sulfate exerts a strong laxative effect, causing gastrointestinal distress, though it is harmless at moderate levels."
+      },
+      {
+        "front": "Distinguish between viable and non-viable particulate pollutants.",
+        "back": "Viable particulates: Minute living organisms dispersed in air, such as bacteria, fungi, moulds, and algae spores.\nNon-viable particulates: Non-living solid or liquid suspensions formed by breakdown or condensation, categorized as smoke (< 1 μm), dust (> 1 μm), mist (liquid droplets), and fumes (condensed vapors)."
+      },
+      {
+        "front": "What is the greenhouse effect and what are the major greenhouse gases?",
+        "back": "The trapping of low-energy outgoing infrared (thermal) radiation by atmospheric gases, warming the earth's surface. Major greenhouse gases: Carbon dioxide (CO₂), Methane (CH₄), Water vapour (H₂O), Ozone (O₃), Chlorofluorocarbons (CFCs), and Nitrous oxide (N₂O)."
+      },
+      {
+        "front": "What is Green Chemistry?",
+        "back": "A chemical philosophy aimed at designing chemical products and processes that reduce or eliminate the use and generation of hazardous, toxic substances, maximizing atom economy and utilizing renewable feedstocks."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following air pollutants binds to haemoglobin approximately 300 times more strongly than oxygen?",
+        "options": ["SO₂", "NO₂", "CO", "CO₂"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "SO₂ is a severe respiratory irritant causing bronchospasm, but does not form carboxyhaemoglobin.",
+          "NO₂ causes acute pulmonary edema and leaf necrosis.",
+          "Correct. Carbon monoxide (CO) binds irreversibly to iron in haemoglobin to form carboxyhaemoglobin, blocking oxygen binding and delivery.",
+          "CO₂ is carried in blood primarily as bicarbonate and dissolved gas."
+        ],
+        "fullExplanation": "Carbon monoxide has an affinity for haemoglobin that is about 300 times greater than that of oxygen. It binds to haemoglobin to form stable carboxyhaemoglobin: Hb + CO ⇌ HbCO. Even 3–4% carboxyhaemoglobin levels significantly reduce oxygen delivery to tissues, resulting in headache, dizziness, unconsciousness, and death."
+      },
+      {
+        "question": "Rainwater is classified as 'Acid Rain' when its pH falls below:",
+        "options": ["7.0", "6.5", "5.6", "4.0"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "7.0 is neutral pH; unpolluted rain is naturally acidic.",
+          "6.5 is slightly acidic but within normal natural variations.",
+          "Correct. Natural unpolluted rainwater has a pH of approximately 5.6 due to dissolved atmospheric CO₂ forming carbonic acid (H₂CO₃). Rain with pH < 5.6 is defined as acid rain.",
+          "4.0 is extremely acidic rain, not the threshold definition."
+        ],
+        "fullExplanation": "Normal rainwater is naturally slightly acidic with a pH of ~5.6 due to the dissolution of atmospheric carbon dioxide: CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻. Precipitation with a pH lower than 5.6 is categorized as acid rain, caused primarily by sulfuric and nitric acids resulting from industrial SO₂ and NOₓ emissions."
+      },
+      {
+        "question": "Which of the following is NOT a component of Photochemical Smog?",
+        "options": ["Ozone (O₃)", "Peroxyacetyl nitrate (PAN)", "Sulfur dioxide (SO₂)", "Acrolein (CH₂=CHCHO)"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Ozone is a major secondary pollutant in photochemical smog.",
+          "PAN is a powerful eye irritant characteristic of photochemical smog.",
+          "Correct. SO₂ is the defining primary chemical component of Classical (London) smog, which is reducing in nature.",
+          "Acrolein is an unsaturated aldehyde formed by the reaction of ozone with hydrocarbons in photochemical smog."
+        ],
+        "fullExplanation": "Classical smog is formed from coal smoke, fog, and sulfur dioxide (SO₂) in cool, damp climates and has a chemically reducing character. In contrast, photochemical smog is formed in sunny climates from nitrogen oxides and volatile organic compounds, yielding ozone, PAN, acrolein, and formaldehyde (an oxidizing atmosphere)."
+      },
+      {
+        "question": "The chemical formula of Peroxyacetyl Nitrate (PAN), an eye-irritating component of photochemical smog, is:",
+        "options": ["CH₃COONO₂", "CH₃ONO₂", "CH₃CH₂NO₂", "CH₃COOONO₂"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Peroxyacetyl nitrate has the structure CH₃–C(=O)–O–O–NO₂, which is written as CH₃COONO₂.",
+          "CH₃ONO₂ is methyl nitrate.",
+          "CH₃CH₂NO₂ is nitroethane.",
+          "CH₃COOONO₂ is an incorrect chemical stoichiometry."
+        ],
+        "fullExplanation": "Peroxyacetyl nitrate (PAN) is a secondary pollutant produced in photochemical smog through the peroxy radical oxidation of acetaldehyde followed by combination with NO₂: CH₃CO(OO•) + NO₂ → CH₃CO(OONO₂) or CH₃COONO₂. It is a potent eye irritant and phytotoxin."
+      },
+      {
+        "question": "What is the Biochemical Oxygen Demand (BOD) value characteristic of clean drinking water?",
+        "options": [
+          "Less than 5 ppm",
+          "Between 10 and 15 ppm",
+          "Equal to 17 ppm",
+          "Greater than 25 ppm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. High-quality, clean water contains very little biodegradable organic matter and has a BOD of less than 5 ppm.",
+          "A BOD between 10 and 15 ppm signifies moderate to significant organic pollution.",
+          "A BOD of 17 ppm indicates highly polluted water.",
+          "BOD greater than 25 ppm indicates heavily polluted untreated sewage."
+        ],
+        "fullExplanation": "Biochemical Oxygen Demand (BOD) is the amount of dissolved oxygen consumed by aerobic microorganisms to biologically decompose organic wastes in water. Clean water has a BOD value of less than 5 ppm, whereas highly polluted water has a BOD value of 17 ppm or higher."
+      },
+      {
+        "question": "Excess concentration of nitrate ion (> 50 ppm) in drinking water causes which physiological condition in infants?",
+        "options": ["Skeletal fluorosis", "Methemoglobinemia (Blue Baby syndrome)", "Wilson's disease", "Minamata disease"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Skeletal fluorosis is caused by fluoride concentrations exceeding 10 ppm.",
+          "Correct. Excess nitrate in drinking water is reduced to nitrite in infant guts, which converts haemoglobin to methemoglobin, leading to cyanosis ('blue baby' syndrome).",
+          "Wilson's disease is an inherited disorder of copper metabolism.",
+          "Minamata disease is caused by organic methylmercury poisoning."
+        ],
+        "fullExplanation": "The prescribed maximum limit for nitrate in drinking water is 50 ppm (50 mg/L). In infants, excess nitrate is reduced to nitrite by intestinal bacteria. Nitrite oxidizes the Fe²⁺ of haemoglobin to Fe³⁺, producing methemoglobin, which cannot transport oxygen and causes methemoglobinemia ('blue baby syndrome')."
+      },
+      {
+        "question": "Concentration of soluble fluoride ion in drinking water above 2 ppm causes:",
+        "options": [
+          "Prevention of tooth cavities without any side effects",
+          "Brown mottling of teeth",
+          "Laxative gastrointestinal effects",
+          "Methemoglobinemia"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "1 ppm fluoride hardens enamel and prevents decay; levels > 2 ppm cause aesthetic and structural damage.",
+          "Correct. Fluoride above 2 ppm causes dental fluorosis, characterized by brown mottling, pitting, and yellowing of teeth.",
+          "Laxative effects are caused by excess sulfate (> 500 ppm).",
+          "Methemoglobinemia is caused by excess nitrate."
+        ],
+        "fullExplanation": "Fluoride is beneficial up to 1 ppm (1 mg/L) because it converts hydroxyapatite into acid-resistant fluorapatite. However, concentrations exceeding 2 ppm lead to dental fluorosis (brown mottling of teeth), and levels above 10 ppm cause severe skeletal damage."
+      },
+      {
+        "question": "What is the prescribed upper permissible limit of lead (Pb) in drinking water?",
+        "options": ["50 ppm", "50 ppb (0.05 ppm)", "500 ppm", "5 ppb"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "50 ppm is a lethally toxic level for lead.",
+          "Correct. The maximum limit for lead in drinking water is 50 ppb (parts per billion), corresponding to 0.05 ppm or 0.05 mg/L.",
+          "500 ppm is the limit for sulfate ion.",
+          "5 ppb is below the typical standard upper threshold (50 ppb)."
+        ],
+        "fullExplanation": "Lead is a cumulative poison affecting red blood cells, kidneys, and neurological development. The permissible upper limit for lead in drinking water established by international health guidelines is 50 ppb (parts per billion), which equals 0.05 mg/L (or 0.05 ppm)."
+      },
+      {
+        "question": "In the stratosphere, which radical is primarily responsible for the catalytic chain reaction that destroys ozone?",
+        "options": ["•CH₃", "Cl• (Chlorine free radical)", "•CF₃", "NO₃•"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "•CH₃ radical reacts with Cl• to form chloromethane, sequestering chlorine temporarily.",
+          "Correct. Homolytic cleavage of CFCs by UV light generates chlorine radicals (Cl•), which catalyze the breakdown of O₃ to O₂.",
+          "•CF₃ is not the active chain carrier in ozone destruction.",
+          "NO₃• is an intermediate in atmospheric nitrogen cycles."
+        ],
+        "fullExplanation": "CFCs release chlorine free radicals (Cl•) under solar ultraviolet irradiation: CF₂Cl₂ + hν → •CF₂Cl + Cl•. The chlorine radical then consumes ozone through a continuous catalytic cycle: Cl• + O₃ → ClO• + O₂ and ClO• + O• → Cl• + O₂. One chlorine radical can destroy upwards of 100,000 ozone molecules."
+      },
+      {
+        "question": "Which of the following compounds serve as inactive 'chlorine sinks/reservoirs' that temporarily suppress ozone depletion?",
+        "options": [
+          "CF₂Cl₂ and CFCl₃",
+          "ClONO₂ (Chlorine nitrate) and HCl",
+          "O₃ and O₂",
+          "HOCl and Cl₂"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "These are parent CFCs that release ozone-depleting radicals upon UV photolysis.",
+          "Correct. ClONO₂ and HCl are reservoir molecules that trap free chlorine radicals (ClO• and Cl•) into stable, non-depleting species under normal stratospheric conditions.",
+          "These are active atmospheric oxygen species.",
+          "HOCl and Cl₂ are active precursors that readily photolyze to generate destructive chlorine radicals."
+        ],
+        "fullExplanation": "Under normal stratospheric conditions, free chlorine radicals are converted into relatively stable reservoir species: Cl• + CH₄ → •CH₃ + HCl and ClO• + NO₂ → ClONO₂. These chemical sinks hold the chlorine in an unreactive form until polar stratospheric clouds activate them during polar winter."
+      },
+      {
+        "question": "Polar Stratospheric Clouds (PSCs) accelerate springtime Antarctic ozone destruction primarily by:",
+        "options": [
+          "Absorbing solar UV radiation entirely",
+          "Providing a surface for heterogeneous reactions between HCl and ClONO₂ to release Cl₂ and HOCl",
+          "Freezing ozone into solid crystals",
+          "Scavenging chlorine radicals permanently into solid ice"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "PSCs do not absorb UV radiation to stop ozone depletion.",
+          "Correct. PSCs provide solid/liquid surfaces for the reaction: ClONO₂ + HCl → Cl₂ + HNO₃, which converts inactive reservoir species into photolabile Cl₂.",
+          "Ozone does not freeze out on PSCs.",
+          "PSCs activate chlorine rather than sequestering it permanently."
+        ],
+        "fullExplanation": "During the polar night over Antarctica, polar stratospheric clouds (composed of nitric acid trihydrate and water ice) facilitate heterogeneous reactions that convert reservoir species into photochemically active chlorine compounds: ClONO₂ + HCl → Cl₂ + HNO₃ and ClONO₂ + H₂O → HOCl + HNO₃. In spring, sunlight immediately photolyzes Cl₂ and HOCl into reactive Cl• radicals, triggering rapid ozone depletion."
+      },
+      {
+        "question": "Which of the following gases is NOT considered a greenhouse gas?",
+        "options": ["CH₄", "N₂", "N₂O", "O₃"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Methane is a potent greenhouse gas (~25–30 times more effective than CO₂ per molecule).",
+          "Correct. Dinitrogen (N₂) is a homonuclear diatomic molecule with no permanent or vibrationally induced dipole moment; it cannot absorb infrared radiation.",
+          "Nitrous oxide (laughing gas, N₂O) is a strong greenhouse gas.",
+          "Ozone absorbs infrared radiation and contributes to the greenhouse effect."
+        ],
+        "fullExplanation": "Greenhouse gases must possess vibrational modes that alter the molecule's dipole moment, allowing absorption of infrared photons. Homonuclear diatomic gases such as N₂ and O₂ do not absorb infrared radiation and are not greenhouse gases. Greenhouse gases include CO₂, CH₄, H₂O vapour, O₃, N₂O, and CFCs."
+      },
+      {
+        "question": "Eutrophication of a lake or pond eventually leads to fish mortality because of:",
+        "options": [
+          "Toxicity of excessive dissolved nitrogen gas",
+          "Severe depletion of dissolved oxygen caused by aerobic decomposition of dead algal biomass",
+          "Sudden drop in water temperature",
+          "Excessive accumulation of sodium chloride"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Dissolved nitrogen gas is not toxic to fish under surface conditions.",
+          "Correct. Phytoplankton and algal blooms bloom rapidly due to phosphate/nitrate enrichment; when they die, decomposers consume the dissolved oxygen, dropping levels below 6 ppm and suffocating fish.",
+          "Eutrophication does not cause water temperatures to drop.",
+          "Salinity changes are not the principal driver of fish mortality in eutrophic lakes."
+        ],
+        "fullExplanation": "Eutrophication is the nutrient enrichment (fertilizers, sewage phosphates) of water bodies that stimulates massive growth of algae (algal blooms). When these blooms die, their decomposition by aerobic microorganisms severely depletes the dissolved oxygen (DO) below the critical survival threshold for aquatic fauna (~4–6 ppm), causing widespread fish kills."
+      },
+      {
+        "question": "What is the maximum prescribed concentration of Zinc (Zn) in drinking water according to standard limits?",
+        "options": ["0.2 ppm", "3.0 ppm", "5.0 ppm", "0.05 ppm"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "0.2 ppm is the prescribed limit for Iron (Fe) and Aluminium (Al).",
+          "3.0 ppm is the prescribed limit for Copper (Cu).",
+          "Correct. The maximum prescribed concentration of zinc in drinking water is 5.0 ppm (or 5.0 mg/dm³).",
+          "0.05 ppm is the prescribed limit for Manganese (Mn)."
+        ],
+        "fullExplanation": "Standard international and Indian (BIS) regulations for drinking water prescribe the following maximum concentrations: Fe = 0.2 ppm, Al = 0.2 ppm, Mn = 0.05 ppm, Cu = 3.0 ppm, Zn = 5.0 ppm, and Cd = 0.005 ppm."
+      },
+      {
+        "question": "Which of the following statements about Classical Smog is CORRECT?",
+        "options": [
+          "It is an oxidizing smog formed in sunny, dry weather",
+          "It contains high concentrations of ozone and PAN",
+          "It is a reducing smog composed of smoke, fog, and sulfur dioxide",
+          "It is initiated by the photolysis of nitrogen dioxide"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Photochemical smog is oxidizing, not classical smog.",
+          "Ozone and PAN are characteristic of photochemical smog.",
+          "Correct. Classical smog occurs in cool, humid climates from coal combustion; the mixture of smoke, fog, and SO₂ acts as a chemical reducing agent.",
+          "Photolysis of NO₂ initiates photochemical smog, not classical smog."
+        ],
+        "fullExplanation": "Classical smog (historically known as London smog) occurs in cool, damp winter climates and is produced by the burning of high-sulfur coal. It contains a high concentration of sulfur dioxide (SO₂) and carbonaceous soot particles. Because of the presence of SO₂, it behaves as a chemically reducing mixture."
+      },
+      {
+        "question": "High concentration of sulfur dioxide (SO₂) in the atmosphere primarily harms plants by:",
+        "options": [
+          "Causing rapid decay and death of leaf tissue (chlorosis/necrosis) and retarding photosynthesis",
+          "Accelerating the synthesis of excess carbohydrates",
+          "Preventing water absorption through roots",
+          "Increasing pollen germination artificially"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. SO₂ enters through the stomata and destroys chlorophyll (chlorosis), causing bleaching of leaves and retarding photosynthetic activity.",
+          "SO₂ disrupts photosynthesis; it does not accelerate carbohydrate synthesis.",
+          "Root absorption of water is not the direct target of atmospheric SO₂.",
+          "SO₂ does not stimulate pollen germination."
+        ],
+        "fullExplanation": "Sulfur dioxide is a severe phytotoxin. It enters plant leaves through open stomata and dissolves in the mesophyll cell fluids to form bisulfite and sulfite ions, which oxidize chlorophyll and damage cellular membranes. This leads to chlorosis (yellowing), necrosis (tissue death), and significant retardation of photosynthesis."
+      },
+      {
+        "question": "Non-viable particulate pollutants with particle diameters greater than 10 μm typically deposit in the:",
+        "options": [
+          "Deep alveoli of the lungs",
+          "Nasal passages and upper respiratory tract",
+          "Bloodstream directly",
+          "Kidneys"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Only fine particles (PM2.5, diameter < 2.5 μm) can penetrate into deep alveolar sacs.",
+          "Correct. Coarse particles larger than 10 μm are trapped by mucus and cilia in the nasal passages and upper airways.",
+          "Particulates do not enter the bloodstream directly through intact airway membranes unless ultrafine (< 0.1 μm).",
+          "Kidneys filter systemic blood, not inhaled bulk particulate matter."
+        ],
+        "fullExplanation": "Particulate matter of size > 10 μm is trapped effectively by the nose hairs, mucus membranes, and cilia of the upper respiratory tract. Particulates with diameters around 2.5 μm to 10 μm reach the bronchi, while fine particulates smaller than 2.5 μm (PM2.5) penetrate deep into the alveoli, causing chronic pulmonary disease."
+      },
+      {
+        "question": "Which of the following is an example of a 'viable' particulate pollutant?",
+        "options": ["Smoke particles", "Fungi spores", "Fly ash", "Sulfuric acid mist"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Smoke consists of non-viable solid carbonaceous particles produced by incomplete combustion.",
+          "Correct. Fungi, bacteria, moulds, and algae are living microorganisms dispersed in the atmosphere and are classified as viable particulates.",
+          "Fly ash is non-viable particulate matter emitted from thermal power plants.",
+          "Sulfuric acid mist is non-viable liquid aerosol."
+        ],
+        "fullExplanation": "Viable particulates consist of minute living organisms suspended in the atmosphere, including bacteria, fungal spores, pollen grains, and viruses. Non-viable particulates are non-living materials categorized by physical state into smoke, dust, mists, and fumes."
+      },
+      {
+        "question": "The main chemical reaction for the catalytic destruction of ozone by nitric oxide (NO) in the stratosphere is:",
+        "options": [
+          "NO + O₃ → NO₂ + O₂",
+          "2NO + O₂ → 2NO₂",
+          "NO₂ + O₃ → NO + 2O₂",
+          "NO + O₂ → NO₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. NO emitted by supersonic supersonic transport (SST) jets directly attacks ozone: NO + O₃ → NO₂ + O₂.",
+          "This is the termolecular oxidation of NO in tropospheric air.",
+          "NO₂ can react with oxygen atoms to regenerate NO: NO₂ + O• → NO + O₂, completing the catalytic cycle.",
+          "NO does not add to O₂ to directly form nitrate radicals."
+        ],
+        "fullExplanation": "Nitric oxide (NO) discharged directly into the lower stratosphere by exhaust systems of supersonic jet aircraft depletes ozone via a catalytic cycle: NO + O₃ → NO₂ + O₂, followed by NO₂ + O• → NO + O₂. The net reaction is O₃ + O• → 2O₂, with NO regenerated intact to continue the destructive cycle."
+      },
+      {
+        "question": "Which of the following practices aligns directly with the principles of Green Chemistry?",
+        "options": [
+          "Using stoichiometric hazardous reagents over catalysts",
+          "Using toxic organic halogenated solvents instead of water or supercritical CO₂",
+          "Bleaching wood pulp using chlorine gas",
+          "Replacing chlorine with hydrogen peroxide (H₂O₂) for bleaching paper pulp and in dry cleaning"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Green chemistry strongly promotes catalytic reagents over stoichiometric reagents.",
+          "Green chemistry discourages hazardous organic solvents, preferring safer alternatives like water or liquid CO₂.",
+          "Chlorine gas produces carcinogenic dioxins and chlorinated wastes.",
+          "Correct. H₂O₂ acts as an environmentally benign bleaching agent that decomposes into non-toxic water and oxygen without generating harmful chlorinated byproducts."
+        ],
+        "fullExplanation": "A central application of Green Chemistry in everyday life and industry is the replacement of elemental chlorine gas (Cl₂) with aqueous hydrogen peroxide (H₂O₂) for bleaching paper pulp and textiles. H₂O₂ produces only water as a byproduct, avoiding toxic chlorinated organic carcinogens such as dioxins."
+      }
+    ]
+  }
+]

@@ -1,0 +1,736 @@
+[
+  {
+    "chapterName": "Hydrogen",
+    "flashcards": [
+      {
+        "front": "What is the relation between the volume strength of an H₂O₂ solution and its molarity?",
+        "back": "Volume strength of H₂O₂ = 11.35 × Molarity (at STP: 1 bar, 273 K; or 11.2 × Molarity at 1 atm, 273 K)."
+      },
+      {
+        "front": "What is the relation between the volume strength of an H₂O₂ solution and its normality?",
+        "back": "Volume strength of H₂O₂ = 5.68 × Normality (at STP: 1 bar, 273 K; or 5.6 × Normality at 1 atm, 273 K)."
+      },
+      {
+        "front": "What reaction occurs during the laboratory preparation of H₂O₂ from hydrated barium peroxide?",
+        "back": "BaO₂·8H₂O + H₂SO₄ → BaSO₄↓ + H₂O₂ + 8H₂O. Anhydrous BaO₂ is avoided because formed BaSO₄ deposits a protective coating on its surface."
+      },
+      {
+        "front": "How is H₂O₂ prepared industrially via the auto-oxidation method?",
+        "back": "By cyclic catalytic oxidation and reduction of 2-ethylanthraquinol: 2-ethylanthraquinol + O₂ (air) ⇌ 2-ethylanthraquinone + H₂O₂. The quinone is reduced back using H₂/Pd."
+      },
+      {
+        "front": "What is the non-planar dihedral angle of H₂O₂ in the gaseous phase versus the solid phase?",
+        "back": "In the gaseous phase, the dihedral angle is 111.5°, whereas in the solid crystalline phase at 110 K, it is 90.2° due to intermolecular hydrogen bonding."
+      },
+      {
+        "front": "How does H₂O₂ act as an antichlor?",
+        "back": "H₂O₂ reduces excess chlorine remaining after bleaching: Cl₂ + H₂O₂ → 2HCl + O₂."
+      },
+      {
+        "front": "How is H₂O₂ used to restore blackened antique oil paintings?",
+        "back": "PbS (black lead sulfide) formed by atmospheric H₂S is oxidized to white lead sulfate: PbS + 4H₂O₂ → PbSO₄ (white) + 4H₂O."
+      },
+      {
+        "front": "Give the balanced reaction for the reducing action of H₂O₂ on acidic KMnO₄.",
+        "back": "2KMnO₄ + 3H₂SO₄ + 5H₂O₂ → K₂SO₄ + 2MnSO₄ + 8H₂O + 5O₂ (Mn⁷⁺ is reduced to Mn²⁺ and pink color discharges)."
+      },
+      {
+        "front": "What is formed when acidified potassium dichromate reacts with H₂O₂ in the presence of ether?",
+        "back": "Chromium pentoxide (CrO₅), an ether-soluble blue butterfly-structured compound containing two peroxo groups: Cr₂O₇²⁻ + 2H⁺ + 4H₂O₂ → 2CrO₅ + 5H₂O."
+      },
+      {
+        "front": "What are the three types of hydrides formed by elements across the periodic table?",
+        "back": "1. Ionic/Saline hydrides (s-block elements, highly electropositive).\n2. Covalent/Molecular hydrides (p-block elements).\n3. Metallic/Interstitial hydrides (d- and f-block elements)."
+      },
+      {
+        "front": "Which groups in the d-block do NOT form hydrides, giving rise to the 'hydride gap'?",
+        "back": "Groups 7, 8, and 9 do not form hydrides (the hydride gap); in Group 6, only Chromium forms a hydride (CrH)."
+      },
+      {
+        "front": "What causes temporary hardness in water and how is it removed?",
+        "back": "It is caused by dissolved bicarbonates of calcium and magnesium, Ca(HCO₃)₂ and Mg(HCO₃)₂. It can be removed by boiling or by Clark's method (adding calculated lime, Ca(OH)₂)."
+      },
+      {
+        "front": "What causes permanent hardness in water and how can it be removed?",
+        "back": "It is caused by soluble chlorides and sulfates of calcium and magnesium (CaCl₂, MgCl₂, CaSO₄, MgSO₄). It is removed by washing soda, Calgon's method, ion-exchange resin, or permutit process."
+      },
+      {
+        "front": "What is Calgon and how does it soften hard water?",
+        "back": "Calgon is sodium hexametaphosphate, Na₆P₆O₁₈ or Na₂[Na₄(PO₃)₆]. It forms soluble complex anions with Ca²⁺ and Mg²⁺: 2Ca²⁺ + [Na₄(PO₃)₆]²⁻ → [Ca₂(PO₃)₆]²⁻ + 4Na⁺."
+      },
+      {
+        "front": "What is permutit or zeolite chemically?",
+        "back": "Hydrated sodium aluminium orthosilicate, Na₂Al₂Si₂O₈·xH₂O, abbreviated as Na₂Z, which exchanges its Na⁺ ions for hard divalent cations like Ca²⁺ and Mg²⁺."
+      },
+      {
+        "front": "What are the two spin isomers of dihydrogen, and how do their nuclear spins differ?",
+        "back": "Ortho-hydrogen: parallel nuclear spins (same direction).\nPara-hydrogen: anti-parallel nuclear spins (opposite directions). At 0 K, dihydrogen is 100% para; at room temperature, it is 75% ortho and 25% para."
+      },
+      {
+        "front": "Why is heavy water (D₂O) used as a moderator in nuclear reactors?",
+        "back": "D₂O slows down fast-moving neutrons without significantly absorbing them, facilitating sustained nuclear fission."
+      },
+      {
+        "front": "What is syngas or water gas, and what is the water-gas shift reaction?",
+        "back": "Syngas is a mixture of CO and H₂ (produced by C + H₂O → CO + H₂). The water-gas shift reaction increases H₂ yield: CO + H₂O (steam) → CO₂ + H₂ at 673 K with Fe₂O₃/Cr₂O₃ catalyst."
+      },
+      {
+        "front": "What is Hydrolith?",
+        "back": "Hydrolith is calcium hydride (CaH₂). It reacts with water to produce calcium hydroxide and hydrogen gas: CaH₂ + 2H₂O → Ca(OH)₂ + 2H₂↑."
+      },
+      {
+        "front": "Why is pure H₂O₂ stored in wax-lined or plastic vessels with small amounts of urea or acetanilide?",
+        "back": "Traces of alkali from glass catalyze the explosive decomposition of H₂O₂ into H₂O and O₂. Wax prevents contact with glass, and urea/acetanilide acts as a negative catalyst (stabilizer)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is the molarity of a '22.7 volume' H₂O₂ solution measured at STP (1 bar, 273 K)?",
+        "options": ["1.0 M", "2.0 M", "0.5 M", "2.5 M"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 1.0 M would correspond to 11.35 volume strength at 1 bar, 273 K.",
+          "Correct. Volume strength = 11.35 × Molarity, so Molarity = 22.7 / 11.35 = 2.0 M.",
+          "Incorrect. 0.5 M corresponds to 5.68 volume strength.",
+          "Incorrect. 2.5 M corresponds to 28.38 volume strength."
+        ],
+        "fullExplanation": "By standard definition at STP (1 bar, 273 K), 1 mole of ideal gas occupies 22.7 L. From 2H₂O₂ → 2H₂O + O₂, 2 moles of H₂O₂ yield 1 mole of O₂ (22.7 L). Hence, 1 M H₂O₂ liberates 11.35 L of O₂. Therefore, Volume Strength = 11.35 × Molarity. Molarity = 22.7 / 11.35 = 2.0 M."
+      },
+      {
+        "question": "Which of the following compounds is formed when acidified potassium dichromate is treated with H₂O₂ in ether?",
+        "options": ["CrO₃", "CrO₅", "Cr₂(SO₄)₃", "CrO₄²⁻"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "CrO₃ is chromium trioxide, which is not the deep blue butterfly peroxo product formed in this reaction.",
+          "Correct. Chromium pentoxide (CrO₅) is produced, possessing a butterfly structure with two peroxide linkages.",
+          "Cr₂(SO₄)₃ is a green chromium(III) sulfate formed upon decomposition in water.",
+          "CrO₄²⁻ is the yellow chromate anion formed in alkaline solution."
+        ],
+        "fullExplanation": "Acidified potassium dichromate reacts with H₂O₂ in ethereal solution to form blue chromium pentoxide (CrO₅): Cr₂O₇²⁻ + 2H⁺ + 4H₂O₂ → 2CrO₅ + 5H₂O. The blue color dissolves and is stabilized in the ether layer."
+      },
+      {
+        "question": "What is the oxidation state of chromium in the blue compound CrO₅ formed with H₂O₂?",
+        "options": ["+10", "+6", "+4", "+3"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "+10 is obtained only if all five oxygens are incorrectly assumed to be oxide ions (O²⁻).",
+          "Correct. CrO₅ contains one oxo oxygen (O²⁻) and two peroxo pairs (four oxygen atoms with oxidation number -1), giving Cr + (-2) + 4(-1) = 0 ⇒ Cr = +6.",
+          "+4 is incorrect for chromium in this peroxo complex.",
+          "+3 is the common reduction product, not the oxidation state in CrO₅ itself."
+        ],
+        "fullExplanation": "CrO₅ has a butterfly structure with one Cr=O double bond (oxidation state -2) and two peroxide bridges (-O-O-, each oxygen at -1). Let oxidation state of Cr be x: x + (-2) + 4(-1) = 0 ⇒ x = +6."
+      },
+      {
+        "question": "Which of the following d-block elements is known to form a hydride?",
+        "options": ["Mn", "Fe", "Cr", "Co"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Group 7 elements (like Mn) fall within the 'hydride gap' and do not form stable binary hydrides.",
+          "Group 8 elements (like Fe) do not form hydrides.",
+          "Correct. Cr belongs to Group 6 and is the only transition metal of its group to form a hydride (CrH).",
+          "Group 9 elements (like Co) do not form hydrides."
+        ],
+        "fullExplanation": "Elements of Groups 7, 8, and 9 in the periodic table do not form hydrides, a phenomenon known as the 'hydride gap'. From Group 6, only Chromium forms a hydride, CrH."
+      },
+      {
+        "question": "At absolute zero (0 K), pure dihydrogen gas consists entirely of which nuclear spin isomer?",
+        "options": ["Ortho-hydrogen", "Para-hydrogen", "75% ortho and 25% para", "50% ortho and 50% para"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Ortho-hydrogen has parallel nuclear spins and higher rotational energy, making it unstable at 0 K.",
+          "Correct. Para-hydrogen has anti-parallel nuclear spins and lower internal energy, so at 0 K hydrogen is 100% para-hydrogen.",
+          "75% ortho and 25% para is the equilibrium composition at room temperature and higher temperatures.",
+          "A 50:50 mixture is never the true thermodynamic equilibrium at 0 K."
+        ],
+        "fullExplanation": "Para-hydrogen has paired/opposite nuclear spins with nuclear spin quantum number I = 0, giving it a lower ground state energy than ortho-hydrogen (I = 1). As temperature approaches 0 K, the equilibrium shifts completely towards the lower energy para-state (100% para)."
+      },
+      {
+        "question": "What is the commercial name and formula of 'Calgon' used for water softening?",
+        "options": ["Sodium tripolyphosphate, Na₅P₃O₁₀", "Sodium hexametaphosphate, Na₆P₆O₁₈", "Hydrated sodium aluminosilicate, Na₂Al₂Si₂O₈", "Calcium pyrophosphate, Ca₂P₂O₇"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Sodium tripolyphosphate is used in detergents, but Calgon is sodium hexametaphosphate.",
+          "Correct. Calgon stands for 'calcium gone' and is sodium hexametaphosphate, Na₆P₆O₁₈ or Na₂[Na₄(PO₃)₆].",
+          "Hydrated sodium aluminosilicate is permutit or zeolite.",
+          "Calcium pyrophosphate is not a water-softening complexing agent."
+        ],
+        "fullExplanation": "Calgon is sodium hexametaphosphate (Na₆P₆O₁₈), represented complexometrically as Na₂[Na₄(PO₃)₆]. It sequesters Ca²⁺ and Mg²⁺ ions by forming soluble complex ions [Ca₂(PO₃)₆]²⁻."
+      },
+      {
+        "question": "Which reaction represents the industrial Water-Gas Shift Reaction?",
+        "options": [
+          "C(s) + H₂O(g) → CO(g) + H₂(g)",
+          "CO(g) + H₂O(g) → CO₂(g) + H₂(g)",
+          "CH₄(g) + H₂O(g) → CO(g) + 3H₂(g)",
+          "2H₂O(l) → 2H₂(g) + O₂(g)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This is the coal gasification reaction forming water gas (syngas).",
+          "Correct. The water-gas shift reaction converts CO and steam into CO₂ and H₂ at 673 K over an iron chromate catalyst.",
+          "This is steam reforming of methane.",
+          "This is the electrolysis of water."
+        ],
+        "fullExplanation": "To increase the production of dihydrogen from syngas, carbon monoxide is oxidized to carbon dioxide by steam at 673 K in the presence of an iron-chromium oxide catalyst (Fe₂O₃·Cr₂O₃): CO(g) + H₂O(g) → CO₂(g) + H₂(g). This is the water-gas shift reaction."
+      },
+      {
+        "question": "The dihedral (torsion) angle in the H₂O₂ molecule in the solid crystalline phase is:",
+        "options": ["111.5°", "180.0°", "90.2°", "109.5°"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "111.5° is the dihedral angle in the gaseous phase.",
+          "180.0° would make H₂O₂ planar and trans, which is incorrect.",
+          "Correct. In the solid state at 110 K, the dihedral angle contracts to 90.2° due to crystalline packing and intermolecular hydrogen bonding.",
+          "109.5° is the ideal tetrahedral angle."
+        ],
+        "fullExplanation": "Hydrogen peroxide has a non-planar open-book structure. In the gas phase, the dihedral angle is 111.5°, whereas in the solid state, intermolecular forces and H-bonding decrease this angle to 90.2°."
+      },
+      {
+        "question": "Which of the following statements about Heavy Water (D₂O) is INCORRECT?",
+        "options": [
+          "Its boiling point is higher than that of ordinary water.",
+          "Its dielectric constant is higher than that of ordinary water.",
+          "Its maximum density occurs at a higher temperature than ordinary water (11.6 °C vs 4.0 °C).",
+          "It reacts slower than ordinary water in chemical reactions due to higher activation energy."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Correct statement: D₂O boils at 101.42 °C, higher than H₂O (100.0 °C).",
+          "Incorrect statement (Hence correct option): The dielectric constant of D₂O (78.06) is lower than that of ordinary water (78.39).",
+          "Correct statement: D₂O achieves maximum density at 11.6 °C, whereas ordinary water achieves it at 3.98 °C (~4 °C).",
+          "Correct statement: Because O-D bonds are stronger than O-H bonds, D₂O exhibits a primary kinetic isotope effect and reacts more slowly."
+        ],
+        "fullExplanation": "Ordinary water has a slightly higher dielectric constant (78.39) than heavy water (78.06) at 298 K. All other physical constants such as boiling point, melting point, density, viscosity, and temperature of maximum density are higher for D₂O."
+      },
+      {
+        "question": "When H₂O₂ acts as a reducing agent in basic medium with ferricyanide [Fe(CN)₆]³⁻, the iron complex is converted to:",
+        "options": ["[Fe(CN)₆]⁴⁻", "Fe(OH)₃", "Fe₂O₃", "[Fe(H₂O)₆]²⁺"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Ferricyanide [Fe(CN)₆]³⁻ containing Fe³⁺ is reduced to ferrocyanide [Fe(CN)₆]⁴⁻ containing Fe²⁺: 2[Fe(CN)₆]³⁻ + 2OH⁻ + H₂O₂ → 2[Fe(CN)₆]⁴⁻ + 2H₂O + O₂.",
+          "Fe(OH)₃ is not formed; the cyano coordination sphere remains intact.",
+          "Fe₂O₃ is not produced in this homogeneous solution reaction.",
+          "[Fe(H₂O)₆]²⁺ cannot form because cyanide is a strong chelating/field ligand that is not displaced by water."
+        ],
+        "fullExplanation": "In alkaline medium, H₂O₂ readily reduces [Fe(CN)₆]³⁻ (ferricyanide, Fe³⁺) to [Fe(CN)₆]⁴⁻ (ferrocyanide, Fe²⁺) according to: 2[Fe(CN)₆]³⁻ + 2OH⁻ + H₂O₂ → 2[Fe(CN)₆]⁴⁻ + 2H₂O + O₂↑."
+      },
+      {
+        "question": "Why is Clark's method used to remove temporary hardness of water?",
+        "options": [
+          "It adds Ca(OH)₂ to precipitate calcium as CaCO₃ and magnesium as Mg(OH)₂.",
+          "It removes chloride and sulfate ions by anion exchange.",
+          "It oxidizes soluble calcium salts to volatile oxides.",
+          "It converts bicarbonates into soluble acetates."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A calculated amount of lime, Ca(OH)₂, is added: Ca(HCO₃)₂ + Ca(OH)₂ → 2CaCO₃↓ + 2H₂O, and Mg(HCO₃)₂ + 2Ca(OH)₂ → 2CaCO₃↓ + Mg(OH)₂↓ + 2H₂O.",
+          "Clark's method is only for temporary (bicarbonate) hardness, not permanent chloride/sulfate hardness.",
+          "Calcium cannot form volatile oxides.",
+          "No acetates are used or formed in Clark's method."
+        ],
+        "fullExplanation": "Clark's method involves adding a calculated quantity of slaked lime, Ca(OH)₂, to hard water containing bicarbonates. This precipitates insoluble CaCO₃ and Mg(OH)₂, effectively eliminating temporary hardness."
+      },
+      {
+        "question": "Which of the following hydrides is classified as an electron-precise molecular hydride?",
+        "options": ["B₂H₆", "CH₄", "NH₃", "H₂O"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "B₂H₆ is electron-deficient because it lacks sufficient electrons to form conventional 2-electron bonds.",
+          "Correct. CH₄ has exactly the required number of electrons (4 pairs) to form standard covalent bonds with no lone pairs.",
+          "NH₃ is electron-rich because it has a lone pair on the nitrogen atom.",
+          "H₂O is electron-rich because it possesses two lone pairs on the oxygen atom."
+        ],
+        "fullExplanation": "Covalent hydrides of Group 14 elements (e.g., CH₄, SiH₄) have the exact number of electrons required to form normal covalent bonds and have no lone pairs. Thus, they are classified as electron-precise hydrides."
+      },
+      {
+        "question": "Decomposition of H₂O₂ is catalyzed by traces of alkali and heavy metals. To prevent its decomposition during storage, which substance is commonly added as a stabilizer?",
+        "options": ["NaOH", "Urea or Acetanilide", "MnO₂", "Pt black"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "NaOH is strongly alkaline and accelerates the decomposition of H₂O₂.",
+          "Correct. Urea, acetanilide, or phosphoric acid act as negative catalysts (stabilizers) to prevent auto-decomposition.",
+          "MnO₂ is a potent catalyst that violently decomposes H₂O₂ into O₂ and H₂O.",
+          "Pt black actively catalyzes decomposition."
+        ],
+        "fullExplanation": "H₂O₂ decomposes spontaneously via: 2H₂O₂ → 2H₂O + O₂. This is accelerated by light, dust, rough surfaces, metals, and alkalis. Small quantities of stabilizers like urea, acetanilide, or dilute H₃PO₄ act as negative catalysts."
+      },
+      {
+        "question": "What is the product when calcium carbide (CaC₂) is treated with heavy water (D₂O)?",
+        "options": ["C₂D₂ and Ca(OD)₂", "CD₄ and Ca(OD)₂", "C₂D₄ and CaO", "C₂D₆ and Ca(OD)₂"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. CaC₂ + 2D₂O → C₂D₂ (deuterated acetylene) + Ca(OD)₂.",
+          "CD₄ is produced from aluminium carbide (Al₄C₃ + 12D₂O → 3CD₄ + 4Al(OD)₃).",
+          "C₂D₄ is deuterated ethylene, which is not formed.",
+          "C₂D₆ is deuterated ethane, which is not formed."
+        ],
+        "fullExplanation": "Similar to its reaction with H₂O, calcium carbide reacts with D₂O in a double displacement (hydrolysis/deuterolysis) reaction: CaC₂ + 2D₂O → C₂D₂ (deuteroacetylene) + Ca(OD)₂."
+      },
+      {
+        "question": "The strength of a 10 volume solution of hydrogen peroxide in terms of percentage (w/v) is approximately:",
+        "options": ["1.0%", "3.03%", "6.06%", "10.0%"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "1.0% corresponds to ~3.3 volume strength.",
+          "Correct. 10 volume H₂O₂ has a molarity of 10 / 11.2 ≈ 0.893 M (or 10 / 11.35 ≈ 0.881 M). Molar mass of H₂O₂ = 34 g/mol. Weight in 1 L ≈ 30.3 g, meaning 3.03 g in 100 mL, or 3.03% (w/v).",
+          "6.06% corresponds to 20 volume H₂O₂.",
+          "10.0% is not the percentage; 10 is the volume of O₂ gas liberated per volume of solution."
+        ],
+        "fullExplanation": "Volume strength = 11.2 × Molarity (using 22.4 L standard). For 10 volume H₂O₂, M = 10 / 11.2 = 0.893 M. Mass of H₂O₂ per litre = 0.893 × 34 = 30.36 g/L = 3.036 g/100 mL = 3.03% (w/v)."
+      },
+      {
+        "question": "Which of the following pairs of hydrides are classified as saline (ionic) hydrides?",
+        "options": ["NaH and CaH₂", "CH₄ and NH₃", "CrH and TiH₂", "B₂H₆ and AlH₃"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. NaH and CaH₂ are formed by highly electropositive s-block metals and contain the hydride ion H⁻.",
+          "CH₄ and NH₃ are covalent (molecular) hydrides.",
+          "CrH and TiH₂ are metallic (interstitial) hydrides.",
+          "B₂H₆ and AlH₃ are covalent / electron-deficient polymeric hydrides."
+        ],
+        "fullExplanation": "Saline or ionic hydrides are formed by highly electropositive s-block metals (alkali and alkaline earth metals, except Be and Mg which are covalent). Both NaH and CaH₂ (hydrolith) are stoichiometric, crystalline, and ionic salts containing H⁻."
+      },
+      {
+        "question": "When permanent hardness caused by MgSO₄ is removed using washing soda, the precipitate formed is:",
+        "options": ["MgCO₃", "Basic magnesium carbonate", "Mg(OH)₂", "MgS"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. MgSO₄ + Na₂CO₃ → MgCO₃↓ + Na₂SO₄.",
+          "Basic carbonate may form under boiling conditions, but the direct precipitation reaction is given as MgCO₃.",
+          "Mg(OH)₂ precipitates with caustic soda or lime, not simple washing soda.",
+          "MgS is water soluble and decomposes in water."
+        ],
+        "fullExplanation": "Washing soda (Na₂CO₃) removes permanent hardness by double displacement: MgSO₄ + Na₂CO₃ → MgCO₃↓ + Na₂SO₄, and CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2NaCl. Insoluble carbonates are filtered off."
+      },
+      {
+        "question": "During the electrolysis of 50% H₂SO₄ at low temperature with high current density, the anodic product formed is:",
+        "options": ["O₂", "H₂O₂", "H₂S₂O₈ (peroxydisulfuric acid)", "SO₂"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "O₂ is formed during electrolysis of dilute H₂SO₄.",
+          "H₂O₂ is produced subsequently by hydrolysis of peroxydisulfuric acid, not directly at the anode.",
+          "Correct. 2HSO₄⁻ → H₂S₂O₈ + 2e⁻ occurs at the anode.",
+          "SO₂ is not formed at the anode under these oxidizing conditions."
+        ],
+        "fullExplanation": "In the electrolytic method for preparing H₂O₂, 50% H₂SO₄ is electrolyzed with platinum electrodes at 273 K with high current density: 2HSO₄⁻ → H₂S₂O₈ + 2e⁻ (at anode). Subsequent vacuum distillation with water hydrolyzes H₂S₂O₈ to H₂O₂: H₂S₂O₈ + 2H₂O → 2H₂SO₄ + H₂O₂."
+      },
+      {
+        "question": "In which reaction does hydrogen peroxide act as an OXIDIZING agent in basic medium?",
+        "options": [
+          "2[Fe(CN)₆]³⁻ + 2OH⁻ + H₂O₂ → 2[Fe(CN)₆]⁴⁻ + 2H₂O + O₂",
+          "2Fe²⁺ + H₂O₂ + 2H⁺ → 2Fe³⁺ + 2H₂O",
+          "Mn²⁺ + H₂O₂ + 2OH⁻ → MnO₂ + 2H₂O",
+          "I₂ + H₂O₂ + 2OH⁻ → 2I⁻ + 2H₂O + O₂"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Here Fe³⁺ is reduced to Fe²⁺, so H₂O₂ acts as a reducing agent.",
+          "Here H₂O₂ acts as an oxidizing agent, but in acidic medium, not basic medium.",
+          "Correct. Mn²⁺ is oxidized to Mn⁴⁺ (MnO₂) in basic medium, showing the oxidizing action of H₂O₂.",
+          "Here I₂ is reduced to I⁻, so H₂O₂ acts as a reducing agent."
+        ],
+        "fullExplanation": "In reaction (C), Mn²⁺ (oxidation state +2) is oxidized to MnO₂ (+4) in the presence of basic medium (OH⁻). H₂O₂ acts as an oxidizing agent in alkaline solution."
+      },
+      {
+        "question": "The radioactive isotope of hydrogen is tritium (³₁H). What is the nature of its radioactive emission?",
+        "options": ["High-energy α-particles", "Low-energy β⁻-particles", "γ-rays only", "Positrons"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Tritium does not emit alpha particles.",
+          "Correct. Tritium decays by emitting low-energy β⁻ particles (electrons) with a half-life of 12.33 years.",
+          "Tritium decay is a pure beta emission without high-energy gamma rays.",
+          "Positrons are emitted in β⁺ decay, but tritium undergoes β⁻ decay: ³₁H → ³₂He + e⁻ + ν̅."
+        ],
+        "fullExplanation": "Tritium (³₁H) has an unstable neutron-to-proton ratio (2 neutrons, 1 proton). It decays by emitting low-energy β⁻ particles with a half-life of 12.33 years according to: ³₁H → ³₂He + e⁻ + ν̅ₑ."
+      }
+    ]
+  },
+  {
+    "chapterName": "s-Block Elements",
+    "flashcards": [
+      {
+        "front": "What is the anomalous density order among alkali metals?",
+        "back": "Li < K < Na < Rb < Cs. Potassium is lighter than sodium because of the abnormal increase in atomic volume due to empty 3d orbitals in potassium."
+      },
+      {
+        "front": "What are the characteristic flame colors of the alkali metals?",
+        "back": "Li: Crimson red\nNa: Golden yellow\nK: Pale violet (Lilac)\nRb: Reddish violet\nCs: Sky blue."
+      },
+      {
+        "front": "Why do Beryllium and Magnesium NOT impart color to the Bunsen burner flame?",
+        "back": "Due to their small size and very high ionization energies, their valence electrons cannot be excited by the energy of the Bunsen flame."
+      },
+      {
+        "front": "What are the characteristic flame colors of Ca, Sr, and Ba?",
+        "back": "Ca: Brick red\nSr: Crimson red\nBa: Apple green."
+      },
+      {
+        "front": "What types of oxides are formed when alkali metals burn in excess oxygen?",
+        "back": "Li forms normal oxide (Li₂O);\nNa forms peroxide (Na₂O₂);\nK, Rb, and Cs form superoxides (KO₂, RbO₂, CsO₂)."
+      },
+      {
+        "front": "Why are potassium and cesium superoxides paramagnetic while sodium peroxide is diamagnetic?",
+        "back": "The superoxide ion O₂⁻ has 17 electrons with one unpaired electron in its π* antibonding molecular orbital (paramagnetic). Peroxide O₂²⁻ has 18 electrons with all electrons paired (diamagnetic)."
+      },
+      {
+        "front": "What causes the deep blue color and paramagnetism of alkali metals dissolved in liquid ammonia?",
+        "back": "Ammoniated electrons: M + (x + y)NH₃ → [M(NH₃)ₓ]⁺ + [e(NH₃)ᵧ]⁻. On concentrating, it turns bronze/copper-colored and becomes diamagnetic due to electron pairing."
+      },
+      {
+        "front": "Why is lithium carbonate (Li₂CO₃) the only alkali metal carbonate that readily decomposes on heating?",
+        "back": "Due to the high polarising power of the tiny Li⁺ cation, which distorts the large CO₃²⁻ anion, lowering its lattice stability: Li₂CO₃ → Li₂O + CO₂."
+      },
+      {
+        "front": "What is the thermal stability order of alkaline earth metal carbonates?",
+        "back": "BeCO₃ < MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃. Thermal stability increases down the group as the ionic radius increases and polarising power decreases."
+      },
+      {
+        "front": "Why does BeCl₂ adopt different structural forms in solid, vapour, and high-temperature states?",
+        "back": "Solid state: Polymeric chlorido-bridged chain with 4-coordinated Be.\nVapour state (< 1200 K): Chloro-bridged dimer Be₂Cl₄.\nVapour state (> 1200 K): Linear monomer BeCl₂ (sp hybridised)."
+      },
+      {
+        "front": "What is Nitrolim and how is it synthesized?",
+        "back": "Nitrolim is a mixture of calcium cyanamide and carbon (CaCN₂ + C), prepared by heating calcium carbide with N₂ at 1270–1370 K with CaF₂: CaC₂ + N₂ → CaCN₂ + C."
+      },
+      {
+        "front": "What is the chemical difference between Plaster of Paris and Dead Burnt Plaster?",
+        "back": "Plaster of Paris is calcium sulfate hemihydrate, CaSO₄·½H₂O (formed at 393 K). Dead burnt plaster is anhydrous CaSO₄ (formed above 473 K), which loses all setting ability."
+      },
+      {
+        "front": "What is Keene's cement?",
+        "back": "Hard plaster produced by setting Plaster of Paris with an alum solution followed by burning; it sets to an exceptionally hard and smooth mass."
+      },
+      {
+        "front": "What is the average composition of Portland cement?",
+        "back": "CaO: 60–65% (average 61.5%)\nSiO₂: 20–25% (average 22.5%)\nAl₂O₃: 5–10% (average 7.5%)\nMgO: 2–3%\nFe₂O₃: 1–2%\nSO₃: 1–2%."
+      },
+      {
+        "front": "Why is gypsum (CaSO₄·2H₂O) added to cement clinker during grinding?",
+        "back": "To slow down the setting time of cement (retard the initial fast hydration of tricalcium aluminate), thereby allowing proper handling and hardening."
+      },
+      {
+        "front": "Why can anhydrous MgCl₂ NOT be prepared by simply heating MgCl₂·6H₂O?",
+        "back": "On direct heating, it undergoes hydrolytic decomposition rather than dehydration: MgCl₂·6H₂O → MgO + 2HCl + 5H₂O. It must be heated in a current of dry HCl gas."
+      },
+      {
+        "front": "What are two key diagonal similarities between Beryllium and Aluminium?",
+        "back": "1. Both form protective oxide films and are rendered passive by conc. HNO₃.\n2. Both oxides and hydroxides are amphoteric, dissolving in excess NaOH to form [Be(OH)₄]²⁻ and [Al(OH)₄]⁻."
+      },
+      {
+        "front": "What is the chemical composition of Washing Soda, and what happens to it on exposure to dry air?",
+        "back": "Washing soda is Na₂CO₃·10H₂O. On exposure to dry air, it exhibits efflorescence, losing 9 water molecules to form a white monohydrate powder: Na₂CO₃·H₂O."
+      },
+      {
+        "front": "Why does potassium bicarbonate (KHCO₃) prevent potassium carbonate from being manufactured by the Solvay process?",
+        "back": "KHCO₃ is highly soluble in water and does not precipitate when CO₂ is bubbled through ammoniacal KCl solution, unlike sparingly soluble NaHCO₃."
+      },
+      {
+        "front": "What is the product when beryllium carbide (Be₂C) reacts with water versus calcium carbide (CaC₂)?",
+        "back": "Be₂C + 4H₂O → 2Be(OH)₂ + CH₄ (methanide);\nCaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂ (acetylide)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following represents the correct increasing order of density among alkali metals?",
+        "options": [
+          "Li < Na < K < Rb < Cs",
+          "Li < K < Na < Rb < Cs",
+          "K < Li < Na < Rb < Cs",
+          "Li < Na < Rb < K < Cs"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect because K is unusually lighter than Na.",
+          "Correct. Potassium has a larger atomic volume than expected due to presence of empty 3d subshells, making its density lower than sodium.",
+          "Incorrect because Lithium is the lightest solid element with the lowest density.",
+          "Incorrect sequence of Rb and K."
+        ],
+        "fullExplanation": "Generally, density increases down Group 1. However, Potassium (K = 0.86 g/cm³) is lighter than Sodium (Na = 0.97 g/cm³) because the introduction of the 3d shell causes an unusually large volume expansion in potassium. Thus, the order is Li < K < Na < Rb < Cs."
+      },
+      {
+        "question": "Which alkali metal nitrate decomposes on heating to give a metal oxide, NO₂, and O₂?",
+        "options": ["NaNO₃", "KNO₃", "LiNO₃", "RbNO₃"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "NaNO₃ decomposes to give sodium nitrite (NaNO₂) and O₂.",
+          "KNO₃ decomposes to potassium nitrite (KNO₂) and O₂.",
+          "Correct. Li⁺ has high polarising power; 4LiNO₃ → 2Li₂O + 4NO₂ + O₂.",
+          "RbNO₃ decomposes to rubidium nitrite (RbNO₂) and O₂."
+        ],
+        "fullExplanation": "Due to the small size and high polarising power of Li⁺, lithium nitrate decomposes like an alkaline earth metal nitrate to give lithium oxide: 4LiNO₃ → 2Li₂O + 4NO₂↑ + O₂↑. Other alkali metal nitrates decompose only to the nitrite and oxygen: 2MNO₃ → 2MNO₂ + O₂."
+      },
+      {
+        "question": "A metal 'M' burns in excess air to form a superoxide MO₂ which is yellow/orange and paramagnetic. The metal 'M' is:",
+        "options": ["Li", "Na", "K", "Be"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Lithium forms normal oxide Li₂O.",
+          "Sodium forms mainly peroxide Na₂O₂ under normal excess air conditions.",
+          "Correct. Potassium, rubidium, and cesium readily form stable superoxides (e.g., KO₂) containing the paramagnetic O₂⁻ ion.",
+          "Beryllium forms only normal oxide BeO."
+        ],
+        "fullExplanation": "Large alkali metal cations (K⁺, Rb⁺, Cs⁺) stabilize large anions like superoxide (O₂⁻) through high lattice energies. Potassium burns in oxygen to yield KO₂, which is paramagnetic due to one unpaired electron in the π*2p molecular orbital."
+      },
+      {
+        "question": "What is the role of adding gypsum (CaSO₄·2H₂O) to cement clinker during grinding?",
+        "options": [
+          "To speed up the setting time of cement",
+          "To slow down the initial setting rate of cement",
+          "To reduce the manufacturing cost of cement",
+          "To impart dark color to the set concrete"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Gypsum retards the setting, it does not accelerate it.",
+          "Correct. Gypsum reacts with tricalcium aluminate to form calcium sulfoaluminate, retarding the initial rapid flash set.",
+          "Gypsum is added specifically for chemical retardation of setting, not cost reduction.",
+          "Gypsum does not control color; iron oxides do."
+        ],
+        "fullExplanation": "Cement sets very rapidly when mixed with water due to the immediate hydration of tricalcium aluminate (3CaO·Al₂O₃). Adding 2–3% gypsum retards this fast hydration process, providing sufficient time for mixing, placing, and working the concrete."
+      },
+      {
+        "question": "Which of the following compounds is known as 'dead burnt plaster'?",
+        "options": ["CaSO₄·2H₂O", "CaSO₄·½H₂O", "Anhydrous CaSO₄", "CaS"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "CaSO₄·2H₂O is gypsum.",
+          "CaSO₄·½H₂O is Plaster of Paris.",
+          "Correct. Heating Plaster of Paris above 473 K completely removes all crystallization water, yielding anhydrous CaSO₄, which has lost its setting property.",
+          "CaS is calcium sulfide."
+        ],
+        "fullExplanation": "When gypsum or Plaster of Paris is heated above 473 K (200 °C), all water of crystallization is driven off, forming anhydrous calcium sulfate (CaSO₄). This product has no setting properties and is known as 'dead burnt plaster'."
+      },
+      {
+        "question": "Why does potassium carbonate NOT get produced by the industrial Solvay (ammonia-soda) process?",
+        "options": [
+          "KCl is insoluble in water.",
+          "KHCO₃ is too soluble in water to precipitate out upon carbonation.",
+          "K₂CO₃ decomposes upon heating.",
+          "Ammonia reacts with KCl to form an explosive complex."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "KCl is highly soluble in water.",
+          "Correct. Unlike NaHCO₃ which is sparingly soluble and precipitates from brine, KHCO₃ is much more soluble and cannot be separated by precipitation.",
+          "K₂CO₃ is thermally stable and melts without decomposition.",
+          "Ammonia does not form explosive complexes with KCl."
+        ],
+        "fullExplanation": "The Solvay process relies on the low solubility and precipitation of sodium bicarbonate (NaHCO₃). Because potassium bicarbonate (KHCO₃) has a much higher solubility in aqueous solution, it cannot be precipitated by passing CO₂ through ammoniated KCl."
+      },
+      {
+        "question": "When dilute solutions of alkali metals in liquid ammonia stand for long periods or are treated with a catalyst, they decompose to form:",
+        "options": [
+          "Metal hydrides and N₂",
+          "Metal amides and H₂",
+          "Metal nitrides and H₂",
+          "Metal oxides and NH₄⁺"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Hydrides are not formed in liquid ammonia decomposition.",
+          "Correct. 2M + 2NH₃ → 2MNH₂ (metal amide) + H₂↑.",
+          "Nitrides are formed with dry air/N₂ at high heat, not in solution.",
+          "No oxygen source is present."
+        ],
+        "fullExplanation": "The blue solutions of alkali metals in liquid ammonia slowly liberate hydrogen gas upon standing or when catalyzed by transition metal salts: 2M + 2NH₃ → 2MNH₂ + H₂↑. For lithium, further reaction can produce the imide Li₂NH."
+      },
+      {
+        "question": "Which of the following compounds is formed when calcium carbide is heated with nitrogen gas in an electric furnace at 1270–1370 K?",
+        "options": ["Ca(CN)₂", "CaCN₂ + C", "Ca₃N₂", "Ca(NO₃)₂"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Ca(CN)₂ is calcium cyanide, which is different from cyanamide.",
+          "Correct. CaC₂ + N₂ → CaCN₂ + C (Nitrolim).",
+          "Ca₃N₂ is formed by direct combination of calcium metal and nitrogen.",
+          "Ca(NO₃)₂ is calcium nitrate."
+        ],
+        "fullExplanation": "Heating calcium carbide with dinitrogen at 1270–1370 K in the presence of CaF₂ yields calcium cyanamide mixed with carbon: CaC₂ + N₂ → CaCN₂ + C. This grey-black mixture is commercially known as Nitrolim and used as a slow-release nitrogen fertilizer."
+      },
+      {
+        "question": "What is the correct solubility order of alkaline earth metal sulfates in water?",
+        "options": [
+          "BeSO₄ < MgSO₄ < CaSO₄ < SrSO₄ < BaSO₄",
+          "BaSO₄ < SrSO₄ < CaSO₄ < MgSO₄ < BeSO₄",
+          "MgSO₄ < BeSO₄ < CaSO₄ < BaSO₄ < SrSO₄",
+          "BeSO₄ < CaSO₄ < MgSO₄ < SrSO₄ < BaSO₄"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This is the reverse of the true solubility order.",
+          "Correct. BeSO₄ and MgSO₄ are readily soluble, whereas CaSO₄ is sparingly soluble and BaSO₄ is practically insoluble.",
+          "Incorrect order of Be and Mg.",
+          "Incorrect order; sulfates decrease in solubility down the group."
+        ],
+        "fullExplanation": "For Group 2 sulfates, the SO₄²⁻ ion is very large. Consequently, the lattice energy remains nearly constant down the group, but hydration enthalpy decreases sharply with increasing cation size. Because hydration enthalpy of Be²⁺ and Mg²⁺ is high enough to overcome their lattice energies, solubility decreases as: BeSO₄ > MgSO₄ > CaSO₄ > SrSO₄ > BaSO₄."
+      },
+      {
+        "question": "Which of the following oxides of Group 2 elements is amphoteric?",
+        "options": ["MgO", "CaO", "BeO", "BaO"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "MgO is basic.",
+          "CaO is strongly basic.",
+          "Correct. BeO exhibits amphoteric behavior, dissolving in both acids to form Be²⁺ salts and alkalis to form beryllate [Be(OH)₄]²⁻.",
+          "BaO is strongly basic."
+        ],
+        "fullExplanation": "Beryllium oxide (BeO) is covalent and amphoteric in nature. It dissolves in acids to give salts: BeO + 2HCl → BeCl₂ + H₂O, and in bases to give beryllates: BeO + 2NaOH + H₂O → Na₂[Be(OH)₄]. Oxides of Mg, Ca, Sr, and Ba are ionic and purely basic."
+      },
+      {
+        "question": "What is the chemical name and composition of 'Hydrolith'?",
+        "options": [
+          "Lithium hydride, LiH",
+          "Calcium hydride, CaH₂",
+          "Barium hydroxide, Ba(OH)₂",
+          "Sodium aluminium hydride, NaAlH₄"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "LiH is lithium hydride, not called hydrolith.",
+          "Correct. CaH₂ is known as hydrolith and is used for on-demand hydrogen generation.",
+          "Ba(OH)₂ is baryta.",
+          "NaAlH₄ is an organometallic reducing agent."
+        ],
+        "fullExplanation": "Calcium hydride (CaH₂) is commercially termed 'hydrolith'. It is widely used as a portable source of hydrogen because it reacts vigorously with water: CaH₂ + 2H₂O → Ca(OH)₂ + 2H₂↑."
+      },
+      {
+        "question": "The main component of tooth enamel is hydroxyapatite, Ca₉(PO₄)₆·Ca(OH)₂. How does fluoridation of drinking water prevent tooth decay?",
+        "options": [
+          "By forming CaF₂ which physically coats the entire tooth",
+          "By converting hydroxyapatite to more acid-resistant fluorapatite, Ca₉(PO₄)₆·CaF₂",
+          "By killing oral bacteria with toxic levels of fluorine",
+          "By dissolving dental plaque chemically"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "It does not simply deposit a bulk coating of CaF₂.",
+          "Correct. F⁻ ions substitute OH⁻ in hydroxyapatite to form fluorapatite, which is significantly more resistant to acid erosion.",
+          "Fluoride at 1 ppm is non-toxic to oral flora.",
+          "Fluoride hardens enamel; it does not dissolve plaque."
+        ],
+        "fullExplanation": "Soluble fluoride (1 ppm) exchanges with hydroxide ions in dental enamel to convert Ca₉(PO₄)₆·Ca(OH)₂ into Ca₉(PO₄)₆·CaF₂ (fluorapatite). Fluorapatite is much harder and significantly less soluble in organic acids produced by oral bacteria."
+      },
+      {
+        "question": "In the manufacture of sodium metal by the Down's cell process, why is CaCl₂ added to fused NaCl?",
+        "options": [
+          "To act as a cathode material",
+          "To decrease the melting point of NaCl from 1077 K to ~873 K and increase electrical conductivity",
+          "To prevent the formation of chlorine gas",
+          "To purify molten sodium by precipitating calcium"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "The cathode is made of iron/steel, not CaCl₂.",
+          "Correct. Pure NaCl melts at a high temperature (1077 K) where sodium vaporizes and causes fogging; adding CaCl₂ lowers the melting point to ~873 K.",
+          "Chlorine gas is still evolved at the graphite anode.",
+          "Calcium does not precipitate to purify sodium."
+        ],
+        "fullExplanation": "Pure NaCl has a very high melting point of 1077 K, at which sodium metal volatilizes and dissolves into the molten electrolyte forming an emulsion. Adding CaCl₂ (and KF) lowers the operational fusion temperature to about 873 K and increases conductivity."
+      },
+      {
+        "question": "Which of the following compounds gives a pink residue when subjected to the Cobalt Nitrate Charcoal Cavity Test?",
+        "options": ["ZnSO₄", "Al₂(SO₄)₃", "MgSO₄", "SnCl₂"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Zn²⁺ gives Rinmann's green (ZnO·CoO).",
+          "Al³⁺ gives Thenard's blue (CoO·Al₂O₃).",
+          "Correct. Magnesium salts yield a pink residue of CoO·MgO in the cobalt nitrate test.",
+          "Sn²⁺ gives a bluish residue (SnO·CoO)."
+        ],
+        "fullExplanation": "When a magnesium salt is heated on a charcoal cavity with a drop of cobalt nitrate, Co(NO₃)₂, a characteristic pink residue of double oxide (CoO·MgO) is formed."
+      },
+      {
+        "question": "Why is lithium the most powerful reducing agent in aqueous solution despite having the highest ionization energy among alkali metals?",
+        "options": [
+          "Its low sublimation energy",
+          "Its very high hydration enthalpy due to tiny ionic size",
+          "Its high electron affinity",
+          "Its low electronegativity"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Lithium actually has a higher sublimation enthalpy than other alkali metals.",
+          "Correct. The standard electrode potential E° depends on sublimation enthalpy, ionization enthalpy, and hydration enthalpy. The enormous hydration enthalpy of tiny Li⁺ compensates for its high ionization enthalpy, giving it the most negative E° value (-3.04 V).",
+          "Alkali metals have low electron affinity.",
+          "Cesium has a lower electronegativity than lithium."
+        ],
+        "fullExplanation": "Reducing power in aqueous solution is measured by standard reduction potential (E°). The process M(s) → M⁺(aq) + e⁻ involves ΔH_sublimation + IE - ΔH_hydration. Because Li⁺ is exceptionally small, its hydration enthalpy is extremely exothermic, driving E° to -3.04 V (the most negative of all metals)."
+      },
+      {
+        "question": "Which alkali metal bicarbonate exists only in aqueous solution and CANNOT be isolated as a solid?",
+        "options": ["NaHCO₃", "KHCO₃", "LiHCO₃", "CsHCO₃"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "NaHCO₃ is a stable white solid (baking soda).",
+          "KHCO₃ can be crystallized and isolated as a solid.",
+          "Correct. Due to the high polarising power of small Li⁺, solid LiHCO₃ is unstable and exists only in aqueous solution.",
+          "CsHCO₃ is an isolable crystalline solid."
+        ],
+        "fullExplanation": "Because of the high charge density of the small Li⁺ ion, lithium bicarbonate (LiHCO₃) cannot be isolated as a stable solid; attempting to crystallize it results in decomposition into Li₂CO₃, CO₂, and H₂O."
+      },
+      {
+        "question": "What is the hybridisation and geometry of BeCl₂ in the vapour state below 1200 K?",
+        "options": [
+          "sp hybridised and linear",
+          "sp² hybridised and planar dimer (chloro-bridged)",
+          "sp³ hybridised and tetrahedral polymer",
+          "dsp² hybridised and square planar"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "BeCl₂ is sp hybridised and linear only at temperatures above 1200 K.",
+          "Correct. Below 1200 K in the vapour phase, BeCl₂ exists primarily as a chloro-bridged dimer (Be₂Cl₄), where each Be atom is sp² hybridised.",
+          "Solid BeCl₂ is a polymeric chain with sp³ hybridised Be.",
+          "dsp² is not possible for beryllium as it has no d-orbitals."
+        ],
+        "fullExplanation": "In the vapour phase below 1200 K, BeCl₂ exists as a chloro-bridged dimer, Be₂Cl₄, in which each beryllium atom uses sp² hybrid orbitals. Above 1200 K, it dissociates into linear monomeric BeCl₂ molecules with sp hybridisation."
+      },
+      {
+        "question": "Which of the following compounds is known as 'Milk of Lime'?",
+        "options": [
+          "Clear aqueous solution of Ca(OH)₂",
+          "Aqueous suspension of Ca(OH)₂",
+          "Aqueous paste of CaCO₃",
+          "Dry powdered CaO"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "The clear filtered aqueous solution of Ca(OH)₂ is called lime water.",
+          "Correct. A white suspension/slurry of slaked lime, Ca(OH)₂, in water is called milk of lime.",
+          "Aqueous paste of CaCO₃ is not milk of lime.",
+          "Dry powdered CaO is quicklime."
+        ],
+        "fullExplanation": "Quicklime (CaO) slaked with water forms calcium hydroxide [Ca(OH)₂]. A white suspension of slaked lime in water is known as 'milk of lime', while the clear supernatant liquid obtained after filtering is 'lime water'."
+      },
+      {
+        "question": "Anhydrous MgCl₂ is commercially prepared from hydrated magnesium chloride (MgCl₂·6H₂O) by heating it:",
+        "options": [
+          "In air at 500 °C",
+          "In vacuum at 200 °C",
+          "In a dry stream of hydrogen chloride (HCl) gas",
+          "With concentrated H₂SO₄"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Heating in air causes hydrolysis to MgO: MgCl₂·6H₂O → MgO + 2HCl + 5H₂O.",
+          "Vacuum heating alone cannot prevent hydrolysis.",
+          "Correct. Heating in a stream of dry HCl shifts the hydrolytic equilibrium backwards, enabling complete dehydration without forming MgO.",
+          "H₂SO₄ would react to form MgSO₄."
+        ],
+        "fullExplanation": "Direct heating of MgCl₂·6H₂O causes hydrolysis: MgCl₂·6H₂O → MgO + 2HCl + 5H₂O. To suppress this reversible reaction, the dehydration must be carried out in an atmosphere of dry HCl gas."
+      },
+      {
+        "question": "Which pair of elements demonstrates a diagonal relationship in the periodic table?",
+        "options": ["Li and Al", "Be and Al", "B and Mg", "Na and Ca"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Li shows diagonal relationship with Mg, not Al.",
+          "Correct. Be and Al have very close charge-to-radius ratios (ionic potential), leading to strikingly similar chemical properties.",
+          "B shows diagonal relationship with Si, not Mg.",
+          "Na does not show a diagonal relationship with Ca."
+        ],
+        "fullExplanation": "Beryllium (Group 2, Period 2) and Aluminium (Group 13, Period 3) exhibit a prominent diagonal relationship because of their nearly identical ionic potential (charge/radius ratio). Both form covalent chlorides, amphoteric oxides/hydroxides, and fluoro-complexes."
+      }
+    ]
+  }
+]

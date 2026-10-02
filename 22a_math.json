@@ -1,0 +1,775 @@
+[
+  {
+    "chapterName": "Matrices & Determinants",
+    "flashcards": [
+      {
+        "front": "What is the fundamental adjoint identity relating matrix $A$, its adjoint $\\\\text{adj}(A)$, and determinant $|A|$?",
+        "back": "For any square matrix $A$ of order $n$:\\n$$A \\\\cdot (\\\\text{adj}(A)) = (\\\\text{adj}(A)) \\\\cdot A = |A| I_n$$\\nThis fundamental relation serves as the basis for defining the matrix inverse."
+      },
+      {
+        "front": "What is the formula for the determinant of the adjoint of an $n \\\\times n$ matrix $A$?",
+        "back": "$$|\\\\text{adj}(A)| = |A|^{n-1}$$\\nProof outline: Taking determinants on both sides of $A \\\\cdot \\\\text{adj}(A) = |A| I_n$ gives $|A| |\\\\text{adj}(A)| = |A|^n$, which yields $|\\\\text{adj}(A)| = |A|^{n-1}$ when $|A| \\\\neq 0$ (and also holds when $|A| = 0$)."
+      },
+      {
+        "front": "What is the formula for $\\\\text{adj}(\\\\text{adj}(A))$ for a non-singular square matrix of order $n$ ($n \\\\ge 2$)?",
+        "back": "$$\\\\text{adj}(\\\\text{adj}(A)) = |A|^{n-2} A$$\\nFor $n = 3$, this simplifies to $\\\\text{adj}(\\\\text{adj}(A)) = |A| A$."
+      },
+      {
+        "front": "What is the determinant of the iterated adjoint $|\\\\text{adj}(\\\\text{adj}(A))|$ for an $n \\\\times n$ matrix?",
+        "back": "$$|\\\\text{adj}(\\\\text{adj}(A))| = |A|^{(n-1)^2}$$\\nFor an order $3 \\\\times 3$ matrix ($n = 3$), $(n-1)^2 = 4$, so $|\\\\text{adj}(\\\\text{adj}(A))| = |A|^4$."
+      },
+      {
+        "front": "What is $\\\\text{adj}(k A)$ for a scalar $k$ and an $n \\\\times n$ matrix $A$?",
+        "back": "$$\\\\text{adj}(k A) = k^{n-1} \\\\text{adj}(A)$$\\nBe careful: unlike $|kA| = k^n |A|$, the scalar pulled out of the adjoint has power $n-1$."
+      },
+      {
+        "front": "What is the reversal law for the adjoint of a matrix product, $\\\\text{adj}(AB)$?",
+        "back": "$$\\\\text{adj}(AB) = \\\\text{adj}(B) \\\\cdot \\\\text{adj}(A)$$\\nSimilarly, for $m$ matrices: $\\\\text{adj}(A_1 A_2 \\\\dots A_m) = \\\\text{adj}(A_m) \\\\dots \\\\text{adj}(A_2) \\\\text{adj}(A_1)$."
+      },
+      {
+        "front": "What are the core properties of the inverse of an invertible matrix $A$?",
+        "back": "1. $A^{-1} = \\\\frac{1}{|A|} \\\\text{adj}(A)$\\n2. $|A^{-1}| = \\\\frac{1}{|A|} = |A|^{-1}$\\n3. $(AB)^{-1} = B^{-1} A^{-1}$ (Reversal law)\\n4. $(A^T)^{-1} = (A^{-1})^T$\\n5. $(A^{-1})^{-1} = A$\\n6. $(A^k)^{-1} = (A^{-1})^k = A^{-k}$ for $k \\\\in \\\\mathbb{N}$"
+      },
+      {
+        "front": "What is the Trace of a matrix, and what are its key properties?",
+        "back": "$\\\\text{tr}(A) = \\\\sum_{i=1}^n a_{ii}$ (sum of principal diagonal elements).\\nProperties:\\n1. $\\\\text{tr}(A \\\\pm B) = \\\\text{tr}(A) \\\\pm \\\\text{tr}(B)$\\n2. $\\\\text{tr}(kA) = k \\\\, \\\\text{tr}(A)$\\n3. $\\\\text{tr}(A^T) = \\\\text{tr}(A)$\\n4. $\\\\text{tr}(AB) = \\\\text{tr}(BA)$ (even if $AB \\\\neq BA$)\\n5. $\\\\text{tr}(I_n) = n$"
+      },
+      {
+        "front": "State the key properties of the Transpose operation.",
+        "back": "1. $(A^T)^T = A$\\n2. $(A \\\\pm B)^T = A^T \\\\pm B^T$\\n3. $(kA)^T = k A^T$\\n4. $(AB)^T = B^T A^T$ (Reversal law)\\n5. $(A_1 A_2 \\\\dots A_m)^T = A_m^T \\\\dots A_2^T A_1^T$"
+      },
+      {
+        "front": "Define Symmetric and Skew-Symmetric matrices and their diagonal entry properties.",
+        "back": "1. Symmetric: $A^T = A \\\\iff a_{ij} = a_{ji} \\\\; \\\\forall i, j$.\\n2. Skew-Symmetric: $A^T = -A \\\\iff a_{ij} = -a_{ji} \\\\; \\\\forall i, j$.\\n   - For diagonal elements: $a_{ii} = -a_{ii} \\\\implies 2a_{ii} = 0 \\\\implies a_{ii} = 0$. Every principal diagonal entry of a skew-symmetric matrix must be zero."
+      },
+      {
+        "front": "How can any square matrix $A$ be uniquely decomposed into symmetric and skew-symmetric parts?",
+        "back": "$$A = \\\\frac{1}{2}(A + A^T) + \\\\frac{1}{2}(A - A^T)$$\\nwhere $\\\\frac{1}{2}(A + A^T)$ is symmetric, and $\\\\frac{1}{2}(A - A^T)$ is skew-symmetric."
+      },
+      {
+        "front": "What is the maximum number of distinct entries in an $n \\\\times n$ symmetric matrix and a skew-symmetric matrix?",
+        "back": "1. Symmetric matrix: $\\\\frac{n(n+1)}{2}$ independent entries (all entries on and above the main diagonal).\\n2. Skew-symmetric matrix: $\\\\frac{n(n-1)}{2}$ independent entries (main diagonal entries must be 0, leaving entries strictly above the diagonal)."
+      },
+      {
+        "front": "What is the determinant of a skew-symmetric matrix of odd order and even order?",
+        "back": "1. Odd order ($n$ is odd): $|A| = 0$ always.\\n   Proof: $|A| = |A^T| = |-A| = (-1)^n |A| = -|A| \\\\implies 2|A| = 0 \\\\implies |A| = 0$.\\n2. Even order ($n$ is even): $|A|$ is always a non-negative perfect square."
+      },
+      {
+        "front": "Define an Orthogonal Matrix and state its properties.",
+        "back": "A square matrix $A$ is orthogonal if:\\n$$A A^T = A^T A = I$$\\nProperties:\\n1. $A^{-1} = A^T$\\n2. $|A| = \\\\pm 1$ (since $|A A^T| = |A|^2 = |I| = 1$)\\n3. The product of two orthogonal matrices is orthogonal.\\n4. Column (and row) vectors are mutually orthogonal unit vectors."
+      },
+      {
+        "front": "Define an Idempotent Matrix and list its key properties.",
+        "back": "A square matrix $A$ is idempotent if $A^2 = A$.\\nProperties:\\n1. $A^n = A$ for all integers $n \\\\ge 1$.\\n2. $|A| = 0$ or $|A| = 1$ (since $|A|^2 = |A|$).\\n3. If $A$ is invertible, then $A = I_n$.\\n4. $I - A$ is also idempotent: $(I - A)^2 = I - 2A + A^2 = I - A$."
+      },
+      {
+        "front": "Define an Involutory Matrix and list its key properties.",
+        "back": "A square matrix $A$ is involutory if $A^2 = I$.\\nProperties:\\n1. $A^{-1} = A$\\n2. $|A| = \\\\pm 1$\\n3. $(I - A)(I + A) = I - A^2 = O$\\n4. $\\\\frac{1}{2}(I + A)$ and $\\\\frac{1}{2}(I - A)$ are idempotent matrices."
+      },
+      {
+        "front": "Define a Nilpotent Matrix and its index of nilpotency.",
+        "back": "A square matrix $A$ is nilpotent if there exists a positive integer $k$ such that $A^k = O$.\\nThe smallest such integer $k$ is called the **index of nilpotency**.\\nProperties:\\n1. $|A| = 0$ (nilpotent matrices are never invertible).\\n2. $\\\\text{tr}(A) = 0$.\\n3. $(I - A)^{-1} = I + A + A^2 + \\\\dots + A^{k-1}$."
+      },
+      {
+        "front": "Define a Periodic Matrix and state its period.",
+        "back": "A square matrix $A$ is periodic if $A^{k+1} = A$ for some positive integer $k$.\\nThe least such positive integer $k$ is called the **period** of $A$.\\nNote: If $k = 1$, $A^2 = A$, so an idempotent matrix is a periodic matrix of period 1."
+      },
+      {
+        "front": "What does the Cayley-Hamilton Theorem state?",
+        "back": "Every square matrix $A$ satisfies its own characteristic equation:\\nIf $P(\\\\lambda) = |A - \\\\lambda I| = (-1)^n \\\\lambda^n + c_{n-1} \\\\lambda^{n-1} + \\\\dots + c_0 = 0$,\\nthen:\\n$$P(A) = (-1)^n A^n + c_{n-1} A^{n-1} + \\\\dots + c_0 I = O$$\\nThis allows computation of higher matrix powers and inverses."
+      },
+      {
+        "front": "What is the rule for the determinant of a scalar multiplied by a matrix, $|kA|$?",
+        "back": "If $A$ is an $n \\\\times n$ square matrix and $k$ is a scalar:\\n$$|kA| = k^n |A|$$\\nBecause a factor of $k$ is factored out from each of the $n$ rows (or columns)."
+      },
+      {
+        "front": "State Cramer's Rule for a $3 \\\\times 3$ system of linear equations.",
+        "back": "For the system:\\n$a_1 x + b_1 y + c_1 z = d_1$\\n$a_2 x + b_2 y + c_2 z = d_2$\\n$a_3 x + b_3 y + c_3 z = d_3$\\nLet $\\\\Delta = \\\\begin{vmatrix} a_1 & b_1 & c_1 \\\\\\\\ a_2 & b_2 & c_2 \\\\\\\\ a_3 & b_3 & c_3 \\\\end{vmatrix}$, and $\\\\Delta_x, \\\\Delta_y, \\\\Delta_z$ be obtained by replacing columns with the constants $d_i$.\\nIf $\\\\Delta \\\\neq 0$, the unique solution is:\\n$$x = \\\\frac{\\\\Delta_x}{\\\\Delta}, \\\\quad y = \\\\frac{\\\\Delta_y}{\\\\Delta}, \\\\quad z = \\\\frac{\\\\Delta_z}{\\\\Delta}$$"
+      },
+      {
+        "front": "What are the Cramer's Rule conditions for Inconsistent System (No Solution)?",
+        "back": "The non-homogeneous system has **no solution** (is inconsistent) if:\\n$$\\\\Delta = 0 \\\\quad \\\\text{and at least one of } \\\\Delta_x, \\\\Delta_y, \\\\Delta_z \\\\neq 0$$\\nIn matrix method terms: $|A| = 0$ and $(\\\\text{adj}(A)) \\\\cdot B \\\\neq O$."
+      },
+      {
+        "front": "What are the Cramer's Rule conditions for Infinitely Many Solutions?",
+        "back": "The non-homogeneous system has **infinitely many solutions** (consistent and dependent) if:\\n$$\\\\Delta = \\\\Delta_x = \\\\Delta_y = \\\\Delta_z = 0$$\\n(provided the equations do not represent parallel non-coincident planes).\\nIn matrix method terms: $|A| = 0$ and $(\\\\text{adj}(A)) \\\\cdot B = O$."
+      },
+      {
+        "front": "State the conditions for trivial vs. non-trivial solutions in a Homogeneous Linear System $AX = O$.",
+        "back": "For $AX = O$ where $A$ is an $n \\\\times n$ matrix:\\n1. $X = O$ ($x = y = z = 0$) is always a solution, called the **trivial solution**.\\n2. If $|A| \\\\neq 0$: Only the unique **trivial solution** exists.\\n3. If $|A| = 0$: Infinitely many **non-trivial solutions** exist (along with the trivial solution)."
+      },
+      {
+        "front": "State the properties of alien cofactors (expansion by false cofactors).",
+        "back": "The sum of the products of the elements of any row (or column) with the cofactors of another row (or column) is identically ZERO:\\n$$\\\\sum_{k=1}^n a_{ik} C_{jk} = 0 \\\\quad \\\\text{if } i \\\\neq j$$\\nWhen $i = j$, the sum equals the determinant $|A|$."
+      },
+      {
+        "front": "What is the determinant of a triangular, diagonal, or scalar matrix?",
+        "back": "For any upper triangular, lower triangular, or diagonal matrix of order $n$:\\n$$|A| = a_{11} \\\\cdot a_{22} \\\\dots a_{nn} = \\\\prod_{i=1}^n a_{ii}$$\\nThe determinant is simply the product of its principal diagonal elements."
+      },
+      {
+        "front": "How do elementary row/column operations affect the value of a determinant?",
+        "back": "1. $R_i \\\\leftrightarrow R_j$: The determinant changes sign (multiplied by $-1$).\\n2. $R_i \\\\to k R_i$: The determinant is multiplied by $k$.\\n3. $R_i \\\\to R_i + k R_j$ ($i \\\\neq j$): The value of the determinant remains **unchanged**."
+      },
+      {
+        "front": "What is the relationship between the adjoint of an inverse and the inverse of an adjoint?",
+        "back": "For an invertible matrix $A$:\\n$$(\\\\text{adj}(A))^{-1} = \\\\text{adj}(A^{-1}) = \\\\frac{A}{|A|}$$\\nBoth operations commute."
+      },
+      {
+        "front": "If $A$ and $B$ are symmetric matrices, under what condition is the product $AB$ symmetric?",
+        "back": "$AB$ is symmetric if and only if $A$ and $B$ commute, i.e., $AB = BA$.\\nProof: $(AB)^T = B^T A^T = BA$. For $(AB)^T = AB$, we must have $BA = AB$."
+      },
+      {
+        "front": "What is the formula for the determinant of a $3 \\\\times 3$ circulant matrix $\\\\begin{vmatrix} a & b & c \\\\\\\\ b & c & a \\\\\\\\ c & a & b \\\\end{vmatrix}$?",
+        "back": "$$\\\\begin{vmatrix} a & b & c \\\\\\\\ b & c & a \\\\\\\\ c & a & b \\\\end{vmatrix} = -(a^3 + b^3 + c^3 - 3abc) = -(a+b+c)(a^2+b^2+c^2-ab-bc-ca)$$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ non-singular matrix such that $|A| = 4$. What is the value of $|\\\\text{adj}(2A)|$?",
+        "options": [
+          "256",
+          "512",
+          "1024",
+          "2048"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: This results from forgetting to apply the power to the scalar inside the determinant.",
+          "Incorrect: This calculation miscounts the power of 2 when applying the adjoint property.",
+          "Correct: $|\\\\text{adj}(2A)| = |2A|^{3-1} = |2A|^2 = (2^3 |A|)^2 = (8 \\\\times 4)^2 = 32^2 = 1024$.",
+          "Incorrect: Calculation error in squaring 32."
+        ],
+        "fullExplanation": "For any $n \\\\times n$ matrix $M$, we have the property $|\\\\text{adj}(M)| = |M|^{n-1}$.\\nHere $n = 3$, so $|\\\\text{adj}(2A)| = |2A|^{3-1} = |2A|^2$.\\nFor scalar multiplication of a $3 \\\\times 3$ matrix, $|2A| = 2^3 |A| = 8 |A|$.\\nGiven $|A| = 4$:\\n$$|2A| = 8 \\\\times 4 = 32$$\\nTherefore:\\n$$|\\\\text{adj}(2A)| = 32^2 = 1024$$"
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 1 & 2 \\\\\\\\ 3 & 4 \\\\end{bmatrix}$, then according to the Cayley-Hamilton theorem, $A^{-1}$ can be expressed as:",
+        "options": [
+          "$\\\\frac{1}{2}(A - 5I)$",
+          "$\\\\frac{1}{2}(5I - A)$",
+          "$5A - 2I$",
+          "$\\\\frac{1}{2}(A + 5I)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: The characteristic equation is $A^2 - 5A - 2I = O$, multiplying by $A^{-1}$ gives $A^{-1} = \\\\frac{1}{2}(A - 5I)$.",
+          "Incorrect: Sign error when isolating $A^{-1}$.",
+          "Incorrect: Incorrect algebraic manipulation of the matrix equation.",
+          "Incorrect: Sign error in the trace term."
+        ],
+        "fullExplanation": "The characteristic equation of a $2 \\\\times 2$ matrix $A$ is given by:\\n$$\\\\lambda^2 - \\\\text{tr}(A)\\\\lambda + |A| = 0$$\\nHere, $\\\\text{tr}(A) = 1 + 4 = 5$, and $|A| = (1)(4) - (2)(3) = 4 - 6 = -2$.\\nThus, the characteristic equation is:\\n$$\\\\lambda^2 - 5\\\\lambda - 2 = 0$$\\nBy the Cayley-Hamilton Theorem, $A$ satisfies its own characteristic equation:\\n$$A^2 - 5A - 2I = O$$\\nMultiplying both sides by $A^{-1}$:\\n$$A - 5I - 2A^{-1} = O \\\\implies 2A^{-1} = A - 5I \\\\implies A^{-1} = \\\\frac{1}{2}(A - 5I)$$"
+      },
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ matrix with $|A| = 3$. What is the value of $|\\\\text{adj}(\\\\text{adj}(A))|$?",
+        "options": [
+          "27",
+          "81",
+          "243",
+          "729"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: This is $|A|^3$, which corresponds to $|A|^n$.",
+          "Correct: $|\\\\text{adj}(\\\\text{adj}(A))| = |A|^{(n-1)^2} = |A|^{(3-1)^2} = |A|^4 = 3^4 = 81$.",
+          "Incorrect: This is $|A|^5$.",
+          "Incorrect: This is $|A|^6$."
+        ],
+        "fullExplanation": "For a square matrix $A$ of order $n$, the determinant of the double adjoint is given by:\\n$$|\\\\text{adj}(\\\\text{adj}(A))| = |A|^{(n-1)^2}$$\\nHere, $n = 3$ and $|A| = 3$:\\n$$(n - 1)^2 = (3 - 1)^2 = 2^2 = 4$$\\nTherefore:\\n$$|\\\\text{adj}(\\\\text{adj}(A))| = |A|^4 = 3^4 = 81$$"
+      },
+      {
+        "question": "The system of linear equations:\\n$$x + y + z = 6$$\\n$$x + 2y + 3z = 10$$\\n$$x + 2y + \\\\lambda z = \\\\mu$$\\nhas infinitely many solutions. The ordered pair $(\\\\lambda, \\\\mu)$ is equal to:",
+        "options": [
+          "$(3, 10)$",
+          "$(3, -10)$",
+          "$(-3, 10)$",
+          "$(2, 10)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Infinitely many solutions require $\\\\Delta = 0 \\\\implies \\\\lambda = 3$ and identical equations yield $\\\\mu = 10$.",
+          "Incorrect: Sign error in $\\\\mu$.",
+          "Incorrect: Sign error in $\\\\lambda$.",
+          "Incorrect: Value of $\\\\lambda$ does not make $\\\\Delta = 0$."
+        ],
+        "fullExplanation": "The coefficient determinant is:\\n$$\\\\Delta = \\\\begin{vmatrix} 1 & 1 & 1 \\\\\\\\ 1 & 2 & 3 \\\\\\\\ 1 & 2 & \\\\lambda \\\\end{vmatrix}$$\\nApplying $R_3 \\\\to R_3 - R_2$:\\n$$\\\\Delta = \\\\begin{vmatrix} 1 & 1 & 1 \\\\\\\\ 1 & 2 & 3 \\\\\\\\ 0 & 0 & \\\\lambda - 3 \\\\end{vmatrix} = (\\\\lambda - 3)(2 - 1) = \\\\lambda - 3$$\\nFor infinitely many solutions, we must have $\\\\Delta = 0 \\\\implies \\\\lambda = 3$.\\nWhen $\\\\lambda = 3$, the second and third equations become:\\n$$x + 2y + 3z = 10 \\\\quad \\\\text{and} \\\\quad x + 2y + 3z = \\\\mu$$\\nFor consistency and non-contradiction, the right-hand sides must be identical, so $\\\\mu = 10$.\\nThus, $(\\\\lambda, \\\\mu) = (3, 10)$."
+      },
+      {
+        "question": "Let $A$ be a symmetric matrix and $B$ be a skew-symmetric matrix of the same order. Then the matrix $C = AB - BA$ is always:",
+        "options": [
+          "Symmetric",
+          "Skew-symmetric",
+          "Null matrix",
+          "Identity matrix"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Taking transpose, $C^T = (AB - BA)^T = B^T A^T - A^T B^T = (-B)A - A(-B) = -BA + AB = AB - BA = C$.",
+          "Incorrect: Transpose calculation yields $C^T = C$, not $-C$.",
+          "Incorrect: $AB$ and $BA$ are not necessarily equal.",
+          "Incorrect: There is no reason for $C$ to be the identity matrix."
+        ],
+        "fullExplanation": "Given $A^T = A$ (symmetric) and $B^T = -B$ (skew-symmetric).\\nConsider $C = AB - BA$:\\n$$C^T = (AB - BA)^T = (AB)^T - (BA)^T = B^T A^T - A^T B^T$$\\nSubstitute $A^T = A$ and $B^T = -B$:\\n$$C^T = (-B)(A) - (A)(-B) = -BA + AB = AB - BA = C$$\\nSince $C^T = C$, the matrix $C$ is symmetric."
+      },
+      {
+        "question": "If $A$ is a $3 \\\\times 3$ orthogonal matrix such that $|A| = 1$, what is the value of $|A - I|$?",
+        "options": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Calculation leads to $|A - I| = -|A - I|$, which cannot be 1.",
+          "Incorrect: $|A - I|$ must equal 0.",
+          "Correct: Using $A A^T = I$, $|A - I| = |A(I - A^T)| = |A| |I - A^T| = |(I - A)^T| = |I - A| = (-1)^3 |A - I| = -|A - I| \\\\implies |A - I| = 0$.",
+          "Incorrect: Misapplication of determinant properties."
+        ],
+        "fullExplanation": "Since $A$ is orthogonal, $A A^T = I$, so:\\n$$|A - I| = |A - A A^T| = |A(I - A^T)| = |A| \\\\cdot |I - A^T|$$\\nGiven $|A| = 1$:\\n$$|A - I| = 1 \\\\cdot |(I - A)^T| = |I - A|$$\\nFor an $n \\\\times n$ matrix with $n = 3$ (odd):\\n$$|I - A| = |-(A - I)| = (-1)^3 |A - I| = -|A - I|$$\\nThus:\\n$$|A - I| = -|A - I| \\\\implies 2|A - I| = 0 \\\\implies |A - I| = 0$$"
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 1 & 0 & 1 \\\\end{bmatrix}$, then for any $n \\\\in \\\\mathbb{N}$, $A^n$ equals:",
+        "options": [
+          "$\\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ n & 0 & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ n^2 & 0 & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} n & 0 & 0 \\\\\\\\ 0 & n & 0 \\\\\\\\ n & 0 & n \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 2^n & 0 & 1 \\\\end{bmatrix}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Writing $A = I + N$ where $N$ is nilpotent with $N^2 = O$, $(I+N)^n = I + nN$.",
+          "Incorrect: The off-diagonal term increases linearly, not quadratically.",
+          "Incorrect: Diagonal elements remain 1, not $n$.",
+          "Incorrect: The off-diagonal term does not grow exponentially."
+        ],
+        "fullExplanation": "We can decompose $A$ as $A = I + N$, where:\\n$$I = \\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 0 & 0 & 1 \\\\end{bmatrix}, \\\\quad N = \\\\begin{bmatrix} 0 & 0 & 0 \\\\\\\\ 0 & 0 & 0 \\\\\\\\ 1 & 0 & 0 \\\\end{bmatrix}$$\\nNotice that:\\n$$N^2 = \\\\begin{bmatrix} 0 & 0 & 0 \\\\\\\\ 0 & 0 & 0 \\\\\\\\ 1 & 0 & 0 \\\\end{bmatrix} \\\\begin{bmatrix} 0 & 0 & 0 \\\\\\\\ 0 & 0 & 0 \\\\\\\\ 1 & 0 & 0 \\\\end{bmatrix} = \\\\begin{bmatrix} 0 & 0 & 0 \\\\\\\\ 0 & 0 & 0 \\\\\\\\ 0 & 0 & 0 \\\\end{bmatrix} = O$$\\nSince $I$ and $N$ commute ($IN = NI = N$), we can use the Binomial Theorem:\\n$$A^n = (I + N)^n = I^n + n I^{n-1} N + \\\\frac{n(n-1)}{2} I^{n-2} N^2 + \\\\dots = I + nN$$\\n$$A^n = \\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ 0 & 0 & 1 \\\\end{bmatrix} + \\\\begin{bmatrix} 0 & 0 & 0 \\\\\\\\ 0 & 0 & 0 \\\\\\\\ n & 0 & 0 \\\\end{bmatrix} = \\\\begin{bmatrix} 1 & 0 & 0 \\\\\\\\ 0 & 1 & 0 \\\\\\\\ n & 0 & 1 \\\\end{bmatrix}$$"
+      },
+      {
+        "question": "For a $3 \\\\times 3$ matrix $A$, if $\\\\text{adj}(A) = \\\\begin{bmatrix} 1 & 2 & 2 \\\\\\\\ 2 & 1 & 2 \\\\\\\\ 2 & 2 & 1 \\\\end{bmatrix}$, then the value of $|A|$ is:",
+        "options": [
+          "$\\\\pm 5$",
+          "$\\\\pm \\\\sqrt{5}$",
+          "5",
+          "25"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: 5 is the determinant of $\\\\text{adj}(A)$, not $|A|$.",
+          "Correct: $|\Target| = |A|^{n-1} = |A|^2 = 5 \\\\implies |A| = \\\\pm \\\\sqrt{5}$.",
+          "Incorrect: Misses the square root and the negative possibility.",
+          "Incorrect: Squaring 5 instead of taking square root."
+        ],
+        "fullExplanation": "For a $3 \\\\times 3$ matrix, we know that:\\n$$|\\\\text{adj}(A)| = |A|^{3-1} = |A|^2$$\\nLet us compute $|\\\\text{adj}(A)|$:\\n$$|\\\\text{adj}(A)| = \\\\begin{vmatrix} 1 & 2 & 2 \\\\\\\\ 2 & 1 & 2 \\\\\\\\ 2 & 2 & 1 \\\\end{vmatrix}$$\\nExpanding along the first row:\\n$$= 1(1 - 4) - 2(2 - 4) + 2(4 - 2)$$\\n$$= 1(-3) - 2(-2) + 2(2) = -3 + 4 + 4 = 5$$\\nSince $|A|^2 = 5$, we obtain:\\n$$|A| = \\\\pm \\\\sqrt{5}$$"
+      },
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ matrix such that $|A| = 2$. What is the value of $|\\\\text{adj}(A^{-1})|$?",
+        "options": [
+          "$\\\\frac{1}{2}$",
+          "$\\\\frac{1}{4}$",
+          "4",
+          "2"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Forgot that $|\Target| = |M|^{n-1} = |M|^2$.",
+          "Correct: $|\\\\text{adj}(A^{-1})| = |A^{-1}|^{3-1} = (|A|^{-1})^2 = (1/2)^2 = 1/4$.",
+          "Incorrect: Took $|A|^2$ instead of $|A^{-1}|^2$.",
+          "Incorrect: Miscalculated the inverse determinant."
+        ],
+        "fullExplanation": "For any $3 \\\\times 3$ matrix $M$, $|\\\\text{adj}(M)| = |M|^{3-1} = |M|^2$.\\nLet $M = A^{-1}$:\\n$$|\\\\text{adj}(A^{-1})| = |A^{-1}|^2$$\\nSince $|A^{-1}| = \\\\frac{1}{|A|}$ and $|A| = 2$:\\n$$|A^{-1}| = \\\\frac{1}{2}$$\\nTherefore:\\n$$|\\\\text{adj}(A^{-1})| = \\\\left(\\\\frac{1}{2}\\\\right)^2 = \\\\frac{1}{4}$$"
+      },
+      {
+        "question": "Let $P = \\\\begin{bmatrix} \\\\frac{\\\\sqrt{3}}{2} & \\\\frac{1}{2} \\\\\\\\ -\\\\frac{1}{2} & \\\\frac{\\\\sqrt{3}}{2} \\\\end{bmatrix}$, $A = \\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$, and $Q = P A P^T$. What is the matrix $P^T Q^{2024} P$?",
+        "options": [
+          "$\\\\begin{bmatrix} 1 & 2024 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 & 0 \\\\\\\\ 2024 & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 2024 & 1 \\\\\\\\ 0 & 2024 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $P P^T = I$, so $Q^k = P A^k P^T \\\\implies P^T Q^{2024} P = A^{2024} = \\\\begin{bmatrix} 1 & 2024 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$.",
+          "Incorrect: The off-diagonal term is at $(1,2)$, not $(2,1)$.",
+          "Incorrect: The diagonal elements remain 1.",
+          "Incorrect: This is $A^1$, failing to raise to the power 2024."
+        ],
+        "fullExplanation": "First, verify that $P$ is an orthogonal matrix:\\n$$P P^T = \\\\begin{bmatrix} \\\\frac{\\\\sqrt{3}}{2} & \\\\frac{1}{2} \\\\\\\\ -\\\\frac{1}{2} & \\\\frac{\\\\sqrt{3}}{2} \\\\end{bmatrix} \\\\begin{bmatrix} \\\\frac{\\\\sqrt{3}}{2} & -\\\\frac{1}{2} \\\\\\\\ \\\\frac{1}{2} & \\\\frac{\\\\sqrt{3}}{2} \\\\end{bmatrix} = \\\\begin{bmatrix} \\\\frac{3}{4} + \\\\frac{1}{4} & -\\\\frac{\\\\sqrt{3}}{4} + \\\\frac{\\\\sqrt{3}}{4} \\\\\\\\ -\\\\frac{\\\\sqrt{3}}{4} + \\\\frac{\\\\sqrt{3}}{4} & \\\\frac{1}{4} + \\\\frac{3}{4} \\\\end{bmatrix} = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 0 & 1 \\\\end{bmatrix} = I$$\\nNow, $Q = P A P^T$ implies:\\n$$Q^2 = (P A P^T)(P A P^T) = P A (P^T P) A P^T = P A^2 P^T$$\\nBy induction, $Q^{2024} = P A^{2024} P^T$.\\nMultiplying by $P^T$ on the left and $P$ on the right:\\n$$P^T Q^{2024} P = P^T (P A^{2024} P^T) P = (P^T P) A^{2024} (P^T P) = I A^{2024} I = A^{2024}$$\\nFor $A = \\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$, it is well-known that $A^k = \\\\begin{bmatrix} 1 & k \\\\\\\\ 0 & 1 \\\\end{bmatrix}$.\\nTherefore:\\n$$A^{2024} = \\\\begin{bmatrix} 1 & 2024 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$$"
+      },
+      {
+        "question": "If $A$ is a square matrix of order 3 such that $A^2 = 2A - I$, then $A^4$ is equal to:",
+        "options": [
+          "$4A - 3I$",
+          "$3A - 2I$",
+          "$5A - 4I$",
+          "$8A - 7I$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Successive multiplication yields $A^3 = 3A - 2I$ and $A^4 = 4A - 3I$.",
+          "Incorrect: This is the expression for $A^3$.",
+          "Incorrect: This is the expression for $A^5$.",
+          "Incorrect: Arises from incorrectly doubling coefficients as powers of 2."
+        ],
+        "fullExplanation": "Given $A^2 = 2A - I$.\\nMultiplying both sides by $A$:\\n$$A^3 = 2A^2 - A$$\\nSubstitute $A^2 = 2A - I$:\\n$$A^3 = 2(2A - I) - A = 4A - 2I - A = 3A - 2I$$\\nMultiplying by $A$ again:\\n$$A^4 = 3A^2 - 2A$$\\nSubstitute $A^2 = 2A - I$:\\n$$A^4 = 3(2A - I) - 2A = 6A - 3I - 2A = 4A - 3I$$"
+      },
+      {
+        "question": "The system of linear equations:\\n$$kx + y + z = 1$$\\n$$x + ky + z = 1$$\\n$$x + y + kz = 1$$\\nhas NO solution when $k$ equals:",
+        "options": [
+          "1",
+          "-2",
+          "2",
+          "-1"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: For $k = 1$, all equations are $x+y+z=1$, which gives infinitely many solutions.",
+          "Correct: For $k = -2$, $\\\\Delta = 0$ and adding all three equations gives $0 = 3$, an impossibility (no solution).",
+          "Incorrect: For $k = 2$, $\\\\Delta \\\\neq 0$, giving a unique solution.",
+          "Incorrect: For $k = -1$, $\\\\Delta \\\\neq 0$, giving a unique solution."
+        ],
+        "fullExplanation": "The coefficient determinant is:\\n$$\\\\Delta = \\\\begin{vmatrix} k & 1 & 1 \\\\\\\\ 1 & k & 1 \\\\\\\\ 1 & 1 & k \\\\end{vmatrix}$$\\nApplying $C_1 \\\\to C_1 + C_2 + C_3$:\\n$$\\\\Delta = \\\\begin{vmatrix} k+2 & 1 & 1 \\\\\\\\ k+2 & k & 1 \\\\\\\\ k+2 & 1 & k \\\\end{vmatrix} = (k+2) \\\\begin{vmatrix} 1 & 1 & 1 \\\\\\\\ 1 & k & 1 \\\\\\\\ 1 & 1 & k \\\\end{vmatrix}$$\\nApplying $R_2 \\\\to R_2 - R_1, R_3 \\\\to R_3 - R_1$:\\n$$\\\\Delta = (k+2) \\\\begin{vmatrix} 1 & 1 & 1 \\\\\\\\ 0 & k-1 & 0 \\\\\\\\ 0 & 0 & k-1 \\\\end{vmatrix} = (k+2)(k-1)^2$$\\n$\\\\Delta = 0$ when $k = 1$ or $k = -2$.\\nCase 1: $k = 1$\\nThe system becomes $x + y + z = 1$ three times, having infinitely many solutions.\\nCase 2: $k = -2$\\nThe system is:\\n$$-2x + y + z = 1$$\\n$$x - 2y + z = 1$$\\n$$x + y - 2z = 1$$\\nAdding all three equations:\\n$$(-2+1+1)x + (1-2+1)y + (1+1-2)z = 1 + 1 + 1 \\\\implies 0 = 3$$\\nThis is impossible, so there is no solution when $k = -2$."
+      },
+      {
+        "question": "If $A$ is an idempotent matrix, then the matrix $(I + A)^3$ simplifies to:",
+        "options": [
+          "$I + 3A$",
+          "$I + 7A$",
+          "$I + 8A$",
+          "$I + A$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Does not account for $A^2$ and $A^3$ terms.",
+          "Correct: $(I+A)^3 = I + 3A + 3A^2 + A^3 = I + 3A + 3A + A = I + 7A$.",
+          "Incorrect: Added an extra $A$ incorrectly.",
+          "Incorrect: Misses binomial coefficients."
+        ],
+        "fullExplanation": "Since $A$ is an idempotent matrix, $A^2 = A$, and subsequently:\\n$$A^3 = A^2 \\\\cdot A = A \\\\cdot A = A^2 = A$$\\nSince $I$ and $A$ commute ($IA = AI = A$), we expand $(I + A)^3$ using the binomial theorem:\\n$$(I + A)^3 = I^3 + 3 I^2 A + 3 I A^2 + A^3$$\\n$$= I + 3A + 3A^2 + A^3$$\\nSubstituting $A^2 = A$ and $A^3 = A$:\\n$$= I + 3A + 3A + A = I + 7A$$"
+      },
+      {
+        "question": "If $A$ is an involutory matrix ($A^2 = I$), then the matrices $P = \\\\frac{1}{2}(I + A)$ and $Q = \\\\frac{1}{2}(I - A)$ are both:",
+        "options": [
+          "Involutory",
+          "Nilpotent",
+          "Idempotent",
+          "Orthogonal"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Their square is not $I$.",
+          "Incorrect: Their powers do not vanish.",
+          "Correct: $P^2 = \\\\frac{1}{4}(I + 2A + A^2) = \\\\frac{1}{4}(2I + 2A) = \\\\frac{1}{2}(I + A) = P$, so $P$ is idempotent (and likewise for $Q$).",
+          "Incorrect: $P P^T$ is not necessarily $I$."
+        ],
+        "fullExplanation": "Given $A^2 = I$.\\nCalculate $P^2$:\\n$$P^2 = \\\\left(\\\\frac{I + A}{2}\\\\right)^2 = \\\\frac{I^2 + 2IA + A^2}{4} = \\\\frac{I + 2A + I}{4} = \\\\frac{2I + 2A}{4} = \\\\frac{I + A}{2} = P$$\\nSimilarly for $Q$:\\n$$Q^2 = \\\\left(\\\\frac{I - A}{2}\\\\right)^2 = \\\\frac{I - 2A + A^2}{4} = \\\\frac{I - 2A + I}{4} = \\\\frac{2I - 2A}{4} = \\\\frac{I - A}{2} = Q$$\\nSince $P^2 = P$ and $Q^2 = Q$, both matrices are idempotent."
+      },
+      {
+        "question": "The value of the determinant $\\\\begin{vmatrix} 1 & a & a^2 \\\\\\\\ 1 & b & b^2 \\\\\\\\ 1 & c & c^2 \\\\end{vmatrix}$ is equal to:",
+        "options": [
+          "$(a - b)(b - c)(c - a)$",
+          "$(a + b)(b + c)(c + a)$",
+          "$(a - b)(b - c)(a - c)$",
+          "$(a + b + c)(a^2 + b^2 + c^2)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: This is the standard Vandermonde determinant result $(a-b)(b-c)(c-a)$.",
+          "Incorrect: Factors involve subtraction, not addition.",
+          "Incorrect: Sign error; the last factor is $(c-a)$, not $(a-c)$.",
+          "Incorrect: Does not match the degree 3 cyclic product."
+        ],
+        "fullExplanation": "Let $\\\\Delta = \\\\begin{vmatrix} 1 & a & a^2 \\\\\\\\ 1 & b & b^2 \\\\\\\\ 1 & c & c^2 \\\\end{vmatrix}$.\\nPerform row operations $R_2 \\\\to R_2 - R_1$ and $R_3 \\\\to R_3 - R_1$:\\n$$\\\\Delta = \\\\begin{vmatrix} 1 & a & a^2 \\\\\\\\ 0 & b - a & b^2 - a^2 \\\\\\\\ 0 & c - a & c^2 - a^2 \\\\end{vmatrix}$$\\nFactor out $(b - a)$ from row 2 and $(c - a)$ from row 3:\\n$$\\\\Delta = (b - a)(c - a) \\\\begin{vmatrix} 1 & a & a^2 \\\\\\\\ 0 & 1 & b + a \\\\\\\\ 0 & 1 & c + a \\\\end{vmatrix}$$\\nExpand along column 1:\\n$$\\\\Delta = (b - a)(c - a) [(c + a) - (b + a)] = (b - a)(c - a)(c - b)$$\\nRewriting in cyclic order:\\n$$(b - a) = -(a - b) \\\\quad \\\\text{and} \\\\quad (c - b) = -(b - c)$$\\n$$\\\\Delta = [-(a - b)][-(b - c)](c - a) = (a - b)(b - c)(c - a)$$"
+      },
+      {
+        "question": "If $A$ and $B$ are non-zero square matrices of order 3 such that $AB = O$, then which of the following is necessarily true?",
+        "options": [
+          "$|A| = 0$ and $|B| = 0$",
+          "$|A| \\\\neq 0$ and $|B| = 0$",
+          "$|A| = 0$ and $|B| \\\\neq 0$",
+          "$|A| \\\\neq 0$ and $|B| \\\\neq 0$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: If either $|A| \\\\neq 0$ or $|B| \\\\neq 0$, the non-singular matrix would have an inverse, forcing the other matrix to be $O$, contradicting that both are non-zero.",
+          "Incorrect: If $|A| \\\\neq 0$, multiplying by $A^{-1}$ forces $B = O$.",
+          "Incorrect: If $|B| \\\\neq 0$, multiplying by $B^{-1}$ forces $A = O$.",
+          "Incorrect: $|AB| = |A||B| = |O| = 0$, so both cannot be non-zero."
+        ],
+        "fullExplanation": "Given $AB = O$ with $A \\\\neq O$ and $B \\\\neq O$.\\nSuppose $|A| \\\\neq 0$. Then $A^{-1}$ exists.\\nMultiplying $AB = O$ on the left by $A^{-1}$ gives:\\n$$A^{-1}(AB) = A^{-1}O \\\\implies (A^{-1}A)B = O \\\\implies IB = O \\\\implies B = O$$\\nThis contradicts the hypothesis that $B$ is a non-zero matrix! Therefore, $|A| = 0$.\\nSimilarly, suppose $|B| \\\\neq 0$. Then $B^{-1}$ exists.\\nMultiplying $AB = O$ on the right by $B^{-1}$ gives:\\n$$(AB)B^{-1} = O B^{-1} \\\\implies A = O$$\\nThis contradicts the hypothesis that $A$ is a non-zero matrix! Therefore, $|B| = 0$.\\nHence, both $|A| = 0$ and $|B| = 0$."
+      },
+      {
+        "question": "If $A$ is a skew-symmetric matrix of order 3, what is the value of $|A|$?",
+        "options": [
+          "1",
+          "-1",
+          "0",
+          "Depends on the non-zero entries"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: Determinant is independent of entries for odd-order skew-symmetric matrices.",
+          "Incorrect: Cannot be -1.",
+          "Correct: Any odd-order skew-symmetric matrix has determinant equal to 0.",
+          "Incorrect: It is universally 0 for odd dimensions."
+        ],
+        "fullExplanation": "For any skew-symmetric matrix $A$, we have $A^T = -A$.\\nTaking the determinant of both sides:\\n$$|A^T| = |-A|$$\\nSince $|A^T| = |A|$ and for an $n \\\\times n$ matrix $|-A| = (-1)^n |A|$:\\n$$|A| = (-1)^n |A|$$\\nHere $n = 3$ (odd), so $(-1)^3 = -1$:\\n$$|A| = -|A| \\\\implies 2|A| = 0 \\\\implies |A| = 0$$"
+      },
+      {
+        "question": "If $A$ is a square matrix of order 3 with $|A| = 5$, what is the value of $|-2A|$?",
+        "options": [
+          "-10",
+          "-40",
+          "40",
+          "-120"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Computed $(-2) \\\\times 5$, forgetting that $k$ is raised to the order $n=3$.",
+          "Correct: $|-2A| = (-2)^3 |A| = -8 \\\\times 5 = -40$.",
+          "Incorrect: Missed the negative sign from $(-2)^3$.",
+          "Incorrect: Calculation error."
+        ],
+        "fullExplanation": "For any $n \\\\times n$ matrix $A$ and scalar $k$:\\n$$|kA| = k^n |A|$$\\nHere $n = 3$, $k = -2$, and $|A| = 5$:\\n$$|-2A| = (-2)^3 |A| = -8 \\\\times 5 = -40$$"
+      },
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ matrix such that $A \\\\cdot (\\\\text{adj}(A)) = 5 I_3$. What is the value of $|\\\\text{adj}(A)|$?",
+        "options": [
+          "5",
+          "25",
+          "125",
+          "625"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: 5 is the determinant of $A$, not $\\\\text{adj}(A)$.",
+          "Correct: $A \\\\cdot \\\\text{adj}(A) = |A| I_3 = 5 I_3 \\\\implies |A| = 5$. Thus $|\\\\text{adj}(A)| = |A|^{3-1} = 5^2 = 25$.",
+          "Incorrect: This is $|A|^3 = 125$.",
+          "Incorrect: This is $5^4$."
+        ],
+        "fullExplanation": "By the fundamental property of the adjoint matrix:\\n$$A \\\\cdot (\\\\text{adj}(A)) = |A| I_n$$\\nWe are given $A \\\\cdot (\\\\text{adj}(A)) = 5 I_3$, so $|A| = 5$.\\nNow, for an $n \\\\times n$ matrix, the determinant of its adjoint is:\\n$$|\\\\text{adj}(A)| = |A|^{n-1}$$\\nSince $n = 3$:\\n$$|\\\\text{adj}(A)| = |A|^{3-1} = |A|^2 = 5^2 = 25$$"
+      },
+      {
+        "question": "The homogeneous system of linear equations:\\n$$x + ky + 3z = 0$$\\n$$3x + ky - 2z = 0$$\\n$$2x + 3y - 4z = 0$$\\nhas a non-trivial solution. The value of $k$ is:",
+        "options": [
+          "$\\\\frac{33}{2}$",
+          "$\\\\frac{31}{2}$",
+          "$16$",
+          "$-\\\\frac{33}{2}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Non-trivial solution means $|A| = 0$. Expanding the determinant gives $33 - 2k = 0 \\\\implies k = \\\\frac{33}{2}$.",
+          "Incorrect: Arithmetic error in expanding the determinant.",
+          "Incorrect: Miscalculation in minor evaluation.",
+          "Incorrect: Sign error in isolating $k$."
+        ],
+        "fullExplanation": "A homogeneous system has a non-trivial solution if and only if the determinant of its coefficient matrix is zero:\\n$$\\\\begin{vmatrix} 1 & k & 3 \\\\\\\\ 3 & k & -2 \\\\\\\\ 2 & 3 & -4 \\\\end{vmatrix} = 0$$\\nPerform row operation $R_2 \\\\to R_2 - R_1$:\\n$$\\\\begin{vmatrix} 1 & k & 3 \\\\\\\\ 2 & 0 & -5 \\\\\\\\ 2 & 3 & -4 \\\\end{vmatrix} = 0$$\\nExpanding along row 2:\\n$$-2 \\\\begin{vmatrix} k & 3 \\\\\\\\ 3 & -4 \\\\end{vmatrix} - 5 \\\\begin{vmatrix} 1 & k \\\\\\\\ 2 & 3 \\\\end{vmatrix} = 0$$\\n$$-2(-4k - 9) - 5(3 - 2k) = 0$$\\n$$8k + 18 - 15 + 10k = 0 \\\\implies 18k + 3 = 0 \\\\text{ -- let's re-expand carefully:}$$\\nDirect expansion along Row 1:\\n$$1[k(-4) - (-2)(3)] - k[3(-4) - (-2)(2)] + 3[3(3) - 2k] = 0$$\\n$$1[-4k + 6] - k[-12 + 4] + 3[9 - 2k] = 0$$\\n$$-4k + 6 - k(-8) + 27 - 6k = 0$$\\n$$-4k + 6 + 8k + 27 - 6k = 0$$\\n$$(8k - 4k - 6k) + (6 + 27) = 0$$\\n$$-2k + 33 = 0 \\\\implies 2k = 33 \\\\implies k = \\\\frac{33}{2}$$"
+      },
+      {
+        "question": "If $A$ is a $3 \\\\times 3$ matrix such that $\\\\text{adj}(2A) = c \\\\cdot \\\\text{adj}(A)$, then the value of the scalar $c$ is:",
+        "options": [
+          "2",
+          "4",
+          "8",
+          "16"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Assumed $c = k^1$.",
+          "Correct: For an $n \\\\times n$ matrix, $\\\\text{adj}(k A) = k^{n-1} \\\\text{adj}(A)$. Here $n=3, k=2 \\\\implies c = 2^{3-1} = 4$.",
+          "Incorrect: Assumed $c = k^n = 2^3 = 8$.",
+          "Incorrect: Assumed $c = k^4 = 16$."
+        ],
+        "fullExplanation": "For any square matrix $A$ of order $n$ and scalar $k$:\\n$$\\\\text{adj}(kA) = k^{n-1} \\\\text{adj}(A)$$\\nHere, $n = 3$ and $k = 2$:\\n$$\\\\text{adj}(2A) = 2^{3-1} \\\\text{adj}(A) = 2^2 \\\\text{adj}(A) = 4 \\\\, \\\\text{adj}(A)$$\\nTherefore, $c = 4$."
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 0 & 1 \\\\\\\\ 0 & 0 \\\\end{bmatrix}$, what is the index of nilpotency of $A$?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "Does not exist"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: $A^1 \\\\neq O$.",
+          "Correct: $A \\\\neq O$ and $A^2 = \\\\begin{bmatrix} 0 & 0 \\\\\\\\ 0 & 0 \\\\end{bmatrix} = O$, so the index is 2.",
+          "Incorrect: $A^2$ already vanishes, so index is 2, not 3.",
+          "Incorrect: $A$ is nilpotent."
+        ],
+        "fullExplanation": "The index of nilpotency is the smallest positive integer $k$ such that $A^k = O$.\\nFor $k = 1$:\\n$$A = \\\\begin{bmatrix} 0 & 1 \\\\\\\\ 0 & 0 \\\\end{bmatrix} \\\\neq O$$\\nFor $k = 2$:\\n$$A^2 = \\\\begin{bmatrix} 0 & 1 \\\\\\\\ 0 & 0 \\\\end{bmatrix} \\\\begin{bmatrix} 0 & 1 \\\\\\\\ 0 & 0 \\\\end{bmatrix} = \\\\begin{bmatrix} 0 & 0 \\\\\\\\ 0 & 0 \\\\end{bmatrix} = O$$\\nTherefore, the index of nilpotency is 2."
+      },
+      {
+        "question": "Let $A$ and $B$ be invertible matrices of the same order. Which of the following statements is FALSE?",
+        "options": [
+          "$(AB)^{-1} = B^{-1} A^{-1}$",
+          "$\\\\text{adj}(AB) = \\\\text{adj}(B) \\\\cdot \\\\text{adj}(A)$",
+          "$(A + B)^{-1} = A^{-1} + B^{-1}$",
+          "$(A^T)^{-1} = (A^{-1})^T$"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect: This is a standard and true reversal law for inverses.",
+          "Incorrect: This is a true reversal law for adjoints.",
+          "Correct: Inversion is NOT distributive over matrix addition; $(A + B)^{-1} \\\\neq A^{-1} + B^{-1}$ in general.",
+          "Incorrect: Transpose and inverse operations commute, so this statement is true."
+        ],
+        "fullExplanation": "Let us examine the options:\\n1. $(AB)^{-1} = B^{-1}A^{-1}$ is the well-known reversal law of inverse matrices (True).\\n2. $\\\\text{adj}(AB) = \\\\text{adj}(B)\\\\text{adj}(A)$ is the reversal law of adjoint matrices (True).\\n3. $(A+B)^{-1} = A^{-1} + B^{-1}$ is FALSE. In fact, even for scalar numbers $(a+b)^{-1} = \\\\frac{1}{a+b} \\\\neq \\\\frac{1}{a} + \\\\frac{1}{b}$. Thus it does not hold for matrices either.\\n4. $(A^T)^{-1} = (A^{-1})^T$ is a true property, as transposition and inversion commute."
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 1 & 2 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$, then the matrix expression $A^n - nA + (n-1)I$ is equal to:",
+        "options": [
+          "$O$",
+          "$I$",
+          "$A$",
+          "$nI$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $A^n = \\\\begin{bmatrix} 1 & 2n \\\\\\\\ 0 & 1 \\\\end{bmatrix}$, $nA = \\\\begin{bmatrix} n & 2n \\\\\\\\ 0 & n \\\\end{bmatrix}$, and $(n-1)I = \\\\begin{bmatrix} n-1 & 0 \\\\\\\\ 0 & n-1 \\\\end{bmatrix}$. Adding them gives $O$.",
+          "Incorrect: Calculation leads to all zero entries.",
+          "Incorrect: The expression evaluates to the zero matrix.",
+          "Incorrect: Off-diagonal terms cancel out completely and diagonal entries sum to 0."
+        ],
+        "fullExplanation": "For $A = \\\\begin{bmatrix} 1 & 2 \\\\\\\\ 0 & 1 \\\\end{bmatrix}$, we find by induction:\\n$$A^2 = \\\\begin{bmatrix} 1 & 4 \\\\\\\\ 0 & 1 \\\\end{bmatrix}, \\\\quad A^3 = \\\\begin{bmatrix} 1 & 6 \\\\\\\\ 0 & 1 \\\\end{bmatrix}, \\\\quad \\\\dots, \\\\quad A^n = \\\\begin{bmatrix} 1 & 2n \\\\\\\\ 0 & 1 \\\\end{bmatrix}$$\\nNow compute $A^n - nA + (n-1)I$:\\n$$A^n = \\\\begin{bmatrix} 1 & 2n \\\\\\\\ 0 & 1 \\\\end{bmatrix}$$\\n$$nA = \\\\begin{bmatrix} n & 2n \\\\\\\\ 0 & n \\\\end{bmatrix}$$\\n$$(n-1)I = \\\\begin{bmatrix} n-1 & 0 \\\\\\\\ 0 & n-1 \\\\end{bmatrix}$$\\nSumming these terms:\\n$$A^n - nA + (n-1)I = \\\\begin{bmatrix} 1 - n + (n-1) & 2n - 2n + 0 \\\\\\\\ 0 - 0 + 0 & 1 - n + (n-1) \\\\end{bmatrix} = \\\\begin{bmatrix} 0 & 0 \\\\\\\\ 0 & 0 \\\\end{bmatrix} = O$$"
+      },
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ matrix such that $A^2 = 3A - 2I$. If $A^{-1} = \\\\alpha A + \\\\beta I$, then the ordered pair $(\\\\alpha, \\\\beta)$ is:",
+        "options": [
+          "$\\\\left(-\\\\frac{1}{2}, \\\\frac{3}{2}\\\\right)$",
+          "$\\\\left(\\\\frac{1}{2}, -\\\\frac{3}{2}\\\\right)$",
+          "$\\\\left(-\\\\frac{3}{2}, \\\\frac{1}{2}\\\\right)$",
+          "$\\\\left(\\\\frac{3}{2}, -\\\\frac{1}{2}\\\\right)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $A^2 - 3A + 2I = O \\\\implies 2A^{-1} = 3I - A \\\\implies A^{-1} = -\\\\frac{1}{2}A + \\\\frac{3}{2}I$.",
+          "Incorrect: Sign error in both coefficients.",
+          "Incorrect: Swapped coefficients of $A$ and $I$.",
+          "Incorrect: Swapped coefficients and sign error."
+        ],
+        "fullExplanation": "Given the equation:\\n$$A^2 - 3A + 2I = O$$\\nMultiplying both sides on the right by $A^{-1}$:\\n$$A^2 A^{-1} - 3A A^{-1} + 2I A^{-1} = O$$\\n$$A - 3I + 2A^{-1} = O$$\\nIsolating $A^{-1}$:\\n$$2A^{-1} = 3I - A$$\\n$$A^{-1} = -\\\\frac{1}{2}A + \\\\frac{3}{2}I$$\\nComparing with $A^{-1} = \\\\alpha A + \\\\beta I$:\\n$$\\\\alpha = -\\\\frac{1}{2}, \\\\quad \\\\beta = \\\\frac{3}{2}$$\\nThus, $(\\\\alpha, \\\\beta) = \\\\left(-\\\\frac{1}{2}, \\\\frac{3}{2}\\\\right)$."
+      },
+      {
+        "question": "If $A$ is a skew-symmetric matrix and $n$ is any positive integer, then the matrix $A^{2n}$ is:",
+        "options": [
+          "Symmetric",
+          "Skew-symmetric",
+          "Orthogonal",
+          "Null matrix"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $(A^{2n})^T = (A^T)^{2n} = (-A)^{2n} = (-1)^{2n} A^{2n} = A^{2n}$, so it is symmetric.",
+          "Incorrect: $(-1)^{2n} = 1$, not $-1$, so it cannot be skew-symmetric.",
+          "Incorrect: It does not necessarily satisfy $(A^{2n})(A^{2n})^T = I$.",
+          "Incorrect: An even power of a skew-symmetric matrix is not necessarily zero."
+        ],
+        "fullExplanation": "Given that $A$ is skew-symmetric, $A^T = -A$.\\nWe check the transpose of $A^{2n}$:\\n$$(A^{2n})^T = (A^T)^{2n} = (-A)^{2n}$$\\nSince $(-A)^{2n} = ((-1)A)^{2n} = (-1)^{2n} A^{2n}$ and $2n$ is an even integer:\\n$$(-1)^{2n} = 1$$\\nThus:\\n$$(A^{2n})^T = A^{2n}$$\\nTherefore, $A^{2n}$ is always a symmetric matrix."
+      },
+      {
+        "question": "If $\\\\Delta = \\\\begin{vmatrix} x+1 & x+2 & x+a \\\\\\\\ x+2 & x+3 & x+b \\\\\\\\ x+3 & x+4 & x+c \\\\end{vmatrix} = 0$ for all $x$, where $a, b, c$ are distinct real numbers, then $a, b, c$ are in:",
+        "options": [
+          "Arithmetic Progression (A.P.)",
+          "Geometric Progression (G.P.)",
+          "Harmonic Progression (H.P.)",
+          "Arithmetico-Geometric Progression (A.G.P.)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Applying $R_1 \\\\to R_1 + R_3 - 2R_2$ leaves the first row as $\\\\begin{bmatrix} 0 & 0 & a+c-2b \\\\end{bmatrix}$. For $\\\\Delta=0$, $a+c-2b=0 \\\\implies 2b = a+c$.",
+          "Incorrect: The relation is linear ($2b = a+c$), not multiplicative ($b^2 = ac$).",
+          "Incorrect: The relation does not correspond to harmonic progression.",
+          "Incorrect: Standard A.P. condition is satisfied."
+        ],
+        "fullExplanation": "Apply the elementary row operation $R_1 \\\\to R_1 + R_3 - 2R_2$:\\nFirst column: $(x + 1) + (x + 3) - 2(x + 2) = 2x + 4 - 2x - 4 = 0$\\nSecond column: $(x + 2) + (x + 4) - 2(x + 3) = 2x + 6 - 2x - 6 = 0$\\nThird column: $(x + a) + (x + c) - 2(x + b) = a + c - 2b$\\n\\nThe determinant becomes:\\n$$\\\\Delta = \\\\begin{vmatrix} 0 & 0 & a + c - 2b \\\\\\\\ x + 2 & x + 3 & x + b \\\\\\\\ x + 3 & x + 4 & x + c \\\\end{vmatrix}$$\\nExpanding along the first row:\\n$$\\\\Delta = (a + c - 2b) [(x+2)(x+4) - (x+3)^2]$$\\n$$= (a + c - 2b) [(x^2 + 6x + 8) - (x^2 + 6x + 9)] = -(a + c - 2b)$$\\nSince $\\\\Delta = 0$:\\n$$-(a + c - 2b) = 0 \\\\implies 2b = a + c$$\\nThis is precisely the condition that $a, b, c$ are in Arithmetic Progression (A.P.)."
+      },
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ matrix such that $|A| = 2$. What is the value of $|\\\\text{adj}(3 \\\\, \\\\text{adj}(2A))|$?",
+        "options": [
+          "$2^{16} \\\\cdot 3^6$",
+          "$2^{14} \\\\cdot 3^6$",
+          "$2^{16} \\\\cdot 3^4$",
+          "$2^{18} \\\\cdot 3^6$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Step-by-step application: $|2A| = 16$, $|\Target(2A)| = 16^2 = 2^8$, $|3\\\\Target(2A)| = 3^3 \\\\times 2^8$, and determinant of its adjoint is $(3^3 \\\\times 2^8)^2 = 3^6 \\\\cdot 2^{16}$.",
+          "Incorrect: Missed a power of 2 when evaluating $|2A|$.",
+          "Incorrect: Power of 3 not properly squared in the final adjoint step.",
+          "Incorrect: Overcounted power of 2."
+        ],
+        "fullExplanation": "Step 1: Compute $|2A|$ for order $n = 3$:\\n$$|2A| = 2^3 |A| = 8 \\\\times 2 = 16 = 2^4$$\\nStep 2: Let $M = \\\\text{adj}(2A)$. Its determinant is:\\n$$|M| = |2A|^{3-1} = (2^4)^2 = 2^8$$\\nStep 3: Consider the matrix $K = 3M = 3 \\\\, \\\\text{adj}(2A)$. Since $K$ is of order $3 \\\\times 3$:\\n$$|K| = 3^3 |M| = 3^3 \\\\cdot 2^8$$\\nStep 4: Now find $|\\\\text{adj}(K)|$:\\n$$|\\\\text{adj}(K)| = |K|^{3-1} = |K|^2 = (3^3 \\\\cdot 2^8)^2 = 3^6 \\\\cdot 2^{16}$$\\nThus, the value is $2^{16} \\\\cdot 3^6$."
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 2 & -1 \\\\\\\\ -1 & 2 \\\\end{bmatrix}$, then the eigenvalues (roots of characteristic equation) of $A$ are:",
+        "options": [
+          "1 and 3",
+          "-1 and 3",
+          "1 and -3",
+          "2 and 2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $|A - \\\\lambda I| = (2 - \\\\lambda)^2 - 1 = \\\\lambda^2 - 4\\\\lambda + 3 = (\\\\lambda - 1)(\\\\lambda - 3) = 0 \\\\implies \\\\lambda = 1, 3$.",
+          "Incorrect: Sign error in factoring.",
+          "Incorrect: Sign error in factoring.",
+          "Incorrect: Assumed the diagonal entries are the eigenvalues."
+        ],
+        "fullExplanation": "The characteristic equation is defined by $|A - \\\\lambda I| = 0$:\\n$$\\\\begin{vmatrix} 2 - \\\\lambda & -1 \\\\\\\\ -1 & 2 - \\\\lambda \\\\end{vmatrix} = 0$$\\n$$(2 - \\\\lambda)^2 - (-1)(-1) = 0$$\\n$$(4 - 4\\\\lambda + \\\\lambda^2) - 1 = 0$$\\n$$\\\\lambda^2 - 4\\\\lambda + 3 = 0$$\\nFactoring the quadratic equation:\\n$$(\\\\lambda - 1)(\\\\lambda - 3) = 0 \\\\implies \\\\lambda = 1 \\\\text{ or } \\\\lambda = 3$$"
+      },
+      {
+        "question": "If $\\\\begin{vmatrix} x & 2 \\\\\\\\ 18 & x \\\\end{vmatrix} = \\\\begin{vmatrix} 6 & 2 \\\\\\\\ 18 & 6 \\\\end{vmatrix}$, then $x$ is equal to:",
+        "options": [
+          "6",
+          "$\\\\pm 6$",
+          "-6",
+          "0"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Missed the negative solution $x = -6$.",
+          "Correct: $x^2 - 36 = 36 - 36 = 0 \\\\implies x^2 = 36 \\\\implies x = \\\\pm 6$.",
+          "Incorrect: Missed the positive solution $x = 6$.",
+          "Incorrect: Did not equate determinants correctly."
+        ],
+        "fullExplanation": "Evaluate both determinants separately:\\nLHS: $x(x) - (2)(18) = x^2 - 36$\\nRHS: $(6)(6) - (2)(18) = 36 - 36 = 0$\\nEquating both sides:\\n$$x^2 - 36 = 0 \\\\implies x^2 = 36 \\\\implies x = \\\\pm 6$$"
+      },
+      {
+        "question": "If $A$ is a square matrix of order 3 such that $|A| = d$, what is the value of $|(A^T)^{-1}|$?",
+        "options": [
+          "$d$",
+          "$\\\\frac{1}{d}$",
+          "$d^2$",
+          "$\\\\frac{1}{d^2}$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Inverse inverts the determinant value.",
+          "Correct: $|(A^T)^{-1}| = \\\\frac{1}{|A^T|} = \\\\frac{1}{|A|} = \\\\frac{1}{d}$.",
+          "Incorrect: Misapplied adjoint formula instead of inverse.",
+          "Incorrect: Squared the inverse determinant."
+        ],
+        "fullExplanation": "We use two basic properties of determinants:\\n1. The determinant of the transpose of a matrix equals the determinant of the matrix: $|A^T| = |A|$.\\n2. The determinant of the inverse of a matrix equals the reciprocal of its determinant: $|M^{-1}| = \\\\frac{1}{|M|}$.\\n\\nApplying these properties:\\n$$|(A^T)^{-1}| = \\\\frac{1}{|A^T|} = \\\\frac{1}{|A|} = \\\\frac{1}{d}$$"
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} \\\\alpha & 0 \\\\\\\\ 1 & 1 \\\\end{bmatrix}$ and $B = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 5 & 1 \\\\end{bmatrix}$, then the value of $\\\\alpha$ for which $A^2 = B$ is:",
+        "options": [
+          "1",
+          "-1",
+          "4",
+          "No real value"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect: If $\\\\alpha = 1$, the $(2,1)$ element becomes 2, not 5.",
+          "Incorrect: If $\\\\alpha = -1$, the $(2,1)$ element becomes 0, not 5.",
+          "Incorrect: Does not satisfy $\\\\alpha^2 = 1$.",
+          "Correct: $A^2 = \\\\begin{bmatrix} \\\\alpha^2 & 0 \\\\\\\\ \\\\alpha+1 & 1 \\\\end{bmatrix}$. Equating to $B$ requires $\\\\alpha^2 = 1$ ($\\\\alpha = \\\\pm 1$) and $\\\\alpha + 1 = 5$ ($\\\\alpha = 4$), which has no simultaneous solution."
+        ],
+        "fullExplanation": "Compute $A^2$:\\n$$A^2 = \\\\begin{bmatrix} \\\\alpha & 0 \\\\\\\\ 1 & 1 \\\\end{bmatrix} \\\\begin{bmatrix} \\\\alpha & 0 \\\\\\\\ 1 & 1 \\\\end{bmatrix} = \\\\begin{bmatrix} \\\\alpha^2 & 0 \\\\\\\\ \\\\alpha + 1 & 1 \\\\end{bmatrix}$$\\nGiven $A^2 = B = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 5 & 1 \\\\end{bmatrix}$:\\nEquating corresponding entries:\\n1. $\\\\alpha^2 = 1 \\\\implies \\\\alpha = \\\\pm 1$\\n2. $\\\\alpha + 1 = 5 \\\\implies \\\\alpha = 4$\\nSince no single value of $\\\\alpha$ can satisfy both $\\\\alpha = \\\\pm 1$ and $\\\\alpha = 4$ simultaneously, there exists no real value of $\\\\alpha$."
+      },
+      {
+        "question": "Let $A$ be an $n \\\\times n$ non-singular matrix. Which of the following expressions is identically equal to $\\\\text{adj}(A^{-1})$?",
+        "options": [
+          "$(\\\\text{adj}(A))^{-1}$",
+          "$|A| A$",
+          "$\\\\frac{1}{|A|} A^{-1}$",
+          "$A$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\text{adj}(A^{-1}) = (\\\\text{adj}(A))^{-1} = \\\\frac{A}{|A|}$.",
+          "Incorrect: The correct scalar factor is $\\\\frac{1}{|A|}$, not $|A|$.",
+          "Incorrect: The matrix part is $A$, not $A^{-1}$.",
+          "Incorrect: Missing the scalar factor $\\\\frac{1}{|A|}$."
+        ],
+        "fullExplanation": "We know that for any invertible matrix $M$:\\n$$M^{-1} = \\\\frac{\\\\text{adj}(M)}{|M|} \\\\implies \\\\text{adj}(M) = |M| M^{-1}$$\\nSubstitute $M = A^{-1}$:\\n$$\\\\text{adj}(A^{-1}) = |A^{-1}| (A^{-1})^{-1} = \\\\frac{1}{|A|} A$$\\nNow consider $(\\\\text{adj}(A))^{-1}$:\\nSince $A \\\\cdot \\\\text{adj}(A) = |A| I_n$, taking inverses yields:\\n$$(\\\\text{adj}(A))^{-1} A^{-1} = \\\\frac{1}{|A|} I_n \\\\implies (\\\\text{adj}(A))^{-1} = \\\\frac{1}{|A|} A$$\\nTherefore:\\n$$\\\\text{adj}(A^{-1}) = (\\\\text{adj}(A))^{-1}$$"
+      },
+      {
+        "question": "For what values of $p$ and $q$ does the system of equations:\\n$$x + y + z = 6$$\\n$$x + 2y + 3z = 10$$\\n$$x + 2y + pz = q$$\\nhave NO solution?",
+        "options": [
+          "$p = 3, q \\\\neq 10$",
+          "$p \\\\neq 3, q = 10$",
+          "$p = 3, q = 10$",
+          "$p \\\\neq 3, q \\\\neq 10$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: When $p = 3$, the coefficient determinant $\\\\Delta = 0$; with $q \\\\neq 10$, the 2nd and 3rd equations contradict each other.",
+          "Incorrect: If $p \\\\neq 3$, $\\\\Delta \\\\neq 0$, giving a unique solution.",
+          "Incorrect: This leads to infinitely many solutions.",
+          "Incorrect: If $p \\\\neq 3$, $\\\\Delta \\\\neq 0$, always giving a unique solution regardless of $q$."
+        ],
+        "fullExplanation": "The coefficient determinant is:\\n$$\\\\Delta = \\\\begin{vmatrix} 1 & 1 & 1 \\\\\\\\ 1 & 2 & 3 \\\\\\\\ 1 & 2 & p \\\\end{vmatrix} = p - 3$$\\n- If $p \\\\neq 3$, then $\\\\Delta \\\\neq 0$, so the system has a unique solution for any value of $q$.\\n- If $p = 3$, then $\\\\Delta = 0$. The second and third equations become:\\n$$x + 2y + 3z = 10$$\\n$$x + 2y + 3z = q$$\\nIf $q \\\\neq 10$, these two equations represent two distinct parallel planes, which can never intersect. Hence, no solution exists when $p = 3$ and $q \\\\neq 10$."
+      },
+      {
+        "question": "If the trace of a $2 \\\\times 2$ matrix $A$ is 3 and its determinant is 2, then $\\\\text{tr}(A^2)$ is equal to:",
+        "options": [
+          "5",
+          "7",
+          "9",
+          "13"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: By Cayley-Hamilton, $A^2 - 3A + 2I = O \\\\implies A^2 = 3A - 2I$. Taking traces: $\\\\text{tr}(A^2) = 3\\\\text{tr}(A) - 2\\\\text{tr}(I) = 3(3) - 2(2) = 9 - 4 = 5$.",
+          "Incorrect: Computed $3^2 - 2 = 7$, forgetting that $\\\\text{tr}(I_2) = 2$.",
+          "Incorrect: This is $(\\\\text{tr}(A))^2 = 3^2 = 9$.",
+          "Incorrect: Misapplied identity with wrong signs."
+        ],
+        "fullExplanation": "By the Cayley-Hamilton Theorem, a $2 \\\\times 2$ matrix satisfies:\\n$$A^2 - \\\\text{tr}(A)A + |A|I_2 = O$$\\nGiven $\\\\text{tr}(A) = 3$ and $|A| = 2$:\\n$$A^2 - 3A + 2I_2 = O \\\\implies A^2 = 3A - 2I_2$$\\nTaking the trace of both sides and using linearity of trace:\\n$$\\\\text{tr}(A^2) = \\\\text{tr}(3A - 2I_2) = 3 \\\\, \\\\text{tr}(A) - 2 \\\\, \\\\text{tr}(I_2)$$\\nFor a $2 \\\\times 2$ identity matrix, $\\\\text{tr}(I_2) = 1 + 1 = 2$:\\n$$\\\\text{tr}(A^2) = 3(3) - 2(2) = 9 - 4 = 5$$"
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 1 & 1 \\\\end{bmatrix}$, then the inverse of $A^n$ is:",
+        "options": [
+          "$\\\\begin{bmatrix} 1 & 0 \\\\\\\\ -n & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 & 0 \\\\\\\\ n & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} -n & 0 \\\\\\\\ 1 & 1 \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 & 0 \\\\\\\\ -1 & 1 \\\\end{bmatrix}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $A^n = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ n & 1 \\\\end{bmatrix}$, and its inverse is $\\\\begin{bmatrix} 1 & 0 \\\\\\\\ -n & 1 \\\\end{bmatrix}$.",
+          "Incorrect: This is $A^n$, not its inverse.",
+          "Incorrect: Misplaced entries.",
+          "Incorrect: This is $A^{-1}$, failing to incorporate power $n$."
+        ],
+        "fullExplanation": "By induction on powers of $A$:\\n$$A = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 1 & 1 \\\\end{bmatrix}, \\\\quad A^2 = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 2 & 1 \\\\end{bmatrix}, \\\\quad \\\\dots, \\\\quad A^n = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ n & 1 \\\\end{bmatrix}$$\\nTo find $(A^n)^{-1}$:\\nThe determinant of $A^n$ is $(1)(1) - (0)(n) = 1$.\\nFor any $2 \\\\times 2$ matrix $\\\\begin{bmatrix} a & b \\\\\\\\ c & d \\\\end{bmatrix}$ with determinant 1, its inverse is $\\\\begin{bmatrix} d & -b \\\\\\\\ -c & a \\\\end{bmatrix}$.\\nApplying this:\\n$$(A^n)^{-1} = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ -n & 1 \\\\end{bmatrix}$$"
+      },
+      {
+        "question": "Let $A$ be a $3 \\\\times 3$ matrix such that $|A| = 3$. What is the value of $|2 \\\\, \\\\text{adj}(A)|$?",
+        "options": [
+          "36",
+          "72",
+          "144",
+          "288"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Multiplied by $2^2$ instead of $2^3$.",
+          "Correct: $|2 \\\\, \\\\text{adj}(A)| = 2^3 |\\\\text{adj}(A)| = 8 |A|^{3-1} = 8 \\\\times 3^2 = 8 \\\\times 9 = 72$.",
+          "Incorrect: Computed $2^4 \\\\times 9$.",
+          "Incorrect: Miscalculation of powers."
+        ],
+        "fullExplanation": "For a $3 \\\\times 3$ matrix $M = \\\\text{adj}(A)$:\\n$$|2M| = 2^3 |M| = 8 |M|$$\\nSince $|\\\\text{adj}(A)| = |A|^{n-1} = |A|^{3-1} = |A|^2$:\\n$$|\\\\text{adj}(A)| = 3^2 = 9$$\\nTherefore:\\n$$|2 \\\\, \\\\text{adj}(A)| = 8 \\\\times 9 = 72$$"
+      },
+      {
+        "question": "If $A = \\\\begin{bmatrix} 3 & -4 \\\\\\\\ 1 & -1 \\\\end{bmatrix}$, then $A^k$ is given by:",
+        "options": [
+          "$\\\\begin{bmatrix} 1 + 2k & -4k \\\\\\\\ k & 1 - 2k \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 3^k & (-4)^k \\\\\\\\ 1 & (-1)^k \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 1 + 2k & 4k \\\\\\\\ -k & 1 - 2k \\\\end{bmatrix}$",
+          "$\\\\begin{bmatrix} 2k & -4k \\\\\\\\ k & -2k \\\\end{bmatrix}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Decomposing $A = I + B$ where $B = \\\\begin{bmatrix} 2 & -4 \\\\\\\\ 1 & -2 \\\\end{bmatrix}$ with $B^2 = O$, $(I+B)^k = I + kB = \\\\begin{bmatrix} 1+2k & -4k \\\\\\\\ k & 1-2k \\\\end{bmatrix}$.",
+          "Incorrect: Raising individual entries to the power $k$ is invalid for matrix multiplication.",
+          "Incorrect: Sign errors in off-diagonal entries.",
+          "Incorrect: Missing the identity matrix components on the diagonal."
+        ],
+        "fullExplanation": "Decompose $A$ as $A = I + B$:\\n$$B = A - I = \\\\begin{bmatrix} 3 - 1 & -4 \\\\\\\\ 1 & -1 - 1 \\\\end{bmatrix} = \\\\begin{bmatrix} 2 & -4 \\\\\\\\ 1 & -2 \\\\end{bmatrix}$$\\nCheck $B^2$:\\n$$B^2 = \\\\begin{bmatrix} 2 & -4 \\\\\\\\ 1 & -2 \\\\end{bmatrix} \\\\begin{bmatrix} 2 & -4 \\\\\\\\ 1 & -2 \\\\end{bmatrix} = \\\\begin{bmatrix} 4 - 4 & -8 + 8 \\\\\\\\ 2 - 2 & -4 + 4 \\\\end{bmatrix} = \\\\begin{bmatrix} 0 & 0 \\\\\\\\ 0 & 0 \\\\end{bmatrix} = O$$\\nSince $B^2 = O$ and $I$ commutes with $B$:\\n$$A^k = (I + B)^k = I + k B = \\\\begin{bmatrix} 1 & 0 \\\\\\\\ 0 & 1 \\\\end{bmatrix} + k \\\\begin{bmatrix} 2 & -4 \\\\\\\\ 1 & -2 \\\\end{bmatrix} = \\\\begin{bmatrix} 1 + 2k & -4k \\\\\\\\ k & 1 - 2k \\\\end{bmatrix}$$"
+      }
+    ]
+  }
+]

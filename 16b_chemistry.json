@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Organic Compounds Containing Nitrogen",
+    "flashcards": [
+      {
+        "front": "What is the principle, scope, and limitation of the Gabriel Phthalimide Synthesis?",
+        "back": "Phthalimide is treated with ethanolic KOH to form potassium phthalimide, which undergoes Sɴ2 nucleophilic substitution with an alkyl halide (R-X) to form N-alkylphthalimide. Alkaline or hydrazine hydrolysis yields pure 1° aliphatic amines. Limitation: Aryl halides and vinyl halides cannot be used because they do not undergo Sɴ2 displacement due to partial double-bond character; 3° alkyl halides give elimination (alkenes) rather than substitution."
+      },
+      {
+        "front": "Describe the mechanism and stereochemical outcome of the Hoffmann Bromamide Degradation.",
+        "back": "An aliphatic or aromatic primary amide (RCONH₂) reacts with Br₂ and aqueous/ethanolic NaOH/KOH (4 equivalents of base) to yield a 1° amine with one fewer carbon atom: RCONH₂ + Br₂ + 4KOH → RNH₂ + K₂CO₃ + 2KBr + 2H₂O. The reaction proceeds via N-bromoamide, bromamide anion, acyl nitrene, and an alkyl isocyanate (R-N=C=O) intermediate. The 1,2-migration of group 'R' from carbonyl carbon to nitrogen occurs intramolecularly with complete retention of configuration."
+      },
+      {
+        "front": "How does the basicity order of aliphatic amines differ between the gaseous phase and aqueous solutions?",
+        "back": "• Gaseous phase (determined solely by +I inductive effect): 3° amine > 2° amine > 1° amine > NH₃.\n• Aqueous medium (governed by inductive effect, steric hindrance, and hydration of conjugate ammonium cation):\n  - For methyl-substituted amines: (CH₃)₂NH (2°) > CH₃NH₂ (1°) > (CH₃)₃N (3°) > NH₃ (2° > 1° > 3°).\n  - For ethyl-substituted amines: (C₂H₅)₂NH (2°) > (C₂H₅)₃N (3°) > C₂H₅NH₂ (1°) > NH₃ (2° > 3° > 1°)."
+      },
+      {
+        "front": "What is the Carbylamine Test (Isocyanide test) and what are its diagnostic observations?",
+        "back": "Aliphatic and aromatic primary amines (1° amines) are warmed with chloroform (CHCl₃) and alcoholic KOH to produce an extremely foul-smelling alkyl or aryl isocyanide (carbylamine, R-NC): RNH₂ + CHCl₃ + 3KOH → R-NC + 3KCl + 3H₂O. Secondary and tertiary amines do not undergo this reaction because they lack two replaceable hydrogen atoms on the nitrogen atom."
+      },
+      {
+        "front": "Explain how the Hinsberg Test distinguishes between 1°, 2°, and 3° amines.",
+        "back": "The reagent is benzenesulfonyl chloride (C₆H₅SO₂Cl):\n• 1° Amine: Reacts to form N-alkylbenzenesulfonamide, which contains an acidic hydrogen on nitrogen and dissolves in aqueous KOH. Acidification of the alkaline solution reprecipitates it.\n• 2° Amine: Reacts to form N,N-dialkylbenzenesulfonamide, which has no acidic hydrogen on nitrogen and remains insoluble in aqueous KOH.\n• 3° Amine: Has no hydrogen on nitrogen and does not react with benzenesulfonyl chloride under basic conditions."
+      },
+      {
+        "front": "How do primary, secondary, and tertiary aliphatic amines behave towards Nitrous Acid (HNO₂ / NaNO₂ + HCl)?",
+        "back": "• 1° Aliphatic amines: React with cold HNO₂ to form unstable aliphatic diazonium salts, which decompose quantitatively with brisk effervescence of N₂ gas to form a mixture of alcohols, alkenes, and alkyl halides.\n• 2° Aliphatic/Aromatic amines: React to form yellow oily, water-insoluble N-nitrosamines (R₂N-N=O), which give the Liebermann nitroso test.\n• 3° Aliphatic amines: Dissolve to form soluble trialkylammonium nitrite salts [R₃NH]⁺NO₂⁻; upon warming, they decompose into nitrosamines and aldehydes."
+      },
+      {
+        "front": "What is the purpose of acetylating aniline (protection of -NH₂ group) before halogenation or nitration?",
+        "back": "The free -NH₂ group is an extremely powerful activating ortho/para-director due to strong +M resonance, leading to polyhalogenation (e.g., 2,4,6-tribromoaniline with Br₂/H₂O) or ring oxidation/tarring with HNO₃. Acetylation with acetic anhydride or acetyl chloride in pyridine converts -NH₂ into an acetamido group (-NHCOCH₃). The carbonyl group withdraws electron density by resonance (-M), moderating activating power and allowing controlled mono-substitution (mainly para)."
+      },
+      {
+        "front": "Why does the direct nitration of aniline yield a substantial amount (47%) of m-nitroaniline along with p-nitroaniline (51%)?",
+        "back": "Direct nitration is conducted using a strongly acidic nitrating mixture (concentrated HNO₃ + concentrated H₂SO₄). Under these strongly acidic conditions, aniline is extensively protonated to form the anilinium cation (C₆H₅NH₃⁺). The -NH₃⁺ group exerts a powerful -I inductive effect and acts as a strongly deactivating, meta-directing group. Thus, substitution occurs significantly at the meta-position (47%)."
+      },
+      {
+        "front": "What is the outcome of the sulphonation of aniline, and what is the dipolar nature of the product?",
+        "back": "Aniline is heated with concentrated H₂SO₄ at 453-473 K to form anilinium hydrogen sulphate, which on prolonged heating rearranges to p-aminobenzenesulfonic acid (sulphanilic acid). Sulphanilic acid contains both an acidic (-SO₃H) and a basic (-NH₂) group, undergoing internal neutralization to exist primarily as a dipolar zwitterion: ⁺H₃N-C₆H₄-SO₃⁻."
+      },
+      {
+        "front": "Why does aniline NOT undergo Friedel-Crafts alkylation or acylation?",
+        "back": "Aniline fails to undergo Friedel-Crafts reactions because its basic amino group (-NH₂) forms an acid-base coordination complex with the Lewis acid catalyst (anhydrous AlCl₃): C₆H₅NH₂ + AlCl₃ → C₆H₅NH₂•AlCl₃. The resulting positive charge on nitrogen transforms the substituent into a strong electron-withdrawing group (-I), severely deactivating the benzene ring towards electrophilic attack."
+      },
+      {
+        "front": "What conditions are required for the diazotisation of aniline, and why must the temperature be kept at 273-278 K?",
+        "back": "Aniline is treated with sodium nitrite (NaNO₂) and excess dilute HCl (or H₂SO₄) at 0-5 °C (273-278 K) to produce benzenediazonium chloride: C₆H₅NH₂ + NaNO₂ + 2HCl → C₆H₅N₂⁺Cl⁻ + NaCl + 2H₂O. The temperature is strictly maintained between 273 and 278 K because arenediazonium salts are thermally unstable and decompose rapidly at higher temperatures into phenol and N₂ gas."
+      },
+      {
+        "front": "Compare the Sandmeyer and Gattermann reactions for preparing halobenzenes from diazonium salts.",
+        "back": "• Sandmeyer Reaction: Benzenediazonium chloride is treated with cuprous halides dissolved in corresponding halogen acids (Cu₂Cl₂/HCl or Cu₂Br₂/HBr) or Cu₂CN₂/KCN to yield chlorobenzene, bromobenzene, or benzonitrile with high yield.\n• Gattermann Reaction: The diazonium salt is treated with copper powder in the presence of halogen acid (Cu/HCl or Cu/HBr). Yields are generally lower than those in the Sandmeyer reaction."
+      },
+      {
+        "front": "How are fluoro- and iodobenzenes synthesized from benzenediazonium chloride?",
+        "back": "• Fluorobenzene (Balz-Schiemann Reaction): C₆H₅N₂⁺Cl⁻ is treated with fluoroboric acid (HBF₄) to precipitate benzenediazonium fluoroborate (C₆H₅N₂⁺BF₄⁻). Dry heating decomposes it into fluorobenzene (C₆H₅F), BF₃, and N₂.\n• Iodobenzene: C₆H₅N₂⁺Cl⁻ is simply warmed with aqueous potassium iodide (KI) solution without any copper catalyst: C₆H₅N₂⁺Cl⁻ + KI → C₆H₅I + KCl + N₂."
+      },
+      {
+        "front": "What reagents reduce benzenediazonium chloride to benzene, and what are their respective oxidized byproducts?",
+        "back": "1. Hypophosphorous acid (phosphinic acid, H₃PO₂) in the presence of Cu⁺ catalyst: C₆H₅N₂⁺Cl⁻ + H₃PO₂ + H₂O → C₆H₆ + N₂ + H₃PO₃ + HCl (H₃PO₂ is oxidized to phosphorous acid, H₃PO₃).\n2. Ethanol (CH₃CH₂OH): C₆H₅N₂⁺Cl⁻ + CH₃CH₂OH → C₆H₆ + N₂ + CH₃CHO + HCl (ethanol is oxidized to acetaldehyde, CH₃CHO)."
+      },
+      {
+        "front": "Describe the optimal conditions for Azo Coupling of benzenediazonium chloride with phenol versus aniline.",
+        "back": "Azo coupling is an electrophilic aromatic substitution where the diazonium cation acts as a weak electrophile:\n• With Phenol: Conducted in weakly alkaline medium (pH 9-10) to convert phenol to phenoxide ion, which is far more activated. Forms p-hydroxyazobenzene (orange dye).\n• With Aniline: Conducted in weakly acidic medium (pH 4-5) to maintain free unprotonated aniline as an active nucleophile. Forms p-aminoazobenzene (yellow dye)."
+      },
+      {
+        "front": "Compare the reduction of nitrobenzene in acidic, neutral, and alkaline media.",
+        "back": "• Acidic medium (Sn/HCl or Fe/HCl): Reduced completely to aniline (C₆H₅NH₂).\n• Neutral medium (Zn dust + aqueous NH₄Cl): Reduced to N-phenylhydroxylamine (C₆H₅NHOH), which reduces Tollens' reagent.\n• Alkaline medium (Zn + alcoholic NaOH): Gives bimolecular condensation products; with Zn/NaOH, hydrazobenzene (C₆H₅NH-NHC₆H₅) is formed."
+      },
+      {
+        "front": "What is the Mendius Reaction and what product does it yield from alkyl nitriles and isonitriles?",
+        "back": "Mendius reduction involves the reduction of nitriles or isonitriles using sodium and ethanol (Na/C₂H₅OH) or catalytic hydrogenation:\n• Alkyl cyanides (R-C≡N) reduce to 1° amines: R-CH₂-NH₂.\n• Alkyl isocyanides (R-N≡C) reduce to 2° amines containing a methyl substituent: R-NH-CH₃."
+      },
+      {
+        "front": "What is the Hofmann Elimination (exhaustive methylation and elimination) and what alkene does it produce?",
+        "back": "An amine is exhaustively methylated with excess CH₃I to form a quaternary ammonium iodide, which is converted to the quaternary ammonium hydroxide using moist silver oxide (Ag₂O/H₂O). Heating this hydroxide causes an E2 elimination where the less hindered β-hydrogen is preferentially removed by OH⁻, producing the less substituted, less stable alkene (Hofmann product) contrary to Zaitsev's rule."
+      },
+      {
+        "front": "What is the Hofmann Mustard Oil Reaction for detecting primary aliphatic amines?",
+        "back": "When a primary aliphatic amine is heated with carbon disulfide (CS₂) followed by excess mercuric chloride (HgCl₂), an alkyl isothiocyanate is formed: RNH₂ + CS₂ → R-NH-CS-SH —(HgCl₂, Δ)→ R-N=C=S + HgS↓ (black precipitate) + 2HCl. The alkyl isothiocyanate has a characteristic, pungent odour resembling mustard oil."
+      },
+      {
+        "front": "How does the coupling reaction of benzenediazonium chloride proceed when the para position of the substrate is blocked?",
+        "back": "If the para position of the phenol or aniline derivative is occupied (e.g., in p-cresol), coupling by the diazonium cation takes place at the ortho position relative to the activating -OH or -NH₂ group, producing the corresponding ortho-azo dye."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following amines cannot be prepared by the Gabriel Phthalimide Synthesis?",
+        "options": [
+          "Aniline",
+          "Benzylamine",
+          "Ethylamine",
+          "Isobutylamine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Aniline cannot be prepared via Gabriel synthesis because aryl halides (such as chlorobenzene or bromobenzene) do not undergo nucleophilic substitution (Sɴ2) with the potassium phthalimide anion due to partial double bond character of the C-halogen bond.",
+          "Incorrect. Benzylamine can be readily prepared because benzyl chloride (C₆H₅CH₂Cl) is a primary halide that is highly reactive towards Sɴ2 displacement.",
+          "Incorrect. Ethylamine is a primary aliphatic amine and is synthesized smoothly using ethyl bromide.",
+          "Incorrect. Isobutylamine is a primary aliphatic amine and can be prepared using isobutyl halide."
+        ],
+        "fullExplanation": "The Gabriel phthalimide synthesis relies on the Sɴ2 displacement of halide by the phthalimide anion. Because aryl halides exhibit partial double-bond character through resonance between the halogen lone pairs and the aromatic ring, as well as steric shielding of the aromatic carbon, they do not undergo Sɴ2 attack by nucleophiles. Therefore, pure aromatic primary amines like aniline cannot be prepared by this method."
+      },
+      {
+        "question": "In the Hoffmann bromamide degradation reaction, the number of moles of NaOH and Br₂ consumed per mole of primary amide are respectively:",
+        "options": [
+          "4 and 1",
+          "2 and 1",
+          "4 and 2",
+          "1 and 4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The stoichiometric equation is RCONH₂ + Br₂ + 4NaOH → RNH₂ + Na₂CO₃ + 2NaBr + 2H₂O, showing consumption of 4 moles of NaOH and 1 mole of Br₂ per mole of amide.",
+          "Incorrect. Two moles of NaOH are insufficient to neutralize intermediate protons and form sodium carbonate.",
+          "Incorrect. Only one mole of bromine is required to achieve monobromination on nitrogen.",
+          "Incorrect. This completely reverses the stoichiometric ratio."
+        ],
+        "fullExplanation": "The balanced chemical equation for the Hoffmann bromamide degradation is: RCONH₂ + Br₂ + 4NaOH → RNH₂ + Na₂CO₃ + 2NaBr + 2H₂O. One mole of Br₂ is used in forming N-bromoamide, and four moles of NaOH are consumed: one to abstract the amide NH proton, one to deprotonate the N-bromoamide, and two to neutralize the resulting carbonic acid and hydrolyse the isocyanate."
+      },
+      {
+        "question": "The correct decreasing order of basic strength of methyl-substituted amines in aqueous medium is:",
+        "options": [
+          "(CH₃)₂NH > CH₃NH₂ > (CH₃)₃N > NH₃",
+          "(CH₃)₃N > (CH₃)₂NH > CH₃NH₂ > NH₃",
+          "(CH₃)₂NH > (CH₃)₃N > CH₃NH₂ > NH₃",
+          "CH₃NH₂ > (CH₃)₂NH > (CH₃)₃N > NH₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In aqueous solution, basicity is a combined outcome of +I inductive effect, steric hindrance, and hydration of the conjugate cation. For methyl derivatives, the experimental order is 2° > 1° > 3° > NH₃.",
+          "Incorrect. This is the basicity order in the gaseous phase where hydration and steric effects are absent.",
+          "Incorrect. This (2° > 3° > 1°) applies to ethyl-substituted amines, not methyl-substituted amines.",
+          "Incorrect. Primary amine is less basic than the secondary amine in aqueous solution."
+        ],
+        "fullExplanation": "In aqueous solutions, basicity depends on three competing factors: the inductive effect (+I increases with alkylation: 3° > 2° > 1°), hydration enthalpy of the ammonium cation (H-bonding with water stabilizes cations: 1° > 2° > 3°), and steric hindrance to protonation (1° < 2° < 3°). For methyl groups, these combined influences make dimethylamine (2°) the most basic, followed by methylamine (1°), and then trimethylamine (3°): (CH₃)₂NH > CH₃NH₂ > (CH₃)₃N > NH₃."
+      },
+      {
+        "question": "A nitrogen-containing organic compound (A) with molecular formula C₃H₉N reacts with benzenesulfonyl chloride to give a solid insoluble in aqueous KOH. Compound (A) is:",
+        "options": [
+          "N-Methylethanamine",
+          "Propan-1-amine",
+          "Propan-2-amine",
+          "N,N-Dimethylmethanamine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. N-Methylethanamine is a secondary amine (CH₃-NH-C₂H₅). It reacts with C₆H₅SO₂Cl to form N-ethyl-N-methylbenzenesulfonamide, which has no acidic hydrogen on nitrogen and is insoluble in aqueous KOH.",
+          "Incorrect. Propan-1-amine is a primary amine; its sulfonamide derivative contains an acidic hydrogen and dissolves in aqueous KOH.",
+          "Incorrect. Propan-2-amine is also a primary amine whose sulfonamide derivative dissolves in KOH.",
+          "Incorrect. N,N-Dimethylmethanamine is a tertiary amine and does not react with benzenesulfonyl chloride."
+        ],
+        "fullExplanation": "In the Hinsberg test: Primary amines yield N-alkylbenzenesulfonamides that possess an acidic N-H bond, dissolving in aqueous KOH to form soluble potassium salts. Secondary amines yield N,N-dialkylbenzenesulfonamides, which lack an acidic hydrogen on nitrogen and remain completely insoluble in aqueous KOH. Tertiary amines do not react. Since compound (A) forms an alkali-insoluble product, it must be a secondary amine: N-methylethanamine (C₂H₅-NH-CH₃)."
+      },
+      {
+        "question": "When aniline is treated with a mixture of concentrated HNO₃ and concentrated H₂SO₄ at 288 K, the percentage of meta-nitroaniline formed is approximately:",
+        "options": [
+          "47%",
+          "51%",
+          "2%",
+          "25%"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Under strongly acidic conditions, aniline is protonated to the anilinium ion (C₆H₅NH₃⁺), which is meta-directing, leading to the formation of 47% meta-nitroaniline.",
+          "Incorrect. 51% corresponds to the para-nitroaniline formed from the unprotonated aniline.",
+          "Incorrect. 2% corresponds to the ortho-nitroaniline.",
+          "Incorrect. 25% is not a product distribution value for aniline nitration."
+        ],
+        "fullExplanation": "Direct nitration of aniline with conc. HNO₃ and conc. H₂SO₄ at 288 K gives an unexpected distribution: 51% p-nitroaniline, 47% m-nitroaniline, and 2% o-nitroaniline. The surprisingly high 47% yield of the meta isomer arises because in the strongly acidic nitrating medium, aniline is in equilibrium with the anilinium ion (C₆H₅NH₃⁺). The strongly deactivating -NH₃⁺ substituent directs electrophilic substitution to the meta position."
+      },
+      {
+        "question": "What is the major organic product formed when benzenediazonium chloride is treated with hypophosphorous acid (H₃PO₂) in the presence of Cu⁺?",
+        "options": [
+          "Benzene",
+          "Phenol",
+          "Chlorobenzene",
+          "Phenylphosphonic acid"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Hypophosphorous acid (H₃PO₂) acts as a mild reducing agent, reducing the arenediazonium group to hydrogen, yielding benzene while itself being oxidized to H₃PO₃.",
+          "Incorrect. Phenol is formed by warming diazonium salt with dilute H₂SO₄ or water.",
+          "Incorrect. Chlorobenzene is formed in the Sandmeyer or Gattermann reactions.",
+          "Incorrect. Phenylphosphonic acid is not formed in this reduction."
+        ],
+        "fullExplanation": "Arenediazonium salts undergo reduction (deamination) upon treatment with mild reducing agents such as hypophosphorous acid (H₃PO₂) or ethanol (CH₃CH₂OH). The diazonium group is replaced by hydrogen: C₆H₅N₂⁺Cl⁻ + H₃PO₂ + H₂O → C₆H₆ + N₂ + H₃PO₃ + HCl. The product is benzene."
+      },
+      {
+        "question": "In the reaction of aniline with chloroform and alcoholic KOH, the product obtained is:",
+        "options": [
+          "Phenyl isocyanide",
+          "Phenyl cyanide",
+          "Chlorobenzene",
+          "Benzonitrile"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This is the carbylamine reaction (isocyanide test). Aniline reacts with chloroform and alcoholic KOH to produce phenyl isocyanide (C₆H₅-NC), which has an extremely obnoxious odor.",
+          "Incorrect. Phenyl cyanide (benzonitrile) contains the -CN group, whereas carbylamine yields the isonitrile -NC.",
+          "Incorrect. Chlorobenzene is not produced under these alkaline conditions.",
+          "Incorrect. Benzonitrile is C₆H₅CN, not an isocyanide."
+        ],
+        "fullExplanation": "The carbylamine test is specific to primary amines. Heating aniline (a primary aromatic amine) with chloroform and alcoholic KOH produces phenyl isocyanide (phenyl carbylamine): C₆H₅NH₂ + CHCl₃ + 3KOH → C₆H₅NC + 3KCl + 3H₂O. Phenyl isocyanide is readily detected by its characteristic offensive smell."
+      },
+      {
+        "question": "Which of the following reactions does NOT yield a primary amine?",
+        "options": [
+          "Reduction of methyl isocyanide with LiAlH₄",
+          "Reduction of acetamide with LiAlH₄",
+          "Reduction of ethanenitrile with Na/C₂H₅OH",
+          "Reduction of nitroethane with Fe/HCl"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Reduction of alkyl isocyanides (R-NC) with LiAlH₄ or Na/C₂H₅OH yields secondary amines of the type R-NH-CH₃. Methyl isocyanide yields dimethylamine (a 2° amine).",
+          "Incorrect. Reduction of acetamide (CH₃CONH₂) with LiAlH₄ gives ethylamine (a 1° amine).",
+          "Incorrect. Mendius reduction of ethanenitrile (CH₃CN) gives ethylamine (a 1° amine).",
+          "Incorrect. Reduction of nitroethane (CH₃CH₂NO₂) with Fe/HCl gives ethylamine (a 1° amine)."
+        ],
+        "fullExplanation": "While reduction of alkyl nitriles (R-CN) gives primary amines (R-CH₂-NH₂), reduction of alkyl isonitriles (R-NC) using reducing agents like LiAlH₄ or catalytic hydrogenation gives secondary amines: CH₃-NC + 4[H] → CH₃-NH-CH₃ (dimethylamine, a secondary amine)."
+      },
+      {
+        "question": "Benzenediazonium chloride couples with phenol at pH 9-10 to form an azo dye. The structure of the dye is:",
+        "options": [
+          "p-Hydroxyazobenzene",
+          "o-Hydroxyazobenzene",
+          "p-Aminoazobenzene",
+          "Azobenzene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In alkaline solution (pH 9-10), phenol forms phenoxide, which couples with the benzenediazonium ion exclusively at the para-position to give p-hydroxyazobenzene (orange dye).",
+          "Incorrect. Ortho coupling is sterically disfavored and occurs only as an extremely minor byproduct.",
+          "Incorrect. p-Aminoazobenzene is the product obtained when coupling is carried out with aniline at pH 4-5.",
+          "Incorrect. Azobenzene lacks the -OH auxochrome."
+        ],
+        "fullExplanation": "Azo coupling is an electrophilic aromatic substitution where the diazonium cation (C₆H₅N₂⁺) attacks an activated aromatic ring. Phenol is deprotonated at pH 9-10 to phenoxide ion, which activates the ring. Due to steric factors, attack occurs almost entirely at the less hindered para position to yield 4-hydroxyazobenzene (p-hydroxyazobenzene), an orange-coloured azo dye."
+      },
+      {
+        "question": "Which of the following compounds gives a yellow oily liquid upon reaction with cold nitrous acid (NaNO₂ + HCl)?",
+        "options": [
+          "Diethylamine",
+          "Ethylamine",
+          "Triethylamine",
+          "Aniline"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Diethylamine is a secondary aliphatic amine [(C₂H₅)₂NH]. It reacts with nitrous acid to form N-nitrosodiethylamine [(C₂H₅)₂N-N=O], which separates as a yellow oily insoluble liquid.",
+          "Incorrect. Ethylamine is a primary amine; it reacts with HNO₂ with vigorous evolution of N₂ gas and forms alcohol.",
+          "Incorrect. Triethylamine is a tertiary amine; it forms a water-soluble triethylammonium nitrite salt.",
+          "Incorrect. Aniline reacts with HNO₂ at 273-278 K to form water-soluble benzenediazonium chloride."
+        ],
+        "fullExplanation": "Secondary amines (both aliphatic and aromatic) react with nitrous acid (HONO) to produce N-nitrosamines: (C₂H₅)₂NH + HONO → (C₂H₅)₂N-N=O + H₂O. N-nitrosodiethylamine is a characteristic yellow, oily liquid that is insoluble in water and gives the Liebermann nitroso reaction."
+      },
+      {
+        "question": "When benzenediazonium fluoroborate is isolated and heated dry, the reaction is known as:",
+        "options": [
+          "Balz-Schiemann reaction",
+          "Sandmeyer reaction",
+          "Gattermann reaction",
+          "Stephen reaction"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The precipitation of arenediazonium fluoroborate (ArN₂⁺BF₄⁻) followed by dry thermal decomposition to form aryl fluorides is called the Balz-Schiemann reaction.",
+          "Incorrect. Sandmeyer reaction uses Cu₂Cl₂/Cu₂Br₂/CuCN with halogen acid.",
+          "Incorrect. Gattermann reaction uses copper powder with halogen acid.",
+          "Incorrect. Stephen reaction is the reduction of nitriles to aldehydes using SnCl₂/HCl."
+        ],
+        "fullExplanation": "Fluorobenzene cannot be prepared by direct fluorination of benzene or by the Sandmeyer reaction. Instead, benzenediazonium chloride is treated with fluoroboric acid (HBF₄) to precipitate benzenediazonium fluoroborate (C₆H₅N₂⁺BF₄⁻). Upon dry heating, this salt decomposes smoothly: C₆H₅N₂⁺BF₄⁻ —(Δ)→ C₆H₅F + BF₃ + N₂. This sequence is known as the Balz-Schiemann reaction."
+      },
+      {
+        "question": "Identify the reagent (X) that converts aniline to acetanilide during group protection:",
+        "options": [
+          "Acetic anhydride in pyridine",
+          "Ethanol in concentrated H₂SO₄",
+          "Chloromethane in anhydrous AlCl₃",
+          "Sodium acetate in aqueous HCl"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Acetic anhydride [(CH₃CO)₂O] in the presence of pyridine acts as an acylating agent, converting the amino group of aniline to an acetamido group (-NHCOCH₃) to form acetanilide.",
+          "Incorrect. Ethanol and H₂SO₄ does not acylate aniline.",
+          "Incorrect. Chloromethane in AlCl₃ would be Friedel-Crafts alkylation, which fails with aniline due to complexation.",
+          "Incorrect. Sodium acetate is not an acylating agent."
+        ],
+        "fullExplanation": "To moderate the strong activating effect of the -NH₂ group in aniline, protection via acetylation is performed. Aniline reacts with acetic anhydride (or acetyl chloride) in the presence of a mild base like pyridine (which removes the produced acid) via nucleophilic acyl substitution to yield acetanilide: C₆H₅NH₂ + (CH₃CO)₂O → C₆H₅NHCOCH₃ + CH₃COOH."
+      },
+      {
+        "question": "What is the product formed when N,N-dimethylaniline is treated with nitrous acid at 273-278 K?",
+        "options": [
+          "p-Nitroso-N,N-dimethylaniline",
+          "N-Nitroso-N-methylaniline",
+          "Benzenediazonium chloride",
+          "o-Nitroso-N,N-dimethylaniline"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. N,N-Dimethylaniline is a tertiary aromatic amine; electrophilic aromatic substitution occurs at the activated para position with the nitrosonium ion (NO⁺) to form p-nitroso-N,N-dimethylaniline (green compound).",
+          "Incorrect. N-Nitroso compounds form from secondary amines, not tertiary aromatic amines.",
+          "Incorrect. Diazonium salts form only from primary aromatic amines.",
+          "Incorrect. Due to steric hindrance of the bulky -N(CH₃)₂ group, substitution occurs almost exclusively at the para position."
+        ],
+        "fullExplanation": "Tertiary aromatic amines like N,N-dimethylaniline undergo electrophilic aromatic substitution on the benzene ring rather than at nitrogen when treated with nitrous acid. The electrophile NO⁺ attacks the para-position to yield p-nitroso-N,N-dimethylaniline as a green-coloured crystalline solid (or yellow salt in acid)."
+      },
+      {
+        "question": "Which of the following compounds gives a positive test with both the Carbylamine test and the Azo dye test?",
+        "options": [
+          "Aniline",
+          "Benzylamine",
+          "N-Methylaniline",
+          "Ethanamine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Aniline is a primary aromatic amine. Being a 1° amine, it gives a positive Carbylamine test (foul-smelling isocyanide), and being an aromatic 1° amine, its diazonium salt is stable at 0-5 °C and forms an orange azo dye with alkaline β-naphthol.",
+          "Incorrect. Benzylamine is an aliphatic/benzylic 1° amine; its diazonium salt decomposes immediately with N₂ loss and does not couple to form an azo dye.",
+          "Incorrect. N-Methylaniline is a secondary amine and fails the carbylamine test.",
+          "Incorrect. Ethanamine is an aliphatic amine; its diazonium salt decomposes immediately and cannot form an azo dye."
+        ],
+        "fullExplanation": "The Carbylamine test is positive for all primary amines (both aliphatic and aromatic). The Azo dye test requires the formation of a stable arenediazonium salt at 0-5 °C, which is unique to primary aromatic amines. Benzylamine (C₆H₅CH₂NH₂) and ethanamine form unstable aliphatic diazonium salts that lose N₂ immediately without coupling. Thus, only aniline gives positive results in both tests."
+      },
+      {
+        "question": "The boiling points of isomeric amines follow the order:",
+        "options": [
+          "Primary > Secondary > Tertiary",
+          "Tertiary > Secondary > Primary",
+          "Secondary > Primary > Tertiary",
+          "Primary > Tertiary > Secondary"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Primary amines have two N-H bonds and form extensive intermolecular hydrogen bonds. Secondary amines have one N-H bond, and tertiary amines have no N-H bonds and cannot form intermolecular hydrogen bonds with themselves.",
+          "Incorrect. Tertiary amines cannot form self-associated hydrogen bonds, giving them the lowest boiling points.",
+          "Incorrect. Primary amines form more extensive hydrogen bonds than secondary amines.",
+          "Incorrect. Secondary amines have higher boiling points than tertiary amines due to hydrogen bonding."
+        ],
+        "fullExplanation": "Intermolecular hydrogen bonding determines the boiling points of isomeric amines. Primary amines possess two hydrogens attached to electronegative nitrogen (-NH₂), enabling extensive hydrogen-bond network formation. Secondary amines possess only one N-H bond (weaker hydrogen bonding). Tertiary amines have no hydrogen on nitrogen and cannot form intermolecular hydrogen bonds between their own molecules. Hence, the order is 1° > 2° > 3°."
+      },
+      {
+        "question": "When nitrobenzene is treated with zinc dust and aqueous ammonium chloride (NH₄Cl), the product obtained is:",
+        "options": [
+          "N-Phenylhydroxylamine",
+          "Aniline",
+          "Hydrazobenzene",
+          "Nitrosobenzene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Reduction of nitrobenzene in neutral medium (Zn + aqueous NH₄Cl) cleanly reduces the nitro group by four electrons to yield N-phenylhydroxylamine (C₆H₅NHOH).",
+          "Incorrect. Aniline is formed in acidic reduction (Fe/HCl or Sn/HCl).",
+          "Incorrect. Hydrazobenzene is formed in alkaline reduction with Zn/NaOH.",
+          "Incorrect. Nitrosobenzene is a fleeting intermediate that is further reduced to N-phenylhydroxylamine under these conditions."
+        ],
+        "fullExplanation": "The reduction of nitrobenzene is highly dependent on the pH of the reaction medium. In neutral solution (zinc dust in aqueous ammonium chloride), mild four-electron reduction occurs: C₆H₅NO₂ + 4[H] —(Zn/NH₄Cl)→ C₆H₅NHOH + H₂O. The product is N-phenylhydroxylamine, which reduces Tollens' reagent to metallic silver."
+      },
+      {
+        "question": "In the exhaustive methylation and Hofmann elimination of (R)-butan-2-amine, the major alkene obtained is:",
+        "options": [
+          "But-1-ene",
+          "trans-But-2-ene",
+          "cis-But-2-ene",
+          "2-Methylpropene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Hofmann elimination on quaternary ammonium hydroxides favors removal of the more acidic, sterically more accessible proton from the less substituted β-carbon, yielding the Hofmann alkene, but-1-ene.",
+          "Incorrect. trans-But-2-ene is the Zaitsev product, which is minor in Hofmann elimination due to steric crowding in the transition state.",
+          "Incorrect. cis-But-2-ene is a minor product.",
+          "Incorrect. Skeletal rearrangement does not occur during this elimination."
+        ],
+        "fullExplanation": "In quaternary ammonium hydroxides such as [CH₃-CH₂-CH(N⁺Me₃)-CH₃]OH⁻, the leaving group -N(CH₃)₃ is bulky and strongly electron-withdrawing. Because of steric congestion and the high acidity of the primary β-hydrogens over secondary β-hydrogens, hydroxide abstracts a proton from the terminal methyl group (C1). This leads to preferential formation of the less substituted alkene, but-1-ene (Hofmann rule)."
+      },
+      {
+        "question": "Treatment of m-toluidine with NaNO₂/HCl at 273-278 K followed by boiling with water gives:",
+        "options": [
+          "m-Cresol",
+          "Toluene",
+          "3-Chlorotoluene",
+          "Benzoic acid"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Diazotisation converts m-toluidine (3-methylaniline) into 3-methylbenzenediazonium chloride, which upon boiling with water undergoes hydrolysis with loss of N₂ to form m-cresol (3-methylphenol).",
+          "Incorrect. Deamination to toluene requires H₃PO₂ or ethanol.",
+          "Incorrect. Chlorotoluene requires CuCl/HCl (Sandmeyer).",
+          "Incorrect. Boiling with water does not oxidize the methyl side chain."
+        ],
+        "fullExplanation": "m-Toluidine undergoes diazotisation with NaNO₂ and HCl at 273-278 K to produce 3-methylbenzenediazonium chloride. When the aqueous solution of this arenediazonium salt is heated/boiled, water acts as a nucleophile, releasing N₂ gas and forming m-cresol: CH₃-C₆H₄-N₂⁺Cl⁻ + H₂O —(Δ)→ CH₃-C₆H₄-OH + N₂ + HCl."
+      },
+      {
+        "question": "Which of the following statements about the basicity of aniline compared to aliphatic amines is correct?",
+        "options": [
+          "Aniline is less basic because the nitrogen lone pair is delocalized into the benzene ring by resonance.",
+          "Aniline is more basic because the phenyl ring exerts a strong +I effect.",
+          "Aniline is more basic because its conjugate acid (anilinium ion) has more resonance structures than aniline.",
+          "Aniline has equal basicity to cyclohexylamine because both have six carbons."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The lone pair of electrons on the nitrogen atom in aniline participates in resonance with the π-electron system of the aromatic ring, making it less available for protonation than in aliphatic amines.",
+          "Incorrect. Phenyl rings exert a -I inductive effect and delocalize the nitrogen lone pair by +M effect.",
+          "Incorrect. Aniline has 5 resonance structures, while the anilinium ion has only 2, which means protonation causes a loss of resonance stabilization.",
+          "Incorrect. Cyclohexylamine is an aliphatic amine where the nitrogen lone pair is fully localized, making it vastly more basic than aniline."
+        ],
+        "fullExplanation": "Aniline is significantly weaker as a base than aliphatic amines (pKb ~ 9.4 for aniline vs ~3.2 for methylamine). In aniline, the unshared electron pair on nitrogen is conjugated with the aromatic ring and delocalized across the ortho and para positions across five resonance contributors. Furthermore, the anilinium cation formed upon protonation has only two resonance structures, making protonation thermodynamically less favorable due to loss of resonance stabilization."
+      },
+      {
+        "question": "Aniline reacts with bromine water to give 2,4,6-tribromoaniline. To obtain 4-bromoaniline as the major product, the sequence of reactions should be:",
+        "options": [
+          "(CH₃CO)₂O / pyridine → Br₂ / CH₃COOH → H₃O⁺ / Δ",
+          "Br₂ / FeBr₃ → H₂O / Δ",
+          "NaNO₂ / HCl → CuBr / HBr → NH₃",
+          "CH₃Cl / AlCl₃ → Br₂ / H₂O"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Protecting the -NH₂ group as acetanilide moderates its activating power, so bromination with Br₂ in acetic acid selectively yields 4-bromoacetanilide, which upon acidic or basic hydrolysis regenerates 4-bromoaniline.",
+          "Incorrect. Direct bromination with FeBr₃ results in extensive polybromination and oxidation.",
+          "Incorrect. Nucleophilic substitution of bromobenzene with NH₃ requires extreme industrial conditions and gives poor yields.",
+          "Incorrect. CH₃Cl with AlCl₃ fails with aniline and does not afford bromination control."
+        ],
+        "fullExplanation": "Because the free -NH₂ group is extraordinarily activating, direct treatment of aniline with bromine results in immediate tribromination at positions 2, 4, and 6. To achieve monobromination at the para position, aniline is first acetylated with acetic anhydride in pyridine to form acetanilide. The -NHCOCH₃ group has a moderated activating effect because the lone pair on nitrogen is delocalized into the carbonyl group. Subsequent bromination with Br₂ in glacial acetic acid yields 4-bromoacetanilide as the major product. Finally, acidic or basic hydrolysis cleaves the acetyl group to deliver 4-bromoaniline."
+      }
+    ]
+  },
+  {
+    "chapterName": "Biomolecules",
+    "flashcards": [
+      {
+        "front": "What defines a Reducing Sugar versus a Non-Reducing Sugar chemically?",
+        "back": "• Reducing sugar: Contains a free or potentially free aldehyde or ketone group (exists as a cyclic hemiacetal or hemiketal that can open to a free carbonyl). It reduces Tollens', Fehling's, and Benedict's reagents (e.g., all monosaccharides, maltose, lactose).\n• Non-reducing sugar: The anomeric carbons of all monosaccharide units are locked in glycosidic linkages (acetals/ketals), preventing mutarotation and ring-opening (e.g., sucrose, trehalose)."
+      },
+      {
+        "front": "How are D and L configurations assigned to monosaccharides like Glucose?",
+        "back": "D and L designations are assigned relative to the configuration of glyceraldehyde by looking at the penultimate carbon (the highest-numbered chiral carbon, C-5 in glucose). If the -OH group on this reference carbon points to the right in a standard Fischer projection with the most oxidized carbon at the top, it belongs to the D-series; if it points to the left, it belongs to the L-series. Naturally occurring glucose is D-(+)-glucose."
+      },
+      {
+        "front": "What are Anomers and what is Mutarotation in D-glucose?",
+        "back": "• Anomers: Diastereomeric cyclic hemiacetals differing only in configuration at C-1 (the anomeric carbon), forming α-D-glucopyranose and β-D-glucopyranose.\n• Mutarotation: The spontaneous change in specific optical rotation when either pure α (+112°) or pure β (+19°) anomer is dissolved in water, reaching an equilibrium mixture value of +52.5° via the open-chain aldehyde form."
+      },
+      {
+        "front": "What are the oxidation products of D-glucose with: (1) Bromine water (Br₂/H₂O), and (2) Concentrated HNO₃?",
+        "back": "1. Bromine water (mild selective oxidant): Selectively oxidizes the aldehyde group (-CHO at C-1) to a carboxylic acid (-COOH) without affecting primary alcohol (-CH₂OH at C-6), producing Gluconic acid.\n2. Concentrated HNO₃ (strong oxidant): Oxidizes both the terminal aldehyde group (C-1) and the primary alcohol group (C-6) to carboxylic acid groups, producing the dicarboxylic acid Saccharic acid (glucaric acid)."
+      },
+      {
+        "front": "What are Epimers? Give two biologically important epimers of D-Glucose.",
+        "back": "Epimers are diastereomers that differ in absolute configuration at only one single asymmetric (chiral) carbon center.\n• D-Mannose is the C-2 epimer of D-glucose.\n• D-Galactose is the C-4 epimer of D-glucose."
+      },
+      {
+        "front": "Describe the glycosidic linkage in Sucrose and explain why it is an 'Invert Sugar'.",
+        "back": "• Structure: Composed of α-D-glucopyranose and β-D-fructofuranoside joined by an α-1,β-2 glycosidic linkage involving both anomeric carbons (C-1 of glucose and C-2 of fructose).\n• Invert Sugar: Sucrose is dextrorotatory (+66.5°). Hydrolysis yields an equimolar mixture of D-(+)-glucose (+52.5°) and D-(-)-fructose (-92.4°). Because the levorotation of fructose exceeds the dextrorotation of glucose, the net mixture is levorotatory (-39.9°), inverting the sign of rotation."
+      },
+      {
+        "front": "Compare the structure and linkages of Maltose and Lactose.",
+        "back": "• Maltose: Composed of two α-D-glucopyranose units linked by an α-1,4-glycosidic bond. The hemiacetal group at C-1 of the second glucose unit is free, making it a reducing sugar.\n• Lactose: Composed of β-D-galactopyranose and β-D-glucopyranose joined by a β-1,4-glycosidic bond. The hemiacetal at C-1 of glucose is free, making it a reducing sugar."
+      },
+      {
+        "front": "Compare the two structural components of Starch: Amylose vs Amylopectin.",
+        "back": "• Amylose (15-20% of starch): Water-soluble, linear, unbranched polymer of α-D-glucose joined exclusively by α-1,4-glycosidic linkages. Forms a helical structure that traps I₂ to give a blue-black colour.\n• Amylopectin (80-85% of starch): Water-insoluble, branched polymer. Glucose units in linear chains have α-1,4-glycosidic linkages, while branching points occur via α-1,6-glycosidic linkages approximately every 24-30 glucose residues."
+      },
+      {
+        "front": "What is the structural basis of Cellulose and why cannot humans digest it?",
+        "back": "Cellulose is a linear, unbranched polysaccharide consisting of β-D-glucose units joined by β-1,4-glycosidic linkages. The linear chains pack parallel to one another and are held tightly by extensive inter- and intramolecular hydrogen bonds, creating rigid microfibrils. Humans lack the enzyme cellulase capable of hydrolysing β-1,4-glycosidic bonds, rendering cellulose indigestible."
+      },
+      {
+        "front": "What is a Zwitterion and what is the Isoelectric Point (pI) of an amino acid?",
+        "back": "• Zwitterion: A dipolar ion containing both positive (⁺NH₃-) and negative (-COO⁻) formal charges within the same neutral molecule, formed by internal proton transfer in an α-amino acid.\n• Isoelectric Point (pI): The specific pH at which an amino acid carries no net electrical charge (concentration of zwitterion is maximal) and does not migrate towards either electrode in an electric field."
+      },
+      {
+        "front": "Which α-amino acid is optically inactive and why?",
+        "back": "Glycine (H₂N-CH₂-COOH) is the only naturally occurring α-amino acid that is optically inactive (achiral). Its α-carbon is bonded to two identical hydrogen atoms, lacking the four different substituents required for a chiral center."
+      },
+      {
+        "front": "What is a Peptide Bond and what gives it a rigid, planar geometry?",
+        "back": "A peptide bond is an amide linkage (-CO-NH-) formed by condensation between the α-carboxyl group of one amino acid and the α-amino group of another with loss of water. The lone pair on nitrogen is delocalized into the carbonyl group (-C(O⁻)=N⁺H-), conferring ~40% double bond character to the C-N bond, which restricts free rotation and forces the six atoms of the peptide unit into a coplanar arrangement."
+      },
+      {
+        "front": "Compare the α-Helix and β-Pleated Sheet secondary structures of proteins.",
+        "back": "• α-Helix: Polypeptide backbone is coiled into a right-handed screw held by intramolecular hydrogen bonds between the C=O of each amino acid residue and the N-H of the fourth residue ahead (n+4 rule).\n• β-Pleated Sheet: Polypeptide chains are stretched out side-by-side in parallel or antiparallel arrangements, held together by intermolecular hydrogen bonds between adjacent polypeptide strands."
+      },
+      {
+        "front": "What stabilizes the Tertiary Structure of proteins?",
+        "back": "The tertiary (three-dimensional folding) structure of proteins is stabilized by five distinct interactions:\n1. Disulfide bonds (-S-S- covalent linkages between cysteine residues)\n2. Hydrogen bonds (between polar side chains)\n3. Electrostatic interactions / ionic salt bridges (between -NH₃⁺ and -COO⁻)\n4. Hydrophobic interactions (non-polar side chains clustering in the interior)\n5. Van der Waals forces."
+      },
+      {
+        "front": "Differentiate between Fibrous and Globular proteins with examples.",
+        "back": "• Fibrous proteins: Linear, parallel polypeptide chains running together; held by strong H-bonds and disulfide linkages; insoluble in water; perform structural roles. Examples: Keratin (hair, wool, nails), Collagen (tendons, bones), Myosin (muscles).\n• Globular proteins: Polypeptide chains fold into spherical/globular shapes; non-polar residues are buried inside and polar residues face outwards; soluble in water; dynamic biological roles. Examples: Hemoglobin, Albumin, Insulin, Enzymes."
+      },
+      {
+        "front": "What is Protein Denaturation and which structural levels remain intact during this process?",
+        "back": "Denaturation is the disruption of the native three-dimensional conformation of a protein caused by physical agents (heat, pressure) or chemical agents (pH change, urea, heavy metals). Secondary, tertiary, and quaternary structures unfold and biological activity is lost. Crucially, the primary structure (the covalent sequence of amino acids linked by peptide bonds) remains completely intact."
+      },
+      {
+        "front": "Name the nitrogenous bases found in DNA versus RNA, and state their hydrogen bonding pairing rules.",
+        "back": "• DNA bases: Adenine (A), Guanine (G) [purines]; Cytosine (C), Thymine (T) [pyrimidines]. Complementary pairing: A forms 2 hydrogen bonds with T (A=T); G forms 3 hydrogen bonds with C (G≡C).\n• RNA bases: Adenine (A), Guanine (G), Cytosine (C), and Uracil (U). Base pairing: A forms 2 hydrogen bonds with U (A=U); G forms 3 hydrogen bonds with C (G≡C)."
+      },
+      {
+        "front": "What is the structural difference between a Nucleoside and a Nucleotide?",
+        "back": "• Nucleoside = Nitrogenous Base + Pentose Sugar (joined by a β-N-glycosidic linkage at C-1' of the sugar).\n• Nucleotide = Nucleoside + Phosphate group (formed by esterification of the -OH group at C-5' of the pentose sugar with phosphoric acid).\nNucleotides polymerize via 3'-5' phosphodiester linkages to form nucleic acid chains."
+      },
+      {
+        "front": "Distinguish between Water-Soluble and Fat-Soluble Vitamins, giving examples and excretion behavior.",
+        "back": "• Fat-soluble vitamins: Vitamins A, D, E, and K. Soluble in fats and organic solvents; stored in the liver and adipose tissues; excess is not readily excreted and can lead to hypervitaminosis.\n• Water-soluble vitamins: B-complex vitamins (e.g., B₁, B₂, B₆, B₁₂) and Vitamin C. Must be supplied regularly in the diet because they are readily excreted in urine (exception: Vitamin B₁₂, which is stored in the liver)."
+      },
+      {
+        "front": "State the deficiency diseases caused by lack of: (1) Vitamin A, (2) Vitamin B₁ (thiamine), (3) Vitamin C (ascorbic acid), and (4) Vitamin D.",
+        "back": "1. Vitamin A deficiency: Xerophthalmia (hardening of cornea), Night blindness.\n2. Vitamin B₁ (Thiamine) deficiency: Beriberi (loss of appetite, muscle weakness, nerve damage).\n3. Vitamin C deficiency: Scurvy (bleeding gums, skin spots, delayed wound healing).\n4. Vitamin D deficiency: Rickets (bone deformation in children), Osteomalacia (soft bones in adults)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following carbon atoms in α-D-glucopyranose is the anomeric carbon?",
+        "options": [
+          "C-1",
+          "C-2",
+          "C-5",
+          "C-6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In aldopyranoses like D-glucose, cyclisation occurs between the C-1 carbonyl carbon and the C-5 hydroxyl group, creating a new chiral hemiacetal center at C-1 (the anomeric carbon).",
+          "Incorrect. C-2 is an ordinary secondary alcohol carbon in glucose; it is the anomeric carbon only in ketoses like fructose.",
+          "Incorrect. C-5 supplies the oxygen atom to form the pyranose ring.",
+          "Incorrect. C-6 is the exocyclic primary alcohol (-CH₂OH) carbon."
+        ],
+        "fullExplanation": "When D-glucose forms a six-membered pyranose ring, the nucleophilic -OH group on C-5 attacks the planar sp² carbonyl carbon at C-1. This cyclisation transforms the achiral C-1 carbonyl into a new chiral hemiacetal carbon center. This asymmetric C-1 carbon is defined as the anomeric carbon, whose configuration gives rise to the α and β anomers."
+      },
+      {
+        "question": "Which of the following carbohydrates does NOT show mutarotation and does NOT reduce Fehling's solution?",
+        "options": [
+          "Sucrose",
+          "Maltose",
+          "Lactose",
+          "Cellobiose"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sucrose is a non-reducing disaccharide where the anomeric carbons of both glucose (C-1) and fructose (C-2) participate in the glycosidic linkage; having no free hemiacetal/hemiketal, it cannot mutarotate or reduce Fehling's.",
+          "Incorrect. Maltose contains a free hemiacetal group at C-1 of the second glucose unit, undergoing mutarotation and reducing Fehling's.",
+          "Incorrect. Lactose has a free hemiacetal group on the glucose moiety and is a reducing sugar.",
+          "Incorrect. Cellobiose has a free hemiacetal unit and is reducing."
+        ],
+        "fullExplanation": "Mutarotation and the reduction of Fehling's or Tollens' reagents require the presence of a free (or potentially free) hemiacetal or hemiketal group at an anomeric carbon that can equilibrate with the open-chain aldehyde or ketone form. In sucrose, the α-1,β-2 glycosidic bond directly ties up the anomeric carbon of glucose (C-1) and fructose (C-2). Consequently, sucrose cannot open into a free carbonyl form, making it a non-reducing sugar that does not exhibit mutarotation."
+      },
+      {
+        "question": "Reaction of D-glucose with bromine water gives:",
+        "options": [
+          "Gluconic acid",
+          "Saccharic acid",
+          "Glucaric acid",
+          "Sorbitol"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Bromine water is a mild oxidizing agent that selectively oxidizes the aldehyde group (-CHO) at C-1 to a carboxyl group (-COOH), producing gluconic acid.",
+          "Incorrect. Saccharic acid is a dicarboxylic acid formed when D-glucose is treated with strong nitric acid (HNO₃).",
+          "Incorrect. Glucaric acid is another name for saccharic acid.",
+          "Incorrect. Sorbitol (glucitol) is a polyol produced by reduction of D-glucose with NaBH₄ or Na-Hg/H₂O."
+        ],
+        "fullExplanation": "Bromine water (Br₂/H₂O) is a mild, selective oxidant that oxidizes aldoses to aldonic acids without attacking secondary or primary alcohol groups. Oxidation of the -CHO group at C-1 of D-glucose produces D-gluconic acid: HOCH₂-(CHOH)₄-CHO —(Br₂/H₂O)→ HOCH₂-(CHOH)₄-COOH. Strong oxidants like concentrated HNO₃ are required to oxidize the C-6 primary alcohol to form saccharic acid."
+      },
+      {
+        "question": "Which of the following nitrogenous bases is present in RNA but ABSENT in DNA?",
+        "options": [
+          "Uracil",
+          "Thymine",
+          "Cytosine",
+          "Guanine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Uracil is a pyrimidine base found exclusively in RNA, whereas thymine (5-methyluracil) is found in DNA.",
+          "Incorrect. Thymine is present in DNA and absent in RNA.",
+          "Incorrect. Cytosine is a pyrimidine base present in both DNA and RNA.",
+          "Incorrect. Guanine is a purine base present in both DNA and RNA."
+        ],
+        "fullExplanation": "DNA contains four primary heterocyclic bases: the purines Adenine (A) and Guanine (G), and the pyrimidines Cytosine (C) and Thymine (T). In RNA, Thymine is replaced by Uracil (U), while Adenine, Guanine, and Cytosine are conserved."
+      },
+      {
+        "question": "The isoelectric point (pI) of an amino acid that has pKa₁ = 2.34 (for -COOH) and pKa₂ = 9.60 (for -NH₃⁺) is:",
+        "options": [
+          "5.97",
+          "7.00",
+          "11.94",
+          "3.63"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For a monoamino monocarboxylic acid, pI = (pKa₁ + pKa₂) / 2 = (2.34 + 9.60) / 2 = 11.94 / 2 = 5.97.",
+          "Incorrect. 7.00 is neutral pH, not the isoelectric point of this amino acid.",
+          "Incorrect. 11.94 is the sum (pKa₁ + pKa₂), not the average.",
+          "Incorrect. 3.63 is (pKa₂ - pKa₁) / 2."
+        ],
+        "fullExplanation": "The isoelectric point (pI) is the pH at which the net electrical charge of the zwitterion is zero. For a neutral amino acid with a non-ionizable side chain, pI is the arithmetic average of the two pKa values: pI = (pKa₁ + pKa₂) / 2 = (2.34 + 9.60) / 2 = 5.97."
+      },
+      {
+        "question": "Hydrolysis of sucrose by enzyme invertase yields a mixture that is levorotatory because:",
+        "options": [
+          "The levorotation of D-(-)-fructose (-92.4°) is greater in magnitude than the dextrorotation of D-(+)-glucose (+52.5°)",
+          "D-(+)-glucose completely mutarotates into levorotatory β-D-glucose",
+          "Fructose is a ketose and has no optical rotation",
+          "Sucrose itself has a negative optical rotation before hydrolysis"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Hydrolysis produces equimolar D-(+)-glucose ([α] = +52.5°) and D-(-)-fructose ([α] = -92.4°). The larger negative specific rotation of fructose dominates, yielding a net levorotatory solution ([α] = -39.9°).",
+          "Incorrect. Equilibrium glucose rotation remains dextrorotatory (+52.5°).",
+          "Incorrect. Fructose is strongly optically active and levorotatory.",
+          "Incorrect. Pure sucrose is dextrorotatory with a specific rotation of +66.5°."
+        ],
+        "fullExplanation": "Sucrose is dextrorotatory with [α]D = +66.5°. Upon acidic or enzymatic hydrolysis, it breaks down into an equimolar mixture of D-(+)-glucose ([α]D = +52.5°) and D-(-)-fructose ([α]D = -92.4°). The resulting mixture has a net negative specific rotation ([α]D = (+52.5° - 92.4°)/2 = -19.95° or net -39.9° based on standard reference solutions). Because the sign of optical rotation changes from (+) to (-), the product is termed invert sugar."
+      },
+      {
+        "question": "Which of the following is a non-essential α-amino acid synthesized in the human body?",
+        "options": [
+          "Alanine",
+          "Valine",
+          "Leucine",
+          "Lysine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Alanine can be synthesized in the human body (via transamination of pyruvate) and is classified as a non-essential amino acid.",
+          "Incorrect. Valine is a branched-chain essential amino acid that must be obtained from diet.",
+          "Incorrect. Leucine is an essential amino acid.",
+          "Incorrect. Lysine is a basic essential amino acid."
+        ],
+        "fullExplanation": "Essential amino acids cannot be synthesized by the human body and must be supplied through dietary sources (Valine, Leucine, Isoleucine, Phenylalanine, Methionine, Tryptophan, Threonine, Lysine, and Histidine). Alanine, Glycine, Aspartic acid, Glutamic acid, Serine, etc., can be biosynthesized de novo by human metabolic pathways and are therefore non-essential amino acids."
+      },
+      {
+        "question": "Which of the following vitamins is water-soluble?",
+        "options": [
+          "Vitamin C",
+          "Vitamin A",
+          "Vitamin D",
+          "Vitamin K"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Vitamin C (ascorbic acid) and the B-complex vitamins are water-soluble.",
+          "Incorrect. Vitamin A is a fat-soluble vitamin stored in the liver.",
+          "Incorrect. Vitamin D is a fat-soluble steroid-derived vitamin.",
+          "Incorrect. Vitamin K is a fat-soluble vitamin essential for blood clotting."
+        ],
+        "fullExplanation": "Vitamins are classified into two groups based on solubility: Fat-soluble vitamins (A, D, E, and K) which dissolve in lipids and are stored in adipose tissue, and Water-soluble vitamins (B-complex vitamins and Vitamin C / ascorbic acid) which dissolve readily in water, are not stored significantly in the body (except B₁₂), and are regularly excreted in urine."
+      },
+      {
+        "question": "The secondary structure of a protein is primarily stabilized by which type of interaction?",
+        "options": [
+          "Hydrogen bonding",
+          "Disulfide covalent bonds",
+          "Hydrophobic interactions",
+          "Electrostatic salt bridges"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Both the α-helix and β-pleated sheet secondary structures are held and stabilized specifically by hydrogen bonds between the >C=O and -NH groups of the peptide backbone.",
+          "Incorrect. Disulfide bonds stabilize the tertiary and quaternary structures, not the primary secondary folds.",
+          "Incorrect. Hydrophobic forces govern the collapse into globular tertiary structure.",
+          "Incorrect. Salt bridges are ionic interactions stabilizing tertiary/quaternary folding."
+        ],
+        "fullExplanation": "The secondary structure refers to the local conformational arrangements of the polypeptide backbone. The two most common secondary structures are the α-helix and the β-pleated sheet. Both structures are maintained exclusively by regular, repeating hydrogen bonds between the carbonyl oxygen (>C=O) of one peptide bond and the amide hydrogen (-NH-) of another peptide bond along the backbone."
+      },
+      {
+        "question": "During the denaturation of proteins, which of the following structures remains completely intact?",
+        "options": [
+          "Primary structure",
+          "Secondary structure",
+          "Tertiary structure",
+          "Quaternary structure"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Denaturation breaks weaker non-covalent interactions (hydrogen bonds, ionic bonds, hydrophobic interactions), unfolding secondary, tertiary, and quaternary structures while leaving covalent peptide bonds (primary sequence) intact.",
+          "Incorrect. The hydrogen-bonded α-helices and β-sheets unfold upon denaturation.",
+          "Incorrect. The three-dimensional globular conformation is destroyed.",
+          "Incorrect. Multisubunit assemblies dissociate during denaturation."
+        ],
+        "fullExplanation": "Denaturation is caused by changes in temperature, pH, or chemical denaturants that disrupt the non-covalent forces (hydrogen bonds, salt bridges, van der Waals interactions) maintaining the secondary, tertiary, and quaternary architectures. Because the covalent amide (peptide) bonds of the backbone are not hydrolysed under these conditions, the primary sequence of amino acids remains unaffected."
+      },
+      {
+        "question": "Which of the following statements about Amylose and Amylopectin is INCORRECT?",
+        "options": [
+          "Amylose contains both α-1,4 and α-1,6 glycosidic linkages.",
+          "Amylose is water-soluble and constitutes about 15-20% of starch.",
+          "Amylopectin is a branched-chain polymer of α-D-glucose.",
+          "Amylopectin has branching via α-1,6 glycosidic bonds."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This statement is incorrect because amylose is strictly a linear, unbranched polymer containing only α-1,4-glycosidic linkages. Branching via α-1,6 linkages occurs only in amylopectin.",
+          "Incorrect. This statement is scientifically true (amylose is water-soluble, 15-20% of starch).",
+          "Incorrect. This statement is true (amylopectin is branched).",
+          "Incorrect. This statement is true (branching in amylopectin occurs via α-1,6 linkages)."
+        ],
+        "fullExplanation": "Starch consists of two polysaccharides: Amylose is a linear chain of several hundred to thousand α-D-glucose units joined exclusively by α-1,4-glycosidic bonds; it is water-soluble and comprises 15-20% of starch. Amylopectin is a highly branched polymer constituting 80-85% of starch, where linear chains (α-1,4 links) are branched periodically through α-1,6-glycosidic bonds."
+      },
+      {
+        "question": "When D-glucose reacts with acetic anhydride in the presence of pyridine, it forms a pentaacetate. This confirms the presence of:",
+        "options": [
+          "Five -OH groups",
+          "One primary -CHO group",
+          "A pyranose ring",
+          "A cyclic hemiacetal"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Acetic anhydride acetylates free hydroxyl groups. The formation of a stable pentaacetate establishes that D-glucose contains five hydroxyl (-OH) groups attached to five different carbon atoms.",
+          "Incorrect. The aldehyde group does not form an ester with acetic anhydride.",
+          "Incorrect. The open-chain form also forms pentaacetate; it does not directly prove a pyranose ring.",
+          "Incorrect. Pentaacetate formation alone does not confirm cyclic hemiacetal structure."
+        ],
+        "fullExplanation": "Acetylation of D-glucose with acetic anhydride in pyridine yields glucose pentaacetate. Because one carbon atom rarely holds two stable hydroxyl groups without dehydrating, the incorporation of five acetyl (-COCH₃) groups definitively proves that glucose contains five separate hydroxyl (-OH) groups distributed on five individual carbon atoms."
+      },
+      {
+        "question": "In a dinucleotide, the two nucleotides are linked together by:",
+        "options": [
+          "Phosphodiester linkage between 3'-carbon of one sugar and 5'-carbon of the next",
+          "Peptide linkage between base and sugar",
+          "Glycosidic linkage between 1'-carbon and phosphate",
+          "Hydrogen bonding between complementary sugars"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Successive nucleotides in nucleic acid strands are covalently joined by 3'-5' phosphodiester linkages connecting the 3'-OH of one pentose to the 5'-phosphate of the next.",
+          "Incorrect. Peptide bonds link amino acids in proteins.",
+          "Incorrect. Phosphates link to 3' and 5' positions; the base links to C-1' via an N-glycosidic bond.",
+          "Incorrect. Hydrogen bonds join complementary bases across opposing strands, not adjacent nucleotides on the same strand."
+        ],
+        "fullExplanation": "The backbone of nucleic acids (DNA and RNA) consists of alternating sugar and phosphate residues. Mononucleotides are polymerized via a condensation reaction where the phosphate group attached to the 5'-hydroxyl of one pentose forms an ester linkage with the 3'-hydroxyl group of the adjacent pentose. This repeating bridge is known as a 3',5'-phosphodiester linkage."
+      },
+      {
+        "question": "Deficiency of Vitamin B₁ (Thiamine) leads to which of the following diseases?",
+        "options": [
+          "Beriberi",
+          "Scurvy",
+          "Rickets",
+          "Cheilosis"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Vitamin B₁ (Thiamine) deficiency causes beriberi, characterized by peripheral neuropathy, muscle wasting, and cardiovascular dysfunction.",
+          "Incorrect. Scurvy is caused by deficiency of Vitamin C (ascorbic acid).",
+          "Incorrect. Rickets is caused by deficiency of Vitamin D.",
+          "Incorrect. Cheilosis and glossitis are caused by deficiency of Vitamin B₂ (riboflavin)."
+        ],
+        "fullExplanation": "Vitamin B₁ (thiamine) functions as a cofactor (thiamine pyrophosphate) in carbohydrate and branched-chain amino acid metabolism. Its deficiency leads to Beriberi (which manifests as dry beriberi affecting the nervous system or wet beriberi affecting the cardiovascular system)."
+      },
+      {
+        "question": "Which of the following pairs represents a set of epimers?",
+        "options": [
+          "D-Glucose and D-Galactose",
+          "D-Glucose and D-Fructose",
+          "D-Glucose and L-Glucose",
+          "α-D-Glucose and β-D-Glucose"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. D-Glucose and D-Galactose differ in configuration only at the C-4 carbon, making them C-4 epimers.",
+          "Incorrect. D-Glucose is an aldose and D-Fructose is a ketose; they are functional isomers.",
+          "Incorrect. D-Glucose and L-Glucose are non-superimposable mirror images (enantiomers).",
+          "Incorrect. α-D-Glucose and β-D-Glucose are anomers differing at C-1."
+        ],
+        "fullExplanation": "Epimers are diastereomers that have the opposite configuration at only one stereogenic center while all other chiral centers remain identical. D-Glucose and D-Galactose share identical configurations at C-2, C-3, and C-5, but have inverted configurations at C-4 (-OH is on the right in glucose and on the left in galactose in Fischer projections), making them C-4 epimers."
+      },
+      {
+        "question": "Which of the following statements regarding the double-helical structure of DNA is FALSE?",
+        "options": [
+          "The two polynucleotide chains are parallel and run in the same 5' → 3' direction.",
+          "Adenine pairs with thymine via two hydrogen bonds.",
+          "Guanine pairs with cytosine via three hydrogen bonds.",
+          "The pitch of the B-DNA helix is 3.4 nm (containing 10 base pairs per turn)."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This statement is false because the two polynucleotide chains in the double helix are antiparallel, meaning one strand runs in the 5' → 3' direction while the complementary strand runs in the 3' → 5' direction.",
+          "Incorrect. This is true: A and T share two hydrogen bonds (A=T).",
+          "Incorrect. This is true: G and C share three hydrogen bonds (G≡C).",
+          "Incorrect. This is true: B-DNA has a pitch of 3.4 nm with 10 base pairs per helical turn (0.34 nm per base pair)."
+        ],
+        "fullExplanation": "According to the Watson-Crick double-helix model of B-DNA, the two helical polynucleotide chains are antiparallel: one strand has a 5' → 3' polarity while the companion strand has a 3' → 5' polarity. The bases are paired interiorly (A=T and G≡C), and the helical pitch is 3.4 nm with roughly 10 base pairs per complete turn."
+      },
+      {
+        "question": "What is the product obtained when D-glucose is prolonged heated with concentrated hydriodic acid (HI) in the presence of red phosphorus?",
+        "options": [
+          "n-Hexane",
+          "Hexanoic acid",
+          "Hexan-1-ol",
+          "Sorbitol"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Red P + HI is a vigorous reducing agent that completely reduces all carbonyl and hydroxyl groups to hydrocarbons, converting D-glucose into n-hexane.",
+          "Incorrect. Hexanoic acid would mean the aldehyde was preserved as a carboxylic acid.",
+          "Incorrect. Alcohols are completely reduced to alkanes by red P + HI.",
+          "Incorrect. Sorbitol is the mild reduction product of glucose."
+        ],
+        "fullExplanation": "Prolonged heating of D-glucose with hydroiodic acid (HI) and red phosphorus at 373 K results in complete reduction of all oxygenated functional groups (the -CHO group and all five -OH groups) to yield n-hexane [CH₃-(CH₂)₄-CH₃]. This fundamental reaction historically proved that all six carbon atoms in D-glucose are linked in an unbranched, straight chain."
+      },
+      {
+        "question": "Which of the following is a fibrous protein?",
+        "options": [
+          "Keratin",
+          "Insulin",
+          "Hemoglobin",
+          "Albumin"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Keratin consists of elongated, thread-like polypeptide chains running parallel and cross-linked by disulfide and hydrogen bonds, forming a classic insoluble fibrous protein.",
+          "Incorrect. Insulin is a globular protein that dissolves in water.",
+          "Incorrect. Hemoglobin is a water-soluble globular tetrameric protein.",
+          "Incorrect. Serum albumin is a prototypical globular, water-soluble protein."
+        ],
+        "fullExplanation": "Fibrous proteins consist of polypeptide chains arranged along a single axis in long filaments or sheets. They are insoluble in water and play primarily structural and protective roles. Examples include keratin (in hair, nails, and wool), collagen (in connective tissue), and fibroin (in silk). Insulin, hemoglobin, and albumin are globular proteins."
+      },
+      {
+        "question": "In basic solutions (pH > 11), an α-amino acid exists predominantly as:",
+        "options": [
+          "An anion: H₂N-CH(R)-COO⁻",
+          "A cation: ⁺H₃N-CH(R)-COOH",
+          "A neutral zwitterion: ⁺H₃N-CH(R)-COO⁻",
+          "A non-ionized molecule: H₂N-CH(R)-COOH"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In strongly alkaline solution (high pH), the basic medium deprotonates both the -COOH and the -NH₃⁺ group, leaving the deprotonated amino group (-NH₂) and the carboxylate anion (-COO⁻). Thus, it exists as a net anion.",
+          "Incorrect. Cations (⁺H₃N-CH(R)-COOH) exist only in strongly acidic solutions (low pH).",
+          "Incorrect. Zwitterions predominate near the isoelectric point (intermediate pH).",
+          "Incorrect. Un-ionized amino acids are practically absent in aqueous media due to high equilibrium constant of zwitterion formation."
+        ],
+        "fullExplanation": "At physiological and intermediate pH, an α-amino acid exists as a zwitterion (⁺H₃N-CH(R)-COO⁻). When strong alkali is added (pH > 11), hydroxide ions remove a proton from the ammonium cation: ⁺H₃N-CH(R)-COO⁻ + OH⁻ → H₂N-CH(R)-COO⁻ + H₂O. The amino acid therefore exists predominantly as an anion and will migrate towards the anode during electrophoresis."
+      },
+      {
+        "question": "In the process of transcription, the nucleotide sequence complementary to the DNA segment 3'-TACGAT-5' synthesized in mRNA is:",
+        "options": [
+          "5'-AUGCUA-3'",
+          "5'-ATGCTA-3'",
+          "5'-UACGAU-3'",
+          "3'-AUGCUA-5'"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Complementary base-pairing with antiparallel polarity dictates: 3'-T pairs with 5'-A, A pairs with U, C pairs with G, G pairs with C, A pairs with U, and T pairs with A. Hence, 3'-TACGAT-5' produces 5'-AUGCUA-3'.",
+          "Incorrect. RNA contains uracil (U) instead of thymine (T).",
+          "Incorrect. This does not follow Watson-Crick base-pairing rules.",
+          "Incorrect. The synthesized mRNA strand must have antiparallel (5' to 3') orientation relative to the 3' to 5' DNA template."
+        ],
+        "fullExplanation": "Transcription follows complementary Watson-Crick base pairing with antiparallel orientation. Against the template DNA strand running 3' → 5':\n• 3'-T → 5'-A\n• A → U (uracil replaces thymine in RNA)\n• C → G\n• G → C\n• A → U\n• T → A-3'\nThus, the complementary mRNA transcript is 5'-AUGCUA-3'."
+      }
+    ]
+  }
+]

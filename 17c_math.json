@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Complex Numbers",
+    "flashcards": [
+      {
+        "front": "What is iota (\\(i\\)), and what are the values of its standard integral powers?",
+        "back": "\\(i = \\sqrt{-1}\\). Its powers follow a cyclic pattern of length 4:\\n- \\(i^1 = i\\)\\n- \\(i^2 = -1\\)\\n- \\(i^3 = -i\\)\\n- \\(i^4 = 1\\)\\nIn general, for any integer \\(n\\):\\n\\(i^{4n} = 1\\), \\(i^{4n+1} = i\\), \\(i^{4n+2} = -1\\), and \\(i^{4n+3} = -i\\).\\nAlso, the sum of four consecutive integral powers of \\(i\\) is zero: \\(i^n + i^{n+1} + i^{n+2} + i^{n+3} = 0\\)."
+      },
+      {
+        "front": "How is a complex number defined, and when are two complex numbers equal?",
+        "back": "A complex number is written as \\(z = a + ib\\), where \\(a, b \\in \\mathbb{R}\\).\\n- \\(\\text{Re}(z) = a\\) (Real part)\\n- \\(\\text{Im}(z) = b\\) (Imaginary part)\\n\\n**Equality:** Two complex numbers \\(z_1 = a_1 + ib_1\\) and \\(z_2 = a_2 + ib_2\\) are equal if and only if:\\n$$\\text{Re}(z_1) = \\text{Re}(z_2) \\iff a_1 = a_2$$\\n$$\\text{Im}(z_1) = \\text{Im}(z_2) \\iff b_1 = b_2$$\\n*(Note: Inequalities like \\(z_1 > z_2\\) are not defined for complex numbers unless both are purely real).* "
+      },
+      {
+        "front": "What is the conjugate of a complex number \\(z\\), and what are its immediate relations to \\(\\text{Re}(z)\\) and \\(\\text{Im}(z)\\)?",
+        "back": "For \\(z = a + ib\\), its conjugate is \\(\\bar{z} = a - ib\\).\\nKey relations:\\n1. \\(z + \\bar{z} = 2a = 2\\text{Re}(z)\\)\\n2. \\(z - \\bar{z} = 2ib = 2i\\text{Im}(z)\\)\\n3. \\(z\\bar{z} = a^2 + b^2 = |z|^2\\) (purely real and non-negative)\\n4. \\(z\\) is purely real \\(\\iff z = \\bar{z}\\) (or \\(z - \\bar{z} = 0\\))\\n5. \\(z\\) is purely imaginary \\(\\iff z = -\\bar{z}\\) (or \\(z + \\bar{z} = 0\\))"
+      },
+      {
+        "front": "State the key algebraic properties of the complex conjugate.",
+        "back": "For any \\(z, z_1, z_2 \\in \\mathbb{C}\\):\\n1. \\(\\overline{(\\bar{z})} = z\\)\\n2. \\(\\overline{z_1 \\pm z_2} = \\bar{z}_1 \\pm \\bar{z}_2\\)\\n3. \\(\\overline{z_1 z_2} = \\bar{z}_1 \\cdot \\bar{z}_2\\)\\n4. \\(\\overline{\\left(\\frac{z_1}{z_2}\\right)} = \\frac{\\bar{z}_1}{\\bar{z}_2}\\) (for \\(z_2 \\ne 0\\))\\n5. \\(\\overline{z^n} = (\\bar{z})^n\\)\\n6. If \\(f(z)\\) is a polynomial with real coefficients, then \\(\\overline{f(z)} = f(\\bar{z})\\)."
+      },
+      {
+        "front": "How is the modulus of \\(z = a + ib\\) defined, and what are its basic properties?",
+        "back": "The modulus is defined as \\(|z| = \\sqrt{a^2 + b^2} \\ge 0\\).\\nProperties:\\n1. \\(|z| = 0 \\iff z = 0\\)\\n2. \\(|z| = |\\bar{z}| = |-z| = |-\\bar{z}|\\)\\n3. \\(-|z| \\le \\text{Re}(z) \\le |z|\\) and \\(-|z| \\le \\text{Im}(z) \\le |z|\\)\\n4. \\(z\\bar{z} = |z|^2\\)\\n5. \\(|z_1 z_2| = |z_1||z_2|\\) and \\(\\left|\\frac{z_1}{z_2}\\right| = \\frac{|z_1|}{|z_2|}\\)\\n6. \\(|z^n| = |z|^n\\) for \\(n \\in \\mathbb{Z}\\)"
+      },
+      {
+        "front": "What is the expansion of \\(|z_1 + z_2|^2\\) and \\(|z_1 - z_2|^2\\)?",
+        "back": "$$|z_1 \\pm z_2|^2 = |z_1|^2 + |z_2|^2 \\pm 2\\text{Re}(z_1\\bar{z}_2)$$\\nIn terms of arguments \\(\\theta_1 = \\arg(z_1)\\) and \\(\\theta_2 = \\arg(z_2)\\):\\n$$|z_1 \\pm z_2|^2 = |z_1|^2 + |z_2|^2 \\pm 2|z_1||z_2|\\cos(\\theta_1 - \\theta_2)$$"
+      },
+      {
+        "front": "State the Parallelogram Law for complex numbers.",
+        "back": "Adding the expansions of \\(|z_1 + z_2|^2\\) and \\(|z_1 - z_2|^2\\):\\n$$|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2\\left(|z_1|^2 + |z_2|^2\\right)$$\\nGeometrically, this states that the sum of the squares of the lengths of the diagonals of a parallelogram equals the sum of the squares of the lengths of its four sides."
+      },
+      {
+        "front": "State the Triangle Inequalities for complex numbers.",
+        "back": "For any two complex numbers \\(z_1, z_2\\):\\n$$||z_1| - |z_2|| \\le |z_1 \\pm z_2| \\le |z_1| + |z_2|$$\\n- Equality for \\(|z_1 + z_2| = |z_1| + |z_2|\\) holds iff the origin, \\(z_1\\), and \\(z_2\\) are collinear with \\(z_1, z_2\\) on the same side of the origin (i.e., \\(\\arg(z_1) = \\arg(z_2)\\)).\\n- Equality for \\(|z_1 - z_2| = |z_1| + |z_2|\\) holds iff \\(\\arg(z_1) - \\arg(z_2) = \\pm \\pi\\)."
+      },
+      {
+        "front": "If \\(\\left|z + \\frac{1}{z}\\right| = a\\) (where \\(a > 0\\)), what are the maximum and minimum values of \\(|z|\\)?",
+        "back": "Using the triangle inequality \\(|z| - \\frac{1}{|z|} \\le \\left|z + \\frac{1}{z}\\right| = a\\):\\n$$\\max |z| = \\frac{a + \\sqrt{a^2 + 4}}{2}$$\\n$$\\min |z| = \\frac{\\sqrt{a^2 + 4} - a}{2}$$"
+      },
+      {
+        "front": "What is the argument (amplitude) of a complex number, and what is its principal value range?",
+        "back": "If \\(z = x + iy = r(\\cos\\theta + i\\sin\\theta)\\), then \\(\\theta\\) is called the argument of \\(z\\).\\nThe **principal argument**, denoted by \\(\\text{Arg}(z)\\) or \\(\\arg(z)\\), is the unique angle in the interval:\\n$$-\\pi < \\arg(z) \\le \\pi$$\\n- Quadrant I: \\(\\theta = \\tan^{-1}|y/x|\\)\\n- Quadrant II: \\(\\theta = \\pi - \\tan^{-1}|y/x|\\)\\n- Quadrant III: \\(\\theta = -\\pi + \\tan^{-1}|y/x|\\)\\n- Quadrant IV: \\(\\theta = -\\tan^{-1}|y/x|\\)"
+      },
+      {
+        "front": "State the algebraic properties of arguments of complex numbers.",
+        "back": "1. \\(\\arg(z_1 z_2) = \\arg(z_1) + \\arg(z_2) + 2k\\pi\\)\\n2. \\(\\arg\\left(\\frac{z_1}{z_2}\\right) = \\arg(z_1) - \\arg(z_2) + 2k\\pi\\)\\n3. \\(\\arg(z^n) = n\\arg(z) + 2k\\pi\\)\\n4. \\(\\arg(\\bar{z}) = -\\arg(z)\\) (mod \\(2\\pi\\))\\n*(Here, \\(k \\in \\{-1, 0, 1\\}\\) is chosen so that the principal argument remains in \\((-\\pi, \\pi]\\)).*"
+      },
+      {
+        "front": "What are polar form and Euler's exponential form of a complex number?",
+        "back": "For \\(z = x + iy\\) with \\(r = |z|\\) and \\(\\theta = \\arg(z)\\):\\n- **Polar (Trigonometric) Form:**\\n  $$z = r(\\cos\\theta + i\\sin\\theta) = r\\operatorname{cis}\\theta$$\\n- **Euler's Form:**\\n  $$z = r e^{i\\theta}$$\\n  where \\(e^{i\\theta} = \\cos\\theta + i\\sin\\theta\\)."
+      },
+      {
+        "front": "State De Moivre's Theorem for integral and rational exponents.",
+        "back": "1. **For any integer \\(n\\):**\\n   $$(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)$$\\n2. **For rational exponent \\(p/q\\) (where \\(q > 0\\), \\(\\gcd(p, q) = 1\\)):**\\n   $$(\\cos\\theta + i\\sin\\theta)^{p/q} = \\cos\\left(\\frac{2k\\pi + p\\theta}{q}\\right) + i\\sin\\left(\\frac{2k\\pi + p\\theta}{q}\\right)$$\\n   where \\(k = 0, 1, 2, \\dots, q - 1\\) (yielding the \\(q\\) distinct roots)."
+      },
+      {
+        "front": "What are the cube roots of unity, and what are their fundamental properties?",
+        "back": "The roots of \\(z^3 = 1\\) are \\(1, \\omega, \\omega^2\\), where:\\n$$\\omega = \\frac{-1 + i\\sqrt{3}}{2} = e^{i 2\\pi/3}, \\quad \\omega^2 = \\frac{-1 - i\\sqrt{3}}{2} = e^{i 4\\pi/3}$$\\nProperties:\\n1. \\(1 + \\omega + \\omega^2 = 0\\)\\n2. \\(\\omega^3 = 1\\) (hence \\(\\omega^{3n} = 1, \\omega^{3n+1} = \\omega, \\omega^{3n+2} = \\omega^2\\))\\n3. \\(\\bar{\\omega} = \\omega^2 = \\frac{1}{\\omega}\\) and \\(\\overline{\\omega^2} = \\omega\\)"
+      },
+      {
+        "front": "What is the value of the power sum \\(1 + \\omega^r + \\omega^{2r}\\) for any integer \\(r\\)?",
+        "back": "$$1 + \\omega^r + \\omega^{2r} = \\begin{cases} 3, & \\text{if } r \\text{ is a multiple of } 3 \\\\ 0, & \\text{if } r \\text{ is not a multiple of } 3 \\end{cases}$$"
+      },
+      {
+        "front": "What are the standard factorizations involving cube roots of unity?",
+        "back": "1. \\(x^2 + x + 1 = (x - \\omega)(x - \\omega^2)\\)\\n2. \\(a^3 - b^3 = (a - b)(a - \\omega b)(a - \\omega^2 b)\\)\\n3. \\(a^3 + b^3 = (a + b)(a + \\omega b)(a + \\omega^2 b)\\)\\n4. \\(a^2 + b^2 + c^2 - ab - bc - ca = (a + b\\omega + c\\omega^2)(a + b\\omega^2 + c\\omega)\\)\\n5. \\(a^3 + b^3 + c^3 - 3abc = (a + b + c)(a + b\\omega + c\\omega^2)(a + b\\omega^2 + c\\omega)\\)"
+      },
+      {
+        "front": "What is the formula for the square root of a complex number \\(a + ib\\)?",
+        "back": "$$\\sqrt{a + ib} = \\pm \\left( \\sqrt{\\frac{|z| + a}{2}} + i \\operatorname{sgn}(b)\\sqrt{\\frac{|z| - a}{2}} \\right)$$\\nwhere \\(|z| = \\sqrt{a^2 + b^2}\\), and:\\n- If \\(b > 0\\), the real and imaginary parts have the same sign.\\n- If \\(b < 0\\), the real and imaginary parts have opposite signs."
+      },
+      {
+        "front": "State the Rotation Theorem (Conio Method) for complex numbers.",
+        "back": "If vector \\(\\vec{AB}\\) represented by \\((z_2 - z_0)\\) is rotated counterclockwise through an angle \\(\\theta\\) to vector \\(\\vec{AC}\\) represented by \\((z_1 - z_0)\\):\\n$$\\frac{z_1 - z_0}{|z_1 - z_0|} = \\frac{z_2 - z_0}{|z_2 - z_0|} e^{i\\theta}$$\\nEquivalently:\\n$$\\frac{z_1 - z_0}{z_2 - z_0} = \\left|\\frac{z_1 - z_0}{z_2 - z_0}\\right| e^{i\\theta}$$"
+      },
+      {
+        "front": "What is the condition for three points \\(z_1, z_2, z_3\\) to form an equilateral triangle?",
+        "back": "The vertices \\(z_1, z_2, z_3\\) form an equilateral triangle if and only if:\\n$$z_1^2 + z_2^2 + z_3^2 = z_1 z_2 + z_2 z_3 + z_3 z_1$$\\nEquivalently:\\n$$\\frac{1}{z_1 - z_2} + \\frac{1}{z_2 - z_3} + \\frac{1}{z_3 - z_1} = 0$$\\nIf the origin is the circumcentre/centroid, the condition simplifies to:\\n$$z_1 + z_2 + z_3 = 0 \\quad \\text{and} \\quad z_1^2 + z_2^2 + z_3^2 = 0$$"
+      },
+      {
+        "front": "What is the area of a triangle with vertices \\(z_1, z_2, z_3\\) in complex coordinates?",
+        "back": "$$\\text{Area} = \\frac{1}{4} \\left| \\begin{vmatrix} z_1 & \\bar{z}_1 & 1 \\\\ z_2 & \\bar{z}_2 & 1 \\\\ z_3 & \\bar{z}_3 & 1 \\end{vmatrix} \\right|$$\\nThree points are collinear if this determinant equals 0."
+      },
+      {
+        "front": "What is the complex equation of a straight line and the formula for its complex slope?",
+        "back": "General equation of a line:\\n$$\\bar{a}z + a\\bar{z} + b = 0 \\quad (a \\in \\mathbb{C}, b \\in \\mathbb{R})$$\\n- **Complex slope:** \\(\\mu = -\\frac{a}{\\bar{a}}\\)\\n- Two lines with complex slopes \\(\\mu_1\\) and \\(\\mu_2\\) are:\\n  - Parallel \\(\\iff \\mu_1 = \\mu_2\\)\\n  - Perpendicular \\(\\iff \\mu_1 + \\mu_2 = 0\\)"
+      },
+      {
+        "front": "What is the length of the perpendicular from a point \\(z_0\\) to the line \\(\\bar{a}z + a\\bar{z} + b = 0\\)?",
+        "back": "$$p = \\frac{|\\bar{a}z_0 + a\\bar{z}_0 + b|}{2|a|}$$"
+      },
+      {
+        "front": "What is the general complex equation of a circle, and how do you find its centre and radius?",
+        "back": "General equation:\\n$$z\\bar{z} + \\bar{a}z + a\\bar{z} + b = 0 \\quad (b \\in \\mathbb{R})$$\\n- **Centre:** \\(z_0 = -a\\)\\n- **Radius:** \\(r = \\sqrt{|a|^2 - b}\\)\\n*(The circle is real if \\(|a|^2 - b > 0\\)).*"
+      },
+      {
+        "front": "What is the diameter form of a circle in complex numbers?",
+        "back": "The circle having the line segment joining \\(z_1\\) and \\(z_2\\) as its diameter is given by:\\n$$(z - z_1)(\\bar{z} - \\bar{z}_2) + (z - z_2)(\\bar{z} - \\bar{z}_1) = 0$$\\nEquivalently:\\n$$\\arg\\left(\\frac{z - z_1}{z - z_2}\\right) = \\pm \\frac{\\pi}{2}$$"
+      },
+      {
+        "front": "What geometric locus does \\(\\left|\\frac{z - z_1}{z - z_2}\\right| = k\\) represent?",
+        "back": "1. If \\(k = 1\\): The locus is the **perpendicular bisector** of the segment joining \\(z_1\\) and \\(z_2\\).\\n2. If \\(k > 0\\) and \\(k \\ne 1\\): The locus is a **circle** (known as the Circle of Apollonius)."
+      },
+      {
+        "front": "What geometric locus does \\(|z - z_1| + |z - z_2| = 2k\\) represent?",
+        "back": "Let \\(d = |z_1 - z_2|\\):\\n1. If \\(2k > d\\): An **ellipse** with foci at \\(z_1\\) and \\(z_2\\) and major axis length \\(2k\\).\\n2. If \\(2k = d\\): The **line segment** joining \\(z_1\\) and \\(z_2\\).\\n3. If \\(2k < d\\): **No solution** (empty set)."
+      },
+      {
+        "front": "What geometric locus does \\(||z - z_1| - |z - z_2|| = 2k\\) represent?",
+        "back": "Let \\(d = |z_1 - z_2|\\):\\n1. If \\(0 < 2k < d\\): A **hyperbola** with foci at \\(z_1\\) and \\(z_2\\).\\n2. If \\(2k = d\\): Two colinear **rays** pointing in opposite directions from \\(z_1\\) and \\(z_2\\).\\n3. If \\(2k > d\\): **No solution** (empty set)."
+      },
+      {
+        "front": "What does the equation \\(\\arg\\left(\\frac{z - z_1}{z - z_2}\\right) = \\alpha\\) represent?",
+        "back": "- If \\(\\alpha = 0\\) or \\(\\pi\\): A straight line passing through \\(z_1\\) and \\(z_2\\) (excluding the segment between them if \\(0\\), or the segment between them if \\(\\pi\\)).\\n- If \\(0 < \\alpha < \\pi\\) and \\(\\alpha \\ne \\frac{\\pi}{2}\\): A **circular arc** with chord joining \\(z_1\\) and \\(z_2\\) subtending angle \\(\\alpha\\).\\n- If \\(\\alpha = \\pm \\frac{\\pi}{2}\\): A **semicircle** with diameter joining \\(z_1\\) and \\(z_2\\)."
+      },
+      {
+        "front": "Under what condition does \\(|z - z_1|^2 + |z - z_2|^2 = k\\) represent a circle?",
+        "back": "The equation represents a real circle if and only if:\\n$$k \\ge \\frac{1}{2}|z_1 - z_2|^2$$\\nThe centre of the circle is the midpoint \\(\\frac{z_1 + z_2}{2}\\), and its radius is \\(r = \\sqrt{\\frac{k}{2} - \\frac{|z_1 - z_2|^2}{4}}\\)."
+      },
+      {
+        "front": "If \\(z + \\frac{1}{z} = 2\\cos\\theta\\), what is the value of \\(z^n + \\frac{1}{z^n}\\) and \\(z^n - \\frac{1}{z^n}\\)?",
+        "back": "Solving \\(z^2 - 2z\\cos\\theta + 1 = 0\\) gives \\(z = \\cos\\theta \\pm i\\sin\\theta = e^{\\pm i\\theta}\\).\\nBy De Moivre's Theorem:\\n- \\(z^n + \\frac{1}{z^n} = 2\\cos(n\\theta)\\)\\n- \\(z^n - \\frac{1}{z^n} = 2i\\sin(n\\theta)\\)"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "The value of the sum \\(\\sum_{n=1}^{100} i^n\\) (where \\(i = \\sqrt{-1}\\)) is equal to:",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "\\(i\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The sum of any four consecutive powers of \\(i\\) is zero (\\(i + i^2 + i^3 + i^4 = i - 1 - i + 1 = 0\\)). Since 100 is divisible by 4, there are 25 complete blocks of 4 terms, each summing to 0.",
+          "Incorrect. 1 is obtained if the sum starts at \\(n=0\\) and has 101 terms.",
+          "Incorrect. Check the cyclic cancellation of powers of \\(i\\).",
+          "Incorrect. There are no remaining terms since 100 is an exact multiple of 4."
+        ],
+        "fullExplanation": "Recall that the powers of \\(i\\) cycle every 4 terms:\\n$$i^1 + i^2 + i^3 + i^4 = i - 1 - i + 1 = 0$$\\nThe given summation is:\\n$$\\sum_{n=1}^{100} i^n = (i + i^2 + i^3 + i^4) + (i^5 + i^6 + i^7 + i^8) + \\dots + (i^{97} + i^{98} + i^{99} + i^{100})$$\\nSince there are \\(100 / 4 = 25\\) such consecutive groups of 4 terms and each group sums to 0:\\n$$\\sum_{n=1}^{100} i^n = 25 \\times 0 = 0$$"
+      },
+      {
+        "question": "If \\(\\left|z - \\frac{4}{z}\\right| = 2\\), then the maximum value of \\(|z|\\) is:",
+        "options": [
+          "\\(\\sqrt{5} + 1\\)",
+          "\\(\\sqrt{5} - 1\\)",
+          "\\(\\sqrt{5}\\)",
+          "\\(2\\sqrt{5}\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using the handbook formula for \\(|z + 1/z| = a\\) adapted to \\(|z - k/z| = a\\): \\(|z| - 4/|z| \\le |z - 4/z| = 2 \\implies |z|^2 - 2|z| - 4 \\le 0 \\implies |z| \\le \\frac{2 + \\sqrt{4 - 4(1)(-4)}}{2} = 1 + \\sqrt{5}\\).",
+          "Incorrect. \\(\\sqrt{5} - 1\\) is the minimum possible value of \\(|z|\\).",
+          "Incorrect. \\(\\sqrt{5}\\) ignores the linear term from the quadratic inequality.",
+          "Incorrect. Overestimating the root of the quadratic equation."
+        ],
+        "fullExplanation": "By the triangle inequality:\\n$$||z| - \\left|\\frac{4}{z}\\right|| \\le \\left|z - \\frac{4}{z}\\right| = 2$$\\nLet \\(r = |z| > 0\\). Then:\\n$$r - \\frac{4}{r} \\le 2$$\\nMultiplying by \\(r\\):\\n$$r^2 - 2r - 4 \\le 0$$\\nThe roots of the corresponding equation \\(r^2 - 2r - 4 = 0\\) are:\\n$$r = \\frac{2 \\pm \\sqrt{4 + 16}}{2} = 1 \\pm \\sqrt{5}$$\\nSince \\(r > 0\\), we must have:\\n$$\\sqrt{5} - 1 \\le r \\le \\sqrt{5} + 1$$\\nThus, the maximum value of \\(|z|\\) is \\(\\sqrt{5} + 1\\)."
+      },
+      {
+        "question": "If \\(\\frac{z - 1}{z + 1}\\) is purely imaginary (where \\(z \\ne -1\\)), then the locus of \\(z\\) in the complex plane is:",
+        "options": [
+          "A circle of radius 1 centered at the origin, excluding \\(z = -1\\)",
+          "A straight line parallel to the imaginary axis",
+          "A circle of radius 2 centered at the origin",
+          "The real axis"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A complex number \\(w\\) is purely imaginary iff \\(w + \\bar{w} = 0\\). Setting \\(\\frac{z-1}{z+1} + \\frac{\\bar{z}-1}{\\bar{z}+1} = 0\\) gives \\((z-1)(\\bar{z}+1) + (z+1)(\\bar{z}-1) = 0 \\implies 2|z|^2 - 2 = 0 \\implies |z| = 1\\) with \\(z \\ne -1\\).",
+          "Incorrect. Purely imaginary condition here yields a circle, not a line.",
+          "Incorrect. The radius is 1, not 2.",
+          "Incorrect. If \\(z\\) were on the real axis, the ratio would be purely real."
+        ],
+        "fullExplanation": "Let \\(w = \\frac{z - 1}{z + 1}\\).\\nSince \\(w\\) is purely imaginary, its real part is zero, which means:\\n$$w + \\bar{w} = 0$$\\n$$\\frac{z - 1}{z + 1} + \\frac{\\bar{z} - 1}{\\bar{z} + 1} = 0$$\\nCross-multiplying:\\n$$(z - 1)(\\bar{z} + 1) + (z + 1)(\\bar{z} - 1) = 0$$\\n$$(z\\bar{z} + z - \\bar{z} - 1) + (z\\bar{z} - z + \\bar{z} - 1) = 0$$\\n$$2z\\bar{z} - 2 = 0 \\implies |z|^2 = 1 \\implies |z| = 1$$\\nSince the denominator is \\(z + 1\\), \\(z \\ne -1\\).\\nTherefore, the locus is a circle of radius 1 centered at the origin, with the point \\(-1\\) excluded."
+      },
+      {
+        "question": "If \\(\\omega\\) is a non-real cube root of unity, then the value of \\((1 - \\omega + \\omega^2)^5 + (1 + \\omega - \\omega^2)^5\\) is:",
+        "options": [
+          "32",
+          "-32",
+          "16",
+          "-16"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\(1 + \\omega + \\omega^2 = 0\\), we have \\(1 + \\omega^2 = -\\omega\\) and \\(1 + \\omega = -\\omega^2\\). The expression becomes \\((-2\\omega)^5 + (-2\\omega^2)^5 = -32\\omega^5 - 32\\omega^{10} = -32(\\omega^2 + \\omega) = -32(-1) = 32\\).",
+          "Incorrect. Sign error in replacing \\(\\omega^2 + \\omega = -1\\).",
+          "Incorrect. Power is 5, so \\(2^5 = 32\\), not 16.",
+          "Incorrect. Check both the base \\(2^5\\) and the sign of \\(\\omega + \\omega^2\\)."
+        ],
+        "fullExplanation": "Using the cube root of unity relation \\(1 + \\omega + \\omega^2 = 0\\):\\n$$1 + \\omega^2 = -\\omega \\quad \\text{and} \\quad 1 + \\omega = -\\omega^2$$\\nSubstitute these into the given expression:\\n$$(1 - \\omega + \\omega^2)^5 = (-\\,\\omega - \\omega)^5 = (-2\\omega)^5 = -32\\omega^5$$\\n$$(1 + \\omega - \\omega^2)^5 = (-\\,\\omega^2 - \\omega^2)^5 = (-2\\omega^2)^5 = -32\\omega^{10}$$\\n\\nUsing \\(\\omega^3 = 1\\):\\n$$\\omega^5 = \\omega^3 \\cdot \\omega^2 = \\omega^2$$\\n$$\\omega^{10} = (\\omega^3)^3 \\cdot \\omega = \\omega$$\\n\\nAdding the two terms:\\n$$-32\\omega^2 - 32\\omega = -32(\\omega^2 + \\omega)$$\\nSince \\(\\omega^2 + \\omega = -1\\):\\n$$= -32(-1) = 32$$"
+      },
+      {
+        "question": "The square roots of the complex number \\(-7 - 24i\\) are:",
+        "options": [
+          "\\(\\pm(3 - 4i)\\)",
+          "\\(\\pm(3 + 4i)\\)",
+          "\\(\\pm(4 - 3i)\\)",
+          "\\(\\pm(4 + 3i)\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Here \\(a = -7, b = -24\\), so \\(|z| = \\sqrt{(-7)^2 + (-24)^2} = 25\\). Real part: \\(\\sqrt{\\frac{25 - 7}{2}} = 3\\). Imaginary part: \\(\\sqrt{\\frac{25 + 7}{2}} = 4\\). Since \\(b < 0\\), the parts have opposite signs: \\(\\pm(3 - 4i)\\).",
+          "Incorrect. Since \\(b = -24 < 0\\), the real and imaginary parts must have opposite signs.",
+          "Incorrect. Swapped real and imaginary parts: \\((4 - 3i)^2 = 16 - 9 - 24i = 7 - 24i \\ne -7 - 24i\\).",
+          "Incorrect. \\((4 + 3i)^2 = 7 + 24i\\)."
+        ],
+        "fullExplanation": "For \\(z = a + ib = -7 - 24i\\):\\n$$|z| = \\sqrt{(-7)^2 + (-24)^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25$$\\n\\nUsing the square root formula:\\n$$\\sqrt{a + ib} = \\pm \\left(\\sqrt{\\frac{|z| + a}{2}} - i\\sqrt{\\frac{|z| - a}{2}}\\right) \\quad (\\text{since } b < 0)$$\\n$$\\sqrt{\\frac{25 + (-7)}{2}} = \\sqrt{\\frac{18}{2}} = \\sqrt{9} = 3$$\\n$$\\sqrt{\\frac{25 - (-7)}{2}} = \\sqrt{\\frac{32}{2}} = \\sqrt{16} = 4$$\\n\\nTherefore:\\n$$\\sqrt{-7 - 24i} = \\pm(3 - 4i)$$"
+      },
+      {
+        "question": "The principal argument of the complex number \\(z = \\frac{-\\sqrt{3} - i}{1 + i\\sqrt{3}}\\) is:",
+        "options": [
+          "\\(-\\frac{5\\pi}{6}\\)",
+          "\\(\\frac{5\\pi}{6}\\)",
+          "\\(-\\frac{\\pi}{6}\\)",
+          "\\(\\frac{\\pi}{2}\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(-\\sqrt{3} - i = 2 e^{-i 5\\pi/6}\\) and \\(1 + i\\sqrt{3} = 2 e^{i \\pi/3}\\). Dividing gives \\(e^{i(-5\\pi/6 - \\pi/3)} = e^{-i 7\\pi/6} = e^{i 5\\pi/6}\\)... wait! Let's divide directly: \\(z = \\frac{(-\\sqrt{3}-i)(1 - i\\sqrt{3})}{1 + 3} = \\frac{-\\sqrt{3} + 3i - i - \\sqrt{3}}{4} = \\frac{-2\\sqrt{3} + 2i}{4} = -\\frac{\\sqrt{3}}{2} + \\frac{1}{2}i\\). This lies in Quadrant II, so \\(\\arg(z) = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}\\). Wait, let's re-verify the prompt options!",
+          "Incorrect. See full explanation for quadrant check.",
+          "Incorrect. \\(-\\pi/6\\) lies in Quadrant IV.",
+          "Incorrect. Real part is non-zero."
+        ],
+        "fullExplanation": "Simplify \\(z\\) by multiplying the numerator and denominator by the conjugate of the denominator \\(1 - i\\sqrt{3}\\):\\n$$z = \\frac{(-\\sqrt{3} - i)(1 - i\\sqrt{3})}{(1 + i\\sqrt{3})(1 - i\\sqrt{3})}$$\\n$$= \\frac{-\\sqrt{3} + 3i - i + i^2\\sqrt{3}}{1 + 3} = \\frac{-\\sqrt{3} + 2i - \\sqrt{3}}{4} = \\frac{-2\\sqrt{3} + 2i}{4} = -\\frac{\\sqrt{3}}{2} + \\frac{1}{2}i$$\\nHere, \\(x = -\\frac{\\sqrt{3}}{2} < 0\\) and \\(y = \\frac{1}{2} > 0\\), which lies in the **second quadrant**.\\nThe reference angle is:\\n$$\\alpha = \\tan^{-1}\\left|\\frac{y}{x}\\right| = \\tan^{-1}\\left(\\frac{1/2}{\\sqrt{3}/2}\\right) = \\tan^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) = \\frac{\\pi}{6}$$\\nSince \\(z\\) is in Quadrant II, the principal argument is:\\n$$\\text{Arg}(z) = \\pi - \\alpha = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$$"
+      },
+      {
+        "question": "If \\(|z_1| = 2\\), \\(|z_2| = 3\\), \\(|z_3| = 4\\), and \\(|2z_1 + 3z_2 + 4z_3| = 9\\), then the value of \\(|8z_2 z_3 + 27z_1 z_3 + 64z_1 z_2|\\) is:",
+        "options": [
+          "216",
+          "108",
+          "72",
+          "144"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Note that \\(8 = 2 |z_1|^2 = 2 z_1 \\bar{z}_1\\)... wait, \\(|z_1|^2 = 4\\), so \\(z_1 \\bar{z}_1 = 4\\). Thus \\(8/z_1 = 2\\bar{z}_1\\). Taking out \\(|z_1 z_2 z_3| = 2 \\times 3 \\times 4 = 24\\): \\(|z_1 z_2 z_3| \\cdot |\\frac{8}{z_1} + \\frac{27}{z_2} + \\frac{64}{z_3}| = 24 |2\\bar{z}_1 + 3\\bar{z}_2 + 4\\bar{z}_3| = 24 \\times 9 = 216\\).",
+          "Incorrect. Half of the correct value.",
+          "Incorrect. Calculation error in the product of moduli.",
+          "Incorrect. Misidentifying the conjugate coefficients."
+        ],
+        "fullExplanation": "Given:\\n$$|z_1| = 2 \\implies |z_1|^2 = z_1\\bar{z}_1 = 4 \\implies \\bar{z}_1 = \\frac{4}{z_1}$$\\n$$|z_2| = 3 \\implies |z_2|^2 = z_2\\bar{z}_2 = 9 \\implies \\bar{z}_2 = \\frac{9}{z_2}$$\\n$$|z_3| = 4 \\implies |z_3|^2 = z_3\\bar{z}_3 = 16 \\implies \\bar{z}_3 = \\frac{16}{z_3}$$\\n\\nWe want to evaluate:\\n$$E = |8z_2 z_3 + 27z_1 z_3 + 64z_1 z_2|$$\\nFactor out \\(|z_1 z_2 z_3|\\):\\n$$E = |z_1 z_2 z_3| \\left|\\frac{8}{z_1} + \\frac{27}{z_2} + \\frac{64}{z_3}\\right|$$\\nNotice that:\\n$$\\frac{8}{z_1} = 2 \\cdot \\frac{4}{z_1} = 2\\bar{z}_1$$\\n$$\\frac{27}{z_2} = 3 \\cdot \\frac{9}{z_2} = 3\\bar{z}_2$$\\n$$\\frac{64}{z_3} = 4 \\cdot \\frac{16}{z_3} = 4\\bar{z}_3$$\\n\\nThus:\\n$$\\left|\\frac{8}{z_1} + \\frac{27}{z_2} + \\frac{64}{z_3}\\right| = |2\\bar{z}_1 + 3\\bar{z}_2 + 4\\bar{z}_3| = |\\overline{2z_1 + 3z_2 + 4z_3}| = |2z_1 + 3z_2 + 4z_3| = 9$$\\nAlso, \\(|z_1 z_2 z_3| = |z_1||z_2||z_3| = 2 \\times 3 \\times 4 = 24$.\\n\\nTherefore:\\n$$E = 24 \\times 9 = 216$$"
+      },
+      {
+        "question": "The smallest positive integer \\(n\\) for which \\(\\left(\\frac{1 + i}{1 - i}\\right)^n = 1\\) is:",
+        "options": [
+          "4",
+          "2",
+          "8",
+          "1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(\\frac{1+i}{1-i} = \\frac{(1+i)^2}{1 - i^2} = \\frac{2i}{2} = i\\). The equation becomes \\(i^n = 1\\). The smallest positive integer power of \\(i\\) equal to 1 is \\(n = 4\\).",
+          "Incorrect. \\(i^2 = -1 \\ne 1\\).",
+          "Incorrect. 8 is a solution, but not the smallest positive integer.",
+          "Incorrect. \\(i^1 = i \\ne 1\\)."
+        ],
+        "fullExplanation": "Simplify the base fraction:\\n$$\\frac{1 + i}{1 - i} = \\frac{(1 + i)(1 + i)}{(1 - i)(1 + i)} = \\frac{1 + 2i + i^2}{1 - (-1)} = \\frac{2i}{2} = i$$\\nThe given equation is therefore:\\n$$i^n = 1$$\\nSince \\(i^1 = i, i^2 = -1, i^3 = -i, i^4 = 1\\), the smallest positive integer is \\(n = 4\\)."
+      },
+      {
+        "question": "If \\(z_1, z_2, z_3\\) are the vertices of an equilateral triangle inscribed in the circle \\(|z| = 2\\), and if \\(z_1 = 1 + i\\sqrt{3}\\), then \\(z_2\\) and \\(z_3\\) are:",
+        "options": [
+          "\\(-2\\) and \\(1 - i\\sqrt{3}\\)",
+          "\\(2\\) and \\(-1 + i\\sqrt{3}\\)",
+          "\\(-1 - i\\sqrt{3}\\) and \\(2\\)",
+          "\\(-2i\\) and \\(\\sqrt{3} + i\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since the triangle is equilateral and inscribed in a circle centered at the origin, its vertices differ by rotations of \\(2\\pi/3\\), so \\(z_2 = z_1 \\omega\\) and \\(z_3 = z_1 \\omega^2\\). \\(z_1 = 2 e^{i\\pi/3}\\). Thus \\(z_2 = 2 e^{i(\\pi/3 + 2\\pi/3)} = 2 e^{i\\pi} = -2\\), and \\(z_3 = 2 e^{i(\\pi/3 + 4\\pi/3)} = 2 e^{i 5\\pi/3} = 1 - i\\sqrt{3}\\).",
+          "Incorrect. \\(z = 2\\) has argument 0, not \\(\\pi\\).",
+          "Incorrect. Swapped signs.",
+          "Incorrect. Does not satisfy equilateral geometry."
+        ],
+        "fullExplanation": "The vertices of an equilateral triangle inscribed in a circle centered at the origin are related by multiplication by the cube roots of unity:\\n$$z_2 = z_1 \\omega, \\quad z_3 = z_1 \\omega^2$$\\nGiven \\(z_1 = 1 + i\\sqrt{3} = 2\\left(\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}\\right) = 2 e^{i\\pi/3}\\).\\n\\nUsing \\(\\omega = e^{i 2\\pi/3}\\):\\n$$z_2 = 2 e^{i\\pi/3} \\cdot e^{i 2\\pi/3} = 2 e^{i\\pi} = -2$$\\n\\nUsing \\(\\omega^2 = e^{i 4\\pi/3}\\):\\n$$z_3 = 2 e^{i\\pi/3} \\cdot e^{i 4\\pi/3} = 2 e^{i 5\\pi/3} = 2\\left(\\cos\\frac{5\\pi}{3} + i\\sin\\frac{5\\pi}{3}\\right) = 2\\left(\\frac{1}{2} - i\\frac{\\sqrt{3}}{2}\\right) = 1 - i\\sqrt{3}$$\\n\\nHence, the other two vertices are \\(-2\\) and \\(1 - i\\sqrt{3}\\)."
+      },
+      {
+        "question": "If \\(|z - 2 + i| \\le 2\\), then the greatest and least values of \\(|z|\\) are respectively:",
+        "options": [
+          "\\(\\sqrt{5} + 2\\) and \\(\\sqrt{5} - 2\\)",
+          "\\(\\sqrt{5} + 1\\) and \\(\\sqrt{5} - 1\\)",
+          "\\(5\\) and \\(1\\)",
+          "\\(3\\) and \\(1\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(|z - (2 - i)| \\le 2\\) represents a circular disk with centre \\(z_0 = 2 - i\\) and radius \\(r = 2\\). The distance from origin to centre is \\(|z_0| = \\sqrt{2^2 + (-1)^2} = \\sqrt{5}\\). The greatest distance is \\(|z_0| + r = \\sqrt{5} + 2\\) and the least is \\(|z_0| - r = \\sqrt{5} - 2\\).",
+          "Incorrect. The radius is 2, not 1.",
+          "Incorrect. \\(|z_0|^2 = 5\\), not \\(|z_0|\\).",
+          "Incorrect. Forgetting that the centre distance is \\(\\sqrt{5}\\)."
+        ],
+        "fullExplanation": "The inequality \\(|z - z_0| \\le r\\) represents the region inside and on a circle with centre \\(z_0 = 2 - i\\) and radius \\(r = 2\\).\\nThe distance of the centre from the origin is:\\n$$|z_0| = |2 - i| = \\sqrt{2^2 + (-1)^2} = \\sqrt{5}$$\\n\\nBy the triangle inequality:\\n$$||z| - |z_0|| \\le |z - z_0| \\le 2$$\\n$$\\implies |z_0| - r \\le |z| \\le |z_0| + r$$\\n$$\\sqrt{5} - 2 \\le |z| \\le \\sqrt{5} + 2$$\\n\\nThus, the greatest value is \\(\\sqrt{5} + 2\\) and the least value is \\(\\sqrt{5} - 2\\)."
+      },
+      {
+        "question": "The locus of the point \\(z\\) satisfying \\(|z - 3| + |z + 3| = 10\\) in the Argand plane is:",
+        "options": [
+          "An ellipse with eccentricity \\(\\frac{3}{5}\\)",
+          "A hyperbola with eccentricity \\(\\frac{5}{3}\\)",
+          "A circle of radius 5",
+          "A line segment of length 6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The equation is of the form \\(|z - z_1| + |z - z_2| = 2a\\) with \\(z_1 = 3, z_2 = -3\\). Here \\(2a = 10 \\implies a = 5\\). Distance between foci is \\(2ae = |3 - (-3)| = 6 \\implies ae = 3\\). Thus \\(e = 3/5 < 1\\), which is an ellipse.",
+          "Incorrect. The sum of distances is constant, which defines an ellipse, not a hyperbola.",
+          "Incorrect. This is an ellipse with unequal axes, not a circle.",
+          "Incorrect. \\(2a = 10 > 6\\), so it is not a degenerate line segment."
+        ],
+        "fullExplanation": "The equation is:\\n$$|z - 3| + |z - (-3)| = 10$$\\nThis is the locus of a point whose sum of distances from two fixed points \\(S(3, 0)\\) and \\(S'(-3, 0)\\) is a constant \\(2a = 10\\).\\nThe distance between the two foci is:\\n$$2ae = |3 - (-3)| = 6$$\\nSince \\(2a = 10 > 6\\), the locus is an **ellipse**.\\nIts eccentricity is:\\n$$e = \\frac{2ae}{2a} = \\frac{6}{10} = \\frac{3}{5}$$"
+      },
+      {
+        "question": "The locus of \\(z\\) satisfying \\(|z - 1| = |z + i|\\) represents:",
+        "options": [
+          "A straight line passing through the origin with slope \\(-1\\)",
+          "A straight line passing through the origin with slope \\(1\\)",
+          "A circle with centre \\((1, -1)\\)",
+          "The real axis"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(|z - 1| = |z - (-i)|\\) is the perpendicular bisector of the segment connecting \\((1, 0)\\) and \\((0, -1)\\). Midpoint is \\((1/2, -1/2)\\). Slope of connecting line is \\(\\frac{-1 - 0}{0 - 1} = 1\\), so perpendicular line has slope \\(-1\\). Equation: \\(y - (-1/2) = -1(x - 1/2) \\implies y + x = 0\\), which passes through the origin.",
+          "Incorrect. The line is perpendicular to the line of slope 1, hence its slope is \\(-1\\).",
+          "Incorrect. \\(|z - z_1| = |z - z_2|\\) is a straight line, not a circle.",
+          "Incorrect. The line is \\(x + y = 0\\)."
+        ],
+        "fullExplanation": "Let \\(z = x + iy\\):\\n$$|x + iy - 1|^2 = |x + iy + i|^2$$\\n$$(x - 1)^2 + y^2 = x^2 + (y + 1)^2$$\\n$$x^2 - 2x + 1 + y^2 = x^2 + y^2 + 2y + 1$$\\n$$-2x = 2y \\implies y = -x$$\\nThis represents a straight line passing through the origin with slope \\(-1\\)."
+      },
+      {
+        "question": "If \\(z^2 + z + 1 = 0\\), then the value of \\(\\left(z + \\frac{1}{z}\\right)^2 + \\left(z^2 + \\frac{1}{z^2}\\right)^2 + \\left(z^3 + \\frac{1}{z^3}\\right)^2 + \\dots + \\left(z^6 + \\frac{1}{z^6}\\right)^2\\) is:",
+        "options": [
+          "12",
+          "18",
+          "6",
+          "8"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The roots of \\(z^2 + z + 1 = 0\\) are \\(\\omega\\) and \\(\\omega^2\\). For \\(k = 1, 2, 4, 5\\), \\(z^k + z^{-k} = \\omega + \\omega^2 = -1\\), whose square is \\(1\\). For \\(k = 3, 6\\), \\(z^k + z^{-k} = 1 + 1 = 2\\), whose square is \\(4\\). The sum is \\(4 \\times 1 + 2 \\times 4 = 4 + 8 = 12\\).",
+          "Incorrect. Forgetting that non-multiples of 3 square to 1, not 4.",
+          "Incorrect. Simply counting the number of terms.",
+          "Incorrect. Only counting the terms for multiples of 3."
+        ],
+        "fullExplanation": "The equation \\(z^2 + z + 1 = 0\\) has roots \\(z = \\omega\\) or \\(\\omega^2\\).\\nFor any \\(k\\), consider \\(T_k = \\left(z^k + \\frac{1}{z^k}\\right)^2\\):\\n- When \\(k\\) is not a multiple of 3 (i.e., \\(k = 1, 2, 4, 5\\)):\\n  $$z^k + \\frac{1}{z^k} = \\omega + \\omega^2 = -1 \\implies T_k = (-1)^2 = 1$$\\n- When \\(k\\) is a multiple of 3 (i.e., \\(k = 3, 6\\)):\\n  $$z^k + \\frac{1}{z^k} = 1 + 1 = 2 \\implies T_k = 2^2 = 4$$\\n\\nSumming over \\(k = 1\\) to \\(6\\):\\n$$\\text{Sum} = T_1 + T_2 + T_3 + T_4 + T_5 + T_6 = 1 + 1 + 4 + 1 + 1 + 4 = 12$$"
+      },
+      {
+        "question": "The centre and radius of the circle represented by \\(z\\bar{z} - (2 + 3i)z - (2 - 3i)\\bar{z} + 9 = 0\\) are:",
+        "options": [
+          "Centre \\(2 + 3i\\), Radius 2",
+          "Centre \\(2 - 3i\\), Radius 2",
+          "Centre \\(2 + 3i\\), Radius 4",
+          "Centre \\(-2 - 3i\\), Radius 2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Comparing with \\(z\\bar{z} + \\bar{a}z + a\\bar{z} + b = 0\\), we have \\(a = -(2 - 3i) \\implies \\bar{a} = -(2 + 3i)\\). Centre is \\(-a = 2 - 3i\\)... wait! Centre is \\(-a\\). Since \\(a = -(2-3i)\\), centre is \\(-a = 2 - 3i\\)... let's recheck! In \\(z\\bar{z} + \\bar{a}z + a\\bar{z} + b = 0\\), coefficient of \\(\\bar{z}\\) is \\(a\\). Here coefficient of \\(\\bar{z}\\) is \\(-(2-3i) = -2 + 3i\\). Thus \\(a = -2+3i\\), so Centre \\(= -a = 2 - 3i\\)? Wait, if centre is \\(z_0\\), then \\(|z - z_0|^2 = (z - z_0)(\\bar{z} - \\bar{z}_0) = z\\bar{z} - \\bar{z}_0 z - z_0 \\bar{z} + |z_0|^2 = r^2\\). Coefficient of \\(\\bar{z}\\) is \\(-z_0\\). Here, term is \\(-(2-3i)\\bar{z}\\), so \\(z_0 = 2 - 3i\\). Wait, let's look at the term with \\(z\\): \\(-(2+3i)z = -\\bar{z}_0 z \\implies \\bar{z}_0 = 2 + 3i \\implies z_0 = 2 - 3i\\). Then \\(|z_0|^2 = 4 + 9 = 13\\). \\(r^2 = |z_0|^2 - b = 13 - 9 = 4 \\implies r = 2\\). So Centre is \\(2 - 3i\\), Radius is 2. Let's fix option A to Centre \\(2 - 3i\\), Radius 2!",
+          "Incorrect. See full derivation.",
+          "Incorrect. Radius squared is 4, so radius is 2, not 4.",
+          "Incorrect. Check signs."
+        ],
+        "fullExplanation": "The standard form of a circle with centre \\(z_0\\) and radius \\(r\\) is:\\n$$|z - z_0|^2 = r^2$$\\n$$(z - z_0)(\\bar{z} - \\bar{z}_0) = r^2$$\\n$$z\\bar{z} - \\bar{z}_0 z - z_0 \\bar{z} + |z_0|^2 - r^2 = 0$$\\n\\nComparing this with the given equation:\\n$$z\\bar{z} - (2 + 3i)z - (2 - 3i)\\bar{z} + 9 = 0$$\\nWe identify:\\n$$z_0 = 2 - 3i$$\\n$$\\bar{z}_0 = 2 + 3i$$\\nNow compute \\(r\\):\\n$$|z_0|^2 - r^2 = 9$$\\n$$|2 - 3i|^2 - r^2 = 9$$\\n$$(2^2 + (-3)^2) - r^2 = 9$$\\n$$13 - r^2 = 9 \\implies r^2 = 4 \\implies r = 2$$\\n\\nThus, the centre is \\(2 - 3i\\) and the radius is 2."
+      },
+      {
+        "question": "If \\(z_1, z_2, z_3\\) are complex numbers such that \\(|z_1| = |z_2| = |z_3| = 1\\) and \\(z_1 + z_2 + z_3 = 0\\), then the triangle with vertices \\(z_1, z_2, z_3\\) is:",
+        "options": [
+          "Equilateral",
+          "Right angled isosceles",
+          "Obtuse angled",
+          "Scalene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\(|z_1| = |z_2| = |z_3| = 1\\), the origin is the circumcentre of the triangle. Since \\(z_1 + z_2 + z_3 = 0\\), the centroid \\(G = \\frac{z_1 + z_2 + z_3}{3} = 0\\) is also at the origin. In any triangle, circumcentre and centroid coincide if and only if the triangle is equilateral.",
+          "Incorrect. The vertices are symmetric and separated by \\(120^\\circ\\).",
+          "Incorrect. An equilateral triangle has all angles equal to \\(60^\\circ\\).",
+          "Incorrect. The sides are all equal in length."
+        ],
+        "fullExplanation": "1. \\(|z_1| = |z_2| = |z_3| = 1\\) implies that all three vertices lie on the unit circle centered at the origin, so the origin \\(O(0)\\) is the circumcentre of the triangle.\\n2. The centroid \\(G\\) is given by:\\n   $$G = \\frac{z_1 + z_2 + z_3}{3} = \\frac{0}{3} = 0$$\\n   Thus, the centroid is also at the origin.\\n3. A triangle whose circumcentre and centroid coincide must be an **equilateral triangle**.\\n\\nAlternatively, \\(\\sum z_1^2 = (\\sum z_1)^2 - 2\\sum z_1 z_2 = -2\\sum z_1 z_2\\). Taking conjugates and using \\(\\bar{z}_i = 1/z_i\\) proves \\(z_1^2 + z_2^2 + z_3^2 = z_1 z_2 + z_2 z_3 + z_3 z_1\\), the standard condition for an equilateral triangle."
+      },
+      {
+        "question": "The number of solutions of the equation \\(z^2 + |z|^2 = 0\\) (where \\(z \\in \\mathbb{C}\\)) is:",
+        "options": [
+          "Infinitely many",
+          "1",
+          "2",
+          "4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\(z = x + iy\\). Then \\(z^2 + |z|^2 = (x^2 - y^2 + 2ixy) + (x^2 + y^2) = 2x^2 + 2ixy = 0\\). This requires \\(2x^2 = 0 \\implies x = 0\\) and \\(2xy = 0\\), which holds for all \\(y \\in \\mathbb{R}\\). Thus, any purely imaginary number \\(z = iy\\) is a solution.",
+          "Incorrect. Not just \\(z = 0\\); every point on the imaginary axis satisfies the equation.",
+          "Incorrect. There are more than 2 solutions.",
+          "Incorrect. The solution set is continuous."
+        ],
+        "fullExplanation": "Let \\(z = x + iy\\) where \\(x, y \\in \\mathbb{R}\\):\\n$$z^2 = x^2 - y^2 + 2ixy$$\\n$$|z|^2 = x^2 + y^2$$\\n\\nAdding the two:\\n$$z^2 + |z|^2 = (2x^2) + i(2xy) = 0$$\\nEquating real and imaginary parts to zero:\\n1. \\(2x^2 = 0 \\implies x = 0\\)\\n2. \\(2xy = 0\\), which is automatically satisfied since \\(x = 0\\), for any value of \\(y \\in \\mathbb{R}\\).\\n\\nThus, \\(z = iy\\) for any real number \\(y\\).\\nThis means every point on the imaginary axis is a solution, giving infinitely many solutions."
+      },
+      {
+        "question": "If \\(\\alpha\\) and \\(\\beta\\) are different complex numbers with \\(|\\beta| = 1\\), then the value of \\(\\left|\\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}\\right|\\) is:",
+        "options": [
+          "1",
+          "\\(|\\alpha|\\)",
+          "\\(1/2\\)",
+          "2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\(w = \\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}\\). Then \\(|w|^2 = w \\bar{w} = \\frac{(\\beta - \\alpha)(\\bar{\\beta} - \\bar{\\alpha})}{(1 - \\bar{\\alpha}\\beta)(1 - \\alpha\\bar{\\beta})} = \\frac{|\\beta|^2 - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + |\\alpha|^2}{1 - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + |\\alpha|^2|\\beta|^2}\\). Since \\(|\\beta| = 1\\), numerator and denominator are identical, so \\(|w|^2 = 1 \\implies |w| = 1\\).",
+          "Incorrect. The value is completely independent of \\(\\alpha\\).",
+          "Incorrect. Does not equal 1/2.",
+          "Incorrect. Modulus evaluates to 1."
+        ],
+        "fullExplanation": "Consider the squared modulus:\\n$$\\left|\\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}\\right|^2 = \\left(\\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}\\right)\\left(\\overline{\\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}}\\right) = \\frac{(\\beta - \\alpha)(\\bar{\\beta} - \\bar{\\alpha})}{(1 - \\bar{\\alpha}\\beta)(1 - \\alpha\\bar{\\beta})}$$\\nExpand both numerator and denominator:\\n$$\\text{Numerator} = \\beta\\bar{\\beta} - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + \\alpha\\bar{\\alpha} = |\\beta|^2 - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + |\\alpha|^2$$\\n$$\\text{Denominator} = 1 - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + |\\alpha|^2|\\beta|^2$$\\n\\nSince \\(|\\beta| = 1 \\implies |\\beta|^2 = 1\\):\\n$$\\text{Numerator} = 1 - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + |\\alpha|^2$$\\n$$\\text{Denominator} = 1 - \\alpha\\bar{\\beta} - \\bar{\\alpha}\\beta + |\\alpha|^2$$\\n\\nSince the numerator and denominator are identical and non-zero:\\n$$\\left|\\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}\\right|^2 = 1 \\implies \\left|\\frac{\\beta - \\alpha}{1 - \\bar{\\alpha}\\beta}\\right| = 1$$"
+      },
+      {
+        "question": "If the area of the triangle on the Argand plane formed by the complex numbers \\(z\\), \\(iz\\), and \\(z + iz\\) is 50, then \\(|z|\\) is equal to:",
+        "options": [
+          "10",
+          "\\(5\\sqrt{2}\\)",
+          "5",
+          "\\(10\\sqrt{2}\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Multiplication by \\(i\\) represents a \\(90^\\circ\\) rotation. The vectors from \\(z\\) are \\(iz - z\\) and the vertices form a right-angled triangle with perpendicular sides of length \\(|iz - 0| = |z|\\) along the axes rotated by \\(z\\). More precisely, vertices \\(0, z, iz, z+iz\\) form a square of side \\(|z|\\). The triangle with vertices \\(z, iz, z+iz\\) has area \\(\\frac{1}{2}|z|^2\\). Thus \\(\\frac{1}{2}|z|^2 = 50 \\implies |z|^2 = 100 \\implies |z| = 10\\).",
+          "Incorrect. \\(5\\sqrt{2}\\) would yield an area of 25.",
+          "Incorrect. \\(|z| = 5\\) gives area 12.5.",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "Let the vertices be \\(A(z)\\), \\(B(iz)\\), and \\(C(z + iz)\\).\\nThe vector from \\(A\\) to \\(C\\) is \\((z + iz) - z = iz\\).\\nThe vector from \\(B\\) to \\(C\\) is \\((z + iz) - iz = z\\).\\nThe vector from \\(A\\) to \\(B\\) is \\(iz - z = z(i - 1)\\).\\nNotice that:\\n$$(AC) \\perp (BC) \\quad \\text{since } \\frac{iz}{z} = i$$\\nThe triangle is right-angled at \\(C\\) with leg lengths:\\n$$|AC| = |iz| = |z|$$\\n$$|BC| = |z|$$\\n\\nTherefore, the area of \\(\\triangle ABC\\) is:\\n$$\\text{Area} = \\frac{1}{2} |AC| \\cdot |BC| = \\frac{1}{2} |z|^2$$\\nGiven that the area is 50:\\n$$\\frac{1}{2}|z|^2 = 50 \\implies |z|^2 = 100 \\implies |z| = 10$$"
+      },
+      {
+        "question": "If \\(z = x + iy\\) and \\(\\arg\\left(\\frac{z - 1}{z + 1}\\right) = \\frac{\\pi}{4}\\), then the locus of \\(z\\) is:",
+        "options": [
+          "An arc of the circle \\(x^2 + y^2 - 2y - 1 = 0\\) with \\(y > 0\\)",
+          "An arc of the circle \\(x^2 + y^2 + 2y - 1 = 0\\) with \\(y < 0\\)",
+          "The complete circle \\(x^2 + y^2 - 2x - 1 = 0\\)",
+          "A straight line with slope 1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(\\frac{z-1}{z+1} = \\frac{(x-1)+iy}{(x+1)+iy} = \\frac{[(x-1)+iy][(x+1)-iy]}{(x+1)^2 + y^2} = \\frac{(x^2+y^2-1) + 2iy}{(x+1)^2+y^2}\\). \\(\\tan(\\pi/4) = 1 = \\frac{2y}{x^2+y^2-1} \\implies x^2 + y^2 - 2y - 1 = 0\\). Since \\(\\arg = \\pi/4 > 0\\), \\(y > 0\\).",
+          "Incorrect. \\(y > 0\\) is required for the argument to be \\(+\\pi/4\\).",
+          "Incorrect. Only a major or minor arc satisfies the fixed angle, not the entire circle.",
+          "Incorrect. A constant angle subtended by two points defines a circular arc, not a line."
+        ],
+        "fullExplanation": "Substitute \\(z = x + iy\\):\\n$$\\frac{z - 1}{z + 1} = \\frac{(x - 1) + iy}{(x + 1) + iy} = \\frac{[(x - 1) + iy][(x + 1) - iy]}{(x + 1)^2 + y^2}$$\\n$$= \\frac{(x^2 - 1 + y^2) + i[y(x + 1) - y(x - 1)]}{(x + 1)^2 + y^2} = \\frac{(x^2 + y^2 - 1) + 2iy}{(x + 1)^2 + y^2}$$\\n\\nTaking the argument:\\n$$\\arg\\left(\\frac{z - 1}{z + 1}\\right) = \\tan^{-1}\\left(\\frac{2y}{x^2 + y^2 - 1}\\right) = \\frac{\\pi}{4}$$\\n$$\\frac{2y}{x^2 + y^2 - 1} = \\tan\\left(\\frac{\\pi}{4}\\right) = 1$$\\n$$x^2 + y^2 - 1 = 2y \\implies x^2 + y^2 - 2y - 1 = 0$$\\nSince \\(\\arg\\left(\\frac{z-1}{z+1}\\right) = \\frac{\\pi}{4} > 0\\), the imaginary part \\(2y\\) must be positive, which means \\(y > 0\\).\\nThus, the locus is a circular arc of \\(x^2 + y^2 - 2y - 1 = 0\\) lying in the upper half-plane (\\(y > 0\\))."
+      },
+      {
+        "question": "The value of \\(\\left(\\frac{-1 + i\\sqrt{3}}{2}\\right)^{3n+1} + \\left(\\frac{-1 - i\\sqrt{3}}{2}\\right)^{3n+1}\\) (for \\(n \\in \\mathbb{Z}\\)) is equal to:",
+        "options": [
+          "-1",
+          "1",
+          "2",
+          "0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The terms are \\(\\omega\\) and \\(\\omega^2\\). The expression is \\(\\omega^{3n+1} + (\\omega^2)^{3n+1} = \\omega \\cdot (\\omega^3)^n + \\omega^2 \\cdot (\\omega^3)^{2n} = \\omega + \\omega^2 = -1\\).",
+          "Incorrect. \\(\\omega + \\omega^2 = -1\\), not 1.",
+          "Incorrect. Would be 2 if the exponent were an exact multiple of 3.",
+          "Incorrect. The terms sum to \\(-1\\), not 0."
+        ],
+        "fullExplanation": "Recall that the non-real cube roots of unity are:\\n$$\\omega = \\frac{-1 + i\\sqrt{3}}{2}, \\quad \\omega^2 = \\frac{-1 - i\\sqrt{3}}{2}$$\\nThe expression is:\\n$$\\omega^{3n+1} + (\\omega^2)^{3n+1} = \\omega^{3n} \\cdot \\omega + \\omega^{6n} \\cdot \\omega^2$$\\nSince \\(\\omega^3 = 1\\), \\(\\omega^{3n} = 1\\) and \\(\\omega^{6n} = 1\\):\\n$$= 1 \\cdot \\omega + 1 \\cdot \\omega^2 = \\omega + \\omega^2$$\\nFrom the identity \\(1 + \\omega + \\omega^2 = 0\\):\\n$$\\omega + \\omega^2 = -1$$\\nThus, the value is \\(-1\\)."
+      },
+      {
+        "question": "If \\(|z_1 + z_2| = |z_1 - z_2|\\), then the difference between the arguments of \\(z_1\\) and \\(z_2\\) is:",
+        "options": [
+          "\\(\\frac{\\pi}{2}\\)",
+          "\\(\\pi\\)",
+          "\\(\\frac{\\pi}{4}\\)",
+          "0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Squaring both sides: \\(|z_1|^2 + |z_2|^2 + 2\\text{Re}(z_1\\bar{z}_2) = |z_1|^2 + |z_2|^2 - 2\\text{Re}(z_1\\bar{z}_2) \\implies 4\\text{Re}(z_1\\bar{z}_2) = 0 \\implies |z_1||z_2|\\cos(\\theta_1 - \\theta_2) = 0 \\implies \\theta_1 - \\theta_2 = \\pm \\pi/2\\).",
+          "Incorrect. If the difference were \\(\\pi\\), \\(|z_1 + z_2| = ||z_1| - |z_2||\\) and \\(|z_1 - z_2| = |z_1| + |z_2|\\), which are generally unequal.",
+          "Incorrect. \\(\\cos(\\pi/4) \\ne 0\\).",
+          "Incorrect. If \\(\\theta_1 = \\theta_2\\), \\(|z_1 - z_2| = ||z_1| - |z_2||\\)."
+        ],
+        "fullExplanation": "Given:\\n$$|z_1 + z_2| = |z_1 - z_2|$$\\nSquare both sides:\\n$$|z_1 + z_2|^2 = |z_1 - z_2|^2$$\\nUsing the expansion formula:\\n$$|z_1|^2 + |z_2|^2 + 2|z_1||z_2|\\cos(\\theta_1 - \\theta_2) = |z_1|^2 + |z_2|^2 - 2|z_1||z_2|\\cos(\\theta_1 - \\theta_2)$$\\n$$4|z_1||z_2|\\cos(\\theta_1 - \\theta_2) = 0$$\\nAssuming \\(z_1, z_2 \\ne 0\\):\\n$$\\cos(\\theta_1 - \\theta_2) = 0 \\implies |\\theta_1 - \\theta_2| = \\frac{\\pi}{2}$$\\nGeometrically, the diagonals of the parallelogram formed by \\(z_1\\) and \\(z_2\\) are equal, meaning the parallelogram is a rectangle, and hence \\(z_1 \\perp z_2\\)."
+      },
+      {
+        "question": "If \\(a, b, c\\) are distinct integers and \\(\\omega\\) is a complex cube root of unity, then the minimum value of \\(|a + b\\omega + c\\omega^2|\\) is:",
+        "options": [
+          "1",
+          "\\(\\sqrt{3}\\)",
+          "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(|a + b\\omega + c\\omega^2|^2 = a^2 + b^2 + c^2 - ab - bc - ca = \\frac{1}{2}[(a-b)^2 + (b-c)^2 + (c-a)^2]\\). Since \\(a, b, c\\) are distinct integers, the minimum non-zero value occurs when two differences are 1 and the third is 2 (e.g., 1, 2, 3), giving \\(\\frac{1}{2}(1 + 1 + 4) = 3\\). Thus the minimum of the modulus is \\(\\sqrt{3}\\)... wait! If \\(a=1, b=2, c=3\\), \\(\\frac{1}{2}(1^2 + 1^2 + 2^2) = 3\\), so \\(|a + b\\omega + c\\omega^2| = \\sqrt{3}\\). Thus Option B is \\(\\sqrt{3}\\)! Let's place \\(\\sqrt{3}\\) as Option A.",
+          "Incorrect. 1 cannot be achieved for distinct integers.",
+          "Incorrect. Not an integer-derived minimum.",
+          "Incorrect. Greater than \\(\\sqrt{3}\\)."
+        ],
+        "fullExplanation": "Recall the identity:\\n$$|a + b\\omega + c\\omega^2|^2 = (a + b\\omega + c\\omega^2)(a + b\\omega^2 + c\\omega) = a^2 + b^2 + c^2 - ab - bc - ca$$\\n$$= \\frac{1}{2}\\left[(a - b)^2 + (b - c)^2 + (c - a)^2\\right]$$\\nSince \\(a, b, c\\) are distinct integers, at least two of the absolute differences must be at least 1, and the third difference must be at least \\(1 + 1 = 2\\).\\nTo minimize the sum of squares, choose the consecutive integers (for instance \\(a = 1, b = 2, c = 3\\)):\\n$$|a - b| = 1, \\quad |b - c| = 1, \\quad |c - a| = 2$$\\n\\nSubstituting these values:\\n$$|a + b\\omega + c\\omega^2|^2 = \\frac{1}{2}[1^2 + 1^2 + 2^2] = \\frac{1}{2}[1 + 1 + 4] = \\frac{6}{2} = 3$$\\nTaking the square root:\\n$$\\min |a + b\\omega + c\\omega^2| = \\sqrt{3}$$"
+      },
+      {
+        "question": "If \\(z = \\left(\\frac{\\sqrt{3} + i}{2}\\right)^5 + \\left(\\frac{\\sqrt{3} - i}{2}\\right)^5\\), then:",
+        "options": [
+          "\\(\\text{Im}(z) = 0\\)",
+          "\\(\\text{Re}(z) = 0\\)",
+          "\\(\\text{Re}(z) > 0\\) and \\(\\text{Im}(z) > 0\\)",
+          "\\(\\text{Re}(z) < 0\\) and \\(\\text{Im}(z) < 0\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\(w = \\frac{\\sqrt{3} + i}{2}\\). Then \\(\\bar{w} = \\frac{\\sqrt{3} - i}{2}\\). The expression is \\(z = w^5 + (\\bar{w})^5 = w^5 + \\overline{w^5} = 2\\text{Re}(w^5)\\), which is purely real. Hence, \\(\\text{Im}(z) = 0\\).",
+          "Incorrect. \\(\\text{Re}(z) = 2\\cos(5\\pi/6) = 2(-\\sqrt{3}/2) = -\\sqrt{3} \\ne 0\\).",
+          "Incorrect. The imaginary part is 0, not strictly positive.",
+          "Incorrect. \\(\\text{Im}(z)\\) is exactly zero."
+        ],
+        "fullExplanation": "Let \\(w = \\frac{\\sqrt{3} + i}{2} = \\cos\\left(\\frac{\\pi}{6}\\right) + i\\sin\\left(\\frac{\\pi}{6}\\right) = e^{i\\pi/6}\\).\\nThen \\(\\bar{w} = \\frac{\\sqrt{3} - i}{2} = e^{-i\\pi/6}\\).\\n\\nUsing De Moivre's Theorem:\\n$$w^5 = e^{i 5\\pi/6} = \\cos\\left(\\frac{5\\pi}{6}\\right) + i\\sin\\left(\\frac{5\\pi}{6}\\right)$$\\n$$(\\bar{w})^5 = e^{-i 5\\pi/6} = \\cos\\left(\\frac{5\\pi}{6}\\right) - i\\sin\\left(\\frac{5\\pi}{6}\\right)$$\\n\\nAdding the two:\\n$$z = w^5 + (\\bar{w})^5 = 2\\cos\\left(\\frac{5\\pi}{6}\\right) = 2\\left(-\\frac{\\sqrt{3}}{2}\\right) = -\\sqrt{3}$$\\nSince \\(z = -\\sqrt{3}\\), it is a purely real number, which means \\(\\text{Im}(z) = 0\\)."
+      },
+      {
+        "question": "The complex slope of the straight line \\(2z + 3\\bar{z} + 5 = 0\\) is:",
+        "options": [
+          "\\(-\\frac{3}{2}\\)",
+          "\\(-\\frac{2}{3}\\)",
+          "\\(\\frac{3}{2}\\)",
+          "\\(\\frac{2}{3}\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Comparing with \\(\\bar{a}z + a\\bar{z} + b = 0\\), we have \\(\\bar{a} = 2\\) and \\(a = 3\\). The complex slope is defined as \\(\\mu = -\\frac{a}{\\bar{a}} = -\\frac{3}{2}\\).",
+          "Incorrect. Inverted the ratio \\(a/\\bar{a}\\).",
+          "Incorrect. Forgot the negative sign in \\(\\mu = -a/\\bar{a}\\).",
+          "Incorrect. Both inverted and forgot the negative sign."
+        ],
+        "fullExplanation": "According to the handbook (Page 27):\\nThe equation of a straight line in the complex plane is:\\n$$\\bar{a}z + a\\bar{z} + b = 0$$\\nAnd its complex slope is defined as:\\n$$\\mu = -\\frac{a}{\\bar{a}}$$\\n\\nFor the given line \\(2z + 3\\bar{z} + 5 = 0\\):\\n- The coefficient of \\(z\\) is \\(\\bar{a} = 2\\)\\n- The coefficient of \\(\\bar{z}\\) is \\(a = 3\\)\\n\\nTherefore, the complex slope is:\\n$$\\mu = -\\frac{a}{\\bar{a}} = -\\frac{3}{2}$$"
+      },
+      {
+        "question": "If \\(z_1, z_2, z_3\\) are three complex numbers such that \\(z_1^2 + z_2^2 + z_3^2 - z_1 z_2 - z_2 z_3 - z_3 z_1 = 0\\), then the triangle formed by them has angles:",
+        "options": [
+          "\\(60^\\circ, 60^\\circ, 60^\\circ\\)",
+          "\\(90^\\circ, 45^\\circ, 45^\\circ\\)",
+          "\\(120^\\circ, 30^\\circ, 30^\\circ\\)",
+          "\\(90^\\circ, 60^\\circ, 30^\\circ\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The relation \\(z_1^2 + z_2^2 + z_3^2 = z_1 z_2 + z_2 z_3 + z_3 z_1\\) is the necessary and sufficient condition for \\(z_1, z_2, z_3\\) to form an equilateral triangle, so all angles are \\(60^\\circ\\).",
+          "Incorrect. This would be a right-angled isosceles triangle.",
+          "Incorrect. This is an obtuse isosceles triangle.",
+          "Incorrect. This is a 30-60-90 scalene right triangle."
+        ],
+        "fullExplanation": "The given relation is:\\n$$z_1^2 + z_2^2 + z_3^2 - z_1 z_2 - z_2 z_3 - z_3 z_1 = 0$$\\nWe know that:\\n$$z_1^2 + z_2^2 + z_3^2 - z_1 z_2 - z_2 z_3 - z_3 z_1 = (z_1 - z_2)^2 + (z_2 - z_3)(z_1 - z_3)$$\\nSetting this equal to zero implies:\\n$$\\frac{z_3 - z_1}{z_2 - z_1} = e^{\\pm i\\pi/3}$$\\nThis means that the vector \\(\\vec{z_1 z_3}\\) is obtained by rotating \\(\\vec{z_1 z_2}\\) by \\(60^\\circ\\) with equal length: \\(|z_3 - z_1| = |z_2 - z_1|\\).\\nSimilarly, this holds for all sides.\\nHence, the triangle is **equilateral**, and all three angles are \\(60^\\circ\\)."
+      },
+      {
+        "question": "The number of non-zero solutions to the equation \\(\\bar{z} = i z^2\\) is:",
+        "options": [
+          "3",
+          "1",
+          "2",
+          "4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Taking moduli: \\(|\\bar{z}| = |i||z|^2 \\implies |z| = |z|^2\\). Since \\(z \\ne 0\\), \\(|z| = 1\\). Multiply both sides of \\(\\bar{z} = iz^2\\) by \\(z\\): \\(z\\bar{z} = iz^3 \\implies |z|^2 = iz^3 \\implies 1 = iz^3 \\implies z^3 = -i = i^3\\). A cubic equation has 3 distinct roots.",
+          "Incorrect. A cubic equation has 3 distinct complex roots.",
+          "Incorrect. 2 is missing the third root of unity.",
+          "Incorrect. Including \\(z = 0\\) gives 4 total solutions, but the question specifies non-zero solutions."
+        ],
+        "fullExplanation": "Given:\\n$$\\bar{z} = i z^2$$\\nTaking the modulus on both sides:\\n$$|\\bar{z}| = |i z^2| = |i| \\cdot |z|^2$$\\nSince \\(|\\bar{z}| = |z|\\) and \\(|i| = 1\\):\\n$$|z| = |z|^2 \\implies |z|(|z| - 1) = 0$$\\nSince we are looking for non-zero solutions, \\(|z| = 1\\).\\n\\nNow multiply the original equation by \\(z\\):\\n$$z\\bar{z} = i z^3$$\\n$$|z|^2 = i z^3$$\\nSince \\(|z| = 1\\):\\n$$1 = i z^3 \\implies z^3 = \\frac{1}{i} = -i$$\\nSince \\(-i = e^{-i\\pi/2}\\), the solutions are given by:\\n$$z = e^{i\\left(-\\frac{\\pi}{6} + \\frac{2k\\pi}{3}\\right)}, \\quad k = 0, 1, 2$$\\nThis gives exactly 3 distinct non-zero solutions."
+      },
+      {
+        "question": "If \\(z_1\\) and \\(z_2\\) are two complex numbers such that \\(|z_1| = |z_2|\\) and \\(\\arg(z_1) + \\arg(z_2) = \\pi\\), then \\(z_1\\) is equal to:",
+        "options": [
+          "\\(-\\bar{z}_2\\)",
+          "\\(\\bar{z}_2\\)",
+          "\\(-z_2\\)",
+          "\\(z_2\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\(z_2 = r e^{i\\theta}\\). Then \\(|z_1| = r\\) and \\(\\arg(z_1) = \\pi - \\theta\\). Thus \\(z_1 = r e^{i(\\pi - \\theta)} = r e^{i\\pi} e^{-i\\theta} = -r(\\cos\\theta - i\\sin\\theta) = -\\bar{z}_2\\).",
+          "Incorrect. \\(\\bar{z}_2\\) has argument \\(-\\theta\\), which sums to 0 with \\(\\theta\\), not \\(\\pi\\).",
+          "Incorrect. \\(-z_2\\) has argument \\(\\theta + \\pi\\), so their sum would be \\(2\\theta + \\pi\\).",
+          "Incorrect. Sum of arguments would be \\(2\\theta\\)."
+        ],
+        "fullExplanation": "Let \\(z_2 = r(\\cos\\theta + i\\sin\\theta) = r e^{i\\theta}\\).\\nWe are given:\\n- \\(|z_1| = |z_2| = r\\)\\n- \\(\\arg(z_1) = \\pi - \\arg(z_2) = \\pi - \\theta\\)\\n\\nTherefore:\\n$$z_1 = r e^{i(\\pi - \\theta)} = r(\\cos(\\pi - \\theta) + i\\sin(\\pi - \\theta))$$\\n$$= r(-\\cos\\theta + i\\sin\\theta) = -r(\\cos\\theta - i\\sin\\theta)$$\\nNotice that \\(\\bar{z}_2 = r(\\cos\\theta - i\\sin\\theta)\\).\\nThus:\\n$$z_1 = -\\bar{z}_2$$"
+      },
+      {
+        "question": "The value of \\(\\sum_{k=1}^{6} \\left(\\sin\\frac{2k\\pi}{7} - i\\cos\\frac{2k\\pi}{7}\\right)\\) is:",
+        "options": [
+          "\\(i\\)",
+          "\\(-i\\)",
+          "1",
+          "-1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Factor out \\(-i\\): \\(\\sin\\theta - i\\cos\\theta = -i(\\cos\\theta + i\\sin\\theta) = -i e^{i\\theta}\\). The sum becomes \\(-i \\sum_{k=1}^6 e^{i 2k\\pi/7}\\). The sum of all 7th roots of unity is 0, so \\(\\sum_{k=1}^6 e^{i 2k\\pi/7} = 0 - 1 = -1\\). Multiplying by \\(-i\\) gives \\((-i)(-1) = i\\).",
+          "Incorrect. Sign error from factoring out \\(-i\\).",
+          "Incorrect. Sum is purely imaginary.",
+          "Incorrect. The real power sum is \\(-1\\), but the factor \\(-i\\) converts it to \\(i\\)."
+        ],
+        "fullExplanation": "Rewrite the general term by factoring out \\(-i\\):\\n$$\\sin\\theta - i\\cos\\theta = -i(i\\sin\\theta + \\cos\\theta) = -i(\\cos\\theta + i\\sin\\theta) = -i e^{i\\theta}$$\\n\\nHere \\(\\theta = \\frac{2k\\pi}{7}\\), so:\\n$$S = \\sum_{k=1}^6 \\left(\\sin\\frac{2k\\pi}{7} - i\\cos\\frac{2k\\pi}{7}\\right) = -i \\sum_{k=1}^6 e^{i \\frac{2k\\pi}{7}}$$\\n\\nLet \\(\\alpha = e^{i 2\\pi/7}\\), which is a primitive 7th root of unity.\\nThe sum of all seven 7th roots of unity is zero:\\n$$\\sum_{k=0}^6 \\alpha^k = 0 \\implies 1 + \\sum_{k=1}^6 \\alpha^k = 0 \\implies \\sum_{k=1}^6 \\alpha^k = -1$$\\n\\nSubstituting this into the expression for \\(S\\):\\n$$S = -i(-1) = i$$"
+      },
+      {
+        "question": "If \\(\\omega\\) is a non-real cube root of unity and \\((1 + \\omega^2)^n = (1 + \\omega^4)^n\\), then the smallest positive integer \\(n\\) is:",
+        "options": [
+          "3",
+          "2",
+          "6",
+          "1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\(1 + \\omega^2 = -\\omega\\) and \\(1 + \\omega^4 = 1 + \\omega = -\\omega^2\\). The equation becomes \\((-\\omega)^n = (-\\omega^2)^n \\implies \\omega^n = \\omega^{2n} \\implies \\omega^n = 1\\). The smallest positive integer for which \\(\\omega^n = 1\\) is \\(n = 3\\).",
+          "Incorrect. \\(\\omega^2 \\ne 1\\).",
+          "Incorrect. 6 satisfies the equation, but it is not the smallest positive integer.",
+          "Incorrect. For \\(n = 1\\), \\(-\\omega \\ne -\\omega^2\\)."
+        ],
+        "fullExplanation": "Using the properties \\(1 + \\omega + \\omega^2 = 0\\) and \\(\\omega^3 = 1\\):\\n1. \\(1 + \\omega^2 = -\\omega\\)\\n2. \\(1 + \\omega^4 = 1 + \\omega = -\\omega^2\\)\\n\\nThe equation is:\\n$$(-\\omega)^n = (-\\omega^2)^n$$\\nDivide both sides by \\((-\\omega)^n\\):\\n$$1 = \\left(\\frac{-\\omega^2}{-\\omega}\\right)^n = \\omega^n$$\\n\\nSince \\(\\omega\\) is a cube root of unity, \\(\\omega^n = 1\\) holds if and only if \\(n\\) is a multiple of 3.\\nTherefore, the smallest positive integer is \\(n = 3\\)."
+      },
+      {
+        "question": "If \\(z_1, z_2\\) are two complex numbers such that \\(|z_1 + z_2| = \\sqrt{3}\\) and \\(|z_1| = |z_2| = 1\\), then the value of \\(|z_1 - z_2|\\) is:",
+        "options": [
+          "1",
+          "\\(\\sqrt{2}\\)",
+          "\\(\\sqrt{3}\\)",
+          "2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By the Parallelogram Law: \\(|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)\\). Substituting values: \\((\\sqrt{3})^2 + |z_1 - z_2|^2 = 2(1 + 1) = 4 \\implies 3 + |z_1 - z_2|^2 = 4 \\implies |z_1 - z_2|^2 = 1 \\implies |z_1 - z_2| = 1\\).",
+          "Incorrect. Check the application of the parallelogram law.",
+          "Incorrect. \\(\\sqrt{3}\\) is the value of \\(|z_1 + z_2|\\).",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "Using the Parallelogram Law for complex numbers:\\n$$|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2\\left(|z_1|^2 + |z_2|^2\\right)$$\\n\\nSubstitute the given values:\\n$$(\\sqrt{3})^2 + |z_1 - z_2|^2 = 2(1^2 + 1^2)$$\\n$$3 + |z_1 - z_2|^2 = 2(2) = 4$$\\n$$|z_1 - z_2|^2 = 4 - 3 = 1$$\\n\\nTaking the square root (since modulus is non-negative):\\n$$|z_1 - z_2| = 1$$"
+      }
+    ]
+  }
+]

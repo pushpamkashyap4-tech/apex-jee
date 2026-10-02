@@ -1,0 +1,1283 @@
+[
+  {
+    "chapterName": "Mechanical Properties of Fluids",
+    "flashcards": [
+      {
+        "front": "What is the formula for the variation of pressure with depth in a static fluid?",
+        "back": "P₂ - P₁ = h ρ g, where h is the depth, ρ is density, and g is acceleration due to gravity."
+      },
+      {
+        "front": "State Pascal's Law.",
+        "back": "Pressure applied to an enclosed fluid is transmitted undiminished to every portion of the fluid and the walls of the container."
+      },
+      {
+        "front": "State Archimedes' Principle.",
+        "back": "The upward buoyant force on a submerged body equals the weight of the fluid displaced by the body: F(B) = V(sub) ρ(fluid) g."
+      },
+      {
+        "front": "What is the Equation of Continuity?",
+        "back": "For steady, incompressible flow, the mass flow rate is constant: A₁v₁ = A₂v₂."
+      },
+      {
+        "front": "State Bernoulli's Theorem equation.",
+        "back": "P + (1/2)ρv² + ρgh = constant."
+      },
+      {
+        "front": "What is Torricelli's Law for velocity of efflux?",
+        "back": "v = √(2gh), where h is the depth of the hole below the free surface."
+      },
+      {
+        "front": "What is the horizontal range of fluid emerging from a hole at depth h in a tank of total liquid height H?",
+        "back": "R = 2 √(h(H - h))"
+      },
+      {
+        "front": "What is the formula for surface tension (T)?",
+        "back": "T = F / L, force per unit length."
+      },
+      {
+        "front": "What is the relation between surface energy (W) and surface tension (T)?",
+        "back": "W = T ΔA, where ΔA is the change in surface area."
+      },
+      {
+        "front": "What is the excess pressure inside a liquid drop?",
+        "back": "ΔP = 2T / R"
+      },
+      {
+        "front": "What is the excess pressure inside a soap bubble?",
+        "back": "ΔP = 4T / R (since it has two surfaces)."
+      },
+      {
+        "front": "What is the formula for capillary rise?",
+        "back": "h = (2T cos θ) / (r ρ g), where θ is the angle of contact and r is the capillary radius."
+      },
+      {
+        "front": "State Newton's Law of Viscosity.",
+        "back": "F = -η A (dv/dy), where η is the coefficient of viscosity and dv/dy is the velocity gradient."
+      },
+      {
+        "front": "State Stokes' Law.",
+        "back": "The viscous drag on a spherical body of radius r falling with velocity v is F = 6πηrv."
+      },
+      {
+        "front": "What is the formula for terminal velocity?",
+        "back": "v(t) = 2r²(ρ - σ)g / (9η), where ρ is body density and σ is fluid density."
+      },
+      {
+        "front": "What is Poiseuille's equation for volume flow rate (Q) through a capillary tube?",
+        "back": "Q = (π P r⁴) / (8 η L)"
+      },
+      {
+        "front": "What is the Reynolds Number (Re)?",
+        "back": "Re = (ρ v d) / η, used to determine if flow is laminar or turbulent."
+      },
+      {
+        "front": "What condition signifies laminar flow using Reynolds Number?",
+        "back": "Re < 1000 indicates laminar flow (Re > 2000 is turbulent)."
+      },
+      {
+        "front": "How does the viscosity of liquids and gases change with temperature?",
+        "back": "Viscosity of liquids decreases with temperature, while viscosity of gases increases with temperature."
+      },
+      {
+        "front": "What is a streamline flow?",
+        "back": "A flow where every fluid particle follows the exact same path and velocity as the particle that preceded it."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A hydraulic lift has a small piston of area A and a large piston of area 10A. If a force of 100 N is applied to the small piston, what load can be lifted by the large piston?",
+        "options": [
+          "100 N",
+          "1000 N",
+          "10 N",
+          "10000 N"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the input force.",
+          "Correct. By Pascal's law, P₁ = P₂. So F₁/A₁ = F₂/A₂. F₂ = 100 × (10A/A) = 1000 N.",
+          "Incorrect. This is Force divided by 10.",
+          "Incorrect. This implies an area ratio of 100."
+        ],
+        "fullExplanation": "According to Pascal's Law, the pressure applied to an enclosed fluid is transmitted uniformly. Thus, Pressure at small piston = Pressure at large piston. P = F₁/A₁ = F₂/A₂. Substituting the values: 100/A = F₂/10A. Solving for F₂ gives F₂ = 100 × 10 = 1000 N."
+      },
+      {
+        "question": "An iceberg floats in seawater. The density of ice is 900 kg/m³ and seawater is 1000 kg/m³. What fraction of the iceberg's volume is submerged?",
+        "options": [
+          "10%",
+          "90%",
+          "11%",
+          "80%"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the fraction above water.",
+          "Correct. V(sub)/V(total) = ρ(ice)/ρ(water) = 900/1000 = 0.9 or 90%.",
+          "Incorrect. Miscalculation.",
+          "Incorrect. Represents a different density ratio."
+        ],
+        "fullExplanation": "By Archimedes' principle, the weight of the floating iceberg equals the weight of the displaced water. Weight of iceberg = V(total) × ρ(ice) × g. Weight of displaced water = V(sub) × ρ(water) × g. Equating them: V(total) × ρ(ice) = V(sub) × ρ(water). Therefore, V(sub) / V(total) = ρ(ice) / ρ(water) = 900 / 1000 = 0.90, which is 90%."
+      },
+      {
+        "question": "Water flows through a horizontal pipe of non-uniform cross-section. At point A, the area is 10 cm² and velocity is 2 m/s. At point B, the area is 5 cm². What is the velocity at B?",
+        "options": [
+          "1 m/s",
+          "2 m/s",
+          "4 m/s",
+          "8 m/s"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This assumes velocity decreases when area decreases.",
+          "Incorrect. Velocity changes with area.",
+          "Correct. A₁v₁ = A₂v₂. 10 × 2 = 5 × v₂, so v₂ = 4 m/s.",
+          "Incorrect. Calculation error."
+        ],
+        "fullExplanation": "According to the Equation of Continuity for an incompressible fluid, A₁v₁ = A₂v₂. Substituting the given values: 10 cm² × 2 m/s = 5 cm² × v₂. Solving for v₂ gives v₂ = 20 / 5 = 4 m/s. As the pipe narrows, the velocity must increase to maintain a constant mass flow rate."
+      },
+      {
+        "question": "In the previous horizontal pipe, how does the pressure at A compare to the pressure at B?",
+        "options": [
+          "P(A) = P(B)",
+          "P(A) < P(B)",
+          "P(A) > P(B)",
+          "Cannot be determined"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Pressure changes with velocity.",
+          "Incorrect. Slower fluid has higher pressure.",
+          "Correct. By Bernoulli's theorem, higher velocity at B means lower pressure at B, so P(A) > P(B).",
+          "Incorrect. Bernoulli's theorem allows us to determine this."
+        ],
+        "fullExplanation": "Bernoulli's theorem for a horizontal pipe is P + 1/2 ρv² = constant. This implies that where velocity is high, pressure must be low (and vice versa). Since the area at B is smaller, the velocity at B is higher (v₂ > v₁). Consequently, the pressure at B must be lower than at A. Thus, P(A) > P(B)."
+      },
+      {
+        "question": "A large open tank has a hole at a depth of 5 m below the water surface. What is the velocity of efflux? (Take g = 10 m/s²)",
+        "options": [
+          "5 m/s",
+          "10 m/s",
+          "50 m/s",
+          "100 m/s"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is √25, missing the factor of 2 in 2gh.",
+          "Correct. Torricelli's law: v = √(2gh) = √(2 × 10 × 5) = √100 = 10 m/s.",
+          "Incorrect. This is 2gh without the square root.",
+          "Incorrect. Miscalculation."
+        ],
+        "fullExplanation": "According to Torricelli's Law, the velocity of fluid emerging from a hole at depth h is v = √(2gh). Plugging in the given values: v = √(2 × 10 m/s² × 5 m) = √100 = 10 m/s. This is the same velocity an object would acquire falling freely from a height of 5 m."
+      },
+      {
+        "question": "Two soap bubbles of radii R₁ and R₂ (R₁ > R₂) are in contact. What is the radius of curvature of their common interface?",
+        "options": [
+          "R₁ + R₂",
+          "R₁ - R₂",
+          "(R₁ R₂) / (R₁ + R₂)",
+          "(R₁ R₂) / (R₁ - R₂)"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. This is series combination for some resistors, not bubble curvature.",
+          "Incorrect. This is simple difference.",
+          "Incorrect. This is parallel resistor combination formula.",
+          "Correct. Excess pressure difference ΔP = 4T/r = 4T/R₂ - 4T/R₁. Solving gives r = (R₁ R₂) / (R₁ - R₂)."
+        ],
+        "fullExplanation": "The pressure inside bubble 1 is P₁ = P₀ + 4T/R₁. The pressure inside bubble 2 is P₂ = P₀ + 4T/R₂. Since R₁ > R₂, P₂ > P₁. The common surface bulges towards the larger bubble (lower pressure). The excess pressure across the interface is ΔP = P₂ - P₁ = 4T/R₂ - 4T/R₁ = 4T(1/R₂ - 1/R₁). If r is the radius of the interface, ΔP = 4T/r. Equating the two gives 1/r = 1/R₂ - 1/R₁, so r = (R₁R₂) / (R₁ - R₂)."
+      },
+      {
+        "question": "If water rises to a height h in a capillary tube of radius r, what will be the height of water in a tube of radius 2r?",
+        "options": [
+          "h",
+          "h / 2",
+          "2h",
+          "h / 4"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Height depends on radius.",
+          "Correct. Capillary rise h ∝ 1/r. If radius doubles, height is halved.",
+          "Incorrect. This implies h ∝ r.",
+          "Incorrect. This implies an inverse square relation."
+        ],
+        "fullExplanation": "The formula for capillary rise is h = (2T cos θ) / (r ρ g). This shows that for a given liquid and material, the height of the column h is inversely proportional to the radius r of the tube (h ∝ 1/r). If the radius is doubled (r' = 2r), the new height will be h' = (2T cos θ) / (2r ρ g) = h / 2."
+      },
+      {
+        "question": "A solid sphere falls through a viscous liquid. Its terminal velocity is v. If a sphere of the same material but twice the radius is dropped in the same liquid, its terminal velocity will be:",
+        "options": [
+          "v",
+          "2v",
+          "4v",
+          "8v"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Terminal velocity depends on radius.",
+          "Incorrect. It's not a linear relationship.",
+          "Correct. v(t) ∝ r². If r is doubled, v(t) becomes 2² = 4 times the original.",
+          "Incorrect. This would be the mass/volume ratio, not velocity."
+        ],
+        "fullExplanation": "According to Stokes' Law, the terminal velocity of a falling sphere is given by v(t) = 2r²(ρ - σ)g / (9η). Since all parameters except the radius r are constant, v(t) is directly proportional to r². If the radius is doubled (from r to 2r), the terminal velocity becomes proportional to (2r)² = 4r², which is 4 times the original terminal velocity."
+      },
+      {
+        "question": "What is the work done in blowing a soap bubble from a radius R to a radius 2R? (T = surface tension)",
+        "options": [
+          "12 π R² T",
+          "24 π R² T",
+          "3 π R² T",
+          "4 π R² T"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the work for a liquid drop (one surface).",
+          "Correct. A soap bubble has 2 surfaces. Area change = 2 × 4π((2R)² - R²) = 2 × 4π(3R²) = 24πR². W = TΔA = 24πR²T.",
+          "Incorrect. Forgot the 4π geometry factor and the two surfaces.",
+          "Incorrect. This is the energy of a single drop of radius R."
+        ],
+        "fullExplanation": "A soap bubble has two free surfaces (inner and outer). The initial surface area is A₁ = 2 × 4πR² = 8πR². The final surface area is A₂ = 2 × 4π(2R)² = 2 × 4π(4R²) = 32πR². The change in area is ΔA = 32πR² - 8πR² = 24πR². The work done is W = T × ΔA = 24πR²T."
+      },
+      {
+        "question": "A tank contains water up to a height H. A hole is made in the wall of the tank at a depth h from the surface. For what value of h is the horizontal range of the efflux maximum?",
+        "options": [
+          "H / 4",
+          "H / 2",
+          "3H / 4",
+          "H"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Range is smaller here.",
+          "Correct. R = 2√(h(H-h)). To maximize, set d/dh(hH - h²) = 0, giving H - 2h = 0, so h = H/2.",
+          "Incorrect. Range here is the same as H/4.",
+          "Incorrect. Range is zero here as time of flight is zero."
+        ],
+        "fullExplanation": "The horizontal range R of the fluid is given by R = v × t. Velocity v = √(2gh) and time of flight t = √(2(H-h)/g). Multiplying these gives R = 2√(h(H-h)). To maximize R, we maximize the term inside the square root: y = hH - h². Taking the derivative with respect to h and setting it to zero: dy/dh = H - 2h = 0, which yields h = H/2."
+      },
+      {
+        "question": "Water is flowing through a tube. The critical velocity for the transition from laminar to turbulent flow depends on:",
+        "options": [
+          "Coefficient of viscosity only",
+          "Density of liquid only",
+          "Radius of tube only",
+          "Viscosity, density, and radius"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. It depends on other factors too.",
+          "Incorrect. Density is not the only factor.",
+          "Incorrect. Tube dimension alone does not decide it.",
+          "Correct. Critical velocity v(c) = (Re η) / (ρ d), depending on all three."
+        ],
+        "fullExplanation": "The transition from laminar to turbulent flow is characterized by the Reynolds number, Re = ρvd / η. The critical velocity v(c) at which flow becomes turbulent is given by rearranging this: v(c) = (Re η) / (ρ d). This clearly shows that critical velocity depends on the fluid's viscosity (η), its density (ρ), and the diameter or radius of the tube (d = 2r)."
+      },
+      {
+        "question": "Two rain drops of equal radius fall through air with terminal velocity 5 m/s. If they coalesce to form a single large drop, what will be its terminal velocity?",
+        "options": [
+          "10 m/s",
+          "5 m/s",
+          "5 × 2^(2/3) m/s",
+          "5 × 2^(1/3) m/s"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Terminal velocity does not simply double.",
+          "Incorrect. The larger drop will fall faster.",
+          "Correct. Volume doubles, so R = 2^(1/3) r. v(t) ∝ R², so v' = 2^(2/3) v = 5 × 2^(2/3).",
+          "Incorrect. This is the ratio for radius, not velocity."
+        ],
+        "fullExplanation": "Let the radius of small drops be r. Total volume of two drops = 2 × (4/3)πr³. The new large drop has radius R, so (4/3)πR³ = 2 × (4/3)πr³. Thus, R = 2^(1/3) r. Since terminal velocity v(t) is proportional to the square of the radius (v(t) ∝ R²), the new velocity is v' = (2^(1/3))² v = 2^(2/3) v. Given v = 5 m/s, v' = 5 × 2^(2/3) m/s."
+      },
+      {
+        "question": "A vessel contains liquid of density ρ up to height h. It is accelerated upwards with acceleration a. The pressure at the bottom of the vessel is:",
+        "options": [
+          "h ρ g",
+          "h ρ (g + a)",
+          "h ρ (g - a)",
+          "h ρ a"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is for a stationary vessel.",
+          "Correct. Effective gravity becomes g + a. Pressure P = h ρ g(eff) = h ρ (g + a).",
+          "Incorrect. This would be for a vessel accelerating downwards.",
+          "Incorrect. Gravity must still be included."
+        ],
+        "fullExplanation": "When a container of fluid accelerates upwards with acceleration a, a pseudo force acts downwards on every fluid element in the frame of the container. The effective acceleration due to gravity becomes g(eff) = g + a. The hydrostatic pressure at depth h is determined by this effective gravity: P = h ρ g(eff) = h ρ (g + a)."
+      },
+      {
+        "question": "An ideal fluid flows through a pipe of varying cross section. The pressure is 200 kPa at a point where velocity is 2 m/s. At another point, velocity is 4 m/s. If the fluid density is 1000 kg/m³ and the pipe is horizontal, find the pressure at the second point.",
+        "options": [
+          "194 kPa",
+          "206 kPa",
+          "180 kPa",
+          "212 kPa"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. P₁ + 1/2ρv₁² = P₂ + 1/2ρv₂². 200000 + 2000 = P₂ + 8000. P₂ = 194000 Pa.",
+          "Incorrect. Pressure drops when velocity increases.",
+          "Incorrect. Calculation error in the kinetic energy terms.",
+          "Incorrect. Pressure drops, it doesn't increase."
+        ],
+        "fullExplanation": "Using Bernoulli's theorem for a horizontal pipe: P₁ + (1/2)ρv₁² = P₂ + (1/2)ρv₂². Here, P₁ = 200,000 Pa, ρ = 1000 kg/m³, v₁ = 2 m/s, v₂ = 4 m/s. 200,000 + 0.5(1000)(2)² = P₂ + 0.5(1000)(4)². 200,000 + 2000 = P₂ + 8000. 202,000 = P₂ + 8000. P₂ = 194,000 Pa = 194 kPa."
+      },
+      {
+        "question": "A liquid drop of radius R breaks into 64 identical smaller drops. If the surface tension is T, the change in surface energy is:",
+        "options": [
+          "4 π R² T",
+          "8 π R² T",
+          "12 π R² T",
+          "16 π R² T"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Too small.",
+          "Incorrect. Miscalculated the final area.",
+          "Correct. r = R/4. Initial area 4πR². Final area 64×4π(R/4)² = 16πR². Change = 12πR²T.",
+          "Incorrect. Area increases by a factor of 4, meaning the new area is 16πR²."
+        ],
+        "fullExplanation": "Volume is conserved: (4/3)πR³ = 64 × (4/3)πr³. Therefore, R³ = 64r³, giving r = R/4. Initial surface area A₁ = 4πR². Final surface area A₂ = 64 × 4πr² = 64 × 4π(R/4)² = 64 × 4π(R²/16) = 16πR². The change in area is ΔA = A₂ - A₁ = 16πR² - 4πR² = 12πR². The change in surface energy is W = TΔA = 12πR²T."
+      },
+      {
+        "question": "At terminal velocity, the net force acting on a sphere falling through a viscous fluid is:",
+        "options": [
+          "Viscous drag force",
+          "Weight of the sphere",
+          "Zero",
+          "Buoyant force"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Viscous drag is just one of the forces.",
+          "Incorrect. Weight is balanced by drag and buoyancy.",
+          "Correct. Terminal velocity means acceleration is zero, so the net force is zero.",
+          "Incorrect. Buoyancy is just one of the upward forces."
+        ],
+        "fullExplanation": "Terminal velocity is defined as the constant maximum velocity reached by an object falling through a fluid. Because the velocity is constant, the acceleration of the object is zero. According to Newton's Second Law (F = ma), if acceleration is zero, the net force acting on the object must be zero. The downward weight is exactly balanced by the upward buoyant force and viscous drag."
+      },
+      {
+        "question": "The angle of contact of mercury with glass is:",
+        "options": [
+          "Acute (θ < 90°)",
+          "Obtuse (θ > 90°)",
+          "Zero (θ = 0°)",
+          "Right angle (θ = 90°)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Acute angles occur when liquids wet the solid (e.g., water and glass).",
+          "Correct. Mercury does not wet glass, so its cohesive forces exceed adhesive forces, forming an obtuse angle.",
+          "Incorrect. Zero angle is for perfectly wetting liquids like pure water on clean glass.",
+          "Incorrect. 90° implies neither wetting nor non-wetting."
+        ],
+        "fullExplanation": "The angle of contact depends on the relative strength of cohesive forces (between liquid molecules) and adhesive forces (between liquid and solid molecules). For mercury and glass, the cohesive forces within mercury are much stronger than the adhesive forces between mercury and glass. As a result, the mercury pulls away from the glass, forming a convex meniscus and an obtuse angle of contact (θ > 90°)."
+      },
+      {
+        "question": "When a capillary tube is dipped in water, water rises to a height h. If the tube is pushed further down so only length h/2 is left outside, what will happen?",
+        "options": [
+          "Water will overflow like a fountain",
+          "Water will rise up to h/2 and stop without overflowing",
+          "Water will not rise at all",
+          "Water will oscillate"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The excess pressure is balanced by a change in the meniscus radius, preventing overflow.",
+          "Correct. The radius of curvature of the meniscus increases to balance the pressure, and it does not overflow.",
+          "Incorrect. Capillary action will still draw it up.",
+          "Incorrect. It finds a stable equilibrium."
+        ],
+        "fullExplanation": "The formula for capillary rise is h = (2T cos θ) / (rρg) = 2T / (Rρg), where R is the radius of curvature of the meniscus (R = r / cos θ). Since hR = 2T / (ρg) = constant, if the available height h is artificially restricted to h/2, the radius of curvature R must double. The meniscus flattens out to satisfy this condition. Water will reach the top and stay there; it will not overflow."
+      },
+      {
+        "question": "A U-tube contains two liquids in static equilibrium: Water (density 1000 kg/m³) on one side and an unknown oil on the other. The water column is 10 cm high and the oil column is 12.5 cm high above the interface. What is the density of the oil?",
+        "options": [
+          "800 kg/m³",
+          "1250 kg/m³",
+          "1000 kg/m³",
+          "900 kg/m³"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. P₁ = P₂ => h₁ρ₁g = h₂ρ₂g. (10)(1000) = (12.5)ρ₂. ρ₂ = 10000 / 12.5 = 800 kg/m³.",
+          "Incorrect. This would mean oil is denser, but a taller column is needed, so it must be less dense.",
+          "Incorrect. Same density means same height.",
+          "Incorrect. Calculation error."
+        ],
+        "fullExplanation": "In a U-tube in static equilibrium, the pressure at the same horizontal level in the same continuous fluid must be equal. Taking the interface level as our reference, the pressure exerted by the water column equals the pressure exerted by the oil column: h(water) × ρ(water) × g = h(oil) × ρ(oil) × g. 10 × 1000 = 12.5 × ρ(oil). ρ(oil) = 10000 / 12.5 = 800 kg/m³."
+      },
+      {
+        "question": "According to the equation of continuity, if the diameter of a pipe is halved, the velocity of flow will:",
+        "options": [
+          "Be halved",
+          "Double",
+          "Become 4 times",
+          "Remain unchanged"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Velocity must increase to pass the same mass.",
+          "Incorrect. This happens if the area is halved, not the diameter.",
+          "Correct. Area ∝ d². If d is halved, A becomes 1/4. v ∝ 1/A, so v becomes 4 times.",
+          "Incorrect. Velocity must change to compensate for the area change."
+        ],
+        "fullExplanation": "The equation of continuity is A₁v₁ = A₂v₂. The cross-sectional area of a pipe is A = π(d/2)² ∝ d². If the diameter d is halved, the new area A₂ is 1/4 of the original area A₁. Thus, A₁v₁ = (A₁/4)v₂. Solving for v₂ gives v₂ = 4v₁. The velocity of flow becomes 4 times greater."
+      }
+    ]
+  },
+  {
+    "chapterName": "Thermal Properties of Matter",
+    "flashcards": [
+      {
+        "front": "What is the relation between Celsius (T(C)) and Fahrenheit (T(F)) scales?",
+        "back": "T(C) / 5 = (T(F) - 32) / 9"
+      },
+      {
+        "front": "What is the relation between linear (α), superficial (β), and volume (γ) expansion coefficients?",
+        "back": "α = β / 2 = γ / 3"
+      },
+      {
+        "front": "What is the formula for the variation of density with temperature?",
+        "back": "ρ' = ρ / (1 + γΔT) ≈ ρ(1 - γΔT)"
+      },
+      {
+        "front": "What is the Heat Capacity (S) of a body?",
+        "back": "The heat required to raise its temperature by 1°C: S = Q / ΔT."
+      },
+      {
+        "front": "What is specific heat capacity (c)?",
+        "back": "The heat required to raise the temperature of a unit mass by 1°C: c = Q / (mΔT)."
+      },
+      {
+        "front": "State the Principle of Calorimetry.",
+        "back": "Heat lost by the hot body = Heat gained by the cold body (assuming no heat loss to surroundings)."
+      },
+      {
+        "front": "What is Latent Heat (L)?",
+        "back": "The amount of heat required to change the state of a unit mass at constant temperature and pressure: Q = m L."
+      },
+      {
+        "front": "What is the formula for heat current (H) in steady state conduction?",
+        "back": "H = dQ/dt = k A (T₁ - T₂) / L, where k is thermal conductivity."
+      },
+      {
+        "front": "What is thermal resistance (R(th))?",
+        "back": "R(th) = L / (k A). Then, H = ΔT / R(th)."
+      },
+      {
+        "front": "What is the equivalent thermal conductivity of two rods in series (equal length, equal area)?",
+        "back": "k(eq) = (2 k₁ k₂) / (k₁ + k₂)"
+      },
+      {
+        "front": "What is the equivalent thermal conductivity of two rods in parallel (equal length, equal area)?",
+        "back": "k(eq) = (k₁ + k₂) / 2"
+      },
+      {
+        "front": "State Stefan-Boltzmann Law.",
+        "back": "The radiant power emitted by a black body is E = σ A T⁴."
+      },
+      {
+        "front": "State Wien's Displacement Law.",
+        "back": "λ(max) T = b, where b is Wien's constant (approx 2.898 × 10⁻³ m·K)."
+      },
+      {
+        "front": "State Newton's Law of Cooling.",
+        "back": "The rate of heat loss is proportional to the temperature difference: -dT/dt = K(T - T₀)."
+      },
+      {
+        "front": "What is anomalous expansion of water?",
+        "back": "Water contracts when heated from 0°C to 4°C. Its density is maximum at 4°C."
+      },
+      {
+        "front": "What is the apparent expansion coefficient of a liquid in a solid container?",
+        "back": "γ(apparent) = γ(real) - γ(container)"
+      },
+      {
+        "front": "What is an ideal black body?",
+        "back": "A body that perfectly absorbs all incident radiation of all wavelengths. Its absorptance a = 1."
+      },
+      {
+        "front": "What is Kirchhoff's Law of Radiation?",
+        "back": "At a given temperature, the ratio of emissive power to absorptive power is the same for all bodies, meaning a good absorber is a good emitter."
+      },
+      {
+        "front": "What is the radiant power emitted by a non-black body?",
+        "back": "E = e σ A T⁴, where e is the emissivity (0 < e < 1)."
+      },
+      {
+        "front": "What is the formula for calculating time taken to cool using the average temperature method?",
+        "back": "(T₁ - T₂) / t = K [ (T₁ + T₂)/2 - T₀ ]"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "At what temperature do the Celsius and Fahrenheit scales read the same numerical value?",
+        "options": [
+          "0°",
+          "-40°",
+          "40°",
+          "-273°"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. 0°C = 32°F.",
+          "Correct. C/5 = (F-32)/9. Setting x = x gives x/5 = (x-32)/9 => 9x = 5x - 160 => 4x = -160 => x = -40.",
+          "Incorrect. 40°C = 104°F.",
+          "Incorrect. -273°C is absolute zero, which is -459.67°F."
+        ],
+        "fullExplanation": "Let the common temperature be x. The relation is T(C)/5 = (T(F) - 32)/9. Substitute x for both T(C) and T(F): x/5 = (x - 32)/9. Cross-multiply to get 9x = 5(x - 32). This expands to 9x = 5x - 160. Subtract 5x from both sides: 4x = -160. Divide by 4: x = -40. Thus, -40°C = -40°F."
+      },
+      {
+        "question": "A pendulum clock keeps correct time at 20°C. If the temperature increases to 40°C, what happens to the clock?",
+        "options": [
+          "It gains time (runs fast)",
+          "It loses time (runs slow)",
+          "It keeps correct time",
+          "It stops"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. A longer period means it runs slower, not faster.",
+          "Correct. Higher temperature increases length L. Period T ∝ √L, so T increases. It takes longer per tick, thus losing time.",
+          "Incorrect. Thermal expansion changes the pendulum's length.",
+          "Incorrect. Small temperature changes won't stop the clock."
+        ],
+        "fullExplanation": "The time period of a simple pendulum is T = 2π√(L/g). When temperature increases, thermal expansion causes the length L of the pendulum to increase. Since T is proportional to the square root of L, the time period T also increases. A larger time period means the pendulum takes longer to complete one oscillation, so the clock runs slower and loses time."
+      },
+      {
+        "question": "10 g of ice at 0°C is mixed with 10 g of water at 10°C. What is the final temperature of the mixture? (L(f) = 80 cal/g, c(w) = 1 cal/g°C)",
+        "options": [
+          "5°C",
+          "0°C",
+          "10°C",
+          "2.5°C"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This assumes simple averaging without considering latent heat.",
+          "Correct. Heat from water cooling to 0°C is 100 cal. Heat to melt all ice is 800 cal. Only 1.25g of ice melts. Temp stays 0°C.",
+          "Incorrect. Heat is lost by the water, so it cannot stay at 10°C.",
+          "Incorrect. Phase change dominates."
+        ],
+        "fullExplanation": "First, calculate the maximum heat the water can provide by cooling to 0°C: Q(w) = m·c·ΔT = 10 × 1 × 10 = 100 cal. Next, calculate the heat required to melt all the ice: Q(ice) = m·L = 10 × 80 = 800 cal. Since Q(w) < Q(ice), the water doesn't have enough energy to melt all the ice. Thus, the final mixture is water and ice in equilibrium. The temperature must be 0°C."
+      },
+      {
+        "question": "Two perfectly black spheres A and B have radii R and 2R, and their surface temperatures are 2T and T respectively. What is the ratio of their radiated powers P(A)/P(B)?",
+        "options": [
+          "1 : 1",
+          "2 : 1",
+          "4 : 1",
+          "16 : 1"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Powers are not equal.",
+          "Incorrect. Miscalculated the T⁴ factor.",
+          "Correct. P ∝ A T⁴ ∝ R² T⁴. P(A)/P(B) = (R / 2R)² (2T / T)⁴ = (1/4) × 16 = 4.",
+          "Incorrect. This would be the ratio if radii were equal."
+        ],
+        "fullExplanation": "According to Stefan-Boltzmann Law, P = σ A T⁴. For a sphere, A = 4πR², so P ∝ R² T⁴. For sphere A: P(A) ∝ R²(2T)⁴ = 16 R² T⁴. For sphere B: P(B) ∝ (2R)²(T)⁴ = 4 R² T⁴. The ratio P(A)/P(B) = 16 R² T⁴ / 4 R² T⁴ = 4. The ratio is 4:1."
+      },
+      {
+        "question": "A black body radiates maximum energy at wavelength λ₀ at temperature T. If the temperature is doubled (2T), what is the new wavelength of maximum emission?",
+        "options": [
+          "2 λ₀",
+          "λ₀ / 2",
+          "16 λ₀",
+          "λ₀ / 16"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Wavelength and temperature are inversely proportional.",
+          "Correct. By Wien's displacement law, λ(max) T = constant. If T doubles, λ(max) must halve.",
+          "Incorrect. This misapplies the Stefan-Boltzmann T⁴ law.",
+          "Incorrect. This mixes up formulas for power and wavelength."
+        ],
+        "fullExplanation": "Wien's Displacement Law states that the wavelength corresponding to maximum spectral emissive power is inversely proportional to the absolute temperature: λ(max) T = b (constant). Therefore, λ₁ T₁ = λ₂ T₂. Substituting the given values: λ₀ T = λ₂ (2T). Solving for λ₂ gives λ₂ = λ₀ / 2."
+      },
+      {
+        "question": "Two rods of identical dimensions but different thermal conductivities k₁ and k₂ are joined in series. What is their equivalent thermal conductivity?",
+        "options": [
+          "(k₁ + k₂) / 2",
+          "√(k₁ k₂)",
+          "k₁ k₂ / (k₁ + k₂)",
+          "2 k₁ k₂ / (k₁ + k₂)"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. This is for parallel combination.",
+          "Incorrect. This is the geometric mean.",
+          "Incorrect. Missing a factor of 2.",
+          "Correct. R(eq) = R₁ + R₂. 2L/(k(eq) A) = L/(k₁ A) + L/(k₂ A). Solving gives 2/k(eq) = 1/k₁ + 1/k₂."
+        ],
+        "fullExplanation": "In series, the thermal resistances add: R(eq) = R₁ + R₂. Thermal resistance is R = L / (kA). The equivalent rod has length 2L and area A. So, 2L / (k(eq) A) = L / (k₁ A) + L / (k₂ A). Canceling L/A from all terms gives 2 / k(eq) = 1/k₁ + 1/k₂. Finding common denominator: 2 / k(eq) = (k₁ + k₂) / (k₁ k₂). Inverting gives k(eq) = 2 k₁ k₂ / (k₁ + k₂)."
+      },
+      {
+        "question": "A liquid takes 5 minutes to cool from 80°C to 50°C. The surrounding temperature is 20°C. How long will it take to cool from 60°C to 30°C?",
+        "options": [
+          "5 minutes",
+          "7.5 minutes",
+          "9 minutes",
+          "12 minutes"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Cooling rate slows down as it nears room temperature.",
+          "Incorrect. Miscalculation of the average temperature.",
+          "Correct. Rate1: 30/5 = K(65 - 20) => K = 6/45. Rate2: 30/t = K(45 - 20). 30/t = (6/45)×25 => t = 9 min.",
+          "Incorrect. Takes slightly less time than this."
+        ],
+        "fullExplanation": "Using Newton's Law of Cooling approximation: (T₁ - T₂)/t = K(T(avg) - T₀). \nCase 1: (80 - 50)/5 = K(65 - 20) => 30/5 = K(45) => 6 = 45K => K = 6/45 = 2/15.\nCase 2: (60 - 30)/t = K(45 - 20) => 30/t = K(25) => 30/t = (2/15) × 25 => 30/t = 50/15 = 10/3 => 10t = 90 => t = 9 minutes."
+      },
+      {
+        "question": "Why does a piece of iron feel colder than a piece of wood in winter, even if both are at the same temperature?",
+        "options": [
+          "Iron has a lower specific heat.",
+          "Iron is a better conductor of heat.",
+          "Iron absorbs more radiation.",
+          "Wood generates heat."
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Specific heat plays a role in temperature change, but conduction dominates the sensation.",
+          "Correct. Iron conducts heat away from your hand faster than wood, making it feel colder.",
+          "Incorrect. Radiation is negligible in this tactile sensation.",
+          "Incorrect. Wood does not generate heat."
+        ],
+        "fullExplanation": "Our sense of hot and cold depends on the rate of heat transfer from or to our skin. In winter, both iron and wood are at a lower temperature than the human body. Because iron has a much higher thermal conductivity than wood, it conducts heat away from the skin much more rapidly. This rapid loss of heat makes the iron feel colder."
+      },
+      {
+        "question": "When water is heated from 0°C to 10°C, its volume:",
+        "options": [
+          "Increases continuously",
+          "Decreases continuously",
+          "First decreases then increases",
+          "First increases then decreases"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Due to anomalous expansion, it initially contracts.",
+          "Incorrect. It expands after 4°C.",
+          "Correct. Water's density is maximum at 4°C, so volume decreases from 0 to 4°C, then increases from 4 to 10°C.",
+          "Incorrect. This is the behavior of density, not volume."
+        ],
+        "fullExplanation": "Water exhibits anomalous expansion between 0°C and 4°C. Unlike most liquids that expand upon heating, water contracts as it is heated from 0°C to 4°C. Therefore, its volume reaches a minimum (and density a maximum) at 4°C. When heated beyond 4°C (up to 10°C and further), it expands normally, meaning its volume increases."
+      },
+      {
+        "question": "A metal rod has a length of 1 m at 20°C. If its coefficient of linear expansion is 10⁻⁵ /°C, what is the change in its length when heated to 120°C?",
+        "options": [
+          "1 mm",
+          "0.1 mm",
+          "10 mm",
+          "0.01 mm"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. ΔL = L α ΔT = 1 × 10⁻⁵ × 100 = 10⁻³ m = 1 mm.",
+          "Incorrect. Calculated for ΔT = 10°C.",
+          "Incorrect. Calculated for ΔT = 1000°C.",
+          "Incorrect. Misplaced decimal point."
+        ],
+        "fullExplanation": "The change in length is given by ΔL = L α ΔT. Here, L = 1 m, α = 10⁻⁵ /°C, and ΔT = 120°C - 20°C = 100°C. Substituting these values gives ΔL = 1 × 10⁻⁵ × 100 = 10⁻³ m. Converting meters to millimeters (1 m = 1000 mm), we get ΔL = 10⁻³ × 10³ = 1 mm."
+      },
+      {
+        "question": "Heat is supplied to a block of ice at 0°C until it completely converts to steam at 100°C. Which segment of this process requires the most heat per gram?",
+        "options": [
+          "Melting ice to water at 0°C",
+          "Heating water from 0°C to 100°C",
+          "Boiling water to steam at 100°C",
+          "They all require the same amount"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Latent heat of fusion is 80 cal/g.",
+          "Incorrect. Sensible heat is 100 cal/g (1 cal/g°C × 100°C).",
+          "Correct. Latent heat of vaporization is 540 cal/g, which is the highest.",
+          "Incorrect. The heat requirements are significantly different."
+        ],
+        "fullExplanation": "Let's calculate the heat required per gram for each phase. 1. Melting ice: Q = mL(f) = 1 × 80 = 80 cal. 2. Heating water: Q = mcΔT = 1 × 1 × 100 = 100 cal. 3. Boiling water: Q = mL(v) = 1 × 540 = 540 cal. The vaporization phase requires 540 cal/g, which is by far the most energy-intensive step."
+      },
+      {
+        "question": "A bimetallic strip consists of brass and iron (α(brass) > α(iron)). If it is heated, what will happen?",
+        "options": [
+          "It will bend with brass on the convex side.",
+          "It will bend with iron on the convex side.",
+          "It will not bend, but just elongate.",
+          "It will break."
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Brass expands more, so it forms the outer (convex) curve.",
+          "Incorrect. Iron expands less, so it must be on the inner (concave) curve.",
+          "Incorrect. Unequal expansion forces it to bend.",
+          "Incorrect. The metals are bonded and elastic enough to bend."
+        ],
+        "fullExplanation": "A bimetallic strip curves when heated because the two metals expand at different rates. The metal with the higher coefficient of linear expansion (α) expands more for the same temperature increase. Since α(brass) > α(iron), the brass side expands more. To accommodate this extra length while bonded to the iron, the strip bends such that brass is on the outside (convex side) having the larger radius of curvature."
+      },
+      {
+        "question": "Which mode of heat transfer does not require a material medium?",
+        "options": [
+          "Conduction",
+          "Convection",
+          "Radiation",
+          "Both Conduction and Convection"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Conduction requires physical contact between molecules.",
+          "Incorrect. Convection involves the macroscopic movement of fluid particles.",
+          "Correct. Radiation transfers heat via electromagnetic waves, which travel through a vacuum.",
+          "Incorrect. Both of these require a medium."
+        ],
+        "fullExplanation": "Conduction relies on atomic/molecular collisions to transfer kinetic energy. Convection relies on the bulk movement of fluids (liquids or gases) due to density differences. Radiation, however, involves the emission and propagation of electromagnetic waves (specifically infrared). Electromagnetic waves do not require any physical medium and can travel through the vacuum of space, which is how the Earth receives heat from the Sun."
+      },
+      {
+        "question": "According to Kirchhoff's law of radiation, a body that is a good absorber of a particular wavelength is:",
+        "options": [
+          "A poor emitter of that wavelength",
+          "A good emitter of that wavelength",
+          "A perfect reflector",
+          "Transparent to that wavelength"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This violates thermodynamic equilibrium.",
+          "Correct. Kirchhoff's law states that absorptance equals emissivity (a = e). Good absorbers are good emitters.",
+          "Incorrect. A good absorber reflects very little.",
+          "Incorrect. A good absorber absorbs, it doesn't transmit."
+        ],
+        "fullExplanation": "Kirchhoff's Law of Thermal Radiation states that in thermal equilibrium, the emissivity of a body is equal to its absorptance at a given wavelength and temperature (e = a). This means if a material is highly efficient at absorbing a specific wavelength of light, it must also be highly efficient at emitting that same wavelength to maintain thermal equilibrium with its surroundings."
+      },
+      {
+        "question": "A beaker of liquid cools from 90°C to 80°C in 2 minutes. The surrounding temperature is 20°C. Will the time taken to cool from 80°C to 70°C be:",
+        "options": [
+          "Less than 2 minutes",
+          "Exactly 2 minutes",
+          "More than 2 minutes",
+          "Cannot be predicted"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Cooling rate decreases over time.",
+          "Incorrect. This would only be true if the rate of cooling were constant.",
+          "Correct. As the temperature difference with the surroundings decreases, the rate of cooling slows down, taking more time.",
+          "Incorrect. Newton's Law of Cooling predicts this behavior predictably."
+        ],
+        "fullExplanation": "According to Newton's Law of Cooling, the rate of heat loss is proportional to the temperature difference between the object and its surroundings (-dT/dt ∝ T - T₀). As the liquid cools from 90 to 80, the average temperature diff is 65°C. For 80 to 70, the average diff is 55°C. Since the difference is smaller, the rate of cooling is slower, and thus it takes more time (> 2 mins) for the same 10°C drop."
+      },
+      {
+        "question": "The apparent expansion of a liquid is observed to be zero. What can be concluded about the linear expansion coefficient of the container (α_c) and the volume expansion coefficient of the liquid (γ_L)?",
+        "options": [
+          "γ_L = α_c",
+          "γ_L = 2 α_c",
+          "γ_L = 3 α_c",
+          "γ_L = 0"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This mixes volume and linear coefficients incorrectly.",
+          "Incorrect. This would mean liquid expands at the same rate as area.",
+          "Correct. γ(apparent) = γ_L - γ(container). If it is 0, γ_L = γ(container). Since γ = 3α, γ_L = 3α_c.",
+          "Incorrect. Liquids generally expand when heated."
+        ],
+        "fullExplanation": "The apparent volume expansion of a liquid in a container is given by γ(apparent) = γ(L) - γ(c), where γ(L) is the real volume expansion of the liquid and γ(c) is the volume expansion of the container. If the apparent expansion is zero, then γ(L) = γ(c). We know the relation between volume (γ) and linear (α) expansion is γ = 3α. Therefore, for the container, γ(c) = 3α(c). Thus, γ(L) = 3α(c)."
+      },
+      {
+        "question": "If 1 g of steam at 100°C releases 540 calories of heat, what is its final state?",
+        "options": [
+          "Ice at 0°C",
+          "Water at 0°C",
+          "Water at 100°C",
+          "Steam at 0°C"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This requires losing much more heat (100 + 80 = 180 cal more).",
+          "Incorrect. Cooling water from 100 to 0 takes an additional 100 cal.",
+          "Correct. The latent heat of vaporization is 540 cal/g. Releasing this exactly converts it to water at the same temperature.",
+          "Incorrect. Steam doesn't exist at 0°C under normal atmospheric pressure."
+        ],
+        "fullExplanation": "The latent heat of vaporization (L_v) for water is 540 cal/g. This is the energy required to turn 1 g of water at 100°C into steam at 100°C. Conversely, if 1 g of steam at 100°C releases exactly 540 calories, it completely undergoes the phase change back into a liquid without any change in temperature. The final state is water at 100°C."
+      },
+      {
+        "question": "Three rods of identical cross-sectional area and made of the same material form the sides of an equilateral triangle ABC. Points A and B are maintained at 100°C and 0°C respectively. What is the steady state temperature of C?",
+        "options": [
+          "50°C",
+          "33.3°C",
+          "66.6°C",
+          "0°C"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Heat flows from A to C and C to B. Since the resistance of AC equals CB, T_C is exactly the average of 100 and 0, which is 50°C.",
+          "Incorrect. This would be the temp if two rods fed into one.",
+          "Incorrect. This would be the temp if one rod fed into two.",
+          "Incorrect. C must be between A and B."
+        ],
+        "fullExplanation": "The rods form an equilateral triangle. Heat flows from A (100°C) to B (0°C) via two paths: the direct rod AB, and the path through C (rod AC and rod CB in series). Since AC and CB are made of the same material and have the same dimensions, their thermal resistances are equal (R). Let the temperature at C be T. The heat current from A to C must equal the heat current from C to B. (100 - T) / R = (T - 0) / R. Solving this gives 100 - T = T => 2T = 100 => T = 50°C."
+      },
+      {
+        "question": "If the sun emits maximum radiation at wavelength 500 nm, and Wien's constant is 3 × 10⁻³ m·K, what is its approximate surface temperature?",
+        "options": [
+          "6000 K",
+          "5000 K",
+          "4000 K",
+          "1500 K"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. λ(max) T = b. T = (3 × 10⁻³) / (500 × 10⁻⁹) = 6000 K.",
+          "Incorrect. Miscalculation of the exponent.",
+          "Incorrect. This corresponds to a longer wavelength.",
+          "Incorrect. The sun is much hotter than this."
+        ],
+        "fullExplanation": "Wien's Displacement Law is λ(max) T = b. We are given λ(max) = 500 nm = 500 × 10⁻⁹ m = 5 × 10⁻⁷ m, and b = 3 × 10⁻³ m·K. Solving for T: T = b / λ(max) = (3 × 10⁻³) / (5 × 10⁻⁷) = (3 / 5) × 10⁴ = 0.6 × 10⁴ = 6000 K."
+      },
+      {
+        "question": "The coefficients of linear expansion of two different metals are α₁ and α₂. If the difference between their lengths is independent of temperature, what is the ratio of their original lengths L₁ / L₂?",
+        "options": [
+          "α₂ / α₁",
+          "α₁ / α₂",
+          "(α₁ + α₂) / (α₁ - α₂)",
+          "1"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. For L₁' - L₂' = L₁ - L₂, the expansions must be equal: L₁α₁ΔT = L₂α₂ΔT. Thus L₁/L₂ = α₂/α₁.",
+          "Incorrect. This is the inverse of the correct ratio.",
+          "Incorrect. This does not represent the correct algebraic manipulation.",
+          "Incorrect. This would only be true if α₁ = α₂."
+        ],
+        "fullExplanation": "Let the original lengths be L₁ and L₂. At a temperature change ΔT, the new lengths are L₁' = L₁(1 + α₁ΔT) and L₂' = L₂(1 + α₂ΔT). The problem states that L₁' - L₂' = L₁ - L₂. Substituting the new lengths: L₁ + L₁α₁ΔT - (L₂ + L₂α₂ΔT) = L₁ - L₂. Simplifying this gives L₁α₁ΔT - L₂α₂ΔT = 0, meaning L₁α₁ = L₂α₂. Rearranging for the ratio gives L₁ / L₂ = α₂ / α₁."
+      }
+    ]
+  },
+  {
+    "chapterName": "Thermodynamics",
+    "flashcards": [
+      {
+        "front": "State the Zeroth Law of Thermodynamics.",
+        "back": "If two systems are each in thermal equilibrium with a third system, they are in thermal equilibrium with each other."
+      },
+      {
+        "front": "State the First Law of Thermodynamics.",
+        "back": "ΔQ = ΔU + ΔW (Heat supplied to a system equals the change in its internal energy plus the work done by the system)."
+      },
+      {
+        "front": "What is the formula for work done by a gas during expansion?",
+        "back": "W = ∫ P dV (It is the area under the P-V curve)."
+      },
+      {
+        "front": "On what does the internal energy of an ideal gas depend?",
+        "back": "It depends only on its temperature (and amount of gas), not on pressure or volume."
+      },
+      {
+        "front": "What is the equation for an Isothermal process?",
+        "back": "PV = constant (since T is constant)."
+      },
+      {
+        "front": "What is the equation for an Adiabatic process?",
+        "back": "P V^γ = constant (where γ = Cp/Cv)."
+      },
+      {
+        "front": "What is the work done in an Isothermal process?",
+        "back": "W = nRT ln(V₂/V₁) = nRT ln(P₁/P₂)"
+      },
+      {
+        "front": "What is the work done in an Adiabatic process?",
+        "back": "W = (P₁V₁ - P₂V₂) / (γ - 1) = nR(T₁ - T₂) / (γ - 1)"
+      },
+      {
+        "front": "State Mayer's Formula.",
+        "back": "C(p) - C(v) = R (for one mole of an ideal gas)."
+      },
+      {
+        "front": "What is the specific heat capacity at constant volume (C(v)) for a monoatomic gas?",
+        "back": "C(v) = (3/2) R"
+      },
+      {
+        "front": "What is the specific heat capacity at constant volume (C(v)) for a diatomic gas?",
+        "back": "C(v) = (5/2) R"
+      },
+      {
+        "front": "What is the formula for the efficiency of a heat engine (η)?",
+        "back": "η = W / Q₁ = 1 - (Q₂ / Q₁), where Q₁ is heat absorbed and Q₂ is heat rejected."
+      },
+      {
+        "front": "What is the formula for the efficiency of a Carnot Engine?",
+        "back": "η = 1 - (T₂ / T₁), where T₂ is sink temperature and T₁ is source temperature (in Kelvin)."
+      },
+      {
+        "front": "What is the Coefficient of Performance (β) of a refrigerator?",
+        "back": "β = Q₂ / W = T₂ / (T₁ - T₂)"
+      },
+      {
+        "front": "State the Kelvin-Planck statement of the Second Law of Thermodynamics.",
+        "back": "No process is possible whose sole result is the absorption of heat from a reservoir and the complete conversion of the heat into work."
+      },
+      {
+        "front": "State the Clausius statement of the Second Law of Thermodynamics.",
+        "back": "No process is possible whose sole result is the transfer of heat from a colder object to a hotter object."
+      },
+      {
+        "front": "What is the relationship between Temperature and Volume in an adiabatic process?",
+        "back": "T V^(γ-1) = constant"
+      },
+      {
+        "front": "What is the molar specific heat (C) in a polytropic process PV^x = constant?",
+        "back": "C = C(v) + R / (1 - x)"
+      },
+      {
+        "front": "What is the change in internal energy (ΔU) for any thermodynamic process?",
+        "back": "ΔU = n C(v) ΔT"
+      },
+      {
+        "front": "How do the slopes of isothermal and adiabatic P-V curves compare?",
+        "back": "Slope of adiabat = γ × (Slope of isotherm). The adiabatic curve is steeper."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A gas expands, doing 30 J of work while 100 J of heat is supplied to it. What is the change in its internal energy?",
+        "options": [
+          "130 J",
+          "70 J",
+          "-70 J",
+          "33.3 J"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This adds heat and work together.",
+          "Correct. ΔQ = ΔU + ΔW. 100 = ΔU + 30, so ΔU = 70 J.",
+          "Incorrect. Change in internal energy is positive.",
+          "Incorrect. This is a random division."
+        ],
+        "fullExplanation": "According to the First Law of Thermodynamics, ΔQ = ΔU + ΔW. Heat supplied to the system is positive, so ΔQ = +100 J. Work done by the gas (expansion) is positive, so ΔW = +30 J. Substituting these values into the equation: 100 = ΔU + 30, which yields ΔU = 100 - 30 = 70 J."
+      },
+      {
+        "question": "One mole of an ideal gas expands isothermally at temperature T until its volume is doubled. What is the work done by the gas?",
+        "options": [
+          "RT ln(2)",
+          "RT / 2",
+          "2 RT",
+          "RT log(10)(2)"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. W = nRT ln(V₂/V₁). Here n=1 and V₂/V₁ = 2, so W = RT ln(2).",
+          "Incorrect. Work is not simply RT divided by the volume ratio.",
+          "Incorrect. Work is not linearly proportional to the volume ratio.",
+          "Incorrect. The formula uses the natural logarithm (base e), not base 10."
+        ],
+        "fullExplanation": "The work done in an isothermal expansion of an ideal gas is given by W = nRT ln(V₂/V₁). For one mole (n = 1) expanding to twice its original volume (V₂ = 2V₁), the volume ratio V₂/V₁ is 2. Therefore, W = (1)RT ln(2) = RT ln(2)."
+      },
+      {
+        "question": "A Carnot engine operates between a source at 327°C and a sink at 27°C. What is its efficiency?",
+        "options": [
+          "10%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. You must convert temperatures to Kelvin before calculating.",
+          "Incorrect. Recalculate using T₁=600K and T₂=300K.",
+          "Correct. T₁ = 600 K, T₂ = 300 K. η = 1 - 300/600 = 0.5 = 50%.",
+          "Incorrect. This would be the efficiency if the sink was much colder."
+        ],
+        "fullExplanation": "To calculate Carnot efficiency, temperatures must be in Kelvin. T₁ (source) = 327°C + 273 = 600 K. T₂ (sink) = 27°C + 273 = 300 K. The efficiency formula is η = 1 - (T₂ / T₁). Substituting the values gives η = 1 - (300 / 600) = 1 - 0.5 = 0.5. Expressed as a percentage, this is 50%."
+      },
+      {
+        "question": "A refrigerator operates between -3°C and 27°C. What is its theoretical Coefficient of Performance (β)?",
+        "options": [
+          "9",
+          "10",
+          "8",
+          "0.1"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. T₂ = 270 K, T₁ = 300 K. β = 270 / (300 - 270) = 270 / 30 = 9.",
+          "Incorrect. Calculation error.",
+          "Incorrect. Calculation error.",
+          "Incorrect. This is the inverse (related to engine efficiency)."
+        ],
+        "fullExplanation": "Convert the temperatures to Kelvin. The cold reservoir T₂ = -3°C + 273 = 270 K. The hot reservoir T₁ = 27°C + 273 = 300 K. The Coefficient of Performance for an ideal refrigerator is β = T₂ / (T₁ - T₂). Substituting the values: β = 270 / (300 - 270) = 270 / 30 = 9."
+      },
+      {
+        "question": "In an adiabatic expansion of an ideal gas, how is the temperature T related to the volume V?",
+        "options": [
+          "T V^γ = constant",
+          "T V^(γ-1) = constant",
+          "T^(γ) V = constant",
+          "T P^(γ-1) = constant"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This mixes up P and T.",
+          "Correct. For adiabatic process, P V^γ = const. Using P = nRT/V, (T/V)V^γ = const, so T V^(γ-1) = const.",
+          "Incorrect. Not the correct mathematical relationship.",
+          "Incorrect. The relation involving T and P is T^γ P^(1-γ) = const."
+        ],
+        "fullExplanation": "The basic adiabatic equation is P V^γ = constant. From the ideal gas law, P = nRT/V. Substituting this into the adiabatic equation gives (nRT/V) V^γ = constant. Since n and R are constants, we can divide them out to get T V^(γ) / V = constant. This simplifies to T V^(γ-1) = constant."
+      },
+      {
+        "question": "What is the molar specific heat of any ideal gas undergoing an isothermal process?",
+        "options": [
+          "Zero",
+          "Infinity",
+          "C(p)",
+          "C(v)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Molar specific heat is zero for an adiabatic process.",
+          "Correct. C = ΔQ / (nΔT). In an isothermal process ΔT = 0 while ΔQ ≠ 0, making C infinite.",
+          "Incorrect. This is for constant pressure.",
+          "Incorrect. This is for constant volume."
+        ],
+        "fullExplanation": "Molar specific heat C is defined as C = ΔQ / (n ΔT). In an isothermal process, the temperature remains constant, meaning ΔT = 0. Since heat ΔQ is being exchanged to do work (ΔQ = ΔW ≠ 0), dividing a non-zero number by zero yields infinity. Thus, the specific heat capacity is infinite."
+      },
+      {
+        "question": "For a monoatomic ideal gas, what is the ratio of specific heats γ = C(p) / C(v)?",
+        "options": [
+          "1.4",
+          "1.67",
+          "1.33",
+          "1.28"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. 1.4 (or 7/5) is for a diatomic gas.",
+          "Correct. C(v) = 3R/2, C(p) = 5R/2. γ = 5/3 ≈ 1.67.",
+          "Incorrect. 1.33 (or 4/3) is for a polyatomic gas.",
+          "Incorrect. This value doesn't match standard ideal gas models."
+        ],
+        "fullExplanation": "For a monoatomic gas, the degrees of freedom f = 3. C(v) = (f/2)R = (3/2)R. Using Mayer's relation C(p) = C(v) + R, we get C(p) = (3/2)R + R = (5/2)R. The ratio γ = C(p) / C(v) = ((5/2)R) / ((3/2)R) = 5/3 ≈ 1.67."
+      },
+      {
+        "question": "In a free expansion of an ideal gas in an isolated container (vacuum), which of the following is true?",
+        "options": [
+          "ΔW > 0, ΔQ = 0, ΔU < 0",
+          "ΔW = 0, ΔQ = 0, ΔU = 0",
+          "ΔW = 0, ΔQ > 0, ΔU > 0",
+          "ΔW < 0, ΔQ = 0, ΔU > 0"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The gas expands against zero external pressure, so work is zero.",
+          "Correct. Since it's in a vacuum, P(ext) = 0 so ΔW = 0. Isolated means ΔQ = 0. Thus ΔU = 0.",
+          "Incorrect. Isolated means no heat transfer.",
+          "Incorrect. The gas expands, but against no force, so work is zero, not negative."
+        ],
+        "fullExplanation": "Free expansion occurs when a gas expands into a vacuum. Because the external pressure is zero, the gas does no work (ΔW = 0). The container is isolated, so there is no heat exchange with the surroundings (ΔQ = 0). By the First Law of Thermodynamics (ΔQ = ΔU + ΔW), it follows that 0 = ΔU + 0, which means ΔU = 0. Since ΔU = 0, the temperature of an ideal gas remains constant."
+      },
+      {
+        "question": "If an ideal gas undergoes an adiabatic expansion, what happens to its internal energy?",
+        "options": [
+          "It increases",
+          "It decreases",
+          "It remains constant",
+          "It becomes zero"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Internal energy increases during adiabatic compression.",
+          "Correct. ΔQ = 0, so ΔW = -ΔU. Expansion means ΔW > 0, so ΔU must be negative (decreases).",
+          "Incorrect. This happens in an isothermal expansion.",
+          "Incorrect. It does not drop to absolute zero."
+        ],
+        "fullExplanation": "In an adiabatic process, there is no heat exchange, so ΔQ = 0. The First Law of Thermodynamics gives 0 = ΔU + ΔW. During expansion, the gas does positive work (ΔW > 0). Therefore, ΔU = -ΔW. Since ΔW is positive, ΔU must be negative, meaning the internal energy of the gas decreases. Consequently, the temperature of the gas also drops."
+      },
+      {
+        "question": "1 mole of an ideal gas is heated at constant pressure. The work done by the gas when its temperature increases by ΔT is:",
+        "options": [
+          "C(v) ΔT",
+          "C(p) ΔT",
+          "R ΔT",
+          "Zero"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the change in internal energy.",
+          "Incorrect. This is the total heat supplied.",
+          "Correct. Work done W = PΔV. From PV = nRT, PΔV = nRΔT. Since n = 1, W = RΔT.",
+          "Incorrect. Work is zero in an isochoric (constant volume) process, not isobaric."
+        ],
+        "fullExplanation": "For an isobaric (constant pressure) process, the work done by the gas is W = P ΔV. Using the ideal gas law PV = nRT, a change in volume and temperature at constant pressure is related by P ΔV = nR ΔT. Since we have 1 mole of gas (n = 1), the work done is W = 1 × R × ΔT = R ΔT."
+      },
+      {
+        "question": "What is the molar specific heat C for a gas undergoing a polytropic process defined by PV² = constant? (Given γ = 1.4 for the gas)",
+        "options": [
+          "C = C(v) - R",
+          "C = C(v) + R",
+          "C = C(v) + R/2",
+          "C = C(v) - R/2"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. The polytropic exponent x = 2. Formula: C = C(v) + R/(1-x). So C = C(v) + R/(1-2) = C(v) - R.",
+          "Incorrect. This would be true if x = 0 (isobaric).",
+          "Incorrect. This would mean x = -1.",
+          "Incorrect. This would mean x = 3."
+        ],
+        "fullExplanation": "A polytropic process follows the equation PV^x = constant. Here, x = 2. The molar specific heat for a polytropic process is given by C = C(v) + R / (1 - x). Substituting x = 2 into the formula: C = C(v) + R / (1 - 2) = C(v) + R / (-1) = C(v) - R."
+      },
+      {
+        "question": "A cyclic process ABCA is shown on a P-V diagram. What does the area enclosed by the cycle represent?",
+        "options": [
+          "Change in internal energy",
+          "Total heat exchanged",
+          "Net work done",
+          "Both net work done and total heat exchanged"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. The change in internal energy for any cyclic process is zero.",
+          "Incorrect. While it represents heat, it also represents work.",
+          "Incorrect. While it represents work, it also represents heat.",
+          "Correct. In a cycle ΔU = 0, so ΔQ = ΔW. The area represents net work ΔW, which equals net heat ΔQ."
+        ],
+        "fullExplanation": "The area enclosed by a curve on a P-V diagram represents the net work done (ΔW) during the cyclic process. Additionally, because the process is cyclic, the initial and final states are the same, meaning the change in internal energy is zero (ΔU = 0). By the First Law of Thermodynamics (ΔQ = ΔU + ΔW), ΔQ = ΔW. Therefore, the area represents both the net work done and the total net heat exchanged."
+      },
+      {
+        "question": "A diatomic ideal gas is compressed adiabatically to 1/32 of its original volume. If its initial temperature is T₁, what is its final temperature? (γ = 1.4)",
+        "options": [
+          "2 T₁",
+          "4 T₁",
+          "8 T₁",
+          "16 T₁"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would require a volume ratio of 1/4.",
+          "Correct. T₂ = T₁(V₁/V₂)^(γ-1) = T₁(32)^(1.4-1) = T₁(32)^0.4 = T₁(2⁵)^(2/5) = 4T₁.",
+          "Incorrect. This would require a volume ratio of 1/128.",
+          "Incorrect. This would require an even larger compression."
+        ],
+        "fullExplanation": "For an adiabatic process, T₁ V₁^(γ-1) = T₂ V₂^(γ-1). Thus, T₂ = T₁ (V₁/V₂)^(γ-1). We are given V₁/V₂ = 32 and γ = 1.4 = 7/5. The exponent is γ - 1 = 7/5 - 1 = 2/5. So, T₂ = T₁ (32)^(2/5). Since 32 = 2⁵, (32)^(2/5) = (2⁵)^(2/5) = 2² = 4. Therefore, T₂ = 4 T₁."
+      },
+      {
+        "question": "Two moles of a monoatomic gas (C(v) = 1.5R) and three moles of a diatomic gas (C(v) = 2.5R) are mixed. What is the C(v) of the mixture?",
+        "options": [
+          "2.0 R",
+          "2.1 R",
+          "1.9 R",
+          "2.5 R"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the simple average.",
+          "Correct. C(v)mix = (n₁C(v₁) + n₂C(v₂)) / (n₁+n₂) = (2×1.5R + 3×2.5R) / 5 = (3R + 7.5R)/5 = 10.5R/5 = 2.1R.",
+          "Incorrect. Calculation error.",
+          "Incorrect. This is the C(v) of the diatomic gas alone."
+        ],
+        "fullExplanation": "The molar specific heat at constant volume for a gas mixture is given by the weighted average: C(v)mix = (n₁C(v₁) + n₂C(v₂)) / (n₁ + n₂). Here, n₁ = 2, C(v₁) = 1.5R, n₂ = 3, C(v₂) = 2.5R. C(v)mix = (2(1.5R) + 3(2.5R)) / (2 + 3) = (3R + 7.5R) / 5 = 10.5R / 5 = 2.1R."
+      },
+      {
+        "question": "At a given point on a P-V diagram, what is the ratio of the slope of an adiabatic curve to the slope of an isothermal curve passing through that point?",
+        "options": [
+          "1 / γ",
+          "γ",
+          "γ - 1",
+          "1"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The adiabatic curve is steeper, not shallower.",
+          "Correct. Isothermal slope = -P/V. Adiabatic slope = -γP/V. The ratio is γ.",
+          "Incorrect. This does not match the derivative ratio.",
+          "Incorrect. They do not have the same slope."
+        ],
+        "fullExplanation": "For an isothermal process, PV = const. Differentiating gives P dV + V dP = 0, so the slope (dP/dV) = -P/V. For an adiabatic process, P V^γ = const. Differentiating gives (dP)V^γ + P(γ V^(γ-1) dV) = 0. Solving for the slope gives (dP/dV) = -γ P/V. The ratio of the adiabatic slope to the isothermal slope is (-γ P/V) / (-P/V) = γ."
+      },
+      {
+        "question": "A heat engine absorbs 1000 J of heat from a hot reservoir and rejects 400 J to a cold reservoir. What is the work done by the engine and its efficiency?",
+        "options": [
+          "600 J, 60%",
+          "400 J, 40%",
+          "1400 J, 71%",
+          "600 J, 40%"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Work = Q₁ - Q₂ = 1000 - 400 = 600 J. Efficiency = W/Q₁ = 600/1000 = 60%.",
+          "Incorrect. Work is the difference, not the rejected heat.",
+          "Incorrect. Work cannot exceed absorbed heat.",
+          "Incorrect. Efficiency is W/Q₁, not Q₂/Q₁."
+        ],
+        "fullExplanation": "By the conservation of energy, the work done W by the engine equals the heat absorbed Q₁ minus the heat rejected Q₂. W = 1000 J - 400 J = 600 J. The efficiency η is defined as the ratio of work done to heat absorbed: η = W / Q₁ = 600 / 1000 = 0.60. Converting to a percentage gives 60%."
+      },
+      {
+        "question": "Which statement best describes the internal energy of an ideal gas?",
+        "options": [
+          "It depends on pressure and volume.",
+          "It depends only on its temperature.",
+          "It is zero at 0°C.",
+          "It includes intermolecular potential energy."
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. For a real gas this might be true, but not an ideal gas.",
+          "Correct. Ideal gas molecules have no intermolecular forces, so internal energy is purely kinetic, depending only on T.",
+          "Incorrect. It is zero at absolute zero (0 K), not 0°C.",
+          "Incorrect. Ideal gases assume no intermolecular forces, hence zero potential energy."
+        ],
+        "fullExplanation": "The model of an ideal gas assumes that there are no intermolecular forces between the gas molecules. Therefore, there is no potential energy associated with their positions. The internal energy consists entirely of the translational (and rotational/vibrational for polyatomic) kinetic energy of the molecules. Since average kinetic energy is directly proportional to absolute temperature, the internal energy of an ideal gas depends exclusively on its temperature."
+      },
+      {
+        "question": "An ideal gas undergoes a process where pressure is directly proportional to volume (P ∝ V). What is the molar heat capacity C of the gas if it is monoatomic?",
+        "options": [
+          "2 R",
+          "1.5 R",
+          "0.5 R",
+          "3 R"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. P ∝ V means PV⁻¹ = const, so x = -1. C = C(v) + R/(1-x) = 1.5R + R/2 = 2R.",
+          "Incorrect. This is C(v).",
+          "Incorrect. This is the work part R/(1-x) alone.",
+          "Incorrect. Miscalculation."
+        ],
+        "fullExplanation": "If P ∝ V, then P = kV, which can be written as P V⁻¹ = k (constant). This is a polytropic process PV^x = constant with x = -1. The molar heat capacity is C = C(v) + R / (1 - x). For a monoatomic gas, C(v) = (3/2)R = 1.5R. Substituting x = -1: C = 1.5R + R / (1 - (-1)) = 1.5R + R / 2 = 1.5R + 0.5R = 2R."
+      },
+      {
+        "question": "A Carnot engine has an efficiency of 1/6. When the temperature of the sink is reduced by 62°C, its efficiency is doubled. What is the temperature of the source?",
+        "options": [
+          "372 K",
+          "310 K",
+          "99 K",
+          "273 K"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. 1/6 = 1 - T₂/T₁. 2/6 = 1 - (T₂-62)/T₁. Solving yields T₁ = 372 K.",
+          "Incorrect. This is the original temperature of the sink.",
+          "Incorrect. This is a random value.",
+          "Incorrect. This is 0°C."
+        ],
+        "fullExplanation": "Let T₁ be source temp and T₂ be sink temp. Initially: η = 1 - T₂/T₁ = 1/6. This gives T₂/T₁ = 5/6, so T₂ = (5/6)T₁. When the sink temperature is reduced by 62°C (or 62 K), the new efficiency is 2(1/6) = 1/3. So, 1/3 = 1 - (T₂ - 62)/T₁. This gives (T₂ - 62)/T₁ = 2/3. Substituting T₂ = (5/6)T₁ into this equation: ((5/6)T₁ - 62) / T₁ = 2/3. Multiplying by T₁: (5/6)T₁ - 62 = (2/3)T₁. (5/6 - 4/6)T₁ = 62. (1/6)T₁ = 62. T₁ = 62 × 6 = 372 K."
+      },
+      {
+        "question": "If a Carnot engine is operated in reverse, it functions as a refrigerator. If the engine's efficiency was 20%, what is the Coefficient of Performance (β) of the refrigerator?",
+        "options": [
+          "5",
+          "4",
+          "0.2",
+          "0.8"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would be 1/η.",
+          "Correct. β = (1 - η) / η = (1 - 0.2) / 0.2 = 0.8 / 0.2 = 4.",
+          "Incorrect. This is the efficiency.",
+          "Incorrect. This is 1 - η."
+        ],
+        "fullExplanation": "The efficiency of a Carnot engine is η = W / Q₁ = (Q₁ - Q₂) / Q₁ = 1 - Q₂/Q₁. The Coefficient of Performance for the reversed cycle (refrigerator) is β = Q₂ / W = Q₂ / (Q₁ - Q₂). We can relate β and η mathematically: β = (Q₂/Q₁) / (1 - Q₂/Q₁) = (1 - η) / η. Given η = 20% = 0.2: β = (1 - 0.2) / 0.2 = 0.8 / 0.2 = 4."
+      }
+    ]
+  }
+]

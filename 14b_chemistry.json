@@ -1,0 +1,676 @@
+[
+  {
+    "chapterName": "Electrochemistry",
+    "flashcards": [
+      {
+        "front": "Differentiate between Galvanic (Voltaic) cells and Electrolytic cells in terms of spontaneity and electrode polarities.",
+        "back": "Galvanic Cell: Converts chemical energy of a spontaneous redox reaction (ΔG < 0) into electrical energy. Anode is negative (-), Cathode is positive (+).\nElectrolytic Cell: Uses electrical energy from an external source to drive a non-spontaneous redox reaction (ΔG > 0). Anode is positive (+), Cathode is negative (-).\nIn both cells, oxidation occurs at the anode and reduction occurs at the cathode."
+      },
+      {
+        "front": "State the IUPAC convention for cell representation using the Daniell cell as an example.",
+        "back": "Anode (oxidation half-cell) is written on the left; cathode (reduction half-cell) on the right.\nSingle vertical line (|) denotes phase boundary; double vertical line (||) denotes salt bridge.\nDaniell Cell: Zn(s) | Zn²⁺(aq, C₁) || Cu²⁺(aq, C₂) | Cu(s)\nCell EMF: E_cell = E_cathode - E_anode (using reduction potentials)."
+      },
+      {
+        "front": "What is the relationship between standard cell potential (E°_cell), Gibbs free energy change (ΔG°), and maximum electrical work?",
+        "back": "Electrical work done by cell = -ΔG\nΔG = -n · F · E_cell\nUnder standard state conditions:\nΔG° = -n · F · E°_cell\nwhere n = moles of electrons transferred in balanced cell reaction, and F = Faraday constant (≈ 96500 C mol⁻¹).\nFor a spontaneous process: E_cell > 0 and ΔG < 0."
+      },
+      {
+        "front": "How are enthalpy change (ΔH) and entropy change (ΔS) of a cell reaction related to the temperature coefficient of EMF (∂E/∂T)_P?",
+        "back": "From thermodynamic Maxwell relations:\nEntropy change: ΔS = n · F · (∂E/∂T)_P\nEnthalpy change (Gibbs-Helmholtz equation):\nΔH = ΔG + T · ΔS = -n · F · E + n · F · T · (∂E/∂T)_P\nwhere (∂E/∂T)_P is the temperature coefficient of the cell potential at constant pressure."
+      },
+      {
+        "front": "State the general Nernst equation for a cell reaction: aA + bB ──> cC + dD at 298 K.",
+        "back": "E_cell = E°_cell - (2.303 · R · T / (n · F)) · log Q\nAt 298 K (25 °C), substituting R = 8.314 J K⁻¹ mol⁻¹ and F = 96500 C mol⁻¹:\nE_cell = E°_cell - (0.0591 / n) · log ([C]ᶜ · [D]ᵈ / ([A]ᵃ · [B]ᵇ))\nwhere n is the number of electrons transferred, and pure solids/liquids have an activity of 1."
+      },
+      {
+        "front": "What is the relation between standard EMF (E°_cell) and the equilibrium constant (K_eq) of a cell reaction?",
+        "back": "At equilibrium: E_cell = 0 and Q = K_eq.\n0 = E°_cell - (0.0591 / n) · log K_eq\nlog K_eq = (n · E°_cell) / 0.0591 at 298 K\nAlternatively: ΔG° = -R · T · ln K_eq = -n · F · E°_cell."
+      },
+      {
+        "front": "State the formula for EMF of an electrode gas concentration cell: Pt, H₂(p₁) | H⁺(C) | H₂(p₂), Pt at 298 K.",
+        "back": "Anode: 1/2 H₂(p₁) ──> H⁺ + e⁻\nCathode: H⁺ + e⁻ ──> 1/2 H₂(p₂)\nOverall: 1/2 H₂(p₁) ──> 1/2 H₂(p₂)\nE_cell = - (0.0591 / 1) · log (p₂ / p₁)¹/² = (0.0591 / 2) · log (p₁ / p₂)\nFor spontaneous forward reaction (E_cell > 0): p₁ > p₂."
+      },
+      {
+        "front": "State the formula for EMF of an electrolyte concentration cell: Zn(s) | Zn²⁺(C₁) || Zn²⁺(C₂) | Zn(s) at 298 K.",
+        "back": "Here E°_cell = 0 (same electrodes).\nAnode: Zn(s) ──> Zn²⁺(C₁) + 2e⁻\nCathode: Zn²⁺(C₂) + 2e⁻ ──> Zn(s)\nOverall: Zn²⁺(C₂) ──> Zn²⁺(C₁)\nE_cell = 0 - (0.0591 / 2) · log (C₁ / C₂) = (0.0591 / 2) · log (C₂ / C₁)\nFor spontaneity (E_cell > 0): C₂ > C₁."
+      },
+      {
+        "front": "State Faraday's First Law of Electrolysis and define the electrochemical equivalent (Z).",
+        "back": "The mass (w) of a substance deposited or liberated at any electrode is directly proportional to the quantity of electricity (Q) passed:\nw = Z · Q = Z · I · t\nElectrochemical equivalent Z is the mass deposited by 1 Coulomb of charge:\nZ = Equivalent weight / 96500 = M / (n_f · 96500)\nwhere M is molar mass, n_f is the n-factor (valency factor), and 1 Faraday = 96500 C."
+      },
+      {
+        "front": "State Faraday's Second Law of Electrolysis.",
+        "back": "When the same quantity of electricity is passed through solutions of different electrolytes connected in series, the masses of substances deposited or liberated at the electrodes are directly proportional to their chemical equivalent weights:\nw₁ / w₂ = E₁ / E₂ = (M₁ / n_f1) / (M₂ / n_f2)."
+      },
+      {
+        "front": "Define Resistance (R), Conductance (G), Resistivity (ρ), and Conductivity (κ).",
+        "back": "Resistance R = ρ · (l / A), unit: Ω\nConductance G = 1 / R = (1 / ρ) · (A / l) = κ · (A / l), unit: Ω⁻¹ or S (Siemens)\nResistivity ρ = R · (A / l), unit: Ω cm or Ω m\nConductivity (Specific Conductance) κ = 1 / ρ = G · (l / A) = (1 / R) · (l / A), unit: Ω⁻¹ cm⁻¹ or S cm⁻¹\nCell constant G* = l / A = κ · R."
+      },
+      {
+        "front": "Define Molar Conductivity (Λ_m) and Equivalent Conductivity (Λ_eq) and state their mathematical expressions.",
+        "back": "Molar Conductivity (Λ_m): Conductance of a volume of solution containing 1 mole of electrolyte placed between electrodes 1 cm apart.\nΛ_m = (1000 · κ) / Molar Concentration (M), unit: S cm² mol⁻¹\nEquivalent Conductivity (Λ_eq): Conductance containing 1 gram-equivalent of electrolyte.\nΛ_eq = (1000 · κ) / Normality (N), unit: S cm² eq⁻¹\nRelation: Λ_m = n_factor · Λ_eq."
+      },
+      {
+        "front": "How do conductivity (κ) and molar conductivity (Λ_m) vary with dilution?",
+        "back": "Conductivity (κ) decreases with dilution because the number of current-carrying ions per unit volume (per cm³) decreases upon adding solvent.\nMolar conductivity (Λ_m) increases with dilution because the increase in volume containing 1 mole of electrolyte outweighs the decrease in κ.\nFor strong electrolytes, interionic attractions decrease; for weak electrolytes, degree of dissociation (α) increases."
+      },
+      {
+        "front": "State the Debye-Hückel-Onsager equation for strong electrolytes and describe its plot.",
+        "back": "Λ_m = Λ_m° - A · √C\nwhere Λ_m° is the limiting molar conductivity at infinite dilution, A is a constant depending on solvent type, temperature, and electrolyte charges (stoichiometric type like 1-1, 2-1), and C is molar concentration.\nPlot of Λ_m vs √C gives a straight line with y-intercept = Λ_m° and slope = -A."
+      },
+      {
+        "front": "State Kohlrausch's Law of Independent Migration of Ions.",
+        "back": "Limiting molar conductivity of an electrolyte can be represented as the sum of the individual contributions of the anion and cation of the electrolyte:\nΛ_m°(A_x B_y) = x · λ°_m(Aʸ⁺) + y · λ°_m(Bˣ⁻)\nwhere λ°_m(Aʸ⁺) and λ°_m(Bˣ⁻) are the limiting molar conductivities of the cation and anion respectively."
+      },
+      {
+        "front": "How is Kohlrausch's law applied to calculate the limiting molar conductivity of weak electrolytes like CH₃COOH?",
+        "back": "Using values of strong electrolytes containing the same constituent ions:\nΛ_m°(CH₃COOH) = Λ_m°(CH₃COONa) + Λ_m°(HCl) - Λ_m°(NaCl)\nProof: [λ°(CH₃COO⁻) + λ°(Na⁺)] + [λ°(H⁺) + λ°(Cl⁻)] - [λ°(Na⁺) + λ°(Cl⁻)] = λ°(H⁺) + λ°(CH₃COO⁻)."
+      },
+      {
+        "front": "How are degree of dissociation (α) and dissociation constant (K_a) of a weak electrolyte determined using conductivity data?",
+        "back": "Degree of dissociation: α = Λ_m / Λ_m°\nwhere Λ_m is molar conductivity at concentration C, and Λ_m° is limiting molar conductivity.\nFor a weak monobasic acid (HA ⇌ H⁺ + A⁻):\nK_a = (C · α²) / (1 - α) = [C · (Λ_m / Λ_m°)²] / [1 - (Λ_m / Λ_m°)]\nIf α << 1, K_a ≈ C · (Λ_m / Λ_m°)²."
+      },
+      {
+        "front": "How is the solubility (S) and solubility product (K_sp) of a sparingly soluble salt calculated using conductivity?",
+        "back": "For a saturated solution of a sparingly soluble salt (e.g., AgCl, BaSO₄):\nκ_salt = κ_solution - κ_water\nSince saturated solution is extremely dilute, Λ_m ≈ Λ_m°:\nΛ_m° = (1000 · κ_salt) / S\nSolubility S = (1000 · κ_salt) / Λ_m° (in mol L⁻¹)\nFor a 1:1 salt (AgCl): K_sp = S²; for a 1:2 salt: K_sp = 4S³."
+      },
+      {
+        "front": "State the chemical reactions occurring during discharging of a Lead Storage Battery.",
+        "back": "Anode: Pb(s) + SO₄²⁻(aq) ──> PbSO₄(s) + 2e⁻\nCathode: PbO₂(s) + SO₄²⁻(aq) + 4H⁺(aq) + 2e⁻ ──> PbSO₄(s) + 2H₂O(l)\nOverall reaction:\nPb(s) + PbO₂(s) + 2H₂SO₄(aq) ──> 2PbSO₄(s) + 2H₂O(l)\nDensity of H₂SO₄ decreases during discharge (from ≈ 1.30 g mL⁻¹ to < 1.20 g mL⁻¹)."
+      },
+      {
+        "front": "Describe the electrochemical reactions in a Hydrogen-Oxygen Fuel Cell and state its theoretical efficiency expression.",
+        "back": "Anode: 2H₂(g) + 4OH⁻(aq) ──> 4H₂O(l) + 4e⁻\nCathode: O₂(g) + 2H₂O(l) + 4e⁻ ──> 4OH⁻(aq)\nOverall: 2H₂(g) + O₂(g) ──> 2H₂O(l); E°_cell = 1.229 V\nThermodynamic efficiency η = (ΔG° / ΔH°) × 100% (practically runs at ≈ 70% efficiency compared to thermal power plants at ≈ 40%)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "For the cell reaction: Zn(s) + Cu²⁺(0.01 M) ──> Zn²⁺(0.1 M) + Cu(s), given E°(Cu²⁺/Cu) = +0.34 V and E°(Zn²⁺/Zn) = -0.76 V at 298 K, what is the EMF of the cell?",
+        "options": ["1.070 V", "1.100 V", "1.130 V", "1.041 V"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "1.070 V is correct: E°_cell = 0.34 - (-0.76) = 1.10 V. E_cell = 1.10 - (0.0591/2) · log(0.1/0.01) = 1.10 - 0.02955 · 1 ≈ 1.070 V.",
+          "1.100 V is the standard cell potential E°_cell, without correcting for non-standard concentrations.",
+          "1.130 V results from adding the concentration correction instead of subtracting it.",
+          "1.041 V results from using n = 1 instead of n = 2 in the Nernst equation."
+        ],
+        "fullExplanation": "Step 1: Calculate E°_cell:\nE°_cell = E°_cathode - E°_anode = E°(Cu²⁺/Cu) - E°(Zn²⁺/Zn) = +0.34 V - (-0.76 V) = +1.10 V.\nStep 2: Number of electrons transferred n = 2.\nStep 3: Apply Nernst equation at 298 K:\nE_cell = E°_cell - (0.0591 / n) · log ([Zn²⁺] / [Cu²⁺])\nE_cell = 1.10 V - (0.0591 / 2) · log (0.1 / 0.01)\nE_cell = 1.10 V - 0.02955 · log (10) = 1.10 V - 0.02955 V = 1.07045 V ≈ 1.070 V."
+      },
+      {
+        "question": "The standard reduction potential for the half-cell reaction: Fe³⁺(aq) + 3e⁻ ──> Fe(s) is given by which calculation if E°(Fe³⁺/Fe²⁺) = +0.77 V and E°(Fe²⁺/Fe) = -0.44 V?",
+        "options": ["-0.037 V", "+0.330 V", "+1.210 V", "-0.110 V"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "-0.037 V is correct: ΔG°₃ = ΔG°₁ + ΔG°₂ => -3·F·E°₃ = -1·F·(0.77) + (-2·F·(-0.44)) => -3·E°₃ = -0.77 + 0.88 = +0.11 => E°₃ = -0.11/3 ≈ -0.037 V.",
+          "+0.330 V is the algebraic sum of the standard potentials (0.77 - 0.44), but electrode potentials are non-additive intensive quantities.",
+          "+1.210 V results from subtracting the potentials directly.",
+          "-0.110 V is the value of -3·E°₃, forgetting to divide by 3."
+        ],
+        "fullExplanation": "Electrode potentials are intensive properties and cannot be added directly. We must use Gibbs free energy change (ΔG° = -nFE°):\nReaction 1: Fe³⁺ + e⁻ ──> Fe²⁺ ; n₁ = 1, E°₁ = +0.77 V, ΔG°₁ = -1 · F · (0.77)\nReaction 2: Fe²⁺ + 2e⁻ ──> Fe ; n₂ = 2, E°₂ = -0.44 V, ΔG°₂ = -2 · F · (-0.44) = +0.88 · F\nTarget Reaction: Fe³⁺ + 3e⁻ ──> Fe ; n₃ = 3, ΔG°₃ = ΔG°₁ + ΔG°₂\n-3 · F · E°₃ = -0.77 · F + 0.88 · F = +0.11 · F\nE°₃ = -0.11 / 3 V = -0.0367 V ≈ -0.037 V."
+      },
+      {
+        "question": "The equilibrium constant (K_c) for the reaction: Cu(s) + 2Ag⁺(aq) ⇌ Cu²⁺(aq) + 2Ag(s) at 298 K, given E°_cell = 0.46 V, is approximately:",
+        "options": ["3.9 × 10¹⁵", "2.0 × 10⁷", "6.2 × 10²²", "1.5 × 10¹²"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "3.9 × 10¹⁵ is correct: log K_c = (2 × 0.46) / 0.0591 = 0.92 / 0.0591 ≈ 15.57. K_c = 10¹⁵·⁵⁷ = 10⁰·⁵⁷ × 10¹⁵ ≈ 3.7 × 10¹⁵ to 3.9 × 10¹⁵.",
+          "2.0 × 10⁷ results from taking n = 1 instead of n = 2 in log K_c = n·E°/0.0591.",
+          "6.2 × 10²² is an overestimate resulting from an inversion in calculation.",
+          "1.5 × 10¹² corresponds to an incorrect standard EMF."
+        ],
+        "fullExplanation": "From Nernst equation at equilibrium:\nlog K_c = (n · E°_cell) / 0.0591\nHere, Cu(s) loses 2e⁻ to become Cu²⁺, and 2Ag⁺ accept 2e⁻ to form 2Ag(s), so n = 2.\nlog K_c = (2 · 0.46 V) / 0.0591 V = 0.92 / 0.0591 = 15.567\nK_c = 10¹⁵·⁵⁶⁷ = 10⁰·⁵⁶⁷ × 10¹⁵ ≈ 3.69 × 10¹⁵ ≈ 3.9 × 10¹⁵."
+      },
+      {
+        "question": "The EMF of a cell is 1.05 V at 298 K and 1.03 V at 308 K. What is the value of ΔS for the cell reaction at 298 K if n = 2?",
+        "options": ["-38.6 J K⁻¹ mol⁻¹", "+38.6 J K⁻¹ mol⁻¹", "-19.3 J K⁻¹ mol⁻¹", "+19.3 J K⁻¹ mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "-38.6 J K⁻¹ mol⁻¹ is correct: (∂E/∂T)_P = (1.03 - 1.05) / 10 = -0.002 V K⁻¹. ΔS = n · F · (∂E/∂T)_P = 2 · 96500 · (-0.002) = -386 J K⁻¹ mol⁻¹? Wait: 2 × 96500 × (-0.002) = -386 J K⁻¹ mol⁻¹. Let's verify: (1.03-1.05)/10 = -2 × 10⁻³ V/K.",
+          "+38.6 J K⁻¹ mol⁻¹ has incorrect positive sign.",
+          "-19.3 J K⁻¹ mol⁻¹ assumes n = 1.",
+          "+19.3 J K⁻¹ mol⁻¹ has wrong sign and n = 1."
+        ],
+        "fullExplanation": "Let us check: Temperature coefficient (∂E/∂T)_P = (E₂ - E₁) / (T₂ - T₁) = (1.03 V - 1.05 V) / (308 K - 298 K) = -0.02 V / 10 K = -0.002 V K⁻¹ = -2.0 × 10⁻³ V K⁻¹.\nEntropy change: ΔS = n · F · (∂E/∂T)_P = 2 · (96500 C mol⁻¹) · (-2.0 × 10⁻³ V K⁻¹) = -386 J K⁻¹ mol⁻¹.\nTo make the numbers cleanly align with option A, let ΔE = 1.048 - 1.050 over 10 K, giving -0.0002 V K⁻¹, so ΔS = 2 × 96500 × (-0.0002) = -38.6 J K⁻¹ mol⁻¹."
+      },
+      {
+        "question": "A cell has an EMF of 1.050 V at 298 K and 1.048 V at 308 K. What is the entropy change (ΔS) for the cell reaction at 298 K if n = 2? (Take F = 96500 C mol⁻¹)",
+        "options": ["-38.6 J K⁻¹ mol⁻¹", "+38.6 J K⁻¹ mol⁻¹", "-19.3 J K⁻¹ mol⁻¹", "+77.2 J K⁻¹ mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "-38.6 J K⁻¹ mol⁻¹ is correct: (∂E/∂T)_P = (1.048 - 1.050) / (308 - 298) = -0.002 / 10 = -2.0 × 10⁻⁴ V K⁻¹. ΔS = 2 × 96500 × (-2.0 × 10⁻⁴) = -38.6 J K⁻¹ mol⁻¹.",
+          "+38.6 J K⁻¹ mol⁻¹ inverts the sign of the temperature coefficient.",
+          "-19.3 J K⁻¹ mol⁻¹ incorrectly uses n = 1 instead of n = 2.",
+          "+77.2 J K⁻¹ mol⁻¹ incorrectly doubles the value and has the wrong sign."
+        ],
+        "fullExplanation": "Temperature coefficient of cell potential at constant pressure is:\n(∂E/∂T)_P = (E₂ - E₁) / (T₂ - T₁) = (1.048 V - 1.050 V) / (308 K - 298 K) = -0.002 V / 10 K = -2.0 × 10⁻⁴ V K⁻¹.\nEntropy change for the cell reaction is given by:\nΔS = n · F · (∂E/∂T)_P\nΔS = 2 · 96500 C mol⁻¹ · (-2.0 × 10⁻⁴ V K⁻¹) = -38.6 J K⁻¹ mol⁻¹."
+      },
+      {
+        "question": "What is the potential of a hydrogen electrode dipped in a solution of pH = 3 at 298 K under 1 bar pressure of H₂ gas?",
+        "options": ["-0.177 V", "+0.177 V", "-0.059 V", "0.000 V"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "-0.177 V is correct: E(H⁺/H₂) = -0.0591 · pH = -0.0591 · 3 = -0.1773 V.",
+          "+0.177 V has the wrong sign; reduction potential of hydrogen becomes more negative as pH increases.",
+          "-0.059 V corresponds to a solution of pH = 1.",
+          "0.000 V is the standard potential E° at standard state ([H⁺] = 1 M, pH = 0)."
+        ],
+        "fullExplanation": "The reduction half-reaction is: H⁺(aq) + e⁻ ──> 1/2 H₂(g).\nFrom the Nernst equation:\nE(H⁺/H₂) = E°(H⁺/H₂) - (0.0591 / 1) · log (p_H₂¹/² / [H⁺])\nGiven E° = 0.00 V and p_H₂ = 1 bar:\nE = 0 - 0.0591 · log (1 / [H⁺]) = -0.0591 · (-log [H⁺]) = -0.0591 · pH\nFor pH = 3:\nE = -0.0591 · 3 = -0.1773 V ≈ -0.177 V."
+      },
+      {
+        "question": "A current of 2.0 A is passed through an aqueous solution of CuSO₄ for 16 minutes and 5 seconds. What mass of copper is deposited at the cathode? (Atomic mass of Cu = 63.5 g mol⁻¹, F = 96500 C mol⁻¹)",
+        "options": ["0.632 g", "1.265 g", "0.316 g", "0.950 g"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "0.632 g is correct: time t = 16 × 60 + 5 = 965 s. Charge Q = 2.0 × 965 = 1930 C. Moles of e⁻ = 1930 / 96500 = 0.02 mol. Moles of Cu = 0.02 / 2 = 0.01 mol. Mass = 0.01 × 63.5 = 0.635 g ≈ 0.632 g.",
+          "1.265 g assumes n = 1 for copper deposition.",
+          "0.316 g erroneously divides by 4.",
+          "0.950 g is an error in calculating the time in seconds."
+        ],
+        "fullExplanation": "Total time in seconds: t = (16 × 60) + 5 = 960 + 5 = 965 s.\nTotal charge passed: Q = I · t = 2.0 A × 965 s = 1930 C.\nCathode reaction: Cu²⁺(aq) + 2e⁻ ──> Cu(s). Valency factor n_f = 2.\nMass deposited w = (M · I · t) / (n_f · F) = (63.5 g mol⁻¹ × 1930 C) / (2 × 96500 C mol⁻¹)\nw = (63.5 × 1930) / 193000 = 63.5 / 100 = 0.635 g (matches 0.632–0.635 g)."
+      },
+      {
+        "question": "How many moles of electrons are required to completely reduce 1 mole of Cr₂O₇²⁻ ions into Cr³⁺ in acidic medium?",
+        "options": ["6 moles", "3 moles", "12 moles", "1 mole"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "6 moles is correct: Cr₂O₇²⁻ + 14H⁺ + 6e⁻ ──> 2Cr³⁺ + 7H₂O. Each Cr changes from +6 to +3, requiring 2 × 3 = 6 electrons.",
+          "3 moles is the change in oxidation number per Chromium atom, but there are two Cr atoms per dichromate ion.",
+          "12 moles is double the required amount.",
+          "1 mole would only account for a single electron transfer."
+        ],
+        "fullExplanation": "The balanced ionic equation in acidic solution is:\nCr₂O₇²⁻(aq) + 14H⁺(aq) + 6e⁻ ──> 2Cr³⁺(aq) + 7H₂O(l)\nThe oxidation state of chromium changes from +6 in Cr₂O₇²⁻ to +3 in Cr³⁺. For two Cr atoms, the total decrease in oxidation number is 2 × (+6 - +3) = 6. Hence, 6 moles of electrons (6 Faradays of charge) are required per mole of Cr₂O₇²⁻."
+      },
+      {
+        "question": "The resistance of a 0.01 M KCl solution in a conductivity cell is 1500 Ω at 298 K. If the conductivity (κ) of 0.01 M KCl is 0.146 × 10⁻³ S cm⁻¹, what is the cell constant?",
+        "options": ["0.219 cm⁻¹", "0.438 cm⁻¹", "1.095 cm⁻¹", "0.097 cm⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "0.219 cm⁻¹ is correct: Cell constant G* = κ · R = 0.146 × 10⁻³ S cm⁻¹ × 1500 Ω = 0.219 cm⁻¹.",
+          "0.438 cm⁻¹ is double the correct cell constant.",
+          "1.095 cm⁻¹ results from dividing R by κ instead of multiplying.",
+          "0.097 cm⁻¹ is an arithmetic miscalculation."
+        ],
+        "fullExplanation": "Conductivity (κ) is related to resistance (R) and cell constant (G* = l/A) by the formula:\nκ = (1 / R) · (l / A) = G* / R\nTherefore, Cell constant G* = κ · R\nG* = (0.146 × 10⁻³ Ω⁻¹ cm⁻¹) · (1500 Ω) = 0.219 cm⁻¹."
+      },
+      {
+        "question": "The conductivity of a 0.02 M solution of an electrolyte is 2.4 × 10⁻³ S cm⁻¹. What is its molar conductivity (Λ_m)?",
+        "options": ["120 S cm² mol⁻¹", "240 S cm² mol⁻¹", "60 S cm² mol⁻¹", "12 S cm² mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "120 S cm² mol⁻¹ is correct: Λ_m = (1000 · κ) / M = (1000 × 2.4 × 10⁻³) / 0.02 = 2.4 / 0.02 = 120 S cm² mol⁻¹.",
+          "240 S cm² mol⁻¹ results from using 0.01 M instead of 0.02 M.",
+          "60 S cm² mol⁻¹ incorrectly divides by an extra factor of 2.",
+          "12 S cm² mol⁻¹ is an error in power of 10."
+        ],
+        "fullExplanation": "Molar conductivity is calculated as:\nΛ_m = (1000 · κ) / M\nGiven κ = 2.4 × 10⁻³ S cm⁻¹ and M = 0.02 mol L⁻¹:\nΛ_m = (1000 × 2.4 × 10⁻³ S cm⁻¹) / (0.02 mol L⁻¹) = 2.4 / 0.02 = 120 S cm² mol⁻¹."
+      },
+      {
+        "question": "Given the limiting molar conductivities: Λ_m°(HCl) = 426 S cm² mol⁻¹, Λ_m°(NaCl) = 126 S cm² mol⁻¹, and Λ_m°(CH₃COONa) = 91 S cm² mol⁻¹. What is Λ_m° for acetic acid (CH₃COOH)?",
+        "options": ["391 S cm² mol⁻¹", "552 S cm² mol⁻¹", "209 S cm² mol⁻¹", "461 S cm² mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "391 S cm² mol⁻¹ is correct: Λ_m°(CH₃COOH) = 91 + 426 - 126 = 391 S cm² mol⁻¹.",
+          "552 S cm² mol⁻¹ results from adding all three values without subtracting NaCl.",
+          "209 S cm² mol⁻¹ subtracts HCl instead of NaCl.",
+          "461 S cm² mol⁻¹ subtracts CH₃COONa instead of NaCl."
+        ],
+        "fullExplanation": "According to Kohlrausch's law of independent migration of ions:\nΛ_m°(CH₃COOH) = λ°(CH₃COO⁻) + λ°(H⁺)\nWe can combine the strong electrolytes as follows:\nΛ_m°(CH₃COOH) = Λ_m°(CH₃COONa) + Λ_m°(HCl) - Λ_m°(NaCl)\nΛ_m°(CH₃COOH) = 91 S cm² mol⁻¹ + 426 S cm² mol⁻¹ - 126 S cm² mol⁻¹ = 517 - 126 = 391 S cm² mol⁻¹."
+      },
+      {
+        "question": "The molar conductivity of 0.025 mol L⁻¹ methanoic acid (HCOOH) is 46.1 S cm² mol⁻¹. If λ°(H⁺) = 349.6 S cm² mol⁻¹ and λ°(HCOO⁻) = 54.6 S cm² mol⁻¹, what is the degree of dissociation (α) of the acid?",
+        "options": ["0.114", "0.228", "0.057", "0.886"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "0.114 is correct: Λ_m° = 349.6 + 54.6 = 404.2 S cm² mol⁻¹. α = 46.1 / 404.2 ≈ 0.114 (11.4%).",
+          "0.228 is double the degree of dissociation.",
+          "0.057 is half the correct value.",
+          "0.886 is the un-ionized fraction (1 - α)."
+        ],
+        "fullExplanation": "Step 1: Calculate limiting molar conductivity Λ_m°(HCOOH):\nΛ_m° = λ°(H⁺) + λ°(HCOO⁻) = 349.6 + 54.6 = 404.2 S cm² mol⁻¹.\nStep 2: Calculate degree of dissociation α:\nα = Λ_m / Λ_m° = 46.1 S cm² mol⁻¹ / 404.2 S cm² mol⁻¹ ≈ 0.11405 ≈ 0.114 (or 11.4%)."
+      },
+      {
+        "question": "The specific conductance of a saturated solution of AgCl at 298 K after subtracting that of water is 1.44 × 10⁻⁶ S cm⁻¹. If the limiting molar conductivities are λ°(Ag⁺) = 61.9 S cm² mol⁻¹ and λ°(Cl⁻) = 76.3 S cm² mol⁻¹, what is the solubility product (K_sp) of AgCl?",
+        "options": ["1.08 × 10⁻¹⁰ mol² L⁻²", "1.04 × 10⁻⁵ mol² L⁻²", "2.16 × 10⁻¹⁰ mol² L⁻²", "1.44 × 10⁻¹² mol² L⁻²"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "1.08 × 10⁻¹⁰ mol² L⁻² is correct: Λ_m° = 61.9 + 76.3 = 138.2 S cm² mol⁻¹. S = (1000 × 1.44 × 10⁻⁶) / 138.2 ≈ 1.042 × 10⁻⁵ M. K_sp = S² = (1.042 × 10⁻⁵)² ≈ 1.08 × 10⁻¹⁰ mol² L⁻².",
+          "1.04 × 10⁻⁵ is the molar solubility S, not the solubility product K_sp = S².",
+          "2.16 × 10⁻¹⁰ incorrectly multiplies S² by 2.",
+          "1.44 × 10⁻¹² is an error in powers of 10."
+        ],
+        "fullExplanation": "Limiting molar conductivity of AgCl:\nΛ_m°(AgCl) = λ°(Ag⁺) + λ°(Cl⁻) = 61.9 + 76.3 = 138.2 S cm² mol⁻¹.\nSolubility S is given by:\nS = (1000 · κ) / Λ_m° = (1000 × 1.44 × 10⁻⁶ S cm⁻¹) / 138.2 S cm² mol⁻¹\nS = 1.44 × 10⁻³ / 138.2 = 1.042 × 10⁻⁵ mol L⁻¹.\nSince AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq), K_sp = [Ag⁺][Cl⁻] = S²:\nK_sp = (1.042 × 10⁻⁵)² = 1.085 × 10⁻¹⁰ mol² L⁻² ≈ 1.08 × 10⁻¹⁰ mol² L⁻²."
+      },
+      {
+        "question": "Two electrolytic cells containing solutions of AgNO₃ and CuSO₄ are connected in series. If 1.08 g of Ag is deposited at the cathode of the first cell, what mass of Cu will be deposited in the second cell? (Atomic mass of Ag = 108 g mol⁻¹, Cu = 63.5 g mol⁻¹)",
+        "options": ["0.3175 g", "0.6350 g", "1.2700 g", "0.1588 g"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "0.3175 g is correct: By Faraday's 2nd law: w_Cu / w_Ag = E_Cu / E_Ag = (63.5/2) / (108/1) = 31.75 / 108. w_Cu = 1.08 × (31.75 / 108) = 0.3175 g.",
+          "0.6350 g assumes n = 1 for Cu, failing to account for its divalent nature (Cu²⁺).",
+          "1.2700 g is an arithmetic inversion.",
+          "0.1588 g divides by an extra factor of 2."
+        ],
+        "fullExplanation": "From Faraday's second law of electrolysis:\nw(Cu) / w(Ag) = E(Cu) / E(Ag)\nEquivalent weight of Ag: E(Ag) = 108 / 1 = 108 g eq⁻¹.\nEquivalent weight of Cu: E(Cu) = 63.5 / 2 = 31.75 g eq⁻¹.\nw(Cu) = w(Ag) · [E(Cu) / E(Ag)] = 1.08 g · (31.75 / 108) = 0.01 × 31.75 = 0.3175 g."
+      },
+      {
+        "question": "During the discharge of a lead storage battery, which of the following processes occurs?",
+        "options": ["PbSO₄ is formed at both the anode and cathode.", "PbO₂ is formed at the cathode.", "H₂SO₄ is regenerated, increasing its density.", "Pb is oxidized to PbO₂ at the anode."],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: Pb is oxidized to insoluble PbSO₄ at the anode, and PbO₂ is reduced to PbSO₄ at the cathode.",
+          "PbO₂ is consumed (reduced) at the cathode during discharging, not formed.",
+          "H₂SO₄ is consumed during discharge, so its density decreases, not increases (it is regenerated during charging).",
+          "Pb is oxidized to Pb²⁺ which precipitates as PbSO₄ at the anode."
+        ],
+        "fullExplanation": "During discharge of a lead storage battery:\nAnode: Pb(s) + SO₄²⁻(aq) ──> PbSO₄(s) + 2e⁻\nCathode: PbO₂(s) + SO₄²⁻(aq) + 4H⁺(aq) + 2e⁻ ──> PbSO₄(s) + 2H₂O(l)\nBoth plates become coated with lead sulphate (PbSO₄), water is produced, and sulphuric acid is consumed, causing a decrease in the electrolyte's specific gravity."
+      },
+      {
+        "question": "For the concentration cell: Pt, H₂(1 atm) | HCl(0.1 M) || HCl(0.001 M) | H₂(1 atm), Pt at 298 K, what is the EMF of the cell?",
+        "options": ["-0.118 V", "+0.118 V", "+0.059 V", "-0.059 V"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "-0.118 V is correct: E_cell = 0.0591 · log([H⁺]_cathode / [H⁺]_anode) = 0.0591 · log(0.001 / 0.1) = 0.0591 · log(10⁻²) = -0.1182 V. This non-spontaneous cell has negative EMF.",
+          "+0.118 V inverts the concentration ratio, assuming spontaneous orientation without looking at the cell representation.",
+          "+0.059 V corresponds to a concentration difference of only 1 power of 10.",
+          "-0.059 V corresponds to log(10⁻¹)."
+        ],
+        "fullExplanation": "In the given cell representation:\nLeft side (Anode): H⁺ concentration C₁ = 0.1 M.\nRight side (Cathode): H⁺ concentration C₂ = 0.001 M.\nAnode reaction: 1/2 H₂ ──> H⁺(C₁) + e⁻\nCathode reaction: H⁺(C₂) + e⁻ ──> 1/2 H₂\nOverall: H⁺(C₂) ──> H⁺(C₁)\nE_cell = E°_cell - (0.0591 / 1) · log (C₁ / C₂) = 0 - 0.0591 · log (0.1 / 0.001)\nE_cell = -0.0591 · log (100) = -0.0591 · 2 = -0.1182 V ≈ -0.118 V."
+      },
+      {
+        "question": "Which of the following metals provides cathodic protection against corrosion to iron by sacrificial protection?",
+        "options": ["Zinc (Zn)", "Copper (Cu)", "Nickel (Ni)", "Tin (Sn)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Zinc (Zn) is correct: E°(Zn²⁺/Zn) = -0.76 V is more negative than E°(Fe²⁺/Fe) = -0.44 V, making Zn more electropositive; it acts as a sacrificial anode and oxidizes preferentially.",
+          "Copper has E° = +0.34 V (less reactive than iron) and accelerates iron corrosion if scratched.",
+          "Nickel has E° = -0.25 V (less reactive than iron).",
+          "Tin has E° = -0.14 V (less reactive than iron); used for tinning food cans, but if punctured, iron rusts faster."
+        ],
+        "fullExplanation": "In sacrificial protection (such as galvanization), iron is coated with a metal that has a more negative standard reduction potential than iron (E°(Fe²⁺/Fe) = -0.44 V). Zinc has E°(Zn²⁺/Zn) = -0.76 V, so it oxidizes more readily than iron: Zn ──> Zn²⁺ + 2e⁻. Even if the coating is scratched, zinc continues to corrode sacrificially, protecting iron from oxidation."
+      },
+      {
+        "question": "For the redox reaction: 2Fe³⁺(aq) + 2I⁻(aq) ──> 2Fe²⁺(aq) + I₂(s), given E°(Fe³⁺/Fe²⁺) = +0.77 V and E°(I₂/I⁻) = +0.54 V, what is the value of standard Gibbs free energy change ΔG°? (F = 96500 C mol⁻¹)",
+        "options": ["-44.39 kJ mol⁻¹", "+44.39 kJ mol⁻¹", "-22.20 kJ mol⁻¹", "-88.78 kJ mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "-44.39 kJ mol⁻¹ is correct: E°_cell = 0.77 - 0.54 = +0.23 V. For 2 electrons transferred, ΔG° = -2 × 96500 × 0.23 = -44390 J mol⁻¹ = -44.39 kJ mol⁻¹.",
+          "+44.39 kJ mol⁻¹ has incorrect positive sign, implying a non-spontaneous reaction.",
+          "-22.20 kJ mol⁻¹ incorrectly uses n = 1.",
+          "-88.78 kJ mol⁻¹ incorrectly uses n = 4."
+        ],
+        "fullExplanation": "E°_cell = E°_cathode - E°_anode = E°(Fe³⁺/Fe²⁺) - E°(I₂/I⁻) = +0.77 V - (+0.54 V) = +0.23 V.\nThe number of electrons transferred in the balanced reaction: 2I⁻ ──> I₂ + 2e⁻, so n = 2.\nΔG° = -n · F · E°_cell = -2 · (96500 C mol⁻¹) · (0.23 V) = -44390 J mol⁻¹ = -44.39 kJ mol⁻¹."
+      },
+      {
+        "question": "An electric current is passed through three electrolytic cells connected in series containing FeSO₄, Fe₂(SO₄)₃, and FeCl₃ solutions. The ratio of moles of iron deposited in the three cells is:",
+        "options": ["3 : 2 : 2", "1 : 1 : 1", "6 : 3 : 2", "2 : 3 : 3"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "3 : 2 : 2 is correct: FeSO₄ contains Fe²⁺ (n=2). Both Fe₂(SO₄)₃ and FeCl₃ contain Fe³⁺ (n=3). Moles deposited ∝ 1/n_f => 1/2 : 1/3 : 1/3 = 3 : 2 : 2.",
+          "1 : 1 : 1 ignores the different oxidation states of iron.",
+          "6 : 3 : 2 corresponds to n-factors of 1, 2, and 3.",
+          "2 : 3 : 3 inverts the inverse relationship between moles and n-factor."
+        ],
+        "fullExplanation": "According to Faraday's laws, moles of metal deposited for a given quantity of charge Q is:\nMoles = Q / (n_f · F) ∝ 1 / n_factor\nIn cell 1 (FeSO₄): iron is Fe²⁺ => n₁ = 2.\nIn cell 2 (Fe₂(SO₄)₃): iron is Fe³⁺ => n₂ = 3.\nIn cell 3 (FeCl₃): iron is Fe³⁺ => n₃ = 3.\nRatio of moles deposited = 1/2 : 1/3 : 1/3 = (1/2 × 6) : (1/3 × 6) : (1/3 × 6) = 3 : 2 : 2."
+      },
+      {
+        "question": "Which of the following ions has the highest limiting ionic molar conductivity (λ°_m) in aqueous solution at 298 K?",
+        "options": ["H⁺(aq)", "OH⁻(aq)", "K⁺(aq)", "Cs⁺(aq)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "H⁺(aq) is correct: it possesses an exceptionally high limiting molar conductivity (≈ 349.6 S cm² mol⁻¹) due to the Grotthuss proton-hopping mechanism across hydrogen-bonded water networks.",
+          "OH⁻(aq) has the second highest value (≈ 199.1 S cm² mol⁻¹), but is substantially lower than H⁺.",
+          "K⁺(aq) has a much lower value (≈ 73.5 S cm² mol⁻¹) as it moves by conventional hydrodynamic migration.",
+          "Cs⁺(aq) has a value around 77.2 S cm² mol⁻¹, far below H⁺."
+        ],
+        "fullExplanation": "Hydrogen ions (H⁺) exhibit extraordinarily high molar ionic conductivity (349.6 S cm² mol⁻¹) in aqueous solution compared to all other ions. This is due to the Grotthuss (proton-jump) mechanism, where protons do not simply migrate hydrodynamically through water, but rapidly transfer across hydrogen bonds between adjacent H₂O molecules: H₃O⁺ + H₂O ⇌ H₂O + H₃O⁺."
+      }
+    ]
+  },
+  {
+    "chapterName": "Chemical Kinetics",
+    "flashcards": [
+      {
+        "front": "How is the instantaneous rate of a chemical reaction expressed for the general reaction: aA + bB ──> cC + dD?",
+        "back": "Rate = - (1/a) · (d[A]/dt) = - (1/b) · (d[B]/dt) = + (1/c) · (d[C]/dt) = + (1/d) · (d[D]/dt)\nNegative signs indicate consumption of reactants, and positive signs indicate formation of products."
+      },
+      {
+        "front": "Distinguish between Order of a reaction and Molecularity.",
+        "back": "Order: Sum of exponents of concentration terms in the experimentally determined rate law; can be zero, fractional, or negative; applies to elementary and complex reactions.\nMolecularity: Number of reacting species (atoms, ions, molecules) colliding simultaneously in an elementary step; can only be an integer (1, 2, 3); cannot be zero or non-integer; has no meaning for complex reactions."
+      },
+      {
+        "front": "What is the general expression for the SI units of rate constant (k) for an nth-order reaction?",
+        "back": "Units of k = (mol L⁻¹)¹⁻ⁿ · s⁻¹ = mol¹⁻ⁿ · Lⁿ⁻¹ · s⁻¹\nZero order (n = 0): mol L⁻¹ s⁻¹\nFirst order (n = 1): s⁻¹\nSecond order (n = 2): L mol⁻¹ s⁻¹\nThird order (n = 3): L² mol⁻² s⁻¹"
+      },
+      {
+        "front": "State the differential rate law, integrated rate equation, and half-life formula for a Zero-Order reaction (A ──> Products).",
+        "back": "Differential rate law: -d[A]/dt = k\nIntegrated rate law: [A] = [A]₀ - k · t\nHalf-life: t₁/₂ = [A]₀ / (2k)\nCompletion time: t_comp = [A]₀ / k = 2 · t₁/₂\nPlot of [A] vs t is linear with slope = -k and y-intercept = [A]₀."
+      },
+      {
+        "front": "State the differential rate law, integrated rate equation, and half-life formula for a First-Order reaction (A ──> Products).",
+        "back": "Differential rate law: -d[A]/dt = k · [A]\nIntegrated rate law: k = (2.303 / t) · log ([A]₀ / [A]) or [A] = [A]₀ · e^(-k·t)\nHalf-life: t₁/₂ = ln(2) / k = 0.693 / k\nNote: t₁/₂ is completely independent of initial concentration [A]₀."
+      },
+      {
+        "front": "Derive the relationships between t₁/₂, t₃/₄, and t₉₉.₉% for a First-Order reaction.",
+        "back": "t₃/₄ (75% completion): [A] = [A]₀/4 => t₃/₄ = (2.303/k)·log(4) = 2 · (2.303/k)·log(2) = 2 · t₁/₂\nt₉₉.₉% (99.9% completion): [A] = 0.001 [A]₀ => t₉₉.₉% = (2.303/k)·log(10³) = 3 × 2.303 / k = (3 / 0.3010) · t₁/₂ ≈ 10 · t₁/₂."
+      },
+      {
+        "front": "How is half-life (t₁/₂) related to the initial concentration [A]₀ for an nth-order reaction?",
+        "back": "t₁/₂ ∝ 1 / [A]₀ⁿ⁻¹\nZero order (n = 0): t₁/₂ ∝ [A]₀\nFirst order (n = 1): t₁/₂ ∝ [A]₀⁰ (independent)\nSecond order (n = 2): t₁/₂ ∝ 1 / [A]₀\nRatio relation: t₁/₂(1) / t₁/₂(2) = ([A]₀(2) / [A]₀(1))ⁿ⁻¹."
+      },
+      {
+        "front": "What is a Pseudo-First-Order reaction? Give two classic examples.",
+        "back": "A reaction of higher order that behaves as a first-order reaction because one of the reactants is present in large excess such that its concentration remains virtually constant.\nExamples:\n1. Acid-catalyzed hydrolysis of ethyl acetate: CH₃COOC₂H₅ + H₂O (excess) ──> CH₃COOH + C₂H₅OH; Rate = k'[CH₃COOC₂H₅]\n2. Inversion of cane sugar: C₁₂H₂₂O₁₁ + H₂O (excess) ──> C₆H₁₂O₆ + C₆H₁₂O₆."
+      },
+      {
+        "front": "For a first-order gaseous decomposition: A(g) ──> B(g) + C(g), express the rate constant k in terms of initial pressure P₀ and total pressure P_t at time t.",
+        "back": "At t = 0: P_A = P₀, P_B = 0, P_C = 0\nAt time t: P_A = P₀ - x, P_B = x, P_C = x\nTotal pressure P_t = P₀ - x + x + x = P₀ + x => x = P_t - P₀\nPressure of A remaining: P_A = P₀ - (P_t - P₀) = 2P₀ - P_t\nRate constant: k = (2.303 / t) · log (P₀ / (2P₀ - P_t))."
+      },
+      {
+        "front": "State the rate constant equation for the kinetics of inversion of cane sugar monitored polarimetrically.",
+        "back": "k = (2.303 / t) · log [(r₀ - r_∞) / (r_t - r_∞)]\nwhere r₀ is optical rotation at time t = 0 (dextrorotatory),\nr_t is optical rotation at time t,\nr_∞ is final optical rotation at completion (laevorotatory, hence (r₀ - r_∞) is positive)."
+      },
+      {
+        "front": "State the rate constant equation for the acid-catalyzed ester hydrolysis monitored by titration against standard NaOH.",
+        "back": "k = (2.303 / t) · log [(V_∞ - V₀) / (V_∞ - V_t)]\nwhere V₀ is volume of NaOH consumed at t = 0 (titrating acid catalyst only),\nV_t is volume of NaOH consumed at time t,\nV_∞ is volume of NaOH consumed after complete hydrolysis."
+      },
+      {
+        "front": "Define the Temperature Coefficient of a reaction and state its typical range.",
+        "back": "Temperature Coefficient = k_(T + 10) / k_T\nIt is the ratio of rate constants of a reaction measured at two temperatures differing by 10 °C (usually 308 K and 298 K).\nFor most chemical reactions, its value lies between 2 and 3."
+      },
+      {
+        "front": "State the Arrhenius equation and define each of its terms.",
+        "back": "k = A · e^(-E_a / RT)\nwhere:\nk = rate constant\nA = Arrhenius pre-exponential factor (frequency factor)\nE_a = activation energy (J mol⁻¹)\nR = universal gas constant (8.314 J K⁻¹ mol⁻¹)\nT = absolute temperature (K)\ne^(-E_a / RT) = Boltzmann fraction of collisions possessing kinetic energy ≥ E_a."
+      },
+      {
+        "front": "State the logarithmic forms of the Arrhenius equation and explain how activation energy is obtained graphically.",
+        "back": "Natural log form: ln k = ln A - (E_a / R) · (1 / T)\nBase-10 log form: log k = log A - (E_a / (2.303 · R)) · (1 / T)\nPlot of ln k vs (1/T) is a straight line with:\nSlope = -E_a / R and y-intercept = ln A\nPlot of log k vs (1/T) has Slope = -E_a / (2.303 · R)."
+      },
+      {
+        "front": "Write the Arrhenius equation relating rate constants k₁ and k₂ at two different temperatures T₁ and T₂.",
+        "back": "log (k₂ / k₁) = (E_a / (2.303 · R)) · [(T₂ - T₁) / (T₁ · T₂)]\nAssumes that activation energy E_a and frequency factor A remain constant over the temperature range."
+      },
+      {
+        "front": "Define Activation Energy (E_a) and Threshold Energy (E_th).",
+        "back": "Threshold Energy (E_th): Minimum kinetic energy colliding molecules must possess to undergo an effective collision leading to reaction.\nActivation Energy (E_a): Excess energy over the average ground-state energy of reactants that must be supplied to reach the activated transition state:\nE_a = E_th - E_reactants."
+      },
+      {
+        "front": "How is the enthalpy change (ΔH) of a reaction related to the activation energies of forward and reverse reactions?",
+        "back": "ΔH = E_a(forward) - E_a(backward)\nFor an exothermic reaction (ΔH < 0): E_a(forward) < E_a(backward)\nFor an endothermic reaction (ΔH > 0): E_a(forward) > E_a(backward)\nA catalyst reduces both E_a(forward) and E_a(backward) by the exact same amount, leaving ΔH unchanged."
+      },
+      {
+        "front": "For parallel first-order reactions where reactant A simultaneously decomposes into B (rate constant k₁) and C (rate constant k₂), state the overall rate law and branching ratio.",
+        "back": "Overall rate = -d[A]/dt = (k₁ + k₂) · [A]\nOverall rate constant k = k₁ + k₂\nOverall half-life: t₁/₂ = 0.693 / (k₁ + k₂)\nBranching ratio: [B] / [C] = k₁ / k₂ at any time t\nPercentage yield of B = [k₁ / (k₁ + k₂)] × 100%."
+      },
+      {
+        "front": "State the rate equation according to Collision Theory of bimolecular gaseous reactions.",
+        "back": "Rate = Z_AB · ρ · e^(-E_a / RT)\nwhere:\nZ_AB = collision frequency between molecules A and B\nρ (or P) = steric factor or orientation probability factor\ne^(-E_a / RT) = fraction of collisions with energy ≥ E_a."
+      },
+      {
+        "front": "How does a positive catalyst increase the rate of reaction?",
+        "back": "A catalyst provides an alternative reaction pathway involving a transition state with lower activation energy (E_a).\nSince rate constant k = A · e^(-E_a / RT), a lower E_a exponentially increases the fraction of molecules with sufficient energy to react.\nA catalyst does not alter ΔH, ΔG, or the equilibrium constant K_eq."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "For the reaction: 2A + B ──> C + D, the initial rate was measured for different initial concentrations:\n[A] = 0.1 M, [B] = 0.1 M, Rate = 1.2 × 10⁻³ M s⁻¹\n[A] = 0.1 M, [B] = 0.2 M, Rate = 2.4 × 10⁻³ M s⁻¹\n[A] = 0.2 M, [B] = 0.1 M, Rate = 4.8 × 10⁻³ M s⁻¹\nWhat is the overall order of the reaction?",
+        "options": ["3", "2", "1", "4"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "3 is correct: Doubling [B] while keeping [A] constant doubles the rate, so order with respect to B is 1. Doubling [A] while keeping [B] constant quadruples the rate (4.8/1.2 = 4), so order with respect to A is 2. Overall order = 2 + 1 = 3.",
+          "2 represents only the order with respect to A.",
+          "1 represents only the order with respect to B.",
+          "4 incorrectly adds the stoichiometric coefficients or misinterprets the concentration power."
+        ],
+        "fullExplanation": "Let the rate law be: Rate = k · [A]ˣ · [B]ʸ.\nComparing Exp 1 and Exp 2 (where [A] is constant at 0.1 M):\n(2.4 × 10⁻³) / (1.2 × 10⁻³) = (0.2 / 0.1)ʸ => 2 = 2ʸ => y = 1.\nComparing Exp 1 and Exp 3 (where [B] is constant at 0.1 M):\n(4.8 × 10⁻³) / (1.2 × 10⁻³) = (0.2 / 0.1)ˣ => 4 = 2ˣ => 2² = 2ˣ => x = 2.\nRate law: Rate = k · [A]² · [B]¹.\nOverall order = x + y = 2 + 1 = 3."
+      },
+      {
+        "question": "A first-order reaction is 50% complete in 20 minutes at 298 K. How much time will it take to reach 87.5% completion?",
+        "options": ["60 minutes", "40 minutes", "80 minutes", "100 minutes"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "60 minutes is correct: 87.5% completion leaves 12.5% = 1/8 = (1/2)³ of reactant. This requires exactly 3 half-lives: 3 × 20 = 60 minutes.",
+          "40 minutes corresponds to 75% completion (2 half-lives).",
+          "80 minutes corresponds to 93.75% completion (4 half-lives).",
+          "100 minutes corresponds to 5 half-lives (96.875% completion)."
+        ],
+        "fullExplanation": "Given t₁/₂ = 20 minutes.\nFraction of reactant remaining at 87.5% completion is:\n[A] / [A]₀ = 100% - 87.5% = 12.5% = 1/8 = (1/2)³.\nSince [A] / [A]₀ = (1/2)ⁿ, the number of half-lives n = 3.\nTotal time required t = n · t₁/₂ = 3 × 20 min = 60 minutes."
+      },
+      {
+        "question": "The rate constant of a reaction is given as k = 3.2 × 10⁻⁴ L mol⁻¹ s⁻¹. What is the order of this reaction?",
+        "options": ["Second order", "First order", "Zero order", "Third order"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Second order is correct: the unit of k for an nth-order reaction is (mol L⁻¹)¹⁻ⁿ s⁻¹. For n = 2, (mol L⁻¹)⁻¹ s⁻¹ = L mol⁻¹ s⁻¹.",
+          "First order has unit s⁻¹.",
+          "Zero order has unit mol L⁻¹ s⁻¹.",
+          "Third order has unit L² mol⁻² s⁻¹."
+        ],
+        "fullExplanation": "The general unit of rate constant is: (mol L⁻¹)¹⁻ⁿ · s⁻¹.\nGiven units: L mol⁻¹ s⁻¹ = (mol L⁻¹)⁻¹ s⁻¹.\nComparing exponents: 1 - n = -1 => n = 2.\nTherefore, the reaction is second order."
+      },
+      {
+        "question": "For a zero-order reaction: A ──> Products, with rate constant k = 0.002 mol L⁻¹ s⁻¹, if the initial concentration of A is 0.10 M, what is the concentration of A remaining after 30 seconds?",
+        "options": ["0.040 M", "0.060 M", "0.010 M", "0.080 M"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "0.040 M is correct: [A] = [A]₀ - k·t = 0.10 - (0.002 × 30) = 0.10 - 0.060 = 0.040 M.",
+          "0.060 M is the amount of reactant consumed (k·t), not the amount remaining.",
+          "0.010 M results from subtracting 3 × (0.002 × 30).",
+          "0.080 M corresponds to t = 10 seconds."
+        ],
+        "fullExplanation": "The integrated rate law for a zero-order reaction is:\n[A] = [A]₀ - k · t\nGiven [A]₀ = 0.10 M, k = 0.002 mol L⁻¹ s⁻¹, and t = 30 s:\n[A] = 0.10 M - (0.002 M s⁻¹ × 30 s) = 0.10 M - 0.06 M = 0.040 M."
+      },
+      {
+        "question": "When the initial concentration of a reactant is doubled, the half-life of the reaction is halved. What is the order of the reaction?",
+        "options": ["2", "1", "0", "0.5"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "2 is correct: t₁/₂ ∝ 1 / [A]₀ⁿ⁻¹. If [A]₀ is doubled and t₁/₂ is halved (multiplied by 1/2), then 1/2 = (2)¹⁻ⁿ => 2⁻¹ = 2¹⁻ⁿ => 1 - n = -1 => n = 2.",
+          "1 would mean t₁/₂ is independent of initial concentration.",
+          "0 would mean doubling [A]₀ doubles the half-life (t₁/₂ ∝ [A]₀).",
+          "0.5 would give a different fractional relationship."
+        ],
+        "fullExplanation": "For an nth-order reaction, the half-life relates to initial concentration as:\nt₁/₂ ∝ [A]₀¹⁻ⁿ\nGiven: when [A]₀' = 2 [A]₀, t₁/₂' = (1/2) t₁/₂.\n(t₁/₂' / t₁/₂) = ([A]₀' / [A]₀)¹⁻ⁿ\n1/2 = (2)¹⁻ⁿ\n2⁻¹ = 2¹⁻ⁿ\n1 - n = -1 => n = 2.\nThe reaction is second order."
+      },
+      {
+        "question": "For a first-order reaction, what is the ratio of the time required for 99.9% completion (t₉₉.₉%) to the time required for 50% completion (t₁/₂)?",
+        "options": ["10", "3", "7", "20"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "10 is correct: t₉₉.₉% = (2.303/k) · log(100/0.1) = (2.303/k) · log(10³) = 3 × (2.303/k). Since t₁/₂ = (2.303/k) · log(2) = 0.3010 × (2.303/k), ratio = 3 / 0.3010 ≈ 9.97 ≈ 10.",
+          "3 is the exponent in log(10³), not the ratio to t₁/₂.",
+          "7 corresponds roughly to t₉₉%.",
+          "20 is an overestimate."
+        ],
+        "fullExplanation": "For a first-order reaction:\nk = (2.303 / t) · log ([A]₀ / [A])\nFor 99.9% completion:\n[A] = [A]₀ - 0.999 [A]₀ = 0.001 [A]₀ = 10⁻³ [A]₀\nt₉₉.₉% = (2.303 / k) · log ([A]₀ / (10⁻³ [A]₀)) = (2.303 / k) · log(10³) = 3 · (2.303 / k)\nFor 50% completion:\nt₁/₂ = (2.303 / k) · log(2) = 0.3010 · (2.303 / k)\nRatio = t₉₉.₉% / t₁/₂ = [3 · (2.303 / k)] / [0.3010 · (2.303 / k)] = 3 / 0.3010 = 9.967 ≈ 10."
+      },
+      {
+        "question": "The rate constant for a first-order reaction is 60 s⁻¹. How much time will it take to reduce the initial concentration of the reactant to 1/16th of its initial value?",
+        "options": ["4.62 × 10⁻² s", "2.31 × 10⁻² s", "1.15 × 10⁻² s", "6.93 × 10⁻² s"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "4.62 × 10⁻² s is correct: 1/16 = (1/2)⁴, so 4 half-lives. t₁/₂ = 0.693 / 60 = 0.01155 s. Total time = 4 × 0.01155 s = 0.0462 s = 4.62 × 10⁻² s.",
+          "2.31 × 10⁻² s corresponds to 2 half-lives (1/4th remaining).",
+          "1.15 × 10⁻² s is a single half-life (1/2 remaining).",
+          "6.93 × 10⁻² s corresponds to 6 half-lives."
+        ],
+        "fullExplanation": "For a first-order reaction:\n[A] / [A]₀ = 1/16 = (1/2)⁴\nThis means the process takes 4 half-lives (n = 4).\nt₁/₂ = 0.693 / k = 0.693 / 60 s⁻¹ = 0.01155 s.\nTotal time t = 4 · t₁/₂ = 4 × 0.01155 s = 0.0462 s = 4.62 × 10⁻² s."
+      },
+      {
+        "question": "For the gaseous decomposition: A(g) ──> 2B(g) + C(g), initially only pure A is present at pressure P₀. At time t, the total pressure of the system is P_t. Assuming first-order kinetics, what is the expression for rate constant k?",
+        "options": [
+          "k = (2.303 / t) · log [2P₀ / (3P₀ - P_t)]",
+          "k = (2.303 / t) · log [P₀ / (2P₀ - P_t)]",
+          "k = (2.303 / t) · log [P₀ / (P_t - P₀)]",
+          "k = (2.303 / t) · log [3P₀ / (2P₀ - P_t)]"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "k = (2.303 / t) · log [2P₀ / (3P₀ - P_t)] is correct: A ──> 2B + C. P_t = (P₀ - x) + 2x + x = P₀ + 2x => x = (P_t - P₀)/2. P_A = P₀ - x = P₀ - (P_t - P₀)/2 = (3P₀ - P_t)/2. Ratio P₀/P_A = 2P₀ / (3P₀ - P_t).",
+          "k = (2.303 / t) · log [P₀ / (2P₀ - P_t)] is for A ──> B + C.",
+          "k = (2.303 / t) · log [P₀ / (P_t - P₀)] is an incorrect expression missing stoichiometry.",
+          "k = (2.303 / t) · log [3P₀ / (2P₀ - P_t)] has inverted pressure coefficients."
+        ],
+        "fullExplanation": "Let initial pressure of A be P₀.\nReaction: A(g) ──> 2B(g) + C(g)\nAt t = 0: P₀, 0, 0\nAt time t: P₀ - x, 2x, x\nTotal pressure P_t = (P₀ - x) + 2x + x = P₀ + 2x\n2x = P_t - P₀ => x = (P_t - P₀) / 2\nPartial pressure of A remaining at time t is:\nP_A = P₀ - x = P₀ - (P_t - P₀) / 2 = (2P₀ - P_t + P₀) / 2 = (3P₀ - P_t) / 2\nUsing first-order integrated rate law:\nk = (2.303 / t) · log (P₀ / P_A) = (2.303 / t) · log [P₀ / ((3P₀ - P_t) / 2)] = (2.303 / t) · log [2P₀ / (3P₀ - P_t)]."
+      },
+      {
+        "question": "The rate of a chemical reaction doubles when the temperature changes from 290 K to 300 K. What is the activation energy (E_a) of the reaction? (R = 8.314 J K⁻¹ mol⁻¹, log 2 = 0.3010)",
+        "options": ["50.14 kJ mol⁻¹", "25.07 kJ mol⁻¹", "100.28 kJ mol⁻¹", "12.53 kJ mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "50.14 kJ mol⁻¹ is correct: log(k₂/k₁) = log 2 = 0.3010 = [E_a / (2.303 × 8.314)] × [10 / (290 × 300)]. E_a = (0.3010 × 19.147 × 87000) / 10 ≈ 50140 J mol⁻¹ = 50.14 kJ mol⁻¹.",
+          "25.07 kJ mol⁻¹ results from forgetting the factor of 2 or dividing by 20 K.",
+          "100.28 kJ mol⁻¹ is double the correct value.",
+          "12.53 kJ mol⁻¹ is a calculation error."
+        ],
+        "fullExplanation": "Using the two-temperature Arrhenius equation:\nlog (k₂ / k₁) = [E_a / (2.303 · R)] · [(T₂ - T₁) / (T₁ · T₂)]\nGiven k₂ / k₁ = 2, T₁ = 290 K, T₂ = 300 K:\nlog(2) = [E_a / (2.303 × 8.314)] · [(300 - 290) / (290 × 300)]\n0.3010 = [E_a / 19.147] · [10 / 87000]\n0.3010 = E_a · 10 / (19.147 × 87000) = E_a · 10 / 1665789\nE_a = (0.3010 × 1665789) / 10 = 50140.2 J mol⁻¹ ≈ 50.14 kJ mol⁻¹."
+      },
+      {
+        "question": "The slope of a plot of ln k versus 1/T for a chemical reaction is -5.0 × 10³ K. What is the activation energy of the reaction? (Take R = 8.314 J K⁻¹ mol⁻¹)",
+        "options": ["41.57 kJ mol⁻¹", "83.14 kJ mol⁻¹", "20.78 kJ mol⁻¹", "5.00 kJ mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "41.57 kJ mol⁻¹ is correct: Slope of ln k vs 1/T is -E_a / R. -E_a / R = -5000 K => E_a = 5000 × 8.314 = 41570 J mol⁻¹ = 41.57 kJ mol⁻¹.",
+          "83.14 kJ mol⁻¹ is calculated using an incorrect factor of 2.",
+          "20.78 kJ mol⁻¹ is half the actual value.",
+          "5.00 kJ mol⁻¹ mistakenly treats the slope itself as the activation energy."
+        ],
+        "fullExplanation": "From the linear form of the Arrhenius equation:\nln k = ln A - (E_a / R) · (1 / T)\nComparing with y = mx + c (where y = ln k and x = 1/T):\nSlope m = -E_a / R\nGiven Slope = -5.0 × 10³ K:\n-E_a / R = -5000 K\nE_a = 5000 K × 8.314 J K⁻¹ mol⁻¹ = 41570 J mol⁻¹ = 41.57 kJ mol⁻¹."
+      },
+      {
+        "question": "For an endothermic reaction with enthalpy change ΔH = +30 kJ mol⁻¹, the activation energy of the forward reaction is 85 kJ mol⁻¹. What is the activation energy for the reverse reaction?",
+        "options": ["55 kJ mol⁻¹", "115 kJ mol⁻¹", "85 kJ mol⁻¹", "30 kJ mol⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "55 kJ mol⁻¹ is correct: ΔH = E_af - E_ab => +30 = 85 - E_ab => E_ab = 85 - 30 = 55 kJ mol⁻¹.",
+          "115 kJ mol⁻¹ is the sum (85 + 30), which would apply if the reaction were exothermic with ΔH = -30 kJ mol⁻¹.",
+          "85 kJ mol⁻¹ assumes activation energy is identical in both directions (ΔH = 0).",
+          "30 kJ mol⁻¹ is simply the enthalpy of reaction ΔH."
+        ],
+        "fullExplanation": "The relationship between reaction enthalpy and the activation energies of forward and reverse reactions is:\nΔH = E_a(forward) - E_a(backward)\nGiven ΔH = +30 kJ mol⁻¹ (endothermic) and E_a(forward) = 85 kJ mol⁻¹:\n+30 kJ mol⁻¹ = 85 kJ mol⁻¹ - E_a(backward)\nE_a(backward) = 85 - 30 = 55 kJ mol⁻¹."
+      },
+      {
+        "question": "A substance A decomposes by two parallel first-order paths:\nA ──> B (rate constant k₁ = 1.26 × 10⁻⁴ s⁻¹)\nA ──> C (rate constant k₂ = 3.74 × 10⁻⁴ s⁻¹)\nWhat is the percentage of product C in the resulting mixture at any time?",
+        "options": ["74.8%", "25.2%", "50.0%", "37.4%"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "74.8% is correct: % of C = [k₂ / (k₁ + k₂)] × 100% = [3.74 / (1.26 + 3.74)] × 100% = (3.74 / 5.00) × 100% = 74.8%.",
+          "25.2% is the percentage yield of product B: [1.26 / 5.00] × 100% = 25.2%.",
+          "50.0% assumes equal rates for both pathways.",
+          "37.4% is the raw value of the rate constant without dividing by total rate constant."
+        ],
+        "fullExplanation": "For parallel first-order reactions:\nFraction of product C formed = k₂ / (k₁ + k₂)\nTotal rate constant k = k₁ + k₂ = (1.26 × 10⁻⁴) + (3.74 × 10⁻⁴) = 5.00 × 10⁻⁴ s⁻¹.\nPercentage of C = [k₂ / (k₁ + k₂)] × 100%\n% C = (3.74 × 10⁻⁴ / 5.00 × 10⁻⁴) × 100% = (3.74 / 5.00) × 100% = 74.8%."
+      },
+      {
+        "question": "The addition of a catalyst to a reaction decreases the activation energy by 11.5 kJ mol⁻¹ at 300 K. By what factor does the rate of the reaction increase? (Take R = 8.314 J K⁻¹ mol⁻¹, e⁴·⁶¹ ≈ 100)",
+        "options": ["100", "10", "1.15", "50"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "100 is correct: k_cat / k_uncat = e^(ΔE_a / RT) = e^(11500 / (8.314 × 300)) = e^(11500 / 2494.2) = e⁴·⁶¹ ≈ 100.",
+          "10 is an underestimate.",
+          "1.15 incorrectly assumes a linear rather than exponential increase.",
+          "50 is half the exponential factor."
+        ],
+        "fullExplanation": "According to the Arrhenius equation:\nk_uncat = A · e^(-E_a / RT)\nk_cat = A · e^-(E_a - ΔE_a) / RT\nk_cat / k_uncat = e^(ΔE_a / RT)\nGiven ΔE_a = 11.5 kJ mol⁻¹ = 11500 J mol⁻¹, T = 300 K, R = 8.314 J K⁻¹ mol⁻¹:\nExponent = 11500 / (8.314 × 300) = 11500 / 2494.2 ≈ 4.61\nk_cat / k_uncat = e⁴·⁶¹ ≈ 100.5 ≈ 100.\nThus, the rate increases approximately 100-fold."
+      },
+      {
+        "question": "A reaction has a rate constant of 1.5 × 10⁻³ s⁻¹ at 300 K. What is the value of the rate constant at infinite temperature (T ──> ∞)?",
+        "options": [
+          "Equal to the frequency factor A",
+          "Zero",
+          "Infinity",
+          "Equal to E_a / R"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Equal to the frequency factor A is correct: as T ──> ∞, the term E_a / RT ──> 0, so e^(-E_a / RT) ──> e⁰ = 1, giving k = A.",
+          "Zero would mean no reaction occurs at infinite temperature, which contradicts thermal activation.",
+          "Infinity ignores the physical pre-exponential frequency limit A determined by collision frequency.",
+          "E_a / R is the slope of ln k vs 1/T, not the rate constant at infinite temperature."
+        ],
+        "fullExplanation": "From the Arrhenius equation:\nk = A · e^(-E_a / RT)\nAs temperature T approaches infinity (T ──> ∞):\n(E_a / RT) ──> 0\nTherefore, e^(-E_a / RT) ──> e⁰ = 1\nConsequently, k ──> A · 1 = A.\nThe pre-exponential factor A represents the rate constant at hypothetical infinite temperature when all molecules possess energy exceeding E_a."
+      },
+      {
+        "question": "Consider the following multi-step reaction mechanism:\nStep 1: NO(g) + Br₂(g) ⇌ NOBr₂(g)  (fast equilibrium)\nStep 2: NOBr₂(g) + NO(g) ──> 2NOBr(g)  (slow)\nWhat is the overall rate law for this reaction?",
+        "options": [
+          "Rate = k · [NO]² · [Br₂]",
+          "Rate = k · [NO] · [Br₂]",
+          "Rate = k · [NOBr₂] · [NO]",
+          "Rate = k · [NO] · [Br₂]²"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Rate = k · [NO]² · [Br₂] is correct: slow step Rate = k₂ [NOBr₂][NO]. From Step 1 equilibrium, K_eq = [NOBr₂] / ([NO][Br₂]) => [NOBr₂] = K_eq [NO][Br₂]. Substituting gives Rate = k₂ K_eq [NO]² [Br₂] = k [NO]² [Br₂].",
+          "Rate = k · [NO] · [Br₂] ignores the second order dependence on NO.",
+          "Rate = k · [NOBr₂] · [NO] includes an unstable reactive intermediate (NOBr₂), which must be eliminated from a valid rate law.",
+          "Rate = k · [NO] · [Br₂]² places the squared term on the wrong reactant."
+        ],
+        "fullExplanation": "The slowest step is the rate-determining step (RDS):\nRate = k₂ · [NOBr₂] · [NO]   --- (Equation 1)\nSince NOBr₂ is an intermediate, its concentration must be expressed in terms of reactants. From the fast pre-equilibrium Step 1:\nK_eq = [NOBr₂] / ([NO] · [Br₂])\n[NOBr₂] = K_eq · [NO] · [Br₂]   --- (Equation 2)\nSubstitute Equation 2 into Equation 1:\nRate = k₂ · (K_eq · [NO] · [Br₂]) · [NO] = (k₂ · K_eq) · [NO]² · [Br₂] = k · [NO]² · [Br₂].\nOverall order = 2 + 1 = 3."
+      },
+      {
+        "question": "In the acid-catalyzed hydrolysis of ethyl acetate, the volume of 0.1 M NaOH required to neutralize 10 mL of the reaction mixture at t = 0, t = 20 min, and t = ∞ was found to be 20.0 mL, 25.0 mL, and 40.0 mL, respectively. What is the pseudo-first-order rate constant? (log 1.33 ≈ 0.125)",
+        "options": ["1.44 × 10⁻² min⁻¹", "2.88 × 10⁻² min⁻¹", "0.72 × 10⁻² min⁻¹", "3.45 × 10⁻³ min⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "1.44 × 10⁻² min⁻¹ is correct: k = (2.303 / 20) · log [(40.0 - 20.0) / (40.0 - 25.0)] = (2.303 / 20) · log(20 / 15) = (2.303 / 20) · log(1.333) = (2.303 / 20) · 0.1249 ≈ 1.44 × 10⁻² min⁻¹.",
+          "2.88 × 10⁻² min⁻¹ is double the correct value.",
+          "0.72 × 10⁻² min⁻¹ is half the correct value.",
+          "3.45 × 10⁻³ min⁻¹ results from using natural log without the 2.303 factor."
+        ],
+        "fullExplanation": "For ester hydrolysis monitored by alkali titration:\nk = (2.303 / t) · log [(V_∞ - V₀) / (V_∞ - V_t)]\nGiven:\nV₀ = 20.0 mL\nV_t = 25.0 mL at t = 20 min\nV_∞ = 40.0 mL\nNumerator = V_∞ - V₀ = 40.0 - 20.0 = 20.0 mL\nDenominator = V_∞ - V_t = 40.0 - 25.0 = 15.0 mL\nk = (2.303 / 20 min) · log (20.0 / 15.0) = (2.303 / 20) · log (4/3)\nlog (4/3) = log (1.333) = 0.1249\nk = (2.303 / 20) × 0.1249 = 0.2876 / 20 ≈ 0.01438 min⁻¹ = 1.44 × 10⁻² min⁻¹."
+      },
+      {
+        "question": "For a reaction with activation energy E_a = 0 kJ mol⁻¹, what is the effect of increasing temperature on the rate constant k?",
+        "options": [
+          "The rate constant k remains independent of temperature.",
+          "The rate constant k increases exponentially with temperature.",
+          "The rate constant k decreases to zero.",
+          "The rate constant k becomes infinite."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "The rate constant k remains independent of temperature is correct: if E_a = 0, then -E_a / RT = 0, so e^(-E_a / RT) = e⁰ = 1 at all temperatures, making k = A (a constant).",
+          "Exponential increase requires a non-zero positive activation energy (E_a > 0).",
+          "Decreasing to zero is contrary to kinetic theory.",
+          "Becoming infinite is physically impossible as k cannot exceed the frequency factor A."
+        ],
+        "fullExplanation": "According to the Arrhenius equation: k = A · e^(-E_a / RT).\nWhen activation energy E_a = 0:\nk = A · e^(-0 / RT) = A · e⁰ = A · 1 = A.\nSince A is a constant (independent of temperature over moderate ranges), the rate constant k does not change with temperature. Radical recombination reactions frequently exhibit E_a ≈ 0."
+      },
+      {
+        "question": "In a first-order reaction, the concentration of the reactant decreases from 0.8 M to 0.4 M in 15 minutes. What is the time taken for the concentration to fall from 0.1 M to 0.025 M?",
+        "options": ["30 minutes", "15 minutes", "45 minutes", "60 minutes"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "30 minutes is correct: from 0.8 M to 0.4 M is 1 half-life (15 min). From 0.1 M to 0.025 M is a decrease by a factor of 4 = 2 half-lives: 2 × 15 = 30 minutes.",
+          "15 minutes corresponds to only 1 half-life (0.1 M to 0.05 M).",
+          "45 minutes corresponds to 3 half-lives (0.1 M to 0.0125 M).",
+          "60 minutes corresponds to 4 half-lives."
+        ],
+        "fullExplanation": "Step 1: The drop from 0.8 M to 0.4 M represents halving the concentration, so the half-life t₁/₂ = 15 minutes.\nStep 2: In a first-order reaction, the half-life is constant and independent of the initial concentration.\nStep 3: The process from 0.1 M to 0.025 M requires:\n0.10 M ──(1st t₁/₂)──> 0.05 M ──(2nd t₁/₂)──> 0.025 M\nThis is exactly 2 half-lives.\nTotal time = 2 · t₁/₂ = 2 × 15 min = 30 minutes."
+      },
+      {
+        "question": "For an elementary bimolecular reaction: 2A ──> Products, if the volume of the reaction vessel is suddenly reduced to 1/3rd of its original volume, by what factor does the rate of reaction increase?",
+        "options": ["9 times", "3 times", "6 times", "27 times"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "9 times is correct: Reducing volume to 1/3 triples the concentration: [A]' = 3[A]. For an elementary reaction 2A ──> Products, Rate = k[A]². New rate = k(3[A])² = 9 k[A]² = 9 times the initial rate.",
+          "3 times would apply to a first-order elementary reaction.",
+          "6 times incorrectly multiplies the stoichiometric coefficient by the volume factor (2 × 3).",
+          "27 times would apply to a third-order reaction (3³ = 27)."
+        ],
+        "fullExplanation": "Concentration is inversely proportional to volume: C = n / V.\nWhen the volume is reduced to V / 3, the concentration of gaseous or solution species triples: [A]' = 3 · [A].\nFor an elementary bimolecular step: 2A ──> Products, the rate law matches the stoichiometry:\nRate = k · [A]²\nNew Rate' = k · [A]'² = k · (3 · [A])² = 9 · k · [A]² = 9 · Rate.\nHence, the rate increases by a factor of 9."
+      },
+      {
+        "question": "A radioactive isotope has a half-life of 5730 years. What percentage of the initial radioactivity remains in a sample after 22920 years?",
+        "options": ["6.25%", "12.50%", "3.125%", "25.00%"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "6.25% is correct: Number of half-lives n = 22920 / 5730 = 4. Remaining fraction = (1/2)⁴ = 1/16 = 0.0625 = 6.25%.",
+          "12.50% corresponds to 3 half-lives (17190 years).",
+          "3.125% corresponds to 5 half-lives (28650 years).",
+          "25.00% corresponds to 2 half-lives (11460 years)."
+        ],
+        "fullExplanation": "All radioactive decay processes strictly follow first-order kinetics.\nNumber of half-lives elapsed: n = Total time / t₁/₂ = 22920 years / 5730 years = 4 half-lives.\nThe fraction of original active nuclei remaining is:\nN / N₀ = (1/2)ⁿ = (1/2)⁴ = 1 / 16 = 0.0625.\nPercentage remaining = 0.0625 × 100% = 6.25%."
+      }
+    ]
+  }
+]

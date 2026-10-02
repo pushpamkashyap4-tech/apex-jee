@@ -1,0 +1,836 @@
+[
+  {
+    "chapterName": "Coordination Compounds",
+    "flashcards": [
+      {
+        "front": "What is the distinction between Primary Valency and Secondary Valency in Werner's Theory?",
+        "back": "Primary valency is ionizable, non-directional, corresponds to the oxidation state of the central metal, and is satisfied only by negative ions. Secondary valency is non-ionizable, directional, corresponds to the coordination number, and is satisfied by neutral molecules or negative ions."
+      },
+      {
+        "front": "What is an ambidentate ligand? Give two common examples.",
+        "back": "A monodentate ligand that can coordinate to the central metal atom through either of two different donor atoms. Examples: NO₂⁻ (binds via N as nitro or via O as nitrito-κO) and SCN⁻ (binds via S as thiocyanato-κS or via N as isothiocyanato-κN)."
+      },
+      {
+        "front": "Define the chelate effect and explain its thermodynamic basis.",
+        "back": "The enhanced thermodynamic stability of a complex containing multidentate (chelating) ring-forming ligands compared to an analogous complex with monodentate ligands. It is driven by an increase in entropy (ΔS° > 0) upon displacement of multiple monodentate solvent molecules."
+      },
+      {
+        "front": "What is the systematic IUPAC name for K₃[Fe(CN)₆] and [Co(NH₃)₄(H₂O)Cl]Cl₂?",
+        "back": "K₃[Fe(CN)₆]: Potassium hexacyanidoferrate(III). [Co(NH₃)₄(H₂O)Cl]Cl₂: Tetraammineaquachloridocobalt(III) chloride."
+      },
+      {
+        "front": "What is Ionisation Isomerism? Give an illustrative pair.",
+        "back": "It occurs when the counter ion in a coordination compound is itself a potential ligand and exchanges places with a ligand inside the coordination sphere. Example: [Co(NH₃)₅(SO₄)]Br (gives pale yellow AgBr ppt with AgNO₃) and [Co(NH₃)₅Br]SO₄ (gives white BaSO₄ ppt with BaCl₂)."
+      },
+      {
+        "front": "What is Linkage Isomerism? Give an illustrative pair.",
+        "back": "Isomerism arising in complexes containing ambidentate ligands that can coordinate through different donor atoms. Example: [Co(NH₃)₅(NO₂)]Cl₂ (yellow, nitro isomer, N-bonded) and [Co(NH₃)₅(ONO)]Cl₂ (red, nitrito isomer, O-bonded)."
+      },
+      {
+        "front": "How many geometrical isomers exist for a square planar complex of the type [Mabcd]?",
+        "back": "Three geometrical isomers. By keeping ligand 'a' fixed at one position, ligands 'b', 'c', and 'd' can each be placed trans to 'a' in three distinct spatial arrangements (none of which are optically active)."
+      },
+      {
+        "front": "Differentiate between facial (fac) and meridional (mer) isomers of octahedral [Ma₃b₃] complexes.",
+        "back": "In the facial (fac) isomer, three identical donor atoms occupy vertices on the same triangular face of the octahedron (cis to one another). In the meridional (mer) isomer, three identical donor atoms form an arc around the center, lying on a plane passing through the metal atom."
+      },
+      {
+        "front": "Why is trans-[Co(en)₂Cl₂]⁺ optically inactive while cis-[Co(en)₂Cl₂]⁺ is optically active?",
+        "back": "The trans isomer possesses a center of inversion (inversion center) and a plane of symmetry, making it achiral and optically inactive. The cis isomer lacks both Sn axes and planes of symmetry; it is non-superimposable on its mirror image and forms an enantiomeric pair."
+      },
+      {
+        "front": "In Valence Bond Theory (VBT), how do inner orbital and outer orbital octahedral complexes differ?",
+        "back": "Inner orbital complexes utilize inner (n–1)d orbitals (d²sp³ hybridization, typically diamagnetic or low spin, favored by strong field ligands). Outer orbital complexes utilize outer nd orbitals (sp³d² hybridization, high spin, favored by weak field ligands)."
+      },
+      {
+        "front": "Describe the crystal field splitting of d-orbitals in an octahedral coordination field.",
+        "back": "The five degenerate d-orbitals split into two sets under octahedral symmetry: a lower-energy triply degenerate t₂g set (dxy, dyz, dzx, stabilized by –0.4 Δ₀) and a higher-energy doubly degenerate eg set (dx²–y², dz², destabilized by +0.6 Δ₀)."
+      },
+      {
+        "front": "What is the quantitative relationship between tetrahedral splitting energy (Δₜ) and octahedral splitting energy (Δ₀)?",
+        "back": "Δₜ = (4/9) Δ₀. Because of this smaller splitting energy, Δₜ rarely exceeds the electron pairing energy (P); thus, tetrahedral complexes are almost always high spin."
+      },
+      {
+        "front": "State the formula for Crystal Field Stabilization Energy (CFSE) of an octahedral complex.",
+        "back": "CFSE = [–0.4 × n(t₂g) + 0.6 × n(eg)] Δ₀ + mP, where n(t₂g) and n(eg) are electron counts in the respective sub-levels, P is pairing energy, and m is the number of extra electron pairs relative to the free gaseous ion."
+      },
+      {
+        "front": "Under what condition does a d⁴ octahedral complex form a low-spin versus a high-spin state?",
+        "back": "If Δ₀ > P (strong field ligand), pairing occurs in the t₂g set to give t₂g⁴ eg⁰ (low spin). If Δ₀ < P (weak field ligand), pairing is disfavored, giving t₂g³ eg¹ (high spin)."
+      },
+      {
+        "front": "State the order of ligands in the Spectrochemical Series from weakest to strongest field.",
+        "back": "I⁻ < Br⁻ < SCN⁻ < Cl⁻ < S²⁻ < F⁻ < OH⁻ < C₂O₄²⁻ < H₂O < NCS⁻ < edta⁴⁻ < NH₃ < en < CN⁻ < CO."
+      },
+      {
+        "front": "Why is [Ti(H₂O)₆]³⁺ violet in color, and what happens when it is heated?",
+        "back": "The violet color arises from the excitation of a single 3d electron from the t₂g to the eg level by absorbing green-yellow light. Heating removes the coordinated water ligands, destroying the crystal field splitting; the resulting anhydrous Ti³⁺ is colorless."
+      },
+      {
+        "front": "Describe the mechanism of synergic bonding in metal carbonyls.",
+        "back": "Synergic bonding involves two complementary steps: (1) σ-donation from the filled lone pair on carbon of CO into a vacant metal d-orbital, and (2) π-backbonding from a filled metal d-orbital into the vacant antibonding π* molecular orbital of CO. This strengthens the M–C bond and weakens the C–O bond."
+      },
+      {
+        "front": "What is the trend in C–O bond strength and stretching frequency in [V(CO)₆]⁻, [Cr(CO)₆], and [Mn(CO)₆]⁺?",
+        "back": "As the negative charge on the metal increases, π-backdonation into CO π* orbitals increases, weakening the C–O bond. C–O bond length order: [Mn(CO)₆]⁺ < [Cr(CO)₆] < [V(CO)₆]⁻. C–O stretching frequency (ν_CO) order: [V(CO)₆]⁻ < [Cr(CO)₆] < [Mn(CO)₆]⁺."
+      },
+      {
+        "front": "What is the structure, hybridization, and magnetic nature of the nickel-DMG complex, [Ni(dmg)₂]?",
+        "back": "It is a square planar, dsp²-hybridized, diamagnetic red complex stabilized by two symmetrical O–H···O intramolecular hydrogen bonds formed between adjacent dimethylglyoximate monoanions."
+      },
+      {
+        "front": "What is the chemical composition and geometry of the anticancer drug Cisplatin?",
+        "back": "Cisplatin is cis-diamminedichloridoplatinum(II), cis-[Pt(NH₃)₂Cl₂], possessing a square planar geometry (dsp² hybridization)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A coordination compound with the empirical formula CoCl₃·5NH₃ reacts with excess AgNO₃ solution to precipitate 2 moles of AgCl per mole of the compound. What is its structural formulation according to Werner's theory?",
+        "options": [
+          "[Co(NH₃)₅Cl]Cl₂",
+          "[Co(NH₃)₄Cl₂]Cl·NH₃",
+          "[Co(NH₃)₅Cl₂]Cl",
+          "[Co(NH₃)₅]Cl₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Precipitating 2 moles of AgCl means two chloride ions reside outside the coordination sphere as counter ions: [Co(NH₃)₅Cl]Cl₂.",
+          "This structure would precipitate only 1 mole of AgCl per mole of complex.",
+          "This formulation accounts for only 2 total chlorine atoms rather than 3, and would yield only 1 mole of AgCl.",
+          "This formulation would precipitate 3 moles of AgCl per mole of complex."
+        ],
+        "fullExplanation": "Only species residing in the outer coordination sphere (ionizable primary valencies) precipitate as insoluble salts upon the addition of AgNO₃. Since 2 moles of AgCl precipitate per mole of CoCl₃·5NH₃, 2 chloride ions are outside the brackets, while 1 Cl⁻ and 5 NH₃ molecules coordinate directly to cobalt to satisfy its secondary valency of 6: [Co(NH₃)₅Cl]Cl₂."
+      },
+      {
+        "question": "What is the correct IUPAC name for the complex ion [Cr(NH₃)₄Cl₂]⁺?",
+        "options": [
+          "Dichloridotetraamminechromium(III) ion",
+          "Tetraamminedichloridochromium(III) ion",
+          "Tetraamminedichloridochromate(III) ion",
+          "Tetraamminechloridochromium(I) ion"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Ligands must be cited in alphabetical order; 'ammine' precedes 'chlorido'.",
+          "Ligands are listed alphabetically: ammine before chlorido. The oxidation state of Cr is +3 (x - 2 = +1 ⇒ x = +3), and cationic complexes use the standard metal name.",
+          "The suffix '-ate' is applied only to anionic complex species, not cationic complex ions.",
+          "The oxidation state of Cr is +3, not +1."
+        ],
+        "fullExplanation": "Under IUPAC naming rules, ligands are named in alphabetical order: 'tetraammine' comes before 'dichlorido'. The central metal keeps its standard name 'chromium' because the complex is a cation. Let Cr be x: x + 4(0) + 2(-1) = +1, so x = +3. Hence, the name is tetraamminedichloridochromium(III) ion."
+      },
+      {
+        "question": "Which of the following square planar complexes can exhibit geometrical isomerism?",
+        "options": [
+          "[Pt(NH₃)₃Cl]⁺",
+          "[Pt(NH₃)Cl₃]⁻",
+          "[Pt(NH₃)₂Cl₂]",
+          "[Pt(NH₃)₄]²⁺"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "[Ma₃b] square planar complexes have only one unique spatial arrangement and cannot form cis/trans isomers.",
+          "[Mab₃] square planar complexes have only one unique spatial arrangement.",
+          "[Ma₂b₂] square planar complexes form two distinct geometrical isomers: cis (identical ligands adjacent, 90°) and trans (identical ligands opposite, 180°).",
+          "[Ma₄] square planar complexes are entirely symmetric and show no isomerism."
+        ],
+        "fullExplanation": "Square planar complexes of stoichiometry [Ma₂b₂], [Ma₂bc], and [Mabcd] show geometrical isomerism. For [Pt(NH₃)₂Cl₂], the two ammine ligands can be mutually adjacent (cis-isomer) or diagonally opposite (trans-isomer)."
+      },
+      {
+        "question": "How many total stereoisomers (geometrical + optical) exist for the octahedral complex ion [Co(en)₂Cl₂]⁺?",
+        "options": ["2", "3", "4", "6"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2 accounts only for the geometrical isomers (cis and trans), ignoring optical enantiomers.",
+          "There is 1 trans isomer (achiral) and 1 cis isomer which exists as a pair of non-superimposable enantiomers (d and l), giving 1 + 2 = 3 stereoisomers.",
+          "4 exceeds the actual count of stereoisomers.",
+          "6 is incorrect for bis-bidentate octahedral complexes of this formula."
+        ],
+        "fullExplanation": "[Co(en)₂Cl₂]⁺ has two geometrical isomers: cis and trans. The trans isomer has a center of symmetry and an internal plane of symmetry, rendering it optically inactive (1 isomer). The cis isomer is chiral (lacks an inversion center and plane of symmetry) and exists as a pair of enantiomers (d- and l-forms). Total stereoisomers = 1 (trans) + 2 (cis enantiomers) = 3."
+      },
+      {
+        "question": "Which type of isomerism is demonstrated by the pair [Cr(H₂O)₆]Cl₃ and [Cr(H₂O)₅Cl]Cl₂·H₂O?",
+        "options": [
+          "Ionisation isomerism",
+          "Hydrate (Solvate) isomerism",
+          "Coordination isomerism",
+          "Linkage isomerism"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Ionisation isomerism involves exchange of ionic ligands with non-solvent counter ions.",
+          "Hydrate (solvate) isomerism occurs when water acts either as a direct ligand in the coordination sphere or as crystal lattice water outside.",
+          "Coordination isomerism requires both cationic and anionic coordination spheres.",
+          "Linkage isomerism requires ambidentate ligands."
+        ],
+        "fullExplanation": "Compounds that have the same composition but differ by whether water molecules are directly coordinated as ligands or held as water of crystallization in the lattice are called hydrate (or solvate) isomers."
+      },
+      {
+        "question": "What is the hybridization and magnetic property of [Ni(CN)₄]²⁻ based on Valence Bond Theory?",
+        "options": [
+          "sp³, paramagnetic",
+          "dsp², diamagnetic",
+          "sp³, diamagnetic",
+          "d²sp³, diamagnetic"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "sp³ with paramagnetism corresponds to [NiCl₄]²⁻ where Cl⁻ is a weak field ligand.",
+          "In [Ni(CN)₄]²⁻, Ni²⁺ is 3d⁸. The strong field cyanide ligands force electron pairing in four 3d orbitals, vacating one 3d orbital to allow dsp² hybridization (square planar, all electrons paired, diamagnetic).",
+          "sp³ hybridization cannot produce diamagnetism in a 3d⁸ ion without ligand field pairing.",
+          "d²sp³ corresponds to 6-coordinate octahedral geometry, but this complex has a coordination number of 4."
+        ],
+        "fullExplanation": "Ni²⁺ has configuration [Ar] 3d⁸. Because CN⁻ is a strong field ligand, it forces the two unpaired 3d electrons to pair up: 3d⁸ becomes (dxy)²(dyz)²(dzx)²(dx²–y²)² with an empty 3d orbital. The central ion uses one 3d, one 4s, and two 4p orbitals to form four dsp² hybrid orbitals, yielding a square planar, diamagnetic complex."
+      },
+      {
+        "question": "Calculate the 'spin-only' magnetic moment of [Mn(CN)₆]³⁻.",
+        "options": ["2.83 BM", "3.87 BM", "4.90 BM", "5.92 BM"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Mn³⁺ is 3d⁴. With the strong field CN⁻ ligand, Δ₀ > P, so electrons pair in t₂g: configuration is t₂g⁴ eg⁰. Number of unpaired electrons n = 2. μ = √[2(2 + 2)] = √8 ≈ 2.83 BM.",
+          "3.87 BM corresponds to n = 3.",
+          "4.90 BM corresponds to high-spin d⁴ (n = 4), which occurs with weak field ligands like F⁻.",
+          "5.92 BM corresponds to n = 5 (e.g., high-spin Mn²⁺)."
+        ],
+        "fullExplanation": "In [Mn(CN)₆]³⁻, manganese is in the +3 oxidation state (3d⁴). CN⁻ is a strong field ligand causing a large crystal field splitting (Δ₀ > P). The 4 d-electrons enter the lower energy t₂g orbitals: t₂g⁴ eg⁰. This arrangement leaves 2 unpaired electrons (n = 2). μ = √[2(2 + 2)] = √8 ≈ 2.83 BM."
+      },
+      {
+        "question": "What is the Crystal Field Stabilization Energy (CFSE) for a d⁶ metal ion in an octahedral field with a strong field ligand (Δ₀ > P)?",
+        "options": [
+          "–0.4 Δ₀",
+          "–2.4 Δ₀ + 2P",
+          "–2.4 Δ₀ + 3P",
+          "–1.8 Δ₀ + P"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "–0.4 Δ₀ corresponds to a high-spin d⁶ system (t₂g⁴ eg²: –0.4×4 + 0.6×2 = –0.4 Δ₀).",
+          "For low spin d⁶, all 6 electrons occupy the t₂g set: configuration t₂g⁶ eg⁰. CFSE = 6 × (–0.4 Δ₀) = –2.4 Δ₀. Relative to the spherical field (which has 1 pair), there are 2 additional pairs, giving +2P.",
+          "–2.4 Δ₀ + 3P erroneously counts all 3 pairs instead of the excess pairs formed relative to the free ion.",
+          "–1.8 Δ₀ is the CFSE of a low-spin d⁷ system."
+        ],
+        "fullExplanation": "In a strong octahedral field, a d⁶ ion pairs completely in the t₂g set: t₂g⁶ eg⁰. The electronic stabilization energy is 6 × (–0.4 Δ₀) = –2.4 Δ₀. In the spherical gaseous state, Hund's rule gives 1 paired set and 4 unpaired electrons. In the complex, there are 3 pairs, which represents 2 net additional pairs forced by the crystal field. Hence, CFSE = –2.4 Δ₀ + 2P."
+      },
+      {
+        "question": "Which of the following octahedral complexes exhibits the longest wavelength of light absorbed for d–d transitions?",
+        "options": [
+          "[Co(CN)₆]³⁻",
+          "[Co(en)₃]³⁺",
+          "[Co(NH₃)₆]³⁺",
+          "[CoF₆]³⁻"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "CN⁻ is a very strong field ligand with a huge Δ₀, meaning it absorbs high-energy, short-wavelength light.",
+          "en is a strong field chelating ligand, producing a large Δ₀.",
+          "NH₃ is a moderately strong field ligand.",
+          "F⁻ is a weak field ligand at the lower end of the spectrochemical series, giving the smallest Δ₀. Since ΔE = hc/λ, the smallest energy gap absorbs the longest wavelength (λ)."
+        ],
+        "fullExplanation": "According to the spectrochemical series, ligand field strength follows: F⁻ < NH₃ < en < CN⁻. The crystal field splitting energy Δ₀ is therefore smallest for [CoF₆]³⁻. Since Δ₀ = hc/λ, the transition requires the least energy, which corresponds to the maximum (longest) wavelength of absorbed light."
+      },
+      {
+        "question": "The purple color of the permanganate ion (MnO₄⁻) is NOT due to a d–d transition because:",
+        "options": [
+          "Mn is in the +7 oxidation state with an empty 3d⁰ configuration",
+          "The complex is square planar",
+          "The d-orbitals are completely filled (d¹⁰)",
+          "The complex is centrosymmetric"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Mn(VII) in MnO₄⁻ has lost all 4s and 3d electrons (3d⁰). With no d-electrons, d–d transitions are impossible; the color arises from Ligand-to-Metal Charge Transfer (LMCT).",
+          "MnO₄⁻ is tetrahedral, not square planar.",
+          "Mn(VII) has an empty d-subshell, not a filled d¹⁰.",
+          "Tetrahedral geometry lacks a center of inversion."
+        ],
+        "fullExplanation": "In MnO₄⁻, the manganese atom has an oxidation number of +7, corresponding to an [Ar] 3d⁰ configuration. Since there are zero d-electrons, traditional d–d transitions cannot take place. The intense violet color is caused by a Ligand-to-Metal Charge Transfer (LMCT) transition, where an electron is photo-excited from a filled 2p orbital of an oxygen ligand into an empty d-orbital of Mn(VII)."
+      },
+      {
+        "question": "In metal carbonyls, backbonding involves the donation of electrons from:",
+        "options": [
+          "Filled metal d-orbitals into empty π* antibonding molecular orbitals of CO",
+          "Empty metal d-orbitals into filled σ orbitals of CO",
+          "Filled σ orbitals of CO into empty π* orbitals of the metal",
+          "Filled π bonding orbitals of CO into empty metal s-orbitals"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "π-backbonding involves electron transfer from filled non-bonding metal d-orbitals into the empty low-lying π* antibonding orbitals of the carbon monoxide molecule.",
+          "This describes the primary σ-donation step in reverse.",
+          "Ligand σ-electrons donate to metal hybrid orbitals, not the metal's π* orbitals.",
+          "Metal s-orbitals are not involved in the π-backbonding step."
+        ],
+        "fullExplanation": "The M–CO bond consists of two synergistic components: (i) a dative σ-bond formed by donation of the carbon lone pair into a vacant metal hybrid orbital, and (ii) a dative π-bond (backbonding) formed by overlap of a filled metal d-orbital with the vacant π* antibonding molecular orbital of CO."
+      },
+      {
+        "question": "Which of the following metal carbonyl complexes has the longest C–O bond length?",
+        "options": [
+          "[Mn(CO)₆]⁺",
+          "[Cr(CO)₆]",
+          "[V(CO)₆]⁻",
+          "[Fe(CO)₄]²⁻"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "[Mn(CO)₆]⁺ has a positive formal charge, which minimizes π-backdonation, keeping the C–O bond short and strong.",
+          "[Cr(CO)₆] is neutral and has intermediate backbonding.",
+          "[V(CO)₆]⁻ has a –1 charge with significant backbonding.",
+          "[Fe(CO)₄]²⁻ carries the largest negative formal charge (–2). Electron density is pushed into the CO π* orbitals to the greatest extent, weakening the C–O bond and making it the longest."
+        ],
+        "fullExplanation": "A higher negative charge on the central metal ion increases its electron density and enhances π-backdonation into the empty π* orbitals of the CO ligands. Populating antibonding π* orbitals reduces the C–O bond order and elongates the C–O bond. Among the choices, [Fe(CO)₄]²⁻ has a 2- formal charge, providing the maximum extent of backbonding and the longest C–O bond."
+      },
+      {
+        "question": "What is the Effective Atomic Number (EAN) of iron in the complex K₄[Fe(CN)₆]?",
+        "options": ["34", "35", "36", "38"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "34 is less than the noble gas electron count.",
+          "35 corresponds to K₃[Fe(CN)₆], where Fe is in the +3 state.",
+          "EAN = Z - (Oxidation State) + 2 × (Coordination Number) = 26 - 2 + (2 × 6) = 36 (Krypton configuration).",
+          "38 exceeds the stable octet/18-electron valence shell."
+        ],
+        "fullExplanation": "In K₄[Fe(CN)₆], iron is in the +2 oxidation state. The atomic number of iron (Z) is 26. Each of the six CN⁻ ligands contributes 2 electrons (total 12). EAN = Z – Oxidation State + 2(CN) = 26 – 2 + 12 = 36. This equals the atomic number of the noble gas Krypton (Kr)."
+      },
+      {
+        "question": "How many ions per formula unit are produced in aqueous solution by the complex [Co(NH₃)₆]Cl₃?",
+        "options": ["1", "2", "3", "4"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "The complex is an electrolyte and dissociates, so 1 is incorrect.",
+          "2 ions would result from a 1:1 electrolyte.",
+          "3 ions would result from a 1:2 electrolyte like [Co(NH₃)₅Cl]Cl₂.",
+          "Dissociation yields one [Co(NH₃)₆]³⁺ cation and three Cl⁻ anions, totaling 1 + 3 = 4 ions."
+        ],
+        "fullExplanation": "When dissolved in water, the coordination sphere remains intact while the ionizable counter ions dissociate: [Co(NH₃)₆]Cl₃(s) → [Co(NH₃)₆]³⁺(aq) + 3Cl⁻(aq). This produces a total of 4 ions (1 complex cation and 3 chloride anions)."
+      },
+      {
+        "question": "Which of the following compounds displays Coordination Isomerism?",
+        "options": [
+          "[Co(NH₃)₆][Cr(CN)₆]",
+          "[Co(NH₃)₅(NO₂)]Cl₂",
+          "[Pt(NH₃)₂Cl₂]",
+          "[Co(NH₃)₅(SO₄)]Br"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Coordination isomerism occurs in compounds where both the cation and the anion are complex ions, through interchange of ligands: [Co(NH₃)₆][Cr(CN)₆] and [Cr(NH₃)₆][Co(CN)₆].",
+          "[Co(NH₃)₅(NO₂)]Cl₂ exhibits linkage isomerism.",
+          "[Pt(NH₃)₂Cl₂] exhibits geometrical isomerism.",
+          "[Co(NH₃)₅(SO₄)]Br exhibits ionisation isomerism."
+        ],
+        "fullExplanation": "Coordination isomerism is possible when both the positive and negative entities of a compound are complex ions. In such salts, ligands can interchange between the two metal centers, as in [Co(NH₃)₆][Cr(CN)₆] and [Cr(NH₃)₆][Co(CN)₆]."
+      },
+      {
+        "question": "What is the oxidation state and magnetic moment of iron in the brown ring complex [Fe(H₂O)₅(NO)]SO₄?",
+        "options": [
+          "+1 and 3.87 BM",
+          "+2 and 4.90 BM",
+          "+3 and 5.92 BM",
+          "+1 and 1.73 BM"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "NO coordinates as a nitrosonium ion (NO⁺). Iron is in the +1 oxidation state (3d⁷) with 3 unpaired electrons (t₂g⁵ eg²), giving μ = √[3(3 + 2)] = √15 ≈ 3.87 BM.",
+          "+2 assumes NO is a neutral ligand, which contradicts spectroscopic and magnetic data.",
+          "+3 assumes NO is NO⁻, which is incorrect.",
+          "+1 with 1.73 BM would correspond to only 1 unpaired electron."
+        ],
+        "fullExplanation": "In the brown ring complex [Fe(H₂O)₅(NO)]SO₄, charge transfer from NO to Fe²⁺ produces an NO⁺ ligand and Fe⁺ (3d⁷). The high-spin d⁷ system has the configuration t₂g⁵ eg², which contains 3 unpaired electrons (n = 3). Spin-only magnetic moment μ = √[3(3 + 2)] = √15 ≈ 3.87 BM."
+      },
+      {
+        "question": "Which of the following ligands is a hexadentate chelating agent widely used to estimate water hardness?",
+        "options": [
+          "Dimethylglyoxime (dmg⁻)",
+          "Ethylenediaminetetraacetate (edta⁴⁻)",
+          "Oxalate (ox²⁻)",
+          "Diethylenetriamine (dien)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "dmg⁻ is a bidentate monoanionic ligand.",
+          "edta⁴⁻ has six donor atoms (two amine nitrogens and four carboxylate oxygens) and binds Ca²⁺ and Mg²⁺ to measure water hardness.",
+          "ox²⁻ is a bidentate dicarboxylate ligand.",
+          "dien is a tridentate ligand with three nitrogen donor atoms."
+        ],
+        "fullExplanation": "Ethylenediaminetetraacetate ion (edta⁴⁻) is a hexadentate ligand containing two donor nitrogen atoms and four donor oxygen atoms. It binds tightly to divalent alkaline earth metal cations such as Ca²⁺ and Mg²⁺, forming stable octahedral chelates; this reaction forms the basis of complexometric titration for water hardness."
+      },
+      {
+        "question": "What is the relationship between the overall stability constant (β₄) and the stepwise stability constants (k₁, k₂, k₃, k₄) for a complex [ML₄]?",
+        "options": [
+          "β₄ = k₁ + k₂ + k₃ + k₄",
+          "β₄ = k₁ × k₂ × k₃ × k₄",
+          "log β₄ = log k₁ × log k₂ × log k₃ × log k₄",
+          "β₄ = k₁ / (k₂ k₃ k₄)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Stepwise constants multiply rather than add.",
+          "The overall equilibrium constant for consecutive reversible equilibria is the mathematical product of the individual stepwise equilibrium constants: β₄ = k₁ × k₂ × k₃ × k₄.",
+          "In logarithmic terms, the values add: log β₄ = log k₁ + log k₂ + log k₃ + log k₄.",
+          "The constants are related by multiplication, not division."
+        ],
+        "fullExplanation": "For the formation of a complex ML₄ by stepwise ligand additions: M + L ⇌ ML (k₁), ML + L ⇌ ML₂ (k₂), ML₂ + L ⇌ ML₃ (k₃), and ML₃ + L ⇌ ML₄ (k₄). The overall reaction is M + 4L ⇌ ML₄ (β₄). Combining these chemical equilibria gives β₄ = k₁ × k₂ × k₃ × k₄, or log β₄ = Σ log kᵢ."
+      },
+      {
+        "question": "According to the spectrochemical series, which of the following is the correct order of increasing field strength?",
+        "options": [
+          "I⁻ < Cl⁻ < F⁻ < H₂O < NH₃ < CN⁻",
+          "CN⁻ < NH₃ < H₂O < F⁻ < Cl⁻ < I⁻",
+          "Cl⁻ < I⁻ < F⁻ < H₂O < CN⁻ < NH₃",
+          "H₂O < F⁻ < Cl⁻ < I⁻ < NH₃ < CN⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This sequence matches the empirically determined spectrochemical series: halides are weak, followed by oxygen-donors, then nitrogen-donors, and finally carbon-donors.",
+          "This is the reverse of the true field strength order.",
+          "Iodide is a weaker field ligand than chloride, not stronger.",
+          "Halides provide weaker fields than water."
+        ],
+        "fullExplanation": "The spectrochemical series arranges ligands in order of increasing crystal field splitting Δ: I⁻ < Br⁻ < SCN⁻ < Cl⁻ < S²⁻ < F⁻ < OH⁻ < C₂O₄²⁻ < H₂O < NCS⁻ < edta⁴⁻ < NH₃ < en < CN⁻ < CO. Halide donors are weak field ligands, while CN⁻ is a strong field ligand."
+      },
+      {
+        "question": "Which of the following complexes is an outer orbital, high-spin complex?",
+        "options": [
+          "[Co(NH₃)₆]³⁺",
+          "[CoF₆]³⁻",
+          "[Fe(CN)₆]⁴⁻",
+          "[Ni(CN)₄]²⁻"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "[Co(NH₃)₆]³⁺ is an inner orbital, diamagnetic complex (d²sp³, t₂g⁶ eg⁰) because NH₃ acts as a strong field ligand with Co³⁺.",
+          "In [CoF₆]³⁻, F⁻ is a weak field ligand (Δ₀ < P). The 3d⁶ electrons do not pair up, yielding t₂g⁴ eg² with 4 unpaired electrons; it uses 4s, 4p, and outer 4d orbitals (sp³d² hybridization).",
+          "[Fe(CN)₆]⁴⁻ is low-spin and inner orbital (d²sp³).",
+          "[Ni(CN)₄]²⁻ is a square planar, inner orbital complex (dsp²)."
+        ],
+        "fullExplanation": "In [CoF₆]³⁻, cobalt is in the +3 oxidation state (3d⁶). Because fluoride is a weak-field ligand, Δ₀ < P, which prevents electron pairing. The electronic configuration is t₂g⁴ eg², leaving 4 unpaired electrons. Bonding utilizes outer empty orbitals (4s, three 4p, and two 4d), resulting in sp³d² hybridization, making it an outer orbital, high-spin complex."
+      }
+    ]
+  },
+  {
+    "chapterName": "Haloalkanes and Haloarenes",
+    "flashcards": [
+      {
+        "front": "Why is the Darzens halogenation of alcohols using SOCl₂ considered the best method for preparing alkyl chlorides?",
+        "back": "R–OH + SOCl₂ → R–Cl + SO₂↑ + HCl↑. The by-products (SO₂ and HCl) are both gases that escape from the reaction mixture, leaving behind the pure alkyl chloride without requiring tedious purification."
+      },
+      {
+        "front": "What are the Finkelstein and Swarts reactions?",
+        "back": "Finkelstein reaction: Alkyl chlorides/bromides react with NaI in dry acetone to form alkyl iodides (driven by precipitation of NaCl/NaBr). Swarts reaction: Alkyl chlorides/bromides are heated with metallic fluorides (AgF, Hg₂F₂, CoF₃, SbF₃) to form alkyl fluorides."
+      },
+      {
+        "front": "State the Peroxide (Kharasch) Effect and explain why it is observed only with HBr.",
+        "back": "In the presence of peroxides, HBr adds to unsymmetrical alkenes contrary to Markovnikov's rule via a free radical mechanism. It fails for HF and HCl because the H–X bond is too strong, and for HI because iodine radicals recombine into I₂ rather than adding across the double bond."
+      },
+      {
+        "front": "What is the anomalous order of dipole moments among chloromethane, fluoromethane, bromomethane, and iodomethane?",
+        "back": "CH₃Cl (1.860 D) > CH₃F (1.847 D) > CH₃Br (1.830 D) > CH₃I (1.636 D). Although fluorine is more electronegative than chlorine, the C–Cl bond is significantly longer than the C–F bond, making the dipole moment product (q × d) larger for CH₃Cl."
+      },
+      {
+        "front": "How does branching affect the boiling point of isomeric haloalkanes?",
+        "back": "Branching decreases the boiling point. Increased branching makes the molecule more spherical, reducing its surface area and weakening intermolecular van der Waals forces."
+      },
+      {
+        "front": "What are the kinetics and stereochemical consequences of the Sₙ2 mechanism?",
+        "back": "Kinetics: Second order (Rate = k[R–X][Nu⁻]), single-step concerted process. Stereochemistry: Proceeds via backside nucleophilic attack, resulting in complete inversion of configuration (Walden inversion) at an asymmetric carbon center."
+      },
+      {
+        "front": "What are the kinetics and stereochemical consequences of the Sₙ1 mechanism?",
+        "back": "Kinetics: First order (Rate = k[R–X]), two-step mechanism with carbocation formation as the rate-determining step. Stereochemistry: Attack from either face of the planar carbocation intermediate yields racemisation (often with partial net inversion due to shielding by the leaving group)."
+      },
+      {
+        "front": "Compare the substrate reactivity orders for Sₙ1 versus Sₙ2 reactions.",
+        "back": "Sₙ1 reactivity order: 3° > 2° > 1° > CH₃X (governed by the stability of the intermediate carbocation). Sₙ2 reactivity order: CH₃X > 1° > 2° > 3° (governed by steric hindrance in the transition state)."
+      },
+      {
+        "front": "Why does reaction of R–X with KCN give an alkyl cyanide (R–CN), whereas with AgCN it gives an alkyl isocyanide (R–NC)?",
+        "back": "KCN is predominantly ionic, yielding free ambient CN⁻ ions; attack occurs via the more nucleophilic and electronegative carbon atom to form R–CN. AgCN is primarily covalent, with carbon bonded to silver, leaving the nitrogen lone pair available to attack and form R–NC."
+      },
+      {
+        "front": "Why do polar protic solvents favor Sₙ1 while polar aprotic solvents favor Sₙ2?",
+        "back": "Polar protic solvents (H₂O, alcohols) solvate both cations and anions via hydrogen bonding, stabilizing the carbocation and leaving group to promote Sₙ1. Polar aprotic solvents (DMSO, DMF, acetone) solvate only cations, leaving nucleophiles 'naked' and highly reactive to promote Sₙ2."
+      },
+      {
+        "front": "State Saytzeff's (Zaitsev's) rule for dehydrohalogenation of alkyl halides.",
+        "back": "In β-elimination reactions, the major product is the more substituted (more alkylated), thermodynamically stable alkene having the greatest number of α-hydrogens attached to the double-bonded carbons."
+      },
+      {
+        "front": "Under what conditions does dehydrohalogenation yield the Hofmann alkene as the major product?",
+        "back": "When a sterically hindered, bulky base (such as potassium tert-butoxide, (CH₃)₃CO⁻K⁺) is used, or when the leaving group is poor (such as in quaternary ammonium salts or alkyl fluorides), the base extracts the most accessible, least sterically hindered β-hydrogen."
+      },
+      {
+        "front": "List three reasons why haloarenes are extremely unreactive towards nucleophilic substitution.",
+        "back": "1. Resonance effect: Lone pair delocalization gives the C–X bond partial double bond character. 2. sp² hybridized carbon of the C–X bond is more electronegative and holds the bond tighter than sp³ carbon. 3. Instability of the hypothetical phenyl cation intermediate."
+      },
+      {
+        "front": "How do electron-withdrawing groups (–NO₂) increase the reactivity of haloarenes in nucleophilic substitution (SₙAr)?",
+        "back": "They stabilize the anionic Meisenheimer σ-complex intermediate by delocalizing negative charge through inductive and resonance effects, which is effective only when the –NO₂ groups are located ortho or para to the halogen."
+      },
+      {
+        "front": "What is the benzyne mechanism in haloarene chemistry?",
+        "back": "An elimination-addition pathway occurring when unactivated aryl halides react with extremely strong bases (e.g., KNH₂ in liquid NH₃). Elimination of HX yields an unstable benzyne intermediate containing a formal carbon-carbon triple bond, followed by addition to give both direct and cine-substitution products."
+      },
+      {
+        "front": "Why is chlorine ortho/para-directing yet deactivating in electrophilic aromatic substitution of chlorobenzene?",
+        "back": "The strong –I (inductive) effect withdraws electron density from the benzene ring, deactivating it relative to benzene. However, its +M (resonance) effect delocalizes lone pairs to selectively stabilize the carbocation intermediate at ortho and para positions."
+      },
+      {
+        "front": "What precautions are necessary when preparing a Grignard reagent (R–Mg–X)?",
+        "back": "The reaction must be carried out in strictly anhydrous conditions (using dry diethyl ether or THF) because Grignard reagents are strong bases that react rapidly with any active-hydrogen compound (water, alcohols, amines) to form hydrocarbons: R–MgX + H₂O → R–H + Mg(OH)X."
+      },
+      {
+        "front": "Differentiate between Wurtz, Fittig, and Wurtz-Fittig reactions.",
+        "back": "Wurtz reaction: Two molecules of alkyl halide react with sodium in dry ether to yield higher alkanes (2R–X + 2Na → R–R). Fittig reaction: Two aryl halides react with sodium in dry ether to yield diphenyl (2Ar–X + 2Na → Ar–Ar). Wurtz-Fittig reaction: An alkyl halide and an aryl halide react with sodium to form an alkylbenzene (Ar–X + R–X + 2Na → Ar–R)."
+      },
+      {
+        "front": "Why is chloroform stored in dark, tightly sealed amber bottles containing 1% ethanol?",
+        "back": "Chloroform is slowly oxidized by air in the presence of light to form phosgene (COCl₂), an extremely toxic gas: 2CHCl₃ + O₂ → 2COCl₂ + 2HCl. The added 1% ethanol converts any formed phosgene into harmless, non-toxic diethyl carbonate: COCl₂ + 2C₂H₅OH → (C₂H₅O)₂CO + 2HCl."
+      },
+      {
+        "front": "What structural feature is required for an organic compound to give a positive Iodoform test?",
+        "back": "The presence of either a methyl carbonyl group (CH₃–C=O) or a methyl carbinol group (CH₃–CH(OH)–) that can be oxidized to CH₃–C=O under alkaline iodine conditions, forming a yellow precipitate of iodoform (CHI₃)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following alkyl halides undergoes Sₙ2 substitution at the fastest rate?",
+        "options": [
+          "CH₃–CH₂–CH₂–CH₂–Br",
+          "(CH₃)₂CH–CH₂–Br",
+          "CH₃–CH₂–CH(CH₃)–Br",
+          "(CH₃)₃C–Br"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "1-bromobutane is an unbranched primary alkyl halide with minimal steric hindrance at the α-carbon, giving it the fastest Sₙ2 rate.",
+          "1-bromo-2-methylpropane is a primary halide, but β-branching increases steric hindrance to backside attack.",
+          "2-bromobutane is a secondary alkyl halide and reacts much slower via Sₙ2.",
+          "2-bromo-2-methylpropane is a tertiary alkyl halide, which is essentially unreactive via the Sₙ2 pathway due to steric blockage."
+        ],
+        "fullExplanation": "Sₙ2 substitutions proceed via a single concerted step involving backside attack by the nucleophile on the carbon bearing the leaving group. The transition state is pentacoordinate and highly sensitive to steric hindrance. The reactivity order is methyl > 1° (unbranched) > 1° (branched) > 2° > 3°. Thus, 1-bromobutane reacts fastest."
+      },
+      {
+        "question": "When (R)-2-bromooctane is reacted with aqueous sodium hydroxide under strictly Sₙ2 conditions, what is the stereochemical outcome of the product, octan-2-ol?",
+        "options": [
+          "Complete inversion of configuration giving (S)-octan-2-ol",
+          "Complete retention of configuration giving (R)-octan-2-ol",
+          "A 50:50 racemic mixture of (R)- and (S)-octan-2-ol",
+          "A diastereomeric mixture"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "The Sₙ2 mechanism involves backside attack opposite to the departing bromide, causing complete inversion of stereochemical configuration (Walden inversion) to yield (S)-octan-2-ol.",
+          "Retention of configuration occurs via mechanisms like Sₙi (e.g., SOCl₂ in non-coordinating solvents without base), not Sₙ2.",
+          "Racemisation is characteristic of an Sₙ1 pathway proceeding through a planar carbocation intermediate.",
+          "The molecule has only one chiral center, so enantiomers, not diastereomers, are involved."
+        ],
+        "fullExplanation": "Under Sₙ2 conditions, the incoming nucleophile (OH⁻) attacks the chiral carbon from the side opposite to the departing bromide leaving group (180° attack). This backside displacement causes an umbrella-like inversion of configuration (Walden inversion), converting (R)-2-bromooctane into pure (S)-octan-2-ol."
+      },
+      {
+        "question": "Which of the following compounds undergoes solvolysis via the Sₙ1 mechanism at the highest rate?",
+        "options": [
+          "C₆H₅–CH₂–Cl",
+          "(C₆H₅)₂CH–Cl",
+          "(C₆H₅)₃C–Cl",
+          "CH₃–CH₂–Cl"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Forms a primary benzylic carbocation stabilized by only one phenyl ring.",
+          "Forms a secondary benzylic carbocation stabilized by two phenyl rings.",
+          "Forms a triphenylmethyl (trityl) carbocation, where the positive charge is delocalized over three aromatic rings through extensive resonance, making it exceptionally stable and promoting very rapid ionization.",
+          "Ethyl chloride generates an unstable primary aliphatic carbocation and prefers Sₙ2."
+        ],
+        "fullExplanation": "The rate-determining step in an Sₙ1 reaction is the unimolecular ionization of the alkyl halide to generate a carbocation intermediate. The triphenylmethyl cation, (C₆H₅)₃C⁺, is stabilized by extensive resonance over three aromatic rings (nine contributing structures). Consequently, (C₆H₅)₃C–Cl undergoes Sₙ1 solvolysis at the fastest rate."
+      },
+      {
+        "question": "What is the major product obtained when 2-bromo-2-methylbutane is treated with potassium tert-butoxide in tert-butanol?",
+        "options": [
+          "2-methylbut-2-ene",
+          "2-methylbut-1-ene",
+          "2-methylbutan-2-ol",
+          "3-methylbut-1-ene"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2-methylbut-2-ene is the more substituted Saytzeff alkene, formed primarily when a small, unhindered base like ethoxide is used.",
+          "Potassium tert-butoxide is a bulky base that preferentially abstracts the more accessible, less sterically hindered β-hydrogen from the terminal methyl group, yielding the less substituted Hofmann alkene (2-methylbut-1-ene) as the major product.",
+          "Substitution does not predominate because tert-butoxide is a strong, hindered base that drives E2 elimination over substitution.",
+          "3-methylbut-1-ene requires a rearrangement, which does not occur during concerted E2 elimination."
+        ],
+        "fullExplanation": "Potassium tert-butoxide ((CH₃)₃CO⁻K⁺) is a sterically encumbered, bulky base. In the E2 mechanism, its steric bulk restricts it from accessing the more sterically hindered internal β-hydrogen. Instead, it extracts a proton from the less hindered methyl carbon, leading to 2-methylbut-1-ene (Hofmann product) as the major product."
+      },
+      {
+        "question": "What is the primary driving force behind the Finkelstein reaction: R–Cl + NaI (in dry acetone) → R–I + NaCl↓?",
+        "options": [
+          "Higher nucleophilicity of iodide in water",
+          "Precipitation of sodium chloride in dry acetone drives the equilibrium forward",
+          "Weaker bond strength of C–I compared to C–Cl",
+          "High polarity of dry acetone that stabilizes free carbocations"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "The reaction is run in dry acetone, not water.",
+          "According to Le Chatelier's principle, because NaCl and NaBr have very low solubility in dry acetone, they precipitate out as formed, shifting the equilibrium toward the formation of alkyl iodide.",
+          "A weaker C–I bond would thermodynamically oppose the reaction, not drive it.",
+          "Acetone is a polar aprotic solvent that favors Sₙ2 displacement, not free carbocation formation."
+        ],
+        "fullExplanation": "Sodium iodide (NaI) is soluble in acetone due to its covalent character, whereas NaCl and NaBr are largely insoluble and precipitate out of solution. The continuous removal of NaCl/NaBr from the liquid phase drives the reversible halogen exchange forward toward the formation of the alkyl iodide according to Le Chatelier's principle."
+      },
+      {
+        "question": "Treatment of ethyl bromide with alcoholic KCN yields ethyl cyanide as the major product, whereas treatment with AgCN yields ethyl isocyanide. Why?",
+        "options": [
+          "KCN is predominantly ionic giving free ambident CN⁻, whereas AgCN is predominantly covalent",
+          "KCN acts as an electrophile, whereas AgCN acts as a nucleophile",
+          "Ag⁺ oxidizes the alkyl group",
+          "Potassium complexes with nitrogen, blocking its donation"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "KCN ionizes to furnish ambient cyanide ions [C≡N]⁻; since the C–C bond is stronger than the C–N bond, attack occurs through carbon. AgCN has covalent Ag–C character, so the unshared pair on nitrogen initiates attack, yielding an isocyanide (R–NC).",
+          "Both reagents supply nucleophiles; neither acts as an electrophile toward the alkyl group.",
+          "Ag⁺ does not act as an oxidizing agent in this substitution.",
+          "Potassium does not coordinate or block nitrogen lone pairs."
+        ],
+        "fullExplanation": "KCN is an ionic compound that dissociates into K⁺ and CN⁻ ions. Although the ambient cyanide ion can donate electrons from either C or N, attack via carbon is thermodynamically favored because a C–C bond is stronger and more stable than a C–N bond. AgCN is largely covalent, with silver bonded directly to carbon; as a result, only the lone pair on nitrogen is available for nucleophilic attack, producing an isocyanide (R–NC)."
+      },
+      {
+        "question": "Which of the following haloalkanes reacts most rapidly with silver nitrate (AgNO₃) in aqueous ethanol?",
+        "options": [
+          "Chlorobenzene",
+          "Vinyl chloride",
+          "Allyl chloride",
+          "1-chlorobutane"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Chlorobenzene is an aryl halide with partial double-bond character and does not ionize.",
+          "Vinyl chloride has resonance stabilization of its C–Cl bond and yields an unstable vinylic cation.",
+          "Allyl chloride ionizes rapidly in polar protic media because the resulting allyl carbocation (CH₂=CH–CH₂⁺) is resonance-stabilized, yielding a rapid AgCl precipitate.",
+          "1-chlorobutane forms an unstable primary aliphatic carbocation and ionizes very slowly."
+        ],
+        "fullExplanation": "Reaction with alcoholic AgNO₃ proceeds through an Sₙ1 pathway where the rate depends on the stability of the carbocation formed upon loss of chloride. Allyl chloride (CH₂=CH–CH₂Cl) ionizes rapidly to form the resonance-stabilized allyl cation (CH₂=CH–CH₂⁺ ↔ ⁺CH₂–CH=CH₂), leading to an immediate precipitate of AgCl. Vinyl and aryl halides do not ionize under these conditions."
+      },
+      {
+        "question": "Arrange the following compounds in order of increasing reactivity toward nucleophilic aromatic substitution (SₙAr): (I) Chlorobenzene, (II) 4-Nitrochlorobenzene, (III) 2,4-Dinitrochlorobenzene, (IV) 2,4,6-Trinitrochlorobenzene.",
+        "options": [
+          "I < II < III < IV",
+          "IV < III < II < I",
+          "I < III < II < IV",
+          "II < I < III < IV"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Each additional strongly electron-withdrawing –NO₂ group placed at an ortho or para position stabilizes the negative charge of the intermediate Meisenheimer complex via resonance, increasing reactivity.",
+          "This is the inverse of the correct reactivity order.",
+          "2,4-dinitrochlorobenzene is more reactive than 4-nitrochlorobenzene, so III must follow II.",
+          "Chlorobenzene is less reactive than any nitro-substituted derivative, so I must be lowest."
+        ],
+        "fullExplanation": "Nucleophilic aromatic substitution (addition-elimination, SₙAr) proceeds via an anionic Meisenheimer σ-complex intermediate. Nitro groups positioned ortho and para to the halogen strongly withdraw electron density through both –I and –M effects, stabilizing the carbanionic intermediate. Thus, reactivity increases systematically with the number of –NO₂ groups: Chlorobenzene < 4-Nitrochlorobenzene < 2,4-Dinitrochlorobenzene < 2,4,6-Trinitrochlorobenzene."
+      },
+      {
+        "question": "What is the major monobromo derivative formed when propene is treated with N-bromosuccinimide (NBS) in CCl₄ under illumination?",
+        "options": [
+          "1-bromoprop-1-ene",
+          "2-bromopropene",
+          "3-bromoprop-1-ene",
+          "1,2-dibromopropane"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "1-bromoprop-1-ene is a vinylic bromide, not formed by allylic radical substitution.",
+          "2-bromopropene would require vinylic hydrogen abstraction.",
+          "NBS serves as a low-concentration source of molecular bromine that selectively carries out free-radical allylic bromination to yield 3-bromoprop-1-ene (allyl bromide).",
+          "1,2-dibromopropane is the electrophilic addition product, favored by high Br₂ concentrations in the dark, not by NBS."
+        ],
+        "fullExplanation": "N-bromosuccinimide (NBS) is a selective reagent for allylic and benzylic bromination. It maintains a steady, very low concentration of Br₂. Homolytic cleavage produces bromine free radicals that abstract the weaker allylic C–H hydrogen from propene, generating a resonance-stabilized allyl radical that reacts with Br₂ to give 3-bromoprop-1-ene (allyl bromide)."
+      },
+      {
+        "question": "What is the major product of the addition of HBr to propene in the presence of benzoyl peroxide?",
+        "options": [
+          "2-bromopropane",
+          "1-bromopropane",
+          "1,2-dibromopropane",
+          "2-methylpropane"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2-bromopropane is the Markovnikov product obtained in the absence of peroxides via an ionic mechanism.",
+          "In the presence of peroxides, the reaction proceeds via a free radical pathway. The bromine radical adds first to the terminal carbon to form the more stable secondary free radical, yielding 1-bromopropane (anti-Markovnikov product).",
+          "1,2-dibromopropane is formed by halogen addition (Br₂), not HBr addition.",
+          "This is an alkane isomer and not an addition product of propene."
+        ],
+        "fullExplanation": "In the presence of peroxides, HBr adds via a free-radical chain mechanism (Kharasch effect). A generated bromine free radical (Br•) adds to the terminal carbon of propene (CH₃–CH=CH₂) to generate the more stable secondary carbon radical (CH₃–ĊH–CH₂Br). Subsequent hydrogen atom abstraction from HBr yields 1-bromopropane as the major product."
+      },
+      {
+        "question": "What product is formed when methylmagnesium bromide (CH₃MgBr) is treated with heavy water (D₂O)?",
+        "options": [
+          "CH₄",
+          "CH₃OD",
+          "CH₃D",
+          "CD₄"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "CH₄ would be formed with normal water (H₂O).",
+          "CH₃OD is an alcohol-like deuterated product, but the carbanionic methyl group abstracts the deuteron.",
+          "The strongly basic carbanion CH₃⁻ of the Grignard reagent abstracts a D⁺ ion from D₂O to produce monodeuteromethane (CH₃D) and Mg(OD)Br.",
+          "CD₄ would require multiple complete H/D exchanges on the methyl carbon, which does not happen."
+        ],
+        "fullExplanation": "Grignard reagents contain a strongly polarized, highly basic carbon-metal bond (Rδ⁻–Mgδ⁺X). They react quantitatively with any compound containing active hydrogen/deuterium. Reaction with D₂O results in deuteron abstraction by the methyl group: CH₃MgBr + D₂O → CH₃D + Mg(OD)Br."
+      },
+      {
+        "question": "What is the role of adding approximately 1% ethanol to commercially bottled chloroform?",
+        "options": [
+          "To act as a catalyst for oxidation",
+          "To prevent hydrolysis by atmospheric moisture",
+          "To convert any toxic phosgene formed by aerial oxidation into harmless diethyl carbonate",
+          "To increase the volatility of chloroform for anesthetic purposes"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Ethanol is added as an inhibitor and scavenger, not an oxidation catalyst.",
+          "Hydrolysis is not the primary degradation pathway for stored chloroform.",
+          "Chloroform slowly oxidizes in air and sunlight to produce poisonous phosgene (COCl₂). Ethanol reacts with phosgene to form non-toxic diethyl carbonate: COCl₂ + 2C₂H₅OH → (C₂H₅O)₂CO + 2HCl.",
+          "Ethanol does not increase the volatility of chloroform."
+        ],
+        "fullExplanation": "Upon prolonged exposure to air and light, chloroform is oxidized to the dangerous, poisonous gas phosgene: 2CHCl₃ + O₂ → 2COCl₂ + 2HCl. The addition of ~1% ethanol serves two purposes: it retards this oxidation and chemically scavenges any phosgene that forms by converting it into non-toxic diethyl carbonate, (C₂H₅O)₂CO."
+      },
+      {
+        "question": "Which of the following compounds gives a positive iodoform test upon warming with I₂ and aqueous NaOH?",
+        "options": [
+          "Methanol",
+          "Pentan-3-one",
+          "Pentan-2-one",
+          "Benzaldehyde"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Methanol (CH₃OH) lacks a second carbon to provide the required CH₃–C(OH) grouping.",
+          "Pentan-3-one is a symmetrical ketone (CH₃CH₂COCH₂CH₃) without a methyl carbonyl group.",
+          "Pentan-2-one possesses the methyl carbonyl group (CH₃–CO–CH₂CH₂CH₃) and undergoes base-catalyzed iodination followed by carbon-carbon bond cleavage to form a yellow precipitate of iodoform (CHI₃).",
+          "Benzaldehyde is an aromatic aldehyde lacking an α-methyl group."
+        ],
+        "fullExplanation": "The iodoform test is specific for compounds containing either the CH₃–C=O group or the CH₃–CH(OH)– group (which oxidizes in situ to CH₃–C=O). Pentan-2-one (CH₃COCH₂CH₂CH₃) has a terminal methyl ketone group that undergoes triiodination and cleavage by NaOH to yield a canary yellow precipitate of CHI₃ (iodoform) and sodium butyrate."
+      },
+      {
+        "question": "What is the major product obtained when chlorobenzene is treated with chlorine gas in the presence of anhydrous FeCl₃ in the dark?",
+        "options": [
+          "1,2-dichlorobenzene",
+          "1,3-dichlorobenzene",
+          "1,4-dichlorobenzene",
+          "Hexachlorobenzene"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "1,2-dichlorobenzene (ortho isomer) is formed as a minor product due to steric hindrance between the two adjacent chloro groups.",
+          "1,3-dichlorobenzene (meta isomer) is not formed because chlorine is an ortho/para director.",
+          "1,4-dichlorobenzene (para isomer) is the major product because the para position experiences minimal steric repulsion and the molecule packs more symmetrically.",
+          "Hexachlorobenzene requires excessive chlorine, high temperature, and vigorous catalyst conditions."
+        ],
+        "fullExplanation": "The chloro substituent on a benzene ring is ortho/para-directing due to resonance (+M effect) stabilization of the arenium intermediate at these positions. Electrophilic chlorination yields a mixture of ortho- and para-dichlorobenzene. The para isomer (1,4-dichlorobenzene) predominates as the major product because of reduced steric hindrance between the two bulky chlorine atoms."
+      },
+      {
+        "question": "When chlorobenzene is treated with sodamide (NaNH₂) in liquid ammonia at 240 K, the reaction proceeds via which intermediate?",
+        "options": [
+          "Carbocation",
+          "Free radical",
+          "Benzyne",
+          "Carbanion only"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "An sp²-hybridized phenyl cation is exceptionally unstable and is not formed here.",
+          "This reaction is an ionic elimination-addition process, not a radical pathway.",
+          "The strong base NH₂⁻ abstracts an ortho proton followed by expulsion of Cl⁻ to form an electrically neutral, highly reactive benzyne intermediate containing a formal carbon-carbon triple bond.",
+          "Although an ortho-carbanion is generated transiently upon deprotonation, the true key intermediate that captures the nucleophile is benzyne."
+        ],
+        "fullExplanation": "Aryl halides unactivated by electron-withdrawing groups react with extremely strong bases like NaNH₂ in liquid NH₃ via an elimination-addition mechanism. The amide ion removes a proton ortho to the halogen, and subsequent loss of halide produces benzyne (C₆H₄). Nucleophilic attack of NH₂⁻ on either carbon of the strained formal triple bond yields aniline, often showing cine-substitution with substituted haloarenes."
+      },
+      {
+        "question": "Which of the following alkyl halides undergoes the Swarts reaction most effectively to produce an alkyl fluoride?",
+        "options": [
+          "CH₃–Br + AgF",
+          "CH₃–I + NaF",
+          "CH₃–Cl + KF",
+          "CH₃–OH + HF"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Heating an alkyl bromide or chloride with transition metal fluorides like AgF, Hg₂F₂, or CoF₃ is the classic Swarts reaction for synthesizing fluoroalkanes.",
+          "NaF is an alkali fluoride that lacks the driving force of heavy metal fluoride lattice energies in typical organic solvents.",
+          "KF is used in halogen exchange for activated aromatics, but simple alkyl fluorides are best prepared using heavy metal fluorides (AgF).",
+          "This is an acid-catalyzed substitution on an alcohol, not a Swarts halogen exchange."
+        ],
+        "fullExplanation": "The Swarts reaction is the standard method for preparing alkyl fluorides. It involves heating an alkyl chloride or bromide with a heavy metal fluoride such as AgF, Hg₂F₂, CoF₃, or SbF₃: CH₃Br + AgF → CH₃F + AgBr↓."
+      },
+      {
+        "question": "Which sequence correctly represents the boiling points of halomethanes in increasing order?",
+        "options": [
+          "CH₃F < CH₃Cl < CH₃Br < CH₃I",
+          "CH₃I < CH₃Br < CH₃Cl < CH₃F",
+          "CH₃Cl < CH₃F < CH₃Br < CH₃I",
+          "CH₃F < CH₃I < CH₃Br < CH₃Cl"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "As the size and atomic mass of the halogen increase from F to I, the polarizability of the electron cloud increases significantly, leading to stronger London dispersion forces and higher boiling points.",
+          "This is the inverse of the true boiling point order.",
+          "Fluoromethane has weaker van der Waals attractions than chloromethane, so it boils lower.",
+          "Iodomethane has the highest molecular mass and polarizability, so it has the highest boiling point."
+        ],
+        "fullExplanation": "For a given alkyl group, boiling points increase in the order: R–F < R–Cl < R–Br < R–I. This occurs because the size and mass of the halogen atom increase down the group, increasing the total number of electrons, the polarizability of the molecule, and the magnitude of attractive London dispersion forces."
+      },
+      {
+        "question": "What is the main organic product when bromobenzene is heated with chloromethane and sodium in dry ether?",
+        "options": [
+          "Biphenyl",
+          "Toluene",
+          "Chlorobenzene",
+          "Ethane"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Biphenyl is the symmetrical self-coupling product (Fittig product).",
+          "The cross-coupling of an aryl halide (bromobenzene) and an alkyl halide (chloromethane) in the presence of sodium metal in dry ether is the Wurtz-Fittig reaction, which yields an alkylbenzene (toluene).",
+          "Chlorobenzene is not formed as the primary coupling product.",
+          "Ethane is the minor alkyl homocoupling product."
+        ],
+        "fullExplanation": "This reaction is an example of the Wurtz-Fittig reaction: C₆H₅Br + CH₃Cl + 2Na (in dry ether) → C₆H₅–CH₃ (toluene) + NaCl + NaBr. An aryl halide and an alkyl halide react with sodium in an ethereal solution to yield an alkylbenzene."
+      },
+      {
+        "question": "What is the major product obtained when 2-bromopentane is heated with alcoholic KOH?",
+        "options": [
+          "Pent-1-ene",
+          "trans-Pent-2-ene",
+          "cis-Pent-2-ene",
+          "Pentan-2-ol"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Pent-1-ene is the less substituted Hofmann alkene and is formed as the minor elimination product.",
+          "According to Saytzeff's rule, elimination produces the more substituted alkene, pent-2-ene; the trans isomer is more stable than the cis isomer due to lower steric repulsion between alkyl groups, making it the major product.",
+          "cis-Pent-2-ene is formed in smaller amounts because unfavorable steric clashes between the ethyl and methyl groups destabilize it relative to the trans form.",
+          "Pentan-2-ol would be the substitution product, but hot alcoholic KOH favors elimination."
+        ],
+        "fullExplanation": "Heating with alcoholic KOH causes dehydrohalogenation via an E2 pathway. Following Saytzeff's rule, the more substituted alkene (pent-2-ene) is the predominant product. Between the two geometrical isomers, trans-pent-2-ene is thermodynamically more stable than cis-pent-2-ene because the bulky terminal methyl and ethyl groups are situated on opposite sides of the double bond, minimizing steric strain."
+      },
+      {
+        "question": "Which of the following polyhalogen compounds is an environmental concern because it undergoes photochemical breakdown in the stratosphere, releasing chlorine radicals that catalyze ozone depletion?",
+        "options": [
+          "DDT",
+          "Freon-12 (CF₂Cl₂)",
+          "Iodoform",
+          "Carbon tetrachloride (in water treatment)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "DDT is an insecticide that bioaccumulates in food chains, but does not migrate significantly to the stratosphere.",
+          "Chlorofluorocarbons like Freon-12 (CF₂Cl₂) are chemically unreactive in the troposphere, but upon reaching the stratosphere, UV radiation cleaves C–Cl bonds to produce chlorine free radicals (Cl•) that catalytically destroy ozone.",
+          "Iodoform is an antiseptic solid that decomposes at ground level.",
+          "While CCl₄ contributes to ozone depletion, Freons are specifically designed volatile aerosols/refrigerants with long atmospheric lifetimes that reach the upper stratosphere intact."
+        ],
+        "fullExplanation": "Freons (chlorofluorocarbons, such as Freon-12, CF₂Cl₂) are non-flammable, non-toxic, and stable compounds in the lower atmosphere. However, they diffuse into the stratosphere where short-wavelength ultraviolet radiation causes homolytic C–Cl bond fission: CF₂Cl₂ + hν → •CF₂Cl + Cl•. The generated atomic chlorine acts as a catalyst in a chain reaction that breaks down ozone (O₃) into dioxygen (O₂)."
+      }
+    ]
+  }
+]

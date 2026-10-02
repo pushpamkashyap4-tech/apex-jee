@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Polymers",
+    "flashcards": [
+      {
+        "front": "Classify polymers based on molecular forces and state the order of intermolecular forces.",
+        "back": "1. Elastomers: Weakest intermolecular forces (van der Waals); polymer chains held by few cross-links, allowing stretching (e.g., Buna-S, Buna-N, Neoprene).\n2. Thermoplastics: Intermediate forces; linear or slightly branched polymers that soften on heating and harden on cooling reversibly (e.g., Polythene, Polystyrene, PVC).\n3. Fibers: Strong intermolecular forces (hydrogen bonding or strong dipole-dipole); form thread-like structures with high tensile strength (e.g., Nylon-6,6, Terylene).\n4. Thermosetting polymers: Heavily cross-linked or branched network polymers that undergo permanent chemical hardening upon heating (e.g., Bakelite, Melamine-formaldehyde).\nOrder of intermolecular forces: Elastomers < Thermoplastics < Fibers."
+      },
+      {
+        "front": "Compare Low-Density Polyethene (LDPE) and High-Density Polyethene (HDPE) in terms of preparation, structure, and properties.",
+        "back": "• LDPE: Polymerized from ethene at 350-570 K and 1000-2000 atm using traces of O₂ or peroxide initiator. Possesses a highly branched structure, low density (0.91-0.93 g/cm³), low tensile strength, flexible, and poor electrical conductor. Used in squeeze bottles, flexible pipes, and insulation.\n• HDPE: Polymerized at 333-343 K and 6-7 atm in a hydrocarbon solvent using Ziegler-Natta catalyst [TiCl₄ + Al(C₂H₅)₃]. Consists of linear unbranched chains with close packing, high density (0.94-0.97 g/cm³), high crystallinity, rigidity, and high tensile strength. Used for buckets, dustbins, and tough pipes."
+      },
+      {
+        "front": "What are the monomers, properties, and applications of Polytetrafluoroethylene (Teflon) and Polyacrylonitrile (PAN / Orlon)?",
+        "back": "• Teflon (PTFE): Monomer is tetrafluoroethene (CF₂=CF₂). Prepared by heating CF₂=CF₂ with persulphate catalyst at high pressure. Chemically inert, heat-resistant, resists corrosive reagents. Used in non-stick cookware coatings and gaskets/oil seals.\n• Polyacrylonitrile (PAN/Orlon): Monomer is acrylonitrile (CH₂=CH-CN). Prepared via peroxide-induced addition polymerization. Possesses high resistance to stains, chemicals, and sunlight. Used as a commercial substitute for wool in sweaters and carpets."
+      },
+      {
+        "front": "Compare the structure and physical properties of Natural Rubber and Gutta-Percha.",
+        "back": "• Natural Rubber: cis-1,4-polyisoprene [-(CH₂-C(CH₃)=CH-CH₂)-]ₙ. The all-cis configuration prevents linear alignment; chains form coils held only by weak van der Waals interactions, giving high elasticity, flexibility, and tackiness.\n• Gutta-Percha: trans-1,4-polyisoprene. The trans configuration allows polymer chains to pack tightly in a zig-zag crystalline arrangement with stronger intermolecular attractions, rendering it hard, tough, rigid, and non-elastic."
+      },
+      {
+        "front": "What is the process and chemical mechanism of the Vulcanization of Rubber?",
+        "back": "Raw natural rubber is heated with 3-5% elemental sulfur and an accelerator (such as zinc oxide) at 373-415 K. Sulfur atoms form covalent disulfide (-S-S-) and polysulfide bridges across the reactive allylic double bonds of adjacent cis-1,4-polyisoprene chains. This cross-linked three-dimensional network prevents chain slippage, significantly enhancing tensile strength, thermal stability (-40 °C to 100 °C), resistance to organic solvents, and elasticity."
+      },
+      {
+        "front": "What are the monomers and distinct characteristics of the synthetic rubbers Neoprene and Buna-N?",
+        "back": "• Neoprene: Homopolymer of chloroprene (2-chloro-1,3-butadiene). Polymerized by free-radical addition. Highly resistant to mineral oils, vegetable oils, weathering, and heat. Used in manufacturing conveyor belts, gaskets, and hoses.\n• Buna-N (NBR): Copolymer of 1,3-butadiene (75%) and acrylonitrile (25%). Polymerized in the presence of a peroxide catalyst. Outstanding resistance to the swelling action of petrol, lubricating oils, and organic solvents. Used for fuel tank linings, oil seals, and aircraft hoses."
+      },
+      {
+        "front": "Describe the preparation, monomer components, and uses of Buna-S (SBR).",
+        "back": "• Monomers: 1,3-Butadiene (75%) and Styrene (25%).\n• Preparation: Copolymerized by free-radical addition in an emulsion with sodium or persulphate initiator (Buna: Bu = Butadiene, Na = Sodium catalyst, S = Styrene).\n• Properties & Uses: Excellent abrasion resistance, high load-bearing capacity, resilient. Extensively used in automobile tyres, conveyor belts, shoe soles, and cable insulation."
+      },
+      {
+        "front": "Give the monomers and condensation polymerization mechanism of Nylon-6,6 and Nylon-6,10.",
+        "back": "• Nylon-6,6: Step-growth condensation of hexamethylenediamine [H₂N-(CH₂)₆-NH₂] and adipic acid [HOOC-(CH₂)₄-COOH] at 553 K under high pressure with elimination of H₂O. Forms amide (-CO-NH-) linkages.\n• Nylon-6,10: Step-growth condensation of hexamethylenediamine [H₂N-(CH₂)₆-NH₂] and sebacic acid [HOOC-(CH₂)₈-COOH] with elimination of H₂O. Both are linear synthetic fibers possessing high tensile strength and elasticity due to extensive intermolecular hydrogen bonding."
+      },
+      {
+        "front": "How is Nylon-6 synthesized, and what type of polymerization is involved?",
+        "back": "Nylon-6 is manufactured by heating caprolactam (a cyclic amide) with 5-10% water at 533-543 K. Water hydrolyses caprolactam to ε-aminocaproic acid [H₂N-(CH₂)₅-COOH], which initiates ring-opening step-growth polymerization of remaining caprolactam molecules, yielding the linear polyamide Nylon-6: -[-NH-(CH₂)₅-CO-]ₙ-. It is used in tire cords, fabrics, and ropes."
+      },
+      {
+        "front": "What are the monomers, functional linkages, and uses of Terylene (Dacron)?",
+        "back": "• Monomers: Ethylene glycol [HO-CH₂-CH₂-OH] and Terephthalic acid [benzene-1,4-dicarboxylic acid, p-HOOC-C₆H₄-COOH].\n• Synthesis: Condensation polymerization at 420-460 K in the presence of a zinc acetate-antimony trioxide catalyst with elimination of methanol/water.\n• Linkage: Ester linkage [-COO-], making it a polyester.\n• Properties & Uses: Crease-resistant, high tensile strength, hydrophobic. Blended with cotton (terycot) or wool (terywool) and used in safety helmets and sailcloth."
+      },
+      {
+        "front": "Describe the structure, synthesis, and key application of Glyptal (Alkyd resin).",
+        "back": "• Monomers: Ethylene glycol [HO-CH₂-CH₂-OH] and Phthalic acid [benzene-1,2-dicarboxylic acid].\n• Reaction: Step-growth condensation yielding an initially linear polyester containing pendant -COOH or -OH groups, which undergo cross-linking upon curing/heating.\n• Uses: Because of its cross-linking and adhesive properties, Glyptal is used in the manufacture of paints, lacquers, and building cements."
+      },
+      {
+        "front": "Explain the step-by-step formation of Novolac and Bakelite from Phenol and Formaldehyde.",
+        "back": "• Initial step: Electrophilic aromatic substitution of phenol with formaldehyde in the presence of acid or base catalyst yields o- and p-hydroxymethylphenols.\n• Novolac: Condensation of o-hydroxymethylphenol molecules with loss of water produces a linear polymer termed Novolac, used in paints.\n• Bakelite: Heating Novolac with excess formaldehyde (or hexamethylenetetramine) induces extensive methylene (-CH₂-) cross-linking between aromatic rings at ortho and para positions, yielding an infusible, insoluble 3D network thermosetting polymer used in electrical switches, plugs, and handles of utensils."
+      },
+      {
+        "front": "What are the monomers and properties of Melamine-Formaldehyde Resin?",
+        "back": "• Monomers: Melamine (2,4,6-triamino-1,3,5-triazine) and Formaldehyde (HCHO).\n• Reaction: Melamine and formaldehyde first condense to form a methylol derivative (resin intermediate), which upon further heating undergoes step-growth cross-linking condensation to form a thermosetting polymer.\n• Properties & Uses: Highly durable, thermally stable, scratch-resistant. Extensively utilized in the manufacture of non-breakable melamine tableware and decorative laminates."
+      },
+      {
+        "front": "What is Polymethyl Methacrylate (PMMA / Plexiglas / Lucite)?",
+        "back": "• Monomer: Methyl methacrylate [CH₂=C(CH₃)-COOCH₃].\n• Type: Addition homopolymer (polyacrylate) produced by free-radical chain polymerization using benzoyl peroxide.\n• Characteristics & Uses: Exceptional optical clarity, lightweight, transparent, high weather resistance, shatterproof substitute for silicate glass. Used in aircraft canopies, safety lenses, optical fibers, and protective screens."
+      },
+      {
+        "front": "What is PHBV, what are its monomers, and why is it environmentally significant?",
+        "back": "• Full Name: Poly-β-hydroxybutyrate-co-β-hydroxyvalerate.\n• Monomers: 3-Hydroxybutanoic acid and 3-Hydroxypentanoic acid.\n• Polymer Type: Biodegradable polyester linked by ester bonds.\n• Properties & Uses: Undergoes enzymatic bacterial degradation in the environment into CO₂ and H₂O without toxic residues. The hydroxybutyrate block confers stiffness while the valerate block imparts flexibility. Used in controlled-release drug capsules and orthopedic packaging."
+      },
+      {
+        "front": "What are the monomers and classification of Nylon-2-nylon-6?",
+        "back": "• Monomers: Glycine [H₂N-CH₂-COOH] (2 carbon atoms) and ε-Aminocaproic acid [H₂N-(CH₂)₅-COOH] (6 carbon atoms).\n• Polymer Type: Biodegradable synthetic alternating polyamide copolymer.\n• Linkage: Polyamide linkage [-NH-CH₂-CO-NH-(CH₂)₅-CO-]ₙ.\n• Significance: Readily hydrolysed and degraded by soil microorganisms, preventing environmental plastic accumulation."
+      },
+      {
+        "front": "Detail the three steps of Free Radical Addition Polymerization of ethene using benzoyl peroxide.",
+        "back": "1. Chain Initiation: Thermal or photochemical homolysis of benzoyl peroxide yields phenyl free radicals (C₆H₅•), which add across the double bond of ethene to generate a larger alkyl radical (C₆H₅-CH₂-C•H₂).\n2. Chain Propagation: The primary radical successively attacks ethene monomers, rapidly elongating the chain: C₆H₅-(CH₂-CH₂)ₙ-CH₂-C•H₂.\n3. Chain Termination: Growing radical chains terminate by either radical combination (coupling of two radicals) or disproportionation (hydrogen transfer forming one saturated and one unsaturated polymer)."
+      },
+      {
+        "front": "Explain Coordination Polymerization with the Ziegler-Natta Catalyst.",
+        "back": "• Catalyst: Heterogeneous mixture of titanium tetrachloride and triethylaluminium: TiCl₄ + Al(C₂H₅)₃.\n• Mechanism: Monomer (e.g., ethene or propene) coordinates via its π-electrons to a vacant d-orbital on the titanium center. Insertion of the alkene into the titanium-carbon bond proceeds with precise stereochemical control.\n• Advantages: Operates at low temperature (333-343 K) and low pressure (6-7 atm), prevents branching, yielding highly stereoregular (isotactic/syndiotactic) linear polymers with high crystallinity and density."
+      },
+      {
+        "front": "Define Number-Average Molecular Mass (Mn), Weight-Average Molecular Mass (Mw), and Polydispersity Index (PDI).",
+        "back": "• Number-Average (Mn): Total mass divided by total number of molecules: Mn = Σ(Ni•Mi) / ΣNi (measured by colligative properties, e.g., osmotic pressure).\n• Weight-Average (Mw): Mw = Σ(Ni•Mi²) / Σ(Ni•Mi) (measured by light scattering and ultracentrifugation).\n• Polydispersity Index (PDI): PDI = Mw / Mn.\n  - For natural biopolymers (proteins, nucleic acids): PDI = 1 (monodisperse).\n  - For synthetic polymers: PDI > 1 (polydisperse, as polymer chains have variable lengths)."
+      },
+      {
+        "front": "What are Copolymerization and Homopolymerization? Give an example of each with structure.",
+        "back": "• Homopolymerization: Polymer formed from a single monomeric species. Example: Polyvinyl chloride (PVC) formed solely from vinyl chloride [-(CH₂-CHCl)-]ₙ; Polypropene from propene.\n• Copolymerization: Polymerization in which two or more different monomeric species combine into the same polymer backbone. Example: Buna-S synthesized from 1,3-butadiene and styrene; Terylene from ethylene glycol and terephthalic acid."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following polymers is classified as a thermosetting polymer?",
+        "options": [
+          "Bakelite",
+          "Polystyrene",
+          "Polyvinyl chloride (PVC)",
+          "Nylon-6,6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Bakelite is heavily cross-linked during manufacturing; upon heating, extensive chemical bonds form, creating an infusible 3D network that cannot be remelted.",
+          "Incorrect. Polystyrene is a linear thermoplastic that softens upon heating and hardens upon cooling.",
+          "Incorrect. PVC is a thermoplastic that can be repeatedly molded and melted.",
+          "Incorrect. Nylon-6,6 is a linear condensation polyamide classified as a fiber."
+        ],
+        "fullExplanation": "Thermosetting polymers are cross-linked or heavily branched molecules that undergo permanent chemical setting in molds upon heating and cannot be reused or reshaped. Bakelite (phenol-formaldehyde resin) and melamine-formaldehyde resin are classic examples. In contrast, polystyrene and PVC are thermoplastics, and Nylon-6,6 is a fiber."
+      },
+      {
+        "question": "The monomer units of the synthetic biodegradable polyester PHBV are:",
+        "options": [
+          "3-Hydroxybutanoic acid and 3-hydroxypentanoic acid",
+          "2-Hydroxybutanoic acid and 2-hydroxypentanoic acid",
+          "Glycine and ε-aminocaproic acid",
+          "Ethylene glycol and terephthalic acid"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. PHBV (poly-β-hydroxybutyrate-co-β-hydroxyvalerate) is synthesized by copolymerization of 3-hydroxybutanoic acid and 3-hydroxypentanoic acid.",
+          "Incorrect. The hydroxyl groups in PHBV monomers are at the β (3-) position, not the α (2-) position.",
+          "Incorrect. Glycine and ε-aminocaproic acid are the monomer units of the biodegradable polyamide Nylon-2-nylon-6.",
+          "Incorrect. Ethylene glycol and terephthalic acid are the monomers of Terylene (Dacron)."
+        ],
+        "fullExplanation": "PHBV stands for Poly-β-hydroxybutyrate-co-β-hydroxyvalerate. It is a copolymer formed by the condensation of 3-hydroxybutanoic acid [CH₃-CH(OH)-CH₂-COOH] and 3-hydroxypentanoic acid [CH₃-CH₂-CH(OH)-CH₂-COOH] via ester linkages. It undergoes degradation by environmental microorganisms."
+      },
+      {
+        "question": "Natural rubber is chemically defined as:",
+        "options": [
+          "All-cis-1,4-polyisoprene",
+          "All-trans-1,4-polyisoprene",
+          "1,4-Polychloroprene",
+          "Copolymer of 1,3-butadiene and styrene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Natural rubber is composed of isoprene (2-methyl-1,3-butadiene) units linked exclusively in a cis-1,4 configuration, which imparts its characteristic coiled elasticity.",
+          "Incorrect. All-trans-1,4-polyisoprene is gutta-percha, a hard and non-elastic natural substance.",
+          "Incorrect. Polychloroprene is synthetic neoprene rubber.",
+          "Incorrect. Copolymer of 1,3-butadiene and styrene is Buna-S (SBR)."
+        ],
+        "fullExplanation": "Natural rubber is an elastomer consisting of isoprene units joined together in the cis-1,4 stereochemical arrangement. Because of the all-cis configuration, intermolecular interactions are restricted to weak van der Waals forces, preventing crystallization and allowing chains to uncoil upon stretching and recoil upon release."
+      },
+      {
+        "question": "Which of the following catalysts is used for the coordination polymerization of ethene to High-Density Polyethene (HDPE)?",
+        "options": [
+          "TiCl₄ + Al(C₂H₅)₃",
+          "V₂O₅ + SiO₂",
+          "Fe₂O₃ + Al₂O₃",
+          "Pd/BaSO₄ with quinoline"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Ziegler-Natta catalyst, composed of titanium tetrachloride (TiCl₄) and triethylaluminium [Al(C₂H₅)₃], produces linear unbranched HDPE at low temperatures and pressures.",
+          "Incorrect. V₂O₅ is the catalyst for the Contact process in sulfuric acid manufacture.",
+          "Incorrect. Fe₂O₃ + Al₂O₃ is used in the Haber process for ammonia synthesis.",
+          "Incorrect. Pd/BaSO₄ poisoned with quinoline is Lindlar's catalyst used for partial alkyne hydrogenation."
+        ],
+        "fullExplanation": "High-density polyethene (HDPE) is manufactured by the coordination polymerization of ethene at 333-343 K under 6-7 atmospheres in an inert solvent using the Ziegler-Natta catalyst [TiCl₄ + Al(C₂H₅)₃]. The coordination mechanism produces strictly linear chains that pack efficiently to give high density and crystallinity."
+      },
+      {
+        "question": "Nylon-6 is synthesized by heating which of the following cyclic compounds with water at 533-543 K?",
+        "options": [
+          "Caprolactam",
+          "Acrylonitrile",
+          "Hexamethylenediamine",
+          "Phthalic anhydride"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Nylon-6 is produced by the ring-opening step-growth polymerization of caprolactam at 533-543 K in the presence of water.",
+          "Incorrect. Acrylonitrile polymerizes via free-radical addition to give PAN (Orlon).",
+          "Incorrect. Hexamethylenediamine is an open-chain diamine used to make Nylon-6,6 and Nylon-6,10.",
+          "Incorrect. Phthalic anhydride condenses with ethylene glycol to form Glyptal."
+        ],
+        "fullExplanation": "Nylon-6 is obtained by heating caprolactam (a 7-membered cyclic lactam) with water at 533-543 K. Water opens the lactam ring to form ε-aminocaproic acid, which propagates step-growth polymerization to generate the repeating polyamide unit -[-NH-(CH₂)₅-CO-]ₙ-."
+      },
+      {
+        "question": "Which of the following polymers contains an ester linkage in its backbone?",
+        "options": [
+          "Dacron",
+          "Nylon-6,6",
+          "Buna-N",
+          "Melamine-formaldehyde resin"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Dacron (Terylene) is a polyester formed from ethylene glycol and terephthalic acid via condensation, linking repeat units by ester (-COO-) bonds.",
+          "Incorrect. Nylon-6,6 contains amide (-CO-NH-) linkages.",
+          "Incorrect. Buna-N is a carbon-chain addition copolymer containing nitrile (-CN) side groups.",
+          "Incorrect. Melamine resin contains amine/methylene-bridge linkages."
+        ],
+        "fullExplanation": "Dacron (also called Terylene) is synthesized by the condensation polymerization of ethylene glycol [HO-(CH₂)₂-OH] and terephthalic acid [p-HOOC-C₆H₄-COOH]. Elimination of water molecules forms repeating ester (-COO-) linkages along the polymer backbone, categorizing it as a polyester."
+      },
+      {
+        "question": "The monomer used in the preparation of Neoprene synthetic rubber is:",
+        "options": [
+          "2-Chloro-1,3-butadiene",
+          "2-Methyl-1,3-butadiene",
+          "1,3-Butadiene",
+          "Chlorotrifluoroethene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Chloroprene (2-chloro-1,3-butadiene) undergoes free-radical addition polymerization to yield Neoprene [-(CH₂-C(Cl)=CH-CH₂)-]ₙ.",
+          "Incorrect. 2-Methyl-1,3-butadiene is isoprene, the monomer of natural rubber.",
+          "Incorrect. 1,3-Butadiene is a comonomer in Buna-S and Buna-N.",
+          "Incorrect. Chlorotrifluoroethene is the monomer of PCTFE (Kel-F)."
+        ],
+        "fullExplanation": "Neoprene is a synthetic elastomer produced by the free-radical polymerization of chloroprene, whose systematic IUPAC name is 2-chloro-1,3-butadiene: n CH₂=C(Cl)-CH=CH₂ → -[-CH₂-C(Cl)=CH-CH₂-]ₙ-."
+      },
+      {
+        "question": "In the manufacture of Bakelite, the initial linear condensation product obtained from phenol and formaldehyde is called:",
+        "options": [
+          "Novolac",
+          "Resitol",
+          "Glyptal",
+          "Melamine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The linear polymer formed by initial acid- or base-catalysed condensation of o- and p-hydroxymethylphenols is Novolac.",
+          "Incorrect. Resitol is a partially cured intermediate thermoset stage.",
+          "Incorrect. Glyptal is a polyester derived from phthalic acid and ethylene glycol.",
+          "Incorrect. Melamine is a heterocyclic triazine monomer."
+        ],
+        "fullExplanation": "Reaction of phenol with formaldehyde in the presence of an acid catalyst produces o-hydroxymethylphenol, which condenses with adjacent phenol rings with loss of water to generate a linear polymer called Novolac. Novolac is commercially used in paints; when heated with additional formaldehyde, it cross-links to form Bakelite."
+      },
+      {
+        "question": "Which of the following is a copolymer?",
+        "options": [
+          "Buna-S",
+          "Teflon",
+          "PAN",
+          "Polypropylene"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Buna-S is formed from two different monomers: 1,3-butadiene and styrene.",
+          "Incorrect. Teflon is a homopolymer formed solely from tetrafluoroethene.",
+          "Incorrect. PAN is a homopolymer formed solely from acrylonitrile.",
+          "Incorrect. Polypropylene is a homopolymer formed solely from propene."
+        ],
+        "fullExplanation": "A copolymer is defined as a polymer derived from two or more distinct species of monomers. Buna-S is synthesized by the free-radical copolymerization of a mixture of 1,3-butadiene and styrene (in an approximate 3:1 ratio). Teflon, PAN, and Polypropylene are homopolymers because each is formed from a single monomer."
+      },
+      {
+        "question": "The Polydispersity Index (PDI) for natural monodisperse polymers such as proteins is:",
+        "options": [
+          "Exactly 1",
+          "Greater than 1",
+          "Zero",
+          "Between 0 and 1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For natural biopolymers like proteins where every macromolecule possesses the exact same molecular mass, Mw = Mn, and PDI = Mw / Mn = 1.",
+          "Incorrect. Synthetic polymers have PDI > 1 due to nonuniform chain distribution.",
+          "Incorrect. Molecular mass cannot be zero, so PDI can never be zero.",
+          "Incorrect. Mw is mathematically greater than or equal to Mn, so PDI cannot be less than 1."
+        ],
+        "fullExplanation": "Polydispersity Index (PDI) is the ratio of weight-average molecular mass (Mw) to number-average molecular mass (Mn): PDI = Mw / Mn. In natural biopolymers like proteins, every molecule has a strictly identical chain length and sequence determined by genetics; thus, Mw = Mn and PDI = 1 (monodisperse). Synthetic polymers always have variable chain lengths, making Mw > Mn and PDI > 1."
+      },
+      {
+        "question": "Which of the following polymers is formed by free-radical chain-growth polymerization?",
+        "options": [
+          "Teflon",
+          "Nylon-6,6",
+          "Terylene",
+          "Bakelite"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Teflon (PTFE) is formed by free-radical chain addition polymerization of tetrafluoroethene using persulphate initiators.",
+          "Incorrect. Nylon-6,6 is formed by step-growth condensation polymerization.",
+          "Incorrect. Terylene is formed by step-growth condensation polymerization.",
+          "Incorrect. Bakelite is formed by step-growth condensation polymerization."
+        ],
+        "fullExplanation": "Addition polymers typically proceed via chain-growth mechanisms mediated by free radicals, carbocations, or carbanions. Polytetrafluoroethylene (Teflon) is synthesized by the addition polymerization of CF₂=CF₂ initiated by free radicals generated from persulphates under elevated pressure."
+      },
+      {
+        "question": "The polymer Plexiglas (Lucite) is chemically known as:",
+        "options": [
+          "Polymethyl methacrylate",
+          "Polyethyl acrylate",
+          "Polyacrylonitrile",
+          "Polyvinyl acetate"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Plexiglas (commercial name Lucite or Perspex) is polymethyl methacrylate (PMMA), obtained from methyl methacrylate.",
+          "Incorrect. Polyethyl acrylate is an elastomer/adhesive polyacrylate, not Plexiglas.",
+          "Incorrect. Polyacrylonitrile is Orlon / Acrilan.",
+          "Incorrect. Polyvinyl acetate is PVA used in adhesives and paints."
+        ],
+        "fullExplanation": "Polymethyl methacrylate (PMMA), sold under trade names including Plexiglas, Lucite, and Perspex, is an addition polymer synthesized from methyl methacrylate [CH₂=C(CH₃)COOCH₃]. It is an optically transparent, rigid thermoplastic frequently used as a shatterproof glass alternative."
+      },
+      {
+        "question": "During the vulcanization of rubber, sulfur cross-links predominantly introduce bridges at:",
+        "options": [
+          "Reactive allylic positions across double bonds",
+          "Aromatic ring carbons",
+          "Terminal carboxylate ends",
+          "Saturated methyl groups exclusively"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sulfur cross-linking occurs by attacking the reactive allylic C-H bonds and double bonds in cis-1,4-polyisoprene chains, creating disulfide bridges between adjacent chains.",
+          "Incorrect. Polyisoprene lacks aromatic rings.",
+          "Incorrect. Natural rubber does not have terminal carboxylate groups.",
+          "Incorrect. Allylic positions are far more reactive than unactivated methyl carbons."
+        ],
+        "fullExplanation": "Natural rubber contains double bonds in every isoprene unit. The allylic methylene groups (-CH₂-C(CH₃)=CH-CH₂-) are highly susceptible to free-radical attack by sulfur radicals at vulcanization temperatures (373-415 K). Sulfur forms mono-, di-, or polysulfide bridges (-C-Sₓ-C-) across allylic positions and double bonds, tying the chains into a resilient network."
+      },
+      {
+        "question": "Which of the following fibers is prepared by condensation of hexamethylenediamine with sebacic acid?",
+        "options": [
+          "Nylon-6,10",
+          "Nylon-6,6",
+          "Nylon-6",
+          "Nylon-2-nylon-6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Hexamethylenediamine (6 carbons) and sebacic acid [HOOC-(CH₂)₈-COOH, 10 carbons] condense to form Nylon-6,10.",
+          "Incorrect. Nylon-6,6 is prepared from hexamethylenediamine and adipic acid (6 carbons).",
+          "Incorrect. Nylon-6 is prepared from caprolactam (6 carbons).",
+          "Incorrect. Nylon-2-nylon-6 is prepared from glycine (2 carbons) and ε-aminocaproic acid (6 carbons)."
+        ],
+        "fullExplanation": "The numerical suffixes in nylon designations denote the number of carbon atoms in the diamine and the dicarboxylic acid respectively. Hexamethylenediamine has 6 carbons, and sebacic acid (1,10-decanedioic acid) has 10 carbons; their polycondensation product is designated Nylon-6,10."
+      },
+      {
+        "question": "Which of the following is a non-biodegradable synthetic polymer?",
+        "options": [
+          "Nylon-6,6",
+          "PHBV",
+          "Nylon-2-nylon-6",
+          "Dextron"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Nylon-6,6 is a conventional synthetic polyamide that is resistant to environmental and bacterial enzymatic breakdown, making it non-biodegradable.",
+          "Incorrect. PHBV is a bacterial biodegradable polyester.",
+          "Incorrect. Nylon-2-nylon-6 is a biodegradable polyamide copolymer.",
+          "Incorrect. Dextron is a biodegradable polyglycolide-polylactide copolymer."
+        ],
+        "fullExplanation": "Conventional synthetic polymers such as Nylon-6,6, polyethylene, PVC, and polystyrene cannot be cleaved by environmental microbial enzymes due to their high molecular weight, dense packing, or unnatural linkages. PHBV, Nylon-2-nylon-6, and Dextron were developed specifically to undergo biodegradation in nature."
+      },
+      {
+        "question": "The repeating structural unit in Neoprene is:",
+        "options": [
+          "-[-CH₂-C(Cl)=CH-CH₂-]ₙ-",
+          "-[-CH₂-CH(Cl)-]ₙ-",
+          "-[-CH₂-C(CH₃)=CH-CH₂-]ₙ-",
+          "-[-CF₂-CF₂-]ₙ-"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. 1,4-Addition polymerization of chloroprene [CH₂=C(Cl)-CH=CH₂] gives the repeat unit -[-CH₂-C(Cl)=CH-CH₂-]ₙ-.",
+          "Incorrect. -[-CH₂-CH(Cl)-]ₙ- is the repeating unit of polyvinyl chloride (PVC).",
+          "Incorrect. -[-CH₂-C(CH₃)=CH-CH₂-]ₙ- is the repeating unit of polyisoprene.",
+          "Incorrect. -[-CF₂-CF₂-]ₙ- is the repeating unit of Teflon."
+        ],
+        "fullExplanation": "Neoprene is synthesized by 1,4-addition polymerization of 2-chloro-1,3-butadiene (chloroprene). The terminal carbons form new single bonds to neighboring units while the double bond shifts to the central 2,3-position, yielding the repeating unit -[-CH₂-C(Cl)=CH-CH₂-]ₙ-."
+      },
+      {
+        "question": "Which of the following statements regarding Melamine-formaldehyde resin is INCORRECT?",
+        "options": [
+          "It is a thermoplastic polymer that can be remelted repeatedly.",
+          "It is formed by step-growth condensation polymerization.",
+          "Melamine has the chemical formula C₃H₆N₆ (2,4,6-triamino-1,3,5-triazine).",
+          "It is used for manufacturing unbreakable dinnerware."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This statement is incorrect because Melamine-formaldehyde is a thermosetting polymer with a permanent cross-linked network that cannot be remelted upon heating.",
+          "Incorrect. This is true; it forms via step-growth condensation eliminating water.",
+          "Incorrect. This is true; melamine is a symmetrical triazine containing three amino groups.",
+          "Incorrect. This is true; its extreme hardness and durability make it ideal for shatterproof crockery."
+        ],
+        "fullExplanation": "Melamine-formaldehyde resin is a thermosetting cross-linked polymer. In thermosets, polymer chains are held permanently by extensive covalent bridges throughout the 3D network, meaning they decompose rather than melt upon heating. Therefore, classifying it as a thermoplastic is incorrect."
+      },
+      {
+        "question": "Which property is responsible for the high tensile strength of synthetic fibers like Nylon-6,6?",
+        "options": [
+          "Regular linear alignment with extensive intermolecular hydrogen bonding",
+          "Weak van der Waals forces between coiled chains",
+          "Presence of bulky phenyl rings preventing close packing",
+          "Cross-linking through covalent disulfide bridges"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The linear chains of Nylon-6,6 align in parallel, allowing carbonyl oxygens and amide hydrogens to form a dense array of intermolecular hydrogen bonds that impart high tensile strength.",
+          "Incorrect. Weak van der Waals interactions characterize elastomers, not fibers.",
+          "Incorrect. Bulky groups that disrupt packing lower tensile strength and crystallinity.",
+          "Incorrect. Disulfide bonds occur in vulcanized rubber and proteins like keratin, not in pure Nylon-6,6."
+        ],
+        "fullExplanation": "Fibers possess strong intermolecular forces such as hydrogen bonding or strong dipole-dipole attractions. In Nylon-6,6, the regular repeating -CO-NH- groups on adjacent parallel chains line up perfectly to establish strong intermolecular hydrogen bonds (>C=O•••H-N<). This close, crystalline packing gives fibers their high tensile strength and high melting points."
+      },
+      {
+        "question": "Match the polymer in List-I with its monomer in List-II:\n(A) Glyptal - (1) Caprolactam\n(B) Nylon-6 - (2) Ethylene glycol + Phthalic acid\n(C) Orlon - (3) Acrylonitrile\n(D) Teflon - (4) Tetrafluoroethene",
+        "options": [
+          "A-2, B-1, C-3, D-4",
+          "A-1, B-2, C-3, D-4",
+          "A-2, B-1, C-4, D-3",
+          "A-3, B-4, C-1, D-2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Glyptal is made from ethylene glycol and phthalic acid (A-2); Nylon-6 from caprolactam (B-1); Orlon from acrylonitrile (C-3); Teflon from tetrafluoroethene (D-4).",
+          "Incorrect. Reverses Glyptal and Nylon-6.",
+          "Incorrect. Reverses Orlon and Teflon.",
+          "Incorrect. Monomer pairings are misassigned."
+        ],
+        "fullExplanation": "Direct matching from polymer chemistry:\n• Glyptal: Ethylene glycol + Phthalic acid (2)\n• Nylon-6: Caprolactam (1)\n• Orlon (PAN): Acrylonitrile (3)\n• Teflon (PTFE): Tetrafluoroethene (4)\nHence, the correct match is A-2, B-1, C-3, D-4."
+      },
+      {
+        "question": "In the free-radical polymerization of styrene, which of the following substances acts as a chain initiation catalyst?",
+        "options": [
+          "Benzoyl peroxide",
+          "Anhydrous AlCl₃",
+          "Titanium tetrachloride",
+          "Sodium ethoxide"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Benzoyl peroxide [(C₆H₅COO)₂] undergoes thermal homolysis to release phenyl free radicals, which initiate free-radical chain polymerization of styrene.",
+          "Incorrect. AlCl₃ is a Lewis acid used for cationic polymerization or Friedel-Crafts reactions.",
+          "Incorrect. TiCl₄ is used in coordination Ziegler-Natta polymerization.",
+          "Incorrect. Sodium ethoxide is an anionic initiator, not a free-radical catalyst."
+        ],
+        "fullExplanation": "Free-radical addition polymerization requires an initiator that readily undergoes homolytic cleavage upon mild heating or irradiation. Benzoyl peroxide homolyses into benzoyloxy radicals, which lose CO₂ to generate reactive phenyl radicals (C₆H₅•). These radicals add across the vinyl double bond of styrene to initiate chain propagation."
+      }
+    ]
+  },
+  {
+    "chapterName": "Chemistry in Everyday Life",
+    "flashcards": [
+      {
+        "front": "How do competitive enzyme inhibitors differ from non-competitive (allosteric) inhibitors?",
+        "back": "• Competitive inhibitors: Possess a chemical structure closely resembling the natural substrate; they compete directly for binding at the active catalytic site of the enzyme.\n• Non-competitive (allosteric) inhibitors: Bind to a distinct site on the enzyme termed the allosteric site. This binding alters the three-dimensional conformation of the active site so that the natural substrate can no longer recognize or bind it."
+      },
+      {
+        "front": "Differentiate between Agonists and Antagonists in receptor biochemistry.",
+        "back": "• Antagonists: Drugs that bind to receptor sites and inhibit their natural communication function; they block the binding of natural chemical messengers (useful when blocking signals is desired, e.g., antihistamines).\n• Agonists: Drugs that mimic the natural chemical messenger by binding to the receptor and triggering the normal biological response (useful when there is a deficiency of the natural messenger, e.g., salbutamol for asthma)."
+      },
+      {
+        "front": "Why are Cimetidine and Ranitidine superior to traditional antacids like NaHCO₃ or Al(OH)₃?",
+        "back": "Traditional antacids (sodium bicarbonate, magnesium/aluminium hydroxides) merely neutralize existing hydrochloric acid in the stomach; excess NaHCO₃ can make the stomach alkaline, triggering hypersecretion of even more acid. Cimetidine (Tegamet) and Ranitidine (Zantac) act as H₂-receptor antagonists that prevent histamine from stimulating the parietal cells in the stomach wall, thereby preventing acid production at its source."
+      },
+      {
+        "front": "What is the biological function of Histamine and which drugs counteract it?",
+        "back": "Histamine is a potent vasodilator that contracts smooth muscles in bronchi and gut, relaxes blood vessels, stimulates secretion of pepsin and HCl in the stomach, and mediates allergic responses (nasal congestion, itching, sneezing). Antihistamines like Brompheniramine (Dimetapp) and Terfenadine (Seldane) compete with histamine for binding to H₁ receptors, alleviating allergic symptoms."
+      },
+      {
+        "front": "What are Tranquilizers and how do Iproniazid and Phenelzine act as antidepressants?",
+        "back": "Tranquilizers are neurologically active drugs that treat anxiety, stress, irritability, and mental disorders by acting on the central nervous system. Noradrenaline is a neurotransmitter that regulates mood; low levels cause depression. Iproniazid and Phenelzine are antidepressant tranquilizers that inhibit the enzyme monoamine oxidase, which metabolizes noradrenaline. This prevents degradation, keeping neurotransmitter levels elevated to combat depression."
+      },
+      {
+        "front": "What are Barbiturates and what is their clinical function?",
+        "back": "Barbiturates are derivatives of barbituric acid (e.g., Veronal, Luminal, Amytal, Nembutal, and Seconal). They act as central nervous system depressants, functioning as tranquilizers with hypnotic (sleep-inducing) and sedative properties. They reduce anxiety and promote sleep by modulating GABA receptor activity."
+      },
+      {
+        "front": "Explain the dual therapeutic action and side effects of Aspirin (2-acetoxybenzoic acid).",
+        "back": "• Actions: Analgesic (relieves pain) and antipyretic (reduces fever) by irreversibly inhibiting cyclooxygenase (COX) enzymes, suppressing the synthesis of prostaglandins that cause inflammation and pain. Aspirin also inhibits platelet aggregation (blood-thinning action), widely used in preventing heart attacks.\n• Side effect: Hydrolysis in the stomach releases salicylic acid, which can cause gastric mucosal irritation and bleeding."
+      },
+      {
+        "front": "What are Narcotic Analgesics? State their medical utility and hazards.",
+        "back": "Narcotic analgesics (opiates like Morphine, Codeine, and Heroin) bind to opioid receptors in the central nervous system to relieve severe, agonizing pain and induce drowsiness or sleep. They are medically indispensable for postoperative pain, cardiac pain, and terminal cancer pain. Hazards include respiratory depression, rapid development of tolerance, physical dependence, and severe addiction."
+      },
+      {
+        "front": "Differentiate between Bactericidal and Bacteriostatic antibiotics, giving three examples of each.",
+        "back": "• Bactericidal antibiotics: Actively kill bacteria. Examples: Penicillin, Aminoglycosides (e.g., Streptomycin), Ofloxacin.\n• Bacteriostatic antibiotics: Inhibit or arrest the bacterial growth/multiplication, allowing the host immune system to eliminate them. Examples: Erythromycin, Tetracycline, Chloramphenicol."
+      },
+      {
+        "front": "Classify antibiotics based on their spectrum of action with examples.",
+        "back": "• Broad-spectrum: Effective against a wide range of Gram-positive and Gram-negative bacteria. Examples: Chloramphenicol, Ampicillin, Amoxicillin, Ofloxacin, Vancomycin.\n• Narrow-spectrum: Effective primarily against either Gram-positive or Gram-negative bacteria. Example: Penicillin G.\n• Limited-spectrum: Effective against a single organism or disease. Example: Dysidazirine (toxic towards specific cancer cells)."
+      },
+      {
+        "front": "Differentiate between Antiseptics and Disinfectants. Give an example of a chemical that acts as both.",
+        "back": "• Antiseptics: Chemical substances applied to living biological tissues (wounds, cuts, ulcers, diseased skin) to prevent microbial growth without harming tissue. Examples: Dettol, Bithionol, Iodoform, Tincture of iodine (2-3% I₂ in alcohol-water).\n• Disinfectants: Chemical substances applied to inanimate objects (floors, drainage systems, surgical instruments) to kill microorganisms; toxic to living tissues. Example: 1% aqueous phenol.\nDual substance: Phenol acts as an antiseptic at 0.2% concentration and as a disinfectant at 1.0% concentration."
+      },
+      {
+        "front": "What are the chemical constituents of Dettol and what is Bithionol used for?",
+        "back": "• Dettol: An antiseptic mixture composed of Chloroxylenol (4-chloro-3,5-dimethylphenol) and Terpineol.\n• Bithionol: Added to medicated soaps to impart antiseptic properties and reduce unpleasant body odors caused by bacterial decomposition of sweat on the skin."
+      },
+      {
+        "front": "What are Antifertility Drugs and what are their active hormonal ingredients?",
+        "back": "Antifertility drugs (oral contraceptives) suppress ovulation by modulating female reproductive hormone balances. Formulations contain mixtures of synthetic estrogen and progesterone derivatives (which are more potent than natural hormones):\n• Norethindrone: Synthetic progesterone derivative.\n• Ethynylestradiol (Novestrol): Synthetic estrogen derivative."
+      },
+      {
+        "front": "Why is Aspartame restricted to cold foods and soft drinks?",
+        "back": "Aspartame is the methyl ester of the dipeptide formed from aspartic acid and phenylalanine. It is roughly 100 times as sweet as cane sugar. However, it is thermally unstable and rapidly hydrolyses/decomposes at cooking and baking temperatures, losing its sweetening power. Thus, its use is strictly limited to cold foods and carbonated soft drinks."
+      },
+      {
+        "front": "Compare the relative sweetness of Saccharin, Sucralose, and Alitame relative to sucrose.",
+        "back": "• Aspartame: ~100 times sweeter than sucrose (unstable to heat).\n• Saccharin (ortho-sulfobenzimide): ~550 times sweeter than sucrose (excreted unchanged in urine, zero calories).\n• Sucralose: ~600 times sweeter than sucrose (trichloro derivative of sucrose; stable at cooking temperature).\n• Alitame: ~2000 times sweeter than sucrose (high-potency sweetener, though difficult to control food sweetness during preparation)."
+      },
+      {
+        "front": "How do Food Preservatives work? Give common chemical examples.",
+        "back": "Food preservatives prevent food spoilage by inhibiting the growth of microorganisms (bacteria, yeasts, and molds). They operate by altering osmotic pressure, lowering pH, or disrupting microbial cell membranes.\nCommon examples: Sodium benzoate (C₆H₅COONa, metabolized to hippuric acid and excreted), salts of propanoic acid, salts of sorbic acid, sodium chloride, sugar, and vegetable oils."
+      },
+      {
+        "front": "What are BHT and BHA, and how do they function as food antioxidants?",
+        "back": "• BHT: Butylated hydroxytoluene (2,6-di-tert-butyl-4-methylphenol).\n• BHA: Butylated hydroxyanisole (mixture of 2- and 3-tert-butyl-4-methoxyphenol).\n• Mechanism: These sterically hindered phenols act as sacrificial free-radical scavengers. They donate hydrogen atoms to lipid peroxy radicals (ROO•) formed during fat autoxidation, converting them into stable hydroperoxides and generating resonance-stabilized phenoxy radicals that cannot propagate oxidation."
+      },
+      {
+        "front": "Why do soaps form an insoluble scum in hard water while synthetic detergents do not?",
+        "back": "Hard water contains dissolved divalent ions (Ca²⁺ and Mg²⁺). Soaps (sodium salts of fatty acids, e.g., sodium stearate) react with these ions to precipitate insoluble calcium and magnesium soaps: 2 C₁₇H₃₅COONa + Ca²⁺ → (C₁₇H₃₅COO)₂Ca↓ (curdy white scum) + 2 Na⁺, wasting soap and sticking to fabric. Synthetic detergents (e.g., sodium alkyl sulfates) form calcium and magnesium salts that are completely water-soluble, functioning effectively in hard water."
+      },
+      {
+        "front": "Classify synthetic detergents into Anionic, Cationic, and Non-ionic types with examples.",
+        "back": "1. Anionic detergents: Large anion is the active cleansing agent; e.g., Sodium dodecylbenzenesulfonate and Sodium lauryl sulfate [CH₃-(CH₂)₁₁-OSO₃⁻Na⁺]. Used in toothpastes and laundry detergents.\n2. Cationic detergents: Large cation is the active cleansing agent; quaternary ammonium salts with chloride/bromide anions; e.g., Cetyltrimethylammonium bromide. Possess germicidal properties; used in hair conditioners.\n3. Non-ionic detergents: Neutral polar molecules lacking ions; e.g., formed from polyethylene glycol and stearic acid: CH₃(CH₂)₁₆COO(CH₂CH₂O)ₙCH₂CH₂OH. Used in liquid dishwashing liquids."
+      },
+      {
+        "front": "What structural feature makes synthetic detergents biodegradable versus non-biodegradable?",
+        "back": "• Biodegradable detergents: Possess unbranched (straight) hydrocarbon chains (e.g., sodium linear alkylbenzenesulfonates). Soil and wastewater microorganisms easily degrade these straight chains through β-oxidation.\n• Non-biodegradable detergents: Possess highly branched hydrocarbon chains. Microorganisms cannot readily oxidize the branched structures; they persist in waterways, accumulating and causing persistent foaming in rivers and sewage plants, resulting in severe water pollution."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following antihistamine drugs acts as an H₂-receptor antagonist to reduce gastric acid secretion?",
+        "options": [
+          "Cimetidine",
+          "Brompheniramine",
+          "Terfenadine",
+          "Chlorpheniramine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cimetidine (and Ranitidine) specifically binds to histamine H₂ receptors located in the gastric parietal cells, blocking the trigger for hydrochloric acid secretion.",
+          "Incorrect. Brompheniramine (Dimetapp) is an H₁-receptor antagonist used for anti-allergy treatment.",
+          "Incorrect. Terfenadine (Seldane) is an H₁-receptor antagonist used for nasal allergies.",
+          "Incorrect. Chlorpheniramine acts on H₁ receptors to alleviate cold and allergy symptoms."
+        ],
+        "fullExplanation": "Histamine stimulates the secretion of pepsin and hydrochloric acid in the stomach by interacting with H₂ receptors in the stomach wall. Drugs like Cimetidine (Tegamet) and Ranitidine (Zantac) were engineered to competitively block these H₂ receptors, preventing histamine from activating acid release. Brompheniramine and terfenadine target H₁ receptors involved in allergic responses."
+      },
+      {
+        "question": "Aspirin is chemically known as:",
+        "options": [
+          "2-Acetoxybenzoic acid",
+          "Methyl salicylate",
+          "4-Acetamidophenol",
+          "2-Hydroxybenzoic acid"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Aspirin is synthesized by acetylating the phenolic -OH group of salicylic acid with acetic anhydride, producing 2-acetoxybenzoic acid.",
+          "Incorrect. Methyl salicylate is oil of wintergreen, an ester of salicylic acid.",
+          "Incorrect. 4-Acetamidophenol is paracetamol (acetaminophen).",
+          "Incorrect. 2-Hydroxybenzoic acid is salicylic acid."
+        ],
+        "fullExplanation": "Aspirin is produced by the acetylation of salicylic acid (2-hydroxybenzoic acid) using acetic anhydride in the presence of an acid catalyst. The phenolic hydroxyl group is converted into an acetate ester, yielding 2-acetoxybenzoic acid: C₆H₄(OH)(COOH) + (CH₃CO)₂O → C₆H₄(OCOCH₃)(COOH) + CH₃COOH."
+      },
+      {
+        "question": "Which of the following artificial sweeteners has the highest relative sweetness compared to sucrose?",
+        "options": [
+          "Alitame",
+          "Sucralose",
+          "Saccharin",
+          "Aspartame"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Alitame is an aspartic acid dipeptide sweetener with a relative sweetness roughly 2000 times that of sucrose.",
+          "Incorrect. Sucralose is roughly 600 times sweeter than sucrose.",
+          "Incorrect. Saccharin is roughly 550 times sweeter than sucrose.",
+          "Incorrect. Aspartame is roughly 100 times sweeter than sucrose."
+        ],
+        "fullExplanation": "The relative sweetness values compared to cane sugar (sucrose taken as 1) are:\n• Aspartame: 100\n• Saccharin: 550\n• Sucralose: 600\n• Alitame: 2000\nThus, Alitame has the highest potency among these artificial sweeteners."
+      },
+      {
+        "question": "Dettol is a widely used antiseptic consisting of a mixture of:",
+        "options": [
+          "Chloroxylenol and Terpineol",
+          "Phenol and Bithionol",
+          "Iodoform and Boric acid",
+          "Thymol and Formaldehyde"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Dettol is a commercially prepared antiseptic solution consisting of chloroxylenol (4-chloro-3,5-dimethylphenol) and α-terpineol.",
+          "Incorrect. Phenol and bithionol are not the components of Dettol.",
+          "Incorrect. Iodoform and boric acid are separate antiseptic substances.",
+          "Incorrect. Formaldehyde is a disinfectant/preservative, not a Dettol constituent."
+        ],
+        "fullExplanation": "Dettol is a common household antiseptic used on skin wounds and cuts. Its active germicidal formulation consists of a solution of chloroxylenol (4-chloro-3,5-dimethylphenol) and terpineol dissolved in a suitable solvent (alcohol/water)."
+      },
+      {
+        "question": "Which of the following antibiotics is bacteriostatic in nature?",
+        "options": [
+          "Chloramphenicol",
+          "Penicillin",
+          "Aminoglycosides",
+          "Ofloxacin"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Chloramphenicol arrests bacterial protein synthesis at the 50S ribosomal subunit, inhibiting bacterial growth rather than killing them outright (bacteriostatic).",
+          "Incorrect. Penicillin is bactericidal (inhibits cell wall peptidoglycan synthesis).",
+          "Incorrect. Aminoglycosides (e.g., streptomycin, gentamycin) are bactericidal.",
+          "Incorrect. Ofloxacin (a fluoroquinolone inhibiting DNA gyrase) is bactericidal."
+        ],
+        "fullExplanation": "Antibiotics are classified based on their physiological impact on bacteria:\n• Bactericidal (killing action): Penicillin, Aminoglycosides, Ofloxacin.\n• Bacteriostatic (inhibitory action): Erythromycin, Tetracycline, Chloramphenicol.\nTherefore, chloramphenicol is bacteriostatic."
+      },
+      {
+        "question": "The substance added to toilet soaps to impart antiseptic properties is:",
+        "options": [
+          "Bithionol",
+          "Sodium dodecylbenzenesulfonate",
+          "Glycerol",
+          "Sodium rosinate"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Bithionol is added to medicated and toilet soaps to reduce bacterial growth and skin odor.",
+          "Incorrect. Sodium dodecylbenzenesulfonate is an anionic synthetic detergent.",
+          "Incorrect. Glycerol is added to shaving soaps to prevent rapid drying.",
+          "Incorrect. Sodium rosinate is added to soaps to produce copious lather."
+        ],
+        "fullExplanation": "Bithionol (bithional) is a bis-phenolic compound with antimicrobial properties. It is blended into toilet soaps to prevent microbial proliferation on the skin and diminish body odor resulting from the bacterial decomposition of perspiration."
+      },
+      {
+        "question": "Which of the following is a cationic detergent used in hair conditioners?",
+        "options": [
+          "Cetyltrimethylammonium bromide",
+          "Sodium lauryl sulfate",
+          "Sodium stearate",
+          "Polyethylene glycol monostearate"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cetyltrimethylammonium bromide is a quaternary ammonium salt with a long hydrocarbon chain in the cation, functioning as a cationic detergent and conditioning agent.",
+          "Incorrect. Sodium lauryl sulfate is an anionic detergent used in shampoos and toothpastes.",
+          "Incorrect. Sodium stearate is an ordinary carboxylate soap.",
+          "Incorrect. Polyethylene glycol monostearate is a non-ionic detergent."
+        ],
+        "fullExplanation": "Cationic detergents are quaternary ammonium salts of long-chain fatty amines associated with acetate, chloride, or bromide anions. The long hydrocarbon tail resides on the positively charged nitrogen head. Cetyltrimethylammonium bromide [CH₃-(CH₂)₁₅-N⁺(CH₃)₃ Br⁻] is a typical cationic detergent used in hair conditioners because the positive charge binds to negative keratin surfaces."
+      },
+      {
+        "question": "Phenol can act both as an antiseptic and as a disinfectant depending on concentration. The respective concentrations are:",
+        "options": [
+          "0.2% as antiseptic and 1.0% as disinfectant",
+          "1.0% as antiseptic and 0.2% as disinfectant",
+          "5.0% as antiseptic and 0.5% as disinfectant",
+          "0.01% as antiseptic and 0.1% as disinfectant"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A 0.2% aqueous solution of phenol is safe for biological application as an antiseptic, whereas a 1.0% aqueous solution is corrosive to living tissue and is used on floors and drains as a disinfectant.",
+          "Incorrect. 1.0% phenol is too caustic for living tissue.",
+          "Incorrect. 5.0% phenol is strongly caustic and toxic.",
+          "Incorrect. 0.01% is too dilute to show sufficient antimicrobial efficacy."
+        ],
+        "fullExplanation": "Some chemical agents can act as an antiseptic or disinfectant depending entirely on concentration. A 0.2 percent aqueous solution of phenol acts as an antiseptic, safe for living tissues, whereas its 1.0 percent solution is bactericidal to inanimate surfaces, acting as a disinfectant."
+      },
+      {
+        "question": "Which of the following compounds is an active ingredient in antifertility oral contraceptives?",
+        "options": [
+          "Norethindrone",
+          "Equanil",
+          "Chloramphenicol",
+          "Phenelzine"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Norethindrone is a synthetic progesterone derivative commonly used in antifertility birth control formulations.",
+          "Incorrect. Equanil is a tranquilizer used to control depression and hypertension.",
+          "Incorrect. Chloramphenicol is a broad-spectrum antibiotic.",
+          "Incorrect. Phenelzine (Nardil) is an antidepressant tranquilizer."
+        ],
+        "fullExplanation": "Oral contraceptive pills contain combinations of synthetic progesterone and estrogen derivatives that suppress ovulation. Norethindrone is an example of a synthetic progesterone derivative, and ethynylestradiol (novestrol) is an estrogen derivative commonly employed in birth control pills."
+      },
+      {
+        "question": "Which of the following tranquilizers belongs to the class of barbiturates?",
+        "options": [
+          "Veronal",
+          "Chlordiazepoxide",
+          "Meprobamate",
+          "Valium"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Veronal (barbital) is a derivative of barbituric acid that acts as a hypnotic (sleep-inducing) barbiturate.",
+          "Incorrect. Chlordiazepoxide is a benzodiazepine tranquilizer.",
+          "Incorrect. Meprobamate is a dicarbamate tranquilizer.",
+          "Incorrect. Valium (diazepam) is a benzodiazepine derivative."
+        ],
+        "fullExplanation": "Barbiturates are substituted derivatives of barbituric acid that function as sedative-hypnotic agents. Prominent examples include Veronal, Luminal, Amytal, Nembutal, and Seconal. Chlordiazepoxide, meprobamate, and valium are non-barbiturate tranquilizers."
+      },
+      {
+        "question": "Why is aspartame unsuitable for use in baked or cooked foods?",
+        "options": [
+          "It decomposes at elevated cooking temperatures.",
+          "It polymerizes into a bitter poly-amino acid.",
+          "It reacts violently with cooking oils.",
+          "It turns into an insoluble white precipitate with baking soda."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Aspartame is an ester of an aspartic acid-phenylalanine dipeptide that is thermally unstable, hydrolysing rapidly upon heating and losing sweetness.",
+          "Incorrect. It hydrolyses rather than undergoing polymerization.",
+          "Incorrect. It does not react with neutral triglycerides.",
+          "Incorrect. Its instability is purely thermal decomposition."
+        ],
+        "fullExplanation": "Aspartame is chemically the methyl ester of the dipeptide aspartylphenylalanine. While roughly 100 times sweeter than sucrose, its ester and peptide linkages are susceptible to thermal cleavage at cooking and baking temperatures. Because heating destroys its molecular structure and sweet taste, aspartame is restricted to cold desserts and chilled soft drinks."
+      },
+      {
+        "question": "Salvarsan (arsphenamine) was discovered by Paul Ehrlich as an antimicrobial agent against which infection?",
+        "options": [
+          "Syphilis",
+          "Tuberculosis",
+          "Malaria",
+          "Typhoid"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Ehrlich synthesized arsphenamine (Salvarsan), an organoarsenic compound, as the first effective chemotherapeutic agent against Treponema pallidum, the causative agent of syphilis.",
+          "Incorrect. Streptomycin and isoniazid are used against tuberculosis.",
+          "Incorrect. Quinine and chloroquine treat malaria.",
+          "Incorrect. Chloramphenicol is typically used for typhoid fever."
+        ],
+        "fullExplanation": "Paul Ehrlich investigated arsenic-based dyes and discovered Salvarsan (arsphenamine) for treating syphilis. It had selective toxicity against the spirochete bacterium Treponema pallidum and represented the foundational breakthrough in modern synthetic antimicrobial chemotherapy."
+      },
+      {
+        "question": "Which of the following compounds is a non-ionic detergent?",
+        "options": [
+          "CH₃(CH₂)₁₆COO(CH₂CH₂O)ₙCH₂CH₂OH",
+          "CH₃(CH₂)₁₁SO₃⁻Na⁺",
+          "[CH₃(CH₂)₁₅N(CH₃)₃]⁺Br⁻",
+          "CH₃(CH₂)₁₀CH₂OSO₃⁻Na⁺"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Polyethylene glycol stearate is formed by the reaction of stearic acid with polyethylene glycol; it possesses polar ether and hydroxyl groups but bears no formal ionic charges.",
+          "Incorrect. This is an alkylbenzenesulfonate, an anionic detergent.",
+          "Incorrect. This is cetyltrimethylammonium bromide, a cationic detergent.",
+          "Incorrect. This is sodium lauryl sulfate, an anionic detergent."
+        ],
+        "fullExplanation": "Non-ionic detergents do not dissociate into ions in aqueous solution. They are prepared by condensing long-chain fatty acids (such as stearic acid) with polyethylene glycol: CH₃(CH₂)₁₆COOH + n HO(CH₂CH₂O)H → CH₃(CH₂)₁₆COO(CH₂CH₂O)ₙCH₂CH₂OH + H₂O. These neutral detergents are commonly formulated into liquid dishwashing products."
+      },
+      {
+        "question": "What is the primary ecological hazard associated with the use of branched-chain alkylbenzenesulfonate detergents?",
+        "options": [
+          "They resist biodegradation, causing persistent foaming in rivers and sewage systems.",
+          "They react with calcium to form thick insoluble scums in water pipes.",
+          "They convert water into a strongly acidic solution that dissolves fish scales.",
+          "They decompose into volatile chlorinated toxic gases."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Highly branched hydrocarbon chains cannot be metabolized by bacterial enzymes in water treatment facilities, leading to persistent environmental accumulation and severe foaming.",
+          "Incorrect. Detergents do not form insoluble scums with calcium; that is a property of soaps.",
+          "Incorrect. Neutral detergent salts do not form strong acids in natural waters.",
+          "Incorrect. Alkylbenzenesulfonates contain no halogens to release chlorine gases."
+        ],
+        "fullExplanation": "When the alkyl chain in alkylbenzenesulfonate detergents is heavily branched, microorganisms cannot access and degrade the C-C backbone through standard metabolic β-oxidation. As a consequence, non-biodegradable detergents pass unaffected through sewage treatment plants and accumulate in ponds and rivers, producing persistent foam blankets that block sunlight and oxygen exchange."
+      },
+      {
+        "question": "Tincture of iodine, commonly used as a wound antiseptic, is:",
+        "options": [
+          "2-3% solution of iodine in an alcohol-water mixture",
+          "Pure liquid elemental iodine",
+          "10% solution of potassium iodide in water",
+          "Saturated solution of iodine in acetone"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Tincture of iodine is an antiseptic solution composed of 2 to 3 percent elemental iodine dissolved in an alcohol-water mixture.",
+          "Incorrect. Elemental iodine is a crystalline solid, not a liquid at room temperature.",
+          "Incorrect. KI alone lacks the broad antiseptic action of elemental I₂.",
+          "Incorrect. Acetone is too irritating to be applied to open biological wounds."
+        ],
+        "fullExplanation": "Iodine is a powerful antiseptic. Tincture of iodine is prepared by dissolving 2-3% elemental iodine (along with some KI to solubilize it as I₃⁻) in an alcohol-water mixture. It is applied topically to cuts and abrasions to kill bacterial pathogens."
+      },
+      {
+        "question": "Which of the following compounds is utilized as a food preservative to inhibit microbial spoilage?",
+        "options": [
+          "Sodium benzoate",
+          "Sodium dodecyl sulfate",
+          "Aspartame",
+          "Bithionol"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sodium benzoate (C₆H₅COONa) is widely used in fruit juices, jams, and carbonated beverages to prevent fungal and bacterial growth.",
+          "Incorrect. Sodium dodecyl sulfate is an anionic detergent.",
+          "Incorrect. Aspartame is an artificial sweetener without significant antimicrobial preservative action.",
+          "Incorrect. Bithionol is an antiseptic used in soaps, not a food additive."
+        ],
+        "fullExplanation": "Sodium benzoate (C₆H₅COONa) is a common food preservative. In the acidic environment of foods and the stomach, it converts to benzoic acid, which enters microbial cells and inhibits enzymes responsible for glycolysis, thereby arresting bacterial and fungal growth. The human liver conjugates it with glycine to form hippuric acid, which is safely excreted in urine."
+      },
+      {
+        "question": "Which of the following is an analgesic that specifically reduces fever (antipyretic) without causing mental depression or addiction?",
+        "options": [
+          "Paracetamol",
+          "Morphine",
+          "Codeine",
+          "Heroin"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Paracetamol (4-acetamidophenol) is a non-narcotic analgesic and antipyretic that neither depresses the central nervous system nor induces dependence.",
+          "Incorrect. Morphine is an addictive narcotic analgesic.",
+          "Incorrect. Codeine is an opiate narcotic analgesic.",
+          "Incorrect. Heroin is an intensely addictive semi-synthetic narcotic opiate."
+        ],
+        "fullExplanation": "Analgesics are divided into non-narcotic (non-addictive) and narcotic (addictive) agents. Non-narcotic analgesics like paracetamol (acetaminophen) and aspirin relieve mild-to-moderate pain and lower body temperature during fever without causing drowsiness, mental impairment, or physical addiction. Morphine, codeine, and heroin are narcotic analgesics."
+      },
+      {
+        "question": "Saccharin is an artificial sweetener that passes through the human body unchanged. Chemically, saccharin is:",
+        "options": [
+          "o-Sulfobenzimide",
+          "p-Toluenesulfonamide",
+          "Methyl ester of aspartic acid",
+          "Trichlorosucrose"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Saccharin is ortho-sulfobenzimide; it is completely non-caloric and excreted unchanged in the urine.",
+          "Incorrect. p-Toluenesulfonamide is an industrial precursor, not saccharin.",
+          "Incorrect. Methyl ester of aspartic acid and phenylalanine is aspartame.",
+          "Incorrect. Trichlorosucrose is sucralose."
+        ],
+        "fullExplanation": "Saccharin (ortho-sulfobenzimide) was the first popular artificial sweetener discovered (in 1879). It is roughly 550 times sweeter than cane sugar. It is not metabolized in the human body, produces zero calories, and is excreted completely unchanged in urine, making it suitable for diabetic diets."
+      },
+      {
+        "question": "BHT (butylated hydroxytoluene) is added to edible fats and oils because it acts as an:",
+        "options": [
+          "Antioxidant",
+          "Antifoaming agent",
+          "Emulsifier",
+          "Artificial sweetener"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. BHT acts as a free-radical antioxidant, intercepting peroxyl radicals to prevent oxidative rancidity of fats and oils.",
+          "Incorrect. Antifoaming agents reduce industrial foaming.",
+          "Incorrect. Emulsifiers (like lecithin) stabilize oil-water suspensions.",
+          "Incorrect. BHT is not sweet and does not serve as a sweetener."
+        ],
+        "fullExplanation": "Edible fats and oils spoil (turn rancid) through free-radical auto-oxidation of unsaturated fatty acid chains when exposed to atmospheric oxygen. BHT (butylated hydroxytoluene) acts as an antioxidant by donating its phenolic hydrogen to peroxy free radicals, breaking the propagation chain and retarding rancidity."
+      },
+      {
+        "question": "Soaps are prepared by the saponification of triglycerides using aqueous NaOH. The byproduct obtained in this reaction is:",
+        "options": [
+          "Glycerol",
+          "Glycol",
+          "Ethanol",
+          "Sorbitol"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Saponification is the alkaline hydrolysis of fats/oils (glyceryl triesters of fatty acids) which yields sodium carboxylates (soaps) and propane-1,2,3-triol (glycerol).",
+          "Incorrect. Glycol (ethane-1,2-diol) is not a component of fats.",
+          "Incorrect. Ethanol is not released from triglycerides.",
+          "Incorrect. Sorbitol is a six-carbon sugar alcohol."
+        ],
+        "fullExplanation": "Natural fats and oils are triesters of long-chain carboxylic acids with glycerol (propane-1,2,3-triol). When heated with aqueous sodium hydroxide (saponification), the ester linkages are hydrolysed, yielding sodium salts of the fatty acids (soap) and glycerol as a valuable byproduct: Triglyceride + 3 NaOH → 3 R-COONa (Soap) + Glycerol."
+      }
+    ]
+  }
+]

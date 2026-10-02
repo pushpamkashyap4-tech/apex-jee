@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Gravitation",
+    "flashcards": [
+      {
+        "front": "What is Newton's Universal Law of Gravitation?",
+        "back": "F = G m₁ m₂ / r², acting along the line joining the point masses."
+      },
+      {
+        "front": "What is the relation between acceleration due to gravity (g) on the Earth's surface and G?",
+        "back": "g = G M / R², where M is Earth's mass and R is its radius."
+      },
+      {
+        "front": "How does acceleration due to gravity vary with height h above the Earth's surface?",
+        "back": "g(h) = g / (1 + h/R)² ≈ g(1 - 2h/R) for h << R."
+      },
+      {
+        "front": "How does acceleration due to gravity vary with depth d below the Earth's surface?",
+        "back": "g(d) = g(1 - d/R)."
+      },
+      {
+        "front": "What is the effect of Earth's rotation on acceleration due to gravity at latitude λ?",
+        "back": "g' = g - R ω² cos² λ, where ω is the angular velocity of Earth."
+      },
+      {
+        "front": "What is the gravitational field intensity (E) inside a uniform spherical shell?",
+        "back": "E = 0 everywhere inside the shell."
+      },
+      {
+        "front": "What is the gravitational field intensity (E) inside a solid sphere at distance r from the center (r < R)?",
+        "back": "E = G M r / R³."
+      },
+      {
+        "front": "What is the gravitational potential (V) due to a point mass M at a distance r?",
+        "back": "V = -G M / r."
+      },
+      {
+        "front": "What is the gravitational potential inside a uniform spherical shell?",
+        "back": "V = -G M / R (constant everywhere inside and equal to surface potential)."
+      },
+      {
+        "front": "What is the gravitational potential at the center of a solid sphere?",
+        "back": "V(center) = -3G M / (2R), which is 1.5 times the surface potential."
+      },
+      {
+        "front": "What is the formula for escape velocity (vₑ) from the surface of a planet?",
+        "back": "vₑ = √(2GM / R) = √(2gR)."
+      },
+      {
+        "front": "What is the formula for the orbital velocity (vₒ) of a satellite near the Earth's surface?",
+        "back": "vₒ = √(GM / R) = √(gR)."
+      },
+      {
+        "front": "What is the relation between escape velocity and orbital velocity for a near-Earth satellite?",
+        "back": "vₑ = √2 vₒ."
+      },
+      {
+        "front": "State Kepler's Second Law of Planetary Motion.",
+        "back": "The areal velocity of a planet around the sun is constant: dA/dt = L / (2m) = constant."
+      },
+      {
+        "front": "State Kepler's Third Law of Planetary Motion.",
+        "back": "The square of the time period of revolution is proportional to the cube of the semi-major axis: T² ∝ a³."
+      },
+      {
+        "front": "What is the kinetic energy (K) of a satellite in a circular orbit of radius r?",
+        "back": "K = G M m / (2r)."
+      },
+      {
+        "front": "What is the potential energy (U) of a satellite in a circular orbit of radius r?",
+        "back": "U = -G M m / r."
+      },
+      {
+        "front": "What is the total mechanical energy (E) of a satellite in orbit?",
+        "back": "E = K + U = -G M m / (2r)."
+      },
+      {
+        "front": "What is the binding energy of a satellite?",
+        "back": "Binding Energy = -E = G M m / (2r)."
+      },
+      {
+        "front": "What is the time period of a geostationary satellite?",
+        "back": "T = 24 hours, revolving in the equatorial plane in the direction of Earth's rotation."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "If the radius of the Earth shrinks by 1% while its mass remains the same, how will the acceleration due to gravity on its surface change?",
+        "options": [
+          "Increases by 1%",
+          "Decreases by 1%",
+          "Increases by 2%",
+          "Decreases by 2%"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The relationship involves an inverse square, leading to a 2% change.",
+          "Incorrect. Shrinking radius increases gravity.",
+          "Correct. g = GM/R². A 1% decrease in R leads to a 2% increase in g.",
+          "Incorrect. Gravity increases, not decreases."
+        ],
+        "fullExplanation": "Acceleration due to gravity is g = GM/R². Using error approximation for small percentage changes, Δg/g = -2(ΔR/R). Since ΔR/R = -1%, Δg/g = -2(-1%) = +2%. Therefore, g increases by 2%."
+      },
+      {
+        "question": "At what height above the Earth's surface does the acceleration due to gravity become 25% of its value on the surface? (Let R be Earth's radius)",
+        "options": [
+          "R/2",
+          "R",
+          "2R",
+          "3R"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. At R/2, g becomes 4/9 of surface g.",
+          "Correct. g(h) = g/(1 + h/R)². For g(h) = g/4, 1 + h/R = 2, so h = R.",
+          "Incorrect. At 2R, g becomes 1/9 of surface g.",
+          "Incorrect. At 3R, g becomes 1/16 of surface g."
+        ],
+        "fullExplanation": "The acceleration due to gravity at height h is g(h) = g / (1 + h/R)². We are given g(h) = 25% of g = g/4. Equating the two gives g/4 = g / (1 + h/R)², which implies (1 + h/R)² = 4. Taking the square root, 1 + h/R = 2. Therefore, h/R = 1, meaning h = R."
+      },
+      {
+        "question": "The escape velocity from Earth is v. If a planet has twice the mass and twice the radius of Earth, what is the escape velocity from this planet?",
+        "options": [
+          "v",
+          "√2 v",
+          "2v",
+          "v / √2"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. vₑ = √(2GM/R). Since both M and R are doubled, the ratio M/R remains unchanged.",
+          "Incorrect. This happens if mass is doubled but radius is unchanged.",
+          "Incorrect. This happens if mass is quadrupled and radius is unchanged.",
+          "Incorrect. This happens if radius is doubled but mass is unchanged."
+        ],
+        "fullExplanation": "Escape velocity is given by vₑ = √(2GM / R). For the new planet, M' = 2M and R' = 2R. The new escape velocity is vₑ' = √(2G(2M) / (2R)) = √(2GM / R) = v. Thus, the escape velocity remains the same."
+      },
+      {
+        "question": "A satellite is orbiting close to the Earth's surface. What is its approximate time period? (R = 6400 km, g = π² ≈ 10 m/s²)",
+        "options": [
+          "84.6 minutes",
+          "24 hours",
+          "60 minutes",
+          "120.4 minutes"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. T = 2π√(R/g), which calculates to approximately 84.6 minutes.",
+          "Incorrect. This is the period of a geostationary satellite.",
+          "Incorrect. The time period is longer than 1 hour.",
+          "Incorrect. This value does not match the T = 2π√(R/g) calculation."
+        ],
+        "fullExplanation": "For a satellite orbiting very close to the Earth, the orbital radius r ≈ R. The time period is T = 2π√(R / g). Substituting R = 6.4 × 10⁶ m and g = 10 m/s² gives T = 2π√(6.4 × 10⁵) ≈ 5077 seconds. Converting to minutes: 5077 / 60 ≈ 84.6 minutes."
+      },
+      {
+        "question": "The kinetic energy of a satellite orbiting the Earth is K. What is the minimum energy required to make it escape the Earth's gravitational field?",
+        "options": [
+          "K",
+          "2K",
+          "K/2",
+          "-K"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Total energy E = -K. To escape, total energy must be 0, so required energy is K.",
+          "Incorrect. 2K is the magnitude of the potential energy.",
+          "Incorrect. This underestimates the binding energy.",
+          "Incorrect. Energy added must be a positive quantity."
+        ],
+        "fullExplanation": "For a satellite in orbit, Kinetic Energy K = GMm / (2r) and Total Energy E = -GMm / (2r) = -K. To escape the Earth's field, its final total energy must be at least zero. The additional energy required is ΔE = 0 - E = 0 - (-K) = K. This is also called the binding energy."
+      },
+      {
+        "question": "Two spherical planets have the same uniform mass density ρ but their radii are R₁ and R₂. What is the ratio of the acceleration due to gravity on their surfaces?",
+        "options": [
+          "R₁² : R₂²",
+          "R₂ : R₁",
+          "R₁ : R₂",
+          "1 : 1"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This applies if their masses were the same, not densities.",
+          "Incorrect. Gravity is directly proportional to radius when density is constant.",
+          "Correct. g = (4/3)πGρR, so g is directly proportional to R.",
+          "Incorrect. Their gravities are not equal if their radii differ."
+        ],
+        "fullExplanation": "The acceleration due to gravity is g = GM / R². Expressing mass in terms of density: M = (4/3)πR³ρ. Substituting this into the gravity formula gives g = G((4/3)πR³ρ) / R² = (4/3)πGρR. Since (4/3)πGρ is constant for both planets, g ∝ R. Thus, the ratio is R₁ : R₂."
+      },
+      {
+        "question": "What is the depth d at which the value of acceleration due to gravity becomes 1/n times its value at the surface?",
+        "options": [
+          "R / n",
+          "R(n - 1) / n",
+          "R(n + 1) / n",
+          "nR"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would mean g(d) = g(1 - 1/n).",
+          "Correct. g/n = g(1 - d/R), solving yields d = R(n - 1) / n.",
+          "Incorrect. This depth is greater than the radius of Earth.",
+          "Incorrect. Depth cannot exceed R."
+        ],
+        "fullExplanation": "The variation of g with depth d is given by g(d) = g(1 - d/R). We are given g(d) = g/n. Substituting this, we get g/n = g(1 - d/R). Dividing by g gives 1/n = 1 - d/R. Rearranging for d/R gives d/R = 1 - 1/n = (n - 1) / n. Therefore, d = R(n - 1) / n."
+      },
+      {
+        "question": "A satellite moves from a lower circular orbit to a higher circular orbit. Which of the following quantities increases?",
+        "options": [
+          "Orbital velocity",
+          "Kinetic energy",
+          "Potential energy",
+          "Angular velocity"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. vₒ = √(GM/r), so velocity decreases as radius increases.",
+          "Incorrect. K = GMm/(2r), so kinetic energy decreases.",
+          "Correct. U = -GMm/r. As r increases, U becomes less negative, meaning it increases.",
+          "Incorrect. Angular velocity ω = v/r = √(GM/r³), which decreases."
+        ],
+        "fullExplanation": "As the orbital radius r increases, the potential energy U = -GMm/r becomes a smaller negative number, which means it physically increases (moves closer to zero). Conversely, orbital velocity v = √(GM/r) decreases, kinetic energy K = GMm/(2r) decreases, and angular velocity ω = √(GM/r³) decreases."
+      },
+      {
+        "question": "The time period of a satellite in a circular orbit of radius R is T. What will be its time period in an orbit of radius 4R?",
+        "options": [
+          "2T",
+          "4T",
+          "8T",
+          "16T"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This would happen if radius doubled.",
+          "Incorrect. The relationship is T² ∝ r³, not linear.",
+          "Correct. T ∝ r^(3/2). (4R/R)^(3/2) = 4^(3/2) = 8.",
+          "Incorrect. This assumes T ∝ r²."
+        ],
+        "fullExplanation": "According to Kepler's Third Law, the square of the time period is proportional to the cube of the orbital radius (T² ∝ r³), which implies T ∝ r^(3/2). If the radius is increased from R to 4R (a factor of 4), the new time period T' = T × (4)^(3/2). Since 4^(3/2) = (√4)³ = 2³ = 8, the new time period is 8T."
+      },
+      {
+        "question": "Three identical particles of mass m are situated at the vertices of an equilateral triangle of side a. What is the gravitational potential at the centroid of the triangle?",
+        "options": [
+          "-3Gm / a",
+          "-3√3Gm / a",
+          "-Gm / a",
+          "0"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The distance to the centroid is a/√3, not a.",
+          "Correct. Potential is scalar. Distance r = a/√3. V = 3 × (-Gm / (a/√3)) = -3√3Gm / a.",
+          "Incorrect. Missing the contribution of all three masses and proper distance.",
+          "Incorrect. Potential is a scalar sum of negative values, so it cannot be zero."
+        ],
+        "fullExplanation": "The distance r from the centroid to any vertex of an equilateral triangle of side a is r = a / √3. The gravitational potential is a scalar quantity, so the total potential at the centroid is the algebraic sum of the potentials due to the three masses. V = 3 × (-Gm / r) = -3Gm / (a / √3) = -3√3Gm / a."
+      },
+      {
+        "question": "What is the ratio of gravitational potential energy of an object at the Earth's surface to its kinetic energy when orbiting very close to the surface?",
+        "options": [
+          "-1 : 1",
+          "-2 : 1",
+          "1 : 2",
+          "1 : 1"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The magnitudes are not equal; PE is twice the magnitude of KE.",
+          "Correct. U = -GMm/R and K = GMm/(2R). Ratio is -2 : 1.",
+          "Incorrect. This is the ratio of KE to magnitude of PE.",
+          "Incorrect. Energy types differ in magnitude and sign."
+        ],
+        "fullExplanation": "For an object on or very close to the surface of the Earth, its gravitational potential energy is U = -GMm / R. If it is orbiting close to the surface, its kinetic energy is K = GMm / (2R). The ratio of U to K is (-GMm / R) / (GMm / (2R)) = -2. Therefore, the ratio is -2 : 1."
+      },
+      {
+        "question": "An object weighs 72 N on Earth. What will be its weight at a height equal to half the radius of Earth?",
+        "options": [
+          "32 N",
+          "36 N",
+          "18 N",
+          "54 N"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. g' = g/(1 + 0.5)² = g/1.5² = g/2.25 = 4g/9. Weight = 72 × 4/9 = 32 N.",
+          "Incorrect. This implies weight is halved, which is wrong.",
+          "Incorrect. This is a quarter of the original weight.",
+          "Incorrect. This is 3/4 of the original weight."
+        ],
+        "fullExplanation": "The acceleration due to gravity at height h is g(h) = g / (1 + h/R)². Here, h = R/2. So, g(h) = g / (1 + 1/2)² = g / (3/2)² = 4g/9. Weight is proportional to g, so the new weight is W' = (4/9)W. Substituting W = 72 N gives W' = (4/9) × 72 = 4 × 8 = 32 N."
+      },
+      {
+        "question": "A particle is dropped into a tunnel drilled straight through the center of the Earth. What kind of motion does the particle execute?",
+        "options": [
+          "Uniform velocity",
+          "Uniform acceleration",
+          "Simple Harmonic Motion",
+          "Parabolic motion"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Gravity exerts a force, changing the velocity.",
+          "Incorrect. Gravity decreases as it nears the center, so acceleration is not constant.",
+          "Correct. The restoring force is proportional to the displacement from the center (F ∝ -x), characteristic of SHM.",
+          "Incorrect. Parabolic motion occurs for projectiles with constant downward gravity."
+        ],
+        "fullExplanation": "Inside the Earth, at a distance r from the center, the gravitational force is F = -(GMm/R³)r. Since the restoring force is directly proportional to the negative of the displacement from the center (F ∝ -r), the particle executes Simple Harmonic Motion (SHM) with a time period T = 2π√(R/g)."
+      },
+      {
+        "question": "What is the work done in shifting a mass m from the Earth's surface to a height equal to the Earth's radius (R)?",
+        "options": [
+          "mgR",
+          "mgR / 2",
+          "2mgR",
+          "Zero"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This assumes g is constant over the height R.",
+          "Correct. ΔU = mgR / (1 + h/R). Since h = R, ΔU = mgR / 2.",
+          "Incorrect. This overestimates the work done.",
+          "Incorrect. Work must be done against gravity."
+        ],
+        "fullExplanation": "The change in potential energy when a mass is raised to a height h is ΔU = mgh / (1 + h/R). Substituting h = R, we get ΔU = mgR / (1 + R/R) = mgR / 2. The work done by the external agent equals this change in potential energy, which is mgR / 2."
+      },
+      {
+        "question": "If the Earth shrinks such that its density becomes 8 times its present value while its mass remains constant, what will be the new duration of a day?",
+        "options": [
+          "24 hours",
+          "12 hours",
+          "6 hours",
+          "3 hours"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The Earth spins faster when smaller.",
+          "Incorrect. This assumes an incorrect radius change.",
+          "Correct. Density is 8x, so Volume is 1/8x, meaning R becomes R/2. I becomes I/4, so T becomes T/4 = 6 hours.",
+          "Incorrect. This underestimates the new time period."
+        ],
+        "fullExplanation": "Mass M = (4/3)πR³ρ is constant. If ρ becomes 8ρ, then R³ must become R³/8, meaning R becomes R/2. By conservation of angular momentum, L = Iω = (2/5)MR²(2π/T) is constant. Since T ∝ R², if R is halved, T becomes 1/4 of its original value. The new day length is 24 / 4 = 6 hours."
+      },
+      {
+        "question": "A body is projected vertically upwards from the surface of the Earth with a velocity equal to half the escape velocity. What maximum height does it reach? (R = Earth's radius)",
+        "options": [
+          "R / 2",
+          "R / 3",
+          "R",
+          "R / 4"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is a common guess but mathematically incorrect.",
+          "Correct. Energy conservation: -GMm/R + (1/2)m(vₑ/2)² = -GMm/(R+h). Leads to h = R/3.",
+          "Incorrect. Reaching height R requires velocity vₑ/√2.",
+          "Incorrect. Less than the actual height reached."
+        ],
+        "fullExplanation": "By conservation of mechanical energy: K₁ + U₁ = K₂ + U₂. Initial KE is (1/2)m(vₑ/2)² = (1/2)m(vₑ²/4). Since vₑ² = 2GM/R, K₁ = GMm/(4R). So, GMm/(4R) - GMm/R = -GMm/(R+h). This simplifies to -3GMm/(4R) = -GMm/(R+h). Therefore, 3/(4R) = 1/(R+h), yielding 3R + 3h = 4R, so 3h = R, meaning h = R/3."
+      },
+      {
+        "question": "Which of the following graphs correctly represents the variation of gravitational potential (V) with distance (r) from the center of a uniform solid sphere of radius R?",
+        "options": [
+          "A straight line passing through the origin",
+          "A parabola opening downwards for r<R, then a hyperbola for r>R",
+          "Constant for r<R, hyperbola for r>R",
+          "A parabola opening upwards for r<R, then a hyperbola for r>R"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Potential is not zero at the center, nor is it linear.",
+          "Correct. V is proportional to r² (downward parabola) inside, and 1/r (hyperbola) outside.",
+          "Incorrect. Potential is constant inside a shell, not a solid sphere.",
+          "Incorrect. The parabola opens downwards as V becomes less negative towards the surface."
+        ],
+        "fullExplanation": "Inside a solid sphere (r < R), the potential is V = -GM(3R² - r²) / (2R³). This is an inverted parabola starting at -1.5GM/R at the center and reaching -GM/R at the surface. Outside the sphere (r ≥ R), V = -GM/r, which is a rectangular hyperbola approaching zero at infinity."
+      },
+      {
+        "question": "Two equal masses m and m are separated by a distance d. What is the escape velocity of a particle of mass m₀ projected from the midpoint of the line joining them?",
+        "options": [
+          "√(4Gm/d)",
+          "√(8Gm/d)",
+          "√(2Gm/d)",
+          "√(Gm/d)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Missing a factor of 2.",
+          "Correct. Initial potential energy is -4Gmm₀/d. KE needed is 4Gmm₀/d, giving v = √(8Gm/d).",
+          "Incorrect. This is the escape velocity for only one mass.",
+          "Incorrect. Magnitude is way off."
+        ],
+        "fullExplanation": "The potential at the midpoint is V = -Gm/(d/2) - Gm/(d/2) = -4Gm/d. The potential energy of mass m₀ is U = -4Gmm₀/d. For escape, total energy must be zero, so K + U = 0. (1/2)m₀v² - 4Gmm₀/d = 0. Solving for v gives v² = 8Gm/d, so v = √(8Gm/d)."
+      },
+      {
+        "question": "A satellite revolves around the Earth in an elliptical orbit. Which of the following remains constant?",
+        "options": [
+          "Linear velocity",
+          "Angular momentum",
+          "Kinetic energy",
+          "Potential energy"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Linear velocity is highest at perigee and lowest at apogee.",
+          "Correct. Gravitational force is central (torque is zero), so angular momentum is conserved.",
+          "Incorrect. Kinetic energy changes as velocity changes.",
+          "Incorrect. Potential energy changes as distance to Earth changes."
+        ],
+        "fullExplanation": "In an elliptical orbit, the gravitational force acts along the line joining the satellite and the center of the Earth (central force). The torque produced by a central force is zero (τ = r × F = 0). Since net torque is zero, the angular momentum of the satellite remains constant throughout its orbit."
+      },
+      {
+        "question": "The mean radius of the Earth is R, its angular speed on its own axis is ω, and g is the acceleration due to gravity at Earth's surface. What is the value of g at the equator?",
+        "options": [
+          "g",
+          "g + Rω²",
+          "g - Rω²",
+          "g - Rω² / 2"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the gravity at the poles.",
+          "Incorrect. Rotation decreases effective gravity; it doesn't increase it.",
+          "Correct. The centrifugal force component at the equator reduces g by exactly Rω².",
+          "Incorrect. This coefficient applies to a different latitude."
+        ],
+        "fullExplanation": "The effective acceleration due to gravity at a latitude λ is given by g' = g - Rω² cos² λ. At the equator, the latitude λ is 0°. Since cos 0° = 1, the equation simplifies to g' = g - Rω²(1)² = g - Rω²."
+      }
+    ]
+  },
+  {
+    "chapterName": "Mechanical Properties of Solids",
+    "flashcards": [
+      {
+        "front": "Define Longitudinal Stress.",
+        "back": "Restoring force per unit area perpendicular to the cross-section: σ = F / A."
+      },
+      {
+        "front": "Define Longitudinal Strain.",
+        "back": "Change in length divided by original length: ε = ΔL / L."
+      },
+      {
+        "front": "State Hooke's Law.",
+        "back": "Within the elastic limit, stress is directly proportional to strain (Stress = Y × Strain)."
+      },
+      {
+        "front": "What is Young's Modulus (Y)?",
+        "back": "Ratio of longitudinal stress to longitudinal strain: Y = (F/A) / (ΔL/L) = FL / (AΔL)."
+      },
+      {
+        "front": "What is Bulk Modulus (K)?",
+        "back": "Ratio of volume stress (pressure) to volume strain: K = -ΔP / (ΔV/V)."
+      },
+      {
+        "front": "What is Compressibility?",
+        "back": "The reciprocal of Bulk Modulus: C = 1 / K."
+      },
+      {
+        "front": "What is Modulus of Rigidity (Shear Modulus, η)?",
+        "back": "Ratio of shear stress to shear strain: η = (F/A) / θ."
+      },
+      {
+        "front": "Define Poisson's ratio (σ).",
+        "back": "Ratio of lateral strain to longitudinal strain: σ = -(Δr/r) / (ΔL/L)."
+      },
+      {
+        "front": "What are the theoretical limits of Poisson's ratio?",
+        "back": "-1 < σ < 0.5 (Practically for most materials, 0 < σ < 0.5)."
+      },
+      {
+        "front": "What is the strain energy stored in a stretched wire?",
+        "back": "U = (1/2) × Load × Extension = (1/2) F ΔL."
+      },
+      {
+        "front": "What is the formula for strain energy density (energy per unit volume)?",
+        "back": "u = (1/2) × Stress × Strain = (1/2) Y (Strain)²."
+      },
+      {
+        "front": "What is the elongation of a heavy rod of length L and density ρ due to its own weight?",
+        "back": "ΔL = (ρgL²) / (2Y) = (MgL) / (2AY)."
+      },
+      {
+        "front": "What is thermal stress in a rod completely constrained at both ends?",
+        "back": "Stress = Y α ΔT, where α is the coefficient of linear expansion."
+      },
+      {
+        "front": "What is the thermal force (tension) exerted by a constrained rod?",
+        "back": "F = Y A α ΔT."
+      },
+      {
+        "front": "What is the equivalent force constant (k) of a uniform wire?",
+        "back": "k = YA / L (from F = k ΔL)."
+      },
+      {
+        "front": "What is the equivalent Young's modulus for two wires of equal length and area connected in series?",
+        "back": "Y(eq) = (2 Y₁ Y₂) / (Y₁ + Y₂)."
+      },
+      {
+        "front": "What is the equivalent Young's modulus for two wires of equal length and area connected in parallel?",
+        "back": "Y(eq) = (Y₁ + Y₂) / 2."
+      },
+      {
+        "front": "On what does the breaking stress of a wire depend?",
+        "back": "It depends only on the material of the wire, not on its length or cross-sectional area."
+      },
+      {
+        "front": "On what does the breaking force of a wire depend?",
+        "back": "Breaking force = Breaking Stress × Area. It depends on the material and the cross-sectional area (proportional to r²)."
+      },
+      {
+        "front": "What are elastomers?",
+        "back": "Materials like rubber that can be elastically stretched to large values of strain without breaking, but do not strictly obey Hooke's law."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A wire of length L and radius r is stretched by a force F. The elongation is l. If the radius is doubled and the force is halved, what is the new elongation?",
+        "options": [
+          "l / 2",
+          "l / 4",
+          "l / 8",
+          "2l"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This would happen if only force was halved.",
+          "Incorrect. This would happen if only radius was doubled.",
+          "Correct. ΔL ∝ F / r². F becomes 1/2, r² becomes 4. So ΔL becomes (1/2)/4 = 1/8 of original.",
+          "Incorrect. Elongation decreases, not increases."
+        ],
+        "fullExplanation": "Young's modulus Y = (F·L) / (A·ΔL) = (F·L) / (π·r²·ΔL). Rearranging for elongation: ΔL = (F·L) / (π·r²·Y). So, ΔL ∝ F / r². When force F is halved (F' = F/2) and radius r is doubled (r' = 2r, so r'² = 4r²), the new elongation is ΔL' ∝ (F/2) / (4r²) = (1/8) (F/r²). Thus, the new elongation is l/8."
+      },
+      {
+        "question": "Two wires A and B are made of the same material. The radius of A is twice that of B, and its length is half that of B. If they are stretched by the same force, what is the ratio of elongation of A to B?",
+        "options": [
+          "1 : 8",
+          "1 : 4",
+          "8 : 1",
+          "1 : 2"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. ΔL ∝ L / r². L(A)/L(B) = 1/2. r(A)/r(B) = 2. Ratio = (1/2) / 2² = 1/8.",
+          "Incorrect. Missed the length factor.",
+          "Incorrect. This is the inverse ratio.",
+          "Incorrect. Calculation error."
+        ],
+        "fullExplanation": "Elongation ΔL = FL / (AY) = FL / (πr²Y). Since F and Y are the same, ΔL ∝ L / r². Ratio ΔL(A) / ΔL(B) = (L(A) / L(B)) × (r(B) / r(A))². Given L(A) = L(B)/2 and r(A) = 2r(B). Substituting these: Ratio = (1/2) × (1/2)² = (1/2) × (1/4) = 1/8. The ratio is 1 : 8."
+      },
+      {
+        "question": "What happens to the breaking stress of a wire if its length is doubled and its radius is halved?",
+        "options": [
+          "Becomes 4 times",
+          "Becomes 1/4 times",
+          "Remains unchanged",
+          "Becomes half"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Breaking force changes, but breaking stress does not.",
+          "Incorrect. This is the change for breaking force.",
+          "Correct. Breaking stress is a material property and is independent of geometry.",
+          "Incorrect. Stress is independent of physical dimensions."
+        ],
+        "fullExplanation": "Breaking stress is an intrinsic property of the material of the wire. It depends only on the nature of the material and its temperature. It does not depend on the dimensions (length or cross-sectional area) of the wire. Therefore, the breaking stress remains unchanged."
+      },
+      {
+        "question": "A steel wire is suspended vertically from a rigid support. When a mass M is hung from its lower end, the strain energy stored is U. What is the elongation of the wire?",
+        "options": [
+          "U / Mg",
+          "2U / Mg",
+          "Mg / U",
+          "Mg / 2U"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This misses the 1/2 factor in the energy formula.",
+          "Correct. U = 1/2 F ΔL = 1/2 Mg ΔL, solving gives ΔL = 2U / Mg.",
+          "Incorrect. This is the inverse relationship.",
+          "Incorrect. The 2 belongs in the numerator."
+        ],
+        "fullExplanation": "The strain energy stored in a stretched wire is given by U = (1/2) × Load × Elongation. Here, the load is the weight of the mass, F = Mg, and the elongation is ΔL. So, U = (1/2) × Mg × ΔL. Rearranging for elongation yields ΔL = 2U / Mg."
+      },
+      {
+        "question": "A metal block is subjected to a uniform hydrostatic pressure P. If the bulk modulus of the metal is K, what is the fractional change in its volume?",
+        "options": [
+          "P / K",
+          "K / P",
+          "P K",
+          "1 / (P K)"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Bulk Modulus K = P / (ΔV/V), so ΔV/V = P/K.",
+          "Incorrect. This is the reciprocal of the correct formula.",
+          "Incorrect. Pressure and modulus do not multiply.",
+          "Incorrect. This formula is dimensionally incorrect."
+        ],
+        "fullExplanation": "The Bulk Modulus (K) is defined as the ratio of volume stress (pressure change ΔP) to volume strain (fractional change in volume ΔV/V). K = P / (ΔV/V). Rearranging to solve for the fractional change in volume, we get ΔV/V = P / K."
+      },
+      {
+        "question": "A wire of length L and density ρ is hung vertically. What is its elongation due to its own weight? (Y = Young's modulus)",
+        "options": [
+          "ρgL / Y",
+          "ρgL² / (2Y)",
+          "ρgL² / Y",
+          "2ρgL / Y"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Dimensionally incorrect (length unit missing).",
+          "Correct. The center of gravity is at L/2. ΔL = (MgL/2) / AY = (ρALg)(L/2) / (AY) = ρgL² / (2Y).",
+          "Incorrect. Missing the factor of 1/2.",
+          "Incorrect. Formula derived incorrectly."
+        ],
+        "fullExplanation": "Consider a differential element dx at a distance x from the bottom. The tension at x is the weight of the segment below it: T = (ρAx)g. The elongation of this element is d(ΔL) = (T dx) / (AY) = (ρAxg dx) / (AY) = (ρgx / Y) dx. Integrating from 0 to L: ΔL = ∫(ρg/Y) x dx = (ρg/Y) [x²/2] from 0 to L = ρgL² / (2Y)."
+      },
+      {
+        "question": "An ideal gas has a bulk modulus at constant temperature (isothermal bulk modulus). How is it related to its pressure P?",
+        "options": [
+          "K = P",
+          "K = γP",
+          "K = P/γ",
+          "K = 0"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. For an isothermal process PV = const, so P dV + V dP = 0, giving K = -dP/(dV/V) = P.",
+          "Incorrect. This is the adiabatic bulk modulus.",
+          "Incorrect. Gamma is multiplied, not divided, for adiabatic processes.",
+          "Incorrect. Gas opposes volume change, so K is not zero."
+        ],
+        "fullExplanation": "For an ideal gas undergoing an isothermal process, the equation of state is PV = constant. Differentiating both sides gives P dV + V dP = 0. Rearranging terms: V dP = -P dV, which means -dP / (dV/V) = P. By definition, Bulk Modulus K = -dP / (dV/V), so for an isothermal process, K = P."
+      },
+      {
+        "question": "A steel rod is rigidly clamped at both ends and heated. If the temperature increases by ΔT, what is the thermal stress developed in the rod? (Y = Young's modulus, α = linear expansion coefficient)",
+        "options": [
+          "Y α ΔT",
+          "Y / (α ΔT)",
+          "α ΔT / Y",
+          "Y α / ΔT"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. The restricted strain is α ΔT. Stress = Y × Strain = Y α ΔT.",
+          "Incorrect. Dimensionally incorrect.",
+          "Incorrect. This is Strain / Y, which is meaningless here.",
+          "Incorrect. Stress is proportional to ΔT."
+        ],
+        "fullExplanation": "If the rod were free to expand, its length change would be ΔL = L α ΔT, creating a thermal strain of ΔL/L = α ΔT. Since the rod is rigidly clamped, the supports exert a force to compress it back to its original length, creating a mechanical strain equal to the thermal strain. By Hooke's Law, Stress = Y × Strain = Y α ΔT."
+      },
+      {
+        "question": "The Poisson's ratio for a perfectly incompressible material is:",
+        "options": [
+          "0",
+          "0.5",
+          "1",
+          "-1"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This implies no lateral contraction during stretching.",
+          "Correct. For an incompressible material, volume is constant (ΔV = 0), which mathematically requires σ = 0.5.",
+          "Incorrect. Poisson's ratio cannot exceed 0.5 for isotropic materials.",
+          "Incorrect. Negative values mean it expands laterally when stretched (auxetics)."
+        ],
+        "fullExplanation": "Volume of a cylindrical wire is V = πr²L. Differentiating logarithmically: ΔV/V = 2(Δr/r) + ΔL/L. Since Poisson's ratio σ = -(Δr/r) / (ΔL/L), we have Δr/r = -σ(ΔL/L). Substituting this into the volume equation: ΔV/V = -2σ(ΔL/L) + ΔL/L = (1 - 2σ)(ΔL/L). For an incompressible material, volume doesn't change, so ΔV/V = 0. This means 1 - 2σ = 0, which yields σ = 0.5."
+      },
+      {
+        "question": "A wire can bear a maximum load of W. If it is cut into two equal parts, what is the maximum load each part can bear?",
+        "options": [
+          "W / 2",
+          "W",
+          "2W",
+          "W / 4"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Breaking load doesn't depend on length.",
+          "Correct. Breaking load depends only on cross-sectional area and material, which are unchanged.",
+          "Incorrect. The wire doesn't get stronger.",
+          "Incorrect. Breaking load is independent of length."
+        ],
+        "fullExplanation": "The maximum load a wire can bear is its breaking force, which is given by Breaking Force = Breaking Stress × Area. Since cutting the wire into two halves changes its length but alters neither the material (so breaking stress is constant) nor the cross-sectional area, the breaking load remains exactly the same, W."
+      },
+      {
+        "question": "A rubber cord of length L and cross-sectional area A is stretched by a mass M. Its elongation is x. What is the work done by the restoring force?",
+        "options": [
+          "Mgx",
+          "-Mgx",
+          "-1/2 Mgx",
+          "1/2 Mgx"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the work done by gravity.",
+          "Incorrect. Misses the 1/2 factor for an elastic force.",
+          "Correct. Work done by the spring-like restoring force is -1/2 kx² = -1/2 Fx = -1/2 Mgx.",
+          "Incorrect. Work done by restoring force is negative as it acts opposite to displacement."
+        ],
+        "fullExplanation": "The restoring force in an elastic material follows Hooke's Law (F = kx). The work done by this force during stretching is W = ∫(-kx)dx = -1/2 kx². At equilibrium, the external force Mg equals the restoring force magnitude kx. Therefore, substituting kx = Mg, the work done by the restoring force is -1/2 Mgx."
+      },
+      {
+        "question": "Which of the following describes the behavior of elastomers?",
+        "options": [
+          "They obey Hooke's law perfectly up to fracture.",
+          "They undergo very little plastic deformation and have large elastic limits.",
+          "They have a very large elastic region but do not strictly obey Hooke's law.",
+          "They are highly brittle and shatter under low stress."
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Elastomers do not obey Hooke's law.",
+          "Incorrect. While they have large elastic limits, they do undergo complex deformations.",
+          "Correct. Materials like rubber can stretch many times their original length elastically, but their stress-strain curve is non-linear.",
+          "Incorrect. Brittle materials like glass behave this way."
+        ],
+        "fullExplanation": "Elastomers, such as rubber or biological tissues (like the aorta), can be stretched to very large strains (e.g., several times their original length) and still return to their original shape. This means they have a very large elastic region. However, their stress-strain graph is typically non-linear, meaning they do not obey Hooke's Law."
+      },
+      {
+        "question": "Two wires of the same material have lengths in the ratio 1:2 and radii in the ratio 1:2. If they are stretched by the same force, the ratio of their strain energies is:",
+        "options": [
+          "1:2",
+          "2:1",
+          "1:1",
+          "1:4"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Calculation error in evaluating elongation ratio.",
+          "Correct. U ∝ ΔL ∝ L/r². Ratio = (1/2) / (1/4) = 2/1. Strain energy ratio is 2:1.",
+          "Incorrect. The geometries do not cancel out.",
+          "Incorrect. This is the inverse square of the correct ratio."
+        ],
+        "fullExplanation": "Strain energy U = (1/2)F(ΔL). Since F is same, U ∝ ΔL. Elongation ΔL = FL / (AY) ∝ L / r². Thus, U ∝ L / r². For the two wires, U₁/U₂ = (L₁/L₂) × (r₂/r₁)². Given L₁/L₂ = 1/2 and r₁/r₂ = 1/2 (so r₂/r₁ = 2/1). Therefore, U₁/U₂ = (1/2) × (2)² = (1/2) × 4 = 2. The ratio is 2:1."
+      },
+      {
+        "question": "What is the equivalent Young's modulus (Y) of two wires of equal length and area joined in series, with moduli Y₁ and Y₂?",
+        "options": [
+          "(Y₁ + Y₂) / 2",
+          "√(Y₁ Y₂)",
+          "2 Y₁ Y₂ / (Y₁ + Y₂)",
+          "Y₁ + Y₂"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is for parallel combination.",
+          "Incorrect. This is the geometric mean.",
+          "Correct. Total elongation ΔL = ΔL₁ + ΔL₂. F(2L)/(AY) = FL/(AY₁) + FL/(AY₂), giving Y = 2Y₁Y₂ / (Y₁ + Y₂).",
+          "Incorrect. Equivalent modulus in series is lower than the individual ones."
+        ],
+        "fullExplanation": "In series, both wires experience the same force F. Total elongation ΔL = ΔL₁ + ΔL₂. Using ΔL = FL/(AY), the equivalent system has length 2L, area A. F(2L)/(AY_eq) = FL/(AY₁) + FL/(AY₂). Canceling FL/A gives 2/Y_eq = 1/Y₁ + 1/Y₂, which simplifies to Y_eq = 2Y₁Y₂ / (Y₁ + Y₂). This is the harmonic mean."
+      },
+      {
+        "question": "For a material with Young's modulus Y and Modulus of Rigidity η, if the material is practically incompressible, the ratio Y / η is:",
+        "options": [
+          "2",
+          "3",
+          "1",
+          "1.5"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the ratio when σ = 0.",
+          "Correct. Relation: Y = 2η(1+σ). For incompressible material, σ = 0.5. Y = 2η(1.5) = 3η. So Y/η = 3.",
+          "Incorrect. Y is always strictly greater than η.",
+          "Incorrect. Calculation error."
+        ],
+        "fullExplanation": "The relationship between Young's Modulus Y, Rigidity Modulus η, and Poisson's ratio σ is Y = 2η(1 + σ). For a perfectly incompressible material, volume is constant under stress, which implies σ = 0.5. Substituting this value into the equation gives Y = 2η(1 + 0.5) = 2η(1.5) = 3η. Thus, the ratio Y / η = 3."
+      },
+      {
+        "question": "The stress-strain graph of a ductile material exhibits a point beyond which strain increases rapidly for a small change in stress. This point is called:",
+        "options": [
+          "Elastic limit",
+          "Yield point",
+          "Breaking point",
+          "Proportional limit"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Elastic limit is where permanent deformation begins.",
+          "Correct. The yield point marks the onset of plastic behavior with rapid strain.",
+          "Incorrect. Breaking point is where the material fractures.",
+          "Incorrect. Proportional limit is where Hooke's law ceases to apply."
+        ],
+        "fullExplanation": "In a stress-strain curve, the yield point defines the limit of elasticity. Once the stress exceeds the yield point, the material undergoes plastic deformation. In this region, a very small increase in stress causes a large, permanent increase in strain. The material 'yields' to the applied force."
+      },
+      {
+        "question": "A force F is applied uniformly over the surface of a spherical object of radius R, reducing its volume by ΔV. What is its Bulk modulus?",
+        "options": [
+          "(F V) / (4πR² ΔV)",
+          "(F ΔV) / (4πR² V)",
+          "(4πR² V) / (F ΔV)",
+          "(F R) / (3 ΔV)"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Pressure P = F/A = F/(4πR²). K = P / (ΔV/V) = (F/4πR²) / (ΔV/V) = FV / (4πR²ΔV).",
+          "Incorrect. V and ΔV are inverted.",
+          "Incorrect. This is the reciprocal of Bulk Modulus (Compressibility).",
+          "Incorrect. Area formula is wrong."
+        ],
+        "fullExplanation": "Bulk modulus is defined as K = Volume Stress / Volume Strain. Volume stress is the change in pressure, ΔP = F / A. For a sphere, surface area A = 4πR². So, ΔP = F / (4πR²). Volume strain is ΔV / V. Therefore, K = (F / 4πR²) / (ΔV / V) = (F · V) / (4πR² · ΔV)."
+      },
+      {
+        "question": "If the temperature of a wire under tension is increased, what happens to its Young's modulus?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains constant",
+          "First increases then decreases"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Intermolecular forces weaken, so it doesn't get stiffer.",
+          "Correct. As temperature rises, interatomic spacing increases and the restoring forces weaken, decreasing Y.",
+          "Incorrect. Material properties depend on temperature.",
+          "Incorrect. The decrease is generally monotonic."
+        ],
+        "fullExplanation": "Young's modulus is a measure of the stiffness of a solid, fundamentally depending on the strength of intermolecular forces. As temperature increases, the average distance between atoms increases, leading to weaker intermolecular bonds. Consequently, it requires less stress to produce the same strain, meaning Young's modulus decreases."
+      },
+      {
+        "question": "What is the dimensional formula for Young's Modulus?",
+        "options": [
+          "[M L T⁻²]",
+          "[M L⁻¹ T⁻²]",
+          "[M L² T⁻²]",
+          "[M L⁻² T⁻²]"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the dimension of force.",
+          "Correct. Y = Stress/Strain = (Force/Area)/1 = [M L T⁻²] / [L²] = [M L⁻¹ T⁻²].",
+          "Incorrect. This is the dimension of energy.",
+          "Incorrect. This is Force / Volume."
+        ],
+        "fullExplanation": "Young's Modulus Y = Stress / Strain. Strain is dimensionless (change in length / original length). Therefore, the dimensions of Y are the same as Stress. Stress = Force / Area. Force has dimensions [M L T⁻²] and Area has [L²]. Thus, Y = [M L T⁻²] / [L²] = [M L⁻¹ T⁻²]."
+      },
+      {
+        "question": "A uniform wire of radius r is twisted by an angle θ. The restoring torque developed is proportional to:",
+        "options": [
+          "r",
+          "r²",
+          "r³",
+          "r⁴"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. Does not match derivation.",
+          "Incorrect. This would apply to simple stretching area.",
+          "Incorrect. Missing an integration dimension.",
+          "Correct. Restoring torque of a twisted cylinder is proportional to r⁴ (torsional constant C = πηr⁴ / 2L)."
+        ],
+        "fullExplanation": "When a cylindrical wire is twisted, it acts as a torsional spring. The restoring torque τ is proportional to the angle of twist θ: τ = Cθ. The torsional constant C for a solid cylinder of radius r, length L, and shear modulus η is derived by integrating the shear stress over the circular cross-section, yielding C = (πηr⁴) / (2L). Thus, torque is proportional to r⁴."
+      }
+    ]
+  }
+]

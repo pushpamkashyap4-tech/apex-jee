@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Chemical & Ionic Equilibrium",
+    "flashcards": [
+      {
+        "front": "State the condition for dynamic equilibrium in a reversible reaction.",
+        "back": "Rate of forward reaction (r_f) = Rate of backward reaction (r_b). At this point, the concentrations of reactants and products remain constant with time."
+      },
+      {
+        "front": "What is the mathematical relation between equilibrium constants Kₚ and K_c?",
+        "back": "Kₚ = K_c(RT)^(Δn_g), where Δn_g = (moles of gaseous products) - (moles of gaseous reactants), and active masses of pure solids and liquids are taken as unity (1)."
+      },
+      {
+        "front": "What are the standard units of K_c and Kₚ for a general reaction?",
+        "back": "K_c has units of (mol L⁻¹)^(Δn_g) and Kₚ has units of (atm)^(Δn_g)."
+      },
+      {
+        "front": "How is the reaction quotient Q used to predict the direction of a reversible reaction?",
+        "back": "If Q = K_eq, the reaction is at equilibrium. If Q > K_eq, the reaction proceeds in the backward direction. If Q < K_eq, the reaction proceeds in the forward direction."
+      },
+      {
+        "front": "According to Le Chatelier's principle, what is the effect of increasing pressure on an equilibrium where Δn_g > 0?",
+        "back": "Increasing pressure shifts the equilibrium in the backward direction (towards fewer moles of gas), thereby decreasing the degree of dissociation."
+      },
+      {
+        "front": "What is the effect of temperature on exothermic and endothermic equilibria?",
+        "back": "Increasing temperature shifts an endothermic reaction (ΔH > 0) in the forward direction and an exothermic reaction (ΔH < 0) in the backward direction."
+      },
+      {
+        "front": "What is the effect of adding an inert gas at constant volume and at constant pressure on an equilibrium?",
+        "back": "At constant volume: no effect (equilibrium remains unchanged). At constant pressure: shifts towards the side with more gaseous moles (increases dissociation if Δn_g > 0)."
+      },
+      {
+        "front": "How does a catalyst affect the state and constant of chemical equilibrium?",
+        "back": "A catalyst increases both forward and backward reaction rates equally, helping to attain equilibrium faster without altering the equilibrium constant (K_eq) or the equilibrium composition."
+      },
+      {
+        "front": "State the thermodynamic relationship between standard Gibbs free energy change (ΔG°) and equilibrium constant K_c.",
+        "back": "ΔG° = -RT ln K_c. If ΔG° < 0, then K_c > 1 (reaction is spontaneous in the forward direction). If ΔG° > 0, then K_c < 1."
+      },
+      {
+        "front": "Why is the active mass of pure solids and pure liquids taken as unity (1) in equilibrium expressions?",
+        "back": "Because their density and molar concentration remain constant regardless of the total amount present; active mass of pure solids/liquids is an intensive property."
+      },
+      {
+        "front": "Define conjugate acid-base pairs according to the Bronsted-Lowry concept.",
+        "back": "An acid gives H⁺ in any solvent, and a base accepts H⁺. To find the conjugate base of an acid, remove one H⁺; to find the conjugate acid of a base, add one H⁺."
+      },
+      {
+        "front": "What are the common types of Lewis acids according to the handbook?",
+        "back": "1. Incomplete octet species (BF₃, BCl₃, AlCl₃); 2. Vacant d-orbital species (SF₄, SnCl₄); 3. Multiple bonds between atoms of different electronegativities (CO₂, SO₃); 4. Simple cations (Ag⁺, Al³⁺)."
+      },
+      {
+        "front": "State Ostwald's dilution law for weak electrolytes.",
+        "back": "The degree of dissociation (α) of a weak electrolyte is directly proportional to the square root of dilution: α ∝ √(dilution) or α = √(K_a / C)."
+      },
+      {
+        "front": "What is the value of pH of pure water at any temperature in terms of pK_w?",
+        "back": "For pure water, [H⁺] = [OH⁻], so pH = pOH = pK_w / 2. A solution is acidic if pH < pK_w / 2 and basic if pH > pK_w / 2."
+      },
+      {
+        "front": "Write the hydrolysis constant (K_h), degree of hydrolysis (h), and pH formulas for a salt of a weak acid and a strong base (e.g., CH₃COONa).",
+        "back": "K_h = K_w / K_a; h = √(K_h / C) = √(K_w / (K_a · C)); pH = (1/2) · [pK_w + pK_a + log C] (alkaline, pH > 7)."
+      },
+      {
+        "front": "Write the hydrolysis constant (K_h), degree of hydrolysis (h), and pH formulas for a salt of a strong acid and a weak base (e.g., NH₄Cl).",
+        "back": "K_h = K_w / K_b; h = √(K_h / C) = √(K_w / (K_b · C)); pH = (1/2) · [pK_w - pK_b - log C] (acidic, pH < 7)."
+      },
+      {
+        "front": "Write the hydrolysis constant (K_h) and pH formulas for a salt of a weak acid and a weak base (e.g., CH₃COONH₄).",
+        "back": "K_h = K_w / (K_a · K_b); h = √K_h; pH = (1/2) · [pK_w + pK_a - pK_b] (independent of salt concentration C)."
+      },
+      {
+        "front": "State the Henderson-Hasselbalch equations for acidic and basic buffer solutions.",
+        "back": "Acidic buffer: pH = pK_a + log([Salt] / [Acid]); Basic buffer: pOH = pK_b + log([Salt] / [Base])."
+      },
+      {
+        "front": "Under what condition is buffer action maximum, and what is the effective buffer range?",
+        "back": "Buffer action is maximum when [Salt] = [Acid] (or [Base]), so pH = pK_a (or pOH = pK_b). Effective buffer range is pH = pK_a ± 1 for acidic and (pK_w - pK_b) ± 1 for basic buffers."
+      },
+      {
+        "front": "How is the pH of an amphiprotic salt solution (e.g., NaHCO₃, Na₂HPO₄) calculated?",
+        "back": "pH = (pK_a1 + pK_a2) / 2, representing the average of the two dissociation constants involved in donating and accepting protons."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "For the gaseous reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), what is the correct mathematical relation between Kₚ and K_c?",
+        "options": [
+          "Kₚ = K_c(RT)⁻²",
+          "Kₚ = K_c(RT)²",
+          "Kₚ = K_c(RT)⁻¹",
+          "Kₚ = K_c"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Δn_g = moles of gaseous products - moles of gaseous reactants = 2 - (1 + 3) = -2. Thus, Kₚ = K_c(RT)⁻².",
+          "Incorrect. Δn_g is -2, not +2.",
+          "Incorrect. The difference in gaseous moles is -2, not -1.",
+          "Incorrect. Kₚ equals K_c only when Δn_g = 0."
+        ],
+        "fullExplanation": "From page 23 of the handbook: Kₚ = K_c(RT)^(Δn_g). In the synthesis of ammonia, Δn_g = 2 - (1 + 3) = -2. Therefore, Kₚ = K_c(RT)⁻²."
+      },
+      {
+        "question": "For the decomposition of limestone, CaCO₃(s) ⇌ CaO(s) + CO₂(g), what is the expression for Kₚ?",
+        "options": [
+          "Kₚ = P_CO₂",
+          "Kₚ = (P_CaO · P_CO₂) / P_CaCO₃",
+          "Kₚ = P_CO₂ / P_CaCO₃",
+          "Kₚ = 1 / P_CO₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. CaCO₃(s) and CaO(s) are pure solids whose active masses are unity (1), so Kₚ = P_CO₂.",
+          "Incorrect. Pure solids must not be included as partial pressures.",
+          "Incorrect. CaCO₃ is a solid and has active mass equal to 1.",
+          "Incorrect. CO₂ is on the product side, so its pressure appears in the numerator."
+        ],
+        "fullExplanation": "Page 23 states that the active mass of pure solids and pure liquids is taken as unity (1) because it is an intensive property. Therefore, for CaCO₃(s) ⇌ CaO(s) + CO₂(g), Kₚ = P_CO₂."
+      },
+      {
+        "question": "For a reversible reaction, if the reaction quotient Q is greater than the equilibrium constant K_eq (Q > K_eq), the system will:",
+        "options": [
+          "Proceed in the backward direction to attain equilibrium",
+          "Proceed in the forward direction to attain equilibrium",
+          "Remain in a state of dynamic equilibrium",
+          "Stop reacting entirely"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. When Q > K_eq, product concentration is higher than at equilibrium, so the system shifts backward.",
+          "Incorrect. If Q < K_eq, the reaction proceeds forward.",
+          "Incorrect. Equilibrium is achieved only when Q = K_eq.",
+          "Incorrect. Reversible systems do not stop reacting; they adjust dynamically."
+        ],
+        "fullExplanation": "According to page 24: 'If Q > K_eq then system proceed in backward direction to attain equilibrium. If Q < K_eq then system proceed in forward direction'."
+      },
+      {
+        "question": "Consider the equilibrium: PCl₅(g) ⇌ PCl₃(g) + Cl₂(g). What happens to the degree of dissociation of PCl₅ when an inert gas is added at constant pressure?",
+        "options": [
+          "Degree of dissociation increases",
+          "Degree of dissociation decreases",
+          "Remains unchanged",
+          "PCl₅ completely precipitates"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Addition of an inert gas at constant pressure increases the total volume, shifting equilibrium towards the side with more gaseous moles (Δn_g > 0).",
+          "Incorrect. Dissociation decreases only if pressure is increased or inert gas is added at constant volume (where it has no effect).",
+          "Incorrect. It remains unchanged only at constant volume.",
+          "Incorrect. PCl₅ is a gas under these conditions and does not precipitate."
+        ],
+        "fullExplanation": "From page 25 under the Le Chatelier table: For Δn_g > 0 (here 2 - 1 = +1), mixing an inert gas at constant P increases dissociation because it increases total volume, lowering partial pressures."
+      },
+      {
+        "question": "What is the effect of adding an inert gas at constant volume to the equilibrium 2SO₂(g) + O₂(g) ⇌ 2SO₃(g)?",
+        "options": [
+          "The equilibrium remains unchanged",
+          "Shifts in the forward direction",
+          "Shifts in the backward direction",
+          "K_c increases"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Adding an inert gas at constant volume does not change the molar concentrations or partial pressures of the reacting gases, so equilibrium is unaffected.",
+          "Incorrect. No shift occurs at constant volume.",
+          "Incorrect. No shift occurs at constant volume.",
+          "Incorrect. K_c depends solely on temperature."
+        ],
+        "fullExplanation": "From page 25: Mixing of an inert gas at constant volume produces no change in equilibrium concentrations for any value of Δn_g because partial pressures of reacting components remain unaltered."
+      },
+      {
+        "question": "Which of the following statements regarding the effect of a catalyst on a reversible reaction is TRUE?",
+        "options": [
+          "It helps to achieve equilibrium in lesser time without changing K_eq",
+          "It increases the yield of the product at equilibrium",
+          "It shifts the equilibrium in the forward direction",
+          "It increases the equilibrium constant K_p"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. A catalyst speeds up forward and reverse reactions equally and lowers activation energy without altering K_eq or product yield.",
+          "Incorrect. A catalyst does not change the equilibrium composition or yield.",
+          "Incorrect. A catalyst does not shift the position of equilibrium.",
+          "Incorrect. K_p is a thermodynamic constant dependent only on temperature."
+        ],
+        "fullExplanation": "As noted on page 24 and page 56: 'A catalyst does not change the equilibrium state of a reversible reaction but helps to achieve the equilibrium state or position of equilibrium in lesser time'."
+      },
+      {
+        "question": "If standard Gibbs free energy change ΔG° is negative (ΔG° < 0), what does it indicate about the equilibrium constant K_c?",
+        "options": [
+          "K_c > 1 and the forward reaction is spontaneous",
+          "K_c < 1 and the reaction is non-spontaneous",
+          "K_c = 1",
+          "K_c = 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since ln K_c = -ΔG° / (RT), when ΔG° < 0, (-ΔG°/RT) is positive, giving K_c > 1.",
+          "Incorrect. K_c < 1 corresponds to ΔG° > 0.",
+          "Incorrect. K_c = 1 corresponds to ΔG° = 0.",
+          "Incorrect. K_c cannot be zero for a reversible system."
+        ],
+        "fullExplanation": "From page 25: 'Case I: If ΔG° < 0, then (-ΔG°/RT) is positive, i.e., e^(-ΔG°/RT) > 1 hence K_c > 1, which implies a spontaneous reaction proceeding in the forward direction'."
+      },
+      {
+        "question": "Which of the following is classified as a 'false cation' that CANNOT act as a Lewis acid?",
+        "options": [
+          "NH₄⁺",
+          "Ag⁺",
+          "Al³⁺",
+          "Mg²⁺"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. NH₄⁺ has a completely filled octet on nitrogen and no vacant low-energy orbital to accept an electron pair.",
+          "Incorrect. Ag⁺ has vacant orbitals and acts as a Lewis acid.",
+          "Incorrect. Al³⁺ has vacant orbitals and is a strong Lewis acid.",
+          "Incorrect. Mg²⁺ can accept electron pairs into vacant orbitals."
+        ],
+        "fullExplanation": "Under Lewis Theory on page 27: 'False cations (which cannot act as Lewis acid): NH₄⁺, H₃O⁺, PH₄⁺ etc.' because their central atoms have complete valence shells and lack vacant orbitals."
+      },
+      {
+        "question": "Why is orthoboric acid, H₃BO₃, NOT considered an Arrhenius acid?",
+        "options": [
+          "It does not donate its own proton but accepts OH⁻ from water acting as a Lewis acid",
+          "It is insoluble in water",
+          "It completely dissociates into boron and hydride ions",
+          "It acts as a strong Arrhenius base"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. B(OH)₃ + 2H₂O ⇌ [B(OH)₄]⁻ + H₃O⁺. It accepts OH⁻ rather than directly releasing H⁺ from its own structure.",
+          "Incorrect. Boric acid is soluble in water.",
+          "Incorrect. Boric acid does not decompose into hydride ions.",
+          "Incorrect. Boric acid is acidic, not basic."
+        ],
+        "fullExplanation": "Page 26 notes: 'H₃BO₃ is not an Arrhenius acid'. Page 194 clarifies: B(OH)₃ is a monobasic Lewis acid that accepts an OH⁻ from water: B(OH)₃ + H₂O → [B(OH)₄]⁻ + H⁺."
+      },
+      {
+        "question": "What is the conjugate base of HSO₄⁻?",
+        "options": [
+          "SO₄²⁻",
+          "H₂SO₄",
+          "H₃SO₄⁺",
+          "SO₃²⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Conjugate base is obtained by removing one H⁺: HSO₄⁻ - H⁺ = SO₄²⁻.",
+          "Incorrect. H₂SO₄ is the conjugate acid of HSO₄⁻ (formed by adding H⁺).",
+          "Incorrect. Not a standard species.",
+          "Incorrect. SO₃²⁻ is the sulfite ion, differing by an oxygen atom."
+        ],
+        "fullExplanation": "According to Bronsted-Lowry rules on page 26: 'To find conjugate base of any Acid → Remove one H⁺'. Therefore, HSO₄⁻ - H⁺ = SO₄²⁻."
+      },
+      {
+        "question": "What is the pH of an aqueous solution of sodium acetate (CH₃COONa) of concentration C?",
+        "options": [
+          "(1/2) · [pK_w + pK_a + log C]",
+          "(1/2) · [pK_w - pK_b - log C]",
+          "(1/2) · [pK_w + pK_a - pK_b]",
+          "pK_a + log C"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sodium acetate is a salt of a weak acid and a strong base, undergoing anionic hydrolysis to yield an alkaline solution with pH = (1/2)[pK_w + pK_a + log C].",
+          "Incorrect. This is the pH formula for a salt of a strong acid and a weak base.",
+          "Incorrect. This is the pH formula for a salt of a weak acid and a weak base.",
+          "Incorrect. Missing pK_w and the 1/2 factor."
+        ],
+        "fullExplanation": "As tabulated on page 27 for a salt of a weak acid and strong base: Hydrolysis is anionic, resulting in an alkaline solution (pH > 7) with pH = (1/2)[pK_w + pK_a + log C]."
+      },
+      {
+        "question": "The degree of hydrolysis (h) of ammonium acetate (CH₃COONH₄), a salt of weak acid and weak base, is given by:",
+        "options": [
+          "h = √(K_w / (K_a · K_b))",
+          "h = √(K_w / (K_a · C))",
+          "h = √(K_w / (K_b · C))",
+          "h = (K_w · C) / (K_a · K_b)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For WA-WB salt, K_h = K_w / (K_a · K_b), and since both ions hydrolyze, h = √K_h = √(K_w / (K_a · K_b)), independent of concentration C.",
+          "Incorrect. This applies to a salt of a weak acid and strong base.",
+          "Incorrect. This applies to a salt of a strong acid and weak base.",
+          "Incorrect. Incorrect dimensional formula."
+        ],
+        "fullExplanation": "From page 28 of the handbook: For weak acid and weak base, K_h = K_w / (K_a · K_b) and degree of hydrolysis h = √K_h = √(K_w / (K_a · K_b)). It does not depend on concentration C."
+      },
+      {
+        "question": "An acidic buffer contains 0.1 M CH₃COOH and 0.1 M CH₃COONa. If pK_a of CH₃COOH is 4.74, what is the pH of the buffer?",
+        "options": [
+          "4.74",
+          "5.74",
+          "3.74",
+          "7.00"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. pH = pK_a + log([Salt]/[Acid]) = 4.74 + log(0.1/0.1) = 4.74 + 0 = 4.74.",
+          "Incorrect. Would be 5.74 if [Salt]/[Acid] were 10.",
+          "Incorrect. Would be 3.74 if [Salt]/[Acid] were 0.1.",
+          "Incorrect. 7.00 is neutral pH."
+        ],
+        "fullExplanation": "Using the Henderson-Hasselbalch equation (page 28): pH = pK_a + log([Salt]/[Acid]). When [Salt] = [Acid], log(1) = 0, so pH = pK_a = 4.74. This also corresponds to maximum buffer action."
+      },
+      {
+        "question": "What is the buffer range of an acidic buffer with weak acid dissociation constant K_a?",
+        "options": [
+          "pK_a ± 1",
+          "(pK_w - pK_b) ± 1",
+          "pK_a ± 2",
+          "7 ± 1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Buffer range for an acidic buffer is pK_a ± 1.",
+          "Incorrect. (pK_w - pK_b) ± 1 is the range for a basic buffer.",
+          "Incorrect. The effective buffer capacity drops sharply outside ± 1 pH unit.",
+          "Incorrect. The buffer range depends on pK_a, not 7."
+        ],
+        "fullExplanation": "From page 28 of the handbook: 'Buffer range: Acidic = pK_a ± 1; Basic = (pK_w - pK_b) ± 1'."
+      },
+      {
+        "question": "What is the expression for the solubility product K_sp of a sparingly soluble salt of type A₂B₃ in terms of its molar solubility S?",
+        "options": [
+          "108 S⁵",
+          "27 S⁴",
+          "6 S⁵",
+          "108 S⁶"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For A₂B₃: x = 2, y = 3. K_sp = (xS)^x · (yS)^y = (2S)² · (3S)³ = 4S² · 27S³ = 108 S⁵.",
+          "Incorrect. 27 S⁴ is for an AB₃ type salt.",
+          "Incorrect. Direct multiplication of coefficients without powers.",
+          "Incorrect. Power of S must be x + y = 2 + 3 = 5."
+        ],
+        "fullExplanation": "From page 29: K_sp = (xS)^x · (yS)^y. For A₂B₃, x = 2 and y = 3. Therefore, K_sp = (2S)² · (3S)³ = 4S² × 27S³ = 108 S⁵."
+      },
+      {
+        "question": "Precipitation of an electrolyte occurs from its solution when:",
+        "options": [
+          "Q_sp > K_sp",
+          "Q_sp = K_sp",
+          "Q_sp < K_sp",
+          "K_sp = 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. When the ionic product Q_sp exceeds the solubility product K_sp, the solution is supersaturated and precipitation occurs.",
+          "Incorrect. Q_sp = K_sp corresponds to a saturated solution in equilibrium.",
+          "Incorrect. Q_sp < K_sp represents an unsaturated solution.",
+          "Incorrect. K_sp is a non-zero thermodynamic constant at a given temperature."
+        ],
+        "fullExplanation": "Page 29 lists: '1. If Q_sp < K_sp [unsaturated]; 2. If Q_sp = K_sp [saturated]; 3. If Q_sp > K_sp [super saturated/ppt. will form]'."
+      },
+      {
+        "question": "Which of the following indicators is suitable for the titration of a Strong Acid against a Weak Base (SA/WB)?",
+        "options": [
+          "Methyl orange",
+          "Phenolphthalein",
+          "Phenol red",
+          "Thymol blue (basic range)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In SA/WB titration, the pH at the equivalence point is acidic (pH range 3-7), so Methyl orange or Methyl red is used.",
+          "Incorrect. Phenolphthalein has a pH range of 8.3-10 and is used for WA/SB.",
+          "Incorrect. Phenol red works in the pH range 6.5-7.5 (used for WA/WB).",
+          "Incorrect. Thymol blue basic range is for basic equivalence points."
+        ],
+        "fullExplanation": "According to the Acid-Base Titration table on page 29: For SA/WB titration, the pH range of the titration is 3-7, and suitable indicators are Methyl orange (MeOH) and methyl red."
+      },
+      {
+        "question": "Phenolphthalein is the most suitable indicator for which type of acid-base titration?",
+        "options": [
+          "Weak Acid vs Strong Base (WA/SB)",
+          "Strong Acid vs Weak Base (SA/WB)",
+          "Weak Acid vs Weak Base (WA/WB)",
+          "Gaseous acid vs liquid base"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For WA/SB titration, the salt undergoes anionic hydrolysis making the equivalence point alkaline (pH range 7-11), where phenolphthalein changes colour.",
+          "Incorrect. SA/WB titration produces an acidic equivalence point requiring methyl orange.",
+          "Incorrect. WA/WB titration has a narrow pH jump around 6.5-7.5 and uses phenol red.",
+          "Incorrect. Not a standard classification."
+        ],
+        "fullExplanation": "From the titration table on page 29: For WA/SB titration, the pH range is 7-11 and the suitable indicator is Phenolphthalein (HPh)."
+      },
+      {
+        "question": "The pH of a 0.1 M NaHCO₃ solution is calculated using which formula?",
+        "options": [
+          "pH = (pK_a1 + pK_a2) / 2",
+          "pH = (1/2) · [pK_w + pK_a1 + log C]",
+          "pH = pK_a1 + log C",
+          "pH = (1/2) · [pK_w - pK_a2 - log C]"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. HCO₃⁻ is an amphiprotic species that can both donate and accept H⁺; its pH is given by (pK_a1 + pK_a2) / 2.",
+          "Incorrect. This formula is for a normal weak acid salt, not an amphiprotic anion.",
+          "Incorrect. Does not account for amphiprotic behaviour.",
+          "Incorrect. Incorrect signs and incorrect formula."
+        ],
+        "fullExplanation": "Under 'KEY TIPS' on page 30: 'pH of Amphiprotic species: (NaHPO₄, NaHCO₃) which can donate as well as accept H⁺: pH = (pK_a1 + pK_a2) / 2'."
+      },
+      {
+        "question": "What happens to the solubility of AgCl in water when a small amount of NaCl is added?",
+        "options": [
+          "Solubility decreases due to common ion effect, while K_sp remains constant",
+          "Solubility increases and K_sp increases",
+          "Solubility decreases because K_sp decreases",
+          "Solubility remains unchanged"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cl⁻ is a common ion that shifts AgCl(s) ⇌ Ag⁺ + Cl⁻ backward, decreasing solubility. K_sp depends only on temperature and remains unchanged.",
+          "Incorrect. Common ions decrease solubility, not increase.",
+          "Incorrect. K_sp is a constant at a given temperature and is unaffected by common ions.",
+          "Incorrect. Common ion significantly alters solubility."
+        ],
+        "fullExplanation": "From page 29: 'Presence of common ion decreases the solubility but has no effect on K_sp as it depends only on temperature'."
+      }
+    ]
+  },
+  {
+    "chapterName": "Redox Reactions",
+    "flashcards": [
+      {
+        "front": "Define oxidation and reduction in terms of electron transfer and oxidation number.",
+        "back": "Oxidation: loss of electrons, corresponding to an increase in oxidation number. Reduction: gain of electrons, corresponding to a decrease in oxidation number."
+      },
+      {
+        "front": "What is the oxidation state of oxygen in normal oxides, peroxides, superoxides, and OF₂?",
+        "back": "Normal oxides: -2 (e.g., H₂O, Na₂O); Peroxides: -1 (e.g., H₂O₂, Na₂O₂); Superoxides: -1/2 (e.g., KO₂, RbO₂); Oxygen difluoride (OF₂): +2."
+      },
+      {
+        "front": "What is a disproportionation reaction? Give one example from the handbook.",
+        "back": "A redox reaction in which the same element in a single oxidation state is simultaneously oxidized and reduced. Example: 3HNO₂ → HNO₃ + 2NO + H₂O (N goes from +3 to +5 and +2)."
+      },
+      {
+        "front": "Define n-factor (or valence factor) for an oxidizing or reducing agent.",
+        "back": "n-factor is the total change in oxidation state per mole (formula unit) of the substance undergoing redox change: Equivalent weight = Molar mass / n-factor."
+      },
+      {
+        "front": "What is the n-factor and equivalent weight of KMnO₄ in an acidic medium?",
+        "back": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O. The oxidation state changes from +7 to +2 (change = 5). Thus, n-factor = 5 and Equivalent weight = M / 5."
+      },
+      {
+        "front": "What is the n-factor and equivalent weight of KMnO₄ in a neutral or faintly alkaline medium?",
+        "back": "MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻. The oxidation state changes from +7 to +4 (change = 3). Thus, n-factor = 3 and Equivalent weight = M / 3."
+      },
+      {
+        "front": "What is the n-factor and equivalent weight of KMnO₄ in a strongly basic medium?",
+        "back": "MnO₄⁻ + e⁻ → MnO₄²⁻. The oxidation state changes from +7 to +6 (change = 1). Thus, n-factor = 1 and Equivalent weight = M / 1."
+      },
+      {
+        "front": "What is the n-factor and equivalent weight of K₂Cr₂O₇ in an acidic medium?",
+        "back": "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. Two Cr atoms change from +6 to +3 (total change = 2 × 3 = 6). Thus, n-factor = 6 and Equivalent weight = M / 6."
+      },
+      {
+        "front": "What is the n-factor of sodium thiosulfate (Na₂S₂O₃) in iodometric titration with I₂?",
+        "back": "2Na₂S₂O₃ + I₂ → Na₂S₄O₆ + 2NaI. The average oxidation state of sulfur changes from +2 to +2.5. For 2 S atoms, total change = 2 × 0.5 = 1. Thus, n-factor = 1 (Eq wt = M)."
+      },
+      {
+        "front": "What is the n-factor and equivalent weight of oxalic acid (H₂C₂O₄) or oxalate ion (C₂O₄²⁻)?",
+        "back": "C₂O₄²⁻ → 2CO₂ + 2e⁻. Carbon changes from +3 to +4 for two carbon atoms (total change = 2 × 1 = 2). Thus, n-factor = 2 and Equivalent weight = M / 2."
+      },
+      {
+        "front": "What is the n-factor of H₂O₂ whether it acts as an oxidizing agent or as a reducing agent?",
+        "back": "In both cases, n-factor = 2. When reduced: H₂O₂ + 2H⁺ + 2e⁻ → 2H₂O. When oxidized: H₂O₂ → O₂ + 2H⁺ + 2e⁻. Equivalent weight = M / 2 = 34 / 2 = 17."
+      },
+      {
+        "front": "What reaction does white phosphorus (P₄) undergo with NaOH solution?",
+        "back": "P₄ + 3NaOH + 3H₂O → 3NaH₂PO₂ + PH₃. It is a disproportionation reaction where P(0) is oxidized to NaH₂PO₂ (P is +1) and reduced to PH₃ (P is -3)."
+      },
+      {
+        "front": "How does chlorine gas react with cold, dilute NaOH versus hot, concentrated NaOH?",
+        "back": "Cold & dil. NaOH: Cl₂ + 2NaOH → NaCl(-1) + NaOCl(+1) + H₂O. Hot & conc. NaOH: 3Cl₂ + 6NaOH → 5NaCl(-1) + NaClO₃(+5) + 3H₂O."
+      },
+      {
+        "front": "What products are formed upon thermal decomposition of phosphorous acid (H₃PO₃)?",
+        "back": "4H₃PO₃ → 3H₃PO₄ + PH₃ (heat). This is a disproportionation reaction: P(+3) is oxidized to H₃PO₄ (P is +5) and reduced to PH₃ (P is -3)."
+      },
+      {
+        "front": "State the Law of Chemical Equivalence for a complete redox reaction.",
+        "back": "Equivalents of oxidizing agent = Equivalents of reducing agent, or N₁V₁ = N₂V₂, where Normality N = n-factor × Molarity."
+      },
+      {
+        "front": "What is 1 Faraday of electric charge, and how is it related to equivalent weight?",
+        "back": "1 Faraday = 96,500 Coulombs (the charge of 1 mole of electrons). Passing 1 Faraday of charge deposits or liberates exactly 1 gram equivalent of any substance."
+      },
+      {
+        "front": "What is the relationship between standard cell potential (E°_cell) and standard Gibbs energy (ΔG°)?",
+        "back": "ΔG° = -nFE°_cell. A redox reaction is spontaneous under standard conditions if E°_cell is positive (E°_cell > 0), giving ΔG° < 0."
+      },
+      {
+        "front": "What is the oxidation state of chromium in blue perchromate (CrO₅)?",
+        "back": "Cr is in the +6 oxidation state. CrO₅ has a butterfly structure with two peroxide linkages (-O-O-) and one oxo bond (=O): Cr(+6) + 4(-1) + 1(-2) = 0."
+      },
+      {
+        "front": "Why does Cu⁺ disproportionate in aqueous solution?",
+        "back": "2Cu⁺(aq) → Cu²⁺(aq) + Cu(s). Although Cu⁺ has a stable d¹⁰ configuration, Cu²⁺ has a much higher hydration enthalpy due to its smaller size and +2 charge, driving the reaction."
+      },
+      {
+        "front": "In the reaction between Sn and concentrated HNO₃, what oxidation state does tin attain?",
+        "back": "Tin is oxidized from 0 to +4, forming metastannic acid (H₂SnO₃): Sn + 4HNO₃ → H₂SnO₃ + 4NO₂ + H₂O."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is the oxidation number of chromium in the dichromate ion, Cr₂O₇²⁻?",
+        "options": [
+          "+6",
+          "+7",
+          "+3",
+          "+12"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. 2x + 7(-2) = -2 ⇒ 2x - 14 = -2 ⇒ 2x = 12 ⇒ x = +6.",
+          "Incorrect. +7 is the maximum oxidation state of manganese, not chromium.",
+          "Incorrect. +3 is the oxidation state of chromium after reduction.",
+          "Incorrect. +12 is the sum for both Cr atoms, not per chromium atom."
+        ],
+        "fullExplanation": "In Cr₂O₇²⁻, let the oxidation state of Cr be x. Oxygen is -2. So, 2x + 7(-2) = -2 ⇒ 2x - 14 = -2 ⇒ 2x = +12 ⇒ x = +6."
+      },
+      {
+        "question": "What is the oxidation state of chromium in blue chromium pentoxide (CrO₅)?",
+        "options": [
+          "+6",
+          "+10",
+          "+5",
+          "+4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. CrO₅ possesses a butterfly structure with two peroxo (-O-O-) groups (each oxygen is -1) and one oxo group (oxygen is -2): x + 4(-1) + 1(-2) = 0 ⇒ x = +6.",
+          "Incorrect. +10 is obtained only if all five oxygens are incorrectly treated as normal oxides (-2).",
+          "Incorrect. Chromium does not form a +5 state in CrO₅.",
+          "Incorrect. Miscalculation of peroxide bonds."
+        ],
+        "fullExplanation": "As shown on page 223: Cr₂O₇²⁻/H⁺ reacts with H₂O₂ to form CrO₅ (blue). CrO₅ has four peroxide oxygen atoms (oxidation state -1 each) and one oxo oxygen atom (oxidation state -2). Thus, Cr + 4(-1) + (-2) = 0 ⇒ Cr = +6."
+      },
+      {
+        "question": "What is the equivalent weight of KMnO₄ (molar mass = M) when it acts as an oxidizing agent in an acidic medium?",
+        "options": [
+          "M / 5",
+          "M / 3",
+          "M / 1",
+          "M / 6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In acidic medium, MnO₄⁻ is reduced to Mn²⁺: change in oxidation number = +7 - (+2) = 5. Hence, Eq. wt = M / 5.",
+          "Incorrect. M / 3 is the equivalent weight in neutral or faintly alkaline medium (Mn(+7) → MnO₂(+4)).",
+          "Incorrect. M / 1 is the equivalent weight in strongly alkaline medium (Mn(+7) → MnO₄²⁻(+6)).",
+          "Incorrect. M / 6 is the equivalent weight of K₂Cr₂O₇ in acidic medium."
+        ],
+        "fullExplanation": "From page 223: In acidic medium, MnO₄⁻ is reduced to Mn²⁺ (purple color is decolourised). The change in oxidation state of Mn is from +7 to +2, requiring 5 electrons. Thus, n-factor = 5, and Equivalent weight = M / 5."
+      },
+      {
+        "question": "What is the equivalent weight of K₂Cr₂O₇ (molar mass = M) in an acidic medium?",
+        "options": [
+          "M / 6",
+          "M / 3",
+          "M / 5",
+          "M / 2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. Each Cr changes from +6 to +3, giving a total change of 2 × 3 = 6 electrons per mole of K₂Cr₂O₇. Eq. wt = M / 6.",
+          "Incorrect. M / 3 is the change per chromium atom, but K₂Cr₂O₇ has two Cr atoms.",
+          "Incorrect. M / 5 is the equivalent weight of KMnO₄ in acidic medium.",
+          "Incorrect. M / 2 is incorrect."
+        ],
+        "fullExplanation": "From page 222: In acidic medium, orange Cr₂O₇²⁻ is reduced to green Cr³⁺. The half-reaction is Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. The n-factor is 6, so Equivalent weight = M / 6."
+      },
+      {
+        "question": "In the iodometric titration reaction 2Na₂S₂O₃ + I₂ → Na₂S₄O₆ + 2NaI, what is the n-factor of sodium thiosulfate (Na₂S₂O₃)?",
+        "options": [
+          "1",
+          "2",
+          "0.5",
+          "4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Sulfur changes from +2 in S₂O₃²⁻ to +2.5 in S₄O₆²⁻. For 2 S atoms in Na₂S₂O₃, total change = 2 × (2.5 - 2) = 1. Thus, n-factor = 1.",
+          "Incorrect. 2 is the n-factor of iodine (I₂ + 2e⁻ → 2I⁻).",
+          "Incorrect. 0.5 is the change per sulfur atom, but there are 2 sulfur atoms per formula unit.",
+          "Incorrect. 4 is the total number of sulfur atoms in tetrathionate."
+        ],
+        "fullExplanation": "From page 207: 2Na₂S₂O₃ + I₂ → Na₂S₄O₆ + 2NaI. In Na₂S₂O₃, average oxidation state of S = +2. In Na₂S₄O₆, average oxidation state of S = +2.5. Change per sulfur atom = 0.5. For two sulfur atoms in the formula unit Na₂S₂O₃, total change = 2 × 0.5 = 1. Thus, n-factor = 1, and Eq. wt = M / 1."
+      },
+      {
+        "question": "Which of the following reactions is a classic example of a disproportionation reaction?",
+        "options": [
+          "3HNO₂ → HNO₃ + 2NO + H₂O",
+          "2H₂ + O₂ → 2H₂O",
+          "Zn + CuSO₄ → ZnSO₄ + Cu",
+          "AgNO₃ + NaCl → AgCl + NaNO₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Nitrogen in HNO₂ (+3) is simultaneously oxidized to HNO₃ (+5) and reduced to NO (+2).",
+          "Incorrect. Combination reaction between two elements.",
+          "Incorrect. Single displacement redox reaction.",
+          "Incorrect. Double displacement non-redox precipitation reaction."
+        ],
+        "fullExplanation": "From page 201: '3HNO₂ → HNO₃ + H₂O + 2NO'. In HNO₂, N is in the +3 state. In HNO₃, N is +5 (oxidation), and in NO, N is +2 (reduction). Because the same species undergoes both oxidation and reduction, it is a disproportionation reaction."
+      },
+      {
+        "question": "When chlorine gas reacts with hot and concentrated NaOH, the products formed are:",
+        "options": [
+          "NaCl and NaClO₃",
+          "NaCl and NaOCl",
+          "NaCl and NaClO₄",
+          "NaClO and NaClO₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. 6NaOH + 3Cl₂ → 5NaCl + NaClO₃ + 3H₂O (hot and concentrated).",
+          "Incorrect. NaCl and NaOCl are formed with cold and dilute NaOH.",
+          "Incorrect. NaClO₄ is sodium perchlorate, not formed in this reaction.",
+          "Incorrect. Neither chlorite nor hypochlorite is the primary product in hot solution."
+        ],
+        "fullExplanation": "From page 215: 'Action of NaOH: 6NaOH + 3Cl₂ (hot and conc.) → 5NaCl + NaClO₃ + 3H₂O'. Chlorine disproportionates into chloride (-1) and chlorate (+5)."
+      },
+      {
+        "question": "When white phosphorus (P₄) is heated with aqueous NaOH, the reaction and products are:",
+        "options": [
+          "P₄ + 3NaOH + 3H₂O → 3NaH₂PO₂ + PH₃ (Disproportionation)",
+          "P₄ + 4NaOH → 4NaPO₂ + 2H₂ (Combination)",
+          "P₄ + 3NaOH → Na₃P + 3HOCl (Displacement)",
+          "P₄ + 6H₂O → 4H₃PO₃ (Hydrolysis)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. P₄ (0) disproportionates into NaH₂PO₂ (+1) and PH₃ (-3).",
+          "Incorrect. Incorrect products and stoichiometry.",
+          "Incorrect. Does not represent the reaction with alkali.",
+          "Incorrect. White phosphorus does not directly hydrolyze with pure water in this manner."
+        ],
+        "fullExplanation": "From page 204: Laboratory preparation of phosphine is P₄ + 3NaOH + 3H₂O → 3NaH₂PO₂ + PH₃. Phosphorus undergoes disproportionation: 0 to +1 in hypophosphite and 0 to -3 in phosphine."
+      },
+      {
+        "question": "What is the oxidation state of iron in the brown ring complex [Fe(H₂O)₅(NO)]SO₄?",
+        "options": [
+          "+1",
+          "+2",
+          "+3",
+          "0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The nitrosyl ligand is present as nitrosonium ion NO⁺. Let Fe be x: x + 5(0) + (+1) = +2 ⇒ x = +1.",
+          "Incorrect. +2 is the oxidation state of the starting FeSO₄ before electron transfer from NO.",
+          "Incorrect. Fe is not in the +3 state in the brown ring complex.",
+          "Incorrect. Neutral iron is found in metal carbonyls like Fe(CO)₅."
+        ],
+        "fullExplanation": "From pages 222, 225, and 244: The brown ring complex is formulated as [Fe(H₂O)₅(NO⁺)]SO₄. Since NO is present as NO⁺ (+1 charge), and the coordination sphere has a +2 charge to balance SO₄²⁻, we have: Fe + 0 + (+1) = +2 ⇒ Fe = +1."
+      },
+      {
+        "question": "What volume of 0.1 M acidified KMnO₄ solution is required to completely oxidize 25 mL of 0.1 M FeSO₄ solution?",
+        "options": [
+          "5.0 mL",
+          "25.0 mL",
+          "125.0 mL",
+          "1.0 mL"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By law of equivalence: N₁V₁ = N₂V₂. For KMnO₄, n₁ = 5, N₁ = 0.1 × 5 = 0.5 N. For FeSO₄, n₂ = 1, N₂ = 0.1 × 1 = 0.1 N. 0.5 × V₁ = 0.1 × 25 ⇒ V₁ = 2.5 / 0.5 = 5.0 mL.",
+          "Incorrect. 25.0 mL assumes equal 1:1 molar stoichiometry without considering n-factors.",
+          "Incorrect. Multiplied by 5 instead of dividing.",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "Using Law of Equivalence: Equivalents of KMnO₄ = Equivalents of FeSO₄. Equivalents = Molarity × n-factor × Volume (L). For KMnO₄ in acid, n-factor = 5. For Fe²⁺ → Fe³⁺, n-factor = 1. Therefore: (0.1 × 5) × V₁ = (0.1 × 1) × 25 mL ⇒ 0.5 · V₁ = 2.5 ⇒ V₁ = 5.0 mL."
+      },
+      {
+        "question": "What is the equivalent weight of H₂O₂ (molar mass = 34 g·mol⁻¹) when it acts as a reducing agent in the reaction: H₂O₂ + 2Fe³⁺ + 2OH⁻ → 2Fe²⁺ + 2H₂O + O₂?",
+        "options": [
+          "17 g·mol⁻¹",
+          "34 g·mol⁻¹",
+          "68 g·mol⁻¹",
+          "8.5 g·mol⁻¹"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In H₂O₂, oxygen is in the -1 oxidation state. In O₂, oxygen is 0. The total change for 2 oxygen atoms is 2 × 1 = 2 electrons. Eq. wt = M / 2 = 34 / 2 = 17 g·mol⁻¹.",
+          "Incorrect. 34 is the molar mass (n-factor = 1 is incorrect).",
+          "Incorrect. Multiplied by 2 instead of divided.",
+          "Incorrect. Corresponds to n-factor = 4."
+        ],
+        "fullExplanation": "From page 209: In its reducing action, H₂O₂ is oxidized to O₂: H₂O₂ → O₂ + 2H⁺ + 2e⁻. The oxidation state of oxygen changes from -1 to 0. Since there are 2 oxygen atoms, n-factor = 2. Equivalent weight = M / 2 = 34 / 2 = 17 g·mol⁻¹."
+      },
+      {
+        "question": "How many moles of electrons are required to reduce 1 mole of Cr₂O₇²⁻ to Cr³⁺ in acidic medium?",
+        "options": [
+          "6 moles",
+          "3 moles",
+          "2 moles",
+          "1 mole"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. Two Cr(+6) atoms each gain 3 electrons, requiring a total of 6 moles of electrons.",
+          "Incorrect. 3 moles is the change per chromium atom, but 1 mole of Cr₂O₇²⁻ contains 2 chromium atoms.",
+          "Incorrect. 2 moles is the number of Cr³⁺ ions formed.",
+          "Incorrect. Far too few electrons."
+        ],
+        "fullExplanation": "Page 222 shows the reduction of orange Cr₂O₇²⁻ to green Cr³⁺: Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. Thus, 1 mole of dichromate ion consumes exactly 6 moles of electrons."
+      },
+      {
+        "question": "In the reaction 4Sn + 10HNO₃(dilute) → 4Sn(NO₃)₂ + NH₄NO₃ + 3H₂O, the oxidation state of nitrogen in NH₄NO₃ is:",
+        "options": [
+          "-3 in the cation (NH₄⁺) and +5 in the anion (NO₃⁻)",
+          "-3 in both ions",
+          "+5 in both ions",
+          "+1 overall average"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In NH₄⁺: N + 4(+1) = +1 ⇒ N = -3. In NO₃⁻: N + 3(-2) = -1 ⇒ N = +5.",
+          "Incorrect. Nitrogen in nitrate is +5, not -3.",
+          "Incorrect. Nitrogen in ammonium is -3, not +5.",
+          "Incorrect. Treating it as an average obscures the distinct chemical states of the two nitrogen atoms."
+        ],
+        "fullExplanation": "From page 204: Action of dilute HNO₃ on tin yields NH₄NO₃. Ammonium nitrate consists of two ions: NH₄⁺ and NO₃⁻. In NH₄⁺: N + 4(+1) = +1 ⇒ N = -3. In NO₃⁻: N + 3(-2) = -1 ⇒ N = +5."
+      },
+      {
+        "question": "What is the equivalent weight of oxalate ion (C₂O₄²⁻) with molar mass M when it is oxidized to CO₂?",
+        "options": [
+          "M / 2",
+          "M / 1",
+          "M / 4",
+          "2 M"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. C₂O₄²⁻ → 2CO₂ + 2e⁻. Two carbons change from +3 to +4, giving a total loss of 2 electrons. Eq. wt = M / 2.",
+          "Incorrect. M / 1 would assume a loss of only 1 electron.",
+          "Incorrect. M / 4 is incorrect.",
+          "Incorrect. The equivalent weight is a fraction of the molar mass, not a multiple."
+        ],
+        "fullExplanation": "From pages 223 and 243: C₂O₄²⁻ is oxidized by MnO₄⁻/H⁺ to CO₂. In C₂O₄²⁻, carbon is in the +3 oxidation state, and in CO₂ it is +4. Total change for the 2 carbon atoms = 2 × 1 = 2 electrons. Therefore, n-factor = 2 and Equivalent weight = M / 2."
+      },
+      {
+        "question": "According to Faraday's second law of electrolysis, when the same quantity of electricity is passed through different electrolyte solutions in series, the masses of substances deposited are proportional to their:",
+        "options": [
+          "Equivalent weights (w₁/w₂ = E₁/E₂)",
+          "Atomic numbers",
+          "Densities",
+          "Molar volumes"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Faraday's second law states that w₁/w₂ = E₁/E₂, where E represents equivalent weight.",
+          "Incorrect. Masses deposited do not depend on atomic number.",
+          "Incorrect. Densities do not determine electrochemical equivalent mass.",
+          "Incorrect. Molar volume applies to gases at STP, not mass deposited."
+        ],
+        "fullExplanation": "Page 45 explicitly states Faraday's second law of electrolysis: 'When same amount of charge is passed through different electrolyte solutions connected in series then weight of substances deposited or dissolved at anode or cathode are in ratio of their equivalent weights. i.e. w₁/w₂ = E₁/E₂'."
+      },
+      {
+        "question": "In the chemical volcano reaction: (NH₄)₂Cr₂O₇ → N₂ + Cr₂O₃ + 4H₂O, which elements undergo changes in oxidation state?",
+        "options": [
+          "Nitrogen is oxidized (-3 to 0) and Chromium is reduced (+6 to +3)",
+          "Nitrogen is reduced and Chromium is oxidized",
+          "Only Chromium is reduced; Nitrogen remains unchanged",
+          "Hydrogen is oxidized and Oxygen is reduced"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In (NH₄)₂, N is -3 and is oxidized to N₂ (0). In Cr₂O₇²⁻, Cr is +6 and is reduced to Cr₂O₃ (+3). This is an intramolecular redox reaction.",
+          "Incorrect. Inverted roles of N and Cr.",
+          "Incorrect. N must change oxidation state to provide electrons for Cr reduction.",
+          "Incorrect. H (+1) and O (-2) maintain their oxidation states throughout."
+        ],
+        "fullExplanation": "From page 222: 'Chemical volcano: (NH₄)₂Cr₂O₇ → N₂ + 4H₂O + Cr₂O₃'. In ammonium ion, N is in the -3 state and goes to 0 in N₂ (oxidation). In dichromate, Cr is in the +6 state and goes to +3 in Cr₂O₃ (reduction). It is an intramolecular redox reaction."
+      },
+      {
+        "question": "What is the average oxidation state of iron in magnetic iron oxide, Fe₃O₄?",
+        "options": [
+          "+8/3",
+          "+3",
+          "+2",
+          "+6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Fe₃O₄ is a mixed oxide (FeO · Fe₂O₃). 3x + 4(-2) = 0 ⇒ 3x = 8 ⇒ x = +8/3.",
+          "Incorrect. +3 is the oxidation state in haematite (Fe₂O₃).",
+          "Incorrect. +2 is the oxidation state in wüstite (FeO).",
+          "Incorrect. Iron does not exhibit +6 in Fe₃O₄."
+        ],
+        "fullExplanation": "From pages 34 and 238: Magnetite (Fe₃O₄) is a stoichiometric mixed oxide composed of FeO (Fe is +2) and Fe₂O₃ (two Fe atoms in +3). The average oxidation state is (2 + 2 × 3) / 3 = +8/3."
+      },
+      {
+        "question": "In the reaction Cu + 4HNO₃(concentrated) → Cu(NO₃)₂ + 2NO₂ + 2H₂O, what role does nitric acid play?",
+        "options": [
+          "Both as an acid and as an oxidizing agent",
+          "Only as an oxidizing agent",
+          "Only as an acid",
+          "As a reducing agent"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Out of 4 moles of HNO₃, 2 moles are reduced to NO₂ (oxidizing agent) and 2 moles form Cu(NO₃)₂ without change in oxidation state (acid).",
+          "Incorrect. Part of the HNO₃ provides nitrate ions to form the salt Cu(NO₃)₂, acting as an acid.",
+          "Incorrect. Cu is oxidized from 0 to +2, so HNO₃ also acts as an oxidant.",
+          "Incorrect. HNO₃ is reduced and therefore acts as an oxidizing agent, not a reducing agent."
+        ],
+        "fullExplanation": "Page 204 states: 'It plays double role in action on metals, i.e., it acts as an acid as well as an oxidising agent'. In Cu + 4HNO₃ → Cu(NO₃)₂ + 2NO₂ + 2H₂O, 2 moles of HNO₃ act as an oxidizing agent (reduced to NO₂) and 2 moles act as an acid (forming Cu(NO₃)₂)."
+      },
+      {
+        "question": "Which of the following halogens is the strongest oxidizing agent according to the handbook?",
+        "options": [
+          "F₂",
+          "Cl₂",
+          "Br₂",
+          "I₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Fluorine has the highest standard reduction potential and can oxidize Cl⁻, Br⁻, and I⁻: F₂ > Cl₂ > Br₂ > I₂.",
+          "Incorrect. Cl₂ is weaker than F₂.",
+          "Incorrect. Br₂ is weaker than Cl₂ and F₂.",
+          "Incorrect. I₂ is the weakest oxidizing agent among the halogens."
+        ],
+        "fullExplanation": "From page 211 and 212: 'Reactivity of the halogens decreases down the group. i.e. the order is F₂ > Cl₂ > Br₂ > I₂'. Furthermore, 'a halogen oxidises halide ions of higher atomic number: F₂ + 2X⁻ → 2F⁻ + X₂'."
+      },
+      {
+        "question": "In the Disproportionation of phosphorous acid upon heating: 4H₃PO₃ → 3H₃PO₄ + PH₃, what are the oxidation numbers of phosphorus in H₃PO₃, H₃PO₄, and PH₃ respectively?",
+        "options": [
+          "+3, +5, and -3",
+          "+3, +3, and -3",
+          "+1, +5, and -3",
+          "+5, +3, and 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In H₃PO₃: 3(+1) + P + 3(-2) = 0 ⇒ P = +3. In H₃PO₄: 3(+1) + P + 4(-2) = 0 ⇒ P = +5. In PH₃: P + 3(+1) = 0 ⇒ P = -3.",
+          "Incorrect. H₃PO₄ has phosphorus in the +5 state.",
+          "Incorrect. H₃PO₃ has phosphorus in the +3 state, not +1.",
+          "Incorrect. Order and oxidation states are mixed up."
+        ],
+        "fullExplanation": "From page 201 and 205: '4H₃PO₃ → 3H₃PO₄ + PH₃'. In reactant H₃PO₃, P is in the +3 oxidation state. In product H₃PO₄, P is in the +5 state (oxidized). In product PH₃, P is in the -3 state (reduced). This confirms disproportionation from +3 to +5 and -3."
+      }
+    ]
+  }
+]

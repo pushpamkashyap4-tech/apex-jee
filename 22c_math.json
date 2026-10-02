@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Inverse Trigonometric Functions",
+    "flashcards": [
+      {
+        "front": "What is the Principal Value Branch (Domain and Range) of $y = \\\\sin^{-1}x$?",
+        "back": "- **Domain:** $[-1, 1]$\\n- **Range (Principal Value Branch):** $\\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right]$\\n- **Properties:** Odd function, strictly increasing on $[-1, 1]$, continuous, and passes through the origin."
+      },
+      {
+        "front": "What is the Principal Value Branch (Domain and Range) of $y = \\\\cos^{-1}x$?",
+        "back": "- **Domain:** $[-1, 1]$\\n- **Range (Principal Value Branch):** $[0, \\\\pi]$\\n- **Properties:** Neither even nor odd (satisfies $\\\\cos^{-1}(-x) = \\\\pi - \\\\cos^{-1}x$), strictly decreasing on $[-1, 1]$."
+      },
+      {
+        "front": "What is the Principal Value Branch (Domain and Range) of $y = \\\\tan^{-1}x$?",
+        "back": "- **Domain:** $\\\\mathbb{R}$ (all real numbers)\\n- **Range (Principal Value Branch):** $\\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right)$\\n- **Properties:** Odd function, strictly increasing on $\\\\mathbb{R}$, horizontal asymptotes at $y = \\\\pm \\\\frac{\\\\pi}{2}$."
+      },
+      {
+        "front": "What is the Principal Value Branch (Domain and Range) of $y = \\\\cot^{-1}x$?",
+        "back": "- **Domain:** $\\\\mathbb{R}$\\n- **Range (Principal Value Branch):** $(0, \\\\pi)$\\n- **Properties:** Neither even nor odd (satisfies $\\\\cot^{-1}(-x) = \\\\pi - \\\\cot^{-1}x$), strictly decreasing on $\\\\mathbb{R}$, horizontal asymptotes at $y = 0$ and $y = \\\\pi$."
+      },
+      {
+        "front": "What is the Principal Value Branch (Domain and Range) of $y = \\\\sec^{-1}x$?",
+        "back": "- **Domain:** $(-\\\\infty, -1] \\\\cup [1, \\\\infty)$ or $|x| \\\\ge 1$\\n- **Range (Principal Value Branch):** $[0, \\\\pi] \\\\setminus \\\\left\\\\{\\\\frac{\\\\pi}{2}\\\\right\\\\}$\\n- **Properties:** Satisfies $\\\\sec^{-1}(-x) = \\\\pi - \\\\sec^{-1}x$."
+      },
+      {
+        "front": "What is the Principal Value Branch (Domain and Range) of $y = \\\\csc^{-1}x$?",
+        "back": "- **Domain:** $(-\\\\infty, -1] \\\\cup [1, \\\\infty)$ or $|x| \\\\ge 1$\\n- **Range (Principal Value Branch):** $\\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right] \\\\setminus \\\\{0\\\\}$\\n- **Properties:** Odd function: $\\\\csc^{-1}(-x) = -\\\\csc^{-1}x$."
+      },
+      {
+        "front": "What are the domains for the identity $f(f^{-1}(x)) = x$ for each inverse circular function?",
+        "back": "1. $\\\\sin(\\\\sin^{-1}x) = x, \\\\quad x \\\\in [-1, 1]$\\n2. $\\\\cos(\\\\cos^{-1}x) = x, \\\\quad x \\\\in [-1, 1]$\\n3. $\\\\tan(\\\\tan^{-1}x) = x, \\\\quad x \\\\in \\\\mathbb{R}$\\n4. $\\\\cot(\\\\cot^{-1}x) = x, \\\\quad x \\\\in \\\\mathbb{R}$\\n5. $\\\\sec(\\\\sec^{-1}x) = x, \\\\quad |x| \\\\ge 1$\\n6. $\\\\csc(\\\\csc^{-1}x) = x, \\\\quad |x| \\\\ge 1$\\n*Note:* None of these are periodic; they are valid strictly on their restricted domains."
+      },
+      {
+        "front": "What is the piecewise definition and graphical behaviour of $y = \\\\sin^{-1}(\\\\sin x)$?",
+        "back": "- **Domain:** $\\\\mathbb{R}$; **Range:** $\\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right]$\\n- **Period:** $2\\\\pi$ (symmetric about origin, odd function)\\n- **Piecewise Definition:**\\n  $$y = \\\\begin{cases} x, & x \\\\in \\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right] \\\\\\\\ \\\\pi - x, & x \\\\in \\\\left[\\\\frac{\\\\pi}{2}, \\\\frac{3\\\\pi}{2}\\\\right] \\\\\\\\ x - 2\\\\pi, & x \\\\in \\\\left[\\\\frac{3\\\\pi}{2}, \\\\frac{5\\\\pi}{2}\\\\right] \\\\\\\\ -(\\\\pi + x), & x \\\\in \\\\left[-\\\\frac{3\\\\pi}{2}, -\\\\frac{\\\\pi}{2}\\\\right] \\\\end{cases}$$\\nForms a continuous zig-zag wave with slopes alternating between $+1$ and $-1$."
+      },
+      {
+        "front": "What is the piecewise definition and graphical behaviour of $y = \\\\cos^{-1}(\\\\cos x)$?",
+        "back": "- **Domain:** $\\\\mathbb{R}$; **Range:** $[0, \\\\pi]$\\n- **Period:** $2\\\\pi$ (symmetric about the $y$-axis, even function)\\n- **Piecewise Definition:**\\n  $$y = \\\\begin{cases} x, & x \\\\in [0, \\\\pi] \\\\\\\\ 2\\\\pi - x, & x \\\\in [\\\\pi, 2\\\\pi] \\\\\\\\ x - 2\\\\pi, & x \\\\in [2\\\\pi, 3\\\\pi] \\\\\\\\ -x, & x \\\\in [-\\\\pi, 0] \\\\end{cases}$$\\nForms an inverted 'V'-shaped wave oscillating between $0$ and $\\\\pi$."
+      },
+      {
+        "front": "What is the piecewise definition and graphical behaviour of $y = \\\\tan^{-1}(\\\\tan x)$?",
+        "back": "- **Domain:** $\\\\mathbb{R} \\\\setminus \\\\left\\\\{(2n+1)\\\\frac{\\\\pi}{2} \\\\mid n \\\\in \\\\mathbb{Z}\\\\right\\\\}$; **Range:** $\\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right)$\\n- **Period:** $\\\\pi$\\n- **Piecewise Definition:**\\n  $$y = x - n\\\\pi, \\\\quad \\\\text{for } x \\\\in \\\\left(n\\\\pi - \\\\frac{\\\\pi}{2}, n\\\\pi + \\\\frac{\\\\pi}{2}\\\\right)$$\\nForms a discontinuous sawtooth wave composed of parallel line segments of slope $+1$."
+      },
+      {
+        "front": "What is the piecewise definition of $y = \\\\cot^{-1}(\\\\cot x)$?",
+        "back": "- **Domain:** $\\\\mathbb{R} \\\\setminus \\\\{n\\\\pi \\\\mid n \\\\in \\\\mathbb{Z}\\\\}$; **Range:** $(0, \\\\pi)$\\n- **Period:** $\\\\pi$\\n- **Piecewise Definition:**\\n  $$y = x - n\\\\pi, \\\\quad \\\\text{for } x \\\\in (n\\\\pi, (n+1)\\\\pi)$$\\nForms a discontinuous series of parallel lines with slope $+1$ bounded between $0$ and $\\\\pi$."
+      },
+      {
+        "front": "State the negative argument identities for the odd inverse trigonometric functions.",
+        "back": "For functions whose ranges are centered at 0:\\n1. $\\\\sin^{-1}(-x) = -\\\\sin^{-1}x, \\\\quad x \\\\in [-1, 1]$\\n2. $\\\\tan^{-1}(-x) = -\\\\tan^{-1}x, \\\\quad x \\\\in \\\\mathbb{R}$\\n3. $\\\\csc^{-1}(-x) = -\\\\csc^{-1}x, \\\\quad |x| \\\\ge 1$"
+      },
+      {
+        "front": "State the negative argument identities for the $\\\\pi$-symmetric inverse trigonometric functions.",
+        "back": "For functions whose ranges are subsets of $[0, \\\\pi]$:\\n1. $\\\\cos^{-1}(-x) = \\\\pi - \\\\cos^{-1}x, \\\\quad x \\\\in [-1, 1]$\\n2. $\\\\cot^{-1}(-x) = \\\\pi - \\\\cot^{-1}x, \\\\quad x \\\\in \\\\mathbb{R}$\\n3. $\\\\sec^{-1}(-x) = \\\\pi - \\\\sec^{-1}x, \\\\quad |x| \\\\ge 1$"
+      },
+      {
+        "front": "State the reciprocal relations for $\\\\csc^{-1}x$ and $\\\\sec^{-1}x$.",
+        "back": "1. $\\\\csc^{-1}x = \\\\sin^{-1}\\\\left(\\\\frac{1}{x}\\\\right), \\\\quad |x| \\\\ge 1$\\n2. $\\\\sec^{-1}x = \\\\cos^{-1}\\\\left(\\\\frac{1}{x}\\\\right), \\\\quad |x| \\\\ge 1$"
+      },
+      {
+        "front": "What is the reciprocal identity for $\\\\cot^{-1}x$, and why does it require a branch split?",
+        "back": "$$\\\\cot^{-1}x = \\\\begin{cases} \\\\tan^{-1}\\\\left(\\\\frac{1}{x}\\\\right), & x > 0 \\\\\\\\ \\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{1}{x}\\\\right), & x < 0 \\\\end{cases}$$\\n*Reason:* For $x < 0$, $\\\\cot^{-1}x \\\\in \\\\left(\\\\frac{\\\\pi}{2}, \\\\pi\\\\right)$ (positive, Quadrant II), while $\\\\tan^{-1}\\\\left(\\\\frac{1}{x}\\\\right) \\\\in \\\\left(-\\\\frac{\\\\pi}{2}, 0\\\\right)$ (negative, Quadrant IV). Adding $\\\\pi$ aligns the principal branches."
+      },
+      {
+        "front": "State the Complementary Angle Identities for inverse trigonometric functions.",
+        "back": "1. $\\\\sin^{-1}x + \\\\cos^{-1}x = \\\\frac{\\\\pi}{2}, \\\\quad \\\\forall x \\\\in [-1, 1]$\\n2. $\\\\tan^{-1}x + \\\\cot^{-1}x = \\\\frac{\\\\pi}{2}, \\\\quad \\\\forall x \\\\in \\\\mathbb{R}$\\n3. $\\\\sec^{-1}x + \\\\csc^{-1}x = \\\\frac{\\\\pi}{2}, \\\\quad \\\\forall |x| \\\\ge 1$"
+      },
+      {
+        "front": "What is the formula for $\\\\tan^{-1}x + \\\\tan^{-1}y$ when $xy < 1$?",
+        "back": "When $xy < 1$:\\n$$\\\\tan^{-1}x + \\\\tan^{-1}y = \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$$\\nThis holds regardless of the signs of $x$ and $y$ as long as their product satisfies $xy < 1$."
+      },
+      {
+        "front": "What are the formulas for $\\\\tan^{-1}x + \\\\tan^{-1}y$ when $xy > 1$?",
+        "back": "1. If $x > 0$ and $y > 0$ with $xy > 1$:\\n   $$\\\\tan^{-1}x + \\\\tan^{-1}y = \\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$$\\n2. If $x < 0$ and $y < 0$ with $xy > 1$:\\n   $$\\\\tan^{-1}x + \\\\tan^{-1}y = -\\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$$"
+      },
+      {
+        "front": "What is the value of $\\\\tan^{-1}x + \\\\tan^{-1}y$ when $xy = 1$?",
+        "back": "$$\\\\tan^{-1}x + \\\\tan^{-1}y = \\\\begin{cases} \\\\frac{\\\\pi}{2}, & x > 0, y > 0 \\\\\\\\ -\\\\frac{\\\\pi}{2}, & x < 0, y < 0 \\\\end{cases}$$"
+      },
+      {
+        "front": "State the formula for $\\\\tan^{-1}x - \\\\tan^{-1}y$ with its branch conditions.",
+        "back": "$$\\\\tan^{-1}x - \\\\tan^{-1}y = \\\\begin{cases} \\\\tan^{-1}\\\\left(\\\\frac{x - y}{1 + xy}\\\\right), & xy > -1 \\\\\\\\ \\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{x - y}{1 + xy}\\\\right), & x > 0, y < 0, xy < -1 \\\\\\\\ -\\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{x - y}{1 + xy}\\\\right), & x < 0, y > 0, xy < -1 \\\\end{cases}$$"
+      },
+      {
+        "front": "State the addition formula for $\\\\sin^{-1}x + \\\\sin^{-1}y$ for $x, y \\\\ge 0$.",
+        "back": "For $x, y \\\\ge 0$:\\n$$\\\\sin^{-1}x + \\\\sin^{-1}y = \\\\begin{cases} \\\\sin^{-1}\\\\left(x\\\\sqrt{1-y^2} + y\\\\sqrt{1-x^2}\\\\right), & x^2 + y^2 \\\\le 1 \\\\\\\\ \\\\pi - \\\\sin^{-1}\\\\left(x\\\\sqrt{1-y^2} + y\\\\sqrt{1-x^2}\\\\right), & x^2 + y^2 > 1 \\\\end{cases}$$\\n*Note:* If $x^2 + y^2 \\\\le 1$, the sum lies in $\\\\left[0, \\\\frac{\\\\pi}{2}\\\\right]$; if $x^2 + y^2 > 1$, the sum lies in $\\\\left(\\\\frac{\\\\pi}{2}, \\\\pi\\\\right]$."
+      },
+      {
+        "front": "State the addition formula for $\\\\cos^{-1}x + \\\\cos^{-1}y$ for $x, y \\\\in [-1, 1]$.",
+        "back": "For $x, y \\\\in [-1, 1]$:\\n$$\\\\cos^{-1}x + \\\\cos^{-1}y = \\\\begin{cases} \\\\cos^{-1}\\\\left(xy - \\\\sqrt{1-x^2}\\\\sqrt{1-y^2}\\\\right), & x + y \\\\ge 0 \\\\\\\\ 2\\\\pi - \\\\cos^{-1}\\\\left(xy - \\\\sqrt{1-x^2}\\\\sqrt{1-y^2}\\\\right), & x + y < 0 \\\\end{cases}$$"
+      },
+      {
+        "front": "Express $2\\\\tan^{-1}x$ in terms of $\\\\sin^{-1}\\\\left(\\\\frac{2x}{1+x^2}\\\\right)$.",
+        "back": "$$\\\\sin^{-1}\\\\left(\\\\frac{2x}{1+x^2}\\\\right) = \\\\begin{cases} 2\\\\tan^{-1}x, & |x| \\\\le 1 \\\\\\\\ \\\\pi - 2\\\\tan^{-1}x, & x > 1 \\\\\\\\ -(\\\\pi + 2\\\\tan^{-1}x), & x < -1 \\\\end{cases}$$"
+      },
+      {
+        "front": "Express $2\\\\tan^{-1}x$ in terms of $\\\\cos^{-1}\\\\left(\\\\frac{1-x^2}{1+x^2}\\\\right)$.",
+        "back": "$$\\\\cos^{-1}\\\\left(\\\\frac{1-x^2}{1+x^2}\\\\right) = \\\\begin{cases} 2\\\\tan^{-1}x, & x \\\\ge 0 \\\\\\\\ -2\\\\tan^{-1}x, & x < 0 \\\\end{cases}$$"
+      },
+      {
+        "front": "Express $2\\\\tan^{-1}x$ in terms of $\\\\tan^{-1}\\\\left(\\\\frac{2x}{1-x^2}\\\\right)$.",
+        "back": "$$\\\\tan^{-1}\\\\left(\\\\frac{2x}{1-x^2}\\\\right) = \\\\begin{cases} 2\\\\tan^{-1}x, & |x| < 1 \\\\\\\\ \\\\pi + 2\\\\tan^{-1}x, & x < -1 \\\\\\\\ -(\\\\pi - 2\\\\tan^{-1}x), & x > 1 \\\\end{cases}$$"
+      },
+      {
+        "front": "Express $\\\\sin^{-1}(2x\\\\sqrt{1-x^2})$ in terms of $\\\\sin^{-1}x$.",
+        "back": "$$\\\\sin^{-1}(2x\\\\sqrt{1-x^2}) = \\\\begin{cases} 2\\\\sin^{-1}x, & -\\\\frac{1}{\\\\sqrt{2}} \\\\le x \\\\le \\\\frac{1}{\\\\sqrt{2}} \\\\\\\\ \\\\pi - 2\\\\sin^{-1}x, & \\\\frac{1}{\\\\sqrt{2}} < x \\\\le 1 \\\\\\\\ -(\\\\pi + 2\\\\sin^{-1}x), & -1 \\\\le x < -\\\\frac{1}{\\\\sqrt{2}} \\\\end{cases}$$"
+      },
+      {
+        "front": "Express $\\\\cos^{-1}(2x^2 - 1)$ in terms of $\\\\cos^{-1}x$.",
+        "back": "$$\\\\cos^{-1}(2x^2 - 1) = \\\\begin{cases} 2\\\\cos^{-1}x, & 0 \\\\le x \\\\le 1 \\\\\\\\ 2\\\\pi - 2\\\\cos^{-1}x, & -1 \\\\le x < 0 \\\\end{cases}$$"
+      },
+      {
+        "front": "What is the fundamental telescoping identity for inverse tangents?",
+        "back": "$$\\\\tan^{-1}\\\\left(\\\\frac{a_{n} - a_{n-1}}{1 + a_n a_{n-1}}\\\\right) = \\\\tan^{-1}(a_n) - \\\\tan^{-1}(a_{n-1}) \\\\quad (\\\\text{provided } a_n a_{n-1} > -1)$$\\nThis identity is the cornerstone for summing finite and infinite series in JEE."
+      },
+      {
+        "front": "State the three-variable addition formula for $\\\\tan^{-1}x + \\\\tan^{-1}y + \\\\tan^{-1}z$.",
+        "back": "For $x, y, z > 0$ such that $xy + yz + zx < 1$:\\n$$\\\\tan^{-1}x + \\\\tan^{-1}y + \\\\tan^{-1}z = \\\\tan^{-1}\\\\left(\\\\frac{x + y + z - xyz}{1 - (xy + yz + zx)}\\\\right)$$\\nIf $xy + yz + zx = 1$, then $\\\\tan^{-1}x + \\\\tan^{-1}y + \\\\tan^{-1}z = \\\\frac{\\\\pi}{2}$."
+      },
+      {
+        "front": "What is the derivative and continuity behavior of $y = \\\\sin^{-1}x$ and $y = \\\\cos^{-1}x$ at their domain boundaries?",
+        "back": "- $\\\\frac{d}{dx}(\\\\sin^{-1}x) = \\\\frac{1}{\\\\sqrt{1-x^2}}$ and $\\\\frac{d}{dx}(\\\\cos^{-1}x) = -\\\\frac{1}{\\\\sqrt{1-x^2}}$ for $x \\\\in (-1, 1)$.\\n- Both functions are **continuous** on $[-1, 1]$, but their tangents become vertical as $x \\\\to \\\\pm 1$, making them **non-differentiable** at $x = \\\\pm 1$."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is the domain of the function $f(x) = \\\\sin^{-1}\\\\left(\\\\frac{x - 3}{2}\\\\right) - \\\\log_{10}(4 - x)$?",
+        "options": [
+          "$[1, 4)$",
+          "$[1, 5]$",
+          "$(1, 4)$",
+          "$[1, 4]$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: For $\\\\sin^{-1}\\\\left(\\\\frac{x-3}{2}\\\\right)$, $-1 \\\\le \\\\frac{x-3}{2} \\\\le 1 \\\\implies 1 \\\\le x \\\\le 5$. For the logarithm, $4 - x > 0 \\\\implies x < 4$. The intersection is $[1, 4)$.",
+          "Incorrect: Ignores the condition for the logarithm which requires $4 - x > 0$.",
+          "Incorrect: Excludes $x = 1$, which is valid since $\\\\sin^{-1}(-1)$ is well-defined.",
+          "Incorrect: Includes $x = 4$, where $\\\\log_{10}(0)$ is undefined."
+        ],
+        "fullExplanation": "To find the domain of $f(x)$, we find the intersection of the domains of its individual terms:\\n1. For $\\\\sin^{-1}\\\\left(\\\\frac{x-3}{2}\\\\right)$ to be defined:\\n$$-1 \\\\le \\\\frac{x - 3}{2} \\\\le 1$$\\n$$-2 \\\\le x - 3 \\\\le 2 \\\\implies 1 \\\\le x \\\\le 5 \\\\implies x \\\\in [1, 5]$$\\n2. For $\\\\log_{10}(4 - x)$ to be defined:\\n$$4 - x > 0 \\\\implies x < 4 \\\\implies x \\\\in (-\\infty, 4)$$\\nTaking the intersection of both sets:\\n$$[1, 5] \\\\cap (-\\infty, 4) = [1, 4)$$"
+      },
+      {
+        "question": "What is the value of $\\\\cos^{-1}\\\\left(\\\\cos\\\\frac{7\\\\pi}{6}\\\\right) + \\\\sin^{-1}\\\\left(\\\\sin\\\\frac{5\\\\pi}{3}\\\\right)$?",
+        "options": [
+          "$\\\\frac{\\\\pi}{2}$",
+          "$\\\\frac{\\\\pi}{6}$",
+          "$\\\\frac{5\\\\pi}{6}$",
+          "$-\\\\frac{\\\\pi}{6}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\cos^{-1}(\\\\cos(7\\\\pi/6)) = 2\\\\pi - 7\\\\pi/6 = 5\\\\pi/6$, and $\\\\sin^{-1}(\\\\sin(5\\\\pi/3)) = 5\\\\pi/3 - 2\\\\pi = -\\\\pi/3$. Their sum is $5\\\\pi/6 - \\\\pi/3 = \\\\pi/2$.",
+          "Incorrect: Direct evaluation using principal value definitions was not correctly reduced.",
+          "Incorrect: This is only the first term, neglecting the second term.",
+          "Incorrect: Result of a sign error in evaluating $\\\\sin^{-1}(\\\\sin(5\\\\pi/3))$."
+        ],
+        "fullExplanation": "1. For $\\\\cos^{-1}\\\\left(\\\\cos\\\\frac{7\\\\pi}{6}\\\\right)$:\\nSince $\\\\frac{7\\\\pi}{6} \\\\in [\\\\pi, 2\\\\pi]$, by the property $\\\\cos^{-1}(\\\\cos x) = 2\\\\pi - x$:\\n$$\\\\cos^{-1}\\\\left(\\\\cos\\\\frac{7\\\\pi}{6}\\\\right) = 2\\\\pi - \\\\frac{7\\\\pi}{6} = \\\\frac{5\\\\pi}{6}$$\\n2. For $\\\\sin^{-1}\\\\left(\\\\sin\\\\frac{5\\\\pi}{3}\\\\right)$:\\nSince $\\\\frac{5\\\\pi}{3} \\\\in \\\\left[\\\\frac{3\\\\pi}{2}, \\\\frac{5\\\\pi}{2}\\\\right]$, by the property $\\\\sin^{-1}(\\\\sin x) = x - 2\\\\pi$:\\n$$\\\\sin^{-1}\\\\left(\\\\sin\\\\frac{5\\\\pi}{3}\\\\right) = \\\\frac{5\\\\pi}{3} - 2\\\\pi = -\\\\frac{\\\\pi}{3}$$\\n3. Adding both terms:\\n$$\\\\frac{5\\\\pi}{6} + \\\\left(-\\\\frac{\\\\pi}{3}\\\\right) = \\\\frac{5\\\\pi - 2\\\\pi}{6} = \\\\frac{3\\\\pi}{6} = \\\\frac{\\\\pi}{2}$$"
+      },
+      {
+        "question": "Evaluate the infinite sum: $S = \\\\sum_{n=1}^\\\\infty \\\\tan^{-1}\\\\left(\\\\frac{1}{n^2 + n + 1}\\\\right)$.",
+        "options": [
+          "$\\\\frac{\\\\pi}{4}$",
+          "$\\\\frac{\\\\pi}{2}$",
+          "$\\\\frac{\\\\pi}{3}$",
+          "$\\\\frac{3\\\\pi}{4}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Expressing the general term as $\\\\tan^{-1}(n+1) - \\\\tan^{-1}(n)$ telescopes to $\\\\lim_{N\\\\to\\\\infty}\\\\tan^{-1}(N+1) - \\\\tan^{-1}(1) = \\\\frac{\\\\pi}{2} - \\\\frac{\\\\pi}{4} = \\\\frac{\\\\pi}{4}$.",
+          "Incorrect: Forgot to subtract the first term $\\\\tan^{-1}(1) = \\\\frac{\\\\pi}{4}$.",
+          "Incorrect: Calculation error in angle evaluation.",
+          "Incorrect: Added $\\\\frac{\\\\pi}{4}$ instead of subtracting."
+        ],
+        "fullExplanation": "We rewrite the general term using the identity for the difference of two inverse tangents:\\n$$\\\\frac{1}{n^2 + n + 1} = \\\\frac{(n + 1) - n}{1 + n(n + 1)}$$\\nTherefore:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{1}{n^2 + n + 1}\\\\right) = \\\\tan^{-1}(n + 1) - \\\\tan^{-1}(n)$$\\nNow write the partial sum $S_N$:\\n$$S_N = \\\\sum_{n=1}^N [\\\\tan^{-1}(n + 1) - \\\\tan^{-1}(n)]$$\\n$$S_N = [\\\\tan^{-1}(2) - \\\\tan^{-1}(1)] + [\\\\tan^{-1}(3) - \\\\tan^{-1}(2)] + \\\\dots + [\\\\tan^{-1}(N + 1) - \\\\tan^{-1}(N)]$$\\nBy telescoping cancellation:\\n$$S_N = \\\\tan^{-1}(N + 1) - \\\\tan^{-1}(1)$$\\nTaking the limit as $N \\\\to \\\\infty$:\\n$$S = \\\\lim_{N \\\\to \\\\infty} \\\\tan^{-1}(N + 1) - \\\\tan^{-1}(1) = \\\\frac{\\\\pi}{2} - \\\\frac{\\\\pi}{4} = \\\\frac{\\\\pi}{4}$$"
+      },
+      {
+        "question": "What is the sum of the infinite series $\\\\sum_{r=1}^\\\\infty \\\\tan^{-1}\\\\left(\\\\frac{2}{r^2}\\\\right)$?",
+        "options": [
+          "$\\\\frac{3\\\\pi}{4}$",
+          "$\\\\frac{\\\\pi}{2}$",
+          "$\\\\pi$",
+          "$\\\\frac{\\\\pi}{4}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\tan^{-1}\\\\left(\\\\frac{2}{r^2}\\\\right) = \\\\tan^{-1}(r+1) - \\\\tan^{-1}(r-1)$. Summing from $r=1$ to $\\\\infty$ leaves $\\\\lim [\\\\tan^{-1}(N) + \\\\tan^{-1}(N+1)] - \\\\tan^{-1}(0) - \\\\tan^{-1}(1) = \\\\pi - \\\\frac{\\\\pi}{4} = \\\\frac{3\\\\pi}{4}$.",
+          "Incorrect: Missed the second boundary term.",
+          "Incorrect: Omitted the subtraction of $\\\\tan^{-1}(1)$.",
+          "Incorrect: Computed only the first term."
+        ],
+        "fullExplanation": "We rewrite the argument $\\\\frac{2}{r^2}$ in telescoping form:\\n$$\\\\frac{2}{r^2} = \\\\frac{(r + 1) - (r - 1)}{1 + (r + 1)(r - 1)}$$\\nsince $1 + (r^2 - 1) = r^2$.\\nThus:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{2}{r^2}\\\\right) = \\\\tan^{-1}(r + 1) - \\\\tan^{-1}(r - 1)$$\\nWriting out the partial sum $S_N$:\\n$$r = 1: \\\\tan^{-1}(2) - \\\\tan^{-1}(0)$$\\n$$r = 2: \\\\tan^{-1}(3) - \\\\tan^{-1}(1)$$\\n$$r = 3: \\\\tan^{-1}(4) - \\\\tan^{-1}(2)$$\\n$$r = 4: \\\\tan^{-1}(5) - \\\\tan^{-1}(3)$$\\n$$\\\\vdots$$\\n$$r = N-1: \\\\tan^{-1}(N) - \\\\tan^{-1}(N-2)$$\\n$$r = N: \\\\tan^{-1}(N + 1) - \\\\tan^{-1}(N-1)$$\\nAll intermediate terms cancel, leaving:\\n$$S_N = \\\\tan^{-1}(N + 1) + \\\\tan^{-1}(N) - \\\\tan^{-1}(1) - \\\\tan^{-1}(0)$$\\nTaking the limit as $N \\\\to \\\\infty$:\\n$$S = \\\\frac{\\\\pi}{2} + \\\\frac{\\\\pi}{2} - \\\\frac{\\\\pi}{4} - 0 = \\\\pi - \\\\frac{\\\\pi}{4} = \\\\frac{3\\\\pi}{4}$$"
+      },
+      {
+        "question": "What is the domain of the function $f(x) = \\\\cos^{-1}\\\\left(\\\\frac{2 - |x|}{4}\\\\right) + [\\\\log_{10}(3 - x)]^{-1}$?",
+        "options": [
+          "$[-2, 3) \\\\setminus \\\\{2\\\\}$",
+          "$[-6, 3) \\\\setminus \\\\{2\\\\}$",
+          "$[-6, 6]$",
+          "$(-6, 3)$"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect: Lower bound for $|x|$ miscalculated.",
+          "Correct: For $\\\\cos^{-1}$, $-1 \\\\le \\\\frac{2-|x|}{4} \\\\le 1 \\\\implies |x| \\\\le 6 \\\\implies x \\\\in [-6, 6]$. For the denominator, $3 - x > 0 \\\\implies x < 3$, and $\\\\log_{10}(3-x) \\\\neq 0 \\\\implies 3 - x \\\\neq 1 \\\\implies x \\\\neq 2$. Intersection gives $[-6, 3) \\\\setminus \\\\{2\\\\}$.",
+          "Incorrect: Completely ignores the logarithmic denominator.",
+          "Incorrect: Misses closed boundary at $-6$ and does not exclude $x = 2$."
+        ],
+        "fullExplanation": "We find the conditions for each part of $f(x)$:\\n1. For $\\\\cos^{-1}\\\\left(\\\\frac{2 - |x|}{4}\\\\right)$:\\n$$-1 \\\\le \\\\frac{2 - |x|}{4} \\\\le 1 \\\\implies -4 \\\\le 2 - |x| \\\\le 4$$\\nSubtracting 2: $-6 \\\\le -|x| \\\\le 2 \\\\implies -2 \\\\le |x| \\\\le 6$.\\nSince $|x| \\\\ge 0$ is always true, this requires $|x| \\\\le 6 \\\\implies x \\\\in [-6, 6]$.\\n2. For the term $\\\\frac{1}{\\\\log_{10}(3 - x)}$:\\n- The argument of the logarithm must be positive: $3 - x > 0 \\\\implies x < 3$.\\n- The denominator cannot be zero: $\\\\log_{10}(3 - x) \\\\neq 0 \\\\implies 3 - x \\\\neq 1 \\\\implies x \\\\neq 2$.\\n\\nTaking the intersection of all conditions:\\n$$[-6, 6] \\\\cap (-\\infty, 3) \\\\setminus \\\\{2\\\\} = [-6, 3) \\\\setminus \\\\{2\\\\}$$"
+      },
+      {
+        "question": "Find the number of real solutions to the equation: $\\\\tan^{-1}(2x) + \\\\tan^{-1}(3x) = \\\\frac{\\\\pi}{4}$.",
+        "options": [
+          "1",
+          "2",
+          "0",
+          "Infinitely many"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Applying tangent to both sides gives $6x^2 + 5x - 1 = 0 \\\\implies x = 1/6$ or $x = -1$. However, $x = -1$ yields a negative LHS, making it extraneous. Hence, $x = 1/6$ is the only valid solution.",
+          "Incorrect: Includes the extraneous root $x = -1$.",
+          "Incorrect: Failed to verify that $x = 1/6$ satisfies the equation.",
+          "Incorrect: Inverse trigonometric polynomial equations do not have infinitely many solutions."
+        ],
+        "fullExplanation": "Given $\\\\tan^{-1}(2x) + \\\\tan^{-1}(3x) = \\\\frac{\\\\pi}{4}$.\\nNote that since the RHS is positive ($\\\\pi/4 > 0$), we must have $x > 0$ because if $x \\\\le 0$, the LHS would be $\\\\le 0$.\\nFor $x > 0$, assuming $(2x)(3x) = 6x^2 < 1$:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{2x + 3x}{1 - 6x^2}\\\\right) = \\\\frac{\\\\pi}{4}$$\\nTaking tangent on both sides:\\n$$\\\\frac{5x}{1 - 6x^2} = 1 \\\\implies 5x = 1 - 6x^2$$\\n$$6x^2 + 5x - 1 = 0$$\\n$$(6x - 1)(x + 1) = 0 \\\\implies x = \\\\frac{1}{6} \\\\quad \\\\text{or} \\\\quad x = -1$$\\n- For $x = -1$: $\\\\tan^{-1}(-2) + \\\\tan^{-1}(-3) < 0 \\\\neq \\\\frac{\\\\pi}{4}$ (extraneous root).\\n- For $x = \\\\frac{1}{6}$: $6x^2 = 6\\\\left(\\\\frac{1}{36}\\\\right) = \\\\frac{1}{6} < 1$, which satisfies the condition $xy < 1$.\\nTherefore, there is only $1$ real solution: $x = \\\\frac{1}{6}$."
+      },
+      {
+        "question": "What is the value of $\\\\tan\\\\left(2\\\\tan^{-1}\\\\frac{1}{5} - \\\\frac{\\\\pi}{4}\\\\right)$?",
+        "options": [
+          "$-\\\\frac{7}{17}$",
+          "$\\\\frac{7}{17}$",
+          "$-\\\\frac{17}{7}$",
+          "$\\\\frac{5}{12}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $2\\\\tan^{-1}(1/5) = \\\\tan^{-1}(5/12)$. Then $\\\\tan(\\\\tan^{-1}(5/12) - \\\\pi/4) = \\\\frac{5/12 - 1}{1 + 5/12} = -\\\\frac{7}{17}$.",
+          "Incorrect: Sign error in the numerator $(5/12 - 1)$.",
+          "Incorrect: Inverted fraction.",
+          "Incorrect: Value of $\\\\tan(2\\\\tan^{-1}(1/5))$ without subtracting $\\\\pi/4$."
+        ],
+        "fullExplanation": "Step 1: Simplify $2\\\\tan^{-1}\\\\left(\\\\frac{1}{5}\\\\right)$:\\nUsing $2\\\\tan^{-1}x = \\\\tan^{-1}\\\\left(\\\\frac{2x}{1 - x^2}\\\\right)$ for $|x| < 1$:\\n$$2\\\\tan^{-1}\\\\left(\\\\frac{1}{5}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{2/5}{1 - 1/25}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{2/5}{24/25}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{5}{12}\\\\right)$$\\n\\nStep 2: Evaluate the tangent of the difference:\\n$$\\\\tan\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{5}{12}\\\\right) - \\\\frac{\\\\pi}{4}\\\\right) = \\\\frac{\\\\tan\\\\left(\\\\tan^{-1}\\\\frac{5}{12}\\\\right) - \\\\tan\\\\left(\\\\frac{\\\\pi}{4}\\\\right)}{1 + \\\\tan\\\\left(\\\\tan^{-1}\\\\frac{5}{12}\\\\right)\\\\tan\\\\left(\\\\frac{\\\\pi}{4}\\\\right)}$$\\n$$= \\\\frac{\\\\frac{5}{12} - 1}{1 + \\\\frac{5}{12}(1)} = \\\\frac{-\\\\frac{7}{12}}{\\\\frac{17}{12}} = -\\\\frac{7}{17}$$"
+      },
+      {
+        "question": "What is the range of the function $f(x) = (\\\\sin^{-1}x)^3 + (\\\\cos^{-1}x)^3$?",
+        "options": [
+          "$\\\\left[\\\\frac{\\\\pi^3}{32}, \\\\frac{7\\\\pi^3}{8}\\\\right]$",
+          "$\\\\left[\\\\frac{\\\\pi^3}{16}, \\\\frac{\\\\pi^3}{2}\\\\right]$",
+          "$\\\\left[0, \\\\frac{\\\\pi^3}{8}\\\\right]$",
+          "$\\\\left[\\\\frac{\\\\pi^3}{32}, \\\\frac{\\\\pi^3}{8}\\\\right]$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Let $t = \\\\sin^{-1}x \\\\in [-\\\\pi/2, \\\\pi/2]$. The expression reduces to a quadratic in $t$ with minimum $\\\\frac{\\\\pi^3}{32}$ at $t = \\\\pi/4$ and maximum $\\\\frac{7\\\\pi^3}{8}$ at $t = -\\\\pi/2$.",
+          "Incorrect: Range bounds miscalculated by not testing boundary $t = -\\\\pi/2$.",
+          "Incorrect: Lower bound cannot be zero since cubes of inverse values do not cancel to zero.",
+          "Incorrect: Upper bound incorrectly assumed to occur at $x = 0$."
+        ],
+        "fullExplanation": "Let $a = \\\\sin^{-1}x$ and $b = \\\\cos^{-1}x$. We know that $a + b = \\\\frac{\\\\pi}{2}$ for $x \\\\in [-1, 1]$.\\nUsing the algebraic identity $a^3 + b^3 = (a + b)^3 - 3ab(a + b)$:\\n$$f(x) = \\\\left(\\\\frac{\\\\pi}{2}\\\\right)^3 - 3ab\\\\left(\\\\frac{\\\\pi}{2}\\\\right) = \\\\frac{\\\\pi^3}{8} - \\\\frac{3\\\\pi}{2}ab$$\\nSince $b = \\\\frac{\\\\pi}{2} - a$:\\n$$ab = a\\\\left(\\\\frac{\\\\pi}{2} - a\\\\right) = -\\\\left(a^2 - \\\\frac{\\\\pi}{2}a\\\\right) = -\\\\left(a - \\\\frac{\\\\pi}{4}\\\\right)^2 + \\\\frac{\\\\pi^2}{16}$$\\nSince $x \\\\in [-1, 1]$, $a = \\\\sin^{-1}x \\\\in \\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right]$.\\n- The maximum of $ab$ occurs at $a = \\\\frac{\\\\pi}{4}$, giving $(ab)_{\\\\max} = \\\\frac{\\\\pi^2}{16}$.\\n- The minimum of $ab$ occurs at the boundary furthest from $\\\\frac{\\\\pi}{4}$, which is $a = -\\\\frac{\\\\pi}{2}$:\\n  $$(ab)_{\\\\min} = -\\\\frac{\\\\pi}{2}\\\\left(\\\\frac{\\\\pi}{2} - \\\\left(-\\\\frac{\\\\pi}{2}\\\\right)\\\\right) = -\\\\frac{\\\\pi}{2}(\\\\pi) = -\\\\frac{\\\\pi^2}{2}$$\\nNow substituting into $f(x)$:\\n- Minimum of $f(x)$ (when $ab$ is maximized):\\n  $$f_{\\\\min} = \\\\frac{\\\\pi^3}{8} - \\\\frac{3\\\\pi}{2}\\\\left(\\\\frac{\\\\pi^2}{16}\\\\right) = \\\\frac{\\\\pi^3}{8} - \\\\frac{3\\\\pi^3}{32} = \\\\frac{\\\\pi^3}{32}$$\\n- Maximum of $f(x)$ (when $ab$ is minimized):\\n  $$f_{\\\\max} = \\\\frac{\\\\pi^3}{8} - \\\\frac{3\\\\pi}{2}\\\\left(-\\\\frac{\\\\pi^2}{2}\\\\right) = \\\\frac{\\\\pi^3}{8} + \\\\frac{3\\\\pi^3}{4} = \\\\frac{7\\\\pi^3}{8}$$\\nThus, the range is $\\\\left[\\\\frac{\\\\pi^3}{32}, \\\\frac{7\\\\pi^3}{8}\\\\right]$."
+      },
+      {
+        "question": "What is the value of $\\\\cot\\\\left(\\\\sum_{n=1}^{19} \\\\cot^{-1}\\\\left(1 + \\\\sum_{k=1}^n 2k\\\\right)\\\\right)$?",
+        "options": [
+          "$\\\\frac{21}{19}$",
+          "$\\\\frac{19}{21}$",
+          "$\\\\frac{20}{19}$",
+          "$\\\\frac{19}{20}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\sum_{k=1}^n 2k = n(n+1)$. The sum telescopes to $\\\\tan^{-1}(20) - \\\\tan^{-1}(1) = \\\\tan^{-1}(19/21)$. Therefore, the cotangent of this angle is $21/19$.",
+          "Incorrect: This is the tangent of the resulting angle, not the cotangent.",
+          "Incorrect: Arithmetic error in numerator.",
+          "Incorrect: Reciprocal of an erroneous tangent."
+        ],
+        "fullExplanation": "Step 1: Simplify the inner summation:\\n$$\\\\sum_{k=1}^n 2k = 2 \\\\cdot \\\\frac{n(n + 1)}{2} = n(n + 1)$$\\nSo the term is $\\\\cot^{-1}(1 + n(n + 1))$.\\n\\nStep 2: Convert to $\\\\tan^{-1}$:\\nSince $1 + n(n + 1) > 0$, we have:\\n$$\\\\cot^{-1}(1 + n(n + 1)) = \\\\tan^{-1}\\\\left(\\\\frac{1}{1 + n(n + 1)}\\\\right) = \\\\tan^{-1}(n + 1) - \\\\tan^{-1}(n)$$\\n\\nStep 3: Evaluate the sum from $n = 1$ to $19$:\\n$$\\\\sum_{n=1}^{19} [\\\\tan^{-1}(n + 1) - \\\\tan^{-1}(n)] = \\\\tan^{-1}(20) - \\\\tan^{-1}(1)$$\\n$$= \\\\tan^{-1}\\\\left(\\\\frac{20 - 1}{1 + 20(1)}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{19}{21}\\\\right)$$\\n\\nStep 4: Compute the cotangent of this angle:\\n$$\\\\cot\\\\left(\\\\tan^{-1}\\\\left(\\\\frac{19}{21}\\\\right)\\\\right) = \\\\frac{21}{19}$$"
+      },
+      {
+        "question": "If $\\\\sin^{-1}x + \\\\sin^{-1}y + \\\\sin^{-1}z = \\\\frac{3\\\\pi}{2}$, then the value of $x^{100} + y^{100} + z^{100} - \\\\frac{9}{x^{101} + y^{101} + z^{101}}$ is:",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "3"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Since $\\\\sin^{-1}t \\\\le \\\\frac{\\\\pi}{2}$, the sum equals $3\\\\pi/2$ if and only if $x = y = z = 1$. The expression becomes $1 + 1 + 1 - \\\\frac{9}{1+1+1} = 3 - 3 = 0$.",
+          "Incorrect: Calculation error in fraction evaluation.",
+          "Incorrect: Sign error in subtraction.",
+          "Incorrect: Evaluated only the first three terms."
+        ],
+        "fullExplanation": "For any real $t \\\\in [-1, 1]$, the maximum value of $\\\\sin^{-1}t$ is $\\\\frac{\\\\pi}{2}$.\\nGiven:\\n$$\\\\sin^{-1}x + \\\\sin^{-1}y + \\\\sin^{-1}z = \\\\frac{3\\\\pi}{2}$$\\nSince each term satisfies $\\\\sin^{-1}t \\\\le \\\\frac{\\\\pi}{2}$, their sum can attain $\\\\frac{3\\\\pi}{2}$ if and only if each term achieves its maximum value simultaneously:\\n$$\\\\sin^{-1}x = \\\\frac{\\\\pi}{2} \\\\implies x = 1$$\\n$$\\\\sin^{-1}y = \\\\frac{\\\\pi}{2} \\\\implies y = 1$$\\n$$\\\\sin^{-1}z = \\\\frac{\\\\pi}{2} \\\\implies z = 1$$\\nNow, substitute $x = y = z = 1$ into the given expression:\\n$$x^{100} + y^{100} + z^{100} - \\\\frac{9}{x^{101} + y^{101} + z^{101}} = 1^{100} + 1^{100} + 1^{100} - \\\\frac{9}{1^{101} + 1^{101} + 1^{101}}$$\\n$$= 1 + 1 + 1 - \\\\frac{9}{3} = 3 - 3 = 0$$"
+      },
+      {
+        "question": "If $\\\\cos^{-1}x + \\\\cos^{-1}y + \\\\cos^{-1}z = 3\\\\pi$, then the value of $xy + yz + zx$ is:",
+        "options": [
+          "3",
+          "-3",
+          "1",
+          "-1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Since $\\\\cos^{-1}t \\\\le \\\\pi$, the sum equals $3\\\\pi$ if and only if $x = y = z = -1$. Then $xy + yz + zx = (-1)(-1) + (-1)(-1) + (-1)(-1) = 3$.",
+          "Incorrect: Sign error in multiplying two negative numbers.",
+          "Incorrect: Only computed a single product.",
+          "Incorrect: Misidentified roots as alternating signs."
+        ],
+        "fullExplanation": "For any $t \\\\in [-1, 1]$, the range of the principal branch of $\\\\cos^{-1}t$ is $[0, \\\\pi]$.\\nThus, the maximum possible value of $\\\\cos^{-1}t$ is $\\\\pi$.\\nGiven:\\n$$\\\\cos^{-1}x + \\\\cos^{-1}y + \\\\cos^{-1}z = 3\\\\pi$$\\nThis equality can hold if and only if each individual term achieves its maximum value:\\n$$\\\\cos^{-1}x = \\\\pi \\\\implies x = -1$$\\n$$\\\\cos^{-1}y = \\\\pi \\\\implies y = -1$$\\n$$\\\\cos^{-1}z = \\\\pi \\\\implies z = -1$$\\nTherefore:\\n$$xy + yz + zx = (-1)(-1) + (-1)(-1) + (-1)(-1) = 1 + 1 + 1 = 3$$"
+      },
+      {
+        "question": "Simplify the expression: $f(x) = \\\\sin\\\\left(\\\\cot^{-1}\\\\left(\\\\cos(\\\\tan^{-1}x)\\\\right)\\\\right)$ for $x > 0$.",
+        "options": [
+          "$\\\\sqrt{\\\\frac{x^2 + 1}{x^2 + 2}}$",
+          "$\\\\sqrt{\\\\frac{x^2 + 2}{x^2 + 1}}$",
+          "$\\\\frac{x}{\\\\sqrt{x^2 + 2}}$",
+          "$\\\\frac{1}{\\\\sqrt{x^2 + 1}}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Let $\\\\theta = \\\\tan^{-1}x \\\\implies \\\\cos\\\\theta = \\\\frac{1}{\\\\sqrt{1+x^2}}$. Then $\\\\cot\\\\phi = \\\\frac{1}{\\\\sqrt{1+x^2}} \\\\implies \\\\sin\\\\phi = \\\\frac{1}{\\\\sqrt{1 + \\\\cot^2\\\\phi}} = \\\\sqrt{\\\\frac{x^2+1}{x^2+2}}$.",
+          "Incorrect: Inverted fraction inside the square root.",
+          "Incorrect: Numerator replaced with $x$.",
+          "Incorrect: Missed the outer sine operation on the cotangent angle."
+        ],
+        "fullExplanation": "Let $\\\\theta = \\\\tan^{-1}x$. Then $\\\\tan\\\\theta = x$.\\nConstructing a right-angled triangle with opposite side $x$ and adjacent side $1$, the hypotenuse is $\\\\sqrt{1 + x^2}$.\\nThus:\\n$$\\\\cos(\\\\tan^{-1}x) = \\\\cos\\\\theta = \\\\frac{1}{\\\\sqrt{1 + x^2}}$$\\nNow let $\\\\phi = \\\\cot^{-1}\\\\left(\\\\frac{1}{\\\\sqrt{1 + x^2}}\\\\right)$, which means:\\n$$\\\\cot\\\\phi = \\\\frac{1}{\\\\sqrt{1 + x^2}}$$\\nUsing the standard trigonometric identity $\\\\sin\\\\phi = \\\\frac{1}{\\\\csc\\\\phi} = \\\\frac{1}{\\\\sqrt{1 + \\\\cot^2\\\\phi}}$:\\n$$\\\\sin\\\\phi = \\\\frac{1}{\\\\sqrt{1 + \\\\left(\\\\frac{1}{\\\\sqrt{1 + x^2}}\\\\right)^2}} = \\\\frac{1}{\\\\sqrt{1 + \\\\frac{1}{1 + x^2}}} = \\\\frac{1}{\\\\sqrt{\\\\frac{x^2 + 2}{x^2 + 1}}} = \\\\sqrt{\\\\frac{x^2 + 1}{x^2 + 2}}$$"
+      },
+      {
+        "question": "If $\\\\tan^{-1}x + \\\\tan^{-1}y = \\\\frac{4\\\\pi}{5}$, then what is the value of $\\\\cot^{-1}x + \\\\cot^{-1}y$?",
+        "options": [
+          "$\\\\frac{\\\\pi}{5}$",
+          "$\\\\frac{2\\\\pi}{5}$",
+          "$\\\\frac{3\\\\pi}{5}$",
+          "$\\\\frac{\\\\pi}{10}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Using $\\\\tan^{-1}t + \\\\cot^{-1}t = \\\\frac{\\\\pi}{2}$ for both variables gives $(\\\\cot^{-1}x + \\\\cot^{-1}y) = \\\\pi - \\\\frac{4\\\\pi}{5} = \\\\frac{\\\\pi}{5}$.",
+          "Incorrect: Subtracted from $\\\\frac{\\\\pi}{2}$ instead of $\\\\pi$.",
+          "Incorrect: Calculation error in fraction subtraction.",
+          "Incorrect: Divided the result by 2 unnecessarily."
+        ],
+        "fullExplanation": "We know that for any real numbers $x$ and $y$:\\n$$\\\\tan^{-1}x + \\\\cot^{-1}x = \\\\frac{\\\\pi}{2}$$\\n$$\\\\tan^{-1}y + \\\\cot^{-1}y = \\\\frac{\\\\pi}{2}$$\\nAdding both equations:\\n$$(\\\\tan^{-1}x + \\\\tan^{-1}y) + (\\\\cot^{-1}x + \\\\cot^{-1}y) = \\\\frac{\\\\pi}{2} + \\\\frac{\\\\pi}{2} = \\\\pi$$\\nSubstitute the given value $\\\\tan^{-1}x + \\\\tan^{-1}y = \\\\frac{4\\\\pi}{5}$:\\n$$\\\\frac{4\\\\pi}{5} + (\\\\cot^{-1}x + \\\\cot^{-1}y) = \\\\pi$$\\n$$\\\\cot^{-1}x + \\\\cot^{-1}y = \\\\pi - \\\\frac{4\\\\pi}{5} = \\\\frac{\\\\pi}{5}$$"
+      },
+      {
+        "question": "How many real solutions exist for the equation: $\\\\cos^{-1}x + \\\\cos^{-1}(2x) = \\\\pi$?",
+        "options": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\cos^{-1}(2x) = \\\\pi - \\\\cos^{-1}x = \\\\cos^{-1}(-x) \\\\implies 2x = -x \\\\implies x = 0$. Since $x = 0 \\\\in [-1/2, 1/2]$, it is the unique real solution.",
+          "Incorrect: Missed that $2x = -x$ yields only $x = 0$.",
+          "Incorrect: Failed to check that $x = 0$ is a valid domain element.",
+          "Incorrect: A linear relation in $x$ cannot produce 3 solutions."
+        ],
+        "fullExplanation": "The domain of $\\\\cos^{-1}x$ is $[-1, 1]$, and the domain of $\\\\cos^{-1}(2x)$ is $[-1/2, 1/2]$.\\nTheir common domain is $x \\\\in [-1/2, 1/2]$.\\nNow, rewrite the equation:\\n$$\\\\cos^{-1}(2x) = \\\\pi - \\\\cos^{-1}x$$\\nUsing the identity $\\\\pi - \\\\cos^{-1}x = \\\\cos^{-1}(-x)$:\\n$$\\\\cos^{-1}(2x) = \\\\cos^{-1}(-x)$$\\nSince $\\\\cos^{-1}$ is a strictly decreasing one-to-one function on its domain:\\n$$2x = -x \\\\implies 3x = 0 \\\\implies x = 0$$\\nCheck $x = 0$:\\n$$\\\\cos^{-1}(0) + \\\\cos^{-1}(0) = \\\\frac{\\\\pi}{2} + \\\\frac{\\\\pi}{2} = \\\\pi$$\\nThis is valid and lies within $[-1/2, 1/2]$.\\nThus, there is exactly 1 real solution."
+      },
+      {
+        "question": "If $\\\\alpha = \\\\sin^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right) + \\\\sin^{-1}\\\\left(\\\\frac{1}{3}\\\\right)$ and $\\\\beta = \\\\cos^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right) + \\\\cos^{-1}\\\\left(\\\\frac{1}{3}\\\\right)$, then $\\\\alpha + \\\\beta$ is equal to:",
+        "options": [
+          "$\\\\pi$",
+          "$\\\\frac{\\\\pi}{2}$",
+          "$\\\\frac{3\\\\pi}{2}$",
+          "$2\\\\pi$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Grouping corresponding terms gives $[\\\\sin^{-1}(\\\\sqrt{3}/2) + \\\\cos^{-1}(\\\\sqrt{3}/2)] + [\\\\sin^{-1}(1/3) + \\\\cos^{-1}(1/3)] = \\\\frac{\\\\pi}{2} + \\\\frac{\\\\pi}{2} = \\\\pi$.",
+          "Incorrect: Evaluated only one complementary pair.",
+          "Incorrect: Calculation error in summing angles.",
+          "Incorrect: Doubled the correct value."
+        ],
+        "fullExplanation": "Rearranging the sum $\\\\alpha + \\\\beta$:\\n$$\\\\alpha + \\\\beta = \\\\left[\\\\sin^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right) + \\\\sin^{-1}\\\\left(\\\\frac{1}{3}\\\\right)\\\\right] + \\\\left[\\\\cos^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right) + \\\\cos^{-1}\\\\left(\\\\frac{1}{3}\\\\right)\\\\right]$$\\nGrouping the terms with identical arguments:\\n$$\\\\alpha + \\\\beta = \\\\left[\\\\sin^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right) + \\\\cos^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right)\\\\right] + \\\\left[\\\\sin^{-1}\\\\left(\\\\frac{1}{3}\\\\right) + \\\\cos^{-1}\\\\left(\\\\frac{1}{3}\\\\right)\\\\right]$$\\nUsing the complementary angle identity $\\\\sin^{-1}x + \\\\cos^{-1}x = \\\\frac{\\\\pi}{2}$ for each bracket:\\n$$\\\\alpha + \\\\beta = \\\\frac{\\\\pi}{2} + \\\\frac{\\\\pi}{2} = \\\\pi$$"
+      },
+      {
+        "question": "What is the exact value of $\\\\tan\\\\left(\\\\frac{1}{2}\\\\cos^{-1}\\\\frac{\\\\sqrt{5}}{3}\\\\right)$?",
+        "options": [
+          "$\\\\frac{3 - \\\\sqrt{5}}{2}$",
+          "$\\\\frac{3 + \\\\sqrt{5}}{2}$",
+          "$\\\\frac{\\\\sqrt{5} - 1}{2}$",
+          "$\\\\frac{2}{3 - \\\\sqrt{5}}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Let $\\\\theta = \\\\cos^{-1}(\\\\sqrt{5}/3)$. Then $\\\\tan(\\\\theta/2) = \\\\sqrt{\\\\frac{1 - \\\\cos\\\\theta}{1 + \\\\cos\\\\theta}} = \\\\sqrt{\\\\frac{3 - \\\\sqrt{5}}{3 + \\\\sqrt{5}}} = \\\\frac{3 - \\\\sqrt{5}}{2}$.",
+          "Incorrect: Angle lies in the first quadrant, so tangent must be $< 1$; $\\\\frac{3+\\\\sqrt{5}}{2} > 1$.",
+          "Incorrect: Confused with the golden ratio conjugate.",
+          "Incorrect: This is the cotangent, not tangent."
+        ],
+        "fullExplanation": "Let $\\\\theta = \\\\cos^{-1}\\\\left(\\\\frac{\\\\sqrt{5}}{3}\\\\right)$.\\nSince $\\\\frac{\\\\sqrt{5}}{3} > 0$, $\\\\theta \\\\in \\\\left(0, \\\\frac{\\\\pi}{2}\\\\right)$, which implies $\\\\frac{\\\\theta}{2} \\\\in \\\\left(0, \\\\frac{\\\\pi}{4}\\\\right)$. Thus $\\\\tan\\\\left(\\\\frac{\\\\theta}{2}\\\\right) > 0$.\\nUsing the half-angle formula for tangent:\\n$$\\\\tan\\\\left(\\\\frac{\\\\theta}{2}\\\\right) = \\\\sqrt{\\\\frac{1 - \\\\cos\\\\theta}{1 + \\\\cos\\\\theta}}$$\\nSubstitute $\\\\cos\\\\theta = \\\\frac{\\\\sqrt{5}}{3}$:\\n$$\\\\tan\\\\left(\\\\frac{\\\\theta}{2}\\\\right) = \\\\sqrt{\\\\frac{1 - \\\\frac{\\\\sqrt{5}}{3}}{1 + \\\\frac{\\\\sqrt{5}}{3}}} = \\\\sqrt{\\\\frac{3 - \\\\sqrt{5}}{3 + \\\\sqrt{5}}}$$\\nRationalizing the denominator inside the square root:\\n$$\\\\sqrt{\\\\frac{(3 - \\\\sqrt{5})^2}{(3 + \\\\sqrt{5})(3 - \\\\sqrt{5})}} = \\\\sqrt{\\\\frac{(3 - \\\\sqrt{5})^2}{9 - 5}} = \\\\sqrt{\\\\frac{(3 - \\\\sqrt{5})^2}{4}} = \\\\frac{3 - \\\\sqrt{5}}{2}$$"
+      },
+      {
+        "question": "If $2\\\\tan^{-1}(\\\\cos x) = \\\\tan^{-1}(2\\\\csc x)$, then what is the value of $x$ in the interval $(0, \\\\pi)$?",
+        "options": [
+          "$\\\\frac{\\\\pi}{4}$",
+          "$\\\\frac{\\\\pi}{3}$",
+          "$\\\\frac{\\\\pi}{6}$",
+          "$\\\\frac{3\\\\pi}{4}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Using $2\\\\tan^{-1}u = \\\\tan^{-1}\\\\left(\\\\frac{2u}{1-u^2}\\\\right)$ gives $\\\\frac{2\\\\cos x}{\\\\sin^2 x} = \\\\frac{2}{\\\\sin x} \\\\implies \\\\cos x = \\\\sin x \\\\implies x = \\\\pi/4$.",
+          "Incorrect: For $x = \\\\pi/3$, $\\\\cos x \\\\neq \\\\sin x$.",
+          "Incorrect: For $x = \\\\pi/6$, $\\\\cos x \\\\neq \\\\sin x$.",
+          "Incorrect: In $(0, \\\\pi)$, $\\\\sin(3\\\\pi/4) > 0$ while $\\\\cos(3\\\\pi/4) < 0$, which yields mismatched signs."
+        ],
+        "fullExplanation": "Given $2\\\\tan^{-1}(\\\\cos x) = \\\\tan^{-1}(2\\\\csc x)$ for $x \\\\in (0, \\\\pi)$.\\nUsing the double-angle identity $2\\\\tan^{-1}A = \\\\tan^{-1}\\\\left(\\\\frac{2A}{1 - A^2}\\\\right)$ with $A = \\\\cos x$ (valid since $|\cot x| \\\\le 1$ when $x \\\\neq 0, \\\\pi$):\\n$$\\\\tan^{-1}\\\\left(\\\\frac{2\\\\cos x}{1 - \\\\cos^2 x}\\\\right) = \\\\tan^{-1}(2\\\\csc x)$$\\nSince $1 - \\\\cos^2 x = \\\\sin^2 x$ and $\\\\csc x = \\\\frac{1}{\\\\sin x}$:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{2\\\\cos x}{\\\\sin^2 x}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{2}{\\\\sin x}\\\\right)$$\\nEquating arguments:\\n$$\\\\frac{2\\\\cos x}{\\\\sin^2 x} = \\\\frac{2}{\\\\sin x}$$\\nSince $x \\\\in (0, \\\\pi)$, $\\\\sin x \\\\neq 0$. Multiplying both sides by $\\\\frac{\\\\sin^2 x}{2}$:\\n$$\\\\cos x = \\\\sin x \\\\implies \\\\tan x = 1$$\\nIn the interval $(0, \\\\pi)$, the only solution to $\\\\tan x = 1$ is:\\n$$x = \\\\frac{\\\\pi}{4}$$"
+      },
+      {
+        "question": "What is the domain of the real-valued function $f(x) = \\\\sqrt{3 - x} + \\\\sin^{-1}\\\\left(\\\\frac{3 - 2x}{5}\\\\right)$?",
+        "options": [
+          "$[-1, 3]$",
+          "$[-1, 4]$",
+          "$(-\\infty, 3]$",
+          "$[-1, \\\\infty)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $\\\\sin^{-1}$ requires $-1 \\\\le \\\\frac{3-2x}{5} \\\\le 1 \\\\implies -1 \\\\le x \\\\le 4$. The square root requires $3 - x \\\\ge 0 \\\\implies x \\\\le 3$. Intersection is $[-1, 3]$.",
+          "Incorrect: Fails to restrict $x \\\\le 3$ for the square root term.",
+          "Incorrect: Ignores the lower bound from the inverse sine.",
+          "Incorrect: Misses the upper bound from the square root."
+        ],
+        "fullExplanation": "For $f(x)$ to be defined over real numbers, both terms must be simultaneously valid:\\n1. For $\\\\sqrt{3 - x}$:\\n$$3 - x \\\\ge 0 \\\\implies x \\\\le 3 \\\\implies x \\\\in (-\\infty, 3]$$\\n2. For $\\\\sin^{-1}\\\\left(\\\\frac{3 - 2x}{5}\\\\right)$:\\n$$-1 \\\\le \\\\frac{3 - 2x}{5} \\\\le 1$$\\n$$-5 \\\\le 3 - 2x \\\\le 5$$\\nSubtract 3:\\n$$-8 \\\\le -2x \\\\le 2$$\\nDivide by $-2$ (reversing inequalities):\\n$$-1 \\\\le x \\\\le 4 \\\\implies x \\\\in [-1, 4]$$\\nTaking the intersection of both intervals:\\n$$(-\\infty, 3] \\\\cap [-1, 4] = [-1, 3]$$"
+      },
+      {
+        "question": "What is the value of $\\\\sin^{-1}(\\\\sin 10)$, where $10$ is measured in radians?",
+        "options": [
+          "$3\\\\pi - 10$",
+          "$10 - 3\\\\pi$",
+          "$10 - 2\\\\pi$",
+          "$4\\\\pi - 10$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Since $3\\\\pi \\\\approx 9.42$, $10 \\\\in \\\\left[3\\\\pi - \\\\frac{\\\\pi}{2}, 3\\\\pi + \\\\frac{\\\\pi}{2}\\\\right]$. On this interval, $\\\\sin^{-1}(\\\\sin x) = 3\\\\pi - x = 3\\\\pi - 10$.",
+          "Incorrect: $10 - 3\\\\pi \\\\approx 0.58$, but $\\\\sin(10 - 3\\\\pi) = -\\\\sin 10$, giving the opposite sign.",
+          "Incorrect: Does not bring the value into the principal branch $[-\\\\pi/2, \\\\pi/2]$.",
+          "Incorrect: $4\\\\pi - 10 \\\\approx 2.57$, which lies outside the range $[-\\\\pi/2, \\\\pi/2]$."
+        ],
+        "fullExplanation": "Recall that $\\\\sin^{-1}(\\\\sin x)$ must lie in $\\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right] \\\\approx [-1.57, 1.57]$.\\nLet us estimate the closest multiple of $\\\\pi$ to $10$:\\n$$\\\\pi \\\\approx 3.1416 \\\\implies 3\\\\pi \\\\approx 9.4248$$\\nThe difference is $10 - 3\\\\pi \\\\approx 10 - 9.4248 = 0.5752$, which lies in $\\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right)$.\\nNow check the sine function:\\n$$\\\\sin(3\\\\pi - 10) = \\\\sin(10)$$\\nSince $3\\\\pi - 10 \\\\approx -0.5752 \\\\in \\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right]$ and $\\\\sin(3\\\\pi - 10) = \\\\sin 10$:\\n$$\\\\sin^{-1}(\\\\sin 10) = 3\\\\pi - 10$$"
+      },
+      {
+        "question": "What is the value of $\\\\cos^{-1}(\\\\cos 10)$, where $10$ is measured in radians?",
+        "options": [
+          "$4\\\\pi - 10$",
+          "$10 - 3\\\\pi$",
+          "$3\\\\pi - 10$",
+          "$10 - 4\\\\pi$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Since $10 \\\\in [3\\\\pi, 4\\\\pi]$ ($3\\\\pi \\\\approx 9.42, 4\\\\pi \\\\approx 12.57$), $\\\\cos^{-1}(\\\\cos x) = 4\\\\pi - x = 4\\\\pi - 10 \\\\approx 2.57 \\\\in [0, \\\\pi]$.",
+          "Incorrect: Lies outside the range $[0, \\\\pi]$ because $\\\\cos(10 - 3\\\\pi) = -\\\\cos 10$.",
+          "Incorrect: Value is negative, whereas range of $\\\\cos^{-1}$ is $[0, \\\\pi]$.",
+          "Incorrect: $10 - 4\\\\pi$ is negative and outside $[0, \\\\pi]$."
+        ],
+        "fullExplanation": "The principal range of $\\\\cos^{-1}$ is $[0, \\\\pi] \\\\approx [0, 3.1416]$.\\nEstimate multiples of $\\\\pi$ near 10:\\n$$3\\\\pi \\\\approx 9.4248, \\\\quad 4\\\\pi \\\\approx 12.5664$$\\nSince $10 \\\\in [3\\\\pi, 4\\\\pi]$, the line segment for $\\\\cos^{-1}(\\\\cos x)$ on $[3\\\\pi, 4\\\\pi]$ has equation:\\n$$y = 4\\\\pi - x$$\\nEvaluating at $x = 10$:\\n$$4\\\\pi - 10 \\\\approx 12.5664 - 10 = 2.5664 \\\\in [0, \\\\pi]$$\\nFurthermore:\\n$$\\\\cos(4\\\\pi - 10) = \\\\cos(-10) = \\\\cos(10)$$\\nTherefore:\\n$$\\\\cos^{-1}(\\\\cos 10) = 4\\\\pi - 10$$"
+      },
+      {
+        "question": "Evaluate the infinite sum: $S = \\\\sum_{n=1}^\\\\infty \\\\cot^{-1}(2n^2)$.",
+        "options": [
+          "$\\\\frac{\\\\pi}{4}$",
+          "$\\\\frac{\\\\pi}{2}$",
+          "$\\\\frac{3\\\\pi}{4}$",
+          "$\\\\frac{\\\\pi}{3}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Rewriting as $\\\\tan^{-1}(2n+1) - \\\\tan^{-1}(2n-1)$ telescopes to $\\\\lim_{N\\\\to\\\\infty}\\\\tan^{-1}(2N+1) - \\\\tan^{-1}(1) = \\\\frac{\\\\pi}{2} - \\\\frac{\\\\pi}{4} = \\\\frac{\\\\pi}{4}$.",
+          "Incorrect: Missing the subtracted boundary term $\\\\tan^{-1}(1)$.",
+          "Incorrect: Calculation error in telescoping terms.",
+          "Incorrect: Mistaken angle conversion."
+        ],
+        "fullExplanation": "Step 1: Convert the general term to inverse tangent:\\n$$\\\\cot^{-1}(2n^2) = \\\\tan^{-1}\\\\left(\\\\frac{1}{2n^2}\\\\right)$$\\nStep 2: Multiply numerator and denominator by 2 to create telescoping factors:\\n$$\\\\frac{1}{2n^2} = \\\\frac{2}{4n^2} = \\\\frac{(2n + 1) - (2n - 1)}{1 + (4n^2 - 1)} = \\\\frac{(2n + 1) - (2n - 1)}{1 + (2n + 1)(2n - 1)}$$\\nTherefore:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{1}{2n^2}\\\\right) = \\\\tan^{-1}(2n + 1) - \\\\tan^{-1}(2n - 1)$$\\n\\nStep 3: Write out the partial sum $S_N$:\\n$$S_N = \\\\sum_{n=1}^N [\\\\tan^{-1}(2n + 1) - \\\\tan^{-1}(2n - 1)]$$\\n$$= [\\\\tan^{-1}(3) - \\\\tan^{-1}(1)] + [\\\\tan^{-1}(5) - \\\\tan^{-1}(3)] + \\\\dots + [\\\\tan^{-1}(2N + 1) - \\\\tan^{-1}(2N - 1)]$$\\nBy telescoping cancellation:\\n$$S_N = \\\\tan^{-1}(2N + 1) - \\\\tan^{-1}(1)$$\\n\\nStep 4: Take the limit as $N \\\\to \\\\infty$:\\n$$S = \\\\lim_{N \\\\to \\\\infty} [\\\\tan^{-1}(2N + 1) - \\\\tan^{-1}(1)] = \\\\frac{\\\\pi}{2} - \\\\frac{\\\\pi}{4} = \\\\frac{\\\\pi}{4}$$"
+      },
+      {
+        "question": "Simplify the expression $\\\\tan^{-1}\\\\left(\\\\frac{x}{\\\\sqrt{a^2 - x^2}}\\\\right)$ for $|x| < a$ ($a > 0$).",
+        "options": [
+          "$\\\\sin^{-1}\\\\left(\\\\frac{x}{a}\\\\right)$",
+          "$\\\\cos^{-1}\\\\left(\\\\frac{x}{a}\\\\right)$",
+          "$\\\\tan^{-1}\\\\left(\\\\frac{x}{a}\\\\right)$",
+          "$\\\\sec^{-1}\\\\left(\\\\frac{x}{a}\\\\right)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Substituting $x = a\\\\sin\\\\theta$ gives $\\\\tan^{-1}(\\\\tan\\\\theta) = \\\\theta = \\\\sin^{-1}(x/a)$.",
+          "Incorrect: Would require the numerator and denominator to represent cosine components.",
+          "Incorrect: Missed the square root in the denominator.",
+          "Incorrect: Invalid inverse trigonometric relation."
+        ],
+        "fullExplanation": "Let $x = a\\\\sin\\\\theta$, where $\\\\theta \\\\in \\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right)$.\\nThen $\\\\sin\\\\theta = \\\\frac{x}{a} \\\\implies \\\\theta = \\\\sin^{-1}\\\\left(\\\\frac{x}{a}\\\\right)$.\\nNow substitute $x = a\\\\sin\\\\theta$ into the given expression:\\n$$\\\\frac{x}{\\\\sqrt{a^2 - x^2}} = \\\\frac{a\\\\sin\\\\theta}{\\\\sqrt{a^2 - a^2\\\\sin^2\\\\theta}} = \\\\frac{a\\\\sin\\\\theta}{a\\\\sqrt{1 - \\\\sin^2\\\\theta}} = \\\\frac{\\\\sin\\\\theta}{\\\\cos\\\\theta} = \\\\tan\\\\theta$$\\n(since $\\\\cos\\\\theta > 0$ for $\\\\theta \\\\in \\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right)$).\\nTherefore:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{x}{\\\\sqrt{a^2 - x^2}}\\\\right) = \\\\tan^{-1}(\\\\tan\\\\theta) = \\\\theta = \\\\sin^{-1}\\\\left(\\\\frac{x}{a}\\\\right)$$"
+      },
+      {
+        "question": "What is the domain of the function $f(x) = \\\\sin^{-1}\\\\left(\\\\log_2\\\\left(\\\\frac{x^2}{2}\\\\right)\\\\right)$?",
+        "options": [
+          "$[-2, -1] \\\\cup [1, 2]$",
+          "$[-2, 2] \\\\setminus \\\\{0\\\\}$",
+          "$[1, 2]$",
+          "$[-4, -1] \\\\cup [1, 4]$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: For $\\\\sin^{-1}(u)$, $-1 \\\\le \\\\log_2(x^2/2) \\\\le 1 \\\\implies 1/2 \\\\le x^2/2 \\\\le 2 \\\\implies 1 \\\\le x^2 \\\\le 4 \\\\implies x \\\\in [-2, -1] \\\\cup [1, 2]$.",
+          "Incorrect: Includes values where $x^2 < 1$ making $\\\\log_2(x^2/2) < -1$.",
+          "Incorrect: Misses the symmetric negative branch.",
+          "Incorrect: Exponents of 2 miscalculated."
+        ],
+        "fullExplanation": "For $f(x) = \\\\sin^{-1}\\\\left(\\\\log_2\\\\left(\\\\frac{x^2}{2}\\\\right)\\\\right)$ to be defined:\\n1. The argument of the logarithm must be positive:\\n$$\\\\frac{x^2}{2} > 0 \\\\implies x \\\\neq 0$$\\n2. The argument of $\\\\sin^{-1}$ must lie in $[-1, 1]$:\\n$$-1 \\\\le \\\\log_2\\\\left(\\\\frac{x^2}{2}\\\\right) \\\\le 1$$\\nSince the base $2 > 1$, we raise 2 to these powers without flipping inequalities:\\n$$2^{-1} \\\\le \\\\frac{x^2}{2} \\\\le 2^1$$\\n$$\\\\frac{1}{2} \\\\le \\\\frac{x^2}{2} \\\\le 2$$\\nMultiply by 2:\\n$$1 \\\\le x^2 \\\\le 4$$\\nTaking the square root for real $x$:\\n$$x^2 \\\\ge 1 \\\\implies x \\\\in (-\\infty, -1] \\\\cup [1, \\\\infty)$$\\n$$x^2 \\\\le 4 \\\\implies x \\\\in [-2, 2]$$\\nIntersecting both sets:\\n$$x \\\\in [-2, -1] \\\\cup [1, 2]$$"
+      },
+      {
+        "question": "If $x > 0$, $y > 0$, and $xy > 1$, then $\\\\tan^{-1}x + \\\\tan^{-1}y$ is identically equal to:",
+        "options": [
+          "$\\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$",
+          "$\\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$",
+          "$\\\\frac{\\\\pi}{2} + \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$",
+          "$\\\\pi - \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Because $x, y > 0$ and $xy > 1$, both angles lie in $(0, \\\\pi/2)$ and their sum exceeds $\\\\pi/2$, requiring the addition of $\\\\pi$ to restore the principal range of $\\\\tan^{-1}$.",
+          "Incorrect: This formula holds only when $xy < 1$.",
+          "Incorrect: The shift is by $\\\\pi$, not $\\\\pi/2$.",
+          "Incorrect: Sign error in front of $\\\\tan^{-1}$."
+        ],
+        "fullExplanation": "Let $\\\\alpha = \\\\tan^{-1}x$ and $\\\\beta = \\\\tan^{-1}y$. Since $x > 0, y > 0$, we have $\\\\alpha, \\\\beta \\\\in \\\\left(0, \\\\frac{\\\\pi}{2}\\\\right)$.\\nThus, the sum satisfies $\\\\alpha + \\\\beta \\\\in (0, \\\\pi)$.\\nSince $xy > 1$:\\n$$\\\\cos(\\\\alpha + \\\\beta) = \\\\cos\\\\alpha\\\\cos\\\\beta(1 - \\\\tan\\\\alpha\\\\tan\\\\beta) = \\\\cos\\\\alpha\\\\cos\\\\beta(1 - xy) < 0$$\\nTherefore, $\\\\alpha + \\\\beta$ lies in Quadrant II, i.e., $\\\\alpha + \\\\beta \\\\in \\\\left(\\\\frac{\\\\pi}{2}, \\\\pi\\\\right)$.\\nHowever, the principal branch of $\\\\tan^{-1}$ yields values in $\\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right)$.\\nTaking the tangent of both sides:\\n$$\\\\tan(\\\\alpha + \\\\beta) = \\\\frac{x + y}{1 - xy}$$\\nSince $\\\\alpha + \\\\beta \\\\in \\\\left(\\\\frac{\\\\pi}{2}, \\\\pi\\\\right)$, we have $(\\\\alpha + \\\\beta - \\\\pi) \\\\in \\\\left(-\\\\frac{\\\\pi}{2}, 0\\\\right)$.\\nTherefore:\\n$$\\\\tan(\\\\alpha + \\\\beta - \\\\pi) = \\\\tan(\\\\alpha + \\\\beta) = \\\\frac{x + y}{1 - xy}$$\\n$$\\\\alpha + \\\\beta - \\\\pi = \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$$\\n$$\\\\alpha + \\\\beta = \\\\pi + \\\\tan^{-1}\\\\left(\\\\frac{x + y}{1 - xy}\\\\right)$$"
+      },
+      {
+        "question": "What is the value of $\\\\tan\\\\left(2\\\\tan^{-1}\\\\frac{1}{3} + \\\\tan^{-1}\\\\frac{1}{7}\\\\right)$?",
+        "options": [
+          "1",
+          "$\\\\frac{\\\\pi}{4}$",
+          "2",
+          "$\\\\frac{1}{2}$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: $2\\\\tan^{-1}(1/3) = \\\\tan^{-1}(3/4)$, then $\\\\tan^{-1}(3/4) + \\\\tan^{-1}(1/7) = \\\\tan^{-1}(1) = \\\\pi/4$. Taking the tangent gives $\\\\tan(\\\\pi/4) = 1$.",
+          "Incorrect: This is the angle in radians, not the value of the tangent of the angle.",
+          "Incorrect: Calculation error in combining terms.",
+          "Incorrect: Arithmetic error in numerator."
+        ],
+        "fullExplanation": "Step 1: Simplify $2\\\\tan^{-1}\\\\left(\\\\frac{1}{3}\\\\right)$:\\n$$2\\\\tan^{-1}\\\\left(\\\\frac{1}{3}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{2/3}{1 - 1/9}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{2/3}{8/9}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{3}{4}\\\\right)$$\\n\\nStep 2: Add $\\\\tan^{-1}\\\\left(\\\\frac{1}{7}\\\\right)$:\\nCheck the product: $xy = \\\\frac{3}{4} \\\\times \\\\frac{1}{7} = \\\\frac{3}{28} < 1$, so the basic formula applies:\\n$$\\\\tan^{-1}\\\\left(\\\\frac{3}{4}\\\\right) + \\\\tan^{-1}\\\\left(\\\\frac{1}{7}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{\\\\frac{3}{4} + \\\\frac{1}{7}}{1 - \\\\frac{3}{4} \\\\cdot \\\\frac{1}{7}}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{\\\\frac{21 + 4}{28}}{\\\\frac{28 - 3}{28}}\\\\right) = \\\\tan^{-1}\\\\left(\\\\frac{25}{25}\\\\right) = \\\\tan^{-1}(1) = \\\\frac{\\\\pi}{4}$$\\n\\nStep 3: Evaluate the tangent of the result:\\n$$\\\\tan\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = 1$$"
+      },
+      {
+        "question": "If $\\\\cos^{-1}\\\\left(\\\\frac{x}{2}\\\\right) + \\\\cos^{-1}\\\\left(\\\\frac{y}{3}\\\\right) = \\\\theta$, then the expression $9x^2 - 12xy\\\\cos\\\\theta + 4y^2$ equals:",
+        "options": [
+          "$36\\\\sin^2\\\\theta$",
+          "$36\\\\cos^2\\\\theta$",
+          "$18\\\\sin^2\\\\theta$",
+          "$4\\\\sin^2\\\\theta$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Using $\\\\cos^{-1}u + \\\\cos^{-1}v = \\\\theta \\\\implies u^2 - 2uv\\\\cos\\\\theta + v^2 = \\\\sin^2\\\\theta$, substitute $u = x/2$ and $v = y/3$ and multiply by 36 to get $36\\\\sin^2\\\\theta$.",
+          "Incorrect: Identity produces $\\\\sin^2\\\\theta$, not $\\\\cos^2\\\\theta$.",
+          "Incorrect: Multiplied by 18 instead of the common denominator 36.",
+          "Incorrect: Missed the coefficient scaling."
+        ],
+        "fullExplanation": "Given $\\\\cos^{-1}\\\\left(\\\\frac{x}{2}\\\\right) + \\\\cos^{-1}\\\\left(\\\\frac{y}{3}\\\\right) = \\\\theta$.\\nTaking cosine on both sides using $\\\\cos(A + B) = \\\\cos A \\\\cos B - \\\\sin A \\\\sin B$:\\n$$\\\\frac{x}{2} \\\\cdot \\\\frac{y}{3} - \\\\sqrt{1 - \\\\frac{x^2}{4}}\\\\sqrt{1 - \\\\frac{y^2}{9}} = \\\\cos\\\\theta$$\\n$$\\\\frac{xy}{6} - \\\\cos\\\\theta = \\\\sqrt{1 - \\\\frac{x^2}{4}}\\\\sqrt{1 - \\\\frac{y^2}{9}}$$\\nSquaring both sides:\\n$$\\\\left(\\\\frac{xy}{6} - \\\\cos\\\\theta\\\\right)^2 = \\\\left(1 - \\\\frac{x^2}{4}\\\\right)\\\\left(1 - \\\\frac{y^2}{9}\\\\right)$$\\n$$\\\\frac{x^2 y^2}{36} - \\\\frac{xy}{3}\\\\cos\\\\theta + \\\\cos^2\\\\theta = 1 - \\\\frac{x^2}{4} - \\\\frac{y^2}{9} + \\\\frac{x^2 y^2}{36}$$\\nSubtracting $\\\\frac{x^2 y^2}{36}$ from both sides and rearranging:\\n$$\\\\frac{x^2}{4} - \\\\frac{xy}{3}\\\\cos\\\\theta + \\\\frac{y^2}{9} = 1 - \\\\cos^2\\\\theta = \\\\sin^2\\\\theta$$\\nMultiplying the entire equation by 36:\\n$$9x^2 - 12xy\\\\cos\\\\theta + 4y^2 = 36\\\\sin^2\\\\theta$$"
+      },
+      {
+        "question": "Find the number of real solutions to the equation: $\\\\sin^{-1}(6x) + \\\\sin^{-1}(6\\\\sqrt{3}x) = -\\\\frac{\\\\pi}{2}$.",
+        "options": [
+          "1",
+          "2",
+          "0",
+          "Infinitely many"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Rearranging gives $\\\\sin^{-1}(6\\\\sqrt{3}x) = -\\\\frac{\\\\pi}{2} - \\\\sin^{-1}(6x)$. Taking sine leads to $144x^2 = 1 \\\\implies x = \\\\pm 1/12$. Since the RHS is negative, only $x = -1/12$ satisfies the original equation.",
+          "Incorrect: Retains the positive root $x = 1/12$, which produces $+\\\\pi/2$ instead of $-\\\\pi/2$.",
+          "Incorrect: Misses the valid root $x = -1/12$.",
+          "Incorrect: The equation is algebraic after trigonometric reduction, so solutions are finite."
+        ],
+        "fullExplanation": "Given $\\\\sin^{-1}(6x) + \\\\sin^{-1}(6\\\\sqrt{3}x) = -\\\\frac{\\\\pi}{2}$.\\nSince the RHS is negative, $x$ must be negative (as $x \\\\ge 0$ would make the LHS $\\\\ge 0$).\\nRewrite the equation as:\\n$$\\\\sin^{-1}(6\\\\sqrt{3}x) = -\\\\frac{\\\\pi}{2} - \\\\sin^{-1}(6x)$$\\nTaking sine on both sides:\\n$$6\\\\sqrt{3}x = \\\\sin\\\\left(-\\\\left(\\\\frac{\\\\pi}{2} + \\\\sin^{-1}(6x)\\\\right)\\\\right) = -\\\\cos(\\\\sin^{-1}(6x)) = -\\\\sqrt{1 - 36x^2}$$\\nSquaring both sides (noting $x < 0$ is required for consistency):\\n$$108x^2 = 1 - 36x^2$$\\n$$144x^2 = 1 \\\\implies x^2 = \\\\frac{1}{144} \\\\implies x = \\\\pm \\\\frac{1}{12}$$\\n- If $x = \\\\frac{1}{12}$:\\n  $$\\\\sin^{-1}\\\\left(\\\\frac{1}{2}\\\\right) + \\\\sin^{-1}\\\\left(\\\\frac{\\\\sqrt{3}}{2}\\\\right) = \\\\frac{\\\\pi}{6} + \\\\frac{\\\\pi}{3} = \\\\frac{\\\\pi}{2} \\\\neq -\\\\frac{\\\\pi}{2}$$\\n- If $x = -\\\\frac{1}{12}$:\\n  $$\\\\sin^{-1}\\\\left(-\\\\frac{1}{2}\\\\right) + \\\\sin^{-1}\\\\left(-\\\\frac{\\\\sqrt{3}}{2}\\\\right) = -\\\\frac{\\\\pi}{6} - \\\\frac{\\\\pi}{3} = -\\\\frac{\\\\pi}{2}$$\\nThis satisfies the equation. Thus, there is exactly 1 real solution: $x = -\\\\frac{1}{12}$."
+      },
+      {
+        "question": "What is the domain of the function $f(x) = \\\\sqrt{\\\\sin^{-1}(2x) + \\\\frac{\\\\pi}{6}}$?",
+        "options": [
+          "$\\\\left[-\\\\frac{1}{4}, \\\\frac{1}{2}\\\\right]$",
+          "$\\\\left[-\\\\frac{1}{2}, \\\\frac{1}{2}\\\\right]$",
+          "$\\\\left[-\\\\frac{1}{4}, 1\\\\right]$",
+          "$\\\\left[0, \\\\frac{1}{2}\\\\right]$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Requires $\\\\sin^{-1}(2x) \\\\ge -\\\\pi/6 \\\\implies 2x \\\\ge -1/2 \\\\implies x \\\\ge -1/4$. Combining with the natural domain $|2x| \\\\le 1 \\\\implies x \\\\le 1/2$ gives $[-1/4, 1/2]$.",
+          "Incorrect: Allows $\\\\sin^{-1}(2x)$ to reach $-\\\\pi/2$, which makes the square root argument negative.",
+          "Incorrect: Upper bound $1$ violates the domain of $\\\\sin^{-1}(2x)$.",
+          "Incorrect: Unnecessarily restricts $x$ to non-negative values."
+        ],
+        "fullExplanation": "For $f(x) = \\\\sqrt{\\\\sin^{-1}(2x) + \\\\frac{\\\\pi}{6}}$ to be real-valued:\\n1. The argument of the inverse sine must satisfy:\\n$$-1 \\\\le 2x \\\\le 1 \\\\implies -\\\\frac{1}{2} \\\\le x \\\\le \\\\frac{1}{2}$$\\n2. The expression under the square root must be non-negative:\\n$$\\\\sin^{-1}(2x) + \\\\frac{\\\\pi}{6} \\\\ge 0 \\\\implies \\\\sin^{-1}(2x) \\\\ge -\\\\frac{\\\\pi}{6}$$\\nSince $\\\\sin t$ is strictly increasing on $\\\\left[-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right]$:\\n$$2x \\\\ge \\\\sin\\\\left(-\\\\frac{\\\\pi}{6}\\\\right) = -\\\\frac{1}{2} \\\\implies x \\\\ge -\\\\frac{1}{4}$$\\nTaking the intersection with $x \\\\le \\\\frac{1}{2}$:\\n$$x \\\\in \\\\left[-\\\\frac{1}{4}, \\\\frac{1}{2}\\\\right]$$"
+      },
+      {
+        "question": "What is the range of the function $f(x) = \\\\sin^{-1}x + \\\\cos^{-1}x + \\\\tan^{-1}x$?",
+        "options": [
+          "$\\\\left[\\\\frac{\\\\pi}{4}, \\\\frac{3\\\\pi}{4}\\\\right]$",
+          "$\\\\left(0, \\\\pi\\\\right)$",
+          "$\\\\left[-\\\\frac{\\\\pi}{4}, \\\\frac{3\\\\pi}{4}\\\\right]$",
+          "$\\\\left[\\\\frac{\\\\pi}{2}, \\\\pi\\\\right]$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: Domain is restricted by $\\\\sin^{-1}x$ to $[-1, 1]$. On this domain, $\\\\sin^{-1}x + \\\\cos^{-1}x = \\\\frac{\\\\pi}{2}$, so $f(x) = \\\\frac{\\\\pi}{2} + \\\\tan^{-1}x$. As $x \\\\in [-1, 1]$, $\\\\tan^{-1}x \\\\in [-\\\\pi/4, \\\\pi/4]$, giving the range $[\\\\pi/4, 3\\\\pi/4]$.",
+          "Incorrect: Fails to restrict the domain to $[-1, 1]$.",
+          "Incorrect: Missed the $+\\\\pi/2$ baseline constant.",
+          "Incorrect: Assumed range of $\\\\tan^{-1}x$ on $[-1, 1]$ is $[0, \\\\pi/2]$."
+        ],
+        "fullExplanation": "Step 1: Find the domain of $f(x)$:\\n- $\\\\sin^{-1}x$ is defined on $[-1, 1]$.\\n- $\\\\cos^{-1}x$ is defined on $[-1, 1]$.\\n- $\\\\tan^{-1}x$ is defined on $\\\\mathbb{R}$.\\nThe common domain is $D = [-1, 1]$.\\n\\nStep 2: Simplify $f(x)$ on its domain:\\nUsing the identity $\\\\sin^{-1}x + \\\\cos^{-1}x = \\\\frac{\\\\pi}{2}$ for all $x \\\\in [-1, 1]$:\\n$$f(x) = \\\\frac{\\\\pi}{2} + \\\\tan^{-1}x$$\\n\\nStep 3: Determine the range:\\nSince $\\\\tan^{-1}x$ is strictly increasing on $[-1, 1]$:\\n$$\\\\tan^{-1}(-1) \\\\le \\\\tan^{-1}x \\\\le \\\\tan^{-1}(1)$$\\n$$-\\\\frac{\\\\pi}{4} \\\\le \\\\tan^{-1}x \\\\le \\\\frac{\\\\pi}{4}$$\\nAdding $\\\\frac{\\\\pi}{2}$ to all parts:\\n$$\\\\frac{\\\\pi}{2} - \\\\frac{\\\\pi}{4} \\\\le f(x) \\\\le \\\\frac{\\\\pi}{2} + \\\\frac{\\\\pi}{4}$$\\n$$\\\\frac{\\\\pi}{4} \\\\le f(x) \\\\le \\\\frac{3\\\\pi}{4}$$\\nThus, the range is $\\\\left[\\\\frac{\\\\pi}{4}, \\\\frac{3\\\\pi}{4}\\\\right]$."
+      },
+      {
+        "question": "If $\\\\sum_{i=1}^{2n} \\\\sin^{-1}(x_i) = n\\\\pi$, then the value of $\\\\sum_{i=1}^{2n} x_i$ is:",
+        "options": [
+          "$2n$",
+          "$n$",
+          "$0$",
+          "$4n$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: For each $x_i \\\\in [-1, 1]$, $\\\\sin^{-1}(x_i) \\\\le \\\\frac{\\\\pi}{2}$. The sum of $2n$ terms is at most $2n \\\\times \\\\frac{\\\\pi}{2} = n\\\\pi$. Equality holds if and only if each $x_i = 1$. Thus, $\\\\sum_{i=1}^{2n} x_i = 2n(1) = 2n$.",
+          "Incorrect: Multiplied by $n$ instead of the total number of terms $2n$.",
+          "Incorrect: Assumed symmetric cancellation of roots.",
+          "Incorrect: Overcounted by a factor of 2."
+        ],
+        "fullExplanation": "For each $i \\\\in \\\\{1, 2, \\\\dots, 2n\\\\}$, the variable $x_i$ must lie in the domain of the inverse sine function, so $x_i \\\\in [-1, 1]$.\\nThe maximum value of $\\\\sin^{-1}(x_i)$ is $\\\\frac{\\\\pi}{2}$.\\nTherefore, the sum of $2n$ such terms satisfies:\\n$$\\\\sum_{i=1}^{2n} \\\\sin^{-1}(x_i) \\\\le \\\\sum_{i=1}^{2n} \\\\frac{\\\\pi}{2} = 2n \\\\cdot \\\\frac{\\\\pi}{2} = n\\\\pi$$\\nWe are given that the sum achieves this maximum bound:\\n$$\\\\sum_{i=1}^{2n} \\\\sin^{-1}(x_i) = n\\\\pi$$\\nThis equality holds if and only if each individual term achieves its maximum value simultaneously:\\n$$\\\\sin^{-1}(x_i) = \\\\frac{\\\\pi}{2} \\\\implies x_i = 1 \\\\quad \\\\text{for all } i = 1, 2, \\\\dots, 2n$$\\nTherefore:\\n$$\\\\sum_{i=1}^{2n} x_i = \\\\sum_{i=1}^{2n} 1 = 2n$$"
+      }
+    ]
+  }
+]

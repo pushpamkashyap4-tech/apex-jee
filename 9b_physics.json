@@ -1,0 +1,429 @@
+[
+  {
+    "chapterName": "Wave Optics",
+    "flashcards": [
+      {
+        "front": "What is a wavefront according to Huygens' wave theory?",
+        "back": "A wavefront is the locus of all particles of the medium oscillating in the same phase at any given instant."
+      },
+      {
+        "front": "What are secondary wavelets according to Huygens' principle?",
+        "back": "Each point on a primary wavefront acts as a source of new disturbance, called secondary wavelets, which spread out in all directions with the speed of light in that medium."
+      },
+      {
+        "front": "What is the geometric relationship between a wavefront and the direction of wave propagation (light ray)?",
+        "back": "In a homogeneous and isotropic medium, the wavefront is always perpendicular (normal) to the direction of wave propagation."
+      },
+      {
+        "front": "Define coherent sources of light.",
+        "back": "Two sources are coherent if and only if they emit light waves of the same frequency (and wavelength) with a constant initial phase difference."
+      },
+      {
+        "front": "What is the resultant intensity when two incoherent sources of intensities I₁ and I₂ illuminate a screen?",
+        "back": "I = I₁ + I₂ (intensities add up directly without interference terms)."
+      },
+      {
+        "front": "What is the formula for the resultant intensity I of two coherent light sources of intensities I₁ and I₂ having phase difference φ?",
+        "back": "I = I₁ + I₂ + 2√(I₁ I₂) cos φ."
+      },
+      {
+        "front": "How are slit width W, light intensity I, and wave amplitude A related in Young's Double Slit Experiment?",
+        "back": "I ∝ W ∝ A², which gives I₁ / I₂ = W₁ / W₂ = A₁² / A₂²."
+      },
+      {
+        "front": "What is the ratio of maximum to minimum intensity (I_max / I_min) in an interference pattern in terms of wave amplitudes?",
+        "back": "I_max / I_min = [(√I₁ + √I₂)²] / [(√I₁ - √I₂)²] = [(A₁ + A₂) / (A₁ - A₂)]²."
+      },
+      {
+        "front": "What is the path difference and screen position for the n-th bright fringe (constructive interference) in YDSE?",
+        "back": "Path difference Δx = nλ, and screen position y_n = nλD / d, where n = 0, 1, 2, 3, ..."
+      },
+      {
+        "front": "What is the path difference and screen position for the m-th dark fringe (destructive interference) in YDSE?",
+        "back": "Path difference Δx = (2m + 1)λ / 2, and position y_m = (2m + 1)λD / (2d), where m = 0, 1, 2, 3, ..."
+      },
+      {
+        "front": "What is the formula for the fringe width β in Young's Double Slit Experiment?",
+        "back": "β = λD / d, where λ is the wavelength, D is the distance to the screen, and d is the slit separation."
+      },
+      {
+        "front": "What is the formula for the angular fringe width θ in YDSE?",
+        "back": "θ = β / D = λ / d."
+      },
+      {
+        "front": "What is the resultant intensity when two identical coherent sources each of intensity I₀ interfere with a phase difference φ?",
+        "back": "I = 4I₀ cos²(φ / 2)."
+      },
+      {
+        "front": "What happens to the fringe width when a thin transparent plate is introduced in front of one of the slits in YDSE?",
+        "back": "The fringe width β remains unchanged."
+      },
+      {
+        "front": "What is the formula for the lateral fringe shift when a thin plate of thickness t and refractive index μ is placed in front of one slit?",
+        "back": "Shift Δy = [D(μ - 1)t] / d = [β(μ - 1)t] / λ towards the side of the slit containing the sheet."
+      },
+      {
+        "front": "State the condition for minima in Fraunhofer diffraction at a single slit of width a.",
+        "back": "a sin θ_n = nλ, where n = 1, 2, 3, ... (n ≠ 0)."
+      },
+      {
+        "front": "State the condition for secondary maxima in Fraunhofer diffraction at a single slit of width a.",
+        "back": "a sin θ_n = (2n + 1)λ / 2, where n = 1, 2, 3, ..."
+      },
+      {
+        "front": "What are the formulas for the linear width W and angular width W_θ of the central maximum in single-slit diffraction?",
+        "back": "Linear width W = 2λD / a, and angular width W_θ = 2λ / a."
+      },
+      {
+        "front": "State Brewster's Law and the relationship between reflected and refracted rays at Brewster's angle.",
+        "back": "μ = tan θ_p (or θ_p = tan⁻¹ μ). At Brewster's angle, the reflected and refracted rays are perpendicular to each other."
+      },
+      {
+        "front": "State Malus' Law for the intensity of plane-polarized light transmitted through an analyzer.",
+        "back": "I = I₀ cos² θ, where I₀ is the incident polarized intensity and θ is the angle between the polarizer and analyzer transmission axes."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "In a homogeneous and isotropic medium, what is the angle between a wavefront and the corresponding light ray?",
+        "options": [
+          "0°",
+          "45°",
+          "90°",
+          "180°"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Rays are not parallel to wavefronts; they are perpendicular.",
+          "45° is incorrect.",
+          "Correct: according to wave optics, rays represent the direction of propagation and are always perpendicular (at 90°) to the wavefront.",
+          "180° represents antiparallel orientation, not perpendicular."
+        ],
+        "fullExplanation": "In any homogeneous and isotropic medium, light rays are defined as lines normal to the wavefront. Hence, the angle between the wavefront and the direction of propagation (ray) is always 90°."
+      },
+      {
+        "question": "Two independent monochromatic light sources each of intensity I₀ illuminate a screen. What is the resultant intensity at any point on the screen?",
+        "options": [
+          "4I₀",
+          "2I₀",
+          "I₀",
+          "0"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "4I₀ is the maximum intensity produced by two identical coherent sources, not independent sources.",
+          "Correct: independent sources are incoherent; their time-average interference term is zero, so I = I₁ + I₂ = I₀ + I₀ = 2I₀.",
+          "I₀ ignores the contribution of the second source.",
+          "Zero intensity corresponds to complete destructive interference of coherent sources."
+        ],
+        "fullExplanation": "Independent sources can never be coherent because their phase difference changes randomly with time. For incoherent sources, intensities add directly: I = I₁ + I₂ = I₀ + I₀ = 2I₀."
+      },
+      {
+        "question": "In a Young's double slit experiment, the ratio of the widths of the two slits is 9 : 1. What is the ratio of maximum intensity to minimum intensity (I_max / I_min) in the interference pattern?",
+        "options": [
+          "9 : 1",
+          "4 : 1",
+          "16 : 1",
+          "25 : 1"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "9 : 1 is the ratio of slit widths and intensities (I₁/I₂), not I_max/I_min.",
+          "Correct: A₁/A₂ = √(W₁/W₂) = 3/1. Then I_max/I_min = [(3 + 1)/(3 - 1)]² = (4/2)² = 4 : 1.",
+          "16 : 1 would correspond to an amplitude ratio of 5 : 3.",
+          "25 : 1 is incorrect."
+        ],
+        "fullExplanation": "Intensity is proportional to slit width: I₁ / I₂ = W₁ / W₂ = 9 / 1. Since amplitude A ∝ √I, the amplitude ratio is A₁ / A₂ = √(9/1) = 3 / 1. Therefore, I_max / I_min = [(A₁ + A₂) / (A₁ - A₂)]² = [(3 + 1) / (3 - 1)]² = (4 / 2)² = 2² = 4 : 1."
+      },
+      {
+        "question": "In Young's double slit experiment, the slit separation is d = 0.5 mm, the distance from slits to screen is D = 1.0 m, and light of wavelength λ = 500 nm is used. What is the fringe width β?",
+        "options": [
+          "1.0 mm",
+          "0.5 mm",
+          "2.0 mm",
+          "0.1 mm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: β = λD / d = (500 × 10⁻⁹ m × 1.0 m) / (0.5 × 10⁻³ m) = 1.0 × 10⁻³ m = 1.0 mm.",
+          "0.5 mm is half the correct value.",
+          "2.0 mm is twice the correct value.",
+          "0.1 mm is an incorrect power of ten."
+        ],
+        "fullExplanation": "Using the fringe width formula: β = λD / d = (500 × 10⁻⁹ m × 1.0 m) / (0.5 × 10⁻³ m) = 1.0 × 10⁻³ m = 1.0 mm."
+      },
+      {
+        "question": "If a Young's double slit experiment having fringe width β in air is completely immersed in water of refractive index 4/3, what will be the new fringe width β'?",
+        "options": [
+          "4β / 3",
+          "3β / 4",
+          "β",
+          "9β / 16"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Fringe width decreases in an optically denser medium; it does not increase.",
+          "Correct: the wavelength in water is λ' = λ / μ = λ / (4/3) = 3λ / 4. Hence, β' = β / μ = 3β / 4.",
+          "Fringe width cannot remain unchanged because wavelength decreases.",
+          "Incorrect quadratic dependency."
+        ],
+        "fullExplanation": "When immersed in a medium of refractive index μ, the wavelength of light becomes λ' = λ / μ. Since fringe width is directly proportional to wavelength (β = λD / d), the new fringe width is β' = β / μ = β / (4/3) = 3β / 4."
+      },
+      {
+        "question": "In Young's double slit experiment, what is the path difference between interfering waves at the position of the 3rd dark fringe from the central maximum?",
+        "options": [
+          "3λ",
+          "5λ / 2",
+          "7λ / 2",
+          "2λ"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "3λ corresponds to the 3rd bright fringe.",
+          "Correct: destructive interference occurs at Δx = (2m + 1)λ / 2. For the 1st dark fringe m = 0 (λ/2), for the 2nd m = 1 (3λ/2), and for the 3rd dark fringe m = 2, Δx = (2×2 + 1)λ / 2 = 5λ / 2.",
+          "7λ / 2 corresponds to the 4th dark fringe (m = 3).",
+          "2λ corresponds to the 2nd bright fringe."
+        ],
+        "fullExplanation": "The condition for a dark fringe is path difference Δx = (2m + 1)λ / 2. For m = 0, Δx = λ / 2 (1st dark fringe); for m = 1, Δx = 3λ / 2 (2nd dark fringe); for m = 2, Δx = 5λ / 2 (3rd dark fringe)."
+      },
+      {
+        "question": "Two coherent beams of equal intensity I₀ superpose with a constant phase difference of π/3 (60°). What is the resultant intensity?",
+        "options": [
+          "I₀",
+          "2I₀",
+          "3I₀",
+          "4I₀"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "I₀ would occur at a phase difference of 2π/3 (120°).",
+          "2I₀ would occur at a phase difference of π/2 (90°).",
+          "Correct: I = 4I₀ cos²(φ / 2) = 4I₀ cos²(30°) = 4I₀ × (√3 / 2)² = 4I₀ × (3 / 4) = 3I₀.",
+          "4I₀ is the maximum intensity when the waves are in phase (φ = 0)."
+        ],
+        "fullExplanation": "Using the formula for interference of two identical coherent waves: I = 4I₀ cos²(φ / 2). Here φ = π/3, so φ/2 = π/6 (30°). Thus, I = 4I₀ cos²(30°) = 4I₀ × (√3 / 2)² = 4I₀ × (3 / 4) = 3I₀."
+      },
+      {
+        "question": "A thin transparent sheet of thickness t = 1.2 × 10⁻⁵ m and refractive index μ = 1.5 is placed in front of one of the slits in YDSE. If light of wavelength λ = 600 nm is used, how many fringes will the central pattern shift?",
+        "options": [
+          "10",
+          "15",
+          "20",
+          "5"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: the number of fringes shifted is n = (μ - 1)t / λ = (1.5 - 1)(1.2 × 10⁻⁵) / (600 × 10⁻⁹) = (0.6 × 10⁻⁵) / (6 × 10⁻⁷) = 10.",
+          "15 is incorrect.",
+          "20 is obtained if μ is used instead of (μ - 1).",
+          "5 is incorrect."
+        ],
+        "fullExplanation": "The linear fringe shift is Δy = [β(μ - 1)t] / λ. Therefore, the number of fringes shifted is n = Δy / β = (μ - 1)t / λ. Substituting values: n = (1.5 - 1) × (1.2 × 10⁻⁵ m) / (600 × 10⁻⁹ m) = (0.5 × 1.2 × 10⁻⁵) / (6 × 10⁻⁷) = 0.6 × 10⁻⁵ / 0.6 × 10⁻⁶ = 10 fringes."
+      },
+      {
+        "question": "What happens to the fringe width in Young's double slit experiment if the slit separation d is halved and the screen distance D is doubled?",
+        "options": [
+          "It is halved",
+          "It is doubled",
+          "It becomes four times its initial value",
+          "It remains unchanged"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Halving is incorrect.",
+          "Doubling accounts for only one of the two changes.",
+          "Correct: β = λD / d. Replacing D with 2D and d with d/2 gives β' = λ(2D) / (d/2) = 4(λD / d) = 4β.",
+          "The fringe width changes significantly."
+        ],
+        "fullExplanation": "Fringe width is given by β = λD / d. When D' = 2D and d' = d / 2, the new fringe width is β' = λ(2D) / (d / 2) = 4(λD / d) = 4β. Thus, the fringe width quadruples."
+      },
+      {
+        "question": "When a thin transparent glass plate is placed in front of one of the slits in Young's double slit experiment, how does the fringe width change?",
+        "options": [
+          "It increases",
+          "It decreases",
+          "It remains completely unchanged",
+          "It becomes zero as interference is destroyed"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "The fringe width depends only on λ, D, and d; it does not change.",
+          "Fringe width does not decrease.",
+          "Correct: introduction of a plate shifts the pattern laterally by D(μ - 1)t / d, but leaves the fringe width β = λD / d unaltered.",
+          "Interference fringes still form clearly."
+        ],
+        "fullExplanation": "As stated in the handbook, introducing a transparent sheet of thickness t and refractive index μ increases the optical path by (μ - 1)t. This shifts the entire fringe pattern toward that slit, but the fringe width β = λD / d remains completely unchanged."
+      },
+      {
+        "question": "In Fraunhofer diffraction at a single slit of width a, what is the condition for the first diffraction minimum?",
+        "options": [
+          "a sin θ = λ",
+          "a sin θ = λ / 2",
+          "a sin θ = 3λ / 2",
+          "a sin θ = 2λ"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: the condition for single-slit minima is a sin θ_n = nλ; for n = 1, a sin θ = λ.",
+          "a sin θ = λ / 2 is the condition for a bright fringe in double-slit interference, not single-slit minimum.",
+          "3λ / 2 corresponds to the first secondary maximum in single-slit diffraction.",
+          "2λ corresponds to the second minimum (n = 2)."
+        ],
+        "fullExplanation": "For Fraunhofer diffraction at a single slit, the condition for minima is a sin θ_n = nλ (for n = 1, 2, 3, ...). Thus, the first minimum occurs at a sin θ = 1 · λ = λ."
+      },
+      {
+        "question": "In a Fraunhofer single-slit diffraction pattern, a slit of width 0.2 mm is illuminated by light of wavelength 600 nm. If the screen is placed 2.0 m away, what is the linear width of the central maximum?",
+        "options": [
+          "6 mm",
+          "12 mm",
+          "3 mm",
+          "24 mm"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "6 mm is the distance from center to the first minimum (half-width), not the full width.",
+          "Correct: W = 2λD / a = 2 × (600 × 10⁻⁹ m) × 2.0 m / (0.2 × 10⁻³ m) = 1.2 × 10⁻² m = 12 mm.",
+          "3 mm is incorrect.",
+          "24 mm is twice the correct value."
+        ],
+        "fullExplanation": "The linear width of the central maximum is defined as the distance between the first minima on either side: W = 2λD / a = 2 × (600 × 10⁻⁹ m) × (2.0 m) / (0.2 × 10⁻³ m) = 2.4 × 10⁻⁶ / 2 × 10⁻⁴ = 1.2 × 10⁻² m = 12 mm."
+      },
+      {
+        "question": "What is the angular width of the central maximum in single-slit Fraunhofer diffraction for light of wavelength λ incident on a slit of width a?",
+        "options": [
+          "λ / a",
+          "2λ / a",
+          "λ / (2a)",
+          "4λ / a"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "λ / a is the angular half-width (angle to the first minimum), not the total angular width.",
+          "Correct: W_θ = 2λ / a because the central maximum extends from -λ/a to +λ/a.",
+          "λ / (2a) is incorrect.",
+          "4λ / a is incorrect."
+        ],
+        "fullExplanation": "The first minima on either side of the central maximum occur at angles θ ≈ ±λ / a. Therefore, the total angular width of the central maximum is W_θ = 2θ = 2λ / a."
+      },
+      {
+        "question": "A ray of light is incident from air onto a dielectric medium of refractive index μ = √3. At what angle of incidence will the reflected light be completely plane-polarized?",
+        "options": [
+          "30°",
+          "45°",
+          "60°",
+          "90°"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "For θ_p = 30°, μ would be tan 30° = 1/√3.",
+          "For θ_p = 45°, μ would be tan 45° = 1.0.",
+          "Correct: by Brewster's law, tan θ_p = μ = √3, so θ_p = tan⁻¹(√3) = 60°.",
+          "90° is grazing incidence."
+        ],
+        "fullExplanation": "According to Brewster's Law, when light is incident at Brewster's angle θ_p, the reflected ray is completely linearly polarized, with μ = tan θ_p. Since μ = √3, θ_p = tan⁻¹(√3) = 60°."
+      },
+      {
+        "question": "When unpolarized light is incident on a transparent plate at Brewster's angle θ_p, what is the angle between the reflected ray and the refracted ray?",
+        "options": [
+          "0°",
+          "45°",
+          "90°",
+          "180°"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "0° would mean the rays travel in the same direction.",
+          "45° is incorrect.",
+          "Correct: at polarization angle θ_p, the reflected and refracted rays are perpendicular to each other, so the angle is 90°.",
+          "180° would mean they travel in opposite directions."
+        ],
+        "fullExplanation": "By Snell's law, sin θ_p / sin r = μ. By Brewster's law, μ = tan θ_p = sin θ_p / cos θ_p. Equating the two yields sin r = cos θ_p = sin(90° - θ_p), which implies r + θ_p = 90°. Since the total angle across the normal is θ_p + angle + r = 180°, the angle between the reflected and refracted rays must be 180° - (θ_p + r) = 90°."
+      },
+      {
+        "question": "An unpolarized light beam of intensity I_in passes through a single ideal polaroid sheet. What is the intensity of the transmitted light?",
+        "options": [
+          "I_in",
+          "I_in / 2",
+          "I_in / 4",
+          "0"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Unpolarized light has vibrations in all directions, so not all intensity is transmitted.",
+          "Correct: an ideal polarizer absorbs all perpendicular components and transmits exactly half the incident unpolarized intensity: I = I_in / 2.",
+          "I_in / 4 is the result of passing through two polarizers at 45°.",
+          "Zero transmission occurs only with crossed polaroids."
+        ],
+        "fullExplanation": "Unpolarized light consists of equal components of electric field vectors in all transverse directions. When averaged over a full rotation, the average value of cos² θ is 1/2. Hence, the transmitted intensity through a single ideal polarizer is I = I_in / 2."
+      },
+      {
+        "question": "An unpolarized light beam of intensity 32 W/m² passes through two polaroids whose transmission axes are oriented at an angle of 45° to each other. What is the transmitted intensity?",
+        "options": [
+          "16 W/m²",
+          "8 W/m²",
+          "4 W/m²",
+          "2 W/m²"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "16 W/m² is the intensity after the first polaroid alone.",
+          "Correct: after the first polaroid, I₁ = 32 / 2 = 16 W/m². By Malus' law, I₂ = I₁ cos²(45°) = 16 × (1/√2)² = 16 × 0.5 = 8 W/m².",
+          "4 W/m² would correspond to an angle of 60°.",
+          "2 W/m² is incorrect."
+        ],
+        "fullExplanation": "After traversing the first polarizer, the unpolarized light becomes plane-polarized with intensity I₁ = 32 / 2 = 16 W/m². When this light passes through the analyzer oriented at θ = 45°, Malus' law gives: I₂ = I₁ cos²(45°) = 16 × (1 / √2)² = 16 × (1 / 2) = 8 W/m²."
+      },
+      {
+        "question": "If two coherent light waves of equal intensity I₀ interfere with a phase difference of π/2 (90°), what is the resultant intensity?",
+        "options": [
+          "0",
+          "I₀",
+          "2I₀",
+          "4I₀"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Zero intensity occurs at destructive interference (phase difference π).",
+          "I₀ occurs at phase difference 2π/3.",
+          "Correct: I = 4I₀ cos²(φ / 2) = 4I₀ cos²(45°) = 4I₀ × (1/2) = 2I₀.",
+          "4I₀ occurs at constructive interference (phase difference 0)."
+        ],
+        "fullExplanation": "Using the interference formula for identical sources: I = 4I₀ cos²(φ / 2). For φ = π/2, φ / 2 = π/4 (45°). Therefore, I = 4I₀ cos²(45°) = 4I₀ × (1 / √2)² = 4I₀ × (1 / 2) = 2I₀. Alternatively, I = I₀ + I₀ + 2√(I₀ · I₀) cos(90°) = 2I₀ + 0 = 2I₀."
+      },
+      {
+        "question": "When Young's double slit experiment is performed using white light instead of monochromatic light, what is observed at the center of the screen?",
+        "options": [
+          "A dark fringe",
+          "A central white fringe",
+          "A bright red fringe",
+          "A bright violet fringe"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "The center has zero path difference, so destructive interference cannot occur for all wavelengths.",
+          "Correct: at the center, path difference Δx = 0 for all wavelengths, so all constituent colors interfere constructively to form a white central fringe.",
+          "Red has non-zero path difference away from the center.",
+          "Violet fringes appear on the edges of the central white fringe, not at the exact center."
+        ],
+        "fullExplanation": "At the geometric center of the screen, the path difference from both slits is zero (Δx = 0) for every wavelength present in white light. Since all colors undergo constructive interference simultaneously at this location, they recombine to form a central white fringe."
+      },
+      {
+        "question": "In single-slit Fraunhofer diffraction, what happens to the diffraction pattern if the slit width a is made very large compared to the wavelength of light (a >> λ)?",
+        "options": [
+          "A sharp geometrical shadow is observed with negligible diffraction",
+          "The diffraction pattern spreads out across the entire screen",
+          "The central maximum becomes infinitely wide",
+          "Secondary maxima become more intense than the central maximum"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: because angular width W_θ = 2λ / a approaches 0 when a >> λ, diffraction becomes negligible, which corresponds to the rectilinear propagation of geometric ray optics.",
+          "The pattern contracts rather than spreading out.",
+          "The central maximum becomes extremely narrow, not infinitely wide.",
+          "Secondary maxima always remain much weaker than the central maximum."
+        ],
+        "fullExplanation": "The angular spread of the diffraction pattern is governed by W_θ = 2λ / a. If the slit width a is much larger than the wavelength λ (a >> λ), W_θ becomes vanishingly small. Consequently, diffraction effects become unnoticeable and light effectively follows straight-line paths as predicted by ray optics."
+      }
+    ]
+  }
+]

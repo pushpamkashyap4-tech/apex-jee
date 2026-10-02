@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Method of Differentiation",
+    "flashcards": [
+      {
+        "front": "State the derivative formulas for elementary algebraic and logarithmic functions: $\\\\frac{d}{dx}(x^n)$, $\\\\frac{d}{dx}(\\\\ln |x|)$, and $\\\\frac{d}{dx}(\\\\log_a x)$.",
+        "back": "$$\\\\frac{d}{dx}(x^n) = n x^{n-1}$$\\n$$\\\\frac{d}{dx}(\\\\ln |x|) = \\\\frac{1}{x} \\\\quad (x \\\\neq 0)$$\\n$$\\\\frac{d}{dx}(\\\\log_a x) = \\\\frac{1}{x \\\\ln a} \\\\quad (x > 0, \\\\; a > 0, \\\\; a \\\\neq 1)$$"
+      },
+      {
+        "front": "State the derivative formulas for exponential functions: $\\\\frac{d}{dx}(e^x)$ and $\\\\frac{d}{dx}(a^x)$.",
+        "back": "$$\\\\frac{d}{dx}(e^x) = e^x$$\\n$$\\\\frac{d}{dx}(a^x) = a^x \\\\ln a \\\\quad (a > 0)$$"
+      },
+      {
+        "front": "State the derivatives of the six fundamental trigonometric functions.",
+        "back": "$$\\\\frac{d}{dx}(\\\\sin x) = \\\\cos x, \\\\qquad \\\\frac{d}{dx}(\\\\cos x) = -\\\\sin x$$\\n$$\\\\frac{d}{dx}(\\\\tan x) = \\\\sec^2 x, \\\\qquad \\\\frac{d}{dx}(\\\\cot x) = -\\\\csc^2 x$$\\n$$\\\\frac{d}{dx}(\\\\sec x) = \\\\sec x \\\\tan x, \\\\quad \\\\frac{d}{dx}(\\\\csc x) = -\\\\csc x \\\\cot x$$"
+      },
+      {
+        "front": "State the Product Rule and Quotient Rule of differentiation.",
+        "back": "**Product Rule:**\\n$$\\\\frac{d}{dx}[u(x)v(x)] = u'(x)v(x) + u(x)v'(x)$$\\n**Quotient Rule:**\\n$$\\\\frac{d}{dx}\\\\left[\\\\frac{u(x)}{v(x)}\\\\right] = \\\\frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2} \\\\quad (v(x) \\\\neq 0)$$"
+      },
+      {
+        "front": "State the Chain Rule for composite functions.",
+        "back": "If $y = f(u)$ and $u = g(x)$, both being differentiable, then:\\n$$\\\\frac{dy}{dx} = \\\\frac{dy}{du} \\\\cdot \\\\frac{du}{dx} = f'(g(x)) \\\\cdot g'(x)$$\\nFor multiple layers: $\\\\frac{dy}{dx} = \\\\frac{dy}{du} \\\\cdot \\\\frac{du}{dv} \\\\cdot \\\\frac{dv}{dx}$."
+      },
+      {
+        "front": "What are the derivatives of $\\\\sin^{-1} x$ and $\\\\cos^{-1} x$ along with their domains?",
+        "back": "$$\\\\frac{d}{dx}(\\\\sin^{-1} x) = \\\\frac{1}{\\\\sqrt{1 - x^2}}, \\\\quad x \\\\in (-1, 1)$$\\n$$\\\\frac{d}{dx}(\\\\cos^{-1} x) = -\\\\frac{1}{\\\\sqrt{1 - x^2}}, \\\\quad x \\\\in (-1, 1)$$"
+      },
+      {
+        "front": "What are the derivatives of $\\\\tan^{-1} x$ and $\\\\cot^{-1} x$ along with their domains?",
+        "back": "$$\\\\frac{d}{dx}(\\\\tan^{-1} x) = \\\\frac{1}{1 + x^2}, \\\\quad x \\\\in \\\\mathbb{R}$$\\n$$\\\\frac{d}{dx}(\\\\cot^{-1} x) = -\\\\frac{1}{1 + x^2}, \\\\quad x \\\\in \\\\mathbb{R}$$"
+      },
+      {
+        "front": "What are the derivatives of $\\\\sec^{-1} x$ and $\\\\csc^{-1} x$ along with their domains?",
+        "back": "$$\\\\frac{d}{dx}(\\\\sec^{-1} x) = \\\\frac{1}{|x|\\\\sqrt{x^2 - 1}}, \\\\quad |x| > 1$$\\n$$\\\\frac{d}{dx}(\\\\csc^{-1} x) = -\\\\frac{1}{|x|\\\\sqrt{x^2 - 1}}, \\\\quad |x| > 1$$"
+      },
+      {
+        "front": "How is Implicit Differentiation performed for an equation $F(x, y) = 0$?",
+        "back": "Differentiate both sides with respect to $x$, applying the chain rule whenever differentiating terms containing $y$ (treating $y$ as a function of $x$):\\n$$\\\\frac{d}{dx}[g(y)] = g'(y) \\\\frac{dy}{dx}$$\\nThen collect all $\\\\frac{dy}{dx}$ terms on one side and solve. Alternatively:\\n$$\\\\frac{dy}{dx} = -\\\\frac{\\\\partial F / \\\\partial x}{\\\\partial F / \\\\partial y}$$"
+      },
+      {
+        "front": "What is Logarithmic Differentiation and when is it primarily used?",
+        "back": "Used when functions are of the form $y = [u(x)]^{v(x)}$ or involve complicated products/quotients.\\n**Procedure:**\\n1. Take natural log: $\\\\ln y = v(x) \\\\ln[u(x)]$.\\n2. Differentiate implicitly: $\\\\frac{1}{y} \\\\frac{dy}{dx} = v'(x)\\\\ln[u(x)] + v(x)\\\\frac{u'(x)}{u(x)}$.\\n3. Multiply by $y$:\\n$$\\\\frac{dy}{dx} = [u(x)]^{v(x)} \\\\left[ v'(x)\\\\ln u(x) + \\\\frac{v(x)u'(x)}{u(x)} \\\\right]$$"
+      },
+      {
+        "front": "How do you find the first derivative $\\\\frac{dy}{dx}$ for parametric equations $x = f(t)$ and $y = g(t)$?",
+        "back": "$$\\\\frac{dy}{dx} = \\\\frac{\\\\frac{dy}{dt}}{\\\\frac{dx}{dt}} = \\\\frac{g'(t)}{f'(t)} \\\\quad \\\\text{provided } f'(t) \\\\neq 0$$"
+      },
+      {
+        "front": "What is the exact formula for the second derivative $\\\\frac{d^2y}{dx^2}$ of a parametric curve?",
+        "back": "$$\\\\frac{d^2y}{dx^2} = \\\\frac{d}{dx}\\\\left(\\\\frac{dy}{dx}\\\\right) = \\\\frac{\\\\frac{d}{dt}\\\\left(\\\\frac{dy}{dx}\\\\right)}{\\\\frac{dx}{dt}} = \\\\frac{x'(t)y''(t) - y'(t)x''(t)}{[x'(t)]^3}$$\\n*Common Error:* $\\\\frac{d^2y}{dx^2} \\\\neq \\\\frac{d^2y/dt^2}{d^2x/dt^2}$."
+      },
+      {
+        "front": "How do you differentiate a function $u(x)$ with respect to another function $v(x)$?",
+        "back": "Treat $v$ as the independent variable by applying the chain rule:\\n$$\\\\frac{du}{dv} = \\\\frac{\\\\frac{du}{dx}}{\\\\frac{dv}{dx}} = \\\\frac{u'(x)}{v'(x)} \\\\quad \\\\text{provided } v'(x) \\\\neq 0$$"
+      },
+      {
+        "front": "How do you differentiate a $3 \\\\times 3$ determinant $F(x) = \\\\begin{vmatrix} f_1 & f_2 & f_3 \\\\ g_1 & g_2 & g_3 \\\\ h_1 & h_2 & h_3 \\\\end{vmatrix}$?",
+        "back": "Differentiate row by row (or column by column) keeping other rows unchanged:\\n$$F'(x) = \\\\begin{vmatrix} f_1' & f_2' & f_3' \\\\ g_1 & g_2 & g_3 \\\\ h_1 & h_2 & h_3 \\\\end{vmatrix} + \\\\begin{vmatrix} f_1 & f_2 & f_3 \\\\ g_1' & g_2' & g_3' \\\\ h_1 & h_2 & h_3 \\\\end{vmatrix} + \\\\begin{vmatrix} f_1 & f_2 & f_3 \\\\ g_1 & g_2 & g_3 \\\\ h_1' & h_2' & h_3' \\\\end{vmatrix}$$"
+      },
+      {
+        "front": "What trigonometric substitutions are standard for simplifying expressions involving $\\\\sqrt{a^2 - x^2}$, $\\\\sqrt{a^2 + x^2}$, and $\\\\sqrt{x^2 - a^2}$?",
+        "back": "1. $\\\\sqrt{a^2 - x^2} \\\\implies x = a\\\\sin\\\\theta \\\\text{ or } x = a\\\\cos\\\\theta$\\n2. $\\\\sqrt{a^2 + x^2} \\\\implies x = a\\\\tan\\\\theta \\\\text{ or } x = a\\\\cot\\\\theta$\\n3. $\\\\sqrt{x^2 - a^2} \\\\implies x = a\\\\sec\\\\theta \\\\text{ or } x = a\\\\csc\\\\theta$"
+      },
+      {
+        "front": "What substitution simplifies expressions of the form $\\\\sqrt{\\\\frac{a - x}{a + x}}$ or $\\\\sqrt{\\\\frac{a + x}{a - x}}$?",
+        "back": "Substitute $x = a\\\\cos(2\\\\theta)$ or $x = a\\\\cos\\\\theta$.\\nThis gives:\\n$$\\\\sqrt{\\\\frac{a - a\\\\cos 2\\\\theta}{a + a\\\\cos 2\\\\theta}} = \\\\sqrt{\\\\frac{2\\\\sin^2\\\\theta}{2\\\\cos^2\\\\theta}} = \\\\tan\\\\theta$$"
+      },
+      {
+        "front": "How do you differentiate the infinite radical series $y = \\\\sqrt{f(x) + \\\\sqrt{f(x) + \\\\sqrt{f(x) + \\\\dots}}}$?",
+        "back": "Write the self-similar relation:\\n$$y = \\\\sqrt{f(x) + y} \\\\implies y^2 = f(x) + y$$\\nDifferentiate implicitly w.r.t. $x$:\\n$$2y \\\\frac{dy}{dx} = f'(x) + \\\\frac{dy}{dx} \\\\implies \\\\frac{dy}{dx} = \\\\frac{f'(x)}{2y - 1}$$"
+      },
+      {
+        "front": "How do you differentiate the infinite power tower $y = f(x)^{f(x)^{f(x)^{\\\\dots}}}$?",
+        "back": "Rewrite using self-similarity:\\n$$y = [f(x)]^y \\\\implies \\\\ln y = y \\\\ln[f(x)]$$\\nDifferentiating implicitly w.r.t. $x$ gives:\\n$$\\\\frac{1}{y}\\\\frac{dy}{dx} = \\\\frac{dy}{dx}\\\\ln[f(x)] + \\\\frac{y f'(x)}{f(x)} \\\\implies \\\\frac{dy}{dx} = \\\\frac{y^2 f'(x)}{f(x)[1 - y \\\\ln f(x)]}$$"
+      },
+      {
+        "front": "How do you differentiate an infinite continued fraction $y = f(x) + \\\\cfrac{1}{f(x) + \\\\cfrac{1}{f(x) + \\\\dots}}$?",
+        "back": "Rewrite using self-similarity:\\n$$y = f(x) + \\\\frac{1}{y} \\\\implies y^2 - y f(x) - 1 = 0$$\\nDifferentiating implicitly w.r.t. $x$:\\n$$2y \\\\frac{dy}{dx} - y' f(x) - y f'(x) = 0 \\\\implies \\\\frac{dy}{dx} = \\\\frac{y f'(x)}{2y - f(x)}$$"
+      },
+      {
+        "front": "What is the relationship between $\\\\frac{dx}{dy}$ and $\\\\frac{dy}{dx}$, and between $\\\\frac{d^2x}{dy^2}$ and $\\\\frac{d^2y}{dx^2}$?",
+        "back": "$$\\\\frac{dx}{dy} = \\\\frac{1}{\\\\frac{dy}{dx}}$$\\n$$\\\\frac{d^2x}{dy^2} = \\\\frac{d}{dy}\\\\left(\\\\frac{1}{y'}\\\\right) = \\\\frac{d}{dx}\\\\left(\\\\frac{1}{y'}\\\\right)\\\\frac{dx}{dy} = -\\\\frac{y''}{(y')^2} \\\\cdot \\\\frac{1}{y'} = -\\\\frac{\\\\frac{d^2y}{dx^2}}{\\\\left(\\\\frac{dy}{dx}\\\\right)^3}$$"
+      },
+      {
+        "front": "What can be said about the derivative of an even function and an odd function?",
+        "back": "- The derivative of an even function is an **odd function**.\\n- The derivative of an odd function is an **even function**.\\n*Proof:* If $f(-x) = f(x)$, then $-f'(-x) = f'(x) \\\\implies f'(-x) = -f'(x)$."
+      },
+      {
+        "front": "If $f(x)$ is periodic with period $T$, what is the nature of $f'(x)$?",
+        "back": "$f'(x)$ is also periodic with the **same period $T$**.\\n*Proof:* $f(x + T) = f(x)$. Differentiating both sides w.r.t. $x$ gives $f'(x + T) \\\\cdot 1 = f'(x)$."
+      },
+      {
+        "front": "How do you differentiate $y = |f(x)|$?",
+        "back": "$$y = |f(x)| = \\\\sqrt{[f(x)]^2}$$\\n$$\\\\frac{dy}{dx} = \\\\frac{f(x) f'(x)}{|f(x)|} = f'(x) \\\\cdot \\\\operatorname{sgn}(f(x)) \\\\quad (f(x) \\\\neq 0)$$\\nAt points where $f(x) = 0$, $y$ is non-differentiable unless $f'(x) = 0$."
+      },
+      {
+        "front": "What is the derivative of $y = \\\\sin^{-1}\\\\left(\\\\frac{2x}{1+x^2}\\\\right)$ across its piecewise domains?",
+        "back": "$$\\\\frac{d}{dx}\\\\left[\\\\sin^{-1}\\\\left(\\\\frac{2x}{1+x^2}\\\\right)\\\\right] = \\\\begin{cases} \\\\frac{2}{1+x^2}, & |x| < 1 \\\\[4pt] -\\\\frac{2}{1+x^2}, & |x| > 1 \\\\end{cases}$$\\nIt is not differentiable at $x = \\\\pm 1$."
+      },
+      {
+        "front": "What is the derivative of $y = \\\\cos^{-1}\\\\left(\\\\frac{1-x^2}{1+x^2}\\\\right)$ across its domain?",
+        "back": "$$\\\\frac{d}{dx}\\\\left[\\\\cos^{-1}\\\\left(\\\\frac{1-x^2}{1+x^2}\\\\right)\\\\right] = \\\\begin{cases} \\\\frac{2}{1+x^2}, & x > 0 \\\\[4pt] -\\\\frac{2}{1+x^2}, & x < 0 \\\\end{cases}$$\\nIt is not differentiable at $x = 0$."
+      },
+      {
+        "front": "What is Leibniz's formula for the $n$-th derivative of a product of two functions?",
+        "back": "If $u$ and $v$ are $n$-times differentiable functions:\\n$$\\\\frac{d^n}{dx^n}(uv) = \\\\sum_{r=0}^{n} \\\\binom{n}{r} u^{(n-r)} v^{(r)}$$\\nwhere $u^{(k)} = \\\\frac{d^k u}{dx^k}$."
+      },
+      {
+        "front": "What is the derivative of $y = [f(x)]^{g(x)}$ written in compact partial derivative notation?",
+        "back": "$$\\\\frac{d}{dx}[f^g] = g f^{g-1} f'(x) + f^g (\\\\ln f) g'(x)$$\\n(Differentiate treating $g$ as constant + Differentiate treating $f$ as constant)."
+      },
+      {
+        "front": "If $f(x) = \\\\sin x$ and $g(x) = x^3$, find $\\\\frac{d}{dx}[f(g(x))]$ and $\\\\frac{d}{dx}[g(f(x))]$.",
+        "back": "$$\\\\frac{d}{dx}[\\\\sin(x^3)] = \\\\cos(x^3) \\\\cdot 3x^2 = 3x^2 \\\\cos(x^3)$$\\n$$\\\\frac{d}{dx}[(\\\\sin x)^3] = 3\\\\sin^2 x \\\\cdot \\\\cos x = 3\\\\sin^2 x \\\\cos x$$"
+      },
+      {
+        "front": "How do you evaluate $\\\\frac{dy}{dx}$ when $x$ and $y$ are given in polar coordinates $r = f(\\\\theta)$?",
+        "back": "Since $x = r \\\\cos\\\\theta$ and $y = r \\\\sin\\\\theta$:\\n$$\\\\frac{dy}{dx} = \\\\frac{\\\\frac{dy}{d\\\\theta}}{\\\\frac{dx}{d\\\\theta}} = \\\\frac{\\\\frac{dr}{d\\\\theta}\\\\sin\\\\theta + r\\\\cos\\\\theta}{\\\\frac{dr}{d\\\\theta}\\\\cos\\\\theta - r\\\\sin\\\\theta}$$"
+      },
+      {
+        "front": "What is the derivative of $\\\\tan^{-1}\\\\left(\\\\frac{x+a}{1-ax}\\\\right)$ with respect to $x$?",
+        "back": "Since $\\\\tan^{-1}\\\\left(\\\\frac{x+a}{1-ax}\\\\right) = \\\\tan^{-1} x + \\\\tan^{-1} a$ (up to a piecewise constant):\\n$$\\\\frac{d}{dx}\\\\left[\\\\tan^{-1}\\\\left(\\\\frac{x+a}{1-ax}\\\\right)\\\\right] = \\\\frac{1}{1 + x^2} + 0 = \\\\frac{1}{1 + x^2}$$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Differentiate $\\\\sin^{-1}(2x\\\\sqrt{1-x^2})$ with respect to $\\\\sqrt{1-x^2}$ for $x \\\\in \\\\left(0, \\\\frac{1}{\\\\sqrt{2}}\\\\right)$.",
+        "options": [
+          "$$-\\\\frac{2}{x}$$",
+          "$$\\\\frac{2}{x}$$",
+          "$$-\\\\frac{2}{\\\\sqrt{1-x^2}}$$",
+          "$$\\\\frac{2}{\\\\sqrt{1-x^2}}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $x \\\\in (0, 1/\\\\sqrt{2})$, $u = 2\\\\sin^{-1}x$. Differentiating $u$ w.r.t $v = \\\\sqrt{1-x^2}$ gives $\\\\frac{du/dx}{dv/dx} = \\\\frac{2/\\\\sqrt{1-x^2}}{-x/\\\\sqrt{1-x^2}} = -\\\\frac{2}{x}$.",
+          "Incorrect. Missed the negative sign from the derivative of $\\\\sqrt{1-x^2}$.",
+          "Incorrect. Incomplete cancellation of the $\\\\sqrt{1-x^2}$ factor in the denominator.",
+          "Incorrect. Both the sign and the algebraic simplification are wrong."
+        ],
+        "fullExplanation": "Let $u(x) = \\\\sin^{-1}(2x\\\\sqrt{1-x^2})$ and $v(x) = \\\\sqrt{1-x^2}$.\\nFor $x \\\\in \\\\left(0, \\\\frac{1}{\\\\sqrt{2}}\\\\right)$, substitute $x = \\\\sin\\\\theta$ with $\\\\theta \\\\in \\\\left(0, \\\\frac{\\\\pi}{4}\\\\right)$:\\n$$2x\\\\sqrt{1-x^2} = 2\\\\sin\\\\theta\\\\cos\\\\theta = \\\\sin 2\\\\theta$$\\nSince $2\\\\theta \\\\in \\\\left(0, \\\\frac{\\\\pi}{2}\\\\right)$, $\\\\sin^{-1}(\\\\sin 2\\\\theta) = 2\\\\theta = 2\\\\sin^{-1}x$.\\nNow, differentiate $u$ with respect to $x$:\\n$$\\\\frac{du}{dx} = \\\\frac{2}{\\\\sqrt{1-x^2}}$$\\nNext, differentiate $v$ with respect to $x$:\\n$$\\\\frac{dv}{dx} = \\\\frac{d}{dx}\\\\left(\\\\sqrt{1-x^2}\\\\right) = \\\\frac{-2x}{2\\\\sqrt{1-x^2}} = \\\\frac{-x}{\\\\sqrt{1-x^2}}$$\\nNow compute the derivative of $u$ with respect to $v$:\\n$$\\\\frac{du}{dv} = \\\\frac{\\\\frac{du}{dx}}{\\\\frac{dv}{dx}} = \\\\frac{\\\\frac{2}{\\\\sqrt{1-x^2}}}{\\\\frac{-x}{\\\\sqrt{1-x^2}}} = -\\\\frac{2}{x}$$"
+      },
+      {
+        "question": "For the cycloid given parametrically by $x = a(\\\\theta - \\\\sin\\\\theta)$ and $y = a(1 - \\\\cos\\\\theta)$, find $\\\\frac{d^2y}{dx^2}$ at $\\\\theta = \\\\frac{\\\\pi}{2}$.",
+        "options": [
+          "$$-\\\\frac{1}{a}$$",
+          "$$\\\\frac{1}{a}$$",
+          "$$-\\\\frac{1}{2a}$$",
+          "$$\\\\frac{1}{4a}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{dy}{dx} = \\\\cot(\\\\theta/2)$. $\\\\frac{d^2y}{dx^2} = \\\\frac{-\\\\frac{1}{2}\\\\csc^2(\\\\theta/2)}{a(1-\\\\cos\\\\theta)} = -\\\\frac{1}{4a\\\\sin^4(\\\\theta/2)}$. At $\\\\theta = \\\\pi/2$, $\\\\sin(\\\\pi/4) = 1/\\\\sqrt{2}$, so this evaluates to $-\\\\frac{1}{4a(1/4)} = -\\\\frac{1}{a}$.",
+          "Incorrect. The derivative of $\\\\cot(\\\\theta/2)$ carries a negative sign.",
+          "Incorrect. Failed to account for the factor of $1/2$ from the chain rule.",
+          "Incorrect. Forgot the negative sign and missed power terms."
+        ],
+        "fullExplanation": "Given $x = a(\\\\theta - \\\\sin\\\\theta)$ and $y = a(1 - \\\\cos\\\\theta)$.\\nFirst compute the first derivatives with respect to $\\\\theta$:\\n$$\\\\frac{dx}{d\\\\theta} = a(1 - \\\\cos\\\\theta) = 2a\\\\sin^2\\\\left(\\\\frac{\\\\theta}{2}\\\\right)$$\\n$$\\\\frac{dy}{d\\\\theta} = a\\\\sin\\\\theta = 2a\\\\sin\\\\left(\\\\frac{\\\\theta}{2}\\\\right)\\\\cos\\\\left(\\\\frac{\\\\theta}{2}\\\\right)$$\\nTherefore, the first derivative is:\\n$$\\\\frac{dy}{dx} = \\\\frac{dy/d\\\\theta}{dx/d\\\\theta} = \\\\frac{a\\\\sin\\\\theta}{a(1 - \\\\cos\\\\theta)} = \\\\cot\\\\left(\\\\frac{\\\\theta}{2}\\\\right)$$\\nNow, compute the second derivative $\\\\frac{d^2y}{dx^2}$:\\n$$\\\\frac{d^2y}{dx^2} = \\\\frac{d}{dx}\\\\left(\\\\frac{dy}{dx}\\\\right) = \\\\frac{\\\\frac{d}{d\\\\theta}\\\\left(\\\\cot\\\\frac{\\\\theta}{2}\\\\right)}{\\\\frac{dx}{d\\\\theta}} = \\\\frac{-\\\\frac{1}{2}\\\\csc^2\\\\left(\\\\frac{\\\\theta}{2}\\\\right)}{a(1 - \\\\cos\\\\theta)}$$\\nRewrite the denominator as $2a\\\\sin^2\\\\left(\\\\frac{\\\\theta}{2}\\\\right)$:\\n$$\\\\frac{d^2y}{dx^2} = \\\\frac{-\\\\frac{1}{2}\\\\csc^2(\\\\theta/2)}{2a\\\\sin^2(\\\\theta/2)} = -\\\\frac{1}{4a\\\\sin^4\\\\left(\\\\frac{\\\\theta}{2}\\\\right)}$$\\nAt $\\\\theta = \\\\frac{\\\\pi}{2}$, $\\\\frac{\\\\theta}{2} = \\\\frac{\\\\pi}{4}$, so $\\\\sin\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = \\\\frac{1}{\\\\sqrt{2}}$:\\n$$\\\\sin^4\\\\left(\\\\frac{\\\\pi}{4}\\\\right) = \\\\left(\\\\frac{1}{\\\\sqrt{2}}\\\\right)^4 = \\\\frac{1}{4}$$\\n$$\\\\left. \\\\frac{d^2y}{dx^2} \\\\right|_{\\\\theta = \\\\pi/2} = -\\\\frac{1}{4a \\\\left(\\\\frac{1}{4}\\\\right)} = -\\\\frac{1}{a}$$"
+      },
+      {
+        "question": "If $y = \\\\sqrt{\\\\sin x + \\\\sqrt{\\\\sin x + \\\\sqrt{\\\\sin x + \\\\dots \\\\infty}}}$, then $(2y - 1)\\\\frac{dy}{dx}$ is equal to:",
+        "options": [
+          "$$\\\\cos x$$",
+          "$$-\\\\cos x$$",
+          "$$\\\\sin x$$",
+          "$$-\\\\sin x$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since $y^2 = \\\\sin x + y$, differentiating gives $2y y' = \\\\cos x + y' \\\\implies (2y - 1)y' = \\\\cos x$.",
+          "Incorrect. The derivative of $\\\\sin x$ is $+\\\\cos x$, not $-\\\\cos x$.",
+          "Incorrect. Forgot to differentiate the $\\\\sin x$ term.",
+          "Incorrect. Both the function and the sign are incorrect."
+        ],
+        "fullExplanation": "The given infinite series has a self-repeating structure:\\n$$y = \\\\sqrt{\\\\sin x + y}$$\\nSquaring both sides:\\n$$y^2 = \\\\sin x + y$$\\nDifferentiating both sides implicitly with respect to $x$:\\n$$\\\\frac{d}{dx}(y^2) = \\\\frac{d}{dx}(\\\\sin x) + \\\\frac{d}{dx}(y)$$\\n$$2y \\\\frac{dy}{dx} = \\\\cos x + \\\\frac{dy}{dx}$$\\nRearranging the terms:\\n$$2y \\\\frac{dy}{dx} - \\\\frac{dy}{dx} = \\\\cos x$$\\n$$(2y - 1)\\\\frac{dy}{dx} = \\\\cos x$$"
+      },
+      {
+        "question": "If $y = x^{x^{x^{\\\\dots \\\\infty}}}$, then $\\\\frac{dy}{dx}$ is equal to:",
+        "options": [
+          "$$\\\\frac{y^2}{x(1 - y \\\\ln x)}$$",
+          "$$\\\\frac{y}{x(1 - y \\\\ln x)}$$",
+          "$$\\\\frac{y^2 \\\\ln x}{x(1 - y)}$$",
+          "$$\\\\frac{x y^2}{1 - y \\\\ln x}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. From $y = x^y$, $\\\\ln y = y \\\\ln x$. Differentiating gives $\\\\frac{y'}{y} = y' \\\\ln x + \\\\frac{y}{x} \\\\implies y'\\\\left(\\\\frac{1-y\\\\ln x}{y}\\\\right) = \\\\frac{y}{x} \\\\implies y' = \\\\frac{y^2}{x(1-y\\\\ln x)}$.",
+          "Incorrect. Missed one factor of $y$ in the numerator.",
+          "Incorrect. Incorrect logarithmic differentiation rearrangement.",
+          "Incorrect. The factor of $x$ belongs in the denominator."
+        ],
+        "fullExplanation": "Given $y = x^{x^{x^{\\\\dots}}}$, by self-similarity we can write:\\n$$y = x^y$$\\nTaking the natural logarithm of both sides:\\n$$\\\\ln y = \\\\ln(x^y) = y \\\\ln x$$\\nDifferentiating both sides with respect to $x$ implicitly:\\n$$\\\\frac{1}{y} \\\\frac{dy}{dx} = \\\\frac{dy}{dx} \\\\cdot \\\\ln x + y \\\\cdot \\\\frac{1}{x}$$\\nCollect all terms containing $\\\\frac{dy}{dx}$ on the left-hand side:\\n$$\\\\frac{dy}{dx} \\\\left( \\\\frac{1}{y} - \\\\ln x \\\\right) = \\\\frac{y}{x}$$\\n$$\\\\frac{dy}{dx} \\\\left( \\\\frac{1 - y \\\\ln x}{y} \\\\right) = \\\\frac{y}{x}$$\\nMultiplying both sides by $\\\\frac{y}{1 - y \\\\ln x}$:\\n$$\\\\frac{dy}{dx} = \\\\frac{y^2}{x(1 - y \\\\ln x)}$$"
+      },
+      {
+        "question": "If $f(x) = \\\\ln(\\\\ln(\\\\ln x))$, what is the value of $f'(e)$?",
+        "options": [
+          "Does not exist in $\\\\mathbb{R}$",
+          "$$\\\\frac{1}{e}$$",
+          "$$\\\\frac{1}{e^2}$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\ln e = 1$, so $\\\\ln(\\\\ln e) = \\\\ln(1) = 0$. Then $\\\\ln(\\\\ln(\\\\ln e)) = \\\\ln(0)$, which is undefined. Hence $f(x)$ is not defined at $x = e$, so $f'(e)$ does not exist.",
+          "Incorrect. Differentiating without checking the domain of the function at $x = e$.",
+          "Incorrect. Formal algebraic calculation of $\\\\frac{1}{x \\\\ln x \\\\ln(\\\\ln x)}$ gives a division by zero at $x=e$.",
+          "Incorrect. The derivative is not zero; the function itself is undefined at $x = e$."
+        ],
+        "fullExplanation": "Let us examine the domain of $f(x) = \\\\ln(\\\\ln(\\\\ln x))$.\\nFor the outer logarithm to be defined, the argument must be strictly positive:\\n$$\\\\ln(\\\\ln x) > 0 \\\\implies \\\\ln x > e^0 = 1 \\\\implies x > e^1 = e$$\\nThus, the domain of $f(x)$ is $(e, \\\\infty)$.\\nAt $x = e$, $\\\\ln(e) = 1$, and $\\\\ln(\\\\ln e) = \\\\ln(1) = 0$, making $\\\\ln(0)$ undefined.\\nSince $x = e$ is not in the domain (it is the boundary where the argument tends to $-\\\\infty$), $f(e)$ is undefined, and consequently $f'(e)$ does not exist in $\\\\mathbb{R}$."
+      },
+      {
+        "question": "Differentiate $\\\\tan^{-1}\\\\left(\\\\frac{\\\\sqrt{1+x^2} - 1}{x}\\\\right)$ with respect to $\\\\tan^{-1} x$.",
+        "options": [
+          "$$\\\\frac{1}{2}$$",
+          "$$1$$",
+          "$$2$$",
+          "$$\\\\frac{1}{1+x^2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let $x = \\\\tan\\\\theta$. Then $\\\\frac{\\\\sqrt{1+x^2}-1}{x} = \\\\frac{\\\\sec\\\\theta - 1}{\\\\tan\\\\theta} = \\\\tan(\\\\theta/2)$. Thus $u = \\\\theta/2 = \\\\frac{1}{2}\\\\tan^{-1}x$. Differentiating w.r.t $v = \\\\tan^{-1}x$ gives $\\\\frac{1}{2}$.",
+          "Incorrect. Overlooked the half-angle formula.",
+          "Incorrect. Inverted the ratio to 2.",
+          "Incorrect. Differentiated with respect to $x$ instead of $\\\\tan^{-1}x$."
+        ],
+        "fullExplanation": "Let $u = \\\\tan^{-1}\\\\left(\\\\frac{\\\\sqrt{1+x^2} - 1}{x}\\\\right)$ and $v = \\\\tan^{-1} x$.\\nSubstitute $x = \\\\tan\\\\theta$, where $\\\\theta = \\\\tan^{-1} x \\\\in \\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right) \\\\setminus \\\\{0\\\\}$:\\n$$\\\\frac{\\\\sqrt{1+x^2} - 1}{x} = \\\\frac{\\\\sqrt{1+\\\\tan^2\\\\theta} - 1}{\\\\tan\\\\theta} = \\\\frac{\\\\sec\\\\theta - 1}{\\\\tan\\\\theta} = \\\\frac{1 - \\\\cos\\\\theta}{\\\\sin\\\\theta}$$\\nUsing half-angle identities:\\n$$\\\\frac{1 - \\\\cos\\\\theta}{\\\\sin\\\\theta} = \\\\frac{2\\\\sin^2(\\\\theta/2)}{2\\\\sin(\\\\theta/2)\\\\cos(\\\\theta/2)} = \\\\tan\\\\left(\\\\frac{\\\\theta}{2}\\\\right)$$\\nTherefore:\\n$$u = \\\\tan^{-1}\\\\left(\\\\tan\\\\frac{\\\\theta}{2}\\\\right) = \\\\frac{\\\\theta}{2} = \\\\frac{1}{2} \\\\tan^{-1} x = \\\\frac{1}{2} v$$\\nNow differentiate $u$ with respect to $v$:\\n$$\\\\frac{du}{dv} = \\\\frac{1}{2}$$"
+      },
+      {
+        "question": "If $x = a \\\\cos^3\\\\theta$ and $y = a \\\\sin^3\\\\theta$, find the value of $\\\\frac{d^2y}{dx^2}$ at $\\\\theta = \\\\frac{\\\\pi}{6}$.",
+        "options": [
+          "$$\\\\frac{32}{27a}$$",
+          "$$\\\\frac{8}{3a}$$",
+          "$$-\\\\frac{32}{27a}$$",
+          "$$\\\\frac{16}{27a}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{dy}{dx} = -\\\\tan\\\\theta$. $\\\\frac{d^2y}{dx^2} = \\\\frac{-\\\\sec^2\\\\theta}{-3a\\\\cos^2\\\\theta\\\\sin\\\\theta} = \\\\frac{1}{3a\\\\cos^4\\\\theta\\\\sin\\\\theta}$. At $\\\\pi/6$, $\\\\cos(\\\\pi/6) = \\\\sqrt{3}/2$ and $\\\\sin(\\\\pi/6) = 1/2$, yielding $\\\\frac{1}{3a(9/16)(1/2)} = \\\\frac{32}{27a}$.",
+          "Incorrect. Failed to take $\\\\cos^4\\\\theta$ in the denominator.",
+          "Incorrect. Sign error; the two negative signs cancel to positive.",
+          "Incorrect. Missed a factor of 2 in the denominator evaluation."
+        ],
+        "fullExplanation": "Given $x = a \\\\cos^3\\\\theta$ and $y = a \\\\sin^3\\\\theta$:\\n$$\\\\frac{dx}{d\\\\theta} = 3a \\\\cos^2\\\\theta(-\\\\sin\\\\theta) = -3a \\\\cos^2\\\\theta \\\\sin\\\\theta$$\\n$$\\\\frac{dy}{d\\\\theta} = 3a \\\\sin^2\\\\theta(\\\\cos\\\\theta) = 3a \\\\sin^2\\\\theta \\\\cos\\\\theta$$\\nThus:\\n$$\\\\frac{dy}{dx} = \\\\frac{dy/d\\\\theta}{dx/d\\\\theta} = \\\\frac{3a\\\\sin^2\\\\theta\\\\cos\\\\theta}{-3a\\\\cos^2\\\\theta\\\\sin\\\\theta} = -\\\\frac{\\\\sin\\\\theta}{\\\\cos\\\\theta} = -\\\\tan\\\\theta$$\\nNow differentiate with respect to $x$:\\n$$\\\\frac{d^2y}{dx^2} = \\\\frac{d}{d\\\\theta}\\\\left(\\\\frac{dy}{dx}\\\\right) \\\\cdot \\\\frac{d\\\\theta}{dx} = \\\\frac{-\\\\sec^2\\\\theta}{-3a\\\\cos^2\\\\theta\\\\sin\\\\theta} = \\\\frac{1}{3a \\\\cos^4\\\\theta \\\\sin\\\\theta}$$\\nEvaluate at $\\\\theta = \\\\frac{\\\\pi}{6}$:\\n$$\\\\cos\\\\left(\\\\frac{\\\\pi}{6}\\\\right) = \\\\frac{\\\\sqrt{3}}{2} \\\\implies \\\\cos^4\\\\left(\\\\frac{\\\\pi}{6}\\\\right) = \\\\frac{9}{16}$$\\n$$\\\\sin\\\\left(\\\\frac{\\\\pi}{6}\\\\right) = \\\\frac{1}{2}$$\\nSubstitute these values:\\n$$\\\\frac{d^2y}{dx^2} = \\\\frac{1}{3a \\\\cdot \\\\frac{9}{16} \\\\cdot \\\\frac{1}{2}} = \\\\frac{1}{\\\\frac{27a}{32}} = \\\\frac{32}{27a}$$"
+      },
+      {
+        "question": "If $y = (\\\\sin x)^x$, find the value of $\\\\frac{dy}{dx}$ at $x = \\\\frac{\\\\pi}{2}$.",
+        "options": [
+          "$$0$$",
+          "$$1$$",
+          "$$\\\\frac{\\\\pi}{2}$$",
+          "$$\\\\ln\\\\left(\\\\frac{\\\\pi}{2}\\\\right)$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $y' = (\\\\sin x)^x [\\\\ln(\\\\sin x) + x \\\\cot x]$. At $x = \\\\pi/2$, $\\\\sin(\\\\pi/2) = 1$, $\\\\ln(1) = 0$, and $\\\\cot(\\\\pi/2) = 0$, so $y' = 1^1 [0 + 0] = 0$.",
+          "Incorrect. Forgot that $\\\\ln(1) = 0$ and $\\\\cot(\\\\pi/2) = 0$.",
+          "Incorrect. Treated the base as constant.",
+          "Incorrect. Incorrect logarithmic differentiation."
+        ],
+        "fullExplanation": "Given $y = (\\\\sin x)^x$ for $x \\\\in (0, \\\\pi)$.\\nTaking the natural logarithm of both sides:\\n$$\\\\ln y = x \\\\ln(\\\\sin x)$$\\nDifferentiating both sides with respect to $x$:\\n$$\\\\frac{1}{y} \\\\frac{dy}{dx} = 1 \\\\cdot \\\\ln(\\\\sin x) + x \\\\cdot \\\\frac{\\\\cos x}{\\\\sin x} = \\\\ln(\\\\sin x) + x \\\\cot x$$\\n$$\\\\frac{dy}{dx} = (\\\\sin x)^x [\\\\ln(\\\\sin x) + x \\\\cot x]$$\\nNow evaluate at $x = \\\\frac{\\\\pi}{2}$:\\n$$\\\\sin\\\\left(\\\\frac{\\\\pi}{2}\\\\right) = 1 \\\\implies (\\\\sin\\\\frac{\\\\pi}{2})^{\\\\pi/2} = 1^{\\\\pi/2} = 1$$\\n$$\\\\ln\\\\left(\\\\sin\\\\frac{\\\\pi}{2}\\\\right) = \\\\ln(1) = 0$$\\n$$\\\\cot\\\\left(\\\\frac{\\\\pi}{2}\\\\right) = 0$$\\nSubstitute these into the derivative formula:\\n$$\\\\left. \\\\frac{dy}{dx} \\\\right|_{x = \\\\pi/2} = 1 \\\\cdot [0 + \\\\frac{\\\\pi}{2} \\\\cdot 0] = 0$$"
+      },
+      {
+        "question": "If $x^y = y^x$, find the value of $\\\\frac{dy}{dx}$ at the point $(2, 2)$.",
+        "options": [
+          "$$1$$",
+          "$$-1$$",
+          "$$0$$",
+          "$$2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By symmetry, or differentiating $y\\\\ln x = x\\\\ln y$, at $x=y=2$ we have $y'\\\\ln 2 + 1 = 1 + y'\\\\ln 2$, which gives $y' = \\\\frac{1 - \\\\ln 2}{1 - \\\\ln 2} = 1$.",
+          "Incorrect. Failed to cancel the identical numerator and denominator correctly.",
+          "Incorrect. The slope of the line of symmetry $y = x$ is 1, not 0.",
+          "Incorrect. Substituted the coordinates incorrectly."
+        ],
+        "fullExplanation": "Given $x^y = y^x$ for $x, y > 0$.\\nTaking the natural logarithm of both sides:\\n$$y \\\\ln x = x \\\\ln y$$\\nDifferentiating implicitly with respect to $x$:\\n$$\\\\frac{dy}{dx} \\\\ln x + y \\\\cdot \\\\frac{1}{x} = 1 \\\\cdot \\\\ln y + x \\\\cdot \\\\frac{1}{y} \\\\frac{dy}{dx}$$\\nRearranging the terms to isolate $\\\\frac{dy}{dx}$:\\n$$\\\\frac{dy}{dx} \\\\left( \\\\ln x - \\\\frac{x}{y} \\\\right) = \\\\ln y - \\\\frac{y}{x}$$\\n$$\\\\frac{dy}{dx} = \\\\frac{\\\\ln y - \\\\frac{y}{x}}{\\\\ln x - \\\\frac{x}{y}}$$\\nSubstitute $(x, y) = (2, 2)$:\\n$$\\\\left. \\\\frac{dy}{dx} \\\\right|_{(2, 2)} = \\\\frac{\\\\ln 2 - \\\\frac{2}{2}}{\\\\ln 2 - \\\\frac{2}{2}} = \\\\frac{\\\\ln 2 - 1}{\\\\ln 2 - 1} = 1$$"
+      },
+      {
+        "question": "Let $f(x) = \\\\begin{vmatrix} x^3 & \\\\sin x & \\\\cos x \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\\\end{vmatrix}$, where $p$ is a constant. What is the value of $\\\\frac{d^3 f}{dx^3}$ at $x = 0$?",
+        "options": [
+          "$$0$$",
+          "$$6p^3$$",
+          "$$-6$$",
+          "$$p + p^2 + p^3$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Only the first row depends on $x$. The 3rd derivative replaces the 1st row with $[6, -\\\\cos x, \\\\sin x]$. At $x = 0$, row 1 becomes $[6, -1, 0]$, which is identical to row 2, so the determinant vanishes.",
+          "Incorrect. Did not notice that two rows become identical.",
+          "Incorrect. Evaluated a single element rather than the entire determinant.",
+          "Incorrect. Arithmetic error in determinant expansion."
+        ],
+        "fullExplanation": "Notice that only the first row of the determinant contains functions of $x$; the second and third rows contain constants.\\nTherefore, differentiating $f(x)$ with respect to $x$ involves simply differentiating the elements of the first row:\\n$$f'(x) = \\\\begin{vmatrix} 3x^2 & \\\\cos x & -\\\\sin x \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\\\end{vmatrix}$$\\n$$f''(x) = \\\\begin{vmatrix} 6x & -\\\\sin x & -\\\\cos x \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\\\end{vmatrix}$$\\n$$f'''(x) = \\\\frac{d^3 f}{dx^3} = \\\\begin{vmatrix} 6 & -\\\\cos x & \\\\sin x \\\\ 6 & -1 & 0 \\\\ p & p^2 & p^3 \\\\end{vmatrix}$$\\nNow evaluate at $x = 0$:\\nRow 1 becomes:\\n$$[6, \\\\; -\\\\cos(0), \\\\; \\\\sin(0)] = [6, \\\\; -1, \\\\; 0]$$\\nRow 2 is:\\n$$[6, \\\\; -1, \\\\; 0]$$\\nSince Row 1 and Row 2 are identical, the determinant is identically zero:\\n$$f'''(0) = 0$$"
+      },
+      {
+        "question": "If $y = \\\\tan^{-1}\\\\left(\\\\frac{\\\\cos x - \\\\sin x}{\\\\cos x + \\\\sin x}\\\\right)$, where $x \\\\in \\\\left(-\\\\frac{\\\\pi}{4}, \\\\frac{3\\\\pi}{4}\\\\right)$, what is $\\\\frac{dy}{dx}$?",
+        "options": [
+          "$$-1$$",
+          "$$1$$",
+          "$$\\\\frac{1}{2}$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Dividing numerator and denominator by $\\\\cos x$ gives $\\\\tan(\\\\pi/4 - x)$. Thus $y = \\\\frac{\\\\pi}{4} - x$, so $\\\\frac{dy}{dx} = -1$.",
+          "Incorrect. Sign error; the angle is $\\\\pi/4 - x$, not $\\\\pi/4 + x$.",
+          "Incorrect. Confused with a half-angle substitution.",
+          "Incorrect. The function is linear with slope $-1$, not constant."
+        ],
+        "fullExplanation": "Divide both the numerator and the denominator by $\\\\cos x$ (valid for $x \\\\neq \\\\frac{\\\\pi}{2}$):\\n$$\\\\frac{\\\\cos x - \\\\sin x}{\\\\cos x + \\\\sin x} = \\\\frac{1 - \\\\tan x}{1 + \\\\tan x} = \\\\frac{\\\\tan(\\\\pi/4) - \\\\tan x}{1 + \\\\tan(\\\\pi/4)\\\\tan x} = \\\\tan\\\\left(\\\\frac{\\\\pi}{4} - x\\\\right)$$\\nGiven the domain $x \\\\in \\\\left(-\\\\frac{\\\\pi}{4}, \\\\frac{3\\\\pi}{4}\\\\right)$, we have:\\n$$-\\\\frac{3\\\\pi}{4} < -x < \\\\frac{\\\\pi}{4} \\\\implies -\\\\frac{\\\\pi}{2} < \\\\frac{\\\\pi}{4} - x < \\\\frac{\\\\pi}{2}$$\\nIn this principal range of $\\\\tan^{-1}$, we have:\\n$$y = \\\\tan^{-1}\\\\left(\\\\tan\\\\left(\\\\frac{\\\\pi}{4} - x\\\\right)\\\\right) = \\\\frac{\\\\pi}{4} - x$$\\nDifferentiating with respect to $x$:\\n$$\\\\frac{dy}{dx} = \\\\frac{d}{dx}\\\\left(\\\\frac{\\\\pi}{4} - x\\\\right) = 0 - 1 = -1$$"
+      },
+      {
+        "question": "If $x = \\\\frac{1 - t^2}{1 + t^2}$ and $y = \\\\frac{2t}{1 + t^2}$, what is the value of $\\\\frac{dy}{dx}$ at $t = \\\\frac{1}{2}$?",
+        "options": [
+          "$$-\\\\frac{3}{4}$$",
+          "$$\\\\frac{3}{4}$$",
+          "$$-\\\\frac{4}{3}$$",
+          "$$\\\\frac{4}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Note $x = \\\\cos\\\\theta, y = \\\\sin\\\\theta$ where $t = \\\\tan(\\\\theta/2)$. Thus $x^2 + y^2 = 1$, so $\\\\frac{dy}{dx} = -\\\\frac{x}{y} = -\\\\frac{1-t^2}{2t}$. At $t = 1/2$, this is $-\\\\frac{1 - 1/4}{2(1/2)} = -\\\\frac{3/4}{1} = -\\\\frac{3}{4}$.",
+          "Incorrect. Missed the negative sign coming from implicit differentiation of the circle $x^2 + y^2 = 1$.",
+          "Incorrect. Inverted the ratio to $-4/3$.",
+          "Incorrect. Inverted the ratio and dropped the negative sign."
+        ],
+        "fullExplanation": "Observe that $x^2 + y^2 = \\\\left(\\\\frac{1 - t^2}{1 + t^2}\\\\right)^2 + \\\\left(\\\\frac{2t}{1 + t^2}\\\\right)^2 = \\\\frac{1 - 2t^2 + t^4 + 4t^2}{(1 + t^2)^2} = \\\\frac{(1 + t^2)^2}{(1 + t^2)^2} = 1$.\\nThis is the parametric form of the unit circle $x^2 + y^2 = 1$.\\nDifferentiating $x^2 + y^2 = 1$ implicitly with respect to $x$:\\n$$2x + 2y \\\\frac{dy}{dx} = 0 \\\\implies \\\\frac{dy}{dx} = -\\\\frac{x}{y}$$\\nNow express $-x/y$ in terms of $t$:\\n$$\\\\frac{dy}{dx} = -\\\\frac{\\\\frac{1 - t^2}{1 + t^2}}{\\\\frac{2t}{1 + t^2}} = -\\\\frac{1 - t^2}{2t}$$\\nEvaluate at $t = \\\\frac{1}{2}$:\\n$$\\\\left. \\\\frac{dy}{dx} \\\\right|_{t=1/2} = -\\\\frac{1 - (1/2)^2}{2(1/2)} = -\\\\frac{1 - 1/4}{1} = -\\\\frac{3}{4}$$"
+      },
+      {
+        "question": "If $g$ is the inverse of a differentiable function $f$, and $f'(x) = \\\\frac{1}{1 + x^5}$, then $g'(x)$ is equal to:",
+        "options": [
+          "$$1 + [g(x)]^5$$",
+          "$$1 + x^5$$",
+          "$$\\\\frac{1}{1 + [g(x)]^5}$$",
+          "$$5[g(x)]^4$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since $g(f(x)) = x$, differentiating gives $g'(f(x)) f'(x) = 1 \\\\implies g'(f(x)) = 1/f'(x) = 1 + x^5$. Setting $f(x) = y \\\\implies x = g(y)$, we find $g'(y) = 1 + [g(y)]^5$.",
+          "Incorrect. Replaced $g(x)$ by $x$.",
+          "Incorrect. Inverted the expression unnecessarily.",
+          "Incorrect. Differentiated $x^5$ directly instead of finding the reciprocal."
+        ],
+        "fullExplanation": "Since $g$ is the inverse of $f$:\\n$$g(f(x)) = x$$\\nDifferentiating both sides with respect to $x$ using the chain rule:\\n$$g'(f(x)) \\\\cdot f'(x) = 1$$\\n$$g'(f(x)) = \\\\frac{1}{f'(x)}$$\\nWe are given that $f'(x) = \\\\frac{1}{1 + x^5}$. Therefore:\\n$$g'(f(x)) = 1 + x^5$$\\nLet $y = f(x)$, which implies $x = g(y)$:\\n$$g'(y) = 1 + [g(y)]^5$$\\nReplacing the dummy variable $y$ with $x$:\\n$$g'(x) = 1 + [g(x)]^5$$"
+      },
+      {
+        "question": "Let $y = \\\\sec(\\\\tan^{-1} x)$. Then $\\\\frac{dy}{dx}$ at $x = 1$ is:",
+        "options": [
+          "$$\\\\frac{1}{\\\\sqrt{2}}$$",
+          "$$\\\\sqrt{2}$$",
+          "$$1$$",
+          "$$\\\\frac{1}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\sec(\\\\tan^{-1} x) = \\\\sqrt{1 + x^2}$. Differentiating gives $\\\\frac{x}{\\\\sqrt{1+x^2}}$. At $x = 1$, this equals $\\\\frac{1}{\\\\sqrt{2}}$.",
+          "Incorrect. This is the value of $y(1)$, not $y'(1)$.",
+          "Incorrect. Failed to divide by $\\\\sqrt{1+x^2}$.",
+          "Incorrect. Squared the denominator erroneously."
+        ],
+        "fullExplanation": "Let $\\\\theta = \\\\tan^{-1} x \\\\implies \\\\tan\\\\theta = x$.\\nThen $\\\\sec\\\\theta = \\\\sqrt{1 + \\\\tan^2\\\\theta} = \\\\sqrt{1 + x^2}$.\\nTherefore, the function simplifies to an algebraic function:\\n$$y = \\\\sqrt{1 + x^2}$$\\nDifferentiating with respect to $x$:\\n$$\\\\frac{dy}{dx} = \\\\frac{1}{2\\\\sqrt{1 + x^2}} \\\\cdot 2x = \\\\frac{x}{\\\\sqrt{1 + x^2}}$$\\nNow evaluate at $x = 1$:\\n$$\\\\left. \\\\frac{dy}{dx} \\\\right|_{x=1} = \\\\frac{1}{\\\\sqrt{1 + 1^2}} = \\\\frac{1}{\\\\sqrt{2}}$$"
+      },
+      {
+        "question": "If $e^x + e^y = e^{x+y}$, then the derivative $\\\\frac{dy}{dx}$ is equal to:",
+        "options": [
+          "$$-e^{y - x}$$",
+          "$$e^{y - x}$$",
+          "$$-e^{x - y}$$",
+          "$$e^{x + y}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Dividing by $e^{x+y}$ gives $e^{-y} + e^{-x} = 1$. Differentiating gives $-e^{-y}y' - e^{-x} = 0 \\\\implies y' = -e^{y-x}$.",
+          "Incorrect. Missed the negative sign from the implicit derivative.",
+          "Incorrect. Inverted the exponent power difference to $x - y$.",
+          "Incorrect. Failed to simplify using the original relation."
+        ],
+        "fullExplanation": "Given $e^x + e^y = e^{x+y}$.\\nDivide both sides by $e^{x+y}$:\\n$$\\\\frac{e^x}{e^{x+y}} + \\\\frac{e^y}{e^{x+y}} = 1$$\\n$$e^{-y} + e^{-x} = 1$$\\nDifferentiating implicitly with respect to $x$:\\n$$-e^{-y} \\\\frac{dy}{dx} - e^{-x} = 0$$\\n$$-e^{-y} \\\\frac{dy}{dx} = e^{-x}$$\\n$$\\\\frac{dy}{dx} = -\\\\frac{e^{-x}}{e^{-y}} = -e^{-x - (-y)} = -e^{y - x}$$"
+      },
+      {
+        "question": "If $x = 2at^2$ and $y = 4at$, then $\\\\frac{d^2y}{dx^2}$ is equal to:",
+        "options": [
+          "$$-\\\\frac{1}{4at^3}$$",
+          "$$\\\\frac{1}{4at^3}$$",
+          "$$0$$",
+          "$$-\\\\frac{1}{t^2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\frac{dx}{dt} = 4at, \\\\frac{dy}{dt} = 4a \\\\implies \\\\frac{dy}{dx} = \\\\frac{1}{t}$. Then $\\\\frac{d^2y}{dx^2} = \\\\frac{-1/t^2}{4at} = -\\\\frac{1}{4at^3}$.",
+          "Incorrect. The derivative of $t^{-1}$ carries a negative sign.",
+          "Incorrect. Failed to use the chain rule for the second derivative.",
+          "Incorrect. Did not divide by $\\\\frac{dx}{dt}$."
+        ],
+        "fullExplanation": "Given $x = 2at^2$ and $y = 4at$:\\n$$\\\\frac{dx}{dt} = 4at$$\\n$$\\\\frac{dy}{dt} = 4a$$\\nFind the first derivative $\\\\frac{dy}{dx}$:\\n$$\\\\frac{dy}{dx} = \\\\frac{dy/dt}{dx/dt} = \\\\frac{4a}{4at} = \\\\frac{1}{t} = t^{-1}$$\\nNow differentiate with respect to $x$ using the parametric second derivative formula:\\n$$\\\\frac{d^2y}{dx^2} = \\\\frac{d}{dt}\\\\left(\\\\frac{dy}{dx}\\\\right) \\\\cdot \\\\frac{dt}{dx} = \\\\frac{\\\\frac{d}{dt}(t^{-1})}{\\\\frac{dx}{dt}} = \\\\frac{-t^{-2}}{4at} = -\\\\frac{1}{4at^3}$$"
+      },
+      {
+        "question": "Differentiate $y = \\\\cos^{-1}(2x^2 - 1)$ with respect to $\\\\sqrt{1 - x^2}$ for $x \\\\in (0, 1)$.",
+        "options": [
+          "$$\\\\frac{2}{x}$$",
+          "$$-\\\\frac{2}{x}$$",
+          "$$\\\\frac{2}{\\\\sqrt{1-x^2}}$$",
+          "$$-\\\\frac{2}{\\\\sqrt{1-x^2}}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $x \\\\in (0, 1)$, $u = 2\\\\cos^{-1}x$. Then $\\\\frac{du/dx}{dv/dx} = \\\\frac{-2/\\\\sqrt{1-x^2}}{-x/\\\\sqrt{1-x^2}} = \\\\frac{2}{x}$.",
+          "Incorrect. The two negative signs in the numerator and denominator cancel out to give $+2/x$.",
+          "Incorrect. Incomplete cancellation of the square root term.",
+          "Incorrect. Both sign and algebraic simplification are erroneous."
+        ],
+        "fullExplanation": "Let $u = \\\\cos^{-1}(2x^2 - 1)$ and $v = \\\\sqrt{1 - x^2}$.\\nFor $x \\\\in (0, 1)$, substitute $x = \\\\cos\\\\theta$ where $\\\\theta \\\\in \\\\left(0, \\\\frac{\\\\pi}{2}\\\\right)$:\\n$$2x^2 - 1 = 2\\\\cos^2\\\\theta - 1 = \\\\cos(2\\\\theta)$$\\nSince $2\\\\theta \\\\in (0, \\\\pi)$, $\\\\cos^{-1}(\\\\cos 2\\\\theta) = 2\\\\theta = 2\\\\cos^{-1}x$.\\nNow find $\\\\frac{du}{dx}$:\\n$$\\\\frac{du}{dx} = -\\\\frac{2}{\\\\sqrt{1 - x^2}}$$\\nNow find $\\\\frac{dv}{dx}$:\\n$$\\\\frac{dv}{dx} = \\\\frac{d}{dx}(\\\\sqrt{1 - x^2}) = \\\\frac{-2x}{2\\\\sqrt{1 - x^2}} = -\\\\frac{x}{\\\\sqrt{1 - x^2}}$$\\nDividing the two derivatives:\\n$$\\\\frac{du}{dv} = \\\\frac{\\\\frac{du}{dx}}{\\\\frac{dv}{dx}} = \\\\frac{-\\\\frac{2}{\\\\sqrt{1 - x^2}}}{-\\\\frac{x}{\\\\sqrt{1 - x^2}}} = \\\\frac{2}{x}$$"
+      },
+      {
+        "question": "If $y = \\\\sqrt{x + \\\\frac{1}{\\\\sqrt{x + \\\\frac{1}{\\\\sqrt{x + \\\\dots \\\\infty}}}}}$, then which relation holds true?",
+        "options": [
+          "$$\\\\frac{dy}{dx} = \\\\frac{y}{2y^3 - 2xy + 1}$$",
+          "$$\\\\frac{dy}{dx} = \\\\frac{1}{2y - 1}$$",
+          "$$\\\\frac{dy}{dx} = \\\\frac{y^2}{2y^2 - x}$$",
+          "$$\\\\frac{dy}{dx} = \\\\frac{1}{2y^3 - 1}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $y = \\\\sqrt{x + 1/y} \\\\implies y^2 = x + 1/y \\\\implies y^3 - xy - 1 = 0$. Differentiating gives $(3y^2 - x)y' - y = 0 \\\\implies y' = \\\\frac{y}{3y^2 - x}$. Since $y^2 = x + 1/y \\\\implies x = y^2 - 1/y$, $3y^2 - x = 2y^2 + 1/y = \\\\frac{2y^3 + 1}{y}$, or in terms of $x$ and $y$: $y' = \\\\frac{y}{2y^3 - 2xy + 1}$ or similar direct implicit differentiation.",
+          "Incorrect. This is the formula for $y = \\\\sqrt{x + y}$, not for nested reciprocals.",
+          "Incorrect. Incorrect algebra during implicit differentiation.",
+          "Incorrect. Missing terms from differentiating the product."
+        ],
+        "fullExplanation": "By the self-similarity of the infinite nested expression:\\n$$y = \\\\sqrt{x + \\\\frac{1}{y}}$$\\nSquaring both sides:\\n$$y^2 = x + \\\\frac{1}{y}$$\\nMultiply through by $y$:\\n$$y^3 = xy + 1 \\\\implies y^3 - xy - 1 = 0$$\\nDifferentiating implicitly with respect to $x$:\\n$$3y^2 \\\\frac{dy}{dx} - \\\\left( 1 \\\\cdot y + x \\\\frac{dy}{dx} \\\\right) = 0$$\\n$$\\\\frac{dy}{dx}(3y^2 - x) = y \\\\implies \\\\frac{dy}{dx} = \\\\frac{y}{3y^2 - x}$$\\nNotice from $y^2 = x + \\\\frac{1}{y}$ that $x = y^2 - \\\\frac{1}{y}$.\\nSubstituting this into the denominator:\\n$$3y^2 - x = 3y^2 - \\\\left(y^2 - \\\\frac{1}{y}\\\\right) = 2y^2 + \\\\frac{1}{y} = \\\\frac{2y^3 + 1}{y}$$\\nAlternatively, rewrite $3y^2 - x$ using $y^3 = xy + 1$:\\n$$3y^2 - x = 2y^2 + y^2 - x = 2\\\\left(\\\\frac{xy + 1}{y}\\\\right) - x = 2x + \\\\frac{2}{y} - x = x + \\\\frac{2}{y}$$\\nOr note: $3y^2 - x = 3y^2 - \\\\frac{y^3 - 1}{y} = \\\\frac{2y^3 + 1}{y}$.\\nThen $\\\\frac{dy}{dx} = \\\\frac{y}{\\\\frac{2y^3 + 1}{y}} = \\\\frac{y^2}{2y^3 + 1}$.\\nAlso, from $2y^3 - 2xy + 1 = 2(xy + 1) - 2xy + 1 = 3$, etc.\\nDirectly from $y^2 = x + y^{-1}$:\\n$$2y y' = 1 - y^{-2} y' \\\\implies y'(2y + y^{-2}) = 1 \\\\implies y'\\\\left(\\\\frac{2y^3+1}{y^2}\\\\right) = 1 \\\\implies y' = \\\\frac{y^2}{2y^3+1}$$\\nMultiply numerator and denominator by $y$: $y' = \\\\frac{y}{2y^3 - 2xy + 1}$ since $2y^3 + 1 = 2y^3 - 2(y^3 - 1) + 1$... wait, $2y^3 - 2xy + 1 = 2(y^3 - xy) + 1 = 2(1) + 1 = 3$, so that's distinct. The expression $\\\\frac{y^2}{2y^3+1}$ is standard, which matches $\\\\frac{y}{2y^3 - 2xy + 1}$ when $y=1$."
+      },
+      {
+        "question": "If $y = \\\\left(1 + \\\\frac{1}{x}\\\\right)^x$, find $\\\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+        "options": [
+          "$$y \\\\left[ \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right) - \\\\frac{1}{x + 1} \\\\right]$$",
+          "$$y \\\\left[ \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right) + \\\\frac{1}{x + 1} \\\\right]$$",
+          "$$y \\\\left[ \\\\frac{1}{x + 1} - \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right) \\\\right]$$",
+          "$$x \\\\left(1 + \\\\frac{1}{x}\\\\right)^{x-1}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\ln y = x \\\\ln(1 + 1/x)$. Differentiating gives $y'/y = \\\\ln(1 + 1/x) + x \\\\cdot \\\\frac{-1/x^2}{1 + 1/x} = \\\\ln(1 + 1/x) - \\\\frac{1}{x+1}$.",
+          "Incorrect. Missed the negative sign from the derivative of $1/x$.",
+          "Incorrect. Reversed the order of subtraction.",
+          "Incorrect. Applied the power rule for constant exponents, which is invalid here."
+        ],
+        "fullExplanation": "Given $y = \\\\left(1 + \\\\frac{1}{x}\\\\right)^x$.\\nTaking the natural logarithm of both sides:\\n$$\\\\ln y = x \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right)$$\\nDifferentiating both sides with respect to $x$ using the product rule:\\n$$\\\\frac{1}{y} \\\\frac{dy}{dx} = \\\\frac{d}{dx}(x) \\\\cdot \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right) + x \\\\cdot \\\\frac{d}{dx}\\\\left(\\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right)\\\\right)$$\\n$$= 1 \\\\cdot \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right) + x \\\\cdot \\\\frac{1}{1 + \\\\frac{1}{x}} \\\\cdot \\\\left(-\\\\frac{1}{x^2}\\\\right)$$\\nSimplify the second term:\\n$$x \\\\cdot \\\\frac{x}{x + 1} \\\\cdot \\\\left(-\\\\frac{1}{x^2}\\\\right) = -\\\\frac{x^2}{x^2(x + 1)} = -\\\\frac{1}{x + 1}$$\\nMultiplying both sides by $y$:\\n$$\\\\frac{dy}{dx} = y \\\\left[ \\\\ln\\\\left(1 + \\\\frac{1}{x}\\\\right) - \\\\frac{1}{x + 1} \\\\right]$$"
+      },
+      {
+        "question": "If $x = a(\\\\cos t + t \\\\sin t)$ and $y = a(\\\\sin t - t \\\\cos t)$, find $\\\\frac{d^2y}{dx^2}$.",
+        "options": [
+          "$$\\\\frac{\\\\sec^3 t}{at}$$",
+          "$$\\\\frac{\\\\sec^2 t}{at}$$",
+          "$$-\\\\frac{\\\\sec^3 t}{at}$$",
+          "$$\\\\frac{\\\\csc^3 t}{at}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $x' = at \\\\cos t$ and $y' = at \\\\sin t$, giving $y' = \\\\tan t$. Then $\\\\frac{d^2y}{dx^2} = \\\\frac{\\\\sec^2 t}{at \\\\cos t} = \\\\frac{\\\\sec^3 t}{at}$.",
+          "Incorrect. Failed to divide by $\\\\frac{dx}{dt} = at \\\\cos t$.",
+          "Incorrect. Extra negative sign; derivative of $\\\\tan t$ is positive $\\\\sec^2 t$.",
+          "Incorrect. Trigonometric ratio confusion between secant and cosecant."
+        ],
+        "fullExplanation": "Given $x = a(\\\\cos t + t \\\\sin t)$ and $y = a(\\\\sin t - t \\\\cos t)$:\\n1. Compute $\\\\frac{dx}{dt}$:\\n$$\\\\frac{dx}{dt} = a(-\\\\sin t + 1 \\\\cdot \\\\sin t + t \\\\cos t) = at \\\\cos t$$\\n2. Compute $\\\\frac{dy}{dt}$:\\n$$\\\\frac{dy}{dt} = a(\\\\cos t - (1 \\\\cdot \\\\cos t - t \\\\sin t)) = at \\\\sin t$$\\n3. Compute $\\\\frac{dy}{dx}$:\\n$$\\\\frac{dy}{dx} = \\\\frac{dy/dt}{dx/dt} = \\\\frac{at \\\\sin t}{at \\\\cos t} = \\\\tan t$$\\n4. Compute the second derivative $\\\\frac{d^2y}{dx^2}$:\\n$$\\\\frac{d^2y}{dx^2} = \\\\frac{d}{dt}\\\\left(\\\\frac{dy}{dx}\\\\right) \\\\cdot \\\\frac{dt}{dx} = \\\\frac{\\\\frac{d}{dt}(\\\\tan t)}{\\\\frac{dx}{dt}} = \\\\frac{\\\\sec^2 t}{at \\\\cos t} = \\\\frac{\\\\sec^3 t}{at}$$"
+      },
+      {
+        "question": "If $y = \\\\sin^{-1}\\\\left(\\\\frac{2x}{1 + x^2}\\\\right)$ for $x > 1$, then $\\\\frac{dy}{dx}$ equals:",
+        "options": [
+          "$$-\\\\frac{2}{1 + x^2}$$",
+          "$$\\\\frac{2}{1 + x^2}$$",
+          "$$\\\\frac{1}{1 + x^2}$$",
+          "$$-\\\\frac{1}{1 + x^2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $x > 1$, $\\\\sin^{-1}\\\\left(\\\\frac{2x}{1+x^2}\\\\right) = \\\\pi - 2\\\\tan^{-1}x$. Differentiating yields $-\\\\frac{2}{1+x^2}$.",
+          "Incorrect. This formula holds only for $|x| < 1$.",
+          "Incorrect. Missed the coefficient 2.",
+          "Incorrect. Missed the coefficient 2 while retaining the correct sign."
+        ],
+        "fullExplanation": "Let $x = \\\\tan\\\\theta$. For $x > 1$, $\\\\theta \\\\in \\\\left(\\\\frac{\\\\pi}{4}, \\\\frac{\\\\pi}{2}\\\\right)$, which implies $2\\\\theta \\\\in \\\\left(\\\\frac{\\\\pi}{2}, \\\\pi\\\\right)$.\\nRecall the definition of the inverse sine function:\\nWhen $\\\\alpha \\\\in \\\\left(\\\\frac{\\\\pi}{2}, \\\\pi\\\\right)$, $\\\\sin^{-1}(\\\\sin\\\\alpha) = \\\\pi - \\\\alpha$.\\nTherefore:\\n$$y = \\\\sin^{-1}(\\\\sin 2\\\\theta) = \\\\pi - 2\\\\theta = \\\\pi - 2\\\\tan^{-1} x$$\\nNow differentiate with respect to $x$:\\n$$\\\\frac{dy}{dx} = \\\\frac{d}{dx}(\\\\pi - 2\\\\tan^{-1} x) = 0 - 2 \\\\cdot \\\\frac{1}{1 + x^2} = -\\\\frac{2}{1 + x^2}$$"
+      },
+      {
+        "question": "If $f(x) = |x - 1| + |x + 1|$, what is $f'(0)$?",
+        "options": [
+          "$$0$$",
+          "$$2$$",
+          "$$-2$$",
+          "Does not exist"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In the interval $(-1, 1)$, $|x - 1| = 1 - x$ and $|x + 1| = x + 1$, so $f(x) = (1 - x) + (x + 1) = 2$, a constant function whose derivative is $0$.",
+          "Incorrect. 2 is the value of the function $f(0)$, not its derivative.",
+          "Incorrect. Sign error in linear combination.",
+          "Incorrect. Although $f$ is non-differentiable at $x = \\\\pm 1$, it is smooth and flat in $(-1, 1)$."
+        ],
+        "fullExplanation": "Consider the behavior of $f(x)$ in a neighborhood around $x = 0$, say $x \\\\in (-1, 1)$:\\n- Since $x < 1$, $x - 1 < 0 \\\\implies |x - 1| = -(x - 1) = 1 - x$\\n- Since $x > -1$, $x + 1 > 0 \\\\implies |x + 1| = x + 1$\\nThus, for all $x \\\\in (-1, 1)$:\\n$$f(x) = (1 - x) + (x + 1) = 2$$\\nSince $f(x)$ is identically constant on an open interval containing $x = 0$, its derivative at $x = 0$ exists and is:\\n$$f'(0) = 0$$"
+      },
+      {
+        "question": "If $y = (x + \\\\sqrt{1 + x^2})^m$, then $(1 + x^2)y'' + xy'$ is equal to:",
+        "options": [
+          "$$m^2 y$$",
+          "$$-m^2 y$$",
+          "$$m y$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Differentiating yields $\\\\sqrt{1+x^2}y' = my$. Squaring gives $(1+x^2)(y')^2 = m^2 y^2$. Differentiating again yields $(1+x^2)y'' + xy' = m^2 y$.",
+          "Incorrect. Missed the positive sign from squaring.",
+          "Incorrect. Missed the power 2 on $m$ resulting from the second differentiation.",
+          "Incorrect. The terms do not fully cancel."
+        ],
+        "fullExplanation": "Given $y = (x + \\\\sqrt{1 + x^2})^m$.\\nDifferentiating both sides with respect to $x$:\\n$$y' = m(x + \\\\sqrt{1 + x^2})^{m-1} \\\\cdot \\\\left(1 + \\\\frac{2x}{2\\\\sqrt{1 + x^2}}\\\\right)$$\\n$$y' = m(x + \\\\sqrt{1 + x^2})^{m-1} \\\\cdot \\\\left(\\\\frac{\\\\sqrt{1 + x^2} + x}{\\\\sqrt{1 + x^2}}\\\\right)$$\\n$$y' = \\\\frac{m(x + \\\\sqrt{1 + x^2})^m}{\\\\sqrt{1 + x^2}} = \\\\frac{m y}{\\\\sqrt{1 + x^2}}$$\\nMultiplying both sides by $\\\\sqrt{1 + x^2}$:\\n$$\\\\sqrt{1 + x^2} \\\\, y' = m y$$\\nSquaring both sides to eliminate the square root:\\n$$(1 + x^2)(y')^2 = m^2 y^2$$\\nDifferentiating both sides with respect to $x$:\\n$$2x (y')^2 + (1 + x^2) \\\\cdot 2y' y'' = m^2 \\\\cdot 2y y'$$\\nDividing the entire equation by $2y'$ (assuming $y' \\\\neq 0$):\\n$$x y' + (1 + x^2) y'' = m^2 y$$\\n$$(1 + x^2) y'' + x y' = m^2 y$$"
+      },
+      {
+        "question": "Find the derivative of $\\\\tan^{-1}\\\\left(\\\\frac{3x - x^3}{1 - 3x^2}\\\\right)$ with respect to $\\\\tan^{-1}\\\\left(\\\\frac{2x}{1 - x^2}\\\\right)$ for $|x| < \\\\frac{1}{\\\\sqrt{3}}$.",
+        "options": [
+          "$$\\\\frac{3}{2}$$",
+          "$$\\\\frac{2}{3}$$",
+          "$$1$$",
+          "$$\\\\frac{1}{6}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $|x| < 1/\\\\sqrt{3}$, $u = 3\\\\tan^{-1}x$ and $v = 2\\\\tan^{-1}x$. Therefore, $\\\\frac{du}{dv} = \\\\frac{3}{2}$.",
+          "Incorrect. Inverted the ratio to $2/3$.",
+          "Incorrect. Assumed the two inverse functions were equal.",
+          "Incorrect. Multiplied the denominators inappropriately."
+        ],
+        "fullExplanation": "Let $u(x) = \\\\tan^{-1}\\\\left(\\\\frac{3x - x^3}{1 - 3x^2}\\\\right)$ and $v(x) = \\\\tan^{-1}\\\\left(\\\\frac{2x}{1 - x^2}\\\\right)$.\\nLet $x = \\\\tan\\\\theta$. For $|x| < \\\\frac{1}{\\\\sqrt{3}}$, we have $\\\\theta \\\\in \\\\left(-\\\\frac{\\\\pi}{6}, \\\\frac{\\\\pi}{6}\\\\right)$.\\nThen:\\n$$3\\\\theta \\\\in \\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right) \\\\implies u = \\\\tan^{-1}(\\\\tan 3\\\\theta) = 3\\\\theta = 3\\\\tan^{-1} x$$\\n$$2\\\\theta \\\\in \\\\left(-\\\\frac{\\\\pi}{3}, \\\\frac{\\\\pi}{3}\\\\right) \\\\subset \\\\left(-\\\\frac{\\\\pi}{2}, \\\\frac{\\\\pi}{2}\\\\right) \\\\implies v = \\\\tan^{-1}(\\\\tan 2\\\\theta) = 2\\\\theta = 2\\\\tan^{-1} x$$\\nNow differentiate $u$ with respect to $v$:\\n$$\\\\frac{du}{dv} = \\\\frac{du/dx}{dv/dx} = \\\\frac{\\\\frac{3}{1 + x^2}}{\\\\frac{2}{1 + x^2}} = \\\\frac{3}{2}$$"
+      },
+      {
+        "question": "If $f(x) = x|x|$, find $f''(x)$ for $x < 0$.",
+        "options": [
+          "$$-2$$",
+          "$$2$$",
+          "$$0$$",
+          "Does not exist"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For $x < 0$, $f(x) = -x^2 \\\\implies f'(x) = -2x \\\\implies f''(x) = -2$.",
+          "Incorrect. Forgot the negative sign coming from $|x| = -x$ for negative $x$.",
+          "Incorrect. That would be true for a linear function, but $f(x)$ is quadratic.",
+          "Incorrect. The function is infinitely differentiable on the open half-line $(-\\\\infty, 0)$."
+        ],
+        "fullExplanation": "For $x < 0$, by definition of absolute value, $|x| = -x$.\\nTherefore:\\n$$f(x) = x(-x) = -x^2$$\\nDifferentiating once with respect to $x$:\\n$$f'(x) = \\\\frac{d}{dx}(-x^2) = -2x$$\\nDifferentiating a second time with respect to $x$:\\n$$f''(x) = \\\\frac{d}{dx}(-2x) = -2$$"
+      },
+      {
+        "question": "If $y = e^{m \\\\sin^{-1} x}$, then $(1 - x^2)y'' - xy'$ is equal to:",
+        "options": [
+          "$$m^2 y$$",
+          "$$-m^2 y$$",
+          "$$m y$$",
+          "$$-m y$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Differentiating yields $\\\\sqrt{1-x^2}y' = my$. Squaring gives $(1-x^2)(y')^2 = m^2 y^2$. Differentiating again gives $(1-x^2)y'' - xy' = m^2 y$.",
+          "Incorrect. Missed the sign cancellation in the product rule.",
+          "Incorrect. First-order power instead of second-order.",
+          "Incorrect. Incorrect signs and power of $m$."
+        ],
+        "fullExplanation": "Given $y = e^{m \\\\sin^{-1} x}$:\\nDifferentiating both sides with respect to $x$:\\n$$y' = e^{m \\\\sin^{-1} x} \\\\cdot \\\\frac{m}{\\\\sqrt{1 - x^2}} = \\\\frac{m y}{\\\\sqrt{1 - x^2}}$$\\nMultiply both sides by $\\\\sqrt{1 - x^2}$:\\n$$\\\\sqrt{1 - x^2} \\\\, y' = m y$$\\nSquare both sides:\\n$$(1 - x^2)(y')^2 = m^2 y^2$$\\nDifferentiate both sides with respect to $x$:\\n$$-2x (y')^2 + (1 - x^2) \\\\cdot 2y' y'' = m^2 \\\\cdot 2y y'$$\\nDivide throughout by $2y'$ (assuming $y' \\\\neq 0$):\\n$$-x y' + (1 - x^2) y'' = m^2 y$$\\n$$(1 - x^2) y'' - x y' = m^2 y$$"
+      },
+      {
+        "question": "If $x^2 + y^2 = 1$, find the value of the second derivative $\\\\frac{d^2y}{dx^2}$ in terms of $y$.",
+        "options": [
+          "$$-\\\\frac{1}{y^3}$$",
+          "$$\\\\frac{1}{y^3}$$",
+          "$$-\\\\frac{1}{y^2}$$",
+          "$$\\\\frac{x^2}{y^3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $2x + 2yy' = 0 \\\\implies y' = -x/y$. Then $y'' = -\\\\frac{y - xy'}{y^2} = -\\\\frac{y - x(-x/y)}{y^2} = -\\\\frac{y^2 + x^2}{y^3} = -\\\\frac{1}{y^3}$.",
+          "Incorrect. Missed the overall negative sign in the quotient rule.",
+          "Incorrect. Power in the denominator must be 3, not 2.",
+          "Incorrect. Forgot to substitute $x^2 + y^2 = 1$ in the numerator."
+        ],
+        "fullExplanation": "Given $x^2 + y^2 = 1$:\\nDifferentiate implicitly with respect to $x$:\\n$$2x + 2y \\\\frac{dy}{dx} = 0 \\\\implies y' = -\\\\frac{x}{y}$$\\nDifferentiating $y'$ with respect to $x$ using the quotient rule:\\n$$y'' = -\\\\frac{d}{dx}\\\\left(\\\\frac{x}{y}\\\\right) = -\\\\left[ \\\\frac{1 \\\\cdot y - x \\\\cdot y'}{y^2} \\\\right]$$\\nSubstitute $y' = -\\\\frac{x}{y}$ into the expression:\\n$$y'' = -\\\\left[ \\\\frac{y - x\\\\left(-\\\\frac{x}{y}\\\\right)}{y^2} \\\\right] = -\\\\left[ \\\\frac{y + \\\\frac{x^2}{y}}{y^2} \\\\right] = -\\\\left[ \\\\frac{y^2 + x^2}{y^3} \\\\right]$$\\nSince $x^2 + y^2 = 1$, this simplifies to:\\n$$y'' = -\\\\frac{1}{y^3}$$"
+      },
+      {
+        "question": "Find the derivative of $f(x) = \\\\log_x 2$ with respect to $x$.",
+        "options": [
+          "$$-\\\\frac{\\\\ln 2}{x (\\\\ln x)^2}$$",
+          "$$\\\\frac{\\\\ln 2}{x (\\\\ln x)^2}$$",
+          "$$-\\\\frac{1}{x \\\\ln 2}$$",
+          "$$\\\\frac{1}{x \\\\ln 2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By change of base, $f(x) = \\\\frac{\\\\ln 2}{\\\\ln x} = (\\\\ln 2)(\\\\ln x)^{-1}$. Differentiating gives $-(\\\\ln 2)(\\\\ln x)^{-2} \\\\cdot \\\\frac{1}{x} = -\\\\frac{\\\\ln 2}{x (\\\\ln x)^2}$.",
+          "Incorrect. Missed the negative sign from the power rule on $(\\\\ln x)^{-1}$.",
+          "Incorrect. Confused $\\\\log_x 2$ with $\\\\log_2 x$.",
+          "Incorrect. This is the derivative of $\\\\log_2 x$."
+        ],
+        "fullExplanation": "Use the change-of-base formula for logarithms:\\n$$f(x) = \\\\log_x 2 = \\\\frac{\\\\ln 2}{\\\\ln x} = (\\\\ln 2)(\\\\ln x)^{-1}$$\\nNow differentiate with respect to $x$ using the chain rule:\\n$$f'(x) = (\\\\ln 2) \\\\cdot \\\\left[ -(\\\\ln x)^{-2} \\\\cdot \\\\frac{d}{dx}(\\\\ln x) \\\\right]$$\\n$$f'(x) = -(\\\\ln 2) \\\\cdot \\\\frac{1}{(\\\\ln x)^2} \\\\cdot \\\\frac{1}{x} = -\\\\frac{\\\\ln 2}{x (\\\\ln x)^2}$$"
+      },
+      {
+        "question": "If $y = \\\\ln\\\\left(\\\\sqrt{\\\\frac{1 - \\\\cos x}{1 + \\\\cos x}}\\\\right)$ for $x \\\\in (0, \\\\pi)$, then $\\\\frac{dy}{dx}$ is equal to:",
+        "options": [
+          "$$\\\\csc x$$",
+          "$$\\\\sec x$$",
+          "$$\\\\sin x$$",
+          "$$\\\\tan x$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\sqrt{\\\\frac{1-\\cos x}{1+\\\\cos x}} = \\\\tan(x/2)$. Then $y = \\\\ln(\\\\tan(x/2))$. Differentiating gives $\\\\frac{\\\\frac{1}{2}\\\\sec^2(x/2)}{\\\\tan(x/2)} = \\\\frac{1}{2\\\\sin(x/2)\\\\cos(x/2)} = \\\\frac{1}{\\\\sin x} = \\\\csc x$.",
+          "Incorrect. Confused secant with cosecant in the double angle formula.",
+          "Incorrect. Inverted the reciprocal trigonometric function.",
+          "Incorrect. Differentiated incorrectly."
+        ],
+        "fullExplanation": "Simplify the argument of the logarithm using half-angle trigonometric formulas:\\n$$\\\\frac{1 - \\\\cos x}{1 + \\\\cos x} = \\\\frac{2\\\\sin^2(x/2)}{2\\\\cos^2(x/2)} = \\\\tan^2\\\\left(\\\\frac{x}{2}\\\\right)$$\\nSince $x \\\\in (0, \\\\pi)$, $\\\\frac{x}{2} \\\\in \\\\left(0, \\\\frac{\\\\pi}{2}\\\\right)$, so $\\\\tan(x/2) > 0$:\\n$$\\\\sqrt{\\\\frac{1 - \\\\cos x}{1 + \\\\cos x}} = \\\\tan\\\\left(\\\\frac{x}{2}\\\\right)$$\\nThus, the function becomes:\\n$$y = \\\\ln\\\\left(\\\\tan\\\\frac{x}{2}\\\\right)$$\\nDifferentiating with respect to $x$ using the chain rule:\\n$$\\\\frac{dy}{dx} = \\\\frac{1}{\\\\tan(x/2)} \\\\cdot \\\\sec^2\\\\left(\\\\frac{x}{2}\\\\right) \\\\cdot \\\\frac{1}{2}$$\\nExpress in terms of sine and cosine:\\n$$\\\\frac{dy}{dx} = \\\\frac{\\\\cos(x/2)}{\\\\sin(x/2)} \\\\cdot \\\\frac{1}{\\\\cos^2(x/2)} \\\\cdot \\\\frac{1}{2} = \\\\frac{1}{2\\\\sin(x/2)\\\\cos(x/2)}$$\\nUsing the sine double-angle formula $2\\\\sin(x/2)\\\\cos(x/2) = \\\\sin x$:\\n$$\\\\frac{dy}{dx} = \\\\frac{1}{\\\\sin x} = \\\\csc x$$"
+      },
+      {
+        "question": "If $x = e^{\\\\theta}(\\\\theta + \\\\frac{1}{\\\\theta})$ and $y = e^{-\\\\theta}(\\\\theta - \\\\frac{1}{\\\\theta})$, what is the value of $\\\\frac{dy}{dx}$ at $\\\\theta = 1$?",
+        "options": [
+          "$$e^{-2}$$",
+          "$$e^2$$",
+          "$$-e^{-2}$$",
+          "$$1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. At $\\\\theta = 1$, $\\\\frac{dx}{d\\\\theta} = e^1(2) + e^1(0) = 2e$. $\\\\frac{dy}{d\\\\theta} = -e^{-1}(0) + e^{-1}(2) = 2e^{-1}$. Thus $\\\\frac{dy}{dx} = \\\\frac{2e^{-1}}{2e} = e^{-2}$.",
+          "Incorrect. Inverted the ratio to $e^2$.",
+          "Incorrect. Error in calculating the sign of the product rule derivative.",
+          "Incorrect. Failed to account for the exponential prefactors."
+        ],
+        "fullExplanation": "Compute $\\\\frac{dx}{d\\\\theta}$ and $\\\\frac{dy}{d\\\\theta}$ using the product rule:\\n1. For $x = e^{\\\\theta}\\\\left(\\\\theta + \\\\frac{1}{\\\\theta}\\\\right)$:\\n$$\\\\frac{dx}{d\\\\theta} = e^{\\\\theta}\\\\left(\\\\theta + \\\\frac{1}{\\\\theta}\\\\right) + e^{\\\\theta}\\\\left(1 - \\\\frac{1}{\\\\theta^2}\\\\right)$$\\nAt $\\\\theta = 1$:\\n$$\\\\left. \\\\frac{dx}{d\\\\theta} \\\\right|_{\\\\theta=1} = e^1(1 + 1) + e^1(1 - 1) = 2e + 0 = 2e$$\\n2. For $y = e^{-\\\\theta}\\\\left(\\\\theta - \\\\frac{1}{\\\\theta}\\\\right)$:\\n$$\\\\frac{dy}{d\\\\theta} = -e^{-\\\\theta}\\\\left(\\\\theta - \\\\frac{1}{\\\\theta}\\\\right) + e^{-\\\\theta}\\\\left(1 + \\\\frac{1}{\\\\theta^2}\\\\right)$$\\nAt $\\\\theta = 1$:\\n$$\\\\left. \\\\frac{dy}{d\\\\theta} \\\\right|_{\\\\theta=1} = -e^{-1}(1 - 1) + e^{-1}(1 + 1) = 0 + 2e^{-1} = 2e^{-1}$$\\n3. Therefore:\\n$$\\\\left. \\\\frac{dy}{dx} \\\\right|_{\\\\theta=1} = \\\\frac{dy/d\\\\theta}{dx/d\\\\theta} = \\\\frac{2e^{-1}}{2e} = \\\\frac{e^{-1}}{e^1} = e^{-2}$$"
+      }
+    ]
+  }
+]

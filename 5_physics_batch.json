@@ -1,0 +1,1283 @@
+[
+  {
+    "chapterName": "Kinetic Theory of Gases",
+    "flashcards": [
+      {
+        "front": "State Boyle's Law.",
+        "back": "For a fixed mass of gas at constant temperature, pressure is inversely proportional to volume: P ∝ 1/V."
+      },
+      {
+        "front": "State Charles's Law.",
+        "back": "For a fixed mass of gas at constant pressure, volume is directly proportional to absolute temperature: V ∝ T."
+      },
+      {
+        "front": "State Gay-Lussac's Law.",
+        "back": "For a fixed mass of gas at constant volume, pressure is directly proportional to absolute temperature: P ∝ T."
+      },
+      {
+        "front": "State Avogadro's Law.",
+        "back": "Equal volumes of all gases under the same conditions of temperature and pressure contain the same number of molecules: N₁ = N₂."
+      },
+      {
+        "front": "What is the Ideal Gas Equation?",
+        "back": "PV = nRT = N k(B) T, where n is number of moles, N is number of molecules, and k(B) is Boltzmann's constant."
+      },
+      {
+        "front": "What is Dalton's Law of Partial Pressures?",
+        "back": "The total pressure of a mixture of non-reacting gases is the sum of their individual partial pressures: P = P₁ + P₂ + P₃ + ..."
+      },
+      {
+        "front": "What is the formula for the pressure exerted by an ideal gas?",
+        "back": "P = (1/3) n m v(rms)², where n is number density, m is mass of one molecule, and v(rms) is root mean square velocity."
+      },
+      {
+        "front": "What is the Root Mean Square (RMS) velocity of gas molecules?",
+        "back": "v(rms) = √(3k(B)T / m) = √(3RT / M), where M is the molar mass."
+      },
+      {
+        "front": "What is the Average velocity of gas molecules?",
+        "back": "v(av) = √(8k(B)T / (πm)) = √(8RT / (πM))."
+      },
+      {
+        "front": "What is the Most Probable velocity of gas molecules?",
+        "back": "v(mp) = √(2k(B)T / m) = √(2RT / M)."
+      },
+      {
+        "front": "What is the relationship between v(rms), v(av), and v(mp)?",
+        "back": "v(rms) > v(av) > v(mp)."
+      },
+      {
+        "front": "What is Graham's Law of Diffusion?",
+        "back": "The rate of diffusion of a gas is inversely proportional to the square root of its density or molar mass: r ∝ 1/√(ρ)."
+      },
+      {
+        "front": "State the Law of Equipartition of Energy.",
+        "back": "The total energy of a dynamic system in thermal equilibrium is distributed equally amongst all its degrees of freedom, and the energy associated with each degree of freedom per molecule is (1/2)k(B)T."
+      },
+      {
+        "front": "How many degrees of freedom does a monoatomic gas have?",
+        "back": "f = 3 (all translational)."
+      },
+      {
+        "front": "How many degrees of freedom does a rigid diatomic gas have?",
+        "back": "f = 5 (3 translational + 2 rotational)."
+      },
+      {
+        "front": "What is the formula for the internal energy (U) of an ideal gas?",
+        "back": "U = (f/2) n R T, where f is the degrees of freedom."
+      },
+      {
+        "front": "What is the formula for molar specific heat at constant volume (C(v))?",
+        "back": "C(v) = (f/2) R."
+      },
+      {
+        "front": "What is the ratio of specific heats (γ) in terms of degrees of freedom?",
+        "back": "γ = C(p) / C(v) = 1 + (2/f)."
+      },
+      {
+        "front": "What is the formula for the Mean Free Path (λ) of a gas molecule?",
+        "back": "λ = 1 / (√2 π n d²), where n is the number density and d is the diameter of the molecule."
+      },
+      {
+        "front": "How does the Mean Free Path (λ) depend on pressure (P) and temperature (T)?",
+        "back": "λ = k(B)T / (√2 π d² P), so λ ∝ T / P."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "If the absolute temperature of an ideal gas is doubled and its molar mass is halved, what happens to its RMS velocity?",
+        "options": [
+          "It remains the same",
+          "It doubles",
+          "It becomes 4 times",
+          "It halves"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The RMS velocity depends on both T and M.",
+          "Correct. v(rms) = √(3RT/M). If T becomes 2T and M becomes M/2, the term inside the square root is multiplied by 4. The square root of 4 is 2, so the velocity doubles.",
+          "Incorrect. The factor of 4 is inside the square root.",
+          "Incorrect. Increasing T and decreasing M both increase the velocity."
+        ],
+        "fullExplanation": "The root mean square velocity is given by v(rms) = √(3RT / M). Let the new temperature be T' = 2T and the new molar mass be M' = M/2. The new RMS velocity is v(rms)' = √(3R(2T) / (M/2)) = √(4 × 3RT / M) = 2√(3RT / M) = 2 v(rms). Thus, the RMS velocity doubles."
+      },
+      {
+        "question": "Two non-reacting gases A and B are mixed in a container. The partial pressure of A is 3 atm and the total pressure is 8 atm. What is the partial pressure of B?",
+        "options": [
+          "24 atm",
+          "11 atm",
+          "5 atm",
+          "8/3 atm"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the product of the pressures.",
+          "Incorrect. This is the sum of the total and partial pressure.",
+          "Correct. According to Dalton's Law, P(total) = P(A) + P(B). So, P(B) = 8 - 3 = 5 atm.",
+          "Incorrect. This is the ratio of the pressures."
+        ],
+        "fullExplanation": "According to Dalton's Law of Partial Pressures, the total pressure of a mixture of non-reacting gases is the sum of their individual partial pressures: P(total) = P(A) + P(B) + ... In this case, P(total) = 8 atm and P(A) = 3 atm. Therefore, P(B) = P(total) - P(A) = 8 atm - 3 atm = 5 atm."
+      },
+      {
+        "question": "What is the ratio of the average translational kinetic energy of a molecule of Hydrogen gas to that of Oxygen gas at the same temperature?",
+        "options": [
+          "1 : 16",
+          "1 : 1",
+          "16 : 1",
+          "1 : 4"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the ratio of their molar masses.",
+          "Correct. Average translational kinetic energy per molecule is (3/2)k(B)T, which depends ONLY on temperature, not on the mass of the gas.",
+          "Incorrect. Kinetic energy doesn't scale with the inverse of mass.",
+          "Incorrect. This is the ratio of their RMS velocities."
+        ],
+        "fullExplanation": "According to the kinetic theory of gases, the average translational kinetic energy of any gas molecule is given by E = (3/2)k(B)T. This equation shows that the translational kinetic energy depends strictly on the absolute temperature T and is completely independent of the mass or nature of the gas molecule. Since both gases are at the same temperature, the ratio of their translational kinetic energies is 1:1."
+      },
+      {
+        "question": "If the pressure of a gas is held constant while its absolute temperature is increased by 10%, what is the percentage increase in its volume?",
+        "options": [
+          "5%",
+          "10%",
+          "21%",
+          "100%"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The relationship is strictly linear.",
+          "Correct. By Charles's Law (V ∝ T at constant P), a 10% increase in T results in a 10% increase in V.",
+          "Incorrect. This would apply if volume depended on the square of temperature.",
+          "Incorrect. The volume does not double."
+        ],
+        "fullExplanation": "According to Charles's Law, for a fixed mass of an ideal gas at constant pressure, the volume is directly proportional to its absolute temperature (V ∝ T). Therefore, V₁/T₁ = V₂/T₂. If the temperature increases by 10%, T₂ = 1.1 T₁. This implies V₂ = 1.1 V₁, which is exactly a 10% increase in volume."
+      },
+      {
+        "question": "The mean free path of a gas molecule is λ. If the pressure of the gas is doubled at constant temperature, the new mean free path will be:",
+        "options": [
+          "λ",
+          "2λ",
+          "λ / 2",
+          "λ / 4"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Mean free path changes with pressure.",
+          "Incorrect. Mean free path decreases when the gas becomes denser.",
+          "Correct. λ ∝ 1/P at constant T. If P is doubled, λ is halved.",
+          "Incorrect. The relation is inversely proportional, not inverse square."
+        ],
+        "fullExplanation": "The mean free path is given by λ = 1 / (√2 π n d²), where n is the number density (N/V). From the ideal gas law, P = n k(B) T, so n = P / (k(B)T). Substituting this into the mean free path equation gives λ = (k(B)T) / (√2 π d² P). This shows that λ ∝ 1/P for a constant temperature. If the pressure is doubled, the mean free path becomes half of its original value (λ/2)."
+      },
+      {
+        "question": "A rigid diatomic gas has f degrees of freedom. What is the value of f?",
+        "options": [
+          "3",
+          "5",
+          "6",
+          "7"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is for a monoatomic gas.",
+          "Correct. A rigid diatomic molecule has 3 translational and 2 rotational degrees of freedom, totaling 5.",
+          "Incorrect. This is for a non-linear polyatomic gas.",
+          "Incorrect. This is for a diatomic gas at high temperatures (including vibrational modes)."
+        ],
+        "fullExplanation": "Degrees of freedom refer to the number of independent ways a molecule can possess energy. A rigid diatomic molecule can translate in 3 independent spatial directions (x, y, z), giving 3 translational degrees of freedom. It can also rotate around 2 independent axes perpendicular to the bond connecting the atoms, giving 2 rotational degrees of freedom. Since it is rigid, vibrational modes are not excited. Total f = 3 + 2 = 5."
+      },
+      {
+        "question": "Which of the following represents the ratio of specific heats (γ) for a monoatomic gas?",
+        "options": [
+          "5 / 3",
+          "7 / 5",
+          "4 / 3",
+          "9 / 7"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. γ = 1 + 2/f. For a monoatomic gas, f = 3, so γ = 1 + 2/3 = 5/3.",
+          "Incorrect. This is the ratio for a rigid diatomic gas (f = 5).",
+          "Incorrect. This is the ratio for a polyatomic gas (f = 6).",
+          "Incorrect. This does not correspond to standard ideal gas models."
+        ],
+        "fullExplanation": "The ratio of specific heats is defined as γ = C(p) / C(v). In terms of degrees of freedom (f), this ratio is given by γ = 1 + (2/f). A monoatomic gas has only translational kinetic energy, yielding f = 3. Substituting f = 3 into the formula gives γ = 1 + (2/3) = 5/3 ≈ 1.67."
+      },
+      {
+        "question": "Calculate the internal energy of 2 moles of a diatomic gas at temperature T.",
+        "options": [
+          "3 R T",
+          "5 R T",
+          "2.5 R T",
+          "7 R T"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the internal energy for 2 moles of a monoatomic gas.",
+          "Correct. U = (f/2)nRT = (5/2) × 2 × RT = 5RT.",
+          "Incorrect. This is the internal energy for 1 mole of a diatomic gas.",
+          "Incorrect. This is the internal energy for 2 moles of a diatomic gas at high temps (vibrational active)."
+        ],
+        "fullExplanation": "The internal energy of an ideal gas is given by U = (f/2) n R T. For a rigid diatomic gas, the number of degrees of freedom is f = 5. We are given the number of moles n = 2. Substituting these values into the equation: U = (5/2) × 2 × R × T = 5 R T."
+      },
+      {
+        "question": "What is the ratio of V(rms) : V(av) : V(mp) for an ideal gas?",
+        "options": [
+          "√3 : √(8/π) : √2",
+          "√2 : √(8/π) : √3",
+          "√3 : √2 : √(8/π)",
+          "1 : 2 : 3"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. The formulas are √(3RT/M) : √(8RT/πM) : √(2RT/M). Dropping the common terms yields this ratio.",
+          "Incorrect. This has V(mp) and V(rms) swapped.",
+          "Incorrect. The order does not match the definitions.",
+          "Incorrect. The velocities do not follow a simple integer ratio."
+        ],
+        "fullExplanation": "The three molecular velocities are defined as follows: Root Mean Square velocity V(rms) = √(3RT/M). Average velocity V(av) = √(8RT/(πM)). Most Probable velocity V(mp) = √(2RT/M). The ratio V(rms) : V(av) : V(mp) is therefore √(3RT/M) : √(8RT/(πM)) : √(2RT/M). Canceling the common term √(RT/M) from all three leaves the ratio as √3 : √(8/π) : √2. Numerically, this is roughly 1.732 : 1.595 : 1.414."
+      },
+      {
+        "question": "If the density of a gas is ρ and its pressure is P, the RMS velocity of its molecules is proportional to:",
+        "options": [
+          "P / ρ",
+          "√(P / ρ)",
+          "ρ / P",
+          "√(ρ / P)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The relationship involves a square root.",
+          "Correct. The kinetic theory of gases states P = (1/3)ρv(rms)², which rearranges to v(rms) = √(3P/ρ).",
+          "Incorrect. Density and pressure are inverted.",
+          "Incorrect. Density and pressure are inverted."
+        ],
+        "fullExplanation": "From the kinetic theory of gases, the pressure P exerted by an ideal gas is given by P = (1/3) ρ v(rms)², where ρ is the density of the gas (mass per unit volume, ρ = m·n). Rearranging this equation to solve for v(rms) gives v(rms)² = 3P / ρ, and therefore v(rms) = √(3P / ρ). This shows that v(rms) is directly proportional to √(P / ρ)."
+      },
+      {
+        "question": "An ideal gas expands isothermally. What happens to its internal energy?",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains constant",
+          "Becomes zero"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This would happen if temperature increased.",
+          "Incorrect. This would happen if temperature decreased.",
+          "Correct. Internal energy of an ideal gas depends only on temperature. Since T is constant, U is constant.",
+          "Incorrect. Internal energy is proportional to absolute temperature, which is not zero."
+        ],
+        "fullExplanation": "For an ideal gas, there are no intermolecular forces, so there is no potential energy contribution to the internal energy. The internal energy consists purely of the kinetic energy of the molecules, which is directly proportional to the absolute temperature (U = f/2 n R T). In an isothermal process, the temperature T is constant. Therefore, the internal energy U must also remain constant."
+      },
+      {
+        "question": "The rates of diffusion of two gases A and B are in the ratio 4:1. If the molar mass of gas A is M, what is the molar mass of gas B?",
+        "options": [
+          "M / 16",
+          "M / 4",
+          "4M",
+          "16M"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. This would mean gas B diffuses much faster than gas A.",
+          "Incorrect. This would result in a diffusion ratio of 2:1.",
+          "Incorrect. This would result in a diffusion ratio of 1:2.",
+          "Correct. By Graham's Law, r(A)/r(B) = √(M(B)/M(A)). 4/1 = √(M(B)/M), so 16 = M(B)/M, leading to M(B) = 16M."
+        ],
+        "fullExplanation": "Graham's Law of Diffusion states that the rate of diffusion (r) of a gas is inversely proportional to the square root of its molar mass (M). Therefore, r(A) / r(B) = √(M(B) / M(A)). We are given r(A) / r(B) = 4/1 and M(A) = M. Substituting these values: 4 = √(M(B) / M). Squaring both sides gives 16 = M(B) / M. Therefore, M(B) = 16M."
+      },
+      {
+        "question": "The equation of state for a real gas, accounting for intermolecular forces and finite molecular volume, is called:",
+        "options": [
+          "Ideal Gas Law",
+          "Van der Waals Equation",
+          "Boyle's Equation",
+          "Dalton's Equation"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. The ideal gas law ignores these factors.",
+          "Correct. The Van der Waals equation (P + an²/V²)(V - nb) = nRT accounts for molecular volume (b) and attractive forces (a).",
+          "Incorrect. Boyle's law is a specific relationship for ideal gases at constant temperature.",
+          "Incorrect. Dalton's law relates to partial pressures."
+        ],
+        "fullExplanation": "The ideal gas law (PV = nRT) assumes gas molecules are point masses with no volume and that they exert no attractive or repulsive forces on each other. Johannes Diderik van der Waals introduced corrections to this model: 'nb' subtracts the volume occupied by the gas molecules themselves, and 'an²/V²' adds a term to the measured pressure to account for the reduction in pressure caused by intermolecular attraction. The resulting equation is (P + a n²/V²)(V - nb) = nRT."
+      },
+      {
+        "question": "At what temperature is the root mean square velocity of Oxygen molecules (M = 32 g/mol) equal to the root mean square velocity of Hydrogen molecules (M = 2 g/mol) at 20 K?",
+        "options": [
+          "40 K",
+          "80 K",
+          "160 K",
+          "320 K"
+        ],
+        "correctOption": 3,
+        "optionExplanations": [
+          "Incorrect. Calculation error.",
+          "Incorrect. Calculation error.",
+          "Incorrect. This corresponds to a mass ratio of 8.",
+          "Correct. V(rms) ∝ √(T/M). So T(O) / M(O) = T(H) / M(H). T(O) / 32 = 20 / 2. T(O) = 10 × 32 = 320 K."
+        ],
+        "fullExplanation": "The RMS velocity is given by v(rms) = √(3RT/M). For the velocities to be equal, v(rms, O₂) = v(rms, H₂), which implies √(3 R T(O₂) / M(O₂)) = √(3 R T(H₂) / M(H₂)). Squaring both sides and canceling 3R gives T(O₂) / M(O₂) = T(H₂) / M(H₂). We are given M(O₂) = 32, M(H₂) = 2, and T(H₂) = 20 K. Substituting these values: T(O₂) / 32 = 20 / 2. T(O₂) / 32 = 10. Therefore, T(O₂) = 320 K."
+      },
+      {
+        "question": "What happens to the mean free path of a gas if the diameter of its molecules is doubled, assuming pressure and temperature remain constant?",
+        "options": [
+          "It doubles",
+          "It halves",
+          "It becomes one-fourth",
+          "It remains unchanged"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Mean free path is inversely proportional to cross-sectional area.",
+          "Incorrect. This would happen if the diameter increased by √2.",
+          "Correct. λ ∝ 1/d². If d becomes 2d, d² becomes 4d², so λ becomes λ/4.",
+          "Incorrect. The path definitely changes with molecular size."
+        ],
+        "fullExplanation": "The mean free path λ is the average distance a molecule travels between collisions. The formula is λ = 1 / (√2 π n d²), where d is the collision diameter of the molecule. Since λ is inversely proportional to the square of the diameter (λ ∝ 1/d²), doubling the diameter (d' = 2d) results in the new mean free path λ' ∝ 1 / (2d)² = 1 / (4d²). This means the mean free path becomes one-fourth of its original value."
+      },
+      {
+        "question": "If C(p) and C(v) denote the specific heats of nitrogen per unit mass, then which of the following relations is correct? (Given R is the universal gas constant and M = 28 g/mol is molar mass).",
+        "options": [
+          "C(p) - C(v) = R",
+          "C(p) - C(v) = R / 28",
+          "C(p) - C(v) = 28 R",
+          "C(p) / C(v) = R"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is Mayer's relation for molar specific heats.",
+          "Correct. For specific heat per unit mass (c), c(p) - c(v) = R/M. Since nitrogen is N₂, M = 28.",
+          "Incorrect. The molar mass belongs in the denominator.",
+          "Incorrect. The ratio C(p)/C(v) equals γ, not R."
+        ],
+        "fullExplanation": "Mayer's relation for molar specific heats is C(p, molar) - C(v, molar) = R. However, the problem specifies C(p) and C(v) as specific heats *per unit mass*. The relationship between molar specific heat (C(molar)) and specific heat per unit mass (c) is C(molar) = M × c, where M is the molar mass. Substituting this into Mayer's relation gives M·C(p) - M·C(v) = R. Factoring out M and dividing gives C(p) - C(v) = R / M. For nitrogen (N₂), the molar mass is 28 g/mol, so C(p) - C(v) = R / 28."
+      },
+      {
+        "question": "A container holds a mixture of 1 mole of Helium and 1 mole of Hydrogen gas. What is the ratio of specific heats γ for this mixture?",
+        "options": [
+          "1.5",
+          "1.4",
+          "1.67",
+          "1.45"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. He is monoatomic (C(v)=1.5R), H₂ is diatomic (C(v)=2.5R). C(v,mix) = (1.5R+2.5R)/2 = 2R. C(p,mix) = C(v,mix)+R = 3R. γ = 3R/2R = 1.5.",
+          "Incorrect. This is γ for pure diatomic gas.",
+          "Incorrect. This is γ for pure monoatomic gas.",
+          "Incorrect. Calculation error."
+        ],
+        "fullExplanation": "To find γ for a mixture, we must first find C(v,mix) and C(p,mix). Helium is monoatomic: C(v₁) = 1.5 R. Hydrogen is diatomic: C(v₂) = 2.5 R. Using the mixture formula C(v,mix) = (n₁C(v₁) + n₂C(v₂)) / (n₁ + n₂). Since n₁ = n₂ = 1, C(v,mix) = (1.5 R + 2.5 R) / 2 = 4 R / 2 = 2 R. By Mayer's relation, C(p,mix) = C(v,mix) + R = 2 R + R = 3 R. The ratio γ(mix) = C(p,mix) / C(v,mix) = 3 R / 2 R = 1.5."
+      },
+      {
+        "question": "According to the kinetic theory, the internal energy of an ideal gas at absolute zero is:",
+        "options": [
+          "Infinite",
+          "Maximum",
+          "Zero",
+          "Negative"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Energy decreases with decreasing temperature.",
+          "Incorrect. It is the minimum possible.",
+          "Correct. U = (f/2)nRT. When T = 0 K, U = 0.",
+          "Incorrect. Kinetic energy cannot be negative."
+        ],
+        "fullExplanation": "In the kinetic theory of ideal gases, the internal energy U is entirely composed of the kinetic energy of the molecules, given by U = (f/2)nRT. Since U is directly proportional to the absolute temperature T, when T reaches absolute zero (0 K), the kinetic energy of the molecules ceases completely. Therefore, the internal energy becomes exactly zero."
+      },
+      {
+        "question": "An ideal gas is enclosed in a rigid container. If heat is added, which of the following quantities remains constant?",
+        "options": [
+          "Pressure",
+          "Temperature",
+          "Density",
+          "RMS velocity"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Heating at constant volume increases pressure.",
+          "Incorrect. Adding heat increases temperature.",
+          "Correct. Since the container is rigid, volume is constant. Mass is constant. Therefore, density (mass/volume) remains constant.",
+          "Incorrect. Increased temperature increases RMS velocity."
+        ],
+        "fullExplanation": "A rigid container implies that the volume V of the gas remains strictly constant (an isochoric process). The mass m of the gas inside a closed container is also constant. Density ρ is defined as mass divided by volume (ρ = m/V). Since both m and V are constant, the density ρ remains completely unchanged, regardless of the heat added."
+      },
+      {
+        "question": "For a given mass of gas at constant temperature, a plot of PV versus P will yield:",
+        "options": [
+          "A straight line passing through origin",
+          "A parabola",
+          "A straight line parallel to the P-axis",
+          "A hyperbola"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. PV is not proportional to P.",
+          "Incorrect. The relationship is not quadratic.",
+          "Correct. Boyle's Law states PV = constant at constant T. Plotting a constant against P gives a horizontal line.",
+          "Incorrect. A plot of P versus V gives a hyperbola, not PV versus P."
+        ],
+        "fullExplanation": "According to Boyle's Law, for a fixed mass of an ideal gas kept at a constant temperature, the product of its pressure and volume is a constant (PV = k). This means that no matter how much the pressure P changes, the product PV does not change. Therefore, a graph with PV on the y-axis and P on the x-axis will result in a horizontal straight line, parallel to the P-axis, at a height equal to the constant k."
+      }
+    ]
+  },
+  {
+    "chapterName": "Oscillations",
+    "flashcards": [
+      {
+        "front": "What defines Simple Harmonic Motion (SHM)?",
+        "back": "A periodic motion where the restoring force is directly proportional to the negative of the displacement from the mean position: F = -kx."
+      },
+      {
+        "front": "What is the general equation for displacement in SHM?",
+        "back": "x(t) = A sin(ωt + φ), where A is amplitude, ω is angular frequency, and φ is the initial phase."
+      },
+      {
+        "front": "What is the formula for velocity (v) in SHM as a function of displacement (x)?",
+        "back": "v = ±ω √(A² - x²)"
+      },
+      {
+        "front": "What is the formula for acceleration (a) in SHM?",
+        "back": "a = -ω² x"
+      },
+      {
+        "front": "Where is the velocity maximum in SHM, and what is its value?",
+        "back": "Velocity is maximum at the mean position (x = 0), and v(max) = Aω."
+      },
+      {
+        "front": "Where is the acceleration maximum in SHM, and what is its value?",
+        "back": "Acceleration is maximum at the extreme positions (x = ±A), and a(max) = Aω²."
+      },
+      {
+        "front": "What is the time period (T) of a spring-mass system?",
+        "back": "T = 2π √(m/k)"
+      },
+      {
+        "front": "What is the equivalent spring constant when two springs (k₁, k₂) are in series?",
+        "back": "1/k(eq) = 1/k₁ + 1/k₂  => k(eq) = (k₁k₂) / (k₁ + k₂)"
+      },
+      {
+        "front": "What is the equivalent spring constant when two springs (k₁, k₂) are in parallel?",
+        "back": "k(eq) = k₁ + k₂"
+      },
+      {
+        "front": "What is the formula for Kinetic Energy (K) in SHM?",
+        "back": "K = 1/2 m v² = 1/2 m ω² (A² - x²)"
+      },
+      {
+        "front": "What is the formula for Potential Energy (U) in SHM?",
+        "back": "U = 1/2 k x² = 1/2 m ω² x²"
+      },
+      {
+        "front": "What is the Total Mechanical Energy (E) in SHM?",
+        "back": "E = K + U = 1/2 m ω² A² (It remains constant)."
+      },
+      {
+        "front": "What is the time period (T) of a simple pendulum?",
+        "back": "T = 2π √(L/g), where L is the length of the string."
+      },
+      {
+        "front": "How does the time period of a simple pendulum change if it is placed in an elevator accelerating upwards with 'a'?",
+        "back": "T = 2π √(L / (g + a))"
+      },
+      {
+        "front": "What is the time period of a physical (compound) pendulum?",
+        "back": "T = 2π √(I / (mgd)), where I is the moment of inertia about the pivot and d is the distance from pivot to center of mass."
+      },
+      {
+        "front": "What is the time period of a torsional pendulum?",
+        "back": "T = 2π √(I / C), where C is the torsional constant."
+      },
+      {
+        "front": "What is the phase difference between displacement and velocity in SHM?",
+        "back": "Velocity leads displacement by a phase angle of π/2 (90°)."
+      },
+      {
+        "front": "What is the phase difference between velocity and acceleration in SHM?",
+        "back": "Acceleration leads velocity by a phase angle of π/2 (90°). Thus, acceleration and displacement have a phase difference of π (180°)."
+      },
+      {
+        "front": "What is the resultant amplitude when two SHMs of same frequency (x₁ = A₁sinωt, x₂ = A₂sin(ωt+φ)) superimpose?",
+        "back": "A = √(A₁² + A₂² + 2A₁A₂cosφ)"
+      },
+      {
+        "front": "What is the time taken by a particle in SHM to travel from the mean position (x=0) to half the amplitude (x=A/2)?",
+        "back": "t = T / 12"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A particle executing SHM has a maximum velocity of 10 m/s and a maximum acceleration of 50 m/s². What is the angular frequency (ω) of the motion?",
+        "options": [
+          "0.2 rad/s",
+          "5 rad/s",
+          "500 rad/s",
+          "50 rad/s"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is v(max) / a(max).",
+          "Correct. a(max) / v(max) = (Aω²) / (Aω) = ω. Thus ω = 50 / 10 = 5 rad/s.",
+          "Incorrect. This is the product of v(max) and a(max).",
+          "Incorrect. This is just the numerical value of a(max)."
+        ],
+        "fullExplanation": "In Simple Harmonic Motion, the maximum velocity is given by v(max) = Aω, and the maximum acceleration is given by a(max) = Aω². To find the angular frequency ω, we can divide the maximum acceleration by the maximum velocity: a(max) / v(max) = (Aω²) / (Aω) = ω. Substituting the given values: ω = 50 m/s² / 10 m/s = 5 rad/s."
+      },
+      {
+        "question": "For a particle in SHM, at what displacement x from the mean position is the kinetic energy equal to the potential energy?",
+        "options": [
+          "x = A / 2",
+          "x = A / √2",
+          "x = A / 4",
+          "x = A"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. At x = A/2, PE is 1/4 of total energy and KE is 3/4.",
+          "Correct. K = U => 1/2 k(A² - x²) = 1/2 kx². A² - x² = x² => 2x² = A² => x = A / √2.",
+          "Incorrect. This corresponds to a much smaller potential energy.",
+          "Incorrect. At x = A, kinetic energy is zero."
+        ],
+        "fullExplanation": "The kinetic energy is K = 1/2 k (A² - x²), and the potential energy is U = 1/2 k x². We set them equal: 1/2 k (A² - x²) = 1/2 k x². Canceling the 1/2 k term leaves A² - x² = x². Adding x² to both sides gives A² = 2x². Solving for x, we get x² = A² / 2, which yields x = ± A / √2."
+      },
+      {
+        "question": "A simple pendulum of length L has a period T. If the length is increased by 21%, what is the percentage change in its time period?",
+        "options": [
+          "10%",
+          "21%",
+          "10.5%",
+          "42%"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. T ∝ √L. L' = 1.21 L. T' ∝ √(1.21 L) = 1.1 √L = 1.1 T. This is a 10% increase.",
+          "Incorrect. The relationship is a square root, not linear.",
+          "Incorrect. This uses the binomial approximation which is only valid for very small percentages (<5%).",
+          "Incorrect. This assumes T ∝ L²."
+        ],
+        "fullExplanation": "The time period of a simple pendulum is T = 2π√(L/g), meaning T ∝ √L. If the length increases by 21%, the new length is L' = L + 0.21L = 1.21L. The new time period T' is proportional to √(1.21L) = 1.1√L = 1.1T. An increase from T to 1.1T represents a 10% increase in the time period."
+      },
+      {
+        "question": "Two springs of constants k and 2k are connected in parallel and attached to a mass m. What is the angular frequency (ω) of the oscillations?",
+        "options": [
+          "√(k / m)",
+          "√(3k / m)",
+          "√(2k / 3m)",
+          "√(3m / k)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is for a single spring k.",
+          "Correct. For parallel springs, k(eq) = k₁ + k₂ = k + 2k = 3k. ω = √(k(eq) / m) = √(3k / m).",
+          "Incorrect. This is the result for springs connected in series.",
+          "Incorrect. The fraction is upside down."
+        ],
+        "fullExplanation": "When springs are connected in parallel, their equivalent spring constant is the sum of the individual constants: k(eq) = k₁ + k₂. Here, k(eq) = k + 2k = 3k. The angular frequency of a spring-mass system is given by ω = √(k(eq) / m). Substituting the equivalent spring constant yields ω = √(3k / m)."
+      },
+      {
+        "question": "A particle in SHM moves from the mean position to x = A/2 in time t₁. It moves from x = A/2 to the extreme position x = A in time t₂. What is the relationship between t₁ and t₂?",
+        "options": [
+          "t₁ = t₂",
+          "t₁ = 2 t₂",
+          "t₁ = t₂ / 2",
+          "t₁ = 3 t₂"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Velocity is not constant, so equal distances don't take equal times.",
+          "Incorrect. The particle is moving faster near the mean, so t₁ is smaller.",
+          "Correct. t₁ = T/12. Total time from 0 to A is T/4. So t₂ = T/4 - T/12 = 2T/12 = T/6. Thus t₂ = 2t₁, meaning t₁ = t₂ / 2.",
+          "Incorrect. t₁ is smaller than t₂, not larger."
+        ],
+        "fullExplanation": "Using the equation x = A sin(ωt). For x = A/2: A/2 = A sin(ωt₁) => sin(ωt₁) = 1/2 => ωt₁ = π/6. Since ω = 2π/T, (2π/T)t₁ = π/6 => t₁ = T/12. For x = A, the time from the mean position is T/4. The time to go from A/2 to A is t₂ = T/4 - T/12 = 3T/12 - T/12 = 2T/12 = T/6. Comparing them, t₂ = 2 × (T/12) = 2t₁. Therefore, t₁ = t₂ / 2."
+      },
+      {
+        "question": "Two simple harmonic motions are represented by y₁ = 5 sin(10t) and y₂ = 5 cos(10t). What is the amplitude of their resultant motion?",
+        "options": [
+          "10",
+          "5",
+          "5√2",
+          "0"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This implies they are perfectly in phase (Δφ = 0).",
+          "Incorrect. This implies a phase difference of 120°.",
+          "Correct. y₂ = 5 sin(10t + π/2). The phase difference is 90°. Resultant A = √(5² + 5² + 0) = √50 = 5√2.",
+          "Incorrect. They do not cancel out."
+        ],
+        "fullExplanation": "We must express both motions as sine waves to find the phase difference. y₂ = 5 cos(10t) can be written as y₂ = 5 sin(10t + π/2). The phase difference Δφ is π/2 (90°). The resultant amplitude when two SHMs are superimposed is A = √(A₁² + A₂² + 2A₁A₂cos(Δφ)). Here A₁ = 5, A₂ = 5, and cos(90°) = 0. A = √(5² + 5²) = √(25 + 25) = √50 = 5√2."
+      },
+      {
+        "question": "The total mechanical energy of a particle in SHM is E. When the displacement is half the amplitude (x = A/2), what is its kinetic energy?",
+        "options": [
+          "E / 2",
+          "E / 4",
+          "3E / 4",
+          "E"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This occurs at x = A/√2.",
+          "Incorrect. This is the potential energy at x = A/2.",
+          "Correct. U = 1/2 k(A/2)² = 1/4 (1/2 kA²) = E/4. Since E = K + U, K = E - E/4 = 3E/4.",
+          "Incorrect. Kinetic energy equals total energy only at the mean position."
+        ],
+        "fullExplanation": "Total energy is E = 1/2 k A². At a displacement x = A/2, the potential energy is U = 1/2 k x² = 1/2 k (A/2)² = 1/4 (1/2 k A²) = E/4. By conservation of mechanical energy, Total Energy E = Kinetic Energy (K) + Potential Energy (U). Therefore, K = E - U = E - E/4 = 3E/4."
+      },
+      {
+        "question": "A simple pendulum is suspended from the roof of a train moving with a constant horizontal acceleration 'a'. What is its time period?",
+        "options": [
+          "2π √(L / g)",
+          "2π √(L / a)",
+          "2π √(L / √(g² + a²))",
+          "2π √(L / (g + a))"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the time period if the train were stationary or moving at constant velocity.",
+          "Incorrect. Gravity still acts on the pendulum.",
+          "Correct. The effective gravity g(eff) is the vector sum of g and the pseudo acceleration a, so g(eff) = √(g² + a²).",
+          "Incorrect. This is for a train accelerating vertically upwards."
+        ],
+        "fullExplanation": "In the non-inertial frame of the accelerating train, the pendulum bob experiences two accelerations: the true acceleration due to gravity (g) acting downwards, and a pseudo acceleration (a) acting horizontally in the opposite direction of the train's motion. Since these two vectors are perpendicular, the effective acceleration is g(eff) = √(g² + a²). The time period is T = 2π√(L / g(eff)) = 2π√(L / √(g² + a²))."
+      },
+      {
+        "question": "Which of the following graphs represents the relationship between acceleration (a) and displacement (x) for a particle in SHM?",
+        "options": [
+          "A parabola passing through the origin",
+          "A straight line passing through the origin with a positive slope",
+          "A straight line passing through the origin with a negative slope",
+          "A sinusoidal curve"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Acceleration is linearly related to displacement.",
+          "Incorrect. A positive slope implies a force pushing away from equilibrium, not a restoring force.",
+          "Correct. a = -ω²x. This is the equation of a straight line (y = mx) with a negative slope (-ω²).",
+          "Incorrect. The a vs t graph is sinusoidal, but a vs x is linear."
+        ],
+        "fullExplanation": "The defining characteristic of Simple Harmonic Motion is that acceleration is directly proportional to displacement and opposite in direction. The equation is a = -ω²x. If we plot 'a' on the y-axis and 'x' on the x-axis, this matches the linear equation y = mx, where the slope m = -ω². Since ω² is always positive, the slope is negative. Therefore, the graph is a straight line passing through the origin with a negative slope."
+      },
+      {
+        "question": "A mass m is attached to a spring of constant k. The spring is cut into two equal halves, and the mass is attached to one of the halves. What happens to the time period of oscillation?",
+        "options": [
+          "It doubles",
+          "It remains the same",
+          "It is divided by √2",
+          "It is multiplied by √2"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Increasing stiffness decreases the time period.",
+          "Incorrect. The spring constant has changed.",
+          "Correct. Cutting the spring in half doubles its k. T' = 2π√(m/2k) = T / √2.",
+          "Incorrect. This would happen if the spring constant was halved."
+        ],
+        "fullExplanation": "For a spring, the spring constant k is inversely proportional to its length L. If the spring is cut into two equal halves, its length becomes L/2, so the new spring constant becomes 2k. The original time period is T = 2π√(m/k). The new time period is T' = 2π√(m / (2k)) = (1/√2) × 2π√(m/k) = T / √2."
+      },
+      {
+        "question": "What is the phase difference between velocity and acceleration in Simple Harmonic Motion?",
+        "options": [
+          "0",
+          "π / 2",
+          "π",
+          "2π"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Velocity and acceleration do not peak at the same time.",
+          "Correct. If x = A sin(ωt), v = Aω cos(ωt) = Aω sin(ωt + π/2), and a = -Aω² sin(ωt) = Aω² sin(ωt + π). The difference is π/2.",
+          "Incorrect. This is the phase difference between displacement and acceleration.",
+          "Incorrect. 2π is a full cycle, meaning they would be in phase."
+        ],
+        "fullExplanation": "Let displacement be x = A sin(ωt). The velocity is the derivative of displacement: v = dx/dt = Aω cos(ωt). This can be written as v = Aω sin(ωt + π/2). The acceleration is the derivative of velocity: a = dv/dt = -Aω² sin(ωt). This can be written as a = Aω² sin(ωt + π). Comparing their phases: velocity phase is (ωt + π/2) and acceleration phase is (ωt + π). The difference is π - π/2 = π/2."
+      },
+      {
+        "question": "A uniform solid cylinder of mass M and radius R acts as a physical pendulum, pivoted at a point on its rim parallel to its central axis. What is its time period?",
+        "options": [
+          "2π √(R / g)",
+          "2π √(3R / 2g)",
+          "2π √(2R / g)",
+          "2π √(R / 2g)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is for a simple pendulum of length R.",
+          "Correct. I(pivot) = MR²/2 + MR² = 3/2 MR². T = 2π√(I / MgR) = 2π√(3/2 MR² / MgR) = 2π√(3R / 2g).",
+          "Incorrect. This is for a ring pivoted at its rim.",
+          "Incorrect. This implies a smaller moment of inertia."
+        ],
+        "fullExplanation": "The time period of a physical pendulum is T = 2π√(I / mgd), where I is the moment of inertia about the pivot and d is the distance from the pivot to the CM. For a solid cylinder pivoted at its rim, d = R. By the parallel axis theorem, I = I(cm) + MR² = (1/2)MR² + MR² = (3/2)MR². Substituting these into the formula: T = 2π√((3/2)MR² / (MgR)) = 2π√(3R / 2g)."
+      },
+      {
+        "question": "Two masses m₁ and m₂ are connected by a spring of constant k and placed on a smooth horizontal surface. If they are pulled apart and released, what is the angular frequency ω of the resulting oscillations?",
+        "options": [
+          "√(k / (m₁ + m₂))",
+          "√(k(m₁ + m₂) / (m₁m₂))",
+          "√(k / m₁)",
+          "√(k(m₁m₂) / (m₁ + m₂))"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This assumes they act as a single combined mass attached to a wall.",
+          "Correct. For a two-body system, we use reduced mass μ = (m₁m₂)/(m₁+m₂). ω = √(k/μ) = √(k(m₁+m₂)/(m₁m₂)).",
+          "Incorrect. This ignores the movement of the second mass.",
+          "Incorrect. This formula is inverted."
+        ],
+        "fullExplanation": "In a two-body oscillator system without external forces, both masses oscillate around their common center of mass. This problem is solved using the concept of reduced mass (μ). The reduced mass for two bodies is μ = (m₁m₂) / (m₁ + m₂). The system can be treated as a single mass μ attached to a fixed wall by the spring k. Therefore, ω = √(k / μ) = √(k / ((m₁m₂)/(m₁+m₂))) = √(k(m₁ + m₂) / (m₁m₂))."
+      },
+      {
+        "question": "In a torsional pendulum, a heavy disc is suspended by a wire. If the disc is replaced by another disc of the same material and same thickness but double the radius, how does the time period change?",
+        "options": [
+          "Becomes 2 times",
+          "Becomes 4 times",
+          "Becomes √2 times",
+          "Becomes 8 times"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. You likely only accounted for mass or radius, not both.",
+          "Correct. Mass ∝ R², so I ∝ MR² ∝ R⁴. If R doubles, I increases by 16. T ∝ √I, so T increases by √16 = 4 times.",
+          "Incorrect. Miscalculated the exponent for moment of inertia.",
+          "Incorrect. This is the ratio if the volume was purely proportional to R³."
+        ],
+        "fullExplanation": "The time period of a torsional pendulum is T = 2π√(I / C). The wire is unchanged, so C is constant. We need to find how I changes. The new disc has the same thickness and density, so its mass M = Volume × ρ = (π R² t) ρ. Therefore, M ∝ R². The moment of inertia of a disc is I = (1/2)MR². Substituting M ∝ R², we get I ∝ R⁴. If the radius is doubled, the new moment of inertia is I' = 2⁴ I = 16 I. The new time period T' = 2π√(16I / C) = 4 × 2π√(I / C) = 4T."
+      },
+      {
+        "question": "A block rests on a horizontal platform that oscillates vertically in SHM with an amplitude of 10 cm. What is the maximum frequency of oscillation to ensure the block does not leave the platform? (g = 10 m/s²)",
+        "options": [
+          "1 / (2π) Hz",
+          "10 / π Hz",
+          "5 / π Hz",
+          "50 / π Hz"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This would correspond to an acceleration of 0.1 m/s².",
+          "Incorrect. This gives ω = 20, leading to an acceleration of 40 m/s².",
+          "Correct. Maximum downward acceleration a(max) = Aω² must not exceed g. Aω² = g => (0.1)ω² = 10 => ω = 10 rad/s. f = ω/(2π) = 10/(2π) = 5/π Hz.",
+          "Incorrect. This is mathematically incorrect."
+        ],
+        "fullExplanation": "For the block to stay on the platform, the normal reaction N must be ≥ 0 at all times. The critical point is at the highest position where the platform has its maximum downward acceleration a(max) = Aω². The equation of motion here is mg - N = ma(max). For the block to just lose contact, N = 0, so g = a(max) = Aω². We have A = 0.1 m and g = 10 m/s². 10 = 0.1 × ω², which gives ω² = 100, so ω = 10 rad/s. The frequency is f = ω / 2π = 10 / 2π = 5 / π Hz."
+      },
+      {
+        "question": "If the amplitude of a particle executing SHM is doubled, what happens to its maximum velocity and total energy?",
+        "options": [
+          "v(max) doubles, Energy doubles",
+          "v(max) quadruples, Energy quadruples",
+          "v(max) doubles, Energy quadruples",
+          "Both remain unchanged"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Energy depends on the square of the amplitude.",
+          "Incorrect. Velocity is linearly proportional to amplitude.",
+          "Correct. v(max) = Aω, so it doubles. E = 1/2 kA², so it quadruples.",
+          "Incorrect. Both quantities depend on amplitude."
+        ],
+        "fullExplanation": "The maximum velocity in SHM is v(max) = Aω. Since ω (determined by k and m) remains constant, doubling A (to 2A) doubles the maximum velocity. The total mechanical energy is E = 1/2 k A². Since E is proportional to the square of the amplitude (A²), doubling A makes the new energy E' ∝ (2A)² = 4A². Thus, energy quadruples."
+      },
+      {
+        "question": "A tunnel is dug through the center of the Earth. A particle is dropped into it. What is the time taken to travel from one surface to the opposite surface? (R = radius of Earth, g = gravity on surface)",
+        "options": [
+          "2π √(R / g)",
+          "π √(R / g)",
+          "(π / 2) √(R / g)",
+          "4π √(R / g)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the time for a full round trip (one complete oscillation).",
+          "Correct. Traveling to the opposite side is exactly half an oscillation, so t = T/2 = π √(R/g).",
+          "Incorrect. This is the time to reach the center.",
+          "Incorrect. This is twice the time period."
+        ],
+        "fullExplanation": "A particle dropped in a tunnel through the Earth executes SHM due to the restoring gravitational force. Its full time period is T = 2π√(R/g). Traveling from one surface to the opposite surface represents exactly half of one complete cycle (from x = +A to x = -A). The time taken is therefore t = T / 2 = π√(R/g)."
+      },
+      {
+        "question": "An object of mass m is suspended from a spring and undergoes SHM with a time period T. If it is fully submerged in a non-viscous liquid of density σ (where the object's density is ρ > σ), what happens to the time period?",
+        "options": [
+          "It increases",
+          "It decreases",
+          "It remains exactly T",
+          "It becomes zero"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The restoring force constant k and mass m do not change.",
+          "Incorrect. Buoyancy alters the equilibrium position, but not the stiffness.",
+          "Correct. T = 2π√(m/k). Buoyant force is constant and only shifts the mean position; it does not change k or m. T is unchanged.",
+          "Incorrect. It still oscillates."
+        ],
+        "fullExplanation": "The time period of a spring-mass system is strictly T = 2π√(m/k). When immersed in a liquid, a constant upward buoyant force acts on the mass. A constant external force on a spring-mass system merely shifts the equilibrium (mean) position. It does not alter the mass 'm' nor the spring constant 'k'. Therefore, the restoring force for a displacement x from the NEW mean position is still -kx. The time period remains exactly T."
+      },
+      {
+        "question": "Two springs are connected in series between a rigid wall and a mass m. Spring 1 has constant k, and Spring 2 has constant k. What is the time period?",
+        "options": [
+          "2π √(m / 2k)",
+          "2π √(2m / k)",
+          "2π √(m / k)",
+          "π √(m / k)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the period if they were in parallel.",
+          "Correct. Series k(eq) = k/2. T = 2π√(m / (k/2)) = 2π√(2m / k).",
+          "Incorrect. This is for a single spring.",
+          "Incorrect. Missed a factor of 2 inside the root."
+        ],
+        "fullExplanation": "For two identical springs of constant k connected in series, the equivalent spring constant k(eq) is given by 1/k(eq) = 1/k + 1/k = 2/k. Therefore, k(eq) = k/2. The time period is T = 2π√(m / k(eq)). Substituting the equivalent spring constant: T = 2π√(m / (k/2)) = 2π√(2m / k)."
+      },
+      {
+        "question": "In SHM, what is the ratio of average kinetic energy to average potential energy over one complete cycle?",
+        "options": [
+          "1 : 2",
+          "2 : 1",
+          "1 : 1",
+          "1 : 4"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The energies are symmetrically distributed over time.",
+          "Incorrect. One does not dominate the other over a full cycle.",
+          "Correct. The average of sin²(ωt) and cos²(ωt) over a cycle is 1/2. Thus K(avg) = U(avg) = E/2.",
+          "Incorrect. The averages are exactly equal."
+        ],
+        "fullExplanation": "Kinetic energy is K(t) = 1/2 m ω² A² cos²(ωt). Potential energy is U(t) = 1/2 m ω² A² sin²(ωt). The average value of both sin²(ωt) and cos²(ωt) over one complete cycle (t = 0 to T) is 1/2. Therefore, the average kinetic energy is (1/4)m ω² A² and the average potential energy is (1/4)m ω² A². Since they are equal, their ratio is 1 : 1."
+      }
+    ]
+  },
+  {
+    "chapterName": "Waves",
+    "flashcards": [
+      {
+        "front": "What is the general mathematical form of a traveling wave?",
+        "back": "y(x,t) = f(x ± vt), where v is the wave speed."
+      },
+      {
+        "front": "What is the standard equation for a harmonic progressive wave traveling in the positive x-direction?",
+        "back": "y = A sin(ωt - kx + φ) or y = A sin(kx - ωt + φ)."
+      },
+      {
+        "front": "What does the wave number (k) represent, and what is its formula?",
+        "back": "k represents the spatial frequency of the wave. k = 2π / λ."
+      },
+      {
+        "front": "What is the relation between wave speed (v), angular frequency (ω), and wave number (k)?",
+        "back": "v = ω / k"
+      },
+      {
+        "front": "What is the formula for the speed of a transverse wave on a stretched string?",
+        "back": "v = √(T / μ), where T is tension and μ is linear mass density (mass per unit length)."
+      },
+      {
+        "front": "How are phase difference (Δφ) and path difference (Δx) related?",
+        "back": "Δφ = (2π / λ) Δx"
+      },
+      {
+        "front": "How are phase difference (Δφ) and time difference (Δt) related?",
+        "back": "Δφ = (2π / T) Δt"
+      },
+      {
+        "front": "What is the relationship between particle velocity (v_p) and wave velocity (v)?",
+        "back": "v_p = -v × (dy/dx), meaning particle velocity is negative wave velocity times the slope of the wave."
+      },
+      {
+        "front": "What is the average power transmitted along a string by a harmonic wave?",
+        "back": "P(avg) = (1/2) μ ω² A² v"
+      },
+      {
+        "front": "What is the intensity (I) of a wave?",
+        "back": "Power transmitted per unit cross-sectional area: I = P(avg) / S = (1/2) ρ ω² A² v."
+      },
+      {
+        "front": "What happens to a wave when it reflects from a rigid (fixed) boundary?",
+        "back": "It undergoes a phase change of π (180°). A crest reflects as a trough. Equation: y(r) = -A sin(ωt + kx)."
+      },
+      {
+        "front": "What happens to a wave when it reflects from a free (open) boundary?",
+        "back": "It reflects with NO phase change (0°). A crest reflects as a crest. Equation: y(r) = A sin(ωt + kx)."
+      },
+      {
+        "front": "What is a standing (stationary) wave?",
+        "back": "A wave formed by the superposition of two identical waves traveling in opposite directions. Energy is not transported."
+      },
+      {
+        "front": "What is the distance between two successive nodes or antinodes in a standing wave?",
+        "back": "λ / 2"
+      },
+      {
+        "front": "What is the distance between an adjacent node and antinode in a standing wave?",
+        "back": "λ / 4"
+      },
+      {
+        "front": "What is the fundamental frequency (f₁) of a string fixed at both ends?",
+        "back": "f₁ = v / (2L) = (1 / 2L) √(T / μ)."
+      },
+      {
+        "front": "What harmonics are present in a string fixed at both ends?",
+        "back": "All harmonics are present: fₙ = n f₁ (n = 1, 2, 3, ...)."
+      },
+      {
+        "front": "What is the fundamental frequency (f₁) of a string fixed at one end and free at the other?",
+        "back": "f₁ = v / (4L)."
+      },
+      {
+        "front": "What harmonics are present in a string fixed at one end and free at the other?",
+        "back": "Only odd harmonics are present: fₙ = (2n - 1) f₁."
+      },
+      {
+        "front": "What is the resultant amplitude when two waves y₁ = A₁sin(ωt-kx) and y₂ = A₂sin(ωt-kx+φ) interfere?",
+        "back": "A = √(A₁² + A₂² + 2A₁A₂cosφ)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "A transverse wave is described by the equation y = 5 sin(100πt - 2πx), where x and y are in meters and t is in seconds. What is the speed of the wave?",
+        "options": [
+          "100 m/s",
+          "50 m/s",
+          "200 m/s",
+          "2 m/s"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the value of ω/π.",
+          "Correct. Comparing with y = A sin(ωt - kx), ω = 100π and k = 2π. Speed v = ω/k = 100π / 2π = 50 m/s.",
+          "Incorrect. This is ω * k / π².",
+          "Incorrect. This is the wave number k without π."
+        ],
+        "fullExplanation": "The standard wave equation is y = A sin(ωt - kx). Comparing this with the given equation y = 5 sin(100πt - 2πx), we identify the angular frequency ω = 100π rad/s and the wave number k = 2π rad/m. The wave speed v is given by the ratio v = ω / k. Substituting the values gives v = 100π / 2π = 50 m/s."
+      },
+      {
+        "question": "A string of length 2 m and mass 10 g is subjected to a tension of 50 N. What is the speed of transverse waves on this string?",
+        "options": [
+          "50 m/s",
+          "100 m/s",
+          "20 m/s",
+          "10 m/s"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Missing a factor or miscalculated mass density.",
+          "Correct. μ = 0.01 kg / 2 m = 0.005 kg/m. v = √(T/μ) = √(50 / 0.005) = √10000 = 100 m/s.",
+          "Incorrect. Calculation error.",
+          "Incorrect. Calculation error with units."
+        ],
+        "fullExplanation": "First, calculate the linear mass density (μ) of the string: μ = mass / length = 10 g / 2 m = 0.01 kg / 2 m = 0.005 kg/m. The wave speed is given by v = √(T / μ). Given Tension T = 50 N, v = √(50 / 0.005) = √(50000 / 5) = √10000 = 100 m/s."
+      },
+      {
+        "question": "If the tension in a stretched string is increased by 44%, by what percentage does the wave speed increase?",
+        "options": [
+          "44%",
+          "22%",
+          "20%",
+          "10%"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Speed is proportional to the square root of tension.",
+          "Incorrect. This is half of 44, not the square root relation.",
+          "Correct. T becomes 1.44 T. v' = √(1.44) v = 1.2 v. This is a 20% increase.",
+          "Incorrect. Miscalculation."
+        ],
+        "fullExplanation": "The speed of a transverse wave on a string is v = √(T/μ). If the tension increases by 44%, the new tension T' = T + 0.44T = 1.44T. The new speed is v' = √(1.44T / μ) = √(1.44) × √(T/μ) = 1.2 v. An increase from v to 1.2v represents a 20% increase."
+      },
+      {
+        "question": "Which of the following equations represents a wave traveling in the negative x-direction?",
+        "options": [
+          "y = A sin(ωt - kx)",
+          "y = A sin(kx - ωt)",
+          "y = A cos(ωt + kx)",
+          "y = A cos(kx) sin(ωt)"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. ωt and -kx have opposite signs, indicating +x direction.",
+          "Incorrect. kx and -ωt have opposite signs, indicating +x direction.",
+          "Correct. ωt and kx have the same sign, indicating the wave travels in the -x direction.",
+          "Incorrect. This is the equation of a standing wave, not a traveling wave."
+        ],
+        "fullExplanation": "For a harmonic wave y = f(ax + bt), the direction of propagation is determined by the relative signs of the space and time terms. If 'ωt' and 'kx' have opposite signs (e.g., ωt - kx or kx - ωt), the wave travels in the positive x-direction. If they have the same sign (e.g., ωt + kx or -ωt - kx), the wave travels in the negative x-direction. Therefore, y = A cos(ωt + kx) travels in the -x direction."
+      },
+      {
+        "question": "Two waves y₁ = 4 sin(ωt - kx) and y₂ = 3 sin(ωt - kx + π/2) interfere. What is the amplitude of the resultant wave?",
+        "options": [
+          "7",
+          "1",
+          "5",
+          "12"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is constructive interference (0 phase diff).",
+          "Incorrect. This is destructive interference (π phase diff).",
+          "Correct. Phase diff is π/2. Resultant amplitude A = √(4² + 3² + 2×4×3×cos90°) = √(16+9) = 5.",
+          "Incorrect. This is the product of the amplitudes."
+        ],
+        "fullExplanation": "The resultant amplitude when two waves interfere is given by A = √(A₁² + A₂² + 2A₁A₂cosφ), where φ is the phase difference. Here, A₁ = 4, A₂ = 3, and the phase difference φ = π/2 (90°). Since cos(90°) = 0, the equation simplifies to A = √(A₁² + A₂²) = √(4² + 3²) = √(16 + 9) = √25 = 5."
+      },
+      {
+        "question": "A string fixed at both ends is vibrating in its 3rd harmonic. How many nodes are present (including the ends)?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is for the 1st harmonic (fundamental).",
+          "Incorrect. This is for the 2nd harmonic.",
+          "Correct. The nth harmonic has n loops. n loops have n+1 nodes. For 3rd harmonic, 3+1 = 4 nodes.",
+          "Incorrect. This is for the 4th harmonic."
+        ],
+        "fullExplanation": "A string fixed at both ends must have nodes at both boundaries. When vibrating in the nth harmonic, it forms n distinct vibrating loops (segments) along its length. The number of nodes is always one more than the number of loops. For the 3rd harmonic (n = 3), there are 3 loops, which requires 3 + 1 = 4 nodes."
+      },
+      {
+        "question": "What is the ratio of frequencies of the fundamental, first overtone, and second overtone for a string fixed at one end and free at the other?",
+        "options": [
+          "1 : 2 : 3",
+          "1 : 3 : 5",
+          "1 : 4 : 9",
+          "1 : 1.5 : 2"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the ratio for a string fixed at both ends.",
+          "Correct. A string fixed at one end only supports odd harmonics: f₁, 3f₁, 5f₁. The ratio is 1:3:5.",
+          "Incorrect. Frequencies are linearly proportional, not quadratic.",
+          "Incorrect. Does not match the physical constraints."
+        ],
+        "fullExplanation": "For a string fixed at one end and free at the other, there must be a node at the fixed end and an antinode at the free end. The allowed lengths are L = (2n-1)λ/4, where n=1,2,3... This means the allowed frequencies are fₙ = (2n-1)v/(4L). The fundamental (n=1) is f₁ = v/4L. The first overtone (n=2) is 3f₁. The second overtone (n=3) is 5f₁. The ratio is 1 : 3 : 5."
+      },
+      {
+        "question": "A wave pulse is traveling on a string. The power transmitted is P. If the amplitude of the pulse is doubled while keeping frequency and tension constant, what is the new power transmitted?",
+        "options": [
+          "P",
+          "2P",
+          "4P",
+          "P / 2"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Power depends on amplitude.",
+          "Incorrect. Power is not linearly proportional to amplitude.",
+          "Correct. Power P ∝ A². If A is doubled, A² becomes 4, so power becomes 4P.",
+          "Incorrect. Power increases."
+        ],
+        "fullExplanation": "The average power transmitted by a harmonic wave on a string is given by P(avg) = (1/2) μ ω² A² v. Since the string (μ), tension (which determines v), and frequency (ω) are constant, power is directly proportional to the square of the amplitude (P ∝ A²). Doubling the amplitude (2A) results in (2A)² = 4A², meaning the transmitted power becomes 4 times the original, or 4P."
+      },
+      {
+        "question": "A wave is defined by y = A sin(ωt - kx). Which of the following represents the reflected wave from a rigid (fixed) boundary at x = 0?",
+        "options": [
+          "y = A sin(ωt + kx)",
+          "y = -A sin(ωt + kx)",
+          "y = A sin(ωt - kx)",
+          "y = -A sin(ωt - kx)"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This represents reflection from a free boundary (no phase change).",
+          "Correct. Reflection from a rigid boundary reverses direction (+kx) and introduces a π phase shift (minus sign).",
+          "Incorrect. This is the incident wave itself.",
+          "Incorrect. Direction of travel did not change."
+        ],
+        "fullExplanation": "When a wave reflects from a boundary at x = 0, its direction of travel reverses, changing the '-kx' term to '+kx'. Furthermore, if the boundary is rigid (fixed), the point at the boundary cannot move (must be a node). To cancel the incident wave at x=0, the reflected wave must be inverted, which means a phase shift of π, or mathematically multiplying the amplitude by -1. Therefore, the reflected wave is y = -A sin(ωt + kx)."
+      },
+      {
+        "question": "Two points on a string have a path difference of λ/3. What is the phase difference between their oscillations?",
+        "options": [
+          "π / 3",
+          "2π / 3",
+          "π",
+          "3π / 2"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This would correspond to a path difference of λ/6.",
+          "Correct. Δφ = (2π/λ) × Δx = (2π/λ) × (λ/3) = 2π/3.",
+          "Incorrect. This is for a path difference of λ/2.",
+          "Incorrect. This is for a path difference of 3λ/4."
+        ],
+        "fullExplanation": "The relationship between phase difference Δφ and path difference Δx is given by the formula Δφ = (2π / λ) × Δx. Substituting the given path difference Δx = λ/3 into the equation yields Δφ = (2π / λ) × (λ / 3). The λ terms cancel out, leaving Δφ = 2π / 3."
+      },
+      {
+        "question": "The fundamental frequency of a sonometer wire is 200 Hz. If its length is halved and tension is doubled, what will be the new fundamental frequency?",
+        "options": [
+          "200 √2 Hz",
+          "400 √2 Hz",
+          "100 √2 Hz",
+          "800 Hz"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This happens if only tension is doubled.",
+          "Correct. f ∝ (√T) / L. Halving L doubles f. Doubling T multiplies f by √2. Total = 200 × 2 × √2 = 400√2 Hz.",
+          "Incorrect. This happens if length is doubled and tension doubled.",
+          "Incorrect. This happens if tension is quadrupled."
+        ],
+        "fullExplanation": "The fundamental frequency is f = (1 / 2L) √(T / μ). Therefore, f ∝ √(T) / L. Let the new length be L' = L/2 and the new tension be T' = 2T. The new frequency is f' = (1 / 2(L/2)) √(2T / μ) = (2 / 2L) √(2)√(T / μ) = 2√2 × (1 / 2L) √(T / μ) = 2√2 f. Given f = 200 Hz, f' = 2√2 × 200 = 400√2 Hz."
+      },
+      {
+        "question": "In a standing wave on a string, what is the phase difference between the oscillations of two particles located in the exact same loop?",
+        "options": [
+          "0",
+          "π / 2",
+          "π",
+          "Depends on their exact positions"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. All particles between two adjacent nodes vibrate in phase with each other.",
+          "Incorrect. This is the phase difference between velocity and displacement for a single particle.",
+          "Incorrect. This is the phase difference for particles in adjacent loops.",
+          "Incorrect. Amplitude depends on position, but phase is constant within a loop."
+        ],
+        "fullExplanation": "In a standing wave, the spatial and temporal components are separated: y(x,t) = (2A sin kx) cos ωt. The term (2A sin kx) determines the amplitude and sign for a given point. Between two adjacent nodes (one loop), the value of sin kx maintains the same sign. Therefore, all particles in that loop reach their maximum displacement simultaneously and cross the mean position simultaneously; they are perfectly in phase (phase difference = 0)."
+      },
+      {
+        "question": "What is the distance between a node and the next antinode in a standing wave of wavelength λ?",
+        "options": [
+          "λ",
+          "λ / 2",
+          "λ / 4",
+          "λ / 8"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. This is the distance of a full wave cycle.",
+          "Incorrect. This is the distance between two successive nodes or two successive antinodes.",
+          "Correct. An antinode forms exactly halfway between two successive nodes, so distance is (λ/2) / 2 = λ/4.",
+          "Incorrect. This is a random fraction."
+        ],
+        "fullExplanation": "In a standing wave, nodes are points of zero amplitude occurring at x = 0, λ/2, λ, 3λ/2, etc. Antinodes are points of maximum amplitude occurring halfway between the nodes, at x = λ/4, 3λ/4, 5λ/4, etc. The distance from a node (e.g., at 0) to the very next antinode (e.g., at λ/4) is λ/4 - 0 = λ/4."
+      },
+      {
+        "question": "A heavy uniform rope of length L and mass M hangs vertically from a ceiling. A transverse wave pulse is generated at the bottom. What is its speed when it is at a height x from the bottom?",
+        "options": [
+          "√(gL)",
+          "√(gx)",
+          "√(g(L-x))",
+          "Constant throughout"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the speed at the very top (ceiling).",
+          "Correct. Tension at height x is weight of rope below it: T = (M/L)xg = μxg. v = √(T/μ) = √(μxg/μ) = √(gx).",
+          "Incorrect. This would be the speed if measuring from the top down.",
+          "Incorrect. Speed increases as it moves up due to increasing tension."
+        ],
+        "fullExplanation": "The speed of a transverse wave on a string is v = √(T/μ). For a heavy hanging rope, the tension T at any height x from the bottom is caused by the weight of the rope below that point. If μ = M/L is the mass per unit length, the mass below x is μx, and its weight is μxg. Thus, T(x) = μxg. Substituting this into the speed formula gives v = √(μxg / μ) = √(gx). The speed increases as the pulse moves upward."
+      },
+      {
+        "question": "Which physical quantity determines whether a mechanical wave requires a medium to propagate?",
+        "options": [
+          "Frequency",
+          "Wavelength",
+          "Nature of the wave (electromagnetic vs mechanical)",
+          "Amplitude"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Frequency does not dictate the need for a medium.",
+          "Incorrect. Wavelength does not dictate the need for a medium.",
+          "Correct. By definition, mechanical waves (like sound or string waves) require a material medium with inertia and elasticity.",
+          "Incorrect. Amplitude relates to energy, not propagation medium."
+        ],
+        "fullExplanation": "The requirement for a medium is the defining characteristic of a mechanical wave. Mechanical waves propagate by the transfer of energy through the interaction of neighboring particles in a medium (which possesses inertia and elasticity). Electromagnetic waves, on the other hand, consist of oscillating electric and magnetic fields and do not require a material medium; they can travel through a vacuum."
+      },
+      {
+        "question": "A guitar string is tuned to a frequency of 440 Hz. If the tension is increased by 21% and the length is decreased by 10%, what is the new fundamental frequency?",
+        "options": [
+          "440 Hz",
+          "484 Hz",
+          "538 Hz",
+          "400 Hz"
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. The frequency definitely changes.",
+          "Incorrect. This accounts for tension increase but ignores length decrease.",
+          "Correct. f ∝ √T / L. √1.21 = 1.1. L becomes 0.9. f' = 440 × (1.1 / 0.9) = 440 × 1.222 ≈ 538 Hz.",
+          "Incorrect. Frequency increases, it doesn't decrease."
+        ],
+        "fullExplanation": "The fundamental frequency is f = (1/2L)√(T/μ). So f ∝ √T / L. The new tension is T' = 1.21 T, so √T' = 1.1 √T. The new length is L' = 0.9 L. The new frequency is f' = f × (1.1 / 0.9) = 440 × (11/9) ≈ 440 × 1.2222 = 537.77 Hz, which rounds to 538 Hz."
+      },
+      {
+        "question": "The equation of a standing wave is y = 10 sin(πx/4) cos(20πt). What is the distance between consecutive nodes?",
+        "options": [
+          "8",
+          "4",
+          "2",
+          "16"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. This is the wavelength λ.",
+          "Correct. Comparing with sin(kx), k = π/4 = 2π/λ, so λ = 8. Distance between nodes is λ/2 = 4.",
+          "Incorrect. Distance is λ/2.",
+          "Incorrect. This is 2λ."
+        ],
+        "fullExplanation": "The spatial part of the standing wave is given by sin(kx). Here, k = π / 4. By definition, wave number k = 2π / λ. Setting them equal: 2π / λ = π / 4. Solving for λ gives λ = 8 units. The distance between two consecutive nodes in a standing wave is exactly half a wavelength (λ / 2). Therefore, the distance is 8 / 2 = 4 units."
+      },
+      {
+        "question": "A transverse wave traveling along a string is defined by y = A sin(kx - ωt). The maximum particle velocity is equal to the wave velocity. What is the wavelength λ?",
+        "options": [
+          "2πA",
+          "πA",
+          "A",
+          "A/2π"
+        ],
+        "correctOption": 0,
+        "optionExplanations": [
+          "Correct. Max particle velocity = Aω. Wave velocity = ω/k. Aω = ω/k => A = 1/k. Since k = 2π/λ, λ = 2πA.",
+          "Incorrect. Missed the factor of 2 in wave number k.",
+          "Incorrect. Math derivation yields 2π factor.",
+          "Incorrect. This is the reciprocal relation."
+        ],
+        "fullExplanation": "The particle velocity is the time derivative of displacement: v_p = dy/dt = -Aω cos(kx - ωt). The maximum particle velocity is v(p,max) = Aω. The wave velocity is v(w) = ω/k. The problem states v(p,max) = v(w), so Aω = ω/k. Canceling ω gives A = 1/k. We know k = 2π/λ. Therefore, A = λ / (2π), which rearranges to λ = 2πA."
+      },
+      {
+        "question": "A wave is traveling along a string. If the linear mass density of the string gradually increases along its length, what happens to the wave?",
+        "options": [
+          "Speed increases, wavelength increases",
+          "Speed decreases, wavelength decreases",
+          "Speed decreases, frequency decreases",
+          "Speed increases, frequency remains constant"
+        ],
+        "correctOption": 1,
+        "optionExplanations": [
+          "Incorrect. Speed is inversely proportional to square root of mass density.",
+          "Correct. v = √(T/μ), so as μ increases, v decreases. Since f is constant (determined by source), λ = v/f also decreases.",
+          "Incorrect. Frequency of a wave is determined by the source and does not change when passing through different media.",
+          "Incorrect. Speed decreases, not increases."
+        ],
+        "fullExplanation": "The speed of a wave on a string is v = √(T/μ). If the linear mass density μ increases, the wave speed v must decrease. The frequency f of a wave is a property of the source generating it and remains constant even if the medium changes. Since v = fλ, and f is constant, a decrease in wave speed v results in a direct proportional decrease in wavelength λ."
+      },
+      {
+        "question": "In a stationary wave, the energy is:",
+        "options": [
+          "Transferred continuously from one node to the next.",
+          "Maximum at nodes.",
+          "Trapped within each loop between adjacent nodes.",
+          "Transmitted only in the positive x-direction."
+        ],
+        "correctOption": 2,
+        "optionExplanations": [
+          "Incorrect. Energy does not cross nodes.",
+          "Incorrect. Amplitude and kinetic energy are zero at nodes.",
+          "Correct. Nodes do not move, so no work is done across them. Energy is confined within individual loops.",
+          "Incorrect. Standing waves do not transmit energy in any direction."
+        ],
+        "fullExplanation": "A stationary (or standing) wave is formed by the superposition of two identical waves traveling in opposite directions. The resulting nodes are permanently at rest. Because the particles at nodes do not move, they cannot perform any mechanical work (W = F·ds = 0) to transfer energy to adjacent regions. Therefore, no energy flows past a node; it remains trapped and oscillates between kinetic and potential forms within each loop."
+      }
+    ]
+  }
+]

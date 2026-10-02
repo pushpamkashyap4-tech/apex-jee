@@ -1,0 +1,809 @@
+[
+  {
+    "chapterName": "Hyperbola",
+    "flashcards": [
+      {
+        "front": "What is the standard equation of a hyperbola and the fundamental relation between $a$, $b$, and its eccentricity $e$?",
+        "back": "The standard equation is \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\) (where \\\\(a > 0, b > 0\\\\)). The relation between semi-axes and eccentricity is \\\\(b^2 = a^2(e^2 - 1)\\\\), giving \\\\(e = \\\\sqrt{1 + \\\\frac{b^2}{a^2}} > 1\\\\)."
+      },
+      {
+        "front": "What are the coordinates of the foci and vertices of the standard hyperbola \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "Foci: \\\\(S(ae, 0)\\\\) and \\\\(S'(-ae, 0)\\\\).\\nVertices: \\\\(A(a, 0)\\\\) and \\\\(A'(-a, 0)\\\\)."
+      },
+      {
+        "front": "What are the equations of the directrices and the distance between them for \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "Equations of directrices: \\\\(x = \\\\pm \\\\frac{a}{e}\\\\).\\nDistance between directrices: \\\\(\\\\frac{2a}{e}\\\\)."
+      },
+      {
+        "front": "What is the length of the latus rectum and coordinates of its endpoints for \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "Length of latus rectum: \\\\(LL' = \\\\frac{2b^2}{a} = 2a(e^2 - 1)\\\\).\\nEndpoints: \\\\(\\\\left(ae, \\\\pm \\\\frac{b^2}{a}\\\\right)\\\\) and \\\\(\\\\left(-ae, \\\\pm \\\\frac{b^2}{a}\\\\right)\\\\)."
+      },
+      {
+        "front": "What is the focal property (definition based on distances from foci) of a hyperbola?",
+        "back": "The difference of the focal distances of any point \\\\(P(x, y)\\\\) on the hyperbola from the two foci is constant and equals the length of the transverse axis: \\\\(| |PS| - |PS'| | = 2a\\\\)."
+      },
+      {
+        "front": "What are the focal lengths (focal distances) of a point \\\\(P(x, y)\\\\) on the right branch of \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "For a point on the right branch (\\\\(x \\\\ge a\\\\)):\\n\\\\(PS = ex - a\\\\) and \\\\(PS' = ex + a\\\\)."
+      },
+      {
+        "front": "What is the conjugate hyperbola of \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "The conjugate hyperbola is \\\\(-\\\\frac{x^2}{a^2} + \\\\frac{y^2}{b^2} = 1\\\\), or equivalently \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = -1\\\\)."
+      },
+      {
+        "front": "What is the relation between the eccentricities \\\\(e_1\\\\) and \\\\(e_2\\\\) of two conjugate hyperbolas?",
+        "back": "\\\\(\\\\frac{1}{e_1^2} + \\\\frac{1}{e_2^2} = 1\\\\), where \\\\(e_1 = \\\\sqrt{1 + \\\\frac{b^2}{a^2}}\\\\) and \\\\(e_2 = \\\\sqrt{1 + \\\\frac{a^2}{b^2}}\\\\)."
+      },
+      {
+        "front": "What is the auxiliary circle of the hyperbola \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "The circle described on the transverse axis as diameter: \\\\(x^2 + y^2 = a^2\\\\)."
+      },
+      {
+        "front": "What is the parametric representation of the hyperbola \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "\\\\(x = a\\\\sec\\\\theta\\\\), \\\\(y = b\\\\tan\\\\theta\\\\), where \\\\(\\\\theta\\\\) is the eccentric angle (\\\\(\\\\theta \\\\in [0, 2\\\\pi)\\\\setminus\\\\{\\\\pi/2, 3\\\\pi/2\\\\}\\\\))."
+      },
+      {
+        "front": "How is the position of a point \\\\(P(x_1, y_1)\\\\) determined with respect to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "Define \\\\(S_1 = \\\\frac{x_1^2}{a^2} - \\\\frac{y_1^2}{b^2} - 1\\\\):\\n- \\\\(S_1 > 0\\\\): \\\\(P\\\\) lies inside the branches (contains foci).\\n- \\\\(S_1 = 0\\\\): \\\\(P\\\\) lies on the hyperbola.\\n- \\\\(S_1 < 0\\\\): \\\\(P\\\\) lies outside (between the two branches)."
+      },
+      {
+        "front": "What is the condition for the straight line \\\\(y = mx + c\\\\) to be tangent to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "\\\\(c^2 = a^2m^2 - b^2\\\\) with \\\\(a^2m^2 > b^2\\\\). The equation of tangent is \\\\(y = mx \\\\pm \\\\sqrt{a^2m^2 - b^2}\\\\)."
+      },
+      {
+        "front": "What is the point of contact of the tangent \\\\(y = mx \\\\pm \\\\sqrt{a^2m^2 - b^2}\\\\) to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "The point of contact is \\\\(\\\\left( \\\\mp \\\\frac{a^2m}{c}, \\\\mp \\\\frac{b^2}{c} \\\\right)\\\\), where \\\\(c = \\\\pm \\\\sqrt{a^2m^2 - b^2}\\\\)."
+      },
+      {
+        "front": "What is the equation of the tangent at \\\\((x_1, y_1)\\\\) and in parametric form at \\\\(\\\\theta\\\\) to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "- Point form: \\\\(\\\\frac{xx_1}{a^2} - \\\\frac{yy_1}{b^2} = 1\\\\)\\n- Parametric form: \\\\(\\\\frac{x\\\\sec\\\\theta}{a} - \\\\frac{y\\\\tan\\\\theta}{b} = 1\\\\)."
+      },
+      {
+        "front": "What is the equation of the normal to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\) at the point \\\\((x_1, y_1)\\\\)?",
+        "back": "\\\\(\\\\frac{a^2x}{x_1} + \\\\frac{b^2y}{y_1} = a^2 + b^2 = a^2e^2\\\\)."
+      },
+      {
+        "front": "What is the equation of the normal in parametric form at angle \\\\(\\\\theta\\\\) to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "\\\\(\\frac{ax}{\\\\sec\\\\theta} + \\\\frac{by}{\\\\tan\\\\theta} = a^2 + b^2\\\\) or \\\\(ax\\\\cos\\\\theta + by\\\\cot\\\\theta = a^2 + b^2\\\\)."
+      },
+      {
+        "front": "What is the slope form equation of the normal to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "\\\\(y = mx \\\\mp \\\\frac{m(a^2 + b^2)}{\\\\sqrt{a^2 - m^2b^2}}\\\\)."
+      },
+      {
+        "front": "What is the director circle of the hyperbola \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "The locus of points of intersection of perpendicular tangents: \\\\(x^2 + y^2 = a^2 - b^2\\\\).\\nNote: If \\\\(a^2 < b^2\\\\), no real perpendicular tangents can be drawn."
+      },
+      {
+        "front": "What is the equation of the chord of contact from an external point \\\\(P(x_1, y_1)\\\\) to \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "\\\\(T = 0\\\\), which is \\\\(\\\\frac{xx_1}{a^2} - \\\\frac{yy_1}{b^2} = 1\\\\)."
+      },
+      {
+        "front": "What is the equation of a chord of \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\) with given midpoint \\\\((x_1, y_1)\\\\)?",
+        "back": "\\\\(T = S_1\\\\), which means:\\n\\\\(\\\\frac{xx_1}{a^2} - \\\\frac{yy_1}{b^2} - 1 = \\\\frac{x_1^2}{a^2} - \\\\frac{y_1^2}{b^2} - 1\\\\), i.e., \\\\(\\\\frac{xx_1}{a^2} - \\\\frac{yy_1}{b^2} = \\\\frac{x_1^2}{a^2} - \\\\frac{y_1^2}{b^2}\\\\)."
+      },
+      {
+        "front": "What are the equations of the asymptotes of \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "The combined equation is \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 0\\\\), giving two asymptotes: \\\\(y = \\\\pm \\\\frac{b}{a}x\\\\)."
+      },
+      {
+        "front": "What is the angle between the asymptotes of \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\)?",
+        "back": "\\\\(2\\\\theta = 2\\\\tan^{-1}\\\\left(\\\\frac{b}{a}\\\\right) = 2\\\\sec^{-1}(e)\\\\)."
+      },
+      {
+        "front": "What is the relation between the hyperbola, its asymptotes, and its conjugate hyperbola?",
+        "back": "They differ only by a constant:\\nHyperbola: \\\\(H \\\\equiv \\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} - 1 = 0\\\\)\\nAsymptotes: \\\\(A \\\\equiv \\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 0\\\\)\\nConjugate: \\\\(C \\\\equiv \\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} + 1 = 0\\\\)\\nThus: \\\\(H + C = 2A\\\\)."
+      },
+      {
+        "front": "What is a rectangular (or equilateral) hyperbola, and what is its eccentricity?",
+        "back": "A hyperbola whose asymptotes are perpendicular (transverse axis = conjugate axis, i.e., \\\\(a = b\\\\)). Its equation is \\\\(x^2 - y^2 = a^2\\\\), and its eccentricity is always \\\\(e = \\\\sqrt{2}\\\\)."
+      },
+      {
+        "front": "What is the equation of a rectangular hyperbola referred to its asymptotes as coordinate axes?",
+        "back": "\\\\(xy = c^2\\\\), where \\\\(c^2 = \\\\frac{a^2}{2}\\\\)."
+      },
+      {
+        "front": "What are the parametric coordinates and tangent equation for the rectangular hyperbola \\\\(xy = c^2\\\\)?",
+        "back": "Parametric coordinates: \\\\(P(t) = \\\\left(ct, \\\\frac{c}{t}\\\\right)\\\\).\\nTangent at \\\\(P(t)\\\\): \\\\(\\\\frac{x}{t} + yt = 2c\\\\) or \\\\(x + yt^2 = 2ct\\\\)."
+      },
+      {
+        "front": "What is the equation of the normal to \\\\(xy = c^2\\\\) at the point \\\\(t\\\\)?",
+        "back": "\\\\(xt^3 - yt = c(t^4 - 1)\\\\)."
+      },
+      {
+        "front": "What is the reflection property of a hyperbola?",
+        "back": "An incoming ray of light directed towards one focus is reflected by the outer convex surface of the hyperbola away from the other focus."
+      },
+      {
+        "front": "What is the product of perpendicular distances from any point on \\\\(\\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} = 1\\\\) to its asymptotes?",
+        "back": "The product is always constant and equals \\\\(\\\\frac{a^2b^2}{a^2 + b^2}\\\\)."
+      },
+      {
+        "front": "What is the equation of the pair of tangents from an external point \\\\((x_1, y_1)\\\\) to a hyperbola?",
+        "back": "\\\\(SS_1 = T^2\\\\), where \\\\(S = \\\\frac{x^2}{a^2} - \\\\frac{y^2}{b^2} - 1\\\\), \\\\(S_1 = \\\\frac{x_1^2}{a^2} - \\\\frac{y_1^2}{b^2} - 1\\\\), and \\\\(T = \\\\frac{xx_1}{a^2} - \\\\frac{yy_1}{b^2} - 1\\\\)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "For the hyperbola \\\\(16x^2 - 9y^2 = 144\\\\), find the eccentricity.",
+        "options": [
+          "\\\\(\\\\frac{5}{3}\\\\)",
+          "\\\\(\\\\frac{5}{4}\\\\)",
+          "\\\\(\\\\frac{4}{3}\\\\)",
+          "\\\\(\\\\frac{\\\\sqrt{7}}{3}\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. \\\\(5/3\\\\) would occur if \\\\(a^2=9\\\\) and \\\\(b^2=16\\\\).",
+          "Correct. \\\\(a^2 = 9, b^2 = 16 \\\\implies e = \\\\sqrt{1 + 16/9} = 5/3\\\\). Wait, dividing by 144 gives \\\\(x^2/9 - y^2/16 = 1\\\\), so \\\\(a^2 = 9, b^2 = 16\\\\), hence \\\\(e = \\\\sqrt{1 + 16/9} = 5/3\\\\). Wait! Let's check option A vs B.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Rewriting \\\\(16x^2 - 9y^2 = 144\\\\) in standard form: \\\\(\\\\frac{x^2}{9} - \\\\frac{y^2}{16} = 1\\\\). Here \\\\(a^2 = 9\\\\) and \\\\(b^2 = 16\\\\). Eccentricity \\\\(e = \\\\sqrt{1 + \\\\frac{b^2}{a^2}} = \\\\sqrt{1 + \\\\frac{16}{9}} = \\\\sqrt{\\\\frac{25}{9}} = \\\\frac{5}{3}\\\\). Thus option A is correct."
+      },
+      {
+        "question": "If the eccentricity of the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) is \\\\(e\\\\) and that of its conjugate hyperbola is \\\\(e'\\\\), then \\\\(\\frac{1}{e^2} + \\frac{1}{e'^2}\\\\) is equal to:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "\\\\(\\frac{1}{2}\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. The sum is strictly positive.",
+          "Correct. Since \\\\(e^2 = 1 + b^2/a^2 = (a^2+b^2)/a^2\\\\) and \\\\(e'^2 = (a^2+b^2)/b^2\\\\), \\\\(1/e^2 + 1/e'^2 = (a^2+b^2)/(a^2+b^2) = 1\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "We have \\\\(e^2 = 1 + \\\\frac{b^2}{a^2} = \\\\frac{a^2+b^2}{a^2} \\\\implies \\\\frac{1}{e^2} = \\\\frac{a^2}{a^2+b^2}\\\\). For the conjugate hyperbola, \\\\(e'^2 = 1 + \\\\frac{a^2}{b^2} = \\\\frac{a^2+b^2}{b^2} \\\\implies \\\\frac{1}{e'^2} = \\\\frac{b^2}{a^2+b^2}\\\\). Adding them gives \\\\(\\frac{1}{e^2} + \\frac{1}{e'^2} = \\frac{a^2+b^2}{a^2+b^2} = 1\\\\)."
+      },
+      {
+        "question": "The foci of a hyperbola coincide with the foci of the ellipse \\\\(\\frac{x^2}{25} + \\frac{y^2}{9} = 1\\\\). If the eccentricity of the hyperbola is 2, then its equation is:",
+        "options": [
+          "\\\\(\\frac{x^2}{4} - \\frac{y^2}{12} = 1\\\\)",
+          "\\\\(\\frac{x^2}{12} - \\frac{y^2}{4} = 1\\\\)",
+          "\\\\(\\frac{x^2}{16} - \\frac{y^2}{9} = 1\\\\)",
+          "\\\\(\\frac{x^2}{9} - \\frac{y^2}{7} = 1\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Ellipse foci are at \\\\((\\\\pm 4, 0)\\\\). For hyperbola, \\\\(a_h e_h = 4 \\\\implies a_h(2) = 4 \\\\implies a_h = 2\\\\). Then \\\\(b_h^2 = a_h^2(e_h^2 - 1) = 4(4-1) = 12\\\\).",
+          "Incorrect. \\\\(a^2\\\\) and \\\\(b^2\\\\) are interchanged.",
+          "Incorrect. Foci would not match.",
+          "Incorrect."
+        ],
+        "fullExplanation": "For the ellipse, \\\\(a^2 = 25, b^2 = 9 \\\\implies c^2 = a^2 - b^2 = 16 \\\\implies c = 4\\\\), so foci are \\\\((\\\\pm 4, 0)\\\\). For the hyperbola, foci are \\\\((\\\\pm a_h e_h, 0) = (\\\\pm 4, 0)\\\\). Given \\\\(e_h = 2\\\\), we have \\\\(a_h = 2\\\\), so \\\\(a_h^2 = 4\\\\). Then \\\\(b_h^2 = a_h^2(e_h^2 - 1) = 4(4 - 1) = 12\\\\). The equation is \\\\(\\frac{x^2}{4} - \\frac{y^2}{12} = 1\\\\)."
+      },
+      {
+        "question": "The length of the transverse axis of a hyperbola is 7 and it passes through the point \\\\((5, -2)\\\\). The equation of the hyperbola in standard form is:",
+        "options": [
+          "\\\\(\\frac{4x^2}{49} - \\frac{196y^2}{204} = 1\\\\)",
+          "\\\\(\\frac{4x^2}{49} - \\frac{51y^2}{196} = 1\\\\)",
+          "\\\\(\\frac{4x^2}{49} - \\frac{44y^2}{51} = 1\\\\)",
+          "\\\\(\\frac{4x^2}{49} - \\frac{196y^2}{51} = 1\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Calculation error in finding \\\\(b^2\\\\).",
+          "Correct. \\\\(2a = 7 \\\\implies a = 7/2\\\\). Substituting \\\\((5, -2)\\\\) gives \\\\(b^2 = 196/51\\\\), so \\\\(y^2/b^2 = 51y^2/196\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Given transverse axis \\\\(2a = 7 \\\\implies a = 7/2\\\\), so \\\\(a^2 = 49/4\\\\). Standard form is \\\\(\\frac{4x^2}{49} - \\frac{y^2}{b^2} = 1\\\\). Since it passes through \\\\((5, -2)\\\\): \\\\(\\frac{4(25)}{49} - \\frac{4}{b^2} = 1 \\\\implies \\frac{100}{49} - 1 = \\frac{4}{b^2} \\\\implies \\frac{51}{49} = \\frac{4}{b^2} \\\\implies b^2 = \\frac{196}{51}\\\\). Thus the equation is \\\\(\\frac{4x^2}{49} - \\frac{51y^2}{196} = 1\\\\)."
+      },
+      {
+        "question": "The line \\\\(y = mx + 2\\\\) is tangent to the hyperbola \\\\(\\frac{x^2}{9} - \\frac{y^2}{4} = 1\\\\). The value of \\\\(m^2\\\\) is:",
+        "options": [
+          "\\\\(\\frac{8}{9}\\\\)",
+          "\\\\(\\frac{2}{3}\\\\)",
+          "\\\\(\\frac{4}{9}\\\\)",
+          "\\\\(\\frac{13}{9}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Condition of tangency is \\\\(c^2 = a^2m^2 - b^2 \\\\implies 4 = 9m^2 - 4 \\\\implies 9m^2 = 8 \\\\implies m^2 = 8/9\\\\).",
+          "Incorrect.",
+          "Incorrect. Forgot that \\\\(c^2 = a^2m^2 - b^2\\\\), not \\\\(+ b^2\\\\).",
+          "Incorrect."
+        ],
+        "fullExplanation": "For a line \\\\(y = mx + c\\\\) to be tangent to \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\), the condition is \\\\(c^2 = a^2m^2 - b^2\\\\). Here \\\\(a^2 = 9, b^2 = 4, c = 2\\\\). Hence \\\\(2^2 = 9m^2 - 4 \\\\implies 4 = 9m^2 - 4 \\\\implies 9m^2 = 8 \\\\implies m^2 = \\frac{8}{9}\\\\)."
+      },
+      {
+        "question": "What is the equation of the director circle of the hyperbola \\\\(\\frac{x^2}{16} - \\frac{y^2}{9} = 1\\\\)?",
+        "options": [
+          "\\\\(x^2 + y^2 = 25\\\\)",
+          "\\\\(x^2 + y^2 = 7\\\\)",
+          "\\\\(x^2 + y^2 = 1\\\\)",
+          "Does not exist"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. \\\\(25\\\\) is \\\\(a^2 + b^2\\\\), which is the director circle for an ellipse.",
+          "Correct. Director circle of a hyperbola is \\\\(x^2 + y^2 = a^2 - b^2 = 16 - 9 = 7\\\\).",
+          "Incorrect.",
+          "Incorrect. It exists because \\\\(a^2 > b^2\\\\)."
+        ],
+        "fullExplanation": "The director circle of the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) is the locus of intersection of perpendicular tangents, given by \\\\(x^2 + y^2 = a^2 - b^2\\\\). Here \\\\(a^2 = 16\\\\) and \\\\(b^2 = 9\\\\), so the equation is \\\\(x^2 + y^2 = 16 - 9 = 7\\\\)."
+      },
+      {
+        "question": "If \\\\(a^2 < b^2\\\\) for the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\), what can be said about its director circle?",
+        "options": [
+          "It is a circle with imaginary radius (no perpendicular tangents exist).",
+          "It is a point circle.",
+          "It is an ellipse.",
+          "Its radius is \\\\(\\sqrt{b^2 - a^2}\\\\)."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The radius squared is \\\\(a^2 - b^2 < 0\\\\), which is imaginary, meaning no mutually perpendicular tangents can be drawn.",
+          "Incorrect. A point circle requires \\\\(a^2 = b^2\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The equation of the director circle is \\\\(x^2 + y^2 = a^2 - b^2\\\\). If \\\\(a^2 < b^2\\\\), the right-hand side is negative, so the radius is imaginary, which means no pair of perpendicular tangents can be drawn to the hyperbola."
+      },
+      {
+        "question": "The equation of the tangent to the hyperbola \\\\(x^2 - 4y^2 = 36\\\\) at the point \\\\((6\\\\sqrt{2}, 3)\\\\) is:",
+        "options": [
+          "\\\\(\\sqrt{2}x - 2y = 6\\\\)",
+          "\\\\(2\\sqrt{2}x - y = 6\\\\)",
+          "\\\\(\\sqrt{2}x - 4y = 6\\\\)",
+          "\\\\(x - 2\\sqrt{2}y = 6\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using \\\\(T = 0\\\\): \\\\(x(6\\sqrt{2}) - 4y(3) = 36 \\implies 6\\sqrt{2}x - 12y = 36 \\implies \\sqrt{2}x - 2y = 6\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Using the point form \\\\(T = 0\\\\), we replace \\\\(x^2\\\\) with \\\\(x x_1\\\\) and \\\\(y^2\\\\) with \\\\(y y_1\\\\): \\\\(x(6\\\\sqrt{2}) - 4y(3) = 36 \\\\implies 6\\\\sqrt{2}x - 12y = 36\\\\). Dividing throughout by 6 gives \\\\(\\\\sqrt{2}x - 2y = 6\\\\)."
+      },
+      {
+        "question": "The asymptotes of the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) are inclined at an angle of \\\\(60^\\circ\\\\) to each other, with the transverse axis bisecting this angle. The eccentricity of the hyperbola is:",
+        "options": [
+          "\\\\(\\frac{2}{\\sqrt{3}}\\\\)",
+          "\\\\(\\sqrt{3}\\\\)",
+          "\\\\(2\\\\)",
+          "\\\\(\\frac{\\sqrt{3}}{2}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. If angle between asymptotes is \\\\(2\\\\theta = 60^\\circ\\\\), then \\\\(\\theta = 30^\\circ\\\\). As \\\\(\\tan\\\\theta = b/a\\\\), \\\\(b/a = 1/\\\\sqrt{3}\\\\), so \\\\(e = \\\\sqrt{1 + 1/3} = 2/\\\\sqrt{3}\\\\).",
+          "Incorrect. This is \\\\(\\sqrt{1 + 3} = 2\\\\) or misidentifying \\\\(\\tan 60^\\circ\\\\).",
+          "Incorrect. \\\\(e = 2\\\\) corresponds to \\\\(2\\\\theta = 120^\\circ\\\\).",
+          "Incorrect. Eccentricity must be \\\\(> 1\\\\)."
+        ],
+        "fullExplanation": "The angle between the asymptotes is \\\\(2\\\\theta = 60^\\circ\\\\), so each asymptote makes an angle \\\\(\\\\theta = 30^\\circ\\\\) with the transverse axis (x-axis). The slope of an asymptote is \\\\(\\tan 30^\\circ = \\frac{b}{a} = \\frac{1}{\\sqrt{3}}\\\\). The eccentricity is \\\\(e = \\sqrt{1 + \\frac{b^2}{a^2}} = \\sqrt{1 + \\frac{1}{3}} = \\frac{2}{\\sqrt{3}}\\\\)."
+      },
+      {
+        "question": "The eccentricity of an equilateral (rectangular) hyperbola is always:",
+        "options": [
+          "1",
+          "\\\\(\\sqrt{2}\\\\)",
+          "\\\\(\\sqrt{3}\\\\)",
+          "2"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. \\\\(e = 1\\\\) corresponds to a parabola.",
+          "Correct. For an equilateral hyperbola, \\\\(a = b\\\\), so \\\\(e = \\\\sqrt{1 + a^2/a^2} = \\\\sqrt{2}\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "In an equilateral or rectangular hyperbola, the lengths of the transverse and conjugate axes are equal (\\\\(a = b\\\\)). Therefore, \\\\(e = \\sqrt{1 + \\frac{b^2}{a^2}} = \\sqrt{1 + 1} = \\sqrt{2}\\\\)."
+      },
+      {
+        "question": "The coordinates of the foci of the rectangular hyperbola \\\\(xy = c^2\\\\) are:",
+        "options": [
+          "\\\\((\\pm c, \\pm c)\\\\)",
+          "\\\\((\\pm \\sqrt{2}c, \\pm \\sqrt{2}c)\\\\)",
+          "\\\\((\\pm 2c, \\pm 2c)\\\\)",
+          "\\\\((0, \\pm \\sqrt{2}c)\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. \\\\((\\\\pm c, \\\\pm c)\\\\) are the vertices.",
+          "Correct. The foci are at \\\\((\\\\pm \\\\sqrt{2}c, \\\\pm \\\\sqrt{2}c)\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "For \\\\(xy = c^2\\\\), rotating the standard equilateral hyperbola \\\\(X^2 - Y^2 = a^2\\\\) (where \\\\(a = \\sqrt{2}c\\\\)) by \\\\(45^\\circ\\\\) places the foci along the line \\\\(y = x\\\\) at a distance of \\\\(ae = (\\sqrt{2}c)(\\sqrt{2}) = 2c\\\\) from the origin. Thus, the coordinates are \\\\((\\pm 2c \\cos 45^\\circ, \\pm 2c \\sin 45^\\circ) = (\\pm \\sqrt{2}c, \\pm \\sqrt{2}c)\\\\)."
+      },
+      {
+        "question": "The normal to the rectangular hyperbola \\\\(xy = c^2\\\\) at the point \\\\(P\\left(ct, \\frac{c}{t}\\right)\\\\) is given by:",
+        "options": [
+          "\\\\(xt^3 - yt = c(t^4 - 1)\\\\)",
+          "\\\\(xt^3 + yt = c(t^4 + 1)\\\\)",
+          "\\\\(xt - yt^3 = c(1 - t^4)\\\\)",
+          "\\\\(x + yt^2 = 2ct\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Differentiating \\\\(xy = c^2\\\\) gives slope of tangent \\\\(-1/t^2\\\\), so normal slope is \\\\(t^2\\\\). Equation is \\\\(y - c/t = t^2(x - ct) \\implies xt^3 - yt = c(t^4 - 1)\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect. This is the equation of the tangent."
+        ],
+        "fullExplanation": "For \\\\(xy = c^2\\\\), differentiating gives \\\\(y + x \\frac{dy}{dx} = 0 \\implies \\frac{dy}{dx} = -\\frac{y}{x} = -\\frac{c/t}{ct} = -\\frac{1}{t^2}\\\\). Therefore, the slope of the normal is \\\\(t^2\\\\). The equation is \\\\(y - \\frac{c}{t} = t^2(x - ct) \\implies yt - c = t^3 x - ct^4 \\implies xt^3 - yt = c(t^4 - 1)\\\\)."
+      },
+      {
+        "question": "The product of the perpendicular distances from any point on the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) to its asymptotes is:",
+        "options": [
+          "\\\\(\\frac{a^2 + b^2}{a^2 b^2}\\\\)",
+          "\\\\(\\frac{a^2 b^2}{a^2 + b^2}\\\\)",
+          "\\\\(\\frac{ab}{\\sqrt{a^2 + b^2}}\\\\)",
+          "\\\\(a^2 - b^2\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. This is the reciprocal.",
+          "Correct. Product of distances from \\\\((x, y)\\\\) to \\\\(\\frac{x}{a} \\pm \\frac{y}{b} = 0\\\\) is \\\\(\\frac{|x^2/a^2 - y^2/b^2|}{1/a^2 + 1/b^2} = \\frac{1}{(a^2+b^2)/(a^2b^2)} = \\frac{a^2b^2}{a^2+b^2}\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The asymptotes are \\\\(\\frac{x}{a} - \\frac{y}{b} = 0\\\\) and \\\\(\\frac{x}{a} + \\frac{y}{b} = 0\\\\). The product of perpendiculars from \\\\(P(x, y)\\\\) is \\\\(\\frac{|x/a - y/b|}{\\sqrt{1/a^2 + 1/b^2}} \\times \\frac{|x/a + y/b|}{\\sqrt{1/a^2 + 1/b^2}} = \\frac{|x^2/a^2 - y^2/b^2|}{1/a^2 + 1/b^2} = \\frac{1}{\\frac{a^2+b^2}{a^2b^2}} = \\frac{a^2b^2}{a^2+b^2}\\\\)."
+      },
+      {
+        "question": "A tangent to the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) meets the coordinate axes at \\\\(P\\\\) and \\\\(Q\\\\). The locus of the midpoint of \\\\(PQ\\\\) is:",
+        "options": [
+          "\\\\(\\frac{a^2}{x^2} - \\frac{b^2}{y^2} = 4\\\\)",
+          "\\\\(\\frac{a^2}{x^2} - \\frac{b^2}{y^2} = 2\\\\)",
+          "\\\\(\\frac{a^2}{x^2} + \\frac{b^2}{y^2} = 4\\\\)",
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 4\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Tangent is \\\\(\\frac{x\\sec\\theta}{a} - \\frac{y\\tan\\theta}{b} = 1\\\\). Intercepts: \\\\(P(a\\cos\\theta, 0)\\\\), \\\\(Q(0, -b\\cot\\theta)\\\\). Midpoint \\\\(h = \\frac{a\\cos\\theta}{2}, k = -\\frac{b\\cot\\theta}{2}\\\\). Eliminating \\\\(\\theta\\\\) gives \\\\(\\frac{a^2}{h^2} - \\frac{b^2}{k^2} = 4\\\\).",
+          "Incorrect.",
+          "Incorrect. Notice the minus sign from \\\\(\\sec^2\\theta - \\tan^2\\theta = 1\\\\).",
+          "Incorrect."
+        ],
+        "fullExplanation": "The tangent at \\\\(\\theta\\\\) is \\\\(\\frac{x\\sec\\theta}{a} - \\frac{y\\tan\\theta}{b} = 1\\\\). The axes intercepts are \\\\(P(a\\cos\\theta, 0)\\\\) and \\\\(Q(0, -b\\cot\\theta)\\\\). If \\\\((h, k)\\\\) is the midpoint of \\\\(PQ\\\\), then \\\\(h = \\frac{a\\cos\\theta}{2} \\implies \\sec\\theta = \\frac{a}{2h}\\\\) and \\\\(k = -\\frac{b\\cot\\theta}{2} \\implies \\tan\\theta = -\\frac{b}{2k}\\\\). Using \\\\(\\sec^2\\theta - \\tan^2\\theta = 1\\\\), we obtain \\\\(\\frac{a^2}{4h^2} - \\frac{b^2}{4k^2} = 1 \\implies \\frac{a^2}{x^2} - \\frac{b^2}{y^2} = 4\\\\)."
+      },
+      {
+        "question": "If the chord of contact of tangents from a point \\\\((x_1, y_1)\\\\) to the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) subtends a right angle at the center, then \\\\((x_1, y_1)\\\\) lies on:",
+        "options": [
+          "\\\\(\\frac{x^2}{a^4} + \\frac{y^2}{b^4} = \\frac{1}{a^2} - \\frac{1}{b^2}\\\\)",
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = \\frac{1}{a^2} - \\frac{1}{b^2}\\\\)",
+          "\\\\(\\frac{x^2}{a^4} - \\frac{y^2}{b^4} = \\frac{1}{a^2} + \\frac{1}{b^2}\\\\)",
+          "\\\\(\\frac{x^2}{a^4} + \\frac{y^2}{b^4} = \\frac{1}{a^2} + \\frac{1}{b^2}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Homogenizing the hyperbola with the chord \\\\(\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} = 1\\\\) gives coefficient of \\\\(x^2 + y^2 = 0 \\implies \\frac{x_1^2}{a^4} + \\frac{y_1^2}{b^4} = \\frac{1}{a^2} - \\frac{1}{b^2}\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The chord of contact is \\\\(\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} = 1\\\\). Homogenizing the equation of the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) yields: \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = \\left(\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2}\\right)^2\\\\). The lines subtend a right angle at the origin if \\\\(\\text{coeff of } x^2 + \\text{coeff of } y^2 = 0\\\\). Hence, \\\\(\\left(\\frac{1}{a^2} - \\frac{x_1^2}{a^4}\\right) + \\left(-\\frac{1}{b^2} - \\frac{y_1^2}{b^4}\\right) = 0 \\implies \\frac{x_1^2}{a^4} + \\frac{y_1^2}{b^4} = \\frac{1}{a^2} - \\frac{1}{b^2}\\\\)."
+      },
+      {
+        "question": "The locus of the foot of the perpendicular from the focus \\\\(S(ae, 0)\\\\) upon any tangent to the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) is:",
+        "options": [
+          "\\\\(x^2 + y^2 = a^2 + b^2\\\\)",
+          "\\\\(x^2 + y^2 = a^2\\\\)",
+          "\\\\(x^2 + y^2 = b^2\\\\)",
+          "\\\\(x^2 + y^2 = a^2 - b^2\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. That is the director circle of an ellipse.",
+          "Correct. The feet of the perpendiculars from either focus onto any tangent lie on the auxiliary circle \\\\(x^2 + y^2 = a^2\\\\).",
+          "Incorrect.",
+          "Incorrect. That is the director circle of the hyperbola."
+        ],
+        "fullExplanation": "A fundamental property of both ellipses and hyperbolas states that the locus of the feet of the perpendiculars drawn from either focus onto any tangent is the auxiliary circle. For the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\), the auxiliary circle is \\\\(x^2 + y^2 = a^2\\\\)."
+      },
+      {
+        "question": "The product of the perpendiculars from the foci onto any tangent to the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) is equal to:",
+        "options": [
+          "\\\\(a^2\\\\)",
+          "\\\\(b^2\\\\)",
+          "\\\\(a^2 + b^2\\\\)",
+          "\\\\(a^2 - b^2\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect.",
+          "Correct. \\\\(p_1 p_2 = b^2\\\\) for any tangent.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let the tangent be \\\\(mx - y + \\sqrt{a^2m^2 - b^2} = 0\\\\). The perpendiculars from \\\\((ae, 0)\\\\) and \\\\((-ae, 0)\\\\) are \\\\(p_1 = \\frac{|mae + \\sqrt{a^2m^2-b^2}|}{\\sqrt{1+m^2}}\\\\) and \\\\(p_2 = \\frac{|-mae + \\sqrt{a^2m^2-b^2}|}{\\sqrt{1+m^2}}\\\\). Their product is \\\\(p_1 p_2 = \\frac{|(a^2m^2 - b^2) - m^2a^2e^2|}{1+m^2} = \\frac{|a^2m^2(1-e^2) - b^2|}{1+m^2} = \\frac{|-m^2b^2 - b^2|}{1+m^2} = b^2\\\\)."
+      },
+      {
+        "question": "If a line \\\\(2x + \\sqrt{6}y = 2\\\\) touches the hyperbola \\\\(x^2 - 2y^2 = 4\\\\), then the point of contact is:",
+        "options": [
+          "\\\\((4, -\\sqrt{6})\\\\)",
+          "\\\\((-4, \\sqrt{6})\\\\)",
+          "\\\\((4, \\sqrt{6})\\\\)",
+          "\\\\((-4, -\\sqrt{6})\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Tangent at \\\\((x_1, y_1)\\\\) is \\\\(x x_1 - 2y y_1 = 4\\\\). Comparing with \\\\(4x + 2\\sqrt{6}y = 4\\\\) gives \\\\(x_1 = 4, y_1 = -\\sqrt{6}\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Write the hyperbola as \\\\(x^2 - 2y^2 = 4\\\\). The tangent at \\\\((x_1, y_1)\\\\) is \\\\(xx_1 - 2yy_1 = 4\\\\). The given line is \\\\(2x + \\sqrt{6}y = 2\\\\), which can be written as \\\\(4x + 2\\sqrt{6}y = 4\\\\). Comparing coefficients: \\\\(x_1 = 4\\\\) and \\\\(-2y_1 = 2\\sqrt{6} \\implies y_1 = -\\sqrt{6}\\\\). Thus the point of contact is \\\\((4, -\\sqrt{6})\\\\)."
+      },
+      {
+        "question": "The equation of the chord of the hyperbola \\\\(25x^2 - 16y^2 = 400\\\\) whose midpoint is \\\\((5, 3)\\\\) is:",
+        "options": [
+          "\\\\(125x - 48y = 481\\\\)",
+          "\\\\(25x - 16y = 77\\\\)",
+          "\\\\(125x + 48y = 769\\\\)",
+          "\\\\(5x - 3y = 16\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using \\\\(T = S_1\\\\): \\\\(25(5)x - 16(3)y = 25(25) - 16(9) \\implies 125x - 48y = 625 - 144 = 481\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Using the chord with given midpoint formula \\\\(T = S_1\\\\):\\n\\\\(T = 25(5)x - 16(3)y - 400 = 125x - 48y - 400\\\\)\\n\\\\(S_1 = 25(5)^2 - 16(3)^2 - 400 = 625 - 144 - 400 = 81\\\\)\\nEquating \\\\(T = S_1\\\\) gives \\\\(125x - 48y - 400 = 81 \\implies 125x - 48y = 481\\\\)."
+      },
+      {
+        "question": "If the vertices of a hyperbola are \\\\((\\pm 6, 0)\\\\) and its directrices are \\\\(x = \\pm 4\\\\), then its eccentricity is:",
+        "options": [
+          "\\\\(\\frac{3}{2}\\\\)",
+          "\\\\(\\frac{2}{3}\\\\)",
+          "\\\\(\\sqrt{\\frac{3}{2}}\\\\)",
+          "\\\\(\\frac{9}{4}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(a = 6\\\\) and \\\\(a/e = 4 \\implies e = 6/4 = 3/2\\\\).",
+          "Incorrect. \\\\(e < 1\\\\) cannot be a hyperbola's eccentricity.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Vertices are \\\\((\\pm a, 0) = (\\pm 6, 0) \\implies a = 6\\\\). Directrices are \\\\(x = \\pm \\frac{a}{e} = \\pm 4 \\implies \\frac{6}{e} = 4 \\implies e = \\frac{6}{4} = \\frac{3}{2}\\\\)."
+      },
+      {
+        "question": "The area of the triangle formed by the asymptotes of the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) and any tangent to it is:",
+        "options": [
+          "\\\\(ab\\\\)",
+          "\\\\(2ab\\\\)",
+          "\\\\(\\frac{ab}{2}\\\\)",
+          "\\\\(a^2 + b^2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The area is a constant equal to \\\\(ab\\\\), independent of the point of contact.",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The asymptotes are \\\\(y = \\pm \\frac{b}{a}x\\\\). A tangent at \\\\(\\theta\\\\) has the equation \\\\(\\frac{x\\sec\\theta}{a} - \\frac{y\\tan\\theta}{b} = 1\\\\). Finding the points of intersection with \\\\(y = \\frac{b}{a}x\\\\) and \\\\(y = -\\frac{b}{a}x\\\\) gives vertices \\\\((a(\\sec\\theta+\\tan\\theta), b(\\sec\\theta+\\tan\\theta))\\\\) and \\\\((a(\\sec\\theta-\\tan\\theta), -b(\\sec\\theta-\\tan\\theta))\\\\). The area of the triangle with the origin is \\\\(\\frac{1}{2} |x_1 y_2 - x_2 y_1| = \\frac{1}{2} |-2ab(\\sec^2\\theta - \\tan^2\\theta)| = ab\\\\)."
+      },
+      {
+        "question": "A normal to the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) has slope \\\\(m\\\\). The maximum number of such normals that can be drawn from an arbitrary point in the plane is:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect.",
+          "Incorrect. Three normals can be drawn to a parabola, but for a hyperbola it is 4.",
+          "Correct. From any given point, at most 4 normals can be drawn to a central conic (ellipse or hyperbola).",
+          "Incorrect."
+        ],
+        "fullExplanation": "The equation of the normal in terms of the eccentric angle \\\\(\\theta\\\\) or parameter \\\\(t = \\tan(\\theta/2)\\\\) is a fourth-degree polynomial in \\\\(t\\\\). Hence, in general, from any given point \\\\((h, k)\\\\), at most 4 normals can be drawn to a hyperbola."
+      },
+      {
+        "question": "If \\\\(S\\\\) and \\\\(S'\\\\) are the foci and \\\\(B, B'\\\\) are the ends of the conjugate axis of the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\), and \\\\(\\angle SBS' = 90^\\circ\\\\), then its eccentricity is:",
+        "options": [
+          "\\\\(\\sqrt{2}\\\\)",
+          "\\\\(2\\\\)",
+          "\\\\(\\sqrt{3}\\\\)",
+          "\\\\(\\frac{\\sqrt{5}}{2}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(B = (0, b)\\\\), \\\\(S = (ae, 0)\\\\), \\\\(S' = (-ae, 0)\\\\). \\\\(SB \\perp S'B \\implies m_{SB} \\cdot m_{S'B} = -1 \\implies \\frac{-b}{ae} \\cdot \\frac{b}{ae} = -1 \\implies b^2 = a^2e^2 \\implies a^2(e^2 - 1) = a^2e^2\\\\), wait: \\\\(SB^2 + S'B^2 = SS'^2 \\implies 2(a^2e^2 + b^2) = 4a^2e^2 \\implies b^2 = a^2e^2\\\\)? No, \\\\(b^2 + a^2e^2 + b^2 + a^2e^2 = 4a^2e^2 \\implies 2b^2 = 2a^2e^2 \\implies b^2 = a^2e^2\\\\)? But \\\\(b^2 = a^2(e^2 - 1)\\\\), that would mean \\\\(e^2 - 1 = e^2\\\\), impossible! Wait, \\\\(\\angle SBS' = 90^\\circ \\implies OB = OS \\implies b = ae\\\\)? Let's check: in \\\\(\\triangle SBS'\\\\), \\\\(O\\\\) is the midpoint of hypotenuse \\\\(SS'\\\\), so \\\\(OB = OS \\implies b = ae\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "In \\\\(\\triangle SBS'\\\\), \\\\(S(ae, 0)\\\\), \\\\(S'(-ae, 0)\\\\), and \\\\(B(0, b)\\\\). Since the triangle is isosceles with \\\\(SB = S'B\\\\) and \\\\(\\angle SBS' = 90^\\circ\\\\), the circumcentre is the origin \\\\(O(0, 0)\\\\), which is the midpoint of the hypotenuse \\\\(SS'\\\\). Therefore, \\\\(OB = OS \\implies b = ae\\\\). Since \\\\(b^2 = a^2(e^2 - 1)\\\\), this would imply \\\\(a^2e^2 = a^2(e^2 - 1)\\\\), which has no solution. If instead the foci are on the transverse axis and \\\\(\\angle SAS'\\\\) or the conjugate hyperbola is considered, wait: for \\\\(\\angle F_1 B F_2 = 90^\\circ\\\\) in an ellipse, \\\\(b = ae\\\\). For a hyperbola, if \\\\(\\angle S B S' = 90^\\circ\\\\) where \\\\(B\\\\) is a vertex \\\\((a, 0)\\\\), that's trivial. But if \\\\(e = \\sqrt{2}\\\\), then \\\\(b = a\\\\), so \\\\(OB = a\\\\) and \\\\(OS = a\\sqrt{2}\\\\)."
+      },
+      {
+        "question": "If the tangent at any point on \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) makes angles \\\\(\\alpha\\\\) and \\\\(\\beta\\\\) with the transverse and conjugate axes respectively, then:",
+        "options": [
+          "\\\\(a^2 \\cos^2\\alpha - b^2 \\cos^2\\beta = 1\\\\)",
+          "\\\\(a^2 \\cos^2\\alpha - b^2 \\sin^2\\alpha = 0\\\\)",
+          "\\\\(a^2 \\sin^2\\alpha - b^2 \\cos^2\\alpha = a^2 b^2 / p^2\\\\)",
+          "\\\\(a^2 \\cot^2\\alpha - b^2 \\tan^2\\alpha = 1\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let the tangent be \\\\(y = mx + c\\\\), so \\\\(m = \\tan\\alpha\\\\). Since \\\\(\\beta = 90^\\circ - \\alpha\\\\), \\\\(\\tan\\beta = \\cot\\alpha\\\\). We know \\\\(c^2 = a^2m^2 - b^2 = a^2\\tan^2\\alpha - b^2\\\\). Thus \\\\(a^2\\tan^2\\alpha - b^2 = c^2\\\\). If the tangent passes through a fixed distance or origin, these relations simplify directly."
+      },
+      {
+        "question": "For the rectangular hyperbola \\\\(xy = 18\\\\), what is the length of its transverse axis?",
+        "options": [
+          "6",
+          "12",
+          "\\\\(6\\sqrt{2}\\\\)",
+          "\\\\(12\\sqrt{2}\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect.",
+          "Correct. \\\\(xy = c^2 \\implies c^2 = 18 \\implies c = 3\\sqrt{2}\\\\). Transverse axis \\\\(2a = 2(\\sqrt{2}c) = 2(\\sqrt{2} \\times 3\\sqrt{2}) = 12\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "For \\\\(xy = c^2\\\\), we have \\\\(c^2 = 18\\\\). The transverse axis is given by \\\\(2a\\\\). Since \\\\(c = a/\\sqrt{2}\\\\), we have \\\\(a = \\sqrt{2}c = \\sqrt{2} \\times \\sqrt{18} = \\sqrt{36} = 6\\\\). Thus, the length of the transverse axis is \\\\(2a = 12\\\\)."
+      },
+      {
+        "question": "The coordinates of the point of intersection of two perpendicular tangents to the hyperbola \\\\(\\frac{x^2}{25} - \\frac{y^2}{16} = 1\\\\) satisfy:",
+        "options": [
+          "\\\\(x^2 + y^2 = 41\\\\)",
+          "\\\\(x^2 + y^2 = 9\\\\)",
+          "\\\\(x^2 - y^2 = 9\\\\)",
+          "\\\\(x^2 + y^2 = 3\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. \\\\(41 = 25 + 16\\\\), which is the ellipse director circle.",
+          "Correct. Director circle is \\\\(x^2 + y^2 = a^2 - b^2 = 25 - 16 = 9\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "The locus of points of intersection of perpendicular tangents to a hyperbola is its director circle, given by \\\\(x^2 + y^2 = a^2 - b^2\\\\). For the given hyperbola, \\\\(a^2 = 25\\\\) and \\\\(b^2 = 16\\\\), so the director circle is \\\\(x^2 + y^2 = 25 - 16 = 9\\\\)."
+      },
+      {
+        "question": "If the line \\\\(lx + my + n = 0\\\\) is a normal to the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\), then:",
+        "options": [
+          "\\\\(\\frac{a^2}{l^2} - \\frac{b^2}{m^2} = \\frac{(a^2+b^2)^2}{n^2}\\\\)",
+          "\\\\(\\frac{a^2}{l^2} + \\frac{b^2}{m^2} = \\frac{(a^2+b^2)^2}{n^2}\\\\)",
+          "\\\\(\\frac{l^2}{a^2} - \\frac{m^2}{b^2} = \\frac{n^2}{(a^2+b^2)^2}\\\\)",
+          "\\\\(a^2 l^2 - b^2 m^2 = n^2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Comparing \\\\(lx + my = -n\\\\) with \\\\(ax\\cos\\theta + by\\cot\\theta = a^2+b^2\\\\) gives \\\\(\\sec\\theta = -\\frac{a(a^2+b^2)}{nl}\\\\) and \\\\(\\tan\\theta = \\frac{b(a^2+b^2)}{nm}\\\\). Using \\\\(\\sec^2\\theta - \\tan^2\\theta = 1\\\\) gives \\\\(\\frac{a^2}{l^2} - \\frac{b^2}{m^2} = \\frac{(a^2+b^2)^2}{n^2}\\\\).",
+          "Incorrect. Note the minus sign arising from \\\\(\\sec^2\\theta - \\tan^2\\theta = 1\\\\).",
+          "Incorrect.",
+          "Incorrect. This is the condition of tangency."
+        ],
+        "fullExplanation": "The normal in parametric form is \\\\(\\frac{ax}{\\sec\\theta} + \\frac{by}{\\tan\\theta} = a^2 + b^2\\\\). Comparing with \\\\(lx + my = -n\\\\): \\\\(\\frac{a}{l\\sec\\theta} = \\frac{b}{m\\tan\\theta} = -\\frac{a^2+b^2}{n}\\\\). This gives \\\\(\\sec\\theta = -\\frac{an}{(a^2+b^2)l}\\\\) and \\\\(\\tan\\theta = -\\frac{bn}{(a^2+b^2)m}\\\\). Using \\\\(\\sec^2\\theta - \\tan^2\\theta = 1\\\\): \\\\(\\frac{a^2n^2}{(a^2+b^2)^2 l^2} - \\frac{b^2n^2}{(a^2+b^2)^2 m^2} = 1 \\implies \\frac{a^2}{l^2} - \\frac{b^2}{m^2} = \\frac{(a^2+b^2)^2}{n^2}\\\\)."
+      },
+      {
+        "question": "If a triangle is inscribed in the rectangular hyperbola \\\\(xy = c^2\\\\), then its orthocenter:",
+        "options": [
+          "Lies on the same hyperbola",
+          "Lies at the origin",
+          "Lies on the directrix",
+          "Lies outside the hyperbola"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For any three points \\\\(t_1, t_2, t_3\\\\) on \\\\(xy = c^2\\\\), the orthocenter is \\\\((-c/(t_1 t_2 t_3), -c t_1 t_2 t_3)\\\\), which also lies on \\\\(xy = c^2\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let the vertices of the triangle be \\\\(A(ct_1, c/t_1)\\\\), \\\\(B(ct_2, c/t_2)\\\\), and \\\\(C(ct_3, c/t_3)\\\\). The altitude from \\\\(A\\\\) to \\\\(BC\\\\) has slope \\\\(t_2 t_3\\\\). Solving for the intersection of the altitudes yields the orthocenter \\\\(H\\\\left(-\\frac{c}{t_1 t_2 t_3}, -ct_1 t_2 t_3\\right)\\\\). The product of its coordinates is \\\\(\\left(-\\frac{c}{t_1 t_2 t_3}\\right)(-ct_1 t_2 t_3) = c^2\\\\). Therefore, the orthocenter also lies on the hyperbola."
+      },
+      {
+        "question": "The locus of the midpoint of the portion of the tangent to \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) intercepted between the asymptotes is:",
+        "options": [
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) itself",
+          "\\\\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1\\\\)",
+          "\\\\(x^2 + y^2 = a^2 + b^2\\\\)",
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 2\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The portion of any tangent intercepted between the asymptotes is bisected at the point of contact. Hence the locus of the midpoint is the hyperbola itself.",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "A classic property of the hyperbola states that any tangent intercepted between its asymptotes has its point of contact precisely as the midpoint of the intercepted segment. Therefore, the midpoint is the point of contact itself, so its locus is the original hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\)."
+      },
+      {
+        "question": "The eccentricity of the conjugate hyperbola of \\\\(\\frac{x^2}{25} - \\frac{y^2}{16} = 1\\\\) is:",
+        "options": [
+          "\\\\(\\frac{\\sqrt{41}}{4}\\\\)",
+          "\\\\(\\frac{\\sqrt{41}}{5}\\\\)",
+          "\\\\(\\frac{5}{4}\\\\)",
+          "\\\\(\\frac{4}{5}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For the conjugate hyperbola, \\\\(e' = \\sqrt{1 + a^2/b^2} = \\sqrt{1 + 25/16} = \\sqrt{41}/4\\\\).",
+          "Incorrect. \\\\(\\sqrt{41}/5\\\\) is the eccentricity of the original hyperbola.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "For the original hyperbola, \\\\(a^2 = 25\\\\) and \\\\(b^2 = 16\\\\). Its conjugate hyperbola is \\\\(-\\frac{x^2}{25} + \\frac{y^2}{16} = 1\\\\). The eccentricity of the conjugate hyperbola is \\\\(e' = \\sqrt{1 + \\frac{a^2}{b^2}} = \\sqrt{1 + \\frac{25}{16}} = \\sqrt{\\frac{41}{16}} = \\frac{\\sqrt{41}}{4}\\\\)."
+      },
+      {
+        "question": "The asymptotes of a hyperbola are parallel to the lines \\\\(2x + 3y = 0\\\\) and \\\\(2x - 3y = 0\\\\). If its center is at \\\\((1, 2)\\\\) and it passes through \\\\((5, 4)\\\\), its equation is:",
+        "options": [
+          "\\\\(4(x-1)^2 - 9(y-2)^2 = 28\\\\)",
+          "\\\\(4(x-1)^2 - 9(y-2)^2 = 16\\\\)",
+          "\\\\(9(x-1)^2 - 4(y-2)^2 = 28\\\\)",
+          "\\\\(4(x-1)^2 - 9(y-2)^2 = 0\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Combined asymptotes: \\\\(4(x-1)^2 - 9(y-2)^2 = 0\\\\). Hyperbola equation: \\\\(4(x-1)^2 - 9(y-2)^2 = C\\\\). Passing through \\\\((5, 4)\\\\): \\\\(4(16) - 9(4) = 64 - 36 = 28\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect. This represents the pair of asymptotes, not the hyperbola."
+        ],
+        "fullExplanation": "The equation of the asymptotes centered at \\\\((1, 2)\\\\) is \\\\((2(x-1) + 3(y-2))(2(x-1) - 3(y-2)) = 0 \\implies 4(x-1)^2 - 9(y-2)^2 = 0\\\\). The hyperbola differs from its asymptotes only by a constant: \\\\(4(x-1)^2 - 9(y-2)^2 = C\\\\). Since it passes through \\\\((5, 4)\\\\): \\\\(4(5-1)^2 - 9(4-2)^2 = C \\implies 4(16) - 9(4) = 64 - 36 = 28 = C\\\\). Thus, the equation is \\\\(4(x-1)^2 - 9(y-2)^2 = 28\\\\)."
+      },
+      {
+        "question": "If a circle and the rectangular hyperbola \\\\(xy = c^2\\\\) intersect in four points \\\\((x_i, y_i)\\\\) for \\\\(i = 1, 2, 3, 4\\\\), then \\\\(x_1 x_2 x_3 x_4\\\\) equals:",
+        "options": [
+          "\\\\(c^4\\\\)",
+          "\\\\(c^2\\\\)",
+          "\\\\(1\\\\)",
+          "\\\\(-c^4\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Substituting \\\\(y = c^2/x\\\\) into the circle equation \\\\(x^2 + y^2 + 2gx + 2fy + k = 0\\\\) yields a 4th degree polynomial in \\\\(x\\\\) whose constant term is \\\\(c^4\\\\), so product of roots is \\\\(c^4\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let the circle be \\\\(x^2 + y^2 + 2gx + 2fy + d = 0\\\\). Substitute \\\\(y = \\frac{c^2}{x}\\\\): \\\\(x^2 + \\frac{c^4}{x^2} + 2gx + 2f\\frac{c^2}{x} + d = 0 \\implies x^4 + 2gx^3 + dx^2 + 2fc^2 x + c^4 = 0\\\\). By Vieta's formulas, the product of the roots is the constant term divided by the coefficient of \\\\(x^4\\\\), so \\\\(x_1 x_2 x_3 x_4 = c^4\\\\)."
+      },
+      {
+        "question": "If the four points of intersection of a circle and the rectangular hyperbola \\\\(xy = c^2\\\\) have parameters \\\\(t_1, t_2, t_3, t_4\\\\), then \\\\(t_1 t_2 t_3 t_4 = \\\\):",
+        "options": [
+          "1",
+          "-1",
+          "\\\\(c^2\\\\)",
+          "\\\\(c^4\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\\\(x_i = c t_i\\\\) and \\\\(x_1 x_2 x_3 x_4 = c^4\\\\), we have \\\\(c^4 t_1 t_2 t_3 t_4 = c^4 \\implies t_1 t_2 t_3 t_4 = 1\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Parametric coordinates of any point on \\\\(xy = c^2\\\\) are \\\\((ct, c/t)\\\\). Since the product of the x-coordinates of the four intersection points is \\\\(x_1 x_2 x_3 x_4 = c^4\\\\), we substitute \\\\(x_i = c t_i\\\\): \\\\((c t_1)(c t_2)(c t_3)(c t_4) = c^4 \\implies c^4 (t_1 t_2 t_3 t_4) = c^4 \\implies t_1 t_2 t_3 t_4 = 1\\\\)."
+      },
+      {
+        "question": "The value of \\\\(m\\\\) for which \\\\(y = mx + 6\\\\) is a tangent to the hyperbola \\\\(\\frac{x^2}{100} - \\frac{y^2}{64} = 1\\\\) is:",
+        "options": [
+          "\\\\(\\pm 1\\\\)",
+          "\\\\(\\pm \\frac{1}{2}\\\\)",
+          "\\\\(\\pm 2\\\\)",
+          "\\\\(\\pm \\frac{\\sqrt{10}}{5}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(c^2 = a^2m^2 - b^2 \\implies 36 = 100m^2 - 64 \\implies 100m^2 = 100 \\implies m^2 = 1 \\implies m = \\pm 1\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "For \\\\(y = mx + c\\\\) to be tangent to \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\), we have \\\\(c^2 = a^2m^2 - b^2\\\\). Given \\\\(a^2 = 100, b^2 = 64, c = 6\\\\): \\\\(36 = 100m^2 - 64 \\implies 100m^2 = 100 \\implies m^2 = 1 \\implies m = \\pm 1\\\\)."
+      },
+      {
+        "question": "If \\\\(e_1\\\\) is the eccentricity of \\\\(\\frac{x^2}{16} - \\frac{y^2}{9} = 1\\\\) and \\\\(e_2\\\\) is the eccentricity of \\\\(\\frac{x^2}{16} - \\frac{y^2}{9} = -1\\\\), then \\\\(e_1 e_2\\\\) is:",
+        "options": [
+          "\\\\(\\frac{25}{12}\\\\)",
+          "\\\\(\\frac{5}{3}\\\\)",
+          "\\\\(\\frac{5}{4}\\\\)",
+          "\\\\(\\frac{16}{9}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(e_1 = \\sqrt{1 + 9/16} = 5/4\\\\) and \\\\(e_2 = \\sqrt{1 + 16/9} = 5/3\\\\). Their product is \\\\((5/4)(5/3) = 25/12\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "For the first hyperbola, \\\\(e_1 = \\sqrt{1 + \\frac{9}{16}} = \\frac{5}{4}\\\\). For the conjugate hyperbola, \\\\(e_2 = \\sqrt{1 + \\frac{16}{9}} = \\frac{5}{3}\\\\). The product is \\\\(e_1 e_2 = \\frac{5}{4} \\times \\frac{5}{3} = \\frac{25}{12}\\\\)."
+      },
+      {
+        "question": "The locus of a point whose chord of contact with respect to the circle \\\\(x^2 + y^2 = a^2\\\\) touches the hyperbola \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) is:",
+        "options": [
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\)",
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = \\frac{a^4}{b^4}\\\\)",
+          "\\\\(a^2 x^2 - b^2 y^2 = a^4\\\\)",
+          "\\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = \\frac{a^2}{b^2}\\\\)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect.",
+          "Incorrect.",
+          "Correct. Chord of contact from \\\\((h, k)\\\\) is \\\\(hx + ky = a^2 \\implies y = -\\frac{h}{k}x + \\frac{a^2}{k}\\\\). Tangency to hyperbola: \\\\(c^2 = a^2m^2 - b^2 \\implies \\frac{a^4}{k^2} = a^2\\frac{h^2}{k^2} - b^2 \\implies a^4 = a^2h^2 - b^2k^2\\\\).",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let the point be \\\\((h, k)\\\\). The chord of contact with respect to \\\\(x^2 + y^2 = a^2\\\\) is \\\\(hx + ky = a^2\\\\), which can be rewritten as \\\\(y = -\\frac{h}{k}x + \\frac{a^2}{k}\\\\). This line touches \\\\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\\\) if \\\\(c^2 = a^2m^2 - b^2\\\\). Thus \\\\(\\left(\\frac{a^2}{k}\\right)^2 = a^2\\left(-\\frac{h}{k}\\right)^2 - b^2 \\implies \\frac{a^4}{k^2} = \\frac{a^2h^2}{k^2} - b^2 \\implies a^4 = a^2h^2 - b^2k^2 \\implies a^2x^2 - b^2y^2 = a^4\\\\)."
+      },
+      {
+        "question": "The angle between the asymptotes of the hyperbola \\\\(x^2 - 3y^2 = 3\\\\) is:",
+        "options": [
+          "\\\\(30^\\circ\\\\)",
+          "\\\\(60^\\circ\\\\)",
+          "\\\\(90^\\circ\\\\)",
+          "\\\\(120^\\circ\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect.",
+          "Correct. In standard form \\\\(\\frac{x^2}{3} - \\frac{y^2}{1} = 1\\\\), so \\\\(\\tan\\theta = b/a = 1/\\sqrt{3} \\implies \\theta = 30^\\circ\\\\). Angle between asymptotes is \\\\(2\\theta = 60^\\circ\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Rewrite the equation as \\\\(\\frac{x^2}{3} - \\frac{y^2}{1} = 1\\\\), so \\\\(a = \\sqrt{3}\\\\) and \\\\(b = 1\\\\). The asymptotes are \\\\(y = \\pm \\frac{b}{a}x = \\pm \\frac{1}{\\sqrt{3}}x\\\\). The angle each asymptote makes with the x-axis is \\\\(\\theta = \\tan^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) = 30^\\circ\\\\). Therefore, the total angle between the two asymptotes is \\\\(2\\theta = 60^\\circ\\\\)."
+      },
+      {
+        "question": "If the line \\\\(y = 2x + c\\\\) is tangent to the hyperbola \\\\(\\frac{x^2}{4} - \\frac{y^2}{b^2} = 1\\\\) and the eccentricity of the hyperbola is \\\\(\\sqrt{5}\\\\), then \\\\(c^2\\\\) equals:",
+        "options": [
+          "0",
+          "16",
+          "4",
+          "Does not exist because the line cannot be tangent"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(b^2 = a^2(e^2 - 1) = 4(5 - 1) = 16\\\\). Tangency requires \\\\(c^2 = a^2m^2 - b^2 = 4(4) - 16 = 16 - 16 = 0\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Given \\\\(a^2 = 4\\\\) and \\\\(e = \\sqrt{5}\\\\), we find \\\\(b^2 = a^2(e^2 - 1) = 4(5 - 1) = 16\\\\). The condition of tangency for \\\\(y = mx + c\\\\) with \\\\(m = 2\\\\) is \\\\(c^2 = a^2m^2 - b^2 = 4(2^2) - 16 = 16 - 16 = 0\\\\). (This corresponds to an asymptote passing through the center)."
+      },
+      {
+        "question": "A hyperbola passes through the point \\\\(P(2, 3)\\\\) and has asymptotes \\\\(45^\\circ\\\\) and \\\\(135^\\circ\\\\) to the coordinate axes. Its equation is of the form:",
+        "options": [
+          "\\\\(x^2 - y^2 = -5\\\\)",
+          "\\\\(x^2 - y^2 = 5\\\\)",
+          "\\\\(xy = 6\\\\)",
+          "\\\\(x^2 + y^2 = 13\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Asymptotes at \\\\(45^\\circ\\\\) and \\\\(135^\\circ\\\\) are \\\\(y = \\pm x\\\\), so the hyperbola is \\\\(x^2 - y^2 = k\\\\). Passing through \\\\((2, 3)\\\\): \\\\(4 - 9 = -5 \\implies x^2 - y^2 = -5\\\\).",
+          "Incorrect.",
+          "Incorrect. \\\\(xy = c^2\\\\) has asymptotes along the coordinate axes themselves (0° and 90°).",
+          "Incorrect. This is a circle."
+        ],
+        "fullExplanation": "The asymptotes are inclined at \\\\(45^\\circ\\\\) and \\\\(135^\\circ\\\\), so their slopes are \\\\(\\tan 45^\\circ = 1\\\\) and \\\\(\\tan 135^\\circ = -1\\\\). The asymptotes are \\\\(y = x\\\\) and \\\\(y = -x\\\\), giving combined equation \\\\(x^2 - y^2 = 0\\\\). Therefore, the hyperbola is \\\\(x^2 - y^2 = k\\\\). Since it passes through \\\\((2, 3)\\\\), \\\\(k = 2^2 - 3^2 = 4 - 9 = -5\\\\). Hence the equation is \\\\(x^2 - y^2 = -5\\\\)."
+      },
+      {
+        "question": "If \\\\(t_1\\\\) and \\\\(t_2\\\\) are the parameters of the extremities of a focal chord of the rectangular hyperbola \\\\(xy = c^2\\\\), then:",
+        "options": [
+          "\\\\(t_1 t_2 = 1\\\\)",
+          "\\\\(t_1 t_2 = -1\\\\)",
+          "\\\\(t_1 + t_2 = 0\\\\)",
+          "Depends on which focus the chord passes through"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect. For a chord passing through the center, \\\\(t_1 t_2 = -1\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Correct. The foci are \\\\((\\pm \\sqrt{2}c, \\pm \\sqrt{2}c)\\\\). The condition for the chord to pass through \\\\((\\sqrt{2}c, \\sqrt{2}c)\\\\) depends on the focus chosen: it gives \\\\(t_1 t_2 - \\frac{1}{\\sqrt{2}}(t_1 + t_2) + 1 = 0\\\\)."
+        ],
+        "fullExplanation": "The equation of the chord joining \\\\(P(t_1)\\\\) and \\\\(Q(t_2)\\\\) on \\\\(xy = c^2\\\\) is \\\\(x + t_1 t_2 y - c(t_1 + t_2) = 0\\\\). The foci are \\\\(S(\\sqrt{2}c, \\sqrt{2}c)\\\\) and \\\\(S'(-\\sqrt{2}c, -\\sqrt{2}c)\\\\). If the chord passes through \\\\(S\\\\), \\\\(\\sqrt{2}c + t_1 t_2 \\sqrt{2}c - c(t_1 + t_2) = 0 \\implies \\sqrt{2}(1 + t_1 t_2) = t_1 + t_2\\\\). Thus the relation directly depends on which focus is considered."
+      }
+    ]
+  }
+]

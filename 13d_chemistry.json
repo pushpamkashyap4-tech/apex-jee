@@ -1,0 +1,379 @@
+[
+  {
+    "chapterName": "Practical Chemistry",
+    "flashcards": [
+      {
+        "front": "What are the characteristic flame test colours for the s-block cations and Cu²⁺?",
+        "back": "Li⁺: Crimson red\nNa⁺: Golden yellow\nK⁺: Lilac (crimson-violet through cobalt blue glass)\nCa²⁺: Brick red\nSr²⁺: Crimson red\nBa²⁺: Apple green\nCu²⁺: Non-luminous bluish-green flame with blue centre.\n(Be²⁺ and Mg²⁺ do not impart any colour due to high ionisation energy)."
+      },
+      {
+        "front": "What are the characteristic colours obtained in the Cobalt Nitrate Charcoal Cavity Test for Zn²⁺, Al³⁺, Mg²⁺, and Sn²⁺?",
+        "back": "Zn²⁺ forms Rinmann's green (CoO·ZnO)\nAl³⁺ forms Thénard's blue (CoO·Al₂O₃)\nMg²⁺ forms a light pink residue (CoO·MgO)\nSn²⁺ forms a bluish-green residue (CoO·SnO)."
+      },
+      {
+        "front": "What colours are observed in the Borax Bead Test for Cu, Fe, Cr, and Co under oxidising and reducing flames?",
+        "back": "Copper (Cu): Oxidising (cold): blue, (hot): green; Reducing (cold): opaque red, (hot): colourless.\nIron (Fe): Oxidising (cold): yellow, (hot): yellowish-brown; Reducing: green.\nChromium (Cr): Green in both flames (cold & hot).\nCobalt (Co): Deep blue in both oxidising and reducing flames."
+      },
+      {
+        "front": "What is the Chromyl Chloride Test and which metal chlorides do NOT respond to it?",
+        "back": "Solid chloride + K₂Cr₂O₇(s) + conc. H₂SO₄ heated produces deep red-brown CrO₂Cl₂ gas. Passing this into NaOH gives yellow Na₂CrO₄, which with acetic acid and lead acetate precipitates yellow PbCrO₄↓.\nChlorides of Ag⁺, Pb²⁺, Hg₂²⁺, Hg²⁺, and Sn²⁺ (and covalent SbCl₃) do not respond because they are poorly ionised or insoluble."
+      },
+      {
+        "front": "What is the chemistry and formula of the complex formed in the Brown Ring Test for nitrate (NO₃⁻)?",
+        "back": "Nitrate reduced by Fe²⁺ in conc. H₂SO₄ yields NO. NO coordinates to pentaaquairon(II): [Fe(H₂O)₆]²⁺ + NO → [Fe(H₂O)₅(NO)]²⁺ + H₂O.\nFormula: [Fe(H₂O)₅(NO)]SO₄ (pentaaquanitrosyliron(I) sulfate). Iron has an oxidation state of +1 and NO carries a +1 charge (nitrosonium, NO⁺), leaving 3 unpaired electrons (μ ≈ 3.87 BM)."
+      },
+      {
+        "front": "What is the Ammonium Molybdate Test for phosphate (PO₄³⁻)?",
+        "back": "Phosphate salt solution boiled with conc. HNO₃ and excess ammonium molybdate, (NH₄)₂MoO₄, produces a canary-yellow crystalline precipitate of ammonium phosphomolybdate:\nNa₂HPO₄ + 12(NH₄)₂MoO₄ + 23HNO₃ → (NH₄)₃[PMo₁₂O₄₀]↓ + 2NaNO₃ + 21NH₄NO₃ + 12H₂O."
+      },
+      {
+        "front": "What are the two specific wet confirmatory tests for the Sulfide ion (S²⁻)?",
+        "back": "1. Sodium Nitroprusside Test: Alkaline Na₂S + Na₂[Fe(CN)₅NO] → Na₄[Fe(CN)₅NOS] (sodium thionitroprusside, intense purple/violet coloration).\n2. Lead Acetate Test: S²⁻ + (CH₃COO)₂Pb acidified with dilute acetic acid → PbS↓ (black precipitate)."
+      },
+      {
+        "front": "List the group reagents and precipitate forms for Group I to Group V cations in qualitative inorganic analysis.",
+        "back": "Group I: Dilute HCl → AgCl, PbCl₂, Hg₂Cl₂ (white precipitates).\nGroup II: H₂S gas in dilute HCl (0.3 M) → Sulfides (CuS, PbS, HgS, CdS, Bi₂S₃, As₂S₃, Sb₂S₃, SnS/SnS₂).\nGroup III: NH₄OH in excess NH₄Cl → Hydroxides: Fe(OH)₃ (red-brown), Al(OH)₃ (gelatinous white), Cr(OH)₃ (green).\nGroup IV: H₂S gas in NH₄OH + NH₄Cl → Sulfides: ZnS (white), MnS (flesh/buff), NiS (black), CoS (black).\nGroup V: (NH₄)₂CO₃ in NH₄OH + NH₄Cl → Carbonates: BaCO₃, SrCO₃, CaCO₃ (white precipitates)."
+      },
+      {
+        "front": "How are Group IIA (copper group) and Group IIB (arsenic group) sulfides separated?",
+        "back": "By treating the precipitate with Yellow Ammonium Sulfide, (NH₄)₂Sₓ. Group IIB sulfides (As₂S₃, Sb₂S₃, SnS, SnS₂) dissolve by forming soluble thiosalts (e.g., (NH₄)₃AsS₄, (NH₄)₂SnS₃), while Group IIA sulfides (HgS, PbS, Bi₂S₃, CuS, CdS) remain completely insoluble."
+      },
+      {
+        "front": "What is the confirmatory test for Lead (Pb²⁺) using Potassium Iodide?",
+        "back": "Pb²⁺ + 2KI → PbI₂↓ (bright yellow precipitate). On boiling with water, the precipitate dissolves; upon cooling, it recrystallises as glistening golden spangles ('golden rain' test)."
+      },
+      {
+        "front": "What are the confirmatory tests for Copper (Cu²⁺) with excess ammonia and potassium ferrocyanide?",
+        "back": "1. Excess aqueous NH₄OH dissolves initial pale-blue Cu(OH)₂ to give a deep azure blue solution of the tetraamminecopper(II) complex: [Cu(NH₃)₄]²⁺.\n2. Potassium ferrocyanide, K₄[Fe(CN)₆], added to a weakly acetic acid solution of Cu²⁺ forms a chocolate-brown precipitate of cupric ferrocyanide, Cu₂[Fe(CN)₆]↓."
+      },
+      {
+        "front": "What is the confirmatory test for Nickel (Ni²⁺) using Dimethylglyoxime (DMG)?",
+        "back": "Aqueous Ni²⁺ made slightly ammoniacal (pH ~8) reacts with ethanolic dimethylglyoxime to give a voluminous rosy-red precipitate of bis(dimethylglyoximato)nickel(II), [Ni(dmg)₂]. The square planar complex is stabilized by two intramolecular O–H···O hydrogen bonds."
+      },
+      {
+        "front": "How do Potassium Ferrocyanide and Ferricyanide distinguish between Fe²⁺ and Fe³⁺?",
+        "back": "With Fe²⁺: K₄[Fe(CN)₆] yields a white/pale blue precipitate K₂Fe[Fe(CN)₆]; K₃[Fe(CN)₆] yields Turnbull's blue precipitate, Fe₃[Fe(CN)₆]₂.\nWith Fe³⁺: K₄[Fe(CN)₆] yields Prussian blue precipitate, Fe₄[Fe(CN)₆]₃; K₃[Fe(CN)₆] yields a greenish-brown solution of Fe[Fe(CN)₆]."
+      },
+      {
+        "front": "What is Nessler's Reagent and how does it detect Ammonium (NH₄⁺) ions?",
+        "back": "Nessler's reagent is an alkaline solution of potassium tetraiodomercurate(II), K₂[HgI₄] + KOH. With NH₄⁺ ions or NH₃ gas, it forms a characteristic brown precipitate of the iodide of Millon's base:\n2K₂[HgI₄] + NH₃ + 3KOH → [HgO·Hg(NH₂)I]↓ (brown) + 7KI + 2H₂O."
+      },
+      {
+        "front": "How does the Lassaigne's test differentiate between the presence of Nitrogen alone versus both Nitrogen and Sulfur?",
+        "back": "Nitrogen alone: Forms NaCN, which on boiling with FeSO₄ and adding FeCl₃ + conc. HCl yields a Prussian blue precipitate, Fe₄[Fe(CN)₆]₃.\nBoth N and S together: Forms sodium thiocyanate, NaSCN. On adding FeCl₃ in acidic medium, it gives an intense blood-red coloration of [Fe(SCN)]²⁺ without forming Prussian blue."
+      },
+      {
+        "front": "How are Cl⁻, Br⁻, and I⁻ distinguished after silver nitrate precipitation in Lassaigne's halogen test?",
+        "back": "AgCl: Curdy white precipitate, completely soluble in dilute aqueous NH₄OH.\nAgBr: Pale yellow precipitate, sparingly/partially soluble in concentrated NH₄OH.\nAgI: Bright canary-yellow precipitate, completely insoluble in both dilute and concentrated NH₄OH."
+      },
+      {
+        "front": "What is the Lucas Test and how does it distinguish 1°, 2°, and 3° aliphatic alcohols?",
+        "back": "Reagent: Anhydrous ZnCl₂ + concentrated HCl (forms carbocation via SN1).\n3° alcohols: Cloudiness (turbidity of insoluble alkyl chloride) appears immediately at room temperature.\n2° alcohols: Turbidity appears within 5 minutes.\n1° alcohols: Solution remains completely clear at room temperature; turbidity appears only upon prolonged heating."
+      },
+      {
+        "front": "Why does Benzaldehyde reduce Tollens' reagent but fail to reduce Fehling's solution?",
+        "back": "Fehling's solution is a weaker oxidising agent than Tollens' reagent. In benzaldehyde (C₆H₅CHO), the carbonyl carbon is resonance-conjugated with the phenyl ring (+R effect of benzene), reducing its electrophilicity and increasing the C–H bond strength so that Cu²⁺-tartrate cannot oxidise it."
+      },
+      {
+        "front": "Explain the Hinsberg Test for distinguishing 1°, 2°, and 3° amines.",
+        "back": "Reagent: Benzenesulfonyl chloride (C₆H₅SO₂Cl) in excess aqueous KOH.\n1° amine: Forms N-alkylbenzenesulfonamide containing an acidic N–H proton; dissolves in aqueous KOH and reprecipitates upon acidification.\n2° amine: Forms N,N-dialkylbenzenesulfonamide lacking an acidic proton; insoluble in aqueous KOH.\n3° amine: Does not react; remains insoluble in alkali but dissolves upon acidification."
+      },
+      {
+        "front": "How does neutral FeCl₃ distinguish Phenol from Carboxylic acids and Alcohols?",
+        "back": "Phenol reacts with freshly prepared neutral FeCl₃ to produce an intense violet/purple soluble coordination complex, [Fe(OC₆H₅)₆]³⁻.\nCarboxylic acids (e.g., acetic acid) yield a buff or blood-red solution of basic ferric acetate, which precipitates as a red-brown solid on boiling.\nAlcohols give no reaction or colour change."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following chloride salts does NOT produce red-brown chromyl chloride vapours when heated with solid K₂Cr₂O₇ and concentrated H₂SO₄?",
+        "options": ["NaCl", "KCl", "HgCl₂", "BaCl₂"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "NaCl is fully ionic and reacts vigorously to evolve CrO₂Cl₂ fumes.",
+          "KCl is an ionic alkali metal chloride that gives a strongly positive chromyl chloride test.",
+          "Correct. Mercuric chloride (HgCl₂) is predominantly covalent and poorly dissociated in solution, so it does not generate free chloride ions to form CrO₂Cl₂.",
+          "BaCl₂ is an ionic alkaline earth chloride and readily gives the chromyl chloride test."
+        ],
+        "fullExplanation": "The chromyl chloride test requires the presence of available, ionisable Cl⁻ ions. Covalent or poorly ionised heavy metal halides such as HgCl₂, Hg₂Cl₂, AgCl, PbCl₂, and SnCl₂ fail to form volatile chromyl chloride (CrO₂Cl₂) when heated with potassium dichromate and concentrated sulfuric acid."
+      },
+      {
+        "question": "In the brown ring complex [Fe(H₂O)₅(NO)]SO₄, what are the oxidation states of iron and the nitric oxide ligand, and what is its magnetic moment?",
+        "options": [
+          "Fe is +2, NO is 0, μ = 4.90 BM",
+          "Fe is +1, NO is +1, μ ≈ 3.87 BM",
+          "Fe is +3, NO is -1, μ ≈ 1.73 BM",
+          "Fe is 0, NO is +2, μ = 0 BM"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Iron is reduced to the +1 oxidation state via charge transfer from NO.",
+          "Correct. One electron transfers from NO to Fe(II), forming Fe(I) (3d⁷, three unpaired electrons, μ ≈ 3.87 BM) and a nitrosonium ligand (NO⁺).",
+          "Incorrect. The iron centre has a formal +1 state, not +3.",
+          "Incorrect. Iron is not in the zero oxidation state in this complex."
+        ],
+        "fullExplanation": "In the brown ring complex [Fe(H₂O)₅(NO)]²⁺, electron transfer occurs from the π* orbital of the nitric oxide molecule to the Fe²⁺ centre. This generates iron in the +1 oxidation state (3d⁷, high spin with three unpaired electrons, giving μ = √(3×5) = √15 ≈ 3.87 BM) and coordinated nitrosonium ion (NO⁺)."
+      },
+      {
+        "question": "In qualitative analysis, how is Cd²⁺ separated and confirmed in the presence of Cu²⁺ in a Group II ammoniacal solution?",
+        "options": [
+          "By adding excess NaOH; Cu²⁺ precipitates while Cd²⁺ remains dissolved",
+          "By adding KCN in excess followed by passing H₂S gas; yellow CdS precipitates while copper remains as a stable soluble complex",
+          "By adding dilute HCl; CdCl₂ precipitates while CuCl₂ remains dissolved",
+          "By adding ammonium sulfate; CuSO₄ precipitates while CdSO₄ is soluble"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Both Cu²⁺ and Cd²⁺ precipitate as hydroxides with NaOH; this does not separate them cleanly.",
+          "Correct. Excess KCN reduces Cu²⁺ and forms the extremely stable tetracyanocuprate(I) complex [Cu(CN)₄]³⁻ (instability constant ~10⁻³⁵), which does not yield enough Cu⁺ to precipitate with H₂S. In contrast, [Cd(CN)₄]²⁻ is less stable (instability constant ~10⁻¹⁷) and dissociates enough to precipitate yellow CdS↓.",
+          "Both CdCl₂ and CuCl₂ are highly soluble in aqueous HCl.",
+          "Both CuSO₄ and CdSO₄ are freely water-soluble."
+        ],
+        "fullExplanation": "When excess KCN is added to an ammoniacal solution containing Cu²⁺ and Cd²⁺, copper forms the highly stable complex [Cu(CN)₄]³⁻, while cadmium forms [Cd(CN)₄]²⁻. Because [Cu(CN)₄]³⁻ has an exceptionally low dissociation constant, bubbling H₂S gas does not precipitate copper sulfide, whereas [Cd(CN)₄]²⁻ dissociates sufficiently to precipitate bright yellow CdS↓."
+      },
+      {
+        "question": "Heating a white inorganic salt on charcoal cavity with a drop of cobalt nitrate solution leaves a characteristic bright green residue. The cation present is:",
+        "options": ["Al³⁺", "Mg²⁺", "Zn²⁺", "Sn²⁺"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Al³⁺ gives Thénard's blue (CoO·Al₂O₃).",
+          "Mg²⁺ gives a light pink residue (CoO·MgO).",
+          "Correct. Zinc salts decompose on charcoal to ZnO (yellow hot, white cold) and react with Co(NO₃)₂ to form Rinmann's green (CoO·ZnO).",
+          "Sn²⁺ gives a bluish-grey residue of CoO·SnO."
+        ],
+        "fullExplanation": "When a zinc salt is mixed with Na₂CO₃ and heated in a charcoal cavity, it is converted to zinc oxide, ZnO. When moistened with a drop of cobalt nitrate, Co(NO₃)₂, and heated in an oxidising flame, cobalt zincate (CoO·ZnO), commonly known as Rinmann's green, is formed as a bright green residue."
+      },
+      {
+        "question": "What is the colour of the metaborate bead when a copper salt is heated in the reducing flame (cold) during the Borax Bead Test?",
+        "options": ["Dark blue", "Emerald green", "Opaque red", "Colourless"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Dark blue is the colour of copper in the oxidising flame when cold.",
+          "Emerald green is the colour of copper in the oxidising flame when hot.",
+          "Correct. In the reducing flame, Cu(BO₂)₂ is reduced to metallic copper or cuprous oxide (Cu₂O), which imparts an opaque red colour to the bead when cold.",
+          "Colourless is observed in the reducing flame when the bead is hot."
+        ],
+        "fullExplanation": "In the borax bead test, copper metaborate, Cu(BO₂)₂, is reduced by hot carbonaceous gases in the luminous/reducing flame: 2Cu(BO₂)₂ + 2C → 2Cu + 2B₂O₃ + 2CO, or to cuprous metaborate CuBO₂ and Cu₂O. When cold, the finely dispersed Cu/Cu₂O turns the bead completely opaque red."
+      },
+      {
+        "question": "Which of the following statements regarding the complex formed between Ni²⁺ and dimethylglyoxime (DMG) is INCORRECT?",
+        "options": [
+          "The precipitate is brilliant rosy-red in colour.",
+          "The complex has square planar geometry and is diamagnetic.",
+          "The central Ni²⁺ ion is octahedrally coordinated by four oxygen atoms.",
+          "The structure is stabilized by two symmetrical intramolecular O–H···O hydrogen bonds."
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Correct statement: [Ni(dmg)₂] forms a characteristic voluminous rosy-red precipitate.",
+          "Correct statement: Ni²⁺ has a d⁸ configuration and undergoes dsp² hybridisation to form a square planar, diamagnetic complex.",
+          "Incorrect statement (Hence correct option): Ni²⁺ is 4-coordinated by four nitrogen donor atoms, not six oxygen atoms.",
+          "Correct statement: Intramolecular hydrogen bonds between the oxime oxygen and hydroxyl proton form two additional six-membered chelate rings."
+        ],
+        "fullExplanation": "In [Ni(dmg)₂], the central nickel(II) ion is coordinated to four nitrogen atoms of two bidentate dimethylglyoximate monoanions in a square planar arrangement (coordination number = 4, dsp² hybridised). Two strong intramolecular O–H···O hydrogen bonds bridge the ligands, providing exceptional stability and insolubility in water."
+      },
+      {
+        "question": "A metal salt solution gives a blood-red coloration upon adding neutral potassium thiocyanate (KSCN). The colour disappears upon addition of sodium fluoride (NaF). The cation is:",
+        "options": ["Fe²⁺", "Fe³⁺", "Co²⁺", "Cu²⁺"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Fe²⁺ does not form a blood-red complex with thiocyanate.",
+          "Correct. Fe³⁺ reacts with SCN⁻ to form the blood-red complex [Fe(SCN)(H₂O)₅]²⁺. Addition of F⁻ displaces SCN⁻ to form the exceptionally stable, colourless [FeF₆]³⁻ complex, discharging the colour.",
+          "Co²⁺ gives a blue colour with concentrated thiocyanate in alcohol, not blood red.",
+          "Cu²⁺ forms a black precipitate of Cu(SCN)₂ that decomposes to white CuSCN."
+        ],
+        "fullExplanation": "Fe³⁺ reacts with thiocyanate ions to form blood-red pentaaquathiocyanatoiron(III): Fe³⁺ + SCN⁻ + 5H₂O → [Fe(SCN)(H₂O)₅]²⁺. Fluoride ions (F⁻) form a more thermodynamically stable hexafluoroferrate(III) complex, [FeF₆]³⁻: [Fe(SCN)(H₂O)₅]²⁺ + 6F⁻ → [FeF₆]³⁻ + SCN⁻ + 5H₂O. Because [FeF₆]³⁻ is colourless, the blood-red colour vanishes."
+      },
+      {
+        "question": "Which reagent is used to selectively precipitate and separate Ba²⁺ from a mixture of Group V cations (Ba²⁺, Sr²⁺, Ca²⁺)?",
+        "options": [
+          "Potassium chromate (K₂CrO₄) in dilute acetic acid",
+          "Ammonium sulfate ((NH₄)₂SO₄) in boiling solution",
+          "Ammonium oxalate ((NH₄)₂C₂O₄) in ammoniacal solution",
+          "Sodium hydroxide (NaOH)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Barium chromate (BaCrO₄) has an extremely low Ksp and precipitates as a yellow solid in dilute acetic acid, whereas SrCrO₄ and CaCrO₄ remain dissolved under acidic conditions.",
+          "Ammonium sulfate precipitates both BaSO₄ and SrSO₄, failing to separate them.",
+          "Ammonium oxalate precipitates all three Group V cations as white insoluble oxalates.",
+          "Hydroxides of Group V metals are moderately to highly soluble and do not afford clean separation."
+        ],
+        "fullExplanation": "In Group V analysis, the dissolved carbonate precipitate is treated with dilute acetic acid. Adding K₂CrO₄ selectively precipitates yellow BaCrO₄↓ because its solubility product is much lower than those of SrCrO₄ and CaCrO₄, which remain soluble in dilute acetic acid."
+      },
+      {
+        "question": "What is the chemical composition of the brown precipitate ('iodide of Millon's base') formed when NH₄⁺ reacts with Nessler's reagent?",
+        "options": [
+          "Hg(NH₂)Cl",
+          "K₂[HgI₄]",
+          "HgO·Hg(NH₂)I",
+          "[Cu(NH₃)₄]I₂"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Hg(NH₂)Cl is the white precipitate of mercuric amidochloride formed by reacting Hg₂Cl₂ with aqueous ammonia.",
+          "K₂[HgI₄] is unreacted Nessler's reagent itself.",
+          "Correct. The brown precipitate is the basic mercury(II) amido-iodide complex, written as HgO·Hg(NH₂)I or [Hg₂N]I·H₂O.",
+          "[Cu(NH₃)₄]I₂ is an unrelated copper-ammonia salt."
+        ],
+        "fullExplanation": "Nessler's reagent is an alkaline solution of potassium tetraiodomercurate(II), K₂[HgI₄]. When treated with traces of ammonium ion or ammonia, it forms a characteristic brown precipitate of the iodide of Millon's base: 2K₂[HgI₄] + NH₃ + 3KOH → [HgO·Hg(NH₂)I]↓ (brown) + 7KI + 2H₂O."
+      },
+      {
+        "question": "In the Layer Test for halide ions, chlorine water is added to a salt solution in the presence of CCl₄. The organic layer turns violet. This confirms:",
+        "options": ["Chloride (Cl⁻)", "Bromide (Br⁻)", "Iodide (I⁻)", "Fluoride (F⁻)"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Chloride is not oxidised by chlorine water.",
+          "Bromide is oxidised to Br₂, which dissolves in CCl₄ to impart an orange or reddish-brown layer.",
+          "Correct. Chlorine water oxidises I⁻ to elemental iodine (I₂), which dissolves preferentially in the non-polar CCl₄ layer to give a distinctive violet/purple colour.",
+          "Fluoride cannot be oxidised by chlorine water."
+        ],
+        "fullExplanation": "Chlorine is a stronger oxidising agent than iodine (E°_Cl₂/Cl⁻ = +1.36 V vs E°_I₂/I⁻ = +0.54 V). In the layer test: 2I⁻ + Cl₂ → 2Cl⁻ + I₂. The liberated elemental iodine dissolves preferentially in non-polar organic solvents such as CCl₄ or CHCl₃, producing an intense violet layer."
+      },
+      {
+        "question": "Which of the following organic compounds will decolourise bromine water AND alkaline KMnO₄ (Baeyer's reagent) without releasing CO₂ gas from aqueous NaHCO₃?",
+        "options": ["Benzoic acid", "Cinnamic acid", "Phenol", "Cyclohexene"],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Benzoic acid does not decolourise bromine water or Baeyer's reagent.",
+          "Cinnamic acid has a C=C bond and a –COOH group, so it would decolourise bromine and also evolve CO₂ with NaHCO₃.",
+          "Phenol decolourises bromine water by forming a white precipitate of 2,4,6-tribromophenol, but it does not react with neutral/alkaline cold KMnO₄ in the typical aliphatic way and does not release CO₂ from NaHCO₃.",
+          "Correct. Cyclohexene contains an aliphatic carbon-carbon double bond (C=C), rapidly decolourising both Br₂/CCl₄ and Baeyer's reagent via syn-dihydroxylation, and has no acidic –COOH group to react with NaHCO₃."
+        ],
+        "fullExplanation": "Cyclohexene possesses an olefinic double bond that readily undergoes electrophilic addition with Br₂ (decolourising brown bromine water) and syn-dihydroxylation with cold alkaline KMnO₄ (decolourising purple permanganate to form brown MnO₂↓). Because it lacks a carboxylic acid group, it gives a negative sodium bicarbonate effervescence test."
+      },
+      {
+        "question": "A liquid organic compound gives a positive 2,4-DNP test, reduces Tollens' reagent to a silver mirror, but does NOT reduce Fehling's solution. The compound is:",
+        "options": ["Ethanal", "Propanone", "Benzaldehyde", "Acetophenone"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Ethanal is an aliphatic aldehyde and reduces both Tollens' and Fehling's solutions.",
+          "Propanone is a ketone and fails to reduce either Tollens' or Fehling's reagent.",
+          "Correct. Benzaldehyde (C₆H₅CHO) is an aromatic aldehyde; it contains a carbonyl group (positive 2,4-DNP), reduces ammoniacal AgNO₃ (Tollens'), but lacks sufficient reducing power to reduce Cu²⁺-tartrate (Fehling's).",
+          "Acetophenone is an aromatic methyl ketone and does not reduce Tollens' reagent."
+        ],
+        "fullExplanation": "Both aliphatic and aromatic aldehydes reduce Tollens' reagent to metallic silver. However, aromatic aldehydes such as benzaldehyde (C₆H₅CHO) fail to reduce Fehling's solution because the carbonyl carbon's electrophilicity is decreased through resonance donation from the aromatic ring, making hydride transfer to weaker Cu²⁺ complexes unfavorable."
+      },
+      {
+        "question": "Which of the following pairs of compounds can be cleanly distinguished using the Iodoform Test?",
+        "options": [
+          "Methanol and Ethanol",
+          "Propan-2-ol and Butan-2-ol",
+          "Acetophenone and Propan-2-one",
+          "Benzaldehyde and Propanal"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Ethanol contains the CH₃CH(OH)– group and gives a bright yellow precipitate of CHI₃ with I₂/NaOH, whereas methanol lacks this group and gives a negative test.",
+          "Both propan-2-ol and butan-2-ol contain the CH₃CH(OH)– group and both give positive iodoform tests.",
+          "Both acetophenone (C₆H₅COCH₃) and acetone (CH₃COCH₃) contain the CH₃CO– group and both give positive iodoform tests.",
+          "Neither benzaldehyde nor propanal contains a methyl carbonyl (CH₃CO–) or methyl carbinol group; both give negative iodoform tests."
+        ],
+        "fullExplanation": "The iodoform test is specific for compounds containing either the CH₃–C=O methyl carbonyl group or the CH₃–CH(OH)– methyl carbinol group. Ethanol (CH₃CH₂OH) is oxidised by hypoiodite to ethanal and yields yellow CHI₃↓, whereas methanol (CH₃OH) cannot form a methyl carbonyl intermediate and yields no precipitate."
+      },
+      {
+        "question": "Which reagent will give an extremely foul-smelling carbylamine (isonitrile) product when heated with aniline in alkaline medium?",
+        "options": ["CH₃I", "CHCl₃ + KOH", "CCl₄ + KOH", "CH₂Cl₂ + NaOH"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "CH₃I undergoes nucleophilic substitution (alkylation), forming methylanilines.",
+          "Correct. The Carbylamine test requires chloroform (CHCl₃) and alcoholic KOH, which generate dichlorocarbene (:CCl₂) to react with 1° amines forming pungent isonitriles (phenyl isocyanide, C₆H₅NC).",
+          "CCl₄ under alkaline conditions gives salicylic acid in the Reimer-Tiemann carboxylation.",
+          "Dichloromethane does not form dichlorocarbene readily under standard test conditions."
+        ],
+        "fullExplanation": "The Carbylamine reaction is exclusive to primary (1°) aliphatic and aromatic amines. When aniline is warmed with chloroform and alcoholic potassium hydroxide, it forms phenyl isocyanide (carbylamine), which possesses an intensely repulsive, offensive odour: C₆H₅NH₂ + CHCl₃ + 3KOH → C₆H₅NC + 3KCl + 3H₂O."
+      },
+      {
+        "question": "Which of the following aromatic compounds produces an orange-red azo dye when treated with NaNO₂ + dilute HCl at 0–5 °C followed by alkaline β-naphthol?",
+        "options": ["Benzylamine", "Aniline", "N-Methylaniline", "Nitrobenzene"],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Benzylamine is an aliphatic amine; its diazonium salt is unstable even at 0 °C and hydrolyses immediately to benzyl alcohol with N₂ evolution.",
+          "Correct. Aniline undergoes diazotisation at 0–5 °C to form stable benzenediazonium chloride, which couples with β-naphthol in alkaline solution to yield an insoluble orange azo dye (1-phenylazo-2-naphthol).",
+          "N-Methylaniline is a secondary amine and forms a yellow oily N-nitrosoamine without coupling.",
+          "Nitrobenzene does not contain an amino group and does not react with nitrous acid."
+        ],
+        "fullExplanation": "Primary aromatic amines like aniline undergo diazotisation with HNO₂ (NaNO₂ + HCl) at 273–278 K to form resonance-stabilized arenediazonium salts (C₆H₅N₂⁺Cl⁻). When coupled with an alkaline solution of 2-naphthol (β-naphthol), an electrophilic azo coupling occurs at the 1-position, yielding 1-(phenyldiazenyl)naphthalen-2-ol, an intense orange-red dye."
+      },
+      {
+        "question": "A nitrogenous organic compound reacts with benzenesulfonyl chloride (Hinsberg's reagent) to form a white precipitate that is completely INSOLUBLE in aqueous potassium hydroxide. The compound is:",
+        "options": [
+          "An aliphatic 1° amine (e.g., ethylamine)",
+          "An aliphatic 2° amine (e.g., diethylamine)",
+          "An aliphatic 3° amine (e.g., triethylamine)",
+          "A quaternary ammonium salt"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "1° amines form N-alkylbenzenesulfonamides with an acidic sulfonamide proton (N–H) that dissolves in aqueous KOH.",
+          "Correct. 2° amines react with C₆H₅SO₂Cl to form N,N-dialkylbenzenesulfonamides. Because there is no acidic hydrogen attached to the nitrogen atom, the product is completely insoluble in aqueous KOH.",
+          "3° amines lack replaceable protons on nitrogen and do not react with benzenesulfonyl chloride under standard alkaline conditions.",
+          "Quaternary ammonium salts do not react with sulfonyl chlorides."
+        ],
+        "fullExplanation": "In the Hinsberg test, secondary amines (R₂NH) react with benzenesulfonyl chloride to form N,N-dialkylbenzenesulfonamide: C₆H₅SO₂Cl + R₂NH → C₆H₅SO₂NR₂ + HCl. Because the nitrogen atom has no remaining hydrogen atom, this sulfonamide derivative is not acidic and cannot form a soluble potassium salt, remaining as an insoluble precipitate in aqueous KOH."
+      },
+      {
+        "question": "Which of the following organic compounds will dissolve in aqueous sodium bicarbonate (NaHCO₃) with the liberation of carbon dioxide effervescence?",
+        "options": ["Phenol", "o-Cresol", "2,4,6-Trinitrophenol (Picric acid)", "Cyclohexanol"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Phenol (pKa ≈ 10.0) is a weaker acid than carbonic acid (pKa ≈ 6.35) and cannot displace CO₂ from NaHCO₃.",
+          "o-Cresol is even less acidic than phenol due to the +I effect of the methyl group.",
+          "Correct. Due to three strongly electron-withdrawing nitro groups (-M and -I effects), picric acid has a pKa ≈ 0.38, making it far more acidic than carbonic acid; it vigorously displaces CO₂ from NaHCO₃.",
+          "Cyclohexanol is a neutral aliphatic alcohol (pKa ≈ 16) and does not react."
+        ],
+        "fullExplanation": "For an organic compound to release CO₂ from NaHCO₃, it must be a stronger acid than carbonic acid (H₂CO₃, pKa ≈ 6.35). Ordinary phenols (pKa ~10) fail this test. However, 2,4,6-trinitrophenol (picric acid, pKa = 0.38) is strongly acidic due to extensive resonance stabilization of the picrate anion by three ortho/para –NO₂ groups, liberating brisk CO₂ effervescence."
+      },
+      {
+        "question": "Which test chemically distinguishes Glucose (an aldose) from Fructose (a ketose) using mild oxidising conditions?",
+        "options": [
+          "Tollens' reagent test",
+          "Fehling's solution test",
+          "Bromine water test",
+          "Molisch's test"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Both glucose and fructose reduce Tollens' reagent because fructose tautomerizes to glucose under alkaline conditions (Lobry de Bruyn-Alberda van Ekenstein rearrangement).",
+          "Both glucose and fructose reduce Fehling's solution due to base-catalyzed enediol rearrangement.",
+          "Correct. Bromine water is a neutral/mildly acidic oxidising agent that oxidises the aldehyde group of glucose to gluconic acid (decolourising bromine), but does not oxidise the ketone group of fructose.",
+          "Molisch's test is a general test for all carbohydrates and gives a purple ring with both sugars."
+        ],
+        "fullExplanation": "In alkaline reagents like Tollens' and Fehling's, fructose tautomerizes into aldoses via an enediol intermediate and thus reduces both reagents. Bromine water, however, is a mild oxidant operating under acidic/neutral conditions where tautomerization cannot occur. It oxidises glucose to gluconic acid (decolourising the reddish-brown colour) while leaving fructose completely unreacted."
+      },
+      {
+        "question": "Which reagent is used in the Libermann's Nitroso Reaction for confirming phenols?",
+        "options": [
+          "NaNO₂ + concentrated H₂SO₄ followed by dilution and excess NaOH",
+          "Neutral FeCl₃ solution",
+          "Phthalic anhydride + concentrated H₂SO₄",
+          "Diazonium salt in alkaline medium"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Phenol treated with NaNO₂ and conc. H₂SO₄ develops a deep green/blue coloration which turns red on dilution with water, and changes back to deep blue/green on addition of excess NaOH.",
+          "Neutral FeCl₃ is the ferric chloride coordination test, not Libermann's test.",
+          "Phthalic anhydride is used in the Phthalein dye test to produce phenolphthalein.",
+          "This is the azo dye coupling test."
+        ],
+        "fullExplanation": "In Libermann's nitroso test, phenol is nitrosated by NaNO₂/H₂SO₄ to p-nitrosophenol, which tautomerizes to p-benzoquinone monoxime. This condenses with excess phenol to form the indophenol dye. The solution appears blue-green, turns red upon dilution with water, and converts to an intense deep blue sodium indophenolate salt when made alkaline with NaOH."
+      },
+      {
+        "question": "What is the structural observation when an α-amino acid is heated with Ninhydrin reagent?",
+        "options": [
+          "A canary-yellow crystalline precipitate",
+          "A blood-red coloration",
+          "An intense purple/violet-blue coloration (Ruhemann's purple)",
+          "A white curdy precipitate"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Canary-yellow precipitates are formed by phosphates with ammonium molybdate.",
+          "Blood-red coloration is given by Fe³⁺ with SCN⁻.",
+          "Correct. α-Amino acids undergo oxidative decarboxylation and deamination with ninhydrin (indane-1,2,3-trione hydrate) to yield an extended delocalized anion known as Ruhemann's purple.",
+          "White curdy precipitates are formed by AgCl."
+        ],
+        "fullExplanation": "The Ninhydrin test is the standard qualitative and chromatographic visualization test for α-amino acids. Two molecules of ninhydrin react with the amino nitrogen of the amino acid (with loss of the side chain as an aldehyde and release of CO₂), forming a resonance-stabilized diketohydrindylidene-diketohydrindamine anion called Ruhemann's purple, which absorbs strongly at 570 nm."
+      }
+    ]
+  }
+]

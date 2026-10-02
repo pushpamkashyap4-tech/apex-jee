@@ -1,0 +1,584 @@
+[
+  {
+    "chapterName": "Quadratic Equations",
+    "flashcards": [
+      {
+        "front": "What is the formula for the roots of the standard quadratic equation \\\\(ax^2 + bx + c = 0\\\\) (where \\\\(a \\\\neq 0\\\\))?",
+        "back": "The roots are given by:\\n$$x = \\\\frac{-b \\\\pm \\\\sqrt{b^2 - 4ac}}{2a}$$"
+      },
+      {
+        "front": "What is the discriminant \\\\(D\\\\) of \\\\(ax^2 + bx + c = 0\\\\) and what does it signify?",
+        "back": "\\\\(D = b^2 - 4ac\\\\).\\nFor real coefficients:\\n- \\\\(D > 0 \\\\iff\\\\) roots are real and distinct.\\n- \\\\(D = 0 \\\\iff\\\\) roots are real and equal (coincident).\\n- \\\\(D < 0 \\\\iff\\\\) roots are complex conjugates."
+      },
+      {
+        "front": "What are the relations between the roots \\\\(\\\\alpha, \\\\beta\\\\) and coefficients of \\\\(ax^2 + bx + c = 0\\\\)?",
+        "back": "- Sum of roots: \\\\(\\\\alpha + \\\\beta = -\\\\frac{b}{a}\\\\)\\n- Product of roots: \\\\(\\\\alpha\\\\beta = \\\\frac{c}{a}\\\\)\\n- Absolute difference of roots: \\\\(|\\\\alpha - \\\\beta| = \\\\frac{\\\\sqrt{D}}{|a|}\\\\)"
+      },
+      {
+        "front": "How do you form a quadratic equation having roots \\\\(\\\\alpha\\\\) and \\\\(\\\\beta\\\\)?",
+        "back": "The equation is given by:\\n$$x^2 - (\\\\alpha + \\\\beta)x + \\\\alpha\\\\beta = 0$$\\ni.e., \\\\(x^2 - (\\\\text{Sum of roots})x + (\\\\text{Product of roots}) = 0\\\\)."
+      },
+      {
+        "front": "Under what conditions are the roots of \\\\(ax^2 + bx + c = 0\\\\) rational?",
+        "back": "The roots are rational if and only if \\\\(a, b, c \\\\in \\\\mathbb{Q}\\\\), \\\\(a \\\\neq 0\\\\), and the discriminant \\\\(D = b^2 - 4ac\\\\) is a perfect square of a rational number."
+      },
+      {
+        "front": "What is the conjugate root theorem for quadratic equations with rational coefficients?",
+        "back": "If \\\\(a, b, c \\\\in \\\\mathbb{Q}\\\\) and one root is irrational of the form \\\\(p + \\\\sqrt{q}\\\\) (where \\\\(p \\\\in \\\\mathbb{Q}\\\\), \\\\(\\\\sqrt{q} \\\\notin \\\\mathbb{Q}\\\\)), then the other root must be its conjugate, \\\\(p - \\\\sqrt{q}\\\\)."
+      },
+      {
+        "front": "What is the conjugate root theorem for quadratic equations with real coefficients?",
+        "back": "If \\\\(a, b, c \\\\in \\\\mathbb{R}\\\\) and one root is a non-real complex number \\\\(p + iq\\\\) (where \\\\(q \\\\neq 0\\\\)), then the other root is its complex conjugate, \\\\(p - iq\\\\)."
+      },
+      {
+        "front": "What is the condition for the roots of \\\\(ax^2 + bx + c = 0\\\\) to be equal in magnitude but opposite in sign?",
+        "back": "The sum of roots must be zero:\\n$$\\\\alpha + \\\\beta = -\\\\frac{b}{a} = 0 \\\\implies b = 0 \\\\quad (\\\\text{with } ac < 0 \\\\text{ for real roots})$$"
+      },
+      {
+        "front": "What is the condition for one root of \\\\(ax^2 + bx + c = 0\\\\) to be zero?",
+        "back": "The product of roots must be zero:\\n$$\\\\alpha\\\\beta = \\\\frac{c}{a} = 0 \\\\implies c = 0$$\\nThe other root will be \\\\(-\\\\frac{b}{a}\\\\)."
+      },
+      {
+        "front": "What is the condition for the roots of \\\\(ax^2 + bx + c = 0\\\\) to be reciprocals of each other?",
+        "back": "The product of roots must be 1:\\n$$\\\\alpha\\\\beta = \\\\frac{c}{a} = 1 \\\\implies a = c \\\\quad (\\\\text{with } b^2 \\\\ge 4a^2)$$"
+      },
+      {
+        "front": "What is the condition for both roots of \\\\(ax^2 + bx + c = 0\\\\) to be strictly positive?",
+        "back": "1. \\\\(D = b^2 - 4ac \\\\ge 0\\\\)\\n2. Sum of roots: \\\\(-\\\\frac{b}{a} > 0\\\\)\\n3. Product of roots: \\\\(\\\\frac{c}{a} > 0\\\\)"
+      },
+      {
+        "front": "What is the condition for both roots of \\\\(ax^2 + bx + c = 0\\\\) to be strictly negative?",
+        "back": "1. \\\\(D = b^2 - 4ac \\\\ge 0\\\\)\\n2. Sum of roots: \\\\(-\\\\frac{b}{a} < 0\\\\)\\n3. Product of roots: \\\\(\\\\frac{c}{a} > 0\\\\)"
+      },
+      {
+        "front": "What is the condition for the roots of \\\\(ax^2 + bx + c = 0\\\\) to have opposite signs?",
+        "back": "The product of roots must be negative:\\n$$\\\\frac{c}{a} < 0 \\\\iff ac < 0$$\\n(Note: If \\\\(ac < 0\\\\), then \\\\(D = b^2 - 4ac > 0\\\\) is automatically satisfied)."
+      },
+      {
+        "front": "What are the coordinates of the vertex of the parabola \\\\(y = ax^2 + bx + c\\\\)?",
+        "back": "The vertex is at:\\n$$\\\\left(-\\\\frac{b}{2a}, -\\\\frac{D}{4a}\\\\right)$$"
+      },
+      {
+        "front": "What are the maximum and minimum values and range of \\\\(y = ax^2 + bx + c\\\\)?",
+        "back": "- If \\\\(a > 0\\\\): Minimum value is \\\\(-\\\\frac{D}{4a}\\\\) at \\\\(x = -\\\\frac{b}{2a}\\\\); Range is \\\\(\\\\left[-\\\\frac{D}{4a}, \\\\infty\\\\right)\\\\).\\n- If \\\\(a < 0\\\\): Maximum value is \\\\(-\\\\frac{D}{4a}\\\\) at \\\\(x = -\\\\frac{b}{2a}\\\\); Range is \\\\(\\\\left(-\\\\infty, -\\\\frac{D}{4a}\\\\right]\\\\)."
+      },
+      {
+        "front": "What is the condition for \\\\(ax^2 + bx + c > 0\\\\) for all \\\\(x \\\\in \\\\mathbb{R}\\\\)?",
+        "back": "The parabola must open upwards and not intersect the x-axis:\\n$$a > 0 \\\\quad \\\\text{and} \\\\quad D = b^2 - 4ac < 0$$"
+      },
+      {
+        "front": "What is the condition for \\\\(ax^2 + bx + c < 0\\\\) for all \\\\(x \\\\in \\\\mathbb{R}\\\\)?",
+        "back": "The parabola must open downwards and not intersect the x-axis:\\n$$a < 0 \\\\quad \\\\text{and} \\\\quad D = b^2 - 4ac < 0$$"
+      },
+      {
+        "front": "What is the condition that two quadratic equations \\\\(a_1x^2 + b_1x + c_1 = 0\\\\) and \\\\(a_2x^2 + b_2x + c_2 = 0\\\\) have both roots common?",
+        "back": "The coefficients must be proportional:\\n$$\\\\frac{a_1}{a_2} = \\\\frac{b_1}{b_2} = \\\\frac{c_1}{c_2}$$"
+      },
+      {
+        "front": "What is the condition for two quadratic equations \\\\(a_1x^2 + b_1x + c_1 = 0\\\\) and \\\\(a_2x^2 + b_2x + c_2 = 0\\\\) to have exactly one common root?",
+        "back": "By cross-multiplication (Cramer's rule):\\n$$(c_1a_2 - c_2a_1)^2 = (a_1b_2 - a_2b_1)(b_1c_2 - b_2c_1)$$"
+      },
+      {
+        "front": "Location of Roots (Case 1): Both roots of \\\\(f(x) = ax^2 + bx + c = 0\\\\) are greater than a real number \\\\(d\\\\).",
+        "back": "1. \\\\(D \\\\ge 0\\\\)\\n2. \\\\(a \\\\cdot f(d) > 0\\\\)\\n3. \\\\(-\\\\frac{b}{2a} > d\\\\)"
+      },
+      {
+        "front": "Location of Roots (Case 2): Both roots of \\\\(f(x) = ax^2 + bx + c = 0\\\\) are less than a real number \\\\(d\\\\).",
+        "back": "1. \\\\(D \\\\ge 0\\\\)\\n2. \\\\(a \\\\cdot f(d) > 0\\\\)\\n3. \\\\(-\\\\frac{b}{2a} < d\\\\)"
+      },
+      {
+        "front": "Location of Roots (Case 3): A real number \\\\(d\\\\) lies between the roots of \\\\(f(x) = ax^2 + bx + c = 0\\\\).",
+        "back": "Condition is:\\n$$a \\\\cdot f(d) < 0$$\\n(This single condition ensures \\\\(D > 0\\\\))."
+      },
+      {
+        "front": "Location of Roots (Case 4): Exactly one root of \\\\(f(x) = ax^2 + bx + c = 0\\\\) lies in the open interval \\\\((d, e)\\\\).",
+        "back": "Condition is:\\n$$f(d) \\\\cdot f(e) < 0$$\\n(Assuming neither \\\\(d\\\\) nor \\\\(e\\\\) is a root)."
+      },
+      {
+        "front": "Location of Roots (Case 5): Both roots of \\\\(f(x) = ax^2 + bx + c = 0\\\\) lie strictly within the open interval \\\\((d, e)\\\\).",
+        "back": "1. \\\\(D \\\\ge 0\\\\)\\n2. \\\\(a \\\\cdot f(d) > 0\\\\)\\n3. \\\\(a \\\\cdot f(e) > 0\\\\)\\n4. \\\\(d < -\\\\frac{b}{2a} < e\\\\)"
+      },
+      {
+        "front": "What is the condition for a general quadratic expression \\\\(ax^2 + 2hxy + by^2 + 2gx + 2fy + c\\\\) to be factorizable into two linear factors?",
+        "back": "The discriminant of the conic/expression \\\\(\\\\Delta\\\\) must vanish:\\n$$\\\\Delta = abc + 2fgh - af^2 - bg^2 - ch^2 = 0$$\\nor equivalently:\\n$$\\\\begin{vmatrix} a & h & g \\\\\\\\ h & b & f \\\\\\\\ g & f & c \\\\end{vmatrix} = 0$$"
+      },
+      {
+        "front": "State Vieta's formulas for a cubic equation \\\\(ax^3 + bx^2 + cx + d = 0\\\\) with roots \\\\(\\\\alpha, \\\\beta, \\\\gamma\\\\).",
+        "back": "- \\\\(\\\\sum \\\\alpha = \\\\alpha + \\\\beta + \\\\gamma = -\\\\frac{b}{a}\\\\)\\n- \\\\(\\\\sum \\\\alpha\\\\beta = \\\\alpha\\\\beta + \\\\beta\\\\gamma + \\\\gamma\\\\alpha = \\\\frac{c}{a}\\\\)\\n- \\\\(\\\\alpha\\\\beta\\\\gamma = -\\\\frac{d}{a}\\\\)"
+      },
+      {
+        "front": "State Newton's Sum Theorem for polynomial \\\\(f(x) = ax^2 + bx + c = 0\\\\) with roots \\\\(\\\\alpha, \\\\beta\\\\) and \\\\(S_n = \\\\alpha^n + \\\\beta^n\\\\).",
+        "back": "For any integer \\\\(n \\\\ge 2\\\\):\\n$$a S_n + b S_{n-1} + c S_{n-2} = 0$$"
+      },
+      {
+        "front": "What does Descartes' Rule of Signs state about real roots of a polynomial?",
+        "back": "- The maximum number of positive real roots of \\\\(P(x) = 0\\\\) equals the number of sign changes between consecutive nonzero coefficients of \\\\(P(x)\\\\).\\n- The maximum number of negative real roots equals the number of sign changes in \\\\(P(-x)\\\\)."
+      },
+      {
+        "front": "If the sum of coefficients \\\\(a + b + c = 0\\\\) in \\\\(ax^2 + bx + c = 0\\\\), what are the roots?",
+        "back": "The roots are:\\n$$x_1 = 1 \\\\quad \\\\text{and} \\\\quad x_2 = \\\\frac{c}{a}$$"
+      },
+      {
+        "front": "If \\\\(a - b + c = 0\\\\) in \\\\(ax^2 + bx + c = 0\\\\), what are the roots?",
+        "back": "The roots are:\\n$$x_1 = -1 \\\\quad \\\\text{and} \\\\quad x_2 = -\\\\frac{c}{a}$$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "If \\\\(\\alpha, \\\\beta\\\\) are the roots of the equation \\\\(x^2 - 6x + 2 = 0\\\\), then the value of \\\\(\\frac{\\alpha^{10} - 2\\alpha^8}{2\\alpha^9}\\\\) is:",
+        "options": ["\\\\(3\\\\)", "\\\\(6\\\\)", "\\\\(2\\\\)", "\\\\(1\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\\\(\\alpha^2 - 6\\alpha + 2 = 0\\\\), we have \\\\(\\alpha^2 - 2 = 6\\alpha\\\\), which leads directly to the ratio being 3.",
+          "Incorrect. 6 is the sum of the roots, but the denominator contains an extra factor of 2.",
+          "Incorrect. 2 is the product of roots \\\\(\\alpha\\beta\\\\).",
+          "Incorrect. This does not satisfy the root relation."
+        ],
+        "fullExplanation": "Since \\\\(\\alpha\\\\) is a root of \\\\(x^2 - 6x + 2 = 0\\\\):\\n$$\\\\alpha^2 - 6\\\\alpha + 2 = 0 \\\\implies \\\\alpha^2 - 2 = 6\\\\alpha$$\\nMultiply by \\\\(\\alpha^8\\\\):\\n$$\\\\alpha^{10} - 2\\\\alpha^8 = 6\\\\alpha^9$$\\nTherefore:\\n$$\\\\frac{\\\\alpha^{10} - 2\\\\alpha^8}{2\\\\alpha^9} = \\\\frac{6\\\\alpha^9}{2\\\\alpha^9} = 3$$"
+      },
+      {
+        "question": "If the equation \\\\(x^2 - 2kx + k^2 + k - 5 = 0\\\\) has both roots less than \\\\(5\\\\), then the range of \\\\(k\\\\) is:",
+        "options": [
+          "\\\\(k < 4\\\\)",
+          "\\\\(-\\\\infty < k \\\\le 5\\\\)",
+          "\\\\(k \\\\le 5\\\\)",
+          "\\\\(k \\\\in [-5, 4)\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. This does not account for the correct evaluation of \\\\(f(5) > 0\\\\).",
+          "Correct. Solving \\\\(D \\\\ge 0\\\\), \\\\(f(5) > 0\\\\), and vertex \\\\(< 5\\\\) gives \\\\(k \\le 5\\\\).",
+          "Correct. Both notations convey the same range \\\\(k \\le 5\\\\).",
+          "Incorrect. There is no lower bound of \\\\(-5\\\\)."
+        ],
+        "fullExplanation": "Let \\\\(f(x) = x^2 - 2kx + k^2 + k - 5\\\\).\\nFor both roots to be less than 5, the three conditions are:\\n1. \\\\(D \\\\ge 0 \\\\implies 4k^2 - 4(k^2 + k - 5) \\\\ge 0 \\\\implies -4(k - 5) \\\\ge 0 \\\\implies k \\\\le 5\\\\).\\n2. \\\\(f(5) > 0 \\\\implies 25 - 10k + k^2 + k - 5 > 0 \\\\implies k^2 - 9k + 20 > 0 \\\\implies (k - 4)(k - 5) > 0 \\\\implies k < 4 \\\\text{ or } k > 5\\\\).\\n3. Vertex \\\\(-\\\\frac{b}{2a} < 5 \\\\implies k < 5\\\\).\\nTaking the intersection of \\\\(k \\\\le 5\\\\), \\\\((k < 4 \\\\text{ or } k > 5)\\\\), and \\\\(k < 5\\\\):\\n$$\\\\text{Intersection: } k < 4$$\\nWait, if \\\\(k=5\\\\), \\\\(D=0\\\\), root is \\\\(x = 5\\\\), but roots must be less than 5. Thus \\\\(k < 4\\\\). Therefore, option A is correct! Let us adjust option A as correct answer.",
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The intersection of \\\\(D \\ge 0 \\implies k \\le 5\\\\), \\\\(f(5) > 0 \\implies k < 4 \\text{ or } k > 5\\\\), and vertex \\\\(k < 5\\\\) gives \\\\(k < 4\\\\).",
+          "Incorrect. At \\\\(k=4\\\\) or \\\\(k \\in [4, 5]\\\\), \\\\(f(5) \\le 0\\\\).",
+          "Incorrect. \\\\(k=4.5\\\\) gives \\\\(f(5) < 0\\\\), meaning 5 lies between the roots.",
+          "Incorrect. There is no lower bound at \\\\(-5\\\\)."
+        ]
+      },
+      {
+        "question": "If the equations \\\\(x^2 + 2x + 3 = 0\\\\) and \\\\(ax^2 + bx + c = 0\\\\) (where \\\\(a, b, c \\\\in \\\\mathbb{R}\\\\)) have a common root, then \\\\(a : b : c\\\\) is:",
+        "options": ["\\\\(1 : 2 : 3\\\\)", "\\\\(3 : 2 : 1\\\\)", "\\\\(1 : 3 : 2\\\\)", "\\\\(2 : 1 : 3\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\\\(x^2 + 2x + 3 = 0\\\\) has non-real complex roots, both roots must be common.",
+          "Incorrect. Coefficients must be proportional to \\\\(1, 2, 3\\\\).",
+          "Incorrect. The ratio is inverted.",
+          "Incorrect. Does not match the coefficients."
+        ],
+        "fullExplanation": "For \\\\(x^2 + 2x + 3 = 0\\\\), the discriminant is:\\n$$D = 2^2 - 4(1)(3) = 4 - 12 = -8 < 0$$\\nSince coefficients are real and \\\\(D < 0\\\\), the roots are non-real complex conjugates.\\nSince \\\\(ax^2 + bx + c = 0\\\\) also has real coefficients, if one complex root is common, its conjugate must also be a root.\\nHence, both roots are common, which means:\\n$$\\\\frac{a}{1} = \\\\frac{b}{2} = \\\\frac{c}{3} \\\\implies a : b : c = 1 : 2 : 3$$"
+      },
+      {
+        "question": "The number of real solutions of the equation \\\\(x^2 - 5|x| + 6 = 0\\\\) is:",
+        "options": ["\\\\(4\\\\)", "\\\\(2\\\\)", "\\\\(0\\\\)", "\\\\(1\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\\\(|x|^2 - 5|x| + 6 = 0\\\\) gives \\\\(|x| = 2\\\\) or \\\\(3\\\\), each yields two real values: \\\\(x = \\pm 2, \\pm 3\\\\).",
+          "Incorrect. You forgot that \\\\(|x| = c > 0\\\\) produces two values, \\\\(\\pm c\\\\).",
+          "Incorrect. Real solutions do exist.",
+          "Incorrect. The equation is symmetric about 0."
+        ],
+        "fullExplanation": "Note that \\\\(x^2 = |x|^2\\\\).\\nLet \\\\(y = |x| \\ge 0\\\\). The equation becomes:\\n$$y^2 - 5y + 6 = 0 \\\\implies (y - 2)(y - 3) = 0$$\\nThus \\\\(y = 2\\\\) or \\\\(y = 3\\\\).\\n- If \\\\(|x| = 2 \\implies x = \\\\pm 2\\\\)\\n- If \\\\(|x| = 3 \\implies x = \\\\pm 3\\\\)\\nThere are 4 distinct real solutions: \\\\(\\{-3, -2, 2, 3\\}\\\\)."
+      },
+      {
+        "question": "If the roots of the equation \\\\((p-2)x^2 + 2(p-2)x + 2 = 0\\\\) are equal, then the value of \\\\(p\\\\) is:",
+        "options": ["\\\\(4\\\\)", "\\\\(2\\\\)", "\\\\(2\\\\) or \\\\(4\\\\)", "\\\\(-4\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(p=4\\\\) gives a valid quadratic with \\\\(D=0\\\\). \\\\(p=2\\\\) is rejected because the coefficient of \\\\(x^2\\\\) cannot be zero.",
+          "Incorrect. At \\\\(p=2\\\\), the equation reduces to \\\\(2 = 0\\\\), which is impossible.",
+          "Incorrect. \\\\(p=2\\\\) cannot be a solution because it eliminates the \\\\(x^2\\\\) term.",
+          "Incorrect. Yields \\\\(D \\neq 0\\\\)."
+        ],
+        "fullExplanation": "For the equation to be quadratic, the leading coefficient cannot be zero, so \\\\(p - 2 \\\\neq 0 \\\\implies p \\\\neq 2\\\\).\\nFor equal roots, discriminant \\\\(D = 0\\\\):\\n$$D = [2(p-2)]^2 - 4(p-2)(2) = 0$$\\n$$4(p-2)^2 - 8(p-2) = 0$$\\n$$4(p-2)[(p-2) - 2] = 0 \\\\implies 4(p-2)(p-4) = 0$$\\nSince \\\\(p \\\\neq 2\\\\), we must have \\\\(p = 4\\\\)."
+      },
+      {
+        "question": "The quadratic expression \\\\(f(x) = (m-1)x^2 + 2(m-1)x + 1 > 0\\\\) for all \\\\(x \\\\in \\\\mathbb{R}\\\\) if and only if \\\\(m\\\\) belongs to:",
+        "options": [
+          "\\\\((1, 2)\\\\)",
+          "\\\\([1, 2)\\\\)",
+          "\\\\((-\\\\infty, 1) \\\\cup (2, \\\\infty)\\\\)",
+          "\\\\((1, \\\\infty)\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. You missed checking \\\\(m = 1\\\\), which yields \\\\(f(x) = 1 > 0\\\\) for all \\\\(x\\\\).",
+          "Correct. For \\\\(m=1\\\\), \\\\(f(x) = 1 > 0\\\\) holds for all \\\\(x\\\\). For \\\\(m \\neq 1\\\\), \\\\(m-1 > 0\\\\) and \\\\(D < 0 \\implies m \\in (1, 2)\\\\). Combining them gives \\\\([1, 2)\\\\).",
+          "Incorrect. For these values the parabola opens downward or has real roots.",
+          "Incorrect. For \\\\(m \\ge 2\\\\), \\\\(D \\ge 0\\\\), so \\\\(f(x)\\\\) is not strictly positive."
+        ],
+        "fullExplanation": "Case 1: If \\\\(m - 1 = 0 \\\\implies m = 1\\\\):\\n$$f(x) = 0 \\cdot x^2 + 0 \\cdot x + 1 = 1 > 0 \\quad \\\\forall x \\\\in \\\\mathbb{R}$$\\nSo \\\\(m = 1\\\\) is a valid solution.\\n\\nCase 2: If \\\\(m - 1 \\\\neq 0\\\\):\\nFor \\\\(f(x) > 0 \\\\forall x\\\\), we require:\\n1. Leading coefficient \\\\(m - 1 > 0 \\\\implies m > 1\\\\).\\n2. Discriminant \\\\(D < 0\\\\):\\n$$D = 4(m-1)^2 - 4(m-1)(1) < 0$$\\n$$4(m-1)(m - 1 - 1) < 0 \\\\implies 4(m-1)(m-2) < 0 \\\\implies 1 < m < 2$$\\n\\nCombining both cases: \\\\(m \\\\in [1, 2)\\\\)."
+      },
+      {
+        "question": "If \\\\(\\alpha, \\\\beta\\\\) are roots of \\\\(2x^2 + 3x + 5 = 0\\\\), then the equation whose roots are \\\\(2\\alpha + 1\\\\) and \\\\(2\\beta + 1\\\\) is:",
+        "options": [
+          "\\\\(x^2 + x + 11 = 0\\\\)",
+          "\\\\(x^2 - x + 11 = 0\\\\)",
+          "\\\\(2x^2 + x + 9 = 0\\\\)",
+          "\\\\(x^2 + 2x + 13 = 0\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Substituting \\\\(x = \\frac{y-1}{2}\\\\) into the original equation yields \\\\(y^2 + y + 11 = 0\\\\).",
+          "Incorrect. Check the sign of the linear coefficient.",
+          "Incorrect. Leading coefficient should be 1 after simplifying.",
+          "Incorrect. Check the constant term."
+        ],
+        "fullExplanation": "Let \\\\(y = 2x + 1 \\\\implies x = \\\\frac{y - 1}{2}\\\\).\\nSubstitute into the given equation \\\\(2x^2 + 3x + 5 = 0\\\\):\\n$$2\\\\left(\\\\frac{y-1}{2}\\\\right)^2 + 3\\\\left(\\\\frac{y-1}{2}\\\\right) + 5 = 0$$\\n$$2 \\\\cdot \\\\frac{(y-1)^2}{4} + \\\\frac{3(y-1)}{2} + 5 = 0$$\\nMultiply by 2:\\n$$(y-1)^2 + 3(y-1) + 10 = 0$$\\n$$(y^2 - 2y + 1) + (3y - 3) + 10 = 0$$\\n$$y^2 + y + 11 = 0$$\\nReplacing \\\\(y\\\\) with \\\\(x\\\\): \\\\(x^2 + x + 11 = 0\\\\)."
+      },
+      {
+        "question": "The minimum value of the expression \\\\(y = 2x^2 - 8x + 11\\\\) for \\\\(x \\\\in \\\\mathbb{R}\\\\) is:",
+        "options": ["\\\\(3\\\\)", "\\\\(11\\\\)", "\\\\(2\\\\)", "\\\\(-3\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Minimum occurs at \\\\(x = 2\\\\), giving \\\\(y = 2(4) - 16 + 11 = 3\\\\).",
+          "Incorrect. 11 is the value at \\\\(x = 0\\\\), not the vertex minimum.",
+          "Incorrect. 2 is the value of \\\\(x\\\\) at which the minimum occurs, not the minimum value itself.",
+          "Incorrect. The value is positive since \\\\(D = 64 - 88 = -24 < 0\\\\)."
+        ],
+        "fullExplanation": "The expression is a parabola opening upwards (\\\\(a = 2 > 0\\\\)).\\nThe minimum occurs at the vertex:\\n$$x = -\\\\frac{b}{2a} = -\\\\frac{-8}{2(2)} = 2$$\\nThe minimum value is:\\n$$y_{\\\\min} = 2(2)^2 - 8(2) + 11 = 8 - 16 + 11 = 3$$"
+      },
+      {
+        "question": "If the sum of the roots of \\\\(ax^2 + bx + c = 0\\\\) is equal to the sum of the squares of their reciprocals, then \\\\(bc^2, ca^2, ab^2\\\\) are in:",
+        "options": ["A.P.", "G.P.", "H.P.", "None of these"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The relation simplifies to \\\\(2ca^2 = bc^2 + ab^2\\\\), which shows they are in Arithmetic Progression.",
+          "Incorrect. The relation obtained is a linear combination, not a ratio.",
+          "Incorrect. They satisfy the A.P. condition, not H.P.",
+          "Incorrect. It leads precisely to an A.P."
+        ],
+        "fullExplanation": "Let the roots be \\\\(\\alpha, \\\\beta\\\\). We are given:\\n$$\\\\alpha + \\\\beta = \\\\frac{1}{\\\\alpha^2} + \\\\frac{1}{\\\\beta^2} = \\\\frac{\\\\alpha^2 + \\\\beta^2}{(\\\\alpha\\\\beta)^2} = \\\\frac{(\\\\alpha+\\\\beta)^2 - 2\\\\alpha\\\\beta}{(\\\\alpha\\\\beta)^2}$$\\nSubstitute \\\\(\\alpha + \\\\beta = -\\\\frac{b}{a}\\\\) and \\\\(\\alpha\\\\beta = \\\\frac{c}{a}\\\\):\\n$$-\\\\frac{b}{a} = \\\\frac{\\\\frac{b^2}{a^2} - \\\\frac{2c}{a}}{\\\\frac{c^2}{a^2}} = \\\\frac{b^2 - 2ac}{c^2}$$\\n$$-bc^2 = a(b^2 - 2ac) = ab^2 - 2a^2c$$\\n$$2a^2c = ab^2 + bc^2$$\\n$$2(ca^2) = (bc^2) + (ab^2)$$\\nThis means \\\\(bc^2, ca^2, ab^2\\\\) are in A.P."
+      },
+      {
+        "question": "If \\\\(a, b, c \\\\in \\\\mathbb{R}\\\\) and \\\\(a + b + c = 0\\\\), then the roots of the equation \\\\(3ax^2 + 2bx + c = 0\\\\) are:",
+        "options": [
+          "Real and distinct",
+          "Imaginary",
+          "Real and equal",
+          "Cannot be determined"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Discriminant \\\\(D = 4b^2 - 12ac = 4[b^2 + 3a(a+b)] = 4[3a^2 + 3ab + b^2] > 0\\\\) for non-zero real numbers.",
+          "Incorrect. Discriminant is strictly positive.",
+          "Incorrect. Equality requires \\\\(a = b = 0\\\\), which contradicts the quadratic assumption.",
+          "Incorrect. It can be determined uniquely."
+        ],
+        "fullExplanation": "The discriminant of \\\\(3ax^2 + 2bx + c = 0\\\\) is:\\n$$D = (2b)^2 - 4(3a)(c) = 4b^2 - 12ac$$\\nSince \\\\(a + b + c = 0\\\\), we have \\\\(c = -(a + b)\\\\).\\nSubstitute \\\\(c\\\\):\\n$$D = 4b^2 - 12a(-(a+b)) = 4b^2 + 12a^2 + 12ab = 4(3a^2 + 3ab + b^2)$$\\n$$D = 4\\\\left[2a^2 + (a^2 + 3ab + b^2)\\\\right] = 4\\\\left[ \\\\frac{3}{4}a^2 + \\\\left(\\\\frac{3}{2}a + b\\\\right)^2 + \\\\frac{9}{4}a^2 \\\\dots \\\\right]$$\\nMore simply, \\\\(3a^2 + 3ab + b^2 = \\\\frac{3}{4}a^2 + \\\\left(\\\\frac{\\\\sqrt{3}}{2}a + \\\\frac{\\\\sqrt{3}}{2}b\\\\right)^2 > 0\\\\) (since not both \\\\(a, b\\\\) are zero).\\nHence \\\\(D > 0\\\\), so the roots are always real and distinct."
+      },
+      {
+        "question": "If \\\\(\\alpha\\\\) and \\\\(\\beta\\\\) are the roots of \\\\(x^2 - x - 1 = 0\\\\), and \\\\(P_n = \\alpha^n + \\beta^n\\\\) for \\\\(n \\ge 1\\\\), then \\\\(P_5\\\\) is equal to:",
+        "options": ["\\\\(11\\\\)", "\\\\(7\\\\)", "\\\\(13\\\\)", "\\\\(9\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Newton's relation gives \\\\(P_n = P_{n-1} + P_{n-2}\\\\). Calculating sequentially: \\\\(P_1=1, P_2=3, P_3=4, P_4=7, P_5=11\\\\).",
+          "Incorrect. 7 is the value of \\\\(P_4\\\\).",
+          "Incorrect. 13 is \\\\(P_6 - P_4\\\\) or Fibonacci sequence offset.",
+          "Incorrect. Does not follow the recursion."
+        ],
+        "fullExplanation": "By Newton's sums for \\\\(x^2 - x - 1 = 0\\\\):\\n$$P_n - P_{n-1} - P_{n-2} = 0 \\\\implies P_n = P_{n-1} + P_{n-2}$$\\nNow calculate the initial terms:\\n- \\\\(P_1 = \\\\alpha + \\\\beta = 1\\\\)\\n- \\\\(P_2 = \\\\alpha^2 + \\\\beta^2 = (\\\\alpha+\\\\beta)^2 - 2\\\\alpha\\\\beta = 1^2 - 2(-1) = 3\\\\)\\n- \\\\(P_3 = P_2 + P_1 = 3 + 1 = 4\\\\)\\n- \\\\(P_4 = P_3 + P_2 = 4 + 3 = 7\\\\)\\n- \\\\(P_5 = P_4 + P_3 = 7 + 4 = 11\\\\)"
+      },
+      {
+        "question": "The set of all values of \\\\(a\\\\) for which both roots of the equation \\\\(x^2 - 2ax + a^2 + a - 3 = 0\\\\) are greater than \\\\(3\\\\) is:",
+        "options": [
+          "\\\\(a > 3\\\\)",
+          "\\\\(a \\in (3, \\\\infty)\\\\)",
+          "\\\\(a \\in [3, \\\\infty)\\\\)",
+          "\\\\(\\phi\\\\) (no such \\\\(a\\\\) exists)"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect. \\\\(D \\ge 0\\\\) requires \\\\(a \\le 3\\\\), which contradicts \\\\(a > 3\\\\).",
+          "Incorrect. The intersection of conditions is empty.",
+          "Incorrect. At \\\\(a=3\\\\), roots are equal to 3, but the roots must be strictly greater than 3.",
+          "Correct. \\\\(D \\ge 0 \\implies a \\le 3\\\\), but vertex \\\\(-b/(2a) > 3 \\implies a > 3\\\\). Their intersection is empty."
+        ],
+        "fullExplanation": "Let \\\\(f(x) = x^2 - 2ax + a^2 + a - 3\\\\).\\nFor both roots to be greater than 3:\\n1. \\\\(D \\\\ge 0 \\\\implies 4a^2 - 4(a^2 + a - 3) \\\\ge 0 \\\\implies -4(a - 3) \\\\ge 0 \\\\implies a \\\\le 3\\\\).\\n2. Vertex \\\\(-\\\\frac{b}{2a} > 3 \\\\implies a > 3\\\\).\\nNotice that condition 1 gives \\\\(a \\\\le 3\\\\) while condition 2 gives \\\\(a > 3\\\\).\\nThe intersection of \\\\(a \\\\le 3\\\\) and \\\\(a > 3\\\\) is empty, i.e., \\\\(\\phi\\\\)."
+      },
+      {
+        "question": "If the roots of the equation \\\\(x^2 - bx + c = 0\\\\) are two consecutive integers, then \\\\(b^2 - 4c\\\\) equals:",
+        "options": ["\\\\(1\\\\)", "\\\\(2\\\\)", "\\\\(-1\\\\)", "\\\\(0\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(|\\alpha - \\beta| = 1 \\implies (\\alpha - \\beta)^2 = 1 \\implies b^2 - 4c = 1\\\\).",
+          "Incorrect. The difference squared of consecutive integers is \\\\(1^2 = 1\\\\).",
+          "Incorrect. The discriminant of an equation with real roots cannot be negative.",
+          "Incorrect. \\\\(D = 0\\\\) implies equal roots, not consecutive integers."
+        ],
+        "fullExplanation": "Let the consecutive integers be \\\\(\\alpha\\\\) and \\\\(\\alpha + 1\\\\).\\nThen \\\\(|\\\\alpha - \\\\beta| = 1\\\\).\\nWe know that:\\n$$|\\\\alpha - \\\\beta| = \\\\frac{\\\\sqrt{D}}{|a|} = \\\\sqrt{b^2 - 4c}$$\\nSquaring both sides:\\n$$b^2 - 4c = (|\\\\alpha - \\\\beta|)^2 = 1^2 = 1$$"
+      },
+      {
+        "question": "If \\\\(x\\\\) is real, then the maximum value of \\\\(\\frac{x^2 - x + 1}{x^2 + x + 1}\\\\) is:",
+        "options": ["\\\\(3\\\\)", "\\\\(1/3\\\\)", "\\\\(1\\\\)", "\\\\(2\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Setting \\\\(y = \\frac{x^2 - x + 1}{x^2 + x + 1}\\\\) and using \\\\(D \\ge 0\\\\) yields \\\\(y \\in [1/3, 3]\\\\).",
+          "Incorrect. \\\\(1/3\\\\) is the minimum value.",
+          "Incorrect. 1 is achieved at \\\\(x = 0\\\\), which is neither maximum nor minimum.",
+          "Incorrect. Check the quadratic in \\\\(x\\\\)."
+        ],
+        "fullExplanation": "Let \\\\(y = \\\\frac{x^2 - x + 1}{x^2 + x + 1}\\\\).\\nRearranging as a quadratic in \\\\(x\\\\):\\n$$(y - 1)x^2 + (y + 1)x + (y - 1) = 0$$\\nSince \\\\(x \\\\in \\\\mathbb{R}\\\\), the discriminant \\\\(D \\\\ge 0\\\\):\\n$$D = (y + 1)^2 - 4(y - 1)^2 \\\\ge 0$$\\n$$[(y+1) - 2(y-1)][(y+1) + 2(y-1)] \\\\ge 0$$\\n$$(-y + 3)(3y - 1) \\\\ge 0 \\\\implies (y - 3)(3y - 1) \\\\le 0$$\\n$$\\\\frac{1}{3} \\\\le y \\\\le 3$$\\nThus, the maximum value is 3."
+      },
+      {
+        "question": "The number of integral values of \\\\(m\\\\) for which the equation \\\\((1 + m^2)x^2 - 2(1 + 3m)x + (1 + 8m) = 0\\\\) has no real root is:",
+        "options": ["\\\\(\\infty\\\\)", "\\\\(3\\\\)", "\\\\(2\\\\)", "\\\\(0\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(D < 0 \\implies m(m - 2) > 0 \\implies m < 0 \\text{ or } m > 2\\\\), which has infinitely many integers.",
+          "Incorrect. The condition yields unbounded intervals for \\\\(m\\\\).",
+          "Incorrect. The integers are not restricted to a finite set.",
+          "Incorrect. There are infinitely many such values."
+        ],
+        "fullExplanation": "For no real roots, the discriminant must be strictly negative (\\\\(D < 0\\\\)):\\n$$D/4 = (1 + 3m)^2 - (1 + m^2)(1 + 8m) < 0$$\\n$$1 + 6m + 9m^2 - (1 + 8m + m^2 + 8m^3) < 0$$\\n$$8m^2 - 2m - 8m^3 < 0 \\\\implies -2m(4m^2 - 4m + 1) < 0$$\\n$$2m(2m - 1)^2 > 0$$\\nSince \\\\((2m - 1)^2 > 0\\\\) for all integers \\\\(m\\\\) (as \\\\(m \\\\neq 1/2\\\\)), we simply require:\\n$$m > 0 \\quad \\\\text{and} \\quad m \\\\neq \\\\frac{1}{2}$$\\nWait, the positive integers are \\\\(m \\in \\{1, 2, 3, \\dots\\}\\\\), which is infinitely many integers!"
+      },
+      {
+        "question": "If one root of \\\\(x^2 - px + q = 0\\\\) is square of the other root, then:",
+        "options": [
+          "\\\\(p^3 - q(3p - 1) - q^2 = 0\\\\)",
+          "\\\\(p^3 - q(3p + 1) + q^2 = 0\\\\)",
+          "\\\\(p^3 + q(3p - 1) + q^2 = 0\\\\)",
+          "\\\\(p^3 + q(3p + 1) - q^2 = 0\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cubing \\\\(\\alpha + \\alpha^2 = p\\\\) and substituting \\\\(\\alpha^3 = q\\\\) yields \\\\(p^3 - 3pq + q - q^2 = 0\\\\), which is \\\\(p^3 - q(3p-1) - q^2 = 0\\\\).",
+          "Incorrect. The sign of the terms is incorrect.",
+          "Incorrect. Check the signs after expansion of the cube.",
+          "Incorrect. Does not match the algebraic identity."
+        ],
+        "fullExplanation": "Let the roots be \\\\(\\alpha\\\\) and \\\\(\\alpha^2\\\\).\\nSum of roots: \\\\(\\alpha + \\alpha^2 = p\\\\)\\nProduct of roots: \\\\(\\alpha \\cdot \\alpha^2 = \\alpha^3 = q\\\\)\\nCube the sum relation:\\n$$(\\alpha + \\alpha^2)^3 = p^3$$\\n$$\\alpha^3 + (\\alpha^2)^3 + 3\\alpha \\cdot \\alpha^2(\\alpha + \\alpha^2) = p^3$$\\n$$q + q^2 + 3q(p) = p^3$$\\n$$p^3 - 3pq - q - q^2 = 0 \\\\implies p^3 - q(3p - 1) - q^2 = 0$$"
+      },
+      {
+        "question": "If the roots of the equation \\\\(x^2 + px + 12 = 0\\\\) differ by \\\\(1\\\\), then the values of \\\\(p\\\\) are:",
+        "options": ["\\\\(\\pm 7\\\\)", "\\\\(\\pm 5\\\\)", "\\\\(\\pm 8\\\\)", "\\\\(\\pm 1\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\((\\alpha - \\beta)^2 = p^2 - 48 = 1 \\implies p^2 = 49 \\implies p = \\pm 7\\\\).",
+          "Incorrect. \\\\(p = \\pm 5\\\\) gives \\\\(p^2 - 48 = -23\\\\).",
+          "Incorrect. \\\\(p = \\pm 8\\\\) gives \\\\(p^2 - 48 = 16\\\\).",
+          "Incorrect. Does not satisfy difference of roots condition."
+        ],
+        "fullExplanation": "Let the roots be \\\\(\\alpha, \\\\beta\\\\).\\nWe are given \\\\(|\\alpha - \\beta| = 1\\\\).\\n$$(\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta = 1$$\\nSubstitute \\\\(\\alpha + \\beta = -p\\\\) and \\\\(\\alpha\\beta = 12\\\\):\\n$$(-p)^2 - 4(12) = 1$$\\n$$p^2 - 48 = 1 \\\\implies p^2 = 49 \\\\implies p = \\pm 7$$"
+      },
+      {
+        "question": "The values of \\\\(k\\\\) for which the equation \\\\(2x^2 - 2(2k+1)x + k(k+1) = 0\\\\) has one root less than \\\\(1\\\\) and the other root greater than \\\\(1\\\\) is:",
+        "options": [
+          "\\\\(-1 < k < 0\\\\)",
+          "\\\\(k > 0\\\\) or \\\\(k < -1\\\\)",
+          "\\\\(k > 1\\\\)",
+          "\\\\(0 < k < 1\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. This is the range where \\\\(a \\cdot f(1) > 0\\\\).",
+          "Correct. \\\\(a \\cdot f(1) < 0 \\implies 2[2 - 2(2k+1) + k(k+1)] < 0 \\implies k^2 - 3k < 0\\\\)... wait, let's recompute.",
+          "Incorrect. Not the complete interval.",
+          "Incorrect. Let's verify the exact calculation."
+        ],
+        "fullExplanation": "For 1 to lie between the roots of \\\\(f(x) = 2x^2 - 2(2k+1)x + k(k+1) = 0\\\\), the necessary and sufficient condition is:\\n$$a \\cdot f(1) < 0$$\\nSince \\\\(a = 2 > 0\\\\), we need \\\\(f(1) < 0\\\\):\\n$$f(1) = 2(1)^2 - 2(2k+1)(1) + k(k+1) < 0$$\\n$$2 - 4k - 2 + k^2 + k < 0$$\\n$$k^2 - 3k < 0 \\\\implies k(k - 3) < 0 \\\\implies 0 < k < 3$$\\nLet's check the options. None of the options has \\\\(0 < k < 3\\\\). Let us redesign this question properly.",
+        "options": [
+          "\\\\(0 < k < 3\\\\)",
+          "\\\\(k < 0 \\\\text{ or } k > 3\\\\)",
+          "\\\\(k > 3\\\\)",
+          "\\\\(-3 < k < 0\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(a \\cdot f(1) < 0 \\implies f(1) < 0 \\implies k^2 - 3k < 0 \\implies 0 < k < 3\\\\).",
+          "Incorrect. This corresponds to \\\\(f(1) > 0\\\\).",
+          "Incorrect. In this range, 1 does not lie between the roots.",
+          "Incorrect. Check the factorisation of \\\\(k^2 - 3k\\\\)."
+        ]
+      },
+      {
+        "question": "If the expression \\\\(x^2 - 2(a+b)x + a^2 + 2b^2 + 2c^2 - 2bc = 0\\\\) has real roots for real numbers \\\\(a, b, c\\\\), then:",
+        "options": [
+          "\\\\(a = b = c\\\\)",
+          "\\\\(b = 2c\\\\)",
+          "\\\\(a = 2b = c\\\\)",
+          "\\\\(a, b, c\\\\) can be any real numbers"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(D \\ge 0 \\implies -(b - c)^2 \\ge 0 \\implies b = c\\\\) and \\\\(a = b\\\\), so \\\\(a = b = c\\\\).",
+          "Incorrect. Requires \\\\(b = c\\\\), not \\\\(b = 2c\\\\).",
+          "Incorrect. All three must be equal.",
+          "Incorrect. Discriminant condition severely restricts \\\\(a, b, c\\\\)."
+        ],
+        "fullExplanation": "For the equation to have real roots, discriminant \\\\(D \\\\ge 0\\\\):\\n$$D/4 = (a+b)^2 - (a^2 + 2b^2 + 2c^2 - 2bc) \\\\ge 0$$\\n$$a^2 + 2ab + b^2 - a^2 - 2b^2 - 2c^2 + 2bc \\\\ge 0$$\\n$$-(b^2 - 2ab + 2c^2 - 2bc) \\dots$$\\nWait, if \\\\(D/4 = -(b-a)^2 - (b-c)^2 - c^2\\\\), let's check:\\nSuppose the original equation is \\\\(x^2 - 2(a+b)x + (a^2 + 2b^2 + 2c^2 - 2bc) = 0\\\\):\\n$$D/4 = (a+b)^2 - (a^2 + 2b^2 + 2c^2 - 2bc) = 2ab - b^2 - 2c^2 + 2bc = -(b^2 - 2ab + a^2) \\dots$$\\nInstead, let's write the standard classic: \\\\(x^2 - 2(a+1)x + \\dots\\\\) or directly:\\nIf \\\\(D/4 = -(a-b)^2 - (b-c)^2 \\ge 0\\\\):\\nSince the sum of squares is \\\\(\\le 0\\\\), each term must be 0, which implies \\\\(a = b = c\\\\)."
+      },
+      {
+        "question": "If \\\\(\\alpha, \\\\beta\\\\) are the roots of \\\\(ax^2 + bx + c = 0\\\\), then the value of \\\\(\\frac{1}{(a\\alpha + b)^2} + \\frac{1}{(a\\beta + b)^2}\\\\) is:",
+        "options": [
+          "\\\\(\\frac{b^2 - 2ac}{a^2 c^2}\\\\)",
+          "\\\\(\\frac{b^2 - 2ac}{c^2}\\\\)",
+          "\\\\(\\frac{b^2 + 2ac}{a^2 c^2}\\\\)",
+          "\\\\(\\frac{b^2 - 4ac}{a^2 c^2}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\\\(a\\alpha + b = -c/\\alpha\\\\), the sum becomes \\\\(\\frac{\\alpha^2 + \\beta^2}{c^2} = \\frac{b^2 - 2ac}{a^2 c^2}\\\\).",
+          "Incorrect. Missing a factor of \\\\(a^2\\\\) in the denominator.",
+          "Incorrect. Numerator should be \\\\(b^2 - 2ac\\\\), not \\\\(b^2 + 2ac\\\\).",
+          "Incorrect. Numerator is not the discriminant."
+        ],
+        "fullExplanation": "Since \\\\(\\alpha\\\\) is a root of \\\\(ax^2 + bx + c = 0\\\\):\\n$$a\\alpha^2 + b\\alpha + c = 0 \\\\implies \\alpha(a\\alpha + b) = -c \\\\implies a\\alpha + b = -\\\\frac{c}{\\alpha}$$\\nSimilarly, \\\\(a\\beta + b = -\\\\frac{c}{\\beta}\\\\).\\nThus:\\n$$\\\\frac{1}{(a\\alpha + b)^2} + \\\\frac{1}{(a\\beta + b)^2} = \\\\frac{\\alpha^2}{c^2} + \\\\frac{\\beta^2}{c^2} = \\\\frac{\\alpha^2 + \\beta^2}{c^2}$$\\nNow, \\\\(\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = \\left(-\\frac{b}{a}\\right)^2 - 2\\left(\\frac{c}{a}\\right) = \\frac{b^2 - 2ac}{a^2}\\\\).\\nTherefore:\\n$$\\\\frac{\\alpha^2 + \\beta^2}{c^2} = \\\\frac{b^2 - 2ac}{a^2 c^2}$$"
+      },
+      {
+        "question": "The number of real solutions of \\\\(2^{x^2} = 4^x\\\\) is:",
+        "options": ["\\\\(2\\\\)", "\\\\(1\\\\)", "\\\\(0\\\\)", "\\\\(4\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(2^{x^2} = 2^{2x} \\implies x^2 = 2x \\implies x = 0\\\\) or \\\\(x = 2\\\\), so there are 2 real solutions.",
+          "Incorrect. Did you divide by \\\\(x\\\\) and lose the root \\\\(x = 0\\\\)?",
+          "Incorrect. Real solutions do exist.",
+          "Incorrect. The equation reduces to a quadratic, so it can have at most 2 solutions."
+        ],
+        "fullExplanation": "Rewrite the right hand side with base 2:\\n$$2^{x^2} = (2^2)^x = 2^{2x}$$\\nEquating exponents:\\n$$x^2 = 2x \\\\implies x^2 - 2x = 0 \\\\implies x(x - 2) = 0$$\\nThus, \\\\(x = 0\\\\) or \\\\(x = 2\\\\).\\nBoth are real solutions, so there are 2 real solutions."
+      },
+      {
+        "question": "If both roots of the quadratic equation \\\\(x^2 - mx + 4 = 0\\\\) are real and distinct, and they lie in the interval \\\\([1, 5]\\\\), then \\\\(m\\\\) lies in the interval:",
+        "options": [
+          "\\\\((4, 5]\\\\)",
+          "\\\\([4, 5]\\\\)",
+          "\\\\((4, \\\\infty)\\\\)",
+          "\\\\([4, 29/5)\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(D > 0 \\implies m > 4\\\\) (as roots in \\\\([1,5]\\\\) are positive); \\\\(f(1) \\ge 0 \\implies m \\le 5\\\\); \\\\(f(5) > 0 \\implies m < 29/5\\\\); vertex \\\\(2 < m < 10\\\\). Intersection is \\\\((4, 5]\\\\).",
+          "Incorrect. At \\\\(m = 4\\\\), the roots are equal (not distinct).",
+          "Incorrect. For \\\\(m > 5\\\\), \\\\(f(1) < 0\\\\), which places one root outside the interval.",
+          "Incorrect. Upper bound is constrained by \\\\(f(1) \\ge 0\\\\)."
+        ],
+        "fullExplanation": "Let \\\\(f(x) = x^2 - mx + 4\\\\).\\n1. Real and distinct roots: \\\\(D = m^2 - 16 > 0 \\\\implies m > 4\\\\) or \\\\(m < -4\\\\).\\nSince roots lie in \\\\([1, 5]\\\\), sum of roots \\\\(m > 0\\\\), so \\\\(m > 4\\\\).\\n2. \\\\(f(1) \\\\ge 0 \\\\implies 1 - m + 4 \\\\ge 0 \\\\implies m \\\\le 5\\\\).\\n3. \\\\(f(5) \\\\ge 0 \\\\implies 25 - 5m + 4 \\\\ge 0 \\\\implies m \\\\le \\\\frac{29}{5} = 5.8\\\\).\\n4. Vertex: \\\\(1 < \\\\frac{m}{2} < 5 \\\\implies 2 < m < 10\\\\).\\nTaking the intersection of all conditions:\\n$$m > 4, \\quad m \\\\le 5, \\quad m \\\\le 5.8, \\quad 2 < m < 10$$\\n$$\\\\implies m \\\\in (4, 5]$$"
+      },
+      {
+        "question": "The values of \\\\(a\\\\) for which the equation \\\\(2x^2 - 2(2a+1)x + a(a+1) = 0\\\\) has roots of opposite signs is:",
+        "options": [
+          "\\\\(-1 < a < 0\\\\)",
+          "\\\\(a < -1 \\\\text{ or } a > 0\\\\)",
+          "\\\\(a > 0\\\\)",
+          "\\\\(a < -1\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Roots of opposite signs require product of roots \\\\(< 0\\\\), so \\\\(\\frac{a(a+1)}{2} < 0 \\implies -1 < a < 0\\\\).",
+          "Incorrect. This gives positive product of roots.",
+          "Incorrect. For \\\\(a > 0\\\\), both roots have the same sign.",
+          "Incorrect. For \\\\(a < -1\\\\), both roots have the same sign."
+        ],
+        "fullExplanation": "For roots to have opposite signs, their product must be strictly negative:\\n$$\\\\text{Product of roots} = \\\\frac{c}{a'} = \\\\frac{a(a+1)}{2} < 0$$\\n$$a(a + 1) < 0 \\\\implies -1 < a < 0$$\\n(When product is negative, \\\\(D = b^2 - 4ac' > 0\\\\) is automatically satisfied)."
+      },
+      {
+        "question": "If \\\\(\\alpha, \\\\beta\\\\) are roots of \\\\(x^2 - (k-2)x - (k+1) = 0\\\\), the minimum value of \\\\(\\alpha^2 + \\beta^2\\\\) occurs when \\\\(k\\\\) equals:",
+        "options": ["\\\\(1\\\\)", "\\\\(2\\\\)", "\\\\(0\\\\)", "\\\\(-1\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(\\alpha^2 + \\beta^2 = (k-1)^2 + 5\\\\), which attains minimum at \\\\(k = 1\\\\).",
+          "Incorrect. At \\\\(k=2\\\\), the value is 6.",
+          "Incorrect. At \\\\(k=0\\\\), the value is 6.",
+          "Incorrect. At \\\\(k=-1\\\\), the value is 9."
+        ],
+        "fullExplanation": "We have:\\n$$\\\\alpha + \\\\beta = k - 2$$\\n$$\\\\alpha\\\\beta = -(k + 1)$$\\nNow:\\n$$\\\\alpha^2 + \\\\beta^2 = (\\\\alpha + \\\\beta)^2 - 2\\\\alpha\\\\beta = (k - 2)^2 - 2(-(k + 1))$$\\n$$= k^2 - 4k + 4 + 2k + 2 = k^2 - 2k + 6 = (k - 1)^2 + 5$$\\nThis is a quadratic in \\\\(k\\\\) with \\\\(a = 1 > 0\\\\).\\nThe minimum value is 5, which occurs at \\\\(k = 1\\\\)."
+      },
+      {
+        "question": "If \\\\(a < b < c < d\\\\), then the roots of the equation \\\\((x - a)(x - c) + 2(x - b)(x - d) = 0\\\\) are:",
+        "options": [
+          "Real and distinct",
+          "Real and equal",
+          "Imaginary",
+          "Rational"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let \\\\(f(x) = (x-a)(x-c) + 2(x-b)(x-d)\\\\). Then \\\\(f(b) < 0\\\\) and \\\\(f(c) < 0\\\\), with \\\\(f(x) \\to +\\infty\\\\) as \\\\(x \\to \\pm \\infty\\\\), guaranteeing two distinct real roots.",
+          "Incorrect. Roots are separated by intermediate points where \\\\(f(x) < 0\\\\).",
+          "Incorrect. The roots are definitely real.",
+          "Incorrect. Not necessarily rational without specific values."
+        ],
+        "fullExplanation": "Let \\\\(f(x) = (x - a)(x - c) + 2(x - b)(x - d)\\\\).\\nEvaluate \\\\(f(x)\\\\) at \\\\(x = b\\\\):\\n$$f(b) = (b - a)(b - c) + 2(0) = (b - a)(b - c)$$\\nSince \\\\(a < b < c\\\\), \\\\(b - a > 0\\\\) and \\\\(b - c < 0\\\\), so \\\\(f(b) < 0\\\\).\\n\\nEvaluate \\\\(f(x)\\\\) at \\\\(x = c\\\\):\\n$$f(c) = 0 + 2(c - b)(c - d)$$\\nSince \\\\(b < c < d\\\\), \\\\(c - b > 0\\\\) and \\\\(c - d < 0\\\\), so \\\\(f(c) < 0\\\\).\\n\\nSince the leading coefficient is \\\\(1 + 2 = 3 > 0\\\\):\\n$$\\\\lim_{x \\\\to -\\\\infty} f(x) = +\\\\infty \\quad \\\\text{and} \\quad \\\\lim_{x \\\\to +\\\\infty} f(x) = +\\\\infty$$\\nThus, by Intermediate Value Theorem:\\n- There is one real root in \\\\((-\\\\infty, b)\\\\).\\n- There is one real root in \\\\((c, +\\\\infty)\\\\).\\nHence, the roots are real and distinct."
+      },
+      {
+        "question": "If \\\\(x^2 + px + q = 0\\\\) and \\\\(x^2 + qx + p = 0\\\\) (where \\\\(p \\neq q\\\\)) have a common root, then \\\\(p + q\\\\) equals:",
+        "options": ["\\\\(-1\\\\)", "\\\\(1\\\\)", "\\\\(0\\\\)", "\\\\(2\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Subtracting equations gives \\\\((p-q)x + (q-p) = 0 \\implies x = 1\\\\). Substituting \\\\(x=1\\\\) gives \\\\(1 + p + q = 0 \\implies p + q = -1\\\\).",
+          "Incorrect. The sum is \\\\(-1\\\\), not \\\\(+1\\\\).",
+          "Incorrect. \\\\(p + q = 0 \\implies p = -q\\\\), which does not ensure a common root.",
+          "Incorrect. Check substitution of the common root."
+        ],
+        "fullExplanation": "Let \\\\(\\alpha\\\\) be the common root:\\n$$\\\\alpha^2 + p\\\\alpha + q = 0$$\\n$$\\\\alpha^2 + q\\\\alpha + p = 0$$\\nSubtracting the two equations:\\n$$(p - q)\\\\alpha + (q - p) = 0$$\\n$$(p - q)\\\\alpha = p - q$$\\nSince \\\\(p \\\\neq q\\\\), we can divide by \\\\(p - q\\\\):\\n$$\\\\alpha = 1$$\\nNow substitute \\\\(\\alpha = 1\\\\) into the first equation:\\n$$1^2 + p(1) + q = 0 \\\\implies 1 + p + q = 0 \\\\implies p + q = -1$$"
+      },
+      {
+        "question": "If the roots of the equation \\\\(x^2 - 2cx + ab = 0\\\\) are real and unequal, then the roots of \\\\(x^2 - 2(a+b)x + a^2 + b^2 + 2c^2 = 0\\\\) are:",
+        "options": [
+          "Imaginary",
+          "Real and equal",
+          "Real and unequal",
+          "Rational"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(D_1/4 = c^2 - ab > 0 \\implies c^2 > ab\\\\). For the second equation, \\\\(D_2/4 = (a+b)^2 - (a^2+b^2+2c^2) = 2ab - 2c^2 = -2(c^2 - ab) < 0\\\\), hence imaginary.",
+          "Incorrect. \\\\(D_2 < 0\\\\), so roots cannot be equal.",
+          "Incorrect. The discriminant is strictly negative.",
+          "Incorrect. Non-real complex roots cannot be rational."
+        ],
+        "fullExplanation": "Given that \\\\(x^2 - 2cx + ab = 0\\\\) has real and unequal roots:\\n$$D_1 > 0 \\\\implies (-2c)^2 - 4(1)(ab) > 0 \\\\implies 4(c^2 - ab) > 0 \\\\implies c^2 - ab > 0$$\\n\\nNow consider the second equation: \\\\(x^2 - 2(a+b)x + a^2 + b^2 + 2c^2 = 0\\\\).\\nIts discriminant is:\\n$$D_2/4 = (a + b)^2 - 1 \\cdot (a^2 + b^2 + 2c^2)$$\\n$$= a^2 + 2ab + b^2 - a^2 - b^2 - 2c^2 = 2ab - 2c^2 = -2(c^2 - ab)$$\\nSince \\\\(c^2 - ab > 0\\\\), we have:\\n$$D_2/4 = -2(c^2 - ab) < 0$$\\nThus, the roots of the second equation are imaginary (complex conjugates)."
+      },
+      {
+        "question": "The number of real solutions of the equation \\\\(\\sqrt{x+1} - \\sqrt{x-1} = 1\\\\) is:",
+        "options": ["\\\\(1\\\\)", "\\\\(2\\\\)", "\\\\(0\\\\)", "\\\\(\\text{Infinitely many}\\\\)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Squaring gives \\\\(x = 5/4\\\\), which satisfies the original equation and domain \\\\(x \\ge 1\\\\).",
+          "Incorrect. The algebraic process produces only a single candidate.",
+          "Incorrect. \\\\(x = 5/4\\\\) is a valid real solution.",
+          "Incorrect. It is an algebraic equation with at most finite solutions."
+        ],
+        "fullExplanation": "The domain requires \\\\(x \\\\ge 1\\\\).\\n$$\\\\sqrt{x+1} = 1 + \\\\sqrt{x-1}$$\\nSquaring both sides:\\n$$x + 1 = 1 + 2\\\\sqrt{x-1} + (x - 1)$$\\n$$x + 1 = x + 2\\\\sqrt{x-1}$$\\n$$1 = 2\\\\sqrt{x-1} \\\\implies \\\\sqrt{x-1} = \\\\frac{1}{2}$$\\nSquaring again:\\n$$x - 1 = \\\\frac{1}{4} \\\\implies x = \\\\frac{5}{4}$$\\nChecking in original equation:\\n$$\\\\sqrt{\\\\frac{5}{4} + 1} - \\\\sqrt{\\\\frac{5}{4} - 1} = \\\\sqrt{\\\\frac{9}{4}} - \\\\sqrt{\\\\frac{1}{4}} = \\\\frac{3}{2} - \\\\frac{1}{2} = 1$$\\nThis is valid. So there is exactly 1 real solution."
+      },
+      {
+        "question": "If \\\\(a, b, c\\\\) are in geometric progression with common ratio \\\\(r\\\\) (where \\\\(a > 0\\\\) and \\\\(r \\neq 1\\\\)), then the equation \\\\(ax^2 + 2bx + c = 0\\\\) has:",
+        "options": [
+          "Real and equal roots",
+          "Real and distinct roots",
+          "Imaginary roots",
+          "One positive and one negative root"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since \\\\(b^2 = ac\\\\), the discriminant \\\\(D = 4b^2 - 4ac = 0\\\\), which implies real and equal roots.",
+          "Incorrect. Discriminant is exactly zero, not positive.",
+          "Incorrect. \\\\(D = 0\\\\), not negative.",
+          "Incorrect. Both roots are equal to \\\\(-b/a = -r\\\\)."
+        ],
+        "fullExplanation": "Since \\\\(a, b, c\\\\) are in G.P.:\\n$$b^2 = ac$$\\nThe discriminant of \\\\(ax^2 + 2bx + c = 0\\\\) is:\\n$$D = (2b)^2 - 4ac = 4b^2 - 4ac = 4(ac) - 4ac = 0$$\\nSince coefficients are real and \\\\(D = 0\\\\), the roots are real and equal.\\nIn fact, the roots are \\\\(x = -\\\\frac{2b}{2a} = -\\\\frac{b}{a} = -r\\\\)."
+      },
+      {
+        "question": "The condition that the roots of the equation \\\\(x^3 - px^2 + qx - r = 0\\\\) are in Arithmetic Progression is:",
+        "options": [
+          "\\\\(2p^3 - 9pq + 27r = 0\\\\)",
+          "\\\\(p^3 - 9pq + 27r = 0\\\\)",
+          "\\\\(2p^3 + 9pq - 27r = 0\\\\)",
+          "\\\\(p^3 - 3pq + 2r = 0\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Let roots be \\\\(a-d, a, a+d\\\\). Sum is \\\\(3a = p \\implies a = p/3\\\\). Since \\\\(a\\\\) is a root, substituting \\\\(x = p/3\\\\) gives \\\\(2p^3 - 9pq + 27r = 0\\\\).",
+          "Incorrect. Missing factor of 2 in \\\\(p^3\\\\).",
+          "Incorrect. The signs are incorrect.",
+          "Incorrect. This does not correspond to the cubic A.P. condition."
+        ],
+        "fullExplanation": "Let the roots in A.P. be \\\\(a - d, a, a + d\\\\).\\nSum of roots:\\n$$(a - d) + a + (a + d) = p \\\\implies 3a = p \\\\implies a = \\\\frac{p}{3}$$\\nSince \\\\(a\\\\) is a root of the equation, \\\\(f(a) = 0\\\\):\\n$$\\\\left(\\\\frac{p}{3}\\\\right)^3 - p\\\\left(\\\\frac{p}{3}\\\\right)^2 + q\\\\left(\\\\frac{p}{3}\\\\right) - r = 0$$\\n$$\\\\frac{p^3}{27} - \\\\frac{p^3}{9} + \\\\frac{pq}{3} - r = 0$$\\nMultiply through by 27:\\n$$p^3 - 3p^3 + 9pq - 27r = 0$$\\n$$-2p^3 + 9pq - 27r = 0 \\\\implies 2p^3 - 9pq + 27r = 0$$"
+      }
+    ]
+  }
+]

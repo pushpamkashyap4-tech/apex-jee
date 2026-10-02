@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Dual Nature of Matter & Radiation",
+    "flashcards": [
+      {
+        "front": "What is a photon and how do its speed and frequency behave across different media?",
+        "back": "A photon is a discrete packet of radiant energy that travels in a straight line. Its velocity varies across different media, but its frequency remains constant regardless of the medium."
+      },
+      {
+        "front": "What is the linear momentum p of a photon of wavelength λ?",
+        "back": "p = h / λ = E / c."
+      },
+      {
+        "front": "Which optical phenomena support the particle nature of light, and which support the wave nature?",
+        "back": "Particle nature: photoelectric effect, emission and absorption of radiation. Wave nature: interference, diffraction, and polarization."
+      },
+      {
+        "front": "Define the work function (Φ₀) of a metal.",
+        "back": "The work function is the minimum energy required to eject a free electron from a metal surface with zero kinetic energy (KE = 0). It is conventionally measured in electron-volts (eV)."
+      },
+      {
+        "front": "What is the exact conversion factor between 1 electron-volt (eV) and joules (J)?",
+        "back": "1 eV = 1.6 × 10⁻¹⁹ J."
+      },
+      {
+        "front": "Define threshold frequency (ν₀) in the photoelectric effect.",
+        "back": "The minimum frequency of incident radiation capable of ejecting photoelectrons from a given metal surface. If the incident frequency ν < ν₀, no photoelectric emission occurs regardless of intensity."
+      },
+      {
+        "front": "Define threshold wavelength (λ₀) and state its relationship to the work function Φ₀.",
+        "back": "The maximum wavelength of incident radiation that can cause photoelectric emission: λ₀ = hc / Φ₀."
+      },
+      {
+        "front": "What is stopping potential (V₀ or V_s) in a photoelectric experiment?",
+        "back": "The minimum retarding (negative) potential applied to the anode of a photoelectric tube that completely halts the most energetic photoelectrons, reducing the photoelectric current to zero."
+      },
+      {
+        "front": "How does stopping potential (V₀) depend on the frequency (ν) of incident light?",
+        "back": "Stopping potential increases linearly with the frequency of incident light: eV₀ = hν - Φ₀, so V₀ ∝ ν."
+      },
+      {
+        "front": "State Einstein's photoelectric equation relating kinetic energy, incident frequency, and threshold frequency.",
+        "back": "(1/2)mv_max² = hν - hν₀ = h(ν - ν₀)."
+      },
+      {
+        "front": "What is the relation between maximum kinetic energy of emitted photoelectrons and stopping potential V₀?",
+        "back": "KE_max = (1/2)mv_max² = eV₀."
+      },
+      {
+        "front": "State de Broglie's hypothesis and the formula for the wavelength of a moving material particle.",
+        "back": "A moving material particle exhibits wave properties. Its de Broglie wavelength is given by λ = h / (mv) = h / p."
+      },
+      {
+        "front": "What is the de Broglie wavelength of a particle of mass m in terms of its kinetic energy E?",
+        "back": "λ = h / √(2mE)."
+      },
+      {
+        "front": "What is the de Broglie wavelength of a particle of mass m in thermal equilibrium at temperature T?",
+        "back": "λ = h / √(3mkT), where k is Boltzmann's constant."
+      },
+      {
+        "front": "What is the simplified formula for the de Broglie wavelength of an electron accelerated through a potential difference V in angstroms (Å)?",
+        "back": "λ = 12.27 / √V Å."
+      },
+      {
+        "front": "What is the de Broglie wavelength of an electron accelerated through V volts expressed in nanometers (nm)?",
+        "back": "λ = 1.227 / √V nm."
+      },
+      {
+        "front": "How does the photoelectric saturation current depend on the intensity of incident radiation (for ν > ν₀)?",
+        "back": "Photoelectric saturation current is directly proportional to the intensity of incident light, as intensity determines the number of photons striking the surface per unit time."
+      },
+      {
+        "front": "Does the maximum kinetic energy (or stopping potential) of emitted photoelectrons depend on incident light intensity?",
+        "back": "No, KE_max and stopping potential depend strictly on the frequency (or wavelength) of incident radiation and the metal work function, not on intensity."
+      },
+      {
+        "front": "What is the slope of the graph plotted between stopping potential (V₀) on the y-axis and incident frequency (ν) on the x-axis?",
+        "back": "Slope = h / e, which is a universal constant independent of the nature of the metal."
+      },
+      {
+        "front": "What is the de Broglie wavelength of a photon of frequency ν?",
+        "back": "λ = c / ν = h / p."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is the de Broglie wavelength of an electron accelerated from rest through a potential difference of 100 V?",
+        "options": [
+          "1.227 Å",
+          "12.27 Å",
+          "0.1227 Å",
+          "122.7 Å"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: λ = 12.27 / √V Å = 12.27 / √100 = 1.227 Å.",
+          "12.27 Å corresponds to an accelerating potential of 1 V.",
+          "0.1227 Å corresponds to an accelerating potential of 10,000 V.",
+          "122.7 Å is an incorrect calculation."
+        ],
+        "fullExplanation": "Using the de Broglie formula for an electron accelerated through potential V: λ = 12.27 / √V Å. Substituting V = 100 V gives λ = 12.27 / 10 = 1.227 Å (or 0.1227 nm)."
+      },
+      {
+        "question": "When monochromatic light travels from vacuum into a glass medium of refractive index 1.5, what happens to the energy of each photon?",
+        "options": [
+          "It decreases by a factor of 1.5",
+          "It increases by a factor of 1.5",
+          "It remains unchanged",
+          "It becomes zero"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Speed and wavelength decrease, not energy.",
+          "Energy does not increase in a medium.",
+          "Correct: photon energy is E = hν. Since frequency ν does not change when transitioning between media, photon energy remains invariant.",
+          "Photons continue to propagate through transparent glass."
+        ],
+        "fullExplanation": "As stated in the handbook, the frequency of a photon is independent of the medium. Because energy E = hν depends only on frequency, the photon energy remains completely unchanged across different media."
+      },
+      {
+        "question": "A photosensitive metallic surface with work function 2.0 eV is illuminated by photons of energy 3.5 eV. What is the stopping potential?",
+        "options": [
+          "1.5 V",
+          "5.5 V",
+          "2.0 V",
+          "3.5 V"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: eV₀ = E - Φ₀ = 3.5 eV - 2.0 eV = 1.5 eV, so V₀ = 1.5 V.",
+          "5.5 V is obtained by incorrectly adding the energies.",
+          "2.0 V is the work function in volts.",
+          "3.5 V is the incident photon energy in volts."
+        ],
+        "fullExplanation": "From Einstein's photoelectric equation, KE_max = E - Φ₀ = eV₀. Substituting E = 3.5 eV and Φ₀ = 2.0 eV gives eV₀ = 1.5 eV, which means V₀ = 1.5 V."
+      },
+      {
+        "question": "If the kinetic energy of a free material particle of mass m is doubled, its de Broglie wavelength changes by a factor of:",
+        "options": [
+          "2",
+          "√2",
+          "1 / √2",
+          "1 / 2"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "The wavelength decreases with increasing energy; it does not double.",
+          "√2 is an incorrect inverse relation.",
+          "Correct: λ = h / √(2mE). If E becomes 2E, λ' = h / √(2m(2E)) = λ / √2.",
+          "1/2 would occur if energy were quadrupled."
+        ],
+        "fullExplanation": "The de Broglie wavelength of a particle is given by λ = h / √(2mE). Since λ is inversely proportional to √E, doubling E scales the wavelength by 1 / √2."
+      },
+      {
+        "question": "In a photoelectric experiment, a plot of stopping potential V₀ versus incident light frequency ν yields a straight line whose slope equals:",
+        "options": [
+          "h",
+          "h / e",
+          "e / h",
+          "Φ₀ / e"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "h is the slope of the KE_max vs frequency graph, not stopping potential.",
+          "Correct: rearranging eV₀ = hν - Φ₀ gives V₀ = (h/e)ν - (Φ₀/e), so the slope is h/e.",
+          "e/h is the inverse of the slope.",
+          "Φ₀/e is the magnitude of the negative intercept on the potential axis."
+        ],
+        "fullExplanation": "Einstein's photoelectric equation in terms of stopping potential is V₀ = (h/e)ν - (Φ₀/e). Comparing this with the linear equation y = mx + c reveals that the slope m = h / e."
+      },
+      {
+        "question": "A beam of light has a wavelength of 400 nm. What is the linear momentum of each photon in the beam? (Take h = 6.63 × 10⁻³⁴ J·s)",
+        "options": [
+          "1.66 × 10⁻²⁷ kg·m/s",
+          "2.65 × 10⁻¹⁹ kg·m/s",
+          "4.97 × 10⁻¹⁹ kg·m/s",
+          "3.31 × 10⁻²⁷ kg·m/s"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: p = h / λ = (6.63 × 10⁻³⁴) / (400 × 10⁻⁹) = 1.6575 × 10⁻²⁷ ≈ 1.66 × 10⁻²⁷ kg·m/s.",
+          "This is approximately the energy of the photon in Joules, not momentum.",
+          "Incorrect calculation.",
+          "Twice the correct value."
+        ],
+        "fullExplanation": "The momentum of a photon is given by p = h / λ. Substituting h = 6.63 × 10⁻³⁴ J·s and λ = 400 × 10⁻⁹ m gives p = (6.63 × 10⁻³⁴) / (4 × 10⁻⁷) ≈ 1.66 × 10⁻²⁷ kg·m/s."
+      },
+      {
+        "question": "If the accelerating potential difference of an electron microscope is increased from 25 V to 100 V, the resolving power of the microscope:",
+        "options": [
+          "Is halved",
+          "Is doubled",
+          "Increases by a factor of 4",
+          "Remains unchanged"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Resolving power increases as wavelength decreases; it does not halve.",
+          "Correct: resolving power is inversely proportional to λ (RP ∝ 1/λ ∝ √V). Since V increases by a factor of 4, √V doubles, doubling the resolving power.",
+          "Resolving power depends on √V, not V.",
+          "Resolving power is dependent on the accelerating voltage."
+        ],
+        "fullExplanation": "The resolving power of an electron microscope is inversely proportional to the electron wavelength: RP ∝ 1/λ. Since λ ∝ 1/√V, RP ∝ √V. Increasing V from 25 V to 100 V increases V by a factor of 4, so RP increases by √4 = 2."
+      },
+      {
+        "question": "An electron, a proton, and an α-particle have the same kinetic energy. Which one has the shortest de Broglie wavelength?",
+        "options": [
+          "Electron",
+          "Proton",
+          "α-particle",
+          "All have the same wavelength"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "The electron has the smallest mass and therefore the longest wavelength for a given kinetic energy.",
+          "The proton is less massive than the α-particle.",
+          "Correct: λ = h / √(2mE). For equal kinetic energy E, λ ∝ 1/√m. The α-particle has the greatest mass, yielding the shortest wavelength.",
+          "Wavelength depends inversely on the square root of particle mass."
+        ],
+        "fullExplanation": "From λ = h / √(2mE), for particles possessing identical kinetic energy, the de Broglie wavelength is inversely proportional to the square root of their mass. Since m_α > m_proton > m_electron, the α-particle has the shortest de Broglie wavelength."
+      },
+      {
+        "question": "If the intensity of monochromatic light incident on a photosensitive metal plate is tripled while keeping its frequency constant above threshold, what happens to the maximum kinetic energy of the photoelectrons?",
+        "options": [
+          "It is tripled",
+          "It increases by a factor of 9",
+          "It remains completely unchanged",
+          "It becomes one-third"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Saturation current triples, not kinetic energy.",
+          "Incorrect quadratic scaling.",
+          "Correct: KE_max depends only on photon energy (hν) and work function (Φ₀), which are both constant.",
+          "Intensity does not diminish electron kinetic energy."
+        ],
+        "fullExplanation": "Maximum kinetic energy is governed by KE_max = hν - Φ₀. Increasing the intensity simply increases the number of incident photons and emitted photoelectrons per second, leaving the energy of individual photons and KE_max completely unchanged."
+      },
+      {
+        "question": "The work function of a certain metal is 4.14 eV. What is the threshold wavelength λ₀ for this metal? (Take hc ≈ 1242 eV·nm)",
+        "options": [
+          "300 nm",
+          "400 nm",
+          "500 nm",
+          "600 nm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: λ₀ = hc / Φ₀ = 1242 eV·nm / 4.14 eV = 300 nm.",
+          "400 nm corresponds to a work function of ~3.1 eV.",
+          "500 nm corresponds to ~2.5 eV.",
+          "600 nm corresponds to ~2.07 eV."
+        ],
+        "fullExplanation": "The threshold wavelength is given by λ₀ = hc / Φ₀. Substituting hc = 1242 eV·nm and Φ₀ = 4.14 eV gives λ₀ = 1242 / 4.14 = 300 nm."
+      },
+      {
+        "question": "A proton and an α-particle are accelerated from rest through the same potential difference V. What is the ratio of their de Broglie wavelengths (λ_p / λ_α)?",
+        "options": [
+          "2√2",
+          "√2",
+          "1 / (2√2)",
+          "4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: λ = h / √(2mqV). Thus, λ_p / λ_α = √[(m_α q_α) / (m_p q_p)] = √[(4m_p × 2e) / (m_p × e)] = √8 = 2√2.",
+          "√2 misses the factor of charge ratio.",
+          "This is the reciprocal ratio (λ_α / λ_p).",
+          "4 ignores the square root dependence on mass-charge product."
+        ],
+        "fullExplanation": "For a charged particle accelerated through potential V, kinetic energy is E = qV, so λ = h / √(2mqV). Thus, λ_p / λ_α = √[(m_α q_α) / (m_p q_p)]. Because m_α ≈ 4m_p and q_α = 2q_p, we obtain λ_p / λ_α = √[(4 × 2) / (1 × 1)] = √8 = 2√2."
+      },
+      {
+        "question": "What is the de Broglie wavelength associated with a particle of mass m in thermal equilibrium at absolute temperature T?",
+        "options": [
+          "h / √(2mkT)",
+          "h / √(3mkT)",
+          "h / (3mkT)",
+          "√(3mkT) / h"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "√(2mkT) is incorrect for three-dimensional thermal motion.",
+          "Correct: the average kinetic energy of a thermal particle is (3/2)kT, leading to λ = h / √(2m(3/2 kT)) = h / √(3mkT).",
+          "Missing the square root.",
+          "Inverted expression."
+        ],
+        "fullExplanation": "As explicitly specified in the handbook: de Broglie wavelength of a particle in terms of temperature T is λ = h / √(3mkT)."
+      },
+      {
+        "question": "If incident light of frequency ν = 2ν₀ strikes a metal surface of threshold frequency ν₀, the maximum speed of emitted photoelectrons is v₁. When the incident frequency is increased to 5ν₀, the maximum speed becomes v₂. What is the ratio v₁ / v₂?",
+        "options": [
+          "1 / 2",
+          "1 / 4",
+          "1 / √2",
+          "2 / 5"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: KE₁ = h(2ν₀ - ν₀) = hν₀, so v₁ ∝ √(hν₀). KE₂ = h(5ν₀ - ν₀) = 4hν₀, so v₂ ∝ √(4hν₀) = 2√(hν₀). Thus, v₁ / v₂ = 1 / 2.",
+          "1/4 is the ratio of kinetic energies, not speeds.",
+          "Incorrect ratio.",
+          "2/5 is the ratio of incident frequencies."
+        ],
+        "fullExplanation": "From Einstein's equation, (1/2)mv_max² = h(ν - ν₀). For ν = 2ν₀, (1/2)mv₁² = hν₀. For ν = 5ν₀, (1/2)mv₂² = 4hν₀. Dividing the two gives (v₁ / v₂)² = 1/4, so v₁ / v₂ = 1 / 2."
+      },
+      {
+        "question": "Which of the following statements regarding the photoelectric effect is INCORRECT according to experimental observations?",
+        "options": [
+          "There is no observable time lag between incidence of radiation and emission of photoelectrons.",
+          "Photoelectric emission occurs for all frequencies of light provided the intensity is sufficiently high.",
+          "Stopping potential is independent of the intensity of incident radiation.",
+          "The maximum kinetic energy of photoelectrons increases linearly with incident frequency above threshold."
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This statement is correct: emission is virtually instantaneous (~10⁻⁹ s).",
+          "Correct choice (statement is false): emission cannot occur below the threshold frequency ν₀, no matter how high the intensity is.",
+          "This statement is correct: stopping potential depends only on frequency and work function.",
+          "This statement is correct: KE_max = hν - Φ₀ is a linear relation."
+        ],
+        "fullExplanation": "According to the laws of photoelectric emission, if the incident frequency is below the threshold frequency (ν < ν₀), no electrons are emitted from the metal, regardless of how intense or long-lasting the illumination is."
+      },
+      {
+        "question": "What is the momentum of a photon of radiant energy 6.63 × 10⁻¹⁹ J? (Take c = 3 × 10⁸ m/s)",
+        "options": [
+          "2.21 × 10⁻²⁷ kg·m/s",
+          "1.99 × 10⁻¹⁰ kg·m/s",
+          "4.42 × 10⁻²⁷ kg·m/s",
+          "6.63 × 10⁻²⁷ kg·m/s"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: p = E / c = (6.63 × 10⁻¹⁹) / (3 × 10⁸) = 2.21 × 10⁻²⁷ kg·m/s.",
+          "Obtained by multiplying E by c instead of dividing.",
+          "Incorrect arithmetic.",
+          "Incorrect calculation."
+        ],
+        "fullExplanation": "The momentum of a photon is related to its energy by p = E / c. Substituting E = 6.63 × 10⁻¹⁹ J and c = 3 × 10⁸ m/s gives p = (6.63 × 10⁻¹⁹) / (3 × 10⁸) = 2.21 × 10⁻²⁷ kg·m/s."
+      },
+      {
+        "question": "An electron is accelerated from rest through a potential difference of V volts. Its de Broglie wavelength is 0.1227 nm. What is the value of V?",
+        "options": [
+          "10 V",
+          "100 V",
+          "1000 V",
+          "50 V"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "For 10 V, λ = 1.227 / √10 ≈ 0.388 nm.",
+          "Correct: λ = 1.227 / √V nm => 0.1227 = 1.227 / √V => √V = 10 => V = 100 V.",
+          "For 1000 V, λ ≈ 0.0388 nm.",
+          "Incorrect calculation."
+        ],
+        "fullExplanation": "Using the relation λ = 1.227 / √V nm: √V = 1.227 / 0.1227 = 10. Squaring both sides yields V = 100 V."
+      },
+      {
+        "question": "In a photoelectric experiment, when light of wavelength 400 nm is replaced by light of wavelength 300 nm, what happens to the stopping potential?",
+        "options": [
+          "It decreases",
+          "It increases",
+          "It remains unchanged",
+          "It drops to zero"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Stopping potential increases with shorter wavelength because photon energy increases.",
+          "Correct: E = hc / λ. Decreasing λ increases photon energy, which increases the maximum kinetic energy and hence the stopping potential V₀.",
+          "Stopping potential is wavelength-dependent.",
+          "Stopping potential cannot drop to zero if photon energy increases."
+        ],
+        "fullExplanation": "Since photon energy is inversely proportional to wavelength (E = hc/λ), decreasing the incident wavelength from 400 nm to 300 nm increases photon energy. Consequently, KE_max = hc/λ - Φ₀ increases, which directly raises the required stopping potential V₀."
+      },
+      {
+        "question": "A photon and an electron have the exact same wavelength λ. How do their kinetic energies compare?",
+        "options": [
+          "The photon and electron have the same kinetic energy",
+          "The kinetic energy of the photon is greater than that of the electron",
+          "The kinetic energy of the electron is greater than that of the photon",
+          "Cannot be determined without knowing the value of λ"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "They have identical momentum (p = h/λ), but different energies.",
+          "Correct: for the photon, E_ph = pc. For the electron, KE_el = p² / (2m) = p(v/2). Since v < c for any particle with mass, E_ph > KE_el.",
+          "The electron's kinetic energy is smaller because its speed is strictly less than c.",
+          "This relation holds generally for any non-relativistic wavelength."
+        ],
+        "fullExplanation": "Both have momentum p = h/λ. The photon has energy E_ph = pc. The electron has kinetic energy KE_el = p² / (2m) = (p/2) × (p/m) = (p/2) × v. Since the speed of the electron v < c, KE_el = pc × (v / 2c) < pc. Therefore, the photon possesses greater energy."
+      },
+      {
+        "question": "If the work function of a metal is Φ₀ and incident light has frequency ν such that hν = 3Φ₀, what is the maximum kinetic energy of the photoelectrons?",
+        "options": [
+          "Φ₀",
+          "2Φ₀",
+          "3Φ₀",
+          "4Φ₀"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect subtraction.",
+          "Correct: KE_max = hν - Φ₀ = 3Φ₀ - Φ₀ = 2Φ₀.",
+          "3Φ₀ is the total incident photon energy.",
+          "Incorrect addition."
+        ],
+        "fullExplanation": "By Einstein's photoelectric equation: KE_max = hν - Φ₀. Substituting hν = 3Φ₀ gives KE_max = 3Φ₀ - Φ₀ = 2Φ₀."
+      },
+      {
+        "question": "Which of the following particles moving with the same velocity v has the largest de Broglie wavelength?",
+        "options": [
+          "Neutron",
+          "Proton",
+          "Electron",
+          "α-particle"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Neutron has significantly more mass than an electron.",
+          "Proton is ~1836 times more massive than an electron.",
+          "Correct: λ = h / (mv). For constant velocity v, λ ∝ 1/m. The electron has the smallest mass, giving it the longest wavelength.",
+          "The α-particle has the largest mass and therefore the shortest wavelength."
+        ],
+        "fullExplanation": "The de Broglie wavelength is given by λ = h / (mv). When all particles travel at the same velocity, λ is inversely proportional to mass m. The electron, being the lightest particle among the options, has the largest de Broglie wavelength."
+      }
+    ]
+  },
+  {
+    "chapterName": "Atomic Physics",
+    "flashcards": [
+      {
+        "front": "Define impact parameter in Rutherford α-particle scattering.",
+        "back": "The perpendicular distance of the initial velocity vector of the α-particle from the center of the target nucleus."
+      },
+      {
+        "front": "Define the distance of closest approach in head-on α-particle scattering.",
+        "back": "The minimum distance between the center of the nucleus and an approaching α-particle where its initial kinetic energy is entirely converted into electrostatic potential energy."
+      },
+      {
+        "front": "What is the Bohr radius (a₀)?",
+        "back": "The radius of the lowest stationary orbit (n = 1) of the hydrogen atom, approximately equal to 0.53 Å (0.053 nm)."
+      },
+      {
+        "front": "Define the ground state of an atom according to Bohr's model.",
+        "back": "The lowest stable energy state of an atom in which the electron revolves in the orbit of smallest radius (the Bohr radius a₀)."
+      },
+      {
+        "front": "Define ionization energy of a hydrogen atom.",
+        "back": "The minimum energy required to completely remove an electron from the ground state of the atom to infinity (13.6 eV for hydrogen)."
+      },
+      {
+        "front": "State Bohr's first postulate relating centripetal force and electrostatic attraction.",
+        "back": "m v² / r = e² / (4πε₀ r²)."
+      },
+      {
+        "front": "State Bohr's second postulate of angular momentum quantization.",
+        "back": "L = mvr = nh / (2π), where n = 1, 2, 3, ..."
+      },
+      {
+        "front": "State Bohr's third postulate (Bohr's frequency condition).",
+        "back": "E_i - E_f = hν = hc / λ, representing energy conservation during an atomic radiative transition."
+      },
+      {
+        "front": "What is the formula for the radius r_n of the n-th orbit of hydrogen in terms of fundamental constants?",
+        "back": "r_n = (ε₀ h² n²) / (π m e²)."
+      },
+      {
+        "front": "How does the orbital radius r_n of a hydrogen atom depend on the principal quantum number n?",
+        "back": "r_n ∝ n²."
+      },
+      {
+        "front": "What is the formula for the orbital speed v_n of an electron in the n-th orbit of hydrogen?",
+        "back": "v_n = nh / (2π m r_n) = e² / (2 ε₀ n h)."
+      },
+      {
+        "front": "How does the orbital speed v_n of an electron depend on the principal quantum number n?",
+        "back": "v_n ∝ 1 / n."
+      },
+      {
+        "front": "What is the formula for the total energy E_n of an electron in the n-th orbit of hydrogen in eV?",
+        "back": "E_n = - 13.6 / n² eV."
+      },
+      {
+        "front": "What are the relationships connecting Total Energy (TE), Kinetic Energy (KE), and Potential Energy (PE) in Bohr's model?",
+        "back": "TE = - KE, and PE = 2 × TE = - 2 × KE."
+      },
+      {
+        "front": "State Rydberg's formula for the wave number (1/λ) of spectral transitions in hydrogen.",
+        "back": "1 / λ = R [1/n₁² - 1/n₂²], where n₂ > n₁."
+      },
+      {
+        "front": "Write the theoretical expression for Rydberg's constant R in terms of fundamental constants.",
+        "back": "R = (m e⁴) / (8 ε₀² h³ c)."
+      },
+      {
+        "front": "Which spectral series of hydrogen lies in the ultraviolet region, and what are its transition quantum numbers?",
+        "back": "Lyman series: n₁ = 1, and n₂ = 2, 3, 4, ..."
+      },
+      {
+        "front": "Which spectral series of hydrogen lies in the visible region of the spectrum?",
+        "back": "Balmer series: n₁ = 2, and n₂ = 3, 4, 5, ..."
+      },
+      {
+        "front": "Identify the spectral series corresponding to n₁ = 3, n₁ = 4, and n₁ = 5 in hydrogen.",
+        "back": "n₁ = 3: Paschen series (Infrared); n₁ = 4: Brackett series (Infrared); n₁ = 5: Pfund series (Far-Infrared)."
+      },
+      {
+        "front": "What is the total number of spectral lines emitted when electrons in a sample of hydrogen atoms de-excite from level n to the ground state?",
+        "back": "N = n(n - 1) / 2."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is the ratio of the radius of the second Bohr orbit (n = 2) to that of the first Bohr orbit (n = 1) in a hydrogen atom?",
+        "options": [
+          "2 : 1",
+          "4 : 1",
+          "8 : 1",
+          "1 : 2"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "2 : 1 assumes linear dependence on n.",
+          "Correct: r_n ∝ n², so r₂ / r₁ = 2² / 1² = 4 : 1.",
+          "8 : 1 assumes cubic dependence on n.",
+          "1 : 2 is an inverse relation."
+        ],
+        "fullExplanation": "According to Bohr's model, the radius of the n-th orbit is given by r_n = (ε₀ h² n²) / (π m e²), so r_n ∝ n². Therefore, r₂ / r₁ = 2² / 1² = 4 / 1 = 4 : 1."
+      },
+      {
+        "question": "An electron in a hydrogen atom is in its ground state with total energy -13.6 eV. What are its kinetic energy and potential energy respectively?",
+        "options": [
+          "+13.6 eV and -27.2 eV",
+          "-13.6 eV and +27.2 eV",
+          "+6.8 eV and -13.6 eV",
+          "+27.2 eV and -54.4 eV"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: KE = -Total Energy = -(-13.6) = +13.6 eV; PE = 2 × Total Energy = 2 × (-13.6) = -27.2 eV.",
+          "Kinetic energy must always be positive.",
+          "Incorrect values.",
+          "Twice the actual values."
+        ],
+        "fullExplanation": "As given in the handbook, Total Energy = -Kinetic Energy, and Potential Energy = 2 × Total Energy. Therefore, KE = -(-13.6 eV) = +13.6 eV, and PE = 2 × (-13.6 eV) = -27.2 eV."
+      },
+      {
+        "question": "What is the orbital speed of an electron in the n = 3 orbit of a hydrogen atom compared to its speed v₁ in the ground state?",
+        "options": [
+          "3 v₁",
+          "v₁ / 3",
+          "v₁ / 9",
+          "9 v₁"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Speed decreases with quantum number n; it does not increase.",
+          "Correct: v_n ∝ 1/n, so for n = 3, v₃ = v₁ / 3.",
+          "v₁ / 9 assumes inverse-square dependence, which applies to energy rather than speed.",
+          "Incorrect scaling."
+        ],
+        "fullExplanation": "Orbital speed is given by v_n = nh / (2π m r_n). Since r_n ∝ n², this yields v_n ∝ 1/n. Therefore, the speed in the n = 3 orbit is v₃ = v₁ / 3."
+      },
+      {
+        "question": "What is the energy required to excite an electron in a hydrogen atom from the ground state (n = 1) to the first excited state (n = 2)?",
+        "options": [
+          "3.4 eV",
+          "10.2 eV",
+          "13.6 eV",
+          "1.51 eV"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "-3.4 eV is the energy level of n = 2, not the transition energy difference.",
+          "Correct: ΔE = E₂ - E₁ = (-13.6 / 4) - (-13.6 / 1) = -3.4 - (-13.6) = +10.2 eV.",
+          "13.6 eV is the ionization energy from ground state to infinity.",
+          "1.51 eV is the magnitude of the n = 3 energy level."
+        ],
+        "fullExplanation": "The energy of the n-th orbit is E_n = -13.6 / n² eV. For n = 1, E₁ = -13.6 eV, and for n = 2, E₂ = -3.4 eV. The excitation energy needed is ΔE = E₂ - E₁ = -3.4 eV - (-13.6 eV) = 10.2 eV."
+      },
+      {
+        "question": "What is the orbital angular momentum of an electron revolving in the third Bohr orbit (n = 3) of a hydrogen atom?",
+        "options": [
+          "h / (2π)",
+          "3h / (2π)",
+          "3h / π",
+          "9h / (2π)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This is the angular momentum for the n = 1 ground state.",
+          "Correct: according to Bohr's quantization condition, L = nh / (2π) = 3h / (2π) = 1.5 h / π.",
+          "Missing the factor of 2 in the denominator.",
+          "Incorrect factor of n²."
+        ],
+        "fullExplanation": "Bohr's second postulate states that angular momentum is quantized according to L = nh / (2π). For the third orbit (n = 3), L = 3h / (2π)."
+      },
+      {
+        "question": "What is the ratio of the longest wavelength to the shortest wavelength in the Balmer series of hydrogen?",
+        "options": [
+          "9 : 5",
+          "5 : 9",
+          "4 : 3",
+          "3 : 1"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: longest wavelength (n₂ = 3) gives 1/λ_max = R(1/4 - 1/9) = 5R/36 => λ_max = 36/(5R). Shortest wavelength (n₂ = ∞) gives 1/λ_min = R(1/4 - 0) = R/4 => λ_min = 4/R. Ratio = (36/5R) / (4/R) = 9/5.",
+          "5 : 9 is the inverted ratio.",
+          "4 : 3 is the ratio for the Lyman series.",
+          "Incorrect value."
+        ],
+        "fullExplanation": "For the Balmer series (n₁ = 2), the longest wavelength occurs for transition n₂ = 3: 1/λ_max = R(1/4 - 1/9) = 5R / 36 => λ_max = 36 / (5R). The shortest wavelength occurs for n₂ = ∞: 1/λ_min = R(1/4 - 0) = R / 4 => λ_min = 4 / R. Thus, λ_max / λ_min = (36 / 5R) / (4 / R) = 36 / 20 = 9 / 5."
+      },
+      {
+        "question": "Which of the following spectral series of the hydrogen atom lies entirely in the ultraviolet region?",
+        "options": [
+          "Balmer series",
+          "Paschen series",
+          "Lyman series",
+          "Brackett series"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "The Balmer series lies in the visible region.",
+          "The Paschen series lies in the infrared region.",
+          "Correct: the Lyman series involves transitions ending at n₁ = 1 and lies entirely in the ultraviolet region.",
+          "The Brackett series lies in the infrared region."
+        ],
+        "fullExplanation": "As noted in the handbook, the Lyman series (transitions to n₁ = 1) emits the highest-energy photons in hydrogen, lying in the ultraviolet region."
+      },
+      {
+        "question": "How does the orbital frequency (revolutions per second) of an electron depend on the principal quantum number n in Bohr's model?",
+        "options": [
+          "Proportional to 1 / n",
+          "Proportional to 1 / n²",
+          "Proportional to 1 / n³",
+          "Proportional to n³"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Velocity is proportional to 1/n, but frequency also depends on circumference.",
+          "Energy difference and radius depend on n².",
+          "Correct: frequency f = v / (2πr). Since v ∝ 1/n and r ∝ n², f ∝ (1/n) / n² = 1/n³.",
+          "Frequency decreases with higher orbits; it does not increase."
+        ],
+        "fullExplanation": "The orbital frequency is given by f = v / (2πr). Substituting v_n ∝ 1/n and r_n ∝ n² yields f ∝ (1/n) / n² = 1/n³."
+      },
+      {
+        "question": "If an electron drops from the n = 4 state to the n = 1 state in a gas of atomic hydrogen, what is the maximum number of distinct spectral lines that can be observed?",
+        "options": [
+          "3",
+          "4",
+          "6",
+          "10"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "3 counts only direct downward transitions between consecutive levels.",
+          "4 is the quantum level number.",
+          "Correct: the total number of distinct emission lines is N = n(n - 1) / 2 = 4(3) / 2 = 6.",
+          "10 corresponds to de-excitation from n = 5."
+        ],
+        "fullExplanation": "The total number of possible emission lines resulting from de-excitation from principal quantum number n to the ground state is N = n(n - 1) / 2. For n = 4, N = 4 × 3 / 2 = 6 distinct lines."
+      },
+      {
+        "question": "What is the value of the impact parameter b in an α-particle scattering experiment for a head-on collision (scattering angle θ = 180°)?",
+        "options": [
+          "0",
+          "1 Å",
+          "Equal to the nuclear radius",
+          "Infinite"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: for a direct head-on collision, the trajectory line passes directly through the center of the nucleus, so the perpendicular distance b = 0.",
+          "Non-zero impact parameters produce smaller scattering angles.",
+          "The impact parameter is a geometric offset distance, not the physical size.",
+          "An infinite impact parameter results in zero deflection (θ = 0°)."
+        ],
+        "fullExplanation": "Impact parameter is the perpendicular distance between the initial velocity vector of the α-particle and the center of the nucleus. In a direct head-on collision, the path is aimed straight at the center, so b = 0, producing a rebound angle θ = 180°."
+      },
+      {
+        "question": "If the radius of the ground state orbit of hydrogen is 0.53 Å, what is the radius of the n = 3 orbit?",
+        "options": [
+          "1.59 Å",
+          "2.12 Å",
+          "4.77 Å",
+          "0.177 Å"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "1.59 Å is obtained by multiplying 0.53 by 3 instead of 3².",
+          "2.12 Å is the radius of the n = 2 orbit (0.53 × 4).",
+          "Correct: r₃ = 0.53 × 3² = 0.53 × 9 = 4.77 Å.",
+          "0.177 Å is obtained by dividing by 3."
+        ],
+        "fullExplanation": "Bohr's orbital radius formula gives r_n = a₀ n². For the n = 3 level, r₃ = 0.53 Å × 3² = 0.53 × 9 = 4.77 Å."
+      },
+      {
+        "question": "The energy of an electron in the n-th Bohr orbit of hydrogen is given by E_n = - (m e⁴) / (8 ε₀² h² n²). If the mass of the electron were doubled, the ground state ionization energy would:",
+        "options": [
+          "Be halved",
+          "Remain unchanged",
+          "Be doubled",
+          "Become four times as large"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Energy is directly proportional to mass, not inversely.",
+          "Energy depends linearly on the mass of the orbiting particle.",
+          "Correct: E_n ∝ m, so doubling the mass doubles the binding and ionization energies.",
+          "Four-fold increase would occur if mass were quadrupled."
+        ],
+        "fullExplanation": "From the energy expression E_n = - (m e⁴) / (8 ε₀² h² n²), total energy and hence ionization energy (E_ionization = -E₁) are directly proportional to electron mass m. Thus, doubling m doubles the ionization energy."
+      },
+      {
+        "question": "What is the wavelength of the series limit (shortest wavelength) of the Lyman series in terms of Rydberg's constant R?",
+        "options": [
+          "1 / R",
+          "R",
+          "4 / R",
+          "R / 4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: for Lyman limit, n₁ = 1 and n₂ = ∞. 1 / λ = R(1/1² - 1/∞) = R, so λ = 1 / R.",
+          "R is the wave number, not the wavelength.",
+          "4 / R is the series limit for the Balmer series.",
+          "Incorrect calculation."
+        ],
+        "fullExplanation": "The series limit corresponds to a transition from n₂ = ∞ to the base level n₁ = 1: 1 / λ = R [1/1² - 1/∞²] = R [1 - 0] = R. Taking the reciprocal gives λ = 1 / R."
+      },
+      {
+        "question": "Which transition in a hydrogen atom results in the absorption of a photon with the highest frequency?",
+        "options": [
+          "n = 1 to n = 2",
+          "n = 2 to n = 1",
+          "n = 1 to n = 4",
+          "n = 2 to n = 6"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "ΔE = 10.2 eV, which is less than the transition to n = 4.",
+          "This is an emission transition, not absorption.",
+          "Correct: absorption requires moving to a higher level. ΔE = 13.6(1 - 1/16) = 13.6 × 15/16 = 12.75 eV, which is the largest energy change among the absorption options.",
+          "ΔE = 13.6(1/4 - 1/36) = 13.6 × 8/36 = 3.02 eV, which is much smaller."
+        ],
+        "fullExplanation": "Absorption transitions proceed from lower n to higher n. The energy absorbed is ΔE = 13.6 [1/n_initial² - 1/n_final²] eV. For n = 1 to n = 4, ΔE = 13.6 [1 - 1/16] = 12.75 eV, which provides the highest energy and therefore highest frequency (ν = ΔE / h)."
+      },
+      {
+        "question": "What is the relation between the kinetic energy (K) and potential energy (U) of an electron in any Bohr orbit of hydrogen?",
+        "options": [
+          "U = - K",
+          "U = - 2K",
+          "U = 2K",
+          "U = - K / 2"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Total energy equals -K, not potential energy.",
+          "Correct: electrostatic potential energy is negative and twice the magnitude of kinetic energy: U = -2K.",
+          "Potential energy is attractive and therefore negative.",
+          "Incorrect factor."
+        ],
+        "fullExplanation": "In Bohr's orbit, kinetic energy is K = e² / (8πε₀ r) and potential energy is U = - e² / (4πε₀ r). Comparing them shows directly that U = - 2K."
+      },
+      {
+        "question": "In Rutherford's α-particle scattering experiment, if an α-particle of kinetic energy K approaches a nucleus of charge Ze head-on, the distance of closest approach r₀ is proportional to:",
+        "options": [
+          "K",
+          "1 / K",
+          "√K",
+          "1 / K²"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Higher kinetic energy allows the particle to get closer, so r₀ decreases.",
+          "Correct: conservation of energy gives K = (1 / 4πε₀) · (2Ze² / r₀), so r₀ ∝ 1 / K.",
+          "Incorrect square root dependence.",
+          "Incorrect inverse square dependence."
+        ],
+        "fullExplanation": "At the distance of closest approach, all initial kinetic energy K turns into electrostatic potential energy: K = (1 / (4πε₀)) · (2Ze² / r₀). Solving for r₀ gives r₀ = (2Ze²) / (4πε₀ K), meaning r₀ ∝ 1 / K."
+      },
+      {
+        "question": "The wavelength of the first line of the Lyman series (n = 2 to n = 1) in hydrogen is λ. What is the wavelength of the second line (n = 3 to n = 1)?",
+        "options": [
+          "32 / 27 λ",
+          "27 / 32 λ",
+          "4 / 9 λ",
+          "9 / 4 λ"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "This is the reciprocal ratio.",
+          "Correct: 1/λ₁ = R(1 - 1/4) = 3R/4 => λ₁ = 4/(3R). 1/λ₂ = R(1 - 1/9) = 8R/9 => λ₂ = 9/(8R). Thus, λ₂ / λ₁ = [9/(8R)] / [4/(3R)] = 27 / 32.",
+          "Incorrect ratio.",
+          "Incorrect calculation."
+        ],
+        "fullExplanation": "For the first Lyman line: 1/λ₁ = R(1/1 - 1/4) = 3R/4 => λ₁ = 4 / (3R). For the second line: 1/λ₂ = R(1/1 - 1/9) = 8R/9 => λ₂ = 9 / (8R). Therefore, λ₂ = λ₁ × (9 / 8R) / (4 / 3R) = λ × (27 / 32) = (27 / 32)λ."
+      },
+      {
+        "question": "What is the ionization potential of a hydrogen atom in its first excited state (n = 2)?",
+        "options": [
+          "13.6 V",
+          "3.4 V",
+          "1.51 V",
+          "10.2 V"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "13.6 V is the ionization potential from the ground state (n = 1).",
+          "Correct: the energy of the electron at n = 2 is E₂ = -13.6 / 2² = -3.4 eV. The energy required to remove it to infinity is +3.4 eV, corresponding to an ionization potential of 3.4 V.",
+          "1.51 V is the ionization potential from n = 3.",
+          "10.2 V is the excitation potential from n = 1 to n = 2."
+        ],
+        "fullExplanation": "The binding energy of an electron in the n = 2 level is |E₂| = 13.6 / 2² = 3.4 eV. To liberate this electron to infinity requires 3.4 eV of energy, which corresponds to an accelerating potential of 3.4 V."
+      },
+      {
+        "question": "According to Bohr's model, the centripetal acceleration a_n of an electron in the n-th orbit is proportional to:",
+        "options": [
+          "1 / n²",
+          "1 / n³",
+          "1 / n⁴",
+          "n⁴"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Force and acceleration scale much faster than 1/n².",
+          "Frequency scales as 1/n³.",
+          "Correct: a_n = v_n² / r_n. Since v_n ∝ 1/n and r_n ∝ n², a_n ∝ (1/n)² / n² = 1/n⁴.",
+          "Acceleration decreases in larger orbits; it does not grow with n⁴."
+        ],
+        "fullExplanation": "Centripetal acceleration is given by a_n = v_n² / r_n. Since v_n ∝ 1/n, v_n² ∝ 1/n². Combined with r_n ∝ n², we get a_n ∝ (1/n²) / n² = 1/n⁴."
+      },
+      {
+        "question": "As an electron in a hydrogen atom transitions from an excited state to the ground state, which of the following describes the changes in its kinetic energy and potential energy?",
+        "options": [
+          "Kinetic energy increases and potential energy decreases",
+          "Kinetic energy decreases and potential energy increases",
+          "Both kinetic energy and potential energy increase",
+          "Both kinetic energy and potential energy decrease"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct: moving to smaller n decreases radius r. KE = e² / (8πε₀ r) increases, while PE = - e² / (4πε₀ r) becomes more negative (decreases).",
+          "This describes an excitation transition to a higher orbit.",
+          "Potential energy must decrease as the electron falls into a deeper potential well.",
+          "Kinetic energy increases as orbital speed increases in lower orbits."
+        ],
+        "fullExplanation": "As n decreases toward the ground state, the orbital radius r decreases. Kinetic energy KE = e² / (8πε₀ r) increases because the electron speeds up. Potential energy PE = - e² / (4πε₀ r) becomes more negative, meaning it decreases. Total energy TE = -KE also decreases by emitting radiation."
+      }
+    ]
+  }
+]

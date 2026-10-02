@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Periodic Table & Periodicity",
+    "flashcards": [
+      {
+        "front": "State the operational classification and relative size comparison of covalent, metallic, and van der Waals radii.",
+        "back": "r_cov < r_metallic < r_vw. van der Waals radius is the largest because it involves non-bonded interactions, and it is mainly used for noble gases."
+      },
+      {
+        "front": "Why is the atomic radius of Gallium (Ga) smaller than that of Aluminium (Al)?",
+        "back": "Due to the presence of 10 intervening 3d electrons in Ga, which exert poor shielding effect, causing an increase in effective nuclear charge (Z_eff) and contraction of atomic size."
+      },
+      {
+        "front": "Explain why 4d and 5d transition series elements have nearly identical atomic radii.",
+        "back": "Due to Lanthanide Contraction, which is the steady decrease in atomic/ionic size resulting from the poor shielding of the intervening 4f electrons."
+      },
+      {
+        "front": "What is the general order of ionic radii for the isoelectronic species N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺?",
+        "back": "N³⁻ > O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺. For isoelectronic species, ionic radius decreases as the positive nuclear charge (atomic number Z) increases."
+      },
+      {
+        "front": "Why is the first ionization energy of Nitrogen higher than that of Oxygen?",
+        "back": "Nitrogen has a stable half-filled 2p subshell configuration (2s² 2p³), which possesses higher exchange energy and stability compared to the 2s² 2p⁴ configuration of Oxygen."
+      },
+      {
+        "front": "What is the order of ionization energy among elements of the 2nd period upto the 4th period?",
+        "back": "ns¹ < np¹ < ns² < np² < np⁴ < np³ < np⁵ < np⁶. Specifically for period 2: Li < B < Be < C < O < N < F < Ne."
+      },
+      {
+        "front": "How does the ionization energy trend change after the 4th period?",
+        "back": "After the 4th period, the trend becomes: ns¹ < ns² < np¹ < np² < np³ < np⁴ < np⁵ < np⁶ due to the increased d- and f-electron shielding anomalies."
+      },
+      {
+        "front": "Explain the anomalous ionization energy order: Tl > In and Pb > Sn.",
+        "back": "Thallium (Tl) and Lead (Pb) have higher ionization energies than Indium (In) and Tin (Sn) respectively due to lanthanide contraction and strong inert pair effect (poor shielding of 4f electrons)."
+      },
+      {
+        "front": "How can the number of valence electrons be determined from successive ionization energy values?",
+        "back": "The number of valence electrons is equal to the number of electrons removed prior to the highest jump in successive ionization energies (e.g., if IE₄ <<<< IE₅, there are 4 valence electrons)."
+      },
+      {
+        "front": "Why is the first electron gain enthalpy (EA₁) exothermic for most elements, but endothermic for Be, Mg, and N?",
+        "back": "Be and Mg have fully filled stable s-subshells (2s², 3s²), while N has a stable half-filled p-subshell (2p³); adding an electron requires energy to disrupt stability or enter a higher energy subshell."
+      },
+      {
+        "front": "Why are successive electron affinities (EA₂, EA₃) always endothermic?",
+        "back": "Because an electron is being added to an already negatively charged anion, resulting in strong electrostatic repulsion that requires external energy to overcome."
+      },
+      {
+        "front": "Why is the electron affinity of Chlorine greater than that of Fluorine, and Sulfur greater than Oxygen?",
+        "back": "Due to the extremely small size and high electron density of 2nd period elements (F, O), incoming electrons experience strong inter-electronic repulsions in the compact 2p subshell compared to the larger 3p subshell of Cl and S."
+      },
+      {
+        "front": "What is the relationship between the ionization energy of a neutral atom A and the electron affinity of its cation A⁺?",
+        "back": "|IE_A| = |EA_A⁺| and |EA_A| = |IE_A⁻|."
+      },
+      {
+        "front": "How does electronegativity depend on the hybridisation state of an atom?",
+        "back": "Electronegativity is directly proportional to the percentage of s-character in the hybrid orbital: sp (50% s) > sp² (33.3% s) > sp³ (25% s)."
+      },
+      {
+        "front": "State the abundance order of elements in the Earth's crust according to the handbook.",
+        "back": "Overall elements: O > Si > Al > Fe (Fe, Al, Si, O in increasing order). Metals on Earth's crust: Ca < Fe < Al. Non-metals: Si, O."
+      },
+      {
+        "front": "What is the order of first ionization energy for the elements Na, Mg, Al, and Si?",
+        "back": "Na < Al < Mg < Si. Magnesium has a higher first ionization energy than aluminium because Mg loses an electron from a fully filled 3s orbital while Al loses from a 3p orbital."
+      },
+      {
+        "front": "What is the order of electron affinity among halogens and group 16 elements?",
+        "back": "Halogens: I < Br < F < Cl. Group 16 elements: O < Te < Se < S."
+      },
+      {
+        "front": "How does hydration energy vary down Group 1 and Group 2 cations?",
+        "back": "Hydration energy ∝ charge / size. It decreases down the group as ionic size increases: Li⁺ > Na⁺ > K⁺ > Rb⁺ > Cs⁺ and Be²⁺ > Mg²⁺ > Ca²⁺ > Sr²⁺ > Ba²⁺."
+      },
+      {
+        "front": "What is the order of ionic radii in aqueous solution (hydrated radii) for alkali metal cations?",
+        "back": "Cs⁺(aq) < Rb⁺(aq) < K⁺(aq) < Na⁺(aq) < Li⁺(aq). Due to its high charge density, Li⁺ is heavily hydrated and has the largest hydrated radius."
+      },
+      {
+        "front": "What is the order of molar electrical conductivity of alkali metal ions in aqueous solution?",
+        "back": "Li⁺ < Na⁺ < K⁺ < Rb⁺ < Cs⁺. Li⁺ has the largest hydrated sphere, resulting in lowest ionic mobility, whereas Cs⁺ has the smallest hydrated sphere and highest conductivity."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following correctly accounts for the observation that the atomic radius of Gallium (135 pm) is less than that of Aluminium (143 pm)?",
+        "options": [
+          "Poor shielding effect of the intervening 3d electrons in Ga",
+          "Higher electronegativity of Aluminium compared to Gallium",
+          "Lanthanide contraction in Ga",
+          "Presence of empty 4d orbitals in Gallium"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Gallium follows the 3d transition series; the 10 3d electrons shield the nuclear charge poorly, resulting in higher Z_eff and a contracted radius.",
+          "Incorrect. Aluminium is less electronegative than Gallium, but this does not explain the atomic radius inversion.",
+          "Incorrect. Lanthanide contraction occurs in 5d elements following the 4f subshell, not in 3d/4p elements.",
+          "Incorrect. Empty orbitals do not decrease atomic size."
+        ],
+        "fullExplanation": "As noted on page 150 of the handbook: 'Atomic radius of Al > Ga: Due to poor shielding of 3d subshell electron.' The 10 electrons in the 3d subshell have a diffuse distribution and shield the outer 4s and 4p electrons poorly, causing the nuclear charge to pull them closer."
+      },
+      {
+        "question": "Which of the following represents the correct decreasing order of ionic radii for the given isoelectronic species?",
+        "options": [
+          "N³⁻ > O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺",
+          "Al³⁺ > Mg²⁺ > Na⁺ > F⁻ > O²⁻ > N³⁻",
+          "F⁻ > O²⁻ > N³⁻ > Na⁺ > Mg²⁺ > Al³⁺",
+          "N³⁻ > F⁻ > O²⁻ > Al³⁺ > Mg²⁺ > Na⁺"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For isoelectronic species, size decreases as nuclear charge (Z) increases: Z = 7 (N), 8 (O), 9 (F), 11 (Na), 12 (Mg), 13 (Al).",
+          "Incorrect. This is the exact reverse; higher positive charge pulls electrons closer, making Al³⁺ the smallest.",
+          "Incorrect. N³⁻ has fewer protons (7) for 10 electrons than F⁻ (9 protons), so N³⁻ is larger.",
+          "Incorrect. O²⁻ is larger than F⁻, not smaller."
+        ],
+        "fullExplanation": "From page 151 of the handbook: 'In isoelectronic species (+) charge ↑ Ionic radius ↓, (-) charge ↑ Ionic radius ↑: N³⁻ > O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺'."
+      },
+      {
+        "question": "The first four ionization energies of an element are 577 kJ·mol⁻¹, 1816 kJ·mol⁻¹, 2745 kJ·mol⁻¹, and 11577 kJ·mol⁻¹. The number of valence electrons in this element is:",
+        "options": [
+          "3",
+          "1",
+          "2",
+          "4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The highest jump in IE occurs between IE₃ (2745) and IE₄ (11577), indicating removal of the 4th electron from an inner noble gas shell; hence, there are 3 valence electrons.",
+          "Incorrect. If there were 1 valence electron, the largest jump would be between IE₁ and IE₂.",
+          "Incorrect. If there were 2 valence electrons, the largest jump would be between IE₂ and IE₃.",
+          "Incorrect. A jump after the 3rd electron confirms 3 valence electrons."
+        ],
+        "fullExplanation": "Page 152 states: 'Number of valence e⁻ = highest jump in successive IE; eg.: IE₁ < IE₂ < IE₃ <<<< IE₄ < IE₅; Highest jump between IE₃ & IE₄ therefore Ve⁻ is 3'. Here the jump between IE₃ (2745) and IE₄ (11577) is huge (~8832 kJ/mol), confirming 3 valence electrons (Group 13 element like Al)."
+      },
+      {
+        "question": "Which of the following elements has the highest electron affinity (most negative electron gain enthalpy)?",
+        "options": [
+          "Cl",
+          "F",
+          "Br",
+          "I"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Chlorine has the highest electron affinity (349 kJ·mol⁻¹) among all elements because it lacks the strong inter-electronic repulsion seen in Fluorine's compact 2p subshell.",
+          "Incorrect. Fluorine (333 kJ·mol⁻¹) has a lower electron affinity than Chlorine due to strong electron-electron repulsions in its small 2p subshell.",
+          "Incorrect. Bromine (325 kJ·mol⁻¹) has a lower electron affinity than Chlorine and Fluorine.",
+          "Incorrect. Iodine (296 kJ·mol⁻¹) has the lowest electron affinity among the four."
+        ],
+        "fullExplanation": "From page 153 and page 211 of the handbook, the electron affinity values are: Cl = 349 kJ·mol⁻¹, F = 333 kJ·mol⁻¹, Br = 325 kJ·mol⁻¹, I = 296 kJ·mol⁻¹. Thus, Chlorine has the highest electron affinity."
+      },
+      {
+        "question": "The correct increasing order of electron affinity for Group 16 elements is:",
+        "options": [
+          "O < Te < Se < S",
+          "O < S < Se < Te",
+          "Te < Se < S < O",
+          "S < Se < Te < O"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Oxygen has the lowest electron affinity in Group 16 due to extreme electron crowding in its 2p subshell, making the order O < Te < Se < S.",
+          "Incorrect. Sulfur has the highest electron affinity in the group, not Te.",
+          "Incorrect. Oxygen is the lowest, not the highest.",
+          "Incorrect. Sulfur has the maximum electron affinity in Group 16."
+        ],
+        "fullExplanation": "As specifically highlighted in the note on page 153: 'IIIrd period element having greater EA than IInd period element except alkali metal: O < Te < Se < S'."
+      },
+      {
+        "question": "Which of the following arrangements represents the correct order of increasing first ionization energy?",
+        "options": [
+          "Na < Al < Mg < Si",
+          "Na < Mg < Al < Si",
+          "Al < Na < Mg < Si",
+          "Na < Al < Si < Mg"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Mg (3s²) has higher IE₁ than Al (3p¹) because removing an electron from a fully filled 3s orbital requires more energy than from a 3p orbital.",
+          "Incorrect. Al has lower IE₁ than Mg due to subshell penetration effects.",
+          "Incorrect. Na has lower IE₁ than Al.",
+          "Incorrect. Si has higher IE₁ than Mg."
+        ],
+        "fullExplanation": "From page 152 and page 154: The filling rule for the 3rd period gives ns¹ < np¹ < ns² < np²... Thus, Na(3s¹) < Al(3p¹) < Mg(3s²) < Si(3p²)."
+      },
+      {
+        "question": "Which of the following pairs of transition elements have nearly identical atomic radii due to the Lanthanide Contraction?",
+        "options": [
+          "Zr and Hf",
+          "Ti and Zr",
+          "Sc and Y",
+          "Fe and Pt"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Zirconium (4d) and Hafnium (5d) have almost identical atomic radii (~160 pm) due to the intervening lanthanide contraction.",
+          "Incorrect. Zr is significantly larger than Ti because of an additional principal shell.",
+          "Incorrect. Sc and Y belong to group 3 where lanthanide contraction has not yet set in.",
+          "Incorrect. Fe and Pt belong to different periods and have very different radii."
+        ],
+        "fullExplanation": "Page 150 and page 218 explicitly state: 'In a group 3d to 4d series increases but 4d and 5d series nearly same due to poor shielding of f electron (Lanthanide contraction): Ti < Zr ≈ Hf'."
+      },
+      {
+        "question": "Which of the following has the highest electrical conductivity in aqueous solution?",
+        "options": [
+          "Cs⁺",
+          "Li⁺",
+          "Na⁺",
+          "K⁺"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cs⁺ has the smallest hydrated radius due to its low charge density, giving it the highest ionic mobility and highest molar conductivity in water.",
+          "Incorrect. Li⁺ has the largest hydrated radius and slowest mobility, giving it the lowest conductivity.",
+          "Incorrect. Na⁺ has lower mobility than K⁺ and Cs⁺.",
+          "Incorrect. K⁺ is less conductive than Cs⁺."
+        ],
+        "fullExplanation": "Page 155 specifies: 'Hydration of Ions: Cs⁺ < Rb⁺ < K⁺ < Na⁺ < Li⁺; Ionic Radii in water: Cs⁺ < Rb⁺ < K⁺ < Na⁺ < Li⁺; Molar Conductivity in Water: Li⁺ < Na⁺ < K⁺ < Rb⁺ < Cs⁺'. Therefore, Cs⁺ has the highest conductivity."
+      },
+      {
+        "question": "What is the correct order of second ionization potential (IIⁿᵈ I.P.) for second-period elements?",
+        "options": [
+          "Li > Ne > O > F > N > C > B > Be",
+          "Li < B < Be < C < N < O < F < Ne",
+          "Ne > F > O > N > C > B > Be > Li",
+          "Be > B > C > N > O > F > Ne > Li"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For the 2nd IE, Li⁺ has a stable 1s² configuration, making its IE₂ extraordinarily high (highest). For O⁺ vs N⁺, O⁺ (2p³) is half-filled and exceeds N⁺ (2p²).",
+          "Incorrect. Li has the highest, not lowest, second ionization energy.",
+          "Incorrect. Fails to recognize that Li⁺ loses an electron from the stable 1s² noble shell.",
+          "Incorrect. Completely misordered."
+        ],
+        "fullExplanation": "From page 154: Increasing order of IIⁿᵈ I.P. is Be < C < B < N < F < O < Ne < Li. Thus, the decreasing order is Li > Ne > O > F > N > C > B > Be."
+      },
+      {
+        "question": "Why is the first electron gain enthalpy of noble gases positive (endothermic)?",
+        "options": [
+          "The added electron must enter the next higher principal quantum shell",
+          "Noble gases have high electronegativity",
+          "Their nuclear charge is zero",
+          "Their van der Waals radius is extremely small"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Noble gases have stable fully filled valence octets (ns² np⁶); adding an electron requires placing it in a higher-energy (n+1)s orbital, which requires energy.",
+          "Incorrect. Noble gases have effectively zero electronegativity on conventional scales.",
+          "Incorrect. Noble gases have large positive nuclear charges.",
+          "Incorrect. Noble gases have large van der Waals radii."
+        ],
+        "fullExplanation": "Page 153 states: 'EA₁ is generally exothermic except N, Be, Mg and Noble gas'. For noble gases, all valence orbitals are completely filled, so an additional electron must enter an unstable higher principal energy level, making the process endothermic."
+      },
+      {
+        "question": "Which of the following orders of basic strength of oxides is correct according to the handbook?",
+        "options": [
+          "SiO₂ < Al₂O₃ < MgO < Na₂O",
+          "Na₂O < MgO < Al₂O₃ < SiO₂",
+          "Al₂O₃ < SiO₂ < MgO < Na₂O",
+          "MgO < Al₂O₃ < Na₂O < SiO₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Across a period, electropositivity decreases and electronegativity increases, making oxides increasingly acidic and decreasing basic character: SiO₂ (acidic) < Al₂O₃ (amphoteric) < MgO (basic) < Na₂O (strongly basic).",
+          "Incorrect. Reverse of the basicity trend.",
+          "Incorrect. Al₂O₃ is more basic than SiO₂.",
+          "Incorrect. SiO₂ is an acidic oxide, not the most basic."
+        ],
+        "fullExplanation": "From page 178: Basic character of oxides increases with metallic character of the element: SiO₂ < Al₂O₃ < MgO < Na₂O."
+      },
+      {
+        "question": "What is the correct order of thermal stability of alkaline earth metal carbonates?",
+        "options": [
+          "BeCO₃ < MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃",
+          "BaCO₃ < SrCO₃ < CaCO₃ < MgCO₃ < BeCO₃",
+          "CaCO₃ < BeCO₃ < MgCO₃ < BaCO₃ < SrCO₃",
+          "MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃ < BeCO₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Thermal stability increases down the group as cation size increases and polarizing power decreases: BeCO₃ < MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃.",
+          "Incorrect. This is the order of decreasing stability.",
+          "Incorrect. BeCO₃ is the least stable and decomposes readily at room temperature.",
+          "Incorrect. BeCO₃ has the lowest thermal stability."
+        ],
+        "fullExplanation": "From page 178 and page 188: Decreasing order of stability is BaCO₃ > SrCO₃ > CaCO₃ > MgCO₃ > BeCO₃. Therefore, the increasing order is BeCO₃ < MgCO₃ < CaCO₃ < SrCO₃ < BaCO₃."
+      },
+      {
+        "question": "Which of the following elements has the greatest density among all elements?",
+        "options": [
+          "Os / Ir",
+          "Pt",
+          "Au",
+          "Pb"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Osmium (Os) and Iridium (Ir) have the highest densities among all elements (~22.6 g·cm⁻³).",
+          "Incorrect. Platinum is very dense (~21.45 g·cm⁻³), but lower than Os and Ir.",
+          "Incorrect. Gold has a density of ~19.3 g·cm⁻³.",
+          "Incorrect. Lead has a density of ~11.3 g·cm⁻³."
+        ],
+        "fullExplanation": "Page 180 lists explicitly under Density: '(iv) Highest Density = Os/Ir; (v) Lowest density = H; (vi) Metal of lowest Density = Li'."
+      },
+      {
+        "question": "Which of the following alkali metals is the strongest reducing agent in an aqueous medium?",
+        "options": [
+          "Li",
+          "Na",
+          "K",
+          "Cs"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In aqueous solution, Lithium has the most negative standard reduction potential (E° = -3.04 V) due to its extremely high hydration enthalpy.",
+          "Incorrect. Sodium has the lowest reducing ability among alkali metals in water.",
+          "Incorrect. K is a strong reducing agent, but less than Li in water.",
+          "Incorrect. Cs is the strongest reducing agent in the gaseous/molten state, but not in water."
+        ],
+        "fullExplanation": "Page 184 explicitly distinguishes reducing properties: 'Molten: Li < Na < K < Rb < Cs; Aqueous: Li > K ≈ Rb > Cs > Na'. In aqueous medium, Li has the greatest reducing power because of its extraordinarily high hydration energy."
+      },
+      {
+        "question": "The characteristic flame color imparted by Strontium (Sr) salts in a flame test is:",
+        "options": [
+          "Crimson red",
+          "Brick red",
+          "Apple green",
+          "Golden yellow"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Strontium salts impart a crimson red color to the Bunsen burner flame.",
+          "Incorrect. Brick red is characteristic of Calcium (Ca).",
+          "Incorrect. Apple green is characteristic of Barium (Ba).",
+          "Incorrect. Golden yellow is characteristic of Sodium (Na)."
+        ],
+        "fullExplanation": "As tabulated on page 187: 'Ca - Brick red; Sr - Crimson red; Ba - Apple green; Be and Mg do not impart any characteristic colour to the flame'."
+      },
+      {
+        "question": "Why do Beryllium (Be) and Magnesium (Mg) NOT give a characteristic color in the flame test?",
+        "options": [
+          "Their electrons are strongly bound due to small size and high ionization energy",
+          "They are non-metals",
+          "They immediately form stable oxides on the platinum wire",
+          "Their atoms cannot absorb thermal energy"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Due to their small size, Be and Mg have very high ionization energies; the flame temperature is insufficient to excite their valence electrons.",
+          "Incorrect. Be and Mg are alkaline earth metals.",
+          "Incorrect. Oxide formation is not the primary reason for lack of excitation.",
+          "Incorrect. Energy is absorbed, but it is insufficient for electronic excitation into visible emission states."
+        ],
+        "fullExplanation": "Page 187 notes: 'Flame Test: Among alkaline earth metals, Be and Mg do not impart any characteristic colour to the flame due to more ionization energy'."
+      },
+      {
+        "question": "Which of the following compounds exhibits diagonal similarity with Aluminium?",
+        "options": [
+          "Beryllium",
+          "Lithium",
+          "Boron",
+          "Magnesium"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Beryllium (Group 2, Period 2) and Aluminium (Group 13, Period 3) share a diagonal relationship due to similar charge-to-radius ratios.",
+          "Incorrect. Lithium shows diagonal relationship with Magnesium.",
+          "Incorrect. Boron shows diagonal relationship with Silicon.",
+          "Incorrect. Magnesium is diagonally related to Lithium."
+        ],
+        "fullExplanation": "From page 188 of the handbook: 'Diagonal similarity between Beryllium and Aluminium: In many of its properties, beryllium resembles Aluminium... The two elements have same electronegativity and their charge/radius ratios'."
+      },
+      {
+        "question": "What is the correct order of reducing power for hydrogen halides (HX)?",
+        "options": [
+          "HF < HCl < HBr < HI",
+          "HI < HBr < HCl < HF",
+          "HCl < HBr < HF < HI",
+          "HF < HI < HBr < HCl"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Down the group, H-X bond length increases, bond dissociation energy decreases, and H⁺/H· is released most easily: HF < HCl < HBr < HI.",
+          "Incorrect. This is the reverse order (thermal stability order).",
+          "Incorrect. HF is the weakest reducing agent.",
+          "Incorrect. HI is the strongest reducing agent in the series."
+        ],
+        "fullExplanation": "From page 213: 'Reducing Character: The reducing character of hydrogen halides increases down the group as HF < HCl < HBr < HI... A less thermally stable compound has more tendency to release hydrogen easily and show greater reducing property'."
+      },
+      {
+        "question": "Which element has the lowest boiling point of all known chemical elements?",
+        "options": [
+          "Helium (He)",
+          "Hydrogen (H₂)",
+          "Neon (Ne)",
+          "Radon (Rn)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Helium has the lowest boiling point of any element (4.2 K) due to extremely weak dispersion forces.",
+          "Incorrect. H₂ boils at ~20 K, higher than Helium.",
+          "Incorrect. Neon boils at ~27 K.",
+          "Incorrect. Radon has the highest boiling point among noble gases."
+        ],
+        "fullExplanation": "Page 216 states explicitly under 18th-Group Elements: '3. He has the lowest boiling point among all element'."
+      },
+      {
+        "question": "In the contact process for manufacturing H₂SO₄, which modern catalyst is preferred over platinised asbestos?",
+        "options": [
+          "V₂O₅",
+          "Fe₂O₃",
+          "MnO₂",
+          "Ni / Pd"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Vanadium pentoxide (V₂O₅) is preferred because it is cheaper and not easily poisoned by arsenic impurities.",
+          "Incorrect. Fe₂O₃ is used in the Haber process.",
+          "Incorrect. MnO₂ is used in decomposition of KClO₃.",
+          "Incorrect. Ni/Pd is used in hydrogenation of alkenes."
+        ],
+        "fullExplanation": "Page 210 notes under the Contact Process: 'Catalyst: Formerly, platinised asbestos was used which is costly and easily poisoned. These days V₂O₅ is used'."
+      }
+    ]
+  },
+  {
+    "chapterName": "Chemical Bonding",
+    "flashcards": [
+      {
+        "front": "State the approximate bond energies of van der Waals forces and Hydrogen bonds according to the handbook.",
+        "back": "van der Waals forces ≈ 8 kJ·mol⁻¹; Hydrogen bonds ≈ 42 kJ·mol⁻¹."
+      },
+      {
+        "front": "What are the three main exceptions to the octet rule? Give examples of each.",
+        "back": "1. Electron deficient: BeH₂, BF₃, AlCl₃ (< 8 e⁻); 2. Electron rich / expanded octet: PCl₅, SF₆, IF₇, XeF₂ (> 8 e⁻); 3. Odd-electron species: NO, NO₂, ClO₂, ClO₃."
+      },
+      {
+        "front": "What is the relative strength order of orbital overlapping between s and p orbitals in the same shell?",
+        "back": "s-s < s-p < p-p. Directional orbitals (p) have a greater extent of overlapping than non-directional s orbitals."
+      },
+      {
+        "front": "What is the order of electron pair repulsions according to VSEPR theory?",
+        "back": "lp-lp > lp-bp > bp-bp; for bonds: multiple bond-multiple bond > multiple bond-single bond > single bond-single bond."
+      },
+      {
+        "front": "What are the shapes and hybridisations of ClF₃, SF₄, and XeF₂?",
+        "back": "All are sp³d hybridised. ClF₃: T-shaped (3 bp, 2 lp); SF₄: See-saw / folded square (4 bp, 1 lp); XeF₂: Linear (2 bp, 3 lp)."
+      },
+      {
+        "front": "What are the shapes and hybridisations of XeOF₄, XeF₄, and XeF₆?",
+        "back": "XeOF₄: Square pyramidal (sp³d², 5 bp, 1 lp); XeF₄: Square planar (sp³d², 4 bp, 2 lp); XeF₆: Distorted octahedral / capped octahedral (sp³d³, 6 bp, 1 lp)."
+      },
+      {
+        "front": "Why is the dipole moment of NH₃ greater than that of NF₃?",
+        "back": "In NH₃, individual N-H bond moments reinforce the lone pair moment in the same direction. In NF₃, electronegative fluorine atoms pull electron density away, opposing the lone pair moment."
+      },
+      {
+        "front": "What is the order of dipole moments among chloromethanes?",
+        "back": "CH₃Cl > CH₂Cl₂ > CHCl₃ > CCl₄ (CCl₄ has μ = 0 due to tetrahedral symmetry)."
+      },
+      {
+        "front": "Why does ice have a lower density than liquid water?",
+        "back": "Due to extensive intermolecular hydrogen bonding, ice forms an open cage-like 3D tetrahedral network with vacant interstitial spaces, increasing volume and lowering density."
+      },
+      {
+        "front": "State the condition for a molecule to be paramagnetic according to Molecular Orbital Theory.",
+        "back": "Presence of one or more singly occupied (unpaired) molecular orbitals. Any species with a fractional bond order is always paramagnetic."
+      },
+      {
+        "front": "Why does the C₂ molecule have a double bond consisting entirely of π bonds?",
+        "back": "C₂ has 12 electrons with configuration σ1s² σ*1s² σ2s² σ*2s² π2px² π2py². The last four electrons occupy degenerate π2p bonding orbitals, so both bonds are π bonds."
+      },
+      {
+        "front": "What are the factors affecting bond angle according to the handbook?",
+        "back": "1. % s-character: sp (180°) > sp² (120°) > sp³ (109°28'); 2. Number of lone pairs: CH₄ (109.5°) > NH₃ (107.8°) > H₂O (104.5°); 3. Electronegativity of central atom: NH₃ > PH₃ > AsH₃ > SbH₃; 4. Size of bonded atoms: OF₂ < OCl₂ < OBr₂ < OI₂."
+      },
+      {
+        "front": "State Fajan's Rules for predicting covalent character in ionic compounds.",
+        "back": "Covalent character increases with: 1. Smaller cation size; 2. Larger anion size; 3. Higher charge on cation or anion; 4. Pseudo noble gas configuration (18 e⁻) of the cation."
+      },
+      {
+        "front": "What is the solid-state ionization and hybridisation of PCl₅?",
+        "back": "Solid PCl₅ exists as [PCl₄]⁺[PCl₆]⁻. The cationic part [PCl₄]⁺ is sp³ hybridised (tetrahedral), and the anionic part [PCl₆]⁻ is sp³d² hybridised (octahedral)."
+      },
+      {
+        "front": "What are the structural unit and number of shared oxygen atoms in Pyrosilicates and Cyclic silicates?",
+        "back": "Pyrosilicate: Si₂O₇⁶⁻, 1 oxygen atom shared per tetrahedron. Cyclic silicate: (SiO₃)n²ⁿ⁻, 2 oxygen atoms shared per tetrahedron."
+      },
+      {
+        "front": "Why does CCl₄ not undergo hydrolysis under ordinary conditions while SiCl₄ hydrolyzes readily?",
+        "back": "Carbon lacks vacant d-orbitals to accommodate a lone pair from attacking H₂O molecules, whereas Silicon possesses vacant 3d orbitals to accept water's electron pair."
+      },
+      {
+        "front": "What products are formed upon complete hydrolysis of XeF₆?",
+        "back": "XeF₆ + 3H₂O → XeO₃ + 6HF. Partial hydrolysis produces XeOF₄ and XeO₂F₂."
+      },
+      {
+        "front": "What type of back bonding is present in trisilylamine, N(SiH₃)₃, and what is its molecular geometry?",
+        "back": "pπ-dπ back bonding from the nitrogen lone pair into the empty 3d orbitals of silicon. This gives N(SiH₃)₃ a planar geometry (sp²), unlike the pyramidal (CH₃)₃N."
+      },
+      {
+        "front": "Why is the Lewis acid strength order of boron trihalides BF₃ < BCl₃ < BBr₃ < BI₃?",
+        "back": "Due to 2pπ-2pπ back bonding in BF₃, which is very effective due to size matching, reducing boron's electron deficiency. As halogen size increases (3p, 4p, 5p), overlap efficiency drops dramatically."
+      },
+      {
+        "front": "Describe the multicentered bonding present in diborane (B₂H₆).",
+        "back": "Diborane contains two (3c-2e) B-H-B banana bridge bonds and four standard (2c-2e) terminal B-H bonds. Bridge bonds are longer than terminal bonds."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following molecules has a linear shape according to VSEPR theory?",
+        "options": [
+          "XeF₂",
+          "SO₂",
+          "OF₂",
+          "O₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. XeF₂ has 2 bond pairs and 3 lone pairs (sp³d hybridisation). The three lone pairs occupy equatorial positions, resulting in a linear geometry.",
+          "Incorrect. SO₂ has 2 bond pairs and 1 lone pair, giving a bent / V-shape.",
+          "Incorrect. OF₂ has 2 bond pairs and 2 lone pairs, resulting in a bent geometry.",
+          "Incorrect. Ozone (O₃) has an angular / V-shaped structure."
+        ],
+        "fullExplanation": "From page 160 of the handbook: 'sp³d-hybridisation with 2 B.P. and 3 L.P. gives Linear shape: I₃⁻, Br₃⁻, ICl₂⁻, XeF₂'."
+      },
+      {
+        "question": "In which of the following molecules are both chemical bonds of the double bond π-bonds according to Molecular Orbital Theory?",
+        "options": [
+          "C₂",
+          "O₂",
+          "N₂",
+          "B₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. C₂ has 12 electrons; the valence electrons fill π2px² and π2py² orbitals without occupying σ2pz, so both bonds are π bonds.",
+          "Incorrect. O₂ has a double bond consisting of 1 σ bond and 1 π bond.",
+          "Incorrect. N₂ has a triple bond consisting of 1 σ bond and 2 π bonds.",
+          "Incorrect. B₂ has a single bond consisting of 1 π bond."
+        ],
+        "fullExplanation": "Page 165 states explicitly for 12 electrons: 'both bond are π C₂ molecule' because the configuration terminates in (π2px)² = (π2py)² with no electrons in σ2pz."
+      },
+      {
+        "question": "What is the correct increasing order of bond angle for the hydrides NH₃, PH₃, AsH₃, and SbH₃?",
+        "options": [
+          "SbH₃ < AsH₃ < PH₃ < NH₃",
+          "NH₃ < PH₃ < AsH₃ < SbH₃",
+          "PH₃ < AsH₃ < SbH₃ < NH₃",
+          "SbH₃ < PH₃ < AsH₃ < NH₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. As the electronegativity of the central atom decreases, bond pair-bond pair repulsion decreases, reducing the bond angle: SbH₃ (91°18') < AsH₃ (91°48') < PH₃ (93°36') < NH₃ (107°48').",
+          "Incorrect. This is the exact opposite order.",
+          "Incorrect. PH₃ has a larger bond angle than AsH₃.",
+          "Incorrect. PH₃ is greater than AsH₃."
+        ],
+        "fullExplanation": "From page 167 and page 182: Bond angles are NH₃ = 107°48', PH₃ = 93°36', AsH₃ = 91°48', SbH₃ = 91°18'. The increasing order is SbH₃ < AsH₃ < PH₃ < NH₃."
+      },
+      {
+        "question": "Which of the following compounds has the highest covalent character according to Fajan's rules?",
+        "options": [
+          "LiI",
+          "LiF",
+          "LiCl",
+          "LiBr"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Iodide (I⁻) has the largest anionic size and highest polarisability, resulting in the greatest covalent character.",
+          "Incorrect. F⁻ is small and least polarisable, giving the most ionic character.",
+          "Incorrect. Cl⁻ is less polarisable than I⁻.",
+          "Incorrect. Br⁻ is smaller and less polarisable than I⁻."
+        ],
+        "fullExplanation": "Page 169 states: 'Polarisation ∝ size of anion / size of cation; LiF < LiCl < LiBr < LiI: anion size ↑, polarisability ↑, covalent character ↑'."
+      },
+      {
+        "question": "In the solid state, phosphorus pentachloride (PCl₅) exists as:",
+        "options": [
+          "[PCl₄]⁺[PCl₆]⁻",
+          "PCl₅ covalent monomer",
+          "P₂Cl₁₀ dimer",
+          "[PCl₃]²⁺[PCl₇]²⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Solid PCl₅ dissociates into tetrahedral [PCl₄]⁺ (sp³) and octahedral [PCl₆]⁻ (sp³d²).",
+          "Incorrect. PCl₅ exists as a covalent monomer only in gaseous and non-polar liquid phases.",
+          "Incorrect. PCl₅ does not form a neutral dimer.",
+          "Incorrect. Does not match observed ionic stoichiometry."
+        ],
+        "fullExplanation": "Page 170 lists under hybridisation in specified states: 'PCl₅: Cationic part = PCl₄⁺ (sp³); Anionic part = PCl₆⁻ (sp³d²)'."
+      },
+      {
+        "question": "What is the hybridisation of the cationic and anionic components of solid dinitrogen pentoxide (N₂O₅)?",
+        "options": [
+          "Cationic: NO₂⁺ (sp), Anionic: NO₃⁻ (sp²)",
+          "Cationic: NO₂⁺ (sp²), Anionic: NO₃⁻ (sp³)",
+          "Cationic: NO⁺ (sp), Anionic: NO₃⁻ (sp²)",
+          "Cationic: NO₂⁺ (sp³), Anionic: NO₃⁻ (sp)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Solid N₂O₅ exists as nitronium nitrate [NO₂⁺][NO₃⁻], where NO₂⁺ is sp (linear) and NO₃⁻ is sp² (trigonal planar).",
+          "Incorrect. NO₂⁺ has steric number 2 (sp hybridised).",
+          "Incorrect. The cation is nitronium NO₂⁺, not nitrosonium NO⁺.",
+          "Incorrect. Inverted hybridisation assignments."
+        ],
+        "fullExplanation": "From the table on page 170: 'N₂O₅: Cationic part = NO₂⁺ (sp); Anionic part = NO₃⁻ (sp²)'."
+      },
+      {
+        "question": "The general formula of amphibole (double-chain) silicates is:",
+        "options": [
+          "(Si₄O₁₁)n⁶ⁿ⁻",
+          "(SiO₃)n²ⁿ⁻",
+          "(Si₂O₅)n²ⁿ⁻",
+          "SiO₄⁴⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Double-chain silicates (amphiboles) share an average of 2.5 oxygen atoms per tetrahedron, yielding the repeating formula (Si₄O₁₁)n⁶ⁿ⁻.",
+          "Incorrect. (SiO₃)n²ⁿ⁻ is the formula for pyroxenes (single chain) or cyclic silicates.",
+          "Incorrect. (Si₂O₅)n²ⁿ⁻ is the formula for 2D sheet silicates.",
+          "Incorrect. SiO₄⁴⁻ is the orthosilicate unit."
+        ],
+        "fullExplanation": "From page 170 under Silicates: 'Double chain (Amphibole): Sharing of O-atom = (3,2) avg. = 2.5; General formula = (Si₄O₁₁)n⁶ⁿ⁻'."
+      },
+      {
+        "question": "Which of the following compounds produces propyne (C₃H₄) upon complete hydrolysis?",
+        "options": [
+          "Mg₂C₃",
+          "Be₂C",
+          "CaC₂",
+          "Al₄C₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Magnesium carbide Mg₂C₃ contains the C₃⁴⁻ allylide ion and hydrolyzes to give propyne: Mg₂C₃ + 4H₂O → 2Mg(OH)₂ + C₃H₄.",
+          "Incorrect. Be₂C gives methane (CH₄).",
+          "Incorrect. CaC₂ contains the C₂²⁻ acetylide ion and yields acetylene (C₂H₂).",
+          "Incorrect. Al₄C₃ gives methane (CH₄)."
+        ],
+        "fullExplanation": "Page 171 lists under Hydrolysis: 'Be₂C + 4HOH → 2Be(OH)₂ + CH₄; Mg₂C₃ + 4HOH → 2Mg(OH)₂ + C₃H₄; CaC₂ + 2HOH → Ca(OH)₂ + C₂H₂; Al₄C₃ + 12HOH → 4Al(OH)₃ + 3CH₄'."
+      },
+      {
+        "question": "Why is trisilylamine, N(SiH₃)₃, planar while trimethylamine, N(CH₃)₃, is pyramidal?",
+        "options": [
+          "Due to pπ-dπ back bonding from Nitrogen to vacant 3d orbitals of Silicon",
+          "Due to intramolecular hydrogen bonding in trisilylamine",
+          "Due to steric hindrance of the large SiH₃ groups",
+          "Because Silicon is more electronegative than Carbon"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The lone pair on N is delocalized into the vacant 3d orbitals of Si via pπ-dπ back bonding, giving N an sp² trigonal planar geometry.",
+          "Incorrect. No hydrogen bonding exists in trisilylamine.",
+          "Incorrect. Steric hindrance would favor tetrahedral/pyramidal configurations; the planarity is electronic in origin.",
+          "Incorrect. Carbon is more electronegative than Silicon."
+        ],
+        "fullExplanation": "As explained on page 173: 'Shape of trimethyl amine pyramidal while shape of trisilyl amine is triangular planar... N(SiH₃)₃ has back bond (lp involved in back bonding to vacant d-orbitals of Si)'."
+      },
+      {
+        "question": "What is the correct increasing order of Lewis acid character for boron trihalides?",
+        "options": [
+          "BF₃ < BCl₃ < BBr₃ < BI₃",
+          "BI₃ < BBr₃ < BCl₃ < BF₃",
+          "BF₃ < BI₃ < BCl₃ < BBr₃",
+          "BCl₃ < BF₃ < BBr₃ < BI₃"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Strong 2pπ-2pπ back bonding in BF₃ relieves electron deficiency on boron. Overlap becomes less effective for larger halogens, increasing Lewis acidity: BF₃ < BCl₃ < BBr₃ < BI₃.",
+          "Incorrect. Reverse of the correct Lewis acidity order.",
+          "Incorrect. Lewis acidity increases smoothly from fluoride to iodide.",
+          "Incorrect. BF₃ is the weakest Lewis acid in this group."
+        ],
+        "fullExplanation": "From page 172: 'Application of Back Bonding: Lewis acid character: BF₃ < BCl₃ < BBr₃ < BI₃'. The 2p-2p overlap in BF₃ is most effective, reducing boron's capacity to accept external electron pairs."
+      },
+      {
+        "question": "Which of the following oxyacids of phosphorus is a monobasic (monoprotic) acid?",
+        "options": [
+          "H₃PO₂",
+          "H₃PO₃",
+          "H₃PO₄",
+          "H₄P₂O₇"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Hypophosphorous acid (H₃PO₂) has one P-OH bond and two P-H bonds, so its basicity is 1.",
+          "Incorrect. Phosphorous acid (H₃PO₃) has two P-OH bonds and is dibasic.",
+          "Incorrect. Orthophosphoric acid (H₃PO₄) has three P-OH bonds and is tribasic.",
+          "Incorrect. Pyrophosphoric acid (H₄P₂O₇) has four P-OH bonds and is tetrabasic."
+        ],
+        "fullExplanation": "From page 175 and page 205: 'Hypophosphorus acid (H₃PO₂): One P-OH bond, basicity = 1 (monobasic Lewis/protonic acid)'."
+      },
+      {
+        "question": "In Caro's acid (H₂SO₅) and Marshall's acid (H₂S₂O₈), the oxidation state of sulfur is:",
+        "options": [
+          "+6 in both",
+          "+8 and +7 respectively",
+          "+6 and +7 respectively",
+          "+4 and +6 respectively"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Both contain peroxo (-O-O-) linkages. Calculating with peroxide oxygens (-1) gives S = +6 in both acids, which is sulfur's maximum valence.",
+          "Incorrect. +8 exceeds sulfur's total valence electrons.",
+          "Incorrect. Marshall's acid has sulfur in +6, not +7.",
+          "Incorrect. Neither acid contains sulfur in +4."
+        ],
+        "fullExplanation": "Page 175 and page 176 describe: 'Caro's acid - H₂SO₅ (Peroxide bond)' and 'Marshal's acid - H₂S₂O₈ (Peroxide bond)'. In H₂SO₅: 2(+1) + S + 3(-2) + 2(-1) = 0 ⇒ S = +6. In H₂S₂O₈: 2(+1) + 2S + 6(-2) + 2(-1) = 0 ⇒ 2S = 12 ⇒ S = +6."
+      },
+      {
+        "question": "Which allotrope of carbon consists of 20 six-membered rings and 12 five-membered rings?",
+        "options": [
+          "Buckminsterfullerene (C₆₀)",
+          "Diamond",
+          "Graphite",
+          "Carbon nanotube"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. C₆₀ (Buckminsterfullerene) consists of 20 hexagonal rings and 12 pentagonal rings in a truncated icosahedron (soccer ball) shape.",
+          "Incorrect. Diamond consists entirely of fused chair-form six-membered cyclohexane-like carbon networks.",
+          "Incorrect. Graphite consists of infinite planar sheets of hexagonal rings only.",
+          "Incorrect. Nanotubes are elongated cylindrical fullerenes."
+        ],
+        "fullExplanation": "From page 176 of the handbook under Allotropes of Carbon: 'C₆₀: Buckminster fullerene soccer ball (Football) or bucky ball. C₆₀: 20 hexagon rings 12 pentagon rings. Purest form of carbon'."
+      },
+      {
+        "question": "What is the transition temperature at which rhombic sulphur (α-S) and monoclinic sulphur (β-S) coexist in equilibrium?",
+        "options": [
+          "95.6 °C",
+          "120 °C",
+          "200 °C",
+          "444 °C"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. 95.6 °C is the enantiotropic transition temperature between α-S and β-S.",
+          "Incorrect. Sulphur melts around 119 °C.",
+          "Incorrect. At 200 °C, the viscosity of liquid sulfur begins to decrease.",
+          "Incorrect. 444 °C is the boiling point of sulfur."
+        ],
+        "fullExplanation": "From page 177: 'α-S ⇌ β-S at 95.6 °C; 95.6 °C = transition Temperature both are soluble in CS₂ but insoluble in water'."
+      },
+      {
+        "question": "Why does nitrogen NOT form pentahalides such as NF₅, while phosphorus forms PCl₅?",
+        "options": [
+          "Nitrogen has no vacant d-orbitals in its valence shell",
+          "Nitrogen is less electronegative than phosphorus",
+          "N-F bonds are thermodynamically unstable",
+          "Phosphorus cannot form multiple bonds"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Nitrogen has only 2s and 2p orbitals (n = 2) and lacks 2d orbitals, restricting its maximum covalency to 4.",
+          "Incorrect. Nitrogen is more electronegative than phosphorus.",
+          "Incorrect. N-F single bonds are relatively strong.",
+          "Incorrect. Phosphorus can form dπ-pπ multiple bonds."
+        ],
+        "fullExplanation": "From page 183 under 'Molecules that do not Exist': 'SF₄, SF₆ & PF₅ exist while OF₄, OF₆, NF₅ do not exist' because second-period elements have no vacant d-orbitals to expand their valence shells beyond an octet."
+      },
+      {
+        "question": "Which of the following molecules has a permanent dipole moment (μ ≠ 0)?",
+        "options": [
+          "cis-But-2-ene",
+          "trans-But-2-ene",
+          "p-Dichlorobenzene",
+          "Carbon tetrachloride (CCl₄)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In cis-but-2-ene, the two methyl C-C bond moments reinforce each other, resulting in a net dipole moment (μ ≠ 0).",
+          "Incorrect. In trans-but-2-ene, the two opposing methyl groups cancel each other's dipole moments (μ = 0).",
+          "Incorrect. In p-dichlorobenzene, the two C-Cl dipole vectors point in opposite directions and cancel (μ = 0).",
+          "Incorrect. CCl₄ has tetrahedral symmetry, so the vector sum of its bond dipoles is zero."
+        ],
+        "fullExplanation": "From page 65 and page 161: Symmetrical geometries give μ = 0 (trans-isomers, p-dichlorobenzene, CCl₄), whereas unsymmetrical geometries give μ ≠ 0 (cis-isomers like cis-but-2-ene and maleic acid)."
+      },
+      {
+        "question": "What is the bond order and magnetic nature of the O₂⁺ ion according to Molecular Orbital Theory?",
+        "options": [
+          "Bond order = 2.5, Paramagnetic",
+          "Bond order = 2.0, Diamagnetic",
+          "Bond order = 1.5, Paramagnetic",
+          "Bond order = 3.0, Diamagnetic"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. O₂⁺ has 15 electrons (N_b = 10, N_a = 5). Bond order = (10 - 5)/2 = 2.5. With one unpaired electron in π*2p, it is paramagnetic.",
+          "Incorrect. 2.0 and paramagnetic is the configuration for neutral O₂ (16 electrons).",
+          "Incorrect. 1.5 is the bond order for superoxide O₂⁻.",
+          "Incorrect. 3.0 is the bond order for N₂ or NO⁺."
+        ],
+        "fullExplanation": "From the MOT table on page 165: For 15 electrons, N_b = 10, N_a = 5, B.O. = (10 - 5)/2 = 2.5, and the species is paramagnetic. 'Fractional bond order it will be always paramagnetic'."
+      },
+      {
+        "question": "Which of the following compounds exhibits intramolecular hydrogen bonding?",
+        "options": [
+          "o-Nitrophenol",
+          "p-Nitrophenol",
+          "Water",
+          "Ethanol"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In o-nitrophenol, the -OH and -NO₂ groups are adjacent, allowing a six-membered chelate ring to form via intramolecular H-bonding.",
+          "Incorrect. p-Nitrophenol forms intermolecular hydrogen bonds with neighboring molecules.",
+          "Incorrect. Water forms an intermolecular hydrogen-bonded network.",
+          "Incorrect. Ethanol associates via intermolecular hydrogen bonding."
+        ],
+        "fullExplanation": "From page 162 and page 163: 'Intramolecular H-bonding takes place mainly in ortho derivatives only'. In o-nitrophenol, the hydrogen of -OH bonds with the oxygen of the adjacent ortho -NO₂ group."
+      },
+      {
+        "question": "What is the order of bond dissociation energies for the halogens?",
+        "options": [
+          "Cl₂ > Br₂ > F₂ > I₂",
+          "F₂ > Cl₂ > Br₂ > I₂",
+          "Cl₂ > F₂ > Br₂ > I₂",
+          "Br₂ > Cl₂ > F₂ > I₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Due to strong lone pair-lone pair repulsions in the compact F₂ molecule, the F-F bond is weaker than Cl-Cl and Br-Br: Cl₂ > Br₂ > F₂ > I₂.",
+          "Incorrect. F₂ has an anomalously low bond dissociation energy.",
+          "Incorrect. Br₂ has a higher bond dissociation energy than F₂.",
+          "Incorrect. Cl₂ has the highest bond dissociation energy among the halogens."
+        ],
+        "fullExplanation": "Page 158 specifically highlights this exception: 'Exception: Cl₂ > Br₂ > F₂ > I₂ due to lp-lp repulsion in F₂; also O-O < S-S, N-N < P-P'."
+      },
+      {
+        "question": "In the cyclic trimer form of sulfur trioxide (γ-SO₃, S₃O₉), how many S-O-S bridge bonds are present?",
+        "options": [
+          "3",
+          "2",
+          "1",
+          "0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The cyclic trimer S₃O₉ consists of a six-membered puckered ring of alternating sulfur and oxygen atoms, containing exactly 3 S-O-S bridges.",
+          "Incorrect. A trimeric ring requires 3 bridging oxygen atoms.",
+          "Incorrect. 1 bridge corresponds to pyrosulfuric acid (H₂S₂O₇).",
+          "Incorrect. S₃O₉ is a cyclic ether-like ring with bridging oxygens."
+        ],
+        "fullExplanation": "As depicted in the structure on page 183 for γ-SO₃ (S₃O₉): The three sulfur atoms are linked into a cyclic six-membered ring by 3 bridging oxygen atoms, forming 3 S-O-S linkages with each sulfur also bearing two terminal double-bonded oxygens."
+      }
+    ]
+  }
+]

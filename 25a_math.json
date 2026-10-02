@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Vector Algebra",
+    "flashcards": [
+      {
+        "front": "What is the Position Vector of a point $P(x, y, z)$ relative to the origin $O(0, 0, 0)$, and how is the displacement vector $\\\\vec{AB}$ defined for points $A(\\\\vec{a})$ and $B(\\\\vec{b})$?",
+        "back": "The position vector of $P$ is $\\\\vec{OP} = x\\\\hat{i} + y\\\\hat{j} + z\\\\hat{k}$.\\nFor points $A(\\\\vec{a})$ and $B(\\\\vec{b})$, the displacement vector is:\\n$$\\\\vec{AB} = \\\\vec{OB} - \\\\vec{OA} = \\\\vec{b} - \\\\vec{a}$$"
+      },
+      {
+        "front": "State the Section Formula for internal and external division of the line segment joining $A(\\\\vec{a})$ and $B(\\\\vec{b})$ in the ratio $m : n$.",
+        "back": "1. **Internal Division:** $\\\\vec{r} = \\\\dfrac{m\\\\vec{b} + n\\\\vec{a}}{m + n}$\\n2. **External Division:** $\\\\vec{r} = \\\\dfrac{m\\\\vec{b} - n\\\\vec{a}}{m - n}$\\n3. **Mid-point ($m=n=1$):** $\\\\vec{r} = \\\\dfrac{\\\\vec{a} + \\\\vec{b}}{2}$"
+      },
+      {
+        "front": "What are the position vectors of the Centroid of a triangle and the Centroid of a tetrahedron?",
+        "back": "1. **Centroid of $\\\\Delta ABC$** with vertices $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$:\\n$$\\\\vec{G} = \\\\dfrac{\\\\vec{a} + \\\\vec{b} + \\\\vec{c}}{3}$$\\n2. **Centroid of a Tetrahedron $ABCD$** with vertices $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}, \\\\vec{d}$:\\n$$\\\\vec{G} = \\\\dfrac{\\\\vec{a} + \\\\vec{b} + \\\\vec{c} + \\\\vec{d}}{4}$$"
+      },
+      {
+        "front": "Define Direction Cosines ($l, m, n$) and Direction Ratios ($a, b, c$) of a vector $\\\\vec{r} = x\\\\hat{i} + y\\\\hat{j} + z\\\\hat{k}$.",
+        "back": "If $\\\\alpha, \\\\beta, \\\\gamma$ are angles made by $\\\\vec{r}$ with the positive $x, y, z$ axes:\\n$$l = \\\\cos\\\\alpha = \\\\dfrac{x}{|\\\\vec{r}|}, \\\\quad m = \\\\cos\\\\beta = \\\\dfrac{y}{|\\\\vec{r}|}, \\\\quad n = \\\\cos\\\\gamma = \\\\dfrac{z}{|\\\\vec{r}|}$$\\nDirection ratios $a, b, c$ are numbers proportional to $l, m, n$ (often chosen as the components $x, y, z$)."
+      },
+      {
+        "front": "State the fundamental identities connecting the Direction Cosines $l, m, n$.",
+        "back": "1. $$l^2 + m^2 + n^2 = 1$$\\n2. $$\\\\cos^2\\\\alpha + \\\\cos^2\\\\beta + \\\\cos^2\\\\gamma = 1$$\\n3. $$\\\\sin^2\\\\alpha + \\\\sin^2\\\\beta + \\\\sin^2\\\\gamma = 2$$"
+      },
+      {
+        "front": "Define the Scalar (Dot) Product of two vectors $\\\\vec{a}$ and $\\\\vec{b}$, and give the formula for the angle between them.",
+        "back": "$$\\\\vec{a} \\\\cdot \\\\vec{b} = |\\\\vec{a}||\\\\vec{b}|\\\\cos\\\\theta$$\\nwhere $\\\\theta$ is the angle between $\\\\vec{a}$ and $\\\\vec{b}$ ($0 \\\\le \\\\theta \\\\le \\\\pi$).\\n$$\\\\cos\\\\theta = \\\\dfrac{\\\\vec{a} \\\\cdot \\\\vec{b}}{|\\\\vec{a}||\\\\vec{b}|} = \\\\dfrac{a_1 b_1 + a_2 b_2 + a_3 b_3}{\\\\sqrt{a_1^2 + a_2^2 + a_3^2}\\\\sqrt{b_1^2 + b_2^2 + b_3^2}}$$"
+      },
+      {
+        "front": "What is the condition for two non-zero vectors $\\\\vec{a}$ and $\\\\vec{b}$ to be perpendicular (orthogonal)?",
+        "back": "$$\\\\vec{a} \\\\perp \\\\vec{b} \\\\iff \\\\vec{a} \\\\cdot \\\\vec{b} = 0$$\\nIn component form: $a_1 b_1 + a_2 b_2 + a_3 b_3 = 0$."
+      },
+      {
+        "front": "What is the scalar projection and vector projection of $\\\\vec{a}$ on $\\\\vec{b}$?",
+        "back": "1. **Scalar Projection of $\\\\vec{a}$ on $\\\\vec{b}$:**\\n$$\\\\text{proj} = \\\\vec{a} \\\\cdot \\\\hat{b} = \\\\dfrac{\\\\vec{a} \\\\cdot \\\\vec{b}}{|\\\\vec{b}|}$$\\n2. **Vector Projection of $\\\\vec{a}$ on $\\\\vec{b}$:**\\n$$\\\\left(\\\\dfrac{\\\\vec{a} \\\\cdot \\\\vec{b}}{|\\\\vec{b}|^2}\\\\right)\\\\vec{b}$$"
+      },
+      {
+        "front": "How do you decompose a vector $\\\\vec{r}$ into components parallel and perpendicular to a non-zero vector $\\\\vec{a}$?",
+        "back": "$$\\\\vec{r} = \\\\vec{r}_{\\\\parallel} + \\\\vec{r}_{\\\\perp}$$\\nwhere:\\n$$\\\\vec{r}_{\\\\parallel} = \\\\left(\\\\dfrac{\\\\vec{r} \\\\cdot \\\\vec{a}}{|\\\\vec{a}|^2}\\\\right)\\\\vec{a}$$\\n$$\\\\vec{r}_{\\\\perp} = \\\\vec{r} - \\\\left(\\\\dfrac{\\\\vec{r} \\\\cdot \\\\vec{a}}{|\\\\vec{a}|^2}\\\\right)\\\\vec{a} = \\\\dfrac{\\\\vec{a} \\\\times (\\\\vec{r} \\\\times \\\\vec{a})}{|\\\\vec{a}|^2}$$"
+      },
+      {
+        "front": "State the Cauchy-Schwarz Inequality and Triangle Inequality for vectors.",
+        "back": "1. **Cauchy-Schwarz Inequality:**\\n$$|\\\\vec{a} \\\\cdot \\\\vec{b}| \\\\le |\\\\vec{a}||\\\\vec{b}|$$\\nEquality holds iff $\\\\vec{a}$ and $\\\\vec{b}$ are collinear.\\n2. **Triangle Inequality:**\\n$$|\\\\vec{a} + \\\\vec{b}| \\\\le |\\\\vec{a}| + |\\\\vec{b}|$$\\nand $||\\\\vec{a}| - |\\\\vec{b}|| \\\\le |\\\\vec{a} - \\\\vec{b}|$"
+      },
+      {
+        "front": "Define the Vector (Cross) Product of two vectors $\\\\vec{a}$ and $\\\\vec{b}$.",
+        "back": "$$\\\\vec{a} \\\\times \\\\vec{b} = (|\\\\vec{a}||\\\\vec{b}|\\\\sin\\\\theta)\\\\hat{n}$$\\nwhere $\\\\theta \\\\in [0, \\\\pi]$ is the angle between $\\\\vec{a}$ and $\\\\vec{b}$, and $\\\\hat{n}$ is a unit vector perpendicular to both $\\\\vec{a}$ and $\\\\vec{b}$ forming a right-handed system.\\nIn coordinates:\\n$$\\\\vec{a} \\\\times \\\\vec{b} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ a_1 & a_2 & a_3 \\\\\\\\ b_1 & b_2 & b_3 \\\\end{vmatrix}$$"
+      },
+      {
+        "front": "What are the algebraic properties of the cross product (anti-commutativity, collinearity)?",
+        "back": "1. **Anti-commutative:** $\\\\vec{a} \\\\times \\\\vec{b} = -(\\\\vec{b} \\\\times \\\\vec{a})$\\n2. **Collinearity:** For non-zero $\\\\vec{a}, \\\\vec{b}$, $\\\\vec{a} \\\\times \\\\vec{b} = \\\\vec{0} \\\\iff \\\\vec{a} \\\\parallel \\\\vec{b}$\\n3. **Base vectors:** $\\\\hat{i} \\\\times \\\\hat{j} = \\\\hat{k}, \\\\; \\\\hat{j} \\\\times \\\\hat{k} = \\\\hat{i}, \\\\; \\\\hat{k} \\\\times \\\\hat{i} = \\\\hat{j}$"
+      },
+      {
+        "front": "Give the formulas for the area of a parallelogram using adjacent sides and using diagonals.",
+        "back": "1. **Adjacent sides $\\\\vec{a}$ and $\\\\vec{b}$:**\\n$$\\\\text{Area} = |\\\\vec{a} \\\\times \\\\vec{b}|$$\\n2. **Diagonals $\\\\vec{d}_1$ and $\\\\vec{d}_2$:**\\n$$\\\\text{Area} = \\\\dfrac{1}{2}|\\\\vec{d}_1 \\\\times \\\\vec{d}_2|$$"
+      },
+      {
+        "front": "Give the vector formula for the area of $\\\\Delta ABC$ with vertices $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$.",
+        "back": "$$\\\\text{Area} = \\\\dfrac{1}{2}|\\\\vec{AB} \\\\times \\\\vec{AC}| = \\\\dfrac{1}{2}|(\\\\vec{b} - \\\\vec{a}) \\\\times (\\\\vec{c} - \\\\vec{a})|$$\\nExpanded form:\\n$$\\\\text{Area} = \\\\dfrac{1}{2}|\\\\vec{a} \\\\times \\\\vec{b} + \\\\vec{b} \\\\times \\\\vec{c} + \\\\vec{c} \\\\times \\\\vec{a}|$$"
+      },
+      {
+        "front": "What is the condition for three points $A(\\\\vec{a}), B(\\\\vec{b}), C(\\\\vec{c})$ to be collinear?",
+        "back": "$$\\\\vec{a} \\\\times \\\\vec{b} + \\\\vec{b} \\\\times \\\\vec{c} + \\\\vec{c} \\\\times \\\\vec{a} = \\\\vec{0}$$\\nEquivalently, $\\\\vec{AB} = \\\\lambda \\\\vec{AC}$ for some scalar $\\\\lambda$."
+      },
+      {
+        "front": "How do you find a unit vector perpendicular to the plane containing two non-parallel vectors $\\\\vec{a}$ and $\\\\vec{b}$?",
+        "back": "$$\\\\hat{n} = \\\\pm \\\\dfrac{\\\\vec{a} \\\\times \\\\vec{b}}{|\\\\vec{a} \\\\times \\\\vec{b}|}$$"
+      },
+      {
+        "front": "State Lagrange's Identity relating dot product and cross product.",
+        "back": "$$|\\\\vec{a} \\\\times \\\\vec{b}|^2 = |\\\\vec{a}|^2 |\\\\vec{b}|^2 - (\\\\vec{a} \\\\cdot \\\\vec{b})^2$$\\nIn determinant form:\\n$$|\\\\vec{a} \\\\times \\\\vec{b}|^2 = \\\\begin{vmatrix} \\\\vec{a} \\\\cdot \\\\vec{a} & \\\\vec{a} \\\\cdot \\\\vec{b} \\\\\\\\ \\\\vec{a} \\\\cdot \\\\vec{b} & \\\\vec{b} \\\\cdot \\\\vec{b} \\\\end{vmatrix}$$"
+      },
+      {
+        "front": "Define the Scalar Triple Product (Box Product) $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$ and state its determinant formula.",
+        "back": "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = \\\\vec{a} \\\\cdot (\\\\vec{b} \\\\times \\\\vec{c})$$\\nIn component form:\\n$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = \\\\begin{vmatrix} a_1 & a_2 & a_3 \\\\\\\\ b_1 & b_2 & b_3 \\\\\\\\ c_1 & c_2 & c_3 \\\\end{vmatrix}$$"
+      },
+      {
+        "front": "What are the cyclic and interchange properties of the Scalar Triple Product $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$?",
+        "back": "1. **Cyclic Permutation:**\\n$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = [\\\\vec{b}\\\\ \\\\vec{c}\\\\ \\\\vec{a}] = [\\\\vec{c}\\\\ \\\\vec{a}\\\\ \\\\vec{b}]$$\\n2. **Non-cyclic Swap (Anti-symmetry):**\\n$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = -[\\\\vec{b}\\\\ \\\\vec{a}\\\\ \\\\vec{c}] = -[\\\\vec{a}\\\\ \\\\vec{c}\\\\ \\\\vec{b}]$$\\n3. **Interchange of Dot and Cross:**\\n$$\\\\vec{a} \\\\cdot (\\\\vec{b} \\\\times \\\\vec{c}) = (\\\\vec{a} \\\\times \\\\vec{b}) \\\\cdot \\\\vec{c}$$"
+      },
+      {
+        "front": "What is the condition for three vectors $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ to be coplanar?",
+        "back": "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = 0$$\\nAlso, if any two vectors in the box product are equal or parallel, the value is $0$."
+      },
+      {
+        "front": "Give the geometric interpretations of the Scalar Triple Product regarding volume of a parallelepiped and a tetrahedron.",
+        "back": "1. **Volume of Parallelepiped** with coterminous edges $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$:\\n$$V = |[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]|$$\\n2. **Volume of Tetrahedron** with edges $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ from a common vertex:\\n$$V = \\\\dfrac{1}{6}|[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]|$$"
+      },
+      {
+        "front": "What is the value of the box product $[\\\\vec{a} + \\\\vec{b}\\\\quad \\\\vec{b} + \\\\vec{c}\\\\quad \\\\vec{c} + \\\\vec{a}]$ in terms of $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$?",
+        "back": "$$[\\\\vec{a} + \\\\vec{b}\\\\quad \\\\vec{b} + \\\\vec{c}\\\\quad \\\\vec{c} + \\\\vec{a}] = 2[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$\\nWhereas $[\\\\vec{a} - \\\\vec{b}\\\\quad \\\\vec{b} - \\\\vec{c}\\\\quad \\\\vec{c} - \\\\vec{a}] = 0$."
+      },
+      {
+        "front": "What is the value of $[\\\\vec{a} \\\\times \\\\vec{b}\\\\quad \\\\vec{b} \\\\times \\\\vec{c}\\\\quad \\\\vec{c} \\\\times \\\\vec{a}]$ in terms of $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$?",
+        "back": "$$[\\\\vec{a} \\\\times \\\\vec{b}\\\\quad \\\\vec{b} \\\\times \\\\vec{c}\\\\quad \\\\vec{c} \\\\times \\\\vec{a}] = [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$$"
+      },
+      {
+        "front": "State the expansion of the Vector Triple Product $\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c})$.",
+        "back": "$$\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c}$$\\n*(Mnemonic: \"BAC - CAB\" rule)*"
+      },
+      {
+        "front": "State the expansion of $(\\\\vec{a} \\\\times \\\\vec{b}) \\\\times \\\\vec{c}$. Is cross product associative?",
+        "back": "$$(\\\\vec{a} \\\\times \\\\vec{b}) \\\\times \\\\vec{c} = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{b} \\\\cdot \\\\vec{c})\\\\vec{a}$$\\nNo, in general:\\n$$\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) \\\\ne (\\\\vec{a} \\\\times \\\\vec{b}) \\\\times \\\\vec{c}$$"
+      },
+      {
+        "front": "State Jacobi's Identity for vectors.",
+        "back": "$$\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) + \\\\vec{b} \\\\times (\\\\vec{c} \\\\times \\\\vec{a}) + \\\\vec{c} \\\\times (\\\\vec{a} \\\\times \\\\vec{b}) = \\\\vec{0}$$"
+      },
+      {
+        "front": "Define the Reciprocal System of Vectors $\\\\vec{a}', \\\\vec{b}', \\\\vec{c}'$ for a non-coplanar triad $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$.",
+        "back": "$$\\\\vec{a}' = \\\\dfrac{\\\\vec{b} \\\\times \\\\vec{c}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}, \\\\quad \\\\vec{b}' = \\\\dfrac{\\\\vec{c} \\\\times \\\\vec{a}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}, \\\\quad \\\\vec{c}' = \\\\dfrac{\\\\vec{a} \\\\times \\\\vec{b}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$$\\nwhere $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] \\\\ne 0$."
+      },
+      {
+        "front": "What are the fundamental properties of the reciprocal system $\\\\vec{a}', \\\\vec{b}', \\\\vec{c}'$?",
+        "back": "1. $\\\\vec{a} \\\\cdot \\\\vec{a}' = \\\\vec{b} \\\\cdot \\\\vec{b}' = \\\\vec{c} \\\\cdot \\\\vec{c}' = 1$\\n2. $\\\\vec{a} \\\\cdot \\\\vec{b}' = \\\\vec{a} \\\\cdot \\\\vec{c}' = \\\\vec{b} \\\\cdot \\\\vec{a}' = \\\\dots = 0$\\n3. $[\\\\vec{a}'\\\\ \\\\vec{b}'\\\\ \\\\vec{c}'] = \\\\dfrac{1}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$"
+      },
+      {
+        "front": "How is an arbitrary vector $\\\\vec{r}$ expressed in terms of a non-coplanar triad $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ and its reciprocal triad?",
+        "back": "$$\\\\vec{r} = (\\\\vec{r} \\\\cdot \\\\vec{a}')\\\\vec{a} + (\\\\vec{r} \\\\cdot \\\\vec{b}')\\\\vec{b} + (\\\\vec{r} \\\\cdot \\\\vec{c}')\\\\vec{c}$$\\nEquivalently:\\n$$\\\\vec{r} = \\\\dfrac{[\\\\vec{r}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]\\\\vec{a} + [\\\\vec{r}\\\\ \\\\vec{c}\\\\ \\\\vec{a}]\\\\vec{b} + [\\\\vec{r}\\\\ \\\\vec{a}\\\\ \\\\vec{b}]\\\\vec{c}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$$"
+      },
+      {
+        "front": "State the identity for $\\\\hat{i} \\\\times (\\\\vec{r} \\\\times \\\\hat{i}) + \\\\hat{j} \\\\times (\\\\vec{r} \\\\times \\\\hat{j}) + \\\\hat{k} \\\\times (\\\\vec{r} \\\\times \\\\hat{k})$.",
+        "back": "$$\\\\hat{i} \\\\times (\\\\vec{r} \\\\times \\\\hat{i}) + \\\\hat{j} \\\\times (\\\\vec{r} \\\\times \\\\hat{j}) + \\\\hat{k} \\\\times (\\\\vec{r} \\\\times \\\\hat{k}) = 2\\\\vec{r}$$"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Find the unit vector in the direction of the vector $\\\\vec{a} = 2\\\\hat{i} + 3\\\\hat{j} + 6\\\\hat{k}$.",
+        "options": [
+          "$$\\\\dfrac{2}{7}\\\\hat{i} + \\\\dfrac{3}{7}\\\\hat{j} + \\\\dfrac{6}{7}\\\\hat{k}$$",
+          "$$\\\\dfrac{2}{\\\\sqrt{11}}\\\\hat{i} + \\\\dfrac{3}{\\\\sqrt{11}}\\\\hat{j} + \\\\dfrac{6}{\\\\sqrt{11}}\\\\hat{k}$$",
+          "$$\\\\dfrac{2}{49}\\\\hat{i} + \\\\dfrac{3}{49}\\\\hat{j} + \\\\dfrac{6}{49}\\\\hat{k}$$",
+          "$$-\\\\dfrac{2}{7}\\\\hat{i} - \\\\dfrac{3}{7}\\\\hat{j} - \\\\dfrac{6}{7}\\\\hat{k}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{a}| = \\\\sqrt{2^2 + 3^2 + 6^2} = \\\\sqrt{49} = 7$, so $\\\\hat{a} = \\\\vec{a}/7$.",
+          "Incorrect. The denominator uses the sum of coefficients rather than the square root of the sum of squares.",
+          "Incorrect. Divided by $|\\\\vec{a}|^2 = 49$ instead of $|\\\\vec{a}| = 7$.",
+          "Incorrect. This is the unit vector pointing in the opposite direction."
+        ],
+        "fullExplanation": "To find the unit vector $\\\\hat{a}$ in the direction of $\\\\vec{a}$:\\n1. Calculate magnitude: $|\\\\vec{a}| = \\\\sqrt{2^2 + 3^2 + 6^2} = \\\\sqrt{4 + 9 + 36} = \\\\sqrt{49} = 7$.\\n2. Divide the vector by its magnitude: $\\\\hat{a} = \\\\dfrac{\\\\vec{a}}{|\\\\vec{a}|} = \\\\dfrac{2\\\\hat{i} + 3\\\\hat{j} + 6\\\\hat{k}}{7} = \\\\dfrac{2}{7}\\\\hat{i} + \\\\dfrac{3}{7}\\\\hat{j} + \\\\dfrac{6}{7}\\\\hat{k}$."
+      },
+      {
+        "question": "Find the projection of the vector $\\\\vec{a} = \\\\hat{i} + 3\\\\hat{j} + 7\\\\hat{k}$ on the vector $\\\\vec{b} = 7\\\\hat{i} - \\\\hat{j} + 8\\\\hat{k}$.",
+        "options": [
+          "$$\\\\dfrac{60}{\\\\sqrt{114}}$$",
+          "$$\\\\dfrac{60}{\\\\sqrt{59}}$$",
+          "$$\\\\dfrac{56}{\\\\sqrt{114}}$$",
+          "$$\\\\dfrac{60}{114}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{a}\\\\cdot\\\\vec{b} = 7 - 3 + 56 = 60$, and $|\\\\vec{b}| = \\\\sqrt{49 + 1 + 64} = \\\\sqrt{114}$.",
+          "Incorrect. Here $|\\\\vec{a}| = \\\\sqrt{1+9+49} = \\\\sqrt{59}$ was placed in the denominator instead of $|\\\\vec{b}|$.",
+          "Incorrect. Arithmetic error in computing the scalar product.",
+          "Incorrect. Failed to take the square root in computing the magnitude of $\\\\vec{b}$."
+        ],
+        "fullExplanation": "The projection of vector $\\\\vec{a}$ on $\\\\vec{b}$ is given by:\\n$$\\\\text{proj}_{\\\\vec{b}}\\\\vec{a} = \\\\dfrac{\\\\vec{a} \\\\cdot \\\\vec{b}}{|\\\\vec{b}|}$$\\n1. Compute $\\\\vec{a} \\\\cdot \\\\vec{b} = (1)(7) + (3)(-1) + (7)(8) = 7 - 3 + 56 = 60$.\\n2. Compute $|\\\\vec{b}| = \\\\sqrt{7^2 + (-1)^2 + 8^2} = \\\\sqrt{49 + 1 + 64} = \\\\sqrt{114}$.\\n3. Therefore, the projection is $\\\\dfrac{60}{\\\\sqrt{114}}$."
+      },
+      {
+        "question": "If $|\\\\vec{a}| = 4$, $|\\\\vec{b}| = 3$, and $\\\\vec{a} \\\\cdot \\\\vec{b} = 6$, what is the angle between $\\\\vec{a}$ and $\\\\vec{b}$?",
+        "options": [
+          "$$\\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{6}$$",
+          "$$\\\\dfrac{\\\\pi}{4}$$",
+          "$$\\\\dfrac{2\\\\pi}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\cos\\\\theta = \\\\dfrac{6}{4 \\\\times 3} = \\\\dfrac{1}{2} \\\\implies \\\\theta = \\\\dfrac{\\\\pi}{3}$.",
+          "Incorrect. $\\\\cos(\\\\pi/6) = \\\\sqrt{3}/2 \\\\ne 1/2$.",
+          "Incorrect. $\\\\cos(\\\\pi/4) = 1/\\\\sqrt{2} \\\\ne 1/2$.",
+          "Incorrect. $\\\\cos(2\\\\pi/3) = -1/2$ would require $\\\\vec{a}\\\\cdot\\\\vec{b} = -6$."
+        ],
+        "fullExplanation": "We know that $\\\\vec{a} \\\\cdot \\\\vec{b} = |\\\\vec{a}||\\\\vec{b}|\\\\cos\\\\theta$.\\nSubstituting the given values:\\n$$6 = 4 \\\\times 3 \\\\times \\\\cos\\\\theta \\\\implies 12\\\\cos\\\\theta = 6 \\\\implies \\\\cos\\\\theta = \\\\dfrac{1}{2}$$\\nSince $0 \\\\le \\\\theta \\\\le \\\\pi$, $\\\\theta = \\\\dfrac{\\\\pi}{3}$ ($60^\\\\circ$)."
+      },
+      {
+        "question": "Find the value of $\\\\lambda$ such that the vectors $\\\\vec{a} = 2\\\\hat{i} - \\\\lambda\\\\hat{j} + \\\\hat{k}$ and $\\\\vec{b} = \\\\hat{i} + 2\\\\hat{j} - 3\\\\hat{k}$ are orthogonal.",
+        "options": [
+          "$$-\\\\dfrac{1}{2}$$",
+          "$$\\\\dfrac{1}{2}$$",
+          "$$-2$$",
+          "$$2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{a} \\\\cdot \\\\vec{b} = 2(1) - 2\\\\lambda - 3 = 0 \\\\implies -2\\\\lambda - 1 = 0 \\\\implies \\\\lambda = -1/2$.",
+          "Incorrect. Sign error in solving $-2\\\\lambda - 1 = 0$.",
+          "Incorrect. Arithmetic slip.",
+          "Incorrect. Arithmetic slip."
+        ],
+        "fullExplanation": "Two vectors are orthogonal if and only if their dot product equals zero:\\n$$\\\\vec{a} \\\\cdot \\\\vec{b} = 0$$\\n$$(2)(1) + (-\\\\lambda)(2) + (1)(-3) = 0$$\\n$$2 - 2\\\\lambda - 3 = 0 \\\\implies -1 - 2\\\\lambda = 0 \\\\implies \\\\lambda = -\\\\dfrac{1}{2}$$."
+      },
+      {
+        "question": "Find the area of the parallelogram whose adjacent sides are determined by the vectors $\\\\vec{a} = \\\\hat{i} - \\\\hat{j} + 3\\\\hat{k}$ and $\\\\vec{b} = 2\\\\hat{i} - 7\\\\hat{j} + \\\\hat{k}$.",
+        "options": [
+          "$$15\\\\sqrt{2}$$",
+          "$$30\\\\sqrt{2}$$",
+          "$$15$$",
+          "$$450$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{a} \\\\times \\\\vec{b}| = |20\\\\hat{i} + 5\\\\hat{j} - 5\\\\hat{k}| = \\\\sqrt{400 + 25 + 25} = \\\\sqrt{450} = 15\\\\sqrt{2}$.",
+          "Incorrect. Multiplied by $2$ instead of taking the magnitude.",
+          "Incorrect. Forgot the factor $\\\\sqrt{2}$ from $\\\\sqrt{450} = 15\\\\sqrt{2}$.",
+          "Incorrect. This is $|\\\\vec{a} \\\\times \\\\vec{b}|^2$."
+        ],
+        "fullExplanation": "The area of a parallelogram with adjacent sides $\\\\vec{a}$ and $\\\\vec{b}$ is $|\\\\vec{a} \\\\times \\\\vec{b}|$.\\nCompute $\\\\vec{a} \\\\times \\\\vec{b}$:\\n$$\\\\vec{a} \\\\times \\\\vec{b} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 1 & -1 & 3 \\\\\\\\ 2 & -7 & 1 \\\\end{vmatrix} = \\\\hat{i}(-1 + 21) - \\\\hat{j}(1 - 6) + \\\\hat{k}(-7 + 2) = 20\\\\hat{i} + 5\\\\hat{j} - 5\\\\hat{k}$$\\nMagnitude:\\n$$|\\\\vec{a} \\\\times \\\\vec{b}| = \\\\sqrt{20^2 + 5^2 + (-5)^2} = \\\\sqrt{400 + 25 + 25} = \\\\sqrt{450} = 15\\\\sqrt{2}$$ sq. units."
+      },
+      {
+        "question": "If $|\\\\vec{a}| = 2$, $|\\\\vec{b}| = 3$, and $\\\\vec{a} \\\\cdot \\\\vec{b} = 4$, find the value of $|\\\\vec{a} - \\\\vec{b}|$.",
+        "options": [
+          "$$\\\\sqrt{5}$$",
+          "$$5$$",
+          "$$\\\\sqrt{13}$$",
+          "$$1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{a} - \\\\vec{b}|^2 = |\\\\vec{a}|^2 + |\\\\vec{b}|^2 - 2(\\\\vec{a}\\\\cdot\\\\vec{b}) = 4 + 9 - 8 = 5 \\\\implies \\\\sqrt{5}$.",
+          "Incorrect. This is $|\\\\vec{a} - \\\\vec{b}|^2$.",
+          "Incorrect. Omitted the cross term $-2(\\\\vec{a}\\\\cdot\\\\vec{b})$, getting $\\\\sqrt{4+9}=\\\\sqrt{13}$.",
+          "Incorrect. Directly computed $|\\\\vec{a}| - |\\\\vec{b}| = 2 - 3 = -1$, magnitude $1$."
+        ],
+        "fullExplanation": "Using the relation $|\\\\vec{a} - \\\\vec{b}|^2 = |\\\\vec{a}|^2 + |\\\\vec{b}|^2 - 2(\\\\vec{a} \\\\cdot \\\\vec{b})$:\\n$$|\\\\vec{a} - \\\\vec{b}|^2 = 2^2 + 3^2 - 2(4) = 4 + 9 - 8 = 5$$\\nTaking square root: $|\\\\vec{a} - \\\\vec{b}| = \\\\sqrt{5}$."
+      },
+      {
+        "question": "Find the area of the triangle with vertices $A(1, 1, 2)$, $B(2, 3, 5)$, and $C(1, 5, 5)$.",
+        "options": [
+          "$$\\\\dfrac{\\\\sqrt{61}}{2}$$",
+          "$$\\\\sqrt{61}$$",
+          "$$\\\\dfrac{\\\\sqrt{59}}{2}$$",
+          "$$\\\\dfrac{61}{4}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{AB} = \\\\hat{i} + 2\\\\hat{j} + 3\\\\hat{k}$, $\\\\vec{AC} = 4\\\\hat{j} + 3\\\\hat{k}$, $\\\\vec{AB} \\\\times \\\\vec{AC} = -6\\\\hat{i} - 3\\\\hat{j} + 4\\\\hat{k}$, magnitude $\\\\sqrt{61}$, area is $\\\\sqrt{61}/2$.",
+          "Incorrect. Forgot the factor of $1/2$ for triangle area.",
+          "Incorrect. Arithmetic mistake in computing vector cross product components.",
+          "Incorrect. Squaring error."
+        ],
+        "fullExplanation": "1. Position vectors give:\\n$$\\\\vec{AB} = (2-1)\\\\hat{i} + (3-1)\\\\hat{j} + (5-2)\\\\hat{k} = \\\\hat{i} + 2\\\\hat{j} + 3\\\\hat{k}$$\\n$$\\\\vec{AC} = (1-1)\\\\hat{i} + (5-1)\\\\hat{j} + (5-2)\\\\hat{k} = 4\\\\hat{j} + 3\\\\hat{k}$$\\n2. Compute cross product:\\n$$\\\\vec{AB} \\\\times \\\\vec{AC} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 1 & 2 & 3 \\\\\\\\ 0 & 4 & 3 \\\\end{vmatrix} = \\\\hat{i}(6 - 12) - \\\\hat{j}(3 - 0) + \\\\hat{k}(4 - 0) = -6\\\\hat{i} - 3\\\\hat{j} + 4\\\\hat{k}$$\\n3. Magnitude:\\n$$|\\\\vec{AB} \\\\times \\\\vec{AC}| = \\\\sqrt{(-6)^2 + (-3)^2 + 4^2} = \\\\sqrt{36 + 9 + 16} = \\\\sqrt{61}$$\\n4. $\\\\text{Area} = \\\\dfrac{1}{2}|\\\\vec{AB} \\\\times \\\\vec{AC}| = \\\\dfrac{\\\\sqrt{61}}{2}$ sq. units."
+      },
+      {
+        "question": "Find a unit vector perpendicular to both vectors $\\\\vec{a} = \\\\hat{i} + \\\\hat{j}$ and $\\\\vec{b} = \\\\hat{j} + \\\\hat{k}$.",
+        "options": [
+          "$$\\\\dfrac{\\\\hat{i} - \\\\hat{j} + \\\\hat{k}}{\\\\sqrt{3}}$$",
+          "$$\\\\dfrac{\\\\hat{i} + \\\\hat{j} + \\\\hat{k}}{\\\\sqrt{3}}$$",
+          "$$\\\\dfrac{\\\\hat{i} + \\\\hat{j} - \\\\hat{k}}{\\\\sqrt{3}}$$",
+          "$$\\\\dfrac{-\\\\hat{i} + \\\\hat{j} + \\\\hat{k}}{\\\\sqrt{3}}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{a} \\\\times \\\\vec{b} = \\\\hat{i} - \\\\hat{j} + \\\\hat{k}$, so the unit vector is $(\\\\hat{i} - \\\\hat{j} + \\\\hat{k})/\\\\sqrt{3}$.",
+          "Incorrect. Check dot product: $(\\\\hat{i}+\\\\hat{j}+\\\\hat{k})\\\\cdot(\\\\hat{i}+\\\\hat{j}) = 2 \\\\ne 0$.",
+          "Incorrect. Check dot product: $(\\\\hat{i}+\\\\hat{j}-\\\\hat{k})\\\\cdot(\\\\hat{j}+\\\\hat{k}) = 0$, but with $\\\\vec{a}$ it gives $2 \\\\ne 0$.",
+          "Incorrect. Check dot product with $\\\\vec{a}$: $(-1)(1) + (1)(1) = 0$, but with $\\\\vec{b}$: $1 + 1 = 2 \\\\ne 0$."
+        ],
+        "fullExplanation": "A vector perpendicular to both $\\\\vec{a}$ and $\\\\vec{b}$ is along $\\\\vec{a} \\\\times \\\\vec{b}$:\\n$$\\\\vec{a} \\\\times \\\\vec{b} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 1 & 1 & 0 \\\\\\\\ 0 & 1 & 1 \\\\end{vmatrix} = \\\\hat{i}(1 - 0) - \\\\hat{j}(1 - 0) + \\\\hat{k}(1 - 0) = \\\\hat{i} - \\\\hat{j} + \\\\hat{k}$$\\nMagnitude: $|\\\\vec{a} \\\\times \\\\vec{b}| = \\\\sqrt{1^2 + (-1)^2 + 1^2} = \\\\sqrt{3}$.\\nHence, the unit vector is $\\\\dfrac{\\\\vec{a} \\\\times \\\\vec{b}}{|\\\\vec{a} \\\\times \\\\vec{b}|} = \\\\dfrac{\\\\hat{i} - \\\\hat{j} + \\\\hat{k}}{\\\\sqrt{3}}$."
+      },
+      {
+        "question": "If $\\\\vec{a}$ is a unit vector and $(\\\\vec{x} - \\\\vec{a}) \\\\cdot (\\\\vec{x} + \\\\vec{a}) = 15$, find the magnitude of $\\\\vec{x}$.",
+        "options": [
+          "$$4$$",
+          "$$\\\\sqrt{15}$$",
+          "$$16$$",
+          "$$\\\\sqrt{14}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{x}|^2 - |\\\\vec{a}|^2 = 15 \\\\implies |\\\\vec{x}|^2 - 1 = 15 \\\\implies |\\\\vec{x}|^2 = 16 \\\\implies |\\\\vec{x}| = 4$.",
+          "Incorrect. Forgot to add $|\\\\vec{a}|^2 = 1$.",
+          "Incorrect. This is $|\\\\vec{x}|^2$, not $|\\\\vec{x}|$.",
+          "Incorrect. Subtracted $1$ instead of adding $1$ to $15$."
+        ],
+        "fullExplanation": "Expanding the dot product:\\n$$(\\\\vec{x} - \\\\vec{a}) \\\\cdot (\\\\vec{x} + \\\\vec{a}) = \\\\vec{x} \\\\cdot \\\\vec{x} + \\\\vec{x} \\\\cdot \\\\vec{a} - \\\\vec{a} \\\\cdot \\\\vec{x} - \\\\vec{a} \\\\cdot \\\\vec{a}$$\\n$$= |\\\\vec{x}|^2 - |\\\\vec{a}|^2$$\\nSince $\\\\vec{a}$ is a unit vector, $|\\\\vec{a}| = 1$, so $|\\\\vec{a}|^2 = 1$.\\n$$|\\\\vec{x}|^2 - 1 = 15 \\\\implies |\\\\vec{x}|^2 = 16 \\\\implies |\\\\vec{x}| = 4$$ (since magnitude must be non-negative)."
+      },
+      {
+        "question": "Find the position vector of the point $R$ which divides the line segment joining points $P(\\\\hat{i} + 2\\\\hat{j} - \\\\hat{k})$ and $Q(-\\\\hat{i} + \\\\hat{j} + \\\\hat{k})$ internally in the ratio $2 : 1$.",
+        "options": [
+          "$$-\\\\dfrac{1}{3}\\\\hat{i} + \\\\dfrac{4}{3}\\\\hat{j} + \\\\dfrac{1}{3}\\\\hat{k}$$",
+          "$$\\\\dfrac{1}{3}\\\\hat{i} + \\\\dfrac{4}{3}\\\\hat{j} + \\\\dfrac{1}{3}\\\\hat{k}$$",
+          "$$-\\\\hat{i} + 4\\\\hat{j} + \\\\hat{k}$$",
+          "$$-\\\\dfrac{1}{3}\\\\hat{i} + \\\\dfrac{5}{3}\\\\hat{j} + \\\\dfrac{1}{3}\\\\hat{k}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\vec{r} = \\\\dfrac{2\\\\vec{q} + 1\\\\vec{p}}{2 + 1} = \\\\dfrac{2(-\\\\hat{i} + \\\\hat{j} + \\\\hat{k}) + (\\\\hat{i} + 2\\\\hat{j} - \\\\hat{k})}{3} = \\\\dfrac{-\\\\hat{i} + 4\\\\hat{j} + \\\\hat{k}}{3}$.",
+          "Incorrect. Sign error on the $\\\\hat{i}$ coefficient.",
+          "Incorrect. Forgot to divide by $m + n = 3$.",
+          "Incorrect. Arithmetic slip in adding the $\\\\hat{j}$ components: $2(1) + 2 = 4$, not $5$."
+        ],
+        "fullExplanation": "By the internal division section formula:\\n$$\\\\vec{r} = \\\\dfrac{m\\\\vec{q} + n\\\\vec{p}}{m + n}$$\\nHere $m = 2, n = 1$, $\\\\vec{p} = \\\\hat{i} + 2\\\\hat{j} - \\\\hat{k}$, and $\\\\vec{q} = -\\\\hat{i} + \\\\hat{j} + \\\\hat{k}$.\\n$$\\\\vec{r} = \\\\dfrac{2(-\\\\hat{i} + \\\\hat{j} + \\\\hat{k}) + 1(\\\\hat{i} + 2\\\\hat{j} - \\\\hat{k})}{2 + 1} = \\\\dfrac{-2\\\\hat{i} + 2\\\\hat{j} + 2\\\\hat{k} + \\\\hat{i} + 2\\\\hat{j} - \\\\hat{k}}{3} = \\\\dfrac{-\\\\hat{i} + 4\\\\hat{j} + \\\\hat{k}}{3} = -\\\\dfrac{1}{3}\\\\hat{i} + \\\\dfrac{4}{3}\\\\hat{j} + \\\\dfrac{1}{3}\\\\hat{k}$$."
+      },
+      {
+        "question": "For any three vectors $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$, the value of $[\\\\vec{a} + \\\\vec{b}\\\\quad \\\\vec{b} + \\\\vec{c}\\\\quad \\\\vec{c} + \\\\vec{a}]$ is equal to:",
+        "options": [
+          "$$2[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$0$$",
+          "$$4[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $[\\\\vec{a} + \\\\vec{b}\\\\quad \\\\vec{b} + \\\\vec{c}\\\\quad \\\\vec{c} + \\\\vec{a}] = \\\\begin{vmatrix} 1 & 1 & 0 \\\\\\\\ 0 & 1 & 1 \\\\\\\\ 1 & 0 & 1 \\\\end{vmatrix}[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = (1(1) - 1(-1))[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = 2[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$.",
+          "Incorrect. Failed to evaluate the coefficient determinant properly.",
+          "Incorrect. That holds for $[\\\\vec{a} - \\\\vec{b}\\\\quad \\\\vec{b} - \\\\vec{c}\\\\quad \\\\vec{c} - \\\\vec{a}] = 0$, not the sum.",
+          "Incorrect. Overcounted terms."
+        ],
+        "fullExplanation": "We can express each row vector as a linear combination of $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$:\\n$$[\\\\vec{a} + \\\\vec{b}\\\\quad \\\\vec{b} + \\\\vec{c}\\\\quad \\\\vec{c} + \\\\vec{a}] = \\\\begin{vmatrix} 1 & 1 & 0 \\\\\\\\ 0 & 1 & 1 \\\\\\\\ 1 & 0 & 1 \\\\end{vmatrix} [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$\\nEvaluating the $3 \\\\times 3$ determinant:\\n$$1(1 - 0) - 1(0 - 1) + 0 = 1 + 1 = 2$$\\nThus, the result is $2[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$."
+      },
+      {
+        "question": "For any three non-coplanar vectors $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$, the value of $[\\\\vec{a} \\\\times \\\\vec{b}\\\\quad \\\\vec{b} \\\\times \\\\vec{c}\\\\quad \\\\vec{c} \\\\times \\\\vec{a}]$ is:",
+        "options": [
+          "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$$",
+          "$$2[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. By standard vector expansion, $(\\\\vec{a} \\\\times \\\\vec{b}) \\\\cdot ((\\\\vec{b} \\\\times \\\\vec{c}) \\\\times (\\\\vec{c} \\\\times \\\\vec{a})) = [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$.",
+          "Incorrect. Confused with $[\\\\vec{a}+\\\\vec{b}\\\\ \\\\vec{b}+\\\\vec{c}\\\\ \\\\vec{c}+\\\\vec{a}]$.",
+          "Incorrect. The dimension and degree of products yield the square of the box product.",
+          "Incorrect. The vectors $\\\\vec{a}\\\\times\\\\vec{b}, \\\\vec{b}\\\\times\\\\vec{c}, \\\\vec{c}\\\\times\\\\vec{a}$ are non-coplanar if $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ are non-coplanar."
+        ],
+        "fullExplanation": "Let $\\\\vec{u} = \\\\vec{b} \\\\times \\\\vec{c}$ and $\\\\vec{v} = \\\\vec{c} \\\\times \\\\vec{a}$.\\nThen $\\\\vec{u} \\\\times \\\\vec{v} = (\\\\vec{b} \\\\times \\\\vec{c}) \\\\times (\\\\vec{c} \\\\times \\\\vec{a})$.\\nUsing vector triple product treating $(\\\\vec{b} \\\\times \\\\vec{c})$ as a single vector:\\n$$(\\\\vec{b} \\\\times \\\\vec{c}) \\\\times \\\\vec{v} = [(\\\\vec{b} \\\\times \\\\vec{c}) \\\\cdot \\\\vec{a}]\\\\vec{c} - [(\\\\vec{b} \\\\times \\\\vec{c}) \\\\cdot \\\\vec{c}]\\\\vec{a} = [\\\\vec{b}\\\\ \\\\vec{c}\\\\ \\\\vec{a}]\\\\vec{c} - \\\\vec{0} = [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]\\\\vec{c}$$\\nNow take the dot product with $(\\\\vec{a} \\\\times \\\\vec{b})$:\\n$$[\\\\vec{a} \\\\times \\\\vec{b}\\\\quad \\\\vec{b} \\\\times \\\\vec{c}\\\\quad \\\\vec{c} \\\\times \\\\vec{a}] = (\\\\vec{a} \\\\times \\\\vec{b}) \\\\cdot ([\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]\\\\vec{c}) = [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] ((\\\\vec{a} \\\\times \\\\vec{b}) \\\\cdot \\\\vec{c}) = [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$$."
+      },
+      {
+        "question": "Find the value of $\\\\lambda$ for which the vectors $\\\\vec{u} = \\\\hat{i} + 3\\\\hat{j} + \\\\hat{k}$, $\\\\vec{v} = 2\\\\hat{i} - \\\\hat{j} - \\\\hat{k}$, and $\\\\vec{w} = \\\\lambda\\\\hat{j} + 3\\\\hat{k}$ are coplanar.",
+        "options": [
+          "$$7$$",
+          "$$-7$$",
+          "$$5$$",
+          "$$-5$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Setting the determinant to zero gives $3\\\\lambda - 21 = 0 \\\\implies \\\\lambda = 7$.",
+          "Incorrect. Sign error in solving $3\\\\lambda - 21 = 0$.",
+          "Incorrect. Determinant calculation mistake.",
+          "Incorrect. Arithmetic slip."
+        ],
+        "fullExplanation": "For three vectors to be coplanar, their scalar triple product must be zero:\\n$$\\\\begin{vmatrix} 1 & 3 & 1 \\\\\\\\ 2 & -1 & -1 \\\\\\\\ 0 & \\\\lambda & 3 \\\\end{vmatrix} = 0$$\\nExpanding along the first row:\\n$$1((-1)(3) - (-1)(\\\\lambda)) - 3((2)(3) - (-1)(0)) + 1((2)(\\\\lambda) - (-1)(0)) = 0$$\\n$$1(-3 + \\\\lambda) - 3(6) + 1(2\\\\lambda) = 0$$\\n$$\\\\lambda - 3 - 18 + 2\\\\lambda = 0$$\\n$$3\\\\lambda - 21 = 0 \\\\implies \\\\lambda = 7$$."
+      },
+      {
+        "question": "Let $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ be vectors such that $|\\\\vec{a}| = 1$, $|\\\\vec{b}| = 2$, $|\\\\vec{c}| = 3$ and $\\\\vec{a} + \\\\vec{b} + \\\\vec{c} = \\\\vec{0}$. The value of $\\\\vec{a} \\\\cdot \\\\vec{b} + \\\\vec{b} \\\\cdot \\\\vec{c} + \\\\vec{c} \\\\cdot \\\\vec{a}$ is:",
+        "options": [
+          "$$-7$$",
+          "$$7$$",
+          "$$-14$$",
+          "$$14$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{a}+\\\\vec{b}+\\\\vec{c}|^2 = 1+4+9 + 2S = 0 \\\\implies 14 + 2S = 0 \\\\implies S = -7$.",
+          "Incorrect. Forgot the negative sign.",
+          "Incorrect. Missed dividing by $2$.",
+          "Incorrect. Sign and division error."
+        ],
+        "fullExplanation": "Since $\\\\vec{a} + \\\\vec{b} + \\\\vec{c} = \\\\vec{0}$, we square both sides:\\n$$|\\\\vec{a} + \\\\vec{b} + \\\\vec{c}|^2 = |\\\\vec{0}|^2 = 0$$\\n$$|\\\\vec{a}|^2 + |\\\\vec{b}|^2 + |\\\\vec{c}|^2 + 2(\\\\vec{a} \\\\cdot \\\\vec{b} + \\\\vec{b} \\\\cdot \\\\vec{c} + \\\\vec{c} \\\\cdot \\\\vec{a}) = 0$$\\n$$1^2 + 2^2 + 3^2 + 2S = 0$$\\n$$1 + 4 + 9 + 2S = 0 \\\\implies 14 + 2S = 0 \\\\implies S = -7$$."
+      },
+      {
+        "question": "If $\\\\vec{r} \\\\times \\\\vec{a} = \\\\vec{b} \\\\times \\\\vec{a}$ and $\\\\vec{r} \\\\cdot \\\\vec{c} = 0$, where $\\\\vec{a} \\\\cdot \\\\vec{c} \\\\ne 0$, then $\\\\vec{r}$ is equal to:",
+        "options": [
+          "$$\\\\vec{b} - \\\\left(\\\\dfrac{\\\\vec{b} \\\\cdot \\\\vec{c}}{\\\\vec{a} \\\\cdot \\\\vec{c}}\\\\right)\\\\vec{a}$$",
+          "$$\\\\vec{b} + \\\\left(\\\\dfrac{\\\\vec{b} \\\\cdot \\\\vec{c}}{\\\\vec{a} \\\\cdot \\\\vec{c}}\\\\right)\\\\vec{a}$$",
+          "$$\\\\vec{a} - \\\\left(\\\\dfrac{\\\\vec{a} \\\\cdot \\\\vec{c}}{\\\\vec{b} \\\\cdot \\\\vec{c}}\\\\right)\\\\vec{b}$$",
+          "$$\\\\vec{b} \\\\times \\\\vec{c}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $(\\\\vec{r} - \\\\vec{b}) \\\\times \\\\vec{a} = \\\\vec{0} \\\\implies \\\\vec{r} = \\\\vec{b} + \\\\lambda\\\\vec{a}$. Dotting with $\\\\vec{c}$ gives $\\\\lambda = -(\\\\vec{b}\\\\cdot\\\\vec{c})/(\\\\vec{a}\\\\cdot\\\\vec{c})$.",
+          "Incorrect. Sign mistake in solving for $\\\\lambda$.",
+          "Incorrect. Swapped roles of $\\\\vec{a}$ and $\\\\vec{b}$.",
+          "Incorrect. $\\\\vec{r}$ is not necessarily perpendicular to both."
+        ],
+        "fullExplanation": "1. From $\\\\vec{r} \\\\times \\\\vec{a} = \\\\vec{b} \\\\times \\\\vec{a}$:\\n$$(\\\\vec{r} - \\\\vec{b}) \\\\times \\\\vec{a} = \\\\vec{0}$$\\nThis means $(\\\\vec{r} - \\\\vec{b})$ is parallel to $\\\\vec{a}$:\\n$$\\\\vec{r} - \\\\vec{b} = \\\\lambda\\\\vec{a} \\\\implies \\\\vec{r} = \\\\vec{b} + \\\\lambda\\\\vec{a}$$\\n2. Take the dot product with $\\\\vec{c}$:\\n$$\\\\vec{r} \\\\cdot \\\\vec{c} = (\\\\vec{b} + \\\\lambda\\\\vec{a}) \\\\cdot \\\\vec{c} = \\\\vec{b} \\\\cdot \\\\vec{c} + \\\\lambda(\\\\vec{a} \\\\cdot \\\\vec{c})$$\\nSince $\\\\vec{r} \\\\cdot \\\\vec{c} = 0$:\\n$$0 = \\\\vec{b} \\\\cdot \\\\vec{c} + \\\\lambda(\\\\vec{a} \\\\cdot \\\\vec{c}) \\\\implies \\\\lambda = -\\\\dfrac{\\\\vec{b} \\\\cdot \\\\vec{c}}{\\\\vec{a} \\\\cdot \\\\vec{c}}$$\\n3. Substituting back into $\\\\vec{r}$:\\n$$\\\\vec{r} = \\\\vec{b} - \\\\left(\\\\dfrac{\\\\vec{b} \\\\cdot \\\\vec{c}}{\\\\vec{a} \\\\cdot \\\\vec{c}}\\\\right)\\\\vec{a}$$."
+      },
+      {
+        "question": "Let $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ be unit vectors such that $\\\\vec{b}$ and $\\\\vec{c}$ are non-parallel. If $\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) = \\\\dfrac{1}{2}\\\\vec{b}$, find the angles which $\\\\vec{a}$ makes with $\\\\vec{b}$ and $\\\\vec{c}$ respectively.",
+        "options": [
+          "$$\\\\dfrac{\\\\pi}{2} \\\\text{ and } \\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{3} \\\\text{ and } \\\\dfrac{\\\\pi}{2}$$",
+          "$$\\\\dfrac{\\\\pi}{6} \\\\text{ and } \\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{4} \\\\text{ and } \\\\dfrac{\\\\pi}{4}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $(\\\\vec{a}\\\\cdot\\\\vec{c})\\\\vec{b} - (\\\\vec{a}\\\\cdot\\\\vec{b})\\\\vec{c} = \\\\dfrac{1}{2}\\\\vec{b} \\\\implies \\\\vec{a}\\\\cdot\\\\vec{c} = 1/2, \\\\vec{a}\\\\cdot\\\\vec{b} = 0$.",
+          "Incorrect. The angles with $\\\\vec{b}$ and $\\\\vec{c}$ are reversed.",
+          "Incorrect. Does not satisfy $\\\\vec{a}\\\\cdot\\\\vec{b} = 0$.",
+          "Incorrect. Does not satisfy the coefficients of the expansion."
+        ],
+        "fullExplanation": "Expanding the vector triple product:\\n$$\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c}$$\\nGiven:\\n$$(\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c} = \\\\dfrac{1}{2}\\\\vec{b} + 0\\\\vec{c}$$\\nSince $\\\\vec{b}$ and $\\\\vec{c}$ are non-collinear (linearly independent), comparing coefficients:\\n$$\\\\vec{a} \\\\cdot \\\\vec{c} = \\\\dfrac{1}{2} \\\\quad \\\\text{and} \\\\quad \\\\vec{a} \\\\cdot \\\\vec{b} = 0$$\\nSince all are unit vectors:\\n$$\\\\cos\\\\theta_{ac} = \\\\dfrac{1}{2} \\\\implies \\\\theta_{ac} = \\\\dfrac{\\\\pi}{3}$$\\n$$\\\\cos\\\\theta_{ab} = 0 \\\\implies \\\\theta_{ab} = \\\\dfrac{\\\\pi}{2}$$."
+      },
+      {
+        "question": "If $\\\\vec{a}', \\\\vec{b}', \\\\vec{c}'$ constitute the reciprocal triad of non-coplanar vectors $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$, then $[\\\\vec{a}'\\\\ \\\\vec{b}'\\\\ \\\\vec{c}']$ is equal to:",
+        "options": [
+          "$$\\\\dfrac{1}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$$",
+          "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$\\\\dfrac{1}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2}$$",
+          "$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $[\\\\vec{a}'\\\\ \\\\vec{b}'\\\\ \\\\vec{c}'] = \\\\dfrac{[\\\\vec{b}\\\\times\\\\vec{c}\\\\quad \\\\vec{c}\\\\times\\\\vec{a}\\\\quad \\\\vec{a}\\\\times\\\\vec{b}]}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^3} = \\\\dfrac{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^3} = \\\\dfrac{1}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$.",
+          "Incorrect. The reciprocal system inverts the volume.",
+          "Incorrect. Power is $-1$, not $-2$.",
+          "Incorrect. This is the numerator value before dividing by the volume cubed."
+        ],
+        "fullExplanation": "By definition of reciprocal vectors:\\n$$\\\\vec{a}' = \\\\dfrac{\\\\vec{b} \\\\times \\\\vec{c}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}, \\\\quad \\\\vec{b}' = \\\\dfrac{\\\\vec{c} \\\\times \\\\vec{a}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}, \\\\quad \\\\vec{c}' = \\\\dfrac{\\\\vec{a} \\\\times \\\\vec{b}}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$$\\nTaking the scalar triple product:\\n$$[\\\\vec{a}'\\\\ \\\\vec{b}'\\\\ \\\\vec{c}'] = \\\\dfrac{1}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^3} [\\\\vec{b} \\\\times \\\\vec{c}\\\\quad \\\\vec{c} \\\\times \\\\vec{a}\\\\quad \\\\vec{a} \\\\times \\\\vec{b}]$$\\nSince $[\\\\vec{b} \\\\times \\\\vec{c}\\\\quad \\\\vec{c} \\\\times \\\\vec{a}\\\\quad \\\\vec{a} \\\\times \\\\vec{b}] = [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$:\\n$$[\\\\vec{a}'\\\\ \\\\vec{b}'\\\\ \\\\vec{c}'] = \\\\dfrac{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^3} = \\\\dfrac{1}{[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]}$$."
+      },
+      {
+        "question": "Find the volume of the parallelepiped whose coterminous edges are represented by the vectors $\\\\vec{a} = 2\\\\hat{i} - 3\\\\hat{j} + 4\\\\hat{k}$, $\\\\vec{b} = \\\\hat{i} + 2\\\\hat{j} - \\\\hat{k}$, and $\\\\vec{c} = 3\\\\hat{i} - \\\\hat{j} + 2\\\\hat{k}$.",
+        "options": [
+          "$$7$$",
+          "$$14$$",
+          "$$21$$",
+          "$$\\\\dfrac{7}{6}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]| = |2(3) + 3(5) + 4(-7)| = |6 + 15 - 28| = |-7| = 7$.",
+          "Incorrect. Calculation slip.",
+          "Incorrect. Added magnitudes instead of evaluating the determinant.",
+          "Incorrect. This is the volume of the tetrahedron, which divides by $6$."
+        ],
+        "fullExplanation": "The volume of a parallelepiped is given by $V = |[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]|$.\\nCompute the determinant:\\n$$[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = \\\\begin{vmatrix} 2 & -3 & 4 \\\\\\\\ 1 & 2 & -1 \\\\\\\\ 3 & -1 & 2 \\\\end{vmatrix}$$\\n$$= 2(4 - 1) - (-3)(2 - (-3)) + 4(-1 - 6)$$\\n$$= 2(3) + 3(5) + 4(-7) = 6 + 15 - 28 = -7$$\\nVolume must be positive: $V = |-7| = 7$ cubic units."
+      },
+      {
+        "question": "Let $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ be unit vectors such that $\\\\vec{a} + \\\\vec{b} + \\\\vec{c} = \\\\vec{0}$. What is the magnitude of the vector $\\\\vec{a} \\\\times \\\\vec{b} + \\\\vec{b} \\\\times \\\\vec{c} + \\\\vec{c} \\\\times \\\\vec{a}$?",
+        "options": [
+          "$$\\\\dfrac{3\\\\sqrt{3}}{2}$$",
+          "$$3\\\\sqrt{3}$$",
+          "$$\\\\dfrac{\\\\sqrt{3}}{2}$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Since $\\\\vec{a}+\\\\vec{b}+\\\\vec{c}=\\\\vec{0}$, $\\\\vec{a}\\\\times\\\\vec{b} = \\\\vec{b}\\\\times\\\\vec{c} = \\\\vec{c}\\\\times\\\\vec{a}$. The sum is $3(\\\\vec{a}\\\\times\\\\vec{b})$. The angle between any two is $120^\\\\circ$, so magnitude is $3(1)(1)\\\\sin(120^\\\\circ) = 3\\\\sqrt{3}/2$.",
+          "Incorrect. Missed the factor of $1/2$ from $\\\\sin 120^\\\\circ$.",
+          "Incorrect. This is the magnitude of just one term $\\\\vec{a}\\\\times\\\\vec{b}$.",
+          "Incorrect. While $\\\\vec{a}+\\\\vec{b}+\\\\vec{c}=\\\\vec{0}$, their cross products add constructively."
+        ],
+        "fullExplanation": "1. From $\\\\vec{a} + \\\\vec{b} + \\\\vec{c} = \\\\vec{0}$, taking cross product with $\\\\vec{a}$:\\n$$\\\\vec{a} \\\\times \\\\vec{a} + \\\\vec{a} \\\\times \\\\vec{b} + \\\\vec{a} \\\\times \\\\vec{c} = \\\\vec{0} \\\\implies \\\\vec{a} \\\\times \\\\vec{b} = \\\\vec{c} \\\\times \\\\vec{a}$$\\nSimilarly, taking cross product with $\\\\vec{b}$ gives $\\\\vec{a} \\\\times \\\\vec{b} = \\\\vec{b} \\\\times \\\\vec{c}$.\\n2. Therefore:\\n$$\\\\vec{a} \\\\times \\\\vec{b} + \\\\vec{b} \\\\times \\\\vec{c} + \\\\vec{c} \\\\times \\\\vec{a} = 3(\\\\vec{a} \\\\times \\\\vec{b})$$\\n3. Three unit vectors summing to zero form an equilateral triangle, so the angle between any pair is $\\\\theta = 120^\\\\circ = \\\\dfrac{2\\\\pi}{3}$.\\n4. Magnitude:\\n$$|3(\\\\vec{a} \\\\times \\\\vec{b})| = 3 |\\\\vec{a}||\\\\vec{b}|\\\\sin 120^\\\\circ = 3(1)(1)\\\\left(\\\\dfrac{\\\\sqrt{3}}{2}\\\\right) = \\\\dfrac{3\\\\sqrt{3}}{2}$$."
+      },
+      {
+        "question": "For any arbitrary vector $\\\\vec{r}$, the expression $\\\\hat{i} \\\\times (\\\\vec{r} \\\\times \\\\hat{i}) + \\\\hat{j} \\\\times (\\\\vec{r} \\\\times \\\\hat{j}) + \\\\hat{k} \\\\times (\\\\vec{r} \\\\times \\\\hat{k})$ simplifies to:",
+        "options": [
+          "$$2\\\\vec{r}$$",
+          "$$\\\\vec{r}$$",
+          "$$3\\\\vec{r}$$",
+          "$$\\\\vec{0}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Using vector triple product expansion on each term yields $3\\\\vec{r} - \\\\vec{r} = 2\\\\vec{r}$.",
+          "Incorrect. Failed to sum all three directional components properly.",
+          "Incorrect. Kept the first part of expansion $(\\\\hat{i}\\\\cdot\\\\hat{i})\\\\vec{r} = 3\\\\vec{r}$ but neglected the second part.",
+          "Incorrect. Confused with Jacobi's identity."
+        ],
+        "fullExplanation": "Using the vector triple product identity $\\\\vec{A} \\\\times (\\\\vec{B} \\\\times \\\\vec{C}) = (\\\\vec{A} \\\\cdot \\\\vec{C})\\\\vec{B} - (\\\\vec{A} \\\\cdot \\\\vec{B})\\\\vec{C}$ on each term:\\n$$\\\\hat{i} \\\\times (\\\\vec{r} \\\\times \\\\hat{i}) = (\\\\hat{i} \\\\cdot \\\\hat{i})\\\\vec{r} - (\\\\hat{i} \\\\cdot \\\\vec{r})\\\\hat{i} = \\\\vec{r} - x\\\\hat{i}$$\\n$$\\\\hat{j} \\\\times (\\\\vec{r} \\\\times \\\\hat{j}) = (\\\\hat{j} \\\\cdot \\\\hat{j})\\\\vec{r} - (\\\\hat{j} \\\\cdot \\\\vec{r})\\\\hat{j} = \\\\vec{r} - y\\\\hat{j}$$\\n$$\\\\hat{k} \\\\times (\\\\vec{r} \\\\times \\\\hat{k}) = (\\\\hat{k} \\\\cdot \\\\hat{k})\\\\vec{r} - (\\\\hat{k} \\\\cdot \\\\vec{r})\\\\hat{k} = \\\\vec{r} - z\\\\hat{k}$$\\nSumming the three equations:\\n$$\\\\text{Sum} = 3\\\\vec{r} - (x\\\\hat{i} + y\\\\hat{j} + z\\\\hat{k}) = 3\\\\vec{r} - \\\\vec{r} = 2\\\\vec{r}$$."
+      },
+      {
+        "question": "Let $\\\\vec{a} = 2\\\\hat{i} + \\\\hat{j} - 2\\\\hat{k}$ and $\\\\vec{b} = \\\\hat{i} + \\\\hat{j}$. If $\\\\vec{c}$ is a vector such that $\\\\vec{a} \\\\cdot \\\\vec{c} = |\\\\vec{c}|$, $|\\\\vec{c} - \\\\vec{a}| = 2\\\\sqrt{2}$, and the angle between $\\\\vec{a} \\\\times \\\\vec{b}$ and $\\\\vec{c}$ is $60^\\\\circ$, then the value of $|(\\\\vec{a} \\\\times \\vec{b}) \\\\times \\\\vec{c}|$ is:",
+        "options": [
+          "$$\\\\dfrac{3\\\\sqrt{3}}{2}$$",
+          "$$3\\\\sqrt{3}$$",
+          "$$\\\\dfrac{3}{2}$$",
+          "$$\\\\dfrac{\\\\sqrt{3}}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{c}|=1$, $|\\\\vec{a}\\\\times\\\\vec{b}|=3$, so $|(\\\\vec{a}\\\\times\\\\vec{b})\\\\times\\\\vec{c}| = 3 \\\\times 1 \\\\times \\\\sin 60^\\\\circ = 3\\\\sqrt{3}/2$.",
+          "Incorrect. Missed the factor of $\\\\sin 60^\\\\circ = \\\\sqrt{3}/2$.",
+          "Incorrect. Used $\\\\cos 60^\\\\circ$ instead of $\\\\sin 60^\\\\circ$ for the cross product.",
+          "Incorrect. Lost the magnitude factor of $3$ from $|\\\\vec{a} \\\\times \\\\vec{b}| = 3$."
+        ],
+        "fullExplanation": "1. Find $|\\\\vec{a}| = \\\\sqrt{2^2 + 1^2 + (-2)^2} = \\\\sqrt{9} = 3$.\\n2. We are given $|\\\\vec{c} - \\\\vec{a}|^2 = (2\\\\sqrt{2})^2 = 8$.\\n$$|\\\\vec{c}|^2 + |\\\\vec{a}|^2 - 2(\\\\vec{a} \\\\cdot \\\\vec{c}) = 8$$\\nSubstitute $|\\\\vec{a}|^2 = 9$ and $\\\\vec{a} \\\\cdot \\\\vec{c} = |\\\\vec{c}|$:\\n$$|\\\\vec{c}|^2 + 9 - 2|\\\\vec{c}| = 8 \\\\implies |\\\\vec{c}|^2 - 2|\\\\vec{c}| + 1 = 0 \\\\implies (|\\\\vec{c}| - 1)^2 = 0 \\\\implies |\\\\vec{c}| = 1$$\\n3. Compute $\\\\vec{a} \\\\times \\\\vec{b}$:\\n$$\\\\vec{a} \\\\times \\\\vec{b} = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 2 & 1 & -2 \\\\\\\\ 1 & 1 & 0 \\\\end{vmatrix} = \\\\hat{i}(0 - (-2)) - \\\\hat{j}(0 - (-2)) + \\\\hat{k}(2 - 1) = 2\\\\hat{i} - 2\\\\hat{j} + \\\\hat{k}$$\\n$$|\\\\vec{a} \\\\times \\\\vec{b}| = \\\\sqrt{2^2 + (-2)^2 + 1^2} = \\\\sqrt{9} = 3$$\\n4. Magnitude of cross product:\\n$$|(\\\\vec{a} \\\\times \\\\vec{b}) \\\\times \\\\vec{c}| = |\\\\vec{a} \\\\times \\\\vec{b}| |\\\\vec{c}| \\\\sin 60^\\\\circ = 3 \\\\times 1 \\\\times \\\\dfrac{\\\\sqrt{3}}{2} = \\\\dfrac{3\\\\sqrt{3}}{2}$$."
+      },
+      {
+        "question": "The set of all real values of $\\\\lambda$ for which the vectors $\\\\vec{a} = \\\\hat{i} + 2\\\\hat{j} + 4\\\\hat{k}$, $\\\\vec{b} = \\\\hat{i} + \\\\lambda\\\\hat{j} + 4\\\\hat{k}$, and $\\\\vec{c} = 2\\\\hat{i} + 4\\\\hat{j} + (\\\\lambda^2 - 1)\\\\hat{k}$ are coplanar is:",
+        "options": [
+          "$$\\\\{-3, 2, 3\\\\}$$",
+          "$$\\\\{-3, 3\\\\}$$",
+          "$$\\\\{2, 3\\\\}$$",
+          "$$\\\\{-2, 2\\\\}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Expanding the determinant gives $-(\\\\lambda - 2)(\\\\lambda^2 - 9) = 0$, so $\\\\lambda \\\\in \\\\{-3, 2, 3\\\\}$.",
+          "Incorrect. Missed the root $\\\\lambda = 2$ where $\\\\vec{a} = \\\\vec{b}$.",
+          "Incorrect. Missed the negative root $\\\\lambda = -3$.",
+          "Incorrect. The roots are $\\\\pm 3$ and $2$, not $\\\\pm 2$."
+        ],
+        "fullExplanation": "For the three vectors to be coplanar, their scalar triple product must be zero:\\n$$\\\\begin{vmatrix} 1 & 2 & 4 \\\\\\\\ 1 & \\\\lambda & 4 \\\\\\\\ 2 & 4 & \\\\lambda^2 - 1 \\\\end{vmatrix} = 0$$\\nApply row operation $R_2 \\\\to R_2 - R_1$:\\n$$\\\\begin{vmatrix} 1 & 2 & 4 \\\\\\\\ 0 & \\\\lambda - 2 & 0 \\\\\\\\ 2 & 4 & \\\\lambda^2 - 1 \\\\end{vmatrix} = 0$$\\nExpanding along the second row:\\n$$-(\\\\lambda - 2) \\\\begin{vmatrix} 1 & 4 \\\\\\\\ 2 & \\\\lambda^2 - 1 \\\\end{vmatrix} = 0$$\\n$$-(\\\\lambda - 2) [(\\\\lambda^2 - 1) - 8] = 0$$\\n$$-(\\\\lambda - 2)(\\\\lambda^2 - 9) = 0$$\\n$$(\\\\lambda - 2)(\\\\lambda - 3)(\\\\lambda + 3) = 0$$\\nThus, $\\\\lambda \\\\in \\\\{-3, 2, 3\\\\}$."
+      },
+      {
+        "question": "Let $\\\\vec{a}$ and $\\\\vec{b}$ be two unit vectors and $\\\\vec{c}$ be a unit vector perpendicular to both $\\\\vec{a}$ and $\\\\vec{b}$. If the angle between $\\\\vec{a}$ and $\\\\vec{b}$ is $\\\\dfrac{\\\\pi}{6}$, then the value of $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2$ is:",
+        "options": [
+          "$$\\\\dfrac{1}{4}$$",
+          "$$\\\\dfrac{3}{4}$$",
+          "$$\\\\dfrac{1}{2}$$",
+          "$$1$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = (\\\\vec{a}\\\\times\\\\vec{b})\\\\cdot\\\\vec{c}$. Since $\\\\vec{c}$ is unit vector parallel to $\\\\vec{a}\\\\times\\\\vec{b}$, the value is $\\\\pm |\\\\vec{a}\\\\times\\\\vec{b}| = \\\\pm \\\\sin(\\\\pi/6) = \\\\pm 1/2$. Squaring gives $1/4$.",
+          "Incorrect. Used $\\\\cos^2(\\\\pi/6) = 3/4$ instead of $\\\\sin^2(\\\\pi/6)$.",
+          "Incorrect. Failed to square $1/2$.",
+          "Incorrect. Assumed orthogonal triad."
+        ],
+        "fullExplanation": "1. The scalar triple product is $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = (\\\\vec{a} \\\\times \\\\vec{b}) \\\\cdot \\\\vec{c}$.\\n2. Since $\\\\vec{c}$ is perpendicular to both $\\\\vec{a}$ and $\\\\vec{b}$, it is collinear with $\\\\vec{a} \\\\times \\\\vec{b}$.\\n3. Therefore, $\\\\vec{a} \\\\times \\\\vec{b} = \\\\pm |\\\\vec{a} \\\\times \\\\vec{b}| \\\\vec{c}$.\\n4. We have $|\\\\vec{a} \\\\times \\\\vec{b}| = |\\\\vec{a}||\\\\vec{b}|\\\\sin(\\\\pi/6) = (1)(1)\\\\left(\\\\dfrac{1}{2}\\\\right) = \\\\dfrac{1}{2}$.\\n5. Then $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}] = \\\\pm \\\\dfrac{1}{2} (\\\\vec{c} \\\\cdot \\\\vec{c}) = \\\\pm \\\\dfrac{1}{2}$.\\n6. Squaring gives $[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]^2 = \\\\left(\\\\pm \\\\dfrac{1}{2}\\\\right)^2 = \\\\dfrac{1}{4}$."
+      },
+      {
+        "question": "If $(\\\\vec{a} \\\\times \\\\vec{b}) \\\\times \\\\vec{c} = \\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c})$, where $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ are non-zero vectors, which of the following is necessarily true?",
+        "options": [
+          "$$(\\\\vec{a} \\\\times \\\\vec{c}) \\\\times \\\\vec{b} = \\\\vec{0}$$",
+          "$$\\\\vec{a} \\\\cdot \\\\vec{b} = 0$$",
+          "$$\\\\vec{b} \\\\cdot \\\\vec{c} = 0$$",
+          "$$\\\\vec{a} \\\\times \\\\vec{b} = \\\\vec{0}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. LHS is $(\\\\vec{a}\\\\cdot\\\\vec{c})\\\\vec{b} - (\\\\vec{b}\\\\cdot\\\\vec{c})\\\\vec{a}$ and RHS is $(\\\\vec{a}\\\\cdot\\\\vec{c})\\\\vec{b} - (\\\\vec{a}\\\\cdot\\\\vec{b})\\\\vec{c}$. Equating gives $(\\\\vec{b}\\\\cdot\\\\vec{c})\\\\vec{a} = (\\\\vec{a}\\\\cdot\\\\vec{b})\\\\vec{c} \\\\iff (\\\\vec{a}\\\\times\\\\vec{c})\\\\times\\\\vec{b} = \\\\vec{0}$.",
+          "Incorrect. This is only a special case.",
+          "Incorrect. Also only a special case.",
+          "Incorrect. The cross product does not have to vanish."
+        ],
+        "fullExplanation": "1. Expand both vector triple products:\\n$$\\\\text{LHS} = (\\\\vec{a} \\\\times \\\\vec{b}) \\\\times \\\\vec{c} = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{b} \\\\cdot \\\\vec{c})\\\\vec{a}$$\\n$$\\\\text{RHS} = \\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c}$$\\n2. Setting LHS = RHS:\\n$$(\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{b} \\\\cdot \\\\vec{c})\\\\vec{a} = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c}$$\\n$$-(\\\\vec{b} \\\\cdot \\\\vec{c})\\\\vec{a} = -(\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c} \\\\implies (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c} - (\\\\vec{b} \\\\cdot \\\\vec{c})\\\\vec{a} = \\\\vec{0}$$\\n3. Recognizing this as the vector triple product: $(\\\\vec{a} \\\\times \\\\vec{c}) \\\\times \\vec{b} = (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c} - (\\\\vec{c} \\\\cdot \\\\vec{b})\\\\vec{a} = \\\\vec{0}$."
+      },
+      {
+        "question": "If $\\\\vec{a}$ and $\\\\vec{b}$ are non-zero vectors such that $|\\\\vec{a} \\\\times \\\\vec{b}| = \\\\sqrt{3}(\\\\vec{a} \\\\cdot \\\\vec{b})$, then the angle between $\\\\vec{a}$ and $\\\\vec{b}$ is:",
+        "options": [
+          "$$\\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{6}$$",
+          "$$\\\\dfrac{\\\\pi}{4}$$",
+          "$$\\\\dfrac{2\\\\pi}{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{a}||\\\\vec{b}|\\\\sin\\\\theta = \\\\sqrt{3}|\\\\vec{a}||\\\\vec{b}|\\\\cos\\\\theta \\\\implies \\\\tan\\\\theta = \\\\sqrt{3} \\\\implies \\\\theta = \\\\pi/3$.",
+          "Incorrect. $\\\\tan(\\\\pi/6) = 1/\\\\sqrt{3}$, not $\\\\sqrt{3}$.",
+          "Incorrect. $\\\\tan(\\\\pi/4) = 1$.",
+          "Incorrect. For $2\\\\pi/3$, dot product would be negative, giving $|\\\\vec{a} \\\\times \\\\vec{b}| = -\\\\sqrt{3}(\\\\vec{a} \\\\cdot \\\\vec{b})$."
+        ],
+        "fullExplanation": "Using the definitions of magnitude of cross product and dot product:\\n$$|\\\\vec{a} \\\\times \\\\vec{b}| = |\\\\vec{a}||\\\\vec{b}|\\\\sin\\\\theta$$\\n$$\\\\vec{a} \\\\cdot \\\\vec{b} = |\\\\vec{a}||\\\\vec{b}|\\\\cos\\\\theta$$\\nGiven $|\\\\vec{a} \\\\times \\\\vec{b}| = \\\\sqrt{3}(\\\\vec{a} \\\\cdot \\\\vec{b})$:\\n$$|\\\\vec{a}||\\\\vec{b}|\\\\sin\\\\theta = \\\\sqrt{3}|\\\\vec{a}||\\\\vec{b}|\\\\cos\\\\theta$$\\nDividing by $|\\\\vec{a}||\\\\vec{b}|\\\\cos\\\\theta$ (since vectors are non-zero and $\\\\theta \\\\in [0, \\\\pi/2]$ for positive RHS):\\n$$\\\\tan\\\\theta = \\\\sqrt{3} \\\\implies \\\\theta = \\\\dfrac{\\\\pi}{3}$$."
+      },
+      {
+        "question": "Let $|\\\\vec{a}| = 3$, $|\\\\vec{b}| = \\\\dfrac{\\\\sqrt{2}}{3}$, and $\\\\vec{a} \\\\times \\\\vec{b}$ be a unit vector. Find the angle between $\\\\vec{a}$ and $\\\\vec{b}$.",
+        "options": [
+          "$$\\\\dfrac{\\\\pi}{4}$$",
+          "$$\\\\dfrac{\\\\pi}{6}$$",
+          "$$\\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{2}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $|\\\\vec{a}\\\\times\\\\vec{b}| = 3 \\\\times \\\\dfrac{\\\\sqrt{2}}{3} \\\\sin\\\\theta = \\\\sqrt{2}\\\\sin\\\\theta = 1 \\\\implies \\\\sin\\\\theta = 1/\\\\sqrt{2} \\\\implies \\\\theta = \\\\pi/4$.",
+          "Incorrect. $\\\\sin(\\\\pi/6) = 1/2 \\\\ne 1/\\\\sqrt{2}$.",
+          "Incorrect. $\\\\sin(\\\\pi/3) = \\\\sqrt{3}/2 \\\\ne 1/\\\\sqrt{2}$.",
+          "Incorrect. $\\\\sin(\\\\pi/2) = 1 \\\\ne 1/\\\\sqrt{2}$."
+        ],
+        "fullExplanation": "We have $|\\\\vec{a} \\\\times \\\\vec{b}| = |\\\\vec{a}||\\\\vec{b}|\\\\sin\\\\theta$.\\nGiven that $\\\\vec{a} \\\\times \\\\vec{b}$ is a unit vector, its magnitude is $1$:\\n$$1 = 3 \\\\times \\\\left(\\\\dfrac{\\\\sqrt{2}}{3}\\\\right) \\\\sin\\\\theta$$\\n$$1 = \\\\sqrt{2}\\\\sin\\\\theta \\\\implies \\\\sin\\\\theta = \\\\dfrac{1}{\\\\sqrt{2}}$$\\nHence, $\\\\theta = \\\\dfrac{\\\\pi}{4}$."
+      },
+      {
+        "question": "The diagonals of a parallelogram are given by $\\\\vec{d}_1 = 3\\\\hat{i} + \\\\hat{j} - 2\\\\hat{k}$ and $\\\\vec{d}_2 = \\\\hat{i} - 3\\\\hat{j} + 4\\\\hat{k}$. What is the area of the parallelogram?",
+        "options": [
+          "$$5\\\\sqrt{3}$$",
+          "$$10\\\\sqrt{3}$$",
+          "$$15\\\\sqrt{3}$$",
+          "$$20\\\\sqrt{3}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\text{Area} = \\\\dfrac{1}{2}|\\\\vec{d}_1 \\\\times \\\\vec{d}_2| = \\\\dfrac{1}{2}\\\\sqrt{4 + 196 + 100} = \\\\dfrac{1}{2}\\\\sqrt{300} = 5\\\\sqrt{3}$.",
+          "Incorrect. Forgot the factor $1/2$ for area expressed in terms of diagonals.",
+          "Incorrect. Arithmetic error in evaluating cross product.",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "The area of a parallelogram with diagonals $\\\\vec{d}_1$ and $\\\\vec{d}_2$ is:\\n$$\\\\text{Area} = \\\\dfrac{1}{2}|\\\\vec{d}_1 \\\\times \\\\vec{d}_2|$$\\n1. Compute $\\\\vec{d}_1 \\\\times \\\\vec{d}_2$:\\n$$\\\\vec{d}_1 \\\\times \\\\vec{d}_2 = \\\\begin{vmatrix} \\\\hat{i} & \\\\hat{j} & \\\\hat{k} \\\\\\\\ 3 & 1 & -2 \\\\\\\\ 1 & -3 & 4 \\\\end{vmatrix} = \\\\hat{i}(4 - 6) - \\\\hat{j}(12 - (-2)) + \\\\hat{k}(-9 - 1) = -2\\\\hat{i} - 14\\\\hat{j} - 10\\\\hat{k}$$\\n2. Magnitude:\\n$$|\\\\vec{d}_1 \\\\times \\\\vec{d}_2| = \\\\sqrt{(-2)^2 + (-14)^2 + (-10)^2} = \\\\sqrt{4 + 196 + 100} = \\\\sqrt{300} = 10\\\\sqrt{3}$$\\n3. Area:\\n$$\\\\text{Area} = \\\\dfrac{1}{2}(10\\\\sqrt{3}) = 5\\\\sqrt{3}\\text{ sq. units}$$."
+      },
+      {
+        "question": "Let $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ be three unit vectors such that $\\\\vec{b}$ and $\\\\vec{c}$ are non-parallel. If $\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) = \\\\dfrac{\\\\sqrt{3}}{2}\\\\vec{b} + \\\\dfrac{1}{2}\\\\vec{c}$, find the angle between $\\\\vec{a}$ and $\\\\vec{b}$.",
+        "options": [
+          "$$\\\\dfrac{2\\\\pi}{3}$$",
+          "$$\\\\dfrac{\\\\pi}{3}$$",
+          "$$\\\\dfrac{5\\\\pi}{6}$$",
+          "$$\\\\dfrac{\\\\pi}{6}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $(\\\\vec{a}\\\\cdot\\\\vec{c})\\\\vec{b} - (\\\\vec{a}\\\\cdot\\\\vec{b})\\\\vec{c} = \\\\dfrac{\\\\sqrt{3}}{2}\\\\vec{b} + \\\\dfrac{1}{2}\\\\vec{c} \\\\implies \\\\vec{a}\\\\cdot\\\\vec{b} = -1/2 \\\\implies \\\\theta = 2\\\\pi/3$.",
+          "Incorrect. $\\\\cos(\\\\pi/3) = +1/2$, but the dot product is $-1/2$.",
+          "Incorrect. $\\\\cos(5\\\\pi/6) = -\\\\sqrt{3}/2$.",
+          "Incorrect. $\\\\cos(\\\\pi/6) = \\\\sqrt{3}/2$ corresponds to $\\\\vec{a}\\\\cdot\\\\vec{c}$."
+        ],
+        "fullExplanation": "1. Expand using the vector triple product identity:\\n$$\\\\vec{a} \\\\times (\\\\vec{b} \\\\times \\\\vec{c}) = (\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c}$$\\n2. Equating with the given expression:\\n$$(\\\\vec{a} \\\\cdot \\\\vec{c})\\\\vec{b} - (\\\\vec{a} \\\\cdot \\\\vec{b})\\\\vec{c} = \\\\dfrac{\\\\sqrt{3}}{2}\\\\vec{b} + \\\\dfrac{1}{2}\\\\vec{c}$$\\n3. Since $\\\\vec{b}$ and $\\\\vec{c}$ are non-parallel, their coefficients are unique:\\n$$-(\\\\vec{a} \\\\cdot \\\\vec{b}) = \\\\dfrac{1}{2} \\\\implies \\\\vec{a} \\\\cdot \\\\vec{b} = -\\\\dfrac{1}{2}$$\\n4. Since $\\\\vec{a}$ and $\\\\vec{b}$ are unit vectors:\\n$$\\\\cos\\\\theta = -\\\\dfrac{1}{2} \\\\implies \\\\theta = \\\\pi - \\\\dfrac{\\\\pi}{3} = \\\\dfrac{2\\\\pi}{3}$$."
+      },
+      {
+        "question": "For any three vectors $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$, the value of $[2\\\\vec{a} - \\\\vec{b}\\\\quad 2\\\\vec{b} - \\\\vec{c}\\\\quad 2\\\\vec{c} - \\\\vec{a}]$ is equal to:",
+        "options": [
+          "$$7[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$8[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$9[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$",
+          "$$0$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Determinant of coefficients is $2(4) - (-1)(0 - 1) + 0 = 8 - 1 = 7$.",
+          "Incorrect. Only took the product of main diagonal elements $2 \\\\times 2 \\\\times 2 = 8$.",
+          "Incorrect. Added the determinant term instead of subtracting.",
+          "Incorrect. Confused with $[\\\\vec{a}-\\\\vec{b}\\\\ \\\\vec{b}-\\\\vec{c}\\\\ \\\\vec{c}-\\\\vec{a}] = 0$."
+        ],
+        "fullExplanation": "The scalar triple product of linear combinations of $\\\\vec{a}, \\\\vec{b}, \\\\vec{c}$ can be found using the determinant of the coefficients:\\n$$[2\\\\vec{a} - \\\\vec{b}\\\\quad 2\\\\vec{b} - \\\\vec{c}\\\\quad 2\\\\vec{c} - \\\\vec{a}] = \\\\begin{vmatrix} 2 & -1 & 0 \\\\\\\\ 0 & 2 & -1 \\\\\\\\ -1 & 0 & 2 \\\\end{vmatrix} [\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$$\\nEvaluating the determinant:\\n$$= 2(4 - 0) - (-1)(0 - 1) + 0$$\\n$$= 2(4) + 1(-1) = 8 - 1 = 7$$\\nThus, the result is $7[\\\\vec{a}\\\\ \\\\vec{b}\\\\ \\\\vec{c}]$."
+      },
+      {
+        "question": "Let $\\\\vec{u} = \\\\hat{i} + \\\\hat{j}$, $\\\\vec{v} = \\\\hat{i} - \\\\hat{j}$, and $\\\\vec{w} = \\\\hat{i} + 2\\\\hat{j} + 3\\\\hat{k}$. If $\\\\hat{n}$ is a unit vector such that $\\\\vec{u} \\\\cdot \\\\hat{n} = 0$ and $\\\\vec{v} \\\\cdot \\\\hat{n} = 0$, then find the value of $|\\\\vec{w} \\\\cdot \\\\hat{n}|$.",
+        "options": [
+          "$$3$$",
+          "$$1$$",
+          "$$2$$",
+          "$$\\\\sqrt{14}$$"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. $\\\\hat{n} = \\\\pm \\\\hat{k}$, so $|\\\\vec{w} \\\\cdot \\\\hat{n}| = |(\\\\hat{i} + 2\\\\hat{j} + 3\\\\hat{k}) \\\\cdot (\\\\pm \\\\hat{k})| = 3$.",
+          "Incorrect. Computed projection on $\\\\hat{i}$ instead of $\\\\hat{n}$.",
+          "Incorrect. Computed projection on $\\\\hat{j}$ instead of $\\\\hat{n}$.",
+          "Incorrect. Calculated $|\\\\vec{w}| = \\\\sqrt{1+4+9} = \\\\sqrt{14}$."
+        ],
+        "fullExplanation": "1. $\\\\hat{n}$ is perpendicular to both $\\\\vec{u}$ and $\\\\vec{v}$, so it is parallel to $\\\\vec{u} \\\\times \\\\vec{v}$.\\n2. Compute $\\\\vec{u} \\\\times \\\\vec{v}$:\\n$$\\\\vec{u} \\\\times \\\\vec{v} = (\\\\hat{i} + \\\\hat{j}) \\\\times (\\\\hat{i} - \\\\hat{j}) = -\\\\hat{k} - \\\\hat{k} = -2\\\\hat{k}$$\\n3. A unit vector in this direction is $\\\\hat{n} = \\\\pm \\\\hat{k}$.\\n4. Now compute $|\\\\vec{w} \\\\cdot \\\\hat{n}|$:\\n$$|\\\\vec{w} \\\\cdot \\\\hat{n}| = |(\\\\hat{i} + 2\\\\hat{j} + 3\\\\hat{k}) \\\\cdot (\\\\pm \\\\hat{k})| = |\\\\pm 3| = 3$$."
+      }
+    ]
+  }
+]

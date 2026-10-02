@@ -1,0 +1,639 @@
+[
+  {
+    "chapterName": "Relations & Functions",
+    "flashcards": [
+      {
+        "front": "What is the formal definition of a relation from set \\\\(A\\\\) to set \\\\(B\\\\), and how many total relations exist if \\\\(|A| = m\\\\) and \\\\(|B| = n\\\\)?",
+        "back": "A relation \\\\(R\\\\) from \\\\(A\\\\) to \\\\(B\\\\) is any subset of the Cartesian product \\\\(A \\\\times B\\\\) (i.e., \\\\(R \\\\subseteq A \\\\times B\\\\)). If \\\\(|A| = m\\\\) and \\\\(|B| = n\\\\), then \\\\(|A \\\\times B| = mn\\\\), so the total number of possible relations is \\\\(2^{mn}\\\\)."
+      },
+      {
+        "front": "What is the distinction between an Identity relation and a Reflexive relation on a set \\\\(A\\\\)?",
+        "back": "- **Identity Relation (\\\\(I_A\\\\)):** Contains *only* pairs of the form \\\\((a, a)\\\\) for every \\\\(a \\\\in A\\\\), so \\\\(I_A = \\\\{(a, a) : a \\\\in A\\\\}\\\\).\\n- **Reflexive Relation:** Contains \\\\((a, a)\\\\) for every \\\\(a \\\\in A\\\\), but *may also contain* other pairs \\\\((a, b)\\\\) where \\\\(a \\\\neq b\\\\). Hence, every identity relation is reflexive, but not conversely."
+      },
+      {
+        "front": "What defines a Symmetric relation, and what is its equivalent formulation using the inverse relation \\\\(R^{-1}\\\\)?",
+        "back": "A relation \\\\(R\\\\) on \\\\(A\\\\) is symmetric if \\\\((a, b) \\\\in R \\\\implies (b, a) \\\\in R\\\\) for all \\\\(a, b \\\\in A\\\\).\\nEquivalently, \\\\(R\\\\) is symmetric if and only if \\\\(R = R^{-1}\\\\)."
+      },
+      {
+        "front": "What is the condition for a relation \\\\(R\\\\) on a set \\\\(A\\\\) to be Transitive?",
+        "back": "A relation \\\\(R\\\\) on \\\\(A\\\\) is transitive if whenever \\\\((a, b) \\\\in R\\\\) and \\\\((b, c) \\\\in R\\\\), then \\\\((a, c) \\\\in R\\\\) for all \\\\(a, b, c \\\\in A\\\\). If there are no pairs such that \\\\((a, b) \\\\in R\\\\) and \\\\((b, c) \\\\in R\\\\) with \\\\(a \\\\neq c\\\\), the condition is vacuously satisfied."
+      },
+      {
+        "front": "What is an Equivalence Relation, and what are the intersection and union properties of two equivalence relations?",
+        "back": "A relation \\\\(R\\\\) is an equivalence relation if it is simultaneously **Reflexive**, **Symmetric**, and **Transitive**.\\n- If \\\\(R\\\\) and \\\\(S\\\\) are equivalence relations on \\\\(A\\\\), then \\\\(R \\\\cap S\\\\) is **always** an equivalence relation.\\n- \\\\(R \\\\cup S\\\\) is **not necessarily** an equivalence relation."
+      },
+      {
+        "front": "How many reflexive relations can be defined on a finite set \\\\(A\\\\) with \\\\(n\\\\) elements?",
+        "back": "A relation on \\\\(A\\\\) has \\\\(n^2\\\\) possible pairs in \\\\(A \\\\times A\\\\). The \\\\(n\\\\) diagonal pairs \\\\((a, a)\\\\) must all be included. The remaining \\\\(n^2 - n\\\\) non-diagonal pairs can either be present or absent.\\nTotal number of reflexive relations = \\\\(2^{n^2 - n}\\\\)."
+      },
+      {
+        "front": "How many symmetric relations can be defined on a finite set \\\\(A\\\\) with \\\\(n\\\\) elements?",
+        "back": "There are \\\\(n\\\\) diagonal elements and \\\\(\\frac{n(n-1)}{2}\\\\) pairs of non-diagonal elements \\\\(\\{(a, b), (b, a)\\}\\\\). Choosing each independently gives:\\nTotal number of symmetric relations = \\\\(2^{n + \\\\frac{n(n-1)}{2}} = 2^{\\\\frac{n(n+1)}{2}}\\\\)."
+      },
+      {
+        "front": "What is the formal definition of a Function \\\\(f: A \\\\rightarrow B\\\\), and how many total functions exist from \\\\(A\\\\) to \\\\(B\\\\) if \\\\(|A|=m\\\\) and \\\\(|B|=n\\\\)?",
+        "back": "A function \\\\(f: A \\\\rightarrow B\\\\) is a rule that associates **every** element \\\\(x \\\\in A\\\\) to a **unique** element \\\\(y \\\\in B\\\\).\\nEach of the \\\\(m\\\\) elements in \\\\(A\\\\) has \\\\(n\\\\) independent choices in \\\\(B\\\\), so:\\nTotal number of functions = \\\\(n^m = |B|^{|A|}\\\\)."
+      },
+      {
+        "front": "What is a One-One (Injective) function, and what are its algebraic and graphical tests?",
+        "back": "- **Definition:** \\\\(f(x_1) = f(x_2) \\\\implies x_1 = x_2\\\\) (or \\\\(x_1 \\\\neq x_2 \\\\implies f(x_1) \\\\neq f(x_2)\\\\)).\\n- **Calculus test:** If \\\\(f'(x) > 0\\\\) strictly or \\\\(f'(x) < 0\\\\) strictly throughout its domain, \\\\(f\\\\) is strictly monotonic and therefore one-one.\\n- **Horizontal Line Test:** Any horizontal line intersects the graph of \\\\(f(x)\\\\) at most once."
+      },
+      {
+        "front": "What is the formula for the number of One-One (Injective) functions from set \\\\(A\\\\) to set \\\\(B\\\\) where \\\\(|A|=m\\\\) and \\\\(|B|=n\\\\)?",
+        "back": "- If \\\\(n \\\\ge m\\\\): Number of one-one functions = \\\\({}^n P_m = \\\\frac{n!}{(n-m)!}\\\\).\\n- If \\\\(n < m\\\\): Number of one-one functions = \\\\(0\\\\) (by Pigeonhole Principle)."
+      },
+      {
+        "front": "What is an Onto (Surjective) function, and what condition relates its Range and Codomain?",
+        "back": "A function \\\\(f: A \\\\rightarrow B\\\\) is onto (surjective) if every element in the codomain \\\\(B\\\\) has at least one pre-image in the domain \\\\(A\\\\).\\nCondition: \\\\(\\\\text{Range}(f) = \\\\text{Codomain}(B)\\\\)."
+      },
+      {
+        "front": "What is the formula for the number of Onto (Surjective) functions from a set of \\\\(m\\\\) elements to a set of \\\\(n\\\\) elements?",
+        "back": "- If \\\\(m < n\\\\): \\\\(0\\\\).\\n- If \\\\(m = n\\\\): \\\\(n!\\\\).\\n- If \\\\(m \\\\ge n\\\\): By principle of inclusion-exclusion,\\n\\\\(\\\\sum_{r=0}^{n} (-1)^r {}^n C_r (n - r)^m = n^m - {}^n C_1 (n-1)^m + {}^n C_2 (n-2)^m - \\\\dots\\\\)"
+      },
+      {
+        "front": "What is a Bijective function, and what is the total number of bijections from a set of \\\\(n\\\\) elements to itself?",
+        "back": "A function is bijective if it is simultaneously **one-one (injective)** and **onto (surjective)**.\\nA bijection between two finite sets exists if and only if \\\\(|A| = |B| = n\\\\).\\nTotal number of bijections = \\\\(n!\\\\)."
+      },
+      {
+        "front": "What is the condition for the composition \\\\(g \\\\circ f\\\\) to exist, and what are its domain and codomain?",
+        "back": "For two functions \\\\(f: A \\\\rightarrow B\\\\) and \\\\(g: B \\\\rightarrow C\\\\), the composite function \\\\(g \\\\circ f: A \\\\rightarrow C\\\\) defined by \\\\((g \\\\circ f)(x) = g(f(x))\\\\) exists if and only if the **range of \\\\(f\\\\) is a subset of the domain of \\\\(g\\\\)** (i.e., \\\\(\\\\text{Range}(f) \\\\subseteq \\\\text{Domain}(g)\\\\))."
+      },
+      {
+        "front": "When is a function \\\\(f: A \\\\rightarrow B\\\\) invertible, and what is the reversal rule for the inverse of a composite function?",
+        "back": "A function \\\\(f\\\\) is invertible if and only if \\\\(f\\\\) is a **bijection** (one-one and onto).\\nIf \\\\(f: A \\\\rightarrow B\\\\) and \\\\(g: B \\\\rightarrow C\\\\) are two bijections, then \\\\((g \\\\circ f)^{-1} = f^{-1} \\\\circ g^{-1}\\\\)."
+      },
+      {
+        "front": "What is the geometric relationship between the graph of a function \\\\(y = f(x)\\\\) and its inverse \\\\(y = f^{-1}(x)\\\\)?",
+        "back": "The graph of \\\\(y = f^{-1}(x)\\\\) is the **reflection** of the graph of \\\\(y = f(x)\\\\) in the line \\\\(y = x\\\\). If \\\\((a, b)\\\\) lies on the graph of \\\\(f\\\\), then \\\\((b, a)\\\\) lies on the graph of \\\\(f^{-1}\\\\)."
+      },
+      {
+        "front": "What are the fundamental properties of the Modulus function \\\\(|x|\\\\)?",
+        "back": "1. \\\\(|x| = \\\\sqrt{x^2}\\\\)\\n2. \\\\(|x| \\\\le a \\\\iff -a \\\\le x \\\\le a\\\\) (for \\\\(a > 0\\\\))\\n3. \\\\(|x| \\\\ge a \\\\iff x \\\\ge a \\\\text{ or } x \\\\le -a\\\\) (for \\\\(a > 0\\\\))\\n4. Triangle inequalities: \\\\(||x| - |y|| \\\\le |x \\\\pm y| \\\\le |x| + |y|\\\\)\\n5. \\\\(|x + y| = |x| + |y| \\\\iff xy \\\\ge 0\\\\); \\\\(|x - y| = |x| + |y| \\\\iff xy \\\\le 0\\\\)."
+      },
+      {
+        "front": "What are the core properties of the Greatest Integer Function \\\\([x]\\\\)?",
+        "back": "1. \\\\(x - 1 < [x] \\\\le x\\\\)\\n2. \\\\([x + n] = [x] + n\\\\) for any integer \\\\(n \\\\in \\\\mathbb{Z}\\\\)\\n3. \\\\([x] \\\\ge k \\\\iff x \\\\ge k\\\\) (for \\\\(k \\\\in \\\\mathbb{Z}\\\\))\\n4. \\\\([x] \\\\le k \\\\iff x < k + 1\\\\) (for \\\\(k \\\\in \\\\mathbb{Z}\\\\))\\n5. \\\\([x + y] \\\\ge [x] + [y]\\\\)."
+      },
+      {
+        "front": "What is the value of \\\\([-x]\\\\) in terms of \\\\([x]\\\\)?",
+        "back": "\\\\([-x] = \\\\begin{cases} -[x], & \\\\text{if } x \\\\in \\\\mathbb{Z} \\\\ -[x] - 1, & \\\\text{if } x \\\\notin \\\\mathbb{Z} \\\\end{cases}\\\\)\\nEquivalently: \\\\([x] + [-x] = \\\\begin{cases} 0, & x \\\\in \\\\mathbb{Z} \\\\ -1, & x \\\\notin \\\\mathbb{Z} \\\\end{cases}\\\\)"
+      },
+      {
+        "front": "What is the Fractional Part Function \\\\(\\\\{x\\\\}\\\\), and what is \\\\(\\\\{-x\\\\}\\\\)?",
+        "back": "\\\\(\\\\{x\\\\} = x - [x]\\\\), with range \\\\([0, 1)\\\\).\\n\\\\(\\\\{-x\\\\} = \\\\begin{cases} 0, & \\\\text{if } x \\\\in \\\\mathbb{Z} \\\\ 1 - \\\\{x\\\\}, & \\\\text{if } x \\\\notin \\\\mathbb{Z} \\\\end{cases}\\\\)\\nHence, \\\\(\\\\{x\\\\} + \\\\{-x\\\\} = 0\\\\) if \\\\(x \\\\in \\\\mathbb{Z}\\\\), and \\\\(1\\\\) if \\\\(x \\\\notin \\\\mathbb{Z}\\\\)."
+      },
+      {
+        "front": "What is Hermite's Identity for the Greatest Integer Function?",
+        "back": "For any \\\\(x \\\\in \\\\mathbb{R}\\\\) and positive integer \\\\(n \\\\in \\\\mathbb{N}\\\\):\\n\\\\([x] + \\\\left[x + \\\\frac{1}{n}\\\\right] + \\\\left[x + \\\\frac{2}{n}\\\\right] + \\\\dots + \\\\left[x + \\\\frac{n-1}{n}\\\\right] = [nx]\\\\)."
+      },
+      {
+        "front": "What are Even and Odd functions, and what are their graphical symmetry properties?",
+        "back": "- **Even Function:** \\\\(f(-x) = f(x)\\\\); graph is symmetric about the **y-axis**.\\n- **Odd Function:** \\\\(f(-x) = -f(x)\\\\); graph is symmetric about the **origin** (symmetric in opposite quadrants).\\n*Note:* An even function can never be one-one on a domain symmetric about zero (since \\\\(f(x) = f(-x)\\\\))."
+      },
+      {
+        "front": "How do derivatives relate to Even and Odd functions?",
+        "back": "If \\\\(f(x)\\\\) is a differentiable function:\\n- The derivative of an **even** function is an **odd** function: \\\\(f'(-x) = -f'(x)\\\\).\\n- The derivative of an **odd** function is an **even** function: \\\\(f'(-x) = f'(x)\\\\)."
+      },
+      {
+        "front": "What is the parity (even/odd) of the composition \\\\(g(f(x))\\\\)?",
+        "back": "1. If \\\\(f\\\\) is even, then \\\\(g(f(x))\\\\) is **even** (irrespective of whether \\\\(g\\\\) is even or odd).\\n2. If \\\\(g\\\\) is even, then \\\\(g(f(x))\\\\) is **even**.\\n3. If both \\\\(f\\\\) and \\\\(g\\\\) are odd, then \\\\(g(f(x))\\\\) is **odd**."
+      },
+      {
+        "front": "What is a Periodic Function, and what is its fundamental period?",
+        "back": "A function \\\\(f(x)\\\\) is periodic if there exists a positive real number \\\\(T > 0\\\\) such that \\\\(f(x + T) = f(x)\\\\) for all \\\\(x\\\\) in the domain.\\nThe smallest such positive value of \\\\(T\\\\) is called the **fundamental period** of \\\\(f(x)\\\\)."
+      },
+      {
+        "front": "If \\\\(f(x)\\\\) is periodic with period \\\\(T\\\\), what is the period of \\\\(k \\\\cdot f(ax + b)\\\\)?",
+        "back": "The period of \\\\(k \\\\cdot f(ax + b)\\\\) is \\\\(\\frac{T}{|a|}\\\\).\\nThe horizontal shift \\\\(b\\\\) and vertical scaling \\\\(k\\\\) do not alter the period; only the coefficient of \\\\(x\\\\) (i.e., \\\\(a\\\\)) scales the period inversely."
+      },
+      {
+        "front": "How is the period of \\\\(h(x) = f(x) \\\\pm g(x)\\\\) determined using the LCM rule?",
+        "back": "If \\\\(f(x)\\\\) has period \\\\(T_1\\\\) and \\\\(g(x)\\\\) has period \\\\(T_2\\\\):\\n- Usually, period = \\\\(\\\\text{LCM}\\\\{T_1, T_2\\\\}\\\\).\\n- If \\\\(f(x)\\\\) and \\\\(g(x)\\\\) are complementary/interchangeable functions (e.g., \\\\(|\\\\sin x| + |\\\\cos x|\\\\)), the fundamental period may be \\\\(\\frac{1}{2}\\\\text{LCM}\\\\{T_1, T_2\\\\}\\\\)."
+      },
+      {
+        "front": "Which standard function satisfies the functional equation \\\\(f(x + y) = f(x) + f(y)\\\\) and \\\\(f(x + y) = f(x) \\\\cdot f(y)\\\\)?",
+        "back": "- \\\\(f(x + y) = f(x) + f(y) \\\\implies f(x) = kx\\\\) (linear through origin).\\n- \\\\(f(x + y) = f(x) \\\\cdot f(y) \\\\implies f(x) = a^x\\\\) (exponential) or \\\\(f(x) = 0\\\\)."
+      },
+      {
+        "front": "Which standard function satisfies \\\\(f(xy) = f(x) + f(y)\\\\) and \\\\(f(xy) = f(x) \\\\cdot f(y)\\\\)?",
+        "back": "- \\\\(f(xy) = f(x) + f(y) \\\\implies f(x) = k \\\\ln x\\\\) (logarithmic).\\n- \\\\(f(xy) = f(x) \\\\cdot f(y) \\\\implies f(x) = x^n\\\\) (power function) or \\\\(f(x) = 0\\\\)."
+      },
+      {
+        "front": "What polynomial function satisfies the equation \\\\(f(x) + f\\\\left(\\\\frac{1}{x}\\\\right) = f(x) \\\\cdot f\\\\left(\\\\frac{1}{x}\\\\right)\\\\)?",
+        "back": "The only polynomial solutions are:\\n\\\\(f(x) = 1 \\\\pm x^n\\\\), where \\\\(n \\\\in \\\\mathbb{N}\\\\)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Let \\\\(R\\\\) be a relation on the set of natural numbers \\\\(\\mathbb{N}\\\\) defined by \\\\(xRy \\\\iff x^2 - 4xy + 3y^2 = 0\\\\). Then \\\\(R\\\\) is:",
+        "options": [
+          "Reflexive but neither symmetric nor transitive",
+          "Symmetric and transitive but not reflexive",
+          "An equivalence relation",
+          "Reflexive and symmetric but not transitive"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(x^2 - 4x^2 + 3x^2 = 0\\\\) holds for all \\\\(x \\\\in \\\\mathbb{N}\\\\) (reflexive). But \\\\((3, 1) \\\\in R\\\\) while \\\\((1, 3) \\\\notin R\\\\) (not symmetric), and \\\\((9, 3), (3, 1) \\\\in R\\\\) while \\\\((9, 1) \\\\notin R\\\\) (not transitive).",
+          "Incorrect. The relation is reflexive since \\\\((x-x)(x-3x) = 0\\\\).",
+          "Incorrect. It fails symmetry and transitivity.",
+          "Incorrect. Symmetry fails because \\\\((3, 1) \\\\in R\\\\) does not imply \\\\((1, 3) \\\\in R\\\\)."
+        ],
+        "fullExplanation": "Factoring the equation: \\\\(x^2 - 4xy + 3y^2 = (x - y)(x - 3y) = 0 \\\\implies x = y\\\\) or \\\\(x = 3y\\\\).\\n1. **Reflexive:** For any \\\\(x \\\\in \\\\mathbb{N}\\\\), \\\\((x - x)(x - 3x) = 0\\\\), so \\\\((x, x) \\\\in R\\\\). Thus, \\\\(R\\\\) is reflexive.\\n2. **Symmetric:** For \\\\(x = 3, y = 1\\\\), \\\\(3 = 3(1) \\\\implies (3, 1) \\\\in R\\\\). However, for \\\\((1, 3)\\\\), \\\\((1 - 3)(1 - 9) = (-2)(-8) = 16 \\\\neq 0\\\\), so \\\\((1, 3) \\\\notin R\\\\). Thus, \\\\(R\\\\) is not symmetric.\\n3. **Transitive:** Notice \\\\((9, 3) \\\\in R\\\\) (since \\\\(9 = 3 \\\\times 3\\\\)) and \\\\((3, 1) \\\\in R\\\\) (since \\\\(3 = 3 \\\\times 1\\\\)). But for \\\\((9, 1)\\\\): \\\\((9 - 1)(9 - 3) = 48 \\\\neq 0\\\\), so \\\\((9, 1) \\\\notin R\\\\). Thus, \\\\(R\\\\) is not transitive."
+      },
+      {
+        "question": "The total number of reflexive relations on a set \\\\(A\\\\) containing 4 elements is:",
+        "options": [
+          "\\\\(256\\\\)",
+          "\\\\(4096\\\\)",
+          "\\\\(65536\\\\)",
+          "\\\\(1024\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. \\\\(256 = 2^8\\\\).",
+          "Correct. Number of reflexive relations is \\\\(2^{n^2 - n} = 2^{16 - 4} = 2^{12} = 4096\\\\).",
+          "Incorrect. \\\\(65536 = 2^{16}\\\\), which is the total number of all relations on \\\\(A\\\\).",
+          "Incorrect. \\\\(1024 = 2^{10}\\\\)."
+        ],
+        "fullExplanation": "For a set with \\\\(n\\\\) elements, the Cartesian product \\\\(A \\\\times A\\\\) has \\\\(n^2\\\\) elements. In any reflexive relation, all \\\\(n\\\\) diagonal pairs \\\\((a, a)\\\\) must be included. The remaining \\\\(n^2 - n\\\\) elements can either be included or excluded independently.\\nFor \\\\(n = 4\\\\):\\nNumber of reflexive relations = \\\\(2^{4^2 - 4} = 2^{12} = 4096\\\\)."
+      },
+      {
+        "question": "The number of onto (surjective) functions from set \\\\(A = \\\\{1, 2, 3, 4, 5\\\\}\\\\) to set \\\\(B = \\\\{a, b\\\\}\\\\) is:",
+        "options": [
+          "\\\\(30\\\\)",
+          "\\\\(32\\\\)",
+          "\\\\(25\\\\)",
+          "\\\\(10\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Total functions minus non-onto functions = \\\\(2^5 - 2 = 32 - 2 = 30\\\\).",
+          "Incorrect. 32 is the total number of functions.",
+          "Incorrect. \\\\(5^2 = 25\\\\) reverses domain and codomain.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Total number of functions from \\\\(A\\\\) to \\\\(B\\\\) is \\\\(2^5 = 32\\\\).\\nA function is not onto if its range is a proper subset of \\\\(B\\\\). Since \\\\(|B| = 2\\\\), the only non-onto functions are constant functions whose range is either \\\\(\\\\{a\\\\}\\\\) or \\\\(\\\\{b\\\\}\\\\).\\nThus, there are exactly 2 non-onto functions.\\nNumber of onto functions = \\\\(2^5 - 2 = 32 - 2 = 30\\\\)."
+      },
+      {
+        "question": "Let \\\\(f: \\\\mathbb{R} \\\\setminus \\\\{2\\\\} \\\\rightarrow \\\\mathbb{R} \\\\setminus \\\\{1\\\\}\\\\) be defined by \\\\(f(x) = \\\\frac{x-3}{x-2}\\\\). Then \\\\(f\\\\) is:",
+        "options": [
+          "One-one but not onto",
+          "Onto but not one-one",
+          "Bijective",
+          "Neither one-one nor onto"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. The function is also onto because every \\\\(y \\\\neq 1\\\\) has a unique pre-image.",
+          "Incorrect. The function is also one-one.",
+          "Correct. \\\\(f\\\\) is both one-one and onto, hence bijective.",
+          "Incorrect. Both injectivity and surjectivity hold."
+        ],
+        "fullExplanation": "1. **One-one:**\\n\\\\(f(x_1) = f(x_2) \\\\implies \\\\frac{x_1 - 3}{x_1 - 2} = \\\\frac{x_2 - 3}{x_2 - 2}\\\\)\\n\\\\((x_1 - 3)(x_2 - 2) = (x_2 - 3)(x_1 - 2)\\\\)\\n\\\\(x_1 x_2 - 2x_1 - 3x_2 + 6 = x_1 x_2 - 3x_1 - 2x_2 + 6 \\\\implies x_1 = x_2\\\\).\\nThus, \\\\(f\\\\) is one-one.\\n\\n2. **Onto:**\\nLet \\\\(y \\\\in \\\\mathbb{R} \\\\setminus \\\\{1\\\\}\\\\). Set \\\\(y = \\\\frac{x - 3}{x - 2}\\\\):\\n\\\\(y(x - 2) = x - 3 \\\\implies yx - 2y = x - 3 \\\\implies x(y - 1) = 2y - 3 \\\\implies x = \\\\frac{2y - 3}{y - 1}\\\\).\\nSince \\\\(y \\\\neq 1\\\\), \\\\(x\\\\) is well-defined. Also, if \\\\(x = 2\\\\), then \\\\(2y - 3 = 2y - 2 \\\\implies -3 = -2\\\\), impossible. Thus \\\\(x \\\\neq 2\\\\).\\nSo every \\\\(y \\\\in \\\\mathbb{R} \\\\setminus \\\\{1\\\\}\\\\) has a pre-image in \\\\(\\mathbb{R} \\\\setminus \\\\{2\\\\}\\\\).\\nTherefore, \\\\(f\\\\) is bijective."
+      },
+      {
+        "question": "The domain of the function \\\\(f(x) = \\\\sqrt{\\\\log_{0.5}\\\\left(\\\\frac{x-1}{x+5}\\\\right)}\\\\) is:",
+        "options": [
+          "\\\\((1, \\\\infty)\\\\)",
+          "\\\\([1, \\\\infty)\\\\)",
+          "\\\\((-5, 1)\\\\)",
+          "\\\\((-\\\\infty, -5) \\\\cup (1, \\\\infty)\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Solving \\\\(0 < \\\\frac{x-1}{x+5} \\\\le 1\\\\) yields \\\\(x > 1\\\\).",
+          "Incorrect. At \\\\(x = 1\\\\), the argument of the logarithm becomes 0, which is undefined.",
+          "Incorrect. In this interval, \\\\(\\frac{x-1}{x+5} < 0\\\\), making the log undefined.",
+          "Incorrect. For \\\\(x < -5\\\\), \\\\(\\frac{x-1}{x+5} > 1\\\\), so \\\\(\\log_{0.5}\\\\left(\\\\frac{x-1}{x+5}\\\\right) < 0\\\\)."
+        ],
+        "fullExplanation": "For the square root to be real, the argument of the square root must be non-negative:\\n\\\\(\\log_{0.5}\\\\left(\\\\frac{x-1}{x+5}\\\\right) \\\\ge 0\\\\)\\nSince the base is \\\\(0.5 < 1\\\\), reversing the inequality gives:\\n\\\\(0 < \\\\frac{x-1}{x+5} \\\\le 1\\\\)\\n\\n1. \\\\(\\frac{x-1}{x+5} > 0 \\\\implies x \\\\in (-\\\\infty, -5) \\\\cup (1, \\\\infty)\\\\)\\n2. \\\\(\\frac{x-1}{x+5} \\\\le 1 \\\\implies \\\\frac{x-1 - (x+5)}{x+5} \\\\le 0 \\\\implies \\\\frac{-6}{x+5} \\\\le 0 \\\\implies x + 5 > 0 \\\\implies x > -5\\\\)\\n\\nIntersecting \\\\(x > -5\\\\) with \\\\(x \\\\in (-\\\\infty, -5) \\\\cup (1, \\\\infty)\\\\) gives:\\n\\\\(x \\\\in (1, \\\\infty)\\\\)."
+      },
+      {
+        "question": "If \\\\(f(x) = \\\\frac{4^x}{4^x + 2}\\\\), then \\\\(f(x) + f(1-x)\\\\) is equal to:",
+        "options": [
+          "\\\\(0\\\\)",
+          "\\\\(2\\\\)",
+          "\\\\(1/2\\\\)",
+          "\\\\(1\\\\)"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect.",
+          "Correct. Evaluating \\\\(f(1-x)\\\\) and adding to \\\\(f(x)\\\\) simplifies directly to 1."
+        ],
+        "fullExplanation": "We have:\\n\\\\(f(1-x) = \\\\frac{4^{1-x}}{4^{1-x} + 2} = \\\\frac{\\\\frac{4}{4^x}}{\\\\frac{4}{4^x} + 2} = \\\\frac{4}{4 + 2 \\\\cdot 4^x} = \\\\frac{2}{2 + 4^x}\\\\)\\nNow,\\n\\\\(f(x) + f(1-x) = \\\\frac{4^x}{4^x + 2} + \\\\frac{2}{4^x + 2} = \\\\frac{4^x + 2}{4^x + 2} = 1\\\\)."
+      },
+      {
+        "question": "If \\\\(f(x) = \\\\frac{4^x}{4^x + 2}\\\\), then the value of \\\\(\\sum_{r=1}^{1999} f\\\\left(\\\\frac{r}{2000}\\\\right)\\\\) is:",
+        "options": [
+          "\\\\(999\\\\)",
+          "\\\\(\\frac{1999}{2}\\\\)",
+          "\\\\(1000\\\\)",
+          "\\\\(\\frac{1999}{4}\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Missed the middle term \\\\(f(1/2) = 1/2\\\\).",
+          "Correct. 999 complementary pairs sum to 999, plus \\\\(f(1/2) = 1/2\\\\), giving \\\\(999.5 = 1999/2\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Using the identity \\\\(f(x) + f(1-x) = 1\\\\):\\nNotice that \\\\(f\\\\left(\\\\frac{r}{2000}\\\\right) + f\\\\left(\\\\frac{2000-r}{2000}\\\\right) = 1\\\\).\\nPairing terms from \\\\(r = 1\\\\) to \\\\(r = 999\\\\) with \\\\(r = 1999\\\\) down to \\\\(r = 1001\\\\):\\nThere are 999 such pairs, contributing \\\\(999 \\\\times 1 = 999\\\\).\\nThe middle term is \\\\(f\\\\left(\\\\frac{1000}{2000}\\\\right) = f\\\\left(\\\\frac{1}{2}\\\\right) = \\\\frac{4^{1/2}}{4^{1/2} + 2} = \\\\frac{2}{2 + 2} = \\\\frac{1}{2}\\\\).\\nTotal Sum = \\\\(999 + \\\\frac{1}{2} = \\\\frac{1999}{2}\\\\)."
+      },
+      {
+        "question": "The fundamental period of the function \\\\(f(x) = |\\\\sin x| + |\\\\cos x|\\\\) is:",
+        "options": [
+          "\\\\(\\frac{\\\\pi}{2}\\\\)",
+          "\\\\(\\\\pi\\\\)",
+          "\\\\(2\\\\pi\\\\)",
+          "\\\\(\\frac{\\\\pi}{4}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(f(x + \\\\pi/2) = |\\\\sin(x + \\\\pi/2)| + |\\\\cos(x + \\\\pi/2)| = |\\\\cos x| + |-\\\\sin x| = f(x)\\\\).",
+          "Incorrect. \\\\(\\pi\\\\) is a period, but not the fundamental (smallest) period.",
+          "Incorrect.",
+          "Incorrect. At \\\\(x = 0\\\\), \\\\(f(0) = 1\\\\); at \\\\(x = \\\\pi/4\\\\), \\\\(f(\\\\pi/4) = \\\\sqrt{2} \\\\neq 1\\\\)."
+        ],
+        "fullExplanation": "The individual functions \\\\(|\\\\sin x|\\\\) and \\\\(|\\\\cos x|\\\\) each have period \\\\(\\\\pi\\\\).\\nHowever, because sine and cosine are complementary functions:\\n\\\\(f\\\\left(x + \\\\frac{\\\\pi}{2}\\\\right) = \\\\left|\\\\sin\\\\left(x + \\\\frac{\\\\pi}{2}\\\\right)\\\\right| + \\\\left|\\\\cos\\\\left(x + \\\\frac{\\\\pi}{2}\\\\right)\\\\right| = |\\\\cos x| + |-\\\\sin x| = |\\\\cos x| + |\\\\sin x| = f(x)\\\\).\\nThus, \\\\(T = \\\\frac{\\\\pi}{2}\\\\). Since no smaller positive value satisfies this for all \\\\(x\\\\), \\\\(\\frac{\\\\pi}{2}\\\\) is the fundamental period."
+      },
+      {
+        "question": "If \\\\(f: \\\\mathbb{R} \\\\rightarrow \\\\mathbb{R}\\\\) satisfies \\\\(f(x + y) = f(x)f(y)\\\\) for all \\\\(x, y \\\\in \\\\mathbb{R}\\\\) and \\\\(f(1) = 3\\\\), then \\\\(\\sum_{r=1}^{n} f(r)\\\\) is equal to:",
+        "options": [
+          "\\\\(3(3^n - 1)\\\\)",
+          "\\\\(\\frac{1}{2}(3^n - 1)\\\\)",
+          "\\\\(\\frac{3}{2}(3^n - 1)\\\\)",
+          "\\\\(\\frac{3}{2}(3^n + 1)\\\\)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. Missed dividing by \\\\(r - 1 = 2\\\\) in GP sum.",
+          "Incorrect. First term is 3, not 1.",
+          "Correct. \\\\(f(r) = 3^r\\\\). The sum is a GP: \\\\(3 + 3^2 + \\\\dots + 3^n = \\\\frac{3(3^n - 1)}{2}\\\\).",
+          "Incorrect. Formula for sum of GP has \\\\(-1\\\\), not \\\\(+1\\\\)."
+        ],
+        "fullExplanation": "The functional equation \\\\(f(x + y) = f(x)f(y)\\\\) with \\\\(f(1) = 3\\\\) gives:\\n\\\\(f(2) = f(1)^2 = 3^2\\\\), \\\\(f(3) = 3^3\\\\), ..., \\\\(f(r) = 3^r\\\\).\\nThen:\\n\\\\(\\sum_{r=1}^{n} f(r) = \\\\sum_{r=1}^{n} 3^r = 3 + 3^2 + 3^3 + \\\\dots + 3^n\\\\)\\nUsing the sum of a geometric progression:\\n\\\\(S_n = \\\\frac{3(3^n - 1)}{3 - 1} = \\\\frac{3}{2}(3^n - 1)\\\\)."
+      },
+      {
+        "question": "The range of the function \\\\(f(x) = \\\\frac{x^2 - x + 1}{x^2 + x + 1}\\\\) for \\\\(x \\\\in \\\\mathbb{R}\\\\) is:",
+        "options": [
+          "\\\\(\\left[\\\\frac{1}{3}, 3\\\\right]\\\\)",
+          "\\\\(\\left(\\\\frac{1}{3}, 3\\\\right)\\\\)",
+          "\\\\([0, 3]\\\\)",
+          "\\\\(\\left[\\\\frac{1}{3}, 1\\\\right]\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Setting up the quadratic in \\\\(x\\\\) and requiring \\\\(D \\\\ge 0\\\\) yields \\\\(1/3 \\\\le y \\\\le 3\\\\).",
+          "Incorrect. The endpoints \\\\(1/3\\\\) and \\\\(3\\\\) are attainable.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let \\\\(y = \\\\frac{x^2 - x + 1}{x^2 + x + 1}\\\\).\\nSince \\\\(x^2 + x + 1 > 0\\\\) for all real \\\\(x\\\\):\\n\\\\(y(x^2 + x + 1) = x^2 - x + 1 \\\\implies (y - 1)x^2 + (y + 1)x + (y - 1) = 0\\\\).\\nSince \\\\(x \\\\in \\\\mathbb{R}\\\\), the discriminant \\\\(D \\\\ge 0\\\\):\\n\\\\((y + 1)^2 - 4(y - 1)^2 \\\\ge 0\\\\)\\n\\\\([(y + 1) - 2(y - 1)][(y + 1) + 2(y - 1)] \\\\ge 0\\\\)\\n\\\\((-y + 3)(3y - 1) \\\\ge 0 \\\\implies (y - 3)(3y - 1) \\\\le 0\\\\)\\n\\\\(\\implies \\\\frac{1}{3} \\\\le y \\\\le 3\\\\).\\nWhen \\\\(y = 1\\\\), \\\\(2x = 0 \\\\implies x = 0\\\\), which is valid. Hence Range = \\\\(\\left[\\\\frac{1}{3}, 3\\\\right]\\\\)."
+      },
+      {
+        "question": "Let \\\\(f: [2, \\\\infty) \\\\rightarrow [1, \\\\infty)\\\\) be defined by \\\\(f(x) = x^2 - 4x + 5\\\\). Then \\\\(f^{-1}(x)\\\\) is:",
+        "options": [
+          "\\\\(2 - \\\\sqrt{x - 1}\\\\)",
+          "\\\\(2 + \\\\sqrt{x - 1}\\\\)",
+          "\\\\(2 \\\\pm \\\\sqrt{x - 1}\\\\)",
+          "\\\\(\\sqrt{x - 1} - 2\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. This maps to values \\\\(\\\\le 2\\\\), which falls outside the range of \\\\(f^{-1}\\\\).",
+          "Correct. \\\\(y = (x - 2)^2 + 1 \\implies x = 2 + \\sqrt{y - 1}\\\\).",
+          "Incorrect. An inverse function must be single-valued.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Write \\\\(y = x^2 - 4x + 5 = (x - 2)^2 + 1\\\\).\\n\\\\((x - 2)^2 = y - 1 \\\\implies x - 2 = \\\\pm \\\\sqrt{y - 1}\\\\).\\nSince the domain of \\\\(f\\\\) is \\\\([2, \\\\infty)\\\\), we have \\\\(x \\\\ge 2\\\\), so \\\\(x - 2 \\\\ge 0\\\\). Hence, we take the positive square root:\\n\\\\(x = 2 + \\\\sqrt{y - 1}\\\\).\\nThus, \\\\(f^{-1}(x) = 2 + \\\\sqrt{x - 1}\\\\)."
+      },
+      {
+        "question": "Let \\\\(R = \\\\{(a, b) : a, b \\\\in \\\\mathbb{R}, 1 + ab > 0\\\\}\\\\). The relation \\\\(R\\\\) is:",
+        "options": [
+          "Reflexive and symmetric but not transitive",
+          "An equivalence relation",
+          "Reflexive and transitive but not symmetric",
+          "Symmetric and transitive but not reflexive"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(1 + a^2 > 0\\\\) holds for all \\\\(a\\\\), \\\\(1 + ab = 1 + ba\\\\), but transitivity fails for counterexample \\\\(a = 1, b = -0.5, c = -4\\\\).",
+          "Incorrect. Transitivity does not hold.",
+          "Incorrect. Symmetry holds obviously since \\\\(ab = ba\\\\).",
+          "Incorrect. Reflexivity holds."
+        ],
+        "fullExplanation": "1. **Reflexive:** For all \\\\(a \\\\in \\\\mathbb{R}\\\\), \\\\(1 + a \\\\cdot a = 1 + a^2 > 0\\\\). Thus \\\\((a, a) \\\\in R\\\\).\\n2. **Symmetric:** If \\\\((a, b) \\\\in R\\\\), then \\\\(1 + ab > 0 \\\\implies 1 + ba > 0 \\\\implies (b, a) \\\\in R\\\\).\\n3. **Transitive:** Consider \\\\(a = 1, b = -0.5, c = -4\\\\):\\n- \\\\(1 + ab = 1 + 1(-0.5) = 0.5 > 0 \\\\implies (a, b) \\\\in R\\\\)\\n- \\\\(1 + bc = 1 + (-0.5)(-4) = 3 > 0 \\\\implies (b, c) \\\\in R\\\\)\\n- But \\\\(1 + ac = 1 + 1(-4) = -3 \\\\ngtr 0 \\\\implies (a, c) \\\\notin R\\\\).\\nHence, \\\\(R\\\\) is not transitive."
+      },
+      {
+        "question": "The domain of the function \\\\(f(x) = \\\\frac{1}{\\\\sqrt{[x]^2 - [x] - 6}}\\\\) (where \\\\([.]\\\\) denotes the greatest integer function) is:",
+        "options": [
+          "\\\\((-\\\\infty, -2] \\\\cup [4, \\\\infty)\\\\)",
+          "\\\\([-2, 4)\\\\)",
+          "\\\\((-\\\\infty, -3) \\\\cup [4, \\\\infty)\\\\)",
+          "\\\\((-\\\\infty, -2) \\\\cup [4, \\\\infty)\\\\)"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect. At \\\\(x = -2\\\\), \\\\([x] = -2\\\\) and the denominator becomes zero.",
+          "Incorrect. In this interval the denominator is non-positive.",
+          "Incorrect. Missing the interval \\\\([-3, -2)\\\\).",
+          "Correct. \\\\([x] \\le -3 \\implies x < -2\\\\) and \\\\([x] \\ge 4 \\implies x \\ge 4\\\\)."
+        ],
+        "fullExplanation": "For the square root in the denominator to be strictly positive:\\n\\\\([x]^2 - [x] - 6 > 0\\\\)\\n\\\\(([x] - 3)([x] + 2) > 0\\\\)\\nThis gives:\\n\\\\([x] < -2\\\\) or \\\\([x] > 3\\\\).\\nSince \\\\([x]\\\\) is an integer:\\n1. \\\\([x] \\\\le -3 \\\\implies x < -2\\\\)\\n2. \\\\([x] \\\\ge 4 \\\\implies x \\\\ge 4\\\\)\\nCombining these yields \\\\(x \\\\in (-\\\\infty, -2) \\\\cup [4, \\\\infty)\\\\)."
+      },
+      {
+        "question": "If \\\\(f(x) = \\\\sin^2 x + \\\\sin^2\\\\left(x + \\\\frac{\\\\pi}{3}\\\\right) + \\\\cos x \\\\cos\\\\left(x + \\\\frac{\\\\pi}{3}\\\\right)\\\\) and \\\\(g\\\\left(\\\\frac{5}{4}\\\\right) = 1\\\\), then \\\\((g \\\\circ f)(x)\\\\) is:",
+        "options": [
+          "\\\\(0\\\\)",
+          "\\\\(5/4\\\\)",
+          "\\\\(1\\\\)",
+          "\\\\(2\\\\)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect.",
+          "Incorrect. \\\\(5/4\\\\) is the value of \\\\(f(x)\\\\), not \\\\(g(f(x))\\\\).",
+          "Correct. \\\\(f(x)\\\\) simplifies identically to the constant \\\\(5/4\\\\), so \\\\(g(f(x)) = g(5/4) = 1\\\\).",
+          "Incorrect."
+        ],
+        "fullExplanation": "Simplify \\\\(f(x)\\\\):\\n\\\\(f(x) = \\\\frac{1 - \\\\cos 2x}{2} + \\\\frac{1 - \\\\cos(2x + 2\\\\pi/3)}{2} + \\\\frac{1}{2}\\\\left[\\\\cos\\\\frac{\\\\pi}{3} + \\\\cos\\\\left(2x + \\\\frac{\\\\pi}{3}\\\\right)\\\\right]\\\\)\\n\\\\(= 1 - \\\\frac{1}{2}\\\\left[\\\\cos 2x + \\\\cos\\\\left(2x + \\\\frac{2\\\\pi}{3}\\\\right)\\\\right] + \\\\frac{1}{4} + \\\\frac{1}{2}\\\\cos\\\\left(2x + \\\\frac{\\\\pi}{3}\\\\right)\\\\)\\nUsing sum-to-product on \\\\(\\cos 2x + \\\\cos(2x + 2\\\\pi/3) = 2\\\\cos(2x + \\\\pi/3)\\\\cos(\\\\pi/3) = \\\\cos(2x + \\\\pi/3)\\\\):\\n\\\\(f(x) = 1 - \\\\frac{1}{2}\\\\cos\\\\left(2x + \\\\frac{\\\\pi}{3}\\\\right) + \\\\frac{1}{4} + \\\\frac{1}{2}\\\\cos\\\\left(2x + \\\\frac{\\\\pi}{3}\\\\right) = \\\\frac{5}{4}\\\\).\\nSince \\\\(f(x) = \\\\frac{5}{4}\\\\) for all \\\\(x\\\\), we have:\\n\\\\((g \\\\circ f)(x) = g(f(x)) = g\\\\left(\\\\frac{5}{4}\\\\right) = 1\\\\)."
+      },
+      {
+        "question": "If \\\\(f: \\\\mathbb{R} \\\\rightarrow \\\\mathbb{R}\\\\) is defined by \\\\(f(x) = x^3 + 5\\\\), then \\\\(f^{-1}(x)\\\\) is:",
+        "options": [
+          "\\\\((x - 5)^{1/3}\\\\)",
+          "\\\\((x + 5)^{1/3}\\\\)",
+          "\\\\((x - 5)^3\\\\)",
+          "\\\\((5 - x)^{1/3}\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Solving \\\\(y = x^3 + 5\\\\) for \\\\(x\\\\) gives \\\\(x = (y - 5)^{1/3}\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Let \\\\(y = x^3 + 5\\\\).\\n\\\\(x^3 = y - 5 \\\\implies x = (y - 5)^{1/3}\\\\).\\nInterchanging variables gives \\\\(f^{-1}(x) = (x - 5)^{1/3}\\\\)."
+      },
+      {
+        "question": "Let \\\\(f(x) = \\\\frac{x}{\\\\sqrt{1 + x^2}}\\\\). Then the triple composition \\\\((f \\\\circ f \\\\circ f)(x)\\\\) is:",
+        "options": [
+          "\\\\(\\frac{x}{\\\\sqrt{1 + 2x^2}}\\\\)",
+          "\\\\(\\frac{x}{\\\\sqrt{1 + 3x^2}}\\\\)",
+          "\\\\(\\frac{3x}{\\\\sqrt{1 + x^2}}\\\\)",
+          "\\\\(\\frac{x}{1 + 3x^2}\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. This is \\\\((f \\\\circ f)(x)\\\\).",
+          "Correct. Applying the composition three times yields \\\\(\\frac{x}{\\sqrt{1 + 3x^2}}\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "First composition:\\n\\\\((f \\\\circ f)(x) = \\\\frac{f(x)}{\\\\sqrt{1 + (f(x))^2}} = \\\\frac{\\\\frac{x}{\\\\sqrt{1+x^2}}}{\\\\sqrt{1 + \\\\frac{x^2}{1+x^2}}} = \\\\frac{\\\\frac{x}{\\\\sqrt{1+x^2}}}{\\\\frac{\\\\sqrt{1+2x^2}}{\\\\sqrt{1+x^2}}} = \\\\frac{x}{\\\\sqrt{1 + 2x^2}}\\\\).\\nSecond composition:\\n\\\\((f \\\\circ f \\\\circ f)(x) = f\\\\left(\\\\frac{x}{\\\\sqrt{1+2x^2}}\\\\right) = \\\\frac{\\\\frac{x}{\\\\sqrt{1+2x^2}}}{\\\\sqrt{1 + \\\\frac{x^2}{1+2x^2}}} = \\\\frac{x}{\\\\sqrt{1 + 3x^2}}\\\\)."
+      },
+      {
+        "question": "The function \\\\(f(x) = \\\\log\\\\left(x + \\\\sqrt{x^2 + 1}\\\\right)\\\\) is:",
+        "options": [
+          "An odd function",
+          "An even function",
+          "Neither even nor odd",
+          "A periodic function"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(f(-x) = \\log(-x + \\sqrt{x^2+1}) = \\log\\left(\\frac{1}{x+\\sqrt{x^2+1}}\\right) = -f(x)\\\\).",
+          "Incorrect. \\\\(f(-x) \\neq f(x)\\\\).",
+          "Incorrect.",
+          "Incorrect. Logarithmic functions are aperiodic."
+        ],
+        "fullExplanation": "Evaluate \\\\(f(-x)\\\\):\\n\\\\(f(-x) = \\\\log\\\\left(-x + \\\\sqrt{(-x)^2 + 1}\\\\right) = \\\\log\\\\left(\\\\sqrt{x^2 + 1} - x\\\\right)\\\\)\\nRationalizing the argument:\\n\\\\(\\sqrt{x^2 + 1} - x = \\\\frac{(\\\\sqrt{x^2 + 1} - x)(\\\\sqrt{x^2 + 1} + x)}{\\\\sqrt{x^2 + 1} + x} = \\\\frac{(x^2 + 1) - x^2}{\\\\sqrt{x^2 + 1} + x} = \\\\frac{1}{x + \\\\sqrt{x^2 + 1}}\\\\)\\nTherefore:\\n\\\\(f(-x) = \\\\log\\\\left(\\\\frac{1}{x + \\\\sqrt{x^2 + 1}}\\\\right) = -\\\\log\\\\left(x + \\\\sqrt{x^2 + 1}\\\\right) = -f(x)\\\\).\\nThus, \\\\(f(x)\\\\) is an odd function."
+      },
+      {
+        "question": "Let \\\\(S = \\\\{1, 2, 3\\\\}\\\\). The smallest equivalence relation on \\\\(S\\\\) is:",
+        "options": [
+          "\\\\(\\\\emptyset\\\\)",
+          "\\\\(\\{(1, 2), (2, 1)\\}\\\\)",
+          "\\\\(\\{(1, 1), (2, 2), (3, 3)\\}\\\\)",
+          "\\\\(S \\\\times S\\\\)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. Empty relation is not reflexive.",
+          "Incorrect. Missing diagonal elements.",
+          "Correct. The identity relation \\\\(I_S = \\{(1,1), (2,2), (3,3)\\}\\\\) is the smallest equivalence relation.",
+          "Incorrect. \\\\(S \\times S\\\\) is the largest equivalence relation."
+        ],
+        "fullExplanation": "An equivalence relation on \\\\(S\\\\) must be reflexive, meaning it must contain at least the diagonal pairs \\\\(\\{(1, 1), (2, 2), (3, 3)\\}\\\\).\\nThis diagonal relation is trivially symmetric and transitive as well.\\nHence, \\\\(\\{(1, 1), (2, 2), (3, 3)\\}\\\\) is the smallest equivalence relation (cardinality 3)."
+      },
+      {
+        "question": "If \\\\(f: \\\\mathbb{R} \\\\rightarrow \\\\mathbb{R}\\\\) satisfies \\\\(f(x + y) = f(x) + f(y)\\\\) for all \\\\(x, y \\\\in \\\\mathbb{R}\\\\) and \\\\(f(1) = 7\\\\), then \\\\(\\sum_{r=1}^{10} f(r)\\\\) is:",
+        "options": [
+          "\\\\(385\\\\)",
+          "\\\\(350\\\\)",
+          "\\\\(420\\\\)",
+          "\\\\(280\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(f(r) = 7r\\\\). Sum is \\\\(7 \\times \\frac{10 \\times 11}{2} = 7 \\times 55 = 385\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "From \\\\(f(x + y) = f(x) + f(y)\\\\), we have \\\\(f(x) = kx\\\\).\\nSince \\\\(f(1) = 7\\\\), we find \\\\(k = 7\\\\), so \\\\(f(r) = 7r\\\\).\\nThen:\\n\\\\(\\sum_{r=1}^{10} f(r) = \\\\sum_{r=1}^{10} 7r = 7 \\\\sum_{r=1}^{10} r = 7 \\\\times \\\\frac{10 \\\\times 11}{2} = 7 \\\\times 55 = 385\\\\)."
+      },
+      {
+        "question": "The number of onto functions from a set containing 5 elements to a set containing 3 elements is:",
+        "options": [
+          "\\\\(120\\\\)",
+          "\\\\(180\\\\)",
+          "\\\\(240\\\\)",
+          "\\\\(150\\\\)"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect. \\\\(120 = 5!\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Correct. \\\\(3^5 - {}^3 C_1 2^5 + {}^3 C_2 1^5 = 243 - 96 + 3 = 150\\\\)."
+        ],
+        "fullExplanation": "Using the onto formula for \\\\(m = 5\\\\) and \\\\(n = 3\\\\):\\n\\\\(N = n^m - {}^n C_1 (n - 1)^m + {}^n C_2 (n - 2)^m - \\\\dots\\\\)\\n\\\\(N = 3^5 - {}^3 C_1 (2)^5 + {}^3 C_2 (1)^5\\\\)\\n\\\\(N = 243 - 3(32) + 3(1) = 243 - 96 + 3 = 150\\\\)."
+      },
+      {
+        "question": "If \\\\(f(x) = \\\\frac{x-1}{x+1}\\\\), then \\\\(f(2x)\\\\) expressed in terms of \\\\(f(x)\\\\) is:",
+        "options": [
+          "\\\\(\\frac{3f(x) - 1}{f(x) + 3}\\\\)",
+          "\\\\(\\frac{3f(x) + 1}{f(x) + 3}\\\\)",
+          "\\\\(\\frac{f(x) + 3}{3f(x) + 1}\\\\)",
+          "\\\\(\\frac{2f(x) + 1}{f(x) + 2}\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect.",
+          "Correct. Solving for \\\\(x = \\frac{1+f(x)}{1-f(x)}\\\\) and substituting into \\\\(f(2x)\\\\) gives \\\\(\\frac{3f(x)+1}{f(x)+3}\\\\).",
+          "Incorrect. Inverted fraction.",
+          "Incorrect."
+        ],
+        "fullExplanation": "From \\\\(f(x) = \\\\frac{x - 1}{x + 1}\\\\):\\n\\\\(x f(x) + f(x) = x - 1 \\\\implies x(1 - f(x)) = 1 + f(x) \\\\implies x = \\\\frac{1 + f(x)}{1 - f(x)}\\\\).\\nNow substitute \\\\(2x\\\\) into the function:\\n\\\\(f(2x) = \\\\frac{2x - 1}{2x + 1} = \\\\frac{2\\\\left(\\\\frac{1 + f(x)}{1 - f(x)}\\\\right) - 1}{2\\\\left(\\\\frac{1 + f(x)}{1 - f(x)}\\\\right) + 1} = \\\\frac{2 + 2f(x) - (1 - f(x))}{2 + 2f(x) + (1 - f(x))} = \\\\frac{3f(x) + 1}{f(x) + 3}\\\\)."
+      },
+      {
+        "question": "Let \\\\(f: \\\\mathbb{R} \\\\rightarrow \\\\mathbb{R}\\\\) be defined by \\\\(f(x) = 2x + \\\\sin x\\\\). Then \\\\(f\\\\) is:",
+        "options": [
+          "One-one and onto",
+          "One-one but not onto",
+          "Onto but not one-one",
+          "Neither one-one nor onto"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(f'(x) = 2 + \\cos x \\ge 1 > 0\\\\) (strictly increasing, hence one-one) and range is \\\\(\\mathbb{R}\\\\) (hence onto).",
+          "Incorrect. The range is all reals, so it is onto.",
+          "Incorrect. It is strictly monotonic, so it is one-one.",
+          "Incorrect."
+        ],
+        "fullExplanation": "1. **One-one:**\\n\\\\(f'(x) = 2 + \\\\cos x\\\\).\\nSince \\\\(-1 \\\\le \\\\cos x \\\\le 1\\\\), we have \\\\(1 \\\\le f'(x) \\\\le 3\\\\).\\nBecause \\\\(f'(x) > 0\\\\) for all \\\\(x \\\\in \\\\mathbb{R}\\\\), \\\\(f(x)\\\\) is strictly increasing, which implies it is injective (one-one).\\n\\n2. **Onto:**\\n\\\\(f(x)\\\\) is continuous everywhere. As \\\\(x \\\\rightarrow \\\\infty\\\\), \\\\(f(x) \\\\rightarrow \\\\infty\\\\); and as \\\\(x \\\\rightarrow -\\\\infty\\\\), \\\\(f(x) \\\\rightarrow -\\\\infty\\\\).\\nBy the Intermediate Value Theorem, the range of \\\\(f(x)\\\\) is \\\\(\\mathbb{R}\\\\), matching the codomain.\\nTherefore, \\\\(f\\\\) is bijective (one-one and onto)."
+      },
+      {
+        "question": "The domain of the function \\\\(f(x) = \\\\sin^{-1}\\\\left(\\\\frac{x-3}{2}\\\\right) - \\\\log_{10}(4 - x)\\\\) is:",
+        "options": [
+          "\\\\([1, 4]\\\\)",
+          "\\\\((1, 4)\\\\)",
+          "\\\\([1, 4)\\\\)",
+          "\\\\([1, 5]\\\\)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. At \\\\(x = 4\\\\), the log argument is 0, which is undefined.",
+          "Incorrect. \\\\(x = 1\\\\) is included in the domain.",
+          "Correct. \\\\(-1 \\le \\frac{x-3}{2} \\le 1 \\implies 1 \\le x \\le 5\\\\), and \\\\(4 - x > 0 \\implies x < 4\\\\). Intersection is \\\\([1, 4)\\\\).",
+          "Incorrect. Does not consider the restriction from \\\\(\\log_{10}(4-x)\\\\)."
+        ],
+        "fullExplanation": "1. For \\\\(\\sin^{-1}\\\\left(\\\\frac{x-3}{2}\\\\right)\\\\):\\n\\\\(-1 \\\\le \\\\frac{x-3}{2} \\\\le 1 \\\\implies -2 \\\\le x - 3 \\\\le 2 \\\\implies 1 \\\\le x \\\\le 5\\\\).\\n\\n2. For \\\\(\\log_{10}(4 - x)\\\\):\\n\\\\(4 - x > 0 \\\\implies x < 4\\\\).\\n\\nTaking the intersection of \\\\([1, 5]\\\\) and \\\\((-\\\\infty, 4)\\\\):\\n\\\\(x \\\\in [1, 4)\\\\)."
+      },
+      {
+        "question": "If \\\\(g(f(x)) = |\\\\sin x|\\\\) and \\\\(f(g(x)) = (\\\\sin\\\\sqrt{x})^2\\\\), then suitable choices for \\\\(f(x)\\\\) and \\\\(g(x)\\\\) are:",
+        "options": [
+          "\\\\(f(x) = \\\\sin^2 x, \\\\; g(x) = \\\\sqrt{x}\\\\)",
+          "\\\\(f(x) = \\\\sin x, \\\\; g(x) = |x|\\\\)",
+          "\\\\(f(x) = x^2, \\\\; g(x) = \\\\sin\\\\sqrt{x}\\\\)",
+          "\\\\(f(x) = \\\\sqrt{x}, \\\\; g(x) = \\\\sin^2 x\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(g(f(x)) = \\sqrt{\\sin^2 x} = |\\sin x|\\\\) and \\\\(f(g(x)) = (\\sin\\sqrt{x})^2\\\\).",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Test option A:\\n- \\\\(g(f(x)) = g(\\\\sin^2 x) = \\\\sqrt{\\\\sin^2 x} = |\\\\sin x|\\\\).\\n- \\\\(f(g(x)) = f(\\\\sqrt{x}) = \\\\sin^2(\\\\sqrt{x}) = (\\\\sin\\\\sqrt{x})^2\\\\).\\nBoth conditions are satisfied identically."
+      },
+      {
+        "question": "The fundamental period of \\\\(f(x) = \\\\sin\\\\left(\\\\frac{\\\\pi x}{2}\\\\right) + \\\\cos\\\\left(\\\\frac{\\\\pi x}{3}\\\\right)\\\\) is:",
+        "options": [
+          "\\\\(6\\\\)",
+          "\\\\(12\\\\)",
+          "\\\\(24\\\\)",
+          "\\\\(4\\\\)"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect.",
+          "Correct. Period of first term is \\\\(2\\pi / (\\pi/2) = 4\\\\), period of second term is \\\\(2\\pi / (\\pi/3) = 6\\\\). \\\\(\\text{LCM}(4, 6) = 12\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Period of \\\\(T_1 = \\\\sin\\\\left(\\\\frac{\\\\pi x}{2}\\\\right) = \\\\frac{2\\\\pi}{\\\\pi/2} = 4\\\\).\\nPeriod of \\\\(T_2 = \\\\cos\\\\left(\\\\frac{\\\\pi x}{3}\\\\right) = \\\\frac{2\\\\pi}{\\\\pi/3} = 6\\\\).\\nOverall period \\\\(T = \\\\text{LCM}(4, 6) = 12\\\\)."
+      },
+      {
+        "question": "The number of real solutions of the equation \\\\([x] + \\\\{-x\\\\} = 2\\\\) (where \\\\([.]\\\\) is the greatest integer function and \\\\(\\\\{.\\\\}\\\\) is the fractional part function) is:",
+        "options": [
+          "\\\\(1\\\\)",
+          "\\\\(0\\\\)",
+          "\\\\(2\\\\)",
+          "Infinitely many"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Only \\\\(x = 2\\\\) satisfies the equation.",
+          "Incorrect.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "**Case 1:** \\\\(x \\\\in \\\\mathbb{Z}\\\\).\\nThen \\\\(\\\\{-x\\\\} = 0\\\\), and the equation becomes \\\\([x] + 0 = 2 \\\\implies x = 2\\\\).\\nChecking: \\\\([2] + \\\\{-2\\\\} = 2 + 0 = 2\\\\). This gives 1 solution.\\n\\n**Case 2:** \\\\(x \\\\notin \\\\mathbb{Z}\\\\).\\nThen \\\\(\\\\{-x\\\\} = 1 - \\\\{x\\\\}\\\\).\\nThe equation becomes \\\\([x] + 1 - \\\\{x\\\\} = 2 \\\\implies \\\\{x\\\\} = [x] - 1\\\\).\\nSince \\\\(0 < \\\\{x\\\\} < 1\\\\) for non-integers:\\n\\\\(0 < [x] - 1 < 1 \\\\implies 1 < [x] < 2\\\\).\\nNo integer \\\\([x]\\\\) exists strictly between 1 and 2.\\n\\nTherefore, \\\\(x = 2\\\\) is the unique solution."
+      },
+      {
+        "question": "Let \\\\(A = \\\\{1, 2, 3\\\\}\\\\). The number of distinct equivalence relations on \\\\(A\\\\) containing the pair \\\\((1, 2)\\\\) is:",
+        "options": [
+          "\\\\(1\\\\)",
+          "\\\\(3\\\\)",
+          "\\\\(5\\\\)",
+          "\\\\(2\\\\)"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect. There are 2 such relations.",
+          "Incorrect.",
+          "Incorrect. 5 is the total number of all equivalence relations on a set of 3 elements.",
+          "Correct. The two equivalence relations correspond to partitions \\\\(\\{\\{1, 2\\}, \\{3\\}\\}\\\\) and \\\\(\\{\\{1, 2, 3\\}\\}\\\\)."
+        ],
+        "fullExplanation": "An equivalence relation containing \\\\((1, 2)\\\\) must also contain \\\\((2, 1)\\\\) by symmetry, and \\\\(\\{(1, 1), (2, 2), (3, 3)\\}\\\\) by reflexivity.\\nThis gives the base relation:\\n\\\\(R_1 = \\\\{(1, 1), (2, 2), (3, 3), (1, 2), (2, 1)\\\\}\\\\), which corresponds to the partition \\\\(\\{\\{1, 2\\\\}, \\\\{3\\\\}\\\\}\\\\). This is valid.\\nIf we add any other pair, say \\\\((2, 3)\\\\), transitivity forces \\\\((1, 3)\\\\), their inverses, and gives the universal relation:\\n\\\\(R_2 = A \\\\times A\\\\), corresponding to the partition \\\\(\\{\\{1, 2, 3\\\\}\\\\}\\\\).\\nNo other equivalence relations exist.\\nHence, there are exactly 2 such equivalence relations."
+      },
+      {
+        "question": "Let \\\\(f: \\\\mathbb{R} \\\\rightarrow \\\\mathbb{R}\\\\) be defined as \\\\(f(x) = \\\\begin{cases} x + 1, & x \\\\ge 0 \\\\ x - 1, & x < 0 \\\\end{cases}\\\\). Then \\\\(f\\\\) is:",
+        "options": [
+          "Onto but not one-one",
+          "One-one but not onto",
+          "Bijective",
+          "Neither one-one nor onto"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect.",
+          "Correct. Injective because branches do not overlap, but not onto because values in \\\\([-1, 1)\\\\) are never attained.",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "1. **One-one:**\\n- For \\\\(x \\\\ge 0\\\\), \\\\(f(x) \\\\ge 1\\\\), strictly increasing.\\n- For \\\\(x < 0\\\\), \\\\(f(x) < -1\\\\), strictly increasing.\\nSince the range for \\\\(x \\\\ge 0\\\\) is \\\\([1, \\\\infty)\\\\) and for \\\\(x < 0\\\\) is \\\\((-\\\\infty, -1)\\\\), the two ranges are completely disjoint. No two distinct inputs can yield the same output.\\nThus, \\\\(f\\\\) is one-one.\\n\\n2. **Onto:**\\nThe range of \\\\(f\\\\) is \\\\((-\\\\infty, -1) \\\\cup [1, \\\\infty)\\\\).\\nThe values in \\\\([-1, 1)\\\\) are never assumed by \\\\(f(x)\\\\).\\nSince Range \\\\(\\\\neq \\\\mathbb{R}\\\\), \\\\(f\\\\) is not onto."
+      },
+      {
+        "question": "If a polynomial function \\\\(f(x)\\\\) satisfies \\\\(f(x)f\\\\left(\\\\frac{1}{x}\\\\right) = f(x) + f\\\\left(\\\\frac{1}{x}\\\\right)\\\\) for all \\\\(x \\\\neq 0\\\\) and \\\\(f(3) = 28\\\\), then \\\\(f(4)\\\\) is equal to:",
+        "options": [
+          "\\\\(65\\\\)",
+          "\\\\(63\\\\)",
+          "\\\\(64\\\\)",
+          "\\\\(17\\\\)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. \\\\(f(x) = 1 + x^3\\\\). Therefore, \\\\(f(4) = 1 + 4^3 = 65\\\\).",
+          "Incorrect. \\\\(63 = 4^3 - 1\\\\).",
+          "Incorrect.",
+          "Incorrect."
+        ],
+        "fullExplanation": "Any polynomial satisfying \\\\(f(x)f\\\\left(\\\\frac{1}{x}\\\\right) = f(x) + f\\\\left(\\\\frac{1}{x}\\\\right)\\\\) is of the form:\\n\\\\(f(x) = 1 \\\\pm x^n\\\\).\\nGiven \\\\(f(3) = 28\\\\):\\n\\\\(1 \\\\pm 3^n = 28 \\\\implies \\\\pm 3^n = 27 \\\\implies +3^n = 3^3 \\\\implies n = 3\\\\).\\nThus, \\\\(f(x) = 1 + x^3\\\\).\\nNow calculate \\\\(f(4)\\\\):\\n\\\\(f(4) = 1 + 4^3 = 1 + 64 = 65\\\\)."
+      },
+      {
+        "question": "If \\\\(f(x) = \\\\frac{x}{\\\\sqrt{1 - x^2}}\\\\), then the composition \\\\((f \\\\circ f)(x)\\\\) for \\\\(|x| < \\\\frac{1}{\\\\sqrt{2}}\\\\) is:",
+        "options": [
+          "\\\\(\\frac{x}{\\\\sqrt{1 - x^2}}\\\\)",
+          "\\\\(\\frac{2x}{\\\\sqrt{1 - x^2}}\\\\)",
+          "\\\\(\\frac{x}{\\\\sqrt{1 - 2x^2}}\\\\)",
+          "\\\\(\\frac{x}{1 - 2x^2}\\\\)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect.",
+          "Incorrect.",
+          "Correct. Substituting \\\\(f(x)\\\\) into itself yields \\\\(\\frac{x}{\\sqrt{1-2x^2}}\\\\).",
+          "Incorrect. Missed the square root in denominator."
+        ],
+        "fullExplanation": "Compute \\\\((f \\\\circ f)(x)\\\\):\\n\\\\((f \\\\circ f)(x) = f(f(x)) = \\\\frac{f(x)}{\\\\sqrt{1 - (f(x))^2}} = \\\\frac{\\\\frac{x}{\\\\sqrt{1-x^2}}}{\\\\sqrt{1 - \\\\frac{x^2}{1-x^2}}} = \\\\frac{\\\\frac{x}{\\\\sqrt{1-x^2}}}{\\\\sqrt{\\\\frac{1-2x^2}{1-x^2}}} = \\\\frac{x}{\\\\sqrt{1 - 2x^2}}\\\\)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,816 @@
+[
+  {
+    "chapterName": "Surface Chemistry",
+    "flashcards": [
+      {
+        "front": "Distinguish between Physisorption and Chemisorption in terms of forces, enthalpy, reversibility, and layer thickness.",
+        "back": "Physisorption: Arises from weak van der Waals forces; low enthalpy of adsorption (20–40 kJ mol⁻¹); reversible; forms multimolecular layers; non-specific; decreases continuously with increasing temperature.\nChemisorption: Involves chemical bond formation (covalent or ionic); high enthalpy of adsorption (80–240 kJ mol⁻¹); irreversible; forms a unimolecular layer; highly specific; first increases then decreases with temperature."
+      },
+      {
+        "front": "State the Freundlich adsorption isotherm equation and give its logarithmic form.",
+        "back": "Freundlich Isotherm: x/m = k · p^(1/n) (where n > 1)\nLogarithmic form: log(x/m) = log k + (1/n) · log p\nwhere x is the mass of gas adsorbed on mass m of adsorbent at pressure p, and k and n are constants depending on nature of gas and adsorbent at a given temperature.\nPlot of log(x/m) vs log p gives a straight line with slope = 1/n and y-intercept = log k."
+      },
+      {
+        "front": "What are the physical meanings of the limiting values of 1/n in the Freundlich adsorption isotherm?",
+        "back": "The factor 1/n typically ranges between 0 and 1:\nWhen 1/n = 0: x/m = constant (adsorption is independent of pressure, observed at high pressure saturation).\nWhen 1/n = 1: x/m = k · p (adsorption varies directly with pressure, observed at very low pressure)."
+      },
+      {
+        "front": "How does the critical temperature (T_c) of a gas affect its extent of physical adsorption?",
+        "back": "Gases with higher critical temperatures (T_c) have stronger intermolecular attractive van der Waals forces and are more easily liquefiable. Consequently, they are adsorbed more readily and to a greater extent on solid adsorbents (e.g., extent of adsorption follows: SO₂ > NH₃ > CO₂ > CH₄ > N₂ > H₂)."
+      },
+      {
+        "front": "Classify colloidal systems based on the physical state of the dispersed phase and dispersion medium for: Smoke, Fog, Paint, and Butter.",
+        "back": "Smoke: Solid dispersed in Gas (Aerosol)\nFog / Mist: Liquid dispersed in Gas (Aerosol)\nPaint: Solid dispersed in Liquid (Sol)\nButter: Liquid dispersed in Solid (Gel)"
+      },
+      {
+        "front": "Contrast Lyophilic and Lyophobic sols in terms of stability, reversibility, and preparation method.",
+        "back": "Lyophilic Sols (solvent-loving): Reversible; intrinsically stable due to extensive solvation/hydration shells; prepared easily by direct shaking or heating with dispersion medium (e.g., starch, gelatin, gum, proteins).\nLyophobic Sols (solvent-hating): Irreversible; unstable and easily coagulated by adding electrolytes or heating; cannot be prepared directly; require special dispersion or condensation methods (e.g., metal sols, As₂S₃ sol, Fe(OH)₃ sol)."
+      },
+      {
+        "front": "Distinguish between Multimolecular, Macromolecular, and Associated colloids.",
+        "back": "Multimolecular: Aggregates of a large number of small atoms or molecules with diameter < 1 nm held by van der Waals forces (e.g., gold sol, S₈ sulphur sol).\nMacromolecular: Single large polymer molecules of colloidal dimensions in suitable solvents (e.g., starch, cellulose, proteins, nylon).\nAssociated Colloids (Micelles): Substances that behave as normal strong electrolytes at low concentrations, but aggregate to form colloidal particles above a specific concentration (e.g., soaps, synthetic detergents)."
+      },
+      {
+        "front": "Define Critical Micelle Concentration (CMC) and Kraft Temperature (T_k).",
+        "back": "Kraft Temperature (T_k): The minimum temperature above which the formation of micelles takes place.\nCritical Micelle Concentration (CMC): The minimum concentration of surfactant above which micelle formation occurs (e.g., for sodium dodecyl sulphate/sodium stearate, CMC is typically 10⁻⁴ to 10⁻³ mol L⁻¹)."
+      },
+      {
+        "front": "Explain the Bredig's Arc method for the preparation of colloidal solutions.",
+        "back": "It is a combined dispersion and condensation method used to prepare colloidal sols of metals like Au, Ag, Pt, and Cu. An electric arc is struck between metal electrodes submerged in the dispersion medium (water cooled by an ice bath). The extreme heat of the arc vaporizes the metal, which immediately condenses in cold water to form colloidal particles, stabilized by traces of KOH."
+      },
+      {
+        "front": "What is Peptization, and what role does a peptizing agent play?",
+        "back": "Peptization is the process of converting a freshly precipitated substance into a colloidal sol by shaking it with the dispersion medium in the presence of a small amount of an electrolyte called a peptizing agent.\nThe precipitate preferentially adsorbs one of the ions common to itself from the electrolyte, acquiring a like charge, which repels the particles into colloidal suspension."
+      },
+      {
+        "front": "Describe the Tyndall effect and state the two conditions necessary for its observation.",
+        "back": "Tyndall Effect is the scattering of light by colloidal particles, rendering the light path visible as a bright cone.\nConditions:\n1. The diameter of the dispersed particles must not be much smaller than the wavelength of the light used.\n2. The refractive indices of the dispersed phase and the dispersion medium must differ greatly in magnitude."
+      },
+      {
+        "front": "What is Brownian movement, and what is its significance in colloidal stability?",
+        "back": "Brownian movement is the continuous, random, zig-zag motion of colloidal particles caused by unequal and unbalanced bombardments from the molecules of the dispersion medium.\nSignificance: It opposes the downward gravitational pull acting on colloidal particles, preventing them from settling and thus conferring kinetic stability to the sol."
+      },
+      {
+        "front": "Define Electrophoresis and Electro-osmosis.",
+        "back": "Electrophoresis (Cataphoresis): The movement of charged colloidal particles toward an oppositely charged electrode under the influence of an applied electric field.\nElectro-osmosis: The phenomenon in which the colloidal particles are prevented from moving by a suitable barrier, and the molecules of the dispersion medium move under the influence of the electric field."
+      },
+      {
+        "front": "Explain the origin of charge on AgI sol when AgNO₃ is added to excess KI versus when KI is added to excess AgNO₃.",
+        "back": "When AgNO₃ is added to excess KI: AgI precipitate preferentially adsorbs common iodide (I⁻) ions from the medium, forming a negatively charged sol: [AgI]I⁻.\nWhen KI is added to excess AgNO₃: AgI precipitate preferentially adsorbs common silver (Ag⁺) ions, forming a positively charged sol: [AgI]Ag⁺."
+      },
+      {
+        "front": "Define Helmholtz electrical double layer and Zeta potential (electrokinetic potential).",
+        "back": "Helmholtz Double Layer: The combination of the fixed layer of preferentially adsorbed ions on the colloidal particle surface and the surrounding diffused mobile layer of counter-ions in the medium.\nZeta Potential (Electrokinetic Potential): The potential difference developed between the fixed layer and the diffused mobile layer of opposite charges."
+      },
+      {
+        "front": "State the Hardy-Schulze rule for the coagulation of colloidal sols.",
+        "back": "1. The ion carrying charge opposite to that of the colloidal particles is responsible for coagulation (called the coagulating or flocculating ion).\n2. The coagulating power of an electrolyte is directly proportional to the fourth power of the valency of the active flocculating ion:\nFor negative sols (e.g., As₂S₃): Al³⁺ > Ba²⁺ > Na⁺\nFor positive sols (e.g., Fe(OH)₃): [Fe(CN)₆]⁴⁻ > PO₄³⁻ > SO₄²⁻ > Cl⁻."
+      },
+      {
+        "front": "Define Flocculation Value and state its mathematical relationship to coagulating power.",
+        "back": "Flocculation Value is the minimum concentration of an electrolyte in millimoles per liter (mmol L⁻¹) required to cause complete coagulation/precipitation of a colloidal sol in two hours.\nRelation: Coagulating power ∝ 1 / Flocculation Value\n(A smaller flocculation value indicates a much higher coagulating power)."
+      },
+      {
+        "front": "Define Gold Number of a protective lyophilic colloid and state its relationship with protective efficiency.",
+        "back": "Gold Number is the number of milligrams (mg) of a protective dry lyophilic colloid required to just prevent the coagulation of 10 mL of a standard gold sol when 1 mL of 10% NaCl solution is added.\nRelation: Protective Power ∝ 1 / Gold Number\n(Gelatin has the lowest gold number, 0.005–0.01 mg, and hence possesses the highest protective power)."
+      },
+      {
+        "front": "What are Emulsions? Differentiate between Oil-in-Water (O/W) and Water-in-Oil (W/O) emulsions.",
+        "back": "Emulsions are colloidal dispersions in which both the dispersed phase and the dispersion medium are immiscible liquids.\nOil-in-Water (O/W): Oil droplets dispersed in water; water is the continuous medium (e.g., milk, vanishing cream). Stabilized by proteins, gums, soaps.\nWater-in-Oil (W/O): Water droplets dispersed in oil; oil is the continuous medium (e.g., butter, cod liver oil, cold cream). Stabilized by heavy metal salts of fatty acids, long chain alcohols."
+      },
+      {
+        "front": "Explain Shape-Selective Catalysis by Zeolites and state the industrial application of ZSM-5.",
+        "back": "Shape-selective catalysis depends on the microporous three-dimensional aluminosilicate honeycomb structure of the catalyst and the molecular sizes of reactants and products.\nZeolites have pores and cavities ranging from 260 to 740 pm.\nZSM-5 is an aluminosilicate zeolite catalyst used in the petroleum petrochemical industry to convert alcohols directly into gasoline (petrol) by dehydrating them into hydrocarbons."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "In a Freundlich adsorption isotherm experiment, a plot of log(x/m) versus log p gives a straight line making an angle of 45° with the horizontal axis, and the y-intercept is found to be 0.3010. What is the mass of gas adsorbed per gram of adsorbent at a pressure of 2.0 atm?",
+        "options": ["4.0 g", "2.0 g", "0.602 g", "1.0 g"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "4.0 g is correct: slope = 1/n = tan(45°) = 1. Intercept = log k = 0.3010 => k = 2.0. Therefore, x/m = k · p¹ = 2.0 × 2.0 = 4.0 g.",
+          "2.0 g corresponds to taking the pressure as 1.0 atm or neglecting the slope.",
+          "0.602 g is obtained by multiplying the intercept value directly by the pressure.",
+          "1.0 g is an incorrect calculation setting k = 0.5."
+        ],
+        "fullExplanation": "The logarithmic Freundlich adsorption isotherm is:\nlog(x/m) = log k + (1/n) · log p\nComparing with the equation of a straight line y = c + mx:\nSlope = 1/n = tan(45°) = 1.0\nIntercept = log k = 0.3010 => k = 10⁰·³⁰¹⁰ = 2.0\nSubstituting into the isotherm equation:\nx/m = k · p^(1/n) = 2.0 · (2.0)¹ = 4.0 g of adsorbate per gram of adsorbent."
+      },
+      {
+        "question": "Which of the following gases will show the maximum extent of physical adsorption on a fixed mass of activated charcoal at 298 K?",
+        "options": [
+          "SO₂ (T_c = 630 K)",
+          "CH₄ (T_c = 190 K)",
+          "CO₂ (T_c = 304 K)",
+          "H₂ (T_c = 33 K)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "SO₂ (T_c = 630 K) is correct: it has the highest critical temperature, meaning strongest van der Waals forces, greatest ease of liquefaction, and highest extent of physisorption.",
+          "CH₄ has a much lower critical temperature (190 K) and adsorbs less.",
+          "CO₂ has an intermediate critical temperature (304 K).",
+          "H₂ has the lowest critical temperature (33 K) and undergoes minimal physical adsorption at room temperature."
+        ],
+        "fullExplanation": "Physical adsorption is governed by non-specific van der Waals interactions between adsorbate and adsorbent. Easily liquefiable gases (those with higher critical temperatures, T_c) have stronger intermolecular attractive forces and are adsorbed to a greater extent. Among the given options, SO₂ has the highest critical temperature (630 K) and therefore exhibits the maximum adsorption."
+      },
+      {
+        "question": "For the coagulation of 100 mL of a positively charged Fe(OH)₃ sol, 5 mL of 0.1 M K₂CrO₄ is required. What is the flocculation value of K₂CrO₄ for this sol?",
+        "options": ["4.76 mmol L⁻¹", "5.00 mmol L⁻¹", "0.50 mmol L⁻¹", "10.0 mmol L⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "4.76 mmol L⁻¹ is correct: millimoles of K₂CrO₄ = 5 mL × 0.1 M = 0.5 mmol. Total volume = 100 + 5 = 105 mL = 0.105 L. Flocculation value = 0.5 / 0.105 ≈ 4.76 mmol L⁻¹.",
+          "5.00 mmol L⁻¹ neglects the 5 mL volume of the added electrolyte, calculating 0.5 / 0.100 L.",
+          "0.50 mmol L⁻¹ is the total millimoles added, not the concentration per liter.",
+          "10.0 mmol L⁻¹ represents a calculation multiplying by the charge factor."
+        ],
+        "fullExplanation": "Flocculation value is defined as the minimum concentration of electrolyte in millimoles per liter of total solution required to cause coagulation:\nMillimoles of K₂CrO₄ added = Molarity × Volume (in mL) = 0.1 mmol mL⁻¹ × 5 mL = 0.5 mmol.\nTotal volume of colloidal solution + electrolyte = 100 mL + 5 mL = 105 mL = 0.105 L.\nFlocculation value = (0.5 mmol) / (0.105 L) = 4.7619 mmol L⁻¹ ≈ 4.76 mmol L⁻¹."
+      },
+      {
+        "question": "Equal volumes of 0.05 M AgNO₃ and 0.06 M KI solutions are mixed together. What is the nature of the electrical charge on the resulting AgI colloidal particles, and which ion is preferentially adsorbed?",
+        "options": [
+          "Negatively charged due to preferential adsorption of I⁻ ions",
+          "Positively charged due to preferential adsorption of Ag⁺ ions",
+          "Positively charged due to preferential adsorption of K⁺ ions",
+          "Neutral because complete precipitation occurs"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Negatively charged due to preferential adsorption of I⁻ ions is correct: KI is in molar excess (0.06 M > 0.05 M), leaving free I⁻ ions in the supernatant which are preferentially adsorbed by AgI.",
+          "Positively charged due to Ag⁺ would only occur if AgNO₃ were in excess.",
+          "K⁺ is not common to the AgI crystal lattice and is not preferentially adsorbed on the fixed layer.",
+          "The sol is not neutral; residual excess common ions establish a charged electrical double layer."
+        ],
+        "fullExplanation": "When 0.05 M AgNO₃ is mixed with equal volume of 0.06 M KI, AgI precipitates according to: Ag⁺ + I⁻ ──> AgI(s).\nInitial moles of Ag⁺ = 0.05 V; initial moles of I⁻ = 0.06 V.\nAg⁺ is the limiting reagent, leaving excess I⁻ ions in solution (excess = 0.01 V moles).\nThe colloidal precipitate of AgI preferentially adsorbs the common ion from the dispersion medium, which is I⁻. Hence, the colloidal particles acquire a negative charge: [AgI]I⁻."
+      },
+      {
+        "question": "Which of the following electrolytes will be the most effective in coagulating a negatively charged antimony trisulphide (As₂S₃) sol according to the Hardy-Schulze rule?",
+        "options": ["AlCl₃", "BaCl₂", "NaCl", "MgSO₄"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "AlCl₃ is correct: As₂S₃ is a negatively charged sol, so coagulation is caused by cations. The valency of the cations is Al³⁺ (+3) > Ba²⁺ (+2) = Mg²⁺ (+2) > Na⁺ (+1). Al³⁺ has the highest charge and highest coagulating power.",
+          "BaCl₂ provides a divalent Ba²⁺ ion, which is less effective than trivalent Al³⁺.",
+          "NaCl provides a univalent Na⁺ ion, which has the lowest coagulating power.",
+          "MgSO₄ provides divalent Mg²⁺, which is less effective than Al³⁺."
+        ],
+        "fullExplanation": "According to the Hardy-Schulze rule, the coagulation of a negatively charged sol is effected by positively charged ions (cations), and the coagulating power increases strongly with the valency of the cation:\nValencies: Al³⁺ (+3) > Ba²⁺ (+2) = Mg²⁺ (+2) > Na⁺ (+1).\nBecause Al³⁺ has the highest valency, AlCl₃ has the lowest flocculation value and the highest coagulating efficiency for As₂S₃ sol."
+      },
+      {
+        "question": "The gold numbers of four protective lyophilic colloids A, B, C, and D are 0.005, 0.05, 0.5, and 5.0, respectively. Which protective colloid possesses the maximum protective power?",
+        "options": ["Colloid A", "Colloid B", "Colloid C", "Colloid D"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Colloid A is correct: protective power is inversely proportional to gold number (Protective Power ∝ 1 / Gold Number). Colloid A has the lowest gold number (0.005 mg) and thus the greatest protective efficiency.",
+          "Colloid B has a larger gold number (0.05 mg), so its protective power is 10 times less than A.",
+          "Colloid C has a gold number of 0.5 mg, which is 100 times less protective than A.",
+          "Colloid D has the highest gold number (5.0 mg), making it the least effective protective colloid."
+        ],
+        "fullExplanation": "Gold number is defined as the weight in milligrams of a protective colloid that just prevents the coagulation of 10 mL of standard gold sol when 1 mL of 10% NaCl is added. A smaller value means a smaller amount is required to confer protection. Hence:\nProtective Power ∝ 1 / (Gold Number)\nSince Colloid A has the smallest gold number (0.005), it has the greatest protective power."
+      },
+      {
+        "question": "Which of the following colloidal systems represents an example of a macromolecular colloid?",
+        "options": [
+          "Aqueous solution of starch",
+          "Colloidal solution of gold (Au sol)",
+          "Aqueous solution of soap above CMC",
+          "Colloidal solution of sulphur (S₈ sol)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Aqueous solution of starch is correct: starch is a naturally occurring high-molecular-weight polymer whose individual macromolecular chain dimensions lie directly within the colloidal range (1 to 1000 nm).",
+          "Gold sol is a multimolecular colloid formed by van der Waals aggregation of thousands of individual Au atoms.",
+          "Soap above CMC is an associated colloid (micelle).",
+          "Sulphur sol is a multimolecular colloid formed by aggregation of hundreds of S₈ molecules."
+        ],
+        "fullExplanation": "Macromolecular colloids are substances with high molecular masses whose individual large molecules naturally fall within colloidal dimensions (1–1000 nm) when dissolved in a suitable dispersion medium. Typical examples include naturally occurring macromolecules (starch, cellulose, proteins, enzymes) and synthetic polymers (polyethylene, nylon, polystyrene)."
+      },
+      {
+        "question": "When an electric field is applied across a colloidal solution containing Fe(OH)₃ sol, the colloidal particles migrate toward the cathode. What happens during this phenomenon?",
+        "options": [
+          "Electrophoresis occurs, confirming that Fe(OH)₃ particles carry a positive charge.",
+          "Electro-osmosis occurs, confirming that Fe(OH)₃ particles carry a negative charge.",
+          "Coagulation occurs due to neutralization of the negatively charged sol at the anode.",
+          "Electrolysis of water takes place with no motion of colloidal particles."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: Migration of colloidal particles under an applied electric field is termed electrophoresis; movement toward the negative cathode proves that Fe(OH)₃ particles are positively charged.",
+          "Electro-osmosis refers to the movement of the dispersion medium when the colloidal particles are held stationary.",
+          "Fe(OH)₃ is a positively charged sol, so it migrates to the cathode, not the anode.",
+          "Colloidal particles carry net surface charges and invariably undergo directional electro-migration."
+        ],
+        "fullExplanation": "The directional migration of colloidal particles under the influence of an external electric field is known as Electrophoresis (or Cataphoresis). Since the ferric hydroxide [Fe(OH)₃] sol particles migrate toward the cathode (the negative electrode), the particles must carry a net positive electrical charge."
+      },
+      {
+        "question": "Which of the following substances can act as an effective emulsifying agent for stabilizing an Oil-in-Water (O/W) emulsion?",
+        "options": [
+          "Proteins / Gums / Water-soluble soaps",
+          "Heavy metal salts of fatty acids",
+          "Long-chain fatty alcohols",
+          "Lampblack / Carbon soot"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Proteins / Gums / Water-soluble soaps is correct: these hydrophilic agents reduce interfacial tension and form protective films around oil droplets dispersed in water (O/W emulsions).",
+          "Heavy metal salts of fatty acids are hydrophobic and act as emulsifiers for Water-in-Oil (W/O) emulsions.",
+          "Long-chain fatty alcohols stabilize Water-in-Oil (W/O) emulsions.",
+          "Lampblack particles preferentially partition into oil and stabilize W/O emulsions."
+        ],
+        "fullExplanation": "Emulsifiers stabilize emulsions by lowering interfacial tension between oil and water phases. For Oil-in-Water (O/W) emulsions, suitable emulsifiers are hydrophilic substances like water-soluble soaps (sodium or potassium salts), proteins, gums, and gelatin. For Water-in-Oil (W/O) emulsions, oil-soluble substances like heavy metal soaps (calcium or magnesium salts of fatty acids), long-chain alcohols, and lampblack are used."
+      },
+      {
+        "question": "A freshly prepared precipitate of Fe(OH)₃ is peptized into a colloidal sol by adding a small amount of dilute FeCl₃ solution. What species is present in the fixed layer of the electrical double layer?",
+        "options": ["Fe³⁺ ions", "Cl⁻ ions", "OH⁻ ions", "Fe²⁺ ions"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Fe³⁺ ions is correct: the Fe(OH)₃ surface preferentially adsorbs the common cation Fe³⁺ from the added FeCl₃ electrolyte to form the fixed inner layer.",
+          "Cl⁻ ions constitute the mobile, diffused counter-ion layer.",
+          "OH⁻ ions are not supplied in excess by the added acidic FeCl₃ solution.",
+          "Fe²⁺ is not part of the added electrolyte."
+        ],
+        "fullExplanation": "During peptization of Fe(OH)₃ precipitate with FeCl₃ solution, the lattice of Fe(OH)₃ preferentially adsorbs the common ferric ion (Fe³⁺) from solution on its surface. This firmly held layer of Fe³⁺ ions forms the stationary or fixed layer of the electrical double layer, while Cl⁻ ions disperse around it in the diffused layer: {[Fe(OH)₃] · Fe³⁺} · 3Cl⁻."
+      },
+      {
+        "question": "Which of the following characteristics is true for an adsorption process occurring spontaneously at constant temperature and pressure?",
+        "options": [
+          "ΔH < 0, ΔS < 0, and ΔG < 0",
+          "ΔH > 0, ΔS > 0, and ΔG < 0",
+          "ΔH < 0, ΔS > 0, and ΔG < 0",
+          "ΔH > 0, ΔS < 0, and ΔG > 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "ΔH < 0, ΔS < 0, and ΔG < 0 is correct: adsorption is always exothermic (ΔH < 0) due to attraction, and gas freedom decreases (ΔS < 0). For spontaneity, ΔG = ΔH - TΔS must be negative.",
+          "ΔH > 0 contradicts the exothermic nature of surface force balance.",
+          "Adsorption causes a decrease in translational degrees of freedom, so ΔS cannot be positive.",
+          "ΔG > 0 signifies a non-spontaneous process."
+        ],
+        "fullExplanation": "Adsorption arises from the residual unbalanced attractive surface forces. When gas molecules adhere to the surface, new bonds or interactions are created, releasing energy; hence, adsorption is always exothermic (ΔH < 0). Furthermore, because gas molecules lose their translational freedom upon confinement on the 2D surface, entropy decreases (ΔS < 0). For the process to occur spontaneously, Gibbs free energy change must be negative (ΔG = ΔH - TΔS < 0), which is achieved because |ΔH| > |TΔS|."
+      },
+      {
+        "question": "What is the role of adding activated charcoal in the sugar decolourization process?",
+        "options": [
+          "Acts as an adsorbent to adsorb coloured impurities by physisorption",
+          "Acts as a reducing agent to bleach coloured impurities",
+          "Acts as an oxidizing agent to oxidize colouring matter into volatile gases",
+          "Acts as a catalyst to hydrolyze brown sucrose into glucose and fructose"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Acts as an adsorbent is correct: the vast surface area and porous structure of animal/activated charcoal preferentially adsorb complex colored organic impurities from raw sugar juice.",
+          "Charcoal does not act as a chemical bleaching or reducing agent in this context.",
+          "Charcoal does not oxidize the coloring matter.",
+          "Hydrolysis would destroy the sucrose yield, which is precisely avoided."
+        ],
+        "fullExplanation": "Animal charcoal (or activated vegetable carbon) has a highly porous structure with an enormous specific surface area. When added to impure, yellowish raw cane sugar solutions, it selectively adsorbs the large organic coloring matter via physical adsorption, leaving the pure sucrose solution completely colorless."
+      },
+      {
+        "question": "In an experiment, 1.0 g of charcoal was added to 100 mL of 0.5 M acetic acid solution. After reaching equilibrium, the concentration of acetic acid fell to 0.4 M. What is the value of x/m for the adsorption of acetic acid on charcoal?",
+        "options": ["0.60 g g⁻¹", "0.01 g g⁻¹", "6.00 g g⁻¹", "0.06 g g⁻¹"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "0.60 g g⁻¹ is correct: moles adsorbed = (0.5 - 0.4) mol L⁻¹ × 0.1 L = 0.01 mol. Mass x = 0.01 mol × 60 g mol⁻¹ = 0.60 g. x/m = 0.60 g / 1.0 g = 0.60 g g⁻¹.",
+          "0.01 g g⁻¹ is the number of moles adsorbed, not the mass in grams.",
+          "6.00 g g⁻¹ results from omitting the 0.1 L volume factor.",
+          "0.06 g g⁻¹ is a calculation error by a factor of 10."
+        ],
+        "fullExplanation": "Initial moles of acetic acid = 0.5 M × 0.100 L = 0.050 mol.\nEquilibrium moles of acetic acid = 0.4 M × 0.100 L = 0.040 mol.\nMoles of acetic acid adsorbed by charcoal = 0.050 - 0.040 = 0.010 mol.\nMolar mass of acetic acid (CH₃COOH) = 60 g mol⁻¹.\nMass of acetic acid adsorbed x = 0.010 mol × 60 g mol⁻¹ = 0.60 g.\nMass of adsorbent m = 1.0 g.\nExtent of adsorption x/m = 0.60 g / 1.0 g = 0.60 g per gram of charcoal."
+      },
+      {
+        "question": "Which of the following methods cannot be used for the coagulation of a lyophobic sol?",
+        "options": [
+          "Addition of a protective lyophilic colloid",
+          "Persistent and prolonged dialysis",
+          "Mutual precipitation by mixing two oppositely charged sols",
+          "Boiling the colloidal solution"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Addition of a protective lyophilic colloid is correct: lyophilic colloids coat lyophobic particles with a protective sheath, preventing coagulation rather than causing it.",
+          "Prolonged dialysis strips off trace stabilizing electrolytes, resulting in spontaneous coagulation.",
+          "Mutual precipitation occurs when oppositely charged sols neutralize each other's charges, causing mutual coagulation.",
+          "Boiling increases collisions and desorbs the adsorbed stabilizing ions, inducing coagulation."
+        ],
+        "fullExplanation": "The addition of a lyophilic colloid (e.g., gelatin, albumin) to a lyophobic sol forms a protective sheath around the lyophobic particles, stabilizing them against electrolyte-induced coagulation. All other methods listed—prolonged dialysis (removes stabilizing electrolytes), mutual mixing of opposite sols (charge neutralization), and boiling (dislodging adsorbed protective layers)—readily trigger coagulation."
+      },
+      {
+        "question": "What is the structural unit and pore diameter range characteristic of zeolite shape-selective catalysts?",
+        "options": [
+          "Aluminosilicate framework with pore sizes in the range of 260 to 740 pm",
+          "Pure silica framework with pores larger than 10 nm",
+          "Transition metal oxides with mesoporous channels between 2 to 50 nm",
+          "Carbon nanotubes with pore diameters of 1 to 2 μm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Aluminosilicate framework with pore sizes of 260 to 740 pm is correct: zeolites are crystalline microporous aluminosilicates with three-dimensional Si-O-Al networks.",
+          "Zeolites contain aluminium substituting for silicon and have micropores, not pores > 10 nm.",
+          "Zeolites are silicates/aluminosilicates, not simple transition metal oxides.",
+          "Carbon nanotubes are allotropes of carbon, completely distinct from zeolites."
+        ],
+        "fullExplanation": "Zeolites are microporous crystalline aluminosilicates with a three-dimensional framework structure composed of AlO₄⁵⁻ and SiO₄⁴⁻ tetrahedra linked by sharing oxygen atoms. The pore and cavity dimensions inside the rigid framework range between 260 pm and 740 pm, which allows only molecules of matching shapes and cross-sections to enter, react, and diffuse out."
+      },
+      {
+        "question": "Why does physical adsorption decrease significantly with an increase in temperature at constant pressure?",
+        "options": [
+          "Because physisorption is an exothermic process, and Le Chatelier's principle shifts the equilibrium backward",
+          "Because high temperatures strengthen chemical bond formation instead of van der Waals forces",
+          "Because gas molecules dissociate into atoms at higher temperatures",
+          "Because the surface area of the adsorbent contracts upon heating"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Because physisorption is an exothermic process is correct: Gas + Adsorbent ⇌ Adsorption-complex + Heat. By Le Chatelier's principle, supplying heat shifts the equilibrium in the endothermic reverse direction (desorption).",
+          "Physisorption does not transform into chemisorption automatically simply by changing temperature.",
+          "Moderate temperature changes do not dissociate common stable diatomic gas molecules.",
+          "The solid adsorbent surface area does not significantly contract upon moderate heating."
+        ],
+        "fullExplanation": "The equilibrium of physical adsorption can be represented as:\nGas(g) + Solid Adsorbent ⇌ Gas adsorbed on Solid + Heat (ΔH < 0)\nSince the forward adsorption step is exothermic, applying Le Chatelier's principle indicates that an increase in temperature supplies thermal energy, driving the endothermic reverse process (desorption). As a result, the extent of adsorption (x/m) decreases continuously with temperature."
+      },
+      {
+        "question": "Which of the following sols carries a characteristic negative electrical charge?",
+        "options": [
+          "Arsenic sulphide (As₂S₃) sol",
+          "Hydrated ferric oxide (Fe₂O₃ · xH₂O) sol",
+          "Basic dyestuff like methylene blue",
+          "Titanium dioxide (TiO₂) sol in acidic medium"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Arsenic sulphide (As₂S₃) sol is correct: metallic sulphides (As₂S₃, CdS, Sb₂S₃) and metals (Au, Ag, Pt) form negatively charged sols.",
+          "Hydrated ferric oxide is a positively charged sol.",
+          "Basic dye stuffs like methylene blue carry positive charges.",
+          "TiO₂ sol in acidic medium preferentially adsorbs protons, becoming positively charged."
+        ],
+        "fullExplanation": "According to the classification of colloidal charges:\nPositively charged sols include: hydrated metallic oxides (Fe₂O₃ · xH₂O, Al₂O₃ · xH₂O), basic dye stuffs (methylene blue), and haemoglobin.\nNegatively charged sols include: metal sulphides (As₂S₃, CdS), metal sols (Au, Ag, Pt), acidic dyes (eosin, congo red), and starch/clay/charcoal suspensions."
+      },
+      {
+        "question": "In the modern adsorption theory of heterogeneous catalysis, which of the following steps is NOT involved?",
+        "options": [
+          "Permanent chemical reaction between the bulk of the catalyst and the reactant molecules",
+          "Diffusion of reactant molecules to the catalyst surface",
+          "Chemical adsorption of reactant molecules on active surface sites",
+          "Desorption of reaction products from the catalyst surface"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This step is NOT involved: heterogeneous catalysis is strictly a surface phenomenon; the bulk of the catalyst remains chemically unchanged throughout the catalytic cycle.",
+          "Diffusion of reactants to the surface is a critical first step in heterogeneous catalysis.",
+          "Chemisorption on active sites brings reactants together and lowers activation energy.",
+          "Desorption of products is essential to regenerate vacant active sites for incoming reactants."
+        ],
+        "fullExplanation": "Heterogeneous catalysis involves five successive steps: (1) diffusion of reactants to the catalyst surface, (2) adsorption of reactant molecules on active surface sites, (3) chemical reaction on the surface via an intermediate complex, (4) desorption of reaction products from the surface, and (5) diffusion of reaction products away from the surface. The catalyst does not react in its bulk phase."
+      },
+      {
+        "question": "What is the critical micelle concentration (CMC) of soaps typically observed in aqueous solutions?",
+        "options": [
+          "10⁻⁴ to 10⁻³ mol L⁻¹",
+          "1.0 to 2.0 mol L⁻¹",
+          "10⁻⁷ to 10⁻⁶ mol L⁻¹",
+          "0.1 to 0.5 mol L⁻¹"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "10⁻⁴ to 10⁻³ mol L⁻¹ is correct: for common soaps like sodium stearate (C₁₇H₃₅COONa), micelle formation begins in this narrow concentration range.",
+          "1.0 to 2.0 mol L⁻¹ is far too concentrated; soaps precipitate or form liquid crystals at this concentration.",
+          "10⁻⁷ to 10⁻⁶ mol L⁻¹ is too dilute for micellar aggregation.",
+          "0.1 to 0.5 mol L⁻¹ is well above the CMC."
+        ],
+        "fullExplanation": "For ordinary soaps (such as sodium stearate, C₁₇H₃₅COONa), the critical micelle concentration (CMC) in water at 25 °C is approximately 10⁻⁴ to 10⁻³ mol L⁻¹ (or about 0.03% to 0.3% by weight). Below this threshold, soap behaves as an ordinary electrolyte; above it, hydrophobic tails aggregate to form spherical micelles containing 50 to 100 surfactant ions."
+      },
+      {
+        "question": "Which of the following statements about Ultrafiltration is correct?",
+        "options": [
+          "Colloidal particles cannot pass through an ultrafilter paper impregnated with collodion, while crystalloid ions pass easily.",
+          "Ultrafiltration separates dispersed particles based purely on differences in electrical charge.",
+          "An ordinary filter paper already stops colloidal particles without any chemical treatment.",
+          "Collodion is a 10% solution of cellulose acetate in water."
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: treating filter paper with collodion (a 4% solution of nitrocellulose in an alcohol-ether mixture) followed by hardening with formaldehyde reduces the pore size so it holds back colloidal particles while letting solvent and ions pass.",
+          "Ultrafiltration separates particles based on physical size, not electrical charge.",
+          "Ordinary filter paper has pores larger than 1000 nm, through which colloidal particles pass freely.",
+          "Collodion is a 4% solution of nitrocellulose in a mixture of alcohol and ether, not 10% cellulose acetate in water."
+        ],
+        "fullExplanation": "Ordinary filter paper pores are too large to hold back colloidal particles. To make an ultrafilter paper, ordinary filter paper is soaked in collodion (a 4% solution of nitrocellulose in an alcohol-ether mixture), hardened by immersion in formaldehyde, and finally dried. This significantly shrinks the pore dimensions so that colloidal particles are retained on the paper while small solvent molecules and true solute ions pass through."
+      }
+    ]
+  },
+  {
+    "chapterName": "Metallurgy",
+    "flashcards": [
+      {
+        "front": "Distinguish between a Mineral and an Ore.",
+        "back": "Mineral: Naturally occurring chemical substance in the Earth's crust obtained by mining, containing a metal in native or combined form.\nOre: A mineral from which the metal can be extracted conveniently, profitably, and economically.\n(All ores are minerals, but not all minerals are ores; e.g., bauxite and clay are both aluminium minerals, but only bauxite is an ore of aluminium)."
+      },
+      {
+        "front": "List the chemical formulas and compositions of Haematite, Magnetite, Siderite, and Iron Pyrites.",
+        "back": "Haematite: Fe₂O₃\nMagnetite: Fe₃O₄\nSiderite: FeCO₃\nIron Pyrites: FeS₂ (known as Fool's Gold)"
+      },
+      {
+        "front": "State the chemical formulas for Copper Pyrites, Malachite, Azurite, and Cuprite.",
+        "back": "Copper Pyrites (Chalcopyrite): CuFeS₂\nMalachite (Green carbonate ore): CuCO₃ · Cu(OH)₂\nAzurite (Blue carbonate ore): 2CuCO₃ · Cu(OH)₂\nCuprite (Ruby copper): Cu₂O\nCopper Glance (Chalcocite): Cu₂S"
+      },
+      {
+        "front": "Explain the principle of Froth Floatation and name the reagents used (Collector, Froth Stabilizer, Depressant).",
+        "back": "Principle: Differential wetting of particles—sulphide ore particles are preferentially wetted by oil, while gangue particles are wetted by water.\nCollector: Enhances non-wettability of mineral particles (e.g., Pine oil, Sodium ethyl xanthate).\nFroth Stabilizer: Stabilizes the froth (e.g., Cresol, Aniline).\nDepressant: Selectively prevents one sulphide from frothing (e.g., NaCN depresses ZnS by forming soluble Na₂[Zn(CN)₄], while allowing PbS to float)."
+      },
+      {
+        "front": "Describe the chemical reactions involved in Baeyer's Process for the leaching of bauxite ore.",
+        "back": "Digestion with hot concentrated NaOH at 473–523 K and 35 bar:\nAl₂O₃(s) + 2NaOH(aq) + 3H₂O(l) ──> 2Na[Al(OH)₄](aq)\nImpurities like Fe₂O₃ and TiO₂ remain insoluble and are filtered off.\nPrecipitation of Al(OH)₃ by bubbling CO₂ and seeding:\n2Na[Al(OH)₄](aq) + CO₂(g) ──> Al₂O₃ · xH₂O(s)↓ + 2NaHCO₃(aq)\nCalcination at 1470 K:\nAl₂O₃ · xH₂O(s) ──> Al₂O₃(s) + xH₂O(g)."
+      },
+      {
+        "front": "Describe the Mac-Arthur Forrest Cyanide Process for the extraction of Gold and Silver.",
+        "back": "Leaching with dilute NaCN in the presence of air (O₂ acts as an oxidizing agent):\n4M(s) + 8NaCN(aq) + 2H₂O(l) + O₂(g) ──> 4Na[M(CN)₂](aq) + 4NaOH(aq) (where M = Ag or Au)\nMetal Displacement / Precipitation:\n2Na[M(CN)₂](aq) + Zn(s) ──> Na₂[Zn(CN)₄](aq) + 2M(s)↓\n(Zinc acts as a reducing agent)."
+      },
+      {
+        "front": "Differentiate between Calcination and Roasting.",
+        "back": "Calcination: Heating the concentrated ore strongly below its melting point in the absence or limited supply of air. Used for carbonate and hydrated oxide ores to expel volatile moisture and CO₂ (e.g., ZnCO₃ ──> ZnO + CO₂↑).\nRoasting: Heating the concentrated ore strongly below its melting point in excess air. Used for sulphide ores to convert them to oxides and expel S, As, and Sb as volatile oxides (e.g., 2ZnS + 3O₂ ──> 2ZnO + 2SO₂↑)."
+      },
+      {
+        "front": "Define Flux, Gangue, and Slag, and give examples of acidic and basic fluxes.",
+        "back": "Gangue (Matrix): Undesirable earthy, sandy impurities associated with the ore.\nFlux: A substance added to the charge to chemically react with gangue and convert it into a fusible product called Slag: Gangue + Flux ──> Slag.\nAcidic Flux: SiO₂ (removes basic impurities like FeO: FeO + SiO₂ ──> FeSiO₃).\nBasic Flux: CaCO₃ / CaO (removes acidic impurities like SiO₂: SiO₂ + CaO ──> CaSiO₃)."
+      },
+      {
+        "front": "What does an Ellingham Diagram represent, and what do its slopes signify?",
+        "back": "An Ellingham diagram is a graphical plot of standard Gibbs free energy of formation of oxides (ΔG°_f) versus absolute temperature (T) for the reaction: 2x/y M + O₂ ──> 2/y M_x O_y.\nSlope: ΔG° = ΔH° - TΔS°. Since 1 mole of gas is consumed, ΔS° is negative, giving a positive slope (+ΔS° term).\nA sudden change in slope indicates a phase transformation (melting or boiling) of the metal or its oxide due to an abrupt change in entropy."
+      },
+      {
+        "front": "According to the Ellingham diagram, which metal can reduce the oxide of another metal?",
+        "back": "Any metal whose oxide formation curve lies LOWER on the Ellingham diagram at a given temperature has a more negative ΔG° and can thermodynamically reduce the oxide of any metal whose curve lies HIGHER on the diagram (e.g., Mg reduces Al₂O₃ below the point of intersection, but Al reduces MgO above that temperature)."
+      },
+      {
+        "front": "Explain why Carbon (C) is a better reducing agent than Carbon Monoxide (CO) for blast furnace iron reduction at temperatures above 983 K (710 °C).",
+        "back": "For the reaction 2C + O₂ ──> 2CO, ΔS° > 0 because gas moles increase; its Ellingham line has a negative slope (falls downward as T increases).\nAbove 983 K (710 °C), the 2C + O₂ ──> 2CO line lies lower than the 2CO + O₂ ──> 2CO₂ line and lower than the Fe, FeO line.\nHence, above 983 K, Carbon (C) reduces FeO to Fe (C + FeO ──> Fe + CO), whereas below 983 K, CO is the better reducing agent (FeO + CO ──> Fe + CO₂)."
+      },
+      {
+        "front": "State the key chemical reactions occurring in the Blast Furnace for the extraction of iron across different temperature zones.",
+        "back": "Combustion Zone (lower, ≈ 2170 K): C + O₂ ──> CO₂ ; CO₂ + C ──> 2CO\nSlag Formation Zone (middle, ≈ 1270 K): CaCO₃ ──> CaO + CO₂ ; CaO + SiO₂ ──> CaSiO₃ (fusible slag)\nReduction Zone (upper, 500–900 K):\n3Fe₂O₃ + CO ──> 2Fe₃O₄ + CO₂\nFe₃O₄ + 4CO ──> 3Fe + 4CO₂\nFeO + CO ──> Fe + CO₂\nLower reduction zone (900–1500 K): FeO + C ──> Fe + CO."
+      },
+      {
+        "front": "Distinguish between Pig Iron, Cast Iron, and Wrought Iron in terms of carbon content and purity.",
+        "back": "Pig Iron: Crude product obtained directly from the blast furnace; contains about 4% carbon along with impurities (S, P, Si, Mn); extremely hard and brittle.\nCast Iron: Made by melting pig iron with scrap iron and coke in a cupola furnace; contains about 3% carbon; hard and brittle.\nWrought Iron: Purest commercial form of iron; contains < 0.2% carbon; prepared by puddling cast iron in a reverberatory furnace lined with haematite (Fe₂O₃ + 3C ──> 2Fe + 3CO)."
+      },
+      {
+        "front": "Explain the Auto-Reduction (Self-Reduction) process in Copper extraction.",
+        "back": "During smelting of copper pyrites in a Bessemer converter, partially roasted copper sulphide reacts with its own oxide in the absence of any external reducing agent:\n2Cu₂S + 3O₂ ──> 2Cu₂O + 2SO₂\n2Cu₂O + Cu₂S ──> 6Cu + SO₂↑\nThe escaping SO₂ gas creates bubbles and cavities, giving the solidified copper product a blistered appearance, known as Blister Copper (≈ 98–99% pure)."
+      },
+      {
+        "front": "Describe the Hall-Hérault process for the electrolytic reduction of Aluminium.",
+        "back": "Fused purified Al₂O₃ is dissolved in molten cryolite (Na₃AlF₆) and fluorspar (CaF₂) in a steel tank lined with carbon (cathode). Carbon rods act as anode.\nCryolite and CaF₂ lower the melting point of the alumina mix from ≈ 2320 K to ≈ 1170 K and significantly increase electrical conductivity.\nCathode: Al³⁺ + 3e⁻ ──> Al(l)\nAnode: C(s) + O²⁻ ──> CO(g) + 2e⁻ and C(s) + 2O²⁻ ──> CO₂(g) + 4e⁻\n(Carbon anodes are consumed and must be periodically replaced)."
+      },
+      {
+        "front": "Explain the refining of aluminium by Hoop's Electrolytic Process.",
+        "back": "Carried out in a cell consisting of three immiscible liquid layers of different densities:\nBottom Layer: Impure molten Al alloyed with Cu to increase density (acts as Anode).\nMiddle Layer: Fused fluorides of Na, Ba, and Al (acts as Electrolyte).\nTop Layer: Pure molten aluminium (lowest density, acts as Cathode).\nUpon electrolysis, pure Al migrates from the bottom layer through the electrolyte to the top layer, yielding 99.98% pure Al."
+      },
+      {
+        "front": "Describe the principle and application of Zone Refining (Fractional Crystallization).",
+        "back": "Principle: Impurities are more soluble in the molten melt phase than in the corresponding solid phase of the metal.\nA circular mobile heater melts a narrow zone of an impure metal rod and moves slowly forward. Pure metal recrystallizes out of the melt, while impurities remain concentrated in the molten zone and are swept to one end, which is cut off.\nUsed for ultra-pure semiconductors: Si, Ge, Ga, In, and B."
+      },
+      {
+        "front": "Describe Mond's Process for the vapour phase refining of Nickel.",
+        "back": "Impure nickel is heated with carbon monoxide at 330–350 K to form volatile nickel tetracarbonyl:\nNi(impure) + 4CO ──> Ni(CO)₄(g) (at 330–350 K)\nThe volatile complex is led to another chamber and heated to 450–470 K, decomposing to yield pure metal:\nNi(CO)₄(g) ──> Ni(pure) + 4CO(g) (at 450–470 K)."
+      },
+      {
+        "front": "Describe the Van Arkel-de Boer method for refining Zirconium (Zr) or Titanium (Ti).",
+        "back": "Impure metal is heated in an evacuated vessel with iodine at 523 K to form volatile tetraiodide, leaving impurities behind:\nTi(s) + 2I₂(g) ──> TiI₄(g) (at 523 K)\nThe volatile TiI₄ is passed over an electrically heated tungsten filament at 1700 K, decomposing into pure metal:\nTiI₄(g) ──> Ti(pure) + 2I₂(g) (at 1700 K on W filament)."
+      },
+      {
+        "front": "Define Polling and Cupellation as refining techniques.",
+        "back": "Polling: Used for refining metals containing impurities of their own oxides (e.g., Cu containing Cu₂O, Sn containing SnO₂). Molten metal is stirred with green poles of wood; hydrocarbon gases released reduce the oxide to pure metal.\nCupellation: Used to remove lead impurities from silver or gold. The alloy is melted in an oval porous cupel made of bone ash under an air blast; lead oxidizes to volatile PbO (litharge), which partly vaporizes and is partly absorbed by the porous cupel."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "In the froth floatation process for the separation of a complex sulphide ore containing galena (PbS) and zinc blende (ZnS), sodium cyanide (NaCN) is added. What is the specific chemical function of NaCN?",
+        "options": [
+          "Acts as a depressant by reacting with ZnS to form soluble Na₂[Zn(CN)₄], allowing PbS to float with the froth",
+          "Acts as a collector that coats PbS to enhance its non-wettability by water",
+          "Acts as a froth stabilizer that increases the persistence of the foam",
+          "Precipitates both PbS and ZnS as insoluble cyanides at the bottom of the tank"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: NaCN selectively reacts with ZnS on the particle surface to form the water-soluble coordination complex Na₂[Zn(CN)₄], preventing it from binding to xanthate collector molecules, while PbS floats unaffected.",
+          "Xanthates or pine oil act as collectors, not NaCN.",
+          "Cresol or aniline act as froth stabilizers.",
+          "NaCN does not precipitate the sulphides; it dissolves ZnS into a soluble complex."
+        ],
+        "fullExplanation": "Sodium cyanide (NaCN) is used as a depressant. When added to an ore containing PbS and ZnS, NaCN selectively forms a soluble coordination complex with ZnS: ZnS + 4NaCN ──> Na₂[Zn(CN)₄] + Na₂S. This soluble layer prevents xanthate collector molecules from adhering to ZnS particles, leaving ZnS wetted by water in the pulp. PbS does not react with NaCN and remains hydrophobic, adhering to oil bubbles and rising with the froth."
+      },
+      {
+        "question": "The reduction of alumina into aluminium metal by carbon is thermodynamically feasible only at extremely high temperatures (> 2270 K), but this process is avoided practically in industry because:",
+        "options": [
+          "At such high temperatures, aluminium reacts with carbon to form brittle aluminium carbide (Al₄C₃) and aluminium volatilizes",
+          "Aluminium oxide decomposes spontaneously into elements without any reducing agent",
+          "Carbon becomes an oxidizing agent at temperatures exceeding 2000 K",
+          "Carbon cannot reduce any metal whose reduction potential is lower than -1.0 V"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: At temperatures > 2270 K required for ΔG° < 0, aluminium boils/volatilizes (bp ≈ 2740 K) and reacts with carbon to form aluminium carbide (Al₄C₃), leading to severe losses and impure products.",
+          "Al₂O₃ is exceptionally stable thermodynamically and never decomposes spontaneously.",
+          "Carbon remains a reducing agent at high temperatures because the 2C + O₂ ──> 2CO line continues to decline.",
+          "Ellingham diagrams show that carbon can reduce any oxide if the temperature is sufficiently high, regardless of reduction potential."
+        ],
+        "fullExplanation": "The Ellingham curve for 4/3 Al + O₂ ──> 2/3 Al₂O₃ intersects the 2C + O₂ ──> 2CO curve only above ≈ 2270 K. Maintaining such extreme temperatures is economically prohibitive. More importantly, at these temperatures, aluminium metal is produced in vapor form and reacts with excess carbon reducing agent to form aluminium carbide: 4Al + 3C ──> Al₄C₃. Hence, the electrolytic Hall-Hérault process is used instead."
+      },
+      {
+        "question": "During the extraction of copper from copper pyrites (CuFeS₂), the concentrated ore is roasted and then mixed with silica (SiO₂) in a blast furnace. What is the role of silica?",
+        "options": [
+          "Acts as an acidic flux to remove FeO gangue as a fusible iron silicate slag (FeSiO₃)",
+          "Acts as a basic flux to neutralize excess SO₂ gas",
+          "Acts as a reducing agent to convert Cu₂O to copper metal",
+          "Prevents the formation of volatile copper chloride"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Acts as an acidic flux to remove FeO is correct: FeS oxidizes more readily than Cu₂S to form basic FeO. Silica (SiO₂) is added to react with FeO: FeO + SiO₂ ──> FeSiO₃ (slag).",
+          "SiO₂ is an acidic oxide, not a basic flux, and it does not neutralize acidic SO₂ gas.",
+          "Silica is not a reducing agent; carbon or self-reduction reduces copper.",
+          "Chloride is absent in the pyrites extraction process."
+        ],
+        "fullExplanation": "In the blast furnace smelting of copper, the roasted ore contains Cu₂S, FeS, FeO, and unreacted Cu₂O. Iron has a higher affinity for oxygen than copper, so iron remains predominantly as FeO. Silica (SiO₂) is added as an acidic flux because FeO is a basic gangue: FeO(s) + SiO₂(s) ──> FeSiO₃(l) (fusible iron silicate slag). The slag floats on top of the heavier molten copper matte (Cu₂S + FeS) and is continuously skimmed off."
+      },
+      {
+        "question": "Which of the following metals is commercially refined to ultra-high purity (> 99.999%) using the Zone Refining technique?",
+        "options": ["Germanium (Ge)", "Copper (Cu)", "Iron (Fe)", "Aluminium (Al)"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Germanium (Ge) is correct: semiconductors like Ge, Si, Ga, and In are refined to semiconductor grade purity using zone refining.",
+          "Copper is refined electrolytically.",
+          "Iron is refined via basic oxygen steelmaking (Bessemerization / Linz-Donawitz process).",
+          "Aluminium is refined by Hoop's electrolytic process."
+        ],
+        "fullExplanation": "Zone refining is based on the principle of fractional crystallization: when an impure molten metal solidifies, impurities remain preferentially dissolved in the liquid melt. This method is used to obtain ultra-pure semiconductor-grade materials such as Germanium (Ge), Silicon (Si), Gallium (Ga), Boron (B), and Indium (In), where impurities must be below part-per-billion (ppb) levels."
+      },
+      {
+        "question": "In the Hall-Hérault electrolytic cell for the extraction of aluminium, cryolite (Na₃AlF₆) and fluorspar (CaF₂) are added to purified alumina (Al₂O₃) in order to:",
+        "options": [
+          "Lower the melting point of the mixture and increase its electrical conductivity",
+          "Act as a reducing agent to reduce Al³⁺ directly to Al metal",
+          "Prevent the graphite anode from oxidizing into CO and CO₂",
+          "Form a protective insoluble slag layer that seals the cell from atmospheric oxygen"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: pure Al₂O₃ melts at an unfeasibly high 2320 K and is a poor conductor; adding Na₃AlF₆ and CaF₂ drops the fusion temperature to ≈ 1170 K and provides abundant mobile fluoride ions for electrical conduction.",
+          "Electrons supplied at the cathode perform the reduction; cryolite is not a chemical reducing agent.",
+          "Cryolite does not prevent anode oxidation; carbon anodes are consumed during electrolysis.",
+          "Cryolite dissolves the alumina completely into a homogeneous molten bath rather than forming an insoluble slag."
+        ],
+        "fullExplanation": "Pure Al₂O₃ is a poor conductor of electricity and has an exceptionally high melting point (≈ 2320 K). Dissolving Al₂O₃ in a molten mixture of cryolite (Na₃AlF₆) and fluorspar (CaF₂) lowers the working temperature to approximately 1170–1220 K and dramatically enhances the electrical conductivity of the molten electrolyte bath, making large-scale electrolysis feasible."
+      },
+      {
+        "question": "A metal M is refined by passing iodine vapor over the crude metal at 523 K to form a volatile iodide MI₄, which is then thermally decomposed on an electric tungsten filament at 1700 K to yield pure metal. This method is known as:",
+        "options": [
+          "Van Arkel-de Boer process",
+          "Mond process",
+          "Kroll process",
+          "Parke's process"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Van Arkel-de Boer process is correct: it uses iodine to form volatile iodides of Ti, Zr, or Hf, which decompose on a white-hot tungsten filament.",
+          "Mond process uses carbon monoxide (CO) to refine nickel via Ni(CO)₄.",
+          "Kroll process is the reduction of TiCl₄ with molten magnesium, not an iodine vapor refining method.",
+          "Parke's process is the desilverization of lead using molten zinc."
+        ],
+        "fullExplanation": "The Van Arkel-de Boer process is a vapour-phase refining method for converting crude Titanium (Ti) or Zirconium (Zr) into ultra-pure metal. Oxygen and nitrogen impurities are removed because the metal reacts with iodine at moderate temperature (523 K) to form volatile TiI₄(g), which diffuses to an incandescent tungsten filament heated to ≈ 1700 K and cleanly pyrolyzes back into pure metallic Ti and recyclable I₂ gas."
+      },
+      {
+        "question": "In the metallurgy of iron, limestone (CaCO₃) is added to the blast furnace charge. The primary metallurgical role of this addition is to:",
+        "options": [
+          "Decompose to CaO, which acts as a basic flux to remove acidic silica (SiO₂) impurities as slag",
+          "Act as a reducing agent to convert Fe₂O₃ directly to iron metal",
+          "Provide oxygen gas to combust the coke at the tuyeres",
+          "Lower the melting point of pure molten metallic iron"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: CaCO₃ decomposes in the middle zone (≈ 1270 K) into CaO + CO₂. The basic oxide CaO reacts with acidic SiO₂ gangue to form molten calcium silicate slag: CaO + SiO₂ ──> CaSiO₃.",
+          "Limestone does not act as a reducing agent; carbon and CO reduce iron oxides.",
+          "Oxygen for combustion is supplied via the hot air blast blown through the tuyeres.",
+          "Limestone does not dissolve in or alter the melting point of the metallic iron layer."
+        ],
+        "fullExplanation": "Haematite ore invariably contains substantial acidic impurities of silica (SiO₂). At around 1070–1270 K inside the blast furnace, limestone undergoes thermal decomposition:\nCaCO₃(s) ──> CaO(s) + CO₂(g)\nThe basic flux calcium oxide (CaO) readily reacts with the acidic sand gangue:\nCaO(s) + SiO₂(s) ──> CaSiO₃(l) (fusible calcium silicate slag).\nBeing less dense than molten iron, the molten slag floats above the liquid iron and protects it from re-oxidation."
+      },
+      {
+        "question": "What is the reason behind the blistered appearance of Blister Copper produced in the Bessemer converter?",
+        "options": [
+          "Evolution of dissolved SO₂ gas during solidification of the molten copper",
+          "Trapped bubbles of CO₂ gas produced by carbon reduction",
+          "Bursting of steam bubbles from water quenching",
+          "Air bubbles introduced by the tuyere blast"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Evolution of dissolved SO₂ gas is correct: 2Cu₂O + Cu₂S ──> 6Cu + SO₂↑. As molten copper cools and solidifies, the solubility of SO₂ drops rapidly, forcing the gas out and producing surface blisters.",
+          "No carbon is added to the converter, so no CO₂ is generated.",
+          "Steam quenching is not responsible for the characteristic blisters.",
+          "Air is blown into the liquid matte, but the specific blisters are formed by the chemical byproduct gas SO₂."
+        ],
+        "fullExplanation": "In the Bessemer converter, auto-reduction occurs according to the reaction:\n2Cu₂O + Cu₂S ──> 6Cu(l) + SO₂(g)↑\nSulphur dioxide gas dissolves significantly in molten copper. As the molten metal is cast and solidifies, the solubility of SO₂ plummets, and the escaping gas forces its way through the crust, generating craters and surface blisters. The resulting solid metal (98–99% pure) is called blister copper."
+      },
+      {
+        "question": "Examine the following statements regarding the Ellingham diagram:\n(I) The plot displays ΔG° versus T for the formation of metal oxides per mole of O₂ consumed.\n(II) The curves normally slope upwards because ΔS° of oxide formation is negative.\n(III) A metal M₁ can reduce the oxide of metal M₂ at a temperature where the line of M₁ lies above the line of M₂.\nWhich of the statements are correct?",
+        "options": [
+          "(I) and (II) only",
+          "(I) and (III) only",
+          "(II) and (III) only",
+          "(I), (II), and (III)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "(I) and (II) only is correct: (I) is the definition of Ellingham diagram, and (II) correctly explains the positive slope (+ΔS° term in ΔG° = ΔH° - TΔS°). (III) is false because a reducing metal's curve must lie BELOW the oxide curve to yield a net negative ΔG°.",
+          "(III) is incorrect, making this combination false.",
+          "(III) is incorrect, making this combination false.",
+          "(III) is incorrect, so all three cannot be correct."
+        ],
+        "fullExplanation": "Statement (I) is correct: Ellingham diagrams plot standard free energy of formation (ΔG°) against absolute temperature (T) normalized to 1 mole of O₂(g).\nStatement (II) is correct: Since a gas mole is consumed in 2M(s) + O₂(g) ──> 2MO(s), entropy decreases (ΔS° < 0). Therefore, the slope (-ΔS°) in ΔG° = ΔH° - TΔS° is positive, causing the lines to slope upward.\nStatement (III) is INCORRECT: For the coupled reaction to be spontaneous (ΔG° < 0), the reducing agent must have a more negative free energy of oxide formation; that is, its oxidation line must lie BELOW that of the oxide being reduced."
+      },
+      {
+        "question": "Which of the following pairs of metals is commercially extracted from their ores via hydrometallurgical leaching followed by zinc displacement?",
+        "options": ["Ag and Au", "Fe and Zn", "Al and Mg", "Cu and Pb"],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Ag and Au is correct: both are extracted by cyanide leaching (Mac-Arthur Forrest process) forming [M(CN)₂]⁻, followed by reduction displacement with zinc powder.",
+          "Fe is extracted by blast furnace pyrometallurgy; Zn is extracted by pyrometallurgy or roasting/electrowinning.",
+          "Al and Mg are highly electropositive and extracted by molten salt electrolysis.",
+          "Pb is extracted by carbon reduction or self-reduction of galena."
+        ],
+        "fullExplanation": "In the extraction of silver (from argentite, Ag₂S) and native gold (Au), the crushed ores are leached with an aqueous solution of sodium cyanide (NaCN) in the presence of air: 4Au + 8NaCN + 2H₂O + O₂ ──> 4Na[Au(CN)₂] + 4NaOH. The clear pregnant solution containing the dicyanoaurate(I) or dicyanoargentate(I) complex is then treated with zinc dust: 2[Au(CN)₂]⁻ + Zn ──> [Zn(CN)₄]²⁻ + 2Au↓. This recovery is a classic hydrometallurgical displacement."
+      },
+      {
+        "question": "Which method of refining is based on the difference in boiling points between a volatile metal and non-volatile impurities?",
+        "options": [
+          "Distillation refining for Zinc and Mercury",
+          "Liquation refining for Tin and Lead",
+          "Polling for Copper",
+          "Electrolytic refining for Nickel"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Distillation refining for Zinc and Mercury is correct: Zn (bp = 1180 K) and Hg (bp = 630 K) have low boiling points and vaporize easily, leaving non-volatile impurities behind.",
+          "Liquation is based on the difference in melting points (fusibility) of metals on an inclined hearth.",
+          "Polling is based on chemical reduction of oxide impurities using green wood gases.",
+          "Electrolytic refining is based on differences in electrode potentials."
+        ],
+        "fullExplanation": "Distillation is applicable for refining metals having relatively low boiling points, such as Zinc (bp 907 °C / 1180 K), Cadmium (bp 767 °C), and Mercury (bp 357 °C / 630 K). The impure metal is boiled in a retort; the pure metal vapors distill over into a condenser, while non-volatile impurities remain behind in the vessel."
+      },
+      {
+        "question": "During the extraction of lead from galena (PbS) by the air-reduction (self-reduction) method, the reactions occurring in the reverberatory furnace are:",
+        "options": [
+          "2PbS + 3O₂ ──> 2PbO + 2SO₂ followed by PbS + 2PbO ──> 3Pb + SO₂",
+          "PbS + C ──> Pb + CS₂",
+          "PbS + 2HCl ──> PbCl₂ + H₂S followed by electrolysis",
+          "PbS + Fe ──> FeS + Pb exclusively"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: galena is partially roasted to PbO and PbSO₄; then air is shut off and temperature raised, causing self-reduction: PbS + 2PbO ──> 3Pb + SO₂ and PbS + PbSO₄ ──> 2Pb + 2SO₂.",
+          "Carbon does not react with PbS to form CS₂ in commercial pyrometallurgy.",
+          "Aqueous acid leaching followed by chloride electrolysis is not used for galena.",
+          "Precipitation with scrap iron is an obsolete minor process, not the self-reduction process."
+        ],
+        "fullExplanation": "Lead extraction from galena utilizes auto-reduction: in the first stage, PbS is roasted in a reverberatory furnace with a regulated air supply below its fusion point:\n2PbS + 3O₂ ──> 2PbO + 2SO₂\nPbS + 2O₂ ──> PbSO₄\nIn the second stage, the air supply is cut off, the furnace temperature is raised, and the unreacted PbS reacts with the newly formed PbO and PbSO₄:\nPbS + 2PbO ──> 3Pb(l) + SO₂(g)↑\nPbS + PbSO₄ ──> 2Pb(l) + 2SO₂(g)↑."
+      },
+      {
+        "question": "In the Serpeck's process for purifying white bauxite containing silica (SiO₂) as the major impurity, the ore is heated with coke in a current of nitrogen gas at 2075 K. What are the products formed?",
+        "options": [
+          "Aluminium nitride (AlN) and silicon metal vapor with CO gas",
+          "Aluminium carbide (Al₄C₃) and silicon dioxide",
+          "Sodium aluminate and silicon tetrachloride",
+          "Pure aluminium metal and silicon nitride"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "AlN and silicon metal vapor with CO is correct: Al₂O₃ + 3C + N₂ ──> 2AlN + 3CO, while SiO₂ is reduced to elemental silicon which volatilizes: SiO₂ + 2C ──> Si↑ + 2CO↑.",
+          "Aluminium carbide forms in the absence of nitrogen, but in N₂ atmosphere AlN forms preferentially.",
+          "Sodium aluminate is formed in Baeyer's or Hall's process using sodium salts, not in Serpeck's process.",
+          "Aluminium is obtained as solid AlN, which must subsequently be hydrolysed."
+        ],
+        "fullExplanation": "Serpeck's process is used when bauxite contains silica (SiO₂) as the primary impurity (white bauxite). The powdered ore is heated with coke in a stream of N₂ at 2075 K:\nAl₂O₃ + 3C + N₂ ──> 2AlN + 3CO\nSiO₂ + 2C ──> Si(g)↑ + 2CO↑ (silicon volatilizes off).\nThe remaining solid aluminium nitride (AlN) is then hydrolysed with water to precipitate pure aluminium hydroxide: AlN + 3H₂O ──> Al(OH)₃↓ + NH₃↑. Calcination of Al(OH)₃ yields pure alumina."
+      },
+      {
+        "question": "Why is the extraction of magnesium from fused anhydrous MgCl₂ performed in an atmosphere of inert coal gas or dry hydrogen?",
+        "options": [
+          "To prevent the oxidation and burning of liberated molten magnesium metal by atmospheric air",
+          "To catalyze the cathode reduction of Mg²⁺ ions",
+          "To dissolve the chlorine gas evolved at the anode",
+          "To prevent the vaporization of MgCl₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "To prevent the oxidation and burning of liberated molten magnesium is correct: hot molten Mg burns aggressively in air (O₂ and N₂) to form MgO and Mg₃N₂.",
+          "Coal gas does not act as an electrolytic catalyst.",
+          "Chlorine gas is collected separately at the graphite anode and does not dissolve in coal gas.",
+          "Coal gas does not change the vapor pressure of MgCl₂."
+        ],
+        "fullExplanation": "Magnesium metal has high electropositivity and chemical affinity for oxygen and nitrogen at elevated temperatures. In the Dow process, electrolysis of fused anhydrous MgCl₂ (mixed with CaCl₂ and NaCl) takes place at ≈ 990 K. Because molten magnesium is lighter than the molten electrolyte, it floats to the surface; it must be shielded under an inert or reducing atmosphere (coal gas or H₂) to prevent spontaneous ignition and combustion in air."
+      },
+      {
+        "question": "What is the primary difference in composition between Calamine and Malachite ores?",
+        "options": [
+          "Calamine is a carbonate ore of zinc (ZnCO₃), while Malachite is a basic carbonate ore of copper (CuCO₃ · Cu(OH)₂)",
+          "Calamine is an oxide ore of zinc (ZnO), while Malachite is a sulphide ore of copper (Cu₂S)",
+          "Calamine contains iron carbonate, while Malachite contains lead carbonate",
+          "Calamine is a silicate ore, while Malachite is a sulphate ore"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: Calamine is zinc carbonate (ZnCO₃), whereas Malachite is basic copper carbonate (CuCO₃ · Cu(OH)₂).",
+          "ZnO is zincite, not calamine; Cu₂S is copper glance, not malachite.",
+          "Iron carbonate is siderite (FeCO₃); lead carbonate is cerussite (PbCO₃).",
+          "Neither calamine nor malachite is a silicate or sulphate mineral."
+        ],
+        "fullExplanation": "Calamine is the natural mineral form of zinc carbonate: ZnCO₃. Malachite is a green, basic carbonate ore of copper with the chemical formula CuCO₃ · Cu(OH)₂. Both ores are concentrated and then subjected to calcination to drive off carbon dioxide and water before reduction."
+      },
+      {
+        "question": "In the Mond's process for the extraction and purification of nickel, which property of nickel tetracarbonyl [Ni(CO)₄] is exploited?",
+        "options": [
+          "It is a volatile covalent complex that readily forms at 330–350 K and decomposes cleanly back to pure nickel at 450–470 K",
+          "It forms an insoluble precipitate that separates from impurities in aqueous solution",
+          "It is paramagnetic and can be separated using an electromagnetic separator",
+          "It is an unreactive refractory compound stable up to 2000 K"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "This is correct: Ni(CO)₄ has a low boiling point (43 °C / 316 K); it is formed at 330–350 K and decomposes into pure Ni and CO gas at 450–470 K.",
+          "The Mond process is a vapour-phase refining process, not an aqueous precipitation process.",
+          "Ni(CO)₄ is a diamagnetic tetrahedral low-spin complex, not paramagnetic.",
+          "Ni(CO)₄ decomposes at moderate temperatures (≈ 450 K), so it is not refractory."
+        ],
+        "fullExplanation": "The Mond process is based on reversible coordination chemistry: impure nickel is treated with a stream of carbon monoxide gas at 330–350 K to form nickel tetracarbonyl, which vaporizes, leaving non-volatile solid impurities behind:\nNi(s) + 4CO(g) ──> Ni(CO)₄(g) (at 330–350 K)\nThe gas is transferred to a decomposition chamber heated to 450–470 K, where the complex pyrolyzes, depositing high-purity (99.9%) nickel pellets while releasing CO gas for reuse:\nNi(CO)₄(g) ──> Ni(s) + 4CO(g) (at 450–470 K)."
+      },
+      {
+        "question": "Why is anhydrous MgCl₂ prepared by heating hydrated magnesium chloride (MgCl₂ · 6H₂O) in a current of dry HCl gas rather than by direct heating in air?",
+        "options": [
+          "Direct heating causes hydrolytic decomposition of MgCl₂ · 6H₂O to form MgO and HCl",
+          "Direct heating causes reduction of Mg²⁺ to metallic magnesium",
+          "HCl gas acts as an oxidizing agent to remove water molecules",
+          "MgCl₂ sublimates completely without losing water upon simple heating"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Direct heating causes hydrolytic decomposition to MgO is correct: Mg²⁺ has high charge density and strongly polarizes coordinated water, causing: MgCl₂ · 6H₂O ──> MgO + 2HCl + 5H₂O upon simple heating.",
+          "Direct heating in air oxidizes or hydrolyzes the salt; it cannot reduce Mg²⁺ to metal.",
+          "HCl is a source of dry acid gas that suppresses hydrolysis via Le Chatelier's principle; it is not an oxidizing agent.",
+          "MgCl₂ does not sublime; it decomposes chemically via hydrolysis."
+        ],
+        "fullExplanation": "Due to the small ionic size and high charge density of Mg²⁺, it exhibits a strong polarizing effect on the coordinated water molecules. When MgCl₂ · 6H₂O is heated in air, it undergoes hydrolysis instead of dehydration:\nMgCl₂ · 6H₂O ──> MgO + 2HCl + 5H₂O\nTo prevent this hydrolysis, the salt is heated in an atmosphere of dry hydrogen chloride gas (HCl), which shifts the reversible hydrolysis equilibrium backward by the common-ion effect, yielding pure anhydrous MgCl₂."
+      },
+      {
+        "question": "In the extraction of iron, cast iron is converted into wrought iron inside a reverberatory furnace lined with haematite. What is the role of the haematite lining?",
+        "options": [
+          "It oxidizes carbon, silicon, and phosphorus impurities present in cast iron",
+          "It acts as a basic flux to form slag with iron",
+          "It lowers the temperature of the reverberatory furnace",
+          "It increases the carbon content of wrought iron"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "It oxidizes carbon, silicon, and phosphorus impurities is correct: Fe₂O₃ provides oxygen to convert C to CO gas, and Si/P into SiO₂/P₂O₅ which slag off.",
+          "Haematite is an iron oxide ore (Fe₂O₃), not a flux.",
+          "It does not serve to cool or lower the operating temperature.",
+          "Wrought iron has the lowest carbon content (< 0.2%), so carbon is removed, not added."
+        ],
+        "fullExplanation": "Wrought iron is the purest commercial form of iron (< 0.2% C). It is produced from cast iron in a reverberatory furnace lined with haematite (Fe₂O₃). The haematite lining acts as an oxidizing agent, converting carbon into carbon monoxide gas and other elemental impurities into their respective oxides:\nFe₂O₃ + 3C ──> 2Fe + 3CO↑\n3SiO₂ + 2Fe₂O₃ ──> 3FeSiO₃ (slag)\nP₄O₁₀ + Fe₂O₃ ──> 2FePO₄ (slag)\nThe pure iron is then squeezed through rollers to remove remaining slag."
+      },
+      {
+        "question": "What is the composition of the matte obtained during the smelting of copper pyrites in the blast furnace?",
+        "options": [
+          "Mainly Cu₂S with a small amount of FeS",
+          "Mainly FeSiO₃ with dissolved Cu₂O",
+          "Equal amounts of metallic copper and iron",
+          "Cu₂O and FeO in a 1 : 1 molar ratio"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Mainly Cu₂S with a small amount of FeS is correct: copper matte is a molten sulphide mixture consisting primarily of Cu₂S (about 45–50% Cu) along with unoxidized FeS.",
+          "FeSiO₃ is the slag that floats on top of the matte.",
+          "Matte consists of molten sulphides, not free elemental metals.",
+          "Matte is composed of sulphides, whereas oxides form slag or undergo reduction."
+        ],
+        "fullExplanation": "During smelting of copper pyrites in a blast furnace, the roasted ore reacts with coke and silica flux. Most iron sulphide is converted to FeO and removed as FeSiO₃ slag. The molten product that collects at the bottom of the furnace hearth is called copper matte. It is a dense liquid mixture consisting predominantly of cuprous sulphide (Cu₂S) along with residual ferrous sulphide (FeS)."
+      },
+      {
+        "question": "Thermite, used in the aluminothermic reduction of refractory metal oxides (such as Cr₂O₃ and Mn₃O₄), is a stoichiometric mixture of:",
+        "options": [
+          "Ferric oxide (Fe₂O₃) and aluminium powder in a 3 : 1 mass ratio",
+          "Aluminium oxide (Al₂O₃) and magnesium powder in a 1 : 1 ratio",
+          "Copper oxide (CuO) and carbon powder in a 2 : 1 ratio",
+          "Zinc dust and sulphur in a 1 : 2 ratio"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Fe₂O₃ and aluminium powder in a 3 : 1 mass ratio is correct: thermite consists of 3 parts by mass of metal oxide (Fe₂O₃ or Cr₂O₃) and 1 part by mass of finely divided aluminium powder.",
+          "Al₂O₃ is the spent oxide byproduct of the reaction, not the starting oxidant.",
+          "Thermite specifically employs aluminium as the reducing agent (aluminothermy).",
+          "Zinc and sulphur form an incendiary pyrotechnic mix, not metallurgical thermite."
+        ],
+        "fullExplanation": "The Gold Schmidt aluminothermic process uses thermite—a mixture containing 3 parts by weight of ferric oxide (Fe₂O₃) or chromium(III) oxide (Cr₂O₃) and 1 part by weight of fine aluminium powder. When ignited with a magnesium ribbon fuse and barium peroxide primer, an intensely exothermic redox reaction occurs:\nFe₂O₃ + 2Al ──> Al₂O₃ + 2Fe(l); ΔH = -850 kJ mol⁻¹.\nThe heat evolved reaches temperatures up to 3000 °C, producing molten metal used for welding railway tracks (thermite welding)."
+      }
+    ]
+  }
+]

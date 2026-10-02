@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "Some Basic Concepts of Chemistry",
+    "flashcards": [
+      {
+        "front": "What is the relationship between calorie, joule, erg, and electron volt (eV) in terms of energy magnitude?",
+        "back": "1 cal > 1 J > 1 erg > 1 eV (1 cal = 4.184 J, 1 J = 10⁷ ergs, 1 eV = 1.6022 × 10⁻¹⁹ J)."
+      },
+      {
+        "front": "Define actual mass of an atom and give the actual mass of one carbon-12 atom.",
+        "back": "Actual mass is the mass of one single atom or molecule expressed in grams. For C-12, actual mass = 12 × 1.66 × 10⁻²⁴ g ≈ 1.99 × 10⁻²³ g."
+      },
+      {
+        "front": "What is relative atomic mass (RAM) and what are its units?",
+        "back": "Relative atomic mass is the mass of one atom of an element relative to 1/12th of the mass of a ¹²C atom. It is a pure ratio and unitless."
+      },
+      {
+        "front": "What is the value and definition of 1 unified mass (1 u or 1 amu) in grams?",
+        "back": "1 u = (1/12)th the mass of one ¹²C atom = 1/N_A g = 1.66 × 10⁻²⁴ g."
+      },
+      {
+        "front": "What does the term '1 g-atom' signify?",
+        "back": "1 g-atom means 1 mole of atoms, which equals N_A atoms (6.022 × 10²³ atoms) and has a mass equal to the gram atomic mass (GAM)."
+      },
+      {
+        "front": "What molar volume does an ideal gas occupy at STP (standard temperature and pressure) according to the handbook?",
+        "back": "One mole of an ideal gas occupies 22.4 L at 1 atm & 273 K, or 22.7 L at standard STP (1 bar & 273 K)."
+      },
+      {
+        "front": "State the formula relating vapour density (VD) and molar mass of a gas.",
+        "back": "Vapour density = Molar mass / 2 (measured relative to hydrogen gas under identical conditions of temperature and pressure)."
+      },
+      {
+        "front": "How is the limiting reagent identified from given reactant quantities?",
+        "back": "Convert all quantities to moles and divide the moles of each reactant by its stoichiometric coefficient. The reactant with the minimum ratio is the limiting reagent."
+      },
+      {
+        "front": "What is the formula for calculating percentage purity of a sample?",
+        "back": "% Purity = (Actual mass of desired compound / Total mass of impure sample) × 100."
+      },
+      {
+        "front": "State Dulong and Petit's Law and its mathematical formulation.",
+        "back": "Atomic weight of metal × Specific heat capacity (cal/g-°C) ≈ 6.4 (applicable mainly to heavier solid elements at higher temperatures)."
+      },
+      {
+        "front": "Define molality (m) and give its mathematical expression.",
+        "back": "Molality (m) = Moles of solute / Mass of solvent (in kg). It is temperature-independent."
+      },
+      {
+        "front": "Define molarity (M) and give its mathematical expression.",
+        "back": "Molarity (M) = Moles of solute / Volume of solution (in L). It is temperature-dependent."
+      },
+      {
+        "front": "What is the formula for the final molarity when two non-reacting solutions of the same solute are mixed?",
+        "back": "M_final = (M₁V₁ + M₂V₂) / (V₁ + V₂)."
+      },
+      {
+        "front": "What is the relationship between the volume strength of an H₂O₂ solution and its molarity?",
+        "back": "Volume strength of H₂O₂ = 11.35 × Molarity (based on 1 bar and 273 K, where 1 mole of O₂ occupies 22.7 L)."
+      },
+      {
+        "front": "How is the percentage of free SO₃ calculated in an oleum sample labelled as (100 + x)%?",
+        "back": "% Free SO₃ = (40 / 9) × x %, where x is the mass of water required to completely convert SO₃ in 100 g oleum to H₂SO₄."
+      },
+      {
+        "front": "Which specific absorbent is used in eudiometry to absorb carbon monoxide (CO)?",
+        "back": "Ammoniacal cuprous chloride (Cu₂Cl₂)."
+      },
+      {
+        "front": "Which absorbent is commonly used in eudiometry to absorb ozone (O₃)?",
+        "back": "Turpentine oil."
+      },
+      {
+        "front": "Which absorbent is used to absorb oxygen gas (O₂) in eudiometric analysis?",
+        "back": "Alkaline pyrogallol."
+      },
+      {
+        "front": "Which gases are absorbed by aqueous KOH solution in eudiometric analysis?",
+        "back": "Acidic gases such as CO₂, SO₂, and Cl₂."
+      },
+      {
+        "front": "In eudiometry calculations, why is the volume of liquid water formed neglected?",
+        "back": "Because the volume occupied by liquids is negligible compared to the volume occupied by gases (often more than a thousand times smaller)."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following correctly arranges energy units in decreasing order of magnitude?",
+        "options": [
+          "1 cal > 1 J > 1 erg > 1 eV",
+          "1 J > 1 cal > 1 erg > 1 eV",
+          "1 cal > 1 erg > 1 J > 1 eV",
+          "1 eV > 1 erg > 1 J > 1 cal"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. 1 cal = 4.184 J, 1 J = 10⁷ erg, and 1 erg = 10⁻⁷ J, while 1 eV = 1.6022 × 10⁻¹⁹ J.",
+          "Incorrect. 1 cal equals 4.184 J, so 1 cal is larger than 1 J.",
+          "Incorrect. 1 J is 10⁷ ergs, so 1 J is far larger than 1 erg.",
+          "Incorrect. 1 eV is 1.6022 × 10⁻¹⁹ J, which is the smallest among all four."
+        ],
+        "fullExplanation": "As listed in the handbook under conversion factors: 1 calorie = 4.184 J, 1 J = 10⁷ ergs, and 1 eV = 1.6022 × 10⁻¹⁹ J. Therefore, 1 cal > 1 J > 1 erg > 1 eV."
+      },
+      {
+        "question": "What is the actual mass in grams of one molecule of methane (CH₄)?",
+        "options": [
+          "16 g",
+          "16 × 1.66 × 10⁻²⁴ g",
+          "16 / (1.66 × 10⁻²⁴) g",
+          "1.66 × 10⁻²⁴ g"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 16 g is the molar mass (gram molecular mass), which is the mass of 1 mole of CH₄ molecules.",
+          "Correct. Molecular mass in amu is 16 amu, and 1 amu = 1.66 × 10⁻²⁴ g, giving 16 × 1.66 × 10⁻²⁴ g.",
+          "Incorrect. We multiply by the mass of 1 amu in grams, not divide.",
+          "Incorrect. 1.66 × 10⁻²⁴ g is the mass of 1 amu, not 16 amu."
+        ],
+        "fullExplanation": "The actual mass is the mass of a single molecule in grams. For CH₄, molecular mass = 16 amu. Since 1 amu = 1.66 × 10⁻²⁴ g, the actual mass = 16 × 1.66 × 10⁻²⁴ g."
+      },
+      {
+        "question": "Under standard STP conditions (1 bar, 273 K), what volume does 1 mole of an ideal gas occupy according to the handbook?",
+        "options": [
+          "22.4 L",
+          "22.7 L",
+          "24.8 L",
+          "20.0 L"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 22.4 L corresponds to 1 atm and 273 K.",
+          "Correct. At STP (1 bar & 273 K), 1 mole of gas occupies 22.7 L.",
+          "Incorrect. 24.8 L is at 25 °C and 1 bar.",
+          "Incorrect. Not an STP molar volume standard."
+        ],
+        "fullExplanation": "As noted on page 2: 'one mole occupies a volume of 22.4 L at 1 atm & 273 K or 22.7 L at STP' (where IUPAC standard pressure is 1 bar)."
+      },
+      {
+        "question": "The specific heat capacity of a solid metal is 0.16 cal g⁻¹ °C⁻¹. According to Dulong and Petit's law, its approximate atomic weight is:",
+        "options": [
+          "40",
+          "64",
+          "32",
+          "20"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Atomic weight ≈ 6.4 / specific heat = 6.4 / 0.16 = 40.",
+          "Incorrect. 6.4 / 0.1 = 64, but the given specific heat is 0.16.",
+          "Incorrect. 6.4 / 0.2 = 32.",
+          "Incorrect. Arithmetic error."
+        ],
+        "fullExplanation": "According to Dulong and Petit's Law: Atomic weight of metal × specific heat capacity (cal g⁻¹ °C⁻¹) ≈ 6.4. Therefore, Atomic weight ≈ 6.4 / 0.16 = 40."
+      },
+      {
+        "question": "A sample of oleum is labelled as 109%. What is the percentage of free SO₃ present in the sample?",
+        "options": [
+          "9%",
+          "40%",
+          "45%",
+          "80%"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 9 g is the mass of water required (x = 9), not the percentage of free SO₃.",
+          "Correct. % free SO₃ = (40 / 9) × x = (40 / 9) × 9 = 40%.",
+          "Incorrect. 45% does not follow the formula (40/9) × x.",
+          "Incorrect. Miscalculation."
+        ],
+        "fullExplanation": "% labelling of oleum = (100 + x)%. Here 100 + x = 109, so x = 9. Then % free SO₃ = (40 / 9) × x = (40 / 9) × 9 = 40%."
+      },
+      {
+        "question": "What is the volume strength of a 2 M H₂O₂ solution according to the handbook?",
+        "options": [
+          "22.4 volume",
+          "22.7 volume",
+          "11.35 volume",
+          "5.6 volume"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 22.4 would be 2 × 11.2 (using the older 22.4 L standard).",
+          "Correct. Volume strength = 11.35 × Molarity = 11.35 × 2 = 22.7.",
+          "Incorrect. 11.35 is the strength of a 1 M solution.",
+          "Incorrect. 5.6 is half of 11.2."
+        ],
+        "fullExplanation": "From page 5: Volume Strength of H₂O₂ solution = 11.35 × molarity. For a 2 M solution, Volume strength = 11.35 × 2 = 22.7 volume."
+      },
+      {
+        "question": "In eudiometry, which gas is specifically absorbed by alkaline pyrogallol?",
+        "options": [
+          "CO",
+          "CO₂",
+          "O₂",
+          "O₃"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. CO is absorbed by ammoniacal Cu₂Cl₂.",
+          "Incorrect. CO₂ is absorbed by KOH.",
+          "Correct. O₂ is absorbed by alkaline pyrogallol.",
+          "Incorrect. O₃ is absorbed by turpentine oil."
+        ],
+        "fullExplanation": "As tabulated on page 6 of the handbook, the specific absorbent for O₂ is alkaline pyrogallol."
+      },
+      {
+        "question": "Turpentine oil is used in gas analysis to absorb:",
+        "options": [
+          "Ozone (O₃)",
+          "Carbon monoxide (CO)",
+          "Carbon dioxide (CO₂)",
+          "Sulfur dioxide (SO₂)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Turpentine oil selectively absorbs ozone (O₃).",
+          "Incorrect. CO is absorbed by ammoniacal Cu₂Cl₂.",
+          "Incorrect. CO₂ is absorbed by KOH.",
+          "Incorrect. SO₂ is absorbed by KOH."
+        ],
+        "fullExplanation": "According to the table on page 6: Turpentine oil specifically absorbs O₃."
+      },
+      {
+        "question": "If 100 mL of 0.2 M HCl is mixed with 100 mL of 0.1 M HCl, what is the final molarity of the resulting solution?",
+        "options": [
+          "0.30 M",
+          "0.15 M",
+          "0.05 M",
+          "0.10 M"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Molarities cannot simply be added together without considering volume.",
+          "Correct. M_final = (M₁V₁ + M₂V₂) / (V₁ + V₂) = (0.2 × 100 + 0.1 × 100) / 200 = 30 / 200 = 0.15 M.",
+          "Incorrect. Miscalculation of total moles.",
+          "Incorrect. 0.10 M would be the concentration if diluted with pure water."
+        ],
+        "fullExplanation": "Using the mixing formula from page 5: Final molarity = (M₁V₁ + M₂V₂) / (V₁ + V₂) = (0.2 × 100 + 0.1 × 100) / (100 + 100) = 30 / 200 = 0.15 M."
+      },
+      {
+        "question": "For the reaction N₂(g) + 3H₂(g) → 2NH₃(g), if 10 L of N₂ reacts completely with excess H₂ at constant T and P, the volume of NH₃ formed is:",
+        "options": [
+          "10 L",
+          "20 L",
+          "30 L",
+          "40 L"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. The mole and volume ratio of N₂ to NH₃ is 1 : 2.",
+          "Correct. By Gay-Lussac's law, 1 vol of N₂ produces 2 vol of NH₃, so 10 L of N₂ produces 20 L of NH₃.",
+          "Incorrect. 30 L corresponds to the volume of H₂ consumed.",
+          "Incorrect. Double the correct product volume."
+        ],
+        "fullExplanation": "According to Gay-Lussac's law (page 6), the volume ratio of N₂ : NH₃ is 1 : 2 at constant T and P. Therefore, 10 L of N₂ reacts to produce 2 × 10 L = 20 L of NH₃."
+      },
+      {
+        "question": "What is the vapour density of sulfur dioxide (SO₂) gas relative to hydrogen?",
+        "options": [
+          "64",
+          "32",
+          "16",
+          "48"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 64 g/mol is the molar mass of SO₂.",
+          "Correct. Vapour density = Molar mass / 2 = 64 / 2 = 32.",
+          "Incorrect. 16 is the vapour density of O₂ or CH₄ molar mass.",
+          "Incorrect. 48 is the molar mass of ozone."
+        ],
+        "fullExplanation": "Vapour density = Molar mass / 2. Molar mass of SO₂ = 32 + 2(16) = 64 g/mol. Thus, Vapour density = 64 / 2 = 32."
+      },
+      {
+        "question": "How many moles of atoms are present in '1 g-atom' of oxygen?",
+        "options": [
+          "0.5 mole",
+          "1 mole",
+          "2 moles",
+          "16 moles"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. '1 g-atom' is not 0.5 mole.",
+          "Correct. By definition, 1 g-atom of an element = 1 mole of atoms = 6.022 × 10²³ atoms.",
+          "Incorrect. 2 moles is incorrect.",
+          "Incorrect. 16 g is the mass of 1 g-atom of oxygen, but the mole count is 1."
+        ],
+        "fullExplanation": "On page 2: '1 g atom = 1 mole of atoms = N_A atoms'. Thus, 1 g-atom of oxygen contains exactly 1 mole of oxygen atoms."
+      },
+      {
+        "question": "In a reaction A + 2B → C, 4 moles of A are mixed with 6 moles of B. What is the limiting reagent and moles of C formed?",
+        "options": [
+          "A is LR, 4 moles of C",
+          "B is LR, 3 moles of C",
+          "B is LR, 6 moles of C",
+          "A is LR, 2 moles of C"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. For A, mole ratio = 4/1 = 4; for B, mole ratio = 6/2 = 3. Since 3 < 4, B is the limiting reagent.",
+          "Correct. Ratio for A = 4/1 = 4; ratio for B = 6/2 = 3. B is LR, and 2 moles of B yield 1 mole of C, so 6 moles of B yield 3 moles of C.",
+          "Incorrect. 6 moles of B will produce 3 moles of C, not 6.",
+          "Incorrect. A is the excess reagent."
+        ],
+        "fullExplanation": "Dividing moles by stoichiometric coefficients: For A: 4/1 = 4; For B: 6/2 = 3. Since the ratio for B is smaller, B is the limiting reagent. From stoichiometry, 2 moles of B give 1 mole of C, so 6 moles of B give (1/2) × 6 = 3 moles of C."
+      },
+      {
+        "question": "What is the molality of a solution containing 18 g of glucose (molar mass = 180 g mol⁻¹) dissolved in 250 g of water?",
+        "options": [
+          "0.1 m",
+          "0.4 m",
+          "0.25 m",
+          "1.0 m"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 0.1 mole dissolved in 1 kg gives 0.1 m, but here solvent mass is 0.25 kg.",
+          "Correct. Moles of glucose = 18 / 180 = 0.1 mol. Mass of water = 250 g = 0.25 kg. Molality = 0.1 / 0.25 = 0.4 m.",
+          "Incorrect. Inverted division.",
+          "Incorrect. Arithmetic mistake."
+        ],
+        "fullExplanation": "Molality (m) = (Moles of solute) / (Mass of solvent in kg). Moles of glucose = 18 / 180 = 0.1 mol. Mass of solvent = 250 / 1000 = 0.25 kg. Molality = 0.1 / 0.25 = 0.4 m."
+      },
+      {
+        "question": "Which of the following concentration terms changes when the temperature changes?",
+        "options": [
+          "Molality",
+          "Mole fraction",
+          "Molarity",
+          "Percentage by mass (% w/w)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. Molality involves masses only, which are temperature-independent.",
+          "Incorrect. Mole fraction is a ratio of mole numbers and does not depend on temperature.",
+          "Correct. Molarity involves volume of solution, which expands or contracts with temperature changes.",
+          "Incorrect. % by mass is independent of temperature."
+        ],
+        "fullExplanation": "Molarity is defined as moles of solute per volume of solution in liters. Because volume changes with temperature, molarity is temperature-dependent. Molality, mole fraction, and mass percentage depend solely on mass and are temperature-independent."
+      },
+      {
+        "question": "An organic compound has an empirical formula of CH₂O and a molecular formula mass of 180 g mol⁻¹. Its molecular formula is:",
+        "options": [
+          "C₃H₆O₃",
+          "C₆H₁₂O₆",
+          "C₂H₄O₂",
+          "C₅H₁₀O₅"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Molar mass of C₃H₆O₃ is 90 g/mol.",
+          "Correct. Empirical formula mass of CH₂O = 12 + 2(1) + 16 = 30. n = 180 / 30 = 6. Molecular formula = (CH₂O)₆ = C₆H₁₂O₆.",
+          "Incorrect. Molar mass of C₂H₄O₂ is 60 g/mol.",
+          "Incorrect. Molar mass of C₅H₁₀O₅ is 150 g/mol."
+        ],
+        "fullExplanation": "Empirical formula mass for CH₂O = 12 + 2 + 16 = 30. Value of n = (Molecular mass) / (Empirical formula mass) = 180 / 30 = 6. Molecular formula = (CH₂O) × 6 = C₆H₁₂O₆."
+      },
+      {
+        "question": "Which absorbent is listed in the handbook to remove moisture (H₂O vapour) in gas analysis?",
+        "options": [
+          "KOH",
+          "Anhydrous CuSO₄ / CaCl₂",
+          "Turpentine oil",
+          "Ammoniacal Cu₂Cl₂"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. KOH absorbs acidic gases like CO₂, SO₂, Cl₂.",
+          "Correct. Anhydrous CuSO₄ or CaCl₂ is used to absorb water vapour (H₂O).",
+          "Incorrect. Turpentine oil absorbs O₃.",
+          "Incorrect. Ammoniacal Cu₂Cl₂ absorbs CO."
+        ],
+        "fullExplanation": "According to the eudiometry absorbent table on page 6: CuSO₄ / CaCl₂ is used for absorbing H₂O."
+      },
+      {
+        "question": "1 atm pressure is precisely equal to how many Pascals?",
+        "options": [
+          "10⁵ Pa",
+          "101325 Pa",
+          "760 Pa",
+          "1.01325 Pa"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 10⁵ Pa is 1 bar.",
+          "Correct. 1 atm = 101325 Pa = 101325 N m⁻².",
+          "Incorrect. 760 is in mm Hg or torr, not Pa.",
+          "Incorrect. Factor of 10⁵ missing."
+        ],
+        "fullExplanation": "Page 1 explicitly states: 1 atm = 760 mm or torr = 101325 Pa or N m⁻²."
+      },
+      {
+        "question": "What is the mass of 1 g-formula unit of NaCl?",
+        "options": [
+          "23 g",
+          "35.5 g",
+          "58.5 g",
+          "117 g"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. 23 g is the GAM of Na.",
+          "Incorrect. 35.5 g is the GAM of Cl.",
+          "Correct. 1 g-formula unit = 1 mole of formula units = 23 + 35.5 = 58.5 g.",
+          "Incorrect. 117 g is the mass of 2 moles."
+        ],
+        "fullExplanation": "On page 2: '1 g formula unit = 1 mole of formula unit = N_A formula unit' and 'g formula mass (GFM) = mass of N_A formula units in g'. For NaCl, GFM = 23 + 35.5 = 58.5 g."
+      },
+      {
+        "question": "A sample containing 20 g of calcium carbonate CaCO₃ produces 3.36 L of CO₂ at STP (molar volume = 22.4 L) on thermal decomposition. What is the percentage purity of the sample?",
+        "options": [
+          "75%",
+          "50%",
+          "85%",
+          "90%"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Moles of CO₂ = 3.36 / 22.4 = 0.15 mol. Since CaCO₃ → CaO + CO₂, pure CaCO₃ = 0.15 mol = 0.15 × 100 = 15 g. % purity = (15 / 20) × 100 = 75%.",
+          "Incorrect. 50% would correspond to only 10 g of pure CaCO₃.",
+          "Incorrect. Miscalculation.",
+          "Incorrect. 90% would require 18 g pure CaCO₃."
+        ],
+        "fullExplanation": "From the reaction CaCO₃ → CaO + CO₂: 1 mole of pure CaCO₃ (100 g) gives 22.4 L of CO₂ at STP. Moles of CO₂ formed = 3.36 / 22.4 = 0.15 mol. Hence mass of actual CaCO₃ = 0.15 × 100 = 15 g. % Purity = (15 g / 20 g) × 100 = 75%."
+      }
+    ]
+  },
+  {
+    "chapterName": "Atomic Structure",
+    "flashcards": [
+      {
+        "front": "What are isodiaphers? Give an example.",
+        "back": "Isodiaphers are nuclides having the same difference between neutrons and protons (N - Z). Example: ₅B¹¹ (N=6, Z=5, N-Z=1) and ₆C¹³ (N=7, Z=6, N-Z=1)."
+      },
+      {
+        "front": "What are isosters? Give an example.",
+        "back": "Isosters are molecules having the same number of atoms and the same total number of electrons. Example: CO₂ and N₂O (both have 3 atoms and 22 electrons)."
+      },
+      {
+        "front": "State the formula for nuclear radius (R_N) based on Rutherford's atomic model.",
+        "back": "R_N = R₀ · A^(1/3), where R₀ = 1.33 × 10⁻¹³ cm and A is the mass number."
+      },
+      {
+        "front": "What is the ratio of the diameter of an atom to the diameter of its nucleus?",
+        "back": "The diameter of an atom (order of 10⁻⁸ cm) is approximately 100,000 (10⁵) times the diameter of its nucleus (order of 10⁻¹³ to 10⁻¹² cm)."
+      },
+      {
+        "front": "List the electromagnetic radiations in order of decreasing wavelength (increasing frequency).",
+        "back": "Radiowaves > Microwaves > Infrared rays > Visible rays > Ultraviolet rays > X-rays > Cosmic rays."
+      },
+      {
+        "front": "State Bohr's radius formula for a hydrogen-like species.",
+        "back": "r = 0.529 × (n² / Z) Å."
+      },
+      {
+        "front": "State Bohr's orbital velocity formula for an electron in a hydrogen-like species.",
+        "back": "v = 2.188 × 10⁶ × (Z / n) m s⁻¹."
+      },
+      {
+        "front": "State the total energy (TE) formula for an electron in a hydrogen-like species in eV/atom.",
+        "back": "TE = -13.6 × (Z² / n²) eV/atom."
+      },
+      {
+        "front": "What is the relationship between Total Energy (TE), Kinetic Energy (KE), and Potential Energy (PE) of an electron in a Bohr orbit?",
+        "back": "KE = -TE, PE = 2TE = -2KE."
+      },
+      {
+        "front": "What are the formulas for revolutions per second and time period for one revolution of an electron in a Bohr orbit?",
+        "back": "Revolutions per second = v / (2πr); Time for one revolution (T) = 2πr / v."
+      },
+      {
+        "front": "Write the Rydberg formula for spectral line transitions in hydrogen-like species.",
+        "back": "1/λ = ν̄ = R_H · Z² · [(1 / n₁²) - (1 / n₂²)], where R_H ≈ 109,700 cm⁻¹."
+      },
+      {
+        "front": "What is the maximum number of spectral lines emitted when an electron de-excites from level n to the ground state in an atomic sample?",
+        "back": "Total spectral lines = n(n - 1) / 2."
+      },
+      {
+        "front": "What is the formula for the number of spectral lines observed when an electron de-excites from n₂ to n₁ in an atomic sample?",
+        "back": "Number of lines = (n₂ - n₁)(n₂ - n₁ + 1) / 2."
+      },
+      {
+        "front": "State de Broglie's wavelength equation for an electron accelerated through a potential difference of V volts.",
+        "back": "λ ≈ √(150 / V) Å = 12.27 / √V Å."
+      },
+      {
+        "front": "State Heisenberg's uncertainty principle formula.",
+        "back": "Δx · Δp ≥ h / (4π), or (Δx)(Δv) ≥ h / (4πm)."
+      },
+      {
+        "front": "What are the maximum number of orbitals and electrons in a principal shell with quantum number n?",
+        "back": "Total number of orbitals = n²; Total number of electrons = 2n²."
+      },
+      {
+        "front": "What is the formula for the orbital angular momentum of an electron in a subshell?",
+        "back": "Orbital angular momentum = √(l(l + 1)) · h / (2π) = √(l(l + 1)) · ħ."
+      },
+      {
+        "front": "State the (n + l) rule for filling electrons in subshells.",
+        "back": "Subshells with lower (n + l) value are filled first. If two subshells have the same (n + l) value, the one with the lower n value is filled first."
+      },
+      {
+        "front": "State Pauli's Exclusion Principle.",
+        "back": "No two electrons in an atom can have the same values for all four quantum numbers (n, l, m, s)."
+      },
+      {
+        "front": "State Hund's Rule of Maximum Multiplicity.",
+        "back": "Electrons are distributed among degenerate orbitals of a subshell in such a way as to maximize the number of unpaired electrons with parallel spins before pairing begins."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following pairs represents isodiaphers?",
+        "options": [
+          "₅B¹¹ and ₆C¹³",
+          "₆C¹⁴ and ₇N¹⁴",
+          "₁H³ and ₂He⁴",
+          "CO₂ and N₂O"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For ₅B¹¹, N - Z = 6 - 5 = 1. For ₆C¹³, N - Z = 7 - 6 = 1. Since their (N - Z) values are equal, they are isodiaphers.",
+          "Incorrect. ₆C¹⁴ and ₇N¹⁴ have the same mass number (A = 14), so they are isobars.",
+          "Incorrect. ₁H³ (N=2) and ₂He⁴ (N=2) have the same number of neutrons, so they are isotones.",
+          "Incorrect. CO₂ and N₂O have the same number of atoms and electrons, so they are isosters."
+        ],
+        "fullExplanation": "Isodiaphers are defined on page 7 as nuclides having the same difference between the number of neutrons and protons (N - Z). For ₅B¹¹: Z = 5, N = 11 - 5 = 6, N - Z = 1. For ₆C¹³: Z = 6, N = 13 - 6 = 7, N - Z = 1. Thus, they are isodiaphers."
+      },
+      {
+        "question": "According to Rutherford's model, if the radius of a nucleus is given by R_N = R₀ · A^(1/3), what is the approximate radius of a nucleus with mass number A = 64?",
+        "options": [
+          "5.32 × 10⁻¹³ cm",
+          "1.33 × 10⁻¹³ cm",
+          "4.00 × 10⁻¹³ cm",
+          "2.66 × 10⁻¹³ cm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. R_N = 1.33 × 10⁻¹³ × (64)^(1/3) = 1.33 × 10⁻¹³ × 4 = 5.32 × 10⁻¹³ cm.",
+          "Incorrect. 1.33 × 10⁻¹³ cm is just R₀.",
+          "Incorrect. 4 is the cube root of 64, not multiplied by R₀.",
+          "Incorrect. Corresponds to A = 8."
+        ],
+        "fullExplanation": "Given R_N = R₀ · A^(1/3) with R₀ = 1.33 × 10⁻¹³ cm. For A = 64, A^(1/3) = 4. Therefore, R_N = 1.33 × 10⁻¹³ × 4 = 5.32 × 10⁻¹³ cm."
+      },
+      {
+        "question": "What is the radius of the second Bohr orbit (n = 2) of a Li²⁺ ion?",
+        "options": [
+          "0.529 Å",
+          "0.705 Å",
+          "1.058 Å",
+          "2.116 Å"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 0.529 Å is the radius of the first orbit of hydrogen (n=1, Z=1).",
+          "Correct. r = 0.529 × (n² / Z) = 0.529 × (2² / 3) = 0.529 × (4 / 3) ≈ 0.705 Å.",
+          "Incorrect. 1.058 Å corresponds to n=2, Z=2 (He⁺).",
+          "Incorrect. 2.116 Å corresponds to n=2 for hydrogen (Z=1)."
+        ],
+        "fullExplanation": "The Bohr radius is r = 0.529 × (n² / Z) Å. For Li²⁺, Z = 3 and n = 2. r = 0.529 × (4 / 3) ≈ 0.705 Å."
+      },
+      {
+        "question": "If the total energy of an electron in a Bohr orbit is -3.4 eV, what are its kinetic energy (KE) and potential energy (PE)?",
+        "options": [
+          "KE = +3.4 eV, PE = -6.8 eV",
+          "KE = -3.4 eV, PE = +6.8 eV",
+          "KE = +6.8 eV, PE = -3.4 eV",
+          "KE = +1.7 eV, PE = -5.1 eV"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. KE = -TE = -(-3.4 eV) = +3.4 eV. PE = 2TE = 2(-3.4 eV) = -6.8 eV.",
+          "Incorrect. Kinetic energy cannot be negative in classical/Bohr mechanics.",
+          "Incorrect. PE must be equal to 2TE, not KE = 2TE.",
+          "Incorrect. Violates the virial relationships KE = -TE and PE = 2TE."
+        ],
+        "fullExplanation": "From page 9 of the handbook: KE = -TE and PE = 2TE. Given TE = -3.4 eV: KE = -(-3.4 eV) = +3.4 eV, and PE = 2 × (-3.4 eV) = -6.8 eV."
+      },
+      {
+        "question": "An electron de-excites from the 5th energy level to the ground state in an atomic sample of hydrogen. What is the total number of spectral lines observed?",
+        "options": [
+          "5",
+          "10",
+          "15",
+          "4"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 5 is n, not n(n - 1)/2.",
+          "Correct. Total lines = n(n - 1) / 2 = 5(4) / 2 = 10.",
+          "Incorrect. 15 corresponds to n = 6.",
+          "Incorrect. 4 is (n - 1), representing lines in the Lyman series only."
+        ],
+        "fullExplanation": "Using the formula on page 10: Total spectral lines = n(n - 1) / 2. Here n = 5, so lines = 5 × 4 / 2 = 10."
+      },
+      {
+        "question": "How many spectral lines are emitted when electrons de-excite from n₂ = 5 to n₁ = 2 in an atomic sample?",
+        "options": [
+          "3",
+          "6",
+          "10",
+          "5"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. 3 is simply (n₂ - n₁), which is the number of lines in a single series.",
+          "Correct. Total spectral lines = (n₂ - n₁)(n₂ - n₁ + 1) / 2 = (5 - 2)(5 - 2 + 1) / 2 = 3 × 4 / 2 = 6.",
+          "Incorrect. 10 is the number of lines if de-exciting to the ground state (n₁ = 1).",
+          "Incorrect. Miscalculation."
+        ],
+        "fullExplanation": "According to page 10: Number of spectral lines = (n₂ - n₁)(n₂ - n₁ + 1) / 2. Here n₂ = 5 and n₁ = 2. So, lines = (3 × 4) / 2 = 6."
+      },
+      {
+        "question": "In the hydrogen spectrum, what transition corresponds to the H_α line of the Balmer series?",
+        "options": [
+          "n₂ = 3 to n₁ = 2",
+          "n₂ = 4 to n₁ = 2",
+          "n₂ = 2 to n₁ = 1",
+          "n₂ = ∞ to n₁ = 2"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For the Balmer series, n₁ = 2. The H_α line is the first line of the series: n₂ = n₁ + 1 = 3.",
+          "Incorrect. n = 4 to n = 2 corresponds to the H_β line.",
+          "Incorrect. n = 2 to n = 1 is the Lyman-alpha line.",
+          "Incorrect. n = ∞ to n = 2 is the series limit."
+        ],
+        "fullExplanation": "From page 10: 'H_α line means n₂ = n₁ + 1'. For the Balmer series, n₁ = 2, so n₂ = 3. Thus, the H_α line corresponds to the transition from n = 3 to n = 2."
+      },
+      {
+        "question": "What is the orbital angular momentum of an electron in a 3d orbital?",
+        "options": [
+          "0",
+          "√(2) · h / (2π)",
+          "√(6) · h / (2π)",
+          "√(12) · h / (2π)"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. 0 is the orbital angular momentum for an s orbital (l = 0).",
+          "Incorrect. √(2) · h/(2π) is for a p orbital (l = 1).",
+          "Correct. For a d orbital, l = 2. Orbital angular momentum = √(l(l + 1)) · h / (2π) = √(2 × 3) · h / (2π) = √(6) · h / (2π).",
+          "Incorrect. √(12) · h/(2π) is for an f orbital (l = 3)."
+        ],
+        "fullExplanation": "Orbital angular momentum is given by √(l(l + 1)) · h / (2π). For any d orbital, the azimuthal quantum number is l = 2. Therefore, orbital angular momentum = √(2(2 + 1)) · h / (2π) = √(6) · h / (2π)."
+      },
+      {
+        "question": "What is the de Broglie wavelength of an electron accelerated from rest across a potential difference of 150 volts?",
+        "options": [
+          "1.0 Å",
+          "1.227 Å",
+          "0.1 Å",
+          "10 Å"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. λ ≈ √(150 / V) Å = √(150 / 150) = 1.0 Å.",
+          "Incorrect. 1.227 Å would correspond to V = 100 V.",
+          "Incorrect. Off by a factor of 10.",
+          "Incorrect. Off by a factor of 10."
+        ],
+        "fullExplanation": "From page 11: Wavelength of electron λ ≈ √(150 / V) Å. When V = 150 volts, λ = √(150 / 150) Å = 1.0 Å."
+      },
+      {
+        "question": "According to de Broglie, the circumference of the nth Bohr orbit (2πr_n) is related to the electron's wavelength λ by:",
+        "options": [
+          "2πr_n = λ / n",
+          "2πr_n = nλ",
+          "2πr_n = n²λ",
+          "2πr_n = √(n) · λ"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. Inverse relationship is incorrect.",
+          "Correct. The circumference of the nth orbit equals an integral number of de Broglie wavelengths: 2πr_n = nλ.",
+          "Incorrect. It depends linearly on n, not n².",
+          "Incorrect. Not a square-root dependence."
+        ],
+        "fullExplanation": "As stated on page 11: 'The circumference of the nth orbit is equal to n times of wavelength of electron i.e., 2πr_n = nλ. Number of waves = n = principal quantum number'."
+      },
+      {
+        "question": "What is the total number of orbitals possible in a principal shell with quantum number n = 4?",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "32"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. 4 is the number of subshells (l = 0, 1, 2, 3).",
+          "Incorrect. 8 is 2n.",
+          "Correct. Total number of orbitals in an orbit = n² = 4² = 16.",
+          "Incorrect. 32 is the maximum number of electrons (2n² = 2 × 16 = 32)."
+        ],
+        "fullExplanation": "From page 11: 'Total number of orbitals in an orbit = n²'. For n = 4, number of orbitals = 4² = 16 (1 in 4s, 3 in 4p, 5 in 4d, 7 in 4f = 16)."
+      },
+      {
+        "question": "Which of the following subshells has the highest energy according to the (n + l) rule?",
+        "options": [
+          "4s",
+          "3d",
+          "4p",
+          "5s"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. For 4s: n + l = 4 + 0 = 4.",
+          "Incorrect. For 3d: n + l = 3 + 2 = 5, but its n = 3.",
+          "Correct. For 4p: n + l = 4 + 1 = 5. Comparing 3d (n=3) and 4p (n=4), both have n + l = 5, but 4p has higher n and therefore higher energy.",
+          "Incorrect. For 5s: n + l = 5 + 0 = 5, n = 5; however, among 3d and 4p, 4p > 3d in energy, and 5s has lower energy than 4d."
+        ],
+        "fullExplanation": "Calculate (n + l): For 4s: 4 + 0 = 4. For 3d: 3 + 2 = 5. For 4p: 4 + 1 = 5. For 5s: 5 + 0 = 5. When (n + l) is equal, lower n fills first and has lower energy. The filling sequence (page 13) is 4s < 3d < 4p < 5s. Thus, 5s is filled after 4p, but comparing between 3d and 4p, 4p has higher energy than 3d."
+      },
+      {
+        "question": "What is the spin-only magnetic moment of an ion having 3 unpaired electrons?",
+        "options": [
+          "1.73 BM",
+          "2.84 BM",
+          "3.87 BM",
+          "4.90 BM"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. 1.73 BM corresponds to 1 unpaired electron.",
+          "Incorrect. 2.84 BM corresponds to 2 unpaired electrons.",
+          "Correct. μ = √(n(n + 2)) = √(3(5)) = √15 ≈ 3.87 BM.",
+          "Incorrect. 4.90 BM corresponds to 4 unpaired electrons."
+        ],
+        "fullExplanation": "The spin-only magnetic moment formula is μ = √(n(n + 2)) BM. For n = 3: μ = √(3 × 5) = √15 ≈ 3.87 BM (page 220 & page 9 relationships)."
+      },
+      {
+        "question": "What is the maximum number of electrons that can be accommodated in a subshell with azimuthal quantum number l = 3?",
+        "options": [
+          "6",
+          "10",
+          "14",
+          "7"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. 6 electrons is for l = 1 (p subshell).",
+          "Incorrect. 10 electrons is for l = 2 (d subshell).",
+          "Correct. Total electrons in a subshell = 2(2l + 1). For l = 3 (f subshell), 2(2(3) + 1) = 2(7) = 14.",
+          "Incorrect. 7 is the number of orbitals, not electrons."
+        ],
+        "fullExplanation": "As shown on page 12: 'Total no. of e⁻s in a suborbit = 2(2l + 1)'. For l = 3: 2(2(3) + 1) = 2(7) = 14 electrons."
+      },
+      {
+        "question": "Which of the following pairs is isoelectronic?",
+        "options": [
+          "Cl⁻ and Ar",
+          "Na⁺ and K⁺",
+          "Fe²⁺ and Fe³⁺",
+          "O²⁻ and Cl⁻"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Cl⁻ has 17 + 1 = 18 electrons, and Ar has 18 electrons. They have the same number of electrons.",
+          "Incorrect. Na⁺ has 10 electrons, whereas K⁺ has 18 electrons.",
+          "Incorrect. Fe²⁺ has 24 electrons, whereas Fe³⁺ has 23 electrons.",
+          "Incorrect. O²⁻ has 10 electrons, whereas Cl⁻ has 18 electrons."
+        ],
+        "fullExplanation": "Isoelectronic species possess the same total number of electrons. Both Cl⁻ (17 + 1 = 18) and Ar (18) contain 18 electrons (page 8)."
+      },
+      {
+        "question": "The slope of the plot of ln k versus 1/T for a chemical reaction according to the Arrhenius relation in atomic/chemical kinetics is equal to:",
+        "options": [
+          "-E_a / R",
+          "-E_a / (2.303 R)",
+          "+E_a / R",
+          "-R / E_a"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. ln k = ln A - (E_a / R)(1/T), so the slope of ln k vs 1/T is -E_a / R.",
+          "Incorrect. -E_a / (2.303 R) is the slope when plotting log₁₀ k vs 1/T.",
+          "Incorrect. The slope is negative, not positive.",
+          "Incorrect. Inverted fraction."
+        ],
+        "fullExplanation": "From page 51: ln k = ln A - E_a / (RT). A plot of ln k versus 1/T is a straight line with slope = -E_a / R."
+      },
+      {
+        "question": "For single-electron species (H, He⁺, Li²⁺), the subshells belonging to the same principal energy level (e.g., 3s, 3p, 3d) have:",
+        "options": [
+          "Different energies: 3s < 3p < 3d",
+          "Identical energies: 3s = 3p = 3d",
+          "Different energies: 3d < 3p < 3s",
+          "Energies dependent on electron spin only"
+        ],
+        "correctAnswer": 1,
+        "optionExplanations": [
+          "Incorrect. This applies only to multi-electron atoms due to shielding.",
+          "Correct. For H and H-like single-electron species, energy depends solely on n, so 3s = 3p = 3d.",
+          "Incorrect. Incorrect energy order.",
+          "Incorrect. Spin does not split subshell energies in the Bohr model."
+        ],
+        "fullExplanation": "Page 12 explicitly notes: 'For H & H like species all the subshells of a shell have same energy. i.e 2s = 2p; 3s = 3p = 3d'."
+      },
+      {
+        "question": "If an uncertainty in position (Δx) is equal to its de Broglie wavelength (λ), what is the minimum uncertainty in velocity (Δv)?",
+        "options": [
+          "v / (4π)",
+          "h / (4πm)",
+          "v / (2π)",
+          "4π / v"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Δx · mΔv ≥ h / (4π). Since Δx = λ = h / (mv), substituting gives (h / (mv)) · mΔv ≥ h / (4π) ⇒ Δv ≥ v / (4π).",
+          "Incorrect. Missing the velocity relationship.",
+          "Incorrect. Factor of 2 missing from the 4π denominator.",
+          "Incorrect. Inverted expression."
+        ],
+        "fullExplanation": "From Heisenberg's principle: Δx · Δp ≥ h / (4π) ⇒ Δx · (m Δv) ≥ h / (4π). Given Δx = λ = h / (mv): (h / (mv)) · (m Δv) ≥ h / (4π) ⇒ (h / v) · Δv ≥ h / (4π) ⇒ Δv ≥ v / (4π)."
+      },
+      {
+        "question": "What is the ionization energy of a He⁺ ion in its ground state?",
+        "options": [
+          "13.6 eV",
+          "27.2 eV",
+          "54.4 eV",
+          "122.4 eV"
+        ],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "Incorrect. 13.6 eV is the ionization energy of hydrogen (Z = 1).",
+          "Incorrect. 27.2 eV corresponds to doubling, not quadrupling.",
+          "Correct. IE = 13.6 × (Z² / n²) eV = 13.6 × (2² / 1²) = 13.6 × 4 = 54.4 eV.",
+          "Incorrect. 122.4 eV is the IE of Li²⁺ (13.6 × 9)."
+        ],
+        "fullExplanation": "From page 9: Ionization energy = E_∞ - E_GS = 13.6 × (Z² / n²) eV. For He⁺, Z = 2 and in the ground state n = 1. Thus, IE = 13.6 × (2² / 1²) = 13.6 × 4 = 54.4 eV."
+      },
+      {
+        "question": "The velocity of an electron in the first orbit of a hydrogen atom is v. What is its velocity in the third orbit of a Li²⁺ ion?",
+        "options": [
+          "v",
+          "3v",
+          "v / 3",
+          "9v"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. v ∝ Z / n. For H (n=1, Z=1), ratio = 1/1 = 1. For Li²⁺ (n=3, Z=3), ratio = 3/3 = 1. Thus, the velocity is equal to v.",
+          "Incorrect. 3v would occur if n were 1 for Li²⁺.",
+          "Incorrect. v/3 would occur if Z were 1 for n = 3.",
+          "Incorrect. Does not scale as Z · n."
+        ],
+        "fullExplanation": "The orbital velocity is given by v = 2.188 × 10⁶ × (Z / n) m s⁻¹. For the 1st orbit of H: Z/n = 1/1 = 1, so v_H = v. For the 3rd orbit of Li²⁺: Z = 3 and n = 3, so Z/n = 3/3 = 1. Therefore, its velocity is also equal to v."
+      }
+    ]
+  }
+]

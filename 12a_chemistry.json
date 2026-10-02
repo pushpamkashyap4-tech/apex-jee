@@ -1,0 +1,856 @@
+[
+  {
+    "chapterName": "States of Matter",
+    "flashcards": [
+      {
+        "front": "State Boyle's law and give its mathematical formulation at constant temperature.",
+        "back": "At constant temperature and moles, the volume of a fixed mass of gas is inversely proportional to its pressure: V ∝ 1/P, or P₁V₁ = P₂V₂."
+      },
+      {
+        "front": "State Charles's law and give its mathematical relation.",
+        "back": "At constant pressure and moles, the volume of a fixed mass of gas is directly proportional to its absolute temperature: V ∝ T, or V₁/T₁ = V₂/T₂."
+      },
+      {
+        "front": "State Gay-Lussac's law relating pressure and temperature.",
+        "back": "At constant volume and moles, the pressure of a given mass of gas is directly proportional to its absolute temperature: P ∝ T, or P₁/T₁ = P₂/T₂."
+      },
+      {
+        "front": "State the values of universal gas constant R in units of L·atm·mol⁻¹·K⁻¹, J·mol⁻¹·K⁻¹, and cal·mol⁻¹·K⁻¹.",
+        "back": "R = 0.0821 L·atm·mol⁻¹·K⁻¹, R = 8.314 J·mol⁻¹·K⁻¹ (or N·m·mol⁻¹·K⁻¹), and R ≈ 2 cal·mol⁻¹·K⁻¹ (8.314 × 10⁷ erg·mol⁻¹·K⁻¹)."
+      },
+      {
+        "front": "State Graham's law of diffusion and its dependence on density and molar mass.",
+        "back": "At constant P and T, the rate of diffusion (r) of non-reacting gases is inversely proportional to the square root of density, vapour density, or molar mass: r ∝ 1/√d ∝ 1/√VD ∝ 1/√M_w."
+      },
+      {
+        "front": "How is the rate of diffusion (r) expressed experimentally in terms of distance, volume, and moles?",
+        "back": "r = l/t (distance traveled per unit time) = V/t (volume diffused per unit time) = n/t (moles diffused per unit time)."
+      },
+      {
+        "front": "What is the fundamental kinetic gas equation?",
+        "back": "PV = (1/3) · m · N · v_rms², where m is the mass of one molecule, N is the total number of molecules, and v_rms is the root mean square velocity."
+      },
+      {
+        "front": "Write the expressions for average kinetic energy (KE_av) of n moles, 1 mole, and 1 molecule of an ideal gas.",
+        "back": "For n moles: KE_av = (3/2)nRT; for 1 mole (or N_A molecules): KE_av = (3/2)RT; for 1 molecule: KE_av = (3/2)kT, where k = 1.38 × 10⁻²³ J·K⁻¹."
+      },
+      {
+        "front": "Write the formulas for v_rms, v_av, and v_mp of gas molecules.",
+        "back": "v_rms = √(3RT/M_w), v_av = √(8RT/(π·M_w)), and v_mp = √(2RT/M_w)."
+      },
+      {
+        "front": "What is the ratio between v_rms, v_av, and v_mp?",
+        "back": "v_rms : v_av : v_mp = √3 : √(8/π) : √2 ≈ 1 : 0.92 : 0.82; and v_mp : v_av : v_rms = √2 : √(8/π) : √3 ≈ 1 : 1.128 : 1.224."
+      },
+      {
+        "front": "State Dalton's law of partial pressures and give the formula for partial pressure in terms of mole fraction.",
+        "back": "P_total = P₁ + P₂ + P₃ + ... (at constant T and V). For gas A: P_A = X_A · P_total = (n_A / n_total) · P_total."
+      },
+      {
+        "front": "How is the pressure of dry gas calculated from moist gas?",
+        "back": "P_dry gas = P_moist gas - P_water vapour (aqueous tension)."
+      },
+      {
+        "front": "Define compressibility factor (z) and state its values for ideal, positive, and negative deviations.",
+        "back": "z = (V_m)_obs / (V_m)_ideal = P(V_m)_obs / (RT). If z = 1: ideal behaviour; if z > 1: positive deviation; if z < 1: negative deviation."
+      },
+      {
+        "front": "Write the van der Waals equation of state for n moles of a real gas.",
+        "back": "(P + a·n²/V²)(V - nb) = nRT, where 'a' accounts for intermolecular attractive forces and 'b' accounts for the co-volume (effective molecular volume)."
+      },
+      {
+        "front": "What physical properties are indicated by high values of van der Waals constants 'a' and 'b'?",
+        "back": "Higher 'a' means stronger intermolecular attractions, higher critical temperature (T_c), and greater ease of liquefaction. Higher 'b' means larger effective molecular volume."
+      },
+      {
+        "front": "What is the form of the van der Waals equation at very high pressure?",
+        "back": "At high pressure, (P + a/V_m²) ≈ P, so P(V_m - b) = RT, or PV_m - Pb = RT (z = 1 + Pb/RT > 1)."
+      },
+      {
+        "front": "What is the form of the van der Waals equation at low or moderate pressure?",
+        "back": "At low/moderate pressure, (V_m - b) ≈ V_m, so (P + a/V_m²)V_m = RT, or PV_m + a/V_m = RT (z = 1 - a/(RTV_m) < 1)."
+      },
+      {
+        "front": "Under what conditions does a real gas show ideal behaviour?",
+        "back": "At very low pressure and very high temperature (where intermolecular attraction and molecular volume corrections both become negligible: PV = nRT)."
+      },
+      {
+        "front": "How is partial pressure calculated when individual volumes and initial pressures before mixing are given?",
+        "back": "P_A = (V_A / V_total) · P₁ and P_B = (V_B / V_total) · P₂."
+      },
+      {
+        "front": "What is the relationship between vapour density (VD) and molar mass (M_w)?",
+        "back": "VD = d_gas / d_H₂ = M_w / 2."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "At constant temperature, if the volume of an ideal gas is reduced to one-third of its initial value, the pressure will:",
+        "options": [
+          "Triple",
+          "Reduce to one-third",
+          "Increase by a factor of 9",
+          "Remain unchanged"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. According to Boyle's law (P₁V₁ = P₂V₂), P₂ = P₁(V₁/V₂) = P₁(V₁ / (V₁/3)) = 3P₁.",
+          "Incorrect. Pressure is inversely proportional to volume, so it increases when volume decreases.",
+          "Incorrect. Pressure varies as 1/V, not 1/V².",
+          "Incorrect. Pressure changes when volume changes at constant temperature."
+        ],
+        "fullExplanation": "According to Boyle's Law (page 14): P₁V₁ = P₂V₂. When V₂ = V₁/3, P₂ = P₁(V₁ / V₂) = 3P₁. Therefore, the pressure triples."
+      },
+      {
+        "question": "Which of the following is NOT an equivalent value of the universal gas constant R?",
+        "options": [
+          "0.0821 L·atm·mol⁻¹·K⁻¹",
+          "8.314 J·mol⁻¹·K⁻¹",
+          "8.314 × 10⁷ erg·mol⁻¹·K⁻¹",
+          "1.987 J·mol⁻¹·K⁻¹"
+        ],
+        "correctAnswer": 3,
+        "optionExplanations": [
+          "Incorrect. 0.0821 L·atm·mol⁻¹·K⁻¹ is the correct value in L·atm.",
+          "Incorrect. 8.314 J·mol⁻¹·K⁻¹ is the standard SI value.",
+          "Incorrect. 8.314 × 10⁷ erg·mol⁻¹·K⁻¹ is correct since 1 J = 10⁷ ergs.",
+          "Correct. ~1.987 (or 2) is in cal·mol⁻¹·K⁻¹, not J·mol⁻¹·K⁻¹."
+        ],
+        "fullExplanation": "From page 14: R = 0.0821 L·atm·mol⁻¹·K⁻¹, 8.314 J·mol⁻¹·K⁻¹, 8.314 × 10⁷ erg·mol⁻¹·K⁻¹, and ≈ 2 cal·mol⁻¹·K⁻¹. The value 1.987 has units of cal·mol⁻¹·K⁻¹, not J·mol⁻¹·K⁻¹."
+      },
+      {
+        "question": "Two gases X and Y have molar masses of 32 g·mol⁻¹ and 128 g·mol⁻¹ respectively. Under identical conditions, the ratio of their rates of diffusion (r_X / r_Y) is:",
+        "options": [
+          "2 : 1",
+          "1 : 2",
+          "4 : 1",
+          "1 : 4"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. r_X / r_Y = √(M_Y / M_X) = √(128 / 32) = √4 = 2.",
+          "Incorrect. Inverted ratio; lighter gas diffuses faster.",
+          "Incorrect. The ratio depends on the square root of molar mass, not the molar mass itself.",
+          "Incorrect. Lighter gas X cannot diffuse slower than heavier gas Y."
+        ],
+        "fullExplanation": "By Graham's Law of diffusion (page 14): r ∝ 1/√M_w. Therefore, r_X / r_Y = √(M_Y / M_X) = √(128 / 32) = √4 = 2 : 1."
+      },
+      {
+        "question": "What is the average kinetic energy of one single molecule of an ideal gas at temperature T?",
+        "options": [
+          "(3/2) kT",
+          "(3/2) RT",
+          "(3/2) nRT",
+          "3 kT"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For one molecule, KE_av = (3/2)kT, where k is the Boltzmann constant.",
+          "Incorrect. (3/2)RT is the average KE for 1 mole (or N_A molecules).",
+          "Incorrect. (3/2)nRT is the average KE for n moles.",
+          "Incorrect. Misses the factor of 1/2."
+        ],
+        "fullExplanation": "As tabulated on page 15: KE_av = (3/2)nRT for n moles, (3/2)RT for 1 mole, and (3/2)kT for 1 molecule, where k is Boltzmann's constant (1.38 × 10⁻²³ J·K⁻¹)."
+      },
+      {
+        "question": "What is the correct ratio of most probable speed, average speed, and root mean square speed (v_mp : v_av : v_rms)?",
+        "options": [
+          "1 : 1.128 : 1.224",
+          "1 : 0.92 : 0.82",
+          "1.224 : 1.128 : 1",
+          "1 : 1.224 : 1.128"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. v_mp : v_av : v_rms = √2 : √(8/π) : √3 ≈ 1 : 1.128 : 1.224.",
+          "Incorrect. 1 : 0.92 : 0.82 is the ratio v_rms : v_av : v_mp.",
+          "Incorrect. This is the reverse ratio (v_rms : v_av : v_mp normalised differently).",
+          "Incorrect. v_rms is greater than v_av, so 1.224 should be at the end."
+        ],
+        "fullExplanation": "From page 15: v_mp : v_av : v_rms = √2 : √(8/π) : √3 = 1 : 1.128 : 1.224."
+      },
+      {
+        "question": "At constant temperature, if the pressure of a real gas is very high, the compressibility factor z is given by:",
+        "options": [
+          "1 + Pb/(RT)",
+          "1 - a/(RTV_m)",
+          "1",
+          "Pb/(RT)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. At high pressure, PV_m - Pb = RT ⇒ PV_m = RT + Pb ⇒ z = PV_m/(RT) = 1 + Pb/(RT).",
+          "Incorrect. 1 - a/(RTV_m) is valid at low or moderate pressure.",
+          "Incorrect. z = 1 corresponds to ideal behaviour.",
+          "Incorrect. Misses the +1 term."
+        ],
+        "fullExplanation": "From page 16: At high pressure, the van der Waals equation simplifies to PV_m - Pb = RT. Dividing both sides by RT gives PV_m/(RT) = 1 + Pb/(RT), so z = 1 + Pb/(RT)."
+      },
+      {
+        "question": "At low or moderate pressure, real gases typically show negative deviation (z < 1) primarily because:",
+        "options": [
+          "Intermolecular attractive forces dominate, reducing the effective pressure",
+          "Molecular volume dominates, increasing the effective volume",
+          "Molecules collide inelastically",
+          "The kinetic energy becomes zero"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Intermolecular attraction ('a') lowers the observed pressure, leading to z = 1 - a/(RTV_m) < 1.",
+          "Incorrect. Co-volume ('b') dominates at high pressure, causing positive deviation (z > 1).",
+          "Incorrect. Molecular collisions in gases are considered elastic.",
+          "Incorrect. Kinetic energy depends on temperature, not pressure."
+        ],
+        "fullExplanation": "At low/moderate pressures, intermolecular attraction is significant while molecular volume is negligible. The equation becomes PV_m + a/V_m = RT, so z = 1 - a/(RTV_m) < 1, showing negative deviation."
+      },
+      {
+        "question": "Which gas among the following will have the highest critical temperature (T_c) and liquefy most easily according to the handbook?",
+        "options": [
+          "The gas with the highest value of van der Waals constant 'a'",
+          "The gas with the lowest value of van der Waals constant 'a'",
+          "The gas with the highest value of van der Waals constant 'b'",
+          "The gas with the smallest molar mass"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Higher 'a' implies stronger intermolecular attraction, higher T_c, and higher rate of liquefaction.",
+          "Incorrect. Lower 'a' means weak attractions, making liquefaction harder.",
+          "Incorrect. Constant 'b' represents molecular co-volume, not attractive strength.",
+          "Incorrect. Liquefaction is governed by attractive forces ('a'), not just molar mass."
+        ],
+        "fullExplanation": "Page 16 states: 'Gases having ↑ value of a; will have ↑ T_c; ↑ rate of liquefaction'."
+      },
+      {
+        "question": "A mixture of 4 g of H₂ (molar mass = 2 g·mol⁻¹) and 16 g of O₂ (molar mass = 32 g·mol⁻¹) exerts a total pressure of 5 atm. What is the partial pressure of H₂?",
+        "options": [
+          "4.0 atm",
+          "1.0 atm",
+          "2.5 atm",
+          "3.5 atm"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Moles of H₂ = 4/2 = 2 mol; moles of O₂ = 16/32 = 0.5 mol. n_total = 2.5 mol. X_H₂ = 2/2.5 = 0.8. P_H₂ = 0.8 × 5 atm = 4.0 atm.",
+          "Incorrect. 1.0 atm is the partial pressure of O₂ (0.5/2.5 × 5 = 1.0 atm).",
+          "Incorrect. 2.5 atm would assume equal mole fractions.",
+          "Incorrect. Calculation error."
+        ],
+        "fullExplanation": "Moles of H₂ = 4/2 = 2. Moles of O₂ = 16/32 = 0.5. Total moles = 2.5. Mole fraction of H₂ = 2 / 2.5 = 0.8. By Dalton's Law (page 15): P_H₂ = X_H₂ · P_total = 0.8 × 5 = 4.0 atm."
+      },
+      {
+        "question": "If the rms velocity of nitrogen gas (N₂) at T₁ K is equal to that of oxygen gas (O₂) at 320 K, what is the value of T₁?",
+        "options": [
+          "280 K",
+          "320 K",
+          "365 K",
+          "160 K"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. v_rms = √(3RT/M). Setting v_rms(N₂) = v_rms(O₂) gives T₁/28 = 320/32 ⇒ T₁ = 28 × 10 = 280 K.",
+          "Incorrect. T₁ would equal 320 K only if the molar masses were equal.",
+          "Incorrect. Miscalculated by multiplying instead of dividing.",
+          "Incorrect. Factor error."
+        ],
+        "fullExplanation": "v_rms = √(3RT/M_w). For v_rms(N₂) = v_rms(O₂), we have T(N₂) / M_w(N₂) = T(O₂) / M_w(O₂). Thus, T₁ / 28 = 320 / 32 = 10, so T₁ = 280 K."
+      },
+      {
+        "question": "What is the pressure correction term in the van der Waals equation for n moles of gas in a container of volume V?",
+        "options": [
+          "a·n² / V²",
+          "a / V²",
+          "a·n / V",
+          "n²b / V²"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The internal pressure correction is an²/V², so P_ideal = P_real + an²/V².",
+          "Incorrect. a/V² is for 1 mole of gas (n = 1).",
+          "Incorrect. The term depends on the square of the concentration (n/V)².",
+          "Incorrect. 'b' represents volume correction, not pressure correction."
+        ],
+        "fullExplanation": "From page 16: P_ideal = P_real + an²/V², so the pressure correction term for n moles is an²/V²."
+      },
+      {
+        "question": "The total pressure of moist hydrogen gas collected over water at 27 °C is 760 mm Hg. If the aqueous tension of water at 27 °C is 24 mm Hg, the pressure of dry hydrogen gas is:",
+        "options": [
+          "736 mm Hg",
+          "784 mm Hg",
+          "760 mm Hg",
+          "380 mm Hg"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. P_dry = P_moist - aqueous tension = 760 - 24 = 736 mm Hg.",
+          "Incorrect. Adding aqueous tension is incorrect.",
+          "Incorrect. Fails to subtract the vapour pressure of water.",
+          "Incorrect. Dividing by 2 is irrelevant."
+        ],
+        "fullExplanation": "From Dalton's law of partial pressures (page 15): P_moist gas = P_dry gas + P_water vapour. Therefore, P_dry gas = 760 - 24 = 736 mm Hg."
+      },
+      {
+        "question": "If the temperature of an ideal gas is quadrupled (multiplied by 4), the root mean square velocity (v_rms) will:",
+        "options": [
+          "Double",
+          "Quadruple",
+          "Increase by a factor of 16",
+          "Remain unchanged"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. v_rms ∝ √T. When T becomes 4T, v_rms becomes √4 = 2 times its initial value.",
+          "Incorrect. Velocity depends on the square root of temperature, not linearly.",
+          "Incorrect. 16 would occur if velocity varied as T².",
+          "Incorrect. Velocity depends directly on temperature."
+        ],
+        "fullExplanation": "From the formula v_rms = √(3RT/M_w) on page 15: v_rms is directly proportional to √T. If T increases by 4 times, v_rms increases by √4 = 2 times."
+      },
+      {
+        "question": "In the kinetic gas equation PV = (1/3) m N v_rms², the term (m · N) represents:",
+        "options": [
+          "Total mass of the gas sample",
+          "Mass of one mole of gas",
+          "Average molar mass",
+          "Total volume of gas molecules"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. m is the mass of one molecule and N is the total number of molecules, so m · N = total mass of the gas.",
+          "Incorrect. Mass of 1 mole is m · N_A, where N_A is Avogadro's number.",
+          "Incorrect. Average molar mass is M_w, not m · N unless N = N_A.",
+          "Incorrect. This represents mass, not volume."
+        ],
+        "fullExplanation": "In the kinetic gas equation (page 15), m is the mass of a single gas molecule and N is the total number of molecules in the system. Thus, their product m · N represents the total mass of the gas sample."
+      },
+      {
+        "question": "Which of the following gases will diffuse most rapidly under identical conditions of temperature and pressure?",
+        "options": [
+          "CH₄",
+          "CO₂",
+          "SO₂",
+          "O₂"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Molar masses: CH₄ = 16, O₂ = 32, CO₂ = 44, SO₂ = 64. CH₄ has the lowest molar mass, so it diffuses fastest.",
+          "Incorrect. CO₂ has a higher molar mass (44 g/mol) than CH₄.",
+          "Incorrect. SO₂ is the heaviest among the choices (64 g/mol) and diffuses slowest.",
+          "Incorrect. O₂ has a molar mass of 32 g/mol, which is twice that of CH₄."
+        ],
+        "fullExplanation": "By Graham's Law (page 14): rate of diffusion r ∝ 1/√M_w. The gas with the lowest molar mass diffuses the fastest. M_w(CH₄) = 16, M_w(O₂) = 32, M_w(CO₂) = 44, M_w(SO₂) = 64. Thus, CH₄ diffuses most rapidly."
+      },
+      {
+        "question": "A gas at 27 °C has an initial volume of 600 mL. If the temperature is raised to 127 °C at constant pressure, what is the new volume?",
+        "options": [
+          "800 mL",
+          "700 mL",
+          "900 mL",
+          "1200 mL"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. T₁ = 27 + 273 = 300 K; T₂ = 127 + 273 = 400 K. By Charles's law, V₂ = V₁(T₂/T₁) = 600 × (400/300) = 800 mL.",
+          "Incorrect. Incorrect temperature ratio.",
+          "Incorrect. Miscalculated calculation.",
+          "Incorrect. Double volume would require 600 K (327 °C)."
+        ],
+        "fullExplanation": "Using Charles's Law (page 14): V₁/T₁ = V₂/T₂. Temperatures must be in Kelvin: T₁ = 300 K, T₂ = 400 K. V₂ = 600 × (400 / 300) = 800 mL."
+      },
+      {
+        "question": "If 50 mL of gas A diffuses through a pinhole in 10 seconds, what is the rate of diffusion of gas A?",
+        "options": [
+          "5 mL·s⁻¹",
+          "0.2 mL·s⁻¹",
+          "500 mL·s⁻¹",
+          "50 mL·s⁻¹"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. r = V_diffused / time = 50 mL / 10 s = 5 mL·s⁻¹.",
+          "Incorrect. This is time / volume (10 / 50).",
+          "Incorrect. Product instead of quotient.",
+          "Incorrect. Rate per 10 seconds, not per second."
+        ],
+        "fullExplanation": "From page 15: Rate of diffusion r = V_diffused gas / t_taken = 50 mL / 10 s = 5 mL·s⁻¹."
+      },
+      {
+        "question": "At high temperature and very low pressure, the van der Waals equation reduces to:",
+        "options": [
+          "PV = nRT",
+          "PV_m - Pb = RT",
+          "PV_m + a/V_m = RT",
+          "P(V - b) = RT"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Under these conditions, an²/V² → 0 and nb << V, reducing the equation to the ideal gas law PV = nRT.",
+          "Incorrect. This represents the high-pressure approximation.",
+          "Incorrect. This represents the low/moderate-pressure approximation.",
+          "Incorrect. Volume correction is only significant at high pressure."
+        ],
+        "fullExplanation": "Page 16 explicitly notes: 'At very low pressure, high temp. Vanderwaal's Equation is VP = nRT (Ideal gas behaviour)'."
+      },
+      {
+        "question": "What is the molar mass of a gas whose vapour density relative to hydrogen is 28?",
+        "options": [
+          "56 g·mol⁻¹",
+          "14 g·mol⁻¹",
+          "28 g·mol⁻¹",
+          "112 g·mol⁻¹"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Molar mass = 2 × Vapour density = 2 × 28 = 56 g·mol⁻¹.",
+          "Incorrect. 14 is half of 28.",
+          "Incorrect. 28 is the vapour density itself.",
+          "Incorrect. Multiplied by 4 instead of 2."
+        ],
+        "fullExplanation": "From page 14: VD = M_w / 2. Therefore, M_w = 2 × VD = 2 × 28 = 56 g·mol⁻¹."
+      },
+      {
+        "question": "When a real gas shows z > 1, this indicates that:",
+        "options": [
+          "The gas is less compressible than expected for an ideal gas due to repulsive forces",
+          "The gas is more compressible than expected for an ideal gas due to attractive forces",
+          "The gas behaves exactly like an ideal gas",
+          "The volume of gas molecules is zero"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. When z > 1, the observed molar volume is greater than the ideal molar volume due to dominant repulsive forces (co-volume effect), making the gas less compressible.",
+          "Incorrect. More compressible corresponds to z < 1 (negative deviation).",
+          "Incorrect. Ideal behaviour requires z = 1.",
+          "Incorrect. z > 1 highlights the significance of finite molecular volume 'b'."
+        ],
+        "fullExplanation": "From page 15: z = (V_m)_obs / (V_m)_ideal. If z > 1, (V_m)_obs > (V_m)_ideal, meaning repulsive forces dominate and the gas shows positive deviation, making it less compressible than an ideal gas."
+      }
+    ]
+  },
+  {
+    "chapterName": "Chemical Thermodynamics",
+    "flashcards": [
+      {
+        "front": "Distinguish between open, closed, and isolated systems.",
+        "back": "Open system: exchanges both energy and matter with surroundings. Closed system: exchanges only energy (not matter). Isolated system: exchanges neither energy nor matter."
+      },
+      {
+        "front": "What is the difference between a state function and a path function? Give examples.",
+        "back": "State function: depends only on initial and final states, independent of path (e.g., U, H, S, G). Path function: depends on the path followed (e.g., heat 'q', work 'w')."
+      },
+      {
+        "front": "Define extensive and intensive properties with examples.",
+        "back": "Extensive: depend on quantity/mass of matter (e.g., volume, moles, mass, U, H, S, G, heat capacity). Intensive: independent of mass/size (e.g., density, pressure, temperature, molar volume, specific heat, viscosity)."
+      },
+      {
+        "front": "Define isothermal, isochoric, isobaric, and adiabatic processes.",
+        "back": "Isothermal: T = constant (ΔT = 0); Isochoric: V = constant (ΔV = 0); Isobaric: P = constant (ΔP = 0); Adiabatic: no heat exchange (dq = 0)."
+      },
+      {
+        "front": "State the First Law of Thermodynamics and its sign conventions according to IUPAC.",
+        "back": "ΔU = q + W. q is positive if heat is absorbed by the system; W is positive if work is done ON the system (W = -P_ext ΔV)."
+      },
+      {
+        "front": "Write the formula for reversible isothermal work done by an ideal gas.",
+        "back": "w_rev = -nRT ln(V₂/V₁) = -nRT ln(P₁/P₂) = -2.303 nRT log(V₂/V₁)."
+      },
+      {
+        "front": "Write the formula for irreversible work done against a constant external pressure.",
+        "back": "w_irr = -P_ext (V₂ - V₁)."
+      },
+      {
+        "front": "What are the values of C_v, C_p, and γ for a monoatomic ideal gas?",
+        "back": "C_v = (3/2)R, C_p = (5/2)R, and γ = C_p/C_v = 5/3 ≈ 1.67."
+      },
+      {
+        "front": "What are the values of C_v, C_p, and γ for a diatomic ideal gas excluding vibrational modes?",
+        "back": "C_v = (5/2)R, C_p = (7/2)R, and γ = 7/5 = 1.40."
+      },
+      {
+        "front": "State the relationship between enthalpy change (ΔH) and internal energy change (ΔU) for a reaction involving gases.",
+        "back": "ΔH = ΔU + (Δn_g)RT, where Δn_g = (moles of gaseous products) - (moles of gaseous reactants)."
+      },
+      {
+        "front": "Write the Poisson's relations for a reversible adiabatic process of an ideal gas.",
+        "back": "PV^γ = constant, T·V^(γ-1) = constant, and T·P^((1-γ)/γ) = constant."
+      },
+      {
+        "front": "What is the formula for reversible adiabatic work of an ideal gas?",
+        "back": "w = n·C_v(T₂ - T₁) = (P₂V₂ - P₁V₁) / (γ - 1)."
+      },
+      {
+        "front": "State the Second Law of Thermodynamics in terms of entropy of the universe.",
+        "back": "For a reversible process: ΔS_system + ΔS_surroundings = 0. For an irreversible (spontaneous) process: ΔS_system + ΔS_surroundings > 0. In general: ΔS_total ≥ 0."
+      },
+      {
+        "front": "Write the general formula for entropy change (ΔS) of an ideal gas with variables T and V, and with T and P.",
+        "back": "ΔS = n·C_v ln(T₂/T₁) + nR ln(V₂/V₁) = n·C_p ln(T₂/T₁) + nR ln(P₁/P₂)."
+      },
+      {
+        "front": "What is the formula for the entropy change during isothermal expansion of an ideal gas?",
+        "back": "ΔS_sys = nR ln(V₂/V₁) = nR ln(P₁/P₂)."
+      },
+      {
+        "front": "State the Third Law of Thermodynamics.",
+        "back": "At absolute zero (0 K), the entropy of a perfectly crystalline substance is zero."
+      },
+      {
+        "front": "State Kirchhoff's equations for the variation of ΔH_r and ΔU_r with temperature.",
+        "back": "(ΔH_r)_T₂ - (ΔH_r)_T₁ = (ΔC_p)_r · (T₂ - T₁) and (ΔU_r)_T₂ - (ΔU_r)_T₁ = (ΔC_v)_r · (T₂ - T₁)."
+      },
+      {
+        "front": "State the Gibbs free energy criterion for spontaneity at constant T and P.",
+        "back": "ΔG = ΔH - TΔS. If ΔG < 0: spontaneous (irreversible); if ΔG = 0: system at equilibrium (reversible); if ΔG > 0: non-spontaneous."
+      },
+      {
+        "front": "How is reaction enthalpy (Δ_r H) calculated from bond enthalpies and from heats of combustion?",
+        "back": "From bond enthalpies: Δ_r H = Σ(BE)_reactants - Σ(BE)_products. From heats of combustion: Δ_r H = Σ(ΔH_c)_reactants - Σ(ΔH_c)_products."
+      },
+      {
+        "front": "What is the enthalpy of neutralization of a strong acid with a strong base, and why is it greater for HF?",
+        "back": "ΔH°_neut = -13.7 kcal/eq = -57.3 kJ/eq. For HF, |ΔH_neut| > 13.7 kcal/eq due to the very high hydration energy of the small F⁻ ion."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "Which of the following is an intensive property?",
+        "options": [
+          "Refractive index",
+          "Enthalpy",
+          "Entropy",
+          "Heat capacity"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Refractive index does not depend on the quantity or size of matter, so it is an intensive property.",
+          "Incorrect. Enthalpy (H) depends on the amount of matter, so it is an extensive property.",
+          "Incorrect. Entropy (S) is extensive.",
+          "Incorrect. Heat capacity (C) is extensive (though molar heat capacity and specific heat are intensive)."
+        ],
+        "fullExplanation": "As classified on page 18 of the handbook: Extensive properties include volume, moles, mass, G, S, H, U, and heat capacity. Intensive properties include molar volume, density, refractive index, surface tension, viscosity, specific heat, pressure, and temperature."
+      },
+      {
+        "question": "In a cyclic process involving an ideal gas, which of the following statements is ALWAYS true?",
+        "options": [
+          "ΔU = 0 and ΔH = 0",
+          "q = 0",
+          "w = 0",
+          "ΔS_surroundings = 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In any cyclic process, initial and final states are identical. Because U and H are state functions, ΔU = 0 and ΔH = 0.",
+          "Incorrect. Net heat exchange (q) in a cycle equals -w and is generally non-zero.",
+          "Incorrect. Net work done is represented by the enclosed area of the PV diagram and is non-zero.",
+          "Incorrect. ΔS_surroundings depends on whether the cycle is reversible or irreversible."
+        ],
+        "fullExplanation": "From pages 18 and 19: For a cyclic process, the initial and final states of the system are identical. Since internal energy (U) and enthalpy (H) are state functions, their net changes over a complete cycle are zero: ΔU = 0 and ΔH = 0."
+      },
+      {
+        "question": "For the combustion of benzene at 298 K: C₆H₆(l) + (15/2)O₂(g) → 6CO₂(g) + 3H₂O(l), what is the difference between ΔH and ΔU (i.e., ΔH - ΔU)?",
+        "options": [
+          "-1.5 RT",
+          "+1.5 RT",
+          "-0.5 RT",
+          "+3.0 RT"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Δn_g = n_p(g) - n_r(g) = 6 - 7.5 = -1.5. Thus, ΔH - ΔU = (Δn_g)RT = -1.5 RT.",
+          "Incorrect. Liquid species (C₆H₆ and H₂O) must be excluded from Δn_g.",
+          "Incorrect. Calculation error in evaluating gaseous moles.",
+          "Incorrect. Gaseous reactants were improperly omitted."
+        ],
+        "fullExplanation": "From page 20: ΔH = ΔU + (Δn_g)RT. Gaseous products = 6 moles of CO₂(g). Gaseous reactants = 15/2 = 7.5 moles of O₂(g). Δn_g = 6 - 7.5 = -1.5. Therefore, ΔH - ΔU = -1.5 RT."
+      },
+      {
+        "question": "What is the value of the adiabatic exponent γ (C_p / C_v) for a non-linear triatomic gas (like H₂O) excluding vibrational modes?",
+        "options": [
+          "4/3",
+          "5/3",
+          "7/5",
+          "7/6"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For a non-linear triatomic gas excluding vibrational modes: C_v = 3R, C_p = 4R, so γ = 4/3 ≈ 1.33.",
+          "Incorrect. 5/3 is for a monoatomic gas.",
+          "Incorrect. 7/5 is for a diatomic or linear triatomic gas.",
+          "Incorrect. 7/6 is for a non-linear triatomic gas including vibrational modes."
+        ],
+        "fullExplanation": "According to the table on page 19: For a triatomic non-linear molecule excluding vibrations, n_tr = 3, n_rot = 3, n_vib = 3; C_v = 3R, C_p = 4R, and γ = C_p/C_v = 4/3."
+      },
+      {
+        "question": "An ideal gas expands isothermally and reversibly from 2 L to 20 L at 300 K. What is the work done by 1 mole of this gas? (Take R = 8.314 J·mol⁻¹·K⁻¹)",
+        "options": [
+          "-5744 J",
+          "+5744 J",
+          "-2494 J",
+          "+2494 J"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. w = -2.303 nRT log(V₂/V₁) = -2.303 × 1 × 8.314 × 300 × log(10) = -5744 J.",
+          "Incorrect. Expansion work done by the system is negative according to IUPAC convention.",
+          "Incorrect. Missing the ln(10) ≈ 2.303 factor.",
+          "Incorrect. Positive sign and missing logarithm factor."
+        ],
+        "fullExplanation": "From page 20: w = -nRT ln(V₂/V₁) = -2.303 nRT log(V₂/V₁). Here n = 1, T = 300 K, V₂/V₁ = 10. w = -2.303 × 1 × 8.314 × 300 × log₁₀(10) = -5744.1 J ≈ -5744 J."
+      },
+      {
+        "question": "In an irreversible process, the total entropy change of the universe (ΔS_system + ΔS_surroundings) is:",
+        "options": [
+          "> 0",
+          "= 0",
+          "< 0",
+          "≤ 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For any spontaneous (irreversible) process, the entropy of the universe increases: ΔS_total > 0.",
+          "Incorrect. ΔS_total = 0 only for a reversible process.",
+          "Incorrect. Entropy of the universe can never decrease according to the Second Law.",
+          "Incorrect. Contradicts the Second Law of Thermodynamics."
+        ],
+        "fullExplanation": "As stated on page 20 under Statements of Second Law of Thermodynamics: 'ΔS_sys + ΔS_surr = 0 for rev. process; ΔS_sys + ΔS_surr > 0 for irrev. process; ΔS_sys + ΔS_surr ≥ 0 (In general)'."
+      },
+      {
+        "question": "For a reaction to be spontaneous at all temperatures, the signs of ΔH and ΔS must be:",
+        "options": [
+          "ΔH < 0 and ΔS > 0",
+          "ΔH > 0 and ΔS < 0",
+          "ΔH > 0 and ΔS > 0",
+          "ΔH < 0 and ΔS < 0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. When ΔH is negative and ΔS is positive, ΔG = ΔH - TΔS is always negative at any temperature.",
+          "Incorrect. With ΔH > 0 and ΔS < 0, ΔG is always positive (non-spontaneous at all temperatures).",
+          "Incorrect. Spontaneous only at high temperatures (where TΔS > ΔH).",
+          "Incorrect. Spontaneous only at low temperatures (where |ΔH| > |TΔS|)."
+        ],
+        "fullExplanation": "From Gibbs Helmholtz equation on page 21: ΔG = ΔH - TΔS. A process is spontaneous when ΔG < 0. If ΔH is negative (exothermic) and ΔS is positive (entropy increases), both terms contribute negatively to ΔG, making ΔG < 0 at all temperatures."
+      },
+      {
+        "question": "Kirchhoff's equation relates the change in enthalpy of a reaction with temperature as:",
+        "options": [
+          "(ΔH_r)_T₂ - (ΔH_r)_T₁ = (ΔC_p)_r · (T₂ - T₁)",
+          "(ΔH_r)_T₂ - (ΔH_r)_T₁ = (ΔC_v)_r · (T₂ - T₁)",
+          "(ΔH_r)_T₂ - (ΔH_r)_T₁ = (ΔC_p)_r · ln(T₂/T₁)",
+          "(ΔH_r)_T₂ - (ΔH_r)_T₁ = Δn_g · R · (T₂ - T₁)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. This is Kirchhoff's equation directly from page 21 of the handbook.",
+          "Incorrect. (ΔC_v)_r relates internal energy change (ΔU_r), not enthalpy.",
+          "Incorrect. ln(T₂/T₁) appears in the entropy equation, not enthalpy.",
+          "Incorrect. Does not represent Kirchhoff's relation."
+        ],
+        "fullExplanation": "Page 21 states Kirchhoff's equation explicitly: '(ΔH_r)_T₂ - (ΔH_r)_T₁ = (ΔC_p)_r · (T₂ - T₁)'."
+      },
+      {
+        "question": "The enthalpy of neutralization of HCN with NaOH is -12.1 kJ·mol⁻¹. What is the enthalpy of ionization of HCN? (Given ΔH°_neut for strong acid-strong base = -57.3 kJ·mol⁻¹)",
+        "options": [
+          "+45.2 kJ·mol⁻¹",
+          "-45.2 kJ·mol⁻¹",
+          "+69.4 kJ·mol⁻¹",
+          "-69.4 kJ·mol⁻¹"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. ΔH_neut = ΔH_ionization + (-57.3 kJ) ⇒ -12.1 = ΔH_ionization - 57.3 ⇒ ΔH_ionization = 57.3 - 12.1 = +45.2 kJ·mol⁻¹.",
+          "Incorrect. Ionization is an endothermic process and must be positive.",
+          "Incorrect. Added 57.3 and 12.1 instead of subtracting.",
+          "Incorrect. Sign and magnitude error."
+        ],
+        "fullExplanation": "From page 22: For a weak acid, |ΔH_neut| < 57.3 kJ/eq, and the difference is the enthalpy of ionization of the weak acid: ΔH_ionization = 57.3 - 12.1 = +45.2 kJ·mol⁻¹."
+      },
+      {
+        "question": "Why is the magnitude of the heat of neutralization of HF with NaOH greater than 13.7 kcal·eq⁻¹ (|ΔH_neut| > 13.7 kcal·eq⁻¹)?",
+        "options": [
+          "Due to high hydration enthalpy of the small fluoride (F⁻) ion",
+          "Because HF is a very strong acid",
+          "Because NaOH is not completely ionized",
+          "Due to formation of insoluble NaF precipitate"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. As given in the handbook note on page 22, the high hydration energy of F⁻ releases extra heat, making |ΔH_neut| > 13.7 kcal·eq⁻¹.",
+          "Incorrect. HF is a weak acid, not a strong acid.",
+          "Incorrect. NaOH is a strong base and completely dissociated in dilute solution.",
+          "Incorrect. NaF is soluble in water."
+        ],
+        "fullExplanation": "Page 22 explicitly states: 'except in case of HF when |ΔH_N| > 13.7 Kcal/eq⁻¹ due to hydration of F⁻'."
+      },
+      {
+        "question": "What is the work done when 1 mole of an ideal gas expands into vacuum (free expansion)?",
+        "options": [
+          "0",
+          "-nRT ln(V₂/V₁)",
+          "-P_ext · ΔV",
+          "n C_v ΔT"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. Expansion into vacuum means P_ext = 0. Therefore, w = -P_ext · ΔV = 0.",
+          "Incorrect. This formula is for reversible isothermal expansion, where external pressure matches internal pressure.",
+          "Incorrect. Since P_ext = 0, this expression evaluates to zero.",
+          "Incorrect. Heat capacity expression is not relevant to zero external work."
+        ],
+        "fullExplanation": "In free expansion against vacuum, the external pressure P_ext is zero. Since w = - ∫ P_ext dV, work done w = 0."
+      },
+      {
+        "question": "For a reversible adiabatic expansion of an ideal gas, the relationship between temperature and volume is given by:",
+        "options": [
+          "T · V^(γ - 1) = constant",
+          "T · V^γ = constant",
+          "T^(γ - 1) · V = constant",
+          "T · V = constant"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. The Poisson's relation relating T and V is T · V^(γ - 1) = constant.",
+          "Incorrect. P · V^γ = constant, not T · V^γ.",
+          "Incorrect. The exponent (γ - 1) belongs to volume V, not temperature T.",
+          "Incorrect. T · V = const does not describe an adiabatic process."
+        ],
+        "fullExplanation": "As listed on page 20 of the handbook: For a reversible adiabatic process, PV^γ = constant, TV^(γ-1) = constant, and TP^((1-γ)/γ) = constant."
+      },
+      {
+        "question": "What is the entropy change of the system when 1 mole of an ideal gas undergoes isothermal expansion from volume V₁ to V₂?",
+        "options": [
+          "R ln(V₂ / V₁)",
+          "C_v ln(V₂ / V₁)",
+          "0",
+          "-R ln(V₂ / V₁)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. From page 21: ΔS = nR ln(V₂/V₁). For n = 1, ΔS = R ln(V₂/V₁).",
+          "Incorrect. C_v is multiplied by ln(T₂/T₁), not volume ratio.",
+          "Incorrect. Entropy changes during isothermal expansion as volume increases.",
+          "Incorrect. For expansion (V₂ > V₁), ΔS of the gas is positive."
+        ],
+        "fullExplanation": "From page 21: 'Reversible & irreversible isothermal expansion or contraction of an ideal gas: ΔS = nR ln(V₂/V₁)'. For 1 mole, ΔS = R ln(V₂/V₁)."
+      },
+      {
+        "question": "The standard enthalpy of formation of which of the following substances in its standard state is taken as zero by convention?",
+        "options": [
+          "O₂(g)",
+          "O₃(g)",
+          "Diamond",
+          "H₂O(l)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. O₂(g) is the most stable reference allotropic form of oxygen at standard state, so its Δ_f H° = 0.",
+          "Incorrect. Ozone (O₃) is an allotrope with positive enthalpy of formation.",
+          "Incorrect. Graphite is assigned Δ_f H° = 0, not diamond.",
+          "Incorrect. H₂O is a compound, not an element in its reference state."
+        ],
+        "fullExplanation": "By thermodynamic convention, the standard enthalpy of formation (Δ_f H°) of an element in its most stable physical form at 1 bar is zero. For oxygen, O₂(g) has Δ_f H° = 0."
+      },
+      {
+        "question": "For a monoatomic ideal gas, what is the work done in a reversible adiabatic process from T₁ to T₂ for n moles?",
+        "options": [
+          "(3/2) nR (T₂ - T₁)",
+          "(5/2) nR (T₂ - T₁)",
+          "nRT ln(T₂ / T₁)",
+          "0"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. In an adiabatic process, q = 0, so w = ΔU = n C_v (T₂ - T₁). For a monoatomic gas, C_v = (3/2)R, so w = (3/2)nR(T₂ - T₁).",
+          "Incorrect. (5/2)nR is for C_p, not C_v.",
+          "Incorrect. Logarithmic form does not apply to adiabatic work.",
+          "Incorrect. Work is non-zero in an adiabatic process with temperature change."
+        ],
+        "fullExplanation": "From pages 19 and 20: w = n·C_v(T₂ - T₁). For a monoatomic gas, C_v = (3/2)R. Thus, w = (3/2)nR(T₂ - T₁)."
+      },
+      {
+        "question": "Which of the following expressions correctly gives the resonance energy of a compound according to page 22?",
+        "options": [
+          "Δ_f H° (experimental) - Δ_f H° (calculated)",
+          "Δ_f H° (calculated) - Δ_f H° (experimental)",
+          "Δ_c H° (experimental) - Δ_c H° (calculated)",
+          "Σ(BE)_reactants - Σ(BE)_products"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. As stated on page 22: ΔH_resonance° = Δ_f H° (experimental) - Δ_f H° (calculated).",
+          "Incorrect. Inverted signs.",
+          "Incorrect. For heats of combustion, resonance energy = Δ_c H° (calculated) - Δ_c H° (experimental).",
+          "Incorrect. This is the formula for enthalpy of reaction from bond enthalpies."
+        ],
+        "fullExplanation": "Page 22 explicitly defines: Resonance Energy ΔH_resonance° = Δ_f H° (experimental) - Δ_f H° (calculated) = Δ_c H° (calculated) - Δ_c H° (experimental)."
+      },
+      {
+        "question": "If a system absorbs 500 J of heat and does 200 J of work on the surroundings, what is the change in internal energy (ΔU)?",
+        "options": [
+          "+300 J",
+          "+700 J",
+          "-300 J",
+          "-700 J"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. q = +500 J (heat absorbed), w = -200 J (work done BY the system). ΔU = q + w = 500 - 200 = +300 J.",
+          "Incorrect. Work done by the system is negative, so it should not be added.",
+          "Incorrect. Net energy of the system increased, not decreased.",
+          "Incorrect. Sign errors on both heat and work."
+        ],
+        "fullExplanation": "By the First Law of Thermodynamics (page 19): ΔU = q + W. Since heat is absorbed by the system, q = +500 J. Since work is done by the system on the surroundings, W = -200 J. Therefore, ΔU = 500 + (-200) = +300 J."
+      },
+      {
+        "question": "What is the molar heat capacity at constant pressure (C_p) for a linear triatomic gas like CO₂ excluding vibrational degrees of freedom?",
+        "options": [
+          "(7/2) R",
+          "(5/2) R",
+          "(15/2) R",
+          "4 R"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For a linear triatomic gas: n_tr = 3, n_rot = 2. C_v = (5/2)R, so C_p = C_v + R = (7/2)R.",
+          "Incorrect. (5/2)R is C_v for this gas.",
+          "Incorrect. (15/2)R is C_p including vibrational modes.",
+          "Incorrect. 4R is C_p for a non-linear triatomic gas."
+        ],
+        "fullExplanation": "From the table on page 19: For a linear triatomic gas excluding vibrational modes, n_tr = 3, n_rot = 2; C_v = (5/2)R and C_p = (7/2)R."
+      },
+      {
+        "question": "The variation of reaction entropy (ΔS_r) with temperature at constant pressure is given by:",
+        "options": [
+          "(ΔS_r)_T₂ - (ΔS_r)_T₁ = (ΔC_p)_r · ln(T₂ / T₁)",
+          "(ΔS_r)_T₂ - (ΔS_r)_T₁ = (ΔC_p)_r · (T₂ - T₁)",
+          "(ΔS_r)_T₂ - (ΔS_r)_T₁ = (ΔC_v)_r · ln(T₂ / T₁)",
+          "(ΔS_r)_T₂ - (ΔS_r)_T₁ = Δn_g · R · ln(T₂ / T₁)"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. From page 21: (ΔS_r)_T₂ - (ΔS_r)_T₁ = (ΔC_p)_r · ln(T₂/T₁).",
+          "Incorrect. This is the temperature difference form which applies to ΔH_r, not ΔS_r.",
+          "Incorrect. At constant pressure, ΔC_p is used, not ΔC_v.",
+          "Incorrect. Δn_g is involved in pressure variation of ΔS_r, not temperature variation."
+        ],
+        "fullExplanation": "As shown on page 21 under 'Variation of ΔS_r with Temperature & Pressure': (ΔS_r)_T₂ - (ΔS_r)_T₁ = (ΔC_p)_r · ln(T₂/T₁)."
+      },
+      {
+        "question": "Given the bond enthalpies: B.E.(H-H) = 436 kJ·mol⁻¹, B.E.(Cl-Cl) = 242 kJ·mol⁻¹, and B.E.(H-Cl) = 431 kJ·mol⁻¹. What is the standard enthalpy of formation of HCl(g)?",
+        "options": [
+          "-92 kJ·mol⁻¹",
+          "+92 kJ·mol⁻¹",
+          "-184 kJ·mol⁻¹",
+          "+184 kJ·mol⁻¹"
+        ],
+        "correctAnswer": 0,
+        "optionExplanations": [
+          "Correct. For (1/2)H₂(g) + (1/2)Cl₂(g) → HCl(g): Δ_f H = (1/2)BE(H-H) + (1/2)BE(Cl-Cl) - BE(H-Cl) = (1/2)(436) + (1/2)(242) - 431 = 218 + 121 - 431 = -92 kJ·mol⁻¹.",
+          "Incorrect. The reaction is exothermic, so the enthalpy of formation must be negative.",
+          "Incorrect. -184 kJ is for the formation of 2 moles of HCl (H₂ + Cl₂ → 2HCl).",
+          "Incorrect. Positive value of reaction for 2 moles."
+        ],
+        "fullExplanation": "By definition, enthalpy of formation is for 1 mole of HCl: (1/2)H₂(g) + (1/2)Cl₂(g) → HCl(g). Using the formula from page 22: Δ_r H = Σ(BE)_reactants - Σ(BE)_products = [(1/2) × 436 + (1/2) × 242] - 431 = [218 + 121] - 431 = 339 - 431 = -92 kJ·mol⁻¹."
+      }
+    ]
+  }
+]
