@@ -1,0 +1,27 @@
+{
+  "name": "apex-app-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Part 1 React and Express foundation for APEX App; kept separate from the existing APEX JEE application.",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "vite build",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
+}
