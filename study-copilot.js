@@ -5,7 +5,9 @@ import MathMarkdown from "./math-markdown.js";
 import { ImageFullView, readImageDataUrl } from "./image-viewer.js";
 import { STUDY_FIGURES, findRelevantStudyFigures } from "./figure-library.js";
 import { AI_MODEL, geminiGenerate, groqChat, groqSpeech, groqTranscribe, resolveAIModel, resolveSpeechModel } from "./ai.js";
-import { JEE_DIAGRAMS, JEE_DIAGRAM_KEYS, findLocalDiagramKey } from "./lib/jee-diagrams.js";
+import { JEE_DIAGRAMS, findLocalDiagramKey } from "./lib/jee-diagrams.js";
+import AssistantVisual from "./assistant-visual-renderer.js";
+import { extractAssistantVisualBlocks, hasAssistantVisualIntent, inferAssistantVisualType } from "./lib/assistant-visuals.js";
 const THREAD_KEY = "apexjee-copilot-threads-v1";
 const ACTIVE_THREAD_KEY = "apexjee-copilot-active-thread-v1";
 function readThreads() {
@@ -63,7 +65,11 @@ For chemistry, use → for forward reactions and ⇌ for equilibrium. Put heat a
 
 Use clean Markdown tables for comparisons and Markdown lists for steps, properties, and trends. Bold key laws, formulas, and final answers. Standard prose should remain readable paragraphs. For factual or current claims, use browser search when available. Never expose internal search markers or invent citations; use ordinary Markdown links when reliable source URLs are available.
 
-VISUAL RETRIEVAL: Never generate, request, emit, or embed raw image data, Base64, SVG, or image-generation markers. Supported local diagram keys: ${JEE_DIAGRAM_KEYS.join(", ")}. If the user requests a diagram, graph, or visual concept that exactly matches a key in this supported list, you MUST output ONLY the corresponding custom tag on its own line (for example, <jee-chem-benzene />). Do not include Markdown images or other text for a supported local diagram. If the requested visual is not on the supported list, you MUST search the web and extract a relevant, publicly accessible image URL, then return it as standard Markdown image syntax, ![concise descriptive alt text](https://actual-image-url). Do not invent or guess URLs or return only a link or placeholder. For unsupported visuals, structure the response as (1) a standard text answer, (2) the Markdown image on its own line, and (3) a detailed explanation below it. If web search cannot find a suitable image, explain that and do not fabricate one.`;
+VISUAL OUTPUT: When the user explicitly asks for a graph, plot, chart, diagram, schematic, flowchart, mind map, labeled illustration, or infographic, answer normally and include one fenced block per requested graphic (at most three), each whose language is exactly apex-visual. The block must contain valid JSON only; never output raw SVG, HTML, Base64, image-generation markers, or a guessed image URL. The app renders this JSON locally as a crisp, downloadable SVG image.
+
+Choose the requested visual type. Graph JSON shape: {"type":"graph","title":"...","description":"...","xLabel":"...","yLabel":"...","xMin":0,"xMax":10,"yMin":0,"yMax":10,"series":[{"label":"...","style":"line","points":[[0,0],[1,1],[2,4]],"segments":[[[0,0],[1,1]],[[2,4],[3,9]]]}],"annotations":[{"x":1,"y":1,"label":"..."}]}. Use style line for curves, scatter for unconnected measurements, and bar for bar charts. Include 12–48 numerically correct points for a smooth function, preserving important intercepts and turning points. For discontinuities or asymptotes, use separate segments arrays so branches do not connect. When exact data is supplied, plot those values only; do not invent measurements. Include units in axis labels and say when a curve is qualitative or schematic.
+
+Diagram JSON shape: {"type":"diagram","title":"...","description":"...","nodes":[{"id":"a","label":"...","x":15,"y":50,"kind":"process","accent":"blue"},{"id":"b","label":"...","x":85,"y":50}],"edges":[{"from":"a","to":"b","label":"...","directed":true}]}. Place node x and y on a 0–100 canvas; use concise labels, correct arrow direction, and only factual connections. Infographic JSON shape: {"type":"infographic","title":"...","subtitle":"...","cards":[{"heading":"...","body":"...","accent":"teal"}],"footer":"..."}. Keep the graphic focused, accurate, and readable; use 2–8 short cards. If both an explanation and visual(s) are requested, put all visual blocks after the explanation. If up to three reference images are attached, use them as content/style guidance when relevant, but do not copy mistakes or pretend to create a photorealistic image. If no visual is requested, do not emit an apex-visual block.`;
 function FigureGallery({ ids = [] }) {
   const figures = ids.map((id) => STUDY_FIGURES.find((figure) => figure.id === id)).filter(Boolean);
   if (!figures.length) return null;
@@ -73,11 +79,6 @@ function FigureGallery({ ids = [] }) {
     React.createElement(ImageFullView, { src: figure.src, alt: figure.title, loading: "lazy" }),
     React.createElement("figcaption", null, React.createElement("strong", null, figure.title), React.createElement("span", null, `${figure.subject} \xB7 handbook figure`))
   )));
-}
-function wantsGeneratedImage(prompt = "") {
-  const explicitCreate = /\b(generate|create|make|draw|show|give|provide|produce|render|illustrate|plot|graph|chart|diagram|sketch|visuali[sz]e)\b[\s\S]{0,80}\b(image|picture|illustration|diagram|schematic|graph|plot|chart|sketch|visual|periodic table|free[- ]body|fbd)\b/i.test(prompt);
-  const analysisAsk = /\b(analy[sz]e|describe|identify|read|inspect|explain|what is in|what does .* show)\b/i.test(prompt);
-  return explicitCreate || !analysisAsk && /\b(image|picture|illustration|diagram|schematic|graph|chart|periodic table|free[- ]body|fbd)\s+(of|showing|for|with)\b/i.test(prompt);
 }
 function AssistantMessageContent({ message }) {
   const boundedBox = "border border-indigo-400/40 shadow-[0_0_12px_rgba(99,102,241,0.25)] bg-[#0B1120]/60 rounded-xl my-4 overflow-x-auto p-3";
@@ -102,28 +103,44 @@ function AssistantMessageContent({ message }) {
         : markdown(chunk, `${key}-markdown-${index}`);
     }));
   };
+  const renderWithVisualBlocks = (text, key) => {
+    const blocks = extractAssistantVisualBlocks(text);
+    if (!blocks.some((block) => block.type === "visual")) return renderWithDiagramTags(text, key);
+    return React.createElement(React.Fragment, { key }, blocks.map((block, index) => {
+      if (block.type === "visual") {
+        return block.data
+          ? React.createElement(AssistantVisual, { key: `${key}-visual-${index}`, data: block.data })
+          : React.createElement("div", { key: `${key}-visual-error-${index}`, className: "assistant-visual-error", role: "status" }, "I couldn't render that visual. Ask me to redraw it as a graph, diagram, or infographic.");
+      }
+      return renderWithDiagramTags(block.text, `${key}-markdown-${index}`);
+    }));
+  };
   const visual = message.visual;
   return React.createElement(React.Fragment, null,
-    visual ? renderWithDiagramTags(visual.before, "before") : renderWithDiagramTags(message.content, "body"),
+    visual ? renderWithVisualBlocks(visual.before, "before") : renderWithVisualBlocks(message.content, "body"),
     visual && React.createElement("figure", { className: visual.error ? "assistant-generated-figure has-error" : "assistant-generated-figure" },
       visual.url ? React.createElement(ImageFullView, { src: visual.url, alt: visual.explanation || "Educational illustration", loading: "lazy" }) : React.createElement("div", { className: "assistant-generated-placeholder", role: "status" }, "Image unavailable"),
       React.createElement("figcaption", null, visual.explanation)
     ),
-    visual && renderWithDiagramTags(visual.after, "after"),
+    visual && renderWithVisualBlocks(visual.after, "after"),
     React.createElement(FigureGallery, { ids: message.figureIds })
   );
 }
 function AssistantMarkdownImage({ src, alt = "Study diagram", boundedBox, ...props }) {
   const [loaded, setLoaded] = useState(false);
-  return React.createElement("div", { className: `assistant-image-scroll assistant-bounded-box ${boundedBox} ${loaded ? "is-loaded" : "is-loading"}` },
-    !loaded && React.createElement("div", { className: "assistant-image-skeleton", role: "status", "aria-label": `Loading ${alt}` }),
+  const [failed, setFailed] = useState(false);
+  return React.createElement("div", { className: `assistant-image-scroll assistant-bounded-box ${boundedBox} ${loaded ? "is-loaded" : "is-loading"} ${failed ? "has-error" : ""}` },
+    !loaded && !failed && React.createElement("div", { className: "assistant-image-skeleton", role: "status", "aria-label": `Loading ${alt}` }),
+    failed && React.createElement("div", { className: "assistant-image-unavailable", role: "status" }, `${alt} is not available in the local diagram library.`),
     React.createElement(ImageFullView, {
       ...props,
       src,
       alt,
       loading: "lazy",
       className: `assistant-markdown-image ${loaded ? "is-loaded" : ""}`,
-      onLoad: (event) => { props.onLoad?.(event); setLoaded(true); }
+      style: failed ? { display: "none" } : props.style,
+      onLoad: (event) => { props.onLoad?.(event); setLoaded(true); },
+      onError: (event) => { props.onError?.(event); setFailed(true); }
     })
   );
 }
@@ -275,16 +292,15 @@ ${item.transcript}` : `
       const hasImages = Boolean(user.attachments?.some((file) => file.data));
       const requestText = String(user.content).toLowerCase();
       const requestedLocalKey = findLocalDiagramKey(promptText);
-      const localVisualRequest = requestedLocalKey && /\b(draw|show|create|make|generate|provide|give|diagram|graph|image|picture|visual|structure|schematic|plot|chart|sketch)\b/i.test(promptText);
-      const wantsImage = wantsGeneratedImage(promptText) || Boolean(localVisualRequest);
-      const localDiagramKey = wantsImage ? requestedLocalKey : null;
-      const needsSearch = localDiagramKey ? false : wantsImage || /\b(latest|current|today|news|price|recent|source|cite|search|update|verify|verified|accurate data)\b/.test(requestText);
+      const localVisualRequest = Boolean(requestedLocalKey && /\b(draw|show|create|make|generate|provide|give|diagram|graph|image|picture|visual|structure|schematic|plot|chart|sketch|illustrat|infographic|flowchart)\b/i.test(promptText));
+      const visualReferenceRequest = hasImages && /\b(draw|create|make|generate|produce|render|illustrate|visuali[sz]e|recreate|redraw)\b/i.test(promptText);
+      const wantsVisual = hasAssistantVisualIntent(promptText) || localVisualRequest || visualReferenceRequest;
+      const visualKind = inferAssistantVisualType(promptText);
+      const needsSearch = /\b(latest|current|today|news|price|recent|source|cite|search|update|verify|verified|accurate data)\b/.test(requestText);
       const complexReasoning = /\b(prove|derive|solve|evaluate|calculate|why|explain|compare|step by step|mechanism)\b/.test(requestText) || /[=^√∫Σ]/.test(requestText);
       const model = resolveAIModel("assistant", modelPrefs, { hasImages, needsSearch, complexReasoning });
-      const visualInstruction = wantsImage
-        ? localDiagramKey
-          ? `\n\nThis request matches the supported local diagram key "${localDiagramKey}". Output ONLY <jee-${localDiagramKey} /> on its own line.`
-          : "\n\nThis request is for an unsupported visual. You MUST use web search to extract a relevant existing image and include it as a standard Markdown image ![alt](URL), not a guessed URL or generated image. Format the response as (1) normal text answer, (2) the Markdown image on its own line, (3) a detailed explanation below the image."
+      const visualInstruction = wantsVisual
+        ? `\n\nThis turn requires locally rendered visual(s), starting with a ${visualKind}. Include one fenced block for each graphic the user explicitly requested (up to three), opened with \`\`\`apex-visual and closed with \`\`\`; put valid JSON only inside each. Use the matching schema from VISUAL OUTPUT. Do not satisfy this request with a web image, Markdown image, URL, or unsupported custom tag.${hasImages ? " The attached image(s) are the user's visual/content references; use them to guide the requested result." : ""}${requestedLocalKey ? ` The topic is ${requestedLocalKey.replace(/^chem-/, "").replace(/-/g, " ")}.` : ""}`
         : "";
       const requestMessages = [{ role: "system", content: ASSISTANT_RULES + visualInstruction }, ...history];
       let responseModel = model;
@@ -294,7 +310,7 @@ ${item.transcript}` : `
         answer = await geminiGenerate(geminiKeys, requestMessages, { model: responseModel, googleSearch: needsSearch });
       } else {
         try {
-          answer = await groqChat(apiKey, requestMessages, { browserSearch: needsSearch, model, onRateLimitRetry: (status) => setRetryStatus(rateLimitMessage(status)) });
+          answer = await groqChat(apiKey, requestMessages, { browserSearch: needsSearch, model, maxCompletionTokens: wantsVisual ? 3200 : undefined, onRateLimitRetry: (status) => setRetryStatus(rateLimitMessage(status)) });
         } catch (error) {
           const hasGeminiKey = (Array.isArray(geminiKeys) ? geminiKeys : [geminiKeys]).some((entry) => Boolean((typeof entry === "string" ? entry : entry?.key)?.trim()));
           if (!hasGeminiKey || !isGroqQuotaLimit(error)) throw error;
@@ -551,7 +567,7 @@ ${item.transcript}` : `
         lineNumber: 202,
         columnNumber: 7
       }, this),
-      /* @__PURE__ */ jsxDEV("p", { children: "Ask a question, explore an idea, or work through a problem." }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "Ask a question, request a graph or diagram, or attach up to three reference images." }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 203,
         columnNumber: 7

@@ -1,0 +1,38 @@
+{
+  "name": "apex-app-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Isolated React and Express learning app for APEX JEE, kept alongside the existing application.",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "vite build",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^18.0.5",
+    "express": "^4.21.2",
+    "function-plot": "^1.25.4",
+    "groq-sdk": "^1.6.0",
+    "katex": "^0.19.0",
+    "lucide-react": "^0.468.0",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  },
+  "overrides": {
+    "katex": "$katex"
+  }
+}

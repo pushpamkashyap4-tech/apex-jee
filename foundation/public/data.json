@@ -1,0 +1,32 @@
+[
+  {
+    "id": "chemistry-physical-chemistry-solid-state",
+    "subject": "Chemistry",
+    "unit": "Physical Chemistry",
+    "name": "Solid State Chemistry",
+    "classLevel": "Class 12",
+    "cbseBoards": true,
+    "exam": "both",
+    "advancedOnly": false,
+    "flashcards": [
+      {
+        "front": "How many atoms are present in one conventional face-centred cubic (FCC) unit cell?",
+        "back": "There are $4$ atoms: $8\\times\\frac{1}{8}$ from the corners and $6\\times\\frac{1}{2}$ from the faces."
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "How many atoms are present in one conventional FCC unit cell?",
+        "options": ["1", "2", "4", "8"],
+        "correctAnswer": 2,
+        "optionExplanations": [
+          "A simple cubic cell has one atom per unit cell, not an FCC cell.",
+          "A body-centred cubic cell has two atoms per unit cell.",
+          "Correct. The eight corner contributions total one atom, and the six face contributions total three atoms.",
+          "This would count all eight corner atoms as if each belonged entirely to this cell; each corner contributes only one eighth."
+        ],
+        "fullExplanation": "For an FCC unit cell, atoms at eight corners contribute $8\\times\\frac{1}{8}=1$. Atoms at six face centres contribute $6\\times\\frac{1}{2}=3$. Therefore, the total is $Z=1+3=4$ atoms per unit cell."
+      }
+    ]
+  }
+]
