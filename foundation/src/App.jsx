@@ -85,7 +85,7 @@ export default function App() {
             <div>
               <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-indigo-600">APEX learning</p>
               <h1 className="text-2xl font-extrabold tracking-tight text-slate-950">{active.label}</h1>
-              <p className="mt-1 text-sm text-slate-500">{active.hint} · Part 1 foundation</p>
+              <p className="mt-1 text-sm text-slate-500">{active.hint} · Part 2 foundation</p>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2 xl:min-w-[420px]">
@@ -147,7 +147,7 @@ export default function App() {
                   <RefreshCw size={14} aria-hidden="true" /> Refresh data
                 </button>
               </div>
-              {activeModule === "copilot" && <StudyCopilot />}
+              <div hidden={activeModule !== "copilot"}><StudyCopilot /></div>
               {activeModule === "flashcards" && <FlashcardEngine count={filteredFlashcards.length} />}
               {activeModule === "quizzes" && <QuizEngine count={filteredQuizzes.length} />}
             </>
