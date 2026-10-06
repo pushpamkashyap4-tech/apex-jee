@@ -283,6 +283,8 @@ export default function StudyCopilot() {
   const historyRef = useRef(null);
   const audioRef = useRef(null);
   const audioUrlRef = useRef("");
+  const chatAbortRef = useRef(null);
+  const ttsAbortRef = useRef(null);
 
   useEffect(() => {
     const history = historyRef.current;
@@ -290,6 +292,8 @@ export default function StudyCopilot() {
   }, [messages, sending]);
 
   useEffect(() => () => {
+    chatAbortRef.current?.abort();
+    ttsAbortRef.current?.abort();
     audioRef.current?.pause();
     if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
   }, []);
@@ -307,6 +311,24 @@ export default function StudyCopilot() {
     setPlayingVoiceId(null);
   };
 
+  const clearChat = () => {
+    chatAbortRef.current?.abort();
+    chatAbortRef.current = null;
+    ttsAbortRef.current?.abort();
+    ttsAbortRef.current = null;
+    clearAudio();
+    setMessages([]);
+    setDraft("");
+    setError("");
+    setSending(false);
+    setGeneratingVoiceId(null);
+  };
+
+  useEffect(() => {
+    window.addEventListener("apex:clear-chat", clearChat);
+    return () => window.removeEventListener("apex:clear-chat", clearChat);
+  }, []);
+
   const sendMessage = async (event) => {
     event?.preventDefault();
     const text = draft.trim();
@@ -317,11 +339,14 @@ export default function StudyCopilot() {
     setDraft("");
     setSending(true);
     setError("");
+    const controller = new AbortController();
+    chatAbortRef.current = controller;
 
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
+        signal: controller.signal,
         body: JSON.stringify({
           messages: nextMessages.slice(-16).map(({ role, content }) => ({ role, content })),
           studyContext: { subject: selectedSubject, unit: selectedUnit }
@@ -333,9 +358,12 @@ export default function StudyCopilot() {
       if (!content.trim()) throw new Error("The assistant returned an empty answer.");
       setMessages((current) => [...current, { id: crypto.randomUUID(), role: "assistant", content: content.trim(), model: payload.model }]);
     } catch (sendError) {
-      setError(sendError?.message || "Could not send that message. Please try again.");
+      if (!controller.signal.aborted) setError(sendError?.message || "Could not send that message. Please try again.");
     } finally {
-      setSending(false);
+      if (chatAbortRef.current === controller) {
+        chatAbortRef.current = null;
+        setSending(false);
+      }
     }
   };
 
@@ -345,12 +373,16 @@ export default function StudyCopilot() {
       return;
     }
     clearAudio();
+    ttsAbortRef.current?.abort();
+    const controller = new AbortController();
+    ttsAbortRef.current = controller;
     setGeneratingVoiceId(message.id);
     setError("");
     try {
       const response = await fetch("/api/tts", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "audio/wav, application/json" },
+        signal: controller.signal,
         body: JSON.stringify({ text: speechText(message.content) })
       });
       if (!response.ok) {
@@ -358,8 +390,18 @@ export default function StudyCopilot() {
         throw new Error(payload.error || `Read Aloud failed (${response.status}).`);
       }
       const blob = await response.blob();
+      if (controller.signal.aborted) return;
       const objectUrl = URL.createObjectURL(blob);
       const audio = new Audio(objectUrl);
+      let playbackRate = 1;
+      try {
+        const savedRate = Number(window.localStorage.getItem("apex-tts-playback-rate"));
+        if ([0.75, 1, 1.25].includes(savedRate)) playbackRate = savedRate;
+      } catch {
+        // Keep the default playback rate if browser storage is unavailable.
+      }
+      audio.defaultPlaybackRate = playbackRate;
+      audio.playbackRate = playbackRate;
       audioUrlRef.current = objectUrl;
       audioRef.current = audio;
       audio.onended = () => {
@@ -368,10 +410,15 @@ export default function StudyCopilot() {
       await audio.play();
       setPlayingVoiceId(message.id);
     } catch (voiceError) {
-      clearAudio();
-      setError(voiceError?.message || "Could not generate speech. Please try again.");
+      if (!controller.signal.aborted) {
+        clearAudio();
+        setError(voiceError?.message || "Could not generate speech. Please try again.");
+      }
     } finally {
-      setGeneratingVoiceId(null);
+      if (ttsAbortRef.current === controller) {
+        ttsAbortRef.current = null;
+        setGeneratingVoiceId(null);
+      }
     }
   };
 
@@ -410,7 +457,7 @@ export default function StudyCopilot() {
                       type="button"
                       onClick={() => readAloud(message)}
                       disabled={generatingVoiceId !== null}
-                      className="inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1 text-[11px] font-semibold text-slate-500 transition hover:bg-indigo-50 hover:text-indigo-700 disabled:cursor-wait disabled:opacity-70"
+                      className="inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2 py-1 text-[11px] font-semibold text-slate-500 transition hover:bg-indigo-50 hover:text-indigo-700 active:scale-95 disabled:cursor-wait disabled:opacity-70"
                       aria-label={generatingVoiceId === message.id ? "Generating voice" : playingVoiceId === message.id ? "Stop read aloud" : "Read answer aloud"}
                     >
                       <Volume2 size={13} aria-hidden="true" />
@@ -439,7 +486,7 @@ export default function StudyCopilot() {
 
       <div className="sticky bottom-0 border-t border-slate-200 bg-white p-3 sm:px-5 sm:py-4">
         {error && <p className="mb-2 rounded-lg bg-rose-50 px-3 py-2 text-xs text-rose-700" role="alert">{error}</p>}
-        <form onSubmit={sendMessage} className="flex items-end gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-2 focus-within:border-indigo-300 focus-within:ring-4 focus-within:ring-indigo-100">
+        <form onSubmit={sendMessage} className="flex items-end gap-2 rounded-lg border border-slate-200 bg-slate-50 p-2 focus-within:border-indigo-300 focus-within:ring-4 focus-within:ring-indigo-100">
           <textarea
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
@@ -455,7 +502,7 @@ export default function StudyCopilot() {
             aria-label="Message the Study Copilot"
             className="max-h-32 min-h-10 min-w-0 flex-1 resize-y bg-transparent px-2 py-2 text-sm leading-6 text-slate-800 outline-none placeholder:text-slate-400"
           />
-          <button type="submit" disabled={!draft.trim() || sending} className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-indigo-600 text-white transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Send message">
+          <button type="submit" disabled={!draft.trim() || sending} className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-blue-600 text-white shadow-md shadow-blue-200 transition hover:bg-blue-700 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40" aria-label="Send message">
             <Send size={17} aria-hidden="true" />
           </button>
         </form>

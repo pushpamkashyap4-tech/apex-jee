@@ -59,9 +59,9 @@ function MarkdownText({ value }) {
 
 function UnitPrompt() {
   return (
-    <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-3xl border border-indigo-100 bg-white px-6 py-12 text-center shadow-sm">
-      <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-indigo-50 text-indigo-600">
-        <BookOpen size={25} aria-hidden="true" />
+    <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-300 bg-gray-50 px-6 py-12 text-center shadow-sm">
+      <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-gray-100">
+        <BookOpen size={32} className="h-8 w-8 text-gray-400" aria-hidden="true" />
       </span>
       <h2 className="text-xl font-bold tracking-tight text-slate-900">Choose a unit to begin</h2>
       <p className="mt-2 text-sm leading-6 text-slate-600">Please select a unit from the sidebar to begin.</p>
@@ -84,9 +84,9 @@ export default function FlashcardEngine() {
   const cards = filteredFlashcards;
   if (!cards.length) {
     return (
-      <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-3xl border border-slate-200 bg-white px-6 py-12 text-center shadow-sm">
-        <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-slate-100 text-slate-500">
-          <BookOpen size={25} aria-hidden="true" />
+      <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-300 bg-gray-50 px-6 py-12 text-center shadow-sm">
+        <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-gray-100">
+          <BookOpen size={32} className="h-8 w-8 text-gray-400" aria-hidden="true" />
         </span>
         <h2 className="text-xl font-bold tracking-tight text-slate-900">No flashcards in this unit yet</h2>
         <p className="mt-2 max-w-md text-sm leading-6 text-slate-600">Try another unit or add flashcards to this topic in the study data.</p>
@@ -131,13 +131,13 @@ export default function FlashcardEngine() {
           aria-label={`${isFlipped ? "Show front" : "Flip to back"} of card ${safeIndex + 1}`}
           onClick={flipCard}
           onKeyDown={handleCardKeyDown}
-          className="relative h-[min(60vh,560px)] min-h-[340px] cursor-pointer select-none rounded-[2rem] text-left outline-none focus-visible:ring-4 focus-visible:ring-indigo-300 focus-visible:ring-offset-4"
+          className="relative h-[min(60vh,560px)] min-h-[340px] cursor-pointer select-none rounded-2xl text-left outline-none focus-visible:ring-4 focus-visible:ring-indigo-300 focus-visible:ring-offset-4"
         >
           <div
             className="relative h-full w-full transform-gpu transition-transform duration-700 [transform-style:preserve-3d] motion-reduce:transition-none"
             style={{ transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
           >
-            <div className="absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-indigo-100 bg-gradient-to-br from-white via-indigo-50 to-sky-50 px-6 py-8 text-center shadow-xl shadow-indigo-100/70 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] sm:px-12">
+            <div className="absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-indigo-100 bg-gradient-to-br from-white via-indigo-50 to-sky-50 px-6 py-8 text-center shadow-xl shadow-indigo-100/70 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] sm:px-12">
               <span className="absolute left-6 top-6 rounded-full bg-white/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-indigo-700 ring-1 ring-indigo-100">Front</span>
               <div className="my-auto max-h-[72%] w-full overflow-y-auto px-1 text-lg font-semibold leading-8 text-slate-900 sm:text-2xl sm:leading-10">
                 <MarkdownText value={card.front} />
@@ -147,7 +147,7 @@ export default function FlashcardEngine() {
               </span>
             </div>
 
-            <div className="absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-teal-50 px-6 py-8 text-center shadow-xl shadow-emerald-100/70 [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] sm:px-12">
+            <div className="absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-teal-50 px-6 py-8 text-center shadow-xl shadow-emerald-100/70 [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] sm:px-12">
               <span className="absolute left-6 top-6 rounded-full bg-white/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-emerald-700 ring-1 ring-emerald-100">Back</span>
               <div className="my-auto max-h-[72%] w-full overflow-y-auto px-1 text-base leading-8 text-slate-800 sm:text-xl sm:leading-9">
                 <MarkdownText value={card.back} />
@@ -165,14 +165,14 @@ export default function FlashcardEngine() {
           type="button"
           onClick={() => goToCard(safeIndex - 1)}
           disabled={safeIndex === 0}
-          className="inline-flex min-w-32 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-indigo-200 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:opacity-40"
+          className="inline-flex min-w-32 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-semibold text-gray-700 shadow-md transition hover:border-blue-200 hover:bg-blue-50 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
         >
           <ChevronLeft size={17} aria-hidden="true" /> Previous
         </button>
         <button
           type="button"
           onClick={flipCard}
-          className="inline-flex min-w-32 items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-indigo-200 transition hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200"
+          className="inline-flex min-w-32 items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-blue-200 transition hover:bg-blue-700 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-200"
         >
           <RotateCw size={17} aria-hidden="true" /> Flip
         </button>
@@ -180,7 +180,7 @@ export default function FlashcardEngine() {
           type="button"
           onClick={() => goToCard(safeIndex + 1)}
           disabled={safeIndex === cards.length - 1}
-          className="inline-flex min-w-32 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-indigo-200 hover:bg-indigo-50 disabled:cursor-not-allowed disabled:opacity-40"
+          className="inline-flex min-w-32 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-semibold text-gray-700 shadow-md transition hover:border-blue-200 hover:bg-blue-50 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
         >
           Next <ChevronRight size={17} aria-hidden="true" />
         </button>

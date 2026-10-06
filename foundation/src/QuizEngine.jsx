@@ -63,9 +63,9 @@ function MarkdownText({ value, className = "" }) {
 
 function UnitPrompt() {
   return (
-    <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-3xl border border-indigo-100 bg-white px-6 py-12 text-center shadow-sm">
-      <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-indigo-50 text-indigo-600">
-        <ClipboardCheck size={25} aria-hidden="true" />
+    <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-300 bg-gray-50 px-6 py-12 text-center shadow-sm">
+      <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-gray-100">
+        <ClipboardCheck size={32} className="h-8 w-8 text-gray-400" aria-hidden="true" />
       </span>
       <h2 className="text-xl font-bold tracking-tight text-slate-900">Choose a unit to begin</h2>
       <p className="mt-2 text-sm leading-6 text-slate-600">Please select a unit from the sidebar to begin.</p>
@@ -75,9 +75,9 @@ function UnitPrompt() {
 
 function EmptyQuiz() {
   return (
-    <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-3xl border border-slate-200 bg-white px-6 py-12 text-center shadow-sm">
-      <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-slate-100 text-slate-500">
-        <ClipboardCheck size={25} aria-hidden="true" />
+    <div className="mx-auto flex min-h-[300px] max-w-2xl flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-300 bg-gray-50 px-6 py-12 text-center shadow-sm">
+      <span className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-gray-100">
+        <ClipboardCheck size={32} className="h-8 w-8 text-gray-400" aria-hidden="true" />
       </span>
       <h2 className="text-xl font-bold tracking-tight text-slate-900">No quiz questions in this unit yet</h2>
       <p className="mt-2 max-w-md text-sm leading-6 text-slate-600">Try another unit or add quiz questions to this topic in the study data.</p>
@@ -94,7 +94,7 @@ function ScoreScreen({ score, total, onRetake }) {
       : "Good practice. Review the explanations and give it another try.";
 
   return (
-    <section className="mx-auto flex min-h-[460px] w-full max-w-3xl flex-col items-center justify-center rounded-3xl border border-indigo-100 bg-gradient-to-br from-white via-indigo-50 to-sky-50 px-6 py-12 text-center shadow-sm sm:px-12" aria-label="Quiz results">
+    <section className="mx-auto flex min-h-[460px] w-full max-w-3xl flex-col items-center justify-center rounded-2xl border border-indigo-100 bg-gradient-to-br from-white via-indigo-50 to-sky-50 px-6 py-12 text-center shadow-sm sm:px-12" aria-label="Quiz results">
       <span className="mb-5 grid h-16 w-16 place-items-center rounded-2xl bg-indigo-100 text-indigo-700">
         <Trophy size={30} aria-hidden="true" />
       </span>
@@ -105,7 +105,7 @@ function ScoreScreen({ score, total, onRetake }) {
       <button
         type="button"
         onClick={onRetake}
-        className="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-indigo-200 transition hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200"
+        className="mt-8 inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-blue-200 transition hover:bg-blue-700 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-200"
       >
         <RotateCcw size={17} aria-hidden="true" /> Retake Quiz
       </button>
@@ -182,7 +182,7 @@ export default function QuizEngine() {
         </div>
       </header>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-7">
+      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-7">
         <div className="mb-6 flex items-start gap-3">
           <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-indigo-50 text-sm font-extrabold text-indigo-700">{currentIndex + 1}</span>
           <div className="min-w-0 flex-1">
@@ -217,7 +217,7 @@ export default function QuizEngine() {
                 onClick={() => answerQuestion(optionIndex)}
                 disabled={isAnswered}
                 aria-pressed={isSelected}
-                className={`flex min-h-16 w-full items-start gap-3 rounded-2xl border px-3 py-3 text-left text-sm font-medium leading-6 transition sm:px-4 ${optionStyle} disabled:cursor-default`}
+                className={`flex min-h-16 w-full items-start gap-3 rounded-lg border px-3 py-3 text-left text-sm font-medium leading-6 shadow-md transition active:scale-[0.99] sm:px-4 ${optionStyle} disabled:cursor-default`}
               >
                 <span className={`mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg text-xs font-extrabold ${letterStyle}`} aria-hidden="true">{OPTION_LETTERS[optionIndex]}</span>
                 <span className="min-w-0 flex-1 pt-0.5"><MarkdownText value={option} /></span>
@@ -259,7 +259,7 @@ export default function QuizEngine() {
             <button
               type="button"
               onClick={nextQuestion}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-indigo-200 transition hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-md shadow-blue-200 transition hover:bg-blue-700 active:scale-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-200"
             >
               {currentIndex === questions.length - 1 ? "See Results" : "Next Question"}
               <ArrowRight size={17} aria-hidden="true" />
